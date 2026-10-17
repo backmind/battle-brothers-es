@@ -10,3 +10,7 @@ __pycache__/
 # vendor/ va en el repo aunque un .gitignore global lo excluya: es el Rosetta
 # que usan las herramientas (vendor/rosetta/ORIGEN.md).
 !vendor/
+
+# Traducción de Legends: el clon de la fuente y los lotes se regeneran con lotes.py
+es_pack/legends/fuente/
+es_pack/legends/lotes/

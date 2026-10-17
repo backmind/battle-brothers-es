@@ -1,0 +1,5 @@
+repo = "https://github.com/Battle-Brothers-Legends/Legends-public"
+etiqueta = "19.4.22"
+commit = "0e44b4fe2dbdf570edc673943d4c228b137133db"
+rutas = ["scripts", "mod_legends"]
+mod_id = "mod_legends"
