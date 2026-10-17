@@ -458,3 +458,9 @@ def test_acepta_tokens_de_articulo(entorno):
     corpus, editar = entorno
     editar(_swing("%name% lanza un tajo a %art% enemigo, %ese% furios%o%, con {un hacha de mano | un hacha}."))
     assert lotes.fusionar(1) == 0
+
+
+def test_acepta_repetir_un_token_del_ingles(entorno):
+    corpus, editar = entorno
+    editar(_swing("%name% lanza un tajo a su enemigo con {un hacha de mano | un hacha}, y %name% sonríe."))
+    assert lotes.fusionar(1) == 0

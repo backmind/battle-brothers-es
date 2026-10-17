@@ -444,7 +444,9 @@ def plegar(texto):
 def problemas_formales(en, es, texto):
     """Lo que rompería el par en el juego, como lista de motivos."""
     res = []
-    te, ts = Counter(TOKEN_RE.findall(en)), Counter(TOKEN_RE.findall(es))
+    # Por presencia, no por número, como checks.py: repetir o ahorrar un
+    # nombre es castellano; quitarlo del todo o inventarlo, no.
+    te, ts = set(TOKEN_RE.findall(en)), set(TOKEN_RE.findall(es))
     faltan = [t for t in te - ts if not PRONOMBRE_EN_RE.match(t)]
     sobran = [t for t in ts - te if not token_es_valido(t, te)]
     if faltan:
