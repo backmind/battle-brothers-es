@@ -21,6 +21,7 @@ partir, traducir lotes (es_pack/legends/BRIEF.md), fusionar.
 
 El corpus es la fuente de verdad; todo se escribe por bytes y en LF.
 """
+import ast
 import difflib
 import functools
 import os
@@ -442,6 +443,35 @@ def problemas_formales(en, es, texto):
     return res
 
 
+# Dentro de un bloque editado solo caben comentarios y estas tres claves, una
+# vez cada una, con los escapes que entiende Squirrel. Una comilla sin escapar
+# o una clave plural/split/use mal puesta tumbaría la carga de todo el corpus.
+CAMPO_RE = re.compile(r'^        (en|es|mode) = ("(?:[^"\\]|\\[\\"nt]|\\x[0-9a-fA-F]{2})*")$')
+
+
+def campos_estrictos(texto):
+    """({clave: valor}, None) o (None, motivo) para las líneas de un bloque."""
+    campos = {}
+    for linea in texto.split("\n")[1:-1]:
+        if linea.strip().startswith("//"):
+            continue
+        m = CAMPO_RE.match(linea)
+        if not m:
+            return None, "línea no permitida en el bloque: %s" % linea.strip()[:60]
+        if m.group(1) in campos:
+            return None, "`%s` repetido" % m.group(1)
+        campos[m.group(1)] = ast.literal_eval(m.group(2))
+    if "en" not in campos or "es" not in campos:
+        return None, "falta `en` o `es`"
+    if campos.get("mode", "pattern") != "pattern":
+        return None, 'el único `mode` permitido es "pattern"'
+    return campos, None
+
+
+def esqueleto(en, marca):
+    return re.sub(marca, "\0", en)
+
+
 def validar(orig, nuevo, base, glosario):
     """(errores, avisos) del lote editado frente a su original."""
     errores, avisos = [], []
@@ -453,17 +483,26 @@ def validar(orig, nuevo, base, glosario):
             if n.en != o.en:
                 errores.append("%s: `// en =` con otro texto" % donde)
             continue
-        conversion = "<" in o.en and is_rule_pair(n.texto)
-        if n.en != o.en and not conversion:
+        campos, motivo = campos_estrictos(n.texto)
+        if motivo:
+            errores.append("%s: %s" % (donde, motivo))
+            continue
+        en, es = campos["en"], campos["es"]
+        # Una pista se convierte en patrón sin tocar el texto que la rodea.
+        conversion = ("<" in o.en and "mode" in campos
+                      and esqueleto(o.en, r"<[^>]*>") == esqueleto(en, r"<\w+:\w+>"))
+        if en != o.en and not conversion:
             errores.append("%s: el `en` ha cambiado" % donde)
             continue
-        if n.en in base:
+        if en in base:
             errores.append("%s: el `en` ya lo traduce base_es.nut" % donde)
-        if not n.es:
+        if not es:
             continue
-        errores += ["%s: %s" % (donde, p) for p in problemas_formales(n.en, n.es, n.texto)]
-        for t in terminos_en(n.en, glosario):
-            if t.es and not forma_flexible(t.es).search(plegar(n.es)):
+        limpio = "    {\n%s        en = %s\n        es = %s\n    }" % (
+            '        mode = "pattern"\n' if "mode" in campos else "", literal(en), literal(es))
+        errores += ["%s: %s" % (donde, p) for p in problemas_formales(en, es, limpio)]
+        for t in terminos_en(en, glosario):
+            if t.es and not forma_flexible(t.es).search(plegar(es)):
                 avisos.append("GLOSARIO %s: %s = %s" % (donde, t.en, t.es))
     return errores, avisos
 

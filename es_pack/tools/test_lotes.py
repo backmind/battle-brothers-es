@@ -342,6 +342,33 @@ def test_rechaza_en_del_base(entorno):
                        '        mode = "pattern"\n        en = "Already in base"\n        es = "Ya"'))
 
 
+def test_rechaza_comillas_sin_escapar(entorno):
+    _rechaza(entorno, _swing('%name% ataca con {un hacha de mano | un hacha} y grita "ya".'))
+
+
+def test_rechaza_basura_tras_es(entorno):
+    _rechaza(entorno, (EN_SWING, EN_SWING.replace('es = ""', 'es = "%name% {a | b}" + foo(')))
+
+
+def test_rechaza_es_en_comentario(entorno):
+    _rechaza(entorno, (EN_SWING, EN_SWING.replace(
+        '        es = ""', '        // DUDA: es = "%name% ataca {un hacha de mano | un hacha}"\n        es = "Roto"')))
+
+
+def test_rechaza_es_duplicado(entorno):
+    _rechaza(entorno, (EN_SWING, EN_SWING + '\n        es = "Otro"'))
+
+
+def test_rechaza_clave_no_permitida(entorno):
+    _rechaza(entorno, ('        en = "<this.m.Name> attacks"\n        es = ""',
+                       '        mode = "pattern"\n        plural = "n"\n        en = "<name:str> attacks"\n        es = "<name> ataca"'))
+
+
+def test_rechaza_patron_que_cambia_el_texto(entorno):
+    _rechaza(entorno, ('        en = "<this.m.Name> attacks"\n        es = ""',
+                       '        mode = "pattern"\n        en = "<a:str> <b:str>"\n        es = "<b> <a>"'))
+
+
 def test_rechaza_segunda_fusion(entorno):
     corpus, editar = entorno
     editar(ES_AXE)
