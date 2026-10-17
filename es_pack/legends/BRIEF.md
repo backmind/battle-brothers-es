@@ -80,9 +80,13 @@ Omite los tokens ingleses que en castellano no hacen falta ("%their% sword" es "
 | `%el%` | él | ella | `con %el%` |
 | `%lo%`, `%Lo%` | lo | la | `%lo% mira` |
 | `%un%`, `%Un%` | un | una | `%un% mercenari%o%` |
-| `%hombre%`, `%Hombre%` | hombre | mujer | `ese %hombre%` |
+| `%hombre%`, `%Hombre%` | hombre | mujer | `%un% %hombre%` |
 
 Solo valen si el inglés del par lleva un token de pronombre del mismo personaje: si el inglés usa `%their_bro%`, el castellano usa `%o_bro%`; si usa `%their%`, `%o%`. No hay `%El%`: el juego no sabe poner en mayúscula la «é», y en castellano el sujeto casi siempre se omite. La fusión rechaza cualquier otro token que no esté en el inglés.
+
+Todavía no hay token para artículos ni demostrativos (el/la, del/de la, ese/esa): evita ponerlos delante de un sustantivo que cambia de género, con el indefinido (`%un% %hombre%`), un posesivo (`su erudit%o%`) u omitiendo el sustantivo.
+
+Los tokens con verbo de Legends (`%they're%`, `%they are%`, `%they were%` y familia) se quitan siempre: el castellano conjuga el verbo y omite el sujeto.
 
 ## Patrones
 
