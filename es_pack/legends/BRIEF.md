@@ -6,7 +6,7 @@ Instrucciones para quien traduzca un lote de `es_pack/legends/lotes/`, sea una p
 
 Recibes `NNNN.nut`. Lo editas en el sitio y no tocas nada fuera de él: ni el corpus, ni el `NNNN.orig.nut`, ni otros lotes.
 
-La cabecera trae el número de lote, la versión de Legends y, bajo `// GLOSARIO:`, los términos que aparecen en el lote con la traducción fijada. Cada par lleva encima su `// FILE:` (el fichero de Legends del que sale) y su `// context:` (la ruta de código que lo usa: `create.m.Name` es un nombre, `Options.Text` un botón de evento, `m.Description` una descripción). Si Legends retocó un texto del juego base, el par lleva además `// base: en="..." es="..."` con el texto original y su traducción de la 1.0: parte de ella y cambia solo lo que cambió el inglés.
+La cabecera trae el número de lote, la versión de Legends y, bajo `// GLOSARIO:`, los términos que aparecen en el lote con la traducción fijada. Cada par lleva encima su `// FILE:` (el fichero de Legends del que sale) y su `// context:` (la ruta de código que lo usa: `create.m.Name` es un nombre, `Options.Text` un botón de evento, `m.Description` una descripción). Si Legends retocó un texto del juego base, el par lleva además `// base: en="..." es="..."` con el texto original y su traducción de la 1.0: parte de ella, cambia lo que cambió el inglés y corrige lo que la 1.0 tenga mal frente al inglés (sentido, añadidos que el inglés no tiene, crudeza rebajada, erratas). Cada corrección se anota dentro del bloque, antes del `en`, con una línea `        // corrige base: ...` que diga qué y por qué, para llevarla después a la 1.0.
 
 Con cada par puedes hacer cuatro cosas, y nada más:
 
@@ -81,10 +81,14 @@ Omite los tokens ingleses que en castellano no hacen falta ("%their% sword" es "
 | `%lo%`, `%Lo%` | lo | la | `%lo% mira` |
 | `%un%`, `%Un%` | un | una | `%un% mercenari%o%` |
 | `%hombre%`, `%Hombre%` | hombre | mujer | `%un% %hombre%` |
+| `%art%`, `%Art%` | el | la | `%art% flagelante` |
+| `%del%`, `%Del%` | del | de la | `las manos %del% monje` |
+| `%al%`, `%Al%` | al | a la | `mira %al% erudit%o%` |
+| `%ese%`, `%Ese%` | ese | esa | `%ese% %hombre%` |
 
 Solo valen si el inglés del par lleva un token de pronombre del mismo personaje: si el inglés usa `%their_bro%`, el castellano usa `%o_bro%`; si usa `%their%`, `%o%`. No hay `%El%`: el juego no sabe poner en mayúscula la «é», y en castellano el sujeto casi siempre se omite. La fusión rechaza cualquier otro token que no esté en el inglés.
 
-Todavía no hay token para artículos ni demostrativos (el/la, del/de la, ese/esa): evita ponerlos delante de un sustantivo que cambia de género, con el indefinido (`%un% %hombre%`), un posesivo (`su erudit%o%`) u omitiendo el sustantivo.
+Un sustantivo que nombra a un personaje con género variable («el flagelante», «el monje», «el idiota») nunca lleva artículo ni demostrativo fijo: usa `%art%`, `%del%`, `%al%` o `%ese%`, con el sufijo del personaje, y concuerda también el resto de la frase («sosteniéndo%lo%»).
 
 Los tokens con verbo de Legends (`%they're%`, `%they are%`, `%they were%` y familia) se quitan siempre: el castellano conjuga el verbo y omite el sujeto.
 

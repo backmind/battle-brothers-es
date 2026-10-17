@@ -452,3 +452,9 @@ def test_rechaza_token_de_genero_con_otro_sufijo(entorno):
 
 def test_rechaza_token_de_genero_sin_pronombre_en_el_ingles(entorno):
     assert lotes.problemas_formales("%name% attacks.", "%name% ataca, furios%o%.", "") != []
+
+
+def test_acepta_tokens_de_articulo(entorno):
+    corpus, editar = entorno
+    editar(_swing("%name% lanza un tajo a %art% enemigo, %ese% furios%o%, con {un hacha de mano | un hacha}."))
+    assert lotes.fusionar(1) == 0

@@ -390,9 +390,10 @@ PRONOMBRE_EN_RE = re.compile(
     r"^%(?:they|them|their|theirs|themselves|person|people|swordsman|noble|sibling|sib|child|offspring)"
     r"(_\w+)?%$", re.I)
 # Claves castellanas que el pack añade a PronounTable (neutro = masculino):
-# o/a, él/ella, lo/la, un/una, hombre/mujer. Sin "%El%": Legends pone la
+# o/a, él/ella, lo/la, un/una, hombre/mujer, el/la (art), del/de la, al/a la,
+# ese/esa. Sin "%El%": Legends pone la
 # mayúscula byte a byte y no sabe con la "é".
-TOKEN_ES_RE = re.compile(r"^%(?:o|el|lo|Lo|un|Un|hombre|Hombre)(_\w+)?%$")
+TOKEN_ES_RE = re.compile(r"^%(?:o|el|lo|Lo|un|Un|hombre|Hombre|art|Art|del|Del|al|Al|ese|Ese)(_\w+)?%$")
 
 
 def token_es_valido(token, en_tokens):
