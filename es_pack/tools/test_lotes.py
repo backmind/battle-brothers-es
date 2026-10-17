@@ -429,3 +429,17 @@ def test_glosario_ida_y_vuelta(tmp_path):
     lotes.escribir_glosario(p, ts)
     assert b"\r" not in p.read_bytes()
     assert sorted(lotes.leer_glosario(p), key=lambda t: t.en) == sorted(ts, key=lambda t: t.en)
+
+
+def test_acepta_token_de_genero_castellano(entorno):
+    corpus, editar = entorno
+    editar(_swing("%name% lanza un tajo, furios%o%, a su enemigo con {un hacha de mano | un hacha}."))
+    assert lotes.fusionar(1) == 0
+
+
+def test_rechaza_token_de_genero_con_otro_sufijo(entorno):
+    _rechaza(entorno, _swing("%name% lanza un tajo, furios%o_bro%, a su enemigo con {un hacha de mano | un hacha}."))
+
+
+def test_rechaza_token_de_genero_sin_pronombre_en_el_ingles(entorno):
+    assert lotes.problemas_formales("%name% attacks.", "%name% ataca, furios%o%.", "") != []

@@ -374,12 +374,22 @@ def partir():
 
 
 # Tokens de pronombre inglés de Legends (z_legends_language.nut): "%their%"
-# es "su" sin token, así que el español puede omitirlos. Provisional hasta
-# decidir los tokens castellanos de género, que entrarán en TOKENS_ES.
+# es "su" sin token, así que el español puede omitirlos.
 PRONOMBRE_EN_RE = re.compile(
     r"^%(?:they|them|their|theirs|themselves|person|people|swordsman|noble|sibling|sib|child|offspring)"
-    r"(?:_\w+)?%$", re.I)
-TOKENS_ES = set()
+    r"(_\w+)?%$", re.I)
+# Claves castellanas que el pack añade a PronounTable (neutro = masculino):
+# o/a, él/ella, lo/la, un/una, hombre/mujer. Sin "%El%": Legends pone la
+# mayúscula byte a byte y no sabe con la "é".
+TOKEN_ES_RE = re.compile(r"^%(?:o|el|lo|Lo|un|Un|hombre|Hombre)(_\w+)?%$")
+
+
+def token_es_valido(token, en_tokens):
+    """Un token castellano de género vale si el inglés trae un pronombre
+    del mismo personaje (mismo sufijo): solo entonces Legends lo rellena."""
+    m = TOKEN_ES_RE.match(token)
+    sufijos = {p.group(1) for p in map(PRONOMBRE_EN_RE.match, en_tokens) if p}
+    return bool(m) and m.group(1) in sufijos
 IGNORADO_RE = re.compile(r'^    // en = ("(?:[^"\\]|\\.)*")(.*)$')
 COLOR_RE = re.compile(r"\[color=")
 
@@ -424,7 +434,7 @@ def problemas_formales(en, es, texto):
     res = []
     te, ts = Counter(TOKEN_RE.findall(en)), Counter(TOKEN_RE.findall(es))
     faltan = [t for t in te - ts if not PRONOMBRE_EN_RE.match(t)]
-    sobran = [t for t in ts - te if t not in TOKENS_ES]
+    sobran = [t for t in ts - te if not token_es_valido(t, te)]
     if faltan:
         res.append("faltan tokens %s" % sorted(faltan))
     if sobran:

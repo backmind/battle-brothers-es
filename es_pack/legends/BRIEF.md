@@ -68,7 +68,19 @@ Lo que la 1.0 fijó y el glosario automático no recoge, porque el juego lo escr
 
 Legends escribe los pronombres de sus personajes con tokens que el juego sustituye por palabras inglesas: `%they%`, `%their_employer%`, `%person_dude%` y familia (la lista completa está en `mod_legends/config/z_legends_language.nut`). En español no sirven: "%their% sword" es "su espada".
 
-**Regla provisional:** omite esos tokens y redacta para que la frase funcione con cualquier género (su, le, la persona, construcciones sin adjetivo concordado). La fusión permite quitarlos, pero no añadir ningún token que no esté en el inglés. Cuando no haya forma neutra natural, deja una duda: está por decidir si el pack añade tokens castellanos de género (Legends permite ampliar su tabla de pronombres).
+**Por defecto, neutro:** omite esos tokens y redacta para que la frase funcione con cualquier género (su, le, construcciones sin adjetivo concordado). La fusión permite quitarlos.
+
+**Donde el neutro quede forzado**, usa los tokens castellanos que el pack añade a la tabla de Legends (sin género, el juego pone el masculino):
+
+| Token | Hombre | Mujer | Ejemplo |
+|---|---|---|---|
+| `%o%` | o | a | `cansad%o%` |
+| `%el%` | él | ella | `con %el%` |
+| `%lo%`, `%Lo%` | lo | la | `%lo% mira` |
+| `%un%`, `%Un%` | un | una | `%un% mercenari%o%` |
+| `%hombre%`, `%Hombre%` | hombre | mujer | `ese %hombre%` |
+
+Solo valen si el inglés del par lleva un token de pronombre del mismo personaje: si el inglés usa `%their_bro%`, el castellano usa `%o_bro%`; si usa `%their%`, `%o%`. No hay `%El%`: el juego no sabe poner en mayúscula la «é», y en castellano el sujeto casi siempre se omite. La fusión rechaza cualquier otro token que no esté en el inglés.
 
 ## Patrones
 
