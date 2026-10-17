@@ -1,0 +1,1250 @@
+#!/usr/bin/env python3
+"""\
+Usage:
+    python rosetta.py <mod-file> > <to-file> [options]
+    python rosetta.py <mod-dir> > <to-file> [options]
+
+Extracts strings and prepares a rosetta style translation file.
+
+Arguments:
+    <mod-file>  The path to a mod file
+    <mod-dir>   Process all *.nut files in a dir
+    <to-file>   Rosetta file to write, via shell redirection
+
+Options:
+    -l<lang>      Target language to translate to, defaults to ru
+    -t<engine>    Use automatic translation. Available options are:
+                      yt (Yandex Translate), claude35 (Anthropic Claude-3.5-sonnet)
+    -r<file>      Use this as reference translation
+    -c<file>      Check mode: report new, unmatched and partial entries, exit 1 if any
+    -f            Overwrite existing files
+    -q            Less output
+    -x            Stop on error
+    --context     Include context comments into generated code
+    -h, --help    Show this help
+"""
+# TODO: autopattern for
+#         - [color=<this.Const.UI.Color.NegativeValue>]50%[/color]
+#         - Const.UI.getColorizedEntityName(...)
+# TODO: autopattern for this.Const.Strings.getArticle(...)
+# TODO: autopattern .getName(), .getNameOnly()
+# TODO: autodetect integer when - * / ops are used:
+#       "And <inv.len()><-><::Const.World.Common.WorldEconomy.Trade.AmountOfLeakedCaravanInventoryInfo> more item(s)"
+# TODO: translate to other languages (xt)
+# TODO: do not translate <tags> (xt)
+# TODO: mod/file specific includes, i.e.:
+#       - legends/**/trait_defs.nut Const = ....
+from collections import defaultdict, namedtuple
+from itertools import count, groupby
+from pathlib import Path
+import ast
+import os
+import sys
+import re
+from pprint import pprint, pformat
+
+
+NUT_HEADER = """
+if (!("Rosetta" in getroottable())) return;
+if (::Hooks.SQClass.ModVersion(::Rosetta.Version) < ::Hooks.SQClass.ModVersion("0.5.0")) return;
+
+local rosetta = {{
+    mod = {{id = "mod_", version = "..."}}
+    author = "..."
+    lang = "{lang}"
+}}
+local pairs = [""".lstrip()
+NUT_FOOTER = """
+]
+::Rosetta.add(rosetta, pairs);""".lstrip()
+
+OPTS = {"lang": "ru", "engine": None, "ref": None, "check": None,
+        "debug": False, "failfast": False, "context": False, "quiet": False}
+
+def main():
+    if "-h" in sys.argv or "--help" in sys.argv:
+        print(__doc__)
+        return
+
+    bool_opts = {"f": "force", "t": "tabs", "d": "debug", "x": "failfast", "q": "quiet"}
+    long_opts = {"context": "context"}
+    arg_opts = {"l": "lang", "t": "engine", "r": "ref", "c": "check"}
+
+    # Parse options
+    args = []
+    arg_it = iter(sys.argv[1:])
+    for x in arg_it:
+        if x.startswith("--"):
+            name = x[2:]
+            if name not in long_opts:
+                exit('Unknown option "%s"' % x)
+            OPTS[long_opts[name]] = True
+        elif x[0] != "-" or x == "-":
+            args.append(x)
+        elif x[1] in arg_opts:
+            OPTS[arg_opts[x[1]]] = x[2:] or next(arg_it)
+        else:
+            for i, o in enumerate(x[1:], start=1):
+                if o in arg_opts:
+                    OPTS[arg_opts[o]] = x[i+1:] or next(arg_it)
+                    break
+                if o not in bool_opts:
+                    exit('Unknown option "-%s"' % o)
+                OPTS[bool_opts[o]] = True
+
+    # Validate args
+    if len(args) < 1:
+        exit("Please specify file or dir")
+    elif len(args) > 2:
+        exit("Too many arguments")
+
+    path = args[0]
+    outfile = args[1] if len(args) >= 2 else None
+
+    if OPTS["engine"]:
+        import xt
+        xt.init()
+
+    pack = Path(__file__).resolve().parent / "rosetta" / f'pack_{OPTS["lang"]}.nut'
+    if pack.exists():
+        load_ref(str(pack), silent=True)
+
+    if OPTS["check"]:
+        load_ref(OPTS["check"])
+        run_check(path)
+        return
+
+    if OPTS["ref"]:
+        load_ref(OPTS["ref"])
+
+    extract_path(path)
+
+
+def exit(message):
+    error(message)
+    sys.exit(1)
+
+def error(message):
+    print(red(message), file=sys.stderr)
+    if OPTS["failfast"]:
+        sys.exit(1)
+
+def warn(message):
+    print(red(message), file=sys.stderr)
+
+def debug(*args):
+    if OPTS["debug"]:
+        print(*args, file=sys.stderr)
+
+
+def run_check(path):
+    out = lambda s: print(s, file=sys.stderr)
+    new_blocks, unmatched_blocks, partial_blocks = check(path)
+
+
+    if new_blocks or unmatched_blocks or partial_blocks or DUP_BLOCKS or DUP_CAPTURE_BLOCKS \
+            or BAD_PATTERN_BLOCKS:
+        print(yellow(f"CHECK: {OPTS['check']}"), file=sys.stderr)
+        if new_blocks:
+            out(red("NEW:"))
+            for b in new_blocks:
+                out(b)
+        if unmatched_blocks:
+            out(red("UNMATCHED:"))
+            for b in unmatched_blocks:
+                out(_format(b))
+        if partial_blocks:
+            out(red("PARTIAL:"))
+            for b, leaked in partial_blocks:
+                out(_format(b))
+                out(red("    untranslated literals: " + ", ".join(map(repr, leaked))))
+        if DUP_BLOCKS:
+            out(red("DUPS:"))
+            for b in DUP_BLOCKS:
+                out(_format(b))
+        if DUP_CAPTURE_BLOCKS:
+            out(red("DUP CAPTURES (a name is reused in 'en' - captures collapse to the last match, give each a unique name):"))
+            for b in DUP_CAPTURE_BLOCKS:
+                out(_format(b))
+        if BAD_PATTERN_BLOCKS:
+            out(red("BAD PATTERNS (raw extractor hint left in 'en' - rewrite as a <name:type> capture, it never matches at runtime):"))
+            for b in BAD_PATTERN_BLOCKS:
+                out(_format(b))
+        sys.exit(1)
+    else:
+        out(green("Rosetta OK"))
+
+
+def check(path):
+    lang = OPTS["lang"]
+    collected = []
+    extract_path(path, out=collected.append)
+
+    new_blocks = [b for b in collected if f'{lang} = ""' in b]
+
+    used_ens = {ast.literal_eval(f'"{m.group(1)}"') for b in collected if f'{lang} = ""' not in b
+                for m in re.finditer(r'\ben\s*=\s*"([^"]+)"', b, re.MULTILINE)}
+    # A <x:t> capture recursively translates the captured value, so the pairs translating the
+    # candidate literals (listed in the block's code-reference comment) are used through the
+    # capture, even though those literals are never extracted as standalone strings.
+    for b in collected:
+        if f'{lang} = ""' not in b and re.search(r'<[\w.]+:t>', b):
+            used_ens.update(_comment_strings(b))
+    unmatched_blocks = [REF_BLOCKS[en] for en in set(REF_BLOCKS) - used_ens]
+
+    new_set = set(new_blocks)
+    seen = set()
+    partial_blocks = [(b, leaked) for b in collected
+                      if b not in new_set and (leaked := _leaked_literals(b, seen))]
+
+    return new_blocks, unmatched_blocks, partial_blocks
+
+def _comment_strings(block):
+    code = (re_find(r'^\s*\{((?:\s*//.*\n)*)', block) or '').replace('//','')
+    return iter_strings(code)
+
+def _leaked_literals(block, seen):
+    leaked = []
+    for s in _comment_strings(block):
+        if re.search(r'^[+-]\d+%?$', s): continue
+        if s in seen: continue
+        seen.add(s)
+        if set(_iter_keys(s)) <= KNOWN_WORDS: continue
+        leaked.append(s)
+    return leaked
+
+
+# Reference
+
+_REF_TOKEN_RE = re.compile(r'\s*(?:'
+    r'//\s*en\s*=\s*(?P<no_en>"(?:[^"\\]|\\.)+").*'
+    r'|(?P<code>//[^\n]*)'
+    r'|(?P<open>\{)'
+    r'|(?P<close>\},?)'
+    r'|en\s*=\s*(?P<en>"(?:[^"\\]|\\.)+"),?'
+    # Strings, chars and comments are matched whole, so that braces inside them are not
+    # mistaken for block delimiters. NOTE: verbatim @"" strings are not handled.
+    r"""|(?P<other>(?:"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'|(?s:/\*.*?\*/)|[^\s{}"'])+)"""
+r')')
+
+def iter_ref_tokens(text):
+    for m in _REF_TOKEN_RE.finditer(text):
+        yield m.group(0), m.lastgroup, m.group(m.lastgroup)
+
+REF_PAIRS = {}
+REF_RULES = defaultdict(list)
+CODE_RULES = defaultdict(str)
+REF_BLOCKS = {}   # en -> block, for all non-silent ref entries; used to report unmatched
+DUP_BLOCKS = []
+DUP_CAPTURE_BLOCKS = []  # en patterns reusing a capture name - they collapse to the last match
+BAD_PATTERN_BLOCKS = []  # en patterns left as raw extractor hints, e.g. <item.getName()>
+
+_CAPTURE_RE = re.compile(r'<(\w+):\w+>')
+def _dup_captures(en):
+    names = _CAPTURE_RE.findall(en)
+    return [n for n in dict.fromkeys(names) if names.count(n) > 1]
+
+_HINT_RE = re.compile(r'<[^>]*>')
+def _bad_pattern_captures(en):
+    # The runtime only accepts <name:type> captures (patternRe in !rosetta.nut). Any other
+    # angle-bracketed bit is a raw extractor hint like <item.getName()> that silently degrades
+    # to literal text at runtime and never matches - the regex-vs-hint check can't see this.
+    return _HINT_RE.findall(_CAPTURE_RE.sub('', en))
+KNOWN_WORDS = set()  # words seen in any en/no_en (mod + silent pack), for PARTIAL check
+
+def load_ref(ref_file, silent=False):
+    if not OPTS["quiet"] and not hasattr(ref_file, 'read'):
+        print(yellow(f"REF: {ref_file}"), file=sys.stderr)
+    with (ref_file if hasattr(ref_file, 'read') else open(ref_file)) as fd:
+        block, en, code, meat = '', None, [], False
+        level = 0
+        for m, tok, val in iter_ref_tokens(fd.read()):
+            block += m
+            if tok == 'open':
+                if level <= 0:
+                    block, en, code, meat = m, None, [], False
+                level += 1
+            elif tok == 'close':
+                level -= 1
+                if level == 0:
+                    if en in REF_BLOCKS:
+                        DUP_BLOCKS.append(block)
+                        continue
+                    pair = '' if silent else block
+                    # Ref by commented out code
+                    if code:
+                        CODE_RULES[_code_key(code)] += pair
+                    # Ref by en
+                    if en:
+                        if not silent:
+                            REF_BLOCKS[en] = block
+                        if "<" in en:
+                            if not silent and _dup_captures(en):
+                                DUP_CAPTURE_BLOCKS.append(block)
+                            if not silent and _bad_pattern_captures(en):
+                                BAD_PATTERN_BLOCKS.append(block)
+                            key = _rule_key(en)
+                            REF_RULES[key].append([_pattern2re(en), en, pair])
+                        else:
+                            REF_PAIRS[en] = pair
+            elif tok == 'code':
+                if level > 0:
+                    if not meat:
+                        code.append(val)
+            elif tok == 'en':
+                en = ast.literal_eval(val)
+                KNOWN_WORDS.update(_iter_keys(en))
+            elif tok == 'no_en':
+                no_en = ast.literal_eval(val)
+                if no_en not in REF_PAIRS:
+                    REF_PAIRS[no_en] = '' if silent else m
+                KNOWN_WORDS.update(_iter_keys(no_en))
+            elif tok == 'other':
+                if level > 0:
+                    meat = True
+
+LITERAL_SUB_RES = {  # mirror of subRes in !rosetta.nut for captures matching plain literals
+    'int': r'|[+\-]?\d+',
+    'val': r'|[+\-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?%?',
+}
+
+def _pattern2re(pat):
+    def _prepare(p):
+        if not p or p[0] != '<':
+            return re.escape(p)
+        elif wrapped := re_find(r'<\w+:tag>([^<]+)<\w+:tag>', p):
+            text = re.escape(wrapped)
+            return (fr'(?:<[\w.:]*{FORMAT_FUNCS_RE}\({text}\)>'
+                    fr'|\[\w+=<[^>]+>\]{text}\[/\w+\])')
+        else:
+            # A number may be dynamic or baked into the literal - runtime :int/:val match both
+            extra = LITERAL_SUB_RES.get(re_find(r'<\w+:(\w+)>', p), '')
+            return r'(?:\[color=<[^>]+>\][^\[]*\[/color\]|<[^>]+>%s)' % extra
+
+    pat_re = ''.join(map(_prepare, re.split(r'(<\w+:tag>[^<]+<\w+:tag>|<[^>]+>)', pat)))
+    return f'^{pat_re}$'
+
+def ref_code(code):
+    key = _code_key(code)
+    if (rule := CODE_RULES.get(key)) is not None:
+        # Same code may produce several rule entries, which we concat on ref collection, however,
+        # it will be asked for any opt found in expression.
+        CODE_RULES[key] = ''
+        return rule
+
+def _code_key(code):
+    return '\n'.join(line.strip().lstrip('/').lstrip() for line in code)
+
+def ref_en(opt):
+    if opt in REF_PAIRS:
+        return REF_PAIRS[opt]
+
+    if not REF_RULES:
+        return None
+
+    for key in _opt_keys(opt):
+        for en_re, en, pair in REF_RULES.get(key, ()):
+            if re.search(en_re, opt):
+                return pair
+
+
+NESTED_RE = re.compile(r'\[([^|]+)\|[^]]+\]')
+IMG_RE = re.compile(r'\[img[^\]]*\][^\[]+\[/img\w*\]|\[[^\]]+]')  # img + imgtooltip
+TAGS_RE = re.compile(r'\[[^\]]+]|\[\w+[^\]]*$|^\]')  # full open or close and cut in half open
+stop = set("""a the of in at to as is be are do has have having not and or"
+              it it's its this that he she his her him ah eh , .""".split(" "))
+PATTERN_KEY_RE = re.compile(r"([\w!-;?-~]*)<\w+:(\w+)>([\w!-;?-~]*)")  # drop partial words adjacent to patterns
+
+def _strip_tags(s):
+    s = NESTED_RE.sub(r'\1', s)
+    s = IMG_RE.sub(' ', s)
+    return TAGS_RE.sub(' ', s)
+
+def _rule_key(pat):
+    def repl(m):
+        prefix, sub, suffix = m.groups()
+        return f'{prefix} {suffix}' if sub == 'tag' or sub.endswith('_tag') else ' '
+
+    s = PATTERN_KEY_RE.sub(repl, pat)
+    return first(_iter_keys(s))
+
+def _opt_keys(opt):
+    s = re.sub(fr'<[\w.:]*{FORMAT_FUNCS_RE}\(([^)]*)\)>', r' \2 ', opt)
+    return chain(_iter_keys(s), [None])
+
+def _iter_keys(s):
+    # TODO: drop partial words same as in _rule_key?
+    s = re.sub(r'<\w[^>]*>|%[sdif]|%', ' ', s)  # strip rosetta captures, html tags, %s, %d
+    words = _strip_tags(s).lower().strip().split()
+    for w in words:
+        if w not in stop and (w[0] > ' ' and w[0] < '0' or w[0] > '9'):
+            yield w
+
+
+# Extraction
+
+FILES_SKIP_RE = re.compile(
+    r'(\b|_)(rosetta(\w+)?|mocks|test|hack_msu)(\b|[_.-])|(?:^|[/\\])(!!redirect|~~finalize)')
+
+def extract_path(path, out=print):
+    path = Path(path)
+    if path.is_dir():
+        extract_dir(path, out)
+    elif path.is_file():
+        out(NUT_HEADER.format(**OPTS))
+        extract_file(path, out)
+        out(NUT_FOOTER)
+    else:
+        exit("File not found: " + str(path))
+
+def extract_dir(path, out=print):
+    count, skipped, failed = 0, 0, 0
+    out(NUT_HEADER.format(**OPTS))
+
+    for subfile in sorted(path.glob("**/*.nut")):
+        if FILES_SKIP_RE.search(str(subfile)):
+            if not OPTS["quiet"]:
+                print(yellow("SKIPPING: %s" % subfile), file=sys.stderr)
+            skipped += 1
+            continue
+
+        if not OPTS["quiet"]:
+            print(yellow("FILE: %s" % subfile), file=sys.stderr)
+        try:
+            extract_file(subfile, out)
+        except Exception as e:
+            if OPTS["failfast"]:
+                raise
+            import traceback
+            warn(traceback.format_exc())
+            failed += 1
+
+        count += 1
+
+    out(NUT_FOOTER)
+    print(green(f"Processed {count} files"
+        + (f", skipped {skipped}" if skipped else "")
+        + (f", failed {failed}" if failed else "")),
+          file=sys.stderr)
+
+def extract_file(filename, out):
+    with open(filename, encoding='utf8') as fd:
+        code = fd.read()
+
+    pairs = list(extract(code, filename=filename))
+
+    if pairs:
+        out("    // FILE: %s" % filename)
+
+    if OPTS["engine"]:
+        import xt
+
+        todo = [p for p in pairs if isinstance(p, dict) and not p[OPTS["lang"]]]
+        ens = [p["en"] for p in todo]
+        rus = xt.translate(OPTS["engine"], ens)
+        for p, ru in zip(todo, rus):
+            p[OPTS["lang"]] = ru
+
+    for pair in pairs:
+        out(_format(pair))
+
+def _format(d):
+    if isinstance(d, str):
+        return d.removeprefix('\n').rstrip()
+
+    context_comment = f"    // context: {d['_context']}\n" if "_context" in d else ""
+    lines = "".join(f"        {key} = {nutstr(val)}\n" for key, val in d.items() if key[0] != "_")
+    return f"{context_comment}    {{\n{_prepare_code(d.get('_code'))}{lines}    }}"
+
+def _prepare_code(code):
+    if code is None:
+        return ''
+    lines = [l.replace('\t', ' ') for l in code]
+    prefix = min(len(l) - len(l.lstrip(' ')) for l in lines)
+    return "".join(f"        // {line[prefix:].rstrip()}\n" for line in lines)
+
+def _refresh_code(block, code):
+    return re.sub(r'{\s*\n(\s*//.*\n)*', '{\n' + _prepare_code(code).replace('\\', '\\\\'), block)
+
+
+HOOK_RE = re.compile(r'\bhook|\bmods_hook')
+
+class ContextTracker:
+    def __init__(self, stream):
+        # TODO:
+        #   - clean shit like q, cls, p, m?
+        #   - maybe readd filename if it is not duplicated by root assignment like in BB classes
+        self.stream = stream
+        self.scopes = []  # Stack of {'name': ..., 'depth': (brace, paren), 'type': 'function'|'assignment'|'call'}
+        self.depth = 0
+
+    def update_to(self, pos):
+        assert pos >= self.stream.pos, "Cannot go backwards"
+
+        while self.stream.pos < pos:
+            self._update(self.stream.read())
+
+    def _update(self, tok):
+        # Track {}()[] depth, assume it's balanced
+        if tok.val in "{([":
+            # Transit pending function defs, check their depth to body depth
+            top = self.scopes and self.scopes[-1]
+            if tok.val == "{" and top and top.get('pending') and top["depth"] == self.depth:
+                top.update({'depth': self.depth + 1, 'pending': False})
+
+            self.depth += 1
+
+            # Check if this is a function call (but not function parameters)
+            if tok.val == "(" \
+                    and self.stream.peek(-2).val != "function" \
+                    and (lhs := _extract_lhs(self.stream).removeprefix("this.")):
+                # Special handling for hook() calls
+                if HOOK_RE.search(lhs) and (param := self.stream.peek(1)) and param.op == "str":
+                    scope_name = ast.literal_eval(param.val).split('/')[-1]
+                    self.scopes.append({'name': scope_name, 'depth': self.depth, 'type': 'call',
+                                        'hook': True})
+                else:
+                    self.scopes.append({'name': lhs + '()', 'depth': self.depth, 'type': 'call'})
+
+        elif tok.val in "})]":
+            self.depth -= 1
+            self._unwind_scopes()
+
+        # Track function definitions
+        elif tok.val == "function":
+            next_tok = self.stream.peek(1)
+            if next_tok.op == "ref":  # Named function - it's a statement
+                self._drop_current_assignment()
+                name = next_tok.val
+                self.scopes.append({'name': name, 'depth': self.depth, 'type': 'function',
+                                    'pending': True})
+            # For anonymous functions (followed by `(`), don't drop - part of expression
+
+        # Track assignments
+        elif tok.val in {"=", "<-"}:
+            self._drop_current_assignment()
+            lhs = _extract_lhs(self.stream).removeprefix("this.")
+            self.scopes.append({'name': lhs, 'depth': self.depth, 'type': 'assignment'})
+
+        elif tok.val in {';', ','} or tok.op == 'keyword':
+            self._drop_current_assignment()
+
+    def _unwind_scopes(self):
+        while self.scopes and self.scopes[-1]['depth'] > self.depth:
+            self.scopes.pop()
+
+    def _drop_current_assignment(self):
+        top = self.scopes and self.scopes[-1]
+        if top and top['type'] == 'assignment' and top['depth'] >= self.depth:
+            self.scopes.pop()
+
+    def get_context(self):
+        # Find the last hook scope and cut off everything before it
+        hook_idx = first(len(self.scopes) - 1 - i for i, scope in enumerate(reversed(self.scopes))
+            if scope.get('hook'))
+
+        # Use scopes from hook onwards, or all scopes if no hook
+        parts = [scope['name'] for scope in self.scopes[hook_idx:] if scope['name'] != 'inherit()']
+        return ".".join(parts) if parts else ""
+
+
+SEEN = set()
+
+def _seen_key(opt):
+    # Numbers only vary the hint, not the pattern; literal ones make a distinct string
+    return re.sub(r'<[^>]*>', lambda m: re.sub(r'\d+', '1', m.group()), opt)
+
+
+def extract(code, filename=None):
+    stream = TokenStream(code)
+    context = ContextTracker(stream.clone())  # iterates independently
+    lines = code.splitlines()
+
+    for s in iter_strings(stream):
+        debug(green('>>>>>'), s)
+        context.update_to(stream.pos)
+        expr = extract_expr(stream, lines)
+        if expr is None:
+            continue
+
+        debug('EXPR', expr)
+        for opt in expr_options(expr):
+            debug('OPT', opt)
+            if not opt_has_str(opt):
+                continue
+            opt = str_opt(opt)
+
+            seen_key = _seen_key(opt)
+            if seen_key in SEEN: continue
+            SEEN.add(seen_key)
+
+            code, pair = None, None
+            if expr.op != 'str' or '<' in opt or '%s' in opt:
+                # A single token expr leaves the stream on it, so peek(-1) points before its line
+                code = lines[expr.n - 1:max(expr.n, stream.peek(-1).n)]
+                pair = ref_code(code)
+                if pair is None:
+                    pair = ref_en(opt)
+                    if pair not in {None, ''}:
+                        pair = _refresh_code(pair, code)
+            else:
+                pair = ref_en(opt)
+
+            if pair is not None:
+                if pair != '':
+                    yield pair
+                continue
+
+            # TODO: better expr detection
+            pair = {"mode": "pattern"} if expr.op != 'str' and '<' in opt or '%s' in opt else {}
+            pair |= {"en": opt, OPTS["lang"]: ''}
+            if code:
+                pair["_code"] = code
+            if OPTS['context']:
+                pair["_context"] = context.get_context()
+
+            debug(_format(pair))
+            yield pair
+
+        stream.chop()
+
+
+def extract_expr(stream, lines):
+    prev_pos = stream.pos
+    tok = stream.peek(0)
+    debug('LINE to REWIND', lines[tok.n - 1])
+
+    failed = True
+    for start_pos in rewinds(stream):
+        stream.pos = start_pos + 1
+        debug('REWIND', stream.peek(0), stream.pos)
+
+        if expr_destroyed(stream):
+            debug('expr_destroyed')
+            stream.pos = prev_pos
+            return None
+
+        stream.pos -= 1
+        expr = parse_expr(stream)
+        debug('PARSE', expr)
+
+        if stream.pos < prev_pos:  # Failed to parse
+            continue
+
+        if expr.op == 'call' and STOP_FUNCS_RE.search(expr.val[0].val):
+            debug('stop_call')
+            stream.pos = prev_pos
+            return None
+
+        if is_str_expr(expr):
+            return expr
+
+        debug('non_str')
+        failed = False
+    else:
+        if failed:
+            error('FAILED TO PARSE around %s, line %d' % (str(tok), tok.n))
+
+        # If we failed to parse then simply use string as is
+        stream.pos = prev_pos
+        return tok
+
+
+def value_destroyed(stream):
+    peek = stream.peek(1)
+    if peek.val in {'?', '==', '!=', '>=', '<=', 'in'}:
+        return True
+    if peek.val == '.' and stream.peek(2).val == 'len':
+        return True
+    if peek.val == ':' and stream.peek(-1).val != '?':  # table key
+        return True
+
+    return expr_destroyed(stream)
+
+def expr_destroyed(stream):
+    peek_back = stream.peek(-1)
+    if peek_back.val in {'throw', 'typeof', 'case', '==', '!=', '>=', '<='}:
+        return True
+
+    if peek_back.val == '(':
+        func = _extract_lhs(stream, 1)
+        if FIRST_ARG_STOP_RE.search(func) or STOP_FUNCS_RE.search(func):
+            return True
+
+def _extract_lhs(stream, i=0):
+    """The reference ending right before peek(-i), its dots, calls and indexes included,
+       i.e. this.getFlags().add for this.getFlags().add("ghoul")"""
+    start, i = i, i + 1
+    while True:
+        tok = stream.peek(-i)
+        if tok.op == 'ref':
+            i += 1
+            if stream.peek(-i).val != '.':
+                break
+            i += 1
+        elif tok.val in {')', ']'}:
+            i = _rewind_parens(stream, i, tok)
+            i += 1
+        else:
+            break
+    return ''.join(stream.peek(-j).val for j in range(i - 1, start, -1))
+
+def is_str_expr(expr):
+    if expr.op == 'func':  # bare function literal never carries a translatable string
+        return False
+    elif expr.op == 'call':
+        return re.search(FORMAT_FUNCS_RE, expr.val[0].val)
+    elif expr.op == 'expr':
+        if expr.val[0].val in ('[', '{'):
+            return False
+        elif len(expr.val) >= 2 and expr.val[1].val == 'in':
+            return False
+        # A call chain a(...).b("str") is an operand, not a concatenation: its value is the
+        # last call's, so it falls under the same rule as a bare call.
+        elif not any(t.op == 'op' and t.val in BINARY_OPS for t in expr.val):
+            return is_str_expr(expr.val[-1])
+    return True
+
+
+from functools import wraps
+from itertools import product
+
+
+STOP_FUNCS = [
+    r'regexp|rawin|rawget|createColor|getSprite|addSprite|setSpriteOffset',
+    r'startswith|endswith|cutprefix|cutsuffix',
+    r'log(Info|Warning|Error)|Debug\.with|Debug\.log|logRepr|printData|printLog',
+    r'mods_queue|queue|require|conf|getSetting|hasSetting',
+    r'isKindOf|mods_isClass|Properties\.(get|remove)',
+    r'(has|get|getAsInt|getAsFloat|remove|increment)|Flags\.(set|pack|unpack)|getFlags\(\)\.\w+',
+]
+
+STOP_FUNCS_RE = re.compile(r'\b(%s)\b' % '|'.join(STOP_FUNCS))
+FIRST_ARG_STOP_RE = re.compile(
+    r'\b(Class\.\w+Setting|lockSetting|add[A-Z]\w+Setting|rawset)\b')
+FORMAT_FUNCS_RE = r'\b(getColorized\w*|Text.\w+|green|red|color|format)'
+
+
+REWIND_PARENS = {')': '(', ']': '[', '}': '{'}
+
+def rewinds(stream):
+    return sorted({stream.pos - i for i in _rewinds(stream)})
+
+def _rewinds(stream):
+    i, prev = 0, TokenStream.NONE
+    while True:
+        tok = stream.peek(-i)
+        if tok.val in {'if', 'for', 'case', 'switch'}:
+            break
+        elif tok.val in {None, ';', '+=', '=', '<-', '&&', '||', 'throw', 'return'}:
+            yield i
+            break
+        elif tok.val in {',', '['}:
+            yield i
+        elif tok.val in REWIND_PARENS:
+            i = _rewind_parens(stream, i, tok)
+            tok = stream.peek(-i)
+        elif tok.val == '(':
+            #  yield i will capture the first arg of the func, which is wrong,
+            #  while i + 1 captures (arg1, arg2), so works if there is only one argument :)
+            yield i + 1
+        elif prev.val == '(' and tok.op == 'ref':
+            yield i + 1
+
+        i += 1
+        prev = tok
+
+def _rewind_parens(stream, i, paren):
+    open_val = REWIND_PARENS[paren.val]
+
+    start, count = i, 1
+    while count > 0:
+        i += 1
+        tok = stream.peek(-i)
+        if tok.val == paren.val:
+            count += 1
+        elif tok.val == open_val:
+            count -= 1
+        elif tok.val is None:
+            if stream.pos < 0:
+                warn("Found unpaired %s on line %s" % (tok.val, tok.n))
+            return start
+
+    return i
+
+
+class Revert:  # TODO: refactor into exception?
+    def __str__(self):
+        return "<revert>"
+    __repr__ = __str__
+REVERT = Revert()
+
+def revert_pos(func):
+    @wraps(func)
+    def wrapper(stream, **kwargs):
+        pp = stream.pos
+        res = func(stream, **kwargs)
+        if res is REVERT:
+            stream.pos = pp
+        return res
+    return wrapper
+
+
+UNARY_OPS = {'!', '-', '--', '++'}
+BINARY_OPS = {'==', '>=', '<=', '!=', 'in', '&&', '||'} | set('+-/*<>')
+
+def parse_expr(stream):
+    args = []
+    debug("parse_expr >", stream.pos, stream.peek())
+    while operand := parse_operand(stream):
+        debug("parse_expr operand:", stream.pos, operand)
+        if operand is REVERT:
+            break
+        args.append(operand)
+
+        tok = stream.peek()
+        if tok.op == 'op' and tok.val in BINARY_OPS:
+            stream.pos += 1
+            args.append(tok)
+        elif tok.val == '?' and args:
+            stream.pos += 1
+            cond = Token(args[0].n, 'expr', args) if len(args) > 1 else args[0]
+            args = []
+            tern = parse_ternary(cond, stream)
+            if tern:
+                args.append(tern)
+            else:
+                args.append(cond)
+                break
+        else:
+            break
+
+    if not args:
+        return REVERT
+    return Token(args[0].n, 'expr', args) if len(args) > 1 else args[0]
+
+
+def parse_ternary(cond, stream):
+    positive = parse_expr(stream)
+    if not positive:
+        return
+    tok = stream.read()
+    if tok.val != ':':
+        return
+    negative = parse_expr(stream)
+    if not negative:
+        return
+    return Token(cond.n, 'ternary', [cond, positive, negative])
+
+
+def parse_operand(stream):
+    debug("parse_operand >", stream.pos, stream.peek())
+    base = parse_primitive(stream)
+    if base is REVERT:
+        return REVERT
+
+    args = [base]
+    while tok := stream.peek():
+        if tok.val == '.':
+            if stream.peek(2).op == 'ref':
+                stream.pos += 1
+                args.extend([tok, stream.read()])
+            else:
+                break
+
+        elif tok.val == '(':
+            assert args, "Should be handled by parse_primitive"
+            if args[-1].op != 'ref': # Do not handle <arbitrary-expr>(...) calls for now
+                warn("Found weird call: %s(...)" % args)
+                break
+
+            func = args[-1]
+            call = parse_call(func, stream)
+            if call is REVERT:
+                break
+            args[-1] = call
+
+        elif tok.val == '[':
+            assert args, "Should be handled by parse_primitive"
+            stream.pos += 1
+            expr = parse_expr(stream)
+            if expr is REVERT:
+                stream.pos -= 1
+                break
+
+            if close := stream.eat(']'):
+                args.extend([tok, expr, close])
+            else:
+                break
+
+        elif tok.val in {'++', '--'}:
+            stream.pos += 1
+            args.append(tok)
+
+        else:
+            break
+
+    if not args:
+        return REVERT
+    return Token(args[0].n, 'expr', args) if len(args) > 1 else args[0]
+
+
+@revert_pos
+def parse_primitive(stream):
+    tok = stream.read()
+
+    if tok.op in {'str', 'num'}:
+        return tok
+
+    elif tok.op == 'ref':
+        return tok
+
+    elif tok.val in UNARY_OPS:
+        expr = parse_expr(stream)
+        if expr is REVERT:
+            return REVERT
+        return Token(tok.n, 'expr', [tok, expr])
+
+    elif tok.val == '(':
+        expr = parse_expr(stream)
+        if stream.peek().val == ')':
+            stream.read()
+            return expr
+
+    elif tok.val in {'[', '{'}:
+        tokens = parse_parens(stream, tok)
+        if tokens is REVERT:
+            return REVERT
+        return Token(tok.n, 'expr', [tok] + tokens + [stream.peek(0)])
+
+    # Function literal as an operand (e.g. a callback arg): consume it opaquely so
+    # the surrounding call still parses and its string args aren't swallowed.
+    elif tok.val == 'function':
+        if stream.peek().op == 'ref':  # optional name
+            stream.read()
+        for opener in ('(', '{'):  # params, then body
+            if stream.peek().val == opener and parse_parens(stream, stream.read()) is REVERT:
+                return REVERT
+        return Token(tok.n, 'func', 'function')
+
+    debug("parse_primitive REVERT", stream.peek())
+    return REVERT
+
+def parse_call(func, stream):
+    debug("parse_call >", func)
+    paren = stream.read()
+    assert paren.val == '('
+
+    if STOP_FUNCS_RE.search(func.val):
+        tokens = parse_parens(stream, paren, break_at={'function'})
+        if tokens is REVERT:
+            return REVERT
+        return Token(func.n, 'call', [func, tokens])
+
+    args = []
+    while not stream.eat(')') and (expr := parse_expr(stream)):
+        args.append(expr)
+
+        tok = stream.read()
+        if tok.val == ')':
+            break
+        elif tok.val != ',':
+            debug("parse_call > unexpected", tok)
+            return REVERT
+
+    return Token(func.n, 'call', [func, args])
+
+def parse_parens(stream, paren, break_at=()):
+    debug("parse_parens", paren)
+    open_val = paren.val
+    close_val = {'(': ')', '[': ']', '{': '}'}[paren.val]
+
+    count, tokens = 1, []
+    for tok in stream:
+        tokens.append(tok)
+        if tok.val == open_val:
+            count += 1
+        elif tok.val == close_val:
+            count -= 1
+            if count == 0:
+                return tokens[:-1]
+        elif tok.val in break_at:
+            stream.back()
+            return []
+    else:
+        warn("Found unpaired %s on line %s" % (paren.val, paren.n))
+        return REVERT
+
+
+def opt_has_str(opt):
+    if isinstance(opt, Token):
+        if opt.op == 'call':
+            _, args = opt.val
+            return any(opt_has_str(a) for a in args)
+        else:
+            return opt.op == 'str' and opt.val != ''
+
+    elif isinstance(opt, tuple):
+        tokens = flatten(opt, follow=lambda x: type(x) is tuple)
+        return any(opt_has_str(t) for t in tokens)
+
+    assert isinstance(opt, str)
+    return opt != ''
+
+
+STR_OPS = {'+': ' + ', ',': ', '}
+
+def str_opt(opt, in_ref=False):
+    if isinstance(opt, Token):
+        if opt.op == 'call':
+            func, args = opt.val
+            pat = '%s(%s)' % (func.val, ', '.join(str_opt(a, in_ref=True) for a in args))
+            return pat if in_ref else "<%s>" % pat
+        else:
+            assert isinstance(opt.val, str)
+            s = STR_OPS.get(opt.val, opt.val)
+            return s if in_ref else '<%s>' % s
+
+    elif isinstance(opt, tuple):
+        tokens = flatten(opt, follow=lambda x: type(x) is tuple)
+        if not in_ref:
+            tokens = hide_concats(tokens)
+
+        res = ''
+        for is_str, group in groupby(tokens, key=isa(str)):
+            if is_str:
+                res += ''.join(group)
+            else:
+                expr_s = ''.join(str_opt(x, in_ref=True) for x in group)
+                res += expr_s if in_ref else '<%s>' % expr_s
+        return res
+
+    assert isinstance(opt, str)
+    return opt
+
+def hide_concats(seq):
+    seq = list(seq)
+    prev = None
+    for i, opt in enumerate(seq):
+        if isinstance(opt, Token) and opt.val == '+':
+            if isinstance(prev, str):
+                continue
+            if (ntok := seq[i+1] if i < len(seq) - 1 else None) and isinstance(ntok, str):
+                continue
+        yield opt
+        prev = opt
+
+
+def expr_options(tok):
+    if tok is REVERT:
+        yield "!PARSING_FAILED!"
+    elif isinstance(tok, str):  # Result of format unpacking
+        yield tok
+    elif tok.op == "str":
+        yield ast.literal_eval(tok.val)
+    elif tok.op == "expr":
+        yield from product(*[expr_options(sub) for sub in tok.val])
+    elif tok.op == "call":
+        func, args = tok.val
+        if func.val in {"format", "::format"} and args and args[0].op == "str":
+            parts = re.split(r'(%[.\d]*\w)', ast.literal_eval(args[0].val))
+            if len(parts[1::2]) != len(args[1:]):
+                warn("Broken format at line %d" % tok.n)
+            else:
+                parts[1::2] = args[1:]  # TODO: add op.+ ?
+                yield from expr_options(Token(tok.n, "expr", parts))
+                return
+        for t in product(*[expr_options(sub) for sub in args]):
+            yield Token(tok.n, 'call', [func, t])
+    elif tok.op == "ternary":
+        cond, pos, neg = tok.val
+        yield from expr_options(pos)
+        yield from expr_options(neg)
+    else:
+        yield tok
+
+
+def nutstr(s):
+    return '"' + s.replace('\\', '\\\\').replace('"', '\\"').replace("\n", "\\n") + '"'
+
+
+# Tokenization
+
+def iter_strings(code):
+    stream = TokenStream(code) if isinstance(code, str) else code
+    for tok in stream:
+        if tok.op != "str": continue
+        s = ast.literal_eval(tok.val)
+        if not is_interesting(s): continue
+        if value_destroyed(stream): continue
+        yield s
+
+class Token(namedtuple("Token", "n op val")):
+    __slots__ = ()
+    def __str__(self):
+        return '%s.%s' % (self.op, self.val)
+    __repr__ = __str__
+
+class TokenStream:
+    NONE = Token(None, None, None)
+
+    def __init__(self, code):
+        self.tokens = list(tok for tok in iter_tokens(code) if tok.op != 'comment')
+        self.pos = -1
+        self.start = 0
+
+    def clone(self):
+        new = TokenStream.__new__(TokenStream)
+        new.tokens, new.pos, new.start = self.tokens, self.pos, self.start
+        return new
+
+    def chop(self):
+        self.start = self.pos + 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        self.pos += 1
+        if self.pos >= len(self.tokens):
+            raise StopIteration
+        return self.tokens[self.pos]
+
+    def read(self):
+        return next(self, self.NONE)
+
+    def eat(self, val):
+        if self.peek().val == val:
+            return self.read()
+
+    def back(self):
+        self.pos -= 1
+        return self.tokens[self.pos] if self.pos >= self.start else self.NONE
+
+    def peek(self, n=1):
+        return self.tokens[self.pos + n] if self.start <= self.pos + n < len(self.tokens) else self.NONE
+
+
+res = {
+    "comment": r'(?s:/\*.*?\*/)|//.*|#.*',
+    "str": r'"(?:\\.|[^"\\])*"',
+    "num": r'\d[\d.]*',
+    "keyword": r'\b(?:if|else|for|foreach|return|function|switch|case|local|const)\b',
+    "op ": r'\bin\b',
+    "ref": r'(?:::)?[a-zA-Z_][\w.]*',
+    "op": r'==|!=|<=|>=|<-|&&|\|\||\+\+|--|[+\-*/]=|[+=\-/*!?(){},:;[\].<>]',
+    "shit": r'[^\s(){}]+',
+}
+names = tuple(res.keys())
+TOKENS_RE = re.compile('|'.join('(%s)' % r for r in res.values()))
+
+def iter_tokens(code):
+    i, last_pos = 1, 0
+    for m in TOKENS_RE.finditer(code):
+        i += code[last_pos:m.start()].count('\n')
+        last_pos = m.start()
+        yield first(Token(i, n.strip(), s) for n, s in zip(names, m.groups()) if s is not None)
+
+
+INTERNAL_RES = {
+    "id": r'^[a-z_-]+(\.[a-z_-]+)++',
+    "types": r'^(instance|function|table|array)$',
+    "file": r'^\w+/|\.[a-z0-9]{2,3}$',
+    "url": r'^https?://',
+    "num": r'^[0-9.]+$',
+    "hex": r'^#[a-fA-F0-9]+$',
+    "snake": r'^[_a-zA-Z]*_\w*$',
+    "mixed": r'^[a-z]+[A-Z]+[A-Za-z0-9]*$',
+    "camel": r'^(?:[A-Z][a-z0-9]+){2,}+[A-Z]*$',
+    "camel_id": r'^[\w-]+\.[A-Z][a-z0-9]+\w*$',
+    "kebab": r'^[a-z]*-[a-z0-9_-]*$',  # lowercase ids only; "Glaive-Guisarme" is a name, not an id
+    "common": r'^(title|description|text|hint|socket)$',
+    "junk": r'^[`~!@#$%^&*()_+=[\]\\{}|;:\'",./<>?\s-]+$',
+    "prefix": r'^[a-z]+:\s*$',
+    "req": r'^\w+ *>= *[0-9.-]+$',
+    # "key": r'^[a-z]+$',  # may have false positives
+}
+INTERNAL_RE = re.compile('|'.join(INTERNAL_RES.values()))
+HTML_TAG_RE = re.compile(r'<[^>]+>|&\w+;')
+
+def is_interesting(s):
+    s = _strip_tags(strip_html(s))
+    return s and not INTERNAL_RE.search(s)
+
+def strip_html(s):
+    return HTML_TAG_RE.sub('', s)
+
+
+# Helpers
+
+from itertools import chain
+from operator import methodcaller
+import re
+
+def flatten(seq, follow=None):
+    """Flattens arbitrary nested sequence.
+       Unpacks an item if follow(item) is truthy."""
+    for item in seq:
+        if follow(item):
+            yield from flatten(item, follow)
+        else:
+            yield item
+
+def is_line_junk(line, pat=re.compile(r"^\s*(?:$|//)")):
+    return pat.search(line) is not None
+
+def tabs_to_spaces(lines, num=4):
+    for line in lines:
+        yield line.replace("\t", " " * num)
+
+def isa(typ):
+    return lambda x: isinstance(x, typ)
+
+def lcat(seqs):
+    return list(chain.from_iterable(seqs))
+
+def first(seq):
+    """Returns the first item in the sequence.
+       Returns None if the sequence is empty."""
+    return next(iter(seq), None)
+
+def re_find(regex, s, flags=0):
+    """Matches regex against the given string,
+       returns the match in the simplest possible form."""
+    regex, _getter = _inspect_regex(regex, flags)
+    getter = lambda m: _getter(m) if m else None
+    return getter(regex.search(s))
+
+def re_iter(regex, s, flags=0):
+    """Iterates over matches of regex in s, presents them in simplest possible form"""
+    regex, getter = _inspect_regex(regex, flags)
+    return map(getter, regex.finditer(s))
+
+def _inspect_regex(regex, flags):
+    if not isinstance(regex, re.Pattern):
+        regex = re.compile(regex, flags)
+    return regex, _make_getter(regex)
+
+def _make_getter(regex):
+    if regex.groups == 0:
+        return methodcaller('group')
+    elif regex.groups == 1 and regex.groupindex == {}:
+        return methodcaller('group', 1)
+    elif regex.groupindex == {}:
+        return methodcaller('groups')
+    elif regex.groups == len(regex.groupindex):
+        return methodcaller('groupdict')
+    else:
+        return lambda m: m
+
+# Coloring works on all systems but Windows
+if os.name == 'nt':
+    red = green = yellow = lambda text: text
+else:
+    red = lambda text: "\033[31m" + text + "\033[0m"
+    green = lambda text: "\033[32m" + text + "\033[0m"
+    yellow = lambda text: "\033[33m" + text + "\033[0m"
+
+
+if __name__ == "__main__":
+    main()

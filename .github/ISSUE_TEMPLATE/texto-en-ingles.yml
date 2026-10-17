@@ -1,0 +1,37 @@
+name: Texto en inglés en pantalla
+description: Algo del juego sale en inglés con el pack instalado.
+labels: ["texto en inglés"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar. Antes de seguir, mira si ya está en [KNOWN_ISSUES.md](https://github.com/backmind/battle-brothers-es/blob/main/es_pack/corpus/KNOWN_ISSUES.md): los nombres de los objetos legendarios siguen en inglés hasta que Rosetta pueda traducirlos, y los nombres de los mods se dejan en inglés a propósito.
+  - type: textarea
+    id: texto
+    attributes:
+      label: Qué sale en inglés
+      description: El texto tal como se lee, o lo más parecido que puedas.
+    validations:
+      required: true
+  - type: textarea
+    id: donde
+    attributes:
+      label: Dónde sale
+      description: La pantalla, el evento, el contrato o la situación en que apareció.
+    validations:
+      required: true
+  - type: textarea
+    id: captura
+    attributes:
+      label: Captura
+      description: Arrastra aquí la imagen. Es lo que más ayuda.
+  - type: textarea
+    id: log
+    attributes:
+      label: log.html
+      description: Opcional. Está en `Documentos\Battle Brothers\log.html` y se sobrescribe en cada arranque, así que cópialo antes de volver a abrir el juego. Arrástralo aquí.
+  - type: input
+    id: version
+    attributes:
+      label: Versión del juego y del pack
+      placeholder: "juego 1.5.2.3, pack 1.0.0"

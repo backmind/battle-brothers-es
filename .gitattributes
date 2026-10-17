@@ -1,0 +1,6 @@
+# Todo el texto del repo va en LF, también en Windows. Sin esto, un colaborador
+# con autocrlf convierte el corpus entero y el diff se vuelve ilegible.
+* text=auto eol=lf
+
+*.png binary
+*.zip binary

@@ -1,0 +1,5 @@
+# Los .js de esta carpeta se redistribuyen tal como venian de trad303.zip, que
+# los trae con CRLF. Fijarlo aqui hace que el zip del addon salga igual en
+# cualquier maquina: sin esto, core.autocrlf decide, y un checkout en Linux
+# generaria un artefacto distinto del que se verifico en partida.
+*.js text eol=crlf

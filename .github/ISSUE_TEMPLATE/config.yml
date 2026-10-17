@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dudas y conversación
+    url: https://github.com/backmind/battle-brothers-es/discussions
+    about: Para preguntas sobre instalación, el proyecto o la traducción que no son un fallo.

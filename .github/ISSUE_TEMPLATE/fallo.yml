@@ -1,0 +1,38 @@
+name: Fallo del juego
+description: El juego se cuelga, da un error o algo deja de funcionar con el pack instalado.
+labels: ["fallo"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué pasa
+      description: Qué hacías y qué ocurrió.
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Mods instalados
+      description: La lista de archivos de tu carpeta `data` que no son del juego, con sus versiones.
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: log.html
+      description: Está en `Documentos\Battle Brothers\log.html` y se sobrescribe en cada arranque, así que cópialo antes de volver a abrir el juego. Arrástralo aquí.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión del juego y del pack
+      placeholder: "juego 1.5.2.3, pack 1.0.0"
+    validations:
+      required: true
+  - type: checkboxes
+    id: sin-pack
+    attributes:
+      label: Comprobación
+      options:
+        - label: He probado a quitar los dos zips del pack y el fallo desaparece.

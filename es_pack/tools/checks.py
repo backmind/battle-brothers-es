@@ -1,0 +1,532 @@
+"""Chequeos de calidad del corpus: avisos, nunca bloqueantes.
+
+Uso:
+    PYTHONUTF8=1 uv run python es_pack/tools/checks.py
+
+Cada chequeo corresponde a una familia de fallos que ya apareció de verdad en
+este proyecto y que se detectó a mano. La idea es que una regresión de estas
+no vuelva a pasar inadvertida:
+
+  IMG        el [img] del inglés y el del español no coinciden, lo que en la
+             práctica demostró bloques de texto intercambiados entre eventos.
+  DUP_ES     una misma traducción en entradas inglesas no relacionadas, firma
+             del relleno espurio que dejó el alineado del bootstrap.
+  DUP_VECINO dos entradas inglesas distintas y cercanas de la MISMA tabla con
+             idéntica traducción, firma del desplazamiento en tablas de
+             nombres: una entrada se queda con el valor de su vecina. DUP_ES no
+             lo ve porque sólo mira traducciones de más de 15 caracteres, y los
+             nombres de tabla casi siempre son más cortos. Así salieron
+             Lindwurms llamados "Trols" y las huellas de Goblins como "Orcos".
+             Es un aviso para mirar, no un defecto probado: los que quedan son
+             convergencias legítimas, dos formas inglesas que en español dan
+             una sola ("An " y "A " dan las dos "Un ", 'Desert' y 'of the
+             Desert' dan las dos "del Desierto"), o pares donde el inglés se
+             repite a sí mismo con una errata. El recuento no baja a cero, y
+             no debe: bajarlo a cero exigiría inventar diferencias que el
+             español no tiene.
+  VARIANTES  el bloque {a|b|c} del español no tiene la misma estructura que el
+             del inglés. El juego elige una rama al azar, así que perder una
+             deja ramas inalcanzables o descoloca la elección. Se compara
+             INGLÉS contra ESPAÑOL, no el equilibrio interno del español: el
+             propio juego trae textos con llaves desparejadas (21 de 23 de
+             los casos que parecían rotos lo estaban ya en inglés).
+             Los avisos que quedan son 22 y ninguno es deuda: 17 AÑADEN rama,
+             repasados uno a uno y legítimos (los traductores metieron variedad
+             de su cosecha, y hasta un guiño a The Witcher en el hijo del
+             Cazadragones); y 5 tienen las mismas ramas con las llaves
+             repartidas de otra forma, que en la práctica no cambia nada porque
+             una llave sin ningún separador dentro devuelve su contenido tal
+             cual.
+             Hubo un tercer montón, 37 textos que PERDÍAN rama, y era la deuda
+             de es_pack/TAREA-ramas-perdidas.md. Está cerrada: se recuperaron
+             las 54 ramas y el recuento de ese montón es 0. Si vuelve a
+             aparecer alguno, es una regresión, no trabajo pendiente.
+  TOKENS     el español deforma un %token% o usa uno que el inglés del mismo
+             texto no menciona nunca. El juego los sustituye en marcha, así
+             que uno deformado se le muestra crudo al jugador, y uno que el
+             evento no define no tiene con qué rellenarse. Nadie lo vigilaba,
+             y un barrido de tildes mío dejó 20 veces %región% en vez de
+             %region%. Un token de más que el inglés SÍ usa en otra rama es
+             seguro, y a veces es el español corrigiendo al inglés: en
+             event_162 el original escribe "you meet with employer", sin los
+             signos de porcentaje, y el español pone bien %employer%.
+  RECORTE    faltan tokens y sin embargo las ramas cuadran, que es la firma de
+             una rama traducida en resumen: el español se salta una frase o
+             una escena entera y se lleva por delante sus %SPEECH_ON%. Se
+             separó de TOKENS porque no se repara tocando un marcador, sino
+             traduciendo lo que falta. Cuando además faltan ramas, el aviso no
+             se emite: eso ya lo cuenta VARIANTES y es la misma deuda contada
+             dos veces (ver es_pack/TAREA-ramas-perdidas.md).
+  PUNTUACION signo de cierre sin su apertura (? sin ¿, ! sin ¡).
+  TILDES     palabra sin tilde que el resto del corpus escribe acentuada, con
+             lista de homógrafos protegidos para no dar falsos positivos. La
+             regla general es de rareza (sólo avisa si la forma sin tilde es
+             marginal frente a la acentuada), y por eso dejaba escapar las que
+             se repiten: "barbaro" salía 7 veces frente a 71 de "bárbaro". Las
+             formas cuya versión sin tilde NO es palabra en español van aparte,
+             en SIEMPRE_CON_TILDE, y se avisan sin pasar por ese filtro.
+  REGISTRO   formas fuera de la política acordada (usted en interfaz, voseo,
+             jerga peninsular). El usted de un personaje hacia el capitán es
+             decisión editorial y NO se avisa.
+             Aquí decía que el vosotros narrativo también era decisión
+             editorial, y era falso: había 40 formas de vosotros y en 15 de los
+             25 ficheros convivían con su equivalente en ustedes, hasta el
+             punto de que el mismo comandante gritaba "¡CARGAD!" y ordenaba
+             "carguen" en el mismo evento. Un recurso no se contradice dentro
+             de una línea de diálogo; era el sesgo de quien tradujo esa tanda.
+             Y aquí decía a continuación que estaban todas convertidas y que
+             por eso no hacía falta vigilarlo, y también era falso: quedaban
+             DOCE vivas hasta el 01/09/2026 ("¡Asaltad el fuerte!", "¿Sois
+             cazadores de bestias?", "Guardad todo"), y nadie las veía porque
+             este chequeo solo miraba voseo y jerga. Dar por hecho que una
+             normalización quedó completa, sin un detector que lo sostenga, es
+             exactamente como se pierden doce. Ahora se vigila por tres vías:
+             formas conjugadas, clítico "os", e imperativo en -ad/-ed/-id
+             validado contra el infinitivo en el propio corpus, que es lo que
+             evita marcar "ciudad" o "juventud". Probado en los dos sentidos:
+             caza las catorce formas de prueba y no da ningún falso positivo.
+  CONTROL    carácter de control o invisible dentro de una traducción. Salió de
+             la QA del 31/08: una cadena llevaba dos tabuladores verticales
+             (U+000B) donde el inglés no tenía ningún salto, y ni se veían al
+             leer ni los cazaba nadie. Peor todavía, splitlines() de Python los
+             trata como fin de línea, así que partían la línea en dos y los
+             barridos escritos con esa función dejaban de ver el par entero sin
+             avisar de nada. Se vigilan también el espacio duro, los de ancho
+             cero y la marca de orden de bytes, por el mismo motivo: no se ven.
+             El recuento tiene que ser 0.
+
+Salida: recuento por chequeo y unos pocos ejemplos. Código de salida siempre 0.
+"""
+import re
+import sys
+import unicodedata
+from collections import Counter, defaultdict
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO / "es_pack" / "tools"))
+from build_dist import CORPUS, get_field, load_blocks  # noqa: E402
+
+EJEMPLOS = 4
+
+IMG_RE = re.compile(r"\[img\]([^\[]+)\[/img\]")
+# Los %token% los sustituye el juego en marcha y tienen que coincidir
+# literalmente con los del ingles. Si el espaniol pierde uno, esa parte del
+# texto se queda sin rellenar; si lo deforma, el jugador ve el marcador crudo.
+TOKEN_RE = re.compile(r"%[A-Za-z_][A-Za-z0-9_]*%")
+# Un token deformado ya no encaja con el patron de arriba, asi que sin esto solo
+# se veria como "falta el bueno" y no se sabria que hay uno roto al lado. Exige
+# empezar por letra ASCII para no confundirse con un porcentaje del texto.
+TOKEN_ROTO_RE = re.compile(r"%[A-Za-z_][A-Za-z0-9_ÁÉÍÓÚÜÑáéíóúüñ]*%")
+# Bloques de variantes {a|b|c}: el juego elige una rama al azar. Si el español
+# tiene menos ramas que el inglés, la elección puede caer en la equivocada. El
+# corpus codifica las llaves como \x7b y \x7d, así que se cuentan las dos formas.
+ABRE_RE = re.compile(r"\{|\\x7b")
+CIERRA_RE = re.compile(r"\}|\\x7d")
+WORD_RE = re.compile(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{4,}")
+VOSEO_RE = re.compile(r"\b(?:tenés|podés|querés|sabés|vení|mirá|dejá|regresás)\b", re.I)
+JERGA_RE = re.compile(r"\b(?:molón|molona|chaval|guay|flipar|mola)\b", re.I)
+# "vale" solo cuenta como jerga si es interjección: al principio o entre pausas
+VALE_INTERJ_RE = re.compile(r'(?:^|[.!?¡¿"\n]\s*)¿?[Vv]ale[.,!?]')
+# Caracteres de control sueltos dentro del texto. El corpus solo debe llevar
+# tabulador (\t), que sí aparece en algún literal del juego; cualquier otro es
+# corrupción. Se encontró así el par de tabuladores verticales del 31/08, que
+# el inglés no tenía y que splitlines() partía en dos, escondiendo el fallo a
+# los barridos que usaran esa función.
+CONTROL_RE = re.compile("[\\x00-\\x08\\x0b-\\x1f\\x7f\\u0085\\u00a0\\u200b\\u2028\\u2029\\ufeff]")
+
+# El vosotros no lo miraba nadie: se dio por eliminado en la normalizacion de
+# registro y quedaron doce vivos hasta el 01/09/2026 ("¡Asaltad el fuerte!",
+# "¿Sois cazadores de bestias?"). El detector viene del analisis de la 3.0.5 y
+# tiene tres vias: formas conjugadas, clitico "os", e imperativo en -ad/-ed/-id
+# validado contra el infinitivo en el propio corpus, que es lo que evita los
+# falsos positivos. Sin esa validacion, "ciudad" o "juventud" darian aviso.
+VOS_FORMAS_RE = re.compile(
+    r"\b(vosotros|vosotras|vuestr[oa]s?|habéis|tenéis|podéis|queréis|debéis|sabéis|"
+    r"veréis|seréis|haréis|iréis|estáis|sois|vais|decís|venís|hacéis|dais|"
+    r"[a-záéíóúñ]{3,}(?:áis|éis))\b", re.I)
+# "seis" y sus compuestos acaban en -éis sin ser verbos.
+SEIS_RE = re.compile(r"\b(?:seis|dieciséis|dieciseis|veintiséis|veintiseis)\b", re.I)
+OS_CLITICO_RE = re.compile(
+    r"(?:^|[\s¡¿\"])os\s+(?:he|ha|han|voy|doy|dar|dig|digo|lo|la|los|las|"
+    r"le|les|pag|dej|llev|ofrez|espera|juro|prometo|advierto|aseguro|"
+    r"ruego|pido|suplico|maldig|mat|vais|dais)", re.I)
+IMPERATIVO_VOS_RE = re.compile(r"\b([a-záéíóúñ]{5,}(?:ad|ed|id))\b", re.I)
+# Sustantivos en -ad/-ud/-id que no son imperativos de nada. La validacion
+# contra el infinitivo ya filtra casi todo; esto cubre los que coinciden por
+# casualidad con un verbo del corpus.
+NO_ES_VERBO = set("""ciudad verdad edad mitad libertad voluntad amistad piedad crueldad
+maldad bondad lealtad dificultad cantidad calidad oscuridad humanidad realidad
+enfermedad necesidad propiedad sociedad autoridad seguridad habilidad capacidad
+mortalidad eternidad divinidad santidad brutalidad hostilidad casualidad curiosidad
+felicidad gravedad humedad novedad obscuridad salud juventud virtud actitud gratitud
+multitud quietud red sed pared merced usted huesped cesped vid ardid id lid sud sur
+soledad tempestad majestad heredad deidad unidad utilidad vanidad ansiedad atrocidad
+barbaridad castidad claridad comunidad densidad dignidad diversidad entidad facilidad
+fertilidad fidelidad generosidad identidad inmortalidad inmensidad intensidad intimidad
+localidad moralidad mortandad oportunidad personalidad posibilidad prioridad profundidad
+prosperidad pubertad responsabilidad rivalidad sanidad sensibilidad simplicidad
+sinceridad solemnidad suciedad superioridad tenacidad totalidad tranquilidad vecindad
+velocidad vitalidad abad cavidad impunidad beldad hospitalidad ferocidad agilidad
+enemistad orfandad continuidad debilidad david madrid""".split())
+
+
+# Formas cuya versión sin tilde NO es palabra en español. Se avisan SIEMPRE, sin
+# pasar por el filtro de rareza de más abajo. Ese filtro las dejaba escapar
+# cuando la forma mala se repite: "barbaro" salía 7 veces frente a 71 de
+# "bárbaro", así que no llegaba a marginal y no se avisaba. Aparecieron todas
+# revisando world_location_names a mano. La lista crece cuando salga otra.
+SIEMPRE_CON_TILDE = {
+    "cabana": "cabaña", "cabanas": "cabañas",
+    "vegetacion": "vegetación",
+    "monticulo": "montículo", "monticulos": "montículos",
+    "barbaro": "bárbaro", "barbaros": "bárbaros",
+    "barbara": "bárbara", "barbaras": "bárbaras",
+    "reunion": "reunión",
+    "nomada": "nómada", "nomadas": "nómadas",
+    "conclave": "cónclave",
+    # segunda tanda, del barrido de todo el corpus
+    # "regiones" y "visiones" NO llevan tilde: el plural de región y visión la
+    # pierde porque cambia la sílaba tónica. No van en esta lista.
+    "region": "región",
+    "algun": "algún",
+    "golem": "gólem", "golems": "gólems",
+    "estupido": "estúpido", "estupidos": "estúpidos",
+    "estupida": "estúpida", "estupidas": "estúpidas",
+    "rios": "ríos",
+    "crias": "crías",
+    "jabali": "jabalí", "jabalies": "jabalíes",
+    "rapida": "rápida", "rapidas": "rápidas",
+    "rapido": "rápido", "rapidos": "rápidos",
+    "alquitran": "alquitrán",
+    "sequia": "sequía",
+    "union": "unión",
+    "arrastrandose": "arrastrándose",
+    "escandalo": "escándalo",
+    "lideres": "líderes",
+    "leido": "leído", "leida": "leída",
+    "totem": "tótem",
+    "imbecil": "imbécil",
+    "vision": "visión",
+    "dragon": "dragón",
+    "caido": "caído", "caida": "caída",
+    "paramo": "páramo",
+    "subterraneo": "subterráneo", "subterraneos": "subterráneos",
+    "subterranea": "subterránea", "subterraneas": "subterráneas",
+    # tercera tanda, del barrido de tildes de MÁS. Buscando tildes sobrantes
+    # salieron siete "Tumulos" en la tabla de nombres de sitio frente a un solo
+    # "Túmulos" bien escrito. La regla de rareza no llegaba: mira si la forma
+    # llana es marginal frente a la acentuada, y aquí la marginal era la buena.
+    "tumulo": "túmulo", "tumulos": "túmulos",
+}
+
+# Homógrafos: la forma sin tilde también existe y es correcta.
+PROTEGIDAS = {"asesino", "disparo", "perdida", "perdidas", "ultimo", "publico",
+              "practico", "critico", "domino", "acabo", "celebro", "continuo",
+              "deposito", "estimulo", "habito", "limite", "termino", "titulo",
+              # primera persona del presente, que en boca de un personaje es
+              # tan comun como el preterito de tercera: "gano arriesgando",
+              # "no compro esa tonteria", "el grupo con el que viajo"
+              "gano", "hablo", "trabajo", "pago", "espero", "camino",
+              "compro", "dejo", "viajo", "quemo",
+              # adjetivos que coinciden con una forma verbal acentuada
+              "sabia", "sabias", "continua", "continuas",
+              # "canon" es palabra, y ademas sostiene un chiste: el ladron pide
+              # que su ejecucion "no sea canon", que es 'cañón' escrito con una-
+              "canon"}
+
+# La subordinada delata al subjuntivo. "dondequiera que los encontraran" es
+# correcto sin tilde; "los encontraran maniana" seria futuro y la llevaria. Sin
+# esto, dieciocho de los veinte avisos de TILDES eran subjuntivos e imperfectos
+# perfectamente escritos, y los dos defectos de verdad quedaban enterrados.
+# El precio: un futuro mal escrito justo detras de "que" ya no se avisa.
+SUBORDINANTE_RE = re.compile(
+    r"\b(?:que|si|cuando|aunque|ojal[áa]|quien|donde|dondequiera|mientras|"
+    r"hasta|antes|despu[ée]s|para)\b[^.;:!?]{0,40}$", re.I)
+SUBJUNTIVO_RE = re.compile(
+    r"(?:ara|aras|aran|era|eras|eran|iera|ieras|ieran|ase|ases|asen|"
+    r"iese|ieses|iesen|e|es|en)$", re.I)
+
+
+def sin_tildes(palabra):
+    return "".join(c for c in unicodedata.normalize("NFD", palabra.lower())
+                   if unicodedata.category(c) != "Mn")
+
+
+MARCADOR_RE = re.compile(r"<[^<>]*>|%[^%\s]*%|\[[^\[\]]*\]")
+
+
+def sin_marcadores(texto):
+    """Quita los marcadores del juego antes de mirar palabras.
+
+    El interior de `<captura>`, `%token%` y `[color=...]` no es prosa: es
+    sintaxis que tiene que coincidir literalmente con el inglés. Si el chequeo de
+    tildes lo mira, acaba pidiendo que se acentúe el nombre de una captura, y
+    hacerle caso rompe el par y lo manda a cuarentena. Ya pasó dos veces con la
+    misma captura, `<vision>`.
+    """
+    return MARCADOR_RE.sub(" ", texto)
+
+
+def plegar_acentos(texto):
+    """Quita tildes, diéresis y la virgulilla de la eñe, conservando la caja.
+
+    Sirve para COMPARAR traducciones. Dos entradas de la misma tabla que sólo se
+    diferencian en una tilde no son dos traducciones distintas: son la misma con
+    una errata en alguna de las dos. Comparando así salen sin tener que corregir
+    el acento primero, que es como aparecieron "Campamento nómada" repetido en
+    Nomad Camp y Nomad Encampment.
+
+    La caja SÍ se conserva a propósito: la usamos para distinguir las variantes
+    en mayúscula que el juego mantiene aparte ("the Hound" frente a "The Hound").
+    """
+    return "".join(c for c in unicodedata.normalize("NFD", texto)
+                   if unicodedata.category(c) != "Mn")
+
+
+def pares():
+    for bloque in load_blocks(CORPUS):
+        en, es = get_field(bloque, "en"), get_field(bloque, "es")
+        if en and es:
+            yield en, es
+
+
+FILE_RE = re.compile(r"^\s*// FILE: (.+)$")
+EN_RE = re.compile(r'^en = "(.*)"$')
+ES_RE = re.compile(r'^es = "(.*)"$')
+# Dos entradas de la misma tabla más separadas que esto ya no son vecinas: que
+# compartan traducción deja de ser sospechoso y pasa a ser sinonimia normal.
+VENTANA_VECINO = 40
+
+
+def entradas_en_orden(corpus=CORPUS):
+    """(fichero, posición, en, es) en el orden en que viven en el corpus.
+
+    Hace falta el orden y el fichero, que load_blocks no conserva: los
+    comentarios `// FILE:` viven entre bloques, no dentro de ellos.
+    """
+    lineas = Path(corpus).read_text(encoding="utf-8").split("\n")
+    fichero, pos = "?", 0
+    for i, linea in enumerate(lineas):
+        m = FILE_RE.match(linea)
+        if m:
+            fichero, pos = m.group(1).strip().replace("\\", "/").split("/")[-1], 0
+            continue
+        m_en = EN_RE.match(linea.strip())
+        if not m_en or i + 1 >= len(lineas):
+            continue
+        m_es = ES_RE.match(lineas[i + 1].strip())
+        if m_es:
+            yield fichero, pos, m_en.group(1), m_es.group(1)
+            pos += 1
+
+
+def dup_vecino(corpus=CORPUS):
+    """Dos entradas inglesas DISTINTAS y cercanas de la misma tabla con idéntica
+    traducción.
+
+    Es la firma del desplazamiento en tablas de nombres: una entrada se queda con
+    el valor de su vecina y las dos acaban diciendo lo mismo. DUP_ES no lo ve
+    porque sólo mira traducciones de más de 15 caracteres, y los nombres de
+    tabla son casi siempre más cortos ("Trols", "Orcos", "Piqueros").
+    """
+    por_fichero = defaultdict(lambda: defaultdict(list))
+    for fichero, pos, en, es in entradas_en_orden(corpus):
+        if es:
+            # se agrupa por la forma sin acentos: si dos entradas solo se
+            # diferencian en una tilde, el duplicado esta ahi igualmente
+            por_fichero[fichero][plegar_acentos(es)].append((pos, en, es))
+
+    avisos = []
+    for fichero, por_es in sorted(por_fichero.items()):
+        for _, apariciones in sorted(por_es.items()):
+            if len(apariciones) < 2:
+                continue
+            apariciones.sort()
+            for (p1, en1, es1), (p2, en2, es2) in zip(apariciones, apariciones[1:]):
+                if en1 == en2 or p2 - p1 > VENTANA_VECINO:
+                    continue
+                if es1 == es2:
+                    avisos.append('%s: %r y %r comparten "%s"'
+                                  % (fichero, en1, en2, es1))
+                else:
+                    avisos.append('%s: %r dice "%s" y %r dice "%s"; solo difieren '
+                                  "en acentos" % (fichero, en1, es1, en2, es2))
+    return avisos
+
+
+def revisar(datos, corpus=CORPUS):
+    avisos = defaultdict(list)
+
+    # DUP_VECINO
+    try:
+        avisos["DUP_VECINO"] = dup_vecino(corpus)
+    except OSError:
+        pass  # sin corpus en disco el resto de chequeos sigue valiendo
+
+    # IMG
+    for en, es in datos:
+        img_en, img_es = IMG_RE.findall(en), IMG_RE.findall(es)
+        if img_en and img_es and img_en[0] != img_es[0]:
+            avisos["IMG"].append("%s -> es usa %s" % (img_en[0], img_es[0]))
+
+    # VARIANTES
+    for en, es in datos:
+        if not (ABRE_RE.search(en) or "|" in en):
+            continue
+        est_en = (len(ABRE_RE.findall(en)), len(CIERRA_RE.findall(en)), en.count("|"))
+        est_es = (len(ABRE_RE.findall(es)), len(CIERRA_RE.findall(es)), es.count("|"))
+        if est_en == est_es:
+            continue
+        perdidas = est_en[2] - est_es[2]
+        detalle = ("pierde %d rama(s)" % perdidas if perdidas > 0 else
+                   "anade %d rama(s)" % -perdidas if perdidas < 0 else
+                   "mismas ramas, llaves distintas")
+        avisos["VARIANTES"].append(
+            "%s; en %s es %s: %s" % (detalle, est_en, est_es, es[:50]))
+
+    # TOKENS y RECORTE
+    for en, es in datos:
+        deformados = [t for t in TOKEN_ROTO_RE.findall(es) if not TOKEN_RE.fullmatch(t)]
+        if deformados:
+            avisos["TOKENS"].append("deformado %s en: %s"
+                                    % (sorted(set(deformados)), es[:60]))
+        te, ts = Counter(TOKEN_RE.findall(en)), Counter(TOKEN_RE.findall(es))
+        faltan, sobran = te - ts, ts - te
+        # Si ademas faltan ramas, los tokens que faltan se fueron con la rama:
+        # es el mismo defecto que ya cuenta VARIANTES, no uno nuevo. Y si hay
+        # tokens deformados, el bueno "falta" porque esta ahi mismo mal escrito.
+        mismas_ramas = en.count("|") == es.count("|")
+        if faltan and mismas_ramas and not deformados:
+            avisos["RECORTE"].append("faltan %s en: %s"
+                                     % (sorted(faltan), es[:60]))
+        # Sobrar un token solo importa si el evento no lo define, y la unica
+        # prueba disponible de que lo define es que el ingles lo use en algun
+        # sitio de ese mismo texto.
+        indefinidos = sorted(t for t in sobran if t not in te)
+        if indefinidos:
+            avisos["TOKENS"].append("el ingles no usa nunca %s, pero el espanol si: %s"
+                                    % (indefinidos, es[:60]))
+
+    # DUP_ES
+    por_es = defaultdict(set)
+    for en, es in datos:
+        if len(es) > 15:
+            por_es[es].add(en)
+    for es, ens in por_es.items():
+        if len(ens) < 2:
+            continue
+        listado = sorted(ens)
+        base = set(re.findall(r"\w+", listado[0].lower()))
+        for otro in listado[1:]:
+            palabras = set(re.findall(r"\w+", otro.lower()))
+            union = base | palabras
+            if union and len(base & palabras) / len(union) < 0.3:
+                avisos["DUP_ES"].append("%r comparte es con %r" % (listado[0][:40], otro[:40]))
+                break
+
+    # PUNTUACION
+    for en, es in datos:
+        if es.count("?") > es.count("¿") or es.count("!") > es.count("¡"):
+            avisos["PUNTUACION"].append(es[:70])
+
+    # TILDES: la forma sin tilde solo es sospechosa si es un caso RARO frente a
+    # la acentuada. Si aparece muchas veces, es una palabra legitima distinta
+    # (contrato/contrato, trabajo/trabajo, celebro/celebro...) y no se avisa.
+    acentuadas, planas = Counter(), Counter()
+    for _, es in datos:
+        for w in WORD_RE.findall(sin_marcadores(es)):
+            if any(c in "áéíóúüñÁÉÍÓÚÜÑ" for c in w):
+                acentuadas[w.lower()] += 1
+            else:
+                planas[w.lower()] += 1
+    canon = {}
+    for w, n in acentuadas.items():
+        if n >= 10:
+            canon.setdefault(sin_tildes(w), (w, n))
+    for en, es in datos:
+        limpio = sin_marcadores(es)
+        for m in WORD_RE.finditer(limpio):
+            w = m.group(0)
+            bajo = w.lower()
+            if any(c in "áéíóúüñÁÉÍÓÚÜÑ" for c in w) or bajo in PROTEGIDAS:
+                continue
+            if bajo in SIEMPRE_CON_TILDE:
+                avisos["TILDES"].append(
+                    "'%s' debe ser '%s' en: %s"
+                    % (w, SIEMPRE_CON_TILDE[bajo], es[:45]))
+                break
+            if (SUBJUNTIVO_RE.search(bajo)
+                    and SUBORDINANTE_RE.search(limpio[:m.start()])):
+                continue
+            hit = canon.get(sin_tildes(w))
+            if not hit or hit[0] == bajo:
+                continue
+            correcta, n_acc = hit
+            n_plana = planas[bajo]
+            if n_plana <= max(2, n_acc * 0.02):
+                avisos["TILDES"].append(
+                    "'%s' (%d) deberia ser '%s' (%d) en: %s"
+                    % (w, n_plana, correcta, n_acc, es[:45]))
+                break
+
+    # REGISTRO (solo lo que está fuera de la política acordada)
+    # El vocabulario del propio corpus hace de diccionario para validar los
+    # imperativos: "asaltad" solo cuenta si "asaltar" existe en el corpus.
+    infinitivos = set()
+    for _en, es in datos:
+        for w in WORD_RE.findall(es):
+            w = sin_tildes(w)
+            if len(w) > 3 and w.endswith(("ar", "er", "ir")):
+                infinitivos.add(w)
+
+    for en, es in datos:
+        if VOSEO_RE.search(es):
+            avisos["REGISTRO"].append("voseo: %s" % es[:60])
+        elif JERGA_RE.search(es) or VALE_INTERJ_RE.search(es):
+            avisos["REGISTRO"].append("jerga: %s" % es[:60])
+        else:
+            limpio = SEIS_RE.sub("6", es)
+            if VOS_FORMAS_RE.search(limpio):
+                avisos["REGISTRO"].append("vosotros: %s" % es[:60])
+                continue
+            if OS_CLITICO_RE.search(limpio):
+                avisos["REGISTRO"].append("clítico os: %s" % es[:60])
+                continue
+            for m in IMPERATIVO_VOS_RE.finditer(limpio):
+                w = sin_tildes(m.group(1))
+                if w in NO_ES_VERBO:
+                    continue
+                if w[:-1] + "r" in infinitivos or w[:-2] + "ir" in infinitivos:
+                    avisos["REGISTRO"].append("imperativo de vosotros (%s): %s"
+                                              % (m.group(1), es[:50]))
+                    break
+
+    # CONTROL
+    for en, es in datos:
+        for m in CONTROL_RE.finditer(es):
+            i = m.start()
+            avisos["CONTROL"].append("U+%04X en: ...%s..."
+                                     % (ord(m.group(0)), es[max(0, i - 30):i + 30]))
+
+    return avisos
+
+
+def main():
+    datos = list(pares())
+    avisos = revisar(datos)
+    print("pares con traduccion revisados: %d" % len(datos))
+    total = 0
+    for nombre in ("IMG", "VARIANTES", "TOKENS", "RECORTE", "DUP_ES", "DUP_VECINO",
+                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL"):
+        items = avisos.get(nombre, [])
+        total += len(items)
+        print("\n%-11s %d" % (nombre, len(items)))
+        for item in items[:EJEMPLOS]:
+            print("    %s" % item[:120])
+    print("\ntotal de avisos: %d (informativos: no bloquean el build)" % total)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

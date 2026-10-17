@@ -1,0 +1,1118 @@
+fichero	indice	veredicto	en	es	nota
+ancient_statue_event.nut	5	reparado	Parry!	¡Parry!	aplicado: ¡En guardia!. Estaba sin traducir. Unica aparicion de parry en el corpus, asi que no habia consistencia que respetar
+character.nut	18	ok	Unharmed	Saludable	
+character.nut	20	ok	Warmed Up	Agitado	
+character.nut	25	reparado	Dented	Agrietada	aplicado: Abollada, que es Dented y estaba en el 26
+character.nut	26	reparado	Scratched	Abollada	aplicado: Aranada. Cedio Abollada al 25 y tomo su valor propio
+character.nut	27	ok	Untouched	Intacta	
+item_names.nut	1	ok	Bulwark	Reducto	
+item_names.nut	6	ok	Safeguard	Salvaguardia	
+item_names.nut	9	ok	Ward	Amparo	
+item_names.nut	10	ok	Barricade	Barricada	
+item_names.nut	12	ok	Greatshield	Gran escudo	
+item_names.nut	16	ok	Rampart	Parapeto	
+item_names.nut	17	ok	Keeper	Custodio	
+item_names.nut	18	ok	Warden	Guardia	
+item_names.nut	20	ok	Slasher	Cortador	
+item_names.nut	21	ok	Slicer	Rebanadora	
+item_names.nut	23	ok	Cutter	Cortante	
+item_names.nut	24	ok	Cleaver	Navaja	
+item_names.nut	26	ok	Deathdealer	Causamuertes	
+item_names.nut	28	ok	Slayer	Asesina	
+item_names.nut	30	ok	Warblade	Cuchilla de guerra	
+item_names.nut	31	ok	Longblade	Espada	
+item_names.nut	32	ok	Bloodspiller	Derramador de sangre	
+item_names.nut	33	ok	Oathkeeper	Juramentada	
+item_names.nut	34	ok	Glimmer	Luz tenue	
+item_names.nut	35	ok	Reckoning	Retribución	
+item_names.nut	36	ok	Avenger	Vengadora	
+item_names.nut	40	ok	Striker	Percutor	
+item_names.nut	41	ok	Razor	Cuchilla	
+item_names.nut	42	ok	Windblade	Hoja de viento	
+item_names.nut	43	ok	Swiftblade	Cuchilla rápida	
+item_names.nut	46	ok	Beheader	Decapitador	
+item_names.nut	53	ok	Chopper	Amputador	
+item_names.nut	54	reparado	Ripper	Cortacabezas	aplicado: Destripador, que es lo que significa Ripper. Antes tenia 'Cortacabezas', que es la traduccion exacta de Head Chopper en orc_cleaver.nut. Se habia juzgado ok en el primer lote
+item_names.nut	56	reparado	Bloodthirster	Locura	aplicado: Bebesangre. Huerfana, valor decidido por el propietario
+item_names.nut	58	reparado	Carver	Cuchillo de guerra	aplicado: Escultor, que es Carver y estaba en el 57
+item_names.nut	60	ok	Fleshcutter	Cortacarne	
+item_names.nut	62	ok	Mincer	Picador de carne	
+item_names.nut	63	ok	Hacker	Tajador	
+item_names.nut	64	ok	Lacerator	Lacerador	
+item_names.nut	65	ok	Mangler	Destrozador	
+item_names.nut	66	ok	Gasher	Desgarrador	
+item_names.nut	67	ok	Mutilator	Mutilador	
+item_names.nut	68	ok	Maimer	Lisiador	
+item_names.nut	69	reparado	Tormentor	Tormento	aplicado: Atormentador. 'Tormento' es el efecto, y todo el tramo son agentes: Mutilador, Lisiador, Desgarrador. Estaba fuera del censo porque el filtro lo aparto como transliteracion
+item_names.nut	70	ok	Render	Carnicero	
+item_names.nut	74	ok	Strangler	Estrangulador	
+item_names.nut	76	ok	Painbringer	Dolor	
+item_names.nut	77	ok	Punisher	Castigador	
+item_names.nut	78	ok	Castigator	Vindicador	
+item_names.nut	79	ok	Splitter	Partidor	
+item_names.nut	81	ok	Menfeller	Derribador	
+item_names.nut	84	ok	Reaver	Saqueador	
+item_names.nut	85	ok	Harbinger	Presagio	
+item_names.nut	86	reparado	Skullsplitter	Verdugo	aplicado: Partecraneos. Lo sostiene el censo, no el modelo: toda la zona es ciega
+item_names.nut	87	reparado	Deathbringer	Partecráneos	aplicado: Llevamuerte, que es Deathbringer y estaba en el 88
+item_names.nut	88	reparado	Widowmaker	Llevamuerte	aplicado: Viudahacedora, coherente con el plural de 108
+item_names.nut	90	ok	Shieldbreaker	Quebrantaescudos	
+item_names.nut	92	ok	Spath	Espata	
+item_names.nut	93	ok	Poleblade	Hoja enastada	
+item_names.nut	95	reparado	Headcleaver	Hacha enastada	aplicado: Hiendecabezas. 'Hacha enastada' duplicaba el sentido de 'Hacha de asta' (94) y perdia el de cabezas
+item_names.nut	97	reparado	Thunderbringer	Cuchillo	aplicado: Portatruenos. Mantiene el sentido de bringer y el patron compuesto de Quebrantaescudos
+item_names.nut	98	reparado	Breaker	Rompetormentas	aplicado: Rompedor, que era su valor y estaba en el 99. Se habia juzgado ok en el primer lote, y la cadena 97-99 lo desmintio
+item_names.nut	99	reparado	Domesplitter	Rompedor	aplicado: Abrecraneos. La cadena 97-99 se aplico entera de una vez, que era la unica forma segura
+item_names.nut	102	ok	Splitters	Partidores	
+item_names.nut	104	ok	Rippers	Desgarradoras	
+item_names.nut	105	ok	Shredders	Destrozadores	
+item_names.nut	107	ok	Harbingers	Presagios	
+item_names.nut	108	ok	Widowmakers	Viudahacedoras	
+item_names.nut	110	ok	Brutality	Brutales	
+item_names.nut	111	ok	Breachers	Brechadores	
+item_names.nut	114	ok	Spike	Pincho	
+item_names.nut	120	ok	Skewer	Espetón	
+item_names.nut	122	ok	Thorn	Espina	
+item_names.nut	123	reparado	Barb	Barba	aplicado: Pua. Falso amigo, y Pua estaba en Quill (124). NO estaba en el censo porque el filtro lo aparto como transliteracion: ese filtro quedo corregido
+item_names.nut	124	reparado	Quill	Púa	aplicado: Espolon. Cedio Pua al 123, que es su traduccion exacta. Se juzgo ok en el primer lote y el cruce con Barb lo desmintio
+item_names.nut	125	ok	Longspear	Lanzalarga	
+item_names.nut	127	ok	Bladeflurry	Ráfaga de Hojas	
+item_names.nut	128	ok	Pin	Clavija	
+item_names.nut	129	ok	Lance	Lanzón	
+item_names.nut	130	reparado	Pole	Bastón	intercambio con el 131: no era huerfana, los dos valores estaban cruzados. Pole se queda Vara
+item_names.nut	132	ok	Warpike	Pica de guerra	
+item_names.nut	135	ok	Spout	Chorro	
+orc_berserker_potion_effect.nut	0	reparado	Berserker Rage	Furia berserker	aplicado: Furia orca. Compartia nombre visible con el efecto Rage de berserker_rage_effect.nut, y los dos se ven en la interfaz sobre un personaje. Se interpreta en vez de calcar: el efecto viene de una pocion de orco. NO es del estrato ciego, no saldria solo en el censo
+strings.nut	995	ok	Berserk	Berserker	revisado y se deja: el corpus usa ese prestamo en todas partes (Cofia de Berserker, Furia berserker, Berserker Orco) y los jugadores conocen el perk por ese nombre. NO es deuda
+medium_farm_fort.nut	1	ok	Hageburg	Refugio del Girasol	
+medium_farm_fort.nut	4	ok	Hemmelsburg	Marcaceniza	
+medium_farm_fort.nut	5	ok	Weissenburg	Pradal	
+medium_farm_fort.nut	6	ok	Grafenburg	Torreón Verde	
+medium_farm_fort.nut	7	reparado	Tiefenburg	Grafenburg	el valor es el en literal de la entrada 6, colado sin traducir; no es corrimiento de ventana (el 6 conserva su valor propio) y no hay repuesto: hace falta inventar topónimo con matiz de profundo (tief); clase traducción; aplicado: Torrehonda, decisión del propietario 24/08
+medium_farm_fort.nut	8	ok	Grunburg	Sotomiel	
+medium_farm_fort.nut	9	ok	Wallburg	Torrelabella	
+medium_farm_fort.nut	10	ok	Koppelburg	Maizal	
+medium_farm_fort.nut	11	ok	Weideburg	La Sidra	
+medium_farm_fort.nut	12	ok	Auenburg	Vegaverde	confirmado por auditoría previa de colisiones (a53bbf8)
+medium_farm_fort.nut	13	ok	Gardeburg	Gardenburg	confirmado por verdad de terreno (4d0d879, a53bbf8): el árbol fan usa Gardenburg
+medium_farm_fort.nut	17	reparado	Thalburg	Appleton	topónimo inglés que no pertenece a ninguna entrada del corpus (no existe en=Appleton); hace falta inventar topónimo con matiz de valle (thal); clase traducción; aplicado: Valdetorre, decisión del propietario 24/08
+medium_farm_fort.nut	18	ok	Weihersburg	Torreón de la Hierba	
+medium_farm_fort.nut	19	ok	Sommerburg	Sotoblanco	
+medium_steppe_fort.nut	0	ok	Wohlenburg	Castillo del Atardecer	
+medium_steppe_fort.nut	2	ok	Erlachburg	Yelmo de Piedra	
+medium_steppe_fort.nut	4	ok	Thunburg	Los Pergaminos	
+medium_steppe_fort.nut	9	ok	Strauchburg	Rocagris	
+medium_steppe_fort.nut	10	ok	Maderburg	Vientoseco	
+medium_steppe_fort.nut	11	ok	Kargburg	Campoestrella	
+medium_steppe_fort.nut	12	ok	Gelbburg	Guarida de Ornlu	confirmado por verdad de terreno (4d0d879), guiño deliberado
+medium_steppe_fort.nut	14	ok	Lichtburg	Fuerte Lobogris	
+medium_steppe_fort.nut	16	ok	Glanzburg	Torreón Cosecha	
+medium_steppe_fort.nut	18	ok	Trockenburg	Refugio Negro	
+medium_steppe_fort.nut	19	ok	Schattenburg	Nocturnia	
+medium_steppe_fort.nut	23	ok	Lehmburg	Ermita Alta	
+medium_steppe_fort.nut	24	ok	Wustenburg	Colina Fantasma	
+medium_coast_fort.nut	0	ok	Kielburg	Guijarra	
+medium_coast_fort.nut	1	ok	Otternburg	Refugio de Malacosta	
+medium_coast_fort.nut	2	ok	Krumburg	Torreón del Estuario	confirmado por auditoría previa de colisiones (a53bbf8)
+medium_coast_fort.nut	3	ok	Sandeburg	Torreón Cangrejo	
+medium_coast_fort.nut	4	ok	Meerburg	Jardín Gris	
+medium_coast_fort.nut	5	ok	Mowenburg	Torreón de Aguasclaras	
+medium_coast_fort.nut	6	ok	Sundburg	Corona Negra	
+medium_coast_fort.nut	7	ok	Salzburg	Salsburgo	transliteración de la ciudad real, variante ortográfica
+medium_coast_fort.nut	8	ok	Schollburg	Cuernomartillo	
+large_farm_fort.nut	0	ok	Haselfeste	Bastión Tormentoso	
+large_farm_fort.nut	1	ok	Koppelfeste	Lanza del Halcón	
+large_farm_fort.nut	2	ok	Weidefeste	Castillo Trigodorado	
+large_farm_fort.nut	3	ok	Kroonsfeste	Bastión Piedraverde	
+large_farm_fort.nut	4	ok	Grunfeste	Roca Caster	guiño a Casterly Rock, coherente con la ventana
+large_farm_fort.nut	5	ok	Hoberfeste	Windsor	castillo inglés real, familia de guiños de la ventana
+large_farm_fort.nut	6	ok	Grunlandfeste	Praven	topónimo de la misma familia de guiños (Mount and Blade)
+large_farm_fort.nut	7	ok	Feldfeste	Warwick	castillo inglés real, mismo guiño que Windsor
+medium_forest_fort.nut	0	ok	Holzburg	Los Susurros	
+medium_forest_fort.nut	1	ok	Dunkelburg	Árbol de los Cuervos	
+medium_forest_fort.nut	2	ok	Fahrnburg	Piedraverde	
+medium_forest_fort.nut	3	ok	Eulenburg	Marleons	
+medium_forest_fort.nut	4	ok	Dusterburg	Guarida del Jabalí	
+medium_forest_fort.nut	5	reparado	Dornburg	Torreón Forester	Forester sin traducir; en otra entrada Forester's Hideout se traduce como Guardabosques, sugiere descuido; alternativa: guiño a House Forrester; propuesta si es descuido: Torreón del Guardabosques; clase traducción, lo decide el propietario; aplicado: Torreón del Guardabosques, decisión del propietario 24/08 (descuido, no guiño)
+medium_forest_fort.nut	6	ok	Breitenburg	Torreón Bellota	
+medium_forest_fort.nut	7	ok	Natternburg	Nido de Cuervos	confirmado por auditoría previa de colisiones (a53bbf8)
+small_coast_fort.nut	0	ok	Seeturm	Atalaya de la Viuda	
+small_coast_fort.nut	1	ok	Seeschanz	Fuerte Naufragio	
+small_coast_fort.nut	2	ok	Seewehr	Puerto Noble	
+small_coast_fort.nut	3	ok	Wallsande	Torreón Salado	
+small_coast_fort.nut	4	ok	Salzwacht	Roble Viejo	
+small_coast_fort.nut	5	ok	Sturmwall	Piedra Quebrada	
+small_coast_fort.nut	6	ok	Weissenwacht	Zarpa Rota	
+small_coast_fort.nut	7	ok	Sielburg	Costa Salada	
+small_forest_fort.nut	0	ok	Mooswehr	Aguasmil	
+small_forest_fort.nut	1	ok	Fuchsturm	Fuerte Astilla	
+small_forest_fort.nut	2	ok	Finsterwall	Fuerte Greenkeep	Greenkeep lee como nombre compuesto autónomo coherente con la familia de guiños
+small_forest_fort.nut	3	ok	Dusterschanze	Nuevo Barril	
+small_forest_fort.nut	4	ok	Eulenturm	Torreón Robleviejo	
+small_forest_fort.nut	5	ok	Schwarzwacht	Bosquealto	
+small_forest_fort.nut	6	ok	Eibenwacht	Reposo del Grajo	
+small_forest_fort.nut	7	ok	Waldenwehr	Arco Ancho	
+small_snow_fort.nut	0	ok	Hornwold	Poinsbruk	
+small_snow_fort.nut	1	ok	Hornspira	Fuerte Gris	
+small_snow_fort.nut	2	ok	Torvastorn	Fuerte Sombrío	confirmado por auditoría previa de colisiones (a53bbf8)
+small_snow_fort.nut	3	ok	Skjoldwold	Hornwood	topónimo de Juego de Tronos, coherente con los guiños confirmados
+small_snow_fort.nut	4	ok	Halspira	Piedrarrota	
+small_snow_fort.nut	5	ok	Asentorn	Colina Escarcha	
+small_snow_fort.nut	6	ok	Asatorn	Último Refugio	
+small_snow_fort.nut	7	ok	Lindweir	Fortaleza de Azabache	
+large_forest_fort.nut	0	ok	Schlangenfeste	Bastión Piedragris	
+large_forest_fort.nut	1	ok	Eibenfeste	Pinoastillado	
+large_forest_fort.nut	2	ok	Waidfeste	Ramanegra	
+large_forest_fort.nut	3	ok	Eulenfeste	Forestfort	
+large_forest_fort.nut	4	ok	Fahrnfeste	Robleferreo	
+large_forest_fort.nut	5	ok	Falkenfeste	Bastión Roble real	
+large_forest_fort.nut	6	ok	Salamanderfeste	Nido del Grifo	
+large_mountains_fort.nut	0	ok	Grollfeste	Bastión Rencor	
+large_mountains_fort.nut	1	ok	Donnerfeste	Manomartillo	
+large_mountains_fort.nut	2	ok	Erzfeste	Cuernavilla	
+large_mountains_fort.nut	3	ok	Gronenfeste	Colinahierro	correcto según el árbol fan; ojo: strings.nut (Knowesfold) comparte el valor exacto, revisar desde strings.nut
+large_mountains_fort.nut	4	ok	Sattelfeste	Nido de Águilas	
+large_mountains_fort.nut	5	ok	Kammfeste	Puerta del Caballero	
+large_mountains_fort.nut	6	ok	Adlerfeste	Ciudadela Mano de Hierro	
+medium_mountains_fort.nut	0	ok	Windburg	Abismo de Helming	
+medium_mountains_fort.nut	1	ok	Scharfenburg	Puertas de la Luna	
+medium_mountains_fort.nut	2	ok	Wurmburg	Villacuerno	
+medium_mountains_fort.nut	3	ok	Schwertburg	Fuerterrojo	
+medium_mountains_fort.nut	4	ok	Himmelsburg	Nido del Halcón	
+medium_mountains_fort.nut	5	ok	Wolkenburg	Sepulcro del Rey	
+medium_mountains_fort.nut	6	ok	Gemmenburg	Valdecuerno	
+medium_snow_fort.nut	0	ok	Norreholm	Guardanorte	
+medium_snow_fort.nut	1	ok	Donnersgard	Torre Sombría	
+medium_snow_fort.nut	2	ok	Tanghaug	Windholm	
+medium_snow_fort.nut	3	ok	Torvaholm	Guardiagris	
+medium_snow_fort.nut	4	ok	Skjoldgard	Senderfall	
+medium_snow_fort.nut	5	ok	Halshovel	Torreón de Crasterr	
+medium_snow_fort.nut	6	ok	Kungenshovel	Castillo Viejo	
+large_coast_fort.nut	0	ok	Otterfeste	Torreón del Kraken	
+large_coast_fort.nut	1	ok	Blankenfeste	Pyke	
+large_coast_fort.nut	2	ok	Kampfeste	Desembarco del Caballero	
+large_coast_fort.nut	3	ok	Stohlfeste	Javiksholm	
+large_coast_fort.nut	4	ok	Sandfeste	Diez Torres	
+large_coast_fort.nut	5	ok	Schwalbenfeste	Tres Torres	
+large_snow_fort.nut	9	ok	Vardeborg	Castillo Negro	
+large_snow_fort.nut	13	ok	Tangborg	Ciudadela del Jarl	
+large_snow_fort.nut	15	reparado	Torvaborg	Invernalia	el árbol fan (spanish_tr) deja Torvaborg idéntico sin traducir; Invernalia pertenece al tramo ambiguo 19-24, donde el fan tiene un nombre inglés de más; la evidencia es alineación posicional contra spanish_tr, más fuerte que shift_window en zona ciega; ligado a 18, 20 y 21, lo decide el propietario; aplicado: Fuerte Turbera (torv es turba), decisión 24/08; primero revertido al idéntico del árbol fan y después traducido por etimología
+large_snow_fort.nut	18	reparado	Halsborg	Último Hogar	mismo defecto que el 15: el árbol fan deja Halsborg idéntico; Último Hogar pertenece al tramo ambiguo 19-24; ligado a 15, 20 y 21, lo decide el propietario; aplicado: Fuerte del Collado (hals es collado), decisión 24/08, misma vía
+large_snow_fort.nut	20	ok	Gunnborg	Winterfell	tramo ambiguo del árbol fan (6 nombres ingleses para 5 valores); valor genuino del tramo pero posición no verificable; ligado a 15, 18 y 21, lo decide el propietario; cerrado 24/08: se queda Winterfell; el nudo se resolvió con asignación editorial dentro del mismo fichero de nieve (Hammarborg Último Hogar, Groneborg Invernalia, Gerborg Fuerte de la Lanza, Snekkborg Fuerte del Drakkar); criterio explícito: las asignaciones editoriales respetan el bioma del fichero
+large_snow_fort.nut	21	ok	Asenborg	Castillo Blanco	mismo tramo ambiguo; valor genuino, posición no verificable; ligado a 15, 18 y 20, lo decide el propietario; cerrado 24/08: se queda Castillo Blanco, ver nota del 20
+medium_tundra_fort.nut	0	ok	Skallegard	Comezon de Aguasfrias	
+medium_tundra_fort.nut	1	ok	Varehaug	Dedo de Pedernal	
+medium_tundra_fort.nut	2	ok	Hafnarsholm	Hogar	
+medium_tundra_fort.nut	3	ok	Ragnhaug	Hordaland	
+medium_tundra_fort.nut	4	ok	Torgeirsholm	Castillo Princesa	
+medium_tundra_fort.nut	5	ok	Lundirsholm	Picaestrella	
+small_mountains_fort.nut	0	ok	Gronenwall	Muralla Verde	
+small_mountains_fort.nut	1	ok	Schanzberg	Fuerte del Matatrols	
+small_mountains_fort.nut	2	ok	Felswacht	Los Dedos	
+small_mountains_fort.nut	3	ok	Scharfenstein	Refugio de Plata	
+small_mountains_fort.nut	4	ok	Oberwallheim	Jelkala	
+small_mountains_fort.nut	5	ok	Himmelswacht	Colina Cuerno	
+small_swamp_fort.nut	0	ok	Birkturm	Velen	
+small_swamp_fort.nut	1	ok	Schwarzgard	Atalaya de Aguasgrises	
+small_swamp_fort.nut	2	ok	Schanzmoor	Pantano de la Bruja	
+small_swamp_fort.nut	3	ok	Wallfurt	Castroferro	
+small_swamp_fort.nut	4	ok	Fackelwacht	Torreón Picodecuervo	
+medium_swamp_fort.nut	0	ok	Schwarzburg	Forjavieja	
+medium_swamp_fort.nut	1	ok	Egelburg	Piedraputrida	
+medium_swamp_fort.nut	2	ok	Schlammburg	Fuertepodrido	
+medium_swamp_fort.nut	3	ok	Schlickburg	Varamar	
+small_farm_fort.nut	0	ok	Wiesenwacht	Grimston	
+small_farm_fort.nut	1	ok	Herrmanswacht	Darry	
+small_farm_fort.nut	2	ok	Schonwall	Sietecauces	
+small_farm_fort.nut	3	ok	Thalwacht	Campoverde	
+small_steppe_fort.nut	0	ok	Thurnwall	Dominio del Cielo	
+small_steppe_fort.nut	1	ok	Siegwacht	Nido de Buitres	
+small_steppe_fort.nut	2	ok	Strauchwacht	Refugio Quebrado	
+small_steppe_fort.nut	3	ok	Dornturm	Brazo Roto	
+large_tundra_fort.nut	0	ok	Selasborg	Piedra de las Runas	
+large_tundra_fort.nut	1	ok	Haellborg	Bastión de Cerwyn	
+large_tundra_fort.nut	2	ok	Kampaborg	Fuerte Terror	
+small_tundra_fort.nut	0	ok	Eidarswold	Bosquespeso	
+small_tundra_fort.nut	1	ok	Skallewold	Fosafria	
+small_tundra_fort.nut	2	ok	Neidspira	Bosque de la Serpierte	
+large_fishing_village.nut	0	ok	Wikstadt	Avendor	
+large_fishing_village.nut	1	ok	Holnisland	Aguasdulces	
+large_fishing_village.nut	2	ok	Nieweland	Buenabasto	
+large_fishing_village.nut	3	ok	Kampstadt	Valle Oscuro	
+large_fishing_village.nut	4	ok	Krakenland	Bryn	
+large_fishing_village.nut	5	ok	Blankenstadt	Puerto Blanco	
+large_fishing_village.nut	6	ok	Tiefenstadt	Valonbray	
+large_fishing_village.nut	7	ok	Kobmanhaven	Puerto Gaviota	
+large_fishing_village.nut	8	ok	Steinkai	El Faro	
+large_farming_village.nut	4	ok	Schnellmark	Ladera	
+large_farming_village.nut	5	ok	Freistadt	Valle	
+large_farming_village.nut	10	ok	Grafenstadt	Ciudad Condal	
+large_farming_village.nut	11	ok	Konigsland	Sarleon	
+large_farming_village.nut	13	ok	Koppelstadt	Dhirrim	
+large_farming_village.nut	14	ok	Varelmark	Osbrook	
+large_farming_village.nut	15	ok	Hageland	Mannshire	
+large_farming_village.nut	26	ok	Schwanstadt	Altojardín	
+medium_farming_village.nut	0	ok	Hemmeln	Kayce	
+medium_farming_village.nut	1	ok	Weissenhaus	Septo de Piedra	
+medium_farming_village.nut	2	ok	Koppeldorf	Villaparra	
+medium_farming_village.nut	3	ok	Hage	Valdehierba	
+medium_farming_village.nut	4	ok	Wiese	Pradoverde	
+medium_farming_village.nut	5	ok	Bitterfeld	Antigua	
+medium_snow_village.nut	0	ok	Bola	Guardiabosque del Lago	
+medium_snow_village.nut	1	ok	Hellevad	Villanieve	
+medium_snow_village.nut	2	ok	Jerstal	Puertahelada	
+medium_snow_village.nut	3	ok	Grimstad	Escalera del Gigante	
+medium_snow_village.nut	4	ok	Birkeland	Frostbyn	
+medium_snow_village.nut	5	ok	Skjold	Puertapiedra	
+medium_steppe_village.nut	0	ok	Brunnenthal	Puerta del Infierno	
+medium_steppe_village.nut	1	ok	Thunstetten	Los Tablones	
+medium_steppe_village.nut	2	ok	Sonstedt	Singal	
+medium_steppe_village.nut	3	ok	Strohdorf	Limonar	
+medium_steppe_village.nut	4	ok	Strauchdorf	Montenegro	
+medium_steppe_village.nut	5	ok	Krauchdorf	Palosanto	
+large_snow_village.nut	0	ok	Hellested	Refugio de Invierno	
+large_snow_village.nut	1	ok	Grimsted	Salon de Ivarr	
+large_snow_village.nut	2	ok	Asested	Skejborg	
+large_snow_village.nut	3	ok	Arsasted	Salon de Hammar	
+large_snow_village.nut	4	ok	Agersted	Dorestad	
+small_mining_village.nut	0	ok	Gronenberg	Gossenberg	
+small_mining_village.nut	1	ok	Kaltenhof	Yalen	
+small_mining_village.nut	2	ok	Wolfhaiden	Veluca	
+small_mining_village.nut	3	ok	Schneeberg	El Risco	
+small_mining_village.nut	4	ok	Weissenfels	Cuevahonda	
+large_lumber_village.nut	3	ok	Waldland	Bosque Umbrío	
+large_lumber_village.nut	6	ok	Eichstadt	Villajabali	
+large_lumber_village.nut	7	ok	Eulenmark	Nottinhem	
+large_lumber_village.nut	9	ok	Fahrnstadt	Laria	
+large_swamp_village.nut	0	ok	Streekland	Friesland	
+large_swamp_village.nut	1	ok	Schwarzmark	Flotsam	
+large_swamp_village.nut	2	ok	Muckenmark	Vergen	
+large_swamp_village.nut	3	ok	Torfmark	Loc Muinne	
+medium_lumber_village.nut	0	ok	Eulenkrug	Uxkhal	
+medium_lumber_village.nut	1	ok	Taubenmoos	Seto de Piedra	
+medium_lumber_village.nut	2	ok	Eichendorf	Bosquenegro	
+medium_lumber_village.nut	3	ok	Schwarzforst	Villallorosa	
+large_steppe_village.nut	0	ok	Wunderstadt	Nal Tar	
+large_steppe_village.nut	1	ok	Rothstadt	Torbah	
+large_steppe_village.nut	2	reparado	Grafenschein	Lanza del Sol	duplicado exacto con Quadim en strings.nut (CityStateNames); dos topónimos no deberían compartir valor; sin apoyo para saber cuál es el desplazado; clase traducción, lo decide el propietario; diferido 24/08 a la sesión de strings.nut por decisión del propietario; aplicado: Resplandor del Conde, decisión 24/08, tras confirmar en strings.nut que Lanza del Sol es Sunspear y pertenece a Quadim
+medium_fishing_village.nut	0	ok	Blankhoom	Los Escudos	
+medium_fishing_village.nut	1	ok	Saltkai	Poza de la Doncella	
+medium_fishing_village.nut	2	ok	Wasserkoog	Torre del Resplandor	
+medium_mining_village.nut	0	ok	Gemmenschacht	Cuerno Dorado	
+medium_mining_village.nut	1	ok	Grubenheim	Salinas	
+medium_mining_village.nut	2	ok	Wolkenstein	Mahakam	
+small_farming_village.nut	0	ok	Konigsfeld	Puenteamargo	
+small_farming_village.nut	1	ok	Rosenhof	Amere	
+small_farming_village.nut	2	ok	Weidenbach	Sotodeoro	
+small_fishing_village.nut	0	ok	Angeln	Puerto Ryam	
+small_fishing_village.nut	1	ok	Seedeich	Estrella de Mar	
+world_location_names.nut	79	ok	The Exiles' Hideaway	Refugio de los exiliados	
+world_location_names.nut	90	ok	Maruk Blot	Bal Guldur	
+world_location_names.nut	98	ok	Gulgash Ghul	Uruk-Hai	
+world_location_names.nut	99	ok	Wargasharak	Barad-Dur	
+world_location_names.nut	241	ok	Ghoul's Crave	Festín del ghoul	
+world_location_names.nut	263	reparado	Collapsed Dwellings	Refugio Estival	sin relación semántica con el inglés; categoría Ruins que el audit 8aae2b9 dejó sin resolver; valor único, sin swap mecánico posible; clase traducción, lo decide el propietario; aplicado: Casas hundidas, decisión del propietario 24/08
+world_location_names.nut	372	ok	Mossy Shelter	Cabaña musgosa	
+world_location_names.nut	388	ok	Ramshackle Cottage	Refugio en mal estado	
+world_location_names.nut	468	ok	Sinner's Den	Cueva del Pecador	
+world_location_names.nut	556	reparado	Grunter's Grotto	Grruta del Gruñidor	errata (doble erre en Gruta) presente desde el commit base 61c690d; no es corrimiento; corrección ortográfica directa a "Gruta del Gruñidor"; aplicado: Gruta del Gruñidor
+manhunter_background.nut	5	ok	the Mancatcher	el Atrapahombres	
+manhunter_background.nut	6	ok	the Ruthless	el Desalmado	
+manhunter_background.nut	9	ok	the Unforgiving	el Implacable	
+manhunter_background.nut	10	ok	the Catcher	el Atrapador	
+manhunter_background.nut	11	ok	the Heartless	el Insensible	
+manhunter_background.nut	12	ok	the Swine	el Puerco	
+manhunter_background.nut	13	ok	the Slaver	el Esclavista	
+executioner_background.nut	3	ok	Headtaker	Segador de cabezas	
+executioner_background.nut	4	ok	Neckrender	Desgarracuellos	
+executioner_background.nut	6	ok	the Judicator	el Justiciero	
+executioner_background.nut	7	ok	the Headsman	el Decapitador	
+executioner_background.nut	9	ok	the Hangman	el Ahorcador	
+vagabond_background.nut	4	ok	Threefeet	Trespies	
+vagabond_background.nut	5	ok	Bindlestiff	el Trotamundos	
+vagabond_background.nut	6	ok	Tatterdemalion	el Harapiento	
+vagabond_background.nut	7	ok	the Restless	el Incansable	
+vagabond_background.nut	8	ok	the Traveller	el Viajero	
+gambler_background.nut	4	ok	Deuces	Doses	
+gambler_background.nut	5	ok	the Wild Card	el Comodín	
+gambler_background.nut	8	ok	the Cardsharper	Cara de póker	
+gambler_background.nut	9	ok	the Gambler	As de espadas	
+killer_on_the_run_background.nut	4	ok	Darkhearted	Corazón oscuro	
+killer_on_the_run_background.nut	5	ok	Backblade	Hoja traicionera	
+killer_on_the_run_background.nut	6	ok	Throatslash	Cortagargantas	
+killer_on_the_run_background.nut	8	ok	the Wanted	el Fugitivo	
+minstrel_background.nut	4	ok	the Skjald	el Skald	
+minstrel_background.nut	6	ok	Songbird	Pájaro cantor	
+minstrel_background.nut	7	ok	the Troubadour	el Trovador	
+minstrel_background.nut	8	ok	the Chorine	el Cantor	
+shepherd_background.nut	0	reparado	Shepherd	Paston	errata: "Paston" no es palabra española; el propio fichero usa "el Pastor" y "pastores"; corrección ortográfica directa a "Pastor"; ningún vecino tiene ese valor, no es corrimiento; aplicado: Pastor
+shepherd_background.nut	5	ok	the Humble	el Humilde	
+shepherd_background.nut	7	ok	the Goatman	el Hombre cabra	
+shepherd_background.nut	8	reparado	Hoofmind	el Manso	"el Manso" es la traducción exacta de "the Meek" en otro fichero; Hoofmind no significa manso; pide valor propio y liberar Manso; clase traducción, lo decide el propietario; aplicado: el Pezuñas, decisión del propietario 24/08; el Manso queda liberado para the Meek
+thief_background.nut	3	ok	the Cutpurse	el Cortabolsas	
+thief_background.nut	4	reparado	the Burglar	el Carterista	"el Carterista" es la traducción de the Pickpocket en character_names.nut; Burglar es allanador; propuesta "el Allanador"; confianza media; clase traducción, lo decide el propietario; aplicado: el Allanador, decisión del propietario 24/08
+thief_background.nut	5	ok	the Snatcher	el Raptor	
+thief_background.nut	8	ok	Quickfingers	Dedosrápidos	
+apprentice_background.nut	4	ok	Quickmind	Piensarápido	
+apprentice_background.nut	6	reparado	the Understudy	el Estudioso	"el Estudioso" es la traducción exacta de the Studious en historian_background.nut; Understudy es suplente; propuesta "el Suplente"; clase traducción, lo decide el propietario; aplicado: el Suplente, decisión del propietario 24/08
+apprentice_background.nut	7	ok	Goodhand	Buenamano	
+beast_hunter_background.nut	4	ok	the Beasthunter	el Cazamonstruos	
+beast_hunter_background.nut	5	ok	Woodstalker	Acechador de los bosques	
+beast_hunter_background.nut	8	ok	the Trophyhunter	el Cazatrofeos	
+beggar_background.nut	10	ok	the Sloth	el Perezoso	
+beggar_background.nut	13	ok	the Skunk	el Zorrillo	
+beggar_background.nut	14	ok	the Sluggard	el Haragán	
+nomad_background.nut	6	ok	Redsands	Arenasrojas	
+nomad_background.nut	8	ok	the Wanderer	el Errante	
+nomad_background.nut	9	reparado	the Waylayer	el Capataz	Capataz no encaja con waylayer (asaltador de caminos, el trasfondo lo describe emboscando caravanas); propuesta "el Emboscador" o "el Salteador"; sin valor libre en la ventana; clase traducción, lo decide el propietario; aplicado: el Salteador, decisión del propietario 24/08
+refugee_background.nut	5	ok	Runsfar	Correlejos	
+refugee_background.nut	6	ok	the Derelict	el Abandonado	
+refugee_background.nut	7	ok	the Surbated	el Derrotado	
+slave_background.nut	9	ok	the Unlucky	el Desafortunado	
+slave_background.nut	11	ok	the Unfree	el No libre	
+slave_background.nut	12	ok	the Restrained	el Reprimido	
+anatomist_background.nut	5	ok	the Magistrate	el Magistrado	
+anatomist_background.nut	6	ok	the Mortician	el Funerario	
+butcher_background.nut	4	ok	Redmeat	Carneroja	
+butcher_background.nut	5	ok	Bloodeye	Ojosangriento	
+cultist_background.nut	5	ok	the Misguided	el Equivocado	
+cultist_background.nut	6	ok	the Fanatic	el Fanático	
+deserter_background.nut	4	ok	Turncloak	el Renegado	
+deserter_background.nut	6	ok	the Runner	el Fugitivo	
+houndmaster_background.nut	4	ok	the Kennelmaster	el Maestro perrero	
+houndmaster_background.nut	5	ok	the Dogkeeper	el Protector de perros	
+hunter_background.nut	4	ok	the Deerhunter	el Cazador de ciervos	
+hunter_background.nut	5	ok	the Woodsman	el Guardabosques	
+miner_background.nut	4	ok	the Crawler	el Reptador	
+miner_background.nut	5	ok	Earthside	Gusano de tierra	
+monk_background.nut	8	ok	the Quiet	el Quieto	
+monk_background.nut	9	ok	the Calm	el Calmado	
+paladin_background.nut	5	ok	the Oathbound	el Guardajuramentos	
+paladin_background.nut	7	ok	the Virtuous	el Virtuoso	
+assassin_southern_background.nut	4	ok	the Murderer	el Ejecutor	
+bowyer_background.nut	6	ok	the Arrowmaker	el Creaflechas	
+cripple_background.nut	5	ok	the Maimed	el Mutilado	
+disowned_noble_background.nut	5	ok	the Disgraced	el Desgraciado	
+eunuch_background.nut	5	ok	the Gelding	el Castrado	
+fisherman_background.nut	4	reparado	the Fisher	el Marinero	"el Marinero" es la traducción exacta de the Sailor en pirates_event.nut; Fisher es pescador; propuesta "el Pescador"; clase traducción, lo decide el propietario; aplicado: el Anzuelo, decisión del propietario 24/08; el Pescador está ocupado por the Fisherman
+hedge_knight_background.nut	6	ok	Strongface	Carafuerte	
+juggler_background.nut	5	ok	the Fool	el Payaso	
+messenger_background.nut	4	ok	the Courier	el Correo	
+raider_background.nut	8	ok	Fourfingers	Cuatrodedos	
+retired_soldier_background.nut	4	ok	the Oldguard	la Vieja guardia	
+tailor_background.nut	7	ok	Silkworm	Gusanodeseda	
+wildman_background.nut	5	ok	the Feral	el Montés	
+fisherman_vs_farmer_event.nut	7	ok	the Armwrestler	Brazofuerte	
+fisherman_vs_farmer_event.nut	8	ok	Fishes	Peces	
+fisherman_vs_farmer_event.nut	12	ok	Weeds	Malahierba	
+archery_stunt_event.nut	9	ok	Felt for <clown:str>	Se lamenta por <clown>	
+archery_stunt_event.nut	11	ok	Nailed it.	¡Lo logró!	
+ancient_temple_enter_event.nut	1	ok	We'll go in.	Entraremos.	
+ancient_temple_enter_event.nut	8	reparado	Chirp. Chirp chirp chirp?	Chirp. ¿Chirp chirp chirp?	vocablo inglés suelto sin traducir, aparición única, mismo patrón que Parry!; propuesta "Pío. ¿Pío pío pío?"; alternativa: dejarlo como sonido deliberado; clase traducción, la decide el propietario; aplicado: Pío. ¿Pío pío pío?, decisión del propietario 24/08
+lawmen_after_criminal_event.nut	2	ok	We'll not give him up.	No lo abandonaremos.	
+lawmen_after_criminal_event.nut	18	ok	Don't challenge the %companyname%!	¡No desafíes a %companyname%!	
+melon_thief_event.nut	11	ok	Git you idiots, git!	¡Que les den, borrachos!	
+melon_thief_event.nut	15	ok	the Melon Mugger	el Asaltamelones	
+brawler_teaches_event.nut	4	ok	Has toughened up <student:str>	Ha fortalecido a <student>	
+creepy_guy_event.nut	18	ok	Insane.	Que locura.	
+civilwar_wounded_soldier_event.nut	6	ok	Hubris! Survivable hubris!	¡Soberbia! ¡Soberbia superable!	
+greenskins_caravan_ambush_event.nut	10	ok	Get over it.	Superalo.	
+greenskins_outro_event.nut	2	ok	You handle him, %dude%.	Encárgate de él, %dude%.	
+greenskins_pet_goblin_event.nut	17	ok	Goddammit.	Maldito loco.	
+undead_frozen_pond_event.nut	9	ok	Impressive.	Increíble.	
+undead_necrosavant_event.nut	7	ok	Uh huh.	Ajá.	
+addict_steals_potion_event.nut	8	ok	<addict:str> is no longer an addict	<addict> ya no es un Adicto	
+march_wear_and_tear_event.nut	1	ok	Suck it up.	Aguanten.	
+youngling_alp_event.nut	1	ok	Ignore it.	Ignórenlo.	
+drunk_nobleman_event.nut	1	ok	We'll rob him.	Robémosle.	
+sled_race_event.nut	11	ok	Holy smokes!	¡Cielos!	
+desert_well_event.nut	8	ok	Go on ahead.	Ve y dilo.	
+pirates_event.nut	20	ok	the Mariner	el Navegante	
+anatomist_vs_ailing_event.nut	1	ok	Go and and heal him of his ailments.	Ve y sánalo de sus dolencias.	
+anatomist_wants_skull_event.nut	6	ok	Hmm.	Hmmmm...	
+brawler_throw_fight_event.nut	5	ok	He'll get over it.	Él lo superará	
+captured_oathbringer_event.nut	2	ok	Torture him.	Torturenlo.	
+incense_trade_event.nut	7	ok	What in the hells.	Pero que coj...	
+mutated_gladiator_annoys_others_event.nut	3	ok	Annoyed by <gladiator:str>'s antics	Cansado de las payasadas de <gladiator>	
+oathtakers_skull_cracked_event.nut	1	ok	Fix it.	Arréglalo.	
+shadow_dissection_event.nut	14	ok	Unnerved by <cultist:str>	Nervioso por <cultist>	
+strange_scribe_event.nut	15	ok	Get it together, %anatomist%.	Contrólate, %anatomist%.	
+good_food_variety_event.nut	1	ok	Enjoy.	Disfrutad.	
+graverobber_heist_event.nut	25	ok	Embarrassing.	Vergonzoso.	
+greedy_demands_raise_event.nut	10	ok	<greedy:str> gets disloyal	<greedy> se torna Desleal	
+herbs_along_the_way_event.nut	7	ok	Ewww.	Puaj.	
+how_far_is_the_sun_event.nut	11	ok	Encouraged by <monk:str>'s preaching	Envalentonado por la predicación de <monk>	
+imprisoned_wildman_event.nut	27	ok	Let them out.	Libérenlos.	
+artifact_reliquary_enter_event.nut	4	ok	This motherfarker...	Este hijo de...	
+optimist_lost_battle_event.nut	3	ok	Rallied by <optimist:str>'s optimism	Motivado por el optimismo de <optimist>	
+pessimist_won_battle_event.nut	3	ok	Tempered by <pessimist:str>'s pessimism	Influenciado por el pesimismo de <pessimist>	
+pimp_and_harlots_event.nut	9	ok	Enjoyed himself with harlots	Se divirtió con unas mujerzuelas	
+player_plays_dice_event.nut	1	ok	Let's play!	¡Juguemos!	
+raid_farmstead_event.nut	1	ok	We raid it.	La saquearemos.	
+rookie_gets_hurt_event.nut	2	ok	Suck it up!	¡Supéralo!	
+spartan_should_eat_more_event.nut	13	ok	<spartan:str> is no longer spartan	<spartan> ya no es Espartano	
+dismiss_injured_event.nut	1	ok	They'll get over it.	Lo superarán.	
+supposed_witch_event.nut	1	ok	Let's free her.	Liberémosla.	
+traveler_event.nut	28	ok	Aye.	Vaya.	
+traveling_troupe_event.nut	6	ok	Bye.	Adiós.	
+travelling_monk_event.nut	9	ok	Prost!	¡Salud!	
+troublemakers_bully_peasants_event.nut	8	ok	Bullied the peasantfolk	Acosó a los lugareños	
+faction_traits_archetypes.nut	2	ok	In defence of the distressed	En defensa de los afligidos	
+faction_traits_archetypes.nut	3	ok	Zeal and honour	Celo y honor	
+faction_traits_archetypes.nut	8	ok	Boldly and honourably	Con valentía y honor	
+faction_traits_archetypes.nut	35	ok	Plenty is caused by dilligence	La abundancia nace de la diligencia	
+faction_traits_archetypes.nut	39	ok	Boldly and rightly	Valientemente y justamente	
+faction_traits_archetypes.nut	66	ok	Obey	Obedece	
+faction_traits_archetypes.nut	71	ok	Unconquered	Invicto	
+faction_traits_archetypes.nut	73	ok	I soar	Me elevo	
+faction_traits_archetypes.nut	75	ok	I despise	Lo desprecio	
+faction_traits_archetypes.nut	77	ok	Spare not	No escatimes	
+faction_traits_archetypes.nut	86	ok	I gain by hazard	Gano arriesgando	
+faction_traits_archetypes.nut	92	ok	Gauge and measure	Pesa y mide	
+faction_traits_archetypes.nut	101	ok	Judge not	No juzgues	
+golden_scale_armor.nut	3	ok	Dragonskin	Piel de dragón	
+golden_scale_armor.nut	4	ok	Snakeskin	Pielsierpe	
+golden_scale_armor.nut	6	ok	Wyrmskin	Piel de wyrm	
+golden_scale_armor.nut	7	ok	Goldskin	Pieldorada	
+named_lindwurm_shield.nut	1	ok	Wurmscale	Escama de wyrm	
+named_lindwurm_shield.nut	3	ok	Snakehide	Cuero de sierpe	
+named_lindwurm_shield.nut	4	ok	Wurmhide	Cuero de wyrm	
+named_lindwurm_shield.nut	5	ok	Scaled	Escamado	
+heraldic_mail_armor.nut	2	ok	Grandiosity	Majestad	
+heraldic_mail_armor.nut	3	ok	Pageantry	Pomposidad	
+heraldic_mail_armor.nut	4	ok	Swank	Gallardía	
+black_and_gold_armor.nut	3	ok	Suncloak	Capa solar	
+black_and_gold_armor.nut	6	ok	Shining Hauberk	Hauberk resplandeciente	
+black_leather_armor.nut	4	ok	Peel	Pellejo	
+black_leather_armor.nut	6	ok	Nightcloak	Capa nocturna	
+blue_studded_mail_armor.nut	2	ok	Toadskin	Piel rugosa	
+blue_studded_mail_armor.nut	3	ok	Ogreskin	Piel de ogro	
+named_metal_nose_horn_helmet.nut	3	ok	Bladed Headguard	Casco afilado	
+named_metal_nose_horn_helmet.nut	4	ok	Bulky Faceguard	Máscara voluminosa	
+cleave.nut	0	ok	Cleave	Tajo de cuchillo	
+cleave.nut	2	ok	Cleaved	Degollado	
+gash_skill.nut	0	ok	Gash	Tajo debilitante	
+gash_skill.nut	2	ok	Cut down	Tajeado	
+craven_trait.nut	4	ok	Turncoat	Renegado	
+craven_trait.nut	5	ok	the Spineless	el Temeroso	
+brown_coat_of_plates_armor.nut	5	ok	Lifesaver	Salvavidas	
+green_coat_of_plates_armor.nut	1	ok	Shell	Coraza	
+lindwurm_armor.nut	6	ok	Wurmscales	Escamas de Wyrm	
+named_metal_skull_helmet.nut	3	ok	Facemask	Semblante	
+nasal_feather_helmet.nut	3	ok	Headguard	Guardacabezas	
+alp_potion_item.nut	0	ok	Nightking's Draft	Brebaje del rey nocturno	
+gilders_embrace_shield.nut	3	ok	Is indestructible	Es indestructible	
+aimed_shot.nut	2	ok	Shot	Abatido	deliberado, commit deccfff (QA ola 4, registro vulgar en tooltips mecánicos)
+assault_skill.nut	4	ok	Impale	Empalar	
+bash.nut	0	ok	Bash	Mazazo	
+batter_skill.nut	0	ok	Batter	Abollar	
+censer_castigate_skill.nut	0	ok	Castigate	Castigar	
+chop.nut	2	ok	Chopped up	Talado	
+deathblow_skill.nut	0	ok	Deathblow	Golpe mortal	
+hook.nut	3	ok	<user:str_tag> hooks in <entity:str_tag>	<user> engancha a <entity>	
+ignite_firelance_skill.nut	0	ok	Ignite	Encender	
+lightning_storm_skill.nut	1	ok	Electrocuted	Electrocutado	
+lunge_skill.nut	2	ok	Sliced up	Elegantemente tajeado	
+perforate_skill.nut	0	ok	Perforate	Perforar	
+sling_stone_skill.nut	2	ok	Stoned	Apedreado	
+spearwall.nut	0	ok	Thrust	Lanzazo	
+afraid_effect.nut	0	ok	Afraid	Asustado	
+skill.nut	21	ok	Nighttime	De noche	
+dastard_trait.nut	0	ok	Dastard	Canalla	
+huge_trait.nut	0	ok	Huge	Gigante	
+lucky_trait.nut	2	ok	the Blessed	el Bendito	
+optimist_trait.nut	0	ok	Optimist	Optimista	
+tiny_trait.nut	2	ok	the Halfman	el Mediano	
+weasel_trait.nut	2	reparado	the Eel	la Ánguila	tilde de más: la palabra es llana acabada en vocal, propuesta "la Anguila"; no es corrimiento, corrección ortográfica directa; aplicado: la Anguila
+hunting_alps_contract.nut	2	reparado	dreamstealers	ladrones de almas	ventana 1-5 corrida k=-1: cada valor está una posición antes de su dueño (dream a sueños, souls a almas, stalkers a acechadores); aplicado: ladrones de sueños; rotación pura, cero traducciones nuevas
+hunting_alps_contract.nut	3	reparado	soulstealers	acechadores nocturnos	misma ventana; aplicado: ladrones de almas
+hunting_alps_contract.nut	4	reparado	nightstalkers	terrores nocturnos	misma ventana; aplicado: acechadores nocturnos
+hunting_alps_contract.nut	5	reparado	nachtmars	alps	misma ventana; aplicado: terrores nocturnos, y el 1 (alps, fuera del estrato) recupera su idéntico alps
+have_all_provisions_ambition.nut	17	ok	<ret>\n- Smoked Ham	<ret>\n- Jamón Ahumado	
+have_all_provisions_ambition.nut	20	ok	<ret>\n- Dates	<ret>\n- Dátiles	
+have_all_provisions_ambition.nut	21	ok	<ret>\n- Rice	<ret>\n- Arroz	
+councilman.nut	1	ok	the Councilman	el Alcalde	licencia razonable para un cargo municipal
+councilman.nut	2	ok	the Councilor	el Magistrado	repite el valor de the Magistrate (anatomist_background), nombre común de cargo, aceptable
+councilman.nut	3	reparado	the Steward	el Consejero	el Consejero pertenece con más propiedad a the Councilor (vecino 2); Steward sería el Senescal (libre) o el Mayordomo; propuesta el Senescal; clase traducción, lo decide el propietario; aplicado: el Senescal, decisión del propietario 24/08
+player.nut	32	ok	Beheaded	Decapitado	
+player.nut	33	ok	Disemboweled	Destripado	
+player.nut	34	ok	Gutted	Eviscerado	
+world_state.nut	0	ok	ENCAMPED	ACAMPANDO	
+world_state.nut	1	ok	PAUSED	PAUSADO	
+world_state.nut	7	ok	Flee!	¡Huid!	
+tooltip_events.nut	257	ok	Dismiss	Despedir	
+tooltip_events.nut	349	ok	Craft	Elaborar	
+tooltip_events.nut	358	ok	Rigorous Schooling	Enseñanza rigurosa	
+defeat_civilwar_ambition.nut	6	ok	Raging	Desatada	
+defeat_civilwar_ambition.nut	7	ok	Dragging On	Prolongándose	
+discover_location_contract.nut	10	ok	Much appreciated.	Lo agradecemos.	
+discover_location_contract.nut	18	ok	I'll think about it.	Lo pensaré.	
+intercept_raiding_parties_contract.nut	3	reparado	Slavers	Esclavista	singular para una partida (grupo) del mapa; corrección de número gramatical; aplicado: Esclavistas (libre)
+intercept_raiding_parties_contract.nut	14	ok	We failed.	Fallamos.	
+obtain_item_contract.nut	4	ok	Elderstone	Piedrantigua	
+obtain_item_contract.nut	9	ok	Petrified Almanach	Almanaque petrificado	
+good_harvest_situation.nut	5	ok	<actor:str> benefits from a <name:str>	<actor> goza de una <name>	
+good_harvest_situation.nut	6	ok	<actor:str> no longer benefits from a <name:str>	<actor> ya no disfruta de una <name>	
+defeat_greenskins_ambition.nut	6	ok	Undecided	Indecisa	
+break_greenskin_siege_contract.nut	20	ok	Engage!	¡Adelante!	
+contract.nut	0	ok	Objectives	Objetivos	
+decisive_battle_contract.nut	26	ok	Damnit!	¡Maldición!	
+escort_caravan_contract.nut	57	ok	Darn it!	¡Maldita sea!	
+hunting_lindwurms_contract.nut	8	ok	Be on the lookout!	¡Manténganse alerta!	
+hunting_serpents_contract.nut	15	ok	Protect them!	¡Protegedlos!	
+privateering_contract.nut	0	reparado	Privateering	Contratista	Contratista no significa privateering (corso) y no pertenece a otra entrada; propuesta Patente de corso (libre); es el título del contrato; clase traducción, lo decide el propietario; aplicado: Patente de corso, decisión del propietario 24/08
+raze_attached_location_contract.nut	6	ok	Encircle them!	¡Rodéenlos!	
+return_item_contract.nut	7	ok	Demonic Statuette	Estatuilla Demoníaca	
+slave_uprising_contract.nut	8	reparado	Destroy them!	¡Destruídlos!	tilde sobrante en el enclítico (destruid mas los es llana acabada en s); corrección ortográfica; aplicado: ¡Destruidlos!
+tutorial_contract.nut	15	ok	The Aftermath	Las Consecuencias	
+abducted_children_situation.nut	5	ok	<actor:str> now has <name:str>	<actor> sufre de <name>	
+high_spirits_situation.nut	0	ok	High Spirits	Optimismo	
+main_menu_state.nut	2	ok	Swipe	Barrida	
+tactical_state.nut	30	ok	Run them down!	¡Persíganlos!	
+character_screen.nut	2	ok	Dismissed <bro:str>	Despediste a <bro>	
+actor.nut	16	reparado	<actor:str_tag> has rallied	¡<actor> ha hecho una arenga!	has rallied es recobrar la moral el que huía, no arengar (arengar es la habilidad del sargento); propuesta ¡<actor> ha recobrado la moral!; clase traducción, lo decide el propietario; aplicado: ¡<actor> ha recobrado la moral!, decisión del propietario 24/08
+strings.nut	58	ok	Twenty-eight	Veintiocho	
+strings.nut	59	ok	Twenty-nine	Veintinueve	
+strings.nut	73	ok	The Conqueror	El Conquistador	
+strings.nut	91	ok	Billman	Piquero	
+strings.nut	92	ok	Arbalester	Arbalestero	acuñación desde arbalest; el corpus no tiene Crossbowman y Ballestero está libre; se acepta como voz de glosario
+strings.nut	93	ok	Standard Bearer	Abanderado	
+strings.nut	123	ok	Sapling	Árbol joven	
+strings.nut	141	ok	Gunner	Cañonero	
+strings.nut	142	ok	Officer	Oficial	
+strings.nut	193	ok	Billmen	Piqueros	
+strings.nut	194	ok	Arbalesters	Arbalesteros	
+strings.nut	195	ok	Standard Bearers	Abanderados	
+strings.nut	196	ok	Sergeants	Sargentos	
+strings.nut	198	ok	Donkeys	Asnos	
+strings.nut	225	ok	Saplings	Árboles jóvenes	
+strings.nut	241	ok	Conscripts	Conscriptos	
+strings.nut	242	reparado	Gunners	Cañoneros	minúscula en el rótulo (el singular es Hiena); aplicado: Hienas
+strings.nut	243	ok	Officers	Oficiales	
+strings.nut	247	ok	Mortars	Morteros	
+strings.nut	296	ok	Merry Mist	Viento Negro	
+strings.nut	301	ok	Solitaire	Solitaria	
+strings.nut	302	ok	Tetrarch	Tetrarca	
+strings.nut	305	ok	Poundmaker	El Hacedor de Coronas	
+strings.nut	306	ok	Brakel	Perra del Mar	
+strings.nut	314	ok	King's Bounty	El King's Bounty	
+strings.nut	319	ok	Sycamore	El Sycamore	
+strings.nut	320	ok	Noble Runner	El Nautilus	El de navío: los barcos llevan artículo masculino por convención naval, como El Luna Sombría; no corregir
+strings.nut	323	ok	Whale's Voyage	El Viaje de la Ballena	convención naval del artículo, ver Tiger's Claw
+strings.nut	324	ok	Quickmatch	El Partidarápida	
+strings.nut	325	ok	Blackfly	El Moscanegra	
+strings.nut	327	ok	Supreme	El Supremo	
+strings.nut	328	ok	Griffon	El Grifo	
+strings.nut	329	ok	Axford	El Axford	
+strings.nut	330	ok	Seagull	Gaviota	
+strings.nut	331	ok	Belzebub	Furia	
+strings.nut	348	ok	Walther's Fellowship	La compañía de Walther	
+strings.nut	349	ok	Grudgebringers	Los Rencorosos	guiño a los Segundos Hijos
+strings.nut	367	ok	Bronzeheads	Cabezas de Bronce	
+strings.nut	369	ok	Hammerguard	Guardiamartillo	
+strings.nut	370	ok	Crowntakers	Tomadores de Coronas	
+strings.nut	373	ok	Blood Bound	Ligados por Sagre	
+strings.nut	390	ok	Gota	Lioncaster	
+strings.nut	411	ok	Thurah	Brossard	
+strings.nut	415	ok	Harkon	Smallwood	
+strings.nut	425	ok	Quadim	Lanza del Sol	
+strings.nut	426	ok	Hikma	Cez	
+strings.nut	434	ok	Treacherous	Traicionero	
+strings.nut	436	ok	Unreliable	Poco confiable	
+strings.nut	438	ok	Recognized	Reconocido	
+strings.nut	442	ok	Reputable	Respetable	
+strings.nut	444	ok	Fabled	De leyenda	
+strings.nut	450	ok	Notorious	Infame	
+strings.nut	452	ok	Good	Bondadoso	
+strings.nut	453	ok	Chivalrous	Caballeroso	
+strings.nut	454	ok	Saintly	Santo	
+strings.nut	462	ok	Allied	Aliado	
+strings.nut	466	ok	Grassland	Pastizal	
+strings.nut	504	ok	Mainhand	Mano principal	
+strings.nut	513	ok	Dusk	Anochecer	
+strings.nut	570	ok	Foamy Shallows	Bajos espumosos	
+strings.nut	574	ok	The Raging Gulf	El Golfo Embravecido	
+strings.nut	578	ok	Plainshire	Llanura de Plainshire	
+strings.nut	579	ok	Vinland	Vinlandia	
+strings.nut	581	ok	Windlands	Tierras Ventosas	
+strings.nut	582	ok	Wide Watch	Guardiamplia	
+strings.nut	585	ok	Markland	Marklandia	
+strings.nut	589	ok	Wanderer's Boon	Bonanza del Caminante	
+strings.nut	590	ok	Valeshire	Valle de Valeshire	
+strings.nut	591	ok	Ridland	Tierras Altas	
+strings.nut	592	ok	Greenfold	Campo Verde	
+strings.nut	595	ok	Shallowford	Vado Somero	
+strings.nut	597	ok	Kingmill	Molinoreal	
+strings.nut	603	ok	Mooseridge	Colina del Alce	
+strings.nut	608	ok	Grasslands	Tierras de Pastos	
+strings.nut	610	ok	Wideacre	Campo Amplio	
+strings.nut	611	ok	Southbloom	Surenflor	
+strings.nut	612	ok	Dawnland	Tierras del Amanecer	
+strings.nut	614	ok	Southwind Acres	Acres del Viento del Sur	
+strings.nut	615	ok	Meadowcove	Ensenada de la Pradera	
+strings.nut	624	ok	Peatfold	Turberas	
+strings.nut	632	ok	Blackfan	Abanico Negro	
+strings.nut	633	ok	Gallowsbog	Pantano de las Horcas	
+strings.nut	634	ok	Dungslump	Montón de Estiércol	
+strings.nut	635	ok	Houndsmarsh	Marisma de los Sabuesos	
+strings.nut	638	ok	Grimdowns	Llanuras Siniestras	
+strings.nut	639	ok	The Reeds	Los Juncos	
+strings.nut	640	ok	Froghold	Refugio de Ranas	
+strings.nut	641	ok	Spidergrove	Bosque de Arañas	
+strings.nut	646	ok	Deadbottom	Fondo Muerto	
+strings.nut	664	ok	Dreadmoor	Páramo Atemorizante	
+strings.nut	670	ok	The Hummocks	Las Elevaciones	
+strings.nut	671	ok	Knowesfold	Colinahierro	
+strings.nut	676	ok	Boulderhills	Colinas de Piedra	
+strings.nut	678	ok	Bed Load Knolls	Lomas de Lechopiedra	
+strings.nut	681	ok	Shinglehumps	Montículos de Grava	
+strings.nut	683	ok	Giant's Pebbles	Piedras del Gigante	
+strings.nut	691	reparado	The Reach	El Dominio	junípero es cultismo válido para enebro pero lleva tilde; aplicado: Colinas de Junípero
+strings.nut	702	ok	Dusky Forest	Bosqueoscuro	
+strings.nut	703	ok	Scoundrels' Forest	Arboleda de Canallas	
+strings.nut	706	ok	Splinterdale	Valleastilla	
+strings.nut	707	ok	Spiderwood	Bosquearaña	
+strings.nut	708	ok	Tickbrake	Frenador de Garrapatas	
+strings.nut	712	ok	Ravenhold	Fuertecuervo	
+strings.nut	713	ok	Needlegrove	Bosque de Espinas Quebradizas	
+strings.nut	720	ok	Wolfwood	Bosque de Lobos	casi duplicado con Black Woods (Bosque Negro), fiel a la cercanía del propio original; el artículo distingue
+strings.nut	726	ok	Borderdale	Frontera del Valle	
+strings.nut	732	ok	Hexenwald	Bosque de Hexen	
+strings.nut	736	ok	Oldgrowth	Bosqueviejo	
+strings.nut	737	ok	Rampants	Bosques Feroces	
+strings.nut	738	ok	Ironoak Grove	Roble de Hierro	
+strings.nut	744	ok	Antlerfold	Bosque de los Cien Acres	
+strings.nut	747	ok	Mossy Woods	Bosquemusgoso	guiño al Bosque de los Cien Acres
+strings.nut	766	reparado	Brookwood	Bosque del Riachuelo	falso amigo: elderberry es saúco, no sauce; aplicado: Bosque de Saúcos; venía del bootstrap 61c690d sin decisión posterior
+strings.nut	767	ok	Springwood	Bosque del Manantial	
+strings.nut	768	ok	Everwoods	Bosque Eterno	
+strings.nut	775	ok	Somerhurst	Arboleda de Somerhurst	
+strings.nut	776	ok	Fireander	Bosque de Fireander	
+strings.nut	777	ok	Bloodcut Growth	Espesura de Cortasangre	
+strings.nut	778	ok	Burnend	Quemadura	
+strings.nut	779	ok	Rustdroop	Gota de Oxido	
+strings.nut	785	reparado	Redwood	Madera Roja	tilde; aplicado: Bosques Bermellón
+strings.nut	786	ok	Badger's Covert	Refugio del Tejón	
+strings.nut	789	ok	Pyrewood	Maderardiente	
+strings.nut	790	ok	Beatroot Wilds	Bosque de Raíces de Remolacha	
+strings.nut	792	ok	Yellowleaf's Range	Campos de Hoja Amarilla	
+strings.nut	798	ok	Jagged Spires	Picos Escarpados	
+strings.nut	806	ok	Goathorns	Cuernos de Cabra	
+strings.nut	807	ok	Dragonteeth	Dientes de Dragón	
+strings.nut	808	ok	Highrise	La Montaña Solitaria	
+strings.nut	809	ok	Eagleflight	Vuelo del Águila	
+strings.nut	810	ok	Grimroof	Techo Siniestro	
+strings.nut	811	ok	Dunspike	Puaoscura	guiño a la Montaña Solitaria
+strings.nut	812	ok	Dreadhorn	Cuerno del Terror	
+strings.nut	813	ok	Ravensbeak	Pico de Cuervos	
+strings.nut	814	reparado	Mount Bulkhead	Cordillera Carga de Granel	tilde; aplicado: Púaoscura
+strings.nut	815	ok	Cloddheads	Cabezas de Barro	
+strings.nut	816	ok	Browslopes	Laderas de Cejas	
+strings.nut	818	ok	Yawning Gaps	Brechas Abiertas	
+strings.nut	819	ok	Mammothshoulders	Hombros de Mamut	
+strings.nut	821	ok	Bald Crown	Coronacalva	
+strings.nut	822	ok	Cloudcrest	Cresta de las Nubes	
+strings.nut	824	ok	Slaughtermount	Montañas del Matarife	
+strings.nut	825	ok	The Rift	La Grieta	
+strings.nut	835	ok	Grimestone Peaks	Montañas de Piedra Mugrienta	
+strings.nut	844	ok	Silver Flats	Llanos Plateados	
+strings.nut	845	ok	Everwinter	Inviernoeterno	
+strings.nut	846	ok	Frozen North	Nortehelado	
+strings.nut	848	ok	Coldend	Frioextremo	
+strings.nut	849	ok	Wintermore	Invierdor	
+strings.nut	850	ok	Icemark	Marcagelida	
+strings.nut	851	ok	Spikewind	Vientopico	Frioextremo sin tilde es correcto por la regla de compuestos, como rioplatense
+strings.nut	852	ok	Iceblade Dale	Dalafilada de Hielo	
+strings.nut	854	ok	Frostfold	Pliegue Helado	
+strings.nut	855	ok	Icehenge	Henge de Hielo	
+strings.nut	863	ok	Chillwind Flatlands	Llanuras del Viento Helado	
+strings.nut	867	ok	Snowbank	Banco de Nieve	
+strings.nut	868	ok	Northmark	Nortemarca	
+strings.nut	869	ok	Tablelands	Tierras de la Meseta	
+strings.nut	870	ok	Scragglands	Tierras Escabrosas	
+strings.nut	871	ok	Norshire	Nortshire	
+strings.nut	872	ok	Barescrub	Matorral Desnudo	
+strings.nut	873	ok	Forefathers' Highlands	Tierras Altas de los Ancestros	
+strings.nut	874	ok	Skyreach	Tundra del Rey	
+strings.nut	875	ok	Clan's Claim	Fiordos del Clan	
+strings.nut	879	ok	Ragwilds	Arboledas Raquiticas	
+strings.nut	881	ok	Ragnar's Range	Cordillera de Ragnar	casi duplicado con Nordlands (Tierras del norte); propuesta en tanda: Nordlands a Tierras Nórdicas; cerrado 24/08: Nordlands pasó a Tierras Nórdicas por decisión del propietario
+strings.nut	883	ok	Ruffmuir	Baldios de Ruffmuir	
+strings.nut	884	ok	Angbride	Llanuras del Jarl	
+strings.nut	887	ok	Nordlands	Tierras del norte	
+strings.nut	892	ok	Norenford	Fiordos del Norte	
+strings.nut	895	ok	Scrublands	Arbustales	
+strings.nut	896	ok	Drylands	Tierras Secas	
+strings.nut	899	ok	Scorching Shire	Comarca Abrasadora	
+strings.nut	902	ok	Southmark	Marca del Sur	
+strings.nut	903	ok	The Scald	La Quemadura	
+strings.nut	905	ok	Droughtshire	Comarca de la Sequía	
+strings.nut	906	ok	Sunpan	Solpan	cercano a Burnend (Quemadura); el artículo distingue y el original ya es así de próximo
+strings.nut	907	ok	The Dryweeds	Los Pastos Secos	
+strings.nut	908	ok	Thornvale	Valle de las Espinas	
+strings.nut	913	ok	Razorshrub	Matorral Cortante	
+strings.nut	915	ok	Gritstone	Piedra de Granito	
+strings.nut	919	ok	Rustyblade Mesa	Meseta de Cuchillas Oxidadas	
+strings.nut	922	ok	Southwatch	Guardia del Sur	
+strings.nut	923	ok	Sunreach	Alcanzador del Sol	
+strings.nut	924	ok	Sandshear	Corte de Arena	
+strings.nut	936	ok	The Emptiness	La Vacuidad	
+strings.nut	951	ok	Dry Wastes	Desiertoseco	
+strings.nut	956	ok	Fruitful Shallows	Bajios Fructiferos	
+strings.nut	968	ok	Average	decente	
+strings.nut	975	ok	A plethora of	Una plétora de	
+strings.nut	986	reparado	Ballistics	Balística	falso amigo: wagon es carromato, no vagón; aplicado en las tres líneas de la familia; carromato ya era la convención del corpus
+strings.nut	991	ok	Brawny	Fornido	
+strings.nut	992	ok	Taunt	Provocar	
+strings.nut	993	ok	Steadfast	Firme	
+strings.nut	994	ok	Colossus	Coloso	
+strings.nut	1001	ok	Pathfinder	Rastreador	
+strings.nut	1006	ok	Duelist	Duelista	
+strings.nut	1007	ok	Nimble	Ligero	
+strings.nut	1009	ok	Resilient	Resiliente	
+strings.nut	1012	ok	Weaponmaster	Maestro de las armas	
+strings.nut	1020	ok	Debilitate	Debilitar	
+strings.nut	1022	ok	Rotation	Rotación	
+strings.nut	1024	ok	Gifted	Dotado	
+strings.nut	1027	ok	Overwhelm	Abrumar	
+character_names.nut	61	reparado	Henrik	Henry	anglicismo en el pool germano y sin dueño en el corpus (no existe en Henry); en tanda: ¿revertir a Henrik o es guiño?; aplicado: Henrik idéntico, decisión 24/08; el anglicismo rompía el pool germano
+character_names.nut	110	ok	Theudobald	Teodobald	
+character_names.nut	143	ok	Oswald	Reginhard	sustitución germana del traductor (no existe en Reginhard); misma clase que Sorrel a Jaskier
+character_names.nut	170	ok	Sorrel	Jaskier	el guiño canónico: Jaskier, no tocar
+character_names.nut	220	ok	Raimund	Raimundo	
+character_names.nut	231	ok	Bertha	Berta	
+character_names.nut	232	ok	Mathilda	Matilda	
+character_names.nut	259	ok	Skarbrand	Ragnarr	sustitución del traductor, guiño a Ragnar; sin dueño en el corpus
+character_names.nut	264	ok	the Pillager	el Asaltante	
+character_names.nut	265	ok	the Conquerer	el Conquistador	repite el Conquistador de The Conqueror con artículo distinto; título común, contextos disjuntos
+character_names.nut	267	ok	the Despoiler	el Saqueador	
+character_names.nut	270	ok	Skullcrusher	Rompecráneos	
+character_names.nut	271	ok	Bonebreaker	Rompehuesos	
+character_names.nut	272	ok	Slaughterborne	Causamatanzas	
+character_names.nut	274	ok	Battleborn	Nacido en batalla	
+character_names.nut	275	ok	Ironside	Brazo de Hierro	licencia: Brazo de Hierro por Ironside, sin colisión
+character_names.nut	276	ok	the Bloodied	el Sangriento	
+character_names.nut	278	ok	Beastblood	Sangre de Bestia	
+character_names.nut	279	ok	the Wolfclaw	Garra de Lobo	
+character_names.nut	280	ok	the Savage	el Fiero	el Fiero esquiva la colisión con Salvaje (Wildman)
+character_names.nut	281	ok	the Bloodletter	el Carasangrienta	
+character_names.nut	282	ok	the Crusher	el Rompedor	
+character_names.nut	283	ok	the Everlasting	el Inmatable	el Inmatable, voz del traductor, deliberada
+character_names.nut	284	ok	Amira	Altair	guiño a Altair (Assassin's Creed)
+character_names.nut	285	ok	Ibn Sahr	Ibn Laha'ad	guiño Assassin's Creed
+character_names.nut	292	ok	the Brutalizer	el Brutal	
+character_names.nut	302	ok	the Stallion	el Semental	
+character_names.nut	306	ok	Steelhammer	Martilloacero	
+character_names.nut	370	ok	%randomsouthernname% the Blademaster	%randomsouthernname% el Maestro de la cuchilla	
+character_names.nut	397	ok	The Headcollector	El Coleccionista de cabezas	
+character_names.nut	401	ok	The Headcrusher	El Aplastacabezas	
+character_names.nut	408	ok	the Deathstalker	el Acosador Letal	
+character_names.nut	416	ok	Count	Conde	
+character_names.nut	428	ok	the Bloody	el Sanguinario	
+character_names.nut	431	ok	the Younger	el Menor	
+character_names.nut	439	ok	the Fencer	el Esgrimista	
+character_names.nut	441	ok	Quickblade	Hojaveloz	
+character_names.nut	443	reparado	Bladedancer	Danzor de la Espada	Danzor no es palabra; aplicado: Danzador de la Espada
+character_names.nut	444	ok	the Unbeaten	el Invencible	
+character_names.nut	447	ok	the Skillful	el Hábil	
+character_names.nut	453	ok	Steelwielder	Portador de acero	
+character_names.nut	459	ok	Mancrusher	Aplastahombres	
+character_names.nut	460	ok	Warshout	el Espadachín Negro	sustitución del traductor consistente: el en Warshout aparece dos veces en el corpus con este mismo valor
+character_names.nut	461	ok	The Skulltaker	el Tomador de cráneos	
+character_names.nut	464	ok	Sureshot	Tiroseguro	
+character_names.nut	467	ok	%randomname% the Sniper	%randomname% el Francotirador	
+character_names.nut	471	ok	Deadeye	Ojomuerto	
+character_names.nut	473	ok	%randomname% the Shooter	%randomname% el Arquero	
+character_names.nut	474	ok	%randomname% Featherdraw	%randomname% Pluma de flecha	
+character_names.nut	476	reparado	%randomname% the Poker	%randomname% el Poker	falso amigo: the Poker es el que pincha, no el naipe; en tanda: el Atizador o el Pinchador; aplicado: el Atizador, decisión 24/08
+character_names.nut	478	ok	%randomname% Truestrike	%randomname% Tiro verdadero	
+character_names.nut	480	ok	The Oathkeeper	El Guardajuramentos	repite Guardajuramentos con the Oathbound (trasfondo de paladín); título común, contextos disjuntos
+character_names.nut	491	ok	%randomname% the Righteous	%randomname% el Recto	
+character_names.nut	492	ok	the Builder	el Constructor	
+character_names.nut	495	ok	the Artisan	el Artesano	
+character_names.nut	499	ok	Hamfisted	Puñojamón	
+character_names.nut	500	ok	the Mauler	el Machacador	
+character_names.nut	502	ok	Ironjaw	Mandíbula de hierro	
+character_names.nut	503	ok	the Brawler	el Alborotador	
+character_names.nut	506	ok	the Sutler	el Cantinero	
+character_names.nut	509	ok	the Nighthunter	el Cazador nocturno	
+character_names.nut	511	ok	the Exorciser	el Exorcista	
+character_names.nut	514	ok	the Shoveler	el Paleador	
+character_names.nut	515	ok	Gravespotter	Buscador de tumbas	
+character_names.nut	517	ok	Longnose	Narizlarga	
+character_names.nut	519	ok	the Ratcatcher	el Cazaratas	
+character_names.nut	520	ok	the Tepid	el Tibio	
+character_names.nut	523	reparado	Cuckchild	Cornudo	Cuckchild es el hijo, no el marido burlado; en tanda: el Hijo del cornudo; aplicado: el Hijo del cornudo, decisión 24/08
+character_names.nut	525	ok	Whoreson	el Hijodeperra	
+character_names.nut	526	ok	the Tarnish	el Manchado	
+character_names.nut	528	ok	the Seeker	el Buscador	
+character_names.nut	533	ok	Sir Burkhard	Ser Dunk	guiño ASOIAF (Ser Dunk) con la grafía Ser de la saga, deliberado
+character_names.nut	534	ok	Sir Silvan	Ser Aegon	guiño ASOIAF (Ser Aegon), deliberado
+character_names.nut	554	ok	Sir Erkenbrand	Ser Jaime	guiño ASOIAF (Ser Jaime), deliberado
+character_names.nut	568	ok	Vras Ushtar	Barad' Dur	guiño LOTR; convive con el Barad-Dur de world_location_names con grafía distinta, deliberado
+character_names.nut	569	ok	Thrak Talun	Naz' Gul	guiño LOTR (Naz' Gul), deliberado
+character_names.nut	572	ok	%randomname% the Slaughterer	%randomname% el Matador	
+character_names.nut	578	ok	Barabas Brimstone	Barabas 'Azufre'	
+character_names.nut	582	ok	%randomname% Bloodbeard	%randomname% Barbasangrienta	
+character_names.nut	583	ok	Mead Jar %randomname%	%randomname% Tarro de aguamiel	
+character_names.nut	585	ok	Dreaded %randomname%	Temible %randomname%	
+character_names.nut	586	ok	The Swine	el Verraco	
+character_names.nut	605	ok	%randomname% the Pillager	%randomname% el Pirómano	licencia con lógica de saqueo e incendio (el Pirómano)
+character_names.nut	616	ok	Mickel Copperheart	Mickel Corazón de cobre	
+character_names.nut	617	ok	Casper the Cutpurse	Casper el Monedero	metonimia defendible (el Monedero); el Cortabolsas exacto vive en thief_background sin colisión visible
+character_names.nut	618	ok	Ottel Bleakheart	Ottel Corazón desolado	
+character_names.nut	619	ok	Joost Crowntaker	Joost Tomacoronas	
+character_names.nut	620	ok	Baltasar the Toothless	Baltasar el Sin dientes	
+character_names.nut	622	ok	August the Gravedigger	August el Cavatumbas	
+character_names.nut	623	ok	Urban Goodman	Urban Buenhombre	
+character_names.nut	627	ok	Gla-Oth the Endless Maw	Kayran el Devorabarcos	guiño al Kayran del Witcher, deliberado
+character_names.nut	633	ok	Xapocathlu the All-Reaching	Xapocathlu el Omnipresente	
+character_names.nut	634	ok	the Returned	el Retornado	
+character_names.nut	635	ok	the Restorator	el Restaurador	
+character_names.nut	640	ok	the Unearthed	el Desenterrado	
+character_names.nut	647	ok	the Favored	el Favorecido	
+character_names.nut	650	ok	Throatcutter	Rebanapescuezos	
+character_names.nut	651	ok	Knifelicker	Lamecuchillos	
+character_names.nut	652	ok	the Skinner	el Desollador	
+character_names.nut	653	ok	Eyegouger	Desgarraojos	
+character_names.nut	654	ok	Rotgut	Matarratas	
+character_names.nut	655	reparado	the Cutter	el Cuchillo	el Cuchillo repite el valor de The Cleaver, su dueño natural; en tanda: el Cortador; aplicado: el Rajador, decisión 24/08; el Cuchillo queda solo en The Cleaver
+character_names.nut	656	ok	Nosebiter	Muerdenarices	
+character_names.nut	657	ok	the Sticker	el Ensartador	
+character_names.nut	658	ok	the Stalker	el Hostigador	
+character_names.nut	659	reparado	the Shadowwalker	el Caminante de sombres	typo sombres; aplicado: el Caminante de sombras
+character_names.nut	660	reparado	the Fogwalker	el Caminante de pantanos	fog es niebla, no pantano; en tanda: el Caminante de nieblas; aplicado: el Caminante de nieblas, decisión 24/08
+character_names.nut	661	ok	the Cunning	el Astuto	
+character_names.nut	662	ok	the Backstabber	el Traidor	
+character_names.nut	664	ok	Gutstabber	Perforavientres	
+character_names.nut	665	ok	Earripper	Desgarraorejas	
+character_names.nut	666	ok	Necksnapper	Rompecuellos	
+character_names.nut	667	ok	the Knifejuggler	el Malabarista de cuchillos	
+character_names.nut	668	reparado	the Decayed	el Decaído	falso amigo suave: decayed es descompuesto, no decaído; en tanda: el Descompuesto; aplicado: el Descompuesto, decisión 24/08
+character_names.nut	669	ok	the Unburied	el Insepulto	
+character_names.nut	673	ok	the Corrupted	el Corrompido	
+character_names.nut	675	reparado	the Oathbreaker	el Rompejuramento	los compuestos van en plural, como Guardajuramentos; aplicado: el Rompejuramentos
+character_names.nut	682	ok	the Soulless	el Desalmado	repite el Desalmado con the Ruthless (manhunter); título común, contextos disjuntos
+character_names.nut	683	ok	the Vessel	el Cascarón	
+character_names.nut	688	ok	The Puppeteer	El Marionetista	
+character_names.nut	689	ok	The Plaguebringer	El Portador de plaga	
+character_names.nut	691	ok	The Reanimator	El Reanimador	
+character_names.nut	692	ok	%randomname% the Obsessed	%randomname% el Obsesionado	
+character_names.nut	697	ok	%randomname% the Wormbitten	%randomname% el Mordido por gusanos	
+character_names.nut	698	ok	%randomname% the Unholy	%randomname% el Impío	
+character_names.nut	699	ok	%randomname% the Enlightened	%randomname% el Iluminado	
+item_names.nut	109	reparado	Torrent	Torrentes	el original es singular entre vecinos plurales; aplicado: Torrente
+item_names.nut	137	ok	Longpike	Largapica	
+item_names.nut	138	ok	Heartspike	Perforacorazones	
+item_names.nut	139	ok	Eye Poker	Perforaojos	Perforaojos: aquí el poker sí está bien leído
+item_names.nut	140	ok	Spire	Pináculo	
+item_names.nut	142	ok	Pricker	Pinchador	
+item_names.nut	144	ok	Bill	Hoja con gancho	
+item_names.nut	145	ok	Billhook	Guja	Guja, voz real de arma de asta
+item_names.nut	148	ok	Willbreaker	Quiebravoluntades	
+item_names.nut	149	ok	Foe Feller	Mataenemigos	
+item_names.nut	150	ok	Mutilater	Mutilador	
+item_names.nut	151	ok	Whacker	Vapuleador	
+item_names.nut	152	ok	Greatsword	Mandoble	
+item_names.nut	154	ok	Vanquisher	Vencedor	
+item_names.nut	155	ok	Executioner	Ejecutor	Ejecutor esquiva a Verdugo, que es del Nomad Executioner
+item_names.nut	156	ok	Orcslayer	Mataorcos	
+item_names.nut	161	ok	Warsword	Espada de guerra	
+item_names.nut	164	ok	Warbrand	Faussar	Faussar, voz real de espadón
+item_names.nut	168	ok	Witherbrand	Filo Marchito	
+item_names.nut	169	ok	Windslasher	Viento Cortante	
+item_names.nut	170	ok	Cutlass	Alfanje	
+item_names.nut	171	ok	Fleshripper	Desgarrador de carne	pareja Desgarrador de carne y Desgarracarne tan próxima como ripper y render en el original
+item_names.nut	172	ok	Fleshrender	Desgarracarne	ver 171
+item_names.nut	174	ok	Gouge	Gubia	
+item_names.nut	176	ok	Sting	Picadura	
+item_names.nut	177	ok	Bodkin	Puntiaguda	
+item_names.nut	178	ok	Snickersnee	Puñal	
+item_names.nut	180	ok	Bloodletter	Destilador de Sangre	
+item_names.nut	181	ok	Oathbreaker	Quebranta Juramentos	
+item_names.nut	183	ok	Cunning	Astucia	
+item_names.nut	184	ok	Backstabber	Alevoso	
+item_names.nut	186	ok	Stiletto	Estilete	
+item_names.nut	187	ok	Shank	Punzada	
+item_names.nut	188	ok	Shiv	Chaira	Chaira, germanía real de navaja
+item_names.nut	190	ok	Estoc	Estoque	
+item_names.nut	191	ok	Bolter	Virotera	
+item_names.nut	192	ok	Spitter	Escupidora	
+item_names.nut	193	ok	Nailer	Clavadora	
+item_names.nut	194	ok	Thrower	Lanzador	
+item_names.nut	199	ok	Tiebreaker	Rompecorreas	licencia: lee tie como atadura (Rompecorreas); sin dueño ajeno
+item_names.nut	200	ok	Penetrator	Penetrador	
+item_names.nut	202	ok	Spearthrower	Lanzavenablos	
+item_names.nut	203	ok	Skyfire	Fuego Celeste	
+item_names.nut	205	ok	Repeater	Repetidor	
+item_names.nut	207	reparado	Arbalest	Largoalcance	Largoalcance casi duplica Alcance largo (Long Reach 160) y abandona la arbalesta; en tanda: Arbalesta, coherente con la voz Arbalestero; aplicado: Arbalesta, decisión 24/08, coherente con Arbalestero
+item_names.nut	209	ok	Bend	Comba	
+item_names.nut	210	ok	Greatbow	Arco grande	
+item_names.nut	211	ok	Longbow	Arco largo	
+item_names.nut	212	ok	Warbow	Arco de guerra	
+item_names.nut	214	ok	Grasp	Asimiento	
+item_names.nut	216	ok	Recurve	Recurvo	
+item_names.nut	217	ok	Whisperwind	Viento Susurrante	
+item_names.nut	218	ok	Startrail	Rastro de Estrellas	
+item_names.nut	219	ok	Warsong	Canción de Guerra	
+item_names.nut	220	ok	Barrage	Andanada	
+item_names.nut	221	ok	Heartpiercer	Atravesacorazones	
+item_names.nut	222	ok	Swiftwind	Viento Veloz	
+item_names.nut	223	ok	Heartstriker	Golpeacorazones	
+item_names.nut	225	reparado	Meteor	Meteorito	falso amigo astronómico: meteor es meteoro, meteorite es meteorito; aplicado: Meteoro; la ficha ya lo tenía en observación
+item_names.nut	226	ok	Stormbringer	Portador de Tormentas	
+item_names.nut	227	ok	Hailbringer	Portador de Granizo	
+item_names.nut	229	ok	Arrowfall	Lluvia de Flechas	
+item_names.nut	231	ok	Sinew	Nervio	
+item_names.nut	234	ok	Basher	Golpeador	
+item_names.nut	235	ok	Smacker	Atizador	Atizador convive con el Atizador (the Poker) a distinta forma; pools disjuntos
+item_names.nut	237	ok	Purifier	Purificador	
+item_names.nut	239	ok	Harvester	Cosechador	
+item_names.nut	240	ok	Lament	Lamento	
+item_names.nut	244	ok	Thrasher	Azotador	
+item_names.nut	245	ok	Flogger	Flagelador	
+item_names.nut	246	ok	Spanker	Zurrador	
+item_names.nut	247	ok	Trouncer	Apaleador	
+item_names.nut	250	ok	Assaulter	Asaltante	
+item_names.nut	251	ok	Bruiser	Magullador	
+item_names.nut	252	ok	Smasher	Aplastador	
+item_names.nut	253	ok	Crusher	Triturador	
+item_names.nut	254	ok	Club	Estaca de guerra	
+item_names.nut	256	ok	Cudgel	Porra gigante	
+item_names.nut	257	ok	Manslayer	Destino	Destino: sustitución de sabor sin dueño ajeno (no existe en Destiny ni Fate)
+item_names.nut	258	ok	Maul	Almádena	
+item_names.nut	259	ok	Mauler	Desmenuzador	
+item_names.nut	260	ok	Domination	Dominación	
+item_names.nut	262	reparado	Warmace	Maza ardiente	war no es ardiente; en tanda: Maza de guerra (libre); aplicado: Maza de guerra, decisión 24/08
+item_names.nut	263	ok	Baton	Porra	
+item_names.nut	264	ok	Scepter	Cetro	
+item_names.nut	266	ok	Banger	Molienda	
+item_names.nut	267	ok	Clobber	Machacador	repite Machacador con el personaje the Mauler a distinta forma; clase aceptada
+item_names.nut	268	ok	Knocker	Aporreador	
+item_names.nut	270	ok	Sledge	Mazo	
+item_names.nut	272	ok	Armorbreaker	Rompearmaduras	
+item_names.nut	273	ok	Beak	Pico de Cuervo	Pico de Cuervo: el bec de corbin
+item_names.nut	274	ok	Cataclysm	Cataclismo	
+item_names.nut	275	ok	Battlehammer	Martillo de batalla	
+item_names.nut	277	ok	Pummeler	Pulverizador	
+item_names.nut	278	ok	Iron eater	Devoracero	
+item_names.nut	279	ok	Pecker	Picoteador	
+item_names.nut	281	ok	Scruncher	Estrujador	
+item_names.nut	284	ok	Needles	Agujas	
+item_names.nut	289	reparado	Barbs	Garfios	barb es lengüeta o púa, garfio es hook; Púas es de Spikes; en tanda: Lengüetas; aplicado: Lengüetas, decisión 24/08; nombra los venablos por sus puntas con lengüeta
+item_names.nut	290	ok	Spines	Espinas dorsales	espeja al singular Spine (Espina dorsal)
+item_names.nut	293	ok	Harpoons	Arpones	
+item_names.nut	295	ok	Pincer	Ropera	Ropera: sabor de esgrima en su familia (Gapcloser, Grace); sin dueño ajeno, no existe en Rapier
+item_names.nut	296	ok	Gapcloser	Acortadistancias	
+item_names.nut	297	ok	Grace	Danza	
+item_names.nut	298	reparado	Tremor	Temblores	plural para singular; aplicado: Temblor
+item_names.nut	299	ok	Earthshaker	Terremoto	
+item_names.nut	300	ok	Ironbiter	Mordedor de Hierro	
+item_names.nut	301	ok	Gatecrasher	Rompepuertas	
+item_names.nut	302	ok	Thunderer	Tronador	
+item_names.nut	305	ok	Flesh Tearer	Rasgacarne	
+item_names.nut	310	ok	Shower	Confesor	familia litúrgica deliberada del incensario: Coro, Confesor, Gran Juicio
+item_names.nut	311	ok	Brutalizer	Gran Juicio	ver 310
+item_names.nut	314	ok	Phalanx	Falange	
+item_names.nut	315	ok	Headcrusher	Machacacabezas	
+item_names.nut	316	ok	Shieldbender	Rompeescudos	
+item_names.nut	317	ok	Skullcracker	Trituracalaveras	
+item_names.nut	318	ok	Bonegrinder	Machacahuesos	
+item_names.nut	319	ok	Skullwarper	Deformacráneos	
+item_names.nut	320	ok	Stomper	Zancadillero	licencia pisotear/zancadilla
+item_names.nut	321	ok	Bludgeon	Maza barreteada	barreteada, voz válida: reforzada con barretas
+item_names.nut	322	ok	Pillar	Machacagigantes	licencia de sabor; y Maza de trol en el vecino es coherente con Unhold=Trol
+item_names.nut	325	ok	Pummel	Trituratierra	licencia en la familia sísmica
+item_names.nut	326	ok	Warscythe	Guadaña de guerra	
+item_names.nut	327	ok	Sickle	Hoz	
+item_names.nut	331	ok	Powderstick	Aliento de Dragón	Aliento de Dragón: familia de armas de fuego con sabor dracónico deliberado
+item_names.nut	335	ok	Dragontongue	Lengua de Dragón	
+item_names.nut	337	ok	Thunderrod	Vara de Trueno	
+item_names.nut	338	reparado	Firespitter	Tormenta de Verano	Tormenta de Verano no tiene relación con firespitter; en tanda: Escupefuego; aplicado: Escupefuego, decisión 24/08
+item_names.nut	339	ok	Bladed Staff	Lanzaespada	Lanzaespada: la swordlance
+item_names.nut	344	ok	Antique	de antigua factura	valor de TAREA-modificadores, deliberado
+item_names.nut	345	ok	Immemorial	inmemorial	valor de TAREA-modificadores
+item_names.nut	348	ok	Forgotten	del olvido	valor de TAREA-modificadores, deliberado
+item_names.nut	351	ok	Dire	atroz	valor de TAREA-modificadores, deliberado
+item_names.nut	354	ok	Archaic	de otra era	valor de TAREA-modificadores, deliberado
+item_names.nut	357	ok	Precursor's	del Precursor	
+item_names.nut	358	reparado	Forebearer's	de reliquia	de reliquia roza a Relic (reliquia); en tanda: del linaje; aplicado: del linaje, decisión 24/08; reliquia queda solo en Relic
+item_names.nut	359	ok	Curio	recuerdo	aposición documentada en TAREA-modificadores, no tocar
+item_names.nut	360	ok	Remnant	del Imperio	del Imperio: sabor del imperio antiguo, deliberado
+item_names.nut	361	ok	Keepsake	de la Legión	de la Legión: sabor del imperio antiguo, deliberado
+item_names.nut	362	ok	Conqueror's	del Conquistador	
+item_names.nut	363	ok	Chieftain's	del Jefe	
+item_names.nut	368	ok	Despoiler's	del saqueador	pareja con el Saqueador (the Despoiler)
+item_names.nut	369	ok	Reaver's	de los saqueadores	plural que esquiva al vecino Despoiler's
+item_names.nut	371	ok	Chilling	de escarcha	valor de TAREA-modificadores, deliberado
+item_names.nut	378	ok	of Slaughter	del Masacrador	licencia persona por abstracto
+item_names.nut	379	reparado	of Carnage	del Carnicero	del Carnicero es de The Butcher; carnage es carnicería; en tanda: de la Carnicería; aplicado: de la Matanza (elección del propietario sobre de la Carnicería), 24/08; el Carnicero vuelve a ser solo The Butcher
+item_names.nut	381	ok	of Defiance	del Desafío	
+item_names.nut	385	ok	Manhunter's	del Cazador de hombres	
+item_names.nut	392	ok	Masterwork	magistral	valor de TAREA-modificadores
+item_names.nut	402	ok	Time-honored	de solera	valor de TAREA-modificadores, deliberado
+item_names.nut	403	ok	Gut-Seeker	Buscatripas	Gut-Seeker es el dueño legítimo del valor que la ventana 56-59 dejó suelto
+item_names.nut	404	ok	Honed	de buen filo	valor de TAREA-modificadores, deliberado
+item_names.nut	406	ok	Trusty	confiable	valor de TAREA-modificadores
+item_names.nut	407	ok	Glorious	de gloria	valor de TAREA-modificadores
+item_names.nut	409	ok	Bitter	de hiel	valor de TAREA-modificadores, deliberado
+item_names.nut	410	ok	Infamous	de mala fama	valor de TAREA-modificadores
+item_names.nut	411	ok	Marvellous	admirable	valor de TAREA-modificadores, deliberado
+item_names.nut	417	ok	Malignant	de malignidad	valor de TAREA-modificadores, deliberado
+item_names.nut	418	ok	Violent	de furia	valor de TAREA-modificadores, deliberado
+item_names.nut	419	ok	Lethal	letal	valor de TAREA-modificadores
+item_names.nut	420	ok	Ominous	horripilante	licencia dentro del par Ominous/Grisly
+item_names.nut	422	ok	Magnificent	sin par	valor de TAREA-modificadores, deliberado
+item_names.nut	423	ok	Exquisite	sublime	valor de TAREA-modificadores, deliberado
+item_names.nut	439	reparado	Stinging	picante	falso amigo: stinging no es picante de sabor; aplicado: urticante, invariable
+item_names.nut	441	ok	Spiky	de espinas	
+item_names.nut	442	ok	Sly	sagaz	
+item_names.nut	444	ok	Perfidious	de perfidia	
+item_names.nut	445	ok	Sticky	de brea	
+item_names.nut	447	ok	Malicious	de malicia	
+item_names.nut	448	ok	Sellswords's	del mercenario	el typo vanilla Sellswords's, documentado; no confundir con Sellsword's del Espada a sueldo
+item_names.nut	450	reparado	Raider's	del saqueador	del saqueador repite el valor de Despoiler's (368) en otra lista; en tanda: del incursor; aplicado: del incursor, decisión 24/08; del saqueador queda solo en Despoiler's
+item_names.nut	454	ok	Gruesome	de espanto	
+item_names.nut	456	ok	Sturdy	de recio porte	valor de TAREA-modificadores, deliberado
+item_names.nut	457	ok	Veteran's	del Veterano	
+item_names.nut	458	reparado	Stalwart	Baluarte	Baluarte, sustantivo con mayúscula en la región de adjetivos; en tanda: baluarte en minúscula como aposición, al estilo de legado y recuerdo; aplicado: baluarte en minúscula como aposición, decisión 24/08; no es adjetivo variable, no reabrir
+item_names.nut	463	ok	Imperishable	resistente	ventana 466-469 aplicada el 24/08, deliberado
+item_names.nut	465	ok	Unruly	del Campeón	ventana 466-469 aplicada el 24/08, deliberado
+item_names.nut	467	ok	Illustrious	ilustre	
+item_names.nut	468	ok	Dignified	señorial	valor de TAREA-modificadores, deliberado
+item_names.nut	469	ok	Esteemed	de estima	valor de TAREA-modificadores, deliberado
+item_names.nut	470	ok	Revered	de veneración	valor de TAREA-modificadores, deliberado
+item_names.nut	471	ok	Cherished	de aprecio	valor de TAREA-modificadores, deliberado
+item_names.nut	475	ok	Hardened	de temple	valor de TAREA-modificadores, deliberado
+item_names.nut	476	ok	Insurmountable	impenetrable	
+item_names.nut	477	ok	Hulking	descomunal	
+item_names.nut	479	ok	Solid	de una pieza	valor de TAREA-modificadores, deliberado
+item_names.nut	480	ok	Unyielding	irrompible	
+item_names.nut	481	ok	Shatterproof	inquebrantable	
+item_names.nut	482	ok	Unshakeable	imperturbable	
+item_names.nut	484	ok	Callous	sin piedad	valor de TAREA-modificadores, deliberado
+item_names.nut	485	ok	Unbending	inflexible	
+item_names.nut	489	ok	Bane	Ruina	
+item_names.nut	491	ok	Hyde	Doug	sustitución de licencia en el pool de perros
+item_names.nut	497	ok	Brazen	Descarado	
+item_names.nut	501	ok	Dash	Roko	sustitución de licencia en el pool de perros
+item_names.nut	503	ok	Finch	Pinzón	
+item_names.nut	505	ok	Biter	Mordedor	
+item_names.nut	506	ok	Teal	Ánsar	
+item_names.nut	507	ok	Earl	Conde	
+item_names.nut	508	ok	Faust	Fausto	
+item_names.nut	509	ok	Jaws	Colmillos	
+item_names.nut	510	ok	Runner	Corredor	
+item_names.nut	523	ok	Lasher	Fustigador	
+item_names.nut	525	ok	Bonefur	Piel de hueso	
+item_names.nut	526	ok	Grayfang	Colmillo gris	
+item_names.nut	529	ok	Howler	Aullador	
+item_names.nut	530	ok	Strider	Zancudo	
+item_names.nut	532	ok	Snarrler	Rechinador	
+item_names.nut	534	ok	Misty	Mistral	
+item_names.nut	535	ok	Witherfang	Colmillo Marchito	
+item_names.nut	537	ok	Grizzle	Pelusa	
+item_names.nut	538	ok	Longfang	Colmillo largo	
+item_names.nut	539	ok	Chomper	Devorador	
+item_names.nut	540	ok	Redtooth	Diente rojo	
+item_names.nut	542	ok	Stormtail	Cola de tormenta	

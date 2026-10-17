@@ -1,0 +1,12 @@
+# Entorno local
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Artefactos de build: se regeneran con las herramientas de es_pack/tools
+*.zip
+
+# vendor/ va en el repo aunque un .gitignore global lo excluya: es el Rosetta
+# que usan las herramientas (vendor/rosetta/ORIGEN.md).
+!vendor/

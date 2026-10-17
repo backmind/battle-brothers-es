@@ -1,0 +1,31 @@
+name: Errata o traducción mejorable
+description: Una falta, una frase que no suena bien o una traducción que no corresponde al original.
+labels: ["traducción"]
+body:
+  - type: textarea
+    id: actual
+    attributes:
+      label: Texto en español, tal como sale
+    validations:
+      required: true
+  - type: textarea
+    id: original
+    attributes:
+      label: Texto original en inglés
+      description: Opcional, si lo conoces. Ayuda a ver si es una errata o un problema de sentido.
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+      description: Opcional. Cómo crees que debería decir.
+  - type: textarea
+    id: donde
+    attributes:
+      label: Dónde sale
+      description: La pantalla, el evento o la situación. Una captura ayuda mucho.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Algunas traducciones se apartan del original a propósito: guiños del equipo original, nombres que no caben en pantalla o términos fijados en el glosario. Si es uno de esos casos, se te contestará con el motivo.
