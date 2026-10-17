@@ -59,6 +59,15 @@ def test_cribar_sustituye_y_cuenta():
     assert len(bloques(texto)) == 3
 
 
+def test_cribar_identificadores_de_pantalla():
+    pantallas = FIXTURE.replace('b.nut\n', 'b.nut\n    // context: e.create.m.Screens.hook()\n')
+    pantallas = pantallas.replace('en = "Already done"', 'en = "Success5"')
+    texto, n = cribar(pantallas, set())
+    assert n == 1
+    assert '    // en = "Success5"\n    // identificador de pantalla\n' in texto
+    assert len(bloques(texto)) == 3
+
+
 def test_cribar_sin_coincidencias_es_identidad():
     assert cribar(FIXTURE, set()) == (FIXTURE, 0)
 

@@ -37626,25 +37626,19 @@ local pairs = [
         es = ""
     }
     // context: barbarian_king_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "AGreaterThreat2"
-        es = ""
-    }
+    // en = "AGreaterThreat2"
+    // identificador de pantalla
     // context: barbarian_king_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_136.png[/img]{You spit and nod toward the elder.%SPEECH_ON%We walked past burned homes, raped women, and slain men just to find your sorry lot, and now you want to band together? We ain't allies. We ain't friends. Tell your so-called 'King' to pray to whatever shit gods you...%SPEECH_OFF%The elder holds his hand up and talks with the king in their native tongue. The two men nod, turn, and leave. %randombrother% laughs.%SPEECH_ON%Brevity is the soul of scorn, captain.%SPEECH_OFF%You tell the %person_randombrother% to get back to the battle line and prepare for the fight ahead.}"
         es = ""
     }
     // context: barbarian_king_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "AGreaterThreat5"
-        es = ""
-    }
+    // en = "AGreaterThreat5"
+    // identificador de pantalla
     // context: barbarian_king_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Success1"
-        es = ""
-    }
+    // en = "Success1"
+    // identificador de pantalla
     // context: barbarian_king_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_31.png[/img]{%employer% takes the Barbarian King's head and rolls it out of the sack. It tumbles freely, knocking over a tray of goblets which go scattering and clattering about. Even in death the savage is a purveyor of chaos.%SPEECH_ON%Thank you, sellsword.%SPEECH_OFF%Your employer says, nodding to %themselves_employer% as %they_employer% rights the head and tilts it onto the flap of neck.%SPEECH_ON%He is an ugly mutt, isn't he? Look at those teeth. Look at them! There's holes in those teeth. Absolutely disgusting.%SPEECH_OFF%You tell the %person_employer% to pay you and %they_employer% does so as agreed. But %they_employer% keeps shaking %their_employer% head and %they_employer% bares %their_employer% own teeth and mimics picking at them.%SPEECH_ON%How do you clean teeth like that? With a rope?%SPEECH_OFF%Shrugging, you head out the door, not bothering to tell %employer% that the first thing your men did to that godforsaken head is knife the gold out of its mouth. | You dump the Barbarian King's head onto %employer%'s table. %They_employer% stares at it, then at you.%SPEECH_ON%That's the biggest fucking head I've ever seen.%SPEECH_OFF%Nodding, you ask for your pay and it is delivered in appropriate sum. Your employer starts pushing the savage's face around, as though %they_employer% was a sorcerer looking to steal its secrets.%SPEECH_ON%I'd wager this is where tales of ogres come from, yeah? Like a child sees this ugly thing and there it is, his imagination is set alight, and so the monster is born.%SPEECH_OFF%If only things were that simple. | Even without its massive body the head of the Barbarian King makes quite the splash when shown to %employer%. A host of nobles and servants ooh and ahh at the size of it. A man in a black robe is quick to pay you what you're owed. %employer% %themselves_employer% picks the head up and tosses it into the air as to weigh it.%SPEECH_ON%By the old gods, it is truly heavy! Oy %randomname%.%SPEECH_OFF%A servant steps forward. Your employer grins.%SPEECH_ON%Fetch me a pike. We're going to hoist this horror head high into the heavens.%SPEECH_OFF%A suitable stop for a savage. | Mere moments after giving %employer% the head of the Barbarian King it is being used as a plaything. Children of noblemen roll it back and forth across the stone floor, the savage's head knocking over walls of goblets and fortresses of dinner trays. A dog barks as it tracks the head back and forth. %employer% claps you on the shoulder.%SPEECH_ON%Outstanding work, sellsword. Truly. My scouts tell me it was a hell of a fight, that you were almost like a primitive yourself. But I suppose that's what it had to take, right? A savage to fight a savage? Spirit of such primacy can't be contained by our civilized ways!%SPEECH_OFF%One of the kids kicks the King in the face, breaking its jaw and cutting the child's foot on the teeth. The kid screams for help and, perhaps defending its owner, the dog sets upon the head and starts dragging it around by the flap of neck. %employer% smiles again.%SPEECH_ON%Your pay is waiting for you outside. It is in full, as promised.%SPEECH_OFF% | A man in knight's armor takes the Barbarian King's head from you. Immediately, you draw your sword, but %employer% leaps in to end any start to violence.%SPEECH_ON%Oy, sellsword, it is quite alright. Your pay, as promised.%SPEECH_OFF%The %person_employer% hands you a satchel of crowns, but behind %them_employer% you see the head being given to a man in a black cloak. You nod and ask what they intend to do with it. %employer% grins.%SPEECH_ON%Frankly, steins await me, sellsword, and I'm quite thirsty.%SPEECH_OFF%The %person_employer% quickly walks past you. You do not see any ale, or any drink at all, %they_employer% simply follows the man in the cloak. | %employer% stares at the Barbarian King's head like a cat would meanly stare at anything not its own self.%SPEECH_ON%Interesting. I think I'll have it stuffed and put upon my mantle.%SPEECH_OFF%Speaking slightly out of turn, you remind your employer that it is the head of a man he is referring to. %employer% shrugs.%SPEECH_ON%So? It is a monstrosity. There cannot be coexistence between the civilized and the savage. By having it properly taken care of I will ruminate on that reality. What will you do? Advise me again?%SPEECH_OFF%Pursing your lips, you ask for your pay. The %person_employer% points toward the corner.%SPEECH_ON%In the satchel there. You did well, sellsword, but don't speak to me in such a manner again. Good day.%SPEECH_OFF%}"
@@ -37941,10 +37935,8 @@ local pairs = [
         es = ""
     }
     // context: decisive_battle_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Deserters1"
-        es = ""
-    }
+    // en = "Deserters1"
+    // identificador de pantalla
     // context: decisive_battle_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_96.png[/img]{You enter %commander%'s tent just in time to watch a candle go flying by your face. Its wick sizzles into the mud as you watch a table follow after it, flipping over and over with all its maps going flying. A red-faced %commander% stands at the foot of the carnage, %their_commander% hands on %their_commander% hips, breathing heavy as %they_commander% recollects %themselves_commander%. %They_commander% explains %themselves_commander%.%SPEECH_ON%Deserters! They've deserted! On the eve of the most important battle of my life, I can't even keep my goddam men around. Look, I cannot have this army coming apart at the seams. I need you to go and find those deserters and bring them back to me. If they refuse to return, well, kill them all. One of the sentries said he saw them going %direction% of here. Now hurry up!%SPEECH_OFF% | Just as you are about to enter %commander%'s tent, a man comes flying out. %commander% rushes forth from the tent and slams %them_commander% into the mud. %They_commander% grabs him by the collars and picks him up like a ragdoll.%SPEECH_ON%Where did they go? I swear by the old gods I will have you begging for death if you do not answer me honestly!%SPEECH_OFF%The man cries out and points.%SPEECH_ON%%direction%! They went that way, I swear!%SPEECH_OFF%%commander% drops the man who is quickly dragged away by a pair of guards. The commander stands up straight and runs a hand through %their_commander% hair.%SPEECH_ON%Sellsword, a few of my men thought it best to desert the camp. Find them. Bring them back. Got it?%SPEECH_OFF%You nod, but ask what if the men refuse. The commander shrugs.%SPEECH_ON%Slaughter them, of course.%SPEECH_OFF% | You enter %commander%'s tent to find %them_commander% stepping away from a seated man. The commander has pliers in %their_commander% hands and there's a white tooth clamped in between the prongs. You notice that the seated man is passed out, head lolling, blood dripping from his mouth. %commander% throws the pliers on %their_commander% table and runs a reddened hand through %their_commander% hair.%SPEECH_ON%A few of my men have deserted. I cannot risk this army coming undone, not at this hour, not when the battle is so close. My little friend here, when he was still speaking anyway, told me that his compatriots saw fit to run off %direction% of here. Go, sellsword, and bring those deserters back to me.%SPEECH_OFF%Before you go, you ask what to do if the deserters refuse to return. The commander glares at you.%SPEECH_ON%What do you think? Kill them all!%SPEECH_OFF% | You find %commander% brooding over %their_commander% maps. %Their_commander% knuckles turn into %their_commander% table, the legs groaning and wobbling. %They_commander% looks up. %Their_commander% eyes flash, a quick glance of unbelievable anger.%SPEECH_ON%A few of my men saw fit to desert my army. The sentries tell me they saw them running %direction% of here. Go and bring them back.%SPEECH_OFF%You ask if %they_commander% wants them alive. %They_commander% nods.%SPEECH_ON%I want them back healthy as can be so I can better remind them what it means to abandon my army. Of course, if they absolutely refuse then I want them dead. That is also a good reminder to not abandon the army, wouldn't you agree?%SPEECH_OFF% | %commander%'s got one of %their_commander% lieutenants tied to one of the tent poles. The commander's got a long stick in hand and uses it bash the lieutenant across the chest and legs. The man cries out, spinning himself around only for his back to be beaten. When the lieutenant spins back around, his purpled face is snorting into unconsciousness.\n\n %commander% throws the stick down and starts pulling splinters out of %their_commander% fingers.%SPEECH_ON%Glad you came, sellsword. A few of my men have deserted and I need you to go and find them. Bring them back alive, kill them all if they refuse. This here friend of mine said that they ran %direction%. For his sake, I hope he's telling the truth.%SPEECH_OFF%You hope he's telling the truth, too.}"
@@ -38214,10 +38206,8 @@ local pairs = [
         es = ""
     }
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Kidnapping3"
-        es = ""
-    }
+    // en = "Kidnapping3"
+    // identificador de pantalla
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_53.png[/img]{Unfortunately, the greenskins got away with the hostages. May the gods be with those sorry souls. | You couldn't do it - you couldn't save those poor peasants. Now only the gods know what will happen to them. Actually, you do too, but you'll play dumb just so you can sleep at night. | Sadly, the foul beasts got away with their human cargo in tow. Those poor folks will have to fend for themselves now. The stories you hear, however, tell you they will not fare well at all. | The greenskins got away, their prisoners alongside with them. You've no idea what will happen to those people now, but you know it isn't good. Slavery. Torture. Death. You're not sure which is the worst. | The greenskins and their unfortunate hostages got away. You wish those people the best, but as the wind curls around, blowing an empty and stiff song, you know damn well that no wish or prayer is going to save those sorry souls. | Well, the greenskins got away. The trail of gnawed human bones and piles of peeled flesh speak volumes about your failure. | You pick up a scrap of clothing to find it had been resting atop a pile of bones.%SPEECH_ON%Well, shit.%SPEECH_OFF%There's a trail of 'food' scraps leading away from the site. The greenskins got away and the poor prisoners have disappeared along with them. | %randombrother% calls you over. When you stand next to %them_randombrother% %they_randombrother% points at a pile of shite on the ground. You shrug.%SPEECH_ON%Yeah. It smells. What else?%SPEECH_OFF%%They_randombrother% kicks a piece of white, lifting what appears to be a bone from the goop.%SPEECH_ON%That's a human bone. Them prisoners been ate, sir.%SPEECH_OFF%You look about the grass and see even more remains. Footprints lead away from the site, the greenskins clearly having escaped your chase. You sigh and tell the men to get ready to leave.}"
@@ -38234,20 +38224,16 @@ local pairs = [
         es = ""
     }
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Success3"
-        es = ""
-    }
+    // en = "Success3"
+    // identificador de pantalla
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_04.png[/img]{%employer% welcomes your return with a chest of %reward% crowns.%SPEECH_ON%You've earned this one, sellsword, I'll say that much. Unfortunately, the greenskins managed to abduct a few of our own. I'm withholding some of your pay to help compensate those who trusted their lives with you.%SPEECH_OFF%%They_employer% pauses as you stare at the chest. You nod, both understanding of the peasants' plight, but realizing that any arguments here would not suit your future prospects. | You find %employer% feeding some of %their_employer% dogs. %They_employer% pets one over and over as it chows down on dinner scraps.%SPEECH_ON%I really thought I'd have to give all this up.%SPEECH_OFF%%They_employer% gives the mutt one final pat before turning %their_employer% eyes to you.%SPEECH_ON%But not all of us made it. Your pay is in the corner, but it will be less than agreed upon. I must see to the comforts of those who were abducted, I'm sure you understand why I'm taking that pay from you.%SPEECH_OFF% | %employer%'s got a gang of men and women surrounding %them_employer%. When you enter the room they turn to you in creepy unison. %employer% is handing them crowns. %They_employer% speaks to you as %they_employer% does this.%SPEECH_ON%Your pay is outside with one of my guards. It will be light, for I have taken some to help comfort those who were lost in the battle.%SPEECH_OFF%You glance at the poor souls lingering about the room. They must be related to those the greenskins kidnapped. | %employer%'s looking out %their_employer% window when you return to %them_employer%. Outside, militiamen are running about and the towns people are hugging one another.%SPEECH_ON%The town proper has been spared, but I must regret to tell you that there will be fewer people treading its roads in the coming days.%SPEECH_OFF%%They_employer% smiles as %they_employer% hands over a satchel of crowns that feels a little bit lighter than it should.%SPEECH_ON%You went above and beyond this day, sellsword, but not all could be saved. Those who were taken by the greenskins left behind family, and those families I will seek to comfort in these dire times.%SPEECH_OFF% | Finding %employer% wasn't easy: the entire town is in an uproar of celebrations. They're plucking chickens so fast the birds sometimes manage to escape, running half-cocked and half-feathered down the roads while children giddily give chase. %employer% manages to sneak up on you in the midst of the festivities. The %person_employer% hands over a satchel of goods and it weighs down in your grip.%SPEECH_ON%Not everyone can be so jovial, sellsword. Those kidnapped souls whom you cannot save? They left behind families, and to those families goes some of your pay. I'm sure you understand.%SPEECH_OFF% | You find %employer% rearranging a bookshelf. %They_employer% seems to be restocking %their_employer% wares, carefully counting and numbering %their_employer% goods like a shopkeep. %They_employer% jumps when the door slams shut behind you.%SPEECH_ON%Ah, sellsword! You spooked me there.%SPEECH_OFF%%They_employer% grabs a chest off one of the bookshelves and hands it over to you.%SPEECH_ON%I had planned to take all these books, all these scrolls, and run for it. Now, though, I shan't need to and that's all thanks to you.%SPEECH_OFF%%Their_employer% smile sours.%SPEECH_ON%Not everyone was so lucky to see this day. Locals have told me what happened, that the greenskins kidnapped some of our own and you could not save them. Failing them is understandable, but I'm sure you personally understand, then, that I took some of your pay to help those surviving families along.%SPEECH_OFF%}"
         es = ""
     }
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Success4"
-        es = ""
-    }
+    // en = "Success4"
+    // identificador de pantalla
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_30.png[/img]{%employer% welcomes your return with a lighter than expected satchel. %They_employer% explains.%SPEECH_ON%The outskirts were nearly destroyed and a great number of people kidnapped. I'm sorry, sellsword, but I needed the money to help this town recover. You can threaten me if you want, but it is what it is.%SPEECH_OFF%You decide to accept the losses and move on. | You find %employer% surveying the town. A few fires burn along the outskirts, piping black smoke into the skies. Weary peasants trudge along the roads. They carry what things they can, some carrying one another for their wounds are horrid. %employer% nods at the scene.%SPEECH_ON%A great deal of destruction, sellsword. You and I both know that I was paying you to save the town in whole, and to keep its people safe. Neither truly happened, but at the very least we're still talking, so you'll still be getting a piece of the reward, as promised.%SPEECH_OFF%%They_employer% hands over a satchel of crowns. It is, indeed, lighter than what was agreed upon, but for the sake of future prospects you don't argue over it. | %employer%'s found looking out %their_employer% window. %They're_employer% got a scroll and pen in each hand, making notes here and then. %They_employer% speaks without looking at you.%SPEECH_ON%Well, we're alive and well, that's good. What's not good are those fires ravaging the outskirts of town, are the horrid news that the greenskins kidnapped some of our own.%SPEECH_OFF%Finally, %they_employer% pauses writing just long enough to turn and stare at you.%SPEECH_ON%Your pay is out in the hall. It's less than what you were expecting. If you want to argue about it, I'm all, and will only be, ears.%SPEECH_OFF%You realize it would be pointless arguing over the pay and simply take what you've earned.}"
@@ -38260,10 +38246,8 @@ local pairs = [
         es = ""
     }
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Failure2"
-        es = ""
-    }
+    // en = "Failure2"
+    // identificador de pantalla
     // context: defend_settlement_greenskins_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_30.png[/img]{%employer% is nowhere to be found. One of %their_employer% guards comes up to you.%SPEECH_ON%If you're looking for my boss, you best give up. Half this town is destroyed and %they're_employer% out there trying to fix it.%SPEECH_OFF%You inquire about your pay. The man bursts into sad, rough laughter.%SPEECH_ON%Pay? Sorry, you sword-selling bum. %They_employer% wasn't paying you to fail. And that money is going right back into the town, anyway.%SPEECH_OFF% | You search the burning wastes of %townname% in search of %employer%. %They're_employer% found pulling black bodies out of a smoldering ruin that was once a house. Dropping a charred corpse at %their_employer% feet, %they_employer% just about stares a hole through you.%SPEECH_ON%What is it you want, sellsword? I hope it isn't pay because this shit right here is not what I was paying you to do.%SPEECH_OFF% | %employer%'s found staring out his window. The entire horizon is aflame, as though there were two suns to set on this world. %They_employer% shakes %their_employer% head when %they_employer% sees you.%SPEECH_ON%The hell you doing here? Did we agree to pay you for letting the town go to ash? I don't think so, sellsword. Get out of here.%SPEECH_OFF%}"
@@ -38423,10 +38407,8 @@ local pairs = [
         es = ""
     }
     // context: destroy_goblin_camp_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Betrayal1"
-        es = ""
-    }
+    // en = "Betrayal1"
+    // identificador de pantalla
     // context: destroy_goblin_camp_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_78.png[/img]{As you finish the last goblin you are suddenly greeted by a heavily armed group of men. Their lieutenant steps forward, his thumbs hooked into a belt holding up a sword.%SPEECH_ON%Well, well, you really are stupid. %employer% does not forget easily - and %they_employer% hasn't forgotten the last time you betrayed %them_employer%. Consider this a little... return of the favor.%SPEECH_OFF%Suddenly, all the men behind the lieutenant charge forth. Arm yourselves, this was an ambush! | Cleaning gobbo blood off your sword, you suddenly spot a group of men walking toward you. They're carrying %employer%'s banner and are drawing their weapons. The realization that you've been setup dawns on you just as the men begin to charge. They let you fight the goblins first, the bastards! Let them have it! | A man seemingly from nowhere comes to greet you. He's well armed, well armored, and apparently quite happy, grinning sheepishly as he approaches.%SPEECH_ON%Evening, mercenaries. Good work on those greenskins, eh?%SPEECH_OFF%He pauses to let his smile fade.%SPEECH_ON%%employer% sends %their_employer% regards.%SPEECH_OFF%Just then, a group of men swarm out from the sides of the road. It's an ambush! That damned nobleman has betrayed you! | A group of armed men wearing the colors of %faction% fall in behind you, the group fanning out to stare at your company. Their leader sizes you up.%SPEECH_ON%I'm going to enjoy prying that sword from your cold, dead hands.%SPEECH_OFF%You shrug and ask why you've been setup.%SPEECH_ON%%employer% doesn't forget those who doublecross %them_employer% or the house. That's about all you need to know. Not like anything I say here will do you good when you're dead.%SPEECH_OFF%To arms, then, for this is an ambush! | Your men scour the goblin camp and find not a soul. Suddenly, men in the colors of %faction% appear behind you, the lieutenant of the group walking forward with ill intent. He's got a cloth embroidered with %employer%'s sigil.%SPEECH_ON%A shame those greenskins couldn't finish you off. If you're wondering why I'm here, it is to collect a debt owed to %employer%. You promised a task well done. You could not own up to that promise. Now you die.%SPEECH_OFF%You unsheathe your sword and flash its blade at the lieutenant.%SPEECH_ON%Looks like %employer% is about to have another promise broken.%SPEECH_OFF%}"
@@ -38605,20 +38587,16 @@ local pairs = [
         es = ""
     }
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Survivors2"
-        es = ""
-    }
+    // en = "Survivors2"
+    // identificador de pantalla
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_22.png[/img]{Altruism is for the naive. You have the prisoners slaughtered. | You recall how many times brigands slew hapless merchants. The thought is barely out of your mind when you give the order to have the prisoners executed. They pipe up a brief protest, but it is cut short by swords and spears. | You turn away.%SPEECH_ON%Through their necks. Make it quick.%SPEECH_OFF%The mercenaries follow the order and you soon here the gargling of dying men. It is not quick at all. | You shake your head 'no'. The prisoners cry out, but the men are already upon them, hacking and slashing and stabbing. The lucky ones are decapitated before they can even realize the immediacy of their own demise. Those with some fight in them suffer to the very end. | Mercy requires time. Time to look over your shoulder. Time to wonder if it was the right decision. You've no time. You've no mercy. The prisoners are executed and that takes little time at all.} \n\n [img]gfx/ui/icons/asset_moral_reputation.png[/img] The company's Moral reputation decreases slightly"
         es = ""
     }
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Survivors3"
-        es = ""
-    }
+    // en = "Survivors3"
+    // identificador de pantalla
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_22.png[/img]{There's been enough killing and dying today. You let the prisoners go, taking their arms and armor before sending them off. | Clemency for thieves and brigands doesn't come often, so when you let the prisoners go they practically kiss your feet as though they were attached to a god. | You think for a time, then nod.%SPEECH_ON%Mercy it is. Take their equipment and cut them loose.%SPEECH_OFF%The prisoners are let go, leaving behind what arms and armor they had with them. | You have the brigands strip to their skivvies - if they even have them - then let the men go. %randombrother% rummages through what equipment is left behind as you watch a group of half-naked men hurry away.} \n\n [img]gfx/ui/icons/asset_moral_reputation.png[/img] The company's Moral reputation increases slightly"
@@ -38631,20 +38609,16 @@ local pairs = [
         es = ""
     }
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Volunteer2"
-        es = ""
-    }
+    // en = "Volunteer2"
+    // identificador de pantalla
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_22.png[/img]{The %person_dude% joins your ranks, immersing %themselves_dude% in a crowd of brothers who seem to take to %them_dude% warmly enough for a group of paid killers. The newly hired states %they're_dude% good with all weapons, but you figure you'll be the one to decide what %they're_dude% best with. | The prisoner grins from ear to ear as you wave %them_dude% in. A few brothers ask what weapons they should give %them_dude%, but you shrug and figure you'll see to yourself what to arm the %person_dude% with.}"
         es = ""
     }
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Volunteer3"
-        es = ""
-    }
+    // en = "Volunteer3"
+    // identificador de pantalla
     // context: drive_away_bandits_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_22.png[/img]{You shake your head no. The %person_dude% frowns.%SPEECH_ON%Are you sure? I'm pretty good with...%SPEECH_OFF%You cut %them_dude% off.%SPEECH_ON%I'm sure. Now enjoy your newfound freedom, stranger.%SPEECH_OFF% | You appraise the %person_dude% and figure %they're_dude% not fit for the life of a sellsword.%SPEECH_ON%We appreciate the offer, stranger, but the mercenary life is a dangerous one. Go home to your family, your work, your home.%SPEECH_OFF% | You've enough men to see you through, although you find yourself tempted to replace %randombrother% just to see the %person_randombrother%'s reaction to a demotion. Instead, you offer the prisoner a handshake and send %them_dude% on %their_dude% way. Although disappointed, %they_dude% does thank you for freeing %them_dude%.}"
@@ -39681,20 +39655,16 @@ local pairs = [
         es = ""
     }
     // context: investigate_cemetery_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Necromancer1"
-        es = ""
-    }
+    // en = "Necromancer1"
+    // identificador de pantalla
     // context: investigate_cemetery_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_63.png[/img]{Returning to %employer%, you quickly explain that there were no graverobbers, but instead a group of undead. %They_employer% seems shocked, but when you produce the artifact you found %they_employer% purses %their_employer% lips and solemnly nods.%SPEECH_ON%That's... that's from %necromancer_location%. We thought we could ignore that place, but it appears I was wrong. Go there, sellsword, and end that ghoulish domain's terror once and for all!%SPEECH_OFF%The %person_employer% lowers the theatrics a bit.%SPEECH_ON%Oh, and I'm prepared to pay you another %reward_completion% crowns in addition to the %reward_completion% crowns for the original job, of course.%SPEECH_OFF% | You find %employer% in %their_employer% study, solemnly sipping on a goblet.%SPEECH_ON%I've already heard the news. The dead are walking, oh, it's ghastly to even say it!%SPEECH_OFF%You nod and produce the artifact you found in the cemetery.%SPEECH_ON%You know anything about this?%SPEECH_OFF%The %person_employer% glances at it as if %they_employer% already knew you had it.%SPEECH_ON%Aye, that belongs to %necromancer_location%. We thought we could ignore the horror coming from there but... well, look. Maybe you can go there? Maybe you can destroy %necromancer_location% and set us free from its terror? Here's your original payment, as agreed upon, but if you help us with %necromancer_location% you'll get another %reward_completion% crowns. Does that sound good to you?%SPEECH_OFF% | You walk into %employer%'s room and slam the artifact down on %their_employer% desk. %They_employer% slaps it away with %their_employer% hand.%SPEECH_ON%Where did you get that?%SPEECH_OFF%Pointing a finger at it, you press the %person_employer%.%SPEECH_ON%Did you know about the undead in the cemetery?%SPEECH_OFF%%They_employer% sheepishly looks away, then nods.%SPEECH_ON%Yes... I knew. They, and that artifact, come from %necromancer_location%. Some kind of dark sorcerer dwells there and he's been giving us these... problems for a while now. Please, could you go there and destroy it? Here's your payment for the original contract, but you will be compensated greatly for ridding us of that damned.. whatever he is. Let's say... another %reward_completion% crowns?%SPEECH_OFF% | You explain to %employer% that there were no graverobbers at the cemetery, nor humans of any sort for that matter. Before %they_employer% can speak, you produce the artifact, holding it in the light so %they_employer% can see. %They_employer% quickly backs away.%SPEECH_ON%Put that down!%SPEECH_OFF%Like a voice of fire, %their_employer% shout turns the artifact alight and it burns painlessly out of your very fingertips, only swirling ash all that remains. %employer% puts %their_employer% head in %their_employer% hands.%SPEECH_ON%It's from %necromancer_location%. A... necromancer lives there, a puppeteer that holds the strings to make the dead arise. Please, mercenary, go there and destroy it. We will be so grateful...%SPEECH_OFF%%They_employer% pauses to produce a satchel of crowns.%SPEECH_ON%This is for what we originally agreed upon. But if you kill that horrid man at %necromancer_location% there will be another %reward_completion% crowns waiting for you on your return.%SPEECH_OFF% | You present the artifact you found in the cemetery. %employer% gasps at the very sight of it, but %their_employer% expression quickly turns to one of somber acceptance.%SPEECH_ON%I'll be honest with you, sellsword. There is a necromancer who lives in %necromancer_location% not far from here.%SPEECH_OFF%%They_employer% procures a satchel of crowns and hands it over to you.%SPEECH_ON%That is for the original job. However, I will offer another %reward_completion% crowns, everything we can muster, if you go and kill that evil man right now.%SPEECH_OFF%%They_employer% leans back, looking very hopeful that you'll accept these new terms.}"
         es = ""
     }
     // context: investigate_cemetery_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Necromancer3"
-        es = ""
-    }
+    // en = "Necromancer3"
+    // identificador de pantalla
     // context: investigate_cemetery_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_56.png[/img]{%necromancer_location%'s been cleansed. You almost feel holy about it, but then remember you did this for pay, not some righteous cause. Not that you'd ever prefer the latter, anyway. | The necromancer is dead and you've got his head in hand. Now it's time to go tell that sap, %employer%, about it so %they_employer% can pay you what you've earned. | It wasn't an easy fight, but %necromancer_location% is destroyed. The necromancer died and, like any man, fell into a pile of his own flesh and bones. Curious that his wizard tricks could raise the dead, but not be cast while being dead. Curious, but not unfortunate, either. You take the heathen's head, just in case. | You've slain the necromancer but, worried that his tricks might go beyond the grave, cut his head off his shoulders and stick it in a sack. %employer%, your employer, should be most happy to see it. | The battle over, you take a sword to the necromancer's neck and remove his head from his shoulders. It comes almost too freely, as though it wanted to be in your holding. Well, whatever the case, %employer%, your employer, will want to see it as proof of your doings here.}"
@@ -40330,20 +40300,16 @@ local pairs = [
         es = ""
     }
     // context: restore_location_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Refugees2"
-        es = ""
-    }
+    // en = "Refugees2"
+    // identificador de pantalla
     // context: restore_location_contract.o.createScreens.::Legends.Screens.hook()._screen.Options[0].Text
     {
         en = "Get lost, you rabble! (Decrease Moral Reputation)"
         es = ""
     }
     // context: restore_location_contract.o.createScreens.::Legends.Screens.hook()
-    {
-        en = "Refugees3"
-        es = ""
-    }
+    // en = "Refugees3"
+    // identificador de pantalla
     // context: restore_location_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_59.png[/img]{You leave the refugees where they are. Might as well not return to %employer% because %they_employer% won't be happy about this at all. | The men, women, and children look like they've had enough of getting pushed around. You decide to leave them be. | These people have had enough of this world. You don't think they'd survive another trip out into the wilds and decide to leave them where they've settled. | The haggard and harried people don't deserve to be booted from this place. You figure to leave 'em be. They'll turn it into a workable area soon enough, although %employer% won't be happy not having %their_employer% own people in the area. | %employer% wants %their_employer% own people settled here, but you figure these folks got to it first. That, and they don't look like they could live any longer being put out into the wild.}"
@@ -40978,10 +40944,8 @@ local pairs = [
     // en = "A swarm of webknechts skittering about."
     // en base_es
     // context: roaming_beasts_contract.o.createStates.s.update.Contract.setScreen()
-    {
-        en = "Success5"
-        es = ""
-    }
+    // en = "Success5"
+    // identificador de pantalla
     // context: roaming_beasts_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_60.png[/img]{You stumble across a corpse in the grass. Ordinarily, the dead aren't that much of a surprise, there are people everywhere so it's only a matter of time until you see a body here and there. Except this one has huge gash marks down the back and its organs missing.\n\n%helpfulbrother% walks up.%SPEECH_ON%The organs are gone cause of wolves, or maybe even rabbits. What, you ain't ever heard of a really hungry rabbit?%SPEECH_OFF%%They_helpful% spits and chews on a fingernail.%SPEECH_ON%Anyhow, the markings, that ain't the work of no rabbit or hound or whatever. That's something... bigger... more dangerous.%SPEECH_OFF%You thank the %person_helpful% for his astute observations and tell him to rejoin the ranks. | A peasant comes up to you with his clothes in shredded rags about him. With fair modesty, he's got his hands covering his groin.%SPEECH_ON%Please, sirs, come take a look at this... horror.%SPEECH_OFF%When you question what he's talking about, he throws his hands up, thrusting his hips at you. He turns afoot like a puppet spun about and takes off running, hooting and hollering. A woman walks up to you in the wake of the man's madness. She's got her hands against her bosom.%SPEECH_ON%He's gone mad on account of his brother being torn apart by the beasts.%SPEECH_OFF%You turn to her, half-expecting the lady to rip off her clothes and wobble her shapes in whatever direction she pleases. Instead, she simply stares at you.%SPEECH_ON%I know %townname% has hired some men to take care of these beasts and you certainly look the part of a hired hand. Please, sir, protect us from these evils... and the evils that they spread...%SPEECH_OFF% | You come across an eviscerated cow with half of it cast atop a fenceline and the other half scattered a good distance across the grass, about as far apart as its entrails would allow. An attachment of gore if there ever was one.\n\nA farmer approaches, tipping his hat up out of his eyes.%SPEECH_ON%Beasts done that. I didn't see them, if you was wondering, but I did hear this goatfark of a fiasco before you. Hearing it was good enough for me to stay low and out of sight. Please, if you are here to find those creatures, do so quickly because I can't afford to lose anymore livestock like this.%SPEECH_OFF% | A peasant hacking firewood straightens up before you.%SPEECH_ON%By the gods it is nice to see ya, sirs. I thought I heard word of some sellswords stomping about looking for the beasts terrorizing these parts.%SPEECH_OFF%You ask if he's seen anything that might help. He pitches his hands over the pommel of his axe.%SPEECH_ON%Can't say I have, no. But I've heard some things. I know a man and woman not far from here got taken. Well, they disappeared together. Word has it they dead in the woods now. Barnacled up in the trees, hanging loosely by the gut, ya know? Or, wait, maybe they just gone off on their feetsies to shack up together! Hell... hell! That gal hated her father and the kid was just a nobody with a flair of good looks and a charming tongue. Yeah, that makes sense.%SPEECH_OFF%He pauses and then glances at you.%SPEECH_ON%Anyhow, I'm certain those monsters are afoot. Keep an eye out, sellsword.%SPEECH_OFF% | A woman runs out of her hut to stop you. Almost out of breath, she asks if you've seen a boy. You shake your head no. She puts her hand out.%SPEECH_ON%He's about yeigh big. Mop of brown hair. Not naturally, but the kid sure likes his mud. When he smiles his teeth are like the stars, bright and scattered.%SPEECH_OFF%You shake your head no a second time.%SPEECH_ON%He can throw a good rock. Throws it far. I told him to not show his strength when the lord's men were 'round, lest they take him into the army.%SPEECH_OFF%She huffs, blowing a loose strand of hair out of her eyes.%SPEECH_ON%Well shite, anyway, if you see him, let me know. I think he's mine. Also, beware the dark. Beasts be bushwhacking folks around here.%SPEECH_OFF%Before you can say anything, the woman picks up her long clothes and trundles back to her hut. | You come across a man kneeling over a thoroughly destroyed dog. You take a knee next to him.%SPEECH_ON%Did the beasts do this?%SPEECH_OFF%He shakes his head no.%SPEECH_ON%Hell, I did this. Finally. Damned thing ain't gonna keep me up anymore.%SPEECH_OFF%Just then, a hut across the way opens up and a man sprints out of it screaming.%SPEECH_ON%Is that my damned dog you sonuvabitch?%SPEECH_OFF%The dogkiller quickly stands up.%SPEECH_ON%The beasts! They visited again last night!%SPEECH_OFF%You quietly leave the dispute where the dog lies.}"
@@ -43599,10 +43563,8 @@ local pairs = [
     }
     // FILE: mod_legends\hooks\events\events\dlc2\location\waterwheel_enter_event.nut
     // context: waterwheel_enter_event.o.create.::Legends.Screens.hook()
-    {
-        en = "D2"
-        es = ""
-    }
+    // en = "D2"
+    // identificador de pantalla
     // context: waterwheel_enter_event.o.create.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_109.png[/img]{The %weapon% then falls and you reach to catch it, but a ghostly hand steals it away. You look up to see the elder unsheathing the blade, revealing its fire and ice as though he brokered a new day and gloomy night in the very spectrum of its steel. He chokes with laughter.%SPEECH_ON%'Avenge my son!' 'Be worthy!' Idle doings for simpletons. You did well to chase the carrot, sellsword, and for that I will kill you quick.%SPEECH_OFF%Pauldrons and bracers and a chest plate rise out of the mill well, sheets of grain streaming off them to reveal their garish shapes, and the metals twist and float to the elder, fiercely striking his body as though they meant to armor the very anvil that helped craft them. The suit of steel comes together as its occupant croaks with laughter. Hands grab you by your shoulders and drag you out of the house. You are shielded by the %companyname%. The elder geist turns his head.%SPEECH_ON%A mob of morons, is it? Depart, the lot of you, and you shall be spared. I only ask that you leave me the captain as I have already promised his demise.%SPEECH_OFF%%randombrother% draws %their_randombrother% weapon and the rest of the company follows suit. The elder holds up the crepuscular sword in return. Though the steel is firmly real, the elder's body is rippling to and fro like a thinly veiled curtain on a moonlit night. He sighs and parts of blue ether drift from his lips. He turns the blade so its edge faces you.%SPEECH_ON%So be it.%SPEECH_OFF%}"
@@ -44032,10 +43994,8 @@ local pairs = [
     // en base_es
     // FILE: mod_legends\hooks\events\events\dlc4\location\icy_cave_enter_event.nut
     // context: icy_cave_enter_event.o.create.::Legends.Screens.hook()
-    {
-        en = "A1"
-        es = ""
-    }
+    // en = "A1"
+    // identificador de pantalla
     // en = "As you approach..."
     // en base_es
     // en = "I need you to scout ahead, <bro:str>."
@@ -46507,10 +46467,8 @@ local pairs = [
         es = ""
     }
     // context: wildman_causes_havoc_event.o.create.::Legends.Screens.hook()._screen.start.Options.push().getResult
-    {
-        en = "X"
-        es = ""
-    }
+    // en = "X"
+    // identificador de pantalla
     // en = "Fine, the company will cover the damages."
     // en base_es
     // context: wildman_causes_havoc_event.o.create.::Legends.Screens.hook()._screen.start.Options.push().Text
@@ -46519,10 +46477,8 @@ local pairs = [
         es = ""
     }
     // context: wildman_causes_havoc_event.o.create.::Legends.Screens.hook()._screen.start.Options.push().getResult
-    {
-        en = "T"
-        es = ""
-    }
+    // en = "T"
+    // identificador de pantalla
     // en = "To hell with your shop."
     // en base_es
     // context: wildman_causes_havoc_event.o.create.::Legends.Screens.hook()._screen.start.World.FactionManager.getFaction(_event.m.Town.getFactions()[0]).addPlayerRelation()
@@ -57366,10 +57322,8 @@ local pairs = [
         es = ""
     }
     // context: legend_bandit_army_contract.createStates.m.States.push().update.Contract.setScreen()
-    {
-        en = "Shortcut"
-        es = ""
-    }
+    // en = "Shortcut"
+    // identificador de pantalla
     // context: legend_bandit_army_contract.createStates.m.States.push().start.Contract.m.BulletpointsObjectives
     {
         // "We need more clues from " + this.Contract.m.Location2.getName()
@@ -57385,10 +57339,8 @@ local pairs = [
         es = ""
     }
     // context: legend_bandit_army_contract.createStates.m.States.push().update.Contract.setScreen()
-    {
-        en = "ISEEYOU"
-        es = ""
-    }
+    // en = "ISEEYOU"
+    // identificador de pantalla
     // context: legend_bandit_army_contract.createStates.m.States.push().ID
     {
         en = "TOBATTLE"
@@ -58286,10 +58238,8 @@ local pairs = [
     // en = "Follow the thieves' tracks and return your cargo"
     // en base_es
     // context: legend_deliver_money_contract.createStates.m.States.push().update.Contract.setScreen()
-    {
-        en = "Thieves2"
-        es = ""
-    }
+    // en = "Thieves2"
+    // identificador de pantalla
     // context: legend_deliver_money_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_04.png[/img]{%employer% shoves a sizeable chest into your hands before he or you even says a word.%SPEECH_ON%This is the pay for a nearby merchant, I need to you deliver these crowns!%SPEECH_OFF%He looks at you seriously.%SPEECH_ON%I need that taken to %objective% where a man by the name of %recipient% is waiting for it. It may look small, but that chest is the pay for a whole company of merchants. You interested? Or is it a little too heavy for your arms?%SPEECH_OFF% | You find %employer% closing a small chest of coins. He quickly glances up, as though you might have been thieves.%SPEECH_ON%Sellsword! Thank you for coming.%SPEECH_OFF%He locks the chest quickly. Then he pats the chest a few times, even caresses it a little.%SPEECH_ON%This here cargo has to be delivered safely to %objective%. A man by the name of %recipient% is waiting for it. I do not believe the task will be easy, as the chest contains an investment in a new enterprise. There are people who'd go to great lengths to acquire this kind of coin, which is why I'm turning to a man of your... experiences. Are you interested in doing this for me?%SPEECH_OFF% | As you enter %employer%'s room one of his servants is fiddling with the lock on a small chest of coins.%SPEECH_ON%Good seeing you, sellsword. One moment, please. No, idiot, it's the other key!%SPEECH_OFF%His servant bumbles at a ring of keys, trying each one until finally finding the right one. Finished, he wipes the sweat off his brow and looks to you.%SPEECH_ON%I need this here chest delivered to %objective% about %days% %direction% by road. It's going to %recipient%, you know. Him. Alright, maybe you don't know him. What I do know is that this may not ordinarily be your line of work, but I'm willing to pay some serious crowns for you to see it through. That's your real business, right? Earning some crowns?%SPEECH_OFF% | %employer% folds his hands together when he sees you.%SPEECH_ON%This might be a strange question, but how interested are you in making a delivery for me?%SPEECH_OFF%You explain that, for the right price, such a journey would be a welcome departure from the usual killing and dying that goes on around you. The man claps his hands together.%SPEECH_ON%Excellent! Unfortunately, I don't expect it to be quite like that. It's of enough import to garner unsavory attention, which is why I'm looking to hire sellswords in the first place. It's going to %objective%, %days% or so %direction% of here by road, where a man by the name of %recipient% is waiting for it to fall into his hands. So, you see, this won't be the 'departure' you speak of, but it can be a fine payday if you're interested.%SPEECH_OFF% | %employer%'s men are standing around a chest of gold. Their employer shoos them away when he sees you.%SPEECH_ON%Welcome, welcome. Good seeing you. I'm in need of armed guards to have this here package delivered to a man by the name of %recipient% in %objective%. I reckon it's about %days% of travel for a company as your. How interested would you be in doing that for me?%SPEECH_OFF% | %employer%'s got his feet up on his table when you enter. He puts his hands behind his head, looking a little too relaxed for your tastes.%SPEECH_ON%Good tidings, captain. What say you take a leave from all that killing and dying.%SPEECH_OFF%He raises an eyebrow at your response, which is precisely none at all.%SPEECH_ON%Huh, I figured you'd jump on that opportunity. No matter, it was a lie: I need you to take a certain package to %recipient%, a fellow residing in %objective%. This cargo has undoubtedly garnered some ill-intentioned eyes which is why I need your men watching it for me. If you're interested, which you should be, let's talk numbers.%SPEECH_OFF% | %employer% welcomes you, waving you in.%SPEECH_ON%Very well, now that you're here, would you please shut the door behind you?%SPEECH_OFF%One of the man's guards pokes his head around the corner. You smile as you slowly shut him out. Turning around, you find %employer% walking toward a window. He stares out as he talks.%SPEECH_ON%I need something... it's a, uh, well you don't need to know what it is. I need this 'something' delivered to a fellow called %recipient%. He's waiting for it in %objective%. It's important that it actually gets there, important enough for an armed escort for %days% of travel, which is why I'm turning to you and your company. What say you, mercenary?%SPEECH_OFF% | Dim candles barely light the room enough for you to see, it's %employer% sitting behind his desk while his shadows dance on the walls by the tune of flickering lights.%SPEECH_ON%Would you lend your swords to me if I paid you good coin? I need {a small chest | an important investment | business starting funds} delivered safely to %recipient% in %objective%, about %days% of travel %direction% of here. Men have killed each other over this much coin, so you must be ready to defend it with your life.%SPEECH_OFF%He takes a pause, measuring your response.%SPEECH_ON%I will write a sealed letter with instructions to pay you as you deliver the item to my contact in %objective%. What say you?%SPEECH_OFF% | A servant bids you to wait for %employer%, who, he says, will be right with you. And so you wait, and wait, and wait. And finally, as you are about to leave for the second time, %employer% throws open the doors and rushes towards you.%SPEECH_ON%Who's this, again? The mercenary?%SPEECH_OFF%His assistant nods and %employer% sets on a smile.%SPEECH_ON%Oh most fortuitous to have you in %townname%, good captain!\n\nIt is imperative that some coin of mine reach %objective% as safely and quickly as possible. You are precisely who I need, for no common brigand would dare attack you and your men.\n\nYes, I'd like to hire you for escort. Make sure the crowns are delivered to %recipient%, no detours of course. Can we come to an understanding?%SPEECH_OFF%}"
@@ -59499,10 +59449,8 @@ local pairs = [
         es = ""
     }
     // context: legend_preemptive_beasts_contract.createStates.m.States.push().update.Contract.setScreen()
-    {
-        en = "Poachers1"
-        es = ""
-    }
+    // en = "Poachers1"
+    // identificador de pantalla
     // en = "Humans"
     // context: legend_preemptive_beasts_contract.createScreens.m.Screens.push().Text
     {
@@ -59819,10 +59767,8 @@ local pairs = [
         es = ""
     }
     // context: legend_spider_abductions_contract.createStates.m.States.push().update.Contract.setScreen()
-    {
-        en = "Nest1"
-        es = ""
-    }
+    // en = "Nest1"
+    // identificador de pantalla
     // context: legend_spider_abductions_contract.createStates.m.States.push().onDestinationAttacked.onPlayerDeployment.villager.setName()
     {
         en = "Abducted Villager"

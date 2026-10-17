@@ -99,14 +99,25 @@ def ens_base():
     return {get_field(b, "en") for b in load_blocks(CORPUS)} - {None}
 
 
+def es_pantalla(b):
+    """Identificador de pantalla de evento o contrato ("Success5", "Nest1"):
+    no se muestra, y traducirlo como literal global rompería el evento."""
+    return bool(PANTALLA_RE.search(b.contexto or "")) and bool(re.fullmatch(r"[A-Za-z][A-Za-z0-9]*", b.en))
+
+
+PANTALLA_RE = re.compile(r"setScreen\(\)|Screens\.hook\(\)")
+
+
 def cribar(texto, base):
-    """Cambia por `// en = "..."` cada par cuyo `en` ya traduce base_es.nut."""
+    """Cambia por `// en = "..."` cada par cuyo `en` ya traduce base_es.nut
+    o que es un identificador de pantalla."""
     lineas = texto.split("\n")
     n = 0
     for b in reversed(bloques(texto)):
-        if b.en in base:
+        motivo = "en base_es" if b.en in base else "identificador de pantalla" if es_pantalla(b) else None
+        if motivo:
             literal = EN_LINEA_RE.search(b.texto).group(1)
-            lineas[b.inicio:b.fin + 1] = ["    // en = %s" % literal, "    // en base_es"]
+            lineas[b.inicio:b.fin + 1] = ["    // en = %s" % literal, "    // " + motivo]
             n += 1
     return "\n".join(lineas), n
 
@@ -687,7 +698,7 @@ def extraer(forzar):
     resto = bloques(texto)
     escribir(CORPUS_LEGENDS, texto)
     print("pares totales: %d" % total)
-    print("cribados (en base_es): %d" % cribados)
+    print("cribados (en base_es o pantallas): %d" % cribados)
     print("pendientes (es vacío): %d" % sum(1 for b in resto if not b.es))
     print("ya con es: %d" % sum(1 for b in resto if b.es))
 
