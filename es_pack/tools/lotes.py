@@ -11,6 +11,7 @@ Uso:
 
 El corpus resultante es la fuente de verdad; todo se escribe por bytes y en LF.
 """
+import difflib
 import functools
 import os
 import re
@@ -20,6 +21,7 @@ import tempfile
 import tomllib
 from collections import Counter
 from dataclasses import dataclass
+from itertools import groupby
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -256,6 +258,106 @@ def terminos():
     return res
 
 
+def _arranque(en):
+    return " ".join(en.lower().split()[:3])
+
+
+def indice_base(pares):
+    """Pares (en, es) del base agrupados por sus tres primeras palabras."""
+    indice = {}
+    for en, es in pares:
+        indice.setdefault(_arranque(en), []).append((en, es))
+    return indice
+
+
+def pista_base(en, indice):
+    """El texto del base que Legends retocó, si lo hay: mismo arranque y al
+    menos un 75 % de parecido.
+
+    shortcut: solo ve retoques que conservan las tres primeras palabras;
+    ampliar si al traducir aparecen textos retocados sin pista.
+    """
+    if len(en) <= 20:
+        return None
+    candidatos = [(difflib.SequenceMatcher(None, en, b).ratio(), b, es)
+                  for b, es in indice.get(_arranque(en), [])]
+    mejor = max(candidatos, default=None)
+    return (mejor[1], mejor[2]) if mejor and mejor[0] >= 0.75 else None
+
+
+def partir_en_lotes(pendientes, max_entradas=150, max_palabras=6000):
+    """Lotes por frontera de `// FILE:`; un fichero que solo ya pasa un límite
+    se parte entre pares."""
+    lotes_, actual, palabras = [], [], 0
+    for _, grupo_file in groupby(pendientes, key=lambda b: b.file):
+        grupo_file = list(grupo_file)
+        p = sum(len(b.en.split()) for b in grupo_file)
+        if actual and (len(actual) + len(grupo_file) > max_entradas or palabras + p > max_palabras):
+            lotes_.append(actual)
+            actual, palabras = [], 0
+        for b in grupo_file:
+            n = len(b.en.split())
+            if actual and (len(actual) + 1 > max_entradas or palabras + n > max_palabras):
+                lotes_.append(actual)
+                actual, palabras = [], 0
+            actual.append(b)
+            palabras += n
+    if actual:
+        lotes_.append(actual)
+    return lotes_
+
+
+def literal(s):
+    return '"%s"' % s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
+
+
+def render_lote(n, etiqueta, lote, glosario, indice):
+    """El lote como lo verá el agente: cabecera con los términos del glosario
+    que aparecen en él y los pares tal cual están en el corpus, cada uno con
+    su `// FILE:`, su `// context:` y, si retoca un texto del base, su pista."""
+    texto_en = "\n".join(b.en for b in lote)
+    lineas = ["// LOTE %04d" % n, "// Legends %s" % etiqueta,
+              "// Instrucciones: es_pack/legends/BRIEF.md", "// GLOSARIO:"]
+    for t in terminos_en(texto_en, glosario):
+        lineas.append("// %s = %s" % (t.en, t.es or "(pendiente)"))
+    file = None
+    for b in lote:
+        if b.file != file:
+            file = b.file
+            lineas.append("    // FILE: %s" % file)
+        if b.contexto:
+            lineas.append("    // context: %s" % b.contexto)
+        pista = pista_base(b.en, indice)
+        if pista:
+            lineas.append("    // base: en=%s es=%s" % (literal(pista[0]), literal(pista[1])))
+        lineas.append(b.texto)
+    return "\n".join(lineas) + "\n"
+
+
+def partir():
+    if LOTES.exists() and any(LOTES.iterdir()):
+        sys.exit("%s no está vacío: hay trabajo en curso; fusiona o bórralo antes de volver a partir" % LOTES)
+    etiqueta = tomllib.loads(FUENTE_TOML.read_text(encoding="utf-8"))["etiqueta"]
+    glosario = leer_glosario(GLOSARIO_LEGENDS) + leer_glosario(GLOSARIO_BASE)
+    indice = indice_base((get_field(b, "en"), get_field(b, "es")) for b in load_blocks(CORPUS)
+                         if get_field(b, "en") and get_field(b, "es"))
+    pendientes = [b for b in bloques(CORPUS_LEGENDS.read_text(encoding="utf-8")) if not b.es]
+    lotes_ = partir_en_lotes(pendientes)
+    LOTES.mkdir(parents=True, exist_ok=True)
+    pistas = 0
+    for n, lote in enumerate(lotes_, start=1):
+        texto = render_lote(n, etiqueta, lote, glosario, indice)
+        pistas += texto.count("\n    // base: ")
+        escribir(LOTES / ("%04d.nut" % n), texto)
+        escribir(LOTES / ("%04d.orig.nut" % n), texto)
+    tamanos = [len(l) for l in lotes_]
+    palabras = [sum(len(b.en.split()) for b in l) for l in lotes_]
+    print("lotes: %d" % len(lotes_))
+    print("entradas por lote: media %d, máximo %d" % (sum(tamanos) / len(tamanos), max(tamanos)))
+    print("palabras por lote: media %d, máximo %d" % (sum(palabras) / len(palabras), max(palabras)))
+    print("pistas del base: %d" % pistas)
+
+
 def desverbatim(codigo):
     """Pasa cada cadena verbatim de Squirrel (@"...", con "" por comilla y
     saltos de línea reales) a una cadena normal equivalente.
@@ -373,6 +475,8 @@ def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     if argv[:1] == ["extraer"]:
         extraer(forzar="--forzar" in argv)
+    elif argv[:1] == ["partir"]:
+        partir()
     elif argv[:1] in (["glosario-base"], ["terminos"]):
         res = glosario_base() if argv[0] == "glosario-base" else terminos()
         print("términos: %d" % len(res))

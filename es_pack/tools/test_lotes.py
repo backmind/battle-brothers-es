@@ -146,6 +146,53 @@ def test_termino_util_del_base():
     assert lotes.termino_util(t("Hand Axe", "Hacha de mano", "objeto"), usos)
 
 
+def _bloques_de(ficheros):
+    """[(file, n, palabras)] -> bloques pendientes con `palabras` palabras cada uno."""
+    res = []
+    for file, n, palabras in ficheros:
+        for i in range(n):
+            res.append(_b(" ".join(["w"] * (palabras - 1) + [str(i)]), file=file))
+    return res
+
+
+def test_partir_respeta_file_y_limites():
+    bs = _bloques_de([("a.nut", 100, 1), ("b.nut", 100, 1), ("c.nut", 400, 1)])
+    lotes_ = lotes.partir_en_lotes(bs, max_entradas=150)
+    assert [len(l) for l in lotes_] == [100, 100, 150, 150, 100]
+    assert all(len({b.file for b in l}) == 1 for l in lotes_)
+
+
+def test_partir_junta_ficheros_que_caben():
+    bs = _bloques_de([("a.nut", 50, 1), ("b.nut", 60, 1), ("c.nut", 60, 1)])
+    assert [len(l) for l in lotes.partir_en_lotes(bs, max_entradas=150)] == [110, 60]
+
+
+def test_partir_corta_por_palabras():
+    bs = _bloques_de([("a.nut", 10, 1000)])
+    assert [len(l) for l in lotes.partir_en_lotes(bs, max_palabras=6000)] == [6, 4]
+
+
+def test_pista_base():
+    indice = lotes.indice_base([("You find an old sword in the mud.", "Encuentras una vieja espada en el barro.")])
+    assert lotes.pista_base("You find an old sword in the snow.", indice) == (
+        "You find an old sword in the mud.", "Encuentras una vieja espada en el barro.")
+    assert lotes.pista_base("Something else entirely here.", indice) is None
+    assert lotes.pista_base("You find it.", indice) is None
+
+
+def test_render_lote_contiene_bloques_tal_cual():
+    bs = [b for b in bloques(FIXTURE) if not b.es]
+    glosario = [lotes.Termino("Hand Axe", "Hacha de mano", "objeto", "f"),
+                lotes.Termino("Anchor", "", "perk", "f")]
+    texto = lotes.render_lote(7, "19.4.22", bs, glosario, {})
+    assert [b.texto for b in bloques(texto)] == [b.texto for b in bs]
+    assert texto.startswith("// LOTE 0007")
+    assert "// Hand Axe = Hacha de mano" in texto
+    assert "Anchor" not in texto
+    assert "// context: a.create.m.Name" in texto
+    assert texto.count("// FILE:") == 2
+
+
 def test_glosario_ida_y_vuelta(tmp_path):
     ts = [lotes.Termino("Hand Axe", "Hacha de mano", "objeto", "a.nut", ""),
           lotes.Termino("Anchor", "", "perk", "b.nut", "contiene: Axe")]
