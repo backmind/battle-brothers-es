@@ -1,0 +1,1441 @@
+en	es	categoria	file	nota
+A Diplomatic Mission		contrato	mod_legends\hooks\contracts\contracts\escort_envoy_contract.nut	
+Basilisk Infestation		contrato	scripts\contracts\contracts\legend_hunting_basilisks_contract.nut	
+Brigand Stronghold		contrato	mod_legends\hooks\contracts\contracts\drive_away_bandits_contract.nut	
+Capture Unhold		contrato	scripts\contracts\contracts\legend_camp_unhold_bondage_contract.nut	contiene: Unhold
+Death Denied		contrato	mod_legends\hooks\contracts\contracts\last_stand_contract.nut	
+Defend burial site		contrato	scripts\contracts\contracts\legend_camp_legion_defend_cemetery_contract.nut	
+Desert Fangs		contrato	mod_legends\hooks\contracts\contracts\roaming_beasts_desert_contract.nut	
+Disturbed Rest		contrato	mod_legends\hooks\contracts\contracts\investigate_cemetery_contract.nut	
+Facing Justice (Legendary)		contrato	scripts\contracts\contracts\legend_barbarian_prisoner_contract.nut	
+Hissing Sands		contrato	mod_legends\hooks\contracts\contracts\hunting_serpents_contract.nut	
+Horror In The Woods		contrato	scripts\contracts\contracts\legend_spider_abductions_contract.nut	
+Hunger Pangs (Legendary)		contrato	scripts\contracts\contracts\legend_hunting_skin_ghouls_contract.nut	
+Hunt: Nobles		contrato	scripts\contracts\contracts\legend_camp_legion_hunt_nobles_contract.nut	
+Hunting Redback Webknechts (Legendary)		contrato	scripts\contracts\contracts\legend_hunting_redback_webknechts_contract.nut	contiene: Webknechts
+Hunting Stollwurms (Legendary)		contrato	scripts\contracts\contracts\legend_hunting_stollwurms_contract.nut	
+Hunting a Mountain (Legendary)		contrato	scripts\contracts\contracts\legend_hunting_rock_unholds_contract.nut	
+Intimidation		contrato	mod_legends\hooks\contracts\contracts\raze_attached_location_contract.nut	
+King of Knives (Legendary)		contrato	scripts\contracts\contracts\legend_bandit_army_contract.nut	contiene: King
+Laying Siege		contrato	mod_legends\hooks\contracts\contracts\siege_fortification_contract.nut	
+Orc Warcamp		contrato	mod_legends\hooks\contracts\contracts\destroy_orc_camp_contract.nut	
+Patrol Duty		contrato	mod_legends\hooks\contracts\contracts\patrol_contract.nut	
+Purge the Undead		contrato	mod_legends\hooks\contracts\contracts\root_out_undead_contract.nut	
+Relic Hunt		contrato	mod_legends\hooks\contracts\contracts\find_artifact_contract.nut	
+Rescue Mission		contrato	mod_legends\hooks\contracts\contracts\free_greenskin_prisoners_contract.nut	
+Scuttling Horrors		contrato	mod_legends\hooks\contracts\contracts\hunting_webknechts_contract.nut	
+Smuggle item		contrato	scripts\contracts\contracts\legend_camp_smuggle_contract.nut	
+Southern Raids		contrato	mod_legends\hooks\contracts\contracts\intercept_raiding_parties_contract.nut	
+Taking Action		contrato	scripts\contracts\contracts\legend_preemptive_beasts_contract.nut	
+The Ancient Dead		contrato	scripts\contracts\contracts\legend_hunting_mummies_contract.nut	
+The Winter King		contrato	mod_legends\hooks\contracts\contracts\barbarian_king_contract.nut	contiene: King
+Tooth and Tail		contrato	mod_legends\hooks\contracts\contracts\roaming_beasts_contract.nut	
+Treasury Transfer		contrato	scripts\contracts\contracts\legend_deliver_money_contract.nut	
+Wildlings at the Gates		contrato	mod_legends\hooks\contracts\contracts\drive_away_barbarians_contract.nut	
+Baffled		efecto	mod_legends\!!config\effects_defs.nut	
+Band of Brothers		efecto	mod_legends\!!config\effects_defs.nut	
+Bleeding from Grazes		efecto	mod_legends\!!config\effects_defs.nut	
+Blinded		efecto	mod_legends\!!config\effects_defs.nut	
+Blooddrinker		efecto	mod_legends\!!config\effects_defs.nut	
+Brothers in Chains		efecto	mod_legends\!!config\effects_defs.nut	
+Buckler Defense		efecto	mod_legends\!!config\effects_defs.nut	contiene: Defense
+Buzzed		efecto	mod_legends\!!config\effects_defs.nut	
+Cheered On		efecto	mod_legends\!!config\effects_defs.nut	
+Choked		efecto	mod_legends\!!config\effects_defs.nut	
+Commanded		efecto	mod_legends\!!config\effects_defs.nut	
+Compromised Armor		efecto	mod_legends\!!config\effects_defs.nut	
+Consecrated		efecto	mod_legends\!!config\effects_defs.nut	
+Constrained		efecto	mod_legends\!!config\effects_defs.nut	
+Currently Chanting		efecto	mod_legends\!!config\effects_defs.nut	
+Curse of the Mummy		efecto	mod_legends\!!config\effects_defs.nut	
+Disharmony		efecto	mod_legends\!!config\effects_defs.nut	
+Disintegrating		efecto	mod_legends\!!config\effects_defs.nut	
+Dodging Incoming Projectiles		efecto	mod_legends\!!config\effects_defs.nut	
+Drums of Life		efecto	mod_legends\!!config\effects_defs.nut	
+Dual Wielding		efecto	mod_legends\!!config\effects_defs.nut	
+Engulfed By Darkness		efecto	mod_legends\!!config\effects_defs.nut	
+Evading		efecto	mod_legends\!!config\effects_defs.nut	
+For the Captain!		efecto	mod_legends\!!config\effects_defs.nut	
+Freedom of Movement		efecto	mod_legends\!!config\effects_defs.nut	
+Grappled		efecto	mod_legends\!!config\effects_defs.nut	
+Gravedigging		efecto	mod_legends\!!config\effects_defs.nut	
+Guarded		efecto	mod_legends\!!config\effects_defs.nut	
+Haunted		efecto	mod_legends\!!config\effects_defs.nut	
+Headache		efecto	mod_legends\!!config\effects_defs.nut	
+Heartwood Focus		efecto	mod_legends\!!config\effects_defs.nut	
+Heightened Senses		efecto	mod_legends\!!config\effects_defs.nut	
+Hexe Ichor Potion		efecto	mod_legends\!!config\effects_defs.nut	contiene: Hexe
+Holding the Line		efecto	mod_legends\!!config\effects_defs.nut	
+Hunting Big Game		efecto	mod_legends\!!config\effects_defs.nut	
+Höllenhund Curse		efecto	mod_legends\!!config\effects_defs.nut	
+Imbued		efecto	mod_legends\!!config\effects_defs.nut	
+In Trance		efecto	mod_legends\!!config\effects_defs.nut	
+Infatuated		efecto	mod_legends\!!config\effects_defs.nut	
+Infected		efecto	mod_legends\!!config\effects_defs.nut	
+Inspired		efecto	mod_legends\!!config\effects_defs.nut	
+Irritable		efecto	mod_legends\!!config\effects_defs.nut	
+Knocked Over		efecto	mod_legends\!!config\effects_defs.nut	
+Levitating		efecto	mod_legends\!!config\effects_defs.nut	
+Liquor Burn		efecto	mod_legends\!!config\effects_defs.nut	
+Locked in Jaws		efecto	mod_legends\!!config\effects_defs.nut	
+Lurking		efecto	mod_legends\!!config\effects_defs.nut	
+Marked		efecto	mod_legends\!!config\effects_defs.nut	
+Motivated		efecto	mod_legends\!!config\effects_defs.nut	
+Named Axe		efecto	mod_legends\!!config\effects_defs.nut	
+Named Estoc		efecto	mod_legends\!!config\effects_defs.nut	
+Named Fencing Sword		efecto	mod_legends\!!config\effects_defs.nut	contiene: Fencing Sword
+Named Flail		efecto	mod_legends\!!config\effects_defs.nut	contiene: Flail
+Named Hammer Stun		efecto	mod_legends\!!config\effects_defs.nut	contiene: Hammer
+Named Mace Stagger		efecto	mod_legends\!!config\effects_defs.nut	contiene: Mace
+Named Shamshir		efecto	mod_legends\!!config\effects_defs.nut	
+Named Whip Bleed		efecto	mod_legends\!!config\effects_defs.nut	
+Named Whip Feint		efecto	mod_legends\!!config\effects_defs.nut	
+Observed		efecto	mod_legends\!!config\effects_defs.nut	
+Omens Foretold		efecto	mod_legends\!!config\effects_defs.nut	
+Parried		efecto	mod_legends\!!config\effects_defs.nut	
+Parrying Dagger Defense		efecto	mod_legends\!!config\effects_defs.nut	contiene: Defense
+Parrying Stance		efecto	mod_legends\!!config\effects_defs.nut	
+Patient Hunter		efecto	mod_legends\!!config\effects_defs.nut	
+Porridge		efecto	mod_legends\!!config\effects_defs.nut	
+Predatory Grip		efecto	mod_legends\!!config\effects_defs.nut	
+Prepare Bullet		efecto	mod_legends\!!config\effects_defs.nut	
+Prepared to Inflict Bleeding		efecto	mod_legends\!!config\effects_defs.nut	
+Prepared to Inflict Knockback.		efecto	mod_legends\!!config\effects_defs.nut	
+Protected		efecto	mod_legends\!!config\effects_defs.nut	
+Purple Haze		efecto	mod_legends\!!config\effects_defs.nut	
+Pushing Forward		efecto	mod_legends\!!config\effects_defs.nut	
+Raining		efecto	mod_legends\!!config\effects_defs.nut	
+Ram Hammer		efecto	mod_legends\!!config\effects_defs.nut	contiene: Hammer
+Reassured		efecto	mod_legends\!!config\effects_defs.nut	
+Redback Poisoned		efecto	mod_legends\!!config\effects_defs.nut	contiene: Poisoned
+Relationship Check		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Accuracy		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Blazing		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Bleeding		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Bravery		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Clarity		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Defense		efecto	mod_legends\!!config\effects_defs.nut	contiene: Defense
+Rune Sigil: Durability		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Endurance		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Feeding		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Luck		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Patience		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Poison		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Power		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Radiance		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Resilience		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Safety		efecto	mod_legends\!!config\effects_defs.nut	
+Rune Sigil: Unbreaking		efecto	mod_legends\!!config\effects_defs.nut	
+Safeguarded		efecto	mod_legends\!!config\effects_defs.nut	
+Safeguarding		efecto	mod_legends\!!config\effects_defs.nut	
+Sanctified		efecto	mod_legends\!!config\effects_defs.nut	
+Satiated		efecto	mod_legends\!!config\effects_defs.nut	
+Scroll Effect		efecto	mod_legends\!!config\effects_defs.nut	
+Skin Ghoul Blood		efecto	mod_legends\!!config\effects_defs.nut	
+Sluggish		efecto	mod_legends\!!config\effects_defs.nut	
+Spiritual Bond		efecto	mod_legends\!!config\effects_defs.nut	
+Sprinting		efecto	mod_legends\!!config\effects_defs.nut	
+Steps Guided		efecto	mod_legends\!!config\effects_defs.nut	
+Stollwurm Vigor		efecto	mod_legends\!!config\effects_defs.nut	
+Stuffed		efecto	mod_legends\!!config\effects_defs.nut	
+Stupefied		efecto	mod_legends\!!config\effects_defs.nut	
+Summoned a Bear		efecto	mod_legends\!!config\effects_defs.nut	
+Summoned a Catapult		efecto	mod_legends\!!config\effects_defs.nut	contiene: Catapult
+Summoned a Falcon		efecto	mod_legends\!!config\effects_defs.nut	contiene: Falcon
+Summoned a Hound		efecto	mod_legends\!!config\effects_defs.nut	
+Summoned a Sighthound		efecto	mod_legends\!!config\effects_defs.nut	
+Summoned a Wolf		efecto	mod_legends\!!config\effects_defs.nut	
+Threads of Fate		efecto	mod_legends\!!config\effects_defs.nut	
+Threw Sand		efecto	mod_legends\!!config\effects_defs.nut	
+Tipsy		efecto	mod_legends\!!config\effects_defs.nut	
+Vengeance!		efecto	mod_legends\!!config\effects_defs.nut	contiene: Vengeance
+Warden Damage Scaling		efecto	mod_legends\!!config\effects_defs.nut	
+Warmth		efecto	mod_legends\!!config\effects_defs.nut	
+Well Tended		efecto	mod_legends\!!config\effects_defs.nut	
+Wolfsbane Scent		efecto	mod_legends\!!config\effects_defs.nut	
+Ancient Gladiator		entidad	mod_legends\!!config\_global.nut	
+Ancient Gladiators		entidad	mod_legends\!!config\_global.nut	contiene: Gladiators
+Ancient Pyramid		entidad	scripts\entity\world\locations\legendary\legend_mummy_location.nut	
+Armored Sighthound		entidad	mod_legends\!!config\_global.nut	
+Bandit Outrider		entidad	mod_legends\!!config\_global.nut	
+Bandit Outriders		entidad	mod_legends\!!config\_global.nut	
+Bandit Rabble		entidad	mod_legends\!!config\_global.nut	
+Bandit Rabble Poacher		entidad	mod_legends\!!config\_global.nut	
+Bandit Rabble Poachers		entidad	mod_legends\!!config\_global.nut	
+Bandit Vermes		entidad	mod_legends\!!config\_global.nut	
+Barbarian Bloodletter		entidad	mod_legends\!!config\_global.nut	
+Barbarian Bloodletters		entidad	mod_legends\!!config\_global.nut	
+Barbarian Pillager		entidad	mod_legends\!!config\_global.nut	
+Barbarian Pillagers		entidad	mod_legends\!!config\_global.nut	
+Barbarian Runechosen		entidad	mod_legends\!!config\_global.nut	
+Basilisk Drone		entidad	mod_legends\!!config\_global.nut	
+Basilisk Drones		entidad	mod_legends\!!config\_global.nut	
+Basilisk Sentries		entidad	mod_legends\!!config\_global.nut	
+Basilisk Sentry		entidad	mod_legends\!!config\_global.nut	
+Bear		entidad	mod_legends\!!config\_global.nut	
+Bears		entidad	mod_legends\!!config\_global.nut	
+Blacksmith		entidad	mod_legends\!!config\_global.nut	
+Blacksmiths		entidad	mod_legends\!!config\_global.nut	
+Building Effort		entidad	scripts\entity\world\settlements\situations\legend_building_effort_situation.nut	
+Butchers		entidad	mod_legends\!!config\_global.nut	
+Camp Kitchen		entidad	scripts\entity\world\camp\buildings\hunter_building.nut	
+Caravan Polearm		entidad	mod_legends\!!config\_global.nut	
+Caravan Polearms		entidad	mod_legends\!!config\_global.nut	
+Catapults		entidad	mod_legends\!!config\_global.nut	
+Cats		entidad	mod_legends\!!config\_global.nut	
+Commanders Tent		entidad	scripts\entity\world\camp\buildings\commander_building.nut	
+Demon Alp		entidad	mod_legends\!!config\_global.nut	contiene: Alp
+Demon Alps		entidad	mod_legends\!!config\_global.nut	contiene: Alps
+Direwolf Rider		entidad	mod_legends\!!config\_global.nut	
+Direwolf Riders		entidad	mod_legends\!!config\_global.nut	
+Elite Footman		entidad	mod_legends\!!config\_global.nut	contiene: Footman
+Elite Footmen		entidad	mod_legends\!!config\_global.nut	contiene: Footmen
+Embalmed Noble		entidad	mod_legends\!!config\_global.nut	
+Embalmed Nobles		entidad	mod_legends\!!config\_global.nut	
+Embalmed Priest		entidad	mod_legends\!!config\_global.nut	
+Embalmed Priests		entidad	mod_legends\!!config\_global.nut	
+Embalmed Queen		entidad	mod_legends\!!config\_global.nut	
+Embalmed Queens		entidad	mod_legends\!!config\_global.nut	
+Embalmed Slave		entidad	mod_legends\!!config\_global.nut	
+Embalmed Slaves		entidad	mod_legends\!!config\_global.nut	
+Embalmed Soldier		entidad	mod_legends\!!config\_global.nut	
+Embalmed Soldiers		entidad	mod_legends\!!config\_global.nut	
+Enchanter		entidad	scripts\entity\world\camp\buildings\enchanter_building.nut	
+Enraged Hyena		entidad	mod_legends\!!config\_global.nut	contiene: Hyena
+Enraged Hyenas		entidad	mod_legends\!!config\_global.nut	contiene: Hyenas
+Farmhands		entidad	mod_legends\!!config\_global.nut	
+Fencer		entidad	mod_legends\!!config\_global.nut	
+Fencers		entidad	mod_legends\!!config\_global.nut	
+Free Company Archer		entidad	mod_legends\!!config\_global.nut	
+Free Company Archers		entidad	mod_legends\!!config\_global.nut	
+Free Company Billman		entidad	mod_legends\!!config\_global.nut	
+Free Company Billmen		entidad	mod_legends\!!config\_global.nut	contiene: Billmen
+Free Company Crossbow		entidad	mod_legends\!!config\_global.nut	
+Free Company Crossbows		entidad	mod_legends\!!config\_global.nut	
+Free Company Footman		entidad	mod_legends\!!config\_global.nut	contiene: Footman
+Free Company Footmen		entidad	mod_legends\!!config\_global.nut	contiene: Footmen
+Free Company Infantry		entidad	mod_legends\!!config\_global.nut	
+Free Company Leader		entidad	mod_legends\!!config\_global.nut	
+Free Company Leaders		entidad	mod_legends\!!config\_global.nut	
+Free Company Longbow		entidad	mod_legends\!!config\_global.nut	
+Free Company Longbows		entidad	mod_legends\!!config\_global.nut	
+Free Company Pikeman		entidad	mod_legends\!!config\_global.nut	
+Free Company Pikemen		entidad	mod_legends\!!config\_global.nut	
+Free Company Ringleader		entidad	mod_legends\!!config\_global.nut	
+Free Company Ringleaders		entidad	mod_legends\!!config\_global.nut	
+Free Company Slayer		entidad	mod_legends\!!config\_global.nut	
+Free Company Slayers		entidad	mod_legends\!!config\_global.nut	contiene: Slayers
+Free Company Spearman		entidad	mod_legends\!!config\_global.nut	
+Free Company Spearmen		entidad	mod_legends\!!config\_global.nut	
+Goblin Berserker		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Berserkers		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Harrier		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Harriers		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Tribe Defender		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Tribe Defenders		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Witchdoctor		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Goblin Witchdoctors		entidad	mod_legends\!!config\_global.nut	contiene: Goblin
+Halberdier		entidad	mod_legends\!!config\_global.nut	
+Halberdiers		entidad	mod_legends\!!config\_global.nut	
+Heartwood Sapling		entidad	mod_legends\!!config\_global.nut	
+Heartwood Saplings		entidad	mod_legends\!!config\_global.nut	contiene: Saplings
+Heartwood Schrat		entidad	mod_legends\!!config\_global.nut	
+Heartwood Schrats		entidad	mod_legends\!!config\_global.nut	contiene: Schrats
+Hexe Coven Leader		entidad	mod_legends\!!config\_global.nut	contiene: Hexe
+Hexe Coven Leaders		entidad	mod_legends\!!config\_global.nut	contiene: Hexe
+Horse		entidad	mod_legends\!!config\_global.nut	
+Horses		entidad	mod_legends\!!config\_global.nut	
+Höllenhund		entidad	mod_legends\!!config\_global.nut	
+Höllenhunds		entidad	mod_legends\!!config\_global.nut	
+Infected Bandit		entidad	mod_legends\!!config\_global.nut	
+Manhunter Handgonner		entidad	mod_legends\!!config\_global.nut	
+Manhunter Handgonners		entidad	mod_legends\!!config\_global.nut	
+Manhunter Veteran		entidad	mod_legends\!!config\_global.nut	contiene: Veteran
+Manhunter Veteran Handgonner		entidad	mod_legends\!!config\_global.nut	contiene: Veteran
+Manhunter Veteran Handgonners		entidad	mod_legends\!!config\_global.nut	contiene: Veteran
+Manhunter Veterans		entidad	mod_legends\!!config\_global.nut	
+Mercenaries For Hire		entidad	scripts\entity\world\settlements\situations\legend_merc_company_disbands_situation.nut	
+Militant Townsfolk		entidad	scripts\entity\world\settlements\situations\legend_militant_townsfolk_situation.nut	
+Miners		entidad	mod_legends\!!config\_global.nut	
+Minstrels		entidad	mod_legends\!!config\_global.nut	
+Monks		entidad	mod_legends\!!config\_global.nut	
+Necrosavant Lord		entidad	mod_legends\!!config\_global.nut	contiene: Necrosavant
+Necrosavant Lords		entidad	mod_legends\!!config\_global.nut	contiene: Necrosavant
+Orc Behemoth		entidad	mod_legends\!!config\_global.nut	
+Orc Behemoths		entidad	mod_legends\!!config\_global.nut	
+Orc Elite		entidad	mod_legends\!!config\_global.nut	
+Orc Elites		entidad	mod_legends\!!config\_global.nut	
+Orc Mad Berserker		entidad	mod_legends\!!config\_global.nut	
+Orc Mad Berserkers		entidad	mod_legends\!!config\_global.nut	
+Orc Tyrant		entidad	mod_legends\!!config\_global.nut	
+Painting Tent		entidad	scripts\entity\world\camp\buildings\painter_building.nut	
+Patrol Station		entidad	scripts\entity\world\camp\buildings\scout_building.nut	
+Poachers		entidad	mod_legends\!!config\_global.nut	
+Pollaxes		entidad	mod_legends\!!config\_global.nut	
+Rallied Militia		entidad	scripts\entity\world\settlements\situations\legend_rallied_militia_situation.nut	contiene: Militia
+Redback Spider		entidad	mod_legends\!!config\_global.nut	
+Redback Spiders		entidad	mod_legends\!!config\_global.nut	
+Repair Tent		entidad	scripts\entity\world\camp\buildings\repair_building.nut	
+Rest		entidad	scripts\entity\world\camp\buildings\rest_building.nut	
+Robber Barons		entidad	mod_legends\!!config\_global.nut	
+Rock Unhold		entidad	mod_legends\!!config\_global.nut	contiene: Unhold
+Rock Unholds		entidad	mod_legends\!!config\_global.nut	contiene: Unholds
+Royal Guard		entidad	mod_legends\!!config\_global.nut	
+Royal Guards		entidad	mod_legends\!!config\_global.nut	
+Salvage Tent		entidad	scripts\entity\world\camp\buildings\workshop_building.nut	
+Sighthound		entidad	mod_legends\!!config\_global.nut	
+Sighthounds		entidad	mod_legends\!!config\_global.nut	
+Skin Ghoul		entidad	mod_legends\!!config\_global.nut	
+Skin Ghouls		entidad	mod_legends\!!config\_global.nut	
+Slinger		entidad	mod_legends\!!config\_global.nut	
+Slingers		entidad	mod_legends\!!config\_global.nut	
+Squires		entidad	mod_legends\!!config\_global.nut	
+Stollwurm		entidad	mod_legends\!!config\_global.nut	
+Stollwurmer		entidad	mod_legends\!!config\_global.nut	
+Supply Tent		entidad	scripts\entity\world\camp\buildings\gatherer_building.nut	
+Sureshots		entidad	mod_legends\!!config\_global.nut	
+Teetering Tower		entidad	scripts\entity\world\locations\legendary\legend_wizard_tower_location.nut	
+Town 		entidad	scripts\entity\world\settlements\situations\legend_degrading_effort_situation.nut	
+Training Grounds		entidad	scripts\entity\world\camp\buildings\training_building.nut	
+Upgrading Effort		entidad	scripts\entity\world\settlements\situations\legend_upgrading_effort_situation.nut	
+Upgrading Max Locations Effort		entidad	scripts\entity\world\settlements\situations\legend_upgrading_locations_effort_situation.nut	
+Veteran Knight		entidad	mod_legends\!!config\_global.nut	contiene: Veteran
+Veteran Knights		entidad	mod_legends\!!config\_global.nut	contiene: Veteran; Knights
+Webknecht Cluster		entidad	mod_legends\!!config\_global.nut	contiene: Webknecht
+Webknecht Clusters		entidad	mod_legends\!!config\_global.nut	contiene: Webknecht
+Webknecht Nest		entidad	scripts\entity\world\locations\legend_spider_nest_location.nut	contiene: Webknecht
+White Direwolf		entidad	mod_legends\!!config\_global.nut	
+White Direwolf Rider		entidad	mod_legends\!!config\_global.nut	
+White Direwolf Riders		entidad	mod_legends\!!config\_global.nut	
+White Direwolves		entidad	mod_legends\!!config\_global.nut	contiene: Direwolves
+White Warwolf		entidad	mod_legends\!!config\_global.nut	
+White Warwolves		entidad	mod_legends\!!config\_global.nut	
+Wicht		entidad	mod_legends\!!config\_global.nut	
+Wichts		entidad	mod_legends\!!config\_global.nut	
+Winselmutter		entidad	mod_legends\!!config\_global.nut	
+Winselmutters		entidad	mod_legends\!!config\_global.nut	
+Witch Hunter		entidad	mod_legends\!!config\_global.nut	
+Witch Hunters		entidad	mod_legends\!!config\_global.nut	
+Woodcutter		entidad	mod_legends\!!config\_global.nut	
+Woodsfolk		entidad	mod_legends\!!config\_global.nut	
+Word of Mouth		entidad	scripts\entity\world\settlements\situations\legend_word_of_mouth_situation.nut	
+Armors		general	mod_legends\config\world_entity_common.nut	
+Basilisks		general	mod_legends\config\spawnlist_beasts.nut	
+Company Heater Shield		general	scripts\crafting\blueprints\shields\legend_heater_shield_blueprint.nut	contiene: Heater Shield
+Company Kite Shield		general	scripts\crafting\blueprints\shields\legend_kite_shield_blueprint.nut	contiene: Kite Shield
+Company Tower Shield		general	scripts\crafting\blueprints\shields\legend_tower_shield_blueprint.nut	
+Contract Categories		general	mod_legends\system\debug_logging.nut	
+Contract Categories (Verbose)		general	mod_legends\system\debug_logging.nut	
+Exotic		general	mod_legends\config\world_entity_common.nut	
+Foods		general	mod_legends\config\world_entity_common.nut	
+Ghosts		general	mod_legends\hooks\config\spawnlist_zombies.nut	
+Legends Mod		general	scripts\!mods_preload\register_legends.nut	
+Lindwurm's Helmet		general	scripts\crafting\blueprints\armor\helmet\legend_lindwurm_helmet_blueprint.nut	contiene: Lindwurm's; Helmet
+Misc		general	mod_legends\config\world_entity_common.nut	
+Mountain Armor		general	scripts\crafting\blueprints\armor\chest\legend_mountain_armor_blueprint.nut	
+Mummies		general	mod_legends\config\spawnlist_undead.nut	
+Repairs		general	scripts\ui\screens\world\modules\camp_screen\camp_repair_dialog_module.nut	
+Skinghoul Armor		general	scripts\crafting\blueprints\armor\chest\legend_skin_armor_blueprint.nut	
+Slaves		general	mod_legends\hooks\config\spawnlist_southern.nut	
+Tips		general	scripts\encounters\camp\_legend_tips_encounter.nut	
+Tournament competitors		general	mod_legends\config\spawnlist_tournament.nut	
+Tournament partipants		general	mod_legends\config\spawnlist_tournament.nut	
+Warlock Cloak		general	scripts\crafting\blueprints\armor\chest\cloaks\legend_warlock_cloak_blueprint.nut	
+Warlock Skull Faceplate		general	scripts\crafting\blueprints\armor\helmet\legend_warlock_skull_blueprint.nut	
+Zombies		general	mod_legends\hooks\config\spawnlist_zombies.nut	
+Albedo		habilidad	mod_legends\!!config\actives_defs.nut	
+Banshee Scream		habilidad	mod_legends\!!config\actives_defs.nut	
+Bear Bite		habilidad	mod_legends\!!config\actives_defs.nut	
+Bear Claws		habilidad	mod_legends\!!config\actives_defs.nut	
+Boar Charge		habilidad	mod_legends\!!config\actives_defs.nut	
+Boar Form		habilidad	scripts\skills\effects\legend_transformed_boar_effect.nut	
+Boar Gore		habilidad	mod_legends\!!config\actives_defs.nut	
+Breach		habilidad	mod_legends\hooks\skills\actives\slash.nut	
+Bribe		habilidad	mod_legends\!!config\actives_defs.nut	
+Buckler Bash		habilidad	mod_legends\!!config\actives_defs.nut	
+Burning Hands		habilidad	mod_legends\!!config\actives_defs.nut	
+Burrow		habilidad	mod_legends\!!config\actives_defs.nut	
+Burrow Tail		habilidad	mod_legends\!!config\actives_defs.nut	
+Call Lightning		habilidad	mod_legends\!!config\actives_defs.nut	
+Cascade Strike		habilidad	mod_legends\!!config\actives_defs.nut	
+Cat Bite		habilidad	mod_legends\!!config\actives_defs.nut	
+Catapult Boulder		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Catapult
+Chain Flail		habilidad	mod_legends\hooks\skills\actives\flail_skill.nut	contiene: Flail
+Chain Lightning		habilidad	mod_legends\!!config\actives_defs.nut	
+Chain Thresh		habilidad	mod_legends\hooks\skills\actives\thresh.nut	
+Cheer On		habilidad	mod_legends\!!config\actives_defs.nut	
+Choke		habilidad	mod_legends\!!config\actives_defs.nut	
+Chopper sick balls!		habilidad	mod_legends\!!config\actives_defs.nut	
+Citrinitas (Trance)		habilidad	mod_legends\!!config\actives_defs.nut	
+Climb		habilidad	mod_legends\!!config\actives_defs.nut	
+Command Legionary		habilidad	mod_legends\!!config\actives_defs.nut	
+Conduct Seance		habilidad	mod_legends\!!config\actives_defs.nut	
+Conjure Nightmare		habilidad	mod_legends\!!config\actives_defs.nut	
+Coordinated Volleys		habilidad	mod_legends\!!config\actives_defs.nut	
+Crush Rock		habilidad	mod_legends\!!config\actives_defs.nut	
+Cunning Disguise		habilidad	scripts\skills\effects\legend_transformed_terrain_effect.nut	
+Danger Pay		habilidad	mod_legends\!!config\actives_defs.nut	
+Death Touch		habilidad	mod_legends\!!config\actives_defs.nut	
+Decrepify		habilidad	mod_legends\!!config\actives_defs.nut	
+Defend! Good boy!		habilidad	mod_legends\!!config\actives_defs.nut	
+Direwolf Claws		habilidad	mod_legends\!!config\actives_defs.nut	
+Dog Handling		habilidad	mod_legends\!!config\actives_defs.nut	
+Dog Master		habilidad	mod_legends\!!config\actives_defs.nut	
+Donkey Kick		habilidad	mod_legends\!!config\actives_defs.nut	
+Double Swing		habilidad	mod_legends\!!config\actives_defs.nut	
+Drain Life		habilidad	mod_legends\!!config\actives_defs.nut	
+Drink from Amphora		habilidad	mod_legends\!!config\actives_defs.nut	
+Drink or Give Beer		habilidad	mod_legends\!!config\actives_defs.nut	
+Drink or Give Liquor		habilidad	mod_legends\!!config\actives_defs.nut	
+Drink or Give Mead		habilidad	mod_legends\!!config\actives_defs.nut	
+Drink or Give Wine		habilidad	mod_legends\!!config\actives_defs.nut	
+Drum Bash		habilidad	mod_legends\hooks\skills\actives\bash.nut	
+Eat or Give Food		habilidad	mod_legends\!!config\actives_defs.nut	
+Eat or Give Pie		habilidad	mod_legends\!!config\actives_defs.nut	
+Eat or Give Porridge		habilidad	mod_legends\!!config\actives_defs.nut	
+Eat or Give Pudding		habilidad	mod_legends\!!config\actives_defs.nut	
+En Garde		habilidad	mod_legends\!!config\actives_defs.nut	
+Enraged Hyena Bite		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Hyena Bite
+Enthrall		habilidad	mod_legends\!!config\actives_defs.nut	
+Entice		habilidad	mod_legends\!!config\actives_defs.nut	
+Evasion		habilidad	mod_legends\!!config\actives_defs.nut	
+Field Repairs		habilidad	mod_legends\!!config\actives_defs.nut	
+Field Treats		habilidad	mod_legends\!!config\actives_defs.nut	
+Field Triage		habilidad	mod_legends\!!config\actives_defs.nut	
+Flagellate		habilidad	mod_legends\!!config\actives_defs.nut	
+Flogging		habilidad	mod_legends\!!config\actives_defs.nut	
+Flourish		habilidad	mod_legends\!!config\actives_defs.nut	
+Flux!		habilidad	mod_legends\hooks\skills\effects\double_strike_effect.nut	
+Fortify		habilidad	mod_legends\!!config\actives_defs.nut	
+Fowl Eye		habilidad	mod_legends\!!config\actives_defs.nut	
+Great Lunge		habilidad	mod_legends\hooks\skills\actives\lunge_skill.nut	
+Great Slash		habilidad	mod_legends\hooks\skills\actives\slash.nut	
+Grow Greenwood Shield		habilidad	mod_legends\!!config\actives_defs.nut	
+Guide steps		habilidad	mod_legends\!!config\actives_defs.nut	
+Hack		habilidad	mod_legends\hooks\skills\actives\chop.nut	
+Haftstrike		habilidad	mod_legends\!!config\actives_defs.nut	
+Hailstone		habilidad	mod_legends\!!config\actives_defs.nut	
+Halfsword		habilidad	mod_legends\hooks\skills\actives\puncture.nut	
+Harvest		habilidad	mod_legends\!!config\actives_defs.nut	
+Harvest Bush		habilidad	mod_legends\!!config\actives_defs.nut	
+Harvest Tree		habilidad	mod_legends\!!config\actives_defs.nut	
+Healing Mist		habilidad	mod_legends\!!config\actives_defs.nut	
+Hew		habilidad	mod_legends\!!config\actives_defs.nut	
+Hold the line		habilidad	mod_legends\!!config\actives_defs.nut	
+Holy Flame		habilidad	mod_legends\!!config\actives_defs.nut	
+Horrify		habilidad	mod_legends\!!config\actives_defs.nut	
+Horse Charge		habilidad	mod_legends\!!config\actives_defs.nut	
+Horse Kick		habilidad	mod_legends\!!config\actives_defs.nut	
+Howl		habilidad	mod_legends\!!config\actives_defs.nut	
+Höllenhund Bite		habilidad	mod_legends\!!config\actives_defs.nut	
+Imbue		habilidad	mod_legends\!!config\actives_defs.nut	
+Improvised Strike		habilidad	mod_legends\hooks\skills\actives\knock_out.nut	
+Incoming!		habilidad	mod_legends\!!config\actives_defs.nut	
+Infatuate		habilidad	mod_legends\!!config\actives_defs.nut	
+Inject		habilidad	mod_legends\!!config\actives_defs.nut	
+Inspire		habilidad	mod_legends\!!config\actives_defs.nut	
+Into The Fray		habilidad	mod_legends\!!config\actives_defs.nut	
+Kick		habilidad	mod_legends\!!config\actives_defs.nut	
+Launch Acid Flask		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Acid Flask
+Launch Blessed Water		habilidad	mod_legends\!!config\actives_defs.nut	
+Launch Daze Bomb		habilidad	mod_legends\!!config\actives_defs.nut	
+Launch Fire Bomb		habilidad	mod_legends\!!config\actives_defs.nut	
+Launch Smoke Bomb		habilidad	mod_legends\!!config\actives_defs.nut	
+Leap		habilidad	mod_legends\!!config\actives_defs.nut	
+Legend Unleash Sighthound		habilidad	mod_legends\!!config\actives_defs.nut	
+Levitate Person		habilidad	mod_legends\!!config\actives_defs.nut	
+Life Siphon		habilidad	mod_legends\!!config\actives_defs.nut	
+Line Them Up		habilidad	mod_legends\!!config\actives_defs.nut	
+Loose Stone		habilidad	mod_legends\!!config\actives_defs.nut	
+Lute Bash		habilidad	mod_legends\hooks\skills\actives\bash.nut	
+Magic Circle of Protection		habilidad	mod_legends\!!config\actives_defs.nut	
+Mark Target		habilidad	mod_legends\!!config\actives_defs.nut	
+Martial March		habilidad	mod_legends\!!config\actives_defs.nut	
+Minor Sleep		habilidad	mod_legends\!!config\actives_defs.nut	
+Missile		habilidad	mod_legends\!!config\actives_defs.nut	
+Mordhau		habilidad	mod_legends\hooks\skills\actives\hammer.nut	
+Nightvision		habilidad	mod_legends\!!config\actives_defs.nut	
+Nigredo		habilidad	mod_legends\!!config\actives_defs.nut	
+Obliterate		habilidad	mod_legends\!!config\actives_defs.nut	
+Offhand Puncture		habilidad	mod_legends\!!config\actives_defs.nut	
+Overwatch		habilidad	scripts\skills\effects\legend_overwatch_effect.nut	
+Pale Touch		habilidad	mod_legends\!!config\actives_defs.nut	
+Pass Item		habilidad	mod_legends\!!config\actives_defs.nut	
+Peck		habilidad	mod_legends\!!config\actives_defs.nut	
+Piercing Bolt		habilidad	mod_legends\!!config\actives_defs.nut	
+Piercing Shot		habilidad	mod_legends\!!config\actives_defs.nut	
+Pirouette		habilidad	mod_legends\!!config\actives_defs.nut	
+Prayer of Faith		habilidad	mod_legends\!!config\actives_defs.nut	
+Prayer of Hope		habilidad	mod_legends\!!config\actives_defs.nut	
+Precise Shot		habilidad	mod_legends\!!config\actives_defs.nut	
+Prepare to Bleed		habilidad	mod_legends\!!config\actives_defs.nut	
+Prepare to Graze		habilidad	mod_legends\!!config\actives_defs.nut	
+Pry Armor		habilidad	mod_legends\!!config\actives_defs.nut	
+Psybeam		habilidad	mod_legends\!!config\actives_defs.nut	
+Push Forward		habilidad	mod_legends\!!config\actives_defs.nut	
+Quick Step		habilidad	mod_legends\!!config\actives_defs.nut	
+Rat Bite		habilidad	mod_legends\!!config\actives_defs.nut	
+Rat Claws		habilidad	mod_legends\!!config\actives_defs.nut	
+Rat Form		habilidad	scripts\skills\effects\legend_transformed_rat_effect.nut	
+Read Omens (Trance)		habilidad	mod_legends\!!config\actives_defs.nut	
+Realm of Burning Nightmares		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Nightmares
+Realm of Nightmares		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Nightmares
+Redback Poison Puncture		habilidad	mod_legends\!!config\actives_defs.nut	
+Redback Webknecht Bite		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Webknecht Bite
+Relax		habilidad	mod_legends\!!config\actives_defs.nut	
+Revolt		habilidad	mod_legends\!!config\actives_defs.nut	
+Riposting		habilidad	mod_legends\hooks\skills\effects\riposte_effect.nut	
+Run Through		habilidad	mod_legends\!!config\actives_defs.nut	
+Rust		habilidad	mod_legends\!!config\actives_defs.nut	
+Scry		habilidad	mod_legends\!!config\actives_defs.nut	
+Scry Area (Trance)		habilidad	mod_legends\!!config\actives_defs.nut	
+Second Wind		habilidad	mod_legends\!!config\actives_defs.nut	
+Shadow Mist		habilidad	mod_legends\!!config\actives_defs.nut	
+Shatter Shield		habilidad	mod_legends\hooks\skills\actives\split_shield.nut	
+Shoot Dart		habilidad	mod_legends\!!config\actives_defs.nut	
+Sighthound Bite		habilidad	mod_legends\!!config\actives_defs.nut	
+Skin Ghoul Claws		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Ghoul Claws
+Sling Heavy Stone		habilidad	mod_legends\!!config\actives_defs.nut	
+Slingstaff Bash		habilidad	mod_legends\!!config\actives_defs.nut	
+Song of Life		habilidad	mod_legends\!!config\actives_defs.nut	
+Soothing Wind		habilidad	mod_legends\!!config\actives_defs.nut	
+Stab with Wooden Stake		habilidad	mod_legends\!!config\actives_defs.nut	
+Staff Bash		habilidad	mod_legends\hooks\skills\actives\bash.nut	
+Staff Daze		habilidad	mod_legends\hooks\skills\actives\knock_out.nut	
+Staff Riposte		habilidad	scripts\skills\effects\legend_staff_riposte_effect.nut	contiene: Riposte
+Strafing Run		habilidad	mod_legends\!!config\actives_defs.nut	
+Stun		habilidad	mod_legends\!!config\actives_defs.nut	
+Stupefy		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Bear		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Cat		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Catapult		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Catapult
+Summon Heavy Archer Skeleton		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Heavy Skeleton		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Heavy Xbow Zombie		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Heavy Zombie		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Hound		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Light Archer Skeleton		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Light Skeleton		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Light Xbow Zombie		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Light Zombie		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Medium Archer Skeleton		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Medium Skeleton		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Medium Xbow Zombie		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Medium Zombie		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Storm		habilidad	mod_legends\!!config\actives_defs.nut	
+Summon Wolf		habilidad	mod_legends\!!config\actives_defs.nut	
+Tackle		habilidad	mod_legends\!!config\actives_defs.nut	
+Terror		habilidad	mod_legends\!!config\actives_defs.nut	
+Throw Backup Axe		habilidad	mod_legends\hooks\skills\actives\throw_axe.nut	
+Throw Backup Spear		habilidad	mod_legends\hooks\skills\actives\throw_javelin.nut	
+Throw Knife		habilidad	mod_legends\!!config\actives_defs.nut	
+Transform into Bear		habilidad	mod_legends\!!config\actives_defs.nut	
+Transform into Boar		habilidad	mod_legends\!!config\actives_defs.nut	
+Transform into Rat		habilidad	mod_legends\!!config\actives_defs.nut	
+Transform into Schrat		habilidad	mod_legends\!!config\actives_defs.nut	
+Transform into Wolf		habilidad	mod_legends\!!config\actives_defs.nut	
+Unleash Falcon		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Falcon
+Unleash Warbear		habilidad	mod_legends\!!config\actives_defs.nut	
+Unleash White Wolf		habilidad	mod_legends\!!config\actives_defs.nut	
+Unleash Wolf		habilidad	mod_legends\hooks\skills\actives\unleash_wolf.nut	
+Violent Decomposition		habilidad	mod_legends\!!config\actives_defs.nut	
+Wail		habilidad	mod_legends\!!config\actives_defs.nut	
+Wake Allies		habilidad	mod_legends\!!config\actives_defs.nut	
+War Chant		habilidad	mod_legends\!!config\actives_defs.nut	
+Web Bolt		habilidad	mod_legends\!!config\actives_defs.nut	
+White Direwolf Bite		habilidad	mod_legends\!!config\actives_defs.nut	contiene: Direwolf Bite
+White Wolf Howl		habilidad	mod_legends\!!config\actives_defs.nut	
+Wiederganger Bite		habilidad	mod_legends\hooks\skills\actives\zombie_bite.nut	contiene: Wiederganger
+Wind Up		habilidad	mod_legends\!!config\actives_defs.nut	
+Aperthrope		lesion	scripts\skills\injury_permanent\legend_aperthropy_injury.nut	
+Arborthrope		lesion	scripts\skills\injury_permanent\legend_arborthropy_injury.nut	
+Donkey body		lesion	scripts\skills\injury_permanent\legend_donkey_injury.nut	
+Lycanthrope		lesion	scripts\skills\injury_permanent\legend_lycanthropy_injury.nut	
+Scarred		lesion	scripts\skills\injury_permanent\legend_scarred_injury.nut	
+Ursathrope		lesion	scripts\skills\injury_permanent\legend_ursathropy_injury.nut	
+Vermesthrope		lesion	scripts\skills\injury_permanent\legend_infected_injury.nut	
+Acid Flask (Used)		objeto	mod_legends\hooks\items\tools\acid_flask_item.nut	contiene: Acid Flask
+Adorned Gnarly Staff		objeto	scripts\items\weapons\named\legend_named_goblin_staff.nut	contiene: Gnarly Staff
+Affliction		objeto	mod_legends\!!config\item_names.nut	
+Agilty		objeto	mod_legends\!!config\item_names.nut	
+Alms		objeto	mod_legends\!!config\item_names.nut	
+Amulet Coif		objeto	scripts\items\legend_armor\armor_upgrades\legend_armor_chain_and_mail_upgrade.nut	
+Ancient Amphora		objeto	scripts\items\accessory\special\legend_oms_amphora_item.nut	
+Ancient Broad Warscythe		objeto	scripts\items\weapons\ancient\legend_broad_warscythe.nut	
+Ancient Broadhead Spear		objeto	scripts\items\weapons\ancient\legend_broadhead_spear.nut	
+Ancient Decorated Sword		objeto	scripts\items\weapons\ancient\legend_decorated_sword.nut	
+Ancient Fan Axe		objeto	scripts\items\weapons\ancient\legend_fan_axe.nut	
+Ancient Gladius		objeto	scripts\items\weapons\ancient\legend_gladius.nut	
+Ancient Green Wood		objeto	scripts\items\misc\legend_ancient_green_wood_item.nut	
+Ancient Honed Warscythe		objeto	scripts\items\weapons\ancient\legend_honed_warscythe.nut	
+Ancient Ox Tongue Spear		objeto	scripts\items\weapons\ancient\legend_oxtongue_spear.nut	
+Ancient Royal Sword		objeto	scripts\items\weapons\ancient\legend_spatha.nut	
+Ancient Scroll		objeto	scripts\items\misc\legend_ancient_scroll_item.nut	
+Ancient Sica		objeto	scripts\items\weapons\ancient\legend_sica.nut	
+Ancient Southern Bandages		objeto	scripts\items\armor\ancient\legend_mummy_bandages.nut	
+Ancient Southern Dress		objeto	scripts\items\armor\ancient\legend_mummy_dress.nut	
+Ancient Southern Plate		objeto	scripts\items\armor\ancient\legend_mummy_plate.nut	
+Ancient Southern Royal Plate		objeto	scripts\items\armor\ancient\legend_mummy_royal_plate.nut	
+Ancient Southern Shield		objeto	scripts\items\shields\ancient\legend_mummy_shield.nut	
+Ancient Southern Tower Shield		objeto	scripts\items\shields\ancient\legend_mummy_tower_shield.nut	
+Antiquity		objeto	mod_legends\!!config\item_names.nut	
+Apothecary Mushrooms		objeto	scripts\items\accessory\legend_apothecary_mushrooms_item.nut	contiene: Mushrooms
+Armet		objeto	scripts\items\helmets\legend_enclave_vanilla_armet_02.nut	
+Armet with Visor		objeto	scripts\items\helmets\legend_enclave_vanilla_armet_01.nut	
+Armor Piercing Arrows		objeto	scripts\items\ammo\legend_armor_piercing_arrows.nut	
+Armor Piercing Bolts		objeto	scripts\items\ammo\legend_armor_piercing_bolts.nut	
+Armor Rune Sigil: Endurance		objeto	mod_legends\config\runes_armor.nut	
+Armor Rune Sigil: Resilience		objeto	mod_legends\config\runes_armor.nut	
+Armor Rune Sigil: Safety		objeto	mod_legends\config\runes_armor.nut	
+Art of War		objeto	scripts\items\misc\legend_class_skill_book_item.nut	
+Bag of Darts		objeto	scripts\items\ammo\legend_darts.nut	
+Banshee Essence		objeto	scripts\items\misc\legend_banshee_essence_item.nut	
+Barbarian Drum		objeto	mod_legends\hooks\items\weapons\barbarians\drum_item.nut	
+Basilisk Cloak		objeto	scripts\items\legend_armor\cloak\legend_basilisk_cloak.nut	
+Basilisk Feathers		objeto	scripts\items\misc\legend_basilisk_feathers_item.nut	
+Basilisk Talon		objeto	scripts\items\loot\legend_basilisk_talon_item.nut	
+Basilisk Trophy Necklace		objeto	scripts\items\accessory\legend_basilisk_trophy_item.nut	
+Battle Glaive		objeto	scripts\items\weapons\legend_battle_glaive.nut	
+Beacon		objeto	mod_legends\!!config\item_names.nut	
+Bear Fur		objeto	scripts\items\loot\legend_bear_fur_item.nut	
+Bear Meat		objeto	scripts\items\supplies\legend_bear_meat_item.nut	
+Bearded Helm		objeto	scripts\items\helmets\legend_helm_bearded.nut	
+Beast		objeto	mod_legends\!!config\item_names.nut	
+Beef		objeto	scripts\items\supplies\legend_beef_item.nut	
+Behemoth Helm		objeto	scripts\items\helmets\greenskins\legend_orc_behemoth_helmet.nut	
+Berserker		objeto	mod_legends\!!config\item_names.nut	
+Blacksmith's hammer		objeto	scripts\items\weapons\legend_hammer.nut	
+Bladed Magestaff		objeto	scripts\items\weapons\legendary\legend_mage_swordstaff.nut	
+Bloat		objeto	mod_legends\!!config\item_names.nut	
+Bloody Looted Plate Armor		objeto	scripts\items\armor\greenskins\legend_orc_elite_heavy_armor.nut	contiene: Looted Plate Armor
+Blowgun		objeto	scripts\items\weapons\greenskins\legend_blowgun.nut	
+Boar		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Boar Meat		objeto	scripts\items\supplies\legend_boar_meat_item.nut	
+Bone Carver		objeto	scripts\items\weapons\greenskins\legend_bone_carver.nut	
+Bough		objeto	scripts\items\weapons\greenskins\legend_bough.nut	
+Bound Skin Ledger		objeto	scripts\items\accessory\special\legend_oms_ledger_item.nut	
+Bounty		objeto	mod_legends\!!config\item_names.nut	
+Breakers End		objeto	mod_legends\!!config\item_names.nut	
+Breathed Helm		objeto	scripts\items\helmets\legend_helm_breathed.nut	
+Broad Head Arrows		objeto	scripts\items\ammo\legend_broad_head_arrows.nut	
+Broad Head Bolts		objeto	scripts\items\ammo\legend_broad_head_bolts.nut	
+Broken Ancient Decorated Sword		objeto	scripts\items\weapons\ancient\legend_broken_decorated_sword.nut	
+Broken Ancient Royal Sword		objeto	scripts\items\weapons\ancient\legend_broken_spatha.nut	
+Broken Throwing Net		objeto	mod_legends\hooks\items\tools\reinforced_throwing_net.nut	contiene: Throwing Net
+Brutal Chain		objeto	scripts\items\weapons\named\legend_named_orc_flail_2h.nut	
+Bufo Bufo		objeto	mod_legends\!!config\item_names.nut	
+Bug Meat		objeto	scripts\items\supplies\legend_bug_meat_item.nut	
+Calm		objeto	mod_legends\!!config\item_names.nut	
+Candor		objeto	mod_legends\!!config\item_names.nut	
+Cat o nine tails		objeto	scripts\items\weapons\legend_cat_o_nine_tails.nut	
+Chain Hood		objeto	scripts\items\legend_helmets\helmets\legend_faction_helmet.nut	
+Chalice		objeto	mod_legends\!!config\item_names.nut	
+Chant		objeto	mod_legends\!!config\item_names.nut	
+Chieftain		objeto	mod_legends\!!config\item_names.nut	
+Clams		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Cloak		objeto	scripts\items\legend_armor\legend_armor_cloak.nut	
+Coin Headband		objeto	scripts\items\helmets\legend_headband_coin.nut	
+Coin Headress		objeto	scripts\items\helmets\legend_headress_coin.nut	
+Cooking Spices		objeto	scripts\items\trade\legend_cooking_spices_trade_item.nut	
+Crab		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Craft Tent		objeto	scripts\items\tents\legend_tent_craft.nut	
+Crested Frogmouth Helm		objeto	scripts\items\helmets\legend_frogmouth_helm_crested.nut	
+Crested Painted Frogmouth Helm		objeto	scripts\items\helmets\named\legend_frogmouth_helm_crested_painted.nut	
+Crude Throwing Spear		objeto	scripts\items\weapons\greenskins\legend_orc_throwing_spear.nut	contiene: Throwing Spear
+Crusader Sword		objeto	scripts\items\weapons\legend_crusader_sword.nut	contiene: Crusader
+Crusader's Redoubt		objeto	mod_legends\!!config\item_names.nut	
+Crypt Keeper		objeto	mod_legends\!!config\item_names.nut	
+Curious Paw		objeto	scripts\items\accessory\special\legend_oms_paw_item.nut	
+Curry		objeto	scripts\items\supplies\legend_curry_item.nut	
+Curse Bringer		objeto	mod_legends\!!config\item_names.nut	
+Curse Lifter		objeto	mod_legends\!!config\item_names.nut	
+Curved Great Helm		objeto	scripts\items\helmets\legend_helm_curved.nut	
+Dark Veil		objeto	mod_legends\!!config\item_names.nut	
+Dawning Hope		objeto	mod_legends\!!config\item_names.nut	
+De Re Military		objeto	scripts\items\misc\legend_weapon_skill_book_item.nut	
+Deacon's Lament		objeto	mod_legends\!!config\item_names.nut	
+Death's Clutch		objeto	mod_legends\!!config\item_names.nut	
+Deathgrip		objeto	mod_legends\!!config\item_names.nut	
+Deathmarch		objeto	mod_legends\!!config\item_names.nut	
+Deathmark		objeto	mod_legends\!!config\item_names.nut	
+Decorated Crypt Cleaver		objeto	scripts\items\weapons\ancient\legend_decorated_crypt_cleaver.nut	contiene: Crypt Cleaver
+Decorated Frogmouth Helm		objeto	scripts\items\helmets\named\legend_frogmouth_helm_decorated.nut	
+Decorated Rhomphaia		objeto	scripts\items\weapons\ancient\legend_decorated_rhomphaia.nut	
+Deer		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Demon Alp Helm		objeto	scripts\items\legend_helmets\vanity\legend_helmet_demon_alp_helm.nut	contiene: Alp
+Demon Alp Skin		objeto	scripts\items\misc\legend_demon_alp_skin_item.nut	contiene: Alp
+Demon Alp Trophy Necklace		objeto	scripts\items\accessory\legend_demonalp_trophy_item.nut	contiene: Alp Trophy Necklace
+Demon Hound Bones		objeto	scripts\items\misc\legend_demon_hound_bones_item.nut	
+Demonic Banshee Trophy		objeto	scripts\items\accessory\legend_demon_banshee_trophy_item.nut	
+Diabolica		objeto	mod_legends\!!config\item_names.nut	
+Dilapitated Sling		objeto	scripts\items\weapons\legend_dilapitated_sling.nut	
+Dishonour		objeto	mod_legends\!!config\item_names.nut	
+Dog Meat		objeto	scripts\items\supplies\legend_dog_meat_item.nut	
+Doloris Capere		objeto	mod_legends\!!config\item_names.nut	
+Dried Dates		objeto	mod_legends\hooks\items\supplies\dates_item.nut	
+Dried Roots and Berries		objeto	mod_legends\hooks\items\supplies\roots_and_berries_item.nut	contiene: Roots and Berries
+Earrings		objeto	scripts\items\helmets\legend_earings.nut	
+Embalmed Headress		objeto	scripts\items\helmets\ancient\legend_mummy_crown_king.nut	
+Enchanter's Tent		objeto	scripts\items\tents\legend_tent_enchant.nut	
+Engraving		objeto	mod_legends\!!config\item_names.nut	
+Faith		objeto	mod_legends\!!config\item_names.nut	
+Falling		objeto	mod_legends\!!config\item_names.nut	
+Fangshire		objeto	scripts\items\helmets\legendary\fangshire.nut	
+Fearblocker		objeto	mod_legends\!!config\item_names.nut	
+Fecundity		objeto	mod_legends\!!config\item_names.nut	
+Fire Pot (Used)		objeto	mod_legends\hooks\items\tools\fire_bomb_item.nut	contiene: Fire Pot
+Fish		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Flash Pot (Used)		objeto	mod_legends\hooks\items\tools\daze_bomb_item.nut	contiene: Flash Pot
+Flask of Heartwood Sap		objeto	scripts\items\accessory\legend_heartwood_sap_flask_item.nut	
+Flask of Stollwurm Blood		objeto	scripts\items\accessory\legend_stollwurm_blood_flask_item.nut	
+Fletcher's Tent		objeto	scripts\items\tents\legend_tent_fletcher.nut	
+Folly's Friend		objeto	mod_legends\!!config\item_names.nut	
+Fool's Crown		objeto	mod_legends\!!config\item_names.nut	
+Fragmentation		objeto	mod_legends\!!config\item_names.nut	
+Fresh Dates		objeto	scripts\items\supplies\legend_fresh_dates_item.nut	
+Fresh Fish		objeto	scripts\items\supplies\legend_fresh_fish_item.nut	
+Fresh Fruit		objeto	scripts\items\supplies\legend_fresh_fruit_item.nut	
+Fresh Meat		objeto	scripts\items\supplies\legend_fresh_meat_item.nut	
+Fresh Milk		objeto	scripts\items\supplies\legend_fresh_milk_item.nut	
+Fresh Mushrooms		objeto	scripts\items\supplies\legend_fresh_mushrooms_item.nut	contiene: Mushrooms
+Fresh Poultry		objeto	scripts\items\supplies\legend_fresh_poultry_item.nut	
+Fresh Roots and Berries		objeto	scripts\items\supplies\legend_fresh_roots_and_berries_item.nut	contiene: Roots and Berries
+Frogmouth Helm		objeto	scripts\items\helmets\legend_frogmouth_helm.nut	
+Frost Unhold		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	contiene: Unhold
+Fruit		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Full Great Helm		objeto	scripts\items\helmets\legend_helm_full.nut	
+Full Helm With Neckplate		objeto	scripts\items\helmets\legend_helm_short.nut	contiene: Full Helm
+Fur Scraps		objeto	scripts\items\trade\legend_small_furs_item.nut	
+Gambler's Pride		objeto	mod_legends\!!config\item_names.nut	
+Gatherer's tools		objeto	scripts\items\tents\legend_tent_gather.nut	
+Gem Shards		objeto	scripts\items\trade\legend_gem_shards_item.nut	
+Ghoul		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Ghoul Skin		objeto	scripts\items\misc\legend_skin_ghoul_skin_item.nut	
+Gladiator's Cestus		objeto	scripts\items\accessory\gloves\legend_cestus_item.nut	
+Gladiator's Golden Cestus		objeto	scripts\items\accessory\gloves\legend_cestus_item_named.nut	
+Glutton		objeto	mod_legends\!!config\item_names.nut	
+Gnarled Staff		objeto	scripts\items\weapons\legend_staff_gnarled.nut	
+Goblin Harrier Axe		objeto	scripts\items\weapons\greenskins\legend_goblin_infantry_axe.nut	contiene: Goblin
+God's Bane		objeto	mod_legends\!!config\item_names.nut	contiene: Bane
+Gold Dust		objeto	scripts\items\trade\legend_gold_dust_item.nut	
+Gold Ingots		objeto	scripts\items\trade\legend_gold_ingots_item.nut	
+Gold Nugget		objeto	scripts\items\trade\legend_gold_nugget_item.nut	
+Great Bascinet With Visor		objeto	scripts\items\helmets\legend_enclave_vanilla_great_bascinet_01.nut	
+Great Helm		objeto	scripts\items\helmets\legend_enclave_vanilla_great_helm_01.nut	
+Great Khopesh		objeto	scripts\items\weapons\ancient\legend_great_khopesh.nut	
+Greenwood Schrat's Shield		objeto	scripts\items\shields\beasts\legend_greenwood_schrat_shield.nut	contiene: Schrat's Shield
+Grisly Scythe		objeto	scripts\items\weapons\legend_grisly_scythe.nut	
+Grubs		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Hag's Bane		objeto	mod_legends\!!config\item_names.nut	contiene: Bane
+Hag's End		objeto	mod_legends\!!config\item_names.nut	
+Halberd		objeto	scripts\items\weapons\legend_halberd.nut	
+Halo		objeto	mod_legends\!!config\item_names.nut	
+Hand Crossbow		objeto	scripts\items\weapons\legend_hand_crossbow.nut	
+Handsaw		objeto	scripts\items\weapons\legend_saw.nut	
+Hardpoint		objeto	mod_legends\!!config\item_names.nut	
+Healer's Tent		objeto	scripts\items\tents\legend_tent_heal.nut	
+Heavy Pauldrons		objeto	scripts\items\legend_armor\armor_upgrades\legend_pauldron_heavy_upgrade.nut	
+Helmet Rune Sigil: Bravery		objeto	mod_legends\config\runes_helmet.nut	contiene: Helmet
+Helmet Rune Sigil: Clarity		objeto	mod_legends\config\runes_helmet.nut	contiene: Helmet
+Helmet Rune Sigil: Luck		objeto	mod_legends\config\runes_helmet.nut	contiene: Helmet
+Helmet Rune Sigil: Patience		objeto	mod_legends\config\runes_helmet.nut	contiene: Helmet
+Helmet of the Mountain		objeto	scripts\items\helmets\named\legend_mountain_helmet_named.nut	contiene: Helmet
+Hexen Ichor Potion		objeto	scripts\items\accessory\legend_hexen_ichor_potion_item.nut	contiene: Hexen
+Hexen Leader Silk Cloak		objeto	scripts\items\legend_armor\cloak\legend_hexen_leader_cloak.nut	contiene: Hexen
+Hoe		objeto	scripts\items\weapons\legend_hoe.nut	
+Holy Water		objeto	mod_legends\hooks\items\tools\holy_water_item.nut	
+Holy Water (Used)		objeto	mod_legends\hooks\items\tools\holy_water_item.nut	
+Hope		objeto	mod_legends\!!config\item_names.nut	
+Hopelessness		objeto	mod_legends\!!config\item_names.nut	
+Horse Bridle		objeto	scripts\items\legend_horse_helmets\legend_horse_bridle.nut	
+Horse Caparison		objeto	scripts\items\legend_horse_armor\legend_horse_caparison.nut	
+Huge Quiver of Arrows		objeto	scripts\items\ammo\legend_huge_quiver_of_arrows.nut	contiene: Quiver of Arrows
+Huge Quiver of Bolts		objeto	scripts\items\ammo\legend_huge_quiver_of_bolts.nut	contiene: Quiver of Bolts
+Human Bones		objeto	scripts\items\spawns\legend_skeleton_item.nut	
+Human Carrion		objeto	scripts\items\spawns\legend_zombie_item.nut	
+Human Parts		objeto	scripts\items\supplies\legend_human_parts.nut	
+Hunter's Cap		objeto	scripts\items\legend_helmets\vanity\legend_helmet_hunter_cap.nut	
+Infantry Axe		objeto	scripts\items\weapons\legend_infantry_axe.nut	
+Insurmountability		objeto	mod_legends\!!config\item_names.nut	
+Iron Ingots		objeto	scripts\items\trade\legend_iron_ingots_item.nut	
+Iron Pauldrons		objeto	scripts\items\legend_armor\armor_upgrades\legend_pauldron_upgrade.nut	
+Jolly Folly		objeto	mod_legends\!!config\item_names.nut	
+Katar		objeto	scripts\items\weapons\legend_katar.nut	
+Kettle Sallet		objeto	scripts\items\helmets\legend_enclave_vanilla_kettle_sallet_03.nut	
+Kettle Sallet With Bevor		objeto	scripts\items\helmets\legend_enclave_vanilla_kettle_sallet_01.nut	
+Kettle Sallet With Coif		objeto	scripts\items\helmets\legend_enclave_vanilla_kettle_sallet_02.nut	
+King's Bane		objeto	mod_legends\!!config\item_names.nut	contiene: Bane
+Kingslayer		objeto	mod_legends\!!config\item_names.nut	
+Kitchen Tent		objeto	scripts\items\tents\legend_tent_hunter.nut	
+Knighthood		objeto	mod_legends\!!config\item_names.nut	
+Kopis		objeto	scripts\items\weapons\ancient\legend_kopis.nut	
+Large Cart		objeto	scripts\items\spawns\legend_cart_large_item.nut	
+Last Gasp		objeto	mod_legends\!!config\item_names.nut	
+Legend Arena Collar		objeto	scripts\items\accessory\special\legend_arena_collar_item.nut	contiene: Arena Collar
+Legendary location check		objeto	scripts\items\misc\legend_location_check_item.nut	
+Legendary location map		objeto	scripts\items\misc\legend_map_legendary_item.nut	
+Legionary Helmet		objeto	scripts\items\helmets\ancient\legend_ancient_legionary_helmet_restored.nut	contiene: Helmet
+Limb Lopper		objeto	scripts\items\weapons\greenskins\legend_limb_lopper.nut	
+Liquor		objeto	scripts\items\supplies\legend_liquor_item.nut	
+Living Greenwood Tree Shield		objeto	scripts\items\shields\special\legend_craftable_greenwood_schrat_shield.nut	
+Lizard		objeto	mod_legends\!!config\item_names.nut	
+Long Grasp		objeto	mod_legends\!!config\item_names.nut	
+Lucem		objeto	mod_legends\!!config\item_names.nut	
+Madman's Unitatis		objeto	mod_legends\!!config\item_names.nut	
+Magnitude		objeto	mod_legends\!!config\item_names.nut	
+Maker's Mark		objeto	mod_legends\!!config\item_names.nut	
+Man Mangler		objeto	scripts\items\weapons\greenskins\legend_man_mangler.nut	
+Manfeller		objeto	scripts\items\weapons\named\legend_named_goblin_axe_2h.nut	
+Marshall's Cry		objeto	mod_legends\!!config\item_names.nut	
+Martyr's Call		objeto	mod_legends\!!config\item_names.nut	
+Masterwork Fabric		objeto	scripts\items\misc\legend_masterwork_fabric.nut	
+Masterwork Metal		objeto	scripts\items\misc\legend_masterwork_metal.nut	
+Masterwork Tools		objeto	scripts\items\misc\legend_masterwork_tools.nut	
+Meat Hacker		objeto	scripts\items\weapons\greenskins\legend_meat_hacker.nut	
+Merchant's pack		objeto	scripts\items\accessory\legend_pack_large.nut	
+Military Crypt Cleaver		objeto	scripts\items\weapons\ancient\legend_military_crypt_cleaver.nut	contiene: Crypt Cleaver
+Military Goedendag		objeto	scripts\items\weapons\legend_military_goedendag.nut	
+Militia Glaive		objeto	scripts\items\weapons\legend_militia_glaive.nut	contiene: Militia
+Milk		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Mind's Cloister		objeto	mod_legends\!!config\item_names.nut	
+Mindfire		objeto	mod_legends\!!config\item_names.nut	
+Mistletoe		objeto	scripts\items\misc\legend_mistletoe_item.nut	
+Mistwalk		objeto	mod_legends\!!config\item_names.nut	
+Mithering Doom		objeto	mod_legends\!!config\item_names.nut	
+Monolith		objeto	mod_legends\!!config\item_names.nut	
+Mother's Loss		objeto	mod_legends\!!config\item_names.nut	
+Mountain Goat		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Mountain Helm		objeto	scripts\items\legend_helmets\vanity\legend_helmet_mountain_helm.nut	
+Mutton		objeto	scripts\items\supplies\legend_mutton_item.nut	
+Mystic staff		objeto	scripts\items\weapons\legend_mystic_staff.nut	
+Newt		objeto	mod_legends\!!config\item_names.nut	
+Noble Crown		objeto	scripts\items\helmets\legend_noble_crown.nut	
+Noble Floppy Hat		objeto	scripts\items\helmets\legend_noble_floppy_hat.nut	
+Noble Hat		objeto	scripts\items\helmets\legend_noble_hat.nut	
+Noble Hood		objeto	scripts\items\helmets\legend_noble_hood.nut	
+Noble Tower Shield		objeto	scripts\items\shields\legend_faction_tower_shield.nut	
+Noble's Burden		objeto	mod_legends\!!config\item_names.nut	
+Noble's Demise		objeto	mod_legends\!!config\item_names.nut	
+Northern Sling		objeto	scripts\items\weapons\legend_northern_sling.nut	
+Nun's Habit		objeto	scripts\items\helmets\legend_nun_habit.nut	
+Nuts and Seeds		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Old map		objeto	scripts\items\misc\legend_map_legendary_item.nut	
+Optimist's Demise		objeto	mod_legends\!!config\item_names.nut	
+Ornament		objeto	mod_legends\!!config\item_names.nut	
+Owl		objeto	mod_legends\!!config\item_names.nut	
+Parrying dagger		objeto	scripts\items\weapons\legend_parrying_dagger.nut	
+Peasant Flail		objeto	scripts\items\weapons\legend_ranged_wooden_flail.nut	contiene: Flail
+Penance		objeto	mod_legends\!!config\item_names.nut	
+Pessimist's Blight		objeto	mod_legends\!!config\item_names.nut	
+Pheasant		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Pie		objeto	scripts\items\supplies\legend_pie_item.nut	
+Pimp's hat		objeto	scripts\items\legend_helmets\vanity\legend_helmet_pimp_hat.nut	
+Plague Bringer		objeto	mod_legends\!!config\item_names.nut	
+Play		objeto	mod_legends\!!config\item_names.nut	
+Pole Flail		objeto	scripts\items\weapons\legend_ranged_flail.nut	contiene: Flail
+Poorly Cured Rations		objeto	scripts\items\supplies\legend_cured_rations_item.nut	
+Predator		objeto	mod_legends\!!config\item_names.nut	
+Profit		objeto	mod_legends\!!config\item_names.nut	
+Prosthetic Ear		objeto	scripts\items\misc\legend_prosthetic_ear_item.nut	
+Prosthetic Eye		objeto	scripts\items\misc\legend_prosthetic_eye_item.nut	
+Prosthetic Finger		objeto	scripts\items\misc\legend_prosthetic_finger_item.nut	
+Prosthetic Foot		objeto	scripts\items\misc\legend_prosthetic_foot_item.nut	
+Prosthetic Forearm		objeto	scripts\items\misc\legend_prosthetic_forearm_item.nut	
+Prosthetic Hand		objeto	scripts\items\misc\legend_prosthetic_hand_item.nut	
+Prosthetic Leg		objeto	scripts\items\misc\legend_prosthetic_leg_item.nut	
+Prosthetic Nose		objeto	scripts\items\misc\legend_prosthetic_nose_item.nut	
+Prowess		objeto	mod_legends\!!config\item_names.nut	
+Pudding		objeto	scripts\items\supplies\legend_pudding_item.nut	
+Pugilist Hand Wraps		objeto	scripts\items\accessory\gloves\legend_hand_wraps_item.nut	
+Purity		objeto	mod_legends\!!config\item_names.nut	
+Putrefaction		objeto	mod_legends\!!config\item_names.nut	
+Quickening		objeto	mod_legends\!!config\item_names.nut	
+Rabbit		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Rabbit Meat		objeto	scripts\items\supplies\legend_rabbit_meat_item.nut	
+Ranid		objeto	mod_legends\!!config\item_names.nut	
+Rapture		objeto	mod_legends\!!config\item_names.nut	
+Raw Wood		objeto	scripts\items\trade\legend_raw_wood_item.nut	
+Reaper's Mirth		objeto	mod_legends\!!config\item_names.nut	
+Redback Dagger		objeto	scripts\items\weapons\legend_redback_dagger.nut	
+Redback Helm		objeto	scripts\items\legend_helmets\vanity\legend_helmet_redback_helm.nut	
+Redback Poison Gland		objeto	scripts\items\misc\legend_redback_poison_gland_item.nut	contiene: Poison Gland
+Redback Silk Cloak		objeto	scripts\items\legend_armor\cloak\legend_redback_cloak.nut	
+Redemption		objeto	mod_legends\!!config\item_names.nut	
+Reign		objeto	mod_legends\!!config\item_names.nut	
+Reinforced Improvised Warflail		objeto	scripts\items\weapons\legend_reinforced_flail.nut	
+Reinforced Pauldrons		objeto	scripts\items\legend_armor\armor_upgrades\legend_pauldron_strong_upgrade.nut	
+Ribbon		objeto	mod_legends\!!config\item_names.nut	
+Rise		objeto	mod_legends\!!config\item_names.nut	
+Rock Unhold Bones		objeto	scripts\items\misc\legend_rock_unhold_bones_item.nut	contiene: Unhold
+Rock Unhold Hide		objeto	scripts\items\misc\legend_rock_unhold_hide_item.nut	contiene: Unhold Hide
+Royal Lance		objeto	scripts\items\weapons\ancient\legend_royal_lance.nut	contiene: Lance
+Sacred Shield		objeto	scripts\items\legend_armor\armor_upgrades\legend_armor_sacred_shield_upgrade.nut	
+Saint's Rib		objeto	scripts\items\accessory\special\legend_oms_rib_item.nut	
+Sanctity		objeto	mod_legends\!!config\item_names.nut	
+Scout report		objeto	scripts\items\misc\legend_map_named_item.nut	
+Scout's station		objeto	scripts\items\tents\legend_tent_scout.nut	
+Scrap Tent		objeto	scripts\items\tents\legend_tent_scrap.nut	
+Sea Raider		objeto	mod_legends\!!config\item_names.nut	
+Sea shells		objeto	scripts\items\trade\legend_seashells_item.nut	
+Seer's Hat		objeto	scripts\items\helmets\legend_seer_hat.nut	
+Setting		objeto	mod_legends\!!config\item_names.nut	
+Settlement		objeto	mod_legends\!!config\item_names.nut	
+Severed clawed hand		objeto	scripts\items\misc\legend_werehand_item.nut	
+Shattered Mirage		objeto	mod_legends\!!config\item_names.nut	
+Shattering		objeto	mod_legends\!!config\item_names.nut	
+Shield Rune Sigil: Defense		objeto	mod_legends\config\runes_shield.nut	contiene: Defense
+Shield Rune Sigil: Durability		objeto	mod_legends\config\runes_shield.nut	
+Shield Rune Sigil: Radiance		objeto	mod_legends\config\runes_shield.nut	
+Shoot Stake		objeto	mod_legends\hooks\items\weapons\greenskins\goblin_crossbow.nut	
+Shovel		objeto	scripts\items\weapons\legend_shovel.nut	
+Sighthound Armor		objeto	scripts\items\armor\legend_sighthound_armor.nut	
+Silent Shroud		objeto	mod_legends\!!config\item_names.nut	
+Silver Ingots		objeto	scripts\items\trade\legend_silver_ingots_item.nut	contiene: Silver
+Skills for Dummies		objeto	scripts\items\misc\legend_profession_skill_book_item.nut	
+Skin Flayer		objeto	scripts\items\weapons\greenskins\legend_skin_flayer.nut	
+Skin Ghoul Helmet		objeto	scripts\items\legend_helmets\vanity\legend_helmet_nach_helm.nut	contiene: Helmet
+Skull Breaker		objeto	scripts\items\weapons\greenskins\legend_skullbreaker.nut	
+Skull Cap		objeto	scripts\items\helmets\legend_enclave_vanilla_skullcap_01.nut	
+Skull Chain		objeto	scripts\items\legend_armor\armor_upgrades\legend_armor_skull_chain_upgrade.nut	
+Skull Smasher		objeto	scripts\items\weapons\greenskins\legend_skullsmasher.nut	
+Slaying		objeto	mod_legends\!!config\item_names.nut	
+Slingshot		objeto	scripts\items\weapons\legend_slingshot.nut	
+Small Ammunition		objeto	scripts\items\supplies\legend_ammo_small_item.nut	
+Small Medical Supplies		objeto	scripts\items\supplies\legend_medicine_small_item.nut	contiene: Medical Supplies
+Small Tools and Supplies		objeto	scripts\items\supplies\legend_armor_parts_small_item.nut	contiene: Tools and Supplies
+Small cart		objeto	scripts\items\spawns\legend_cart_small_item.nut	
+Smoke Pot (Used)		objeto	mod_legends\hooks\items\tools\smoke_bomb_item.nut	contiene: Smoke Pot
+Smuggled items		objeto	scripts\items\misc\legend_smuggle_box_item.nut	
+Snake Meat		objeto	scripts\items\supplies\legend_snake_meat_item.nut	
+Snouted Helm		objeto	scripts\items\helmets\legend_helm_point.nut	
+Snub Helm		objeto	scripts\items\helmets\legend_helm_snub.nut	
+Solemn Vow		objeto	mod_legends\!!config\item_names.nut	
+Southern Cloth Headress		objeto	scripts\items\helmets\legend_southern_cloth_headress.nut	
+Southern Coin Veil		objeto	scripts\items\helmets\legend_jewelry.nut	
+Southern Noble Crown		objeto	scripts\items\helmets\legend_noble_southern_crown.nut	
+Southern Noble Hat		objeto	scripts\items\helmets\legend_noble_southern_hat.nut	
+Southern Veil		objeto	scripts\items\helmets\legend_southern_veil.nut	
+Spadefoot		objeto	mod_legends\!!config\item_names.nut	
+Spiked Coif		objeto	scripts\items\legend_armor\armor_upgrades\legend_armor_spiked_collar_upgrade.nut	
+Spiked Gauntlets		objeto	scripts\items\accessory\gloves\legend_spiked_gauntlets_item.nut	
+Squirrel		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Squirrel Meat		objeto	scripts\items\supplies\legend_squirrel_meat_item.nut	
+Stag Pauldrons		objeto	scripts\items\legend_armor\armor_upgrades\legend_pauldron_stag_upgrade.nut	
+Stalk		objeto	mod_legends\!!config\item_names.nut	
+Stalwartness		objeto	mod_legends\!!config\item_names.nut	
+Stollwurm Blood		objeto	scripts\items\misc\legend_stollwurm_blood_item.nut	
+Stollwurm Helm		objeto	scripts\items\legend_helmets\vanity\legend_helmet_lindwurm_helm.nut	
+Stollwurm Scale Cloak		objeto	scripts\items\legend_armor\cloak\legend_stollwurm_scales_cloak.nut	
+Stone Keep		objeto	mod_legends\!!config\item_names.nut	
+Stonewall		objeto	mod_legends\!!config\item_names.nut	
+Struggle		objeto	mod_legends\!!config\item_names.nut	
+Sturdy Sling		objeto	scripts\items\weapons\legend_sturdy_sling.nut	
+Summit		objeto	mod_legends\!!config\item_names.nut	
+Swan Pauldrons		objeto	scripts\items\legend_armor\armor_upgrades\legend_pauldron_swan_upgrade.nut	
+Swatter		objeto	mod_legends\!!config\item_names.nut	
+Swordstaff		objeto	scripts\items\weapons\legend_swordstaff.nut	
+Tabard		objeto	scripts\items\legend_armor\legend_armor_tabard.nut	
+The 'Book of Fate'		objeto	scripts\items\accessory\special\legend_oms_fate_item.nut	
+The Emperor's Cloak		objeto	scripts\items\legend_armor\named\legend_armor_cloak_emperors.nut	
+The Ram's Head		objeto	scripts\items\weapons\legendary\legend_ram_hammer.nut	
+Therianthropic Potion		objeto	scripts\items\accessory\legend_therianthropy_potion_item.nut	
+Third Demon Eye		objeto	scripts\items\misc\legend_demon_third_eye_item.nut	
+Throwing Spear (Used)		objeto	mod_legends\hooks\items\weapons\throwing_spear.nut	contiene: Throwing Spear
+Tin Ingot		objeto	scripts\items\trade\legend_tin_ingots_item.nut	
+Tipstaff		objeto	scripts\items\weapons\legend_tipstaff.nut	
+Tower Shield		objeto	scripts\items\shields\legend_tower_shield.nut	
+Training equipment		objeto	scripts\items\tents\legend_tent_train.nut	
+Traits for the gullible		objeto	scripts\items\misc\legend_trait_skill_book_item.nut	
+Traveler's Sash		objeto	scripts\items\accessory\legend_pack_small.nut	
+Treefrog		objeto	mod_legends\!!config\item_names.nut	
+Trinity		objeto	mod_legends\!!config\item_names.nut	
+Triturus		objeto	mod_legends\!!config\item_names.nut	
+Two-Handed Club		objeto	scripts\items\weapons\legend_two_handed_club.nut	
+Umbra		objeto	mod_legends\!!config\item_names.nut	
+Unhold Splitter		objeto	scripts\items\weapons\named\legend_named_orc_axe_2h.nut	contiene: Unhold; Splitter
+Unhold bindings		objeto	scripts\items\tools\legend_unhold_throwing_net.nut	contiene: Unhold
+Unknown Rune Sigil: Error		objeto	mod_legends\hooks\items\item.nut	
+Unleash Sighthound		objeto	scripts\items\accessory\legend_sighthound_item.nut	
+Vala Staff		objeto	scripts\items\weapons\legend_staff_vala.nut	
+Visorless Great Bascinet		objeto	scripts\items\helmets\legend_enclave_vanilla_great_bascinet_02.nut	
+Wanderlust		objeto	mod_legends\!!config\item_names.nut	
+Warlock Faceplate		objeto	scripts\items\legend_helmets\named\legend_named_warlock_skull.nut	
+Warlock Hood		objeto	scripts\items\helmets\legend_warlock_hood.nut	
+Warthirst		objeto	mod_legends\!!config\item_names.nut	
+Wax		objeto	scripts\items\trade\legend_wax_item.nut	
+Weapon Rune Sigil: Accuracy		objeto	mod_legends\config\runes_weapon.nut	
+Weapon Rune Sigil: Blazing		objeto	mod_legends\config\runes_weapon.nut	
+Weapon Rune Sigil: Bleeding		objeto	mod_legends\config\runes_weapon.nut	
+Weapon Rune Sigil: Feeding		objeto	mod_legends\config\runes_weapon.nut	
+Weapon Rune Sigil: Poison		objeto	mod_legends\config\runes_weapon.nut	
+Weapon Rune Sigil: Power		objeto	mod_legends\config\runes_weapon.nut	
+Weapon Rune Sigil: Unbreaking		objeto	mod_legends\config\runes_weapon.nut	
+Wearing it well		objeto	scripts\items\misc\legend_armor_skill_book_item.nut	
+White Wolf Helm		objeto	scripts\items\legend_helmets\vanity\legend_helmet_white_wolf_helm.nut	
+White Wolf Pelt		objeto	scripts\items\misc\legend_white_wolf_pelt_item.nut	
+White Wolf Pelt Mantle		objeto	scripts\items\legend_armor\cloak\legend_armor_white_wolf_pelt_cloak.nut	
+Wicent		objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
+Wild Helmet		objeto	scripts\items\legend_helmets\named\legend_named_lindwurm_helmet.nut	contiene: Helmet
+Wild Sling		objeto	scripts\items\weapons\barbarians\legend_barbarian_sling.nut	
+Winged Great Helm		objeto	scripts\items\helmets\legend_helm_wings.nut	
+Witch Hammer		objeto	mod_legends\!!config\item_names.nut	contiene: Hammer
+Witch Leader Hair		objeto	scripts\items\misc\legend_witch_leader_hair_item.nut	
+Witch's Doom		objeto	mod_legends\!!config\item_names.nut	
+Witchhunter's Capotain		objeto	scripts\items\legend_helmets\vanity\legend_helmet_witchhunter_helm.nut	
+Wolf Meat		objeto	scripts\items\supplies\legend_wolf_meat_item.nut	
+Wolfsbane		objeto	scripts\items\misc\legend_wolfsbane_item.nut	
+Wolfsbane Necklace		objeto	scripts\items\accessory\legend_wolfsbane_necklace_item.nut	
+Wooden Spear		objeto	scripts\items\weapons\legend_wooden_spear.nut	
+Wooden Stake		objeto	scripts\items\weapons\legend_wooden_stake.nut	
+Wooden pitchfork		objeto	scripts\items\weapons\legend_wooden_pitchfork.nut	
+Yummy Sausages		objeto	scripts\items\supplies\legend_yummy_sausages.nut	
+Adventuring Party		origen	scripts\scenarios\world\legends_party_scenario.nut	
+Build your own 		origen	scripts\scenarios\world\legends_custom_scenario.nut	
+Horse party		origen	scripts\scenarios\world\legends_horse_scenario.nut	
+Mage		origen	scripts\scenarios\world\legends_mage_scenario.nut	
+Master Necromancer		origen	scripts\scenarios\world\legends_solo_necro_scenario.nut	contiene: Necromancer
+Nomad Tribe		origen	scripts\scenarios\world\legends_nomad_scenario.nut	contiene: Nomad
+Original Beggar Challenge		origen	scripts\scenarios\world\legends_beggar_scenario.nut	
+Random Party		origen	scripts\scenarios\world\legend_random_party_scenario.nut	
+Random Solo		origen	scripts\scenarios\world\legend_random_solo_scenario.nut	
+Random Trio		origen	scripts\scenarios\world\legend_random_3_scenario.nut	
+Risen Legion		origen	scripts\scenarios\world\legend_risen_legion_scenario.nut	
+Scaling Beggar Challenge		origen	scripts\scenarios\world\legends_scaling_beggar_scenario.nut	
+Sisterhood		origen	scripts\scenarios\world\legends_sisterhood_scenario.nut	
+The Cabal		origen	scripts\scenarios\world\legends_necro_scenario.nut	
+Adaptive		perk	mod_legends\!!config\perk_strings.nut	
+Aggressive		perk	mod_legends\config\z_perks_tree_enemy_traits.nut	
+Agile		perk	mod_legends\config\z_perks_tree_traits.nut	
+Alchemy		perk	mod_legends\config\z_perks_tree_magic.nut	
+Alcohol Brewing		perk	mod_legends\!!config\perk_strings.nut	
+Alert		perk	mod_legends\!!config\perk_strings.nut	
+Align Joints		perk	mod_legends\!!config\perk_strings.nut	
+Ambidextrous		perk	mod_legends\!!config\perk_strings.nut	
+Ammunition Binding		perk	mod_legends\!!config\perk_strings.nut	
+Ammunition Bundles		perk	mod_legends\!!config\perk_strings.nut	
+Anatomical Studies		perk	mod_legends\!!config\perk_strings.nut	
+Anchor		perk	mod_legends\!!config\perk_strings.nut	
+Apothecary		perk	mod_legends\config\z_perks_tree_profession.nut	
+Arrange Bones		perk	mod_legends\!!config\perk_strings.nut	
+Assassinate		perk	mod_legends\!!config\perk_strings.nut	
+Assured Conquest		perk	mod_legends\!!config\perk_strings.nut	
+Athlete		perk	mod_legends\!!config\perk_strings.nut	
+Back to Basics		perk	mod_legends\!!config\perk_strings.nut	
+Backflip		perk	mod_legends\!!config\perk_strings.nut	
+Backswing		perk	mod_legends\!!config\perk_strings.nut	
+Balance		perk	mod_legends\!!config\perk_strings.nut	
+Bandage Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Bard		perk	mod_legends\config\z_perks_tree_magic.nut	
+Barter		perk	mod_legends\config\z_perks_tree_profession.nut	
+Battlefield Control		perk	mod_legends\hooks\config\perk_strings.nut	
+Battleheart		perk	mod_legends\!!config\perk_strings.nut	
+Bear Form		perk	mod_legends\!!config\perk_strings.nut	
+Bear Taming		perk	mod_legends\!!config\perk_strings.nut	
+Beasts		perk	mod_legends\config\z_perks_tree_enemy.nut	
+Become Berserker		perk	mod_legends\!!config\perk_strings.nut	
+Between the Eyes		perk	mod_legends\!!config\perk_strings.nut	
+Big Game Hunter		perk	mod_legends\!!config\perk_strings.nut	
+Bitting		perk	mod_legends\!!config\perk_strings.nut	
+Blacksmiths Technique		perk	mod_legends\!!config\perk_strings.nut	
+Blend in		perk	mod_legends\!!config\perk_strings.nut	
+Bloodbath		perk	mod_legends\!!config\perk_strings.nut	
+Bloody Harvest		perk	mod_legends\!!config\perk_strings.nut	
+Bone Breaker		perk	mod_legends\!!config\perk_strings.nut	
+Boondock Blade		perk	mod_legends\!!config\perk_strings.nut	
+Born With a Board		perk	mod_legends\!!config\perk_strings.nut	
+Bow		perk	mod_legends\config\z_perks_tree_weapons.nut	
+Brink of Death		perk	mod_legends\!!config\perk_strings.nut	
+Browbeater		perk	mod_legends\config\z_perks_tree_class.nut	
+Browbeater's Bludgeon		perk	mod_legends\!!config\perk_strings.nut	
+Butchers Fillet		perk	mod_legends\!!config\perk_strings.nut	
+Camouflage		perk	mod_legends\!!config\perk_strings.nut	
+Camp Cooking		perk	mod_legends\!!config\perk_strings.nut	
+Caravaneering		perk	mod_legends\config\z_perks_tree_profession.nut	
+Carnage		perk	mod_legends\!!config\perk_strings.nut	
+Cat O' Nine Tails		perk	mod_legends\config\z_perks_tree_class.nut	
+Channeled Power		perk	mod_legends\!!config\perk_strings.nut	
+Chanting Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Chef		perk	mod_legends\config\z_perks_tree_profession.nut	
+Circle of Protection		perk	mod_legends\!!config\perk_strings.nut	
+Civilization		perk	mod_legends\config\z_perks_tree_enemy.nut	
+Clarity		perk	mod_legends\!!config\perk_strings.nut	
+Cloth Armor		perk	mod_legends\config\z_perks_tree_defense.nut	
+Collection		perk	mod_legends\!!config\perk_strings.nut	
+Composure		perk	mod_legends\!!config\perk_strings.nut	
+Con Artist		perk	mod_legends\config\z_perks_tree_class.nut	
+Conjuration		perk	mod_legends\config\z_perks_tree_magic.nut	
+Conservation		perk	mod_legends\!!config\perk_strings.nut	
+Control Instincts		perk	mod_legends\!!config\perk_strings.nut	
+Convincing Proposals		perk	mod_legends\!!config\perk_strings.nut	
+Cutthroat		perk	mod_legends\config\z_perks_tree_magic.nut	
+Death from Above		perk	mod_legends\!!config\perk_strings.nut	
+Dedication		perk	mod_legends\!!config\perk_strings.nut	
+Deflect		perk	mod_legends\!!config\perk_strings.nut	
+Dense Ice		perk	mod_legends\!!config\perk_strings.nut	
+Desensitization		perk	mod_legends\!!config\perk_strings.nut	
+Devious		perk	mod_legends\config\z_perks_tree_traits.nut	
+Disharmony (Chant)		perk	mod_legends\!!config\perk_strings.nut	
+Distant Visions		perk	mod_legends\!!config\perk_strings.nut	
+Divination		perk	mod_legends\config\z_perks_tree_magic.nut	
+Dog Breeder		perk	mod_legends\!!config\perk_strings.nut	
+Dog Whisperer		perk	mod_legends\!!config\perk_strings.nut	
+Druidic Arts		perk	mod_legends\config\z_perks_tree_magic.nut	
+Druidic transformation		perk	mod_legends\config\z_perks_tree_magic.nut	
+Dual Wield Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Efficient Packing		perk	mod_legends\!!config\perk_strings.nut	
+Entrancing Song		perk	mod_legends\!!config\perk_strings.nut	
+Escape Artist		perk	mod_legends\!!config\perk_strings.nut	
+Evisceration		perk	mod_legends\!!config\perk_strings.nut	
+Evocation		perk	mod_legends\config\z_perks_tree_magic.nut	
+Exsanguination		perk	mod_legends\!!config\perk_strings.nut	
+Extended Aura		perk	mod_legends\!!config\perk_strings.nut	
+Farmer		perk	mod_legends\config\z_perks_tree_class.nut	
+Fashion Body		perk	mod_legends\!!config\perk_strings.nut	
+Fashionable		perk	mod_legends\!!config\perk_strings.nut	
+Fast		perk	mod_legends\config\z_perks_tree_traits.nut	
+Favoured Enemy - Beasts		perk	mod_legends\!!config\perk_strings.nut	
+Favoured Enemy - Civilization		perk	mod_legends\!!config\perk_strings.nut	
+Favoured Enemy - Greenskin		perk	mod_legends\!!config\perk_strings.nut	
+Favoured Enemy - Occult		perk	mod_legends\!!config\perk_strings.nut	
+Favoured Enemy - Outlaw		perk	mod_legends\!!config\perk_strings.nut	
+Favoured Enemy - Undead		perk	mod_legends\!!config\perk_strings.nut	
+Feint		perk	mod_legends\!!config\perk_strings.nut	
+Firefield		perk	mod_legends\!!config\perk_strings.nut	
+First Blood		perk	mod_legends\!!config\perk_strings.nut	
+Fit		perk	mod_legends\config\z_perks_tree_traits.nut	
+Flux		perk	mod_legends\!!config\perk_strings.nut	
+Flying Change		perk	mod_legends\!!config\perk_strings.nut	
+Forceful		perk	mod_legends\config\z_perks_tree_enemy_armor.nut	
+Forceful Swing		perk	mod_legends\!!config\perk_strings.nut	
+Fury (Chant)		perk	mod_legends\!!config\perk_strings.nut	
+Gatherer		perk	mod_legends\!!config\perk_strings.nut	
+Giant		perk	mod_legends\config\z_perks_tree_enemy_traits.nut	
+Grappler		perk	mod_legends\!!config\perk_strings.nut	
+Gravesman		perk	mod_legends\!!config\perk_strings.nut	
+Greed		perk	mod_legends\!!config\perk_strings.nut	
+Greenskins		perk	mod_legends\config\z_perks_tree_enemy.nut	
+Guide Steps		perk	mod_legends\!!config\perk_strings.nut	
+Hair Splitter		perk	mod_legends\!!config\perk_strings.nut	contiene: Splitter
+Harvest Swathes		perk	mod_legends\!!config\perk_strings.nut	
+Harvest Twist		perk	mod_legends\!!config\perk_strings.nut	
+Hay Baling		perk	mod_legends\!!config\perk_strings.nut	
+Healing		perk	mod_legends\config\z_perks_tree_class.nut	
+Healing Wind		perk	mod_legends\!!config\perk_strings.nut	
+Heightened Senses (Chant)		perk	mod_legends\!!config\perk_strings.nut	
+Helpful		perk	mod_legends\!!config\perk_strings.nut	
+Herbalism		perk	mod_legends\config\z_perks_tree_profession.nut	
+Herbalist		perk	mod_legends\config\z_perks_tree_class.nut	
+Herbcraft		perk	mod_legends\!!config\perk_strings.nut	
+Himshaw		perk	mod_legends\!!config\perk_strings.nut	
+Hippology		perk	mod_legends\!!config\perk_strings.nut	
+Horse Movement		perk	mod_legends\!!config\perk_strings.nut	
+Hound Master		perk	mod_legends\config\z_perks_tree_class.nut	
+Illusion		perk	mod_legends\config\z_perks_tree_magic.nut	
+Immovable Object		perk	mod_legends\!!config\perk_strings.nut	
+Impulsion		perk	mod_legends\!!config\perk_strings.nut	
+In the Zone		perk	mod_legends\!!config\perk_strings.nut	
+Incorporeal Perspective (Trance)		perk	mod_legends\!!config\perk_strings.nut	
+Infectious Rage		perk	mod_legends\!!config\perk_strings.nut	
+Inquisition		perk	mod_legends\config\z_perks_tree_class.nut	
+Insect Swarm		perk	mod_legends\!!config\perk_strings.nut	
+Inspirational		perk	mod_legends\config\z_perks_tree_traits.nut	
+Intelligent		perk	mod_legends\config\z_perks_tree_traits.nut	
+Intense Flames		perk	mod_legends\!!config\perk_strings.nut	
+Interpretation		perk	mod_legends\!!config\perk_strings.nut	
+Inventor		perk	mod_legends\config\z_perks_tree_class.nut	
+Inventor's Armaments		perk	mod_legends\!!config\perk_strings.nut	
+Keen Eyesight		perk	mod_legends\!!config\perk_strings.nut	
+Knives		perk	mod_legends\config\z_perks_tree_class.nut	
+Lacerate		perk	mod_legends\!!config\perk_strings.nut	
+Large		perk	mod_legends\config\z_perks_tree_traits.nut	
+Last Stand		perk	mod_legends\!!config\perk_strings.nut	
+Lead Change		perk	mod_legends\!!config\perk_strings.nut	
+Leadership		perk	mod_legends\config\z_perks_tree_magic.nut	
+Leg Control		perk	mod_legends\!!config\perk_strings.nut	
+Levitate		perk	mod_legends\!!config\perk_strings.nut	
+Liberty		perk	mod_legends\!!config\perk_strings.nut	
+Lithe		perk	mod_legends\!!config\perk_strings.nut	
+Longeing		perk	mod_legends\!!config\perk_strings.nut	
+Lookout		perk	mod_legends\!!config\perk_strings.nut	
+Lurker		perk	mod_legends\!!config\perk_strings.nut	
+Magic Missile		perk	mod_legends\!!config\perk_strings.nut	
+Magic Missile Focus		perk	mod_legends\!!config\perk_strings.nut	
+Magic Missile Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Magic Staff Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Malevolent Spirits (Trance)		perk	mod_legends\!!config\perk_strings.nut	
+Marauder's Edge		perk	mod_legends\!!config\perk_strings.nut	
+Martyr		perk	mod_legends\config\z_perks_tree_traits.nut	
+Master Anger		perk	mod_legends\!!config\perk_strings.nut	
+Master Trainer		perk	mod_legends\!!config\perk_strings.nut	
+Meal Preparation		perk	mod_legends\!!config\perk_strings.nut	
+Medicine Ingredients		perk	mod_legends\!!config\perk_strings.nut	
+Medicine Packages		perk	mod_legends\!!config\perk_strings.nut	
+Meistersänger		perk	mod_legends\!!config\perk_strings.nut	
+Militia Practice		perk	mod_legends\!!config\perk_strings.nut	contiene: Militia
+Mind over Body		perk	mod_legends\!!config\perk_strings.nut	
+Miners Strikes		perk	mod_legends\!!config\perk_strings.nut	
+Mining		perk	mod_legends\config\z_perks_tree_profession.nut	
+Minnesänger		perk	mod_legends\!!config\perk_strings.nut	
+Mold Carrion		perk	mod_legends\!!config\perk_strings.nut	
+Mounted Charge		perk	mod_legends\!!config\perk_strings.nut	
+Muscularity		perk	mod_legends\!!config\perk_strings.nut	
+Music Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Necromancy		perk	mod_legends\config\z_perks_tree_magic.nut	
+Net Casting		perk	mod_legends\!!config\perk_strings.nut	
+Net Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Net Repair		perk	mod_legends\!!config\perk_strings.nut	
+Nets		perk	mod_legends\config\z_perks_tree_class.nut	
+Night Raider		perk	mod_legends\!!config\perk_strings.nut	
+Nudist		perk	mod_legends\!!config\perk_strings.nut	
+Occult		perk	mod_legends\config\z_perks_tree_enemy.nut	
+Off-Book Deal		perk	mod_legends\!!config\perk_strings.nut	
+Onslaught		perk	mod_legends\!!config\perk_strings.nut	
+Opportunist		perk	mod_legends\!!config\perk_strings.nut	
+Ore Hunter		perk	mod_legends\!!config\perk_strings.nut	
+Organized		perk	mod_legends\config\z_perks_tree_traits.nut	
+Outlaws		perk	mod_legends\config\z_perks_tree_enemy.nut	
+Pacifist		perk	mod_legends\!!config\perk_strings.nut	
+Pack Leader		perk	mod_legends\!!config\perk_strings.nut	
+Parthian Shot		perk	mod_legends\!!config\perk_strings.nut	
+Passage		perk	mod_legends\!!config\perk_strings.nut	
+Paymaster		perk	mod_legends\!!config\perk_strings.nut	
+Peaceable		perk	mod_legends\!!config\perk_strings.nut	
+Perfect Fit		perk	mod_legends\!!config\perk_strings.nut	
+Philosophy		perk	mod_legends\config\z_perks_tree_magic.nut	
+Piaffe		perk	mod_legends\!!config\perk_strings.nut	
+Poachers Arm		perk	mod_legends\!!config\perk_strings.nut	
+Point Blank		perk	mod_legends\!!config\perk_strings.nut	
+Poison Immunity		perk	mod_legends\!!config\perk_strings.nut	
+Poison Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Polarized		perk	mod_legends\!!config\perk_strings.nut	
+Possession		perk	mod_legends\!!config\perk_strings.nut	
+Potion Brewer		perk	mod_legends\!!config\perk_strings.nut	
+Premonition		perk	mod_legends\!!config\perk_strings.nut	
+Prepare For Anything		perk	mod_legends\!!config\perk_strings.nut	
+Prepared		perk	mod_legends\!!config\perk_strings.nut	
+Prisoners Rush		perk	mod_legends\!!config\perk_strings.nut	
+Promised Potential		perk	mod_legends\!!config\perk_strings.nut	
+Pugilist		perk	mod_legends\!!config\perk_strings.nut	
+Pummel into Submission		perk	mod_legends\!!config\perk_strings.nut	
+Push The Advantage		perk	mod_legends\!!config\perk_strings.nut	
+Push it		perk	mod_legends\!!config\perk_strings.nut	
+Raise the Dead		perk	mod_legends\!!config\perk_strings.nut	
+Rebound		perk	mod_legends\!!config\perk_strings.nut	
+Rebuild Skeleton		perk	mod_legends\!!config\perk_strings.nut	
+Reclamation		perk	mod_legends\!!config\perk_strings.nut	
+Recuperation		perk	mod_legends\!!config\perk_strings.nut	
+Remake Man		perk	mod_legends\!!config\perk_strings.nut	
+Repair		perk	mod_legends\config\z_perks_tree_profession.nut	
+Resurrectionist		perk	mod_legends\!!config\perk_strings.nut	
+Roots		perk	mod_legends\!!config\perk_strings.nut	
+Scholar		perk	mod_legends\!!config\perk_strings.nut	
+Schwertkampfer		perk	mod_legends\!!config\perk_strings.nut	
+Scourging		perk	mod_legends\!!config\perk_strings.nut	
+Seer		perk	mod_legends\config\z_perks_tree_magic.nut	
+Shady		perk	mod_legends\config\z_perks_tree_enemy_traits.nut	
+Sharpshooter		perk	mod_legends\config\z_perks_tree_class.nut	
+Shepherd's Signature		perk	mod_legends\!!config\perk_strings.nut	
+Shields Up!		perk	mod_legends\!!config\perk_strings.nut	
+Shortbow		perk	mod_legends\config\z_perks_tree_class.nut	
+Siphon		perk	mod_legends\!!config\perk_strings.nut	
+Skeleton		perk	mod_legends\config\z_perks_tree_magic.nut	
+Skillful Stacking		perk	mod_legends\!!config\perk_strings.nut	
+Slaughterer		perk	mod_legends\!!config\perk_strings.nut	
+Sleight of Hand		perk	mod_legends\!!config\perk_strings.nut	
+Sling		perk	mod_legends\config\z_perks_tree_class.nut	
+Sling Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Smackdown		perk	mod_legends\!!config\perk_strings.nut	
+Smashing Shields		perk	mod_legends\!!config\perk_strings.nut	
+Sorcery		perk	mod_legends\config\z_perks_tree_magic.nut	
+Spare Parts		perk	mod_legends\!!config\perk_strings.nut	
+Sparring		perk	mod_legends\config\z_perks_tree_enemy_traits.nut	
+Spearfisher		perk	mod_legends\config\z_perks_tree_class.nut	
+Spearwaller		perk	mod_legends\!!config\perk_strings.nut	
+Special Perks		perk	mod_legends\config\z_perks_tree_special.nut	
+Sprint		perk	mod_legends\!!config\perk_strings.nut	
+Staff Block		perk	mod_legends\!!config\perk_strings.nut	
+Staff Defense		perk	mod_legends\config\z_perks_tree_class.nut	contiene: Defense
+Staff Spins		perk	mod_legends\!!config\perk_strings.nut	
+Staves		perk	mod_legends\config\z_perks_tree_magic.nut	
+Stick Fighting		perk	mod_legends\!!config\perk_strings.nut	
+Strength in Numbers		perk	mod_legends\!!config\perk_strings.nut	
+Strict Sermons		perk	mod_legends\!!config\perk_strings.nut	
+Summon Falcon		perk	mod_legends\!!config\perk_strings.nut	contiene: Falcon
+Summon Familiar		perk	mod_legends\!!config\perk_strings.nut	
+Suppress Urges		perk	mod_legends\!!config\perk_strings.nut	
+Swagger		perk	mod_legends\!!config\perk_strings.nut	
+Tactical Maneuvers		perk	mod_legends\!!config\perk_strings.nut	
+Taste the Pain		perk	mod_legends\!!config\perk_strings.nut	
+Teacher		perk	mod_legends\!!config\perk_strings.nut	
+Tempi Change		perk	mod_legends\!!config\perk_strings.nut	
+Tenacious		perk	mod_legends\config\z_perks_tree_traits.nut	
+Terrifying Visage		perk	mod_legends\!!config\perk_strings.nut	
+The Patient Hunter		perk	mod_legends\!!config\perk_strings.nut	
+Therianthropy		perk	mod_legends\config\z_perks_tree_magic.nut	
+Throw Sand		perk	mod_legends\!!config\perk_strings.nut	
+Throwing		perk	mod_legends\config\z_perks_tree_weapons.nut	
+Thrust Master		perk	mod_legends\!!config\perk_strings.nut	
+Tip of the Fisherman		perk	mod_legends\!!config\perk_strings.nut	
+Tools Drawers		perk	mod_legends\!!config\perk_strings.nut	
+Trance Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Transmutation		perk	mod_legends\config\z_perks_tree_magic.nut	
+Trendy		perk	mod_legends\config\z_perks_tree_class.nut	
+Trial for Witchcraft		perk	mod_legends\!!config\perk_strings.nut	
+True Believer		perk	mod_legends\!!config\perk_strings.nut	
+True Form		perk	mod_legends\!!config\perk_strings.nut	
+Trustworthy Demeanour		perk	mod_legends\!!config\perk_strings.nut	
+Tumble		perk	mod_legends\!!config\perk_strings.nut	
+Twirl		perk	mod_legends\!!config\perk_strings.nut	
+Unarmed		perk	mod_legends\config\z_perks_tree_weapons.nut	
+Unarmed Mastery		perk	mod_legends\!!config\perk_strings.nut	
+Untouchable		perk	mod_legends\!!config\perk_strings.nut	
+Vala Chant		perk	mod_legends\config\z_perks_tree_magic.nut	
+Vala Rune		perk	mod_legends\config\z_perks_tree_magic.nut	
+Vala Spirits		perk	mod_legends\config\z_perks_tree_magic.nut	
+Vala Trance		perk	mod_legends\config\z_perks_tree_magic.nut	
+Versatile		perk	mod_legends\!!config\perk_strings.nut	
+Vicious		perk	mod_legends\config\z_perks_tree_traits.nut	
+Wheel Maintenance		perk	mod_legends\!!config\perk_strings.nut	
+Whip them in Shape		perk	mod_legends\!!config\perk_strings.nut	
+Wind Reader		perk	mod_legends\!!config\perk_strings.nut	
+Wolf Form		perk	mod_legends\!!config\perk_strings.nut	
+Woodsman		perk	mod_legends\config\z_perks_tree_class.nut	
+Woodsman's Cuts		perk	mod_legends\!!config\perk_strings.nut	
+Woodworking		perk	mod_legends\!!config\perk_strings.nut	
+Zombie		perk	mod_legends\config\z_perks_tree_magic.nut	
+Zombie bite		perk	mod_legends\!!config\perk_strings.nut	
+Ambitious		rasgo	scripts\skills\traits\legend_ambitious_trait.nut	
+Appetite of a donkey		rasgo	scripts\skills\traits\legend_appetite_donkey.nut	
+Arena Champion		rasgo	scripts\skills\traits\legend_arena_champion_trait.nut	
+Blind Rage		rasgo	mod_legends\!!config\trait_defs.nut	
+Cannibalistic		rasgo	scripts\skills\traits\legend_cannibalistic.nut	
+Charming		rasgo	scripts\skills\traits\legend_gift_of_people_trait.nut	
+Cluster		rasgo	mod_legends\!!config\trait_defs.nut	
+Coerced		rasgo	mod_legends\!!config\trait_defs.nut	
+Deathly spectre		rasgo	scripts\skills\traits\legend_deathly_spectre_trait.nut	
+Disciple of the Inquisition		rasgo	scripts\skills\traits\legend_inquisition_disciple_trait.nut	
+Double tongued		rasgo	scripts\skills\traits\legend_double_tongued_trait.nut	
+Enhanced Prosthetic Ear		rasgo	scripts\skills\traits\legend_prosthetic_ear.nut	
+Enhanced Prosthetic Foot		rasgo	scripts\skills\traits\legend_prosthetic_foot.nut	
+Enhanced Prosthetic Hand		rasgo	scripts\skills\traits\legend_prosthetic_hand.nut	
+Enhanced Prosthetic Leg		rasgo	scripts\skills\traits\legend_prosthetic_leg.nut	
+Enhanced Prosthetic Nose		rasgo	scripts\skills\traits\legend_prosthetic_nose.nut	
+Fear of Nobles		rasgo	scripts\skills\traits\legend_fear_nobles_trait.nut	
+Fleshless		rasgo	scripts\skills\traits\legend_fleshless_trait.nut	
+Hate for Nobles		rasgo	scripts\skills\traits\legend_hate_nobles_trait.nut	
+Invictus		rasgo	scripts\skills\traits\legend_arena_invictus_trait.nut	
+Light		rasgo	scripts\skills\traits\legend_light_trait.nut	
+Lumbering		rasgo	scripts\skills\traits\legend_heavy_trait.nut	
+Martial		rasgo	scripts\skills\traits\legend_martial_trait.nut	
+Natural Order		rasgo	scripts\skills\traits\legend_beastslayers_trait.nut	
+Noble Killer		rasgo	scripts\skills\traits\legend_noble_killer_trait.nut	
+Nyctophobia		rasgo	scripts\skills\traits\legend_fear_dark_trait.nut	
+Pragmatic		rasgo	scripts\skills\traits\legend_pragmatic_trait.nut	
+Predictable		rasgo	scripts\skills\traits\legend_predictable_trait.nut	
+Redback Poison		rasgo	mod_legends\!!config\trait_defs.nut	
+Relationship		rasgo	scripts\skills\traits\legend_lw_relationship_trait.nut	
+Rock Unhold Passive		rasgo	mod_legends\!!config\trait_defs.nut	contiene: Unhold Passive
+Rotting Flesh		rasgo	scripts\skills\traits\legend_rotten_flesh_trait.nut	
+Seductive		rasgo	scripts\skills\traits\legend_seductive_trait.nut	
+Slack		rasgo	scripts\skills\traits\legend_slack_trait.nut	
+Slippery		rasgo	mod_legends\!!config\trait_defs.nut	
+Steady Hands		rasgo	scripts\skills\traits\legend_steady_hands_trait.nut	
+Talented		rasgo	scripts\skills\traits\legend_talented_trait.nut	
+Training fulfilled		rasgo	scripts\skills\traits\legend_intensive_training_trait.nut	
+Training progress		rasgo	scripts\skills\traits\legend_intensive_training_trait.nut	
+Undead Killer		rasgo	scripts\skills\traits\legend_undead_killer_trait.nut	
+United in Chains		rasgo	scripts\skills\traits\legend_brothers_in_chains_trait.nut	
+Unpredictable		rasgo	scripts\skills\traits\legend_unpredictable_trait.nut	
+Withering Aura		rasgo	scripts\skills\traits\legend_withering_aura_trait.nut	
+Alchemy Tools		seguidor	mod_legends\hooks\retinue\followers\alchemist_follower.nut	
+Blacksmith's Tools		seguidor	mod_legends\hooks\retinue\followers\blacksmith_follower.nut	
+Bounty Board		seguidor	mod_legends\hooks\retinue\followers\bounty_hunter_follower.nut	
+Cooking Equipment		seguidor	mod_legends\hooks\retinue\followers\cook_follower.nut	
+Gladiator's Tools		seguidor	scripts\retinue\followers\arena_follower.nut	
+Mapping Supplies		seguidor	mod_legends\hooks\retinue\followers\cartographer_follower.nut	
+Meeting Point		seguidor	mod_legends\hooks\retinue\followers\negotiator_follower.nut	
+Messenger's Rest		seguidor	mod_legends\hooks\retinue\followers\agent_follower.nut	
+Minstrel's Tent		seguidor	mod_legends\hooks\retinue\followers\minstrel_follower.nut	
+Ordered Inventory		seguidor	mod_legends\hooks\retinue\followers\quartermaster_follower.nut	
+Outrider's Post		seguidor	mod_legends\hooks\retinue\followers\lookout_follower.nut	
+Pennypincher's Tools		seguidor	mod_legends\hooks\retinue\followers\paymaster_follower.nut	
+Pre-filled Contracts		seguidor	mod_legends\hooks\retinue\followers\recruiter_follower.nut	
+Scavenger's Cart		seguidor	mod_legends\hooks\retinue\followers\scavenger_follower.nut	
+Secure Chests		seguidor	mod_legends\hooks\retinue\followers\trader_follower.nut	
+Stolen Documents		seguidor	mod_legends\hooks\retinue\followers\brigand_follower.nut	
+Training Dummies		seguidor	mod_legends\hooks\retinue\followers\drill_sergeant_follower.nut	
+Triage Table		seguidor	mod_legends\hooks\retinue\followers\surgeon_follower.nut	
+Watcher's Totem		seguidor	mod_legends\hooks\retinue\followers\scout_follower.nut	
+Adventurous Lady		trasfondo	mod_legends\hooks\skills\backgrounds\adventurous_noble_background.nut	
+Astrologist		trasfondo	scripts\skills\backgrounds\legend_astrologist_background.nut	
+Auxiliary		trasfondo	scripts\skills\backgrounds\legend_legion_auxiliary_background.nut	
+Baker		trasfondo	mod_legends\hooks\skills\backgrounds\miller_background.nut	
+Battle Sister		trasfondo	scripts\skills\backgrounds\legend_battle_sister_background.nut	
+Centurion		trasfondo	scripts\skills\backgrounds\legend_legion_centurion_background.nut	
+Conjurer		trasfondo	scripts\skills\backgrounds\legend_conjurer_background.nut	
+Conscript Gunner		trasfondo	scripts\skills\backgrounds\legend_conscript_ranged_background.nut	contiene: Conscript
+Courser		trasfondo	scripts\skills\backgrounds\legend_horse_courser.nut	
+Destrier		trasfondo	scripts\skills\backgrounds\legend_horse_destrier.nut	
+Disowned Lady		trasfondo	mod_legends\hooks\skills\backgrounds\disowned_noble_background.nut	
+Diviner		trasfondo	scripts\skills\backgrounds\legend_diviner_background.nut	
+Doctor		trasfondo	scripts\skills\backgrounds\legend_healer_background.nut	
+Entrancer		trasfondo	scripts\skills\backgrounds\legend_entrancer_background.nut	
+Evoker		trasfondo	scripts\skills\backgrounds\legend_witch_background.nut	
+Farrier		trasfondo	scripts\skills\backgrounds\legend_blacksmith_background.nut	
+Fishmonger		trasfondo	mod_legends\hooks\skills\backgrounds\butcher_background.nut	
+Foot Soldier		trasfondo	scripts\skills\backgrounds\legend_noble_shield.nut	
+Framed Beggar		trasfondo	scripts\skills\backgrounds\legend_beggar_commander_background.nut	
+Framed Widow		trasfondo	scripts\skills\backgrounds\legend_beggar_commander_background.nut	
+Gladiator Prizefighter		trasfondo	scripts\skills\backgrounds\legend_gladiator_prizefighter_background.nut	
+Guild Master		trasfondo	scripts\skills\backgrounds\legend_guildmaster_background.nut	
+Hashassin		trasfondo	mod_legends\hooks\skills\backgrounds\assassin_southern_background.nut	
+Healer		trasfondo	scripts\skills\backgrounds\legend_healer_background.nut	
+Herbalist / Apothecaries		trasfondo	scripts\skills\backgrounds\legend_herbalist_background.nut	
+Holy Crusader		trasfondo	scripts\skills\backgrounds\legend_crusader_background.nut	contiene: Crusader
+Honour Guard		trasfondo	scripts\skills\backgrounds\legend_legion_honour_guard_background.nut	
+Horse Rider		trasfondo	scripts\skills\backgrounds\legend_horserider.nut	
+Housemaid		trasfondo	mod_legends\hooks\skills\backgrounds\servant_background.nut	
+Husk		trasfondo	scripts\skills\backgrounds\legend_husk_background.nut	
+Illusionist		trasfondo	scripts\skills\backgrounds\legend_illusionist_background.nut	
+Ironmonger		trasfondo	scripts\skills\backgrounds\legend_ironmonger_background.nut	
+Leech Peddler		trasfondo	scripts\skills\backgrounds\legend_leech_peddler_background.nut	
+Legate		trasfondo	scripts\skills\backgrounds\legend_legion_legate_background.nut	
+Legionary		trasfondo	scripts\skills\backgrounds\legend_legion_legionary_background.nut	
+Magister		trasfondo	scripts\skills\backgrounds\legend_magister_background.nut	
+Man-At-Arms		trasfondo	scripts\skills\backgrounds\legend_man_at_arms_background.nut	
+Medium		trasfondo	scripts\skills\backgrounds\legend_spiritualist_background.nut	
+Milkmaid		trasfondo	mod_legends\hooks\skills\backgrounds\farmhand_background.nut	
+Night Watch		trasfondo	scripts\skills\backgrounds\legend_nightwatch_background.nut	
+Noble Usurper		trasfondo	scripts\skills\backgrounds\legend_noble_commander_background.nut	
+Nun		trasfondo	mod_legends\hooks\skills\backgrounds\monk_background.nut	
+Nurse		trasfondo	scripts\skills\backgrounds\legend_healer_background.nut	
+Philosopher		trasfondo	scripts\skills\backgrounds\legend_philosopher_background.nut	
+Pickpocket		trasfondo	mod_legends\hooks\skills\backgrounds\thief_background.nut	
+Pilgrim		trasfondo	scripts\skills\backgrounds\legend_pilgrim_background.nut	
+Prefect		trasfondo	scripts\skills\backgrounds\legend_legion_prefect_background.nut	
+Premonitionist		trasfondo	scripts\skills\backgrounds\legend_premonitionist_background.nut	
+Preserver		trasfondo	scripts\skills\backgrounds\legend_preserver_background.nut	
+Puppet		trasfondo	scripts\skills\backgrounds\legend_puppet_background.nut	
+Puppet Master		trasfondo	scripts\skills\backgrounds\legend_puppet_master_background.nut	
+Qiyan		trasfondo	scripts\skills\backgrounds\legend_qiyan_background.nut	
+Rouncey		trasfondo	scripts\skills\backgrounds\legend_horse_rouncey.nut	
+Rune Smith		trasfondo	scripts\skills\backgrounds\legend_runesmith_background.nut	
+Seamstress		trasfondo	mod_legends\hooks\skills\backgrounds\tailor_background.nut	
+Servus		trasfondo	scripts\skills\backgrounds\legend_legion_slave_background.nut	
+Skelemancer		trasfondo	scripts\skills\backgrounds\legend_ancient_summoner_background.nut	
+Sorcerer		trasfondo	scripts\skills\backgrounds\mage_background.nut	
+Summoner		trasfondo	scripts\skills\backgrounds\legend_warlock_summoner_background.nut	
+Surgeon		trasfondo	scripts\skills\backgrounds\legend_healer_background.nut	
+The Berserker		trasfondo	scripts\skills\backgrounds\legend_berserker_commander_background.nut	
+Transmuter		trasfondo	scripts\skills\backgrounds\legend_transmuter_background.nut	
+Troubadour		trasfondo	mod_legends\hooks\skills\backgrounds\minstrel_background.nut	
+Vala		trasfondo	scripts\skills\backgrounds\legend_vala_background.nut	
+Warlock		trasfondo	scripts\skills\backgrounds\legend_necro_background.nut	
+Warrior		trasfondo	scripts\skills\backgrounds\legend_noble_2h.nut	
+Washerwoman		trasfondo	mod_legends\hooks\skills\backgrounds\daytaler_background.nut	
+Weidermancer		trasfondo	scripts\skills\backgrounds\legend_death_summoner_background.nut	
+Widow		trasfondo	mod_legends\hooks\skills\backgrounds\beggar_background.nut	
+Wildwoman		trasfondo	mod_legends\hooks\skills\backgrounds\wildman_background.nut	
+Wizard		trasfondo	scripts\skills\backgrounds\mage_background.nut	
+Woman-At-Arms		trasfondo	scripts\skills\backgrounds\legend_man_at_arms_background.nut	
+Youngblood		trasfondo	scripts\skills\backgrounds\legend_youngblood_background.nut	

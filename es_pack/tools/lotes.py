@@ -11,6 +11,7 @@ Uso:
 
 El corpus resultante es la fuente de verdad; todo se escribe por bytes y en LF.
 """
+import functools
 import os
 import re
 import subprocess
@@ -22,7 +23,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_dist import CORPUS, REPO, get_field, load_blocks  # noqa: E402
+from build_dist import CORPUS, REPO, get_field, is_rule_pair, load_blocks  # noqa: E402
 
 LEGENDS = REPO / "es_pack" / "legends"
 FUENTE_TOML = LEGENDS / "fuente.toml"
@@ -33,6 +34,7 @@ ROSETTA_PY = REPO / "vendor" / "rosetta" / "rosetta.py"
 SIN_COMMIT = "<sin fijar>"
 
 FILE_RE = re.compile(r"^\s*// FILE: (.+)$")
+CONTEXT_RE = re.compile(r"^\s*// context: (.+)$")
 EN_LINEA_RE = re.compile(r'^\s*en = ("(?:[^"\\]|\\.)*")\s*$', re.M)
 CABECERA_MOD_RE = re.compile(r'mod = \{id = "mod_", version = "\.\.\."\}')
 
@@ -45,6 +47,7 @@ class Bloque:
     texto: str
     en: str | None
     es: str | None
+    contexto: str | None = None  # la línea `// context:` del extractor, si la hay
 
 
 def bloques(texto):
@@ -54,18 +57,21 @@ def bloques(texto):
     que es exactamente "    {" y cierra con la siguiente "    }".
     """
     lineas = texto.split("\n")
-    res, file, inicio = [], "?", None
+    res, file, inicio, contexto = [], "?", None, None
     for i, linea in enumerate(lineas):
         if inicio is None:
             m = FILE_RE.match(linea)
+            c = CONTEXT_RE.match(linea)
             if m:
-                file = m.group(1).strip()
+                file, contexto = m.group(1).strip(), None
+            elif c:
+                contexto = c.group(1).strip()
             elif linea == "    {":
                 inicio = i
         elif linea == "    }":
             t = "\n".join(lineas[inicio:i + 1])
-            res.append(Bloque(file, inicio, i, t, get_field(t, "en"), get_field(t, "es")))
-            inicio = None
+            res.append(Bloque(file, inicio, i, t, get_field(t, "en"), get_field(t, "es"), contexto))
+            inicio, contexto = None, None
     return res
 
 
@@ -88,6 +94,166 @@ def cribar(texto, base):
             lineas[b.inicio:b.fin + 1] = ["    // en = %s" % literal, "    // en base_es"]
             n += 1
     return "\n".join(lineas), n
+
+
+# Grupos de un par corto según su `// context:`. Las listas de nombres siguen
+# la convención de la 1.0 (nombres opacos tal cual, transparentes traducidos)
+# y no entran en el glosario; los términos son nombres de cosas del juego.
+LISTA_RE = re.compile(r"Names|NameList|Mottos|Titles\b|\.extend\(\)|Array\.rand")
+TERMINO_RE = re.compile(r"\.m\.Name$|\(\)\.Name$|PerkName\.|EntityType\.addNew|\.m\.Title$|setTitle|LegendArmorLayers|\.Name$")
+MARCAS_RE = re.compile(r"[%<\[{]")
+ESPACIOS_RAROS_RE = re.compile(r"[\t\n\r]")  # romperían el TSV del glosario
+
+CATEGORIAS = [("perk", "perk"), ("backgrounds/", "trasfondo"), ("traits/", "rasgo"),
+              ("injury", "lesion"), ("skills/", "habilidad"), ("items/", "objeto"),
+              ("entity/", "entidad"), ("faction", "faccion"), ("scenarios/", "origen"),
+              ("retinue", "seguidor"), ("contracts/", "contrato"), ("runes_", "objeto")]
+# Listas de nombres y frases del base que no son terminología (sin `// context:`
+# en base_es.nut, se reconocen por la ruta).
+RUTAS_SIN_TERMINOS = ("character_names.nut", "world_location_names.nut",
+                      "\\settlements\\", "\\enemies\\alp.nut")
+GLOSARIO_BASE = LEGENDS / "glosario_base.tsv"
+GLOSARIO_LEGENDS = LEGENDS / "glosario_legends.tsv"
+COLUMNAS = ("en", "es", "categoria", "file", "nota")
+
+
+@dataclass
+class Termino:
+    en: str
+    es: str
+    categoria: str
+    file: str
+    nota: str = ""
+
+
+def es_termino(b):
+    """Candidato a término: literal corto con mayúscula inicial y sin marcas."""
+    return (bool(b.en) and len(b.en.split()) <= 4 and b.en[0].isupper()
+            and not MARCAS_RE.search(b.en) and not ESPACIOS_RAROS_RE.search(b.en)
+            and not is_rule_pair(b.texto))
+
+
+def grupo(b):
+    c = b.contexto or ""
+    if LISTA_RE.search(c):
+        return "lista"
+    return "termino" if TERMINO_RE.search(c) else "resto"
+
+
+CATEGORIAS_CONTEXTO = [("activesDefs", "habilidad"), ("effectsDefs", "efecto"),
+                       ("traitDefs", "rasgo"), ("PerkName", "perk"), ("EntityType", "entidad"),
+                       ("LegendArmorLayers", "objeto"), ("HuntingLoot", "objeto")]
+
+
+def categoria(file, contexto=None):
+    """Por el contexto si lo dice (las tablas *Defs de Legends viven en
+    config/), y si no por la ruta."""
+    por_contexto = next((cat for clave, cat in CATEGORIAS_CONTEXTO if clave in (contexto or "")), None)
+    f = file.replace("\\", "/").lower()
+    return por_contexto or next((cat for clave, cat in CATEGORIAS if clave in f), "general")
+
+
+def escribir_glosario(path, terminos):
+    filas = ["\t".join(COLUMNAS)]
+    for t in sorted(terminos, key=lambda t: (t.categoria, t.en)):
+        filas.append("\t".join(getattr(t, c) for c in COLUMNAS))
+    escribir(path, "\n".join(filas) + "\n")
+
+
+def leer_glosario(path):
+    filas = path.read_text(encoding="utf-8").splitlines()[1:]
+    return [Termino(*f.split("\t")) for f in filas if f]
+
+
+def terminos_en(texto, glosario):
+    """Términos del glosario presentes en `texto`, en orden de aparición.
+
+    Distingue mayúsculas (en los tooltips de Legends los términos van
+    capitalizados) y deja que un término largo tape a los cortos que contiene.
+    """
+    patron, por_en = _patron_glosario(tuple(t.en for t in glosario))
+    vistos, res = set(), []
+    for m in patron.finditer(texto):
+        en = m.group(1)
+        if en not in vistos:
+            vistos.add(en)
+            res.append(glosario[por_en[en]])
+    return res
+
+
+@functools.lru_cache(maxsize=8)
+def _patron_glosario(ens):
+    """Una alternancia del más largo al más corto: en cada posición casa el
+    término más largo, y lo que tapa ya no lo ve uno más corto."""
+    orden = sorted(set(ens), key=len, reverse=True)
+    patron = re.compile(r"(?<![\w'])(%s)(?![\w'])" % "|".join(map(re.escape, orden)))
+    return patron, {en: i for i, en in enumerate(ens)}
+
+
+MITAD_DE_FRASE_RE = re.compile(r"(?<=[a-z0-9,] )([A-Z][\w']*(?: [A-Z][\w']*)*)")
+
+
+MINUSCULA_RE = re.compile(r"\b[a-z][\w']*(?: [a-z][\w']*){0,3}")
+
+
+def usos_a_mitad_de_frase(textos):
+    """(mayúsculas, minúsculas): cuántas veces sale cada secuencia de hasta 4
+    palabras capitalizada a mitad de frase, que es como el juego escribe sus
+    términos ("gain 10 Fatigue"), y cuántas en minúscula."""
+    mayus, minus = Counter(), Counter()
+    for texto in textos:
+        for patron, cuenta in ((MITAD_DE_FRASE_RE, mayus), (MINUSCULA_RE, minus)):
+            for m in patron.finditer(texto):
+                palabras = m.group(0).split()
+                for i in range(len(palabras)):
+                    for j in range(i + 1, min(len(palabras), i + 4) + 1):
+                        cuenta[" ".join(palabras[i:j])] += 1
+    return mayus, minus
+
+
+def termino_util(t, usos):
+    """Filtra del glosario base lo que despistaría al agente: fragmentos de
+    nombres compuestos ("Ancient" -> "ancestral") y palabras corrientes, que
+    el texto escribe más en minúscula que con mayúscula a mitad de frase
+    ("The", y "Armor" -> "Armadura de trol", que solo vale para un objeto)."""
+    if t.es[:1].islower():
+        return False
+    if t.categoria != "general" and " " in t.en:
+        return True
+    mayus, minus = usos
+    # 1 de cada 4 basta: "Resolve" va 19 veces con mayúscula y 40 sin ella;
+    # "Armor" 53 y 411, "The" 5 y 27.291.
+    return mayus[t.en] >= 2 and 4 * mayus[t.en] >= minus[t.en.lower()]
+
+
+def glosario_base():
+    base = bloques(CORPUS.read_text(encoding="utf-8"))
+    usos = usos_a_mitad_de_frase(b.en for b in base if b.en)
+    vistos, res = set(), []
+    for b in base:
+        if (b.es and es_termino(b) and b.en not in vistos and not ESPACIOS_RAROS_RE.search(b.es)
+                and not any(r in b.file for r in RUTAS_SIN_TERMINOS)):
+            vistos.add(b.en)
+            t = Termino(b.en, b.es, categoria(b.file), b.file)
+            if termino_util(t, usos):
+                res.append(t)
+    escribir_glosario(GLOSARIO_BASE, res)
+    return res
+
+
+def terminos():
+    base = leer_glosario(GLOSARIO_BASE)
+    vistos, res = set(), []
+    for b in bloques(CORPUS_LEGENDS.read_text(encoding="utf-8")):
+        # Los títulos de pantalla de los eventos son prosa, no terminología.
+        if (not b.es and es_termino(b) and grupo(b) == "termino" and b.en not in vistos
+                and "\\events\\" not in b.file):
+            vistos.add(b.en)
+            contiene = [t.en for t in terminos_en(b.en, base)]
+            nota = "contiene: " + "; ".join(contiene) if contiene else ""
+            res.append(Termino(b.en, "", categoria(b.file, b.contexto), b.file, nota))
+    escribir_glosario(GLOSARIO_LEGENDS, res)
+    return res
 
 
 def desverbatim(codigo):
@@ -176,7 +342,7 @@ def extraer(forzar):
     with tempfile.TemporaryDirectory() as tmp:
         copia_extraible(FUENTE, Path(tmp), fuente["rutas"])
         salida = subprocess.run(
-            [sys.executable, str(ROSETTA_PY), ".", "-les", "-r", str(CORPUS)],
+            [sys.executable, str(ROSETTA_PY), ".", "-les", "--context", "-r", str(CORPUS)],
             cwd=tmp, capture_output=True, env={**os.environ, "PYTHONUTF8": "1"})
     sys.stderr.write(salida.stderr.decode("utf-8", "replace"))
     if salida.returncode:
@@ -207,6 +373,11 @@ def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     if argv[:1] == ["extraer"]:
         extraer(forzar="--forzar" in argv)
+    elif argv[:1] in (["glosario-base"], ["terminos"]):
+        res = glosario_base() if argv[0] == "glosario-base" else terminos()
+        print("términos: %d" % len(res))
+        for cat, n in Counter(t.categoria for t in res).most_common():
+            print("  %-10s %5d" % (cat, n))
     else:
         sys.exit(__doc__)
 
