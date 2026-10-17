@@ -1,15 +1,25 @@
 """Prepara la traducción por lotes de un mod grande (hoy, Legends).
 
 Uso:
-    PYTHONUTF8=1 uv run python es_pack/tools/lotes.py extraer [--forzar]
+    PYTHONUTF8=1 uv run python es_pack/tools/lotes.py <orden>
 
-  extraer   clona la fuente fijada en es_pack/legends/fuente.toml, saca el
-            corpus con el extractor de Rosetta y criba lo que ya traduce
-            base_es.nut: Rosetta tiene una sola tabla por idioma con el `en`
-            como clave, así que un `en` repetido entre corpus sobra en el
-            mejor caso y, en el peor, pisa al del base (ver el spec).
+  extraer [--forzar]  clona la fuente fijada en es_pack/legends/fuente.toml,
+            saca el corpus con el extractor de Rosetta y criba lo que ya
+            traduce base_es.nut: Rosetta tiene una sola tabla por idioma con el
+            `en` como clave, así que un `en` repetido entre corpus sobra en el
+            mejor caso y, en el peor, pisa al del base. Se niega si el corpus
+            ya tiene traducciones.
+  glosario-base     términos de base_es.nut -> es_pack/legends/glosario_base.tsv
+  terminos          términos de Legends sin traducir -> glosario_legends.tsv
+  aplicar-glosario  rellena en el corpus los pares que son un término traducido
+  partir            reparte los pares pendientes en es_pack/legends/lotes/
+  fusionar N        devuelve el lote N al corpus si pasa la validación
+  dudas             lista los `// DUDA:` de los lotes
 
-El corpus resultante es la fuente de verdad; todo se escribe por bytes y en LF.
+Orden de trabajo: terminos, traducir y revisar el TSV, aplicar-glosario,
+partir, traducir lotes (es_pack/legends/BRIEF.md), fusionar.
+
+El corpus es la fuente de verdad; todo se escribe por bytes y en LF.
 """
 import difflib
 import functools

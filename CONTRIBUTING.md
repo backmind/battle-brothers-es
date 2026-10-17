@@ -35,6 +35,8 @@ Antes de empezar:
 2. **Una incidencia o una discusión** que diga qué mod y qué versión, para no duplicar trabajo.
 3. **El corpus se saca con el extractor de Rosetta** sobre las fuentes del mod: `PYTHONUTF8=1 uv run python vendor/rosetta/rosetta.py <carpeta del mod> -les > es_pack/corpus/<id_del_mod>_es.nut`. Lo que el mod reutiliza del juego base ya está traducido en `base_es.nut`, y el glosario y el estilo son los mismos.
 
+Legends, el primer mod en marcha, tiene su propia herramienta: `es_pack/tools/lotes.py`. La fuente está fijada en `es_pack/legends/fuente.toml`, y `lotes.py extraer` saca el corpus con el contexto de código de cada par y quita lo que ya traduce `base_es.nut`. Las cadenas verbatim de Squirrel (`@"..."`) las convierte antes, porque el extractor no las lee. El trabajo se reparte en lotes (`lotes.py partir`) que se devuelven al corpus con `lotes.py fusionar`; la fusión rechaza el lote entero si algún par rompería el juego. Las instrucciones para traducir un lote están en [es_pack/legends/BRIEF.md](es_pack/legends/BRIEF.md).
+
 La 1.0.0 se publicó con un solo corpus, así que la primera traducción de un mod que entre adaptará `build_dist.py`, el preload y la lista de objetivos de `update_readme_metrics.py`. Cuéntalo en la incidencia y se hace con ella.
 
 ## El formato
