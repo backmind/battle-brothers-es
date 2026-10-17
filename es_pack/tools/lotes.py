@@ -19,13 +19,15 @@ import subprocess
 import sys
 import tempfile
 import tomllib
+import unicodedata
 from collections import Counter
 from dataclasses import dataclass
 from itertools import groupby
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_dist import CORPUS, REPO, get_field, is_rule_pair, load_blocks  # noqa: E402
+from build_dist import CORPUS, REPO, classify, get_field, is_rule_pair, load_blocks  # noqa: E402
+from checks import ABRE_RE, CIERRA_RE, IMG_RE, TOKEN_RE  # noqa: E402
 
 LEGENDS = REPO / "es_pack" / "legends"
 FUENTE_TOML = LEGENDS / "fuente.toml"
@@ -173,6 +175,8 @@ def terminos_en(texto, glosario):
     Distingue mayúsculas (en los tooltips de Legends los términos van
     capitalizados) y deja que un término largo tape a los cortos que contiene.
     """
+    if not glosario:
+        return []
     patron, por_en = _patron_glosario(tuple(t.en for t in glosario))
     vistos, res = set(), []
     for m in patron.finditer(texto):
@@ -358,6 +362,164 @@ def partir():
     print("pistas del base: %d" % pistas)
 
 
+# Tokens de pronombre inglés de Legends (z_legends_language.nut): "%their%"
+# es "su" sin token, así que el español puede omitirlos. Provisional hasta
+# decidir los tokens castellanos de género, que entrarán en TOKENS_ES.
+PRONOMBRE_EN_RE = re.compile(
+    r"^%(?:they|them|their|theirs|themselves|person|people|swordsman|noble|sibling|sib|child|offspring)"
+    r"(?:_\w+)?%$", re.I)
+TOKENS_ES = set()
+IGNORADO_RE = re.compile(r'^    // en = ("(?:[^"\\]|\\.)*")(.*)$')
+COLOR_RE = re.compile(r"\[color=")
+
+
+@dataclass
+class Ignorado:
+    """Un par que el agente pasó a `// en = "..."` (cadena interna)."""
+    en: str
+    linea: str
+
+
+def entradas_lote(texto):
+    """Pares e ignorados del lote, en su orden."""
+    texto = texto.replace("\r\n", "\n")
+    entradas = {b.inicio: b for b in bloques(texto)}
+    for i, linea in enumerate(texto.split("\n")):
+        m = IGNORADO_RE.match(linea)
+        if m:
+            entradas[i] = Ignorado(get_field("en = " + m.group(1), "en"), linea)
+    return [entradas[i] for i in sorted(entradas)]
+
+
+def forma_flexible(es):
+    """Regex que acepta `es` con otra flexión de género o número.
+
+    shortcut: tolera sufijos (hacha/hachas, rojo/roja), no plurales
+    irregulares; solo produce avisos.
+    """
+    partes = []
+    for palabra in plegar(es).split():
+        raiz = re.sub(r"[aeos]{1,2}$", "", palabra) if len(palabra) > 3 else palabra
+        partes.append(re.escape(raiz) + r"\w{0,3}")
+    return re.compile(r"\b" + r"\W+".join(partes) + r"\b")
+
+
+def plegar(texto):
+    return unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode().lower()
+
+
+def problemas_formales(en, es, texto):
+    """Lo que rompería el par en el juego, como lista de motivos."""
+    res = []
+    te, ts = Counter(TOKEN_RE.findall(en)), Counter(TOKEN_RE.findall(es))
+    faltan = [t for t in te - ts if not PRONOMBRE_EN_RE.match(t)]
+    sobran = [t for t in ts - te if t not in TOKENS_ES]
+    if faltan:
+        res.append("faltan tokens %s" % sorted(faltan))
+    if sobran:
+        res.append("sobran tokens %s" % sorted(sobran))
+    if IMG_RE.findall(en) != IMG_RE.findall(es):
+        res.append("[img] distinto")
+    if len(COLOR_RE.findall(en)) != len(COLOR_RE.findall(es)) or en.count("[/color]") != es.count("[/color]"):
+        res.append("[color] distinto")
+    variantes = lambda s: (len(ABRE_RE.findall(s)), len(CIERRA_RE.findall(s)), s.count("|"))
+    if variantes(en) != variantes(es):
+        res.append("variantes: en %s, es %s" % (variantes(en), variantes(es)))
+    elif es.count("|") != es.count(" | "):
+        res.append("barra de variante sin un espacio a cada lado")
+    if classify(texto) != "dist":
+        res.append("captura o pista inválida para el runtime (iría a cuarentena)")
+    return res
+
+
+def validar(orig, nuevo, base, glosario):
+    """(errores, avisos) del lote editado frente a su original."""
+    errores, avisos = [], []
+    if len(orig) != len(nuevo):
+        return ["el lote tiene %d entradas y el original %d" % (len(nuevo), len(orig))], []
+    for i, (o, n) in enumerate(zip(orig, nuevo), start=1):
+        donde = "entrada %d (%s)" % (i, o.en[:50])
+        if isinstance(n, Ignorado):
+            if n.en != o.en:
+                errores.append("%s: `// en =` con otro texto" % donde)
+            continue
+        conversion = "<" in o.en and is_rule_pair(n.texto)
+        if n.en != o.en and not conversion:
+            errores.append("%s: el `en` ha cambiado" % donde)
+            continue
+        if n.en in base:
+            errores.append("%s: el `en` ya lo traduce base_es.nut" % donde)
+        if not n.es:
+            continue
+        errores += ["%s: %s" % (donde, p) for p in problemas_formales(n.en, n.es, n.texto)]
+        for t in terminos_en(n.en, glosario):
+            if t.es and not forma_flexible(t.es).search(plegar(n.es)):
+                avisos.append("GLOSARIO %s: %s = %s" % (donde, t.en, t.es))
+    return errores, avisos
+
+
+def fusionar(n):
+    """Lleva el lote n al corpus si pasa `validar`; si no, no escribe nada."""
+    nombre = "%04d" % n
+    orig = bloques((LOTES / (nombre + ".orig.nut")).read_text(encoding="utf-8"))
+    nuevo = entradas_lote((LOTES / (nombre + ".nut")).read_bytes().decode("utf-8"))
+    glosario = leer_glosario(GLOSARIO_LEGENDS) + leer_glosario(GLOSARIO_BASE)
+    errores, avisos = validar(orig, nuevo, ens_base(), glosario)
+
+    texto = CORPUS_LEGENDS.read_bytes().decode("utf-8")
+    lineas = texto.split("\n")
+    pendientes = {b.en: b for b in bloques(texto) if not b.es}
+    cambios = []
+    for o, nv in zip(orig, nuevo) if not errores else []:
+        destino = pendientes.get(o.en)
+        if destino is None:
+            errores.append("%s: no está pendiente en el corpus (¿ya fusionado?)" % o.en[:50])
+            continue
+        sustituto = nv.linea if isinstance(nv, Ignorado) else nv.texto.replace("\r\n", "\n")
+        cambios.append((destino.inicio, destino.fin, sustituto.split("\n")))
+    for inicio, fin, nuevas in sorted(cambios, reverse=True):
+        lineas[inicio:fin + 1] = nuevas
+    resultado = "\n".join(lineas)
+    if not errores:
+        errores += ["`en` repetido tras fusionar: %s" % en for en in duplicados(resultado)]
+
+    for a in avisos:
+        print(a)
+    if errores:
+        print("\n".join(errores))
+        print("lote %s rechazado: %d errores; el corpus no se ha tocado" % (nombre, len(errores)))
+        return 1
+    escribir(CORPUS_LEGENDS, resultado)
+    pares = [x for x in nuevo if isinstance(x, Bloque)]
+    print("lote %s fusionado: %d traducidos, %d dudas, %d ignorados, %d avisos"
+          % (nombre, sum(1 for b in pares if b.es), sum(1 for b in pares if "// DUDA:" in b.texto),
+             len(nuevo) - len(pares), len(avisos)))
+    return 0
+
+
+def dudas():
+    for f in sorted(LOTES.glob("[0-9][0-9][0-9][0-9].nut")):
+        for b in bloques(f.read_bytes().decode("utf-8").replace("\r\n", "\n")):
+            for duda in re.findall(r"// DUDA: (.*)", b.texto):
+                print("%s | %s | %s" % (f.stem, b.en, duda.strip()))
+
+
+def aplicar_glosario():
+    """Rellena con el glosario de Legends ya traducido los pares pendientes
+    que son exactamente un término."""
+    fijados = {t.en: t.es for t in leer_glosario(GLOSARIO_LEGENDS) if t.es}
+    texto = CORPUS_LEGENDS.read_bytes().decode("utf-8")
+    lineas = texto.split("\n")
+    n = 0
+    for b in bloques(texto):
+        if not b.es and b.en in fijados:
+            i = next(i for i in range(b.inicio, b.fin + 1) if lineas[i] == '        es = ""')
+            lineas[i] = "        es = %s" % literal(fijados[b.en])
+            n += 1
+    escribir(CORPUS_LEGENDS, "\n".join(lineas))
+    return n
+
+
 def desverbatim(codigo):
     """Pasa cada cadena verbatim de Squirrel (@"...", con "" por comilla y
     saltos de línea reales) a una cadena normal equivalente.
@@ -477,6 +639,12 @@ def main(argv=None):
         extraer(forzar="--forzar" in argv)
     elif argv[:1] == ["partir"]:
         partir()
+    elif argv[:1] == ["fusionar"] and len(argv) == 2:
+        sys.exit(fusionar(int(argv[1])))
+    elif argv[:1] == ["dudas"]:
+        dudas()
+    elif argv[:1] == ["aplicar-glosario"]:
+        print("pares rellenados con el glosario: %d" % aplicar_glosario())
     elif argv[:1] in (["glosario-base"], ["terminos"]):
         res = glosario_base() if argv[0] == "glosario-base" else terminos()
         print("términos: %d" % len(res))

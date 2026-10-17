@@ -284,8 +284,8 @@ def plegar_acentos(texto):
                    if unicodedata.category(c) != "Mn")
 
 
-def pares():
-    for bloque in load_blocks(CORPUS):
+def pares(corpus=CORPUS):
+    for bloque in load_blocks(corpus):
         en, es = get_field(bloque, "en"), get_field(bloque, "es")
         if en and es:
             yield en, es
@@ -512,9 +512,11 @@ def revisar(datos, corpus=CORPUS):
     return avisos
 
 
-def main():
-    datos = list(pares())
-    avisos = revisar(datos)
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    corpus = Path(argv[0]) if argv else CORPUS  # p. ej. el corpus de un mod
+    datos = list(pares(corpus))
+    avisos = revisar(datos, corpus)
     print("pares con traduccion revisados: %d" % len(datos))
     total = 0
     for nombre in ("IMG", "VARIANTES", "TOKENS", "RECORTE", "DUP_ES", "DUP_VECINO",

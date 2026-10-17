@@ -193,6 +193,208 @@ def test_render_lote_contiene_bloques_tal_cual():
     assert texto.count("// FILE:") == 2
 
 
+CORPUS_T = '''if (!("Rosetta" in getroottable())) return;
+
+local rosetta = {
+    mod = {id = "mod_legends", version = "19.4.22"}
+    author = "..."
+    lang = "es"
+}
+local pairs = [
+    // FILE: scripts\\items\\a.nut
+    // context: a.create.m.Name
+    {
+        en = "Hand Axe"
+        es = ""
+    }
+    // context: a.create.m.Description
+    {
+        en = "%name% swings {a Hand Axe | an axe} at %their% foe."
+        es = ""
+    }
+    {
+        // text = this.m.Name + " attacks";
+        en = "<this.m.Name> attacks"
+        es = ""
+    }
+    {
+        en = "Nest1"
+        es = ""
+    }
+    {
+        en = "Done before"
+        es = "Hecho antes"
+    }
+]
+::Rosetta.add(rosetta, pairs);
+'''
+
+
+@pytest.fixture
+def entorno(tmp_path, monkeypatch):
+    corpus = tmp_path / "mod_legends_es.nut"
+    corpus.write_bytes(CORPUS_T.encode("utf-8"))
+    gb = tmp_path / "gb.tsv"
+    lotes.escribir_glosario(gb, [lotes.Termino("Hand Axe", "Hacha de mano", "objeto", "f")])
+    gl = tmp_path / "gl.tsv"
+    lotes.escribir_glosario(gl, [])
+    monkeypatch.setattr(lotes, "CORPUS_LEGENDS", corpus)
+    monkeypatch.setattr(lotes, "LOTES", tmp_path / "lotes")
+    monkeypatch.setattr(lotes, "GLOSARIO_BASE", gb)
+    monkeypatch.setattr(lotes, "GLOSARIO_LEGENDS", gl)
+    monkeypatch.setattr(lotes, "ens_base", lambda: {"Already in base"})
+    pendientes = [b for b in bloques(CORPUS_T) if not b.es]
+    texto = lotes.render_lote(1, "19.4.22", pendientes, [], {})
+    (tmp_path / "lotes").mkdir()
+    for nombre in ("0001.nut", "0001.orig.nut"):
+        (tmp_path / "lotes" / nombre).write_bytes(texto.encode("utf-8"))
+
+    def editar(*cambios, crlf=False):
+        t = texto
+        for viejo, nuevo in cambios:
+            assert t.count(viejo) == 1, viejo
+            t = t.replace(viejo, nuevo)
+        if crlf:
+            t = t.replace("\n", "\r\n")
+        (tmp_path / "lotes" / "0001.nut").write_bytes(t.encode("utf-8"))
+    return corpus, editar
+
+
+ES_AXE = ('en = "Hand Axe"\n        es = ""', 'en = "Hand Axe"\n        es = "Hacha de mano"')
+EN_SWING = 'en = "%name% swings {a Hand Axe | an axe} at %their% foe."\n        es = ""'
+
+
+def _swing(es):
+    return (EN_SWING, EN_SWING.replace('es = ""', 'es = "%s"' % es))
+
+
+def test_ida_y_vuelta_sin_cambios(entorno):
+    corpus, editar = entorno
+    editar()
+    assert lotes.fusionar(1) == 0
+    assert corpus.read_bytes() == CORPUS_T.encode("utf-8")
+
+
+def test_fusion_valida(entorno):
+    corpus, editar = entorno
+    editar(ES_AXE,
+           _swing("%name% lanza un tajo a su enemigo con {un hacha de mano | un hacha}."),
+           ('        // text = this.m.Name + " attacks";\n        en = "<this.m.Name> attacks"\n        es = ""',
+            '        // text = this.m.Name + " attacks";\n        mode = "pattern"\n        en = "<name:str> attacks"\n        es = "<name> ataca"'),
+           ('    {\n        en = "Nest1"\n        es = ""\n    }', '    // en = "Nest1"  // interno: id de pantalla'))
+    assert lotes.fusionar(1) == 0
+    t = corpus.read_text(encoding="utf-8")
+    assert 'es = "Hacha de mano"' in t
+    assert 'es = "<name> ataca"' in t and 'en = "<name:str> attacks"' in t
+    assert '    // en = "Nest1"  // interno: id de pantalla' in t
+    assert 'es = "Hecho antes"' in t
+
+
+def _rechaza(entorno, *cambios):
+    corpus, editar = entorno
+    editar(*cambios)
+    assert lotes.fusionar(1) == 1
+    assert corpus.read_bytes() == CORPUS_T.encode("utf-8")
+
+
+def test_rechaza_entrada_quitada(entorno):
+    _rechaza(entorno, ('    {\n        en = "Nest1"\n        es = ""\n    }\n', ""))
+
+
+def test_rechaza_en_tocado(entorno):
+    _rechaza(entorno, ('en = "Hand Axe"\n        es = ""', 'en = "Hand axe"\n        es = "Hacha"'))
+
+
+def test_rechaza_dos_str_seguidos(entorno):
+    _rechaza(entorno, ('        en = "<this.m.Name> attacks"\n        es = ""',
+                       '        mode = "pattern"\n        en = "<a:str><b:str> attacks"\n        es = "<a><b> ataca"'))
+
+
+def test_rechaza_captura_inventada(entorno):
+    _rechaza(entorno, ('        en = "<this.m.Name> attacks"\n        es = ""',
+                       '        mode = "pattern"\n        en = "<name:str> attacks"\n        es = "<otro> ataca"'))
+
+
+def test_rechaza_token_perdido(entorno):
+    _rechaza(entorno, _swing("Lanza un tajo a su enemigo con {un hacha de mano | un hacha}."))
+
+
+def test_acepta_quitar_pronombre_ingles(entorno):
+    corpus, editar = entorno
+    editar(_swing("%name% lanza un tajo a su enemigo con {un hacha de mano | un hacha}."))
+    assert lotes.fusionar(1) == 0
+
+
+def test_rechaza_token_inventado(entorno):
+    _rechaza(entorno, _swing("%name% lanza un tajo a %su% enemigo con {un hacha de mano | un hacha}."))
+
+
+def test_rechaza_variantes_rotas(entorno):
+    _rechaza(entorno, _swing("%name% lanza un tajo a su enemigo con {un hacha de mano}."))
+
+
+def test_rechaza_barra_sin_espacios(entorno):
+    _rechaza(entorno, _swing("%name% lanza un tajo a su enemigo con {un hacha de mano|un hacha}."))
+
+
+def test_rechaza_en_del_base(entorno):
+    _rechaza(entorno, ('        en = "<this.m.Name> attacks"\n        es = ""',
+                       '        mode = "pattern"\n        en = "Already in base"\n        es = "Ya"'))
+
+
+def test_rechaza_segunda_fusion(entorno):
+    corpus, editar = entorno
+    editar(ES_AXE)
+    assert lotes.fusionar(1) == 0
+    despues = corpus.read_bytes()
+    assert lotes.fusionar(1) == 1
+    assert corpus.read_bytes() == despues
+
+
+def test_acepta_crlf(entorno):
+    corpus, editar = entorno
+    editar(ES_AXE, crlf=True)
+    assert lotes.fusionar(1) == 0
+    assert b"\r" not in corpus.read_bytes()
+
+
+def test_aviso_glosario_no_rechaza(entorno, capsys):
+    corpus, editar = entorno
+    editar(_swing("%name% lanza un tajo a su enemigo con {unas hachas de mano | un hacha}."))
+    assert lotes.fusionar(1) == 0
+    assert "GLOSARIO" not in capsys.readouterr().out
+    corpus.write_bytes(CORPUS_T.encode("utf-8"))
+    editar(_swing("%name% lanza un tajo a su enemigo con {una segur | un hacha}."))
+    assert lotes.fusionar(1) == 0
+    assert "GLOSARIO" in capsys.readouterr().out
+
+
+def test_dudas_lista(entorno, capsys):
+    corpus, editar = entorno
+    editar(('    {\n        en = "Nest1"', '    {\n        // DUDA: ¿se muestra?\n        en = "Nest1"'))
+    lotes.dudas()
+    salida = capsys.readouterr().out
+    assert "0001" in salida and "Nest1" in salida and "¿se muestra?" in salida
+
+
+def test_aplicar_glosario(entorno):
+    corpus, _ = entorno
+    lotes.escribir_glosario(lotes.GLOSARIO_LEGENDS, [lotes.Termino("Hand Axe", "Hacha de mano", "objeto", "f"),
+                                                    lotes.Termino("Nest1", "", "general", "f")])
+    assert lotes.aplicar_glosario() == 1
+    t = corpus.read_text(encoding="utf-8")
+    assert 'en = "Hand Axe"\n        es = "Hacha de mano"' in t
+    assert 'en = "Nest1"\n        es = ""' in t
+
+
+def test_checks_acepta_ruta(tmp_path, capsys):
+    import checks
+    f = tmp_path / "c.nut"
+    f.write_bytes(CORPUS_T.encode("utf-8"))
+    assert checks.main([str(f)]) == 0
+    assert "revisados: 1" in capsys.readouterr().out
+
+
 def test_glosario_ida_y_vuelta(tmp_path):
     ts = [lotes.Termino("Hand Axe", "Hacha de mano", "objeto", "a.nut", ""),
           lotes.Termino("Anchor", "", "perk", "b.nut", "contiene: Axe")]
