@@ -72,9 +72,7 @@ Lo que la 1.0 fijó y el glosario automático no recoge, porque el juego lo escr
 
 Legends escribe los pronombres de sus personajes con tokens que el juego sustituye por palabras inglesas: `%they%`, `%their_employer%`, `%person_dude%` y familia (la lista completa está en `mod_legends/config/z_legends_language.nut`). En español no sirven: "%their% sword" es "su espada".
 
-**Por defecto, neutro:** omite esos tokens y redacta para que la frase funcione con cualquier género (su, le, construcciones sin adjetivo concordado). La fusión permite quitarlos.
-
-**Donde el neutro quede forzado**, usa los tokens castellanos que el pack añade a la tabla de Legends (sin género, el juego pone el masculino):
+Omite los tokens ingleses que en castellano no hacen falta ("%their% sword" es "su espada"); la fusión permite quitarlos. **Donde el castellano concuerde con el género** del personaje, usa los tokens castellanos que el pack añade a la tabla de Legends, en vez de dar un rodeo para evitarlo (sin género, el juego pone el masculino):
 
 | Token | Hombre | Mujer | Ejemplo |
 |---|---|---|---|
