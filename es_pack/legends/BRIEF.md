@@ -90,6 +90,8 @@ Solo valen si el inglés del par lleva un token de pronombre del mismo personaje
 
 Un sustantivo que nombra a un personaje con género variable («el flagelante», «el monje», «el idiota») nunca lleva artículo ni demostrativo fijo: usa `%art%`, `%del%`, `%al%` o `%ese%`, con el sufijo del personaje, y concuerda también el resto de la frase («sosteniéndo%lo%»).
 
+Si el personaje no tiene tokens de género en el inglés del par (un recluta, un ladrón o un caballero nombrados solo por `%thief%`, `%hedgeknight%`), no puedes usar los castellanos, porque el juego no los rellena: redacta sin concordancia de género (sin artículo ni adjetivo marcado delante o detrás del personaje), salvo que la fuente fije su género (por ejemplo, `setStartValuesEx(..., true, 1)` crea siempre una mujer).
+
 Los tokens con verbo de Legends (`%they're%`, `%they are%`, `%they were%` y familia) se quitan siempre: el castellano conjuga el verbo y omite el sujeto.
 
 ## Patrones
