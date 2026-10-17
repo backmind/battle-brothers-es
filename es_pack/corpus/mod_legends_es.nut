@@ -11,372 +11,372 @@ local pairs = [
     // context: ::Const.EntityType.BanditRabble.::Const.EntityType.addNew()
     {
         en = "Bandit Rabble"
-        es = ""
+        es = "Chusma bandida"
     }
     // en = "Cat"
     // en base_es
     // context: ::Const.EntityType.LegendCat.::Const.EntityType.addNew()
     {
         en = "Cats"
-        es = ""
+        es = "Gatos"
     }
     // context: ::Const.EntityType.LegendOrcElite.::Const.EntityType.addNew()
     {
         en = "Orc Elite"
-        es = ""
+        es = "Orco de élite"
     }
     // context: ::Const.EntityType.LegendOrcElite.::Const.EntityType.addNew()
     {
         en = "Orc Elites"
-        es = ""
+        es = "Orcos de élite"
     }
     // context: ::Const.EntityType.LegendOrcTyrant.::Const.EntityType.addNew()
     {
         en = "Orc Tyrant"
-        es = ""
+        es = "Tirano orco"
     }
     // context: ::Const.EntityType.LegendOrcBehemoth.::Const.EntityType.addNew()
     {
         en = "Orc Behemoth"
-        es = ""
+        es = "Behemot orco"
     }
     // context: ::Const.EntityType.LegendOrcBehemoth.::Const.EntityType.addNew()
     {
         en = "Orc Behemoths"
-        es = ""
+        es = "Behemots orcos"
     }
     // context: ::Const.EntityType.LegendOrcMadBerserker.::Const.EntityType.addNew()
     {
         en = "Orc Mad Berserker"
-        es = ""
+        es = "Berserker orco enloquecido"
     }
     // context: ::Const.EntityType.LegendOrcMadBerserker.::Const.EntityType.addNew()
     {
         en = "Orc Mad Berserkers"
-        es = ""
+        es = "Berserkers orcos enloquecidos"
     }
     // context: ::Const.EntityType.LegendWhiteDirewolf.::Const.EntityType.addNew()
     {
         en = "White Direwolf"
-        es = ""
+        es = "Lobo huargo blanco"
     }
     // context: ::Const.EntityType.LegendWhiteDirewolf.::Const.EntityType.addNew()
     {
         en = "White Direwolves"
-        es = ""
+        es = "Lobos huargo blancos"
     }
     // context: ::Const.EntityType.LegendSkinGhoul.::Const.EntityType.addNew()
     {
         en = "Skin Ghoul"
-        es = ""
+        es = "Necrófago desollado"
     }
     // context: ::Const.EntityType.LegendSkinGhoul.::Const.EntityType.addNew()
     {
         en = "Skin Ghouls"
-        es = ""
+        es = "Necrófagos desollados"
     }
     // context: ::Const.EntityType.LegendStollwurm.::Const.EntityType.addNew()
     {
         en = "Stollwurm"
-        es = ""
+        es = "Stollwurm"
     }
     // context: ::Const.EntityType.LegendStollwurm.::Const.EntityType.addNew()
     {
         en = "Stollwurmer"
-        es = ""
+        es = "Stollwurmer"
     }
     // context: ::Const.EntityType.LegendRockUnhold.::Const.EntityType.addNew()
     {
         en = "Rock Unhold"
-        es = ""
+        es = "Trol de roca"
     }
     // context: ::Const.EntityType.LegendRockUnhold.::Const.EntityType.addNew()
     {
         en = "Rock Unholds"
-        es = ""
+        es = "Trols de roca"
     }
     // context: ::Const.EntityType.LegendRedbackSpider.::Const.EntityType.addNew()
     {
         en = "Redback Spider"
-        es = ""
+        es = "Araña de lomo rojo"
     }
     // context: ::Const.EntityType.LegendRedbackSpider.::Const.EntityType.addNew()
     {
         en = "Redback Spiders"
-        es = ""
+        es = "Arañas de lomo rojo"
     }
     // context: ::Const.EntityType.LegendSpiderCluster.::Const.EntityType.addNew()
     {
         en = "Webknecht Cluster"
-        es = ""
+        es = "Colonia de Webknechts"
     }
     // context: ::Const.EntityType.LegendSpiderCluster.::Const.EntityType.addNew()
     {
         en = "Webknecht Clusters"
-        es = ""
+        es = "Colonias de Webknechts"
     }
     // context: ::Const.EntityType.LegendDemonAlp.::Const.EntityType.addNew()
     {
         en = "Demon Alp"
-        es = ""
+        es = "Alp demoníaco"
     }
     // context: ::Const.EntityType.LegendDemonAlp.::Const.EntityType.addNew()
     {
         en = "Demon Alps"
-        es = ""
+        es = "Alps demoníacos"
     }
     // context: ::Const.EntityType.LegendHexeLeader.::Const.EntityType.addNew()
     {
         en = "Hexe Coven Leader"
-        es = ""
+        es = "Líder del aquelarre de Hexen"
     }
     // context: ::Const.EntityType.LegendHexeLeader.::Const.EntityType.addNew()
     {
         en = "Hexe Coven Leaders"
-        es = ""
+        es = "Líderes del aquelarre de Hexen"
     }
     // context: ::Const.EntityType.LegendGreenwoodSchrat.::Const.EntityType.addNew()
     {
         en = "Heartwood Schrat"
-        es = ""
+        es = "Schrat de duramen"
     }
     // context: ::Const.EntityType.LegendGreenwoodSchrat.::Const.EntityType.addNew()
     {
         en = "Heartwood Schrats"
-        es = ""
+        es = "Schrats de duramen"
     }
     // context: ::Const.EntityType.LegendGreenwoodSchratSmall.::Const.EntityType.addNew()
     {
         en = "Heartwood Sapling"
-        es = ""
+        es = "Árbol joven de duramen"
     }
     // context: ::Const.EntityType.LegendGreenwoodSchratSmall.::Const.EntityType.addNew()
     {
         en = "Heartwood Saplings"
-        es = ""
+        es = "Árboles jóvenes de duramen"
     }
     // context: ::Const.EntityType.LegendWhiteWarwolf.::Const.EntityType.addNew()
     {
         en = "White Warwolf"
-        es = ""
+        es = "Lobo de guerra blanco"
     }
     // context: ::Const.EntityType.LegendWhiteWarwolf.::Const.EntityType.addNew()
     {
         en = "White Warwolves"
-        es = ""
+        es = "Lobos de guerra blancos"
     }
     // context: ::Const.EntityType.LegendBanshee.::Const.EntityType.addNew()
     {
         en = "Winselmutter"
-        es = ""
+        es = "Winselmutter"
     }
     // context: ::Const.EntityType.LegendBanshee.::Const.EntityType.addNew()
     {
         en = "Winselmutters"
-        es = ""
+        es = "Winselmutters"
     }
     // context: ::Const.EntityType.LegendDemonHound.::Const.EntityType.addNew()
     {
         en = "Höllenhund"
-        es = ""
+        es = "Höllenhund"
     }
     // context: ::Const.EntityType.LegendDemonHound.::Const.EntityType.addNew()
     {
         en = "Höllenhunds"
-        es = ""
+        es = "Höllenhunds"
     }
     // context: ::Const.EntityType.LegendVampireLord.::Const.EntityType.addNew()
     {
         en = "Necrosavant Lord"
-        es = ""
+        es = "Señor necrosavante"
     }
     // context: ::Const.EntityType.LegendVampireLord.::Const.EntityType.addNew()
     {
         en = "Necrosavant Lords"
-        es = ""
+        es = "Señores necrosavantes"
     }
     // en = "Robber Baron"
     // en base_es
     // context: ::Const.EntityType.LegendRobberBaron.::Const.EntityType.addNew()
     {
         en = "Robber Barons"
-        es = ""
+        es = "Barones ladrones"
     }
     // en = "Butcher"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantButcher.::Const.EntityType.addNew()
     {
         en = "Butchers"
-        es = ""
+        es = "Carniceros"
     }
     // context: ::Const.EntityType.LegendPeasantBlacksmith.::Const.EntityType.addNew()
     {
         en = "Blacksmith"
-        es = ""
+        es = "Herrero"
     }
     // context: ::Const.EntityType.LegendPeasantBlacksmith.::Const.EntityType.addNew()
     {
         en = "Blacksmiths"
-        es = ""
+        es = "Herreros"
     }
     // en = "Monk"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantMonk.::Const.EntityType.addNew()
     {
         en = "Monks"
-        es = ""
+        es = "Monjes"
     }
     // en = "Farmhand"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantFarmhand.::Const.EntityType.addNew()
     {
         en = "Farmhands"
-        es = ""
+        es = "Peones de granja"
     }
     // en = "Minstrel"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantMinstrel.::Const.EntityType.addNew()
     {
         en = "Minstrels"
-        es = ""
+        es = "Juglares"
     }
     // en = "Poacher"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantPoacher.::Const.EntityType.addNew()
     {
         en = "Poachers"
-        es = ""
+        es = "Cazadores furtivos"
     }
     // context: ::Const.EntityType.LegendPeasantWoodsman.::Const.EntityType.addNew()
     {
         en = "Woodcutter"
-        es = ""
+        es = "Leñador"
     }
     // context: ::Const.EntityType.LegendPeasantWoodsman.::Const.EntityType.addNew()
     {
         en = "Woodsfolk"
-        es = ""
+        es = "Gente del bosque"
     }
     // en = "Miner"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantMiner.::Const.EntityType.addNew()
     {
         en = "Miners"
-        es = ""
+        es = "Mineros"
     }
     // en = "Squire"
     // en base_es
     // context: ::Const.EntityType.LegendPeasantSquire.::Const.EntityType.addNew()
     {
         en = "Squires"
-        es = ""
+        es = "Escuderos"
     }
     // context: ::Const.EntityType.LegendPeasantWitchHunter.::Const.EntityType.addNew()
     {
         en = "Witch Hunter"
-        es = ""
+        es = "Cazador de brujas"
     }
     // context: ::Const.EntityType.LegendPeasantWitchHunter.::Const.EntityType.addNew()
     {
         en = "Witch Hunters"
-        es = ""
+        es = "Cazadores de brujas"
     }
     // context: ::Const.EntityType.LegendHalberdier.::Const.EntityType.addNew()
     {
         en = "Halberdier"
-        es = ""
+        es = "Alabardero"
     }
     // context: ::Const.EntityType.LegendHalberdier.::Const.EntityType.addNew()
     {
         en = "Halberdiers"
-        es = ""
+        es = "Alabarderos"
     }
     // context: ::Const.EntityType.LegendSlinger.::Const.EntityType.addNew()
     {
         en = "Slinger"
-        es = ""
+        es = "Hondero"
     }
     // context: ::Const.EntityType.LegendSlinger.::Const.EntityType.addNew()
     {
         en = "Slingers"
-        es = ""
+        es = "Honderos"
     }
     // context: ::Const.EntityType.LegendFencer.::Const.EntityType.addNew()
     {
         en = "Fencer"
-        es = ""
+        es = "Esgrimista"
     }
     // context: ::Const.EntityType.LegendFencer.::Const.EntityType.addNew()
     {
         en = "Fencers"
-        es = ""
+        es = "Esgrimistas"
     }
     // context: ::Const.EntityType.BanditOutrider.::Const.EntityType.addNew()
     {
         en = "Bandit Outrider"
-        es = ""
+        es = "Batidor bandido"
     }
     // context: ::Const.EntityType.BanditOutrider.::Const.EntityType.addNew()
     {
         en = "Bandit Outriders"
-        es = ""
+        es = "Batidores bandidos"
     }
     // context: ::Const.EntityType.LegendBear.::Const.EntityType.addNew()
     {
         en = "Bear"
-        es = ""
+        es = "Oso"
     }
     // context: ::Const.EntityType.LegendBear.::Const.EntityType.addNew()
     {
         en = "Bears"
-        es = ""
+        es = "Osos"
     }
     // en = "Catapult"
     // en base_es
     // context: ::Const.EntityType.LegendCatapult.::Const.EntityType.addNew()
     {
         en = "Catapults"
-        es = ""
+        es = "Catapultas"
     }
     // context: ::Const.EntityType.LegendHorse.::Const.EntityType.addNew()
     {
         en = "Horse"
-        es = ""
+        es = "Caballo"
     }
     // context: ::Const.EntityType.LegendHorse.::Const.EntityType.addNew()
     {
         en = "Horses"
-        es = ""
+        es = "Caballos"
     }
     // context: ::Const.EntityType.SkeletonGladiator.::Const.EntityType.addNew()
     {
         en = "Ancient Gladiator"
-        es = ""
+        es = "Gladiador ancestral"
     }
     // context: ::Const.EntityType.SkeletonGladiator.::Const.EntityType.addNew()
     {
         en = "Ancient Gladiators"
-        es = ""
+        es = "Gladiadores ancestrales"
     }
     // context: ::Const.EntityType.BanditRabblePoacher.::Const.EntityType.addNew()
     {
         en = "Bandit Rabble Poacher"
-        es = ""
+        es = "Cazador furtivo de la chusma"
     }
     // context: ::Const.EntityType.BanditRabblePoacher.::Const.EntityType.addNew()
     {
         en = "Bandit Rabble Poachers"
-        es = ""
+        es = "Cazadores furtivos de la chusma"
     }
     // context: ::Const.EntityType.BanditVermes.::Const.EntityType.addNew()
     {
         en = "Infected Bandit"
-        es = ""
+        es = "Bandido infectado"
     }
     // context: ::Const.EntityType.BanditVermes.::Const.EntityType.addNew()
     {
         en = "Bandit Vermes"
-        es = ""
+        es = "Bandidos infectados"
     }
     // en = "Manhunter"
     // en base_es
@@ -385,381 +385,381 @@ local pairs = [
     // context: ::Const.EntityType.LegendManhunterVeteran.::Const.EntityType.addNew()
     {
         en = "Manhunter Veteran"
-        es = ""
+        es = "Cazahombres veterano"
     }
     // context: ::Const.EntityType.LegendManhunterVeteran.::Const.EntityType.addNew()
     {
         en = "Manhunter Veterans"
-        es = ""
+        es = "Cazahombres veteranos"
     }
     // context: ::Const.EntityType.LegendMummyLight.::Const.EntityType.addNew()
     {
         en = "Embalmed Slave"
-        es = ""
+        es = "Esclavo embalsamado"
     }
     // context: ::Const.EntityType.LegendMummyLight.::Const.EntityType.addNew()
     {
         en = "Embalmed Slaves"
-        es = ""
+        es = "Esclavos embalsamados"
     }
     // context: ::Const.EntityType.LegendMummyMedium.::Const.EntityType.addNew()
     {
         en = "Embalmed Soldier"
-        es = ""
+        es = "Soldado embalsamado"
     }
     // context: ::Const.EntityType.LegendMummyMedium.::Const.EntityType.addNew()
     {
         en = "Embalmed Soldiers"
-        es = ""
+        es = "Soldados embalsamados"
     }
     // context: ::Const.EntityType.LegendMummyHeavy.::Const.EntityType.addNew()
     {
         en = "Embalmed Noble"
-        es = ""
+        es = "Noble embalsamado"
     }
     // context: ::Const.EntityType.LegendMummyHeavy.::Const.EntityType.addNew()
     {
         en = "Embalmed Nobles"
-        es = ""
+        es = "Nobles embalsamados"
     }
     // context: ::Const.EntityType.LegendMummyQueen.::Const.EntityType.addNew()
     {
         en = "Embalmed Queen"
-        es = ""
+        es = "Reina embalsamada"
     }
     // context: ::Const.EntityType.LegendMummyQueen.::Const.EntityType.addNew()
     {
         en = "Embalmed Queens"
-        es = ""
+        es = "Reinas embalsamadas"
     }
     // context: ::Const.EntityType.LegendMummyPriest.::Const.EntityType.addNew()
     {
         en = "Embalmed Priest"
-        es = ""
+        es = "Sacerdote embalsamado"
     }
     // context: ::Const.EntityType.LegendMummyPriest.::Const.EntityType.addNew()
     {
         en = "Embalmed Priests"
-        es = ""
+        es = "Sacerdotes embalsamados"
     }
     // context: ::Const.EntityType.FreeCompanySpearman.::Const.EntityType.addNew()
     {
         en = "Free Company Spearman"
-        es = ""
+        es = "Lancero de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanySpearman.::Const.EntityType.addNew()
     {
         en = "Free Company Spearmen"
-        es = ""
+        es = "Lanceros de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanySlayer.::Const.EntityType.addNew()
     {
         en = "Free Company Slayer"
-        es = ""
+        es = "Asesino de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanySlayer.::Const.EntityType.addNew()
     {
         en = "Free Company Slayers"
-        es = ""
+        es = "Asesinos de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyFootman.::Const.EntityType.addNew()
     {
         en = "Free Company Footman"
-        es = ""
+        es = "Soldado a pie de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyFootman.::Const.EntityType.addNew()
     {
         en = "Free Company Footmen"
-        es = ""
+        es = "Soldados a pie de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyArcher.::Const.EntityType.addNew()
     {
         en = "Free Company Archer"
-        es = ""
+        es = "Arquero de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyArcher.::Const.EntityType.addNew()
     {
         en = "Free Company Archers"
-        es = ""
+        es = "Arqueros de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyCrossbow.::Const.EntityType.addNew()
     {
         en = "Free Company Crossbow"
-        es = ""
+        es = "Ballestero de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyCrossbow.::Const.EntityType.addNew()
     {
         en = "Free Company Crossbows"
-        es = ""
+        es = "Ballesteros de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyLongbow.::Const.EntityType.addNew()
     {
         en = "Free Company Longbow"
-        es = ""
+        es = "Arquero de arco largo de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyLongbow.::Const.EntityType.addNew()
     {
         en = "Free Company Longbows"
-        es = ""
+        es = "Arqueros de arco largo de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyBillman.::Const.EntityType.addNew()
     {
         en = "Free Company Billman"
-        es = ""
+        es = "Soldado de guja de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyBillman.::Const.EntityType.addNew()
     {
         en = "Free Company Billmen"
-        es = ""
+        es = "Soldados de guja de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyPikeman.::Const.EntityType.addNew()
     {
         en = "Free Company Pikeman"
-        es = ""
+        es = "Piquero de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyPikeman.::Const.EntityType.addNew()
     {
         en = "Free Company Pikemen"
-        es = ""
+        es = "Piqueros de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyInfantry.::Const.EntityType.addNew()
     {
         en = "Free Company Infantry"
-        es = ""
+        es = "Infantería de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyLeader.::Const.EntityType.addNew()
     {
         en = "Free Company Leader"
-        es = ""
+        es = "Líder de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyLeader.::Const.EntityType.addNew()
     {
         en = "Free Company Leaders"
-        es = ""
+        es = "Líderes de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyLeaderLow.::Const.EntityType.addNew()
     {
         en = "Free Company Ringleader"
-        es = ""
+        es = "Cabecilla de compañía libre"
     }
     // context: ::Const.EntityType.FreeCompanyLeaderLow.::Const.EntityType.addNew()
     {
         en = "Free Company Ringleaders"
-        es = ""
+        es = "Cabecillas de compañía libre"
     }
     // context: ::Const.EntityType.LegendManhunterRanged.::Const.EntityType.addNew()
     {
         en = "Manhunter Handgonner"
-        es = ""
+        es = "Cañonero cazahombres"
     }
     // context: ::Const.EntityType.LegendManhunterRanged.::Const.EntityType.addNew()
     {
         en = "Manhunter Handgonners"
-        es = ""
+        es = "Cañoneros cazahombres"
     }
     // context: ::Const.EntityType.LegendManhunterVeteranRanged.::Const.EntityType.addNew()
     {
         en = "Manhunter Veteran Handgonner"
-        es = ""
+        es = "Cañonero cazahombres veterano"
     }
     // context: ::Const.EntityType.LegendManhunterVeteranRanged.::Const.EntityType.addNew()
     {
         en = "Manhunter Veteran Handgonners"
-        es = ""
+        es = "Cañoneros cazahombres veteranos"
     }
     // context: ::Const.EntityType.LegendNobleGuard.::Const.EntityType.addNew()
     {
         en = "Royal Guard"
-        es = ""
+        es = "Guardia real"
     }
     // context: ::Const.EntityType.LegendNobleGuard.::Const.EntityType.addNew()
     {
         en = "Royal Guards"
-        es = ""
+        es = "Guardias reales"
     }
     // context: ::Const.EntityType.LegendManAtArms.::Const.EntityType.addNew()
     {
         en = "Veteran Knight"
-        es = ""
+        es = "Caballero veterano"
     }
     // context: ::Const.EntityType.LegendManAtArms.::Const.EntityType.addNew()
     {
         en = "Veteran Knights"
-        es = ""
+        es = "Caballeros veteranos"
     }
     // context: ::Const.EntityType.LegendBasiliskDrone.::Const.EntityType.addNew()
     {
         en = "Basilisk Drone"
-        es = ""
+        es = "Basilisco obrero"
     }
     // context: ::Const.EntityType.LegendBasiliskDrone.::Const.EntityType.addNew()
     {
         en = "Basilisk Drones"
-        es = ""
+        es = "Basiliscos obreros"
     }
     // context: ::Const.EntityType.LegendCaravanPolearm.::Const.EntityType.addNew()
     {
         en = "Caravan Polearm"
-        es = ""
+        es = "Ayudante de caravana con asta"
     }
     // context: ::Const.EntityType.LegendCaravanPolearm.::Const.EntityType.addNew()
     {
         en = "Caravan Polearms"
-        es = ""
+        es = "Ayudantes de caravana con asta"
     }
     // context: ::Const.EntityType.NobleEliteFootman.::Const.EntityType.addNew()
     {
         en = "Elite Footman"
-        es = ""
+        es = "Soldado a pie de élite"
     }
     // context: ::Const.EntityType.NobleEliteFootman.::Const.EntityType.addNew()
     {
         en = "Elite Footmen"
-        es = ""
+        es = "Soldados a pie de élite"
     }
     // en = "Pollaxe"
     // en base_es
     // context: ::Const.EntityType.NoblePollax.::Const.EntityType.addNew()
     {
         en = "Pollaxes"
-        es = ""
+        es = "Pollaxes"
     }
     // en = "Sureshot"
     // en base_es
     // context: ::Const.EntityType.NobleSureshot.::Const.EntityType.addNew()
     {
         en = "Sureshots"
-        es = ""
+        es = "Tiroseguros"
     }
     // context: ::Const.EntityType.LegendBasiliskSentry.::Const.EntityType.addNew()
     {
         en = "Basilisk Sentry"
-        es = ""
+        es = "Basilisco centinela"
     }
     // context: ::Const.EntityType.LegendBasiliskSentry.::Const.EntityType.addNew()
     {
         en = "Basilisk Sentries"
-        es = ""
+        es = "Basiliscos centinela"
     }
     // context: ::Const.EntityType.LegendSighthound.::Const.EntityType.addNew()
     {
         en = "Sighthound"
-        es = ""
+        es = "Lebrel"
     }
     // context: ::Const.EntityType.LegendSighthound.::Const.EntityType.addNew()
     {
         en = "Sighthounds"
-        es = ""
+        es = "Lebreles"
     }
     // context: ::Const.EntityType.LegendArmoredSighthound.::Const.EntityType.addNew()
     {
         en = "Armored Sighthound"
-        es = ""
+        es = "Lebrel con armadura"
     }
     // context: ::Const.EntityType.LegendEnragedHyena.::Const.EntityType.addNew()
     {
         en = "Enraged Hyena"
-        es = ""
+        es = "Hiena enfurecida"
     }
     // context: ::Const.EntityType.LegendEnragedHyena.::Const.EntityType.addNew()
     {
         en = "Enraged Hyenas"
-        es = ""
+        es = "Hienas enfurecidas"
     }
     // context: ::Const.EntityType.LegendGoblinHarrier.::Const.EntityType.addNew()
     {
         en = "Goblin Harrier"
-        es = ""
+        es = "Hostigador goblin"
     }
     // context: ::Const.EntityType.LegendGoblinHarrier.::Const.EntityType.addNew()
     {
         en = "Goblin Harriers"
-        es = ""
+        es = "Hostigadores goblins"
     }
     // context: ::Const.EntityType.LegendGoblinBerserker.::Const.EntityType.addNew()
     {
         en = "Goblin Berserker"
-        es = ""
+        es = "Berserker goblin"
     }
     // context: ::Const.EntityType.LegendGoblinBerserker.::Const.EntityType.addNew()
     {
         en = "Goblin Berserkers"
-        es = ""
+        es = "Berserkers goblins"
     }
     // context: ::Const.EntityType.LegendGoblinTribeDefender.::Const.EntityType.addNew()
     {
         en = "Goblin Tribe Defender"
-        es = ""
+        es = "Defensor tribal goblin"
     }
     // context: ::Const.EntityType.LegendGoblinTribeDefender.::Const.EntityType.addNew()
     {
         en = "Goblin Tribe Defenders"
-        es = ""
+        es = "Defensores tribales goblins"
     }
     // context: ::Const.EntityType.LegendGoblinDirewolfRider.::Const.EntityType.addNew()
     {
         en = "Direwolf Rider"
-        es = ""
+        es = "Jinete de lobo huargo"
     }
     // context: ::Const.EntityType.LegendGoblinDirewolfRider.::Const.EntityType.addNew()
     {
         en = "Direwolf Riders"
-        es = ""
+        es = "Jinetes de lobo huargo"
     }
     // context: ::Const.EntityType.LegendGoblinWhiteDirewolfRider.::Const.EntityType.addNew()
     {
         en = "White Direwolf Rider"
-        es = ""
+        es = "Jinete de lobo huargo blanco"
     }
     // context: ::Const.EntityType.LegendGoblinWhiteDirewolfRider.::Const.EntityType.addNew()
     {
         en = "White Direwolf Riders"
-        es = ""
+        es = "Jinetes de lobo huargo blanco"
     }
     // context: ::Const.EntityType.LegendGoblinWitchDoctor.::Const.EntityType.addNew()
     {
         en = "Goblin Witchdoctor"
-        es = ""
+        es = "Curandero goblin"
     }
     // context: ::Const.EntityType.LegendGoblinWitchDoctor.::Const.EntityType.addNew()
     {
         en = "Goblin Witchdoctors"
-        es = ""
+        es = "Curanderos goblins"
     }
     // context: ::Const.EntityType.LegendBarbarianPillager.::Const.EntityType.addNew()
     {
         en = "Barbarian Pillager"
-        es = ""
+        es = "Saqueador bárbaro"
     }
     // context: ::Const.EntityType.LegendBarbarianPillager.::Const.EntityType.addNew()
     {
         en = "Barbarian Pillagers"
-        es = ""
+        es = "Saqueadores bárbaros"
     }
     // context: ::Const.EntityType.LegendBarbarianBloodletter.::Const.EntityType.addNew()
     {
         en = "Barbarian Bloodletter"
-        es = ""
+        es = "Sangrador bárbaro"
     }
     // context: ::Const.EntityType.LegendBarbarianBloodletter.::Const.EntityType.addNew()
     {
         en = "Barbarian Bloodletters"
-        es = ""
+        es = "Sangradores bárbaros"
     }
     // context: ::Const.EntityType.LegendBarbarianRunechosen.::Const.EntityType.addNew()
     {
         en = "Barbarian Runechosen"
-        es = ""
+        es = "Elegido rúnico bárbaro"
     }
     // context: ::Const.EntityType.LegendWicht.::Const.EntityType.addNew()
     {
         en = "Wicht"
-        es = ""
+        es = "Wicht"
     }
     // context: ::Const.EntityType.LegendWicht.::Const.EntityType.addNew()
     {
         en = "Wichts"
-        es = ""
+        es = "Wichts"
     }
     // FILE: mod_legends\!!config\_tooltip_templates.nut
     // context: colors
@@ -889,14 +889,14 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Hew"
-        es = ""
+        es = "Hendir"
     }
     // en = "Smite"
     // en base_es
     // context: activesDefs.push().Name
     {
         en = "Obliterate"
-        es = ""
+        es = "Aniquilar"
     }
     // en = "Cudgel"
     // en base_es
@@ -965,7 +965,7 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Harvest"
-        es = ""
+        es = "Cosechar"
     }
     // en = "Shatter"
     // en base_es
@@ -1125,349 +1125,349 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Transform into Bear"
-        es = ""
+        es = "Transformarse en oso"
     }
     // context: activesDefs.push().Name
     {
         en = "Catapult Boulder"
-        es = ""
+        es = "Roca de catapulta"
     }
     // context: activesDefs.push().Name
     {
         en = "Sling Heavy Stone"
-        es = ""
+        es = "Lanzar piedra pesada"
     }
     // context: activesDefs.push().Name
     {
         en = "Shoot Dart"
-        es = ""
+        es = "Disparar dardo"
     }
     // context: activesDefs.push().Name
     {
         en = "Run Through"
-        es = ""
+        es = "Atravesar"
     }
     // context: activesDefs.push().Name
     {
         en = "Cat Bite"
-        es = ""
+        es = "Mordida de gato"
     }
     // context: activesDefs.push().Name
     {
         en = "Skin Ghoul Claws"
-        es = ""
+        es = "Garras de necrófago desollado"
     }
     // context: activesDefs.push().Name
     {
         en = "White Direwolf Bite"
-        es = ""
+        es = "Mordida de lobo huargo blanco"
     }
     // context: activesDefs.push().Name
     {
         en = "Redback Webknecht Bite"
-        es = ""
+        es = "Mordida de Webknecht de lomo rojo"
     }
     // context: activesDefs.push().Name
     {
         en = "Höllenhund Bite"
-        es = ""
+        es = "Mordida de Höllenhund"
     }
     // context: activesDefs.push().Name
     {
         en = "Horse Kick"
-        es = ""
+        es = "Coz de caballo"
     }
     // context: activesDefs.push().Name
     {
         en = "Donkey Kick"
-        es = ""
+        es = "Coz de burro"
     }
     // context: activesDefs.push().Name
     {
         en = "Bear Bite"
-        es = ""
+        es = "Mordida de oso"
     }
     // context: activesDefs.push().Name
     {
         en = "Bear Claws"
-        es = ""
+        es = "Garras de oso"
     }
     // context: activesDefs.push().Name
     {
         en = "Flagellate"
-        es = ""
+        es = "Flagelar"
     }
     // context: activesDefs.push().Name
     {
         en = "Boar Gore"
-        es = ""
+        es = "Colmillazo de jabalí"
     }
     // context: activesDefs.push().Name
     {
         en = "Rat Claws"
-        es = ""
+        es = "Garras de rata"
     }
     // context: activesDefs.push().Name
     {
         en = "Rat Bite"
-        es = ""
+        es = "Mordida de rata"
     }
     // context: activesDefs.push().Name
     {
         en = "En Garde"
-        es = ""
+        es = "En guardia"
     }
     // context: activesDefs.push().Name
     {
         en = "Terror"
-        es = ""
+        es = "Terror"
     }
     // context: activesDefs.push().Name
     {
         en = "Peck"
-        es = ""
+        es = "Picotazo"
     }
     // context: activesDefs.push().Name
     {
         en = "Inject"
-        es = ""
+        es = "Inyectar"
     }
     // context: activesDefs.push().Name
     {
         en = "Fowl Eye"
-        es = ""
+        es = "Mal de ojo"
     }
     // en = "Grapple"
     // en base_es
     // context: activesDefs.push().Name
     {
         en = "Buckler Bash"
-        es = ""
+        es = "Golpe de broquel"
     }
     // context: activesDefs.push().Name
     {
         en = "Offhand Puncture"
-        es = ""
+        es = "Punción secundaria"
     }
     // context: activesDefs.push().Name
     {
         en = "Choke"
-        es = ""
+        es = "Estrangular"
     }
     // context: activesDefs.push().Name
     {
         en = "Banshee Scream"
-        es = ""
+        es = "Grito de banshee"
     }
     // context: activesDefs.push().Name
     {
         en = "Stupefy"
-        es = ""
+        es = "Pasmar"
     }
     // context: activesDefs.push().Name
     {
         en = "Song of Life"
-        es = ""
+        es = "Canción de vida"
     }
     // context: activesDefs.push().Name
     {
         en = "War Chant"
-        es = ""
+        es = "Canto de guerra"
     }
     // context: activesDefs.push().Name
     {
         en = "Push Forward"
-        es = ""
+        es = "Avanzar"
     }
     // context: activesDefs.push().Name
     {
         en = "Hold the line"
-        es = ""
+        es = "Mantener la línea"
     }
     // context: activesDefs.push().Name
     {
         en = "Horse Charge"
-        es = ""
+        es = "Carga a caballo"
     }
     // context: activesDefs.push().Name
     {
         en = "Infatuate"
-        es = ""
+        es = "Enamorar"
     }
     // context: activesDefs.push().Name
     {
         en = "Revolt"
-        es = ""
+        es = "Repugnar"
     }
     // context: activesDefs.push().Name
     {
         en = "Pirouette"
-        es = ""
+        es = "Pirueta"
     }
     // context: activesDefs.push().Name
     {
         en = "Missile"
-        es = ""
+        es = "Proyectil"
     }
     // context: activesDefs.push().Name
     {
         en = "Loose Stone"
-        es = ""
+        es = "Disparar piedra"
     }
     // context: activesDefs.push().Name
     {
         en = "Precise Shot"
-        es = ""
+        es = "Disparo preciso"
     }
     // context: activesDefs.push().Name
     {
         en = "Boar Charge"
-        es = ""
+        es = "Carga de jabalí"
     }
     // context: activesDefs.push().Name
     {
         en = "Burrow Tail"
-        es = ""
+        es = "Excavar con la cola"
     }
     // context: activesDefs.push().Name
     {
         en = "Citrinitas (Trance)"
-        es = ""
+        es = "Citrinitas (Trance)"
     }
     // context: activesDefs.push().Name
     {
         en = "Mark Target"
-        es = ""
+        es = "Marcar objetivo"
     }
     // context: activesDefs.push().Name
     {
         en = "Throw Knife"
-        es = ""
+        es = "Arrojar cuchillo"
     }
     // context: activesDefs.push().Name
     {
         en = "Conjure Nightmare"
-        es = ""
+        es = "Conjurar pesadilla"
     }
     // context: activesDefs.push().Name
     {
         en = "Shadow Mist"
-        es = ""
+        es = "Niebla de sombras"
     }
     // context: activesDefs.push().Name
     {
         en = "Howl"
-        es = ""
+        es = "Aullido"
     }
     // context: activesDefs.push().Name
     {
         en = "White Wolf Howl"
-        es = ""
+        es = "Aullido de lobo blanco"
     }
     // context: activesDefs.push().Name
     {
         en = "Realm of Nightmares"
-        es = ""
+        es = "Reino de pesadillas"
     }
     // context: activesDefs.push().Name
     {
         en = "Pale Touch"
-        es = ""
+        es = "Toque pálido"
     }
     // context: activesDefs.push().Name
     {
         en = "Wail"
-        es = ""
+        es = "Gemido"
     }
     // context: activesDefs.push().Name
     {
         en = "Albedo"
-        es = ""
+        es = "Albedo"
     }
     // context: activesDefs.push().Name
     {
         en = "Chopper sick balls!"
-        es = ""
+        es = "¡Chopper, a los huevos!"
     }
     // context: activesDefs.push().Name
     {
         en = "Defend! Good boy!"
-        es = ""
+        es = "¡Defiende! ¡Buen chico!"
     }
     // context: activesDefs.push().Name
     {
         en = "Bribe"
-        es = ""
+        es = "Sobornar"
     }
     // context: activesDefs.push().Name
     {
         en = "Call Lightning"
-        es = ""
+        es = "Llamar al rayo"
     }
     // context: activesDefs.push().Name
     {
         en = "Cascade Strike"
-        es = ""
+        es = "Golpe en cascada"
     }
     // context: activesDefs.push().Name
     {
         en = "Chain Lightning"
-        es = ""
+        es = "Rayo en cadena"
     }
     // context: activesDefs.push().Name
     {
         en = "Cheer On"
-        es = ""
+        es = "Animar"
     }
     // context: activesDefs.push().Name
     {
         en = "Climb"
-        es = ""
+        es = "Trepar"
     }
     // context: activesDefs.push().Name
     {
         en = "Coordinated Volleys"
-        es = ""
+        es = "Descargas coordinadas"
     }
     // context: activesDefs.push().Name
     {
         en = "Decrepify"
-        es = ""
+        es = "Avejentar"
     }
     // context: activesDefs.push().Name
     {
         en = "Danger Pay"
-        es = ""
+        es = "Paga de riesgo"
     }
     // context: activesDefs.push().Name
     {
         en = "Death Touch"
-        es = ""
+        es = "Toque mortal"
     }
     // context: activesDefs.push().Name
     {
         en = "Realm of Burning Nightmares"
-        es = ""
+        es = "Reino de pesadillas ardientes"
     }
     // context: activesDefs.push().Name
     {
         en = "Dog Handling"
-        es = ""
+        es = "Manejo de perros"
     }
     // context: activesDefs.push().Name
     {
         en = "Dog Master"
-        es = ""
+        es = "Amo de perros"
     }
     // context: activesDefs.push().Name
     {
         en = "Drain Life"
-        es = ""
+        es = "Drenar vida"
     }
     // context: activesDefs.push().Name
     {
         en = "Drink or Give Beer"
-        es = ""
+        es = "Beber o dar cerveza"
     }
     // context: activesDefs.push().Name
     {
@@ -1497,12 +1497,12 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Drink or Give Liquor"
-        es = ""
+        es = "Beber o dar licor"
     }
     // context: activesDefs.push().Name
     {
         en = "Drink or Give Mead"
-        es = ""
+        es = "Beber o dar hidromiel"
     }
     // context: activesDefs.push().Name
     {
@@ -1532,492 +1532,492 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Drink or Give Wine"
-        es = ""
+        es = "Beber o dar vino"
     }
     // context: activesDefs.push().Name
     {
         en = "Eat or Give Pie"
-        es = ""
+        es = "Comer o dar pastel"
     }
     // context: activesDefs.push().Name
     {
         en = "Eat or Give Porridge"
-        es = ""
+        es = "Comer o dar gachas"
     }
     // context: activesDefs.push().Name
     {
         en = "Eat or Give Pudding"
-        es = ""
+        es = "Comer o dar pudin"
     }
     // context: activesDefs.push().Name
     {
         en = "Eat or Give Food"
-        es = ""
+        es = "Comer o dar comida"
     }
     // context: activesDefs.push().Name
     {
         en = "Enthrall"
-        es = ""
+        es = "Cautivar"
     }
     // context: activesDefs.push().Name
     {
         en = "Entice"
-        es = ""
+        es = "Tentar"
     }
     // context: activesDefs.push().Name
     {
         en = "Evasion"
-        es = ""
+        es = "Evasión"
     }
     // context: activesDefs.push().Name
     {
         en = "Unleash Falcon"
-        es = ""
+        es = "Liberar halcón"
     }
     // context: activesDefs.push().Name
     {
         en = "Field Repairs"
-        es = ""
+        es = "Reparaciones de campaña"
     }
     // context: activesDefs.push().Name
     {
         en = "Field Treats"
-        es = ""
+        es = "Agasajos de campaña"
     }
     // context: activesDefs.push().Name
     {
         en = "Field Triage"
-        es = ""
+        es = "Triaje de campaña"
     }
     // en = "Fire Pot"
     // en base_es
     // context: activesDefs.push().Name
     {
         en = "Flogging"
-        es = ""
+        es = "Azotes"
     }
     // context: activesDefs.push().Name
     {
         en = "Fortify"
-        es = ""
+        es = "Fortificar"
     }
     // context: activesDefs.push().Name
     {
         en = "Grow Greenwood Shield"
-        es = ""
+        es = "Crecer corteza verde"
     }
     // context: activesDefs.push().Name
     {
         en = "Guide steps"
-        es = ""
+        es = "Guiar los pasos"
     }
     // context: activesDefs.push().Name
     {
         en = "Harvest Bush"
-        es = ""
+        es = "Cosechar arbusto"
     }
     // context: activesDefs.push().Name
     {
         en = "Crush Rock"
-        es = ""
+        es = "Triturar roca"
     }
     // context: activesDefs.push().Name
     {
         en = "Harvest Tree"
-        es = ""
+        es = "Cosechar árbol"
     }
     // en = "Hide"
     // context: activesDefs.push().Name
     {
         en = "Holy Flame"
-        es = ""
+        es = "Llama sagrada"
     }
     // context: activesDefs.push().Name
     {
         en = "Horrify"
-        es = ""
+        es = "Horrorizar"
     }
     // context: activesDefs.push().Name
     {
         en = "Incoming!"
-        es = ""
+        es = "¡A cubierto!"
     }
     // context: activesDefs.push().Name
     {
         en = "Inspire"
-        es = ""
+        es = "Inspirar"
     }
     // context: activesDefs.push().Name
     {
         en = "Kick"
-        es = ""
+        es = "Patada"
     }
     // context: activesDefs.push().Name
     {
         en = "Leap"
-        es = ""
+        es = "Salto"
     }
     // context: activesDefs.push().Name
     {
         en = "Levitate Person"
-        es = ""
+        es = "Levitar a alguien"
     }
     // context: activesDefs.push().Name
     {
         en = "Burning Hands"
-        es = ""
+        es = "Manos ardientes"
     }
     // context: activesDefs.push().Name
     {
         en = "Magic Circle of Protection"
-        es = ""
+        es = "Círculo mágico de protección"
     }
     // context: activesDefs.push().Name
     {
         en = "Hailstone"
-        es = ""
+        es = "Pedrisco"
     }
     // context: activesDefs.push().Name
     {
         en = "Healing Mist"
-        es = ""
+        es = "Niebla sanadora"
     }
     // context: activesDefs.push().Name
     {
         en = "Imbue"
-        es = ""
+        es = "Imbuir"
     }
     // context: activesDefs.push().Name
     {
         en = "Psybeam"
-        es = ""
+        es = "Psicorrayo"
     }
     // context: activesDefs.push().Name
     {
         en = "Soothing Wind"
-        es = ""
+        es = "Viento calmante"
     }
     // context: activesDefs.push().Name
     {
         en = "Stun"
-        es = ""
+        es = "Deslumbrar"
     }
     // context: activesDefs.push().Name
     {
         en = "Web Bolt"
-        es = ""
+        es = "Saeta de telaraña"
     }
     // context: activesDefs.push().Name
     {
         en = "Minor Sleep"
-        es = ""
+        es = "Sueño menor"
     }
     // context: activesDefs.push().Name
     {
         en = "Nightvision"
-        es = ""
+        es = "Visión nocturna"
     }
     // context: activesDefs.push().Name
     {
         en = "Nigredo"
-        es = ""
+        es = "Nigredo"
     }
     // context: activesDefs.push().Name
     {
         en = "Drink from Amphora"
-        es = ""
+        es = "Beber del ánfora"
     }
     // context: activesDefs.push().Name
     {
         en = "Pass Item"
-        es = ""
+        es = "Pasar objeto"
     }
     // context: activesDefs.push().Name
     {
         en = "Piercing Bolt"
-        es = ""
+        es = "Virote perforante"
     }
     // context: activesDefs.push().Name
     {
         en = "Piercing Shot"
-        es = ""
+        es = "Disparo perforante"
     }
     // context: activesDefs.push().Name
     {
         en = "Prayer of Faith"
-        es = ""
+        es = "Plegaria de fe"
     }
     // context: activesDefs.push().Name
     {
         en = "Prayer of Hope"
-        es = ""
+        es = "Plegaria de esperanza"
     }
     // context: activesDefs.push().Name
     {
         en = "Prepare to Bleed"
-        es = ""
+        es = "Preparar sangrado"
     }
     // context: activesDefs.push().Name
     {
         en = "Prepare to Graze"
-        es = ""
+        es = "Preparar rozaduras"
     }
     // context: activesDefs.push().Name
     {
         en = "Wind Up"
-        es = ""
+        es = "Tomar impulso"
     }
     // context: activesDefs.push().Name
     {
         en = "Quick Step"
-        es = ""
+        es = "Paso rápido"
     }
     // context: activesDefs.push().Name
     {
         en = "Conduct Seance"
-        es = ""
+        es = "Celebrar sesión"
     }
     // context: activesDefs.push().Name
     {
         en = "Read Omens (Trance)"
-        es = ""
+        es = "Leer presagios (Trance)"
     }
     // context: activesDefs.push().Name
     {
         en = "Redback Poison Puncture"
-        es = ""
+        es = "Punción con veneno de lomo rojo"
     }
     // context: activesDefs.push().Name
     {
         en = "Relax"
-        es = ""
+        es = "Relajar"
     }
     // context: activesDefs.push().Name
     {
         en = "Rust"
-        es = ""
+        es = "Oxidar"
     }
     // en = "Safeguard"
     // en base_es
     // context: activesDefs.push().Name
     {
         en = "Scry"
-        es = ""
+        es = "Escrutar"
     }
     // context: activesDefs.push().Name
     {
         en = "Scry Area (Trance)"
-        es = ""
+        es = "Escrutar zona (Trance)"
     }
     // context: activesDefs.push().Name
     {
         en = "Life Siphon"
-        es = ""
+        es = "Absorber vida"
     }
     // context: activesDefs.push().Name
     {
         en = "Slingstaff Bash"
-        es = ""
+        es = "Golpe de fustíbalo"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Heavy Archer Skeleton"
-        es = ""
+        es = "Invocar esqueleto arquero pesado"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Heavy Skeleton"
-        es = ""
+        es = "Invocar esqueleto pesado"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Light Archer Skeleton"
-        es = ""
+        es = "Invocar esqueleto arquero ligero"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Light Skeleton"
-        es = ""
+        es = "Invocar esqueleto ligero"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Medium Archer Skeleton"
-        es = ""
+        es = "Invocar esqueleto arquero medio"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Medium Skeleton"
-        es = ""
+        es = "Invocar esqueleto medio"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Heavy Zombie"
-        es = ""
+        es = "Invocar zombi pesado"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Heavy Xbow Zombie"
-        es = ""
+        es = "Invocar zombi ballestero pesado"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Light Zombie"
-        es = ""
+        es = "Invocar zombi ligero"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Light Xbow Zombie"
-        es = ""
+        es = "Invocar zombi ballestero ligero"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Medium Zombie"
-        es = ""
+        es = "Invocar zombi medio"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Medium Xbow Zombie"
-        es = ""
+        es = "Invocar zombi ballestero medio"
     }
     // context: activesDefs.push().Name
     {
         en = "Strafing Run"
-        es = ""
+        es = "Disparo en carrera"
     }
     // context: activesDefs.push().Name
     {
         en = "Burrow"
-        es = ""
+        es = "Excavar"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Storm"
-        es = ""
+        es = "Invocar tormenta"
     }
     // context: activesDefs.push().Name
     {
         en = "Tackle"
-        es = ""
+        es = "Placaje"
     }
     // context: activesDefs.push().Name
     {
         en = "Transform into Boar"
-        es = ""
+        es = "Transformarse en jabalí"
     }
     // context: activesDefs.push().Name
     {
         en = "Transform into Rat"
-        es = ""
+        es = "Transformarse en rata"
     }
     // context: activesDefs.push().Name
     {
         en = "Transform into Schrat"
-        es = ""
+        es = "Transformarse en schrat"
     }
     // context: activesDefs.push().Name
     {
         en = "Transform into Wolf"
-        es = ""
+        es = "Transformarse en lobo"
     }
     // context: activesDefs.push().Name
     {
         en = "Into The Fray"
-        es = ""
+        es = "A la refriega"
     }
     // context: activesDefs.push().Name
     {
         en = "Haftstrike"
-        es = ""
+        es = "Golpe de asta"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Bear"
-        es = ""
+        es = "Invocar oso"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Catapult"
-        es = ""
+        es = "Invocar catapulta"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Cat"
-        es = ""
+        es = "Invocar gato"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Hound"
-        es = ""
+        es = "Invocar sabueso"
     }
     // context: activesDefs.push().Name
     {
         en = "Unleash Warbear"
-        es = ""
+        es = "Liberar oso de guerra"
     }
     // context: activesDefs.push().Name
     {
         en = "Unleash White Wolf"
-        es = ""
+        es = "Liberar lobo blanco"
     }
     // context: activesDefs.push().Name
     {
         en = "Summon Wolf"
-        es = ""
+        es = "Invocar lobo"
     }
     // context: activesDefs.push().Name
     {
         en = "Violent Decomposition"
-        es = ""
+        es = "Descomposición violenta"
     }
     // context: activesDefs.push().Name
     {
         en = "Wake Allies"
-        es = ""
+        es = "Despertar aliados"
     }
     // context: activesDefs.push().Name
     {
         en = "Direwolf Claws"
-        es = ""
+        es = "Garras de lobo huargo"
     }
     // context: activesDefs.push().Name
     {
         en = "Stab with Wooden Stake"
-        es = ""
+        es = "Apuñalar con estaca de madera"
     }
     // context: activesDefs.push().Name
     {
         en = "Launch Acid Flask"
-        es = ""
+        es = "Disparar frasco de ácido"
     }
     // context: activesDefs.push().Name
     {
         en = "Launch Daze Bomb"
-        es = ""
+        es = "Disparar bomba aturdidora"
     }
     // context: activesDefs.push().Name
     {
         en = "Launch Fire Bomb"
-        es = ""
+        es = "Disparar bomba de fuego"
     }
     // context: activesDefs.push().Name
     {
         en = "Launch Blessed Water"
-        es = ""
+        es = "Disparar agua bendita"
     }
     // context: activesDefs.push().Name
     {
         en = "Launch Smoke Bomb"
-        es = ""
+        es = "Disparar bomba de humo"
     }
     // context: activesDefs.push().Name
     {
         en = "Martial March"
-        es = ""
+        es = "Marcha marcial"
     }
     // context: activesDefs.push().Name
     {
         en = "Second Wind"
-        es = ""
+        es = "Segundo aire"
     }
     // en = "Castigate"
     // en base_es
@@ -2026,34 +2026,34 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Sighthound Bite"
-        es = ""
+        es = "Mordida de lebrel"
     }
     // context: activesDefs.push().Name
     {
         en = "Legend Unleash Sighthound"
-        es = ""
+        es = "Liberar lebrel"
     }
     // context: activesDefs.push().Name
     {
         en = "Command Legionary"
-        es = ""
+        es = "Ordenar al legionario"
     }
     // en = "Heartseeker"
     // en base_es
     // context: activesDefs.push().Name
     {
         en = "Pry Armor"
-        es = ""
+        es = "Forzar armadura"
     }
     // context: activesDefs.push().Name
     {
         en = "Flourish"
-        es = ""
+        es = "Floritura"
     }
     // context: activesDefs.push().Name
     {
         en = "Enraged Hyena Bite"
-        es = ""
+        es = "Mordida de hiena enfurecida"
     }
     // en = "Clout"
     // en base_es
@@ -2070,12 +2070,12 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Double Swing"
-        es = ""
+        es = "Doble corte amplio"
     }
     // context: activesDefs.push().Name
     {
         en = "Line Them Up"
-        es = ""
+        es = "En fila"
     }
     // en = "Smack"
     // en base_es
@@ -6779,189 +6779,189 @@ local pairs = [
     // context: effectsDefs.push().Name
     {
         en = "Buzzed"
-        es = ""
+        es = "Achispado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Tipsy"
-        es = ""
+        es = "Alegre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Warmth"
-        es = ""
+        es = "Calidez"
     }
     // context: effectsDefs.push().Name
     {
         en = "Liquor Burn"
-        es = ""
+        es = "Ardor del licor"
     }
     // context: effectsDefs.push().Name
     {
         en = "Disharmony"
-        es = ""
+        es = "Disonancia"
     }
     // en = "Fury"
     // en base_es
     // context: effectsDefs.push().Name
     {
         en = "Heightened Senses"
-        es = ""
+        es = "Sentidos agudizados"
     }
     // context: effectsDefs.push().Name
     {
         en = "Currently Chanting"
-        es = ""
+        es = "Cantando"
     }
     // context: effectsDefs.push().Name
     {
         en = "In Trance"
-        es = ""
+        es = "En trance"
     }
     // context: effectsDefs.push().Name
     {
         en = "Consecrated"
-        es = ""
+        es = "Consagrado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Sanctified"
-        es = ""
+        es = "Santificado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Parried"
-        es = ""
+        es = "Contrarrestado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Bleeding from Grazes"
-        es = ""
+        es = "Sangrando por rozaduras"
     }
     // context: effectsDefs.push().Name
     {
         en = "Infatuated"
-        es = ""
+        es = "Enamorado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Baffled"
-        es = ""
+        es = "Desconcertado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Choked"
-        es = ""
+        es = "Estrangulado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Knocked Over"
-        es = ""
+        es = "Derribado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Redback Poisoned"
-        es = ""
+        es = "Envenenado por lomo rojo"
     }
     // context: effectsDefs.push().Name
     {
         en = "Stupefied"
-        es = ""
+        es = "Pasmado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Grappled"
-        es = ""
+        es = "Agarrado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Safeguarding"
-        es = ""
+        es = "Resguardando"
     }
     // context: effectsDefs.push().Name
     {
         en = "Threw Sand"
-        es = ""
+        es = "Lanzó arena"
     }
     // context: effectsDefs.push().Name
     {
         en = "Wolfsbane Scent"
-        es = ""
+        es = "Olor a acónito"
     }
     // context: effectsDefs.push().Name
     {
         en = "Engulfed By Darkness"
-        es = ""
+        es = "Envuelto en tinieblas"
     }
     // context: effectsDefs.push().Name
     {
         en = "Purple Haze"
-        es = ""
+        es = "Neblina púrpura"
     }
     // context: effectsDefs.push().Name
     {
         en = "Cheered On"
-        es = ""
+        es = "Animado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Motivated"
-        es = ""
+        es = "Motivado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Höllenhund Curse"
-        es = ""
+        es = "Maldición del Höllenhund"
     }
     // context: effectsDefs.push().Name
     {
         en = "Satiated"
-        es = ""
+        es = "Saciado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Stuffed"
-        es = ""
+        es = "Atiborrado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Evading"
-        es = ""
+        es = "Evadiendo"
     }
     // context: effectsDefs.push().Name
     {
         en = "Summoned a Falcon"
-        es = ""
+        es = "Ha invocado un halcón"
     }
     // context: effectsDefs.push().Name
     {
         en = "Steps Guided"
-        es = ""
+        es = "Pasos guiados"
     }
     // context: effectsDefs.push().Name
     {
         en = "Holding the Line"
-        es = ""
+        es = "Manteniendo la línea"
     }
     // context: effectsDefs.push().Name
     {
         en = "Dodging Incoming Projectiles"
-        es = ""
+        es = "Esquivando proyectiles"
     }
     // context: effectsDefs.push().Name
     {
         en = "Inspired"
-        es = ""
+        es = "Inspirado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Levitating"
-        es = ""
+        es = "Levitando"
     }
     // context: effectsDefs.push().Name
     {
         en = "Prepared to Inflict Bleeding"
-        es = ""
+        es = "Listo para causar sangrado"
     }
     // context: effectsDefs.push().Name
     {
@@ -6971,206 +6971,206 @@ local pairs = [
     // context: effectsDefs.push().Name
     {
         en = "Prepared to Inflict Knockback."
-        es = ""
+        es = "Listo para hacer retroceder."
     }
     // context: effectsDefs.push().Name
     {
         en = "Guarded"
-        es = ""
+        es = "Custodiado"
     }
     // en = "Guarding"
     // en base_es
     // context: effectsDefs.push().Name
     {
         en = "Pushing Forward"
-        es = ""
+        es = "Avanzando"
     }
     // context: effectsDefs.push().Name
     {
         en = "Omens Foretold"
-        es = ""
+        es = "Presagios anunciados"
     }
     // context: effectsDefs.push().Name
     {
         en = "Safeguarded"
-        es = ""
+        es = "Resguardado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Summoned a Bear"
-        es = ""
+        es = "Ha invocado un oso"
     }
     // context: effectsDefs.push().Name
     {
         en = "Summoned a Catapult"
-        es = ""
+        es = "Ha invocado una catapulta"
     }
     // context: effectsDefs.push().Name
     {
         en = "Summoned a Hound"
-        es = ""
+        es = "Ha invocado un sabueso"
     }
     // context: effectsDefs.push().Name
     {
         en = "Summoned a Wolf"
-        es = ""
+        es = "Ha invocado un lobo"
     }
     // context: effectsDefs.push().Name
     {
         en = "Summoned a Sighthound"
-        es = ""
+        es = "Ha invocado un lebrel"
     }
     // en = "Bone Plating"
     // en base_es
     // context: effectsDefs.push().Name
     {
         en = "Buckler Defense"
-        es = ""
+        es = "Defensa del broquel"
     }
     // context: effectsDefs.push().Name
     {
         en = "Sluggish"
-        es = ""
+        es = "Aletargado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Disintegrating"
-        es = ""
+        es = "Desintegrándose"
     }
     // context: effectsDefs.push().Name
     {
         en = "Drums of Life"
-        es = ""
+        es = "Tambores de Vida"
     }
     // context: effectsDefs.push().Name
     {
         en = "Heartwood Focus"
-        es = ""
+        es = "Concentración del duramen"
     }
     // context: effectsDefs.push().Name
     {
         en = "Hexe Ichor Potion"
-        es = ""
+        es = "Poción de icor de Hexe"
     }
     // context: effectsDefs.push().Name
     {
         en = "Hunting Big Game"
-        es = ""
+        es = "De caza mayor"
     }
     // context: effectsDefs.push().Name
     {
         en = "Imbued"
-        es = ""
+        es = "Imbuido"
     }
     // context: effectsDefs.push().Name
     {
         en = "For the Captain!"
-        es = ""
+        es = "¡Por el capitán!"
     }
     // context: effectsDefs.push().Name
     {
         en = "Lurking"
-        es = ""
+        es = "Al acecho"
     }
     // context: effectsDefs.push().Name
     {
         en = "Band of Brothers"
-        es = ""
+        es = "Banda de hermanos"
     }
     // context: effectsDefs.push().Name
     {
         en = "Protected"
-        es = ""
+        es = "Bajo protección"
     }
     // context: effectsDefs.push().Name
     {
         en = "Marked"
-        es = ""
+        es = "Marcado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Curse of the Mummy"
-        es = ""
+        es = "Maldición de la momia"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Axe"
-        es = ""
+        es = "Hacha de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Estoc"
-        es = ""
+        es = "Estoque de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Fencing Sword"
-        es = ""
+        es = "Espada de esgrima de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Flail"
-        es = ""
+        es = "Mayal de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Hammer Stun"
-        es = ""
+        es = "Aturdimiento del martillo de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Mace Stagger"
-        es = ""
+        es = "Tambaleo de la maza de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Shamshir"
-        es = ""
+        es = "Shamshir de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Whip Bleed"
-        es = ""
+        es = "Sangrado del látigo de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Named Whip Feint"
-        es = ""
+        es = "Finta del látigo de renombre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Parrying Dagger Defense"
-        es = ""
+        es = "Defensa de daga de parada"
     }
     // context: effectsDefs.push().Name
     {
         en = "Blooddrinker"
-        es = ""
+        es = "Bebedor de sangre"
     }
     // context: effectsDefs.push().Name
     {
         en = "Parrying Stance"
-        es = ""
+        es = "Postura de parada"
     }
     // context: effectsDefs.push().Name
     {
         en = "Reassured"
-        es = ""
+        es = "Tranquilizado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Porridge"
-        es = ""
+        es = "Gachas"
     }
     // context: effectsDefs.push().Name
     {
         en = "Infected"
-        es = ""
+        es = "Infectado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Scroll Effect"
-        es = ""
+        es = "Efecto de pergamino"
     }
     // context: effectsDefs.push().Const
     {
@@ -7182,47 +7182,47 @@ local pairs = [
     // context: effectsDefs.push().Name
     {
         en = "Skin Ghoul Blood"
-        es = ""
+        es = "Sangre de necrófago desollado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Sprinting"
-        es = ""
+        es = "A la carrera"
     }
     // context: effectsDefs.push().Name
     {
         en = "Stollwurm Vigor"
-        es = ""
+        es = "Vigor de Stollwurm"
     }
     // context: effectsDefs.push().Name
     {
         en = "Spiritual Bond"
-        es = ""
+        es = "Vínculo espiritual"
     }
     // context: effectsDefs.push().Name
     {
         en = "Threads of Fate"
-        es = ""
+        es = "Hilos del destino"
     }
     // context: effectsDefs.push().Name
     {
         en = "Haunted"
-        es = ""
+        es = "Embrujado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Observed"
-        es = ""
+        es = "Observado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Warden Damage Scaling"
-        es = ""
+        es = "Escalado de daño del guardián"
     }
     // context: effectsDefs.push().Name
     {
         en = "Vengeance!"
-        es = ""
+        es = "¡Venganza!"
     }
     // context: effectsDefs.push().Name
     {
@@ -7232,27 +7232,27 @@ local pairs = [
     // context: effectsDefs.push().Name
     {
         en = "Brothers in Chains"
-        es = ""
+        es = "Hermanos encadenados"
     }
     // context: effectsDefs.push().Name
     {
         en = "Headache"
-        es = ""
+        es = "Dolor de cabeza"
     }
     // context: effectsDefs.push().Name
     {
         en = "Irritable"
-        es = ""
+        es = "Irritable"
     }
     // context: effectsDefs.push().Name
     {
         en = "Well Tended"
-        es = ""
+        es = "Bien atendido"
     }
     // context: effectsDefs.push().Name
     {
         en = "Blinded"
-        es = ""
+        es = "Cegado"
     }
     // en = "Night"
     // en base_es
@@ -7280,152 +7280,152 @@ local pairs = [
     // context: effectsDefs.push().Name
     {
         en = "Raining"
-        es = ""
+        es = "Lloviendo"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Endurance"
-        es = ""
+        es = "Sello rúnico: Resistencia"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Resilience"
-        es = ""
+        es = "Sello rúnico: Resiliencia"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Safety"
-        es = ""
+        es = "Sello rúnico: Seguridad"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Bravery"
-        es = ""
+        es = "Sello rúnico: Valentía"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Clarity"
-        es = ""
+        es = "Sello rúnico: Claridad"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Luck"
-        es = ""
+        es = "Sello rúnico: Suerte"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Patience"
-        es = ""
+        es = "Sello rúnico: Paciencia"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Defense"
-        es = ""
+        es = "Sello rúnico: Defensa"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Radiance"
-        es = ""
+        es = "Sello rúnico: Resplandor"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Durability"
-        es = ""
+        es = "Sello rúnico: Durabilidad"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Accuracy"
-        es = ""
+        es = "Sello rúnico: Precisión"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Bleeding"
-        es = ""
+        es = "Sello rúnico: Sangrado"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Feeding"
-        es = ""
+        es = "Sello rúnico: Alimentación"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Blazing"
-        es = ""
+        es = "Sello rúnico: Llameante"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Poison"
-        es = ""
+        es = "Sello rúnico: Veneno"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Power"
-        es = ""
+        es = "Sello rúnico: Poder"
     }
     // context: effectsDefs.push().Name
     {
         en = "Rune Sigil: Unbreaking"
-        es = ""
+        es = "Sello rúnico: Irrompible"
     }
     // context: effectsDefs.push().Name
     {
         en = "Relationship Check"
-        es = ""
+        es = "Comprobación de relación"
     }
     // context: effectsDefs.push().Name
     {
         en = "Gravedigging"
-        es = ""
+        es = "Cavando tumbas"
     }
     // context: effectsDefs.push().Name
     {
         en = "Prepare Bullet"
-        es = ""
+        es = "Preparar disparo"
     }
     // context: effectsDefs.push().Name
     {
         en = "Commanded"
-        es = ""
+        es = "Bajo órdenes"
     }
     // context: effectsDefs.push().Name
     {
         en = "Ram Hammer"
-        es = ""
+        es = "Martillo del carnero"
     }
     // context: effectsDefs.push().Name
     {
         en = "Compromised Armor"
-        es = ""
+        es = "Armadura comprometida"
     }
     // context: effectsDefs.push().Name
     {
         en = "Freedom of Movement"
-        es = ""
+        es = "Libertad de movimiento"
     }
     // context: effectsDefs.push().Name
     {
         en = "Locked in Jaws"
-        es = ""
+        es = "Atrapado entre las fauces"
     }
     // context: effectsDefs.push().Name
     {
         en = "Predatory Grip"
-        es = ""
+        es = "Presa depredadora"
     }
     // context: effectsDefs.push().Name
     {
         en = "Patient Hunter"
-        es = ""
+        es = "Cazador paciente"
     }
     // context: effectsDefs.push().Name
     {
         en = "Dual Wielding"
-        es = ""
+        es = "Con dos armas"
     }
     // context: effectsDefs.push().Name
     {
         en = "Constrained"
-        es = ""
+        es = "Constreñido"
     }
     // FILE: mod_legends\!!config\item_names.nut
     // en = "Estoc"
@@ -8302,56 +8302,56 @@ local pairs = [
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Beast"
-        es = ""
+        es = "Bestia"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Berserker"
-        es = ""
+        es = "Berserker"
     }
     // en = "Wolf"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Predator"
-        es = ""
+        es = "Depredador"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Hag's Bane"
-        es = ""
+        es = "Ruina de la bruja"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Witch's Doom"
-        es = ""
+        es = "Perdición de la bruja"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Hag's End"
-        es = ""
+        es = "Fin de la bruja"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Curse Lifter"
-        es = ""
+        es = "Rompemaldiciones"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Ornament"
-        es = ""
+        es = "Ornamento"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Ribbon"
-        es = ""
+        es = "Cinta"
     }
     // en = "Blazing Dome"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Owl"
-        es = ""
+        es = "Búho"
     }
     // en = "Ward"
     // en base_es
@@ -8360,17 +8360,17 @@ local pairs = [
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Sea Raider"
-        es = ""
+        es = "Asaltante marino"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Chieftain"
-        es = ""
+        es = "Caudillo"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Engraving"
-        es = ""
+        es = "Grabado"
     }
     // en = "Horn"
     // en base_es
@@ -8379,36 +8379,36 @@ local pairs = [
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Lizard"
-        es = ""
+        es = "Lagarto"
     }
     // en = "Dragon's Dome"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Faith"
-        es = ""
+        es = "Fe"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Redemption"
-        es = ""
+        es = "Redención"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Penance"
-        es = ""
+        es = "Penitencia"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Rapture"
-        es = ""
+        es = "Éxtasis"
     }
     // en = "Guardian"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Hope"
-        es = ""
+        es = "Esperanza"
     }
     // en = "Bulwark"
     // en base_es
@@ -8417,74 +8417,74 @@ local pairs = [
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Breakers End"
-        es = ""
+        es = "Fin del Quebrantador"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Summit"
-        es = ""
+        es = "Cumbre"
     }
     // en = "Wall"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Halo"
-        es = ""
+        es = "Halo"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Bufo Bufo"
-        es = ""
+        es = "Bufo Bufo"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Treefrog"
-        es = ""
+        es = "Rana arborícola"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Spadefoot"
-        es = ""
+        es = "Sapo de espuelas"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Newt"
-        es = ""
+        es = "Tritón"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Triturus"
-        es = ""
+        es = "Triturus"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Ranid"
-        es = ""
+        es = "Ránido"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Play"
-        es = ""
+        es = "Juego"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Folly's Friend"
-        es = ""
+        es = "Amigo de la locura"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Fool's Crown"
-        es = ""
+        es = "Corona del tonto"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Jolly Folly"
-        es = ""
+        es = "Alegre locura"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Knighthood"
-        es = ""
+        es = "Caballería"
     }
     // en = "Golden Crest"
     // en base_es
@@ -8497,422 +8497,422 @@ local pairs = [
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Silent Shroud"
-        es = ""
+        es = "Mortaja silenciosa"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Reaper's Mirth"
-        es = ""
+        es = "Regocijo de la Parca"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Dawning Hope"
-        es = ""
+        es = "Esperanza naciente"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Shattered Mirage"
-        es = ""
+        es = "Espejismo roto"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Maker's Mark"
-        es = ""
+        es = "Marca del artesano"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Glutton"
-        es = ""
+        es = "Gula"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "King's Bane"
-        es = ""
+        es = "Ruina del rey"
     }
     // en = "Purifier"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Long Grasp"
-        es = ""
+        es = "Largo agarre"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Settlement"
-        es = ""
+        es = "Asentamiento"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Quickening"
-        es = ""
+        es = "Avivamiento"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Mother's Loss"
-        es = ""
+        es = "Pérdida de una madre"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Noble's Demise"
-        es = ""
+        es = "Caída del noble"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Kingslayer"
-        es = ""
+        es = "Matarreyes"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Deathmark"
-        es = ""
+        es = "Marca de la muerte"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Fearblocker"
-        es = ""
+        es = "Paramiedos"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Deathgrip"
-        es = ""
+        es = "Presa mortal"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Fecundity"
-        es = ""
+        es = "Fecundidad"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Sanctity"
-        es = ""
+        es = "Santidad"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Witch Hammer"
-        es = ""
+        es = "Martillo de las brujas"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Magnitude"
-        es = ""
+        es = "Magnitud"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Rise"
-        es = ""
+        es = "Ascenso"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Trinity"
-        es = ""
+        es = "Trinidad"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Diabolica"
-        es = ""
+        es = "Diabólica"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Warthirst"
-        es = ""
+        es = "Sed de guerra"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Marshall's Cry"
-        es = ""
+        es = "Grito del mariscal"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Hopelessness"
-        es = ""
+        es = "Desesperanza"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Struggle"
-        es = ""
+        es = "Lucha"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Umbra"
-        es = ""
+        es = "Umbra"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Optimist's Demise"
-        es = ""
+        es = "Caída del optimista"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Death's Clutch"
-        es = ""
+        es = "Garra de la muerte"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Purity"
-        es = ""
+        es = "Pureza"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Hardpoint"
-        es = ""
+        es = "Punto fuerte"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Shattering"
-        es = ""
+        es = "Quebranto"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Alms"
-        es = ""
+        es = "Limosna"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Monolith"
-        es = ""
+        es = "Monolito"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Noble's Burden"
-        es = ""
+        es = "Carga del noble"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Dark Veil"
-        es = ""
+        es = "Velo oscuro"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Insurmountability"
-        es = ""
+        es = "Insuperable"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Affliction"
-        es = ""
+        es = "Aflicción"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Lucem"
-        es = ""
+        es = "Lucem"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Martyr's Call"
-        es = ""
+        es = "Llamada del mártir"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Reign"
-        es = ""
+        es = "Reinado"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Gambler's Pride"
-        es = ""
+        es = "Orgullo del jugador"
     }
     // en = "Shield"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "God's Bane"
-        es = ""
+        es = "Ruina de los dioses"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Madman's Unitatis"
-        es = ""
+        es = "Unitatis del loco"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Stalwartness"
-        es = ""
+        es = "Entereza"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Mistwalk"
-        es = ""
+        es = "Paso de niebla"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Stalk"
-        es = ""
+        es = "Acecho"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Mithering Doom"
-        es = ""
+        es = "Perdición marchita"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Stonewall"
-        es = ""
+        es = "Muro de piedra"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Setting"
-        es = ""
+        es = "Ocaso"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Crypt Keeper"
-        es = ""
+        es = "Guardacriptas"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Last Gasp"
-        es = ""
+        es = "Último aliento"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Candor"
-        es = ""
+        es = "Candor"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Putrefaction"
-        es = ""
+        es = "Putrefacción"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Doloris Capere"
-        es = ""
+        es = "Doloris Capere"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Falling"
-        es = ""
+        es = "Caída"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Solemn Vow"
-        es = ""
+        es = "Voto solemne"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Deacon's Lament"
-        es = ""
+        es = "Lamento del diácono"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Agilty"
-        es = ""
+        es = "Agilidad"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Curse Bringer"
-        es = ""
+        es = "Portador de maldiciones"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Plague Bringer"
-        es = ""
+        es = "Portador de la peste"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Calm"
-        es = ""
+        es = "Calma"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Chalice"
-        es = ""
+        es = "Cáliz"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Slaying"
-        es = ""
+        es = "Matanza"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Deathmarch"
-        es = ""
+        es = "Marcha de la muerte"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Bounty"
-        es = ""
+        es = "Recompensa"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Mindfire"
-        es = ""
+        es = "Fuego mental"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Swatter"
-        es = ""
+        es = "Matamoscas"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Antiquity"
-        es = ""
+        es = "Antigüedad"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Wanderlust"
-        es = ""
+        es = "Afán viajero"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Profit"
-        es = ""
+        es = "Ganancia"
     }
     // en = "Bane"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Stone Keep"
-        es = ""
+        es = "Torreón de piedra"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Fragmentation"
-        es = ""
+        es = "Fragmentación"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Dishonour"
-        es = ""
+        es = "Deshonra"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Prowess"
-        es = ""
+        es = "Destreza"
     }
     // en = "Cataclysm"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Mind's Cloister"
-        es = ""
+        es = "Claustro de la mente"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Bloat"
-        es = ""
+        es = "Hinchazón"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Beacon"
-        es = ""
+        es = "Almenara"
     }
     // en = "Temple"
     // en base_es
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Chant"
-        es = ""
+        es = "Canto"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Pessimist's Blight"
-        es = ""
+        es = "Plaga del pesimista"
     }
     // context: ::Const.Strings.LegendArmorLayers
     {
         en = "Crusader's Redoubt"
-        es = ""
+        es = "Fortín del cruzado"
     }
     // context: ::Const.Strings.LegendHelmetLayers.extend()
     {
@@ -9057,846 +9057,846 @@ local pairs = [
     // context: ::Const.Strings.PerkName.LegendAnchor
     {
         en = "Anchor"
-        es = ""
+        es = "Ancla"
     }
     // context: ::Const.Strings.PerkName.LegendFirstBlood
     {
         en = "First Blood"
-        es = ""
+        es = "Primera sangre"
     }
     // en = "Ballistics"
     // en base_es
     // context: ::Const.Strings.PerkName.LegendBackswing
     {
         en = "Backswing"
-        es = ""
+        es = "Revés"
     }
     // context: ::Const.Strings.PerkName.LegendPointBlank
     {
         en = "Point Blank"
-        es = ""
+        es = "A quemarropa"
     }
     // context: ::Const.Strings.PerkName.LegendSlaughterer
     {
         en = "Slaughterer"
-        es = ""
+        es = "Matarife"
     }
     // context: ::Const.Strings.PerkName.LegendBetweenTheEyes
     {
         en = "Between the Eyes"
-        es = ""
+        es = "Entre los ojos"
     }
     // context: ::Const.Strings.PerkName.LegendSkillfulStacking
     {
         en = "Skillful Stacking"
-        es = ""
+        es = "Apilado hábil"
     }
     // context: ::Const.Strings.PerkName.LegendEfficientPacking
     {
         en = "Efficient Packing"
-        es = ""
+        es = "Empaquetado eficiente"
     }
     // context: ::Const.Strings.PerkName.LegendAmmoBinding
     {
         en = "Ammunition Binding"
-        es = ""
+        es = "Atado de munición"
     }
     // context: ::Const.Strings.PerkName.LegendAmmoBundles
     {
         en = "Ammunition Bundles"
-        es = ""
+        es = "Fardos de munición"
     }
     // context: ::Const.Strings.PerkName.LegendMedPackages
     {
         en = "Medicine Packages"
-        es = ""
+        es = "Paquetes de medicina"
     }
     // context: ::Const.Strings.PerkName.LegendMedIngredients
     {
         en = "Medicine Ingredients"
-        es = ""
+        es = "Ingredientes medicinales"
     }
     // context: ::Const.Strings.PerkName.LegendToolsDrawers
     {
         en = "Tools Drawers"
-        es = ""
+        es = "Cajones de herramientas"
     }
     // context: ::Const.Strings.PerkName.LegendToolsSpares
     {
         en = "Spare Parts"
-        es = ""
+        es = "Piezas de repuesto"
     }
     // context: ::Const.Strings.PerkName.LegendBarterConvincing
     {
         en = "Convincing Proposals"
-        es = ""
+        es = "Propuestas convincentes"
     }
     // context: ::Const.Strings.PerkName.LegendBarterTrustworthy
     {
         en = "Trustworthy Demeanour"
-        es = ""
+        es = "Aire de confianza"
     }
     // context: ::Const.Strings.PerkName.LegendOffBookDeal
     {
         en = "Off-Book Deal"
-        es = ""
+        es = "Trato bajo cuerda"
     }
     // context: ::Const.Strings.PerkName.LegendRebound
     {
         en = "Rebound"
-        es = ""
+        es = "Rebote"
     }
     // context: ::Const.Strings.PerkName.LegendFeint
     {
         en = "Feint"
-        es = ""
+        es = "Finta"
     }
     // context: ::Const.Strings.PerkName.LegendLookout
     {
         en = "Lookout"
-        es = ""
+        es = "Vigía"
     }
     // context: ::Const.Strings.PerkName.LegendBoondockBlade
     {
         en = "Boondock Blade"
-        es = ""
+        es = "Hoja Boondock"
     }
     // en = "Vengeance"
     // en base_es
     // context: ::Const.Strings.PerkName.LegendDoubleStrike
     {
         en = "Flux"
-        es = ""
+        es = "Racha"
     }
     // context: ::Const.Strings.PerkName.LegendImmovableObject
     {
         en = "Immovable Object"
-        es = ""
+        es = "Objeto inamovible"
     }
     // context: ::Const.Strings.PerkName.LegendBloodyHarvest
     {
         en = "Bloody Harvest"
-        es = ""
+        es = "Cosecha sangrienta"
     }
     // context: ::Const.Strings.PerkName.LegendSprint
     {
         en = "Sprint"
-        es = ""
+        es = "Carrera"
     }
     // context: ::Const.Strings.PerkName.LegendAthlete
     {
         en = "Athlete"
-        es = ""
+        es = "Atleta"
     }
     // context: ::Const.Strings.PerkName.LegendComposure
     {
         en = "Composure"
-        es = ""
+        es = "Compostura"
     }
     // context: ::Const.Strings.PerkName.LegendUberNimble
     {
         en = "Nudist"
-        es = ""
+        es = "Nudista"
     }
     // context: ::Const.Strings.PerkName.LegendMuscularity
     {
         en = "Muscularity"
-        es = ""
+        es = "Musculatura"
     }
     // context: ::Const.Strings.PerkName.LegendBattleheart
     {
         en = "Battleheart"
-        es = ""
+        es = "Corazón de batalla"
     }
     // context: ::Const.Strings.PerkName.LegendTrueBeliever
     {
         en = "True Believer"
-        es = ""
+        es = "Verdadero creyente"
     }
     // context: ::Const.Strings.PerkName.LegendPoisonImmunity
     {
         en = "Poison Immunity"
-        es = ""
+        es = "Inmunidad al veneno"
     }
     // context: ::Const.Strings.PerkName.LegendInventorAnatomy
     {
         en = "Anatomical Studies"
-        es = ""
+        es = "Estudios anatómicos"
     }
     // context: ::Const.Strings.PerkName.LegendAssuredConquest
     {
         en = "Assured Conquest"
-        es = ""
+        es = "Conquista asegurada"
     }
     // context: ::Const.Strings.PerkName.LegendBigGameHunter
     {
         en = "Big Game Hunter"
-        es = ""
+        es = "Cazador de caza mayor"
     }
     // context: ::Const.Strings.PerkName.LegendTeacher
     {
         en = "Teacher"
-        es = ""
+        es = "Mentor"
     }
     // context: ::Const.Strings.PerkName.LegendForcefulSwing
     {
         en = "Forceful Swing"
-        es = ""
+        es = "Golpe contundente"
     }
     // context: ::Const.Strings.PerkName.LegendSpecSpearWall
     {
         en = "Spearwaller"
-        es = ""
+        es = "Experto en muro de lanzas"
     }
     // context: ::Const.Strings.PerkName.LegendThrustMaster
     {
         en = "Thrust Master"
-        es = ""
+        es = "Maestro del lanzazo"
     }
     // context: ::Const.Strings.PerkName.LegendBalance
     {
         en = "Balance"
-        es = ""
+        es = "Equilibrio"
     }
     // context: ::Const.Strings.PerkName.LegendPerfectFit
     {
         en = "Perfect Fit"
-        es = ""
+        es = "Ajuste perfecto"
     }
     // context: ::Const.Strings.PerkName.LegendLithe
     {
         en = "Lithe"
-        es = ""
+        es = "Grácil"
     }
     // context: ::Const.Strings.PerkName.LegendInTheZone
     {
         en = "In the Zone"
-        es = ""
+        es = "En la zona"
     }
     // context: ::Const.Strings.PerkName.LegendHidden
     {
         en = "Camouflage"
-        es = ""
+        es = "Camuflaje"
     }
     // context: ::Const.Strings.PerkName.LegendBlendIn
     {
         en = "Blend in"
-        es = ""
+        es = "Pasar desapercibido"
     }
     // context: ::Const.Strings.PerkName.LegendSpecStaffStun
     {
         en = "Staff Spins"
-        es = ""
+        es = "Giros de bastón"
     }
     // context: ::Const.Strings.PerkName.LegendPugilist
     {
         en = "Pugilist"
-        es = ""
+        es = "Púgil"
     }
     // context: ::Const.Strings.PerkName.LegendGrappler
     {
         en = "Grappler"
-        es = ""
+        es = "Experto en agarres"
     }
     // context: ::Const.Strings.PerkName.LegendAmbidextrous
     {
         en = "Ambidextrous"
-        es = ""
+        es = "Ambidiestro"
     }
     // context: ::Const.Strings.PerkName.LegendPummelIntoSubmission
     {
         en = "Pummel into Submission"
-        es = ""
+        es = "Moler a golpes"
     }
     // context: ::Const.Strings.PerkName.LegendSmashingShields
     {
         en = "Smashing Shields"
-        es = ""
+        es = "Destrozaescudos"
     }
     // context: ::Const.Strings.PerkName.LegendSmackdown
     {
         en = "Smackdown"
-        es = ""
+        es = "Paliza"
     }
     // context: ::Const.Strings.PerkName.LegendBoneBreaker
     {
         en = "Bone Breaker"
-        es = ""
+        es = "Quiebrahuesos"
     }
     // context: ::Const.Strings.PerkName.LegendClarity
     {
         en = "Clarity"
-        es = ""
+        es = "Claridad"
     }
     // context: ::Const.Strings.PerkName.LegendAlert
     {
         en = "Alert"
-        es = ""
+        es = "Alerta"
     }
     // context: ::Const.Strings.PerkName.LegendBloodbath
     {
         en = "Bloodbath"
-        es = ""
+        es = "Baño de sangre"
     }
     // context: ::Const.Strings.PerkName.LegendOnslaught
     {
         en = "Onslaught"
-        es = ""
+        es = "Embestida"
     }
     // context: ::Const.Strings.PerkName.LegendBackToBasics
     {
         en = "Back to Basics"
-        es = ""
+        es = "Volver a lo básico"
     }
     // context: ::Const.Strings.PerkName.LegendPushTheAdvantage
     {
         en = "Push The Advantage"
-        es = ""
+        es = "Aprovechar la ventaja"
     }
     // context: ::Const.Strings.PerkName.LegendMindOverBody
     {
         en = "Mind over Body"
-        es = ""
+        es = "Mente sobre cuerpo"
     }
     // context: ::Const.Strings.PerkName.LegendEscapeArtist
     {
         en = "Escape Artist"
-        es = ""
+        es = "Escapista"
     }
     // context: ::Const.Strings.PerkName.LegendGatherer
     {
         en = "Gatherer"
-        es = ""
+        es = "Recolector"
     }
     // context: ::Const.Strings.PerkName.LegendPotionBrewer
     {
         en = "Potion Brewer"
-        es = ""
+        es = "Preparador de pociones"
     }
     // context: ::Const.Strings.PerkName.LegendPrepareBleed
     {
         en = "Exsanguination"
-        es = ""
+        es = "Desangramiento"
     }
     // context: ::Const.Strings.PerkName.LegendPrepareGraze
     {
         en = "Evisceration"
-        es = ""
+        es = "Evisceración"
     }
     // context: ::Const.Strings.PerkName.LegendCarnage
     {
         en = "Carnage"
-        es = ""
+        es = "Carnicería"
     }
     // context: ::Const.Strings.PerkName.LegendUntouchable
     {
         en = "Untouchable"
-        es = ""
+        es = "Intocable"
     }
     // context: ::Const.Strings.PerkName.LegendAssassinate
     {
         en = "Assassinate"
-        es = ""
+        es = "Asesinar"
     }
     // context: ::Const.Strings.PerkName.LegendMealPreperation
     {
         en = "Meal Preparation"
-        es = ""
+        es = "Preparación de comidas"
     }
     // context: ::Const.Strings.PerkName.LegendAlcoholBrewing
     {
         en = "Alcohol Brewing"
-        es = ""
+        es = "Destilación de alcohol"
     }
     // context: ::Const.Strings.PerkName.LegendLacerate
     {
         en = "Lacerate"
-        es = ""
+        es = "Lacerar"
     }
     // context: ::Const.Strings.PerkName.LegendPeaceful
     {
         en = "Peaceable"
-        es = ""
+        es = "Pacífico"
     }
     // context: ::Const.Strings.PerkName.LegendNetRepair
     {
         en = "Net Repair"
-        es = ""
+        es = "Reparar redes"
     }
     // context: ::Const.Strings.PerkName.LegendNetCasting
     {
         en = "Net Casting"
-        es = ""
+        es = "Lanzamiento de red"
     }
     // context: ::Const.Strings.PerkName.LegendPacifist
     {
         en = "Pacifist"
-        es = ""
+        es = "Pacifista"
     }
     // context: ::Const.Strings.PerkName.LegendCampCook
     {
         en = "Camp Cooking"
-        es = ""
+        es = "Cocina de campamento"
     }
     // context: ::Const.Strings.PerkName.LegendPackleader
     {
         en = "Pack Leader"
-        es = ""
+        es = "Líder de la manada"
     }
     // context: ::Const.Strings.PerkName.LegendDogWhisperer
     {
         en = "Dog Whisperer"
-        es = ""
+        es = "Encantador de perros"
     }
     // context: ::Const.Strings.PerkName.LegendDogBreeder
     {
         en = "Dog Breeder"
-        es = ""
+        es = "Criador de perros"
     }
     // context: ::Const.Strings.PerkName.LegendWindReader
     {
         en = "Wind Reader"
-        es = ""
+        es = "Lector del viento"
     }
     // context: ::Const.Strings.PerkName.LegendPaymaster
     {
         en = "Paymaster"
-        es = ""
+        es = "Contador"
     }
     // en = "Quartermaster"
     // context: ::Const.Strings.PerkName.LegendBarterGreed
     {
         en = "Greed"
-        es = ""
+        es = "Codicia"
     }
     // context: ::Const.Strings.PerkName.LegendShieldsUp
     {
         en = "Shields Up!"
-        es = ""
+        es = "¡Escudos arriba!"
     }
     // context: ::Const.Strings.PerkName.LegendZombieBite
     {
         en = "Zombie bite"
-        es = ""
+        es = "Mordida de zombi"
     }
     // context: ::Const.Strings.PerkName.LegendTumble
     {
         en = "Tumble"
-        es = ""
+        es = "Voltereta"
     }
     // context: ::Const.Strings.PerkName.LegendBackflip
     {
         en = "Backflip"
-        es = ""
+        es = "Voltereta atrás"
     }
     // context: ::Const.Strings.PerkName.LegendTwirl
     {
         en = "Twirl"
-        es = ""
+        es = "Vuelta"
     }
     // context: ::Const.Strings.PerkName.LegendHairSplitter
     {
         en = "Hair Splitter"
-        es = ""
+        es = "Partecabellos"
     }
     // context: ::Const.Strings.PerkName.LegendScrollIngredients
     {
         en = "Interpretation"
-        es = ""
+        es = "Interpretación"
     }
     // context: ::Const.Strings.PerkName.LegendScholar
     {
         en = "Scholar"
-        es = ""
+        es = "Erudito"
     }
     // context: ::Const.Strings.PerkName.LegendHerbcraft
     {
         en = "Herbcraft"
-        es = ""
+        es = "Saber herbario"
     }
     // context: ::Const.Strings.PerkName.LegendWoodworking
     {
         en = "Woodworking"
-        es = ""
+        es = "Carpintería"
     }
     // context: ::Const.Strings.PerkName.LegendOreHunter
     {
         en = "Ore Hunter"
-        es = ""
+        es = "Buscador de mena"
     }
     // context: ::Const.Strings.PerkName.LegendThrowSand
     {
         en = "Throw Sand"
-        es = ""
+        es = "Lanzar arena"
     }
     // context: ::Const.Strings.PerkName.LegendLastStand
     {
         en = "Last Stand"
-        es = ""
+        es = "Resistencia final"
     }
     // context: ::Const.Strings.PerkName.LegendGuideSteps
     {
         en = "Guide Steps"
-        es = ""
+        es = "Guiar los pasos"
     }
     // context: ::Const.Strings.PerkName.LegendTasteThePain
     {
         en = "Taste the Pain"
-        es = ""
+        es = "Saborea el dolor"
     }
     // context: ::Const.Strings.PerkName.LegendOpportunist
     {
         en = "Opportunist"
-        es = ""
+        es = "Ventajista"
     }
     // context: ::Const.Strings.PerkName.LegendPrepared
     {
         en = "Prepared"
-        es = ""
+        es = "Preparado"
     }
     // context: ::Const.Strings.PerkName.LegendLurker
     {
         en = "Lurker"
-        es = ""
+        es = "Acechante"
     }
     // context: ::Const.Strings.PerkName.LegendNightRaider
     {
         en = "Night Raider"
-        es = ""
+        es = "Asaltante nocturno"
     }
     // context: ::Const.Strings.PerkName.LegendAdaptive
     {
         en = "Adaptive"
-        es = ""
+        es = "Adaptable"
     }
     // context: ::Const.Strings.PerkName.LegendRecuperation
     {
         en = "Recuperation"
-        es = ""
+        es = "Recuperación"
     }
     // context: ::Const.Strings.PerkName.LegendFashionable
     {
         en = "Fashionable"
-        es = ""
+        es = "A la moda"
     }
     // context: ::Const.Strings.PerkName.LegendHelpful
     {
         en = "Helpful"
-        es = ""
+        es = "Servicial"
     }
     // context: ::Const.Strings.PerkName.LegendStrengthInNumbers
     {
         en = "Strength in Numbers"
-        es = ""
+        es = "La unión hace la fuerza"
     }
     // context: ::Const.Strings.PerkName.LegendPatientHunter
     {
         en = "The Patient Hunter"
-        es = ""
+        es = "El cazador paciente"
     }
     // en = "Barrage"
     // en base_es
     // context: ::Const.Strings.PerkName.LegendStaffBlock
     {
         en = "Staff Block"
-        es = ""
+        es = "Bloqueo con bastón"
     }
     // context: ::Const.Strings.PerkName.LegendMinnesanger
     {
         en = "Minnesänger"
-        es = ""
+        es = "Trovador"
     }
     // context: ::Const.Strings.PerkName.LegendMeistersanger
     {
         en = "Meistersänger"
-        es = ""
+        es = "Maestro cantor"
     }
     // context: ::Const.Strings.PerkName.LegendHimshaw
     {
         en = "Himshaw"
-        es = ""
+        es = "Remendón"
     }
     // context: ::Const.Strings.PerkName.LegendSwagger
     {
         en = "Swagger"
-        es = ""
+        es = "Pavoneo"
     }
     // context: ::Const.Strings.PerkName.LegendKeenEyesight
     {
         en = "Keen Eyesight"
-        es = ""
+        es = "Vista aguda"
     }
     // context: ::Const.Strings.PerkName.LegendSleightOfHand
     {
         en = "Sleight of Hand"
-        es = ""
+        es = "Juego de manos"
     }
     // context: ::Const.Strings.PerkName.LegendPromisedPotential
     {
         en = "Promised Potential"
-        es = ""
+        es = "Potencial prometido"
     }
     // context: ::Const.Strings.PerkName.LegendWheelMaintenance
     {
         en = "Wheel Maintenance"
-        es = ""
+        es = "Mantenimiento de ruedas"
     }
     // context: ::Const.Strings.PerkName.LegendMasterTrainer
     {
         en = "Master Trainer"
-        es = ""
+        es = "Maestro instructor"
     }
     // context: ::Const.Strings.PerkName.LegendWhipThemInShape
     {
         en = "Whip them in Shape"
-        es = ""
+        es = "Ponerlos en forma"
     }
     // context: ::Const.Strings.PerkName.LegendTacticalManeuvers
     {
         en = "Tactical Maneuvers"
-        es = ""
+        es = "Maniobras tácticas"
     }
     // context: ::Const.Strings.PerkName.LegendVersatile
     {
         en = "Versatile"
-        es = ""
+        es = "Versátil"
     }
     // context: ::Const.Strings.PerkName.LegendSpecPoison
     {
         en = "Poison Mastery"
-        es = ""
+        es = "Dominio del Veneno"
     }
     // context: ::Const.Strings.PerkName.LegendSpecBandage
     {
         en = "Bandage Mastery"
-        es = ""
+        es = "Dominio del Vendaje"
     }
     // context: ::Const.Strings.PerkName.LegendMasteryStaves
     {
         en = "Magic Staff Mastery"
-        es = ""
+        es = "Dominio del Bastón mágico"
     }
     // context: ::Const.Strings.PerkName.LegendMasteryMusic
     {
         en = "Music Mastery"
-        es = ""
+        es = "Dominio de la Música"
     }
     // context: ::Const.Strings.PerkName.LegendMasteryNets
     {
         en = "Net Mastery"
-        es = ""
+        es = "Dominio de la Red"
     }
     // context: ::Const.Strings.PerkName.LegendMasterySlings
     {
         en = "Sling Mastery"
-        es = ""
+        es = "Dominio de la Honda"
     }
     // context: ::Const.Strings.PerkName.LegendSpecUnarmed
     {
         en = "Unarmed Mastery"
-        es = ""
+        es = "Dominio sin Armas"
     }
     // context: ::Const.Strings.PerkName.LegendSpecDualWield
     {
         en = "Dual Wield Mastery"
-        es = ""
+        es = "Dominio de las Dos armas"
     }
     // context: ::Const.Strings.PerkName.LegendValaChantMastery
     {
         en = "Chanting Mastery"
-        es = ""
+        es = "Dominio de los Cantos"
     }
     // context: ::Const.Strings.PerkName.LegendValaChantDisharmony
     {
         en = "Disharmony (Chant)"
-        es = ""
+        es = "Disonancia (Canto)"
     }
     // context: ::Const.Strings.PerkName.LegendValaChantFury
     {
         en = "Fury (Chant)"
-        es = ""
+        es = "Furia (Canto)"
     }
     // context: ::Const.Strings.PerkName.LegendValaChantSenses
     {
         en = "Heightened Senses (Chant)"
-        es = ""
+        es = "Sentidos agudizados (Canto)"
     }
     // context: ::Const.Strings.PerkName.LegendValaTranceMastery
     {
         en = "Trance Mastery"
-        es = ""
+        es = "Dominio del Trance"
     }
     // context: ::Const.Strings.PerkName.LegendValaTrancePerspective
     {
         en = "Incorporeal Perspective (Trance)"
-        es = ""
+        es = "Perspectiva incorpórea (Trance)"
     }
     // context: ::Const.Strings.PerkName.LegendValaTranceMalevolent
     {
         en = "Malevolent Spirits (Trance)"
-        es = ""
+        es = "Espíritus malévolos (Trance)"
     }
     // en = "Warden"
     // en base_es
     // context: ::Const.Strings.PerkName.LegendValaPremonition
     {
         en = "Premonition"
-        es = ""
+        es = "Premonición"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistButcher
     {
         en = "Butchers Fillet"
-        es = ""
+        es = "Filete del carnicero"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistBlacksmith
     {
         en = "Blacksmiths Technique"
-        es = ""
+        es = "Técnica de herrero"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistPrisoner
     {
         en = "Prisoners Rush"
-        es = ""
+        es = "Acometida del presidiario"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistMusician
     {
         en = "Entrancing Song"
-        es = ""
+        es = "Canción embelesadora"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistMilitia
     {
         en = "Militia Practice"
-        es = ""
+        es = "Práctica de milicia"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistMiner
     {
         en = "Miners Strikes"
-        es = ""
+        es = "Golpes de minero"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistFarmhand
     {
         en = "Hay Baling"
-        es = ""
+        es = "Empacar heno"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistPoacher
     {
         en = "Poachers Arm"
-        es = ""
+        es = "Brazo del furtivo"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistGravedigger
     {
         en = "Gravesman"
-        es = ""
+        es = "Hombre de tumbas"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistWoodsman
     {
         en = "Woodsman's Cuts"
-        es = ""
+        es = "Tajos del montaraz"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistHerbalist
     {
         en = "Harvest Twist"
-        es = ""
+        es = "Giro de cosecha"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistShepherd
     {
         en = "Shepherd's Signature"
-        es = ""
+        es = "Firma del pastor"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistCultist
     {
         en = "Scourging"
-        es = ""
+        es = "Flagelación"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistReaper
     {
         en = "Harvest Swathes"
-        es = ""
+        es = "Siega a hileras"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistSelfdefense
     {
         en = "Stick Fighting"
-        es = ""
+        es = "Esgrima de bastón"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistShieldSkill
     {
         en = "Born With a Board"
-        es = ""
+        es = "Nacido con un tablón"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistShieldPush
     {
         en = "Push it"
-        es = ""
+        es = "Empujar"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistInventor
     {
         en = "Inventor's Armaments"
-        es = ""
+        es = "Armamento del inventor"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistBodyguard
     {
         en = "Schwertkampfer"
-        es = ""
+        es = "Schwertkampfer"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistInquisition
     {
         en = "Trial for Witchcraft"
-        es = ""
+        es = "Juicio por brujería"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistClub
     {
         en = "Browbeater's Bludgeon"
-        es = ""
+        es = "Garrote del intimidador"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistRaider
     {
         en = "Marauder's Edge"
-        es = ""
+        es = "Filo del merodeador"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistSpearfisher
     {
         en = "Tip of the Fisherman"
-        es = ""
+        es = "Punta del pescador"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistSharpshooter
     {
         en = "Death from Above"
-        es = ""
+        es = "Muerte desde lo alto"
     }
     // context: ::Const.Strings.PerkName.LegendSpecCultHood
     {
         en = "Dedication"
-        es = ""
+        es = "Devoción"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemyBeast
     {
         en = "Favoured Enemy - Beasts"
-        es = ""
+        es = "Enemigo predilecto - Bestias"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemyOccult
     {
         en = "Favoured Enemy - Occult"
-        es = ""
+        es = "Enemigo predilecto - Ocultismo"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemyGreenskin
     {
         en = "Favoured Enemy - Greenskin"
-        es = ""
+        es = "Enemigo predilecto - Pieles verdes"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemyUndead
     {
         en = "Favoured Enemy - Undead"
-        es = ""
+        es = "Enemigo predilecto - No muertos"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemyCivilization
     {
         en = "Favoured Enemy - Civilization"
-        es = ""
+        es = "Enemigo predilecto - Civilización"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemyOutlaw
     {
         en = "Favoured Enemy - Outlaw"
-        es = ""
+        es = "Enemigo predilecto - Proscritos"
     }
     // context: ::Const.Strings.PerkName.LegendFavouredEnemySwordmaster
     {
@@ -9906,277 +9906,277 @@ local pairs = [
     // context: ::Const.Strings.PerkName.LegendMagicCircleOfProtection
     {
         en = "Circle of Protection"
-        es = ""
+        es = "Círculo de protección"
     }
     // context: ::Const.Strings.PerkName.LegendMagicHealingWind
     {
         en = "Healing Wind"
-        es = ""
+        es = "Viento sanador"
     }
     // context: ::Const.Strings.PerkName.LegendMagicLevitate
     {
         en = "Levitate"
-        es = ""
+        es = "Levitar"
     }
     // context: ::Const.Strings.PerkName.LegendMagicMissile
     {
         en = "Magic Missile"
-        es = ""
+        es = "Proyectil mágico"
     }
     // context: ::Const.Strings.PerkName.LegendMasteryBurningHands
     {
         en = "Intense Flames"
-        es = ""
+        es = "Llamas intensas"
     }
     // context: ::Const.Strings.PerkName.LegendMasteryChainLightning
     {
         en = "Polarized"
-        es = ""
+        es = "Polarizado"
     }
     // context: ::Const.Strings.PerkName.LegendMasteryHailstone
     {
         en = "Dense Ice"
-        es = ""
+        es = "Hielo denso"
     }
     // context: ::Const.Strings.PerkName.LegendMagicMissileFocus
     {
         en = "Magic Missile Focus"
-        es = ""
+        es = "Foco del proyectil mágico"
     }
     // context: ::Const.Strings.PerkName.LegendMagicMissileMastery
     {
         en = "Magic Missile Mastery"
-        es = ""
+        es = "Dominio del Proyectil mágico"
     }
     // context: ::Const.Strings.PerkName.LegendRoots
     {
         en = "Roots"
-        es = ""
+        es = "Raíces"
     }
     // context: ::Const.Strings.PerkName.LegendDistantVisions
     {
         en = "Distant Visions"
-        es = ""
+        es = "Visiones lejanas"
     }
     // context: ::Const.Strings.PerkName.LegendSummonFalcon
     {
         en = "Summon Falcon"
-        es = ""
+        es = "Invocar halcón"
     }
     // context: ::Const.Strings.PerkName.LegendSummonBear
     {
         en = "Bear Taming"
-        es = ""
+        es = "Doma de osos"
     }
     // context: ::Const.Strings.PerkName.LegendFirefield
     {
         en = "Firefield"
-        es = ""
+        es = "Campo de fuego"
     }
     // context: ::Const.Strings.PerkName.LegendInsects
     {
         en = "Insect Swarm"
-        es = ""
+        es = "Enjambre de insectos"
     }
     // context: ::Const.Strings.PerkName.LegendRaiseUndead
     {
         en = "Raise the Dead"
-        es = ""
+        es = "Levantar a los muertos"
     }
     // context: ::Const.Strings.PerkName.LegendSummonCat
     {
         en = "Summon Familiar"
-        es = ""
+        es = "Invocar familiar"
     }
     // context: ::Const.Strings.PerkName.LegendSpawnZombieLow
     {
         en = "Mold Carrion"
-        es = ""
+        es = "Moldear carroña"
     }
     // context: ::Const.Strings.PerkName.LegendSpawnZombieMed
     {
         en = "Fashion Body"
-        es = ""
+        es = "Moldear cuerpo"
     }
     // context: ::Const.Strings.PerkName.LegendSpawnZombieHigh
     {
         en = "Remake Man"
-        es = ""
+        es = "Rehacer al hombre"
     }
     // context: ::Const.Strings.PerkName.LegendSpawnSkeletonLow
     {
         en = "Arrange Bones"
-        es = ""
+        es = "Ordenar huesos"
     }
     // context: ::Const.Strings.PerkName.LegendSpawnSkeletonMed
     {
         en = "Align Joints"
-        es = ""
+        es = "Alinear articulaciones"
     }
     // context: ::Const.Strings.PerkName.LegendSpawnSkeletonHigh
     {
         en = "Rebuild Skeleton"
-        es = ""
+        es = "Reconstruir esqueleto"
     }
     // context: ::Const.Strings.PerkName.LegendExtendendAura
     {
         en = "Extended Aura"
-        es = ""
+        es = "Aura extendida"
     }
     // context: ::Const.Strings.PerkName.LegendChanneledPower
     {
         en = "Channeled Power"
-        es = ""
+        es = "Poder canalizado"
     }
     // context: ::Const.Strings.PerkName.LegendReclamation
     {
         en = "Reclamation"
-        es = ""
+        es = "Reaprovechamiento"
     }
     // context: ::Const.Strings.PerkName.LegendConservation
     {
         en = "Conservation"
-        es = ""
+        es = "Conservación"
     }
     // context: ::Const.Strings.PerkName.LegendPossession
     {
         en = "Possession"
-        es = ""
+        es = "Posesión"
     }
     // context: ::Const.Strings.PerkName.LegendSiphon
     {
         en = "Siphon"
-        es = ""
+        es = "Absorber"
     }
     // context: ::Const.Strings.PerkName.LegendResurrectionist
     {
         en = "Resurrectionist"
-        es = ""
+        es = "Resurreccionista"
     }
     // context: ::Const.Strings.PerkName.LegendTerrifyingVisage
     {
         en = "Terrifying Visage"
-        es = ""
+        es = "Rostro aterrador"
     }
     // context: ::Const.Strings.PerkName.LegendBrinkOfDeath
     {
         en = "Brink of Death"
-        es = ""
+        es = "Al borde de la muerte"
     }
     // context: ::Const.Strings.PerkName.LegendSurpressUrges
     {
         en = "Suppress Urges"
-        es = ""
+        es = "Reprimir impulsos"
     }
     // context: ::Const.Strings.PerkName.LegendControlInstincts
     {
         en = "Control Instincts"
-        es = ""
+        es = "Controlar los instintos"
     }
     // context: ::Const.Strings.PerkName.LegendMasterAnger
     {
         en = "Master Anger"
-        es = ""
+        es = "Dominar la ira"
     }
     // context: ::Const.Strings.PerkName.LegendWolfform
     {
         en = "Wolf Form"
-        es = ""
+        es = "Forma de lobo"
     }
     // context: ::Const.Strings.PerkName.LegendTrueForm
     {
         en = "True Form"
-        es = ""
+        es = "Forma verdadera"
     }
     // context: ::Const.Strings.PerkName.LegendBearform
     {
         en = "Bear Form"
-        es = ""
+        es = "Forma de oso"
     }
     // context: ::Const.Strings.PerkName.LegendInfectiousRage
     {
         en = "Infectious Rage"
-        es = ""
+        es = "Furia contagiosa"
     }
     // context: ::Const.Strings.PerkName.LegendHorseCharge
     {
         en = "Mounted Charge"
-        es = ""
+        es = "Carga montada"
     }
     // context: ::Const.Strings.PerkName.LegendHorseBitting
     {
         en = "Bitting"
-        es = ""
+        es = "Embocadura"
     }
     // context: ::Const.Strings.PerkName.LegendHorseDesensitization
     {
         en = "Desensitization"
-        es = ""
+        es = "Desensibilización"
     }
     // context: ::Const.Strings.PerkName.LegendHippology
     {
         en = "Hippology"
-        es = ""
+        es = "Hipología"
     }
     // context: ::Const.Strings.PerkName.LegendHorseImpulsion
     {
         en = "Impulsion"
-        es = ""
+        es = "Impulsión"
     }
     // context: ::Const.Strings.PerkName.LegendHorseLeadChange
     {
         en = "Lead Change"
-        es = ""
+        es = "Cambio de pie"
     }
     // context: ::Const.Strings.PerkName.LegendHorseLegControl
     {
         en = "Leg Control"
-        es = ""
+        es = "Control de piernas"
     }
     // context: ::Const.Strings.PerkName.LegendHorseLiberty
     {
         en = "Liberty"
-        es = ""
+        es = "Libertad"
     }
     // context: ::Const.Strings.PerkName.LegendHorseLongeing
     {
         en = "Longeing"
-        es = ""
+        es = "Trabajo a la cuerda"
     }
     // context: ::Const.Strings.PerkName.LegendHorseParthianShot
     {
         en = "Parthian Shot"
-        es = ""
+        es = "Tiro parto"
     }
     // context: ::Const.Strings.PerkName.LegendHorsePiaffe
     {
         en = "Piaffe"
-        es = ""
+        es = "Piafe"
     }
     // context: ::Const.Strings.PerkName.LegendHorseTempiChange
     {
         en = "Tempi Change"
-        es = ""
+        es = "Cambios de pie a tiempo"
     }
     // context: ::Const.Strings.PerkName.LegendHorseMovement
     {
         en = "Horse Movement"
-        es = ""
+        es = "Movimiento equino"
     }
     // context: ::Const.Strings.PerkName.LegendHorseCollection
     {
         en = "Collection"
-        es = ""
+        es = "Reunión"
     }
     // context: ::Const.Strings.PerkName.LegendHorseFlyingChange
     {
         en = "Flying Change"
-        es = ""
+        es = "Cambio de pie en el aire"
     }
     // context: ::Const.Strings.PerkName.LegendHorsePassage
     {
         en = "Passage"
-        es = ""
+        es = "Pasaje"
     }
     // en = "Bruiser"
     // en base_es
@@ -10187,24 +10187,24 @@ local pairs = [
     // context: ::Const.Strings.PerkName.LegendDeflect
     {
         en = "Deflect"
-        es = ""
+        es = "Desviar"
     }
     // en = "Ironside"
     // en base_es
     // context: ::Const.Strings.PerkName.LegendBecomeBerserker
     {
         en = "Become Berserker"
-        es = ""
+        es = "Volverse berserker"
     }
     // context: ::Const.Strings.PerkName.LegendPreparedForAnything
     {
         en = "Prepare For Anything"
-        es = ""
+        es = "Preparado para todo"
     }
     // context: ::Const.Strings.PerkName.LegendStrictSermons
     {
         en = "Strict Sermons"
-        es = ""
+        es = "Sermones estrictos"
     }
     // context: ::Const.Strings.PerkDescription.LegendAnchor
     {
@@ -12211,32 +12211,32 @@ local pairs = [
     // context: traitDefs.push().Name
     {
         en = "Slippery"
-        es = ""
+        es = "Escurridizo"
     }
     // context: traitDefs.push().Name
     {
         en = "Coerced"
-        es = ""
+        es = "Coaccionado"
     }
     // context: traitDefs.push().Name
     {
         en = "Redback Poison"
-        es = ""
+        es = "Veneno de lomo rojo"
     }
     // context: traitDefs.push().Name
     {
         en = "Cluster"
-        es = ""
+        es = "Colonia"
     }
     // context: traitDefs.push().Name
     {
         en = "Rock Unhold Passive"
-        es = ""
+        es = "Pasiva de trol de roca"
     }
     // context: traitDefs.push().Name
     {
         en = "Blind Rage"
-        es = ""
+        es = "Furia ciega"
     }
     // en = "Flesh Golem Racial"
     // en base_es
@@ -14195,7 +14195,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRsaEndurance.::Legends.Runes.add().Name
     {
         en = "Armor Rune Sigil: Endurance"
-        es = ""
+        es = "Sello rúnico de armadura: Resistencia"
     }
     // context: ::Legends.Rune.LegendRsaEndurance.::Legends.Runes.add().Description
     {
@@ -14235,7 +14235,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRsaSafety.::Legends.Runes.add().Name
     {
         en = "Armor Rune Sigil: Safety"
-        es = ""
+        es = "Sello rúnico de armadura: Seguridad"
     }
     // context: ::Legends.Rune.LegendRsaSafety.::Legends.Runes.add().Tooltip
     {
@@ -14250,7 +14250,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRsaResilience.::Legends.Runes.add().Name
     {
         en = "Armor Rune Sigil: Resilience"
-        es = ""
+        es = "Sello rúnico de armadura: Resiliencia"
     }
     // context: ::Legends.Rune.LegendRsaResilience.::Legends.Runes.add().Tooltip
     {
@@ -14261,7 +14261,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRshClarity.::Legends.Runes.add().Name
     {
         en = "Helmet Rune Sigil: Clarity"
-        es = ""
+        es = "Sello rúnico de yelmo: Claridad"
     }
     // context: ::Legends.Rune.LegendRshClarity.::Legends.Runes.add().Description
     {
@@ -14281,7 +14281,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRshBravery.::Legends.Runes.add().Name
     {
         en = "Helmet Rune Sigil: Bravery"
-        es = ""
+        es = "Sello rúnico de yelmo: Valentía"
     }
     // context: ::Legends.Rune.LegendRshBravery.::Legends.Runes.add().Tooltip
     {
@@ -14296,7 +14296,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRshLuck.::Legends.Runes.add().Name
     {
         en = "Helmet Rune Sigil: Luck"
-        es = ""
+        es = "Sello rúnico de yelmo: Suerte"
     }
     // context: ::Legends.Rune.LegendRshLuck.::Legends.Runes.add().Tooltip
     {
@@ -14311,7 +14311,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRshPatience.::Legends.Runes.add().Name
     {
         en = "Helmet Rune Sigil: Patience"
-        es = ""
+        es = "Sello rúnico de yelmo: Paciencia"
     }
     // context: ::Legends.Rune.LegendRshPatience.::Legends.Runes.add().Tooltip
     {
@@ -14327,7 +14327,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRssDefense.::Legends.Runes.add().Name
     {
         en = "Shield Rune Sigil: Defense"
-        es = ""
+        es = "Sello rúnico de escudo: Defensa"
     }
     // context: ::Legends.Rune.LegendRssDefense.::Legends.Runes.add().Description
     {
@@ -14347,7 +14347,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRssRadiance.::Legends.Runes.add().Name
     {
         en = "Shield Rune Sigil: Radiance"
-        es = ""
+        es = "Sello rúnico de escudo: Resplandor"
     }
     // context: ::Legends.Rune.LegendRssRadiance.::Legends.Runes.add().Tooltip
     {
@@ -14362,7 +14362,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRssDurability.::Legends.Runes.add().Name
     {
         en = "Shield Rune Sigil: Durability"
-        es = ""
+        es = "Sello rúnico de escudo: Durabilidad"
     }
     // context: ::Legends.Rune.LegendRssDurability.::Legends.Runes.add().Tooltip
     {
@@ -14388,7 +14388,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswPower.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Power"
-        es = ""
+        es = "Sello rúnico de arma: Poder"
     }
     // context: ::Legends.Rune.LegendRswPower.::Legends.Runes.add().Description
     {
@@ -14408,7 +14408,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswAccuracy.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Accuracy"
-        es = ""
+        es = "Sello rúnico de arma: Precisión"
     }
     // context: ::Legends.Rune.LegendRswAccuracy.::Legends.Runes.add().Tooltip
     {
@@ -14423,7 +14423,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswFeeding.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Feeding"
-        es = ""
+        es = "Sello rúnico de arma: Alimentación"
     }
     // context: ::Legends.Rune.LegendRswFeeding.::Legends.Runes.add().Tooltip
     {
@@ -14438,7 +14438,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswPoison.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Poison"
-        es = ""
+        es = "Sello rúnico de arma: Veneno"
     }
     // context: ::Legends.Rune.LegendRswPoison.::Legends.Runes.add().Tooltip
     {
@@ -14453,7 +14453,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswBleeding.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Bleeding"
-        es = ""
+        es = "Sello rúnico de arma: Sangrado"
     }
     // context: ::Legends.Rune.LegendRswBleeding.::Legends.Runes.add().Tooltip
     {
@@ -14468,7 +14468,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswUnbreaking.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Unbreaking"
-        es = ""
+        es = "Sello rúnico de arma: Irrompible"
     }
     // context: ::Legends.Rune.LegendRswUnbreaking.::Legends.Runes.add().Tooltip
     {
@@ -14483,7 +14483,7 @@ local pairs = [
     // context: ::Legends.Rune.LegendRswBlazing.::Legends.Runes.add().Name
     {
         en = "Weapon Rune Sigil: Blazing"
-        es = ""
+        es = "Sello rúnico de arma: Llameante"
     }
     // context: ::Legends.Rune.LegendRswBlazing.::Legends.Runes.add().Tooltip
     {
@@ -14499,24 +14499,24 @@ local pairs = [
     // context: ::Const.World.Spawn.LegendBasiliskLOW.Name
     {
         en = "Basilisks"
-        es = ""
+        es = "Basiliscos"
     }
     // FILE: mod_legends\config\spawnlist_tournament.nut
     // context: ::Const.World.Spawn.GrandGauntlet.Name
     {
         en = "Tournament competitors"
-        es = ""
+        es = "Competidores del torneo"
     }
     // context: ::Const.World.Spawn.GrandMelee.Name
     {
         en = "Tournament partipants"
-        es = ""
+        es = "Participantes del torneo"
     }
     // FILE: mod_legends\config\spawnlist_undead.nut
     // context: ::Const.World.Spawn.Mummies.Name
     {
         en = "Mummies"
-        es = ""
+        es = "Momias"
     }
     // FILE: mod_legends\config\weapon_types.nut
     // context: ::Const.Items.addNewWeaponType()
@@ -14528,7 +14528,7 @@ local pairs = [
     // context: ::Const.World.Common.WorldEconomy.Trade.Decisions.Name
     {
         en = "Foods"
-        es = ""
+        es = "Comida"
     }
     // en = "Supplies"
     // en base_es
@@ -14537,17 +14537,17 @@ local pairs = [
     // context: ::Const.World.Common.WorldEconomy.Trade.Decisions.Name
     {
         en = "Armors"
-        es = ""
+        es = "Armaduras"
     }
     // context: ::Const.World.Common.WorldEconomy.Trade.Decisions.Name
     {
         en = "Exotic"
-        es = ""
+        es = "Exótico"
     }
     // context: ::Const.World.Common.WorldEconomy.Trade.Decisions.Name
     {
         en = "Misc"
-        es = ""
+        es = "Miscelánea"
     }
     // context: ::Const.World.Common.DynamicTroops.Templates
     {
@@ -14628,7 +14628,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Fruits.Name
     {
         en = "Fruit"
-        es = ""
+        es = "Fruta"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Fruits.Text
     {
@@ -14638,7 +14638,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Grubs.Name
     {
         en = "Grubs"
-        es = ""
+        es = "Larvas"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Grubs.Text
     {
@@ -14648,7 +14648,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Milk.Name
     {
         en = "Milk"
-        es = ""
+        es = "Leche"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Milk.Text
     {
@@ -14661,7 +14661,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.NutsAndSeeds.Name
     {
         en = "Nuts and Seeds"
-        es = ""
+        es = "Frutos secos y semillas"
     }
     // context: ::Const.HuntingLoot.TargetDefs.NutsAndSeeds.Text
     {
@@ -14683,7 +14683,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Boar.Name
     {
         en = "Boar"
-        es = ""
+        es = "Jabalí"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Boar.Text
     {
@@ -14693,7 +14693,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Clams.Name
     {
         en = "Clams"
-        es = ""
+        es = "Almejas"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Clams.Text
     {
@@ -14703,7 +14703,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Crab.Name
     {
         en = "Crab"
-        es = ""
+        es = "Cangrejo"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Crab.Text
     {
@@ -14713,7 +14713,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Deer.Name
     {
         en = "Deer"
-        es = ""
+        es = "Ciervo"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Deer.Text
     {
@@ -14730,7 +14730,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Fish.Name
     {
         en = "Fish"
-        es = ""
+        es = "Pescado"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Fish.Text
     {
@@ -14740,7 +14740,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Ghoul.Name
     {
         en = "Ghoul"
-        es = ""
+        es = "Necrófago"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Ghoul.Text
     {
@@ -14771,7 +14771,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.MountainGoat.Name
     {
         en = "Mountain Goat"
-        es = ""
+        es = "Cabra montés"
     }
     // context: ::Const.HuntingLoot.TargetDefs.MountainGoat.Text
     {
@@ -14781,7 +14781,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Pheasant.Name
     {
         en = "Pheasant"
-        es = ""
+        es = "Faisán"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Pheasant.Text
     {
@@ -14791,7 +14791,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Rabbit.Name
     {
         en = "Rabbit"
-        es = ""
+        es = "Conejo"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Rabbit.Text
     {
@@ -14808,7 +14808,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Squirrel.Name
     {
         en = "Squirrel"
-        es = ""
+        es = "Ardilla"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Squirrel.Text
     {
@@ -14825,7 +14825,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.FrostUnhold.Name
     {
         en = "Frost Unhold"
-        es = ""
+        es = "Trol de escarcha"
     }
     // context: ::Const.HuntingLoot.TargetDefs.FrostUnhold.Text
     {
@@ -14842,7 +14842,7 @@ local pairs = [
     // context: ::Const.HuntingLoot.TargetDefs.Wicent.Name
     {
         en = "Wicent"
-        es = ""
+        es = "Bisonte"
     }
     // context: ::Const.HuntingLoot.TargetDefs.Wicent.Text
     {
@@ -15263,7 +15263,7 @@ local pairs = [
     // context: ::Const.Perks.BeastClassTree.Name
     {
         en = "Nets"
-        es = ""
+        es = "Redes"
     }
     // context: ::Const.Perks.BeastClassTree.Descriptions
     {
@@ -15273,7 +15273,7 @@ local pairs = [
     // context: ::Const.Perks.TailorClassTree.Name
     {
         en = "Trendy"
-        es = ""
+        es = "Elegante"
     }
     // context: ::Const.Perks.TailorClassTree.Descriptions
     {
@@ -15283,7 +15283,7 @@ local pairs = [
     // context: ::Const.Perks.HealerClassTree.Name
     {
         en = "Healing"
-        es = ""
+        es = "Curación"
     }
     // context: ::Const.Perks.HealerClassTree.Descriptions
     {
@@ -15298,7 +15298,7 @@ local pairs = [
     // context: ::Const.Perks.KnifeClassTree.Name
     {
         en = "Knives"
-        es = ""
+        es = "Cuchillos"
     }
     // context: ::Const.Perks.KnifeClassTree.Descriptions
     {
@@ -15321,7 +15321,7 @@ local pairs = [
     // context: ::Const.Perks.ConArtistTree.Name
     {
         en = "Con Artist"
-        es = ""
+        es = "Estafador"
     }
     // context: ::Const.Perks.ConArtistTree.Descriptions
     {
@@ -15336,7 +15336,7 @@ local pairs = [
     // context: ::Const.Perks.PitchforkClassTree.Name
     {
         en = "Farmer"
-        es = ""
+        es = "Granjero"
     }
     // context: ::Const.Perks.PitchforkClassTree.Descriptions
     {
@@ -15346,7 +15346,7 @@ local pairs = [
     // context: ::Const.Perks.ShortbowClassTree.Name
     {
         en = "Shortbow"
-        es = ""
+        es = "Arco corto"
     }
     // context: ::Const.Perks.ShortbowClassTree.Descriptions
     {
@@ -15361,7 +15361,7 @@ local pairs = [
     // context: ::Const.Perks.WoodaxeClassTree.Name
     {
         en = "Woodsman"
-        es = ""
+        es = "Montaraz"
     }
     // context: ::Const.Perks.WoodaxeClassTree.Descriptions
     {
@@ -15371,7 +15371,7 @@ local pairs = [
     // context: ::Const.Perks.SickleClassTree.Name
     {
         en = "Herbalist"
-        es = ""
+        es = "Herbolario"
     }
     // context: ::Const.Perks.SickleClassTree.Descriptions
     {
@@ -15381,7 +15381,7 @@ local pairs = [
     // context: ::Const.Perks.SlingClassTree.Name
     {
         en = "Sling"
-        es = ""
+        es = "Honda"
     }
     // context: ::Const.Perks.SlingClassTree.Descriptions
     {
@@ -15391,7 +15391,7 @@ local pairs = [
     // context: ::Const.Perks.StaffClassTree.Name
     {
         en = "Staff Defense"
-        es = ""
+        es = "Defensa con bastón"
     }
     // context: ::Const.Perks.StaffClassTree.Descriptions
     {
@@ -15401,7 +15401,7 @@ local pairs = [
     // context: ::Const.Perks.InventorClassTree.Name
     {
         en = "Inventor"
-        es = ""
+        es = "Inventor"
     }
     // context: ::Const.Perks.InventorClassTree.Descriptions
     {
@@ -15411,7 +15411,7 @@ local pairs = [
     // context: ::Const.Perks.NinetailsClassTree.Name
     {
         en = "Cat O' Nine Tails"
-        es = ""
+        es = "Gato de nueve colas"
     }
     // context: ::Const.Perks.NinetailsClassTree.Descriptions
     {
@@ -15426,7 +15426,7 @@ local pairs = [
     // context: ::Const.Perks.InquisitionClassTree.Name
     {
         en = "Inquisition"
-        es = ""
+        es = "Inquisición"
     }
     // context: ::Const.Perks.InquisitionClassTree.Descriptions
     {
@@ -15436,7 +15436,7 @@ local pairs = [
     // context: ::Const.Perks.ClubClassTree.Name
     {
         en = "Browbeater"
-        es = ""
+        es = "Intimidador"
     }
     // context: ::Const.Perks.ClubClassTree.Descriptions
     {
@@ -15453,7 +15453,7 @@ local pairs = [
     // context: ::Const.Perks.HoundmasterClassTree.Name
     {
         en = "Hound Master"
-        es = ""
+        es = "Maestro de sabuesos"
     }
     // context: ::Const.Perks.HoundmasterClassTree.Descriptions
     {
@@ -15470,7 +15470,7 @@ local pairs = [
     // context: ::Const.Perks.SharpshooterClassTree.Name
     {
         en = "Sharpshooter"
-        es = ""
+        es = "Tirador de élite"
     }
     // context: ::Const.Perks.SharpshooterClassTree.Descriptions
     {
@@ -15487,7 +15487,7 @@ local pairs = [
     // context: ::Const.Perks.SpearfisherClassTree.Name
     {
         en = "Spearfisher"
-        es = ""
+        es = "Arponero"
     }
     // context: ::Const.Perks.SpearfisherClassTree.Descriptions
     {
@@ -15519,7 +15519,7 @@ local pairs = [
     // context: ::Const.Perks.ClothArmorTree.Name
     {
         en = "Cloth Armor"
-        es = ""
+        es = "Armadura de tela"
     }
     // context: ::Const.Perks.ClothArmorTree.Descriptions
     {
@@ -15530,7 +15530,7 @@ local pairs = [
     // context: ::Const.Perks.BeastTree.Name
     {
         en = "Beasts"
-        es = ""
+        es = "Bestias"
     }
     // context: ::Const.Perks.BeastTree.Descriptions
     {
@@ -15540,7 +15540,7 @@ local pairs = [
     // context: ::Const.Perks.OccultTree.Name
     {
         en = "Occult"
-        es = ""
+        es = "Ocultismo"
     }
     // context: ::Const.Perks.OccultTree.Descriptions
     {
@@ -15557,7 +15557,7 @@ local pairs = [
     // context: ::Const.Perks.GreenskinTree.Name
     {
         en = "Greenskins"
-        es = ""
+        es = "Pieles verdes"
     }
     // context: ::Const.Perks.GreenskinTree.Descriptions
     {
@@ -15567,7 +15567,7 @@ local pairs = [
     // context: ::Const.Perks.CivilizationTree.Name
     {
         en = "Civilization"
-        es = ""
+        es = "Civilización"
     }
     // context: ::Const.Perks.CivilizationTree.Descriptions
     {
@@ -15577,7 +15577,7 @@ local pairs = [
     // context: ::Const.Perks.OutlawTree.Name
     {
         en = "Outlaws"
-        es = ""
+        es = "Proscritos"
     }
     // context: ::Const.Perks.OutlawTree.Descriptions
     {
@@ -15595,34 +15595,34 @@ local pairs = [
     // context: ::Const.Perks.ForcefulTree.Name
     {
         en = "Forceful"
-        es = ""
+        es = "Contundente"
     }
     // FILE: mod_legends\config\z_perks_tree_enemy_traits.nut
     // context: ::Const.Perks.ShadyTree.Name
     {
         en = "Shady"
-        es = ""
+        es = "Turbio"
     }
     // context: ::Const.Perks.AggressiveTree.Name
     {
         en = "Aggressive"
-        es = ""
+        es = "Agresivo"
     }
     // context: ::Const.Perks.SparringTree.Name
     {
         en = "Sparring"
-        es = ""
+        es = "Práctica de combate"
     }
     // context: ::Const.Perks.GiantTree.Name
     {
         en = "Giant"
-        es = ""
+        es = "Gigantesco"
     }
     // FILE: mod_legends\config\z_perks_tree_magic.nut
     // context: ::Const.Perks.BardMagicTree.Name
     {
         en = "Bard"
-        es = ""
+        es = "Bardo"
     }
     // context: ::Const.Perks.BardMagicTree.Descriptions
     {
@@ -15632,7 +15632,7 @@ local pairs = [
     // context: ::Const.Perks.StavesMagicTree.Name
     {
         en = "Staves"
-        es = ""
+        es = "Bastones"
     }
     // en = "Immortal"
     // en base_es
@@ -15644,7 +15644,7 @@ local pairs = [
     // context: ::Const.Perks.ValaChantMagicTree.Name
     {
         en = "Vala Chant"
-        es = ""
+        es = "Canto de la vala"
     }
     // context: ::Const.Perks.ValaChantMagicTree.Descriptions
     {
@@ -15654,7 +15654,7 @@ local pairs = [
     // context: ::Const.Perks.ValaTranceMagicTree.Name
     {
         en = "Vala Trance"
-        es = ""
+        es = "Trance de la vala"
     }
     // context: ::Const.Perks.ValaTranceMagicTree.Descriptions
     {
@@ -15664,7 +15664,7 @@ local pairs = [
     // context: ::Const.Perks.ValaRuneMagicTree.Name
     {
         en = "Vala Rune"
-        es = ""
+        es = "Runa de la vala"
     }
     // context: ::Const.Perks.ValaRuneMagicTree.Descriptions
     {
@@ -15674,7 +15674,7 @@ local pairs = [
     // context: ::Const.Perks.ValaSpiritMagicTree.Name
     {
         en = "Vala Spirits"
-        es = ""
+        es = "Espíritus de la vala"
     }
     // context: ::Const.Perks.ValaSpiritMagicTree.Descriptions
     {
@@ -15706,7 +15706,7 @@ local pairs = [
     // context: ::Const.Perks.AssassinLeftoverTree.Name
     {
         en = "Cutthroat"
-        es = ""
+        es = "Degollador"
     }
     // context: ::Const.Perks.AssassinLeftoverTree.Descriptions
     {
@@ -15716,7 +15716,7 @@ local pairs = [
     // context: ::Const.Perks.BasicNecroMagicTree.Name
     {
         en = "Necromancy"
-        es = ""
+        es = "Nigromancia"
     }
     // context: ::Const.Perks.BasicNecroMagicTree.Descriptions
     {
@@ -15726,7 +15726,7 @@ local pairs = [
     // context: ::Const.Perks.WarlockMagicTree.Name
     {
         en = "Sorcery"
-        es = ""
+        es = "Hechicería"
     }
     // context: ::Const.Perks.WarlockMagicTree.Descriptions
     {
@@ -15741,7 +15741,7 @@ local pairs = [
     // context: ::Const.Perks.ZombieMagicTree.Name
     {
         en = "Zombie"
-        es = ""
+        es = "Zombi"
     }
     // context: ::Const.Perks.ZombieMagicTree.Descriptions
     {
@@ -15751,7 +15751,7 @@ local pairs = [
     // context: ::Const.Perks.SkeletonMagicTree.Name
     {
         en = "Skeleton"
-        es = ""
+        es = "Esqueleto"
     }
     // context: ::Const.Perks.SkeletonMagicTree.Descriptions
     {
@@ -15766,7 +15766,7 @@ local pairs = [
     // context: ::Const.Perks.CaptainMagicTree.Name
     {
         en = "Leadership"
-        es = ""
+        es = "Liderazgo"
     }
     // context: ::Const.Perks.CaptainMagicTree.Descriptions
     {
@@ -15776,7 +15776,7 @@ local pairs = [
     // context: ::Const.Perks.IllusionistMagicTree.Name
     {
         en = "Illusion"
-        es = ""
+        es = "Ilusión"
     }
     // context: ::Const.Perks.IllusionistMagicTree.Descriptions
     {
@@ -15786,7 +15786,7 @@ local pairs = [
     // context: ::Const.Perks.DivinationMagicTree.Name
     {
         en = "Divination"
-        es = ""
+        es = "Adivinación"
     }
     // context: ::Const.Perks.DivinationMagicTree.Descriptions
     {
@@ -15796,7 +15796,7 @@ local pairs = [
     // context: ::Const.Perks.ConjurationMagicTree.Name
     {
         en = "Conjuration"
-        es = ""
+        es = "Conjuración"
     }
     // context: ::Const.Perks.ConjurationMagicTree.Descriptions
     {
@@ -15806,7 +15806,7 @@ local pairs = [
     // context: ::Const.Perks.DruidMagicTree.Name
     {
         en = "Druidic Arts"
-        es = ""
+        es = "Artes druídicas"
     }
     // context: ::Const.Perks.DruidMagicTree.Descriptions
     {
@@ -15816,7 +15816,7 @@ local pairs = [
     // context: ::Const.Perks.DruidTransformTree.Name
     {
         en = "Druidic transformation"
-        es = ""
+        es = "Transformación druídica"
     }
     // context: ::Const.Perks.DruidTransformTree.Descriptions
     {
@@ -15826,7 +15826,7 @@ local pairs = [
     // context: ::Const.Perks.TransmutationMagicTree.Name
     {
         en = "Transmutation"
-        es = ""
+        es = "Transmutación"
     }
     // context: ::Const.Perks.TransmutationMagicTree.Descriptions
     {
@@ -15836,7 +15836,7 @@ local pairs = [
     // context: ::Const.Perks.EvocationMagicTree.Name
     {
         en = "Evocation"
-        es = ""
+        es = "Evocación"
     }
     // context: ::Const.Perks.EvocationMagicTree.Descriptions
     {
@@ -15846,7 +15846,7 @@ local pairs = [
     // context: ::Const.Perks.SeerMagicTree.Name
     {
         en = "Seer"
-        es = ""
+        es = "Vidente"
     }
     // context: ::Const.Perks.SeerMagicTree.Descriptions
     {
@@ -15868,7 +15868,7 @@ local pairs = [
     // context: ::Const.Perks.PhilosophyMagicTree.Name
     {
         en = "Philosophy"
-        es = ""
+        es = "Filosofía"
     }
     // context: ::Const.Perks.PhilosophyMagicTree.Descriptions
     {
@@ -15878,7 +15878,7 @@ local pairs = [
     // context: ::Const.Perks.AlchemyMagicTree.Name
     {
         en = "Alchemy"
-        es = ""
+        es = "Alquimia"
     }
     // context: ::Const.Perks.AlchemyMagicTree.Descriptions
     {
@@ -15888,7 +15888,7 @@ local pairs = [
     // context: ::Const.Perks.TherianthropyMagicTree.Name
     {
         en = "Therianthropy"
-        es = ""
+        es = "Teriantropía"
     }
     // context: ::Const.Perks.TherianthropyMagicTree.Descriptions
     {
@@ -15899,7 +15899,7 @@ local pairs = [
     // context: ::Const.Perks.HealerProfessionTree.Name
     {
         en = "Apothecary"
-        es = ""
+        es = "Boticario"
     }
     // context: ::Const.Perks.HealerProfessionTree.Descriptions
     {
@@ -15909,7 +15909,7 @@ local pairs = [
     // context: ::Const.Perks.ChefProfessionTree.Name
     {
         en = "Chef"
-        es = ""
+        es = "Cocinero"
     }
     // context: ::Const.Perks.ChefProfessionTree.Descriptions
     {
@@ -15919,7 +15919,7 @@ local pairs = [
     // context: ::Const.Perks.RepairProfessionTree.Name
     {
         en = "Repair"
-        es = ""
+        es = "Reparación"
     }
     // context: ::Const.Perks.RepairProfessionTree.Descriptions
     {
@@ -15929,7 +15929,7 @@ local pairs = [
     // context: ::Const.Perks.BarterProfessionTree.Name
     {
         en = "Barter"
-        es = ""
+        es = "Regateo"
     }
     // context: ::Const.Perks.BarterProfessionTree.Descriptions
     {
@@ -15944,7 +15944,7 @@ local pairs = [
     // context: ::Const.Perks.MinerProfessionTree.Name
     {
         en = "Mining"
-        es = ""
+        es = "Minería"
     }
     // context: ::Const.Perks.MinerProfessionTree.Descriptions
     {
@@ -15959,7 +15959,7 @@ local pairs = [
     // context: ::Const.Perks.CaravaneerProfessionTree.Name
     {
         en = "Caravaneering"
-        es = ""
+        es = "Caravanero"
     }
     // context: ::Const.Perks.CaravaneerProfessionTree.Descriptions
     {
@@ -15969,7 +15969,7 @@ local pairs = [
     // context: ::Const.Perks.HerbalistProfessionTree.Name
     {
         en = "Herbalism"
-        es = ""
+        es = "Herboristería"
     }
     // context: ::Const.Perks.HerbalistProfessionTree.Descriptions
     {
@@ -15997,13 +15997,13 @@ local pairs = [
     // context: ::Const.Perks.SpecialTrees.addSpecialPerk.::Const.Perks[name].Name
     {
         en = "Special Perks"
-        es = ""
+        es = "Talentos especiales"
     }
     // FILE: mod_legends\config\z_perks_tree_traits.nut
     // context: ::Const.Perks.AgileTree.Name
     {
         en = "Agile"
-        es = ""
+        es = "Agilidad"
     }
     // context: ::Const.Perks.AgileTree.Descriptions
     {
@@ -16043,7 +16043,7 @@ local pairs = [
     // context: ::Const.Perks.IndestructibleTree.Name
     {
         en = "Tenacious"
-        es = ""
+        es = "Tenaz"
     }
     // context: ::Const.Perks.IndestructibleTree.Descriptions
     {
@@ -16083,7 +16083,7 @@ local pairs = [
     // context: ::Const.Perks.MartyrTree.Name
     {
         en = "Martyr"
-        es = ""
+        es = "Mártir"
     }
     // context: ::Const.Perks.MartyrTree.Descriptions
     {
@@ -16123,7 +16123,7 @@ local pairs = [
     // context: ::Const.Perks.ViciousTree.Name
     {
         en = "Vicious"
-        es = ""
+        es = "Feroz"
     }
     // context: ::Const.Perks.ViciousTree.Descriptions
     {
@@ -16163,7 +16163,7 @@ local pairs = [
     // context: ::Const.Perks.DeviousTree.Name
     {
         en = "Devious"
-        es = ""
+        es = "Taimado"
     }
     // context: ::Const.Perks.DeviousTree.Descriptions
     {
@@ -16203,7 +16203,7 @@ local pairs = [
     // context: ::Const.Perks.InspirationalTree.Name
     {
         en = "Inspirational"
-        es = ""
+        es = "Inspirador"
     }
     // context: ::Const.Perks.InspirationalTree.Descriptions
     {
@@ -16243,7 +16243,7 @@ local pairs = [
     // context: ::Const.Perks.IntelligentTree.Name
     {
         en = "Intelligent"
-        es = ""
+        es = "Inteligente"
     }
     // context: ::Const.Perks.IntelligentTree.Descriptions
     {
@@ -16313,7 +16313,7 @@ local pairs = [
     // context: ::Const.Perks.FastTree.Name
     {
         en = "Fast"
-        es = ""
+        es = "Rápido"
     }
     // context: ::Const.Perks.FastTree.Descriptions
     {
@@ -16353,7 +16353,7 @@ local pairs = [
     // context: ::Const.Perks.LargeTree.Name
     {
         en = "Large"
-        es = ""
+        es = "Corpulento"
     }
     // context: ::Const.Perks.LargeTree.Descriptions
     {
@@ -16393,7 +16393,7 @@ local pairs = [
     // context: ::Const.Perks.OrganisedTree.Name
     {
         en = "Organized"
-        es = ""
+        es = "Organizado"
     }
     // context: ::Const.Perks.OrganisedTree.Descriptions
     {
@@ -16470,7 +16470,7 @@ local pairs = [
     // context: ::Const.Perks.FitTree.Name
     {
         en = "Fit"
-        es = ""
+        es = "En forma"
     }
     // context: ::Const.Perks.FitTree.Descriptions
     {
@@ -16587,7 +16587,7 @@ local pairs = [
     // context: ::Const.Perks.BowTree.Name
     {
         en = "Bow"
-        es = ""
+        es = "Arco"
     }
     // context: ::Const.Perks.BowTree.Descriptions
     {
@@ -16597,7 +16597,7 @@ local pairs = [
     // context: ::Const.Perks.ThrowingTree.Name
     {
         en = "Throwing"
-        es = ""
+        es = "Armas arrojadizas"
     }
     // context: ::Const.Perks.ThrowingTree.Descriptions
     {
@@ -16612,7 +16612,7 @@ local pairs = [
     // context: ::Const.Perks.FistsTree.Name
     {
         en = "Unarmed"
-        es = ""
+        es = "Sin armas"
     }
     // context: ::Const.Perks.FistsTree.Descriptions
     {
@@ -30206,7 +30206,7 @@ local pairs = [
     // context: ::Const.Strings.PerkName.Taunt
     {
         en = "Battlefield Control"
-        es = ""
+        es = "Control del campo de batalla"
     }
     // context: ::Const.Strings.PerkDescription.Taunt
     {
@@ -31129,7 +31129,7 @@ local pairs = [
     // context: ::Const.World.Spawn.Slaves.Name
     {
         en = "Slaves"
-        es = ""
+        es = "Esclavos"
     }
     // en = "Assassins"
     // en base_es
@@ -31139,12 +31139,12 @@ local pairs = [
     // context: ::Const.World.Spawn.Zombies.Name
     {
         en = "Zombies"
-        es = ""
+        es = "Zombis"
     }
     // context: ::Const.World.Spawn.Ghosts.Name
     {
         en = "Ghosts"
-        es = ""
+        es = "Fantasmas"
     }
     // en = "Necromancer"
     // en base_es
@@ -37581,7 +37581,7 @@ local pairs = [
     // context: barbarian_king_contract.o.create.m.Name
     {
         en = "The Winter King"
-        es = ""
+        es = "El Rey del Invierno"
     }
     // context: barbarian_king_contract.o.create.m.DescriptionTemplates
     {
@@ -38428,7 +38428,7 @@ local pairs = [
     // context: destroy_orc_camp_contract.o.create.m.Name
     {
         en = "Orc Warcamp"
-        es = ""
+        es = "Campamento de guerra orco"
     }
     // context: destroy_orc_camp_contract.o.create.m.DescriptionTemplates
     {
@@ -38523,7 +38523,7 @@ local pairs = [
     // context: drive_away_bandits_contract.o.create.m.Name
     {
         en = "Brigand Stronghold"
-        es = ""
+        es = "Bastión de bandidos"
     }
     // context: drive_away_bandits_contract.o.create.m.DescriptionTemplates
     {
@@ -38638,7 +38638,7 @@ local pairs = [
     // context: drive_away_barbarians_contract.o.create.m.Name
     {
         en = "Wildlings at the Gates"
-        es = ""
+        es = "Salvajes a las puertas"
     }
     // context: drive_away_barbarians_contract.o.create.m.DescriptionTemplates
     {
@@ -38924,7 +38924,7 @@ local pairs = [
     // context: escort_envoy_contract.o.create.m.Name
     {
         en = "A Diplomatic Mission"
-        es = ""
+        es = "Una misión diplomática"
     }
     // context: escort_envoy_contract.o.create.m.DescriptionTemplates
     {
@@ -38965,7 +38965,7 @@ local pairs = [
     // context: find_artifact_contract.o.create.m.Name
     {
         en = "Relic Hunt"
-        es = ""
+        es = "Caza de reliquias"
     }
     // context: find_artifact_contract.o.create.m.DescriptionTemplates
     {
@@ -39001,7 +39001,7 @@ local pairs = [
     // context: free_greenskin_prisoners_contract.o.create.m.Name
     {
         en = "Rescue Mission"
-        es = ""
+        es = "Misión de rescate"
     }
     // context: free_greenskin_prisoners_contract.o.create.m.DescriptionTemplates
     {
@@ -39324,7 +39324,7 @@ local pairs = [
     // context: hunting_serpents_contract.o.create.m.Name
     {
         en = "Hissing Sands"
-        es = ""
+        es = "Arenas sibilantes"
     }
     // context: hunting_serpents_contract.o.create.m.DescriptionTemplates
     {
@@ -39448,7 +39448,7 @@ local pairs = [
     // context: hunting_webknechts_contract.o.create.m.Name
     {
         en = "Scuttling Horrors"
-        es = ""
+        es = "Horrores correteantes"
     }
     // context: hunting_webknechts_contract.o.create.m.DescriptionTemplates
     {
@@ -39533,7 +39533,7 @@ local pairs = [
     // context: intercept_raiding_parties_contract.o.create.m.Name
     {
         en = "Southern Raids"
-        es = ""
+        es = "Incursiones sureñas"
     }
     // context: intercept_raiding_parties_contract.o.create.m.DescriptionTemplates
     {
@@ -39581,7 +39581,7 @@ local pairs = [
     // context: investigate_cemetery_contract.o.create.m.Name
     {
         en = "Disturbed Rest"
-        es = ""
+        es = "Descanso perturbado"
     }
     // context: investigate_cemetery_contract.o.create.m.DescriptionTemplates
     {
@@ -39699,7 +39699,7 @@ local pairs = [
     // context: last_stand_contract.o.create.m.Name
     {
         en = "Death Denied"
-        es = ""
+        es = "La muerte negada"
     }
     // context: last_stand_contract.o.create.m.DescriptionTemplates
     {
@@ -39984,7 +39984,7 @@ local pairs = [
     // context: patrol_contract.o.create.m.Name
     {
         en = "Patrol Duty"
-        es = ""
+        es = "Servicio de patrulla"
     }
     // context: patrol_contract.o.create.m.DescriptionTemplates
     {
@@ -40183,7 +40183,7 @@ local pairs = [
     // context: raze_attached_location_contract.o.create.m.Name
     {
         en = "Intimidation"
-        es = ""
+        es = "Intimidación"
     }
     // context: raze_attached_location_contract.o.create.m.DescriptionTemplates
     {
@@ -40867,7 +40867,7 @@ local pairs = [
     // context: roaming_beasts_contract.o.create.m.Name
     {
         en = "Tooth and Tail"
-        es = ""
+        es = "Diente y cola"
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
@@ -41006,7 +41006,7 @@ local pairs = [
     // context: roaming_beasts_desert_contract.o.create.m.Name
     {
         en = "Desert Fangs"
-        es = ""
+        es = "Colmillos del desierto"
     }
     // context: roaming_beasts_desert_contract.o.create.m.DescriptionTemplates
     {
@@ -41057,7 +41057,7 @@ local pairs = [
     // context: root_out_undead_contract.o.create.m.Name
     {
         en = "Purge the Undead"
-        es = ""
+        es = "Purga a los no muertos"
     }
     // context: root_out_undead_contract.o.create.m.DescriptionTemplates
     {
@@ -41083,7 +41083,7 @@ local pairs = [
     // context: siege_fortification_contract.o.create.m.Name
     {
         en = "Laying Siege"
-        es = ""
+        es = "Poner sitio"
     }
     // context: siege_fortification_contract.o.create.m.DescriptionTemplates
     {
@@ -47011,7 +47011,7 @@ local pairs = [
     // context: item.o.updateRuneSigilToken.m.Name
     {
         en = "Unknown Rune Sigil: Error"
-        es = ""
+        es = "Sello rúnico desconocido: Error"
     }
     // context: item.o.updateRuneSigilToken.m.Description
     {
@@ -47126,7 +47126,7 @@ local pairs = [
     // context: dates_item.o.create.m.Name
     {
         en = "Dried Dates"
-        es = ""
+        es = "Dátiles secos"
     }
     // context: dates_item.o.create.m.Description
     {
@@ -47185,7 +47185,7 @@ local pairs = [
     // context: roots_and_berries_item.o.create.m.Name
     {
         en = "Dried Roots and Berries"
-        es = ""
+        es = "Raíces y bayas secas"
     }
     // context: roots_and_berries_item.o.create.m.Description
     {
@@ -47242,7 +47242,7 @@ local pairs = [
     // context: acid_flask_item.o.setAmmo.m.Name
     {
         en = "Acid Flask (Used)"
-        es = ""
+        es = "Frasco de ácido (usado)"
     }
     // context: acid_flask_item.o.setAmmo.m.Description
     {
@@ -47265,7 +47265,7 @@ local pairs = [
     // context: daze_bomb_item.o.setAmmo.m.Name
     {
         en = "Flash Pot (Used)"
-        es = ""
+        es = "Bomba destellante (usada)"
     }
     // context: daze_bomb_item.o.setAmmo.m.Description
     {
@@ -47286,7 +47286,7 @@ local pairs = [
     // context: fire_bomb_item.o.setAmmo.m.Name
     {
         en = "Fire Pot (Used)"
-        es = ""
+        es = "Frasco de fuego (usado)"
     }
     // FILE: mod_legends\hooks\items\tools\holy_water_item.nut
     // context: holy_water_item.o.create.m.Description
@@ -47314,12 +47314,12 @@ local pairs = [
     // context: holy_water_item.o.setAmmo.m.Name
     {
         en = "Holy Water"
-        es = ""
+        es = "Agua bendita"
     }
     // context: holy_water_item.o.setAmmo.m.Name
     {
         en = "Holy Water (Used)"
-        es = ""
+        es = "Agua bendita (usada)"
     }
     // context: holy_water_item.o.setAmmo.m.Description
     {
@@ -47337,7 +47337,7 @@ local pairs = [
     // context: reinforced_throwing_net.o.updateAmmo.m.Name
     {
         en = "Broken Throwing Net"
-        es = ""
+        es = "Red arrojadiza rota"
     }
     // context: reinforced_throwing_net.o.updateAmmo.m.Description
     {
@@ -47360,7 +47360,7 @@ local pairs = [
     // context: smoke_bomb_item.o.setAmmo.m.Name
     {
         en = "Smoke Pot (Used)"
-        es = ""
+        es = "Bomba de humo (usada)"
     }
     // FILE: mod_legends\hooks\items\tools\throwing_net.nut
     // en = "Throwing Net"
@@ -47381,7 +47381,7 @@ local pairs = [
     // context: drum_item.o.create.m.Name
     {
         en = "Barbarian Drum"
-        es = ""
+        es = "Tambor bárbaro"
     }
     // context: drum_item.o.create.m.Description
     {
@@ -47425,7 +47425,7 @@ local pairs = [
     // context: goblin_crossbow.o.addSkill.::Legends.Actives.grant()._skill.m.Name
     {
         en = "Shoot Stake"
-        es = ""
+        es = "Disparar estaca"
     }
     // FILE: mod_legends\hooks\items\weapons\greenskins\goblin_spear.nut
     // context: goblin_spear.o.create.m.Description
@@ -47560,7 +47560,7 @@ local pairs = [
     // context: throwing_spear.o.setAmmo.m.Name
     {
         en = "Throwing Spear (Used)"
-        es = ""
+        es = "Lanza arrojadiza (usada)"
     }
     // FILE: mod_legends\hooks\items\weapons\weapon.nut
     // context: weapon.o.getTooltip.tooltip.text.find()
@@ -47587,7 +47587,7 @@ local pairs = [
     // context: agent_follower.o.create.m.Name
     {
         en = "Messenger's Rest"
-        es = ""
+        es = "Descanso del mensajero"
     }
     // context: agent_follower.o.create.m.Description
     {
@@ -47607,7 +47607,7 @@ local pairs = [
     // context: alchemist_follower.o.create.m.Name
     {
         en = "Alchemy Tools"
-        es = ""
+        es = "Herramientas de alquimia"
     }
     // context: alchemist_follower.o.create.m.Description
     {
@@ -47644,7 +47644,7 @@ local pairs = [
     // context: blacksmith_follower.o.create.m.Name
     {
         en = "Blacksmith's Tools"
-        es = ""
+        es = "Herramientas del herrero"
     }
     // context: blacksmith_follower.o.create.m.Description
     {
@@ -47670,7 +47670,7 @@ local pairs = [
     // context: bounty_hunter_follower.o.create.m.Name
     {
         en = "Bounty Board"
-        es = ""
+        es = "Tablón de recompensas"
     }
     // context: bounty_hunter_follower.o.create.m.Description
     {
@@ -47695,7 +47695,7 @@ local pairs = [
     // context: brigand_follower.o.create.m.Name
     {
         en = "Stolen Documents"
-        es = ""
+        es = "Documentos robados"
     }
     // context: brigand_follower.o.create.m.Description
     {
@@ -47730,7 +47730,7 @@ local pairs = [
     // context: cartographer_follower.o.create.m.Name
     {
         en = "Mapping Supplies"
-        es = ""
+        es = "Material cartográfico"
     }
     // context: cartographer_follower.o.create.m.Description
     {
@@ -47750,7 +47750,7 @@ local pairs = [
     // context: cook_follower.o.create.m.Name
     {
         en = "Cooking Equipment"
-        es = ""
+        es = "Utensilios de cocina"
     }
     // context: cook_follower.o.create.m.Description
     {
@@ -47771,7 +47771,7 @@ local pairs = [
     // context: drill_sergeant_follower.o.create.m.Name
     {
         en = "Training Dummies"
-        es = ""
+        es = "Muñecos de entrenamiento"
     }
     // context: drill_sergeant_follower.o.create.m.Description
     {
@@ -47809,7 +47809,7 @@ local pairs = [
     // context: lookout_follower.o.create.m.Name
     {
         en = "Outrider's Post"
-        es = ""
+        es = "Puesto del batidor"
     }
     // en = "Having a quick Lookout with sharp eyes travel in advance of the company can prove invaluable in being aware of dangers and points of interests before others become aware of the company."
     // en base_es
@@ -47826,7 +47826,7 @@ local pairs = [
     // context: minstrel_follower.o.create.m.Name
     {
         en = "Minstrel's Tent"
-        es = ""
+        es = "Tienda del juglar"
     }
     // context: minstrel_follower.o.create.m.Description
     {
@@ -47846,7 +47846,7 @@ local pairs = [
     // context: negotiator_follower.o.create.m.Name
     {
         en = "Meeting Point"
-        es = ""
+        es = "Punto de encuentro"
     }
     // context: negotiator_follower.o.create.m.Description
     {
@@ -47879,7 +47879,7 @@ local pairs = [
     // context: paymaster_follower.o.create.m.Name
     {
         en = "Pennypincher's Tools"
-        es = ""
+        es = "Herramientas del tacaño"
     }
     // context: paymaster_follower.o.create.m.Description
     {
@@ -47906,7 +47906,7 @@ local pairs = [
     // context: quartermaster_follower.o.create.m.Name
     {
         en = "Ordered Inventory"
-        es = ""
+        es = "Inventario ordenado"
     }
     // en = "With years of experience from traveling with caravans, the Quartermaster is able to squeeze and rotate any piece of gear, luggage or armor into the perfect spot to use space as efficiently as possible."
     // en base_es
@@ -47929,7 +47929,7 @@ local pairs = [
     // context: recruiter_follower.o.create.m.Name
     {
         en = "Pre-filled Contracts"
-        es = ""
+        es = "Contratos ya redactados"
     }
     // context: recruiter_follower.o.create.m.Description
     {
@@ -47949,7 +47949,7 @@ local pairs = [
     // context: scavenger_follower.o.create.m.Name
     {
         en = "Scavenger's Cart"
-        es = ""
+        es = "Carro del carroñero"
     }
     // context: scavenger_follower.o.create.m.Description
     {
@@ -47969,7 +47969,7 @@ local pairs = [
     // context: scout_follower.o.create.m.Name
     {
         en = "Watcher's Totem"
-        es = ""
+        es = "Tótem del vigilante"
     }
     // context: scout_follower.o.create.m.Description
     {
@@ -47992,7 +47992,7 @@ local pairs = [
     // context: surgeon_follower.o.create.m.Name
     {
         en = "Triage Table"
-        es = ""
+        es = "Mesa de triaje"
     }
     // context: surgeon_follower.o.create.m.Description
     {
@@ -48012,7 +48012,7 @@ local pairs = [
     // context: trader_follower.o.create.m.Name
     {
         en = "Secure Chests"
-        es = ""
+        es = "Cofres seguros"
     }
     // context: trader_follower.o.create.m.Description
     {
@@ -48627,7 +48627,7 @@ local pairs = [
     // context: bash.o.setItem.m.Name
     {
         en = "Drum Bash"
-        es = ""
+        es = "Golpe de tambor"
     }
     // context: bash.o.setItem.m.Description
     {
@@ -48642,7 +48642,7 @@ local pairs = [
     // context: bash.o.setItem.m.Name
     {
         en = "Lute Bash"
-        es = ""
+        es = "Golpe de laúd"
     }
     // context: bash.o.setItem.m.Description
     {
@@ -48657,7 +48657,7 @@ local pairs = [
     // context: bash.o.setItem.m.Name
     {
         en = "Staff Bash"
-        es = ""
+        es = "Golpe de bastón"
     }
     // context: bash.o.getTooltip.ret.push().text
     {
@@ -48770,7 +48770,7 @@ local pairs = [
     // context: chop.o.setItem.m.Name
     {
         en = "Hack"
-        es = ""
+        es = "Hachazo"
     }
     // context: chop.o.setItem.m.Description
     {
@@ -48887,7 +48887,7 @@ local pairs = [
     // context: flail_skill.o.setItem.m.Name
     {
         en = "Chain Flail"
-        es = ""
+        es = "Mayal de cadena"
     }
     // context: flail_skill.o.getTooltip.ret.push().text
     {
@@ -48929,7 +48929,7 @@ local pairs = [
     // context: hammer.o.setItem.m.Name
     {
         en = "Mordhau"
-        es = ""
+        es = "Mordhau"
     }
     // context: hammer.o.setItem.m.Description
     {
@@ -49044,7 +49044,7 @@ local pairs = [
     // context: knock_out.o.setItem.m.Name
     {
         en = "Staff Daze"
-        es = ""
+        es = "Atontar con bastón"
     }
     // context: knock_out.o.setItem.m.Description
     {
@@ -49054,7 +49054,7 @@ local pairs = [
     // context: knock_out.o.setItem.m.Name
     {
         en = "Improvised Strike"
-        es = ""
+        es = "Golpe improvisado"
     }
     // context: knock_out.o.setItem.m.Description
     {
@@ -49117,7 +49117,7 @@ local pairs = [
     // context: lunge_skill.o.setItem.m.Name
     {
         en = "Great Lunge"
-        es = ""
+        es = "Gran estocada"
     }
     // context: lunge_skill.o.setItem.m.Description
     {
@@ -49153,7 +49153,7 @@ local pairs = [
     // context: puncture.o.setItem.m.Name
     {
         en = "Halfsword"
-        es = ""
+        es = "Media espada"
     }
     // context: puncture.o.setItem.m.Description
     {
@@ -49291,7 +49291,7 @@ local pairs = [
     // context: slash.o.setItem.m.Name
     {
         en = "Great Slash"
-        es = ""
+        es = "Gran corte"
     }
     // context: slash.o.setItem.m.Description
     {
@@ -49301,7 +49301,7 @@ local pairs = [
     // context: slash.o.setItem.m.Name
     {
         en = "Breach"
-        es = ""
+        es = "Abrir brecha"
     }
     // context: slash.o.setItem.m.Description
     {
@@ -49383,7 +49383,7 @@ local pairs = [
     // context: split_shield.o.setItem.m.Name
     {
         en = "Shatter Shield"
-        es = ""
+        es = "Destrozar escudo"
     }
     // context: split_shield.o.getTooltip.ret.push().text
     {
@@ -49450,7 +49450,7 @@ local pairs = [
     // context: thresh.o.setItem.m.Name
     {
         en = "Chain Thresh"
-        es = ""
+        es = "Trillar con cadena"
     }
     // context: thresh.o.setItem.m.Description
     {
@@ -49486,7 +49486,7 @@ local pairs = [
     // context: throw_axe.o.setItem.m.Name
     {
         en = "Throw Backup Axe"
-        es = ""
+        es = "Arrojar hacha de reserva"
     }
     // context: throw_axe.o.setItem.m.Description
     {
@@ -49542,7 +49542,7 @@ local pairs = [
     // context: throw_javelin.o.setItem.m.Name
     {
         en = "Throw Backup Spear"
-        es = ""
+        es = "Arrojar lanza de reserva"
     }
     // context: throw_javelin.o.setItem.m.Description
     {
@@ -49638,7 +49638,7 @@ local pairs = [
     // context: unleash_wolf.o.create.m.Name
     {
         en = "Unleash Wolf"
-        es = ""
+        es = "Liberar lobo"
     }
     // context: unleash_wolf.o.create.m.Description
     {
@@ -49688,7 +49688,7 @@ local pairs = [
     // context: zombie_bite.o.create.m.Name
     {
         en = "Wiederganger Bite"
-        es = ""
+        es = "Mordida de Wiederganger"
     }
     // context: zombie_bite.o.create.m.Description
     {
@@ -49720,7 +49720,7 @@ local pairs = [
     // context: adventurous_noble_background.o.setGender.m.Name
     {
         en = "Adventurous Lady"
-        es = ""
+        es = "Dama aventurera"
     }
     // context: adventurous_noble_background.o.setGender.m.BackgroundDescription
     {
@@ -49856,7 +49856,7 @@ local pairs = [
     // context: assassin_southern_background.o.create.m.Name
     {
         en = "Hashassin"
-        es = ""
+        es = "Hashassin"
     }
     // en = "An assassin has to be quick on his feet and skilled with the use of weapons."
     // en base_es
@@ -49999,7 +49999,7 @@ local pairs = [
     // context: beggar_background.o.setGender.m.Name
     {
         en = "Widow"
-        es = ""
+        es = "Viuda"
     }
     // context: beggar_background.o.setGender.m.BackgroundDescription
     {
@@ -50124,7 +50124,7 @@ local pairs = [
     // context: butcher_background.o.setGender.m.Name
     {
         en = "Fishmonger"
-        es = ""
+        es = "Pescadero"
     }
     // context: butcher_background.o.setGender.m.BackgroundDescription
     {
@@ -50734,7 +50734,7 @@ local pairs = [
     // context: daytaler_background.o.setGender.m.Name
     {
         en = "Washerwoman"
-        es = ""
+        es = "Lavandera"
     }
     // context: daytaler_background.o.setGender.m.BackgroundDescription
     {
@@ -50819,7 +50819,7 @@ local pairs = [
     // context: disowned_noble_background.o.setGender.m.Name
     {
         en = "Disowned Lady"
-        es = ""
+        es = "Dama desheredada"
     }
     // context: disowned_noble_background.o.setGender.m.BackgroundDescription
     {
@@ -50897,7 +50897,7 @@ local pairs = [
     // context: farmhand_background.o.setGender.m.Name
     {
         en = "Milkmaid"
-        es = ""
+        es = "Lechera"
     }
     // context: farmhand_background.o.setGender.m.BackgroundDescription
     {
@@ -51361,7 +51361,7 @@ local pairs = [
     // context: miller_background.o.setGender.m.Name
     {
         en = "Baker"
-        es = ""
+        es = "Panadero"
     }
     // context: miller_background.o.setGender.m.BackgroundDescription
     {
@@ -51426,7 +51426,7 @@ local pairs = [
     // context: minstrel_background.o.setGender.m.Name
     {
         en = "Troubadour"
-        es = ""
+        es = "Trovador"
     }
     // context: minstrel_background.o.setGender.m.BackgroundDescription
     {
@@ -51477,7 +51477,7 @@ local pairs = [
     // context: monk_background.o.setGender.m.Name
     {
         en = "Nun"
-        es = ""
+        es = "Monja"
     }
     // context: monk_background.o.setGender.m.Titles.push()
     {
@@ -51837,7 +51837,7 @@ local pairs = [
     // context: servant_background.o.setGender.m.Name
     {
         en = "Housemaid"
-        es = ""
+        es = "Criada"
     }
     // context: servant_background.o.setGender.m.BackgroundDescription
     {
@@ -52050,7 +52050,7 @@ local pairs = [
     // context: tailor_background.o.setGender.m.Name
     {
         en = "Seamstress"
-        es = ""
+        es = "Costurera"
     }
     // context: tailor_background.o.setGender.m.BackgroundDescription
     {
@@ -52124,7 +52124,7 @@ local pairs = [
     // context: thief_background.o.setGender.m.Name
     {
         en = "Pickpocket"
-        es = ""
+        es = "Carterista"
     }
     // context: thief_background.o.setGender.m.BackgroundDescription
     {
@@ -52191,7 +52191,7 @@ local pairs = [
     // context: wildman_background.o.setGender.m.Name
     {
         en = "Wildwoman"
-        es = ""
+        es = "Salvaje"
     }
     // context: wildman_background.o.setGender.m.BackgroundDescription
     {
@@ -52319,7 +52319,7 @@ local pairs = [
     // context: double_strike_effect.o.create.m.Name
     {
         en = "Flux!"
-        es = ""
+        es = "¡Racha!"
     }
     // context: double_strike_effect.o.getDescription
     {
@@ -52360,7 +52360,7 @@ local pairs = [
     // context: riposte_effect.o.create.m.Name
     {
         en = "Riposting"
-        es = ""
+        es = "Contraatacando"
     }
     // context: riposte_effect.o.getDescription
     {
@@ -56513,7 +56513,7 @@ local pairs = [
     // context: ::Const.LegendMod.Debug.FlagDefs.Name
     {
         en = "Contract Categories"
-        es = ""
+        es = "Categorías de contrato"
     }
     // context: ::Const.LegendMod.Debug.FlagDefs.Description
     {
@@ -56523,7 +56523,7 @@ local pairs = [
     // context: ::Const.LegendMod.Debug.FlagDefs.Name
     {
         en = "Contract Categories (Verbose)"
-        es = ""
+        es = "Categorías de contrato (detallado)"
     }
     // context: ::Const.LegendMod.Debug.FlagDefs.Description
     {
@@ -57141,7 +57141,7 @@ local pairs = [
     // context: ::Legends.Name
     {
         en = "Legends Mod"
-        es = ""
+        es = "Mod Legends"
     }
     // context: ::Legends.BuildName
     {
@@ -57290,7 +57290,7 @@ local pairs = [
     // context: legend_bandit_army_contract.create.m.Name
     {
         en = "King of Knives (Legendary)"
-        es = ""
+        es = "El Rey de los Cuchillos (Legendario)"
     }
     // context: legend_bandit_army_contract.create.m.DescriptionTemplates
     {
@@ -57546,7 +57546,7 @@ local pairs = [
     // context: legend_barbarian_prisoner_contract.create.m.Name
     {
         en = "Facing Justice (Legendary)"
-        es = ""
+        es = "Ante la justicia (Legendario)"
     }
     // context: legend_barbarian_prisoner_contract.create.m.DescriptionTemplates
     {
@@ -57724,7 +57724,7 @@ local pairs = [
     // context: legend_camp_legion_defend_cemetery_contract.::inherit().create.m.Name
     {
         en = "Defend burial site"
-        es = ""
+        es = "Defiende el camposanto"
     }
     // context: legend_camp_legion_defend_cemetery_contract.::inherit().create.m.DescriptionTemplates
     {
@@ -57818,7 +57818,7 @@ local pairs = [
     // context: legend_camp_legion_hunt_nobles_contract.create.m.Name
     {
         en = "Hunt: Nobles"
-        es = ""
+        es = "Caza: nobles"
     }
     // context: legend_camp_legion_hunt_nobles_contract.create.m.DescriptionTemplates
     {
@@ -57940,7 +57940,7 @@ local pairs = [
     // context: legend_camp_smuggle_contract.::inherit().create.m.Name
     {
         en = "Smuggle item"
-        es = ""
+        es = "Contrabando"
     }
     // context: legend_camp_smuggle_contract.::inherit().create.m.DescriptionTemplates
     {
@@ -58089,7 +58089,7 @@ local pairs = [
     // context: legend_camp_unhold_bondage_contract.create.m.Name
     {
         en = "Capture Unhold"
-        es = ""
+        es = "Captura al trol"
     }
     // context: legend_camp_unhold_bondage_contract.create.m.DescriptionTemplates
     {
@@ -58187,7 +58187,7 @@ local pairs = [
     // context: legend_deliver_money_contract.create.m.Name
     {
         en = "Treasury Transfer"
-        es = ""
+        es = "Traslado del tesoro"
     }
     // context: legend_deliver_money_contract.create.m.DescriptionTemplates
     {
@@ -58348,7 +58348,7 @@ local pairs = [
     // context: legend_hunting_basilisks_contract.create.m.Name
     {
         en = "Basilisk Infestation"
-        es = ""
+        es = "Plaga de basiliscos"
     }
     // context: legend_hunting_basilisks_contract.create.m.DescriptionTemplates
     {
@@ -58771,7 +58771,7 @@ local pairs = [
     // context: legend_hunting_mummies_contract.create.m.Name
     {
         en = "The Ancient Dead"
-        es = ""
+        es = "Los muertos ancestrales"
     }
     // context: legend_hunting_mummies_contract.create.m.DescriptionTemplates
     {
@@ -58866,7 +58866,7 @@ local pairs = [
     // context: legend_hunting_redback_webknechts_contract.create.m.Name
     {
         en = "Hunting Redback Webknechts (Legendary)"
-        es = ""
+        es = "Caza a los Webknechts de lomo rojo (Legendario)"
     }
     // context: legend_hunting_redback_webknechts_contract.create.m.DescriptionTemplates
     {
@@ -58950,7 +58950,7 @@ local pairs = [
     // context: legend_hunting_rock_unholds_contract.create.m.Name
     {
         en = "Hunting a Mountain (Legendary)"
-        es = ""
+        es = "Caza a una montaña (Legendario)"
     }
     // context: legend_hunting_rock_unholds_contract.create.m.DescriptionTemplates
     {
@@ -59068,7 +59068,7 @@ local pairs = [
     // context: legend_hunting_skin_ghouls_contract.create.m.Name
     {
         en = "Hunger Pangs (Legendary)"
-        es = ""
+        es = "Punzadas de hambre (Legendario)"
     }
     // context: legend_hunting_skin_ghouls_contract.create.m.DescriptionTemplates
     {
@@ -59136,7 +59136,7 @@ local pairs = [
     // context: legend_hunting_stollwurms_contract.create.m.Name
     {
         en = "Hunting Stollwurms (Legendary)"
-        es = ""
+        es = "Caza a los Stollwurms (Legendario)"
     }
     // context: legend_hunting_stollwurms_contract.create.m.DescriptionTemplates
     {
@@ -59409,7 +59409,7 @@ local pairs = [
     // context: legend_preemptive_beasts_contract.create.m.Name
     {
         en = "Taking Action"
-        es = ""
+        es = "Pasar a la acción"
     }
     // context: legend_preemptive_beasts_contract.create.m.DescriptionTemplates
     {
@@ -59727,7 +59727,7 @@ local pairs = [
     // context: legend_spider_abductions_contract.create.m.Name
     {
         en = "Horror In The Woods"
-        es = ""
+        es = "Horror en el bosque"
     }
     // context: legend_spider_abductions_contract.create.m.DescriptionTemplates
     {
@@ -59930,7 +59930,7 @@ local pairs = [
     // context: legend_warlock_cloak_blueprint.create.preview.m.Name
     {
         en = "Warlock Cloak"
-        es = ""
+        es = "Capa de brujo"
     }
     // FILE: scripts\crafting\blueprints\armor\chest\legend_lindwurm_scale_armor_blueprint.nut
     // en = "Lindwurm Scales"
@@ -59939,43 +59939,43 @@ local pairs = [
     // context: legend_mountain_armor_blueprint.create.preview.m.Name
     {
         en = "Mountain Armor"
-        es = ""
+        es = "Armadura de montaña"
     }
     // FILE: scripts\crafting\blueprints\armor\chest\legend_skin_armor_blueprint.nut
     // context: legend_skin_armor_blueprint.create.preview.m.Name
     {
         en = "Skinghoul Armor"
-        es = ""
+        es = "Armadura de necrófago desollado"
     }
     // FILE: scripts\crafting\blueprints\armor\helmet\legend_lindwurm_helmet_blueprint.nut
     // context: legend_lindwurm_helmet_blueprint.create.preview.m.Name
     {
         en = "Lindwurm's Helmet"
-        es = ""
+        es = "Yelmo de Lindwurm"
     }
     // FILE: scripts\crafting\blueprints\armor\helmet\legend_warlock_skull_blueprint.nut
     // context: legend_warlock_skull_blueprint.create.preview.m.Name
     {
         en = "Warlock Skull Faceplate"
-        es = ""
+        es = "Máscara de calavera de brujo"
     }
     // FILE: scripts\crafting\blueprints\shields\legend_heater_shield_blueprint.nut
     // context: legend_heater_shield_blueprint.create.m.PreviewCraftable.m.Name
     {
         en = "Company Heater Shield"
-        es = ""
+        es = "Escudo triangular de la compañía"
     }
     // FILE: scripts\crafting\blueprints\shields\legend_kite_shield_blueprint.nut
     // context: legend_kite_shield_blueprint.create.m.PreviewCraftable.m.Name
     {
         en = "Company Kite Shield"
-        es = ""
+        es = "Escudo lágrima de la compañía"
     }
     // FILE: scripts\crafting\blueprints\shields\legend_tower_shield_blueprint.nut
     // context: legend_tower_shield_blueprint.create.m.PreviewCraftable.m.Name
     {
         en = "Company Tower Shield"
-        es = ""
+        es = "Escudo de torre de la compañía"
     }
     // FILE: scripts\crafting\legend_rune.nut
     // context: legend_rune.getRuneSigilTooltip
@@ -59998,7 +59998,7 @@ local pairs = [
     // context: _legend_tips_encounter.create.m.Name
     {
         en = "Tips"
-        es = ""
+        es = "Consejos"
     }
     // context: _legend_tips_encounter.createScreens.text
     {
@@ -60914,7 +60914,7 @@ local pairs = [
     // context: commander_building.create.m.Name
     {
         en = "Commanders Tent"
-        es = ""
+        es = "Tienda del comandante"
     }
     // context: commander_building.create.m.Description
     {
@@ -61080,7 +61080,7 @@ local pairs = [
     // context: enchanter_building.create.m.Name
     {
         en = "Enchanter"
-        es = ""
+        es = "Encantador"
     }
     // context: enchanter_building.create.m.Description
     {
@@ -61232,7 +61232,7 @@ local pairs = [
     // context: gatherer_building.create.m.Name
     {
         en = "Supply Tent"
-        es = ""
+        es = "Tienda de suministros"
     }
     // context: gatherer_building.create.m.Description
     {
@@ -61408,7 +61408,7 @@ local pairs = [
     // context: hunter_building.create.m.Name
     {
         en = "Camp Kitchen"
-        es = ""
+        es = "Cocina del campamento"
     }
     // context: hunter_building.create.m.Description
     {
@@ -61798,7 +61798,7 @@ local pairs = [
     // context: painter_building.create.m.Name
     {
         en = "Painting Tent"
-        es = ""
+        es = "Tienda de pintura"
     }
     // context: painter_building.create.m.Description
     {
@@ -61821,7 +61821,7 @@ local pairs = [
     // context: repair_building.create.m.Name
     {
         en = "Repair Tent"
-        es = ""
+        es = "Tienda de reparaciones"
     }
     // context: repair_building.create.m.Description
     {
@@ -61916,7 +61916,7 @@ local pairs = [
     // context: rest_building.create.m.Name
     {
         en = "Rest"
-        es = ""
+        es = "Descanso"
     }
     // context: rest_building.create.m.Description
     {
@@ -62108,7 +62108,7 @@ local pairs = [
     // context: scout_building.create.m.Name
     {
         en = "Patrol Station"
-        es = ""
+        es = "Puesto de patrulla"
     }
     // context: scout_building.create.m.Description
     {
@@ -62327,7 +62327,7 @@ local pairs = [
     // context: training_building.create.m.Name
     {
         en = "Training Grounds"
-        es = ""
+        es = "Campo de entrenamiento"
     }
     // context: training_building.getDescription.desc
     {
@@ -62554,7 +62554,7 @@ local pairs = [
     // context: workshop_building.create.m.Name
     {
         en = "Salvage Tent"
-        es = ""
+        es = "Tienda de recuperación"
     }
     // context: workshop_building.create.m.Description
     {
@@ -62670,7 +62670,7 @@ local pairs = [
     // context: legend_spider_nest_location.create.m.Name
     {
         en = "Webknecht Nest"
-        es = ""
+        es = "Nido de Webknechts"
     }
     // FILE: scripts\entity\world\locations\legendary\legend_mummy_location.nut
     // context: legend_mummy_location.getDescription
@@ -62681,7 +62681,7 @@ local pairs = [
     // context: legend_mummy_location.onSpawned.m.Name
     {
         en = "Ancient Pyramid"
-        es = ""
+        es = "Pirámide Antigua"
     }
     // FILE: scripts\entity\world\locations\legendary\legend_tournament_location.nut
     // context: legend_tournament_location.getDescription
@@ -62700,7 +62700,7 @@ local pairs = [
     // context: legend_wizard_tower_location.onSpawned.m.Name
     {
         en = "Teetering Tower"
-        es = ""
+        es = "Torre Tambaleante"
     }
     // FILE: scripts\entity\world\settlements\buildings\blackmarket_building.nut
     // context: blackmarket_building.create.m.Name.::MSU.Array.rand()
@@ -65336,7 +65336,7 @@ local pairs = [
     // context: legend_building_effort_situation.create.m.Name
     {
         en = "Building Effort"
-        es = ""
+        es = "Obras de construcción"
     }
     // context: legend_building_effort_situation.create.m.Description
     {
@@ -65359,7 +65359,7 @@ local pairs = [
     // context: legend_degrading_effort_situation.create.m.Name
     {
         en = "Town "
-        es = ""
+        es = "Pueblo"
     }
     // context: legend_degrading_effort_situation.create.m.Description
     {
@@ -65375,7 +65375,7 @@ local pairs = [
     // context: legend_merc_company_disbands_situation.create.m.Name
     {
         en = "Mercenaries For Hire"
-        es = ""
+        es = "Mercenarios disponibles"
     }
     // context: legend_merc_company_disbands_situation.create.m.Description
     {
@@ -65407,7 +65407,7 @@ local pairs = [
     // context: legend_militant_townsfolk_situation.create.m.Name
     {
         en = "Militant Townsfolk"
-        es = ""
+        es = "Vecinos militantes"
     }
     // context: legend_militant_townsfolk_situation.create.m.Description
     {
@@ -65443,7 +65443,7 @@ local pairs = [
     // context: legend_rallied_militia_situation.create.m.Name
     {
         en = "Rallied Militia"
-        es = ""
+        es = "Milicia reunida"
     }
     // context: legend_rallied_militia_situation.create.m.Description
     {
@@ -65475,7 +65475,7 @@ local pairs = [
     // context: legend_upgrading_effort_situation.create.m.Name
     {
         en = "Upgrading Effort"
-        es = ""
+        es = "Obras de mejora"
     }
     // context: legend_upgrading_effort_situation.create.m.Description
     {
@@ -65491,13 +65491,13 @@ local pairs = [
     // context: legend_upgrading_locations_effort_situation.create.m.Name
     {
         en = "Upgrading Max Locations Effort"
-        es = ""
+        es = "Obras de ampliación"
     }
     // FILE: scripts\entity\world\settlements\situations\legend_word_of_mouth_situation.nut
     // context: legend_word_of_mouth_situation.create.m.Name
     {
         en = "Word of Mouth"
-        es = ""
+        es = "Boca a boca"
     }
     // context: legend_word_of_mouth_situation.create.m.Description
     {
@@ -69315,7 +69315,7 @@ local pairs = [
     // context: legend_cestus_item.create.m.Name
     {
         en = "Gladiator's Cestus"
-        es = ""
+        es = "Cesto de gladiador"
     }
     // context: legend_cestus_item.create.m.Description
     {
@@ -69326,7 +69326,7 @@ local pairs = [
     // context: legend_cestus_item_named.create.m.Name
     {
         en = "Gladiator's Golden Cestus"
-        es = ""
+        es = "Cesto dorado de gladiador"
     }
     // context: legend_cestus_item_named.create.m.Description
     {
@@ -69408,7 +69408,7 @@ local pairs = [
     // context: legend_hand_wraps_item.create.m.Name
     {
         en = "Pugilist Hand Wraps"
-        es = ""
+        es = "Vendas de púgil"
     }
     // context: legend_hand_wraps_item.create.m.Description
     {
@@ -69441,7 +69441,7 @@ local pairs = [
     // context: legend_spiked_gauntlets_item.create.m.Name
     {
         en = "Spiked Gauntlets"
-        es = ""
+        es = "Guanteletes con púas"
     }
     // context: legend_spiked_gauntlets_item.create.m.Description
     {
@@ -69457,7 +69457,7 @@ local pairs = [
     // context: legend_apothecary_mushrooms_item.create.m.Name
     {
         en = "Apothecary Mushrooms"
-        es = ""
+        es = "Hongos del boticario"
     }
     // context: legend_apothecary_mushrooms_item.create.m.Description
     {
@@ -69480,7 +69480,7 @@ local pairs = [
     // context: legend_basilisk_trophy_item.create.m.Name
     {
         en = "Basilisk Trophy Necklace"
-        es = ""
+        es = "Trofeo de basilisco"
     }
     // context: legend_basilisk_trophy_item.create.m.Description
     {
@@ -69537,7 +69537,7 @@ local pairs = [
     // context: legend_demon_banshee_trophy_item.create.m.Name
     {
         en = "Demonic Banshee Trophy"
-        es = ""
+        es = "Trofeo de banshee demoníaca"
     }
     // context: legend_demon_banshee_trophy_item.create.m.Description
     {
@@ -69558,7 +69558,7 @@ local pairs = [
     // context: legend_demonalp_trophy_item.create.m.Name
     {
         en = "Demon Alp Trophy Necklace"
-        es = ""
+        es = "Trofeo de Alp demoníaco"
     }
     // context: legend_demonalp_trophy_item.create.m.Description
     {
@@ -69584,7 +69584,7 @@ local pairs = [
     // context: legend_heartwood_sap_flask_item.create.m.Name
     {
         en = "Flask of Heartwood Sap"
-        es = ""
+        es = "Frasco de savia de duramen"
     }
     // context: legend_heartwood_sap_flask_item.create.m.Description
     {
@@ -69606,7 +69606,7 @@ local pairs = [
     // context: legend_hexen_ichor_potion_item.create.m.Name
     {
         en = "Hexen Ichor Potion"
-        es = ""
+        es = "Poción de icor de Hexen"
     }
     // context: legend_hexen_ichor_potion_item.create.m.Description
     {
@@ -69633,7 +69633,7 @@ local pairs = [
     // context: legend_pack_large.create.m.Name
     {
         en = "Merchant's pack"
-        es = ""
+        es = "Mochila de mercader"
     }
     // context: legend_pack_large.create.m.Description
     {
@@ -69644,7 +69644,7 @@ local pairs = [
     // context: legend_pack_small.create.m.Name
     {
         en = "Traveler's Sash"
-        es = ""
+        es = "Faja de viajero"
     }
     // context: legend_pack_small.create.m.Description
     {
@@ -69677,7 +69677,7 @@ local pairs = [
     // context: legend_sighthound_item.onEquip.::Legends.Actives.grant()._skill.m.Name
     {
         en = "Unleash Sighthound"
-        es = ""
+        es = "Liberar lebrel"
     }
     // context: legend_sighthound_item.onEquip.::Legends.Actives.grant()._skill.m.Description
     {
@@ -69704,7 +69704,7 @@ local pairs = [
     // context: legend_stollwurm_blood_flask_item.create.m.Name
     {
         en = "Flask of Stollwurm Blood"
-        es = ""
+        es = "Frasco de sangre de Stollwurm"
     }
     // context: legend_stollwurm_blood_flask_item.create.m.Description
     {
@@ -69720,7 +69720,7 @@ local pairs = [
     // context: legend_therianthropy_potion_item.create.m.Name
     {
         en = "Therianthropic Potion"
-        es = ""
+        es = "Poción teriantrópica"
     }
     // context: legend_therianthropy_potion_item.create.m.Description
     {
@@ -69801,7 +69801,7 @@ local pairs = [
     // context: legend_wolfsbane_necklace_item.create.m.Name
     {
         en = "Wolfsbane Necklace"
-        es = ""
+        es = "Collar de acónito"
     }
     // context: legend_wolfsbane_necklace_item.create.m.Description
     {
@@ -69817,7 +69817,7 @@ local pairs = [
     // context: legend_arena_collar_item.create.m.Name
     {
         en = "Legend Arena Collar"
-        es = ""
+        es = "Collar de la Arena"
     }
     // context: legend_arena_collar_item.create.m.Description
     {
@@ -69835,7 +69835,7 @@ local pairs = [
     // context: legend_oms_amphora_item.create.m.Name
     {
         en = "Ancient Amphora"
-        es = ""
+        es = "Ánfora antigua"
     }
     // context: legend_oms_amphora_item.create.m.Description
     {
@@ -69856,7 +69856,7 @@ local pairs = [
     // context: legend_oms_fate_item.create.m.Name
     {
         en = "The 'Book of Fate'"
-        es = ""
+        es = "El 'Libro del Destino'"
     }
     // context: legend_oms_fate_item.create.m.Description
     {
@@ -69872,7 +69872,7 @@ local pairs = [
     // context: legend_oms_ledger_item.create.m.Name
     {
         en = "Bound Skin Ledger"
-        es = ""
+        es = "Libro mayor encuadernado en piel"
     }
     // context: legend_oms_ledger_item.create.m.Description
     {
@@ -69893,7 +69893,7 @@ local pairs = [
     // context: legend_oms_paw_item.create.m.Name
     {
         en = "Curious Paw"
-        es = ""
+        es = "Zarpa curiosa"
     }
     // context: legend_oms_paw_item.create.m.Description
     {
@@ -69909,7 +69909,7 @@ local pairs = [
     // context: legend_oms_rib_item.create.m.Name
     {
         en = "Saint's Rib"
-        es = ""
+        es = "Costilla del santo"
     }
     // context: legend_oms_rib_item.create.m.Description
     {
@@ -69925,7 +69925,7 @@ local pairs = [
     // context: legend_armor_piercing_arrows.create.m.Name
     {
         en = "Armor Piercing Arrows"
-        es = ""
+        es = "Flechas antiarmadura"
     }
     // context: legend_armor_piercing_arrows.create.m.Description
     {
@@ -69948,7 +69948,7 @@ local pairs = [
     // context: legend_armor_piercing_bolts.create.m.Name
     {
         en = "Armor Piercing Bolts"
-        es = ""
+        es = "Virotes antiarmadura"
     }
     // context: legend_armor_piercing_bolts.create.m.Description
     {
@@ -69966,7 +69966,7 @@ local pairs = [
     // context: legend_broad_head_arrows.create.m.Name
     {
         en = "Broad Head Arrows"
-        es = ""
+        es = "Flechas de punta ancha"
     }
     // context: legend_broad_head_arrows.create.m.Description
     {
@@ -69977,7 +69977,7 @@ local pairs = [
     // context: legend_broad_head_bolts.create.m.Name
     {
         en = "Broad Head Bolts"
-        es = ""
+        es = "Virotes de punta ancha"
     }
     // context: legend_broad_head_bolts.create.m.Description
     {
@@ -69988,7 +69988,7 @@ local pairs = [
     // context: legend_darts.create.m.Name
     {
         en = "Bag of Darts"
-        es = ""
+        es = "Bolsa de dardos"
     }
     // context: legend_darts.create.m.Description
     {
@@ -70006,7 +70006,7 @@ local pairs = [
     // context: legend_huge_quiver_of_arrows.create.m.Name
     {
         en = "Huge Quiver of Arrows"
-        es = ""
+        es = "Carcaj enorme de flechas"
     }
     // context: legend_huge_quiver_of_arrows.create.m.Description
     {
@@ -70017,7 +70017,7 @@ local pairs = [
     // context: legend_huge_quiver_of_bolts.create.m.Name
     {
         en = "Huge Quiver of Bolts"
-        es = ""
+        es = "Carcaj enorme de virotes"
     }
     // context: legend_huge_quiver_of_bolts.create.m.Description
     {
@@ -70072,25 +70072,25 @@ local pairs = [
     // context: legend_mummy_bandages.create.m.Name
     {
         en = "Ancient Southern Bandages"
-        es = ""
+        es = "Vendas sureñas antiguas"
     }
     // FILE: scripts\items\armor\ancient\legend_mummy_dress.nut
     // context: legend_mummy_dress.create.m.Name
     {
         en = "Ancient Southern Dress"
-        es = ""
+        es = "Vestido sureño antiguo"
     }
     // FILE: scripts\items\armor\ancient\legend_mummy_plate.nut
     // context: legend_mummy_plate.create.m.Name
     {
         en = "Ancient Southern Plate"
-        es = ""
+        es = "Placa sureña antigua"
     }
     // FILE: scripts\items\armor\ancient\legend_mummy_royal_plate.nut
     // context: legend_mummy_royal_plate.create.m.Name
     {
         en = "Ancient Southern Royal Plate"
-        es = ""
+        es = "Placa real sureña antigua"
     }
     // FILE: scripts\items\armor\greenskins\legend_orc_behemoth_armor.nut
     // en = "Looted Reinforced Mail"
@@ -70099,19 +70099,19 @@ local pairs = [
     // context: legend_orc_elite_heavy_armor.create.m.Name
     {
         en = "Bloody Looted Plate Armor"
-        es = ""
+        es = "Armadura de placas saqueada ensangrentada"
     }
     // FILE: scripts\items\armor\legend_sighthound_armor.nut
     // context: legend_sighthound_armor.create.m.Name
     {
         en = "Sighthound Armor"
-        es = ""
+        es = "Armadura de lebrel"
     }
     // FILE: scripts\items\helmets\ancient\legend_ancient_legionary_helmet_restored.nut
     // context: legend_ancient_legionary_helmet_restored.create.m.Name
     {
         en = "Legionary Helmet"
-        es = ""
+        es = "Yelmo de legionario"
     }
     // context: legend_ancient_legionary_helmet_restored.create.m.Description
     {
@@ -70122,7 +70122,7 @@ local pairs = [
     // context: legend_mummy_crown_king.create.m.Name
     {
         en = "Embalmed Headress"
-        es = ""
+        es = "Tocado embalsamado"
     }
     // context: legend_mummy_crown_king.create.m.Description
     {
@@ -70133,13 +70133,13 @@ local pairs = [
     // context: legend_orc_behemoth_helmet.create.m.Name
     {
         en = "Behemoth Helm"
-        es = ""
+        es = "Yelmo de behemot"
     }
     // FILE: scripts\items\helmets\legend_earings.nut
     // context: legend_earings.create.m.Name
     {
         en = "Earrings"
-        es = ""
+        es = "Pendientes"
     }
     // context: legend_earings.create.m.Description
     {
@@ -70150,7 +70150,7 @@ local pairs = [
     // context: legend_enclave_vanilla_armet_01.create.m.Name
     {
         en = "Armet with Visor"
-        es = ""
+        es = "Almete con visor"
     }
     // context: legend_enclave_vanilla_armet_01.create.m.Description
     {
@@ -70161,7 +70161,7 @@ local pairs = [
     // context: legend_enclave_vanilla_armet_02.create.m.Name
     {
         en = "Armet"
-        es = ""
+        es = "Almete"
     }
     // context: legend_enclave_vanilla_armet_02.create.m.Description
     {
@@ -70172,7 +70172,7 @@ local pairs = [
     // context: legend_enclave_vanilla_great_bascinet_01.create.m.Name
     {
         en = "Great Bascinet With Visor"
-        es = ""
+        es = "Gran bascinete con visor"
     }
     // context: legend_enclave_vanilla_great_bascinet_01.create.m.Description
     {
@@ -70183,7 +70183,7 @@ local pairs = [
     // context: legend_enclave_vanilla_great_bascinet_02.create.m.Name
     {
         en = "Visorless Great Bascinet"
-        es = ""
+        es = "Gran bascinete sin visor"
     }
     // context: legend_enclave_vanilla_great_bascinet_02.create.m.Description
     {
@@ -70200,7 +70200,7 @@ local pairs = [
     // context: legend_enclave_vanilla_great_helm_01.create.m.Name
     {
         en = "Great Helm"
-        es = ""
+        es = "Gran yelmo"
     }
     // en = "A closed metal helm with breathing holes. Great in the way of protection but hard to breathe in and limiting the field of view."
     // en base_es
@@ -70208,7 +70208,7 @@ local pairs = [
     // context: legend_enclave_vanilla_kettle_sallet_01.create.m.Name
     {
         en = "Kettle Sallet With Bevor"
-        es = ""
+        es = "Sallet capelina con babera"
     }
     // context: legend_enclave_vanilla_kettle_sallet_01.create.m.Description
     {
@@ -70219,7 +70219,7 @@ local pairs = [
     // context: legend_enclave_vanilla_kettle_sallet_02.create.m.Name
     {
         en = "Kettle Sallet With Coif"
-        es = ""
+        es = "Sallet capelina con cofia"
     }
     // context: legend_enclave_vanilla_kettle_sallet_02.create.m.Description
     {
@@ -70230,7 +70230,7 @@ local pairs = [
     // context: legend_enclave_vanilla_kettle_sallet_03.create.m.Name
     {
         en = "Kettle Sallet"
-        es = ""
+        es = "Sallet capelina"
     }
     // context: legend_enclave_vanilla_kettle_sallet_03.create.m.Description
     {
@@ -70241,7 +70241,7 @@ local pairs = [
     // context: legend_enclave_vanilla_skullcap_01.create.m.Name
     {
         en = "Skull Cap"
-        es = ""
+        es = "Cervellera"
     }
     // context: legend_enclave_vanilla_skullcap_01.create.m.Description
     {
@@ -70252,7 +70252,7 @@ local pairs = [
     // context: legend_frogmouth_helm.create.m.Name
     {
         en = "Frogmouth Helm"
-        es = ""
+        es = "Yelmo de boca de rana"
     }
     // context: legend_frogmouth_helm.create.m.Description
     {
@@ -70263,7 +70263,7 @@ local pairs = [
     // context: legend_frogmouth_helm_crested.create.m.Name
     {
         en = "Crested Frogmouth Helm"
-        es = ""
+        es = "Yelmo de boca de rana con cresta"
     }
     // context: legend_frogmouth_helm_crested.create.m.Description
     {
@@ -70274,7 +70274,7 @@ local pairs = [
     // context: legend_headband_coin.create.m.Name
     {
         en = "Coin Headband"
-        es = ""
+        es = "Diadema de monedas"
     }
     // context: legend_headband_coin.create.m.Description
     {
@@ -70285,7 +70285,7 @@ local pairs = [
     // context: legend_headress_coin.create.m.Name
     {
         en = "Coin Headress"
-        es = ""
+        es = "Tocado de monedas"
     }
     // context: legend_headress_coin.create.m.Description
     {
@@ -70296,7 +70296,7 @@ local pairs = [
     // context: legend_helm_bearded.create.m.Name
     {
         en = "Bearded Helm"
-        es = ""
+        es = "Yelmo barbado"
     }
     // context: legend_helm_bearded.create.m.Description
     {
@@ -70307,7 +70307,7 @@ local pairs = [
     // context: legend_helm_breathed.create.m.Name
     {
         en = "Breathed Helm"
-        es = ""
+        es = "Yelmo con respiraderos"
     }
     // context: legend_helm_breathed.create.m.Description
     {
@@ -70318,7 +70318,7 @@ local pairs = [
     // context: legend_helm_curved.create.m.Name
     {
         en = "Curved Great Helm"
-        es = ""
+        es = "Gran yelmo curvo"
     }
     // context: legend_helm_curved.create.m.Description
     {
@@ -70329,7 +70329,7 @@ local pairs = [
     // context: legend_helm_full.create.m.Name
     {
         en = "Full Great Helm"
-        es = ""
+        es = "Gran yelmo completo"
     }
     // context: legend_helm_full.create.m.Description
     {
@@ -70340,7 +70340,7 @@ local pairs = [
     // context: legend_helm_point.create.m.Name
     {
         en = "Snouted Helm"
-        es = ""
+        es = "Yelmo con hocico"
     }
     // context: legend_helm_point.create.m.Description
     {
@@ -70351,7 +70351,7 @@ local pairs = [
     // context: legend_helm_short.create.m.Name
     {
         en = "Full Helm With Neckplate"
-        es = ""
+        es = "Yelmo completo con gorjal"
     }
     // context: legend_helm_short.create.m.Description
     {
@@ -70362,7 +70362,7 @@ local pairs = [
     // context: legend_helm_snub.create.m.Name
     {
         en = "Snub Helm"
-        es = ""
+        es = "Yelmo chato"
     }
     // context: legend_helm_snub.create.m.Description
     {
@@ -70373,7 +70373,7 @@ local pairs = [
     // context: legend_helm_wings.create.m.Name
     {
         en = "Winged Great Helm"
-        es = ""
+        es = "Gran yelmo alado"
     }
     // context: legend_helm_wings.create.m.Description
     {
@@ -70384,7 +70384,7 @@ local pairs = [
     // context: legend_jewelry.create.m.Name
     {
         en = "Southern Coin Veil"
-        es = ""
+        es = "Velo sureño de monedas"
     }
     // context: legend_jewelry.create.m.Description
     {
@@ -70395,7 +70395,7 @@ local pairs = [
     // context: legend_noble_crown.create.m.Name
     {
         en = "Noble Crown"
-        es = ""
+        es = "Corona de noble"
     }
     // context: legend_noble_crown.create.m.Description
     {
@@ -70406,7 +70406,7 @@ local pairs = [
     // context: legend_noble_floppy_hat.create.m.Name
     {
         en = "Noble Floppy Hat"
-        es = ""
+        es = "Sombrero blando de noble"
     }
     // context: legend_noble_floppy_hat.create.m.Description
     {
@@ -70417,7 +70417,7 @@ local pairs = [
     // context: legend_noble_hat.create.m.Name
     {
         en = "Noble Hat"
-        es = ""
+        es = "Sombrero de noble"
     }
     // context: legend_noble_hat.create.m.Description
     {
@@ -70428,7 +70428,7 @@ local pairs = [
     // context: legend_noble_hood.create.m.Name
     {
         en = "Noble Hood"
-        es = ""
+        es = "Capucha de noble"
     }
     // context: legend_noble_hood.create.m.Description
     {
@@ -70439,7 +70439,7 @@ local pairs = [
     // context: legend_noble_southern_crown.create.m.Name
     {
         en = "Southern Noble Crown"
-        es = ""
+        es = "Corona de noble sureño"
     }
     // context: legend_noble_southern_crown.create.m.Description
     {
@@ -70450,7 +70450,7 @@ local pairs = [
     // context: legend_noble_southern_hat.create.m.Name
     {
         en = "Southern Noble Hat"
-        es = ""
+        es = "Sombrero de noble sureño"
     }
     // context: legend_noble_southern_hat.create.m.Description
     {
@@ -70461,7 +70461,7 @@ local pairs = [
     // context: legend_nun_habit.create.m.Name
     {
         en = "Nun's Habit"
-        es = ""
+        es = "Toca de monja"
     }
     // context: legend_nun_habit.create.m.Description
     {
@@ -70472,7 +70472,7 @@ local pairs = [
     // context: legend_seer_hat.create.m.Name
     {
         en = "Seer's Hat"
-        es = ""
+        es = "Sombrero de vidente"
     }
     // en = "A pointy hat with a broad rim."
     // en base_es
@@ -70480,7 +70480,7 @@ local pairs = [
     // context: legend_southern_cloth_headress.create.m.Name
     {
         en = "Southern Cloth Headress"
-        es = ""
+        es = "Tocado sureño de tela"
     }
     // context: legend_southern_cloth_headress.create.m.Description
     {
@@ -70491,7 +70491,7 @@ local pairs = [
     // context: legend_southern_veil.create.m.Name
     {
         en = "Southern Veil"
-        es = ""
+        es = "Velo sureño"
     }
     // context: legend_southern_veil.create.m.Description
     {
@@ -70502,7 +70502,7 @@ local pairs = [
     // context: legend_warlock_hood.create.m.Name
     {
         en = "Warlock Hood"
-        es = ""
+        es = "Capucha de brujo"
     }
     // context: legend_warlock_hood.create.m.Description
     {
@@ -70513,7 +70513,7 @@ local pairs = [
     // context: fangshire.create.m.Name
     {
         en = "Fangshire"
-        es = ""
+        es = "El Colmillo"
     }
     // en = "The Fangshire is a northern tiger's skull that nestles the faces of men deeply and darkly behind two ferocious fangs. Originally worn by Bjarund the Beastman, a fierce northern raider, it instilled fear into the hearts of his enemies as he went on bloody raids and burned down many a village along the coastline. When Bjarund was finally slain, Fangshire was taken as a trophy and went further south. Rumors proclaim that its wearer's eyes glow a sharpened yellow, allowing them to see through the very night."
     // en base_es
@@ -70523,7 +70523,7 @@ local pairs = [
     // context: legend_frogmouth_helm_crested_painted.create.m.Name
     {
         en = "Crested Painted Frogmouth Helm"
-        es = ""
+        es = "Yelmo de boca de rana pintado con cresta"
     }
     // context: legend_frogmouth_helm_crested_painted.create.m.Description
     {
@@ -70554,7 +70554,7 @@ local pairs = [
     // context: legend_frogmouth_helm_decorated.create.m.Name
     {
         en = "Decorated Frogmouth Helm"
-        es = ""
+        es = "Yelmo de boca de rana decorado"
     }
     // context: legend_frogmouth_helm_decorated.create.m.Description
     {
@@ -70612,7 +70612,7 @@ local pairs = [
     // context: legend_mountain_helmet_named.create.m.Name
     {
         en = "Helmet of the Mountain"
-        es = ""
+        es = "Yelmo de la Montaña"
     }
     // context: legend_mountain_helmet_named.create.m.NameList
     {
@@ -70678,7 +70678,7 @@ local pairs = [
     // context: legend_armor_chain_and_mail_upgrade.create.m.Name
     {
         en = "Amulet Coif"
-        es = ""
+        es = "Cofia con amuleto"
     }
     // context: legend_armor_chain_and_mail_upgrade.create.m.Description
     {
@@ -70730,7 +70730,7 @@ local pairs = [
     // context: legend_armor_sacred_shield_upgrade.create.m.Name
     {
         en = "Sacred Shield"
-        es = ""
+        es = "Escudo sagrado"
     }
     // context: legend_armor_sacred_shield_upgrade.create.m.Description
     {
@@ -70751,7 +70751,7 @@ local pairs = [
     // context: legend_armor_skull_chain_upgrade.create.m.Name
     {
         en = "Skull Chain"
-        es = ""
+        es = "Cadena de calavera"
     }
     // context: legend_armor_skull_chain_upgrade.create.m.Description
     {
@@ -70777,7 +70777,7 @@ local pairs = [
     // context: legend_armor_spiked_collar_upgrade.create.m.Name
     {
         en = "Spiked Coif"
-        es = ""
+        es = "Cofia con púas"
     }
     // context: legend_armor_spiked_collar_upgrade.create.m.Description
     {
@@ -70977,7 +70977,7 @@ local pairs = [
     // context: legend_pauldron_heavy_upgrade.create.m.Name
     {
         en = "Heavy Pauldrons"
-        es = ""
+        es = "Espaldares pesados"
     }
     // context: legend_pauldron_heavy_upgrade.create.m.Description
     {
@@ -71039,7 +71039,7 @@ local pairs = [
     // context: legend_pauldron_stag_upgrade.create.m.Name
     {
         en = "Stag Pauldrons"
-        es = ""
+        es = "Espaldares de ciervo"
     }
     // context: legend_pauldron_stag_upgrade.create.m.Description
     {
@@ -71055,7 +71055,7 @@ local pairs = [
     // context: legend_pauldron_strong_upgrade.create.m.Name
     {
         en = "Reinforced Pauldrons"
-        es = ""
+        es = "Espaldares reforzados"
     }
     // context: legend_pauldron_strong_upgrade.create.m.Description
     {
@@ -71071,7 +71071,7 @@ local pairs = [
     // context: legend_pauldron_swan_upgrade.create.m.Name
     {
         en = "Swan Pauldrons"
-        es = ""
+        es = "Espaldares de cisne"
     }
     // context: legend_pauldron_swan_upgrade.create.m.Description
     {
@@ -71087,7 +71087,7 @@ local pairs = [
     // context: legend_pauldron_upgrade.create.m.Name
     {
         en = "Iron Pauldrons"
-        es = ""
+        es = "Espaldares de hierro"
     }
     // context: legend_pauldron_upgrade.create.m.Description
     {
@@ -71121,7 +71121,7 @@ local pairs = [
     // context: legend_armor_white_wolf_pelt_cloak.create.m.Name
     {
         en = "White Wolf Pelt Mantle"
-        es = ""
+        es = "Manto de piel de lobo blanco"
     }
     // context: legend_armor_white_wolf_pelt_cloak.create.m.Description
     {
@@ -71137,7 +71137,7 @@ local pairs = [
     // context: legend_basilisk_cloak.create.m.Name
     {
         en = "Basilisk Cloak"
-        es = ""
+        es = "Capa de basilisco"
     }
     // context: legend_basilisk_cloak.create.m.Description
     {
@@ -71171,7 +71171,7 @@ local pairs = [
     // context: legend_hexen_leader_cloak.create.m.Name
     {
         en = "Hexen Leader Silk Cloak"
-        es = ""
+        es = "Capa de seda de líder de las Hexen"
     }
     // context: legend_hexen_leader_cloak.create.m.Description
     {
@@ -71217,7 +71217,7 @@ local pairs = [
     // context: legend_redback_cloak.create.m.Name
     {
         en = "Redback Silk Cloak"
-        es = ""
+        es = "Capa de seda de lomo rojo"
     }
     // context: legend_redback_cloak.create.m.Description
     {
@@ -71260,7 +71260,7 @@ local pairs = [
     // context: legend_stollwurm_scales_cloak.create.m.Name
     {
         en = "Stollwurm Scale Cloak"
-        es = ""
+        es = "Capa de escamas de Stollwurm"
     }
     // context: legend_stollwurm_scales_cloak.create.m.Description
     {
@@ -71367,7 +71367,7 @@ local pairs = [
     // context: legend_armor_cloak.create.m.Name
     {
         en = "Cloak"
-        es = ""
+        es = "Capa"
     }
     // context: legend_armor_cloak.create.m.Description
     {
@@ -71383,7 +71383,7 @@ local pairs = [
     // context: legend_armor_tabard.create.m.Name
     {
         en = "Tabard"
-        es = ""
+        es = "Tabardo"
     }
     // context: legend_armor_tabard.create.m.Description
     {
@@ -71773,7 +71773,7 @@ local pairs = [
     // context: legend_armor_cloak_emperors.create.m.Name
     {
         en = "The Emperor's Cloak"
-        es = ""
+        es = "La Capa del Emperador"
     }
     // context: legend_armor_cloak_emperors.create.m.Description
     {
@@ -71924,7 +71924,7 @@ local pairs = [
     // context: legend_faction_helmet.create.m.Name
     {
         en = "Chain Hood"
-        es = ""
+        es = "Capucha de malla"
     }
     // context: legend_faction_helmet.create.m.Description
     {
@@ -72037,7 +72037,7 @@ local pairs = [
     // context: legend_named_lindwurm_helmet.create.m.Name
     {
         en = "Wild Helmet"
-        es = ""
+        es = "Yelmo salvaje"
     }
     // context: legend_named_lindwurm_helmet.create.m.Description
     {
@@ -72074,7 +72074,7 @@ local pairs = [
     // context: legend_named_warlock_skull.create.m.Name
     {
         en = "Warlock Faceplate"
-        es = ""
+        es = "Máscara de brujo"
     }
     // context: legend_named_warlock_skull.create.m.Description
     {
@@ -72139,7 +72139,7 @@ local pairs = [
     // context: legend_helmet_demon_alp_helm.create.m.Name
     {
         en = "Demon Alp Helm"
-        es = ""
+        es = "Yelmo de Alp demoníaco"
     }
     // context: legend_helmet_demon_alp_helm.create.m.Description
     {
@@ -72160,7 +72160,7 @@ local pairs = [
     // context: legend_helmet_hunter_cap.create.m.Name
     {
         en = "Hunter's Cap"
-        es = ""
+        es = "Gorro de cazador"
     }
     // context: legend_helmet_hunter_cap.create.m.Description
     {
@@ -72194,7 +72194,7 @@ local pairs = [
     // context: legend_helmet_lindwurm_helm.create.m.Name
     {
         en = "Stollwurm Helm"
-        es = ""
+        es = "Yelmo de Stollwurm"
     }
     // context: legend_helmet_lindwurm_helm.create.m.Description
     {
@@ -72225,7 +72225,7 @@ local pairs = [
     // context: legend_helmet_mountain_helm.create.m.Name
     {
         en = "Mountain Helm"
-        es = ""
+        es = "Yelmo de montaña"
     }
     // context: legend_helmet_mountain_helm.create.m.Description
     {
@@ -72246,7 +72246,7 @@ local pairs = [
     // context: legend_helmet_nach_helm.create.m.Name
     {
         en = "Skin Ghoul Helmet"
-        es = ""
+        es = "Yelmo de necrófago desollado"
     }
     // context: legend_helmet_nach_helm.create.m.Description
     {
@@ -72267,7 +72267,7 @@ local pairs = [
     // context: legend_helmet_pimp_hat.create.m.Name
     {
         en = "Pimp's hat"
-        es = ""
+        es = "Sombrero de proxeneta"
     }
     // context: legend_helmet_pimp_hat.create.m.Description
     {
@@ -72283,7 +72283,7 @@ local pairs = [
     // context: legend_helmet_redback_helm.create.m.Name
     {
         en = "Redback Helm"
-        es = ""
+        es = "Yelmo de lomo rojo"
     }
     // context: legend_helmet_redback_helm.create.m.Description
     {
@@ -72309,7 +72309,7 @@ local pairs = [
     // context: legend_helmet_white_wolf_helm.create.m.Name
     {
         en = "White Wolf Helm"
-        es = ""
+        es = "Yelmo de lobo blanco"
     }
     // context: legend_helmet_white_wolf_helm.create.m.Description
     {
@@ -72332,7 +72332,7 @@ local pairs = [
     // context: legend_helmet_witchhunter_helm.create.m.Name
     {
         en = "Witchhunter's Capotain"
-        es = ""
+        es = "Capotain del cazador de brujas"
     }
     // context: legend_helmet_witchhunter_helm.create.m.Description
     {
@@ -72353,7 +72353,7 @@ local pairs = [
     // context: legend_horse_caparison.create.m.Name
     {
         en = "Horse Caparison"
-        es = ""
+        es = "Gualdrapa"
     }
     // context: legend_horse_caparison.create.m.Description
     {
@@ -72369,7 +72369,7 @@ local pairs = [
     // context: legend_horse_bridle.create.m.Name
     {
         en = "Horse Bridle"
-        es = ""
+        es = "Brida"
     }
     // context: legend_horse_bridle.create.m.Description
     {
@@ -72380,7 +72380,7 @@ local pairs = [
     // context: legend_basilisk_talon_item.create.m.Name
     {
         en = "Basilisk Talon"
-        es = ""
+        es = "Garra de basilisco"
     }
     // context: legend_basilisk_talon_item.create.m.Description
     {
@@ -72391,7 +72391,7 @@ local pairs = [
     // context: legend_bear_fur_item.create.m.Name
     {
         en = "Bear Fur"
-        es = ""
+        es = "Piel de oso"
     }
     // context: legend_bear_fur_item.create.m.Description
     {
@@ -72402,7 +72402,7 @@ local pairs = [
     // context: legend_ancient_green_wood_item.create.m.Name
     {
         en = "Ancient Green Wood"
-        es = ""
+        es = "Madera verde ancestral"
     }
     // context: legend_ancient_green_wood_item.create.m.Description
     {
@@ -72418,7 +72418,7 @@ local pairs = [
     // context: legend_ancient_scroll_item.::inherit().create.m.Name
     {
         en = "Ancient Scroll"
-        es = ""
+        es = "Pergamino antiguo"
     }
     // context: legend_ancient_scroll_item.::inherit().create.m.Description
     {
@@ -72468,7 +72468,7 @@ local pairs = [
     // context: legend_armor_skill_book_item.::inherit().create.m.Name
     {
         en = "Wearing it well"
-        es = ""
+        es = "Llevarla con estilo"
     }
     // context: legend_armor_skill_book_item.::inherit().create.m.Description
     {
@@ -72479,7 +72479,7 @@ local pairs = [
     // context: legend_banshee_essence_item.create.m.Name
     {
         en = "Banshee Essence"
-        es = ""
+        es = "Esencia de banshee"
     }
     // context: legend_banshee_essence_item.create.m.Description
     {
@@ -72496,7 +72496,7 @@ local pairs = [
     // context: legend_basilisk_feathers_item.create.m.Name
     {
         en = "Basilisk Feathers"
-        es = ""
+        es = "Plumas de basilisco"
     }
     // context: legend_basilisk_feathers_item.create.m.Description
     {
@@ -72512,7 +72512,7 @@ local pairs = [
     // context: legend_class_skill_book_item.::inherit().create.m.Name
     {
         en = "Art of War"
-        es = ""
+        es = "El arte de la guerra"
     }
     // context: legend_class_skill_book_item.::inherit().create.m.Description
     {
@@ -72523,7 +72523,7 @@ local pairs = [
     // context: legend_demon_alp_skin_item.create.m.Name
     {
         en = "Demon Alp Skin"
-        es = ""
+        es = "Piel de Alp demoníaco"
     }
     // context: legend_demon_alp_skin_item.create.m.Description
     {
@@ -72534,7 +72534,7 @@ local pairs = [
     // context: legend_demon_hound_bones_item.create.m.Name
     {
         en = "Demon Hound Bones"
-        es = ""
+        es = "Huesos de sabueso demoníaco"
     }
     // context: legend_demon_hound_bones_item.create.m.Description
     {
@@ -72545,7 +72545,7 @@ local pairs = [
     // context: legend_demon_third_eye_item.create.m.Name
     {
         en = "Third Demon Eye"
-        es = ""
+        es = "Tercer ojo demoníaco"
     }
     // context: legend_demon_third_eye_item.create.m.Description
     {
@@ -72572,7 +72572,7 @@ local pairs = [
     // context: legend_location_check_item.create.m.Name
     {
         en = "Legendary location check"
-        es = ""
+        es = "Comprobar ubicaciones legendarias"
     }
     // context: legend_location_check_item.create.m.Description
     {
@@ -72583,7 +72583,7 @@ local pairs = [
     // context: legend_map_legendary_item.create.m.Name
     {
         en = "Legendary location map"
-        es = ""
+        es = "Mapa de ubicación legendaria"
     }
     // context: legend_map_legendary_item.create.m.Description
     {
@@ -72593,7 +72593,7 @@ local pairs = [
     // context: legend_map_legendary_item.setLocation.m.Name
     {
         en = "Old map"
-        es = ""
+        es = "Mapa viejo"
     }
     // context: legend_map_legendary_item.setLocation.m.Description
     {
@@ -72611,7 +72611,7 @@ local pairs = [
     // context: legend_map_named_item.create.m.Name
     {
         en = "Scout report"
-        es = ""
+        es = "Informe de exploración"
     }
     // context: legend_map_named_item.create.m.Description
     {
@@ -72629,7 +72629,7 @@ local pairs = [
     // context: legend_masterwork_fabric.create.m.Name
     {
         en = "Masterwork Fabric"
-        es = ""
+        es = "Tela magistral"
     }
     // context: legend_masterwork_fabric.create.m.Description
     {
@@ -72640,7 +72640,7 @@ local pairs = [
     // context: legend_masterwork_metal.create.m.Name
     {
         en = "Masterwork Metal"
-        es = ""
+        es = "Metal magistral"
     }
     // context: legend_masterwork_metal.create.m.Description
     {
@@ -72651,7 +72651,7 @@ local pairs = [
     // context: legend_masterwork_tools.create.m.Name
     {
         en = "Masterwork Tools"
-        es = ""
+        es = "Herramientas magistrales"
     }
     // context: legend_masterwork_tools.create.m.Description
     {
@@ -72662,7 +72662,7 @@ local pairs = [
     // context: legend_mistletoe_item.create.m.Name
     {
         en = "Mistletoe"
-        es = ""
+        es = "Muérdago"
     }
     // context: legend_mistletoe_item.create.m.Description
     {
@@ -72734,7 +72734,7 @@ local pairs = [
     // context: legend_profession_skill_book_item.::inherit().create.m.Name
     {
         en = "Skills for Dummies"
-        es = ""
+        es = "Habilidades para torpes"
     }
     // context: legend_profession_skill_book_item.::inherit().create.m.Description
     {
@@ -72745,7 +72745,7 @@ local pairs = [
     // context: legend_prosthetic_ear_item.create.m.Name
     {
         en = "Prosthetic Ear"
-        es = ""
+        es = "Oreja protésica"
     }
     // context: legend_prosthetic_ear_item.create.m.Description
     {
@@ -72771,7 +72771,7 @@ local pairs = [
     // context: legend_prosthetic_eye_item.create.m.Name
     {
         en = "Prosthetic Eye"
-        es = ""
+        es = "Ojo protésico"
     }
     // context: legend_prosthetic_eye_item.create.m.Description
     {
@@ -72792,7 +72792,7 @@ local pairs = [
     // context: legend_prosthetic_finger_item.create.m.Name
     {
         en = "Prosthetic Finger"
-        es = ""
+        es = "Dedo protésico"
     }
     // context: legend_prosthetic_finger_item.create.m.Description
     {
@@ -72818,7 +72818,7 @@ local pairs = [
     // context: legend_prosthetic_foot_item.create.m.Name
     {
         en = "Prosthetic Foot"
-        es = ""
+        es = "Pie protésico"
     }
     // context: legend_prosthetic_foot_item.create.m.Description
     {
@@ -72849,7 +72849,7 @@ local pairs = [
     // context: legend_prosthetic_forearm_item.create.m.Name
     {
         en = "Prosthetic Forearm"
-        es = ""
+        es = "Antebrazo protésico"
     }
     // context: legend_prosthetic_forearm_item.create.m.Description
     {
@@ -72880,7 +72880,7 @@ local pairs = [
     // context: legend_prosthetic_hand_item.create.m.Name
     {
         en = "Prosthetic Hand"
-        es = ""
+        es = "Mano protésica"
     }
     // context: legend_prosthetic_hand_item.create.m.Description
     {
@@ -72921,7 +72921,7 @@ local pairs = [
     // context: legend_prosthetic_leg_item.create.m.Name
     {
         en = "Prosthetic Leg"
-        es = ""
+        es = "Pierna protésica"
     }
     // context: legend_prosthetic_leg_item.create.m.Description
     {
@@ -72952,7 +72952,7 @@ local pairs = [
     // context: legend_prosthetic_nose_item.create.m.Name
     {
         en = "Prosthetic Nose"
-        es = ""
+        es = "Nariz protésica"
     }
     // context: legend_prosthetic_nose_item.create.m.Description
     {
@@ -72973,7 +72973,7 @@ local pairs = [
     // context: legend_redback_poison_gland_item.create.m.Name
     {
         en = "Redback Poison Gland"
-        es = ""
+        es = "Glándula venenosa de lomo rojo"
     }
     // context: legend_redback_poison_gland_item.create.m.Description
     {
@@ -72984,7 +72984,7 @@ local pairs = [
     // context: legend_rock_unhold_bones_item.create.m.Name
     {
         en = "Rock Unhold Bones"
-        es = ""
+        es = "Huesos de trol de roca"
     }
     // context: legend_rock_unhold_bones_item.create.m.Description
     {
@@ -72995,7 +72995,7 @@ local pairs = [
     // context: legend_rock_unhold_hide_item.create.m.Name
     {
         en = "Rock Unhold Hide"
-        es = ""
+        es = "Pellejo de trol de roca"
     }
     // context: legend_rock_unhold_hide_item.create.m.Description
     {
@@ -73213,7 +73213,7 @@ local pairs = [
     // context: legend_skin_ghoul_skin_item.create.m.Name
     {
         en = "Ghoul Skin"
-        es = ""
+        es = "Piel de necrófago"
     }
     // context: legend_skin_ghoul_skin_item.create.m.Description
     {
@@ -73224,7 +73224,7 @@ local pairs = [
     // context: legend_smuggle_box_item.::inherit().create.m.Name
     {
         en = "Smuggled items"
-        es = ""
+        es = "Objetos de contrabando"
     }
     // context: legend_smuggle_box_item.::inherit().create.m.Description
     {
@@ -73235,7 +73235,7 @@ local pairs = [
     // context: legend_stollwurm_blood_item.create.m.Name
     {
         en = "Stollwurm Blood"
-        es = ""
+        es = "Sangre de Stollwurm"
     }
     // context: legend_stollwurm_blood_item.create.m.Description
     {
@@ -73257,7 +73257,7 @@ local pairs = [
     // context: legend_trait_skill_book_item.::inherit().create.m.Name
     {
         en = "Traits for the gullible"
-        es = ""
+        es = "Rasgos para crédulos"
     }
     // context: legend_trait_skill_book_item.::inherit().create.m.Description
     {
@@ -73273,7 +73273,7 @@ local pairs = [
     // context: legend_weapon_skill_book_item.::inherit().create.m.Name
     {
         en = "De Re Military"
-        es = ""
+        es = "De Re Military"
     }
     // context: legend_weapon_skill_book_item.::inherit().create.m.Description
     {
@@ -73284,7 +73284,7 @@ local pairs = [
     // context: legend_werehand_item.create.m.Name
     {
         en = "Severed clawed hand"
-        es = ""
+        es = "Mano con garras cortada"
     }
     // context: legend_werehand_item.create.m.Description
     {
@@ -73295,7 +73295,7 @@ local pairs = [
     // context: legend_white_wolf_pelt_item.create.m.Name
     {
         en = "White Wolf Pelt"
-        es = ""
+        es = "Piel de lobo blanco"
     }
     // context: legend_white_wolf_pelt_item.create.m.Description
     {
@@ -73306,7 +73306,7 @@ local pairs = [
     // context: legend_witch_leader_hair_item.create.m.Name
     {
         en = "Witch Leader Hair"
-        es = ""
+        es = "Cabello de bruja líder"
     }
     // context: legend_witch_leader_hair_item.create.m.Description
     {
@@ -73317,7 +73317,7 @@ local pairs = [
     // context: legend_wolfsbane_item.create.m.Name
     {
         en = "Wolfsbane"
-        es = ""
+        es = "Acónito"
     }
     // context: legend_wolfsbane_item.create.m.Description
     {
@@ -73348,7 +73348,7 @@ local pairs = [
     // context: legend_mummy_shield.create.m.Name
     {
         en = "Ancient Southern Shield"
-        es = ""
+        es = "Escudo sureño antiguo"
     }
     // context: legend_mummy_shield.create.m.Description
     {
@@ -73359,7 +73359,7 @@ local pairs = [
     // context: legend_mummy_tower_shield.create.m.Name
     {
         en = "Ancient Southern Tower Shield"
-        es = ""
+        es = "Escudo de torre sureño antiguo"
     }
     // context: legend_mummy_tower_shield.create.m.Description
     {
@@ -73370,13 +73370,13 @@ local pairs = [
     // context: legend_greenwood_schrat_shield.create.m.Name
     {
         en = "Greenwood Schrat's Shield"
-        es = ""
+        es = "Corteza de Schrat verde"
     }
     // FILE: scripts\items\shields\legend_faction_tower_shield.nut
     // context: legend_faction_tower_shield.create.m.Name
     {
         en = "Noble Tower Shield"
-        es = ""
+        es = "Escudo de torre de noble"
     }
     // context: legend_faction_tower_shield.create.m.Description
     {
@@ -73387,7 +73387,7 @@ local pairs = [
     // context: legend_tower_shield.create.m.Name
     {
         en = "Tower Shield"
-        es = ""
+        es = "Escudo de torre"
     }
     // context: legend_tower_shield.create.m.Description
     {
@@ -73398,7 +73398,7 @@ local pairs = [
     // context: legend_craftable_greenwood_schrat_shield.create.m.Name
     {
         en = "Living Greenwood Tree Shield"
-        es = ""
+        es = "Escudo de árbol viviente verde"
     }
     // context: legend_craftable_greenwood_schrat_shield.create.m.Description
     {
@@ -73433,7 +73433,7 @@ local pairs = [
     // context: legend_cart_large_item.create.m.Name
     {
         en = "Large Cart"
-        es = ""
+        es = "Carro grande"
     }
     // context: legend_cart_large_item.create.m.Description
     {
@@ -73444,7 +73444,7 @@ local pairs = [
     // context: legend_cart_small_item.create.m.Name
     {
         en = "Small cart"
-        es = ""
+        es = "Carro pequeño"
     }
     // context: legend_cart_small_item.create.m.Description
     {
@@ -73463,7 +73463,7 @@ local pairs = [
     // context: legend_skeleton_item.create.m.Name
     {
         en = "Human Bones"
-        es = ""
+        es = "Huesos humanos"
     }
     // context: legend_skeleton_item.create.m.Description
     {
@@ -73491,7 +73491,7 @@ local pairs = [
     // context: legend_zombie_item.create.m.Name
     {
         en = "Human Carrion"
-        es = ""
+        es = "Carroña humana"
     }
     // context: legend_zombie_item.create.m.Description
     {
@@ -73502,7 +73502,7 @@ local pairs = [
     // context: legend_ammo_small_item.create.m.Name
     {
         en = "Small Ammunition"
-        es = ""
+        es = "Poca munición"
     }
     // context: legend_ammo_small_item.getTooltip.result.text
     {
@@ -73515,7 +73515,7 @@ local pairs = [
     // context: legend_armor_parts_small_item.create.m.Name
     {
         en = "Small Tools and Supplies"
-        es = ""
+        es = "Pocas herramientas y suministros"
     }
     // context: legend_armor_parts_small_item.getTooltip.result.text
     {
@@ -73528,7 +73528,7 @@ local pairs = [
     // context: legend_bear_meat_item.create.m.Name
     {
         en = "Bear Meat"
-        es = ""
+        es = "Carne de oso"
     }
     // context: legend_bear_meat_item.create.m.Description
     {
@@ -73539,7 +73539,7 @@ local pairs = [
     // context: legend_beef_item.create.m.Name
     {
         en = "Beef"
-        es = ""
+        es = "Carne de vaca"
     }
     // context: legend_beef_item.create.m.Description
     {
@@ -73550,7 +73550,7 @@ local pairs = [
     // context: legend_boar_meat_item.create.m.Name
     {
         en = "Boar Meat"
-        es = ""
+        es = "Carne de jabalí"
     }
     // context: legend_boar_meat_item.create.m.Description
     {
@@ -73561,7 +73561,7 @@ local pairs = [
     // context: legend_bug_meat_item.create.m.Name
     {
         en = "Bug Meat"
-        es = ""
+        es = "Carne de insecto"
     }
     // context: legend_bug_meat_item.create.m.Description
     {
@@ -73584,7 +73584,7 @@ local pairs = [
     // context: legend_cured_rations_item.create.m.Name
     {
         en = "Poorly Cured Rations"
-        es = ""
+        es = "Raciones mal curadas"
     }
     // context: legend_cured_rations_item.create.m.Description
     {
@@ -73595,7 +73595,7 @@ local pairs = [
     // context: legend_curry_item.create.m.Name
     {
         en = "Curry"
-        es = ""
+        es = "Curry"
     }
     // context: legend_curry_item.create.m.Description
     {
@@ -73606,7 +73606,7 @@ local pairs = [
     // context: legend_dog_meat_item.create.m.Name
     {
         en = "Dog Meat"
-        es = ""
+        es = "Carne de perro"
     }
     // context: legend_dog_meat_item.create.m.Description
     {
@@ -73617,7 +73617,7 @@ local pairs = [
     // context: legend_fresh_dates_item.create.m.Name
     {
         en = "Fresh Dates"
-        es = ""
+        es = "Dátiles frescos"
     }
     // context: legend_fresh_dates_item.create.m.Description
     {
@@ -73628,7 +73628,7 @@ local pairs = [
     // context: legend_fresh_fish_item.create.m.Name
     {
         en = "Fresh Fish"
-        es = ""
+        es = "Pescado fresco"
     }
     // context: legend_fresh_fish_item.create.m.Description
     {
@@ -73639,7 +73639,7 @@ local pairs = [
     // context: legend_fresh_fruit_item.create.m.Name
     {
         en = "Fresh Fruit"
-        es = ""
+        es = "Fruta fresca"
     }
     // context: legend_fresh_fruit_item.create.m.Description
     {
@@ -73650,7 +73650,7 @@ local pairs = [
     // context: legend_fresh_meat_item.create.m.Name
     {
         en = "Fresh Meat"
-        es = ""
+        es = "Carne fresca"
     }
     // context: legend_fresh_meat_item.create.m.Description
     {
@@ -73661,7 +73661,7 @@ local pairs = [
     // context: legend_fresh_milk_item.create.m.Name
     {
         en = "Fresh Milk"
-        es = ""
+        es = "Leche fresca"
     }
     // context: legend_fresh_milk_item.create.m.Description
     {
@@ -73672,7 +73672,7 @@ local pairs = [
     // context: legend_fresh_mushrooms_item.create.m.Name
     {
         en = "Fresh Mushrooms"
-        es = ""
+        es = "Champiñones frescos"
     }
     // context: legend_fresh_mushrooms_item.create.m.Description
     {
@@ -73683,7 +73683,7 @@ local pairs = [
     // context: legend_fresh_poultry_item.create.m.Name
     {
         en = "Fresh Poultry"
-        es = ""
+        es = "Aves frescas"
     }
     // context: legend_fresh_poultry_item.create.m.Description
     {
@@ -73694,7 +73694,7 @@ local pairs = [
     // context: legend_fresh_roots_and_berries_item.create.m.Name
     {
         en = "Fresh Roots and Berries"
-        es = ""
+        es = "Raíces y bayas frescas"
     }
     // context: legend_fresh_roots_and_berries_item.create.m.Description
     {
@@ -73705,7 +73705,7 @@ local pairs = [
     // context: legend_human_parts.create.m.Name
     {
         en = "Human Parts"
-        es = ""
+        es = "Despojos humanos"
     }
     // context: legend_human_parts.create.m.Description
     {
@@ -73716,7 +73716,7 @@ local pairs = [
     // context: legend_liquor_item.create.m.Name
     {
         en = "Liquor"
-        es = ""
+        es = "Licor"
     }
     // context: legend_liquor_item.create.m.Description
     {
@@ -73727,7 +73727,7 @@ local pairs = [
     // context: legend_medicine_small_item.create.m.Name
     {
         en = "Small Medical Supplies"
-        es = ""
+        es = "Pocos suministros médicos"
     }
     // context: legend_medicine_small_item.getTooltip.result.text
     {
@@ -73740,7 +73740,7 @@ local pairs = [
     // context: legend_mutton_item.create.m.Name
     {
         en = "Mutton"
-        es = ""
+        es = "Carne de carnero"
     }
     // context: legend_mutton_item.create.m.Description
     {
@@ -73757,7 +73757,7 @@ local pairs = [
     // context: legend_pie_item.create.m.Name
     {
         en = "Pie"
-        es = ""
+        es = "Pastel"
     }
     // context: legend_pie_item.create.m.Description
     {
@@ -73774,7 +73774,7 @@ local pairs = [
     // context: legend_pudding_item.create.m.Name
     {
         en = "Pudding"
-        es = ""
+        es = "Pudin"
     }
     // context: legend_pudding_item.create.m.Description
     {
@@ -73785,7 +73785,7 @@ local pairs = [
     // context: legend_rabbit_meat_item.create.m.Name
     {
         en = "Rabbit Meat"
-        es = ""
+        es = "Carne de conejo"
     }
     // context: legend_rabbit_meat_item.create.m.Description
     {
@@ -73796,7 +73796,7 @@ local pairs = [
     // context: legend_snake_meat_item.create.m.Name
     {
         en = "Snake Meat"
-        es = ""
+        es = "Carne de serpiente"
     }
     // context: legend_snake_meat_item.create.m.Description
     {
@@ -73807,7 +73807,7 @@ local pairs = [
     // context: legend_squirrel_meat_item.create.m.Name
     {
         en = "Squirrel Meat"
-        es = ""
+        es = "Carne de ardilla"
     }
     // context: legend_squirrel_meat_item.create.m.Description
     {
@@ -73818,7 +73818,7 @@ local pairs = [
     // context: legend_wolf_meat_item.create.m.Name
     {
         en = "Wolf Meat"
-        es = ""
+        es = "Carne de lobo"
     }
     // context: legend_wolf_meat_item.create.m.Description
     {
@@ -73829,7 +73829,7 @@ local pairs = [
     // context: legend_yummy_sausages.create.m.Name
     {
         en = "Yummy Sausages"
-        es = ""
+        es = "Salchichas deliciosas"
     }
     // context: legend_yummy_sausages.create.m.Description
     {
@@ -73840,7 +73840,7 @@ local pairs = [
     // context: legend_tent_craft.create.m.Name
     {
         en = "Craft Tent"
-        es = ""
+        es = "Tienda de artesanía"
     }
     // context: legend_tent_craft.create.m.Description
     {
@@ -73851,7 +73851,7 @@ local pairs = [
     // context: legend_tent_enchant.create.m.Name
     {
         en = "Enchanter's Tent"
-        es = ""
+        es = "Tienda del encantador"
     }
     // context: legend_tent_enchant.create.m.Description
     {
@@ -73862,7 +73862,7 @@ local pairs = [
     // context: legend_tent_fletcher.create.m.Name
     {
         en = "Fletcher's Tent"
-        es = ""
+        es = "Tienda del flechero"
     }
     // context: legend_tent_fletcher.create.m.Description
     {
@@ -73873,7 +73873,7 @@ local pairs = [
     // context: legend_tent_gather.create.m.Name
     {
         en = "Gatherer's tools"
-        es = ""
+        es = "Herramientas del recolector"
     }
     // context: legend_tent_gather.create.m.Description
     {
@@ -73884,7 +73884,7 @@ local pairs = [
     // context: legend_tent_heal.create.m.Name
     {
         en = "Healer's Tent"
-        es = ""
+        es = "Tienda del sanador"
     }
     // context: legend_tent_heal.create.m.Description
     {
@@ -73895,7 +73895,7 @@ local pairs = [
     // context: legend_tent_hunter.create.m.Name
     {
         en = "Kitchen Tent"
-        es = ""
+        es = "Tienda de cocina"
     }
     // context: legend_tent_hunter.create.m.Description
     {
@@ -73912,7 +73912,7 @@ local pairs = [
     // context: legend_tent_scout.create.m.Name
     {
         en = "Scout's station"
-        es = ""
+        es = "Puesto del explorador"
     }
     // context: legend_tent_scout.create.m.Description
     {
@@ -73923,7 +73923,7 @@ local pairs = [
     // context: legend_tent_scrap.create.m.Name
     {
         en = "Scrap Tent"
-        es = ""
+        es = "Tienda de chatarra"
     }
     // context: legend_tent_scrap.create.m.Description
     {
@@ -73934,7 +73934,7 @@ local pairs = [
     // context: legend_tent_train.create.m.Name
     {
         en = "Training equipment"
-        es = ""
+        es = "Equipo de entrenamiento"
     }
     // context: legend_tent_train.create.m.Description
     {
@@ -73956,7 +73956,7 @@ local pairs = [
     // context: legend_unhold_throwing_net.create.m.Name
     {
         en = "Unhold bindings"
-        es = ""
+        es = "Ataduras de trol"
     }
     // context: legend_unhold_throwing_net.create.m.Description
     {
@@ -73974,7 +73974,7 @@ local pairs = [
     // context: legend_cooking_spices_trade_item.create.m.Name
     {
         en = "Cooking Spices"
-        es = ""
+        es = "Especias de cocina"
     }
     // context: legend_cooking_spices_trade_item.create.m.Description
     {
@@ -73997,7 +73997,7 @@ local pairs = [
     // context: legend_gem_shards_item.create.m.Name
     {
         en = "Gem Shards"
-        es = ""
+        es = "Fragmentos de gemas"
     }
     // context: legend_gem_shards_item.create.m.Description
     {
@@ -74008,7 +74008,7 @@ local pairs = [
     // context: legend_gold_dust_item.create.m.Name
     {
         en = "Gold Dust"
-        es = ""
+        es = "Polvo de oro"
     }
     // context: legend_gold_dust_item.create.m.Description
     {
@@ -74019,7 +74019,7 @@ local pairs = [
     // context: legend_gold_ingots_item.create.m.Name
     {
         en = "Gold Ingots"
-        es = ""
+        es = "Lingotes de oro"
     }
     // context: legend_gold_ingots_item.create.m.Description
     {
@@ -74030,7 +74030,7 @@ local pairs = [
     // context: legend_gold_nugget_item.create.m.Name
     {
         en = "Gold Nugget"
-        es = ""
+        es = "Pepita de oro"
     }
     // context: legend_gold_nugget_item.create.m.Description
     {
@@ -74041,7 +74041,7 @@ local pairs = [
     // context: legend_iron_ingots_item.create.m.Name
     {
         en = "Iron Ingots"
-        es = ""
+        es = "Lingotes de hierro"
     }
     // context: legend_iron_ingots_item.create.m.Description
     {
@@ -74052,7 +74052,7 @@ local pairs = [
     // context: legend_raw_wood_item.create.m.Name
     {
         en = "Raw Wood"
-        es = ""
+        es = "Madera en bruto"
     }
     // context: legend_raw_wood_item.create.m.Description
     {
@@ -74063,7 +74063,7 @@ local pairs = [
     // context: legend_seashells_item.create.m.Name
     {
         en = "Sea shells"
-        es = ""
+        es = "Conchas marinas"
     }
     // context: legend_seashells_item.create.m.Description
     {
@@ -74074,7 +74074,7 @@ local pairs = [
     // context: legend_silver_ingots_item.create.m.Name
     {
         en = "Silver Ingots"
-        es = ""
+        es = "Lingotes de plata"
     }
     // context: legend_silver_ingots_item.create.m.Description
     {
@@ -74085,7 +74085,7 @@ local pairs = [
     // context: legend_small_furs_item.create.m.Name
     {
         en = "Fur Scraps"
-        es = ""
+        es = "Retales de piel"
     }
     // context: legend_small_furs_item.create.m.Description
     {
@@ -74096,7 +74096,7 @@ local pairs = [
     // context: legend_tin_ingots_item.create.m.Name
     {
         en = "Tin Ingot"
-        es = ""
+        es = "Lingote de estaño"
     }
     // context: legend_tin_ingots_item.create.m.Description
     {
@@ -74107,7 +74107,7 @@ local pairs = [
     // context: legend_wax_item.create.m.Name
     {
         en = "Wax"
-        es = ""
+        es = "Cera"
     }
     // context: legend_wax_item.create.m.Description
     {
@@ -74118,7 +74118,7 @@ local pairs = [
     // context: legend_broad_warscythe.create.m.Name
     {
         en = "Ancient Broad Warscythe"
-        es = ""
+        es = "Guadaña de guerra ancha antigua"
     }
     // context: legend_broad_warscythe.create.m.Description
     {
@@ -74129,7 +74129,7 @@ local pairs = [
     // context: legend_broadhead_spear.create.m.Name
     {
         en = "Ancient Broadhead Spear"
-        es = ""
+        es = "Lanza de punta ancha antigua"
     }
     // context: legend_broadhead_spear.create.m.Description
     {
@@ -74140,7 +74140,7 @@ local pairs = [
     // context: legend_broken_decorated_sword.create.m.Name
     {
         en = "Broken Ancient Decorated Sword"
-        es = ""
+        es = "Espada decorada antigua rota"
     }
     // context: legend_broken_decorated_sword.create.m.Description
     {
@@ -74151,7 +74151,7 @@ local pairs = [
     // context: legend_broken_spatha.create.m.Name
     {
         en = "Broken Ancient Royal Sword"
-        es = ""
+        es = "Espada real antigua rota"
     }
     // context: legend_broken_spatha.create.m.Description
     {
@@ -74162,7 +74162,7 @@ local pairs = [
     // context: legend_decorated_crypt_cleaver.create.m.Name
     {
         en = "Decorated Crypt Cleaver"
-        es = ""
+        es = "Cuchilla de cripta decorada"
     }
     // context: legend_decorated_crypt_cleaver.create.m.Description
     {
@@ -74173,7 +74173,7 @@ local pairs = [
     // context: legend_decorated_rhomphaia.create.m.Name
     {
         en = "Decorated Rhomphaia"
-        es = ""
+        es = "Rhomphaia decorada"
     }
     // context: legend_decorated_rhomphaia.create.m.Description
     {
@@ -74184,7 +74184,7 @@ local pairs = [
     // context: legend_decorated_sword.create.m.Name
     {
         en = "Ancient Decorated Sword"
-        es = ""
+        es = "Espada decorada antigua"
     }
     // context: legend_decorated_sword.create.m.Description
     {
@@ -74195,7 +74195,7 @@ local pairs = [
     // context: legend_fan_axe.create.m.Name
     {
         en = "Ancient Fan Axe"
-        es = ""
+        es = "Hacha de abanico antigua"
     }
     // context: legend_fan_axe.create.m.Description
     {
@@ -74206,7 +74206,7 @@ local pairs = [
     // context: legend_gladius.create.m.Name
     {
         en = "Ancient Gladius"
-        es = ""
+        es = "Gladius antiguo"
     }
     // context: legend_gladius.create.m.Description
     {
@@ -74217,7 +74217,7 @@ local pairs = [
     // context: legend_great_khopesh.create.m.Name
     {
         en = "Great Khopesh"
-        es = ""
+        es = "Gran khopesh"
     }
     // context: legend_great_khopesh.create.m.Description
     {
@@ -74228,7 +74228,7 @@ local pairs = [
     // context: legend_honed_warscythe.create.m.Name
     {
         en = "Ancient Honed Warscythe"
-        es = ""
+        es = "Guadaña de guerra afilada antigua"
     }
     // context: legend_honed_warscythe.create.m.Description
     {
@@ -74239,7 +74239,7 @@ local pairs = [
     // context: legend_kopis.create.m.Name
     {
         en = "Kopis"
-        es = ""
+        es = "Kopis"
     }
     // context: legend_kopis.create.m.Description
     {
@@ -74250,7 +74250,7 @@ local pairs = [
     // context: legend_military_crypt_cleaver.create.m.Name
     {
         en = "Military Crypt Cleaver"
-        es = ""
+        es = "Cuchilla de cripta militar"
     }
     // context: legend_military_crypt_cleaver.create.m.Description
     {
@@ -74267,7 +74267,7 @@ local pairs = [
     // context: legend_oxtongue_spear.create.m.Name
     {
         en = "Ancient Ox Tongue Spear"
-        es = ""
+        es = "Lanza lengua de buey antigua"
     }
     // context: legend_oxtongue_spear.create.m.Description
     {
@@ -74278,7 +74278,7 @@ local pairs = [
     // context: legend_royal_lance.create.m.Name
     {
         en = "Royal Lance"
-        es = ""
+        es = "Lanzón real"
     }
     // context: legend_royal_lance.create.m.Description
     {
@@ -74289,7 +74289,7 @@ local pairs = [
     // context: legend_sica.create.m.Name
     {
         en = "Ancient Sica"
-        es = ""
+        es = "Sica antigua"
     }
     // context: legend_sica.create.m.Description
     {
@@ -74300,7 +74300,7 @@ local pairs = [
     // context: legend_spatha.create.m.Name
     {
         en = "Ancient Royal Sword"
-        es = ""
+        es = "Espada real antigua"
     }
     // context: legend_spatha.create.m.Description
     {
@@ -74311,7 +74311,7 @@ local pairs = [
     // context: legend_barbarian_sling.create.m.Name
     {
         en = "Wild Sling"
-        es = ""
+        es = "Honda salvaje"
     }
     // context: legend_barbarian_sling.create.m.Description
     {
@@ -74322,7 +74322,7 @@ local pairs = [
     // context: legend_blowgun.create.m.Name
     {
         en = "Blowgun"
-        es = ""
+        es = "Cerbatana"
     }
     // context: legend_blowgun.create.m.Description
     {
@@ -74333,7 +74333,7 @@ local pairs = [
     // context: legend_bone_carver.create.m.Name
     {
         en = "Bone Carver"
-        es = ""
+        es = "Tallahuesos"
     }
     // context: legend_bone_carver.create.m.Description
     {
@@ -74344,7 +74344,7 @@ local pairs = [
     // context: legend_bough.create.m.Name
     {
         en = "Bough"
-        es = ""
+        es = "Rama gruesa"
     }
     // context: legend_bough.create.m.Description
     {
@@ -74355,7 +74355,7 @@ local pairs = [
     // context: legend_goblin_infantry_axe.create.m.Name
     {
         en = "Goblin Harrier Axe"
-        es = ""
+        es = "Hacha de hostigador goblin"
     }
     // context: legend_goblin_infantry_axe.create.m.Description
     {
@@ -74368,7 +74368,7 @@ local pairs = [
     // context: legend_limb_lopper.create.m.Name
     {
         en = "Limb Lopper"
-        es = ""
+        es = "Cortamiembros"
     }
     // context: legend_limb_lopper.create.m.Description
     {
@@ -74379,7 +74379,7 @@ local pairs = [
     // context: legend_man_mangler.create.m.Name
     {
         en = "Man Mangler"
-        es = ""
+        es = "Destrozahombres"
     }
     // context: legend_man_mangler.create.m.Description
     {
@@ -74390,7 +74390,7 @@ local pairs = [
     // context: legend_meat_hacker.create.m.Name
     {
         en = "Meat Hacker"
-        es = ""
+        es = "Tajacarnes"
     }
     // context: legend_meat_hacker.create.m.Description
     {
@@ -74401,7 +74401,7 @@ local pairs = [
     // context: legend_orc_throwing_spear.create.m.Name
     {
         en = "Crude Throwing Spear"
-        es = ""
+        es = "Lanza arrojadiza tosca"
     }
     // context: legend_orc_throwing_spear.create.m.Description
     {
@@ -74412,7 +74412,7 @@ local pairs = [
     // context: legend_skin_flayer.create.m.Name
     {
         en = "Skin Flayer"
-        es = ""
+        es = "Desollador"
     }
     // context: legend_skin_flayer.create.m.Description
     {
@@ -74423,7 +74423,7 @@ local pairs = [
     // context: legend_skullbreaker.create.m.Name
     {
         en = "Skull Breaker"
-        es = ""
+        es = "Quiebracráneos"
     }
     // context: legend_skullbreaker.create.m.Description
     {
@@ -74434,7 +74434,7 @@ local pairs = [
     // context: legend_skullsmasher.create.m.Name
     {
         en = "Skull Smasher"
-        es = ""
+        es = "Machacacráneos"
     }
     // context: legend_skullsmasher.create.m.Description
     {
@@ -74445,7 +74445,7 @@ local pairs = [
     // context: legend_battle_glaive.create.m.Name
     {
         en = "Battle Glaive"
-        es = ""
+        es = "Guja de batalla"
     }
     // context: legend_battle_glaive.create.m.Description
     {
@@ -74456,7 +74456,7 @@ local pairs = [
     // context: legend_cat_o_nine_tails.create.m.Name
     {
         en = "Cat o nine tails"
-        es = ""
+        es = "Gato de nueve colas"
     }
     // context: legend_cat_o_nine_tails.create.m.Description
     {
@@ -74473,7 +74473,7 @@ local pairs = [
     // context: legend_crusader_sword.create.m.Name
     {
         en = "Crusader Sword"
-        es = ""
+        es = "Espada de cruzado"
     }
     // context: legend_crusader_sword.create.m.Description
     {
@@ -74484,7 +74484,7 @@ local pairs = [
     // context: legend_dilapitated_sling.create.m.Name
     {
         en = "Dilapitated Sling"
-        es = ""
+        es = "Honda desvencijada"
     }
     // context: legend_dilapitated_sling.create.m.Description
     {
@@ -74503,7 +74503,7 @@ local pairs = [
     // context: legend_grisly_scythe.create.m.Name
     {
         en = "Grisly Scythe"
-        es = ""
+        es = "Guadaña espantosa"
     }
     // context: legend_grisly_scythe.create.m.Description
     {
@@ -74521,7 +74521,7 @@ local pairs = [
     // context: legend_halberd.create.m.Name
     {
         en = "Halberd"
-        es = ""
+        es = "Alabarda"
     }
     // context: legend_halberd.create.m.Description
     {
@@ -74532,7 +74532,7 @@ local pairs = [
     // context: legend_hammer.create.m.Name
     {
         en = "Blacksmith's hammer"
-        es = ""
+        es = "Martillo de herrero"
     }
     // context: legend_hammer.create.m.Description
     {
@@ -74543,7 +74543,7 @@ local pairs = [
     // context: legend_hand_crossbow.create.m.Name
     {
         en = "Hand Crossbow"
-        es = ""
+        es = "Ballesta de mano"
     }
     // context: legend_hand_crossbow.create.m.Description
     {
@@ -74554,7 +74554,7 @@ local pairs = [
     // context: legend_hoe.create.m.Name
     {
         en = "Hoe"
-        es = ""
+        es = "Azada"
     }
     // context: legend_hoe.create.m.Description
     {
@@ -74565,7 +74565,7 @@ local pairs = [
     // context: legend_infantry_axe.create.m.Name
     {
         en = "Infantry Axe"
-        es = ""
+        es = "Hacha de infantería"
     }
     // context: legend_infantry_axe.create.m.Description
     {
@@ -74576,7 +74576,7 @@ local pairs = [
     // context: legend_katar.create.m.Name
     {
         en = "Katar"
-        es = ""
+        es = "Katar"
     }
     // context: legend_katar.create.m.Description
     {
@@ -74587,7 +74587,7 @@ local pairs = [
     // context: legend_military_goedendag.create.m.Name
     {
         en = "Military Goedendag"
-        es = ""
+        es = "Goedendag militar"
     }
     // context: legend_military_goedendag.create.m.Description
     {
@@ -74606,7 +74606,7 @@ local pairs = [
     // context: legend_militia_glaive.create.m.Name
     {
         en = "Militia Glaive"
-        es = ""
+        es = "Guja de milicia"
     }
     // context: legend_militia_glaive.create.m.Description
     {
@@ -74617,7 +74617,7 @@ local pairs = [
     // context: legend_mystic_staff.create.m.Name
     {
         en = "Mystic staff"
-        es = ""
+        es = "Bastón místico"
     }
     // context: legend_mystic_staff.create.m.Description
     {
@@ -74628,7 +74628,7 @@ local pairs = [
     // context: legend_northern_sling.create.m.Name
     {
         en = "Northern Sling"
-        es = ""
+        es = "Honda norteña"
     }
     // context: legend_northern_sling.create.m.Description
     {
@@ -74639,7 +74639,7 @@ local pairs = [
     // context: legend_parrying_dagger.create.m.Name
     {
         en = "Parrying dagger"
-        es = ""
+        es = "Daga de parada"
     }
     // context: legend_parrying_dagger.create.m.Description
     {
@@ -74683,7 +74683,7 @@ local pairs = [
     // context: legend_ranged_flail.create.m.Name
     {
         en = "Pole Flail"
-        es = ""
+        es = "Mayal de asta"
     }
     // context: legend_ranged_flail.create.m.Description
     {
@@ -74694,7 +74694,7 @@ local pairs = [
     // context: legend_ranged_wooden_flail.create.m.Name
     {
         en = "Peasant Flail"
-        es = ""
+        es = "Mayal de campesino"
     }
     // context: legend_ranged_wooden_flail.create.m.Description
     {
@@ -74705,7 +74705,7 @@ local pairs = [
     // context: legend_redback_dagger.create.m.Name
     {
         en = "Redback Dagger"
-        es = ""
+        es = "Daga de lomo rojo"
     }
     // context: legend_redback_dagger.create.m.Description
     {
@@ -74728,7 +74728,7 @@ local pairs = [
     // context: legend_reinforced_flail.create.m.Name
     {
         en = "Reinforced Improvised Warflail"
-        es = ""
+        es = "Mayal de guerra improvisado reforzado"
     }
     // context: legend_reinforced_flail.create.m.Description
     {
@@ -74739,7 +74739,7 @@ local pairs = [
     // context: legend_saw.create.m.Name
     {
         en = "Handsaw"
-        es = ""
+        es = "Serrucho"
     }
     // context: legend_saw.create.m.Description
     {
@@ -74764,7 +74764,7 @@ local pairs = [
     // context: legend_shovel.create.m.Name
     {
         en = "Shovel"
-        es = ""
+        es = "Pala"
     }
     // context: legend_shovel.create.m.Description
     {
@@ -74783,7 +74783,7 @@ local pairs = [
     // context: legend_slingshot.create.m.Name
     {
         en = "Slingshot"
-        es = ""
+        es = "Tirachinas"
     }
     // context: legend_slingshot.create.m.Description
     {
@@ -74802,7 +74802,7 @@ local pairs = [
     // context: legend_staff_gnarled.create.m.Name
     {
         en = "Gnarled Staff"
-        es = ""
+        es = "Bastón nudoso"
     }
     // context: legend_staff_gnarled.create.m.Description
     {
@@ -74813,7 +74813,7 @@ local pairs = [
     // context: legend_staff_vala.create.m.Name
     {
         en = "Vala Staff"
-        es = ""
+        es = "Bastón de vala"
     }
     // context: legend_staff_vala.create.m.Description
     {
@@ -74824,7 +74824,7 @@ local pairs = [
     // context: legend_sturdy_sling.create.m.Name
     {
         en = "Sturdy Sling"
-        es = ""
+        es = "Honda robusta"
     }
     // context: legend_sturdy_sling.create.m.Description
     {
@@ -74835,7 +74835,7 @@ local pairs = [
     // context: legend_swordstaff.create.m.Name
     {
         en = "Swordstaff"
-        es = ""
+        es = "Bastón de espada"
     }
     // context: legend_swordstaff.create.m.Description
     {
@@ -74846,7 +74846,7 @@ local pairs = [
     // context: legend_tipstaff.create.m.Name
     {
         en = "Tipstaff"
-        es = ""
+        es = "Bastón herrado"
     }
     // context: legend_tipstaff.create.m.Description
     {
@@ -74857,7 +74857,7 @@ local pairs = [
     // context: legend_two_handed_club.create.m.Name
     {
         en = "Two-Handed Club"
-        es = ""
+        es = "Estaca de guerra a dos manos"
     }
     // context: legend_two_handed_club.create.m.Description
     {
@@ -74868,7 +74868,7 @@ local pairs = [
     // context: legend_wooden_pitchfork.create.m.Name
     {
         en = "Wooden pitchfork"
-        es = ""
+        es = "Horca de madera"
     }
     // context: legend_wooden_pitchfork.create.m.Description
     {
@@ -74879,7 +74879,7 @@ local pairs = [
     // context: legend_wooden_spear.create.m.Name
     {
         en = "Wooden Spear"
-        es = ""
+        es = "Lanza de madera"
     }
     // context: legend_wooden_spear.create.m.Description
     {
@@ -74890,7 +74890,7 @@ local pairs = [
     // context: legend_wooden_stake.create.m.Name
     {
         en = "Wooden Stake"
-        es = ""
+        es = "Estaca de madera"
     }
     // context: legend_wooden_stake.create.m.Description
     {
@@ -74922,7 +74922,7 @@ local pairs = [
     // context: legend_mage_swordstaff.create.m.Name
     {
         en = "Bladed Magestaff"
-        es = ""
+        es = "Bastón mágico con hoja"
     }
     // context: legend_mage_swordstaff.create.m.Description
     {
@@ -74933,7 +74933,7 @@ local pairs = [
     // context: legend_ram_hammer.create.m.Name
     {
         en = "The Ram's Head"
-        es = ""
+        es = "La Cabeza de Carnero"
     }
     // context: legend_ram_hammer.create.m.Description
     {
@@ -74967,7 +74967,7 @@ local pairs = [
     // context: legend_named_goblin_axe_2h.create.m.Name
     {
         en = "Manfeller"
-        es = ""
+        es = "Abatehombres"
     }
     // context: legend_named_goblin_axe_2h.create.m.Description
     {
@@ -75000,7 +75000,7 @@ local pairs = [
     // context: legend_named_goblin_staff.create.m.Name
     {
         en = "Adorned Gnarly Staff"
-        es = ""
+        es = "Palo retorcido adornado"
     }
     // context: legend_named_goblin_staff.create.m.Description
     {
@@ -75084,7 +75084,7 @@ local pairs = [
     // context: legend_named_orc_axe_2h.create.m.Name
     {
         en = "Unhold Splitter"
-        es = ""
+        es = "Partetroles"
     }
     // context: legend_named_orc_axe_2h.create.m.Description
     {
@@ -75095,7 +75095,7 @@ local pairs = [
     // context: legend_named_orc_flail_2h.create.m.Name
     {
         en = "Brutal Chain"
-        es = ""
+        es = "Cadena brutal"
     }
     // context: legend_named_orc_flail_2h.create.m.Description
     {
@@ -75190,7 +75190,7 @@ local pairs = [
     // context: arena_follower.create.m.Name
     {
         en = "Gladiator's Tools"
-        es = ""
+        es = "Herramientas del gladiador"
     }
     // context: arena_follower.create.m.Description
     {
@@ -75220,7 +75220,7 @@ local pairs = [
     // context: legend_random_3_scenario.create.m.Name
     {
         en = "Random Trio"
-        es = ""
+        es = "Trío aleatorio"
     }
     // context: legend_random_3_scenario.create.m.Description
     {
@@ -75231,7 +75231,7 @@ local pairs = [
     // context: legend_random_party_scenario.create.m.Name
     {
         en = "Random Party"
-        es = ""
+        es = "Grupo aleatorio"
     }
     // context: legend_random_party_scenario.create.m.Description
     {
@@ -75242,7 +75242,7 @@ local pairs = [
     // context: legend_random_solo_scenario.create.m.Name
     {
         en = "Random Solo"
-        es = ""
+        es = "Solitario aleatorio"
     }
     // context: legend_random_solo_scenario.create.m.Description
     {
@@ -75253,7 +75253,7 @@ local pairs = [
     // context: legend_risen_legion_scenario.create.m.Name
     {
         en = "Risen Legion"
-        es = ""
+        es = "Legión alzada"
     }
     // context: legend_risen_legion_scenario.create.m.Description
     {
@@ -75285,7 +75285,7 @@ local pairs = [
     // context: legends_beggar_scenario.create.m.Name
     {
         en = "Original Beggar Challenge"
-        es = ""
+        es = "Desafío del mendigo original"
     }
     // context: legends_beggar_scenario.create.m.Description
     {
@@ -75353,7 +75353,7 @@ local pairs = [
     // context: legends_custom_scenario.create.m.Name
     {
         en = "Build your own "
-        es = ""
+        es = "A tu medida"
     }
     // context: legends_custom_scenario.create.m.Description
     {
@@ -75542,7 +75542,7 @@ local pairs = [
     // context: legends_horse_scenario.create.m.Name
     {
         en = "Horse party"
-        es = ""
+        es = "Grupo a caballo"
     }
     // context: legends_horse_scenario.create.m.Description
     {
@@ -75579,7 +75579,7 @@ local pairs = [
     // context: legends_mage_scenario.create.m.Name
     {
         en = "Mage"
-        es = ""
+        es = "Mago"
     }
     // context: legends_mage_scenario.create.m.Description
     {
@@ -75620,7 +75620,7 @@ local pairs = [
     // context: legends_necro_scenario.create.m.Name
     {
         en = "The Cabal"
-        es = ""
+        es = "La Camarilla"
     }
     // context: legends_necro_scenario.create.m.Description
     {
@@ -75707,7 +75707,7 @@ local pairs = [
     // context: legends_nomad_scenario.create.m.Name
     {
         en = "Nomad Tribe"
-        es = ""
+        es = "Tribu nómada"
     }
     // context: legends_nomad_scenario.create.m.Description
     {
@@ -75768,7 +75768,7 @@ local pairs = [
     // context: legends_party_scenario.create.m.Name
     {
         en = "Adventuring Party"
-        es = ""
+        es = "Grupo de aventureros"
     }
     // context: legends_party_scenario.create.m.Description
     {
@@ -75855,7 +75855,7 @@ local pairs = [
     // context: legends_scaling_beggar_scenario.create.m.Name
     {
         en = "Scaling Beggar Challenge"
-        es = ""
+        es = "Desafío del mendigo progresivo"
     }
     // context: legends_scaling_beggar_scenario.create.m.Description
     {
@@ -75882,7 +75882,7 @@ local pairs = [
     // context: legends_sisterhood_scenario.create.m.Name
     {
         en = "Sisterhood"
-        es = ""
+        es = "Las Hermanas"
     }
     // context: legends_sisterhood_scenario.create.m.Description
     {
@@ -75900,7 +75900,7 @@ local pairs = [
     // context: legends_solo_necro_scenario.create.m.Name
     {
         en = "Master Necromancer"
-        es = ""
+        es = "Maestro nigromante"
     }
     // context: legends_solo_necro_scenario.create.m.Description
     {
@@ -79424,7 +79424,7 @@ local pairs = [
     // context: legend_ancient_summoner_background.create.m.Name
     {
         en = "Skelemancer"
-        es = ""
+        es = "Esqueletomante"
     }
     // context: legend_ancient_summoner_background.create.m.Titles
     {
@@ -79491,7 +79491,7 @@ local pairs = [
     // context: legend_astrologist_background.create.m.Name
     {
         en = "Astrologist"
-        es = ""
+        es = "Astrólogo"
     }
     // context: legend_astrologist_background.create.m.Titles
     {
@@ -79512,7 +79512,7 @@ local pairs = [
     // context: legend_battle_sister_background.create.m.Name
     {
         en = "Battle Sister"
-        es = ""
+        es = "Hermana de batalla"
     }
     // context: legend_battle_sister_background.create.m.BackgroundDescription
     {
@@ -79528,12 +79528,12 @@ local pairs = [
     // context: legend_beggar_commander_background.create.m.Name
     {
         en = "Framed Beggar"
-        es = ""
+        es = "Mendigo incriminado"
     }
     // context: legend_beggar_commander_background.setGender.m.Name
     {
         en = "Framed Widow"
-        es = ""
+        es = "Viuda incriminada"
     }
     // context: legend_beggar_commander_background.setGender.m.GoodEnding
     {
@@ -79651,7 +79651,7 @@ local pairs = [
     // context: legend_berserker_commander_background.onAdded.actor.setTitle()
     {
         en = "The Berserker"
-        es = ""
+        es = "El Berserker"
     }
     // FILE: scripts\skills\backgrounds\legend_blacksmith_background.nut
     // context: legend_blacksmith_background.create.m.BackgroundDescription
@@ -79709,7 +79709,7 @@ local pairs = [
     // context: legend_blacksmith_background.setGender.m.Name
     {
         en = "Farrier"
-        es = ""
+        es = "Herrador"
     }
     // context: legend_blacksmith_background.setGender.m.BackgroundDescription
     {
@@ -79844,7 +79844,7 @@ local pairs = [
     // context: legend_conjurer_background.create.m.Name
     {
         en = "Conjurer"
-        es = ""
+        es = "Conjurador"
     }
     // context: legend_conjurer_background.create.m.Titles
     {
@@ -79909,13 +79909,13 @@ local pairs = [
     // context: legend_conscript_ranged_background.create.m.Name
     {
         en = "Conscript Gunner"
-        es = ""
+        es = "Recluta cañonero"
     }
     // FILE: scripts\skills\backgrounds\legend_crusader_background.nut
     // context: legend_crusader_background.create.m.Name
     {
         en = "Holy Crusader"
-        es = ""
+        es = "Cruzado santo"
     }
     // context: legend_crusader_background.onBuildDescription
     {
@@ -79931,7 +79931,7 @@ local pairs = [
     // context: legend_death_summoner_background.create.m.Name
     {
         en = "Weidermancer"
-        es = ""
+        es = "Weidermante"
     }
     // FILE: scripts\skills\backgrounds\legend_dervish_background.nut
     // context: legend_dervish_background.create.m.BackgroundDescription
@@ -79963,7 +79963,7 @@ local pairs = [
     // context: legend_diviner_background.create.m.Name
     {
         en = "Diviner"
-        es = ""
+        es = "Adivino"
     }
     // context: legend_diviner_background.create.m.Titles
     {
@@ -80130,7 +80130,7 @@ local pairs = [
     // context: legend_entrancer_background.create.m.Name
     {
         en = "Entrancer"
-        es = ""
+        es = "Embelesador"
     }
     // context: legend_entrancer_background.create.m.Titles
     {
@@ -80166,7 +80166,7 @@ local pairs = [
     // context: legend_gladiator_prizefighter_background.create.m.Name
     {
         en = "Gladiator Prizefighter"
-        es = ""
+        es = "Gladiador profesional"
     }
     // context: legend_gladiator_prizefighter_background.create.m.BackgroundDescription
     {
@@ -80177,7 +80177,7 @@ local pairs = [
     // context: legend_guildmaster_background.create.m.Name
     {
         en = "Guild Master"
-        es = ""
+        es = "Maestro del gremio"
     }
     // context: legend_guildmaster_background.create.m.BackgroundDescription
     {
@@ -80203,22 +80203,22 @@ local pairs = [
     // context: legend_healer_background.create.m.Name
     {
         en = "Healer"
-        es = ""
+        es = "Sanador"
     }
     // context: legend_healer_background.create.m.Name
     {
         en = "Doctor"
-        es = ""
+        es = "Médico"
     }
     // context: legend_healer_background.create.m.Name
     {
         en = "Nurse"
-        es = ""
+        es = "Enfermero"
     }
     // context: legend_healer_background.create.m.Name
     {
         en = "Surgeon"
-        es = ""
+        es = "Cirujano"
     }
     // context: legend_healer_background.create.m.Titles
     {
@@ -80259,7 +80259,7 @@ local pairs = [
     // context: legend_herbalist_background.create.m.Name
     {
         en = "Herbalist / Apothecaries"
-        es = ""
+        es = "Herbolario / Boticario"
     }
     // context: legend_herbalist_background.create.m.BackgroundDescription
     {
@@ -80326,7 +80326,7 @@ local pairs = [
     // context: legend_horse_courser.create.m.Name
     {
         en = "Courser"
-        es = ""
+        es = "Corcel"
     }
     // context: legend_horse_courser.create.m.BackgroundDescription
     {
@@ -80352,7 +80352,7 @@ local pairs = [
     // context: legend_horse_destrier.create.m.Name
     {
         en = "Destrier"
-        es = ""
+        es = "Destrero"
     }
     // context: legend_horse_destrier.create.m.BackgroundDescription
     {
@@ -80373,7 +80373,7 @@ local pairs = [
     // context: legend_horse_rouncey.create.m.Name
     {
         en = "Rouncey"
-        es = ""
+        es = "Rocín"
     }
     // context: legend_horse_rouncey.create.m.BackgroundDescription
     {
@@ -80389,7 +80389,7 @@ local pairs = [
     // context: legend_horserider.create.m.Name
     {
         en = "Horse Rider"
-        es = ""
+        es = "Jinete"
     }
     // context: legend_horserider.onBuildDescription
     {
@@ -80406,7 +80406,7 @@ local pairs = [
     // context: legend_husk_background.create.m.Name
     {
         en = "Husk"
-        es = ""
+        es = "Cascarón"
     }
     // context: legend_husk_background.create.m.BackgroundDescription
     {
@@ -80427,7 +80427,7 @@ local pairs = [
     // context: legend_illusionist_background.create.m.Name
     {
         en = "Illusionist"
-        es = ""
+        es = "Ilusionista"
     }
     // context: legend_illusionist_background.onBuildDescription
     {
@@ -80469,7 +80469,7 @@ local pairs = [
     // context: legend_ironmonger_background.create.m.Name
     {
         en = "Ironmonger"
-        es = ""
+        es = "Ferretero"
     }
     // context: legend_ironmonger_background.create.m.BackgroundDescription
     {
@@ -80520,7 +80520,7 @@ local pairs = [
     // context: legend_leech_peddler_background.create.m.Name
     {
         en = "Leech Peddler"
-        es = ""
+        es = "Vendedor de sanguijuelas"
     }
     // context: legend_leech_peddler_background.create.m.BackgroundDescription
     {
@@ -80571,7 +80571,7 @@ local pairs = [
     // context: legend_legion_auxiliary_background.create.m.Name
     {
         en = "Auxiliary"
-        es = ""
+        es = "Auxiliar"
     }
     // context: legend_legion_auxiliary_background.create.m.BackgroundDescription
     {
@@ -80587,7 +80587,7 @@ local pairs = [
     // context: legend_legion_centurion_background.create.m.Name
     {
         en = "Centurion"
-        es = ""
+        es = "Centurión"
     }
     // context: legend_legion_centurion_background.create.m.BackgroundDescription
     {
@@ -80614,7 +80614,7 @@ local pairs = [
     // context: legend_legion_honour_guard_background.create.m.Name
     {
         en = "Honour Guard"
-        es = ""
+        es = "Guardia de honor"
     }
     // context: legend_legion_honour_guard_background.create.m.BackgroundDescription
     {
@@ -80630,7 +80630,7 @@ local pairs = [
     // context: legend_legion_legate_background.create.m.Name
     {
         en = "Legate"
-        es = ""
+        es = "Legado"
     }
     // context: legend_legion_legate_background.create.m.BackgroundDescription
     {
@@ -80651,7 +80651,7 @@ local pairs = [
     // context: legend_legion_legionary_background.create.m.Name
     {
         en = "Legionary"
-        es = ""
+        es = "Legionario"
     }
     // context: legend_legion_legionary_background.create.m.BackgroundDescription
     {
@@ -80667,7 +80667,7 @@ local pairs = [
     // context: legend_legion_prefect_background.create.m.Name
     {
         en = "Prefect"
-        es = ""
+        es = "Prefecto"
     }
     // context: legend_legion_prefect_background.create.m.BackgroundDescription
     {
@@ -80683,7 +80683,7 @@ local pairs = [
     // context: legend_legion_slave_background.create.m.Name
     {
         en = "Servus"
-        es = ""
+        es = "Siervo"
     }
     // context: legend_legion_slave_background.create.m.BackgroundDescription
     {
@@ -80726,7 +80726,7 @@ local pairs = [
     // context: legend_magister_background.create.m.Name
     {
         en = "Magister"
-        es = ""
+        es = "Magíster"
     }
     // context: legend_magister_background.create.m.BackgroundDescription
     {
@@ -80742,7 +80742,7 @@ local pairs = [
     // context: legend_man_at_arms_background.create.m.Name
     {
         en = "Man-At-Arms"
-        es = ""
+        es = "Hombre de armas"
     }
     // context: legend_man_at_arms_background.create.m.BackgroundDescription
     {
@@ -80757,7 +80757,7 @@ local pairs = [
     // context: legend_man_at_arms_background.setGender.m.Name
     {
         en = "Woman-At-Arms"
-        es = ""
+        es = "Mujer de armas"
     }
     // context: legend_man_at_arms_background.onBuildDescription
     {
@@ -80835,7 +80835,7 @@ local pairs = [
     // context: legend_necro_background.create.m.Name
     {
         en = "Warlock"
-        es = ""
+        es = "Brujo"
     }
     // FILE: scripts\skills\backgrounds\legend_necro_commander_background.nut
     // context: legend_necro_commander_background.create.m.BackgroundDescription
@@ -80917,7 +80917,7 @@ local pairs = [
     // context: legend_nightwatch_background.create.m.Name
     {
         en = "Night Watch"
-        es = ""
+        es = "Guardia nocturno"
     }
     // context: legend_nightwatch_background.create.m.BackgroundDescription
     {
@@ -80948,7 +80948,7 @@ local pairs = [
     // context: legend_noble_2h.create.m.Name
     {
         en = "Warrior"
-        es = ""
+        es = "Guerrero"
     }
     // context: legend_noble_2h.create.m.BackgroundDescription
     {
@@ -81002,7 +81002,7 @@ local pairs = [
     // context: legend_noble_commander_background.create.m.Name
     {
         en = "Noble Usurper"
-        es = ""
+        es = "Noble usurpador"
     }
     // context: legend_noble_commander_background.create.m.BackgroundDescription
     {
@@ -81053,7 +81053,7 @@ local pairs = [
     // context: legend_noble_shield.create.m.Name
     {
         en = "Foot Soldier"
-        es = ""
+        es = "Soldado de infantería"
     }
     // context: legend_noble_shield.create.m.GoodEnding
     {
@@ -81085,7 +81085,7 @@ local pairs = [
     // context: legend_philosopher_background.create.m.Name
     {
         en = "Philosopher"
-        es = ""
+        es = "Filósofo"
     }
     // context: legend_philosopher_background.create.m.Titles
     {
@@ -81101,7 +81101,7 @@ local pairs = [
     // context: legend_pilgrim_background.create.m.Name
     {
         en = "Pilgrim"
-        es = ""
+        es = "Peregrino"
     }
     // context: legend_pilgrim_background.create.m.BackgroundDescription
     {
@@ -81157,7 +81157,7 @@ local pairs = [
     // context: legend_premonitionist_background.create.m.Name
     {
         en = "Premonitionist"
-        es = ""
+        es = "Agorero"
     }
     // context: legend_premonitionist_background.onBuildDescription
     {
@@ -81168,7 +81168,7 @@ local pairs = [
     // context: legend_preserver_background.create.m.Name
     {
         en = "Preserver"
-        es = ""
+        es = "Preservador"
     }
     // context: legend_preserver_background.create.m.BackgroundDescription
     {
@@ -81194,7 +81194,7 @@ local pairs = [
     // context: legend_puppet_background.create.m.Name
     {
         en = "Puppet"
-        es = ""
+        es = "Marioneta"
     }
     // context: legend_puppet_background.create.m.BackgroundDescription
     {
@@ -81215,7 +81215,7 @@ local pairs = [
     // context: legend_puppet_master_background.create.m.Name
     {
         en = "Puppet Master"
-        es = ""
+        es = "Titiritero"
     }
     // context: legend_puppet_master_background.create.m.BackgroundDescription
     {
@@ -81251,7 +81251,7 @@ local pairs = [
     // context: legend_qiyan_background.create.m.Name
     {
         en = "Qiyan"
-        es = ""
+        es = "Qiyan"
     }
     // context: legend_qiyan_background.create.m.BackgroundDescription
     {
@@ -81334,7 +81334,7 @@ local pairs = [
     // context: legend_runesmith_background.create.m.Name
     {
         en = "Rune Smith"
-        es = ""
+        es = "Herrero rúnico"
     }
     // context: legend_runesmith_background.create.m.Titles
     {
@@ -81416,7 +81416,7 @@ local pairs = [
     // context: legend_spiritualist_background.create.m.Name
     {
         en = "Medium"
-        es = ""
+        es = "Médium"
     }
     // context: legend_spiritualist_background.create.m.Titles
     {
@@ -81551,13 +81551,13 @@ local pairs = [
     // context: legend_transmuter_background.create.m.Name
     {
         en = "Transmuter"
-        es = ""
+        es = "Transmutador"
     }
     // FILE: scripts\skills\backgrounds\legend_vala_background.nut
     // context: legend_vala_background.create.m.Name
     {
         en = "Vala"
-        es = ""
+        es = "Vala"
     }
     // context: legend_vala_background.create.m.BackgroundDescription
     {
@@ -81593,7 +81593,7 @@ local pairs = [
     // context: legend_warlock_summoner_background.create.m.Name
     {
         en = "Summoner"
-        es = ""
+        es = "Invocador"
     }
     // context: legend_warlock_summoner_background.create.m.BackgroundDescription
     {
@@ -81629,7 +81629,7 @@ local pairs = [
     // context: legend_witch_background.create.m.Name
     {
         en = "Evoker"
-        es = ""
+        es = "Evocador"
     }
     // FILE: scripts\skills\backgrounds\legend_witch_commander_background.nut
     // en = "the Cunning"
@@ -81673,7 +81673,7 @@ local pairs = [
     // context: legend_youngblood_background.create.m.Name
     {
         en = "Youngblood"
-        es = ""
+        es = "Novato"
     }
     // context: legend_youngblood_background.create.m.BackgroundDescription
     {
@@ -81719,12 +81719,12 @@ local pairs = [
     // context: mage_background.create.m.Name
     {
         en = "Sorcerer"
-        es = ""
+        es = "Taumaturgo"
     }
     // context: mage_background.create.m.Name
     {
         en = "Wizard"
-        es = ""
+        es = "Hechicero"
     }
     // context: mage_background.create.m.Titles
     {
@@ -82851,7 +82851,7 @@ local pairs = [
     // context: legend_overwatch_effect.::inherit().create.m.Name
     {
         en = "Overwatch"
-        es = ""
+        es = "Vigilancia"
     }
     // context: legend_overwatch_effect.::inherit().create.m.Description
     {
@@ -83307,7 +83307,7 @@ local pairs = [
     // context: legend_staff_riposte_effect.create.m.Name
     {
         en = "Staff Riposte"
-        es = ""
+        es = "Contraataque con bastón"
     }
     // FILE: scripts\skills\effects\legend_staffwall_effect.nut
     // context: legend_staffwall_effect.getDescription
@@ -83422,7 +83422,7 @@ local pairs = [
     // context: legend_transformed_boar_effect.create.m.Name
     {
         en = "Boar Form"
-        es = ""
+        es = "Forma de jabalí"
     }
     // context: legend_transformed_boar_effect.create.m.Description
     {
@@ -83456,7 +83456,7 @@ local pairs = [
     // context: legend_transformed_rat_effect.create.m.Name
     {
         en = "Rat Form"
-        es = ""
+        es = "Forma de rata"
     }
     // context: legend_transformed_rat_effect.create.m.Description
     {
@@ -83472,7 +83472,7 @@ local pairs = [
     // context: legend_transformed_terrain_effect.create.m.Name
     {
         en = "Cunning Disguise"
-        es = ""
+        es = "Disfraz astuto"
     }
     // context: legend_transformed_terrain_effect.create.m.Description
     {
@@ -83701,7 +83701,7 @@ local pairs = [
     // context: legend_aperthropy_injury.create.m.Name
     {
         en = "Aperthrope"
-        es = ""
+        es = "Aperántropo"
     }
     // context: legend_aperthropy_injury.create.m.Description
     {
@@ -83717,7 +83717,7 @@ local pairs = [
     // context: legend_arborthropy_injury.create.m.Name
     {
         en = "Arborthrope"
-        es = ""
+        es = "Arborántropo"
     }
     // context: legend_arborthropy_injury.create.m.Description
     {
@@ -83749,7 +83749,7 @@ local pairs = [
     // context: legend_donkey_injury.create.m.Name
     {
         en = "Donkey body"
-        es = ""
+        es = "Cuerpo de burro"
     }
     // context: legend_donkey_injury.create.m.Description
     {
@@ -83760,7 +83760,7 @@ local pairs = [
     // context: legend_infected_injury.create.m.Name
     {
         en = "Vermesthrope"
-        es = ""
+        es = "Vermesántropo"
     }
     // context: legend_infected_injury.create.m.Description
     {
@@ -83791,7 +83791,7 @@ local pairs = [
     // context: legend_lycanthropy_injury.create.m.Name
     {
         en = "Lycanthrope"
-        es = ""
+        es = "Licántropo"
     }
     // context: legend_lycanthropy_injury.create.m.Description
     {
@@ -83807,7 +83807,7 @@ local pairs = [
     // context: legend_scarred_injury.create.m.Name
     {
         en = "Scarred"
-        es = ""
+        es = "Con cicatrices"
     }
     // context: legend_scarred_injury.create.m.Description
     {
@@ -83833,7 +83833,7 @@ local pairs = [
     // context: legend_ursathropy_injury.create.m.Name
     {
         en = "Ursathrope"
-        es = ""
+        es = "Ursántropo"
     }
     // context: legend_ursathropy_injury.create.m.Description
     {
@@ -84859,7 +84859,7 @@ local pairs = [
     // context: legend_ambitious_trait.create.m.Name
     {
         en = "Ambitious"
-        es = ""
+        es = "Ambicioso"
     }
     // context: legend_ambitious_trait.create.m.Description
     {
@@ -84900,7 +84900,7 @@ local pairs = [
     // context: legend_appetite_donkey.create.m.Name
     {
         en = "Appetite of a donkey"
-        es = ""
+        es = "Apetito de burro"
     }
     // context: legend_appetite_donkey.create.m.Description
     {
@@ -84926,7 +84926,7 @@ local pairs = [
     // context: legend_arena_champion_trait.create.m.Name
     {
         en = "Arena Champion"
-        es = ""
+        es = "Campeón de la Arena"
     }
     // context: legend_arena_champion_trait.create.m.Description
     {
@@ -84961,7 +84961,7 @@ local pairs = [
     // context: legend_arena_invictus_trait.create.m.Name
     {
         en = "Invictus"
-        es = ""
+        es = "Invictus"
     }
     // context: legend_arena_invictus_trait.create.m.Description
     {
@@ -84992,7 +84992,7 @@ local pairs = [
     // context: legend_beastslayers_trait.create.m.Name
     {
         en = "Natural Order"
-        es = ""
+        es = "Orden natural"
     }
     // context: legend_beastslayers_trait.create.m.Description
     {
@@ -85018,7 +85018,7 @@ local pairs = [
     // context: legend_brothers_in_chains_trait.create.m.Name
     {
         en = "United in Chains"
-        es = ""
+        es = "Unidos en cadenas"
     }
     // context: legend_brothers_in_chains_trait.create.m.Description
     {
@@ -85029,7 +85029,7 @@ local pairs = [
     // context: legend_cannibalistic.create.m.Name
     {
         en = "Cannibalistic"
-        es = ""
+        es = "Caníbal"
     }
     // context: legend_cannibalistic.create.m.Description
     {
@@ -85040,7 +85040,7 @@ local pairs = [
     // context: legend_deathly_spectre_trait.create.m.Name
     {
         en = "Deathly spectre"
-        es = ""
+        es = "Espectro mortal"
     }
     // context: legend_deathly_spectre_trait.create.m.Description
     {
@@ -85066,7 +85066,7 @@ local pairs = [
     // context: legend_double_tongued_trait.create.m.Name
     {
         en = "Double tongued"
-        es = ""
+        es = "Lengua bífida"
     }
     // context: legend_double_tongued_trait.create.m.Description
     {
@@ -85092,7 +85092,7 @@ local pairs = [
     // context: legend_fear_dark_trait.create.m.Name
     {
         en = "Nyctophobia"
-        es = ""
+        es = "Nictofobia"
     }
     // context: legend_fear_dark_trait.create.m.Description
     {
@@ -85118,7 +85118,7 @@ local pairs = [
     // context: legend_fear_nobles_trait.create.m.Name
     {
         en = "Fear of Nobles"
-        es = ""
+        es = "Miedo a los Nobles"
     }
     // context: legend_fear_nobles_trait.create.m.Description
     {
@@ -85144,7 +85144,7 @@ local pairs = [
     // context: legend_fleshless_trait.create.m.Name
     {
         en = "Fleshless"
-        es = ""
+        es = "Descarnado"
     }
     // context: legend_fleshless_trait.create.m.Description
     {
@@ -85177,7 +85177,7 @@ local pairs = [
     // context: legend_gift_of_people_trait.create.m.Name
     {
         en = "Charming"
-        es = ""
+        es = "Carismático"
     }
     // context: legend_gift_of_people_trait.create.m.Description
     {
@@ -85193,7 +85193,7 @@ local pairs = [
     // context: legend_hate_nobles_trait.create.m.Name
     {
         en = "Hate for Nobles"
-        es = ""
+        es = "Odio por los Nobles"
     }
     // context: legend_hate_nobles_trait.create.m.Description
     {
@@ -85219,7 +85219,7 @@ local pairs = [
     // context: legend_heavy_trait.create.m.Name
     {
         en = "Lumbering"
-        es = ""
+        es = "Pesado"
     }
     // context: legend_heavy_trait.create.m.Description
     {
@@ -85264,7 +85264,7 @@ local pairs = [
     // context: legend_inquisition_disciple_trait.create.m.Name
     {
         en = "Disciple of the Inquisition"
-        es = ""
+        es = "Discípulo de la Inquisición"
     }
     // context: legend_inquisition_disciple_trait.create.m.Description
     {
@@ -85282,7 +85282,7 @@ local pairs = [
     // context: legend_intensive_training_trait.create.m.Name
     {
         en = "Training progress"
-        es = ""
+        es = "Progreso del entrenamiento"
     }
     // context: legend_intensive_training_trait.create.m.Description
     {
@@ -85425,7 +85425,7 @@ local pairs = [
     // context: legend_intensive_training_trait.onDeserialize.m.Name
     {
         en = "Training fulfilled"
-        es = ""
+        es = "Entrenamiento completado"
     }
     // context: legend_intensive_training_trait.onDeserialize.m.Description
     {
@@ -85436,7 +85436,7 @@ local pairs = [
     // context: legend_light_trait.create.m.Name
     {
         en = "Light"
-        es = ""
+        es = "Liviano"
     }
     // context: legend_light_trait.create.m.Description
     {
@@ -85467,7 +85467,7 @@ local pairs = [
     // context: legend_lw_relationship_trait.create.m.Name
     {
         en = "Relationship"
-        es = ""
+        es = "Relación"
     }
     // context: legend_lw_relationship_trait.create.m.Description
     {
@@ -85488,7 +85488,7 @@ local pairs = [
     // context: legend_martial_trait.create.m.Name
     {
         en = "Martial"
-        es = ""
+        es = "Marcial"
     }
     // context: legend_martial_trait.create.m.Description
     {
@@ -85525,7 +85525,7 @@ local pairs = [
     // context: legend_noble_killer_trait.create.m.Name
     {
         en = "Noble Killer"
-        es = ""
+        es = "Asesino de nobles"
     }
     // context: legend_noble_killer_trait.create.m.Description
     {
@@ -85568,7 +85568,7 @@ local pairs = [
     // context: legend_pragmatic_trait.create.m.Name
     {
         en = "Pragmatic"
-        es = ""
+        es = "Pragmático"
     }
     // context: legend_pragmatic_trait.create.m.Description
     {
@@ -85584,7 +85584,7 @@ local pairs = [
     // context: legend_predictable_trait.create.m.Name
     {
         en = "Predictable"
-        es = ""
+        es = "Predecible"
     }
     // context: legend_predictable_trait.create.m.Description
     {
@@ -85605,7 +85605,7 @@ local pairs = [
     // context: legend_prosthetic_ear.create.m.Name
     {
         en = "Enhanced Prosthetic Ear"
-        es = ""
+        es = "Oreja protésica mejorada"
     }
     // context: legend_prosthetic_ear.create.m.Description
     {
@@ -85653,7 +85653,7 @@ local pairs = [
     // context: legend_prosthetic_foot.create.m.Name
     {
         en = "Enhanced Prosthetic Foot"
-        es = ""
+        es = "Pie protésico mejorado"
     }
     // context: legend_prosthetic_foot.create.m.Description
     {
@@ -85689,7 +85689,7 @@ local pairs = [
     // context: legend_prosthetic_hand.create.m.Name
     {
         en = "Enhanced Prosthetic Hand"
-        es = ""
+        es = "Mano protésica mejorada"
     }
     // context: legend_prosthetic_hand.create.m.Description
     {
@@ -85733,7 +85733,7 @@ local pairs = [
     // context: legend_prosthetic_leg.create.m.Name
     {
         en = "Enhanced Prosthetic Leg"
-        es = ""
+        es = "Pierna protésica mejorada"
     }
     // context: legend_prosthetic_leg.create.m.Description
     {
@@ -85759,7 +85759,7 @@ local pairs = [
     // context: legend_prosthetic_nose.create.m.Name
     {
         en = "Enhanced Prosthetic Nose"
-        es = ""
+        es = "Nariz protésica mejorada"
     }
     // context: legend_prosthetic_nose.create.m.Description
     {
@@ -85780,7 +85780,7 @@ local pairs = [
     // context: legend_rotten_flesh_trait.create.m.Name
     {
         en = "Rotting Flesh"
-        es = ""
+        es = "Carne putrefacta"
     }
     // context: legend_rotten_flesh_trait.create.m.Description
     {
@@ -85816,7 +85816,7 @@ local pairs = [
     // context: legend_seductive_trait.create.m.Name
     {
         en = "Seductive"
-        es = ""
+        es = "Seductor"
     }
     // context: legend_seductive_trait.create.m.Description
     {
@@ -85832,7 +85832,7 @@ local pairs = [
     // context: legend_slack_trait.create.m.Name
     {
         en = "Slack"
-        es = ""
+        es = "Holgazán"
     }
     // context: legend_slack_trait.create.m.Description
     {
@@ -85868,7 +85868,7 @@ local pairs = [
     // context: legend_steady_hands_trait.create.m.Name
     {
         en = "Steady Hands"
-        es = ""
+        es = "Manos firmes"
     }
     // context: legend_steady_hands_trait.create.m.Description
     {
@@ -85895,7 +85895,7 @@ local pairs = [
     // context: legend_talented_trait.create.m.Name
     {
         en = "Talented"
-        es = ""
+        es = "Talentoso"
     }
     // context: legend_talented_trait.create.m.Description
     {
@@ -85921,7 +85921,7 @@ local pairs = [
     // context: legend_undead_killer_trait.create.m.Name
     {
         en = "Undead Killer"
-        es = ""
+        es = "Asesino de no muertos"
     }
     // context: legend_undead_killer_trait.create.m.Description
     {
@@ -85942,7 +85942,7 @@ local pairs = [
     // context: legend_unpredictable_trait.create.m.Name
     {
         en = "Unpredictable"
-        es = ""
+        es = "Impredecible"
     }
     // context: legend_unpredictable_trait.create.m.Description
     {
@@ -85963,7 +85963,7 @@ local pairs = [
     // context: legend_withering_aura_trait.create.m.Name
     {
         en = "Withering Aura"
-        es = ""
+        es = "Aura marchitadora"
     }
     // context: legend_withering_aura_trait.create.m.Description
     {
@@ -86098,7 +86098,7 @@ local pairs = [
     // context: camp_repair_dialog_module.m.Title
     {
         en = "Repairs"
-        es = ""
+        es = "Reparaciones"
     }
     // context: camp_repair_dialog_module.m.Description
     {

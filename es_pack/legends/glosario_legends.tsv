@@ -208,8 +208,8 @@ Fencer	Esgrimista	entidad	mod_legends\!!config\_global.nut
 Fencers	Esgrimistas	entidad	mod_legends\!!config\_global.nut	
 Free Company Archer	Arquero de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Archers	Arqueros de compañía libre	entidad	mod_legends\!!config\_global.nut	
-Free Company Billman	Piquero de compañía libre	entidad	mod_legends\!!config\_global.nut	
-Free Company Billmen	Piqueros de compañía libre	entidad	mod_legends\!!config\_global.nut	contiene: Billmen
+Free Company Billman	Soldado de guja de compañía libre	entidad	mod_legends\!!config\_global.nut	
+Free Company Billmen	Soldados de guja de compañía libre	entidad	mod_legends\!!config\_global.nut	contiene: Billmen
 Free Company Crossbow	Ballestero de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Crossbows	Ballesteros de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Footman	Soldado a pie de compañía libre	entidad	mod_legends\!!config\_global.nut	contiene: Footman
@@ -219,8 +219,8 @@ Free Company Leader	Líder de compañía libre	entidad	mod_legends\!!config\_glo
 Free Company Leaders	Líderes de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Longbow	Arquero de arco largo de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Longbows	Arqueros de arco largo de compañía libre	entidad	mod_legends\!!config\_global.nut	
-Free Company Pikeman	Soldado de pica de compañía libre	entidad	mod_legends\!!config\_global.nut	DUDA: el base fijó «Billman» = «Piquero», así que «Pikeman» no puede ser «piquero» sin chocar con «Free Company Billman». Alternativas: «Pica de compañía libre» (metonimia clásica) o corregir el base («Billman» = «Alabardero» no vale, ya es «Halberdier»).
-Free Company Pikemen	Soldados de pica de compañía libre	entidad	mod_legends\!!config\_global.nut	
+Free Company Pikeman	Piquero de compañía libre	entidad	mod_legends\!!config\_global.nut	
+Free Company Pikemen	Piqueros de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Ringleader	Cabecilla de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Ringleaders	Cabecillas de compañía libre	entidad	mod_legends\!!config\_global.nut	
 Free Company Slayer	Asesino de compañía libre	entidad	mod_legends\!!config\_global.nut	
@@ -285,7 +285,7 @@ Royal Guards	Guardias reales	entidad	mod_legends\!!config\_global.nut
 Salvage Tent	Tienda de recuperación	entidad	scripts\entity\world\camp\buildings\workshop_building.nut	
 Sighthound	Lebrel	entidad	mod_legends\!!config\_global.nut	
 Sighthounds	Lebreles	entidad	mod_legends\!!config\_global.nut	
-Skin Ghoul	Necrófago desollado	entidad	mod_legends\!!config\_global.nut	DUDA: «Skin Ghoul» (Nachzehrer legendario, «Ghoul» = «Necrófago» como en «Ghoul Claws» del base); «Skin» puede ser «desollado» o «que desuella». Alternativa: «Necrófago despellejador». Afecta a toda la familia (Skin Ghoul Claws, Blood, Helmet, Skinghoul Armor).
+Skin Ghoul	Necrófago desollado	entidad	mod_legends\!!config\_global.nut	
 Skin Ghouls	Necrófagos desollados	entidad	mod_legends\!!config\_global.nut	
 Slinger	Hondero	entidad	mod_legends\!!config\_global.nut	
 Slingers	Honderos	entidad	mod_legends\!!config\_global.nut	
@@ -295,7 +295,7 @@ Stollwurmer	Stollwurmer	entidad	mod_legends\!!config\_global.nut
 Supply Tent	Tienda de suministros	entidad	scripts\entity\world\camp\buildings\gatherer_building.nut	
 Sureshots	Tiroseguros	entidad	mod_legends\!!config\_global.nut	
 Teetering Tower	Torre Tambaleante	entidad	scripts\entity\world\locations\legendary\legend_wizard_tower_location.nut	
-Town 	Pueblo	entidad	scripts\entity\world\settlements\situations\legend_degrading_effort_situation.nut	DUDA: el nombre inglés de la situación de una ciudad en declive es solo «Town » (con espacio final), que parece un marcador sin terminar. Alternativa: «Declive», que dice lo que la situación describe.
+Town 	Pueblo	entidad	scripts\entity\world\settlements\situations\legend_degrading_effort_situation.nut	
 Training Grounds	Campo de entrenamiento	entidad	scripts\entity\world\camp\buildings\training_building.nut	
 Upgrading Effort	Obras de mejora	entidad	scripts\entity\world\settlements\situations\legend_upgrading_effort_situation.nut	
 Upgrading Max Locations Effort	Obras de ampliación	entidad	scripts\entity\world\settlements\situations\legend_upgrading_locations_effort_situation.nut	
@@ -365,7 +365,7 @@ Chain Lightning	Rayo en cadena	habilidad	mod_legends\!!config\actives_defs.nut
 Chain Thresh	Trillar con cadena	habilidad	mod_legends\hooks\skills\actives\thresh.nut	
 Cheer On	Animar	habilidad	mod_legends\!!config\actives_defs.nut	
 Choke	Estrangular	habilidad	mod_legends\!!config\actives_defs.nut	
-Chopper sick balls!	¡Chopper, a por él!	habilidad	mod_legends\!!config\actives_defs.nut	DUDA: chiste o meme de «sic 'em» («¡Chopper, a por ellos!») con juego obsceno en «sick balls»; es la orden de atacar a un objetivo. Propongo la orden llana; alternativa: dejarlo en inglés como guiño.
+Chopper sick balls!	¡Chopper, a los huevos!	habilidad	mod_legends\!!config\actives_defs.nut	
 Citrinitas (Trance)	Citrinitas (Trance)	habilidad	mod_legends\!!config\actives_defs.nut	
 Climb	Trepar	habilidad	mod_legends\!!config\actives_defs.nut	
 Command Legionary	Ordenar al legionario	habilidad	mod_legends\!!config\actives_defs.nut	
@@ -407,7 +407,7 @@ Flogging	Azotes	habilidad	mod_legends\!!config\actives_defs.nut
 Flourish	Floritura	habilidad	mod_legends\!!config\actives_defs.nut	
 Flux!	¡Racha!	habilidad	mod_legends\hooks\skills\effects\double_strike_effect.nut	
 Fortify	Fortificar	habilidad	mod_legends\!!config\actives_defs.nut	
-Fowl Eye	Mal de ojo	habilidad	mod_legends\!!config\actives_defs.nut	DUDA: juego «fowl eye» / «foul eye» (mirada del basilisco, que es un ave); propongo «Mal de ojo», que pierde el ave. Alternativa: «Ojo de ave».
+Fowl Eye	Mal de ojo	habilidad	mod_legends\!!config\actives_defs.nut	
 Great Lunge	Gran estocada	habilidad	mod_legends\hooks\skills\actives\lunge_skill.nut	
 Great Slash	Gran corte	habilidad	mod_legends\hooks\skills\actives\slash.nut	
 Grow Greenwood Shield	Crecer corteza verde	habilidad	mod_legends\!!config\actives_defs.nut	
@@ -595,7 +595,7 @@ Basilisk Cloak	Capa de basilisco	objeto	scripts\items\legend_armor\cloak\legend_
 Basilisk Feathers	Plumas de basilisco	objeto	scripts\items\misc\legend_basilisk_feathers_item.nut	
 Basilisk Talon	Garra de basilisco	objeto	scripts\items\loot\legend_basilisk_talon_item.nut	
 Basilisk Trophy Necklace	Trofeo de basilisco	objeto	scripts\items\accessory\legend_basilisk_trophy_item.nut	
-Battle Glaive	Guja de batalla	objeto	scripts\items\weapons\legend_battle_glaive.nut	DUDA: «glaive» es «guja», pero el base ya usa «Guja» para «Billhook»; afecta también a «Militia Glaive». Alternativa sin choque: «Archa de batalla».
+Battle Glaive	Guja de batalla	objeto	scripts\items\weapons\legend_battle_glaive.nut	
 Beacon	Almenara	objeto	mod_legends\!!config\item_names.nut	
 Bear Fur	Piel de oso	objeto	scripts\items\loot\legend_bear_fur_item.nut	
 Bear Meat	Carne de oso	objeto	scripts\items\supplies\legend_bear_meat_item.nut	
@@ -801,7 +801,7 @@ Mind's Cloister	Claustro de la mente	objeto	mod_legends\!!config\item_names.nut
 Mindfire	Fuego mental	objeto	mod_legends\!!config\item_names.nut	
 Mistletoe	Muérdago	objeto	scripts\items\misc\legend_mistletoe_item.nut	
 Mistwalk	Paso de niebla	objeto	mod_legends\!!config\item_names.nut	
-Mithering Doom	Perdición marchita	objeto	mod_legends\!!config\item_names.nut	DUDA: «mithering» es dialectal (quejumbroso, fastidioso) o errata de «withering» (marchito); tomo la errata. Alternativa literal: «Perdición quejumbrosa».
+Mithering Doom	Perdición marchita	objeto	mod_legends\!!config\item_names.nut	
 Monolith	Monolito	objeto	mod_legends\!!config\item_names.nut	
 Mother's Loss	Pérdida de una madre	objeto	mod_legends\!!config\item_names.nut	
 Mountain Goat	Cabra montés	objeto	mod_legends\config\z_legends_camp_hunt_target_defs.nut	
@@ -1001,11 +1001,11 @@ Random Solo	Solitario aleatorio	origen	scripts\scenarios\world\legend_random_sol
 Random Trio	Trío aleatorio	origen	scripts\scenarios\world\legend_random_3_scenario.nut	
 Risen Legion	Legión alzada	origen	scripts\scenarios\world\legend_risen_legion_scenario.nut	
 Scaling Beggar Challenge	Desafío del mendigo progresivo	origen	scripts\scenarios\world\legends_scaling_beggar_scenario.nut	
-Sisterhood	Sororidad	origen	scripts\scenarios\world\legends_sisterhood_scenario.nut	DUDA: «Sisterhood» como sororidad (aquelarre de brujas sabias); alternativa «Hermandad de hermanas» o «La Hermandad», que choca con «Brotherhood».
+Sisterhood	Las Hermanas	origen	scripts\scenarios\world\legends_sisterhood_scenario.nut	
 The Cabal	La Camarilla	origen	scripts\scenarios\world\legends_necro_scenario.nut	
 Adaptive	Adaptable	perk	mod_legends\!!config\perk_strings.nut	
 Aggressive	Agresivo	perk	mod_legends\config\z_perks_tree_enemy_traits.nut	
-Agile	Ágil	perk	mod_legends\config\z_perks_tree_traits.nut	DUDA: nombre de grupo de talentos («is agile»); «Ágil» ya es el rasgo base «Swift». Alternativa: «Agilidad».
+Agile	Agilidad	perk	mod_legends\config\z_perks_tree_traits.nut	
 Alchemy	Alquimia	perk	mod_legends\config\z_perks_tree_magic.nut	
 Alcohol Brewing	Destilación de alcohol	perk	mod_legends\!!config\perk_strings.nut	
 Alert	Alerta	perk	mod_legends\!!config\perk_strings.nut	
@@ -1041,7 +1041,7 @@ Blend in	Pasar desapercibido	perk	mod_legends\!!config\perk_strings.nut
 Bloodbath	Baño de sangre	perk	mod_legends\!!config\perk_strings.nut	
 Bloody Harvest	Cosecha sangrienta	perk	mod_legends\!!config\perk_strings.nut	
 Bone Breaker	Quiebrahuesos	perk	mod_legends\!!config\perk_strings.nut	
-Boondock Blade	Hoja Boondock	perk	mod_legends\!!config\perk_strings.nut	DUDA: el base dejó «Boondock Bow» como «Arco Boondock»; lo sigo. Alternativa traducida: «Hoja montaraz» (boondocks = monte, tierra agreste).
+Boondock Blade	Hoja Boondock	perk	mod_legends\!!config\perk_strings.nut	
 Born With a Board	Nacido con un tablón	perk	mod_legends\!!config\perk_strings.nut	
 Bow	Arco	perk	mod_legends\config\z_perks_tree_weapons.nut	
 Brink of Death	Al borde de la muerte	perk	mod_legends\!!config\perk_strings.nut	
@@ -1126,7 +1126,7 @@ Helpful	Servicial	perk	mod_legends\!!config\perk_strings.nut
 Herbalism	Herboristería	perk	mod_legends\config\z_perks_tree_profession.nut	
 Herbalist	Herbolario	perk	mod_legends\config\z_perks_tree_class.nut	
 Herbcraft	Saber herbario	perk	mod_legends\!!config\perk_strings.nut	
-Himshaw	Himshaw	perk	mod_legends\!!config\perk_strings.nut	DUDA: juego de palabras opaco (parece «scrimshaw» o «him + shaw»; el talento es remendar el propio equipo). Lo dejo tal cual; alternativa descriptiva: «Remendón».
+Himshaw	Remendón	perk	mod_legends\!!config\perk_strings.nut	
 Hippology	Hipología	perk	mod_legends\!!config\perk_strings.nut	
 Horse Movement	Movimiento equino	perk	mod_legends\!!config\perk_strings.nut	
 Hound Master	Maestro de sabuesos	perk	mod_legends\config\z_perks_tree_class.nut	
@@ -1170,12 +1170,12 @@ Master Trainer	Maestro instructor	perk	mod_legends\!!config\perk_strings.nut
 Meal Preparation	Preparación de comidas	perk	mod_legends\!!config\perk_strings.nut	
 Medicine Ingredients	Ingredientes medicinales	perk	mod_legends\!!config\perk_strings.nut	
 Medicine Packages	Paquetes de medicina	perk	mod_legends\!!config\perk_strings.nut	
-Meistersänger	Meistersänger	perk	mod_legends\!!config\perk_strings.nut	DUDA: dejo los dos títulos alemanes de cantores (Meistersänger y Minnesänger) como están. Alternativa: «Maestro cantor» y «Trovador cortés».
+Meistersänger	Maestro cantor	perk	mod_legends\!!config\perk_strings.nut	
 Militia Practice	Práctica de milicia	perk	mod_legends\!!config\perk_strings.nut	contiene: Militia
 Mind over Body	Mente sobre cuerpo	perk	mod_legends\!!config\perk_strings.nut	
 Miners Strikes	Golpes de minero	perk	mod_legends\!!config\perk_strings.nut	
 Mining	Minería	perk	mod_legends\config\z_perks_tree_profession.nut	
-Minnesänger	Minnesänger	perk	mod_legends\!!config\perk_strings.nut	
+Minnesänger	Trovador	perk	mod_legends\!!config\perk_strings.nut	
 Mold Carrion	Moldear carroña	perk	mod_legends\!!config\perk_strings.nut	
 Mounted Charge	Carga montada	perk	mod_legends\!!config\perk_strings.nut	
 Muscularity	Musculatura	perk	mod_legends\!!config\perk_strings.nut	
@@ -1334,7 +1334,7 @@ Pragmatic	Pragmático	rasgo	scripts\skills\traits\legend_pragmatic_trait.nut
 Predictable	Predecible	rasgo	scripts\skills\traits\legend_predictable_trait.nut	
 Redback Poison	Veneno de lomo rojo	rasgo	mod_legends\!!config\trait_defs.nut	
 Relationship	Relación	rasgo	scripts\skills\traits\legend_lw_relationship_trait.nut	
-Rock Unhold Passive	Pasiva de trol de roca	rasgo	mod_legends\!!config\trait_defs.nut	contiene: Unhold Passive | DUDA: el base tiene «Unhold Passive» = «Pasiva de Unhold» pero «Unhold» = «Trol» en todo lo demás; sigo «Trol» para casar con «Rock Unhold» = «Trol de roca». Alternativa: «Pasiva de Unhold de roca».
+Rock Unhold Passive	Pasiva de trol de roca	rasgo	mod_legends\!!config\trait_defs.nut	contiene: Unhold Passive
 Rotting Flesh	Carne putrefacta	rasgo	scripts\skills\traits\legend_rotten_flesh_trait.nut	
 Seductive	Seductor	rasgo	scripts\skills\traits\legend_seductive_trait.nut	
 Slack	Holgazán	rasgo	scripts\skills\traits\legend_slack_trait.nut	
@@ -1423,7 +1423,7 @@ Rune Smith	Herrero rúnico	trasfondo	scripts\skills\backgrounds\legend_runesmith
 Seamstress	Costurera	trasfondo	mod_legends\hooks\skills\backgrounds\tailor_background.nut	
 Servus	Siervo	trasfondo	scripts\skills\backgrounds\legend_legion_slave_background.nut	
 Skelemancer	Esqueletomante	trasfondo	scripts\skills\backgrounds\legend_ancient_summoner_background.nut	
-Sorcerer	Taumaturgo	trasfondo	scripts\skills\backgrounds\mage_background.nut	DUDA: el trasfondo mago sale al azar como Mage, Sorcerer, Wizard o Warlock y hacen falta cuatro nombres distintos: Mago, Taumaturgo, Hechicero (como «Wizard's Hat» del base) y Brujo. Alternativa para Sorcerer: «Hechicero», moviendo Wizard a otra palabra.
+Sorcerer	Taumaturgo	trasfondo	scripts\skills\backgrounds\mage_background.nut	
 Summoner	Invocador	trasfondo	scripts\skills\backgrounds\legend_warlock_summoner_background.nut	
 Surgeon	Cirujano	trasfondo	scripts\skills\backgrounds\legend_healer_background.nut	
 The Berserker	El Berserker	trasfondo	scripts\skills\backgrounds\legend_berserker_commander_background.nut	
@@ -1433,7 +1433,7 @@ Vala	Vala	trasfondo	scripts\skills\backgrounds\legend_vala_background.nut
 Warlock	Brujo	trasfondo	scripts\skills\backgrounds\legend_necro_background.nut	
 Warrior	Guerrero	trasfondo	scripts\skills\backgrounds\legend_noble_2h.nut	
 Washerwoman	Lavandera	trasfondo	mod_legends\hooks\skills\backgrounds\daytaler_background.nut	
-Weidermancer	Weidermante	trasfondo	scripts\skills\backgrounds\legend_death_summoner_background.nut	DUDA: compuesto inventado (Wiederganger + -mancer, con la errata «Weider»); propongo adaptar el sufijo como en «Esqueletomante». Alternativa: dejarlo como «Weidermancer».
+Weidermancer	Weidermante	trasfondo	scripts\skills\backgrounds\legend_death_summoner_background.nut	
 Widow	Viuda	trasfondo	mod_legends\hooks\skills\backgrounds\beggar_background.nut	
 Wildwoman	Salvaje	trasfondo	mod_legends\hooks\skills\backgrounds\wildman_background.nut	
 Wizard	Hechicero	trasfondo	scripts\skills\backgrounds\mage_background.nut	
