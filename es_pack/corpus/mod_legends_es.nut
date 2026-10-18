@@ -12599,26 +12599,96 @@ local pairs = [
     }
     // FILE: mod_legends\afterHooks\perk_tooltips.nut
     // context: ::Legends.updatePerkGroupTooltips.pre
-    {
-        en = "[color=#0b0084]From the "
-        es = "[color=#0b0084]De "
-    }
+    // en = "[color=#0b0084]From the "  // trozo de la línea de grupos de perk_tooltips.nut; nunca llega solo: la traducen las reglas de la suma de abajo
     // context: ::Legends.updatePerkGroupTooltips.ap
+    // en = "perk group[/color]"  // trozo de la línea de grupos de perk_tooltips.nut; nunca llega solo: la traducen las reglas de la suma de abajo
+    // context: ::Legends.updatePerkGroupTooltips
+    // en = "<group:str> or "  // trozo de la línea de grupos de perk_tooltips.nut; nunca llega solo: la traducen las reglas de la suma de abajo
+    // context: ::Legends.updatePerkGroupTooltips.ap
+    // en = "perk groups[/color]"  // trozo de la línea de grupos de perk_tooltips.nut; nunca llega solo: la traducen las reglas de la suma de abajo
+    // context: ::Legends.updatePerkGroupTooltips
     {
-        en = "perk group[/color]"
-        es = "(grupo de ventajas)[/color]"
+        // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Inventor perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Inventor[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
-        // mid += array[array.len() - 2] + " or ";
+        // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
         mode = "pattern"
-        en = "<group:str> or "
-        es = "<group> o "
+        en = "<desc:str><c:tag>From the Berserker perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Berserker[/color]"
     }
-    // context: ::Legends.updatePerkGroupTooltips.ap
+    // context: ::Legends.updatePerkGroupTooltips
     {
-        en = "perk groups[/color]"
-        es = "(grupos de ventajas)[/color]"
+        // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Swordsman perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Espadachín[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Trained perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Entrenado[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the ArcherCommand perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Mando de arqueros[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // @composicion: perk_tooltips.nut suma a cada descripción "\n" + pre + mid + ap
+        // (:33) y, al volver al menú principal, la rama de strArray (:52) la rehace con
+        // "\n\n" delante; <desc> se queda los saltos. La descripción ya llega en
+        // castellano (enganche de ::Legends.tooltip en legends.nut) y cada nombre de
+        // grupo se traduce con su par de z_perks_tree_*.nut. Enumeración como en el
+        // corpus: «A, B o C».
+        // El color va capturado como tag: escrito como literal, la clave de la regla
+        // en Rosetta sería "=#0b0084]from", que ninguna cadena real genera.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g:str> perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas <g:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // 2 grupos.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str> or <g2:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t> o <g2:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // 3 grupos.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // 4 grupos.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // 5 grupos.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str>, <g4:str> or <g5:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t>, <g4:t> o <g5:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // 6 grupos.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str>, <g4:str>, <g5:str> or <g6:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t>, <g4:t>, <g5:t> o <g6:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips.strArray[strArray.len()-1]
     // en = "color=#0b0084]From the <mid + ap>"  // fragmento intermedio que el código vuelve a unir a la descripción (perk_tooltips.nut:52); nunca llega solo a la interfaz
@@ -15660,7 +15730,7 @@ local pairs = [
     // context: ::Const.Perks.SpecialTrees.addSpecialPerk.::Const.Perks[name].Name
     {
         en = "Special Perks"
-        es = "Talentos especiales"
+        es = "Ventajas especiales"
     }
     // FILE: mod_legends\config\z_perks_tree_traits.nut
     // context: ::Const.Perks.AgileTree.Name
@@ -37060,10 +37130,31 @@ local pairs = [
     }
     // en = "I'll have to think it over."
     // en base_es
+    // context: arena_contract.createScreens.Start.start
+    {
+        // @composicion: this.Text += (pantalla Start del juego base + bloque de Legends).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_155.png[/img]{As you wait your turn, the crowd's bloodlust crawls through the dark, sheets of dust falling from above, the stomps of feet thunderous. They murmur in anticipation, and roar at killings. The quiet between battles is mere moments, and this silence is snatched away as the rusted gate lurches upward, chains rankling, the crowd abuzz once more. You step out into the light and so thunderous is the noise against your heart it could surely yet spur a dead man forth... | The arena's crowd is shoulder to shoulder, most blathering drunk. They scream and shout, their languages a mix of local and foreign, though the appeal to their bloodlust needs little articulation beyond their maddened faces and pumping fists. Now, the %companyname%'s men will satiate these mad fools... | Cleaners hurry about the arena. They drag away the bodies, collect what's worth collecting, and occasionally throw a trophy into the crowds, eliciting a moblike rendition of the arena's battles in the stands themselves. The %companyname% is now a part of this affair. | The arena awaits, the crowd alight, and the %companyname%'s turn to gain glory is at hand! | The crowd booms as the %companyname%'s men stride into its bloody pit. Despite the mindless bloodlust of the peoples, you can't help but feel a beat of pride in your chest, knowing that it is your company ready to put on a show. | The gate rises. Nothing is heard save the rattle of chains, the creak of pulleys, the grunts of slaves at work. When the men of the %companyname% step out of the arena's bowels they can hear the crunch of sand underfoot until they come to stand in the center of the pit. A strange voice screams from the tops of the stadium, some lost language beyond your knowing, but the words echo just once before the crowd erupts with cheers and roaring. Now is the time your men shall prove themselves before the watchful eye of the commoner. | The %companyname%'s business is rarely done before the eyes of those who would prefer themselves distantly separated from such violence. But in the arena, the commoner greedily awaits death and suffering, and it growls with bloodlust as your men enter the pits, and roars as the sellswords draw their weapons and ready for battle. | The arena is shaped like the pit of some sore, its ceiling torn away by the gods, revealing the vanity, bloodlust, and savagery of man. And it is man there, yelling and screaming, and if the blood sprays hit them, they wash their faces in the gore and grin at one another as though it were a joke. They fight one another for trophies and relish in the pain of others. And it is before these peoples that the %companyname% will fight, and for them they shall entertain and entertain well. | The arena's crowd is a mash of classes, rich and poor, for only the Viziers separate themselves out into stations above all. Briefly unified, the peoples of %townname% have graciously come together to watch men and monsters murder one another. With pleasure, the %companyname% seeks to do its part. | Boys sitting on the shoulders of fathers, young girls throwing flowers to the gladiators, women fanning themselves, men wondering if they could do it. These are the peoples of the arena - and the rest are all drunk out of their gourd and screaming nonsense. You hope the %companyname% can contribute to at least an hour or two to entertaining this mad lot. | The crowd roars as the %companyname%'s men step into the pit. One would be dumb to confuse excitement for desire, for as soon as the applause ends there is a smattering of empty beer mugs and rotten tomatoes and the general giggling delight of those watching the matter. You wonder if the %companyname%'s men are really best spent here, but then think hard on the gold and glory to be won, and that at the end of the day these mongrels in the stands will go home to their shit lives, and you'll go home to your shit life as well, but at least your pockets will be a bit deeper.}\n\n\n\n\n\n\n\nThe following characters will enter the arena:\n\n%bro1name%\n%bro2name%\n%bro3name%"
+        es = "[img]gfx/ui/events/event_155.png[/img]{Mientras esperas tu turno, notas las láminas de polvo cayendo desde arriba por los estruendosos golpes de pies, como si la sed de sangre de la multitud se arrastrara en la oscuridad. Murmuran en anticipación y rugen ante las muertes. El silencio entre las batallas dura apenas un momento, y este silencio es arrebatado cuando la puerta oxidada se levanta, las cadenas chirriando, la multitud zumbando una vez más. Sales a la luz y el estruendo es tan atronador contra tu corazón que seguramente podría impulsar a un hombre muerto... | La multitud de la arena está hombro con hombro, la mayoría de ellos embriagados y balbuceantes. Gritan y vociferan en una mezcla de idiomas locales y extranjeros, aunque el llamado a su sed de sangre no necesita más que sus rostros enloquecidos y puños agitados. Ahora, los hombres de %companyname% saciarán a estos locos insensatos... | Los limpiadores se apresuran por la arena. Arrastran los cuerpos, recogen lo que vale la pena y ocasionalmente arrojan un trofeo a la multitud, provocando una versión casi caótica de las batallas de la arena en las gradas. %companyname% ahora forma parte de este espectáculo. | La arena espera, la multitud emocionada y el turno de %companyname% para ganar gloria está a la mano. | La multitud estalla en aplausos cuando los hombres de %companyname% avanzan hacia su sangriento foso. A pesar de la sed de sangre sin sentido de la gente, no puedes evitar sentir un latido de orgullo en tu pecho, sabiendo que es tu compañía la que está lista para ofrecer un espectáculo. | La puerta se levanta. Nada se escucha, solo el tintineo de cadenas, el crujido de poleas y los gruñidos de esclavos trabajando. Cuando los hombres de %companyname% salen de las entrañas del coliseo, pueden escuchar el crujir de la arena bajo sus pies hasta que llegan al centro del foso. Una extraña voz grita desde lo más alto del estadio, en un idioma perdido que desconoces, pero las palabras resuenan una sola vez antes de que la multitud estalle en vítores y rugidos. Ahora es el momento en que tus hombres demostrarán su valía ante el ojo vigilante del populacho. | Los negocios de %companyname% rara vez se llevan a cabo ante los ojos de aquellos que preferirían mantenerse distantes de tanta violencia. Pero en la arena, el populacho espera ávidamente la muerte y el sufrimiento, y ruge con sed de sangre cuando tus hombres entran a los fosos, y aplaude mientras los mercenarios sacan sus armas y se preparan para la batalla. | La arena tiene la forma del tajo de una herida, su techo desgarrado por los dioses, revelando la vanidad, la sed de sangre y la barbarie del ser humano. Y está el populacho allí, gritando y vociferando, esperando ver la sangre correr y regar la tierra, mientras se sonríen entre ellos como si fuera un simple juego. Los hombres lucharan entre ellos por trofeos mientras otros disfrutan del dolor ajeno. Y es ante este gentio que %companyname% luchará, y será a ellos a quien entretendrán. Lo harán bien. | La multitud de la arena es una mezcla de clases, ricos y pobres, porque solo los Visires se separan en palcos por encima de todos. Brevemente unidos, el pueblo de %townname% se han reunido para presenciar cómo hombres y monstruos se asesinan entre sí. Con placer, %companyname% se dispone a hacer su parte. | Niños sentados sobre los hombros de sus padres, niñas jóvenes arrojando flores a los gladiadores, mujeres abanicándose, hombres preguntándose si podrían hacerlo. Estos son los pueblos de la arena, y el resto están todos borrachos y vociferando sin sentido. Esperas que %companyname% pueda contribuir al menos una hora o dos para entretener a esta loca multitud. | La multitud ruge mientras los hombres de %companyname% entran en el foso. Sería una tontería confundir la emoción con el deseo, porque tan pronto como los aplausos terminan, hay una lluvia de jarras de cerveza vacías y tomates podridos, y la alegría generalizada de aquellos que observan el asunto. Te preguntas si los hombres de %companyname% realmente deben gastar su tiempo aquí, pero luego piensas en el oro y la gloria que pueden obtener, y que, a fin de cuentas, esta chusma en las gradas regresará a sus miserables vidas, al igual que tú, pero al menos tus bolsillos estarán un poco más llenos.}\n\n\n\n\n\n\n\nLos siguientes personajes entrarán en la arena:\n\n%bro1name%\n%bro2name%\n%bro3name%"
+    }
     // context: arena_contract.o.createScreens.s.start
     {
         en = "\n\n\n\n\n\n\n\nThe following characters will enter the arena:\n\n%bro1name%\n%bro2name%\n%bro3name%"
         es = "\n\n\n\n\n\n\n\nLos siguientes personajes entrarán en la arena:\n\n%bro1name%\n%bro2name%\n%bro3name%"
+    }
+    // context: arena_contract.createScreens.Success.start
+    {
+        // @composicion: this.Text += (texto de Success + aviso de la arena).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_147.png[/img]{The arena master talks as if he doesn't even remember your face, then again he probably doesn't.%SPEECH_ON%Here's your pay, please come again.%SPEECH_OFF% | Without even raising his head from a rag of papyrus, the arena master throws you a purse of coin.%SPEECH_ON%I heard the crowds, and so here are your crowns. May you come visit the pits again.%SPEECH_OFF% | The arena master is waiting for you.%SPEECH_ON%That was a mighty fine show, Crownling. Would not mind it in the slightest if you come back again.%SPEECH_OFF%}The arena will be closed for the day, but you could return as early as tomorrow."
+        es = "[img]gfx/ui/events/event_147.png[/img]{El Maestro de la Arena habla como si ni siquiera recordara tu rostro, y probablemente no lo haga.%SPEECH_ON%Aquí está tu paga, por favor vuelve otra vez.%SPEECH_OFF% | Sin siquiera levantar la cabeza de un trozo de papiro, el Maestro de la Arena te arroja una bolsa de monedas.%SPEECH_ON%Escuché a la multitud, así que aquí tienes tus coronas. Ojalá vuelvas a visitar los fosos.%SPEECH_OFF% | El Maestro de la Arena está esperándote.%SPEECH_ON%Eso fue un gran espectáculo, Coronero. No me importaría en lo más mínimo que volvieras de nuevo.%SPEECH_OFF%}La arena estará cerrada el resto del día, pero podrías regresar mañana mismo."
+    }
+    // context: arena_contract.createScreens.Success.start
+    {
+        // @composicion: this.Text += (texto de Success + aviso de la arena).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_147.png[/img]{The arena master talks as if he doesn't even remember your face, then again he probably doesn't.%SPEECH_ON%Here's your pay, please come again.%SPEECH_OFF% | Without even raising his head from a rag of papyrus, the arena master throws you a purse of coin.%SPEECH_ON%I heard the crowds, and so here are your crowns. May you come visit the pits again.%SPEECH_OFF% | The arena master is waiting for you.%SPEECH_ON%That was a mighty fine show, Crownling. Would not mind it in the slightest if you come back again.%SPEECH_OFF%}You can continue fighting today if you want."
+        es = "[img]gfx/ui/events/event_147.png[/img]{El Maestro de la Arena habla como si ni siquiera recordara tu rostro, y probablemente no lo haga.%SPEECH_ON%Aquí está tu paga, por favor vuelve otra vez.%SPEECH_OFF% | Sin siquiera levantar la cabeza de un trozo de papiro, el Maestro de la Arena te arroja una bolsa de monedas.%SPEECH_ON%Escuché a la multitud, así que aquí tienes tus coronas. Ojalá vuelvas a visitar los fosos.%SPEECH_OFF% | El Maestro de la Arena está esperándote.%SPEECH_ON%Eso fue un gran espectáculo, Coronero. No me importaría en lo más mínimo que volvieras de nuevo.%SPEECH_OFF%}Puedes seguir combatiendo hoy si quieres."
     }
     // context: arena_contract.o.createScreens.s.start.Text
     {
@@ -37117,6 +37208,13 @@ local pairs = [
     {
         en = "The Imperial Arena is set to host a thrilling tournament of skill and bravery!"
         es = "¡La Arena Imperial se dispone a acoger un emocionante torneo de destreza y valentía!"
+    }
+    // context: arena_tournament_contract.createScreens.Start.start
+    {
+        // @composicion: this.Text += (pantalla Start del juego base + bloque de Legends).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_155.png[/img]{As you wait your turn, the crowd's bloodlust crawls through the dark, sheets of dust falling from above, the stomps of feet thunderous. They murmur in anticipation, and roar at killings. The quiet between battles is mere moments, and this silence is snatched away as the rusted gate lurches upward, chains rankling, the crowd abuzz once more. You step out into the light and so thunderous is the noise against your heart it could surely yet spur a dead man forth... | The arena's crowd is shoulder to shoulder, most blathering drunk. They scream and shout, their languages a mix of local and foreign, though the appeal to their bloodlust needs little articulation beyond their maddened faces and pumping fists. Now, the %companyname%'s men will satiate these mad fools... | Cleaners hurry about the arena. They drag away the bodies, collect what's worth collecting, and occasionally throw a trophy into the crowds, eliciting a moblike rendition of the arena's battles in the stands themselves. The %companyname% is now a part of this affair. | The arena awaits, the crowd alight, and the %companyname%'s turn to gain glory is at hand! | The crowd booms as the %companyname%'s men stride into its bloody pit. Despite the mindless bloodlust of the peoples, you can't help but feel a beat of pride in your chest, knowing that it is your company ready to put on a show. | The gate rises. Nothing is heard save the rattle of chains, the creak of pulleys, the grunts of slaves at work. When the men of the %companyname% step out of the arena's bowels they can hear the crunch of sand underfoot until they come to stand in the center of the pit. A strange voice screams from the tops of the stadium, some lost language beyond your knowing, but the words echo just once before the crowd erupts with cheers and roaring. Now is the time your men shall prove themselves before the watchful eye of the commoner. | The %companyname%'s business is rarely done before the eyes of those who would prefer themselves distantly separated from such violence. But in the arena, the commoner greedily awaits death and suffering, and it growls with bloodlust as your men enter the pits, and roars as the sellswords draw their weapons and ready for battle. | The arena is shaped like the pit of some sore, its ceiling torn away by the gods, revealing the vanity, bloodlust, and savagery of man. And it is man there, yelling and screaming, and if the blood sprays hit them, they wash their faces in the gore and grin at one another as though it were a joke. They fight one another for trophies and relish in the pain of others. And it is before these peoples that the %companyname% will fight, and for them they shall entertain and entertain well. | The arena's crowd is a mash of classes, rich and poor, for only the Viziers separate themselves out into stations above all. Briefly unified, the peoples of %townname% have graciously come together to watch men and monsters murder one another. With pleasure, the %companyname% seeks to do its part. | Boys sitting on the shoulders of fathers, young girls throwing flowers to the gladiators, women fanning themselves, men wondering if they could do it. These are the peoples of the arena - and the rest are all drunk out of their gourd and screaming nonsense. You hope the %companyname% can contribute to at least an hour or two to entertaining this mad lot. | The crowd roars as the %companyname%'s men step into the pit. One would be dumb to confuse excitement for desire, for as soon as the applause ends there is a smattering of empty beer mugs and rotten tomatoes and the general giggling delight of those watching the matter. You wonder if the %companyname%'s men are really best spent here, but then think hard on the gold and glory to be won, and that at the end of the day these mongrels in the stands will go home to their shit lives, and you'll go home to your shit life as well, but at least your pockets will be a bit deeper.}\n\n\n\n\n\n\n\nThe following characters will enter the arena:\n\n%bro1name%\n%bro2name%\n%bro3name%\n%bro4name%\n%bro5name%"
+        es = "[img]gfx/ui/events/event_155.png[/img]{Mientras esperas tu turno, notas las láminas de polvo cayendo desde arriba por los estruendosos golpes de pies, como si la sed de sangre de la multitud se arrastrara en la oscuridad. Murmuran en anticipación y rugen ante las muertes. El silencio entre las batallas dura apenas un momento, y este silencio es arrebatado cuando la puerta oxidada se levanta, las cadenas chirriando, la multitud zumbando una vez más. Sales a la luz y el estruendo es tan atronador contra tu corazón que seguramente podría impulsar a un hombre muerto... | La multitud de la arena está hombro con hombro, la mayoría de ellos embriagados y balbuceantes. Gritan y vociferan en una mezcla de idiomas locales y extranjeros, aunque el llamado a su sed de sangre no necesita más que sus rostros enloquecidos y puños agitados. Ahora, los hombres de %companyname% saciarán a estos locos insensatos... | Los limpiadores se apresuran por la arena. Arrastran los cuerpos, recogen lo que vale la pena y ocasionalmente arrojan un trofeo a la multitud, provocando una versión casi caótica de las batallas de la arena en las gradas. %companyname% ahora forma parte de este espectáculo. | La arena espera, la multitud emocionada y el turno de %companyname% para ganar gloria está a la mano. | La multitud estalla en aplausos cuando los hombres de %companyname% avanzan hacia su sangriento foso. A pesar de la sed de sangre sin sentido de la gente, no puedes evitar sentir un latido de orgullo en tu pecho, sabiendo que es tu compañía la que está lista para ofrecer un espectáculo. | La puerta se levanta. Nada se escucha, solo el tintineo de cadenas, el crujido de poleas y los gruñidos de esclavos trabajando. Cuando los hombres de %companyname% salen de las entrañas del coliseo, pueden escuchar el crujir de la arena bajo sus pies hasta que llegan al centro del foso. Una extraña voz grita desde lo más alto del estadio, en un idioma perdido que desconoces, pero las palabras resuenan una sola vez antes de que la multitud estalle en vítores y rugidos. Ahora es el momento en que tus hombres demostrarán su valía ante el ojo vigilante del populacho. | Los negocios de %companyname% rara vez se llevan a cabo ante los ojos de aquellos que preferirían mantenerse distantes de tanta violencia. Pero en la arena, el populacho espera ávidamente la muerte y el sufrimiento, y ruge con sed de sangre cuando tus hombres entran a los fosos, y aplaude mientras los mercenarios sacan sus armas y se preparan para la batalla. | La arena tiene la forma del tajo de una herida, su techo desgarrado por los dioses, revelando la vanidad, la sed de sangre y la barbarie del ser humano. Y está el populacho allí, gritando y vociferando, esperando ver la sangre correr y regar la tierra, mientras se sonríen entre ellos como si fuera un simple juego. Los hombres lucharan entre ellos por trofeos mientras otros disfrutan del dolor ajeno. Y es ante este gentio que %companyname% luchará, y será a ellos a quien entretendrán. Lo harán bien. | La multitud de la arena es una mezcla de clases, ricos y pobres, porque solo los Visires se separan en palcos por encima de todos. Brevemente unidos, el pueblo de %townname% se han reunido para presenciar cómo hombres y monstruos se asesinan entre sí. Con placer, %companyname% se dispone a hacer su parte. | Niños sentados sobre los hombros de sus padres, niñas jóvenes arrojando flores a los gladiadores, mujeres abanicándose, hombres preguntándose si podrían hacerlo. Estos son los pueblos de la arena, y el resto están todos borrachos y vociferando sin sentido. Esperas que %companyname% pueda contribuir al menos una hora o dos para entretener a esta loca multitud. | La multitud ruge mientras los hombres de %companyname% entran en el foso. Sería una tontería confundir la emoción con el deseo, porque tan pronto como los aplausos terminan, hay una lluvia de jarras de cerveza vacías y tomates podridos, y la alegría generalizada de aquellos que observan el asunto. Te preguntas si los hombres de %companyname% realmente deben gastar su tiempo aquí, pero luego piensas en el oro y la gloria que pueden obtener, y que, a fin de cuentas, esta chusma en las gradas regresará a sus miserables vidas, al igual que tú, pero al menos tus bolsillos estarán un poco más llenos.}\n\n\n\n\n\n\n\nLos siguientes personajes entrarán en la arena:\n\n%bro1name%\n%bro2name%\n%bro3name%\n%bro4name%\n%bro5name%"
     }
     // context: arena_tournament_contract.o.createScreens.s.start
     {
@@ -44247,9 +44345,17 @@ local pairs = [
     // context: sunken_library_enter_event.o.create.s.start.List.push().text
     {
         // text = bro.getName() + " finds " + item.getName()
+        // El objeto es siempre legend_ancient_scroll_item, y su getName llega ya en
+        // castellano; la regla libre "<name> finds <item>" casaba con cualquier frase.
         mode = "pattern"
-        en = "<name:str> finds <item:str>"
-        es = "<name> encuentra <item>"
+        en = "<name:str> finds Pergamino antiguo"
+        es = "<name> encuentra Pergamino antiguo"
+    }
+    // context: sunken_library_enter_event.o.create.s.start.List.push().text
+    {
+        mode = "pattern"
+        en = "<name:str> finds Ancient Scroll"
+        es = "<name> encuentra Pergamino antiguo"
     }
     // en = "Lorekeeper"
     // FILE: mod_legends\hooks\events\events\dlc6\retired_gladiator_event.nut
@@ -47108,6 +47214,13 @@ local pairs = [
     // en = "Taken from the head of the legendary kraken, this large and hard horn plate is a trophy few in this world can claim."
     // en base_es
     // FILE: mod_legends\hooks\items\misc\miracle_drug_item.nut
+    // context: miracle_drug_item.create.m.Description
+    {
+        // @composicion: this.m.Description += ... (descripción del juego base + la de Legends).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "A powerful remedy against many common illnesses and diseases, to reduce inflammation, and to support the body's natural healing.\n\nCharacters treated with this drug will recover faster from injuries, just like if they've been treated at a temple.\n\nIritable and Headache will be treated instantly allowing the character to read again."
+        es = "Un poderoso remedio contra muchas enfermedades y dolencias comunes, para reducir la inflamación y apoyar la curación natural del cuerpo.\n\nLos personajes tratados con este medicamento se recuperarán más rápido de las lesiones, como si hubieran sido tratados en un templo.\n\nIrritable y Dolor de cabeza se tratarán al instante, lo que permitirá al personaje volver a leer."
+    }
     // context: miracle_drug_item.o.create
     {
         en = "\n\nIritable and Headache will be treated instantly allowing the character to read again."
@@ -47120,6 +47233,13 @@ local pairs = [
         es = "La corteza endurecida de un schrat"
     }
     // FILE: mod_legends\hooks\items\shields\buckler_shield.nut
+    // context: buckler_shield.create.m.Description
+    {
+        // @composicion: this.m.Description += ... (descripción del juego base + la de Legends).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "A small but sturdy shield gripped in the fist. Offers poor protection against ranged attacks but can be useful in deflecting blows in melee. Gains defense depending on how many enemies are within 1 tile."
+        es = "Un escudo pequeño pero resistente agarrado en el puño. Ofrece poca protección contra ataques a distancia, pero puede ser útil para desviar golpes cuerpo a cuerpo. Gana defensa según cuántos enemigos haya a 1 casilla."
+    }
     // context: buckler_shield.o.create
     {
         en = " Gains defense depending on how many enemies are within 1 tile."
@@ -51719,7 +51839,7 @@ local pairs = [
     {
         // local maleOnlyOption = this.getContainer().getActor().getGender() != 1 ? "| But while raping and pillaging, %name% was noticed to have a preference for the husbands over the wives. %Their% taste ostracized %them% from the rest of the warband." : "";
         en = "| But while raping and pillaging, %name% was noticed to have a preference for the husbands over the wives. %Their% taste ostracized %them% from the rest of the warband."
-        es = " | Pero mientras violaba y saqueaba, se notó que %name% prefería a los maridos antes que a las esposas. Sus gustos le valieron el rechazo del resto de la banda de guerra."
+        es = "| Pero mientras violaba y saqueaba, se notó que %name% prefería a los maridos antes que a las esposas. Sus gustos le valieron el rechazo del resto de la banda de guerra."
     }
     // context: raider_background.o.onBuildDescription
     {
@@ -59347,6 +59467,20 @@ local pairs = [
         en = "{\n\nAs you leave the employer's chambers, the townsfolk you rescued gather around.%SPEECH_ON%They saved all of us! We thought we were all done for, but they kept us safe.\"\n\n\"And not a single one of us was left behind either!\"\n\n\"All shall hear of the %companyname%!\"\n\n\"Hear, hear!%SPEECH_OFF%}"
         es = "{\n\nAl salir de los aposentos de tu empleador, los vecinos que rescataste se congregan a tu alrededor.%SPEECH_ON%¡Nos salvaron a todos! Creíamos que estábamos perdidos, pero nos mantuvieron a salvo.\"\n\n\"¡Y no dejaron atrás ni a uno solo de nosotros!\"\n\n\"¡Todos oirán hablar de la %companyname%!\"\n\n\"¡Eso, eso!%SPEECH_OFF%}"
     }
+    // context: legend_spider_abductions_contract.createScreens.Failure1.start
+    {
+        // @composicion: this.Text += (texto de Failure1 + desenlace).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_43.png[/img]{%employer% greets you upon your return to %townname%. The hopeful look on %their_employer% face quickly turns concern when %they_employer% notices the lack of rescued townsfolk among the %companyname%.%SPEECH_ON%Where are the people who were abducted? You brought them back with you, yes?%SPEECH_OFF%%randombrother% shifts %their_randombrother% weight comfortably, notably avoiding all eye contact with %employer%.\n\nAs you begin to explain what happened, %employer% cuts you off with a wave of %their_employer% hand.%SPEECH_ON%We hired you to bring those poor folks back. Surely it is not too much to ask for you to have brought at least one person back safely?%SPEECH_OFF%}\n\n{%employer% lets out a sigh.%SPEECH_ON%Fine, I shall pay half of the agreed payment for at least having destroyed the nest.%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_43.png[/img]{%employer% te recibe a tu regreso a %townname%. La esperanza de su rostro se torna enseguida preocupación al notar que no hay vecinos rescatados entre los miembros de la %companyname%.%SPEECH_ON%¿Dónde está la gente que raptaron? La has traído contigo, ¿verdad?%SPEECH_OFF%%randombrother% cambia el peso de un pie a otro y evita a toda costa cruzar la mirada con %employer%.\n\nCuando empiezas a explicar lo sucedido, %employer% te interrumpe con un gesto de la mano.%SPEECH_ON%Te contratamos para traer de vuelta a esa pobre gente. ¿Tanto es pedir que hubieras traído sana y salva al menos a una persona?%SPEECH_OFF%}\n\n{%employer% suelta un suspiro.%SPEECH_ON%Está bien, pagaré la mitad de lo acordado, al menos por haber destruido el nido.%SPEECH_OFF%}"
+    }
+    // context: legend_spider_abductions_contract.createScreens.Failure1.start
+    {
+        // @composicion: this.Text += (texto de Failure1 + desenlace).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_43.png[/img]{%employer% greets you upon your return to %townname%. The hopeful look on %their_employer% face quickly turns concern when %they_employer% notices the lack of rescued townsfolk among the %companyname%.%SPEECH_ON%Where are the people who were abducted? You brought them back with you, yes?%SPEECH_OFF%%randombrother% shifts %their_randombrother% weight comfortably, notably avoiding all eye contact with %employer%.\n\nAs you begin to explain what happened, %employer% cuts you off with a wave of %their_employer% hand.%SPEECH_ON%We hired you to bring those poor folks back. Surely it is not too much to ask for you to have brought at least one person back safely?%SPEECH_OFF%}\n\n{After a brief moment of consideration, %employer% hands you a paltry sum of crowns.%SPEECH_ON%I don't think you deserve this at all, but having risked your lives for this, perhaps you should get something for the trouble%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_43.png[/img]{%employer% te recibe a tu regreso a %townname%. La esperanza de su rostro se torna enseguida preocupación al notar que no hay vecinos rescatados entre los miembros de la %companyname%.%SPEECH_ON%¿Dónde está la gente que raptaron? La has traído contigo, ¿verdad?%SPEECH_OFF%%randombrother% cambia el peso de un pie a otro y evita a toda costa cruzar la mirada con %employer%.\n\nCuando empiezas a explicar lo sucedido, %employer% te interrumpe con un gesto de la mano.%SPEECH_ON%Te contratamos para traer de vuelta a esa pobre gente. ¿Tanto es pedir que hubieras traído sana y salva al menos a una persona?%SPEECH_OFF%}\n\n{Tras pensarlo un momento, %employer% te entrega una suma miserable de coronas.%SPEECH_ON%No creo que se lo merezcan en absoluto, pero, ya que han arriesgado la vida por esto, quizá deberían recibir algo por las molestias%SPEECH_OFF%}"
+    }
     // context: legend_spider_abductions_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_43.png[/img]{%employer% greets you upon your return to %townname%. The hopeful look on %their_employer% face quickly turns concern when %they_employer% notices the lack of rescued townsfolk among the %companyname%.%SPEECH_ON%Where are the people who were abducted? You brought them back with you, yes?%SPEECH_OFF%%randombrother% shifts %their_randombrother% weight comfortably, notably avoiding all eye contact with %employer%.\n\nAs you begin to explain what happened, %employer% cuts you off with a wave of %their_employer% hand.%SPEECH_ON%We hired you to bring those poor folks back. Surely it is not too much to ask for you to have brought at least one person back safely?%SPEECH_OFF%}"
@@ -60260,12 +60394,7 @@ local pairs = [
     // en = "<_table[>Tree<]>"  // clave de tabla (_table["Tree"]), no se muestra
     // FILE: scripts\entity\tactical\legends_player_horserider.nut
     // context: legends_player_horserider.setScenarioValues.newName
-    {
-        // local newName = riderName + " and " + horseName;
-        mode = "pattern"
-        en = "<rider:str> and <horse:str>"
-        es = "<rider> y <horse>"
-    }
+    // en = "<rider:str> and <horse:str>"  // legends_player_horserider no lo instancia nadie en Legends 19.4.22; la regla casaba con cualquier frase con " and "
     // FILE: scripts\entity\tactical\objective\legend_cart.nut
     // en = "Caravan Donkey"
     // en base_es
@@ -60336,6 +60465,13 @@ local pairs = [
     // en = "full"  // nivel interno del edificio (getLevel), no se muestra
     // context: commander_building.getDescription
     {
+        // @composicion: desc += ... (8 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "The camp system allows your company to be more self sufficient while out on campaign. Injuries treated, equipment repaired, tools salvaged from old equipment, hunt for food, gather medicine, training, crafting, restock ammo supplies... Inside the commanders, each brother can be assigned to a tent to perform the task. Need food? Assign a couple brothers to hunt. Need more ammo, assign to fletchers tent. In general, the currency of camping is time. It requires time to perform all the actions. The more brothers assigned to the task, the less time it'll take to perform it.While all backgrounds can perform any task, some backgrounds are more suited to the task. Hunters will be better at hunting than the tailors.\n\nCompany starts out only knowing how to do repairs and rest. Visiting settlements that perform the analogous task will unlock it in the camp. All camp activities can be upgraded by purchasing an upgraded tent variant from a settlement marketplace. Upgraded tents increase performance and many come with significant bonuses."
+        es = "El sistema de campamento permite que tu compañía sea más autosuficiente durante la campaña. Tratar heridas, reparar equipo, recuperar herramientas del equipo viejo, cazar para conseguir comida, recolectar medicina, entrenar, fabricar, reponer munición... En la tienda del comandante puedes asignar a cada hermano a una tienda para que realice su tarea. ¿Necesitas comida? Asigna a un par de hermanos a la caza. ¿Necesitas más munición? Asígnalos a la tienda del flechero. En general, la moneda del campamento es el tiempo. Todas las acciones requieren tiempo. Cuantos más hermanos haya asignados a una tarea, menos tiempo llevará realizarla. Aunque cualquier trasfondo puede realizar cualquier tarea, algunos se adaptan mejor a ciertas tareas. Los cazadores cazarán mejor que los sastres.\n\nAl principio, la compañía solo sabe reparar y descansar. Visitar asentamientos que realicen la tarea equivalente la desbloqueará en el campamento. Todas las actividades del campamento pueden mejorarse comprando una versión mejorada de la tienda en el mercado de un asentamiento. Las tiendas mejoradas aumentan el rendimiento y muchas ofrecen bonificaciones considerables."
+    }
+    // context: commander_building.getDescription
+    {
         en = "The camp system allows your company to be more self sufficient while out on campaign. "
         es = "El sistema de campamento permite que tu compañía sea más autosuficiente durante la campaña. "
     }
@@ -60390,6 +60526,13 @@ local pairs = [
         mode = "pattern"
         en = "<name:str> *Not Upgraded*"
         es = "<name> *Sin mejora*"
+    }
+    // context: crafting_building.getDescription
+    {
+        // @composicion: desc += ... (5 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Come here to craft potions, trophies and other useful items. Recipes added to the crafting queue will be worked on by anyone assigned to this tent. Crafting only occurs while encamped. Progress is saved, so items do not have to be crafted in a single session. The more people assigned to the tent, the quicker items will be crafted.\n\nThe crafting tent can be upgraded by purchasing a crafting cart from a settlement merchant. An upgraded tent has a 15% increase in crafting speed."
+        es = "Ven aquí para fabricar pociones, trofeos y otros objetos útiles. En las recetas que se añadan a la cola de fabricación trabajará cualquiera que esté asignado a esta tienda. Solo se fabrica mientras la compañía está acampada. El progreso se guarda, así que los objetos no tienen que fabricarse en una sola sesión. Cuanta más gente haya asignada a la tienda, más rápido se fabricarán los objetos.\n\nLa tienda de fabricación puede mejorarse comprando un carro de fabricación a un mercader de un asentamiento. Una tienda mejorada fabrica un 15% más rápido."
     }
     // context: crafting_building.getDescription
     {
@@ -60485,6 +60628,13 @@ local pairs = [
     }
     // context: enchanter_building.getDescription
     {
+        // @composicion: desc += ... (6 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Tha Vala emporium of mystical (and maybe even magical) mischief. While encamped, the Vala can retreat into her books and experiments. Rune requests can be queued up for the Vala to try her hand at. What comes of them, you'll just have to wait and see what she inscribes. Only the Vala can be assigned to the Enchanting tent. The Vala can innately enchant runes, but the enchanting speed will increase by 30% if she is over level 12.\n\nThe Enchanting tent can be upgraded by purchasing a crafting cart from a settlement merchant. An upgraded tent has a 15% increase in enchanting speed.Additionally, the upgraded tools and equipment from the cart allows the Vala to produce potentially more powerful Runes."
+        es = "El emporio de travesuras místicas (y quizá incluso mágicas) de la Vala. Mientras la compañía acampa, la Vala puede retirarse a sus libros y experimentos. Puedes poner en cola encargos de runas para que la Vala pruebe suerte con ellos. Qué saldrá de ellos... tendrás que esperar para ver qué inscribe. Solo la Vala puede asignarse a la tienda de encantamiento. La Vala sabe encantar runas de forma innata, pero su velocidad de encantamiento aumenta un 30% si supera el nivel 12.\n\nLa tienda de encantamiento puede mejorarse comprando un carro de fabricación a un mercader de un asentamiento. Una tienda mejorada encanta un 15% más rápido. Además, las herramientas y el equipo mejorados del carro permiten a la Vala crear runas potencialmente más poderosas."
+    }
+    // context: enchanter_building.getDescription
+    {
         en = "Tha Vala emporium of mystical (and maybe even magical) mischief. While encamped, the Vala can retreat into her books and experiments. "
         es = "El emporio de travesuras místicas (y quizá incluso mágicas) de la Vala. Mientras la compañía acampa, la Vala puede retirarse a sus libros y experimentos. "
     }
@@ -60558,6 +60708,13 @@ local pairs = [
     }
     // context: fletcher_building.getDescription
     {
+        // @composicion: desc += ... (6 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Arrows, bolts, little rocks (and Big Rocks!). The ammunition of war. Keep the company stocks full between battles by assigning some members of the company to the task of making ammo. Ammunition fabrication only occurs while encamped. The more people assigned, the more ammo crafted. \n\nThe Fletching tent can be upgraded by purchasing a crafting cart from a settlement merchant. An upgraded tent has a 15% increase in production speed. Additionally, there's a chance that ammunition of the disposable throwing kind will be crafted."
+        es = "Flechas, virotes, piedrecitas (¡y Piedras Grandes!). La munición de la guerra. Mantén llenas las reservas de la compañía entre batallas asignando a algunos de sus miembros a la tarea de fabricar munición. La munición solo se fabrica mientras se está acampado. Cuantas más personas asignadas, más munición se fabrica. \n\nLa tienda de flechería puede mejorarse comprando un carro de fabricación a un mercader de algún asentamiento. Una tienda mejorada produce un 15% más rápido. Además, existe la posibilidad de fabricar munición arrojadiza desechable."
+    }
+    // context: fletcher_building.getDescription
+    {
         en = "Arrows, bolts, little rocks (and Big Rocks!). The ammunition of war. "
         es = "Flechas, virotes, piedrecitas (¡y Piedras Grandes!). La munición de la guerra. "
     }
@@ -60623,6 +60780,13 @@ local pairs = [
     {
         en = "Send people out to gather supplies like medicinal herbs, plants, wood and stones."
         es = "Envía gente a recolectar suministros como hierbas medicinales, plantas, madera y piedras."
+    }
+    // context: gatherer_building.getDescription
+    {
+        // @composicion: desc += ... (8 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "People assigned to this task will go out get supplies, like herbs and plants of medicinal quality. The more people assigned, the more is gathered. The more people assigned, the more medicine is gathered. Skilled backgrounds increase the amount further.\n\nAssigning Woodsmen with the Woodsman's Cuts perk can return wood for trade, while Miners with the Ore Hunter perk can find gems. Assigning skilled apocatheries like Herbalists, Vala, Alchemists and Druids can return more advanced medicines and bandages.\n\nBuying an upgraded tent will increase gathering speed by 15% and produce more kinds of medicine. Having both an upgraded tent and skilled apothecaries can provide rare medicines, and powerful potions."
+        es = "Quienes tengan asignada esta tarea saldrán a buscar suministros, como hierbas y plantas medicinales. Cuantas más personas asignadas, más se recolecta. Cuantas más personas asignadas, más medicina se recolecta. Los trasfondos especializados aumentan aún más la cantidad.\n\nLos Leñadores asignados con la ventaja Tajos del montaraz pueden traer madera para comerciar, y los Mineros con la ventaja Buscador de mena pueden encontrar gemas. Asignar boticarios expertos, como Herbolarios, Vala, Alquimistas y Druidas, puede proporcionar medicinas y vendas más avanzadas.\n\nComprar una tienda mejorada aumenta un 15% la velocidad de recolección y permite producir más tipos de medicina. Con una tienda mejorada y boticarios expertos se pueden obtener medicinas raras y pociones poderosas."
     }
     // context: gatherer_building.getDescription.desc
     {
@@ -60694,6 +60858,13 @@ local pairs = [
     {
         en = "Place brothers in reserves in order to heal from wounds."
         es = "Coloca a hermanos en la reserva para que sanen sus heridas."
+    }
+    // context: healer_building.getDescription
+    {
+        // @composicion: desc += ... (5 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Injuries are a prerequisite for any self respecting battle brother. The quicker temporary injuries are patched up, the quicker a battle brother can get some more! Assigning brothers to this tent allows them to treat any wounds in the company roster and also help restore health points of any injured brother by +10%. Treating an injury requires a cost of medicine and time (vs coin in a temple). The more people assigned to the tent, the quicker injuries will be treated and healthpoints restored. \n\nThe healing tent can be upgraded by purchasing a crafting cart from a settlement merchant. An upgraded tent provides a 66% increase in hitpoint recovery speed, 33% increase in wound treatment speed and a 25% decrease in medicine cost for each injury."
+        es = "Las heridas son un requisito para cualquier hermano de armas que se precie. ¡Cuanto antes se curen las heridas temporales, antes podrá un hermano de armas ganarse otras nuevas! Asignar hermanos a esta tienda les permite tratar las heridas de cualquier miembro de la compañía y además ayuda a recuperar un +10% de los puntos de vida de cualquier hermano herido. Tratar una herida cuesta medicina y tiempo (en vez de coronas, como en un templo). Cuantas más personas asignadas a la tienda, antes se tratarán las heridas y se recuperarán los puntos de vida. \n\nLa tienda de curación puede mejorarse comprando un carro de fabricación a un mercader de algún asentamiento. Una tienda mejorada recupera los puntos de vida un 66% más rápido, trata las heridas un 33% más rápido y reduce un 25% el gasto de medicina de cada herida."
     }
     // context: healer_building.getDescription
     {
@@ -61194,6 +61365,14 @@ local pairs = [
     }
     // context: repair_building.getDescription
     {
+        // @composicion: desc += ... (7 trozos, el último con los colores).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        mode = "pattern"
+        en = "This tent repairs damaged items in your stash and equipped fighers. Equipment is repaired one item at time in the order they were queued.At the end of a battle, any damaged equipped gear is added to the front of the repair queue.\n\nItems will repair very slowly when not camped. Camping increases the speed even with no one assigned. Default repair speed is based on game combat difficulty.The more people assigned to the repair tent, the quicker the repairs. Mercenaries with repair skills increase the speed even further and may save you tools.\n\nBuying an upgraded tent from a settlement will increase repair speed by [color=<pos1:str>]33%[/color] and increase tool efficiency by [color=<pos2:str>]33%[/color] (1 tool repairs 20 instead of 15)."
+        es = "Esta tienda repara los objetos dañados de tu inventario y los que llevan equipados los combatientes. El equipo se repara de uno en uno, en el orden en que se puso en cola. Al final de una batalla, todo el equipo dañado que se lleve puesto pasa al principio de la cola de reparación.\n\nLos objetos se reparan muy despacio cuando no se está acampado. Acampar aumenta la velocidad aunque no haya nadie asignado. La velocidad de reparación por defecto depende de la dificultad de combate de la partida. Cuantas más personas asignadas a la tienda de reparación, más rápidas serán las reparaciones. Los mercenarios con habilidades de reparación aumentan aún más la velocidad y pueden ahorrarte herramientas.\n\nComprar una tienda mejorada en un asentamiento aumenta la velocidad de reparación un [color=<pos1>]33%[/color] y la eficiencia de las herramientas un [color=<pos2>]33%[/color] (1 herramienta repara 20 en lugar de 15)."
+    }
+    // context: repair_building.getDescription
+    {
         en = "This tent repairs damaged items in your stash and equipped fighers. Equipment is repaired one item at time in the order they were queued."
         es = "Esta tienda repara los objetos dañados de tu inventario y los que llevan equipados los combatientes. El equipo se repara de uno en uno, en el orden en que se puso en cola."
     }
@@ -61283,6 +61462,13 @@ local pairs = [
     {
         en = "Company personnel who have not been assigned a task will rest and relax here. ."
         es = "Los miembros de la compañía que no tengan tarea asignada descansarán y se relajarán aquí."
+    }
+    // context: rest_building.getDescription
+    {
+        // @composicion: desc += ... (2 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Kicking ass is tough work. Grab a log, kick the shoes off and relax by the camp fire. Resting can improve the mood of even the grumpiest mercenary."
+        es = "Patear culos es un trabajo duro. Agarra un tronco, quítate los zapatos y relájate junto a la fogata. Descansar puede mejorar el ánimo hasta del mercenario más gruñón."
     }
     // context: rest_building.getDescription
     {
@@ -61475,6 +61661,13 @@ local pairs = [
     }
     // context: scout_building.getDescription
     {
+        // @composicion: desc += ... (9 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Getting ambushed while camping is the surest way to ruin a good nights sleep. Make sure someone is on patrol in order to have eyes and ears and the local landscape. The more men assigned on patrol, the faster and further your visibility grows.\n\nThe Patrol station can be upgraded by purchasing a patrol cart from a settlement merchant. An upgraded tent has a 15% increase in patrol speed and has a chance of revealing the defenders of any camps encountered. Additionally, while on patrol there's a chance that the location of enemy outposts can be determined.\n\nAssigned scouts with the Lookout perk will pause time when an enemy is sighted"
+        es = "Sufrir una emboscada mientras acampas es la forma más segura de arruinar una buena noche de sueño. Asegúrate de que alguien patrulle para tener ojos y oídos en los alrededores. Cuantos más hombres asignes a la patrulla, más rápido y más lejos crecerá tu visibilidad.\n\nEl puesto de patrulla puede mejorarse comprando un carro de patrulla a un mercader de algún asentamiento. Una tienda mejorada aumenta un 15% la velocidad de patrulla y tiene probabilidad de revelar a los defensores de cualquier campamento que encuentre. Además, durante la patrulla es posible descubrir la ubicación de puestos avanzados enemigos.\n\nLos exploradores asignados que tengan la ventaja Vigía detendrán el tiempo al avistar a un enemigo"
+    }
+    // context: scout_building.getDescription
+    {
         en = "Getting ambushed while camping is the surest way to ruin a good nights sleep. "
         es = "Sufrir una emboscada mientras acampas es la forma más segura de arruinar una buena noche de sueño. "
     }
@@ -61654,28 +61847,38 @@ local pairs = [
     }
     // context: training_building.m.TrainingDescriptors.A
     {
-        en = " feels ready for a fight"
-        es = " se siente a punto para pelear"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> feels ready for a fight"
+        es = "<name> se siente a punto para pelear"
     }
     // context: training_building.m.TrainingDescriptors.A
     {
-        en = " needs a real opponent"
-        es = " necesita un rival de verdad"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> needs a real opponent"
+        es = "<name> necesita un rival de verdad"
     }
     // context: training_building.m.TrainingDescriptors.A
     {
-        en = " is prepared for battle"
-        es = " está en condiciones de combatir"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> is prepared for battle"
+        es = "<name> está en condiciones de combatir"
     }
     // context: training_building.m.TrainingDescriptors.A
     {
-        en = " is keen to try it out"
-        es = " tiene ganas de ponerlo a prueba"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> is keen to try it out"
+        es = "<name> tiene ganas de ponerlo a prueba"
     }
     // context: training_building.m.TrainingDescriptors.A
     {
-        en = " is ready for a scrap"
-        es = " está a punto para una buena trifulca"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> is ready for a scrap"
+        es = "<name> está a punto para una buena trifulca"
     }
     // context: training_building.create.m.Slot
     // en = "train"  // identificador interno del hueco del campamento (se usa para componer la ruta de la imagen), no se muestra
@@ -61683,6 +61886,13 @@ local pairs = [
     {
         en = "Training Grounds"
         es = "Campo de entrenamiento"
+    }
+    // context: training_building.getDescription
+    {
+        // @composicion: desc += ... (7 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Whether a seasoned veteran or a green recruit, there's always something new to learn. Anyone assigned to train will gain experience over time based on the total modifier of occupiers in this tent. Having highly skilled teachers in the grounds increases the chances of successfully learning something new, which will be tracked under 'Intensive Training' progress under their traits. There's always a slight chance someone can be injured.\n\nTraining grounds can be upgraded by purchasing an upgrade set in local markets. Upgraded grounds reduce the risk of accidents from a minimum of 5% to 1% and also give the chance of a permanent random skill increase."
+        es = "Ya sea un veterano curtido o un recluta bisoño, siempre hay algo nuevo que aprender. Quien se asigne a entrenar ganará experiencia con el tiempo según el modificador total de los ocupantes de esta tienda. Tener instructores muy hábiles en el campo de entrenamiento aumenta la probabilidad de aprender algo nuevo, lo que quedará registrado como progreso de «Entrenamiento intensivo» en sus rasgos. Siempre hay una pequeña probabilidad de que alguien se lesione.\n\nEl campo de entrenamiento puede mejorarse comprando un juego de mejora en los mercados locales. Un campo mejorado reduce el riesgo de accidentes de un mínimo del 5% al 1% y además da la probabilidad de un aumento aleatorio y permanente de una habilidad."
     }
     // context: training_building.getDescription.desc
     {
@@ -61749,104 +61959,194 @@ local pairs = [
     }
     // context: training_building.getDescriptors
     {
-        // return "After practicing " + this.m.TrainingDescriptors.M[(r / (this.m.TrainingDescriptors.A.len() * this.m.TrainingDescriptors.T.len())) % this.m.TrainingDescriptors.M.len()] + this.m.TrainingDescriptors.T[(r / this.m.TrainingDescriptors.A.len()) % this.m.TrainingDescriptors.T.len()] + bro.getName() + this.m.TrainingDescriptors.A[r % this.m.TrainingDescriptors.A.len()];
+        // @composicion: "After practicing " + M + T + nombre + A (getDescriptors);
+        // una regla por cada T de TrainingDescriptors y por cada final (experiencia o
+        // próxima batalla); M y nombre + A se traducen con sus pares. La frase va
+        // entera porque la regla de base "<ailing:str> gains <trait:str>" se lleva la
+        // clave "gains" antes que cualquier regla de Legends.
         mode = "pattern"
-        en = "After practicing <rest:str>"
-        es = "Tras practicar <rest>"
+        en = "After practicing <m:str>for hours, <rest:str> and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "Tras practicar <m:t>durante horas, <rest:t> y gana [color=<color>]<xp>[/color] de experiencia."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>for hours, <rest:str> and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "Tras practicar <m:t>durante horas, <rest:t> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>all day, <rest:str> and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "Tras practicar <m:t>todo el día, <rest:t> y gana [color=<color>]<xp>[/color] de experiencia."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>all day, <rest:str> and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "Tras practicar <m:t>todo el día, <rest:t> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>for several hours, <rest:str> and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "Tras practicar <m:t>durante varias horas, <rest:t> y gana [color=<color>]<xp>[/color] de experiencia."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>for several hours, <rest:str> and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "Tras practicar <m:t>durante varias horas, <rest:t> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>until exhaustion, <rest:str> and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "Tras practicar <m:t>hasta el agotamiento, <rest:t> y gana [color=<color>]<xp>[/color] de experiencia."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>until exhaustion, <rest:str> and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "Tras practicar <m:t>hasta el agotamiento, <rest:t> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>as long as possible, <rest:str> and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "Tras practicar <m:t>todo lo posible, <rest:t> y gana [color=<color>]<xp>[/color] de experiencia."
+    }
+    // context: training_building.getDescriptors
+    {
+        mode = "pattern"
+        en = "After practicing <m:str>as long as possible, <rest:str> and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "Tras practicar <m:t>todo lo posible, <rest:t> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " learned a new move"
-        es = " aprendió un movimiento nuevo"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> learned a new move and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> aprendió un movimiento nuevo y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " finally nails the fancy parry they have been been practicing"
-        es = " por fin domina la vistosa parada que llevaba tiempo practicando"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> finally nails the fancy parry they have been been practicing and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> por fin domina la vistosa parada que llevaba tiempo practicando y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " invents an overly showy move"
-        es = " inventa un movimiento demasiado vistoso"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> invents an overly showy move and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> inventa un movimiento demasiado vistoso y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " finds a stance that feels more natural"
-        es = " encuentra una postura que le resulta más natural"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> finds a stance that feels more natural and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> encuentra una postura que le resulta más natural y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " learns how to adjust the new armor so it fits better"
-        es = " aprende a ajustarse la armadura nueva para que le siente mejor"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> learns how to adjust the new armor so it fits better and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> aprende a ajustarse la armadura nueva para que le siente mejor y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " has perfected a new skill in practice"
-        es = " ha perfeccionado una nueva habilidad en las prácticas"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> has perfected a new skill in practice and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> ha perfeccionado una nueva habilidad en las prácticas y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " had their ego bruised and wants an outlet for frustration"
-        es = " salió con el orgullo herido y busca dónde desahogar la frustración"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> had their ego bruised and wants an outlet for frustration and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> salió con el orgullo herido y busca dónde desahogar la frustración y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " left the training dummy as nothing more than a pile of splinters"
-        es = " dejó el muñeco de entrenamiento hecho un montón de astillas"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> left the training dummy as nothing more than a pile of splinters and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> dejó el muñeco de entrenamiento hecho un montón de astillas y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " has practiced a skill so much it has become second nature"
-        es = " ha practicado tanto una habilidad que ya le sale de forma natural"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> has practiced a skill so much it has become second nature and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> ha practicado tanto una habilidad que ya le sale de forma natural y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " feels more comfortable with their weapon"
-        es = " se maneja con más soltura con su arma"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> feels more comfortable with their weapon and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> se maneja con más soltura con su arma y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors
     {
-        en = " sets a new personal best in training"
-        es = " bate su propia marca en el entrenamiento"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> sets a new personal best in training and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> bate su propia marca en el entrenamiento y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors.push()
     {
-        en = " figures out what end of the weapon to hold"
-        es = " descubre por qué extremo se agarra el arma"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> figures out what end of the weapon to hold and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> descubre por qué extremo se agarra el arma y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.extraTrainingDescriptors.push()
     {
-        en = " remembers that you can move your legs as well as your arms"
-        es = " recuerda que también se pueden mover las piernas, no solo los brazos"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> remembers that you can move your legs as well as your arms and gains [color=<color:str>]<xp:int>[/color] XP."
+        es = "<name> recuerda que también se pueden mover las piernas, no solo los brazos y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrained.m.Results.push().Text
     {
         // Text = this.getDescriptors(bro, extraTrainingDescriptors) + " and gains [color=" + this.Const.UI.Color.PositiveEventValue + "]" + (bro.m.XP - originalXP) + "[/color] XP."
         mode = "pattern"
         en = "<desc:str> and gains [color=<color:str>]<xp:int>[/color] XP."
-        es = "<desc> y gana [color=<color>]<xp>[/color] de experiencia."
+        es = "<desc:t> y gana [color=<color>]<xp>[/color] de experiencia."
     }
     // context: training_building.getTrainedAfter11.extraTrainingDescriptors
     {
-        en = " learned how to get most of the next battle"
-        es = " aprendió a sacar el máximo provecho de la próxima batalla"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> learned how to get most of the next battle and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "<name> aprendió a sacar el máximo provecho de la próxima batalla y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
     }
     // context: training_building.getTrainedAfter11.extraTrainingDescriptors
     {
-        en = " finds a stance that can improve his experience in the next battle"
-        es = " encuentra una postura que puede mejorar su experiencia en la próxima batalla"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> finds a stance that can improve his experience in the next battle and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "<name> encuentra una postura que puede mejorar su experiencia en la próxima batalla y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
     }
     // context: training_building.getTrainedAfter11.extraTrainingDescriptors
     {
-        en = " is ready to learn more in the next battle"
-        es = " tiene ganas de aprender más en la próxima batalla"
+        // El trozo llega pegado al nombre del hermano (getDescriptors): nombre + trozo.
+        mode = "pattern"
+        en = "<name:str> is ready to learn more in the next battle and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
+        es = "<name> tiene ganas de aprender más en la próxima batalla y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
     }
     // context: training_building.getTrainedAfter11.m.Results.push().Text
     {
         // Text = this.getDescriptors(bro, extraTrainingDescriptors) + " and gains a [color=" + this.Const.UI.Color.PositiveEventValue + "]10%[/color] xp increase for the next battle."
         mode = "pattern"
         en = "<desc:str> and gains a [color=<color:str>]10%[/color] xp increase for the next battle."
-        es = "<desc> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
+        es = "<desc:t> y gana un [color=<color>]10%[/color] más de experiencia en la próxima batalla."
     }
     // context: training_building.getFailed.m.Results.push().Text
     {
@@ -61912,6 +62212,13 @@ local pairs = [
     {
         en = "Turn scrap into useable parts"
         es = "Convierte la chatarra en piezas aprovechables"
+    }
+    // context: workshop_building.getDescription
+    {
+        // @composicion: desc += ... (8 trozos).
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "Repairing equipment takes tools. Break down and reuse equipment in your stash to create tools to repair other gear. Once an item reaches zero durability, it will be consumed and destroyed. Every 30 durability equals a tool. \n\nThe more people assigned to the tent, the quicker items will be salvaged. People with salvage skills increase the speed further.\n\nThe salvage tent can be upgraded by purchasing a salvage cart from a settlement merchant. An upgraded tent has a 15% increase in salvage speed and every 10 durability equals a tool.\n\nHolding Alt and right clicking on an item in your inventory can send it to your repair or salvage queues"
+        es = "Reparar el equipo requiere herramientas. Desmonta y reaprovecha el equipo de tu almacén para crear herramientas con las que reparar otro equipo. Cuando un objeto llega a cero de durabilidad, se consume y se destruye. Cada 30 de durabilidad equivalen a una herramienta. \n\nCuantas más personas se asignen a la tienda, más rápido se desguazarán los objetos. Las personas con habilidades de desguace aumentan aún más la velocidad.\n\nLa tienda de desguace puede mejorarse comprando un carro de desguace a un mercader de algún asentamiento. Una tienda mejorada aumenta un 15% la velocidad de desguace y cada 10 de durabilidad equivalen a una herramienta.\n\nSi mantienes pulsado Alt y haces clic derecho sobre un objeto de tu inventario, puedes enviarlo a la cola de reparación o a la de desguace"
     }
     // context: workshop_building.getDescription.desc
     {
@@ -65676,7 +65983,7 @@ local pairs = [
         // text = _event.m.Nofoot.m.Name + " receives a " + _trait.m.Name
         mode = "pattern"
         en = "<name:str> receives a <trait:str>"
-        es = "<name> recibe <trait>"
+        es = "<name> recibe <trait:t>"
     }
     // en = "<actor:str> no longer has a <name:str>"
     // en base_es
@@ -67675,6 +67982,13 @@ local pairs = [
         es = "Lo siento, tu lugar no está con nosotros."
     }
     // FILE: scripts\events\events\legends\scenario\escaped_slaves\legend_slave_recovers_event.nut
+    // context: legend_slave_recovers_event.create.Screens.A.Text
+    {
+        // @composicion: "[img]...[/img]" + EventText1 + ... + EventText6.
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_05.png[/img]{There is a particular way that former slaves carry themselves, like a weight that they can never shed hangs upon their shoulders. | Life as a slave leaves its mark upon a person, inflicting scars both inside and out. | Many Indebted spend their lives forever debilitated, a despondent resignation of a life forever lost hovering over them like a cloud. | The frailty imparted to Indebted seems to never leave them, as though the scars refuse to fully heal. | Common amongst the slaves you've known is a look of death, the vacant gaze of a quenched fire and a life lost.} As you look at %recovered%, however, you see a face carrying no such signs. {The former slave's shoulders seem broader, posture straighter, head held higher than before. | %recovered%'s gaze has a renewed purpose and clarity, filled with a fire you've not seen there before. | Where before scars seemed to wrap around %recovered%'s body, now they seem stretched and faded, unable to contain the might underneath. | %recovered%'s stride is full of confidence and speed, the slump and weariness you used to see gone without a trace. | The mercenary's actions seem full of a boundless energy, as though weariness is the station of lesser folk and holds no grip over %recovered%.}\n\nYou go over the man, noting his newfound vigor, and ask him how he's doing. He looks to the horizon at something you can't quite make out.{%SPEECH_ON%You know I used to have a family, cap'n? With a kid and everything. That life always seemed so far away, but close at the same time, you know? Like I couldn't get away from it, like there weren't no point to going on cause I'd already done what folks ought to get done in life. I'm sure they've died or moved on, but I never could.%SPEECH_OFF%He pauses.%SPEECH_ON%I think I finally managed to, though. Something about being here, with the company, it's give me purpose again, made me feel like there's something still worth doing with my life.%SPEECH_OFF% | %SPEECH_ON%I still remember my first lashing. I'd never known pain like that before. It never went away, really. I could always feel it, right there underneath the skin. It was... was like a manacle I couldn't see or touch or break, telling me I'd been marked, that I'd always be a slave.%SPEECH_OFF%Calloused hands rub at %recovered%'s wrists.%SPEECH_ON%Lately, though, the feelin's started to fade. Hell, maybe I'm just getting old, but I think something about being in the company has helped. I've started believing it don't matter so much who I used to be, that I should just focus on what comes next.%SPEECH_OFF% | %SPEECH_ON%I still remember what it was like, before, you know... I remember feeling like I never had any choice. My life was laid out in front of me, and if I didn't like it, too bad. I suppose it was a slavery of a kind too, being bound to a life dictated by who's child you were or where you were born, and not anything you chose for yourself.%SPEECH_OFF%He spits.%SPEECH_ON%Well, I've decided I've had my fill of both. I used to think about returning to that life, but after my time in the company, I've come to realize this is the closest to freedom I've ever been.%SPEECH_OFF%}%recovered% turns to you.%SPEECH_ON%It feels good, cap'n.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_05.png[/img]{Los antiguos esclavos tienen una manera particular de moverse, como si cargaran sobre los hombros un peso del que nunca pudieran librarse. | La vida de esclavo deja su marca en una persona y le inflige cicatrices por dentro y por fuera. | Muchos endeudados pasan la vida debilitados para siempre, con la resignación abatida de una vida perdida que se cierne sobre ellos como una nube. | La fragilidad que se impone a los endeudados parece no abandonarlos nunca, como si las cicatrices se negaran a sanar del todo. | Entre los esclavos que has conocido es común una mirada de muerte, los ojos vacíos de un fuego apagado y de una vida perdida.} Sin embargo, al mirar a %recovered%, ves un rostro que no muestra ninguna de esas señales. {Los hombros del antiguo esclavo parecen más anchos, su postura más erguida y su cabeza más alta que antes. | La mirada de %recovered% tiene un propósito y una claridad renovados, llena de un fuego que nunca antes habías visto en ella. | Donde antes las cicatrices parecían envolver el cuerpo de %recovered%, ahora se ven estiradas y desvaídas, incapaces de contener la fuerza que hay debajo. | %recovered% camina con paso rápido y lleno de confianza; el abatimiento y el cansancio que solías ver han desaparecido sin dejar rastro. | Los actos del mercenario parecen llenos de una energía sin límites, como si el cansancio fuera cosa de gente inferior y no tuviera poder alguno sobre %recovered%.}\n\nTe acercas a él, reparas en su recién hallado vigor y le preguntas cómo está. Él mira hacia el horizonte, a algo que no alcanzas a distinguir.{%SPEECH_ON%¿Sabías que antes tenía una familia, capitán? Con un crío y todo. Esa vida siempre me pareció muy lejana, pero cercana a la vez, ¿sabes? Como si no pudiera escaparme de ella, como si no tuviera sentido seguir porque ya había hecho lo que uno tiene que hacer en la vida. Seguro que ya se murieron o pasaron página, pero yo nunca pude.%SPEECH_OFF%Hace una pausa.%SPEECH_ON%Aunque creo que por fin lo he logrado. Algo de estar aquí, con la compañía, me ha devuelto un propósito, me ha hecho sentir que todavía hay algo que vale la pena hacer con mi vida.%SPEECH_OFF% | %SPEECH_ON%Todavía me acuerdo de la primera vez que me azotaron. Nunca había conocido un dolor así. En realidad, nunca se fue. Siempre lo sentía, ahí mismo, bajo la piel. Era... era como un grillete que no podía ver, ni tocar, ni romper, y que me decía que me habían marcado, que siempre sería un esclavo.%SPEECH_OFF%Unas manos encallecidas frotan las muñecas de %recovered%.%SPEECH_ON%Pero últimamente esa sensación ha empezado a desvanecerse. Demonios, a lo mejor solo me estoy haciendo viejo, pero creo que estar en la compañía me ha ayudado. He empezado a creer que no importa tanto quién era antes, que debería centrarme en lo que viene.%SPEECH_OFF% | %SPEECH_ON%Todavía me acuerdo de cómo era antes, ya sabes... Recuerdo sentir que nunca tenía elección. Mi vida estaba trazada delante de mí y, si no me gustaba, mala suerte. Supongo que también era una especie de esclavitud, estar atado a una vida dictada por de quién eras hijo o dónde habías nacido, y no por nada que eligieras tú.%SPEECH_OFF%Escupe.%SPEECH_ON%Pues he decidido que ya tuve suficiente de las dos. Antes pensaba en volver a esa vida, pero después de mi tiempo en la compañía me he dado cuenta de que esto es lo más cerca de la libertad que he estado nunca.%SPEECH_OFF%}%recovered% se vuelve hacia ti.%SPEECH_ON%Sienta bien, capitán.%SPEECH_OFF%"
+    }
     // context: legend_slave_recovers_event.create.EventText1
     {
         en = "{There is a particular way that former slaves carry themselves, like a weight that they can never shed hangs upon their shoulders. | Life as a slave leaves its mark upon a person, inflicting scars both inside and out. | Many Indebted spend their lives forever debilitated, a despondent resignation of a life forever lost hovering over them like a cloud. | The frailty imparted to Indebted seems to never leave them, as though the scars refuse to fully heal. | Common amongst the slaves you've known is a look of death, the vacant gaze of a quenched fire and a life lost.}"
@@ -67839,6 +68153,13 @@ local pairs = [
         es = "Druida"
     }
     // FILE: scripts\events\events\legends\scenario\legend_escaped_slaves_intro_event.nut
+    // context: legend_escaped_slaves_intro_event.create.Screens.A.Text
+    {
+        // @composicion: "[img]...[/img]" + introText1 + ... + introText5.
+        // La suma llega entera a Rosetta; los trozos de abajo no llegan nunca solos.
+        en = "[img]gfx/ui/events/event_161.png[/img]Dawn approaches, and the first hints of sunlight warm the cold sand. Your body shivers, begging to rest and bask in the warmth, but you dare not stop. Not yet. You glance over your shoulders, half expecting manhunters to already be upon you, but you only see a ragged %bro% breathing heavily as he tries to keep pace.\n\nIt's been half a year since Hoggart the Weasel ambushed you and the rest of the old company. Desperate for money, he first tried to ransom you and the other survivors, but finding no luck in the North, he turned to the South. You were sold to %vizierfullname%, proclaimed 'Indebted' to the Gilder, and worked to the bone. Unperson in the eyes of the vizier, you got to experience firsthand the many wonders of the South: backbreaking labor under the cruel desert sun, mortal combat in the arena, and forced hunts for the terrifying creatures of the sands.\n\nIronically, it was those same creatures that brought you freedom. You and your fellow slaves were forced into the service of a domineering southern officer tasked with clearing a nomad camp. He sent you indebted into the camp first to soften the raiders for his conscripts. That was when the Ifrit came. 'Chaos' is the only word you possess to describe what ensued. A pure madness of sand and rock, of men crushed into bloody pulp by boulders lofted through the air, screaming and yelling and sand-filled lungs and a desert come to horrific life. When the battle began to rage into the officer's ranks, you saw your chance. You and your companions pilfered what you could from the battlefield, then ran. You ran like you've never run before, straight through the night.\n\nYou know you can't keep running forever, though. You'll be caught eventually, and if you don't turn this group of miserable, downtrodden slaves into warriors soon, all of you will surely perish. You won't let that happen. You've suffered with these men, shed sweat, blood, and tears together, and formed a bond of brotherhood stronger than any blood tie. Whether through mercenary work or common brigandry, you'll see them shaped into soldiers the likes of which %viziershortname% has never seen, and damn anyone who gets in your way.\n\nBut for now, you keep running."
+        es = "[img]gfx/ui/events/event_161.png[/img]Se acerca el amanecer, y los primeros rayos de sol calientan la arena fría. Tu cuerpo tirita y te ruega descansar y disfrutar del calor, pero no te atreves a parar. Todavía no. Miras por encima del hombro, casi esperando que los cazadores de hombres ya te hayan alcanzado, pero solo ves a %bro%, en harapos, jadeando mientras intenta seguirte el paso.\n\nHa pasado medio año desde que Hoggart la Comadreja les tendió una emboscada a ti y al resto de la antigua compañía. Desesperado por dinero, primero intentó pedir rescate por ti y por los demás supervivientes, pero, al no tener suerte en el norte, se volvió hacia el sur. Te vendieron a %vizierfullname%, te declararon 'Endeudado' ante el Dorado y te hicieron trabajar hasta los huesos. Siendo nadie a ojos del visir, pudiste conocer de primera mano las muchas maravillas del sur: trabajos extenuantes bajo el cruel sol del desierto, combates a muerte en la arena y cacerías forzosas de las aterradoras criaturas de las arenas.\n\nIrónicamente, fueron esas mismas criaturas las que te dieron la libertad. A ti y a tus compañeros esclavos los obligaron a servir a un despótico oficial sureño encargado de limpiar un campamento nómada. Los mandó a ustedes, los endeudados, por delante al campamento para ablandar a los saqueadores antes de que llegaran sus reclutas. Fue entonces cuando apareció el Ifrit. 'Caos' es la única palabra que tienes para describir lo que siguió. Una locura pura de arena y roca, de hombres aplastados hasta quedar hechos pulpa sangrienta por peñascos lanzados por los aires, gritos y alaridos y pulmones llenos de arena y un desierto que cobraba una vida horrible. Cuando la batalla empezó a llegar a las filas del oficial, viste tu oportunidad. Tú y tus compañeros saquearon lo que pudieron del campo de batalla y luego corrieron. Corriste como nunca antes, toda la noche sin parar.\n\nSin embargo, sabes que no puedes huir para siempre. Tarde o temprano te atraparán, y si no conviertes pronto a este grupo de esclavos miserables y oprimidos en guerreros, todos ustedes perecerán sin remedio. No permitirás que eso pase. Has sufrido con estos hombres, han derramado juntos sudor, sangre y lágrimas, y han forjado un vínculo de hermandad más fuerte que cualquier lazo de sangre. Ya sea con trabajos de mercenario o con simple bandidaje, harás de ellos soldados como %viziershortname% no ha visto jamás, y maldito sea quien se interponga en tu camino.\n\nPero, por ahora, sigues corriendo."
+    }
     // context: legend_escaped_slaves_intro_event.create.introText1
     {
         en = "Dawn approaches, and the first hints of sunlight warm the cold sand. Your body shivers, begging to rest and bask in the warmth, but you dare not stop. Not yet. You glance over your shoulders, half expecting manhunters to already be upon you, but you only see a ragged %bro% breathing heavily as he tries to keep pace."
@@ -70469,12 +70790,7 @@ local pairs = [
     }
     // FILE: scripts\items\legend_armor\legend_armor.nut
     // context: legend_armor.makeName.NAME
-    {
-        // NAME = uname + " on " + this.getName();
-        mode = "pattern"
-        en = "<upgrade:str> on <armor:str>"
-        es = "<upgrade> sobre <armor>"
-    }
+    // en = "<upgrade:str> on <armor:str>"  // lo traduce el enganche de makeName en legends.nut; la regla casaba con cualquier frase con " on "
     // context: legend_armor.makeName.NAME
     // en = "<this.getUpgrade(1).getName()> on <this.getName()>"  // cubierto por el patrón "<upgrade:str> on <armor:str>"
     // context: legend_armor.makeName.NAME
@@ -75583,7 +75899,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(logString + this.Const.UI.getColorizedEntityName(_user) + " stupefied " + this.Const.UI.getColorizedEntityName(targetEntity));
         mode = "pattern"
-        en = "<log:str> stupefied <target:str>"
+        en = "<log:str> stupefied <target:str_tag>"
         es = "<log> atonta a <target>"
     }
     // context: legend_daze_skill.onUse.Tactical.EventLog.log()
@@ -76280,7 +76596,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_actor) + " leaps towards " + this.Const.UI.getColorizedEntityName(target));
         mode = "pattern"
-        en = "<actor:str> leaps towards <target:str>"
+        en = "<actor:str_tag> leaps towards <target:str_tag>"
         es = "<actor> salta hacia <target>"
     }
     // context: legend_enraged_hyena_bite_skill.onDragStart.Tactical.EventLog.log()
@@ -76302,7 +76618,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " enthralls " + this.Const.UI.getColorizedEntityName(target));
         mode = "pattern"
-        en = "<user:str> enthralls <target:str>"
+        en = "<user:str_tag> enthralls <target:str_tag>"
         es = "<user> somete a su voluntad a <target>"
     }
     // FILE: scripts\skills\actives\legend_entice_skill.nut
@@ -76998,7 +77314,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " levitated " + this.Const.UI.getColorizedEntityName(target) + " leaving them free to move");
         mode = "pattern"
-        en = "<user:str> levitated <target:str> leaving them free to move"
+        en = "<user:str_tag> levitated <target:str_tag> leaving them free to move"
         es = "<user> hizo levitar a <target>, que ahora puede moverse libremente"
     }
     // FILE: scripts\skills\actives\legend_line_them_up_skill.nut
@@ -77107,7 +77423,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(logString + this.Const.UI.getColorizedEntityName(_user) + " stupefied " + this.Const.UI.getColorizedEntityName(targetEntity) + ".");
         mode = "pattern"
-        en = "<user:str> stupefied <target:str>."
+        en = "<user:str> stupefied <target:str_tag>."
         es = "<user> embotó los sentidos de <target>."
     }
     // FILE: scripts\skills\actives\legend_magic_hailstone_skill.nut
@@ -77165,7 +77481,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " imbued " + this.Const.UI.getColorizedEntityName(target));
         mode = "pattern"
-        en = "<user:str> imbued <target:str>"
+        en = "<user:str_tag> imbued <target:str_tag>"
         es = "<user> imbuyó de poder a <target>"
     }
     // FILE: scripts\skills\actives\legend_magic_levitate_skill.nut
@@ -77178,7 +77494,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " levitated " + this.Const.UI.getColorizedEntityName(target));
         mode = "pattern"
-        en = "<user:str> levitated <target:str>"
+        en = "<user:str_tag> levitated <target:str_tag>"
         es = "<user> hizo levitar a <target>"
     }
     // FILE: scripts\skills\actives\legend_magic_missile_skill.nut
@@ -77505,7 +77821,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " gives " + itemName + " to " + this.Const.UI.getColorizedEntityName(target));
         mode = "pattern"
-        en = "<user:str> gives <item:str> to <target:str>"
+        en = "<user:str_tag> gives <item:str> to <target:str_tag>"
         es = "<user> da <item> a <target>"
     }
     // FILE: scripts\skills\actives\legend_piercing_bolt_skill.nut
@@ -78602,7 +78918,7 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " learned " + perk.getName() + " from " + this.Const.UI.getColorizedEntityName(_targetEntity) + "!");
         mode = "pattern"
-        en = "<actor:str> learned <perk:str> from <target:str>!"
+        en = "<actor:str_tag> learned <perk:str> from <target:str_tag>!"
         es = "¡<actor> ha aprendido <perk> de <target>!"
     }
     // FILE: scripts\skills\backgrounds\legend_berserker_background.nut
