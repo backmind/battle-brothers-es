@@ -109,8 +109,9 @@ no vuelva a pasar inadvertida:
              línea del inglés y los botones de evento no parten línea
              (white-space: nowrap), y alguna descripción de origen se salía
              por abajo de su columna, que no tiene barra. Se mide con la
-             anchura real de la fuente del juego (ANCHO_CAR), y el presupuesto
-             es lo que usa el inglés más largo de la clase. Mira dos clases
+             anchura real de la fuente del juego (ANCHO_CAR), con un margen
+             calibrado en partida por lo que el juego ensancha las letras y
+             por el icono de los botones (ver BOTON_REM y ORIGEN_REM). Mira dos clases
              que se reconocen sin ambigüedad en el corpus: los botones de
              ambición y juramento (ficheros *_ambition.nut, el único texto con
              un salto de línea suelto) y las descripciones de origen
@@ -417,9 +418,14 @@ for _w, _cs in {
 # Botones de evento: 1.8 rem en una etiqueta de unos 77 rem. El inglés más
 # largo de la clase usa 71.6 (discover unique locations, línea 1).
 BOTON_REM, BOTON_FUENTE = 72.0, 1.8
-# Descripción de origen: columna de 41 rem a 1.6 rem. El inglés más largo
-# ocupa 13 renglones (manhunters y beast hunters).
-ORIGEN_REM, ORIGEN_FUENTE, ORIGEN_RENGLONES = 41.0, 1.6, 13
+# Descripción de origen: la columna mide 41 rem a 1.6 rem, pero el juego pinta
+# las letras algo más anchas que sus avances (el redondeo del hinting a
+# píxeles), y la primera medida, a 41 rem y 13 renglones, dejó cuatro orígenes
+# saliéndose por abajo en partida. Calibrado contra esa prueba: a 39 rem los
+# que se salían, o quedaban a ras, eran exactamente los cuatro de 14 renglones
+# (cazahombres, juramentados, desertores, cazadores de bestias), y los de 13 o
+# menos cabían.
+ORIGEN_REM, ORIGEN_FUENTE, ORIGEN_RENGLONES = 39.0, 1.6, 13
 _MARCADO_RE = re.compile(r"\[img\][^\[]*\[/img\]|\[/?[a-z]+(?:=[^\]]*)?\]")
 
 

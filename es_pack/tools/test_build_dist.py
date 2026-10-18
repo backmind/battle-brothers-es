@@ -1329,3 +1329,20 @@ def test_habla_ve_el_color_suelto_de_las_llaves_perdidas():
     assert saldos_de_habla("llave { suelta %SPEECH_START%hola%SPEECH_OFF%") == {0}
     avisos = revisar([(en, roto), (en, en.replace("B", "Be"))])["HABLA"]
     assert len(avisos) == 1 and "C.%SPEECH_ON%D" in avisos[0]
+
+
+def test_ancho_ve_el_origen_que_en_partida_se_salia(tmp_path):
+    """Los Desertores de la primera 1.0.1 se salían una palabra por abajo en
+    partida: con el presupuesto calibrado ocupan 14 renglones y avisa; con la
+    versión recortada, no."""
+    from checks import ORIGEN_FUENTE, ORIGEN_REM, ORIGEN_RENGLONES, renglones
+    img = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]"
+    c, f = "[color=#bcad8c]", "[/color]"
+    antes = (img + "Por demasiado tiempo te han arrastrado de una sangrienta batalla a otra, a merced de señores que se sientan en altas torres. Anoche, te escapaste del campamento junto con otros tres. Todavía están vestidos como soldados, pero son desertores, y la soga será su fin si se quedan aquí por demasiado tiempo.\n\n"
+             + c + "Desertores:" + f + " Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n"
+             + c + "Primeros en huir:" + f + " Tus hombres siempre son los primeros en actuar en la primera ronda del combate.[/p]")
+    despues = (img + "Demasiado tiempo te han arrastrado de una batalla sangrienta a otra al capricho de señores encerrados en altas torres. Anoche huiste del campamento con otros tres. Aún visten como soldados, pero son desertores, y la soga será su fin si se quedan aquí mucho tiempo.\n\n"
+               + c + "Desertores:" + f + " Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n"
+               + c + "Primeros en huir:" + f + " Tus hombres siempre actúan primero en la primera ronda del combate.[/p]")
+    assert renglones(antes, ORIGEN_REM, ORIGEN_FUENTE) > ORIGEN_RENGLONES
+    assert renglones(despues, ORIGEN_REM, ORIGEN_FUENTE) <= ORIGEN_RENGLONES
