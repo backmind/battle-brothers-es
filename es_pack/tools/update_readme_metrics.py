@@ -4,8 +4,9 @@ Mantiene dos bloques de README.md, cada uno entre sus marcadores:
 
 - INSIGNIAS: la primera fila de badges. Las que dependen del repo (build del
   juego verificada, cobertura) salen de las constantes de build_dist.py, las
-  mismas que lee la ficha de MSU; las dinámicas (última versión del juego,
-  versión del pack, descargas) las resuelve shields.io al mostrarse.
+  mismas que lee la ficha de MSU; las dinámicas (última versión del juego y
+  de cada mod, versión del pack, descargas) las resuelve shields.io al
+  mostrarse. Cada mod traducido tiene su propia fila.
 - OBJETIVOS: la tabla "Qué se traduce", una fila por juego o mod traducido,
   sacada de la lista OBJETIVOS de este fichero. De la misma lista salen los
   badges de cobertura de la fila de INSIGNIAS.
@@ -42,9 +43,15 @@ INICIO_OBJ = "<!-- OBJETIVOS:INICIO"
 FIN_OBJ = "<!-- OBJETIVOS:FIN -->"
 REPO_GH = "backmind/battle-brothers-es"
 
+GOG_BUILDS = ("https://content-system.gog.com/products/1590012242/os/windows/"
+              "builds?generation=2")
+LEGENDS_GH = "Battle-Brothers-Legends/Legends-public"
+
 # Lo que traduce el pack, uno por juego o mod. Cuando entre la traducción de un
 # mod, se añade aquí con sus constantes en build_dist.py, igual que el juego
-# base: la tabla del README, su badge y la ficha de MSU salen de lo mismo.
+# base: la tabla del README, sus badges y la ficha de MSU salen de lo mismo.
+# "ultima" es el badge dinámico de la última versión publicada de ese juego o
+# mod: (texto alternativo, imagen, enlace).
 OBJETIVOS = [
     {
         "nombre": "Battle Brothers y sus expansiones",
@@ -52,10 +59,26 @@ OBJETIVOS = [
         "estado": "Disponible",
         "verificada": "Battle Brothers " + build_dist.GAME_VERSION,
         "cobertura": build_dist.COBERTURA_JUEGO,
+        "ultima": ("Última versión del juego en GOG",
+                   "https://img.shields.io/badge/dynamic/json?url=%s&query=%s&label=%s&color=1565c0"
+                   % (quote(GOG_BUILDS, safe=""), quote("$.items[0].version_name", safe=""),
+                      quote("última del juego", safe="")),
+                   "https://www.gog.com/game/battle_brothers"),
+    },
+    {
+        "nombre": "El mod Legends",
+        "badge": "Legends",
+        "estado": "Beta",
+        "verificada": "Legends " + build_dist.LEGENDS_VERSION,
+        "cobertura": build_dist.COBERTURA_LEGENDS,
+        # Legends-public publica releases; sus etiquetas incluyen otras que no
+        # son versiones ("push", "pre_1.5.1_stable").
+        "ultima": ("Última versión de Legends",
+                   "https://img.shields.io/github/v/release/%s?label=%s&color=1565c0"
+                   % (LEGENDS_GH, quote("última de Legends", safe="")),
+                   "https://github.com/%s/releases/latest" % LEGENDS_GH),
     },
 ]
-GOG_BUILDS = ("https://content-system.gog.com/products/1590012242/os/windows/"
-              "builds?generation=2")
 
 
 def n(v):
@@ -104,31 +127,32 @@ def estatica(etiqueta, valor, color):
     return "https://img.shields.io/badge/%s-%s-%s" % (esc(etiqueta), esc(valor), color)
 
 
-def insignias():
-    """La primera fila de badges: lo que el jugador quiere saber de un vistazo."""
-    gog = ("https://img.shields.io/badge/dynamic/json?url=%s&query=%s"
-           "&label=%s&color=1565c0" % (quote(GOG_BUILDS, safe=""),
-                                       quote("$.items[0].version_name", safe=""),
-                                       quote("última del juego", safe="")))
+def grupo(o):
+    """Los tres badges de un juego o mod: build verificada, última publicada y
+    cobertura, en ese orden y con su nombre en cada uno."""
     return [
+        ("Verificada en " + o["verificada"],
+         estatica("verificada en", o["verificada"], "2e7d32"), "#qué-se-traduce"),
+        o["ultima"],
+        ("%s: %s" % (o["nombre"], o["cobertura"]),
+         estatica(o["badge"], o["cobertura"], "2e7d32"), "#qué-se-traduce"),
+    ]
+
+
+def insignias():
+    """La primera fila de badges: lo que el jugador quiere saber de un vistazo.
+    Una fila por juego o mod: la del juego base lleva además la versión y las
+    descargas del pack, y cada mod va en la suya para no confundirse con él."""
+    return [[
         ("Versión del pack",
          "https://img.shields.io/github/v/release/%s?label=%s&color=8b0000"
          % (REPO_GH, quote("versión", safe="")),
          "https://github.com/%s/releases/latest" % REPO_GH),
-        ("Verificada en Battle Brothers " + build_dist.GAME_VERSION,
-         estatica("verificada en", "Battle Brothers " + build_dist.GAME_VERSION, "2e7d32"),
-         "#qué-se-traduce"),
-        ("Última versión del juego en GOG", gog,
-         "https://www.gog.com/game/battle_brothers"),
-    ] + [
-        ("%s: %s" % (o["nombre"], o["cobertura"]),
-         estatica(o["badge"], o["cobertura"], "2e7d32"), "#qué-se-traduce")
-        for o in OBJETIVOS
-    ] + [
+    ] + grupo(OBJETIVOS[0]) + [
         ("Descargas",
          "https://img.shields.io/github/downloads/%s/total?label=descargas&color=555" % REPO_GH,
          "https://github.com/%s/releases" % REPO_GH),
-    ]
+    ]] + [grupo(o) for o in OBJETIVOS[1:]]
 
 
 def bloque_objetivos():
@@ -141,7 +165,8 @@ def bloque_objetivos():
 
 
 def bloque_insignias():
-    lineas = "\n".join("[![%s](%s)](%s)" % i for i in insignias())
+    # Una línea en blanco entre filas: GitHub las pinta como párrafos aparte.
+    lineas = "\n\n".join("\n".join("[![%s](%s)](%s)" % i for i in fila) for fila in insignias())
     return ("%s (autogenerado por es_pack/tools/update_readme_metrics.py; "
             "no editar a mano) -->\n%s\n%s" % (INICIO_INS, lineas, FIN_INS))
 

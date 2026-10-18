@@ -736,11 +736,13 @@ def test_los_dos_zips_y_los_dos_preloads_declaran_la_misma_version():
 def test_la_ficha_de_msu_declara_la_build_y_la_cobertura_de_build_dist():
     import re as _re
 
-    from build_dist import COBERTURA_JUEGO, GAME_VERSION, SRC
+    from build_dist import COBERTURA_JUEGO, COBERTURA_LEGENDS, GAME_VERSION, LEGENDS_VERSION, SRC
 
     t = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es.nut").read_text(encoding="utf-8")
     assert _re.search(r'GameVersion = "([^"]+)"', t).group(1) == GAME_VERSION
     assert _re.search(r'Cobertura = "([^"]+)"', t).group(1) == COBERTURA_JUEGO
+    assert _re.search(r'LegendsVersion = "([^"]+)"', t).group(1) == LEGENDS_VERSION
+    assert _re.search(r'CoberturaLegends = "([^"]+)"', t).group(1) == COBERTURA_LEGENDS
 
 
 RUNTIME_FALSO = r'''::Rosetta <- {

@@ -60,6 +60,11 @@ PACK_VERSION = "4.0.0"
 # con measure_coverage.py (necesita el juego instalado, así que no la mide la
 # CI). Se actualiza a mano al verificar contra una build nueva.
 COBERTURA_JUEGO = "100 %"
+# Lo mismo para Legends. La versión es la etiqueta de la fuente fijada de la que
+# se extrajo su corpus (fuente.toml); la cobertura se mide sobre esa fuente con
+# measure_coverage.py --mod mod_legends y se actualiza a mano al remedirla.
+LEGENDS_VERSION = tomllib.loads(MODS["mod_legends"].read_text(encoding="utf-8"))["etiqueta"]
+COBERTURA_LEGENDS = "99 %"
 
 # Mismos fuentes, mismo zip byte a byte en cualquier sistema: fecha fija,
 # permisos fijos y sistema de origen fijo (zipfile pone 0 en Windows y 3 en

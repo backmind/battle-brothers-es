@@ -15,6 +15,9 @@ local def = {
     // coincidan con build_dist.py.
     GameVersion = "1.5.2.3"
     Cobertura = "100 %"
+    // Lo mismo para la traducción de Legends, que viaja en el pack.
+    LegendsVersion = "19.4.22"
+    CoberturaLegends = "99 %"
 }
 local mod = ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_rosetta >= 0.5.0");
@@ -40,6 +43,7 @@ mod.queue(">mod_msu", function () {
     pagina.addTitle("Version", def.Name + " " + def.Version);
     pagina.addTitle("Descripcion", parrafo("Traducción completa al castellano del juego base y de todas sus expansiones. Lo que el pack no conoce se queda en inglés, así que un parche del juego no lo rompe."));
     pagina.addTitle("Estado", parrafo("Verificada en Battle Brothers " + def.GameVersion + ", con todas sus expansiones. Cubre el " + def.Cobertura + " de las frases del juego."));
+    pagina.addTitle("EstadoLegends", parrafo("Incluye la traducción del mod Legends, verificada en Legends " + def.LegendsVersion + ", que cubre el " + def.CoberturaLegends + " de sus frases. Solo se carga si Legends está instalado."));
     pagina.addDivider("Divisor1");
     pagina.addTitle("Creditos", parrafo("Traducción original: MagnusLioncaster, Hjensikk, AMarauder y ElGranFoca.<br>Revisión completa, traducción de todo lo que faltaba, adaptación a Rosetta y mantenimiento: backmind.<br>Framework: Rosetta, de Suor."));
     pagina.addDivider("Divisor2");
