@@ -8,6 +8,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 - **Un «[color]» suelto en la presentación de algunos contratos y eventos** (buscar un lugar, el asalto con ariete, los desertores sobornados, el juglar): el castellano había perdido el cierre de un bloque de diálogo.
 - **«Cazahombres»** en toda la narrativa, como el origen y el trasfondo.
 - **El último párrafo del final de partida salía en inglés** al retirarse («Now you're sitting in a tavern by yourself...»): al construir cada trozo del texto, el pack le quitaba también los saltos de línea iniciales, y con ellos la traducción ya no casaba. Afecta a los ocho párrafos de cierre de los finales.
+- **Textos que el juego compone por partes y salían en inglés**: la presentación de los combates de la arena y del torneo, la elección de campeones contra los Juramentadores, la lista de asentamientos por visitar, el primer párrafo de las ambiciones de visitar asentamientos y de reunir provisiones, y el recuento de combates de los luchadores de la arena cuando son uno o los ganaron todos.
 - **Dos rumores de taberna salían a medias** («Desde what I've heard...»): una regla de otro texto se les adelantaba.
 - **«Habilidad cuerpo a cuerpo»** en el rótulo del atributo, que decía «Habilidad a cuerpo a cuerpo».
 - **Doce órdenes en vosotros** («Decidles», «Degolladlos») pasan a ustedes, como el resto del texto.

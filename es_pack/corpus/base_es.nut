@@ -750,7 +750,7 @@ local pairs = [
         // local ret = this.m.TooltipText + "\n\nYou\'re currently lacking some provisions.\n";
         mode = "pattern"
         en = "<tooltiptext:str>\n\nYou're currently lacking some provisions.\n"
-        es = "<tooltiptext>\n\nActualmente te faltan algunas provisiones.\n"
+        es = "<tooltiptext:t>\n\nActualmente te faltan algunas provisiones.\n"
     }
     {
         // ret = ret + "\n- Beer";
@@ -1302,7 +1302,7 @@ local pairs = [
         // local ret = this.m.TooltipText + "\n\nThere\'s still some settlements left to visit.\n";
         mode = "pattern"
         en = "<tooltiptext:str>\n\nThere's still some settlements left to visit.\n"
-        es = "<tooltiptext>\n\nAún quedan algunos asentamientos por visitar.\n"
+        es = "<tooltiptext:t>\n\nAún quedan algunos asentamientos por visitar.\n"
     }
     {
         // ret = ret + "\n... and others!";
@@ -1311,10 +1311,16 @@ local pairs = [
         es = "<ret:t>\n... ¡y otros!"
     }
     {
+        // ret = ret + ("\n- " + s.getName()): el último de la lista; <ret> es lo anterior
+        mode = "pattern"
+        en = "<ret:str>\n- <name:line>"
+        es = "<ret:t>\n- <name>"
+    }
+    {
         // local ret = this.m.TooltipText + "\n\nYou\'ve done what you set out to do.\n";
         mode = "pattern"
         en = "<tooltiptext:str>\n\nYou've done what you set out to do.\n"
-        es = "<tooltiptext>\n\nHas hecho lo que te propusiste hacer.\n"
+        es = "<tooltiptext:t>\n\nHas hecho lo que te propusiste hacer.\n"
     }
     // FILE: scripts\ambitions\ambitions\wagon_ambition.nut
     {
@@ -18190,6 +18196,12 @@ local pairs = [
         es = "Un hombre curtido, el Maestro de la Arena, sostiene un pergamino y lo golpea con el garfio que le hace de mano."
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>A grizzled man, the master of the arena, holds up a scroll and taps it with a hook for a hand."
+        es = "<a:t>Un hombre curtido, el Maestro de la Arena, sostiene un pergamino y lo golpea con el garfio que le hace de mano."
+    }
+    {
         en = "Enter the arena again to start the fight against one Swordmaster"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra un Maestro espadachín."
     }
@@ -18200,6 +18212,12 @@ local pairs = [
     {
         en = "%SPEECH_ON%They put a star beside his name, the mark of the Gilder. That means his path is a gilded one. What you need to know is that he is a swordmaster. You may find some comfort in that he is an elder man, but you'd not be the first I have said that to, understand? May your path be as Gilded, because this swordmaster's certainly was.%SPEECH_OFF%"
         es = "%SPEECH_ON%Le pusieron una estrella junto a su nombre, la marca del Dorado. Eso significa que su camino es un sendero empedrado en oro. Lo que necesitas saber es que es un maestro espadachín. Puede que encuentres cierto consuelo en que es un hombre mayor, pero no serías el primero a quien se lo he dicho, ¿entiendes? Que tu camino sea dorado, porque ciertamente el del maestro espadachín lo fue.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%They put a star beside his name, the mark of the Gilder. That means his path is a gilded one. What you need to know is that he is a swordmaster. You may find some comfort in that he is an elder man, but you'd not be the first I have said that to, understand? May your path be as Gilded, because this swordmaster's certainly was.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Le pusieron una estrella junto a su nombre, la marca del Dorado. Eso significa que su camino es un sendero empedrado en oro. Lo que necesitas saber es que es un maestro espadachín. Puede que encuentres cierto consuelo en que es un hombre mayor, pero no serías el primero a quien se lo he dicho, ¿entiendes? Que tu camino sea dorado, porque ciertamente el del maestro espadachín lo fue.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against one Hedge Knight"
@@ -18214,6 +18232,12 @@ local pairs = [
         es = "%SPEECH_ON%Creo que los del norte lo llaman un 'caballero del odio'. Puede que me equivoque. No le digas a los otros maestros de la arena que dije esto sobre la basura del norte, pero este caballero es uno de los hombres más peligrosos que he visto pasar por aquí, y si deseas que tu camino continúe siendo dorado, te sugiero que te prepares bien y descanses antes de la pelea.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%I believe northerners refer to him as a 'hate knight.' Might have that wrong. Don't tell the other arena masters I said this about northern trash, but this knight is one of the most dangerous men I've seen come through here and if you wish your path to continue being gilded then I suggest you make sharp preparations and get a good rest before the fight.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Creo que los del norte lo llaman un 'caballero del odio'. Puede que me equivoque. No le digas a los otros maestros de la arena que dije esto sobre la basura del norte, pero este caballero es uno de los hombres más peligrosos que he visto pasar por aquí, y si deseas que tu camino continúe siendo dorado, te sugiero que te prepares bien y descanses antes de la pelea.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against one Blade Dancer"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra un danzarín de cuchillas."
     }
@@ -18226,6 +18250,12 @@ local pairs = [
         es = "El Maestro de la Arena sostiene un pergamino y lo golpea con el garfio que le hace de mano.%SPEECH_ON%En la lista está un danzarín de cuchillas de las tribus nómadas. Puede que parezca un poco extravagante, pero para obtener el título de 'danzarín de cuchillas' debes ser tan hábil con la espada como un ave lo es con el viento. La destreza en la danza es opcional, pero todos son bastante buenos en eso también.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>The arena master holds up a scroll and taps it with a hook for a hand.%SPEECH_ON%A blade dancer of the nomad tribes is on the docket. Now, he might look a bit foppish, but to get the title of 'blade dancer' you must be as articulate with the blade as a bird is with the wind. Dancing expertise is optional, but they're all pretty good at that, too.%SPEECH_OFF%"
+        es = "<a:t>El Maestro de la Arena sostiene un pergamino y lo golpea con el garfio que le hace de mano.%SPEECH_ON%En la lista está un danzarín de cuchillas de las tribus nómadas. Puede que parezca un poco extravagante, pero para obtener el título de 'danzarín de cuchillas' debes ser tan hábil con la espada como un ave lo es con el viento. La destreza en la danza es opcional, pero todos son bastante buenos en eso también.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% ifrits"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% Ifrits."
     }
@@ -18234,12 +18264,24 @@ local pairs = [
         es = "%SPEECH_ON%No hay nada escrito en la página porque temo la ira del desierto si me atrevo a revelar su presencia. Estarás luchando contra %number% Ifrits. No sé cómo lograron traerlos aquí, solo sé que fue obra de alquimistas. Si me preguntas, prefiero que luches contra ellos en lugar de los Ifrits.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%There's nothing on the page because I fear the desert's wrath if I dare to illuminate its most ferocious presence. You're fighting %number% ifrits. I do not know how they managed to get them here, I just know it was the doing of alchemists. If you ask me, I'd rather you fight them than the ifrits.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%No hay nada escrito en la página porque temo la ira del desierto si me atrevo a revelar su presencia. Estarás luchando contra %number% Ifrits. No sé cómo lograron traerlos aquí, solo sé que fue obra de alquimistas. Si me preguntas, prefiero que luches contra ellos en lugar de los Ifrits.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% nachzehrers"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% Nachzehrers."
     }
     {
         en = "%SPEECH_ON%The alchemists call them, well, I can't even pronounce it. My tongue simply cannot shape itself to the word for it requires specialized northern lexicography and I've no time to narrow northern verbiage in a fruitless matter of mundane minutiae. Do I look like a phonetician to you? Let's just call them 'gnashslashers.' They're ghoulish cretins, it's %number% of them, and I've seen them eat men alive, so you'd best hope the Gilder is watching - I don't think He'll have any light for you in the belly of one of those beasts!%SPEECH_OFF%"
         es = "%SPEECH_ON%Los alquimistas los llaman... bueno, ni siquiera puedo pronunciarlo. Mi lengua simplemente no puede dar forma a esa palabra, requiere un conocimiento del lexico norteño y no tengo tiempo para farfullar un vocabulario bárbaro en una cuestión de minucias mundanas. ¿Acaso parezco un foneticista? Digamos que los llamaremos 'gnashslashers'. Son criaturas espeluznantes, hay %number% de ellos, y los he visto devorar hombres vivos, así que es mejor que esperes que el Dorado te esté observando. No creo que Él tenga luz para ti en el vientre de una de esas bestias.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%The alchemists call them, well, I can't even pronounce it. My tongue simply cannot shape itself to the word for it requires specialized northern lexicography and I've no time to narrow northern verbiage in a fruitless matter of mundane minutiae. Do I look like a phonetician to you? Let's just call them 'gnashslashers.' They're ghoulish cretins, it's %number% of them, and I've seen them eat men alive, so you'd best hope the Gilder is watching - I don't think He'll have any light for you in the belly of one of those beasts!%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Los alquimistas los llaman... bueno, ni siquiera puedo pronunciarlo. Mi lengua simplemente no puede dar forma a esa palabra, requiere un conocimiento del lexico norteño y no tengo tiempo para farfullar un vocabulario bárbaro en una cuestión de minucias mundanas. ¿Acaso parezco un foneticista? Digamos que los llamaremos 'gnashslashers'. Son criaturas espeluznantes, hay %number% de ellos, y los he visto devorar hombres vivos, así que es mejor que esperes que el Dorado te esté observando. No creo que Él tenga luz para ti en el vientre de una de esas bestias.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against one unhold"
@@ -18254,12 +18296,24 @@ local pairs = [
         es = "%SPEECH_ON%Te enfrentarás a %number% de lo que la escoria del norte llama un 'Unhold', trol o gigante. El Visir paga una buena cantidad de monedas para traerlos aquí, y a las masas les encantan esos gigantescos retorcidos. Hacen un buen trabajo destrozando a los luchadores e incluso en ocasiones lanzando a un guerrero directamente entre la multitud. Es realmente maravilloso. Creo que algunos de los trols incluso aprenden a disfrutarlo mientras más tiempo permanecen aquí, como si supieran qué anima a la multitud a aplaudir o abuchear. La brutalidad es algo sin igual. En fin, que el Dorado te proteja.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%You're against %number% of what the northern scum refer to as an 'unhold.' The Vizier pays a proper pile of coin to get them here, and the masses love the giant bastards. They do a good job smashing fighters and, on occasion, heaving a warrior clear into the crowds. It's quite wonderful. I think some of the unholds even learn to enjoy it the longer they stay here, like they learn what spurs the mob to cheers and jeer. The brutality is something else. Anyway, may the Gilder watch over you.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Te enfrentarás a %number% de lo que la escoria del norte llama un 'Unhold', trol o gigante. El Visir paga una buena cantidad de monedas para traerlos aquí, y a las masas les encantan esos gigantescos retorcidos. Hacen un buen trabajo destrozando a los luchadores e incluso en ocasiones lanzando a un guerrero directamente entre la multitud. Es realmente maravilloso. Creo que algunos de los trols incluso aprenden a disfrutarlo mientras más tiempo permanecen aquí, como si supieran qué anima a la multitud a aplaudir o abuchear. La brutalidad es algo sin igual. En fin, que el Dorado te proteja.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% nomads"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% nómadas"
     }
     {
         en = "%SPEECH_ON%Your opponents will be %number% recently retired desert bandits. And by retired, I mean taken by the Vizier's lawmen, of course. No bandit willingly steps foot in here, haghaghagh!%SPEECH_OFF%"
         es = "%SPEECH_ON%Tus oponentes serán %number% bandidos del desierto recién retirados. Y por retirados, quiero decir capturados por los agentes del Visir, por supuesto. Ningún bandido pone voluntariamente un pie aquí dentro, ¡jojojojo!%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Your opponents will be %number% recently retired desert bandits. And by retired, I mean taken by the Vizier's lawmen, of course. No bandit willingly steps foot in here, haghaghagh!%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Tus oponentes serán %number% bandidos del desierto recién retirados. Y por retirados, quiero decir capturados por los agentes del Visir, por supuesto. Ningún bandido pone voluntariamente un pie aquí dentro, ¡jojojojo!%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %amount% gladiators"
@@ -18270,12 +18324,24 @@ local pairs = [
         es = "%SPEECH_ON%Bueno, jeje, el Dorado debe tener un sentido del humor. Te enfrentarás a %number% gladiadores. Que tu camino siempre sea dorado, pero para ser honesto, también se lo dije a los gladiadores. Y se lo he estado diciendo todos los días. ¿Entiendes? Deberías prepararte lo mejor que puedas.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Well, heh, the Gilder must have a sense of humor. You'll be facing %number% gladiators. May your path be ever Gilded, but to be honest, I said that to the gladiators. And I've been saying it to them every day. Understand? You should prepare to the best of your abilities.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Bueno, jeje, el Dorado debe tener un sentido del humor. Te enfrentarás a %number% gladiadores. Que tu camino siempre sea dorado, pero para ser honesto, también se lo dije a los gladiadores. Y se lo he estado diciendo todos los días. ¿Entiendes? Deberías prepararte lo mejor que puedas.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% webknechts"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% Webknechts"
     }
     {
         en = "%SPEECH_ON%That is not a fig tree, it's a spider. The alchemists, bless their learned hearts, call them webknechts which is a silly northern name, in truth they're spiders. Unfortunately for you a boot will not be sufficient this time around for %number% of them.%SPEECH_OFF%"
         es = "%SPEECH_ON%Esa no es una higuera retorcida, es una araña. Los alquimistas, benditos sean sus sabios corazones, los llaman webknechts, que es un nombre tonto del norte, en realidad son arañas. Desafortunadamente para ti, una bota no será suficiente esta vez contra %number% de ellas.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%That is not a fig tree, it's a spider. The alchemists, bless their learned hearts, call them webknechts which is a silly northern name, in truth they're spiders. Unfortunately for you a boot will not be sufficient this time around for %number% of them.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Esa no es una higuera retorcida, es una araña. Los alquimistas, benditos sean sus sabios corazones, los llaman webknechts, que es un nombre tonto del norte, en realidad son arañas. Desafortunadamente para ti, una bota no será suficiente esta vez contra %number% de ellas.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %amount% serpents"
@@ -18286,12 +18352,24 @@ local pairs = [
         es = "%SPEECH_ON%¿Qué quieres decir con que no entiendes? ¿Eh? ¿Solo ves una línea ondulada? No. Mira, esto es la cola, y eso es la cabeza. Es una serpiente. Estarás luchando contra %number% serpientes. A los alquimistas les gusta escribir la palabra 'serpiente', pero yo creo que es más fácil dibujarlas. Aunque si quisiera dibujar una víbora de verdad, simplemente dibujaría a un alquimista, ¡jojojo!%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%What do you mean you don't understand? Huh, it's just a squiggly line? No. Look, this is its tail, and that's the head. It's a snake. You're fighting %number% snakes. 'Serpents' the alchemists like to call them, but if I wanted to draw a serpent I'd just draw an alchemist haghaghagh!%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%¿Qué quieres decir con que no entiendes? ¿Eh? ¿Solo ves una línea ondulada? No. Mira, esto es la cola, y eso es la cabeza. Es una serpiente. Estarás luchando contra %number% serpientes. A los alquimistas les gusta escribir la palabra 'serpiente', pero yo creo que es más fácil dibujarlas. Aunque si quisiera dibujar una víbora de verdad, simplemente dibujaría a un alquimista, ¡jojojo!%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% hyenas"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% hienas"
     }
     {
         en = "%SPEECH_ON%Hyenas. Heeheehee. Hyenas. %numberC% of the giggling mutts, to be exact. Good luck, and may the Gilder watch over you.%SPEECH_OFF%"
         es = "%SPEECH_ON%Hienas. Jejeje. Hienas. %numberC% de esos perros risueños, para ser exactos. Buena suerte, y que el Dorado te proteja.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Hyenas. Heeheehee. Hyenas. %numberC% of the giggling mutts, to be exact. Good luck, and may the Gilder watch over you.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Hienas. Jejeje. Hienas. %numberC% de esos perros risueños, para ser exactos. Buena suerte, y que el Dorado te proteja.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %amount% frenzied hyenas"
@@ -18310,6 +18388,12 @@ local pairs = [
         es = "%SPEECH_ON%Tu oponente es... ¿un qué? ¿Un gusano? Es verde. Nunca he visto un gusano de ese color... ¡oh! ¡Un wyrm! No, espera, wurm. ¿Wurm? ¡Un lindwurm! Debo ser honesto contigo, no sé qué demonios es esto, pero imagino que nuestros queridos emparejadores no te harán pelear contra un simple gusano. O tal vez sí lo harán. ¡Quizás te lo hagan comer para nuestro entretenimiento! ¡Tal vez no sean emparejadores, sino creadores de sabores! ¡Muajajajajajaja!. Ais.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Your opponent is a... a... what is this? A worm? It's green. Never seen a worm that col- oh! A wyrm! No wait, 'wurm.' Wurm? A lindwurm! I gots'ta be honest with ya, I don't know what the hell this is, but I imagine our dear matchmakers won't be having you fightin' a worm of the regular sort. Or maybe they is. Maybe they'll just have ye eat it for our entertainment. Maybe they ain't matchmakers, but tastemakers! Herghgheeagghheeehoogh. Ha.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Tu oponente es... ¿un qué? ¿Un gusano? Es verde. Nunca he visto un gusano de ese color... ¡oh! ¡Un wyrm! No, espera, wurm. ¿Wurm? ¡Un lindwurm! Debo ser honesto contigo, no sé qué demonios es esto, pero imagino que nuestros queridos emparejadores no te harán pelear contra un simple gusano. O tal vez sí lo harán. ¡Quizás te lo hagan comer para nuestro entretenimiento! ¡Tal vez no sean emparejadores, sino creadores de sabores! ¡Muajajajajajaja!. Ais.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% mercenaries"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% mercenarios"
     }
@@ -18318,12 +18402,24 @@ local pairs = [
         es = "%SPEECH_ON%Coroneros como tú han venido desde el norte. Allá arriba, los llaman 'espadas a sueldo'. Ja. ¿Qué tipo de intento de poesía es este? ¿No saben que no todos los hombres usan espada? No son los más brillantes allá arriba. Por eso me gusta el sur. El sol es brillante, y por ende, también lo somos nosotros.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Crownlings like you have ventured down from the north. Up there, they call them 'sellswords.' Hagh! What sort of attempt at poetry is that? Don't they know not every man even uses a sword? They ain't the brightest up there. That's why I like it in the south. The sun is bright, and thus so are we.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Coroneros como tú han venido desde el norte. Allá arriba, los llaman 'espadas a sueldo'. Ja. ¿Qué tipo de intento de poesía es este? ¿No saben que no todos los hombres usan espada? No son los más brillantes allá arriba. Por eso me gusta el sur. El sol es brillante, y por ende, también lo somos nosotros.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %champion1% and %amount% gladiators"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %champion1% y %amount% gladiadores"
     }
     {
         en = "%SPEECH_ON%Recognize this face? There's a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin' in those seats upstairs. It's %champion1%, one of the greatest fighters in this land. Maybe some day they'll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%"
         es = "%SPEECH_ON%¿Reconoces esta cara? Hay una razón por la que los artistas dedicaron tiempo a este panfleto y luego los reparten a cada par de ojos que están sentados en esos asientos de arriba. Es %champion1%, uno de los mejores luchadores de estas tierras. Tal vez algún día hagan que tu cara luzca tan bonita, si el Visir puede encontrar a alguien tan talentoso para sacar algo de, bueno, lo que sea que tengas ahí entre oreja y oreja, ¡jajajaja!%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Recognize this face? There's a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin' in those seats upstairs. It's %champion1%, one of the greatest fighters in this land. Maybe some day they'll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%¿Reconoces esta cara? Hay una razón por la que los artistas dedicaron tiempo a este panfleto y luego los reparten a cada par de ojos que están sentados en esos asientos de arriba. Es %champion1%, uno de los mejores luchadores de estas tierras. Tal vez algún día hagan que tu cara luzca tan bonita, si el Visir puede encontrar a alguien tan talentoso para sacar algo de, bueno, lo que sea que tengas ahí entre oreja y oreja, ¡jajajaja!%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %champion1% and %amount% mercenaries"
@@ -18338,8 +18434,20 @@ local pairs = [
         es = "Se detiene.%SPEECH_ON%Esperamos invitados importantes para esta pelea, así que todo está preparado para que mueras de manera adecuadamente sangrienta esta vez, ¿entendido? Y si no puedes hacer eso, entonces haz que tu grupo derrote a sus oponentes de la manera más espectacular para complacer a la multitud. Hazlo, y te entregaré un auténtico equipo de gladiador además de las monedas.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>He pauses.%SPEECH_ON%We expect important guests for this bout, so everything is set up for you to die proper bloody this time, got it? And if you can't do that, then have your lot dispatch their opponents in the most spectacular way to please the crowd. Do that, and I'll hand you a proper piece of gladiator gear ontop of the coin.%SPEECH_OFF%"
+        es = "<a:t>Se detiene.%SPEECH_ON%Esperamos invitados importantes para esta pelea, así que todo está preparado para que mueras de manera adecuadamente sangrienta esta vez, ¿entendido? Y si no puedes hacer eso, entonces haz que tu grupo derrote a sus oponentes de la manera más espectacular para complacer a la multitud. Hazlo, y te entregaré un auténtico equipo de gladiador además de las monedas.%SPEECH_OFF%"
+    }
+    {
         en = "He points to some strange looking collars and continues.%SPEECH_ON%When you're ready, put these on the three men who'll be doing the fighting. This lets us know who to take into the pits. Anyone not wearing these will not be allowed in, not you, not the Vizier, dare I say even the Gilder may be turned down.%SPEECH_OFF%"
         es = "Señala unos collares de aspecto extraño y continúa.%SPEECH_ON%Cuando estén listos, coloquen estos collares en los tres hombres que participarán en la pelea. Esto nos permitirá saber a quiénes llevar a las fosas. Cualquier persona que no lleve uno de estos collares no será permitida entrar, ni tú, ni el Visir, me atrevo a decir que incluso el Dorado podría ser rechazado.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>He points to some strange looking collars and continues.%SPEECH_ON%When you're ready, put these on the three men who'll be doing the fighting. This lets us know who to take into the pits. Anyone not wearing these will not be allowed in, not you, not the Vizier, dare I say even the Gilder may be turned down.%SPEECH_OFF%"
+        es = "<a:t>Señala unos collares de aspecto extraño y continúa.%SPEECH_ON%Cuando estén listos, coloquen estos collares en los tres hombres que participarán en la pelea. Esto nos permitirá saber a quiénes llevar a las fosas. Cualquier persona que no lleve uno de estos collares no será permitida entrar, ni tú, ni el Visir, me atrevo a decir que incluso el Dorado podría ser rechazado.%SPEECH_OFF%"
     }
     {
         en = "This arena fight works as follows. Do you agree to the terms?"
@@ -18899,8 +19007,20 @@ local pairs = [
         es = "El Maestro de la Arena, normalmente el hombre más indiferente que has conocido incluso teniendo un trabajo tan interesante, está bastante animado hoy. Te presenta un pergamino en una mano y tres dedos levantados en la otra.%SPEECH_ON%¡Tres rondas! ¡Tres rondas, una tras otra, cada una más difícil que la anterior! ¡Gana las tres rondas con los mismos cinco hombres para ganar el gran premio de un famoso %prizetype% llamado %prizename%! ¡Es un torneo, ¿quieres participar o no?!%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>The arena master, typically the most disinterested man you've ever met to have an interesting job, is actually rather lively today. He presents you with a scroll in one hand and three fingers held up in the other.%SPEECH_ON%Three rounds! Three rounds, one after the other and each harder than the last. Win all three with the same five men to earn the grand prize of a famed %prizetype% called %prizename%! It'sahtournamentah! You want in or not-ah?%SPEECH_OFF%"
+        es = "<a:t>El Maestro de la Arena, normalmente el hombre más indiferente que has conocido incluso teniendo un trabajo tan interesante, está bastante animado hoy. Te presenta un pergamino en una mano y tres dedos levantados en la otra.%SPEECH_ON%¡Tres rondas! ¡Tres rondas, una tras otra, cada una más difícil que la anterior! ¡Gana las tres rondas con los mismos cinco hombres para ganar el gran premio de un famoso %prizetype% llamado %prizename%! ¡Es un torneo, ¿quieres participar o no?!%SPEECH_OFF%"
+    }
+    {
         en = "The arena master continues.%SPEECH_ON%When you're ready, have the men who'll be doing the fighting put on the arena collars we'll give you.%SPEECH_OFF%"
         es = "El Maestro de la Arena continúa.%SPEECH_ON%Cuando estés listo, haz que los hombres que vayan a luchar se pongan los collares de la arena que te daremos.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>The arena master continues.%SPEECH_ON%When you're ready, have the men who'll be doing the fighting put on the arena collars we'll give you.%SPEECH_OFF%"
+        es = "<a:t>El Maestro de la Arena continúa.%SPEECH_ON%Cuando estés listo, haz que los hombres que vayan a luchar se pongan los collares de la arena que te daremos.%SPEECH_OFF%"
     }
     {
         en = "This arena tournament works as follows. Do you agree to the terms?"
@@ -52046,6 +52166,20 @@ local pairs = [
         es = "[img]gfx/ui/events/event_180.png[/img]Los Juramentadores están ante ti, esperando que elijas a tus campeones.\n\n"
     }
     {
+        // this.Text += "You've already chosen " + Bro1 + " and " + Bro2 + ...: la suma entera,
+        // con el prefijo, para que no la coja a medias la regla genérica de abajo
+        mode = "pattern"
+        en = "[img]gfx/ui/events/event_180.png[/img]The Oathbringers stand before you, waiting for you to pick your champions.\n\nYou've already chosen <b1:str> and <b2:str> to fight. Is there another who shall help reclaim Young Anselm's jawbone?"
+        es = "[img]gfx/ui/events/event_180.png[/img]Los Juramentadores están ante ti, esperando que elijas a tus campeones.\n\nYa has elegido a <b1> y a <b2> para luchar. ¿Hay alguien más que quiera ayudar a recuperar la mandíbula del Joven Anselm?"
+    }
+    {
+        // this.Text += Bro1 + " stands ready to fight. Who shall join him?": la suma entera,
+        // con el prefijo; la genérica de abajo dejaba el prefijo en inglés
+        mode = "pattern"
+        en = "[img]gfx/ui/events/event_180.png[/img]The Oathbringers stand before you, waiting for you to pick your champions.\n\n<bro1:str> stands ready to fight. Who shall join him?"
+        es = "[img]gfx/ui/events/event_180.png[/img]Los Juramentadores están ante ti, esperando que elijas a tus campeones.\n\n<bro1> está de pie listo para luchar. ¿Quién luchará junto a él?"
+    }
+    {
         // this.Text += "You\'ve already chosen " + _event.m.Bro1.getName() + " and " + _event.m.Bro2.getName() + " to fight. Is there another who shall help reclaim Young Anselm\'s jawbone?";
         mode = "pattern"
         en = "You've already chosen <b1:str> and <b2:str> to fight. Is there another who shall help reclaim Young Anselm's jawbone?"
@@ -69078,6 +69212,18 @@ local pairs = [
         en = "<text:str> but lost it."
         // Con :t a propósito (QA 28/08), ver el patrón gemelo de arriba.
         es = "<text:t> pero lo perdió."
+    }
+    {
+        // text = this.getDescription() + text: la descripción llega ya traducida y va cruda
+        mode = "pattern"
+        en = "<description:str> So far, this character has fought in one match"
+        es = "<description> Hasta ahora, este personaje ha peleado en un combate"
+    }
+    {
+        // won = "all" cuando las ganó todas (arena_pit_fighter, arena_fighter, arena_veteran)
+        mode = "pattern"
+        en = "<description:str> So far, this character has fought in <matches:int> matches and won all of them."
+        es = "<description> Hasta ahora, este personaje ha luchado en <matches> peleas y las ha ganado todas."
     }
     {
         // text = " So far, this character has fought in " + matches + " matches and won " + won + " of them.";
