@@ -513,8 +513,9 @@ def validar(orig, nuevo, base, glosario):
             continue
         en, es = campos["en"], campos["es"]
         # Una pista se convierte en patrón sin tocar el texto que la rodea.
-        conversion = ("<" in o.en and "mode" in campos
-                      and esqueleto(o.en, r"<[^>]*>") == esqueleto(en, r"<\w+:\w+>"))
+        # Las pistas del extractor (<expr>) y el %s de format() son huecos que el patrón captura.
+        conversion = (re.search(r"<|%s", o.en) and "mode" in campos
+                      and esqueleto(o.en, r"<[^>]*>|%s") == esqueleto(en, r"<\w+:\w+>"))
         if en != o.en and not conversion:
             errores.append("%s: el `en` ha cambiado" % donde)
             continue

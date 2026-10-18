@@ -464,3 +464,19 @@ def test_acepta_repetir_un_token_del_ingles(entorno):
     corpus, editar = entorno
     editar(_swing("%name% lanza un tajo a su enemigo con {un hacha de mano | un hacha}, y %name% sonríe."))
     assert lotes.fusionar(1) == 0
+
+
+def _mini(cuerpo):
+    return 'local pairs = [\n    {\n' + cuerpo + '\n    }\n]\n'
+
+
+def test_acepta_patron_desde_porcentaje_s():
+    orig = lotes.bloques(_mini('        en = "Drive the nomads away from %s."\n        es = ""'))
+    nuevo = lotes.entradas_lote(_mini('        mode = "pattern"\n        en = "Drive the nomads away from <town:str>."\n        es = "Expulsa a los nómadas de <town>."'))
+    assert lotes.validar(orig, nuevo, set(), [])[0] == []
+
+
+def test_rechaza_patron_desde_porcentaje_s_que_cambia_el_texto():
+    orig = lotes.bloques(_mini('        en = "Drive the nomads away from %s."\n        es = ""'))
+    nuevo = lotes.entradas_lote(_mini('        mode = "pattern"\n        en = "Drive <who:str> away from <town:str>."\n        es = "Expulsa a <who> de <town>."'))
+    assert lotes.validar(orig, nuevo, set(), [])[0] != []
