@@ -35535,7 +35535,6 @@ local pairs = [
         es = "Cuando llegue la mañana me dirigiré a %settlement%. Se dice que acaba de llegar un gran grupo de refugiados y necesito más manos para mi granja."
     }
     {
-        mode = "pattern"
         en = "From what I've heard, %settlement% is flooded with refugees nowadays. Those cowards should have stayed and fought for their home, I'd say!"
         es = "Por lo que he oído, %settlement% está inundado de refugiados hoy en día. ¡Diría que esos cobardes deberían haberse quedado y luchar por su hogar!"
     }
@@ -35856,7 +35855,6 @@ local pairs = [
         es = "Ayer vinieron unos cazadores de brujas. No encontraron lo que buscaban y se dirigieron a %settlement%."
     }
     {
-        mode = "pattern"
         en = "From what I hear they found a witch in %settlement% and will put her to the pyre. Come to think of it, maybe I should report that old shrew that bested me on the market the other day, she's a witch for sure!"
         es = "Por lo que he oído, encontraron una bruja en %settlement% y la arrojarán a la pira. Ahora que lo pienso, tal vez debería denunciar a esa vieja arpía que me superó en el mercado el otro día, ¡seguro que es una bruja!"
     }
@@ -54468,7 +54466,6 @@ local pairs = [
     }
     {
         // this.m.Description = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of %sacrifice% from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot.";
-        mode = "pattern"
         en = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of %sacrifice% from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot."
         es = "Un aspecto espeluznante de Davkul, un antiguo poder que no es de este mundo, y los últimos restos de %sacrifice% a partir de cuyo cuerpo se ha creado. Nunca se romperá, sino que seguirá creciendo su piel llena de cicatrices en el lugar."
     }

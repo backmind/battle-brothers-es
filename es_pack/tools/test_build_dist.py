@@ -1,3 +1,4 @@
+import re
 import sys
 from pathlib import Path
 
@@ -1159,3 +1160,80 @@ def test_la_vigilancia_de_msu_ve_piezas_que_faltan_y_textos_sin_par(tmp_path):
     boton = tmp_path / "ui/mods/msu/ui_hooks/main_menu_module.js"
     boton.write_text(boton.read_text(encoding="utf-8").replace('"Mod Options"', '"Mod Settings"'), encoding="utf-8")
     assert [t for _, t, _ in piezas_que_faltan(Fuente(tmp_path))] == ['createTextButton("Mod Options"']
+
+
+# Emulación mínima del índice de reglas del runtime (_ruleKey, _iterKeys y
+# matchParts de !rosetta.nut) para el test de abajo.
+_PARADAS = set("a the of in at to as is be are do has have having not and or"
+               " it it's its this that he she his her him ah eh , .".split())
+_ETIQUETAS_RE = re.compile(r"\[img[^\]]*\][^\[]+\[/img\w*\]|\[[^\]]+]|&\w+;|<[^>]+>")
+_SUBS_RE = {"int": r"[+\-]?\d+", "val": r"[+\-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?%?",
+            "word": r"[^ \t\n,.:;!\[\]()]+", "line": r"[^\n]*(?:\n|$)",
+            "tag": r"\[[^\]]+\]", "img": r"\[img\][^\]]+\[/img\]"}
+
+
+def _clave_de_regla(en):
+    sin = re.sub(r"<\w+:(\w+)>", lambda m: " " if m.group(1).endswith("tag") else "", en)
+    for w in _ETIQUETAS_RE.sub(" ", sin).lower().split():
+        if w not in _PARADAS and not w[0].isdigit():
+            return w
+    return ""
+
+
+def _regex_de_regla(en):
+    partes, pos, capturas = [], 0, list(re.finditer(r"<(\w+):(\w+)>", en))
+    for i, m in enumerate(capturas):
+        partes.append(re.escape(en[pos:m.start()]))
+        sub = m.group(2)
+        if sub == "str":
+            partes.append(".*" if i == len(capturas) - 1 and m.end() == len(en) else ".*?")
+        elif sub.endswith("_tag"):
+            partes.append(r"\[[^\]]+\]" + _SUBS_RE.get(sub[:-4], ".*?") + r"\[/[^\]]+\]")
+        else:
+            partes.append(_SUBS_RE[sub])
+        pos = m.end()
+    partes.append(re.escape(en[pos:]))
+    return re.compile("".join(partes), re.S)
+
+
+def test_ningun_par_sin_capturas_queda_tapado_por_una_regla_anterior():
+    """Un par con mode="pattern" y sin capturas solo casa su cadena exacta,
+    pero el runtime lo archiva con las reglas, bajo su primera palabra y en
+    orden de carga. Si una regla anterior con la misma clave casa también esa
+    cadena, gana ella. Así salían dos rumores de taberna a medias: "From
+    <f:str>" (el remitente de una carta) se comía "From what I've heard,
+    %settlement% is flooded..." y el jugador leía "Desde what I've heard...".
+    Un par literal no tiene el problema, porque el runtime mira los literales
+    antes que las reglas.
+
+    shortcut: la emulación solo compara reglas de la misma clave, que es
+    donde cae una regla con el mismo arranque literal; una regla cuya clave
+    sea otra palabra de la cadena se probaría después y no tapa nada. Y no
+    cuenta las reglas con alguna captura <x:t> en el es: el runtime las
+    abandona si lo capturado no tiene traducción, que es lo que pasa con un
+    trozo de frase ("Some <troops:str>" frente a "Some witch hunters...").
+    """
+    from build_dist import CORPUS, is_rule_pair
+
+    reglas = [(get_field(b, "en"), get_field(b, "es"), b) for b in load_blocks(CORPUS)
+              if classify(b) == "dist" and is_rule_pair(b)]
+    vistas = {}
+    tapados = []
+    for en, es, bloque in reglas:
+        clave = _clave_de_regla(en)
+        if not re.search(r"<\w+:\w+>", en) and not re.search(r"^\s*(?:plural|split|use)\s*=", bloque, re.M):
+            for anterior in vistas.get(clave, []):
+                if _regex_de_regla(anterior).fullmatch(en):
+                    tapados.append("%r tapa %r" % (anterior[:40], en[:60]))
+                    break
+        if not re.search(r"<\w+:t>", es):
+            vistas.setdefault(clave, []).append(en)
+    assert tapados == []
+
+
+def test_la_emulacion_del_indice_ve_el_rumor_tapado():
+    assert _clave_de_regla("From <f:str>") == _clave_de_regla("From what I hear they found a witch") == "from"
+    assert _regex_de_regla("From <f:str>").fullmatch("From what I hear, %settlement% burns.")
+    assert not _regex_de_regla("Afraid of <m:str>").fullmatch("Not afraid of anything")
+    assert _regex_de_regla("Got <n:int> crowns").fullmatch("Got 12 crowns")
+    assert not _regex_de_regla("Got <n:int> crowns").fullmatch("Got many crowns")

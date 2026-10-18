@@ -77,7 +77,7 @@ Las cifras del juego base y sus expansiones salen del corpus de este repositorio
 | | |
 |---|---|
 | Pares distribuidos | 16.099 |
-| De ellos, patrones con variables | 1.280 |
+| De ellos, patrones con variables | 1.277 |
 | De ellos, nacidos fuera de la extracción (composición, MSU, QA) | 967 |
 | Pares por id (homógrafos) | 28 |
 | En cuarentena de patrones | 0 |
