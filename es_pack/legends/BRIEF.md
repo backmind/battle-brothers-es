@@ -82,13 +82,13 @@ Omite los tokens ingleses que en castellano no hacen falta ("%their% sword" es "
 | `%un%`, `%Un%` | un | una | `%un% mercenari%o%` |
 | `%hombre%`, `%Hombre%` | hombre | mujer | `%un% %hombre%` |
 | `%art%`, `%Art%` | el | la | `%art% flagelante` |
-| `%del%`, `%Del%` | del | de la | `las manos %del% monje` |
+| `%del%`, `%Del%` | del | de la | `las manos %del% erudit%o%` |
 | `%al%`, `%Al%` | al | a la | `mira %al% erudit%o%` |
 | `%ese%`, `%Ese%` | ese | esa | `%ese% %hombre%` |
 
 Solo valen si el inglés del par lleva un token de pronombre del mismo personaje: si el inglés usa `%their_bro%`, el castellano usa `%o_bro%`; si usa `%their%`, `%o%`. No hay `%El%`: el juego no sabe poner en mayúscula la «é», y en castellano el sujeto casi siempre se omite. La fusión rechaza cualquier otro token que no esté en el inglés.
 
-Un sustantivo que nombra a un personaje con género variable («el flagelante», «el monje», «el idiota») nunca lleva artículo ni demostrativo fijo: usa `%art%`, `%del%`, `%al%` o `%ese%`, con el sufijo del personaje, y concuerda también el resto de la frase («sosteniéndo%lo%»).
+Un sustantivo que nombra a un personaje con género variable («el flagelante», «el monje», «el idiota») nunca lleva artículo ni demostrativo fijo: usa `%art%`, `%del%`, `%al%` o `%ese%`, con el sufijo del personaje, y concuerda también el resto de la frase («sosteniéndo%lo%»). Los tokens solo sirven con sustantivos cuyo femenino se forma con `%o%` (erudit%o%, mercenari%o%) o que son comunes en cuanto al género (el/la idiota, el/la flagelante, el/la guía). Si el femenino es otra palabra (monje/monja, historiador/historiadora, maestro de sabuesos), nombra al personaje por su token (`%monk%`) o usa una palabra común en cuanto al género, sin perífrasis largas.
 
 Si el personaje no tiene tokens de género en el inglés del par (un recluta, un ladrón o un caballero nombrados solo por `%thief%`, `%hedgeknight%`), no puedes usar los castellanos, porque el juego no los rellena: redacta sin concordancia de género (sin artículo ni adjetivo marcado delante o detrás del personaje), salvo que la fuente fije su género (por ejemplo, `setStartValuesEx(..., true, 1)` crea siempre una mujer).
 
