@@ -14,6 +14,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 - **«Habilidad cuerpo a cuerpo»** en el rótulo del atributo, que decía «Habilidad a cuerpo a cuerpo».
 - **Doce órdenes en vosotros** («Decidles», «Degolladlos») pasan a ustedes, como el resto del texto.
 - **Hedge Knight es siempre «caballero errante»**; en tres eventos y en el origen Lobo solitario decía «caballero andante».
+- **Cleaver es siempre «cuchilla»**, como la clase de arma: «Cuchilla de carnicero», «Cuchilla de guerra», «Dominio de la Cuchilla», el apodo «el Cuchilla» y el nombre al azar de las armas con nombre, que decía «Navaja». «Navaja» pasa a Razor y Warblade es «Hoja de guerra».
 - Los textos fijos marcados como patrón se instalan como texto literal, para que ninguna regla se les adelante.
 - Dos chequeos nuevos: `ANCHO` mide con la fuente del juego, calibrada en partida, los botones de ambición y las descripciones de origen; `ETIQUETAS` avisa de las variantes de un texto que dejan sin pareja un color, una negrita, una cursiva, un subrayado o una llave.
 

@@ -4373,7 +4373,7 @@ local pairs = [
     }
     {
         en = "The Cleaver"
-        es = "El Cuchillo"
+        es = "El Cuchilla"
     }
     {
         en = "%randomname% the Marksman"
@@ -6612,7 +6612,7 @@ local pairs = [
     }
     {
         en = "Cleaver"
-        es = "Navaja"
+        es = "Cuchilla"
     }
     {
         en = "Sword"
@@ -6636,7 +6636,7 @@ local pairs = [
     }
     {
         en = "Warblade"
-        es = "Cuchilla de guerra"
+        es = "Hoja de guerra"
     }
     {
         en = "Longblade"
@@ -6680,7 +6680,7 @@ local pairs = [
     }
     {
         en = "Razor"
-        es = "Cuchilla"
+        es = "Navaja"
     }
     {
         en = "Windblade"
@@ -6752,7 +6752,7 @@ local pairs = [
     }
     {
         en = "War Cleaver"
-        es = "Cuchillo de guerra"
+        es = "Cuchilla de guerra"
     }
     {
         en = "Fleshcutter"
@@ -13843,7 +13843,7 @@ local pairs = [
     }
     {
         en = "Cleaver Mastery"
-        es = "Dominio de las Cuchillas y látigos"
+        es = "Dominio de la Cuchilla"
     }
     {
         en = "Dagger Mastery"
@@ -59704,7 +59704,7 @@ local pairs = [
     }
     {
         en = "A very crude cleaver crafted from a sharpened antler. Heavy and blunt, but still dangerous."
-        es = "Un cuchillo muy tosco elaborado a partir de una cornamenta afilada. Pesado y contundente, pero aún así peligroso."
+        es = "Una cuchilla muy tosca elaborada a partir de una cornamenta afilada. Pesada y contundente, pero aun así peligrosa."
     }
     // FILE: scripts\items\weapons\barbarians\axehammer.nut
     {
@@ -59878,7 +59878,7 @@ local pairs = [
     // FILE: scripts\items\weapons\butchers_cleaver.nut
     {
         en = "Butcher's Cleaver"
-        es = "Cuchillo de carnicero"
+        es = "Cuchilla de carnicero"
     }
     {
         en = "A tool with a thick rectangular blade used for hacking through meat and bone."
@@ -64698,7 +64698,7 @@ local pairs = [
     }
     {
         en = "the Cleaver"
-        es = "el Cuchillo"
+        es = "el Cuchilla"
     }
     {
         en = "Redmeat"
