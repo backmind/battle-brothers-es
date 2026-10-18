@@ -54,12 +54,13 @@ Lo que la 1.0 fijó y el glosario automático no recoge, porque el juego lo escr
 | origin | origen |
 | camp | campamento |
 | Ammunition, Medicine, Tools | munición, medicina, herramientas |
-| perk | talento |
-| perk point | punto de talento |
-| perk tree | árbol de talentos |
+| perk | ventaja |
+| perk point | punto de ventaja |
+| perk tree | árbol de ventajas |
+| talent (estrellas de atributo) | talento |
 | skill | habilidad |
 
-**"perk" es "talento"**, nunca "habilidad", "ventaja", "pericia" ni "beneficio", aunque la 1.0 los usara: "habilidad" es "skill", y en Legends los dos conviven en el mismo tooltip.
+**"perk" es "ventaja"**, nunca "habilidad", "talento", "pericia" ni "beneficio": "habilidad" es "skill" y "talento" son las estrellas de atributo, como en la 1.0 ("estrellas de talento", "Sin talento"). En Legends los tres conviven en el mismo tooltip.
 
 ## Sutilezas ya verificadas
 
