@@ -39,7 +39,7 @@ no vuelva a pasar inadvertida:
              cual. Eran 22, y no todos inofensivos: tras la 1.0.0 un jugador vio
              un [color] suelto en el contrato de buscar un lugar, que había
              perdido sus llaves interiores, y otros dos casos parecidos estaban
-             en este montón. Desde entonces HABLA mira lo que el recuento de
+             en este montón. Desde entonces ETIQUETAS mira lo que el recuento de
              llaves no ve.
              Hubo un tercer montón, 37 textos que PERDÍAN rama, y era la deuda
              de es_pack/TAREA-ramas-perdidas.md. Está cerrada: se recuperaron
@@ -120,15 +120,17 @@ no vuelva a pasar inadvertida:
              corpus no las distingue de otros textos de evento sin el código
              del juego delante, y se revisaron aparte. El recuento tiene que
              ser 0.
-  HABLA      alguna rama del español deja un %SPEECH_ON% sin su %SPEECH_OFF%
-             (o al revés) donde ninguna rama del inglés lo hace. El juego los
-             cambia por [color=...]" y "[/color], y uno sin pareja se ve en
-             pantalla como etiqueta suelta. Salió de un jugador tras la 1.0.0:
-             la presentación del contrato de buscar un lugar acababa en
+  ETIQUETAS  alguna rama del español deja una etiqueta sin pareja, o la cierra
+             antes de abrirla, donde ninguna rama del inglés lo hace: [color]
+             (también el que pone el juego por %SPEECH_ON% y %SPEECH_OFF%),
+             [b], [i] y [u]; o sus llaves no casan donde las del inglés sí.
+             En pantalla sale como etiqueta suelta. Salió de un jugador tras la
+             1.0.0: la presentación del contrato de buscar un lugar acababa en
              [color]. El español había perdido las llaves de un bloque de
              ramas anidado y VARIANTES lo daba por inofensivo, porque contaba
              llaves y no lo que cada rama abre y cierra. Se evalúan todas las
-             ramas, con anidamiento. El recuento tiene que ser 0.
+             ramas, con anidamiento, y el orden dentro de cada una. El
+             recuento tiene que ser 0.
 
 Salida: recuento por chequeo y unos pocos ejemplos. Código de salida siempre 0.
 """
@@ -480,43 +482,58 @@ def ancho_recuadros(corpus=CORPUS):
     return avisos
 
 
-_HABLA_RE = re.compile(r"%SPEECH_(ON|START|OFF)%")
+# Lo que abre y cierra cada etiqueta en pantalla. El juego cambia %SPEECH_ON%
+# (o %SPEECH_START%) por un [color=...] y %SPEECH_OFF% por su [/color].
+_ETIQUETAS = ("color", "b", "i", "u")
+_MARCAS_RE = re.compile(r"(%SPEECH_(?:ON|START)%|\[color=[^\]]*\]|\[[biu]\])"
+                        r"|(%SPEECH_OFF%|\[/(?:color|[biu])\])")
+_VACIO = ((0, 0),) * len(_ETIQUETAS)
 
 
-def saldos_de_habla(texto):
-    """Los saldos posibles de [color] abiertos y sin cerrar que deja el texto
-    al elegir el juego una rama de cada {a | b}, con anidamiento: cada
-    %SPEECH_ON% o %SPEECH_START% abre uno y cada %SPEECH_OFF% lo cierra. Una
-    llave sin pareja cuenta como texto."""
+def _seguir(a, b):
+    # (saldo, mínimo de los saldos parciales) de recorrer a y después b
+    return tuple((sa + sb, min(ma, sa + mb)) for (sa, ma), (sb, mb) in zip(a, b))
+
+
+def _marca(m):
+    s = m.group(0)
+    if s.startswith("%SPEECH"):
+        cual = "color"
+    else:
+        cual = s.strip("[/]").split("=")[0]
+    d = 1 if m.group(1) else -1
+    return tuple((d, min(0, d)) if e == cual else (0, 0) for e in _ETIQUETAS)
+
+
+def _estados(texto):
+    """Los estados posibles de las etiquetas al elegir el juego una rama de
+    cada {a | b}, con anidamiento. Una llave sin pareja cuenta como texto."""
     def trozo(i, fin):
-        # saldos posibles de texto[i:fin], que no tiene " | " de este nivel
-        saldos, j = {0}, i
+        # estados posibles de texto[i:fin], que no tiene " | " de este nivel
+        res, j = {_VACIO}, i
         while j < fin:
-            c = texto[j]
-            if c == "{":
+            if texto[j] == "{":
                 k, prof = j + 1, 1
                 while k < fin and prof:
                     prof += {"{": 1, "}": -1}.get(texto[k], 0)
                     k += 1
                 if prof == 0:
-                    saldos = {s + r for s in saldos for r in bloque(j + 1, k - 1)}
+                    res = {_seguir(s, r) for s in res for r in bloque(j + 1, k - 1)}
                     j = k
                     continue
-            m = _HABLA_RE.match(texto, j)
+            m = _MARCAS_RE.match(texto, j)
             if m and m.end() <= fin:
-                d = -1 if m.group(1) == "OFF" else 1
-                saldos = {s + d for s in saldos}
+                res = {_seguir(s, _marca(m)) for s in res}
                 j = m.end()
                 continue
             j += 1
-        return saldos
+        return res
 
     def bloque(i, fin):
         # ramas de texto[i:fin] separadas por " | " del primer nivel
         out, ini, prof, j = set(), i, 0, i
         while j < fin:
-            c = texto[j]
-            prof += {"{": 1, "}": -1}.get(c, 0)
+            prof += {"{": 1, "}": -1}.get(texto[j], 0)
             if prof == 0 and texto.startswith(" | ", j):
                 out |= trozo(ini, j)
                 ini = j = j + 3
@@ -527,17 +544,36 @@ def saldos_de_habla(texto):
     return trozo(0, len(texto))
 
 
+def etiquetas_rotas(texto):
+    """Las etiquetas que alguna rama deja abiertas, cerradas de más o
+    cerradas antes de abrirse."""
+    return {e for estado in _estados(texto)
+            for e, (saldo, minimo) in zip(_ETIQUETAS, estado) if saldo or minimo < 0}
+
+
+def _llaves_casan(texto):
+    prof = 0
+    for c in texto:
+        prof += {"{": 1, "}": -1}.get(c, 0)
+        if prof < 0:
+            return False
+    return prof == 0
+
+
 def revisar(datos, corpus=CORPUS):
     avisos = defaultdict(list)
 
-    # HABLA
+    # ETIQUETAS
     for en, es in datos:
-        if "%SPEECH_" not in es:
+        if not re.search(r"[{\[%]", es):
             continue
-        nuevos = saldos_de_habla(es) - saldos_de_habla(en)
-        if nuevos:
-            avisos["HABLA"].append("el es puede dejar %s [color] sin cerrar donde el en no: %s"
-                                   % (sorted(nuevos), es[:60]))
+        if _llaves_casan(en) and not _llaves_casan(es):
+            avisos["ETIQUETAS"].append("llaves sin pareja donde el en casa: %s" % es[:60])
+            continue
+        nuevas = etiquetas_rotas(es) - etiquetas_rotas(en)
+        if nuevas:
+            avisos["ETIQUETAS"].append("el es puede dejar %s sin pareja donde el en no: %s"
+                                       % ("/".join(sorted(nuevas)), es[:60]))
 
     # DUP_VECINO y ANCHO, que necesitan el fichero de cada par
     try:
@@ -705,7 +741,7 @@ def main():
     print("pares con traduccion revisados: %d" % len(datos))
     total = 0
     for nombre in ("IMG", "VARIANTES", "TOKENS", "RECORTE", "DUP_ES", "DUP_VECINO",
-                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL", "ANCHO", "HABLA"):
+                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL", "ANCHO", "ETIQUETAS"):
         items = avisos.get(nombre, [])
         total += len(items)
         print("\n%-11s %d" % (nombre, len(items)))

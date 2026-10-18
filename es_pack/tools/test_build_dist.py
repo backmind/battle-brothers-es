@@ -1318,21 +1318,35 @@ def test_registro_ve_el_imperativo_de_vosotros_con_clitico():
     assert all(any(v[1][:10] in a for a in avisos) for v in vos)
 
 
-def test_habla_ve_el_color_suelto_de_las_llaves_perdidas():
+def test_etiquetas_ve_el_color_suelto_de_las_llaves_perdidas():
     """El caso del jugador (contrato de buscar un lugar): el inglés anida un
     bloque de ramas dentro de un %SPEECH_ON%...%SPEECH_OFF% y el español
     perdió esas llaves, de modo que una rama abría el [color] y otra lo
     cerraba sin abrirlo."""
-    from checks import revisar, saldos_de_habla
+    from checks import etiquetas_rotas, revisar
     en = "{A.%SPEECH_ON%B.%SPEECH_OFF% | C.%SPEECH_ON%{D | E}%SPEECH_OFF%}"
     roto = "{A.%SPEECH_ON%B.%SPEECH_OFF% | C.%SPEECH_ON%D | E%SPEECH_OFF%}"
-    assert saldos_de_habla(en) == {0}
-    assert saldos_de_habla(roto) == {-1, 0, 1}
-    # el intro de la negociación abre en sus ramas y cierra en el pago: suma 0
-    assert saldos_de_habla("{a%SPEECH_ON%x | %SPEECH_ON%y} {b | c} pago.%SPEECH_OFF%") == {0}
-    assert saldos_de_habla("llave { suelta %SPEECH_START%hola%SPEECH_OFF%") == {0}
-    avisos = revisar([(en, roto), (en, en.replace("B", "Be"))])["HABLA"]
+    assert etiquetas_rotas(en) == set()
+    assert etiquetas_rotas(roto) == {"color"}
+    # el intro de la negociación abre en sus ramas y cierra en el pago: cuadra
+    assert etiquetas_rotas("{a%SPEECH_ON%x | %SPEECH_ON%y} {b | c} pago.%SPEECH_OFF%") == set()
+    assert etiquetas_rotas("llave { suelta %SPEECH_START%hola%SPEECH_OFF%") == set()
+    avisos = revisar([(en, roto), (en, en.replace("B", "Be"))])["ETIQUETAS"]
     assert len(avisos) == 1 and "C.%SPEECH_ON%D" in avisos[0]
+
+
+def test_etiquetas_ve_el_orden_las_otras_etiquetas_y_las_llaves():
+    from checks import etiquetas_rotas, revisar
+    # cierra antes de abrir: el saldo cuadra, el orden no
+    assert etiquetas_rotas("[/color]a[color=#fff]") == {"color"}
+    assert etiquetas_rotas("{[b]a | b}[/b]") == {"b"}
+    assert etiquetas_rotas("[i]{a | b}[/i] [u]c[/u]") == set()
+    datos = [("[b]A[/b]", "[b]A"),                    # negrita sin cerrar
+             ("{A | B}", "{A | B"),                    # llave sin cerrar
+             ("[color=x]A", "[color=x]A"),             # el inglés ya viene así
+             ("[u]A[/u] {B | C}", "[u]A[/u] {B | C}")]
+    avisos = revisar(datos)["ETIQUETAS"]
+    assert len(avisos) == 2 and "llaves" in avisos[1]
 
 
 def test_ancho_ve_el_origen_que_en_partida_se_salia(tmp_path):

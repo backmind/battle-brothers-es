@@ -12,7 +12,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 - **Doce órdenes en vosotros** («Decidles», «Degolladlos») pasan a ustedes, como el resto del texto.
 - **Hedge Knight es siempre «caballero errante»**; en tres eventos y en el origen Lobo solitario decía «caballero andante».
 - Los textos fijos marcados como patrón se instalan como texto literal, para que ninguna regla se les adelante.
-- Dos chequeos nuevos: `ANCHO` mide con la fuente del juego, calibrada en partida, los botones de ambición y las descripciones de origen; `HABLA` avisa de las ramas de diálogo que dejan un color abierto o cerrado de más.
+- Dos chequeos nuevos: `ANCHO` mide con la fuente del juego, calibrada en partida, los botones de ambición y las descripciones de origen; `ETIQUETAS` avisa de las variantes de un texto que dejan sin pareja un color, una negrita, una cursiva, un subrayado o una llave.
 
 ## [1.0.0] - 2026-10-17
 
