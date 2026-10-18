@@ -7,6 +7,7 @@ Lee   es_pack/corpus/base_es.nut  (corpus completo)
 Escribe:
   es_pack/build/mod_battle_brothers_es/base_es.nut          pares validos
   es_pack/build/mod_battle_brothers_es/<id_del_mod>_es.nut  los de cada mod
+  es_pack/build/mod_battle_brothers_es/titulos_es.nut       titulos en femenino
   es_pack/build/patterns_wip.nut                         cuarentena (Fase 4)
   es_pack/build/scripts/!mods_preload/mod_battle_brothers_es.nut
   es_pack/build/mod_battle_brothers_es_<version>.zip
@@ -32,6 +33,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "vendor" / "rosetta"))
 import rosetta  # vendorizado (vendor/rosetta/ORIGEN.md): load_ref es el parser oficial
+import titulos
 
 CORPUS = REPO / "es_pack" / "corpus" / "base_es.nut"
 # Las traducciones de mods, una por mod, con la fuente fijada de la que se
@@ -274,10 +276,13 @@ def main():
 
     pairs_rel = Path("mod_battle_brothers_es/base_es.nut")
     ids_rel = Path("mod_battle_brothers_es/ids_es.nut")
-    # Todo lo que cuelga de src/scripts entra en el build y en el zip tal
-    # cual: el wrapper del preload y los hooks propios del pack.
+    titulos_rel = Path("mod_battle_brothers_es/titulos_es.nut")
+    # Todo lo que cuelga de src/scripts y de src/mod_battle_brothers_es entra
+    # en el build y en el zip tal cual: el wrapper del preload, los hooks
+    # propios del pack y el enganche con cada mod.
     scripts_rel = sorted(p.relative_to(SRC)
-                         for p in (SRC / "scripts").rglob("*") if p.is_file())
+                         for d in ("scripts", "mod_battle_brothers_es")
+                         for p in (SRC / d).rglob("*") if p.is_file())
 
     emit(BUILD / pairs_rel, buckets["dist"])
     (BUILD / ids_rel).parent.mkdir(parents=True, exist_ok=True)
@@ -289,6 +294,7 @@ def main():
     # linea. La cuarentena es una sola, porque un patron roto de cualquiera
     # aborta la carga igual.
     wip = list(buckets["wip"])
+    dist = list(buckets["dist"])
     mods_rel = []
     for c in corpus_del_pack()[1:]:
         mod_buckets = {"dist": [], "wip": [], "drop": []}
@@ -301,8 +307,12 @@ def main():
         emit(BUILD / rel, mod_buckets["dist"], cabecera(c["id"], c["version"]))
         mods_rel.append(rel)
         wip += mod_buckets["wip"]
+        dist += mod_buckets["dist"]
         avisar_calidad(mod_buckets["dist"], c["id"])
 
+    fem = titulos.tabla((get_field(b, "en"), get_field(b, "es")) for b in dist)
+    (BUILD / titulos_rel).write_text(titulos.emite(fem), encoding="utf-8", newline="\n")
+    print("titulos en femenino: %d" % len(fem))
     emit_wip(BUILD / "patterns_wip.nut", wip)
     for rel in scripts_rel:
         (BUILD / rel).parent.mkdir(parents=True, exist_ok=True)
@@ -310,7 +320,7 @@ def main():
 
     zip_path = BUILD / ("mod_battle_brothers_es_%s.zip" % PACK_VERSION)
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
-        for rel in list(scripts_rel) + [pairs_rel, ids_rel] + mods_rel:
+        for rel in list(scripts_rel) + [pairs_rel, ids_rel] + mods_rel + [titulos_rel]:
             z.writestr(entrada_zip(rel.as_posix()), (BUILD / rel).read_bytes())
     print("zip:", zip_path)
     sintaxis_ok = avisar_sintaxis()

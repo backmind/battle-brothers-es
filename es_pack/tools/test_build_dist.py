@@ -1193,3 +1193,81 @@ def test_la_cabecera_de_un_mod_declara_su_id_y_su_version(tmp_path):
     assert 'mod = {id = "mod_x", version = "1.2.3"}' in texto
     assert texto.endswith("::Rosetta.add(rosetta, pairs);\n")
 
+
+def test_feminizar_titulos():
+    from titulos import feminizar
+
+    casos = {
+        "el Valiente": "la Valiente",          # -e, solo cambia el artículo
+        "el Viejo": "la Vieja",                # -o
+        "el Sanador": "la Sanadora",           # -or
+        "el Soplón": "la Soplona",             # -ón
+        "el Charlatán": "la Charlatana",       # -án
+        "el Bailarín": "la Bailarina",         # -ín
+        "el Lobo Solitario": "la Loba Solitaria",
+        "el Cazador de brujas": "la Cazadora de brujas",  # corta en la preposición
+        "el Hijo secreto": "la Hija secreta",
+        "el Que no muere": "la Que no muere",
+        "el Sin techo": "la Sin techo",
+        "el Príncipe del Desierto": "la Princesa del Desierto",  # irregular
+        "el Barón Ladrón": "la Baronesa Ladrona",
+        "el Hombre cabra": "la Mujer cabra",
+        "el Mayor": "la Mayor",                # invariable
+        "el Martillo": "la Martillo",
+        "el Buitre Dorado": "la Buitre Dorado",  # tras una invariable, se corta
+        "el Águila": "el Águila",              # a tónica: no cambia
+    }
+    for masc, fem in casos.items():
+        assert feminizar(masc) == fem, masc
+    assert feminizar("Dedo Negro") is None
+    assert feminizar("el alcalde") is None
+
+
+def test_la_tabla_de_titulos_sale_de_los_corpus_y_sus_excepciones_se_usan():
+    """Cada excepción tiene que corresponder a un título que existe: si el
+    corpus cambia y deja de usarla, sobra; y la tabla no recoge pares que no
+    sean «the X» → «el X»."""
+    from build_dist import corpus_del_pack
+    from titulos import EXCEPCIONES, INVARIABLES, tabla
+
+    pares = [(get_field(b, "en"), get_field(b, "es"))
+             for c in corpus_del_pack() for b in load_blocks(c["ruta"])]
+    t = tabla(pares)
+    assert t["el Valiente"] == "la Valiente"
+    assert t["el Penitente"] == "la Penitente"
+    assert all(m.startswith("el ") and f.startswith("la ") for m, f in t.items())
+    palabras = {p for m in t for p in m.split(" ")}
+    assert set(EXCEPCIONES) - palabras == set()
+    assert INVARIABLES <= {es for _, es in pares}
+    assert not INVARIABLES & set(t)
+    assert tabla([("Brave", "el Valiente"), ("the %x%", "el Valiente")]) == {}
+
+
+def test_sonda_del_enganche_con_legends(tmp_path):
+    """Corre sq_probe_legends.nut: los tokens castellanos salen con el género
+    de cada personaje del código real de Legends, y los títulos solo pasan a
+    femenino para las mujeres. Necesita la fuente de Legends (lotes.py extraer)
+    y un intérprete Squirrel; sin ellos, se salta."""
+    import os
+    import subprocess
+
+    import pytest
+
+    from build_dist import REPO
+    from check_syntax import localiza_interprete
+    from titulos import emite, tabla
+
+    sq = localiza_interprete()
+    legends = REPO / "es_pack" / "legends" / "fuente"
+    if sq is None:
+        pytest.skip("sin interprete Squirrel disponible")
+    if not (legends / "mod_legends" / "config" / "z_legends_language.nut").is_file():
+        pytest.skip("sin la fuente de Legends (lotes.py extraer)")
+    nut = tmp_path / "titulos_es.nut"
+    nut.write_bytes(emite(tabla([("the Brave", "el Valiente"),
+                                 ("the Old Wolf", "el Viejo Lobo")])).encode("utf-8"))
+    env = dict(os.environ, ROSETTA_DIR=str(REPO), LEGENDS_DIR=str(legends), TITULOS_NUT=str(nut))
+    r = subprocess.run([str(sq), str(REPO / "es_pack" / "tools" / "sq_probe_legends.nut")],
+                       capture_output=True, env=env)
+    salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
+    assert "FALLOS: 0" in salida, salida

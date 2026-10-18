@@ -54,10 +54,12 @@ mod.queue(">mod_msu", function () {
 ::Rosetta.activate("es");
 
 // La traducción de cada mod viaja en este zip y solo se carga si el mod está.
-// Va en la cola y después del mod porque lo que el pack añade para él se apoya
-// en lo que el mod define en la suya; build_dist.MODS lista los mods y un test
-// exige que estén todos aquí.
-mod.queue(">mod_legends", function () {
+// Va en la cola y después del mod porque el enganche amplía lo que el mod
+// define en la suya, y después de Rosetta porque envuelve sus getters;
+// build_dist.MODS lista los mods y un test exige que estén todos aquí.
+mod.queue(">mod_legends", ">mod_rosetta", function () {
     if (!::Hooks.hasMod("mod_legends")) return;
     ::include("mod_battle_brothers_es/mod_legends_es");
+    ::include("mod_battle_brothers_es/titulos_es");
+    ::include("mod_battle_brothers_es/legends");
 });

@@ -81,7 +81,8 @@ def artefactos():
         preloads = sorted((BUILD / "scripts").rglob("*.nut"))
     else:
         preloads = [BUILD / "scripts" / "!mods_preload" / "mod_battle_brothers_es.nut"]
-    # Lo mismo con lo que el preload incluye: los pares de cada corpus y los ids.
+    # Lo mismo con lo que el preload incluye: los pares de cada corpus, los
+    # ids, la tabla de títulos y el enganche con cada mod.
     incluidos = sorted((BUILD / "mod_battle_brothers_es").glob("*.nut"))
     return (incluidos or [BUILD / "mod_battle_brothers_es" / "base_es.nut"]) + preloads + [
         BUILD / "patterns_wip.nut",
