@@ -37,7 +37,7 @@ Antes de empezar:
 
 Legends, el primer mod en marcha, tiene su propia herramienta: `es_pack/tools/lotes.py`. La fuente está fijada en `es_pack/legends/fuente.toml`, y `lotes.py extraer` saca el corpus con el contexto de código de cada par y quita lo que ya traduce `base_es.nut`. Las cadenas verbatim de Squirrel (`@"..."`) las convierte antes, porque el extractor no las lee. El trabajo se reparte en lotes (`lotes.py partir`) que se devuelven al corpus con `lotes.py fusionar`; la fusión rechaza el lote entero si algún par rompería el juego. Las instrucciones para traducir un lote están en [es_pack/legends/BRIEF.md](es_pack/legends/BRIEF.md).
 
-La 1.0.0 se publicó con un solo corpus, así que la primera traducción de un mod que entre adaptará `build_dist.py`, el preload y la lista de objetivos de `update_readme_metrics.py`. Cuéntalo en la incidencia y se hace con ella.
+Para que un mod nuevo entre en el zip, se añade a `MODS` en `build_dist.py` y a la cola del preload (`mod_battle_brothers_es.nut`), con su `::Hooks.hasMod`; un test comprueba que los dos coinciden. Si el mod necesita algo más que sus pares, como Legends con sus tokens de género y sus títulos en femenino, el enganche va en `es_pack/src/mod_battle_brothers_es/`. La fila de la tabla «Qué se traduce» se añade a `OBJETIVOS` en `update_readme_metrics.py` cuando la traducción se publique.
 
 ## El formato
 
