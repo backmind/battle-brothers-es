@@ -10,7 +10,7 @@ La traducción del juego base y sus expansiones está completa desde la 1.0.0. L
 
 [Legends](https://github.com/Battle-Brothers-Legends/Legends-public) es el mod más grande de Battle Brothers y el primero que se traduce. La traducción está hecha y revisada, pero falta probarla en partida. El seguimiento está en el milestone [Legends](https://github.com/backmind/battle-brothers-es/milestone/2).
 
-Antes de que entre en una versión estable habrá betas para probarla. Se publican como *pre-release* en la página de [releases](https://github.com/backmind/battle-brothers-es/releases), así que el aviso de actualizaciones de MSU no se las ofrece a quien tiene la versión estable; para probar una, hay que bajarla de esa página a mano. Queda por decidir si Legends irá dentro del pack o como complemento aparte, que se instale solo si se quiere.
+Antes de que entre en una versión estable habrá betas para probarla. Se publican como *pre-release* en la página de [releases](https://github.com/backmind/battle-brothers-es/releases), así que el aviso de actualizaciones de MSU no se las ofrece a quien tiene la versión estable; para probar una, hay que bajarla de esa página a mano. Legends irá dentro del pack, en la 5.0.0: su traducción se carga solo si Legends está instalado. Las betas se numeran 5.0.0-beta.1, 5.0.0-beta.2 y así sucesivamente.
 
 ## Rosetta
 
