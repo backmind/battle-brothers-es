@@ -597,7 +597,7 @@ Master Archer	Maestro arquero	general	scripts\config\strings.nut
 Master Archers	Maestros arqueros	general	scripts\config\strings.nut	
 Maximum Fatigue	Fatiga máxima	general	scripts\ui\screens\tooltip\tooltip_events.nut	
 Melee Defense	Defensa cuerpo a cuerpo	general	scripts\ui\screens\tooltip\tooltip_events.nut	
-Melee Skill	Habilidad a cuerpo a cuerpo	general	scripts\ui\screens\tooltip\tooltip_events.nut	
+Melee Skill	Habilidad cuerpo a cuerpo	general	scripts\ui\screens\tooltip\tooltip_events.nut	
 Militia	Miliciano	general	scripts\config\strings.nut	
 Militia Captains	Capitanes milicianos	general	scripts\config\strings.nut	
 Militia Marksmen	Tiradores milicianos	general	scripts\config\strings.nut	
