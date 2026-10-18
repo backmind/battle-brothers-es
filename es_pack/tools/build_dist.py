@@ -90,7 +90,8 @@ STR_RE = r'"(?:[^"\\]|\\.)*"'
 EN_PLACE_RE = re.compile(r"^<\w+:\w+>$")
 ES_PLACE_RE = re.compile(r"^<\w+(:\w+)?>$")
 # Etiquetas html literales que aparecen en textos del juego y NO son capturas.
-HTML_TAG_RE = re.compile(r"^</?(?:br|b|i|u|p|em|strong|hr)\s*/?>$", re.I)
+# span y div pueden llevar atributos (Legends: <span style="color:...;">).
+HTML_TAG_RE = re.compile(r"^</?(?:br|b|i|u|p|em|strong|hr|(?:span|div)(?:\s[^<>]*)?)\s*/?>$", re.I)
 
 # Tipos de sub soportados por subRes en scripts/!mods_preload/!rosetta.nut
 # (validateRule lanza "Label type '%s' is not supported" para cualquier otro).

@@ -44116,10 +44116,16 @@ local pairs = [
     // context: cultist_origin_sacrifice_event.o.create.s.start.candleChanges.push().text
     {
         // text = bro.getName() + " has received " + this.Const.Strings.getArticle(skill.getName()) + skill.getName()
-        // DUDA: getArticle antepone «a » o «an » al nombre de la habilidad, así que la captura <skill> trae el artículo inglés pegado («a Davkul's Blessing»). Con un solo patrón el castellano mostraría «ha recibido a …» o «ha recibido an …». ¿Se parte en dos patrones («has received a <skill:str>» y «has received an <skill:str>», ambos con es «<name> ha recibido <skill>»)? Hay que confirmar también si el nombre capturado llega traducido.
+        // getArticle antepone "a " o "an " al nombre: un par para cada uno.
         mode = "pattern"
-        en = "<name:str> has received <skill:str>"
-        es = ""
+        en = "<name:str> has received a <skill:str>"
+        es = "<name> ha recibido <skill:t>"
+    }
+    // context: cultist_origin_sacrifice_event.o.create.s.start.candleChanges.push().text
+    {
+        mode = "pattern"
+        en = "<name:str> has received an <skill:str>"
+        es = "<name> ha recibido <skill:t>"
     }
     // en = "<bro:str> is now <skill:str>"
     // en base_es
@@ -56017,10 +56023,9 @@ local pairs = [
     // context: ::ModJimmysTooltips.modGetEquipmentLootChance.text.colorizeInRed()
     {
         // text = colorizeInRed("Can\'t loot any equipment from this entity")
-        mode = "pattern"
-        // DUDA: el en es solo la llamada a colorizeInRed(); no sé qué etiquetas de color añade esa función, así que no puedo escribir la clave real. El texto sería «No se puede saquear ningún equipo de esta entidad».
-        en = "<colorizeInRed(Can't loot any equipment from this entity)>"
-        es = ""
+        // colorizeInRed(t) = "[color=%negative%]" + t + "[/color]"
+        en = "[color=%negative%]Can't loot any equipment from this entity[/color]"
+        es = "[color=%negative%]No se puede saquear su equipo[/color]"
     }
     // context: ::ModJimmysTooltips.modGetEquipmentLootChance.::MSU.isKindOf()
     // en = "<::MSU.isKindOf(_targetedWithSkill, , , skill)&&_targetedWithSkill.isAttack()>"  // condición de código; «skill» es el tipo que comprueba isKindOf y no se muestra nunca
@@ -59564,11 +59569,17 @@ local pairs = [
     }
     // context: legend_preemptive_beasts_contract.createScreens.m.Screens.push().start.List.push().text.::Const.LegendMod.Language.arrayToText()
     {
-        // text = ::Const.LegendMod.Language.arrayToText(poachers, "and", ::Const.UI.Color.getHighlightDarkBackgroundValue()) + ::Const.LegendMod.Language.pluralize(poachers.len()," leaves", " leave") + " your party",
-        // DUDA: el texto real sale en dos formas, "X leaves your party" (un cazador) y "X and Y leave your party" (varios), y el castellano tiene que conjugar cada una; con un solo par no se cubren las dos sin dejar sin usar una captura. Propuesta: dos pares, "<names:str> leaves your party" = "<names> abandona tu grupo" y "<names:str> leave your party" = "<names> abandonan tu grupo".
+        // text = ::Const.LegendMod.Language.arrayToText(poachers, "and", ...) + pluralize(poachers.len(), " leaves", " leave") + " your party"
+        // Un par por cada forma del verbo. Con varios cazadores, el "and" que pone arrayToText queda en ingles.
         mode = "pattern"
-        en = "<::Const.LegendMod.Language.arrayToText(poachers, and, ::Const.UI.Color.getHighlightDarkBackgroundValue()) + ::Const.LegendMod.Language.pluralize(poachers.len(),  leaves,  leave)> your party"
-        es = ""
+        en = "<names:str> leaves your party"
+        es = "<names> abandona tu grupo"
+    }
+    // context: legend_preemptive_beasts_contract.createScreens.m.Screens.push().start.List.push().text
+    {
+        mode = "pattern"
+        en = "<names:str> leave your party"
+        es = "<names> abandonan tu grupo"
     }
     // context: legend_preemptive_beasts_contract.createScreens.m.Screens.push().Text
     {
@@ -60049,10 +60060,9 @@ local pairs = [
     // context: legend_ironmonger_offends_blacksmith_encounter.repairItems._screen.List.push().text.::format()
     {
         // text = ::format("You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]%d[/color] Tools and Supplies", toolsSpent)
-        // DUDA: la pista ocupa el `en` entero (todo el texto vive dentro de ::format), así que convertirla obliga a escribir texto literal fuera de la pista y la fusión lo toma como cambio del `en`. El texto real en partida es "You spend [color=#xxxxxx]N[/color] Tools and Supplies". Propuesta: patrón "You spend [color=<color:str>]<amount:int>[/color] Tools and Supplies" = "Gastas [color=<color>]<amount>[/color] de Herramientas y suministros", si el extractor permite fijar ese `en`.
         mode = "pattern"
-        en = "<::format(You spend [color= + this.Const.UI.Color.NegativeEventValue + ]%d[/color] Tools and Supplies, toolsSpent)>"
-        es = ""
+        en = "You spend [color=<color:str>]<amount:int>[/color] Tools and Supplies"
+        es = "Gastas [color=<color>]<amount>[/color] Herramientas y suministros"
     }
     // context: legend_ironmonger_offends_blacksmith_encounter.onPrepareVariables._vars.push()
     // en = "blacksmith"  // nombre de la variable %blacksmith%; no se muestra
@@ -61272,38 +61282,13 @@ local pairs = [
         en = "Returns different food items depending on the current biome. Some items require the knowledge of specific backgrounds to be obtainable."
         es = "Proporciona distintos alimentos según el bioma actual. Algunos solo se pueden obtener con los conocimientos de trasfondos concretos."
     }
-    // context: hunter_building.getDescription.format()
+    // context: hunter_building.getDescription
     {
-        // desc += format(
-        //    "Assigning mercenaries with %s backgrounds increases the %s (based on each character's level), which allows the hunting party to hunt rarer or more dangerous prey.\n",
-        //    ::Const.UI.getColorized("Expert Hunter",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("Hunt Tier",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: los términos coloreados ("Expert Hunter", "Hunt Tier") se componen en código con getColorized antes del format; el patrón solo admite sustituir cada pista por una captura, que dejaría esos términos en inglés dentro de la frase castellana, y la fusión no deja reescribir el literal como [color=...]...[/color]. Hay que decidir cómo traducir esos literales (¿en el código de Legends?) antes de rellenar este par.
+        // @composicion: getDescription suma literales y format() con getColorized(t, c) = "[color=" + c + "]" + t + "[/color]";
+        // Rosetta ve la suma entera. La lista de trasfondos la une arrayToText con "and" y sale en ingles.
         mode = "pattern"
-        en = "Assigning mercenaries with <::Const.UI.getColorized(Expert Hunter, ::Const.UI.Color.getHighlightLightBackgroundValue())> backgrounds increases the <::Const.UI.getColorized(Hunt Tier, ::Const.UI.Color.getHighlightLightBackgroundValue())> (based on each character's level), which allows the hunting party to hunt rarer or more dangerous prey.\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "Assigning mercenaries with the %s perk gives a chance to yield %s of the obtained food items.\n",
-        //    ::Const.UI.getColorized("Meal Preparation",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("improved versions",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "Meal Preparation" e "improved versions" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "Assigning mercenaries with the <::Const.UI.getColorized(Meal Preparation, ::Const.UI.Color.getHighlightLightBackgroundValue())> perk gives a chance to yield <::Const.UI.getColorized(improved versions, ::Const.UI.Color.getHighlightLightBackgroundValue())> of the obtained food items.\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "Assigning mercenaries with the %s perk gives a chance to yield %s. ",
-        //    ::Const.UI.getColorized("Alcohol Brewing",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("wine and beer",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "Alcohol Brewing" y "wine and beer" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "Assigning mercenaries with the <::Const.UI.getColorized(Alcohol Brewing, ::Const.UI.Color.getHighlightLightBackgroundValue())> perk gives a chance to yield <::Const.UI.getColorized(wine and beer, ::Const.UI.Color.getHighlightLightBackgroundValue())>. "
-        es = ""
+        en = "Hunting parties can only be sent out while encamped. The more people assigned, the more food foraged or hunted. Returns different food items depending on the current biome. Some items require the knowledge of specific backgrounds to be obtainable.\n\nAssigning mercenaries with [color=<c1:str>]Expert Hunter[/color] backgrounds increases the [color=<c2:str>]Hunt Tier[/color] (based on each character's level), which allows the hunting party to hunt rarer or more dangerous prey.\nAssigning mercenaries with the [color=<c3:str>]Meal Preparation[/color] perk gives a chance to yield [color=<c4:str>]improved versions[/color] of the obtained food items.\nAssigning mercenaries with the [color=<c5:str>]Alcohol Brewing[/color] perk gives a chance to yield [color=<c6:str>]wine and beer[/color]. \n\nUpgrading this tent grants the following effects:\n- Increases foraging / hunting speed by [color=<c7:str>]15%[/color]\n- Unlock the [color=<c8:str>]Hunting Mode[/color] button, allowing you to customize the priorities of the hunting party\n- Increases the chance to obtain bonus loot, improved food items, and brewed items\n- Assigning [color=<c9:str>]Expert Hunter[/color] backgrounds increases the [color=<c10:str>]Hunt Tier[/color] at a much greater rate\n- [color=<c11:str>]Expert Hunters[/color] have a chance to obtain [color=<c12:str>]bonus loot[/color] from hunting, such as trophies or crafting ingredients\n- Assigning [color=<c13:str>]cooking backgrounds[/color] slightly increases the chance to yield [color=<c14:str>]improved versions[/color] of obtained food items even without the Meal Preparation perk\n- Assigning [color=<c15:str>]cooking backgrounds[/color] slightly increases the chance to yield [color=<c16:str>]brewed items[/color] even without the Alcohol Brewing perk\n- [color=<c17:str>]Brewers[/color] can also produce [color=<c18:str>]mead[/color]\n- Advanced food can also be made using spices in the [color=<c19:str>]crafting[/color] tent\n\nExpert Hunter backgrounds: <bgs:str>\n\nCooking backgrounds: Miller / Baker, Butcher / Fishmonger, Servant, Cannibal"
+        es = "Las partidas de caza solo pueden salir mientras se está acampado. Cuantas más personas asignadas, más comida se recolecta o se caza. Proporciona distintos alimentos según el bioma actual. Algunos solo se pueden obtener con los conocimientos de trasfondos concretos.\n\nAsignar mercenarios con trasfondos de [color=<c1>]Cazador experto[/color] aumenta el [color=<c2>]Nivel de caza[/color] (según el nivel de cada personaje), lo que permite a la partida de caza perseguir presas más raras o peligrosas.\nAsignar mercenarios con la ventaja [color=<c3>]Preparación de comidas[/color] da la posibilidad de obtener [color=<c4>]versiones mejoradas[/color] de los alimentos conseguidos.\nAsignar mercenarios con la ventaja [color=<c5>]Destilación de alcohol[/color] da la posibilidad de obtener [color=<c6>]vino y cerveza[/color]. \n\nMejorar esta tienda otorga los siguientes efectos:\n- Aumenta un [color=<c7>]15%[/color] la velocidad de recolección / caza\n- Desbloquea el botón [color=<c8>]Modo de caza[/color], que permite ajustar las prioridades de la partida de caza\n- Aumenta la probabilidad de obtener botín extra, alimentos mejorados y bebidas elaboradas\n- Asignar trasfondos de [color=<c9>]Cazador experto[/color] aumenta el [color=<c10>]Nivel de caza[/color] mucho más deprisa\n- Los [color=<c11>]Cazadores expertos[/color] pueden obtener [color=<c12>]botín extra[/color] al cazar, como trofeos o ingredientes de fabricación\n- Asignar [color=<c13>]trasfondos de cocina[/color] aumenta un poco la probabilidad de obtener [color=<c14>]versiones mejoradas[/color] de los alimentos conseguidos, incluso sin la ventaja Preparación de comidas\n- Asignar [color=<c15>]trasfondos de cocina[/color] aumenta un poco la probabilidad de obtener [color=<c16>]bebidas elaboradas[/color], incluso sin la ventaja Destilación de alcohol\n- Los [color=<c17>]Destiladores[/color] también pueden producir [color=<c18>]hidromiel[/color]\n- Con especias también se puede preparar comida avanzada en la tienda de [color=<c19>]fabricación[/color]\n\nTrasfondos de Cazador experto: <bgs>\n\nTrasfondos de cocina: Molinero / Panadero, Carnicero / Pescadero, Sirviente, Caníbal"
     }
     // context: hunter_building.getDescription
     {
@@ -61319,85 +61304,10 @@ local pairs = [
         en = "- Increases foraging / hunting speed by <pct:str>\n"
         es = "- Aumenta un <pct> la velocidad de recolección / caza\n"
     }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- Unlock the %s button, allowing you to customize the priorities of the hunting party\n",
-        //    ::Const.UI.getColorized("Hunting Mode",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "Hunting Mode" llega ya coloreado con getColorized; como captura quedaría en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir ese literal.
-        mode = "pattern"
-        en = "- Unlock the <::Const.UI.getColorized(Hunting Mode, ::Const.UI.Color.getHighlightLightBackgroundValue())> button, allowing you to customize the priorities of the hunting party\n"
-        es = ""
-    }
     // context: hunter_building.getDescription
     {
         en = "- Increases the chance to obtain bonus loot, improved food items, and brewed items\n"
         es = "- Aumenta la probabilidad de obtener botín extra, alimentos mejorados y bebidas elaboradas\n"
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- Assigning %s backgrounds increases the %s at a much greater rate\n",
-        //    ::Const.UI.getColorized("Expert Hunter",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("Hunt Tier",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "Expert Hunter" y "Hunt Tier" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "- Assigning <::Const.UI.getColorized(Expert Hunter, ::Const.UI.Color.getHighlightLightBackgroundValue())> backgrounds increases the <::Const.UI.getColorized(Hunt Tier, ::Const.UI.Color.getHighlightLightBackgroundValue())> at a much greater rate\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- %s have a chance to obtain %s from hunting, such as trophies or crafting ingredients\n",
-        //    ::Const.UI.getColorized("Expert Hunters",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("bonus loot",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "Expert Hunters" y "bonus loot" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "- <::Const.UI.getColorized(Expert Hunters, ::Const.UI.Color.getHighlightLightBackgroundValue())> have a chance to obtain <::Const.UI.getColorized(bonus loot, ::Const.UI.Color.getHighlightLightBackgroundValue())> from hunting, such as trophies or crafting ingredients\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- Assigning %s slightly increases the chance to yield %s of obtained food items even without the Meal Preparation perk\n",
-        //    ::Const.UI.getColorized("cooking backgrounds",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("improved versions",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "cooking backgrounds" e "improved versions" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "- Assigning <::Const.UI.getColorized(cooking backgrounds, ::Const.UI.Color.getHighlightLightBackgroundValue())> slightly increases the chance to yield <::Const.UI.getColorized(improved versions, ::Const.UI.Color.getHighlightLightBackgroundValue())> of obtained food items even without the Meal Preparation perk\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- Assigning %s slightly increases the chance to yield %s even without the Alcohol Brewing perk\n",
-        //    ::Const.UI.getColorized("cooking backgrounds",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("brewed items",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "cooking backgrounds" y "brewed items" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "- Assigning <::Const.UI.getColorized(cooking backgrounds, ::Const.UI.Color.getHighlightLightBackgroundValue())> slightly increases the chance to yield <::Const.UI.getColorized(brewed items, ::Const.UI.Color.getHighlightLightBackgroundValue())> even without the Alcohol Brewing perk\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- %s can also produce %s\n",
-        //    ::Const.UI.getColorized("Brewers",::Const.UI.Color.getHighlightLightBackgroundValue()),
-        //    ::Const.UI.getColorized("mead",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "Brewers" y "mead" llegan ya coloreados con getColorized; como captura quedarían en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir esos literales.
-        mode = "pattern"
-        en = "- <::Const.UI.getColorized(Brewers, ::Const.UI.Color.getHighlightLightBackgroundValue())> can also produce <::Const.UI.getColorized(mead, ::Const.UI.Color.getHighlightLightBackgroundValue())>\n"
-        es = ""
-    }
-    // context: hunter_building.getDescription.format()
-    {
-        // desc += format(
-        //    "- Advanced food can also be made using spices in the %s tent",
-        //    ::Const.UI.getColorized("crafting",::Const.UI.Color.getHighlightLightBackgroundValue())
-        // DUDA: "crafting" llega ya coloreado con getColorized; como captura quedaría en inglés y el literal no se puede reescribir en el `en`. Pendiente de decidir cómo traducir ese literal.
-        mode = "pattern"
-        en = "- Advanced food can also be made using spices in the <::Const.UI.getColorized(crafting, ::Const.UI.Color.getHighlightLightBackgroundValue())> tent"
-        es = ""
     }
     // context: hunter_building.getDescription
     {
@@ -61547,9 +61457,8 @@ local pairs = [
     // context: hunter_building.getInfo.ret.push()
     {
         // ret.push("<span style=\"color:%negative%;\"><u>No Expert Hunters</u></span>");
-        // DUDA: el runtime lee <span style="color:%negative%;"> como una captura inválida y el par iría a cuarentena aunque no sea patrón. Traducción prevista: "Sin cazadores expertos", pendiente de que el runtime o el extractor lo admitan.
         en = "<span style=\"color:%negative%;\"><u>No Expert Hunters</u></span>"
-        es = ""
+        es = "<span style=\"color:%negative%;\"><u>Sin cazadores expertos</u></span>"
     }
     // context: hunter_building.getInfo.ret.push()
     {
@@ -61560,9 +61469,8 @@ local pairs = [
     // context: hunter_building.getInfo.ret.push()
     {
         // ret.push("<span style=\"color:%negative%;\"><u>No Cooks</u></span>");
-        // DUDA: el runtime lee <span style="color:%negative%;"> como una captura inválida y el par iría a cuarentena aunque no sea patrón. Traducción prevista: "Sin cocineros", pendiente de que el runtime o el extractor lo admitan.
         en = "<span style=\"color:%negative%;\"><u>No Cooks</u></span>"
-        es = ""
+        es = "<span style=\"color:%negative%;\"><u>Sin cocineros</u></span>"
     }
     // context: hunter_building.getInfo.ret.push()
     {
@@ -61573,9 +61481,8 @@ local pairs = [
     // context: hunter_building.getInfo.ret.push()
     {
         // ret.push("<span style=\"color:%negative%;\"><u>No Brewers</u></span>");
-        // DUDA: el runtime lee <span style="color:%negative%;"> como una captura inválida y el par iría a cuarentena aunque no sea patrón. Traducción prevista: "Sin destiladores", pendiente de que el runtime o el extractor lo admitan.
         en = "<span style=\"color:%negative%;\"><u>No Brewers</u></span>"
-        es = ""
+        es = "<span style=\"color:%negative%;\"><u>Sin destiladores</u></span>"
     }
     // context: hunter_building.getInfo.ret.push()
     {
@@ -83475,11 +83382,11 @@ local pairs = [
     }
     // context: legend_favoured_enemy_skill.onGetHitFactors._tooltip.push().text.format()
     {
-        // text = format("[color=%s]%s%%[/color] Favoured Enemy (also grants [color=%s]+%s%%[/color] max damage)",::Const.UI.Color.PositiveValue,bonuses.HitChance.tostring(),::Const.UI.Color.PositiveValue,bonuses.HitChance.tostring())
+        // text = format("[color=%s]%s%%[/color] Favoured Enemy (also grants [color=%s]+%s%%[/color] max damage)", PositiveValue, HitChance, PositiveValue, HitChance)
+        // format() convierte "%%" en "%". Con val, que ya lleva signo y %, la clave de la regla es Favoured y no un % suelto.
         mode = "pattern"
-        // DUDA: el `en` lleva "%%" literal, pero format() lo convierte en "%" en partida, así que un patrón que conserve el "%%" no casaría con el texto real y quitarlo cambia el `en` (la fusión lo rechaza). Además el color llega como valor de PositiveValue, no como %positive%. No veo cómo hacer un patrón válido; ¿se arregla en el extractor?
-        en = "[color=<::Const.UI.Color.PositiveValue>]<bonuses.HitChance.tostring()>%%[/color] Favoured Enemy (also grants [color=<::Const.UI.Color.PositiveValue>]+<bonuses.HitChance.tostring()>%%[/color] max damage)"
-        es = ""
+        en = "[color=<c1:str>]<hit:val>[/color] Favoured Enemy (also grants [color=<c2:str>]<dmg:val>[/color] max damage)"
+        es = "[color=<c1>]<hit>[/color] Enemigo predilecto (además otorga [color=<c2>]<dmg>[/color] de daño máximo)"
     }
     // FILE: scripts\skills\perks\perk_legend_adaptive.nut
     // context: perk_legend_adaptive.getUnactivatedPerkTooltipHints.descText

@@ -225,4 +225,34 @@ foreach (en, es in {Sword = "Espada recta", Polearm = "Alabarda", Sturdy = "de r
               Str.join(", ", filas.map(@(f) ::Rosetta.translate(f.text))), "Espada recta, Espada, Arma de asta, Recio, Escudo");
 }
 
+print("=== textos montados con colores o format() ===\n");
+::Const.UI.getColorized = @(_t, _c) "[color=" + _c + "]" + _t + "[/color]";
+{
+    // La descripción de la Cocina del campamento sale del getDescription real de Legends.
+    local f = file(getenv("LEGENDS_DIR") + "/scripts/entity/world/camp/buildings/hunter_building.nut", "r");
+    local src = "", b = f.readblob(f.len());
+    foreach (c in b) src += c.tochar();
+    local ini = src.find("local desc"), fin = src.find("return desc;", ini);
+    ::Const.UI.Color.getHighlightLightBackgroundValue <- @() "#1e468f";
+    ::Const.UI.Color.PositiveValue <- "#135213";
+    ::Const.HuntingLoot <- {ExpertHunterBackgrounds = [0, 1], RequiredBackgrounds = ["Hunter", "Poacher"]};
+    ::Const.LegendMod.Language <- {arrayToText = @(_a, _y, _c) _a[0] + " " + _y + " " + _a[1]};
+    local r = ::Rosetta.translate(compilestring(src.slice(ini, fin + "return desc;".len()))());
+    comprueba("Cocina del campamento en castellano", r.find("Las partidas de caza") == 0
+              && r.find("[color=#1e468f]Destiladores[/color]") != null && r.find("Hunter and Poacher\n\nTrasfondos de cocina") != null, true);
+}
+foreach (caso in [
+    ["Hackett has received a Voice of Davkul", "Hackett ha recibido " + ::Rosetta.translate("Voice of Davkul")],
+    ["Hackett and Bors leave your party", "Hackett and Bors abandonan tu grupo"],
+    ["You spend [color=#ff0001]12[/color] Tools and Supplies", "Gastas [color=#ff0001]12[/color] Herramientas y suministros"],
+    ["[color=#135213]15%[/color] Favoured Enemy (also grants [color=#135213]+15%[/color] max damage)",
+     "[color=#135213]15%[/color] Enemigo predilecto (además otorga [color=#135213]+15%[/color] de daño máximo)"],
+    ["[color=%negative%]Can't loot any equipment from this entity[/color]", "[color=%negative%]No se puede saquear su equipo[/color]"],
+    ["<span style=\"color:%negative%;\"><u>No Brewers</u></span>", "<span style=\"color:%negative%;\"><u>Sin destiladores</u></span>"],
+    // Reglas con la captura dentro de una etiqueta: claves.nut las archiva bajo una palabra real.
+    ["[color=%positive%]3[/color] Perk point", "[color=%positive%]3[/color] punto de ventaja"],
+    ["[color=%negative%]-2[/color] Vision", "[color=%negative%]-2[/color] Visión"],
+    ["+[color=%positive%]10%[/color] Melee Damage", "+[color=%positive%]10%[/color] Daño cuerpo a cuerpo"],
+]) comprueba(caso[0], ::Rosetta.translate(caso[0]), caso[1]);
+
 print("FALLOS: " + ::probe.fallos + "\n");

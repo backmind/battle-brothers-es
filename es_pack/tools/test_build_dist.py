@@ -178,6 +178,13 @@ def test_literal_pair_with_html_tag_is_dist():
     assert classify(block) == "dist"
 
 
+def test_literal_pair_with_styled_span_is_dist():
+    from build_dist import classify
+    block = ('{\n        en = "<span style=\\"color:%negative%;\\"><u>No Cooks</u></span>"\n'
+             '        es = "<span style=\\"color:%negative%;\\"><u>Sin cocineros</u></span>"\n    }')
+    assert classify(block) == "dist"
+
+
 def test_literal_pair_with_raw_expression_stays_wip():
     from build_dist import classify
     block = ('{\n        en = "You gain <this.getItem().getName()>"\n'
@@ -1126,7 +1133,7 @@ def test_medida_corpus_pendiente_separa_estatico_de_patron_por_cubo():
 
 def test_medida_sin_mod_carga_solo_el_base_y_con_mod_el_base_y_el_suyo():
     """Un par de Legends no puede inflar la cifra del juego base; al medir
-    Legends hacen falta los dos, porque Legends reutiliza textos del juego."""
+    Legends hacen falta los dos, porque Legends reutiliza textos del juego, y\n    claves.nut delante del suyo, como en el preload."""
     import pytest
 
     import build_dist
@@ -1135,7 +1142,7 @@ def test_medida_sin_mod_carga_solo_el_base_y_con_mod_el_base_y_el_suyo():
     assert objetivo() == ([build_dist.CORPUS], [PACK])
     legends = build_dist.CORPUS.parent / "mod_legends_es.nut"
     assert objetivo("mod_legends") == ([build_dist.CORPUS, legends],
-                                       [PACK, PACK.parent / "mod_legends_es.nut"])
+                                       [PACK, PACK.parent / "claves.nut", PACK.parent / "mod_legends_es.nut"])
     with pytest.raises(SystemExit):
         objetivo("mod_que_no_existe")
 
@@ -1376,6 +1383,8 @@ def test_sonda_de_los_textos_que_monta_legends(tmp_path):
         emit(p, [b for b in load_blocks(c["ruta"]) if classify(b) == "dist"], cabecera(c["id"], c["version"]))
         packs.append(p)
     packs.insert(1, IDS)
+    # como el preload: claves.nut va justo antes del corpus de Legends
+    packs.insert(2, REPO / "es_pack" / "src" / "mod_battle_brothers_es" / "claves.nut")
     env = dict(os.environ, ROSETTA_DIR=str(REPO), STDLIB_DIR=str(stdlib), LEGENDS_DIR=str(legends),
                SONDA_PACKS=";".join(str(p) for p in packs))
     r = subprocess.run([str(sq), str(REPO / "es_pack" / "tools" / "sq_probe_legends_textos.nut")],
@@ -1432,12 +1441,43 @@ _SUBS_RE = {"int": r"[+\-]?\d+", "val": r"[+\-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\
             "tag": r"\[[^\]]+\]", "img": r"\[img\][^\]]+\[/img\]"}
 
 
-def _clave_de_regla(en):
-    sin = re.sub(r"<\w+:(\w+)>", lambda m: " " if m.group(1).endswith("tag") else "", en)
+# patternKeyRe: la captura se lleva lo que tiene pegado, salvo < = >.
+_CLAVE_RE = re.compile(r"([\w!-;?-~]*)<\w+:(\w+)>([\w!-;?-~]*)")
+
+
+def _clave_de_regla(en, salta_trozos=False):
+    """La clave del runtime; con salta_trozos, la de claves.nut (corpus de mods)."""
+    sin = _CLAVE_RE.sub(lambda m: m.group(1) + " " + m.group(3) if m.group(2).endswith("tag") else "", en)
     for w in _ETIQUETAS_RE.sub(" ", sin).lower().split():
-        if w not in _PARADAS and not w[0].isdigit():
+        if w not in _PARADAS and not w[0].isdigit() and not (salta_trozos and ("[" in w or "]" in w)):
             return w
     return ""
+
+
+def test_ninguna_regla_de_mod_queda_bajo_una_clave_imposible():
+    """Una regla cuya clave es un trozo de etiqueta ("[color=") no se prueba
+    nunca. Las de los mods las rescata claves.nut, y esto comprueba que lo
+    consigue. En el juego base queda una, el sobre del rumor de taberna, que
+    claves.nut no toca porque el base se carga antes: pendiente de la 4.0.1."""
+    from build_dist import corpus_del_pack, is_rule_pair
+
+    imposibles = {"base": [], "mods": []}
+    for c in corpus_del_pack():
+        for b in load_blocks(c["ruta"]):
+            if classify(b) != "dist" or not is_rule_pair(b):
+                continue
+            en = get_field(b, "en")
+            k = _clave_de_regla(en, salta_trozos=c["id"] != "vanilla")
+            if "[" in k or "]" in k:
+                imposibles["base" if c["id"] == "vanilla" else "mods"].append(en)
+    assert imposibles["mods"] == []
+    assert [en[:11] for en in imposibles["base"]] == ["<intro:str>"]
+
+
+def test_la_emulacion_de_la_clave_ve_el_trozo_de_etiqueta():
+    assert _clave_de_regla("[color=%positive%]+<n:int>[/color] Melee Skill") == "[color="
+    assert _clave_de_regla("[color=%positive%]+<n:int>[/color] Melee Skill", salta_trozos=True) == "melee"
+    assert _clave_de_regla("You spend [color=<c:str>]<n:int>[/color] Tools") == "you"
 
 
 def _regex_de_regla(en):
