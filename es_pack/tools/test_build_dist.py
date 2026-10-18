@@ -205,6 +205,14 @@ def test_checks_no_avisa_de_puntuacion_correcta():
     assert revisar(datos)["PUNTUACION"] == []
 
 
+def test_checks_participio_con_token_de_genero_no_es_vosotros():
+    from checks import revisar
+    datos = [("Plant the banner", "Plantar el estandarte"),
+             ("%commander% stands there", "%commander% está plantad%o_commander% ahí"),
+             ("Plant it!", "¡Plantad el estandarte!")]
+    assert len(revisar(datos)["REGISTRO"]) == 1
+
+
 def _corpus_falso(tmp_path, secciones):
     """secciones: [(fichero, [(en, es), ...]), ...] -> ruta a un corpus minimo."""
     lineas = []

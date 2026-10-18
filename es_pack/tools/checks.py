@@ -151,7 +151,8 @@ OS_CLITICO_RE = re.compile(
     r"(?:^|[\s¡¿\"])os\s+(?:he|ha|han|voy|doy|dar|dig|digo|lo|la|los|las|"
     r"le|les|pag|dej|llev|ofrez|espera|juro|prometo|advierto|aseguro|"
     r"ruego|pido|suplico|maldig|mat|vais|dais)", re.I)
-IMPERATIVO_VOS_RE = re.compile(r"\b([a-záéíóúñ]{5,}(?:ad|ed|id))\b", re.I)
+# Sin `%` detrás: "plantad%o_x%" es un participio con token de género (Legends).
+IMPERATIVO_VOS_RE = re.compile(r"\b([a-záéíóúñ]{5,}(?:ad|ed|id))\b(?!%)", re.I)
 # Sustantivos en -ad/-ud/-id que no son imperativos de nada. La validacion
 # contra el infinitivo ya filtra casi todo; esto cubre los que coinciden por
 # casualidad con un verbo del corpus.
