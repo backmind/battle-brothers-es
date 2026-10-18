@@ -1159,3 +1159,37 @@ def test_la_vigilancia_de_msu_ve_piezas_que_faltan_y_textos_sin_par(tmp_path):
     boton = tmp_path / "ui/mods/msu/ui_hooks/main_menu_module.js"
     boton.write_text(boton.read_text(encoding="utf-8").replace('"Mod Options"', '"Mod Settings"'), encoding="utf-8")
     assert [t for _, t, _ in piezas_que_faltan(Fuente(tmp_path))] == ['createTextButton("Mod Options"']
+
+
+def test_cada_mod_tiene_su_corpus_y_el_preload_lo_carga_solo_si_esta():
+    """El build mete en el zip un corpus por mod de MODS; si el preload no lo
+    incluye, o lo incluye sin mirar si el mod está, la traducción no llega o
+    se carga en partidas sin ese mod."""
+    import re as _re
+
+    from build_dist import CORPUS, MODS, SRC, corpus_del_pack
+
+    corpus = corpus_del_pack()
+    assert corpus[0]["ruta"] == CORPUS and corpus[0]["id"] == "vanilla"
+    assert [c["id"] for c in corpus[1:]] == list(MODS)
+    t = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es.nut").read_text(encoding="utf-8")
+    for c in corpus[1:]:
+        assert c["ruta"].is_file(), c["ruta"]
+        assert _re.fullmatch(r"\d+(\.\d+)*", c["version"]), c["version"]
+        bloque = _re.search(r'mod\.queue\(">%s".*?\n\}\);' % c["id"], t, _re.S)
+        assert bloque, "el preload no encola nada tras %s" % c["id"]
+        assert '::Hooks.hasMod("%s")' % c["id"] in bloque.group(0)
+        assert '::include("mod_battle_brothers_es/%s")' % c["ruta"].stem in bloque.group(0)
+    # El corpus base se sigue cargando siempre, fuera de cualquier cola.
+    assert '\n::include("mod_battle_brothers_es/base_es");' in t
+
+
+def test_la_cabecera_de_un_mod_declara_su_id_y_su_version(tmp_path):
+    from build_dist import cabecera, emit
+
+    out = tmp_path / "mod_x_es.nut"
+    emit(out, ['{\n    en = "A"\n    es = "B"\n}'], cabecera("mod_x", "1.2.3"))
+    texto = out.read_text(encoding="utf-8")
+    assert 'mod = {id = "mod_x", version = "1.2.3"}' in texto
+    assert texto.endswith("::Rosetta.add(rosetta, pairs);\n")
+

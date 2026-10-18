@@ -3,8 +3,10 @@
 Uso:  PYTHONUTF8=1 uv run python es_pack/tools/build_dist.py
 
 Lee   es_pack/corpus/base_es.nut  (corpus completo)
+      es_pack/corpus/<id_del_mod>_es.nut, uno por mod de MODS
 Escribe:
   es_pack/build/mod_battle_brothers_es/base_es.nut          pares validos
+  es_pack/build/mod_battle_brothers_es/<id_del_mod>_es.nut  los de cada mod
   es_pack/build/patterns_wip.nut                         cuarentena (Fase 4)
   es_pack/build/scripts/!mods_preload/mod_battle_brothers_es.nut
   es_pack/build/mod_battle_brothers_es_<version>.zip
@@ -23,6 +25,7 @@ import contextlib
 import re
 import shutil
 import sys
+import tomllib
 import zipfile
 from pathlib import Path
 
@@ -31,6 +34,11 @@ sys.path.insert(0, str(REPO / "vendor" / "rosetta"))
 import rosetta  # vendorizado (vendor/rosetta/ORIGEN.md): load_ref es el parser oficial
 
 CORPUS = REPO / "es_pack" / "corpus" / "base_es.nut"
+# Las traducciones de mods, una por mod, con la fuente fijada de la que se
+# extrajo (su etiqueta es la version que se declara a Rosetta). Van en el mismo
+# zip, y el preload solo carga cada una si su mod esta instalado; un test
+# comprueba que el preload las conoce todas.
+MODS = {"mod_legends": REPO / "es_pack" / "legends" / "fuente.toml"}
 # Los pares por id (homografos de m.Name, Rosetta >= 0.5.0) viven en su propio
 # fichero fuente-y-artefacto: el load_ref de upstream descarta en silencio los
 # bloques sin `en`, asi que dentro de base_es.nut se perderian. Se copia tal
@@ -94,18 +102,31 @@ def decode_hex_escapes(text):
     return DEC_RE.sub(lambda m: m.group(1) + _DEC[m.group(2)], text)
 
 
-HEADER = (
-    'if (!("Rosetta" in getroottable())) return;\n'
-    'if (::Hooks.SQClass.ModVersion(::Rosetta.Version) '
-    '< ::Hooks.SQClass.ModVersion("0.5.0")) return;\n\n'
-    "local rosetta = {\n"
-    '    mod = {id = "vanilla", version = "%s"}\n'
-    '    author = "comunidad hispana de Battle Brothers"\n'
-    '    lang = "es"\n'
-    "}\n"
-    "local pairs = [\n" % GAME_VERSION
-)
+def cabecera(mod_id="vanilla", version=GAME_VERSION):
+    return (
+        'if (!("Rosetta" in getroottable())) return;\n'
+        'if (::Hooks.SQClass.ModVersion(::Rosetta.Version) '
+        '< ::Hooks.SQClass.ModVersion("0.5.0")) return;\n\n'
+        "local rosetta = {\n"
+        '    mod = {id = "%s", version = "%s"}\n'
+        '    author = "comunidad hispana de Battle Brothers"\n'
+        '    lang = "es"\n'
+        "}\n"
+        "local pairs = [\n" % (mod_id, version)
+    )
+
+
+HEADER = cabecera()
 FOOTER = "]\n::Rosetta.add(rosetta, pairs);\n"
+
+
+def corpus_del_pack():
+    """Los corpus que van al zip: el del juego base primero y uno por mod."""
+    return [{"id": "vanilla", "version": GAME_VERSION, "ruta": CORPUS}] + [
+        {"id": mod_id,
+         "version": tomllib.loads(toml.read_text(encoding="utf-8"))["etiqueta"],
+         "ruta": CORPUS.parent / ("%s_es.nut" % mod_id)}
+        for mod_id, toml in MODS.items()]
 
 
 def get_field(block, name):
@@ -200,13 +221,13 @@ def classify(block):
     return "dist" if ok_en and ok_es else "wip"
 
 
-def emit(path, blocks):
+def emit(path, blocks, cabecera_=HEADER):
     path.parent.mkdir(parents=True, exist_ok=True)
     body = "\n".join(
         "    " + decode_hex_escapes(b).strip().replace("\n", "\n    ")
         for b in blocks
     )
-    path.write_text(HEADER + body + "\n" + FOOTER, encoding="utf-8", newline="\n")
+    path.write_text(cabecera_ + body + "\n" + FOOTER, encoding="utf-8", newline="\n")
 
 
 WIP_HEADER = (
@@ -263,20 +284,39 @@ def main():
     shutil.copy(IDS, BUILD / ids_rel)
     print("ids: %d pares por id" %
           IDS.read_text(encoding="utf-8").count('{id = "scripts/'))
-    emit_wip(BUILD / "patterns_wip.nut", buckets["wip"])
+
+    # Los corpus de los mods no suman en las cifras del base: cada uno da su
+    # linea. La cuarentena es una sola, porque un patron roto de cualquiera
+    # aborta la carga igual.
+    wip = list(buckets["wip"])
+    mods_rel = []
+    for c in corpus_del_pack()[1:]:
+        mod_buckets = {"dist": [], "wip": [], "drop": []}
+        for b in load_blocks(c["ruta"]):
+            mod_buckets[classify(b)].append(b)
+        print("%s %s: dist: %d  wip: %d  drop: %d" % (
+            c["id"], c["version"], len(mod_buckets["dist"]),
+            len(mod_buckets["wip"]), len(mod_buckets["drop"])))
+        rel = Path("mod_battle_brothers_es") / c["ruta"].name
+        emit(BUILD / rel, mod_buckets["dist"], cabecera(c["id"], c["version"]))
+        mods_rel.append(rel)
+        wip += mod_buckets["wip"]
+        avisar_calidad(mod_buckets["dist"], c["id"])
+
+    emit_wip(BUILD / "patterns_wip.nut", wip)
     for rel in scripts_rel:
         (BUILD / rel).parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(SRC / rel, BUILD / rel)
 
     zip_path = BUILD / ("mod_battle_brothers_es_%s.zip" % PACK_VERSION)
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
-        for rel in list(scripts_rel) + [pairs_rel, ids_rel]:
+        for rel in list(scripts_rel) + [pairs_rel, ids_rel] + mods_rel:
             z.writestr(entrada_zip(rel.as_posix()), (BUILD / rel).read_bytes())
     print("zip:", zip_path)
     sintaxis_ok = avisar_sintaxis()
     avisos = avisar_calidad(blocks)
     if "--estricto" in sys.argv:
-        problemas = problemas_estrictos(sintaxis_ok, avisos, len(buckets["wip"]))
+        problemas = problemas_estrictos(sintaxis_ok, avisos, len(wip))
         for linea in problemas:
             print("ESTRICTO: " + linea)
         if problemas:
@@ -321,15 +361,16 @@ def avisar_sintaxis():
         return False
 
 
-def avisar_calidad(blocks):
+def avisar_calidad(blocks, corpus=""):
     """Avisos de calidad del corpus: informativos, nunca bloquean el build.
-    Si el modulo de chequeos falla, el build sigue adelante igual."""
+    Si el modulo de chequeos falla, el build sigue adelante igual. La linea
+    base de --estricto solo vale para el base: los mods dan su cuenta aparte."""
     try:
         from checks import revisar  # import diferido: checks importa este modulo
         datos = [(get_field(b, "en"), get_field(b, "es")) for b in blocks]
         avisos = revisar([(en, es) for en, es in datos if en and es])
         resumen = ", ".join("%s %d" % (k, len(v)) for k, v in sorted(avisos.items()) if v)
-        print("avisos de calidad: %s" % (resumen or "ninguno"))
+        print("avisos de calidad%s: %s" % (corpus and " " + corpus, resumen or "ninguno"))
         return {k: len(v) for k, v in avisos.items()}
     except Exception as err:
         print("avisos de calidad: no disponibles (%s)" % err)

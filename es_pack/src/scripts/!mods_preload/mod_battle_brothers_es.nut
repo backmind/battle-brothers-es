@@ -52,3 +52,12 @@ mod.queue(">mod_msu", function () {
 // El juego instalado esta en ingles, asi que la autodeteccion de idioma
 // de Rosetta (que mira strings ya traducidas) no aplica: activamos es.
 ::Rosetta.activate("es");
+
+// La traducción de cada mod viaja en este zip y solo se carga si el mod está.
+// Va en la cola y después del mod porque lo que el pack añade para él se apoya
+// en lo que el mod define en la suya; build_dist.MODS lista los mods y un test
+// exige que estén todos aquí.
+mod.queue(">mod_legends", function () {
+    if (!::Hooks.hasMod("mod_legends")) return;
+    ::include("mod_battle_brothers_es/mod_legends_es");
+});
