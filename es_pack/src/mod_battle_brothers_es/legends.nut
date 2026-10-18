@@ -46,3 +46,44 @@ mod.hookTree("scripts/entity/tactical/actor", function (q) {
         return n >= 0 && ret.slice(n) == masc ? ret.slice(0, n) + fem[masc] : ret;
     }
 })
+
+// Descripciones de ventajas y de runas. Son cadenas @"..." que empiezan y
+// acaban en salto de línea (las runas acaban en salto y tabulador), y
+// ::Legends.tooltip las recorta con strip antes de pasarlas por la plantilla:
+// el wrapper de Rosetta recibía el texto sin bordes y la clave del corpus, que
+// los lleva, no casaba. Aquí se traduce el texto crudo, antes del strip. Legends
+// define la función en su cola (!!config/_tooltip_templates.nut) y la llama
+// desde los afterHooks, que carga al conectar el menú principal: este enganche
+// va en medio.
+// Al volver al menú principal, perk_tooltips.nut vuelve a pasar cada
+// descripción, que ya lleva su línea «From the X perk group». Esa línea se
+// aparta y se devuelve tal cual, para que no la vea el wrapper: Legends la
+// busca en inglés para rehacerla, y la traduce la regla del corpus cuando el
+// tooltip se muestra.
+local tooltip = ::Legends.tooltip, GRUPO = "[color=#0b0084]From the ";
+::Legends.tooltip = function (_text, ...) {
+    local args = [this, _text];
+    args.extend(vargv);
+    if (typeof _text != "string") return tooltip.acall(args);
+    local i = _text.find(GRUPO);
+    if (i == null) {
+        args[1] = ::Rosetta._(_text);
+        return tooltip.acall(args);
+    }
+    local cabeza = _text.slice(0, i), n = i;
+    while (n > 0 && cabeza[n - 1] <= ' ') n--;
+    args[1] = cabeza;
+    return tooltip.acall(args) + cabeza.slice(n) + _text.slice(i);
+}
+
+// El nombre de las armaduras y cascos por capas une las piezas con " on "
+// (legend_armor.nut y legend_helmet.nut, makeName), y las piezas ya llegan en
+// castellano por los getters de Rosetta. El corpus lo resolvía con la regla
+// "<upgrade:str> on <armor:str>", que casaba con cualquier frase inglesa con un
+// " on " dentro; aquí se cambia solo la unión.
+foreach (clase in ["scripts/items/legend_armor/legend_armor", "scripts/items/legend_helmets/legend_helmet"])
+    mod.hookTree(clase, function (q) {
+        q.makeName = @(__original) function () {
+            return ::std.Str.replace(__original(), " on ", " sobre ");
+        }
+    })

@@ -17,8 +17,12 @@ local raiz = getenv("ROSETTA_DIR");
 
 // Lo poco del juego y de los mods que tocan los dos ficheros.
 ::Const <- {};
-::Legends <- {S = {isNull = @(_x) _x == null}};
-::Hooks <- {getMod = @(_id) {hookTree = function (_src, _f) { ::probe.hook = _f; }}};
+// El enganche también envuelve ::Legends.tooltip y engancha las armaduras por
+// capas; aquí solo se mira el hook del actor (los textos, en sq_probe_legends_textos.nut).
+::Legends <- {S = {isNull = @(_x) _x == null}, tooltip = @(_t, ...) _t};
+::Hooks <- {getMod = @(_id) {hookTree = function (_src, _f) {
+    if (_src == "scripts/entity/tactical/actor") ::probe.hook = _f;
+}}};
 local tr = {["the Brave"] = "el Valiente", ["the Old Wolf"] = "el Viejo Lobo",
             ["the Shieldmaiden"] = "la Escudera"};
 ::Rosetta <- {_ = @(_s, _id = null) _s in tr ? tr[_s] : _s};
