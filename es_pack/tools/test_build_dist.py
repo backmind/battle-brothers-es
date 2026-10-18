@@ -1275,3 +1275,25 @@ def test_ancho_avisa_del_boton_sin_salto_y_de_la_descripcion_larga(tmp_path):
 def test_ancho_no_avisa_de_nada_en_el_corpus():
     from checks import ancho_recuadros
     assert ancho_recuadros() == []
+
+
+def test_literalizar_solo_quita_el_modo_a_los_pares_sin_capturas():
+    from build_dist import is_rule_pair, literalizar
+    sin = '{\n        mode = "pattern"\n        en = "From what I hear, %settlement% burns."\n        es = "Dicen que %settlement% arde."\n    }'
+    con = '{\n        mode = "pattern"\n        en = "From <f:str>"\n        es = "De <f>"\n    }'
+    plural = '{\n        mode = "pattern"\n        plural = "n"\n        en = "Got <n:int> crowns"\n        n1 = "a"\n        n2 = "b"\n    }'
+    literal = '{\n        en = "Your Task"\n        es = "Tu tarea"\n    }'
+    assert not is_rule_pair(literalizar(sin))
+    assert get_field(literalizar(sin), "en") == get_field(sin, "en")
+    assert get_field(literalizar(sin), "es") == get_field(sin, "es")
+    assert literalizar(con) == con and literalizar(plural) == plural and literalizar(literal) == literal
+
+
+def test_literalizar_no_cambia_el_cubo_de_ningun_par_del_corpus():
+    """Lo emitido cambia de forma, pero no de cubo: el recuento dist/wip/drop
+    por par es el mismo que el del corpus fuente."""
+    from build_dist import CORPUS, is_rule_pair, literalizar
+    bloques = load_blocks(CORPUS)
+    assert [classify(literalizar(b)) for b in bloques] == [classify(b) for b in bloques]
+    cambiados = [b for b in bloques if literalizar(b) != b]
+    assert cambiados and all(classify(b) == "dist" and is_rule_pair(b) for b in cambiados)

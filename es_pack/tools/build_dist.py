@@ -173,6 +173,24 @@ def is_rule_pair(block):
     return 'mode = "pattern"' in block or bool(RULE_KEY_RE.search(block))
 
 
+CAPTURA_RE = re.compile(r"<\w+:\w+>")
+MODE_PATTERN_RE = re.compile(r'^[ \t]*mode = "pattern"\n', re.M)
+
+
+def literalizar(block):
+    """El bloque tal como se emite: un par mode="pattern" sin ninguna captura
+    sale como literal. Solo casa su cadena exacta, igual que un literal, pero
+    el runtime archiva las reglas por su primera palabra y las prueba en orden
+    de carga, así que una regla anterior con la misma clave le gana: "From
+    <f:str>" se comía "From what I've heard, %settlement%..." y el jugador leía
+    "Desde what I've heard...". Los literales se miran antes que cualquier
+    regla. El corpus no cambia: la marca la pone el extractor y volvería."""
+    if (MODE_PATTERN_RE.search(block) and not RULE_KEY_RE.search(block)
+            and not CAPTURA_RE.search(get_field(block, "en") or "")):
+        return MODE_PATTERN_RE.sub("", block, count=1)
+    return block
+
+
 def classify(block):
     en = get_field(block, "en")
     es = get_field(block, "es")
@@ -258,7 +276,7 @@ def main():
     scripts_rel = sorted(p.relative_to(SRC)
                          for p in (SRC / "scripts").rglob("*") if p.is_file())
 
-    emit(BUILD / pairs_rel, buckets["dist"])
+    emit(BUILD / pairs_rel, [literalizar(b) for b in buckets["dist"]])
     (BUILD / ids_rel).parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(IDS, BUILD / ids_rel)
     print("ids: %d pares por id" %
