@@ -24,7 +24,8 @@
 //
 // Entrada, todo por variables de entorno (ver measure_coverage.py):
 //   ROSETTA_DIR, STDLIB_DIR   como sq_bootstrap.nut
-//   COV_PACK                  el pack construido a cargar (base_es.nut)
+//   COV_PACK                  los packs construidos a cargar, separados por ";"
+//                             (base_es.nut, y el del mod si se mide un mod)
 //   COV_DATOS                 .nut que define COV_LITERALES, COV_DROP_PATTERN_EN
 //                             y COV_WIP_PATTERN_EN (measure_coverage.py lo genera)
 //
@@ -58,7 +59,7 @@ if (covPack == null || covPack == "") throw "falta COV_PACK";
 if (covDatos == null || covDatos == "") throw "falta COV_DATOS";
 
 dofile(::SQ_ROSETTA + "/es_pack/tools/sq_bootstrap.nut", true);
-dofile(covPack, true);
+foreach (p in split(covPack, ";")) dofile(p, true);
 ::Rosetta.activate("es");
 dofile(covDatos, true);
 

@@ -102,7 +102,10 @@ Medir cobertura es buscar ausencias: literales del juego que ningún par captura
 
 ```bash
 PYTHONUTF8=1 uv run python es_pack/tools/measure_coverage.py [ruta_scripts]
+PYTHONUTF8=1 uv run python es_pack/tools/measure_coverage.py --mod mod_legends
 ```
+
+Con `--mod` mide la fuente fijada del mod (la de `fuente.toml`, con las cadenas `@"..."` convertidas como en la extracción de su corpus) con el pack base y el del mod cargados a la vez; sin `--mod` carga solo el base, para que un par del mod no infle la cifra del juego.
 
 Como `check_ui_drift.py` y `gt_align.py`, necesita recursos que no están en cualquier máquina: el árbol descompilado del juego, `stdlib.zip` descomprimido (`STDLIB_DIR`) y un intérprete Squirrel. Sin argumento busca el árbol en `SCRIPTS_DIR` del `.env` o en la ruta conocida del árbol de herramientas del juego. Escribe en `es_pack/build/` la extracción cruda, los huecos con fichero y familia, los candidatos de patrón sin confirmar del todo y un resumen agregado, sin tocar el corpus ni el pack.
 

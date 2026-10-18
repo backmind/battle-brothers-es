@@ -69,6 +69,13 @@ algo que esta herramienta pueda descartar sola con una regla general.
 
 Uso:
     PYTHONUTF8=1 uv run python es_pack/tools/measure_coverage.py [ruta_scripts]
+    PYTHONUTF8=1 uv run python es_pack/tools/measure_coverage.py --mod mod_legends [ruta]
+
+Con `--mod <id>` (un mod de build_dist.MODS) mide la fuente fijada de ese mod
+(por defecto la carpeta `fuente/` junto a su `fuente.toml`) con el pack del
+juego base y el del mod cargados a la vez, que es lo que ve el jugador: el mod
+reutiliza textos del juego que solo cubre el corpus base. Sin `--mod` se carga
+solo el pack base, para que un par del mod no infle la cifra del juego.
 
 `ruta_scripts` es la carpeta `scripts/` del arbol descompilado del juego. Si
 se omite, se busca `SCRIPTS_DIR` en el entorno o en `.env`, y si tampoco esta
@@ -213,13 +220,41 @@ def parse_literales(texto, scripts_dir):
     return out
 
 
-def corpus_pendiente():
+def objetivo(mod_id=None):
+    """Los corpus que se miden y los packs construidos que carga la sonda, uno
+    por corpus. Sin mod, solo el juego base; con mod, el base y el del mod."""
+    ids = ("vanilla", mod_id)
+    if mod_id is not None and mod_id not in build_dist.MODS:
+        raise SystemExit("mod desconocido: %s (los de build_dist.MODS: %s)"
+                         % (mod_id, ", ".join(build_dist.MODS)))
+    corpus = [c["ruta"] for c in build_dist.corpus_del_pack() if c["id"] in ids]
+    return corpus, [PACK.parent / c.name for c in corpus]
+
+
+def copia_de_la_fuente(mod_id):
+    """La fuente fijada del mod tal como la ve la extracción de su corpus
+    (lotes.py extraer): solo sus rutas y con las cadenas @"..." convertidas,
+    que el extractor de Rosetta no lee y por las que descarta ficheros enteros."""
+    import shutil
+    import tomllib
+
+    import lotes
+
+    toml = build_dist.MODS[mod_id]
+    destino = BUILD / ("cov_fuente_" + mod_id)
+    shutil.rmtree(destino, ignore_errors=True)
+    rutas = tomllib.loads(toml.read_text(encoding="utf-8"))["rutas"]
+    lotes.copia_extraible(toml.parent / "fuente", destino, rutas)
+    return destino
+
+
+def corpus_pendiente(corpus=(build_dist.CORPUS,)):
     """Los `en` del corpus completo (dist+wip+drop) que NO llegan al pack
     cargado, separados en estaticos y de patron, para anotar huecos como
     deuda de traduccion en vez de ausencia real. Usa el clasificador real de
     build_dist.py, no una regla propia: si upstream o el corpus cambian de
     forma, esto se entera por el mismo camino que build_dist."""
-    bloques = build_dist.load_blocks(build_dist.CORPUS)
+    bloques = [b for c in corpus for b in build_dist.load_blocks(c)]
     static_en = set()
     pattern_en_drop, pattern_en_wip = [], []
     for b in bloques:
@@ -253,11 +288,11 @@ def escribe_datos_probe(literales, drop_pattern_en, wip_pattern_en):
         f.write("]\n")
 
 
-def corre_sonda(sq_bin, stdlib_dir):
+def corre_sonda(sq_bin, stdlib_dir, packs=(PACK,)):
     env = dict(os.environ)
     env["ROSETTA_DIR"] = str(REPO)
     env["STDLIB_DIR"] = str(stdlib_dir)
-    env["COV_PACK"] = str(PACK)
+    env["COV_PACK"] = ";".join(str(p) for p in packs)
     env["COV_DATOS"] = str(DATOS_PROBE)
     r = subprocess.run([str(sq_bin), str(PROBE_NUT)],
                        capture_output=True, text=True, encoding="utf-8",
@@ -305,6 +340,7 @@ REVISADOS = {
     'Desert Raiders',
     'Falling back',
     'Generic Item',
+    'Info: Battle ended after <this.m.CurrentRound> Round(s).',
     'Load campaign: <_campaignFileName>',
     'No good tile in range, engaging in the general direction of the enemy!',
     'ORIENTAL CITY #2',
@@ -330,11 +366,23 @@ def es_texto(en):
 
 
 def main(argv):
-    if not PACK.is_file():
-        raise SystemExit(
-            "no encuentro %s. Corre primero:\n"
-            "  PYTHONUTF8=1 uv run python es_pack/tools/build_dist.py" % PACK)
+    argv = list(argv)
+    mod_id = None
+    if "--mod" in argv:
+        i = argv.index("--mod")
+        mod_id = argv[i + 1] if i + 1 < len(argv) else None
+        if mod_id is None:
+            raise SystemExit("--mod necesita el id de un mod de build_dist.MODS")
+        del argv[i:i + 2]
+    corpus, packs = objetivo(mod_id)
+    for p in packs:
+        if not p.is_file():
+            raise SystemExit(
+                "no encuentro %s. Corre primero:\n"
+                "  PYTHONUTF8=1 uv run python es_pack/tools/build_dist.py" % p)
 
+    if mod_id is not None and not argv:
+        argv = [str(copia_de_la_fuente(mod_id))]
     scripts_dir = localiza_scripts_dir(argv[0] if argv else None)
     stdlib_dir = localiza_stdlib_dir()
     sq_bin = check_syntax.localiza_interprete()
@@ -347,10 +395,10 @@ def main(argv):
     print("literales extraidos: %d (%d de patron)"
           % (len(literales), sum(1 for *_, m, _ in literales if m == "pattern")))
 
-    static_pendiente, drop_pattern_en, wip_pattern_en = corpus_pendiente()
+    static_pendiente, drop_pattern_en, wip_pattern_en = corpus_pendiente(corpus)
 
     escribe_datos_probe(literales, drop_pattern_en, wip_pattern_en)
-    salida = corre_sonda(sq_bin, stdlib_dir)
+    salida = corre_sonda(sq_bin, stdlib_dir, packs)
 
     resultados = {}
     for linea in salida.splitlines():

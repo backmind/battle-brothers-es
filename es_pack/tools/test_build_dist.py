@@ -1122,6 +1122,47 @@ def test_medida_corpus_pendiente_separa_estatico_de_patron_por_cubo():
     assert all(isinstance(en, str) for en in wip_pattern_en)
 
 
+def test_medida_sin_mod_carga_solo_el_base_y_con_mod_el_base_y_el_suyo():
+    """Un par de Legends no puede inflar la cifra del juego base; al medir
+    Legends hacen falta los dos, porque Legends reutiliza textos del juego."""
+    import pytest
+
+    import build_dist
+    from measure_coverage import PACK, objetivo
+
+    assert objetivo() == ([build_dist.CORPUS], [PACK])
+    legends = build_dist.CORPUS.parent / "mod_legends_es.nut"
+    assert objetivo("mod_legends") == ([build_dist.CORPUS, legends],
+                                       [PACK, PACK.parent / "mod_legends_es.nut"])
+    with pytest.raises(SystemExit):
+        objetivo("mod_que_no_existe")
+
+
+def test_la_sonda_de_cobertura_carga_todos_los_packs_que_se_le_pasan(tmp_path, monkeypatch):
+    """Con el runtime real: un literal de cada pack sale cubierto y uno que no
+    está en ninguno sale hueco. Sin intérprete Squirrel o sin stdlib, se salta."""
+    import pytest
+
+    import measure_coverage
+    from build_dist import cabecera, emit
+    from check_syntax import localiza_interprete
+
+    sq = localiza_interprete()
+    if sq is None:
+        pytest.skip("sin interprete Squirrel disponible")
+    stdlib = _stdlib_descomprimido(tmp_path / "stdlib")
+    if stdlib is None:
+        pytest.skip("sin stdlib (STDLIB_DIR o DATA_DIR en .env)")
+    base, mod = tmp_path / "base_es.nut", tmp_path / "mod_x_es.nut"
+    emit(base, ['{\n    en = "Dagger"\n    es = "Daga"\n}'])
+    emit(mod, ['{\n    en = "Legend sword"\n    es = "Espada de leyenda"\n}'], cabecera("mod_x", "1.2.3"))
+    monkeypatch.setattr(measure_coverage, "DATOS_PROBE", tmp_path / "cov_literales.nut")
+    literales = [("a.nut", "a", "", en) for en in ("Dagger", "Legend sword", "Nowhere")]
+    measure_coverage.escribe_datos_probe(literales, [], [])
+    salida = measure_coverage.corre_sonda(sq, stdlib, [base, mod])
+    assert [l.split("\t")[1] for l in salida.splitlines() if l.strip()] == ["OK_DIRECTO", "OK_DIRECTO", "HUECO"]
+
+
 def test_las_entradas_de_zip_no_dependen_del_sistema():
     """La CI construye en Linux los zips de la release, y tienen que ser los
     mismos byte a byte que los de Windows. zipfile rellena el sistema de origen
