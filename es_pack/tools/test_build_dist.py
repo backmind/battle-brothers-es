@@ -1312,3 +1312,20 @@ def test_registro_ve_el_imperativo_de_vosotros_con_clitico():
     avisos = revisar(diccionario + [("x", "Hay que barrer.")] + vos + limpios)["REGISTRO"]
     assert len(avisos) == 4
     assert all(any(v[1][:10] in a for a in avisos) for v in vos)
+
+
+def test_habla_ve_el_color_suelto_de_las_llaves_perdidas():
+    """El caso del jugador (contrato de buscar un lugar): el inglés anida un
+    bloque de ramas dentro de un %SPEECH_ON%...%SPEECH_OFF% y el español
+    perdió esas llaves, de modo que una rama abría el [color] y otra lo
+    cerraba sin abrirlo."""
+    from checks import revisar, saldos_de_habla
+    en = "{A.%SPEECH_ON%B.%SPEECH_OFF% | C.%SPEECH_ON%{D | E}%SPEECH_OFF%}"
+    roto = "{A.%SPEECH_ON%B.%SPEECH_OFF% | C.%SPEECH_ON%D | E%SPEECH_OFF%}"
+    assert saldos_de_habla(en) == {0}
+    assert saldos_de_habla(roto) == {-1, 0, 1}
+    # el intro de la negociación abre en sus ramas y cierra en el pago: suma 0
+    assert saldos_de_habla("{a%SPEECH_ON%x | %SPEECH_ON%y} {b | c} pago.%SPEECH_OFF%") == {0}
+    assert saldos_de_habla("llave { suelta %SPEECH_START%hola%SPEECH_OFF%") == {0}
+    avisos = revisar([(en, roto), (en, en.replace("B", "Be"))])["HABLA"]
+    assert len(avisos) == 1 and "C.%SPEECH_ON%D" in avisos[0]

@@ -60,7 +60,7 @@ FECHA_FIJA = (1980, 1, 1, 0, 0, 0)
 # bloquean; con --estricto (lo que pasa la CI) el build falla si alguno sube
 # por encima de esto. Cada uno esta explicado en su chequeo de checks.py. Si
 # baja, se baja aqui en el mismo commit.
-LINEA_BASE = {"DUP_VECINO": 18, "TILDES": 2, "TOKENS": 1, "VARIANTES": 22}
+LINEA_BASE = {"DUP_VECINO": 18, "TILDES": 2, "TOKENS": 1, "VARIANTES": 19}
 
 
 def entrada_zip(arco):

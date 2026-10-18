@@ -30,13 +30,17 @@ no vuelva a pasar inadvertida:
              INGLÉS contra ESPAÑOL, no el equilibrio interno del español: el
              propio juego trae textos con llaves desparejadas (21 de 23 de
              los casos que parecían rotos lo estaban ya en inglés).
-             Los avisos que quedan son 22 y ninguno es deuda: 17 AÑADEN rama,
+             Los avisos que quedan son 19 y ninguno es deuda: 15 AÑADEN rama,
              repasados uno a uno y legítimos (los traductores metieron variedad
              de su cosecha, y hasta un guiño a The Witcher en el hijo del
-             Cazadragones); y 5 tienen las mismas ramas con las llaves
+             Cazadragones); y 4 tienen las mismas ramas con las llaves
              repartidas de otra forma, que en la práctica no cambia nada porque
              una llave sin ningún separador dentro devuelve su contenido tal
-             cual.
+             cual. Eran 22, y no todos inofensivos: tras la 1.0.0 un jugador vio
+             un [color] suelto en el contrato de buscar un lugar, que había
+             perdido sus llaves interiores, y otros dos casos parecidos estaban
+             en este montón. Desde entonces HABLA mira lo que el recuento de
+             llaves no ve.
              Hubo un tercer montón, 37 textos que PERDÍAN rama, y era la deuda
              de es_pack/TAREA-ramas-perdidas.md. Está cerrada: se recuperaron
              las 54 ramas y el recuento de ese montón es 0. Si vuelve a
@@ -115,6 +119,15 @@ no vuelva a pasar inadvertida:
              corpus no las distingue de otros textos de evento sin el código
              del juego delante, y se revisaron aparte. El recuento tiene que
              ser 0.
+  HABLA      alguna rama del español deja un %SPEECH_ON% sin su %SPEECH_OFF%
+             (o al revés) donde ninguna rama del inglés lo hace. El juego los
+             cambia por [color=...]" y "[/color], y uno sin pareja se ve en
+             pantalla como etiqueta suelta. Salió de un jugador tras la 1.0.0:
+             la presentación del contrato de buscar un lugar acababa en
+             [color]. El español había perdido las llaves de un bloque de
+             ramas anidado y VARIANTES lo daba por inofensivo, porque contaba
+             llaves y no lo que cada rama abre y cierra. Se evalúan todas las
+             ramas, con anidamiento. El recuento tiene que ser 0.
 
 Salida: recuento por chequeo y unos pocos ejemplos. Código de salida siempre 0.
 """
@@ -458,8 +471,64 @@ def ancho_recuadros(corpus=CORPUS):
     return avisos
 
 
+_HABLA_RE = re.compile(r"%SPEECH_(ON|START|OFF)%")
+
+
+def saldos_de_habla(texto):
+    """Los saldos posibles de [color] abiertos y sin cerrar que deja el texto
+    al elegir el juego una rama de cada {a | b}, con anidamiento: cada
+    %SPEECH_ON% o %SPEECH_START% abre uno y cada %SPEECH_OFF% lo cierra. Una
+    llave sin pareja cuenta como texto."""
+    def trozo(i, fin):
+        # saldos posibles de texto[i:fin], que no tiene " | " de este nivel
+        saldos, j = {0}, i
+        while j < fin:
+            c = texto[j]
+            if c == "{":
+                k, prof = j + 1, 1
+                while k < fin and prof:
+                    prof += {"{": 1, "}": -1}.get(texto[k], 0)
+                    k += 1
+                if prof == 0:
+                    saldos = {s + r for s in saldos for r in bloque(j + 1, k - 1)}
+                    j = k
+                    continue
+            m = _HABLA_RE.match(texto, j)
+            if m and m.end() <= fin:
+                d = -1 if m.group(1) == "OFF" else 1
+                saldos = {s + d for s in saldos}
+                j = m.end()
+                continue
+            j += 1
+        return saldos
+
+    def bloque(i, fin):
+        # ramas de texto[i:fin] separadas por " | " del primer nivel
+        out, ini, prof, j = set(), i, 0, i
+        while j < fin:
+            c = texto[j]
+            prof += {"{": 1, "}": -1}.get(c, 0)
+            if prof == 0 and texto.startswith(" | ", j):
+                out |= trozo(ini, j)
+                ini = j = j + 3
+                continue
+            j += 1
+        return out | trozo(ini, fin)
+
+    return trozo(0, len(texto))
+
+
 def revisar(datos, corpus=CORPUS):
     avisos = defaultdict(list)
+
+    # HABLA
+    for en, es in datos:
+        if "%SPEECH_" not in es:
+            continue
+        nuevos = saldos_de_habla(es) - saldos_de_habla(en)
+        if nuevos:
+            avisos["HABLA"].append("el es puede dejar %s [color] sin cerrar donde el en no: %s"
+                                   % (sorted(nuevos), es[:60]))
 
     # DUP_VECINO y ANCHO, que necesitan el fichero de cada par
     try:
@@ -627,7 +696,7 @@ def main():
     print("pares con traduccion revisados: %d" % len(datos))
     total = 0
     for nombre in ("IMG", "VARIANTES", "TOKENS", "RECORTE", "DUP_ES", "DUP_VECINO",
-                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL", "ANCHO"):
+                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL", "ANCHO", "HABLA"):
         items = avisos.get(nombre, [])
         total += len(items)
         print("\n%-11s %d" % (nombre, len(items)))
