@@ -480,3 +480,9 @@ def test_rechaza_patron_desde_porcentaje_s_que_cambia_el_texto():
     orig = lotes.bloques(_mini('        en = "Drive the nomads away from %s."\n        es = ""'))
     nuevo = lotes.entradas_lote(_mini('        mode = "pattern"\n        en = "Drive <who:str> away from <town:str>."\n        es = "Expulsa a <who> de <town>."'))
     assert lotes.validar(orig, nuevo, set(), [])[0] != []
+
+
+def test_porcentaje_s_no_confunde_tokens_que_empiezan_por_s():
+    orig = lotes.bloques(_mini('        en = "Attack: [color=%skill%]<mhSkill.getName()>[/color]"\n        es = ""'))
+    nuevo = lotes.entradas_lote(_mini('        mode = "pattern"\n        en = "Attack: [color=%skill%]<skill:str>[/color]"\n        es = "Ataque: [color=%skill%]<skill>[/color]"'))
+    assert lotes.validar(orig, nuevo, set(), [])[0] == []
