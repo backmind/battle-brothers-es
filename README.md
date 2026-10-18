@@ -76,8 +76,8 @@ Las cifras del juego base y sus expansiones salen del corpus de este repositorio
 <!-- METRICAS:INICIO (autogenerado por es_pack/tools/update_readme_metrics.py; no editar a mano) -->
 | | |
 |---|---|
-| Pares distribuidos | 16.099 |
-| De ellos, patrones con variables | 1.280 |
+| Pares distribuidos | 16.133 |
+| De ellos, patrones con variables | 1.311 |
 | De ellos, nacidos fuera de la extracción (composición, MSU, QA) | 967 |
 | Pares por id (homógrafos) | 28 |
 | En cuarentena de patrones | 0 |

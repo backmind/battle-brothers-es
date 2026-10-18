@@ -30,13 +30,17 @@ no vuelva a pasar inadvertida:
              INGLÉS contra ESPAÑOL, no el equilibrio interno del español: el
              propio juego trae textos con llaves desparejadas (21 de 23 de
              los casos que parecían rotos lo estaban ya en inglés).
-             Los avisos que quedan son 22 y ninguno es deuda: 17 AÑADEN rama,
+             Los avisos que quedan son 19 y ninguno es deuda: 15 AÑADEN rama,
              repasados uno a uno y legítimos (los traductores metieron variedad
              de su cosecha, y hasta un guiño a The Witcher en el hijo del
-             Cazadragones); y 5 tienen las mismas ramas con las llaves
+             Cazadragones); y 4 tienen las mismas ramas con las llaves
              repartidas de otra forma, que en la práctica no cambia nada porque
              una llave sin ningún separador dentro devuelve su contenido tal
-             cual.
+             cual. Eran 22, y no todos inofensivos: tras la 1.0.0 un jugador vio
+             un [color] suelto en el contrato de buscar un lugar, que había
+             perdido sus llaves interiores, y otros dos casos parecidos estaban
+             en este montón. Desde entonces ETIQUETAS mira lo que el recuento de
+             llaves no ve.
              Hubo un tercer montón, 37 textos que PERDÍAN rama, y era la deuda
              de es_pack/TAREA-ramas-perdidas.md. Está cerrada: se recuperaron
              las 54 ramas y el recuento de ese montón es 0. Si vuelve a
@@ -85,6 +89,11 @@ no vuelva a pasar inadvertida:
              validado contra el infinitivo en el propio corpus, que es lo que
              evita marcar "ciudad" o "juventud". Probado en los dos sentidos:
              caza las catorce formas de prueba y no da ningún falso positivo.
+             Tras la 1.0.0 aparecieron doce más que ninguna vía veía, con el
+             clítico pegado ("Decidles", "Degolladlos", "Dadle"): ahora el
+             imperativo se busca también con clítico, validado además por el
+             participio ("degollado"), y nunca delante de un %token%, que es
+             un participio con marca de género.
   CONTROL    carácter de control o invisible dentro de una traducción. Salió de
              la QA del 31/08: una cadena llevaba dos tabuladores verticales
              (U+000B) donde el inglés no tenía ningún salto, y ni se veían al
@@ -94,6 +103,34 @@ no vuelva a pasar inadvertida:
              avisar de nada. Se vigilan también el espacio duro, los de ancho
              cero y la marca de orden de bytes, por el mismo motivo: no se ven.
              El recuento tiene que ser 0.
+  ANCHO      traducción que no cabe en un recuadro de tamaño fijo. Salió de un
+             jugador tras la 1.0.0: los botones de los juramentos se cortaban
+             por los dos lados, porque el español había perdido el salto de
+             línea del inglés y los botones de evento no parten línea
+             (white-space: nowrap), y alguna descripción de origen se salía
+             por abajo de su columna, que no tiene barra. Se mide con la
+             anchura real de la fuente del juego (ANCHO_CAR), con un margen
+             calibrado en partida por lo que el juego ensancha las letras y
+             por el icono de los botones (ver BOTON_REM y ORIGEN_REM). Mira dos clases
+             que se reconocen sin ambigüedad en el corpus: los botones de
+             ambición y juramento (ficheros *_ambition.nut, el único texto con
+             un salto de línea suelto) y las descripciones de origen
+             (*_scenario.nut, las que empiezan por [p=c][img]). Las opciones de
+             evento normales tienen el mismo presupuesto por línea, pero el
+             corpus no las distingue de otros textos de evento sin el código
+             del juego delante, y se revisaron aparte. El recuento tiene que
+             ser 0.
+  ETIQUETAS  alguna rama del español deja una etiqueta sin pareja, o la cierra
+             antes de abrirla, donde ninguna rama del inglés lo hace: [color]
+             (también el que pone el juego por %SPEECH_ON% y %SPEECH_OFF%),
+             [b], [i] y [u]; o sus llaves no casan donde las del inglés sí.
+             En pantalla sale como etiqueta suelta. Salió de un jugador tras la
+             1.0.0: la presentación del contrato de buscar un lugar acababa en
+             [color]. El español había perdido las llaves de un bloque de
+             ramas anidado y VARIANTES lo daba por inofensivo, porque contaba
+             llaves y no lo que cada rama abre y cierra. Se evalúan todas las
+             ramas, con anidamiento, y el orden dentro de cada una. El
+             recuento tiene que ser 0.
 
 Salida: recuento por chequeo y unos pocos ejemplos. Código de salida siempre 0.
 """
@@ -153,6 +190,12 @@ OS_CLITICO_RE = re.compile(
     r"ruego|pido|suplico|maldig|mat|vais|dais)", re.I)
 # Sin `%` detrás: "plantad%o_x%" es un participio con token de género (Legends).
 IMPERATIVO_VOS_RE = re.compile(r"\b([a-záéíóúñ]{5,}(?:ad|ed|id))\b(?!%)", re.I)
+# El mismo imperativo con clítico pegado ("Decidles", "Degolladlos",
+# "Barrédlos"): el anterior no lo ve porque la palabra no acaba en -d. La raíz
+# se valida igual, contra el infinitivo del corpus.
+IMPERATIVO_CLITICO_RE = re.compile(
+    r"\b([a-záéíóúñ]+?(?:ad|ed|id|ád|éd|íd))(?:me|te|le|les|lo|la|los|las|nos|se)"
+    r"(?:lo|la|los|las)?\b(?!%)", re.I)
 # Sustantivos en -ad/-ud/-id que no son imperativos de nada. La validacion
 # contra el infinitivo ya filtra casi todo; esto cubre los que coinciden por
 # casualidad con un verbo del corpus.
@@ -356,12 +399,187 @@ def dup_vecino(corpus=CORPUS):
     return avisos
 
 
+# Avance de cada carácter en milésimas de em, sacado de la fuente con la que el
+# juego pinta botones y descripciones (gfx/fonts/free_universal/
+# FreeUniversal-Regular-edited.ttf, ui/fonts.css). Lo que no está aquí mide
+# como una "n".
+ANCHO_CAR = {}
+for _w, _cs in {
+    229: "ilí", 254: "’", 261: "IÍ", 275: ",.:;", 286: "j", 300: " ", 319: "-",
+    329: "f", 345: "|", 350: "t", 359: "()", 362: "r", 368: "!'¡", 396: "/[\\]",
+    436: "“”", 451: '"', 468: "z", 487: "{}", 498: "k", 500: "_–", 503: "s",
+    517: "?¿", 521: "c", 529: "L", 534: "vy", 547: "x", 552: "aàá", 557: "eé",
+    559: "0123456789", 568: "J", 569: "F", 572: "huúü", 573: "nñ", 590: "bg",
+    591: "d", 592: "oó", 599: "pq", 606: "EÉ", 612: "T", 615: "Z", 622: "P",
+    629: "R", 653: "V", 656: "*", 661: "S", 664: "K", 665: "Y", 673: "B",
+    680: "C", 703: "X", 709: "H", 720: "D", 723: "NÑ", 736: "UÚ", 745: "#",
+    750: "AÁ", 761: "G", 766: "&", 773: "OÓ", 784: "Q", 813: "w", 896: "m",
+    897: "M", 928: "%", 972: "W", 1000: "+<=>@—",
+}.items():
+    for _c in _cs:
+        ANCHO_CAR[_c] = _w / 1000
+# Botones de evento: 1.8 rem en una etiqueta de unos 77 rem. El inglés más
+# largo de la clase usa 71.6 (discover unique locations, línea 1), pero el
+# texto va centrado y a la izquierda está el icono de la ambición (22 px desde
+# 1 rem): en partida, una línea de 71.1 quedaba pegada a él. 67.5 deja algo
+# más de 1.5 rem de aire a cada lado del icono.
+BOTON_REM, BOTON_FUENTE = 67.5, 1.8
+# Descripción de origen: la columna mide 41 rem a 1.6 rem, pero el juego pinta
+# las letras algo más anchas que sus avances (el redondeo del hinting a
+# píxeles), y la primera medida, a 41 rem y 13 renglones, dejó cuatro orígenes
+# saliéndose por abajo en partida. Calibrado contra esa prueba: a 39 rem los
+# que se salían, o quedaban a ras, eran exactamente los cuatro de 14 renglones
+# (cazahombres, juramentados, desertores, cazadores de bestias), y los de 13 o
+# menos cabían.
+ORIGEN_REM, ORIGEN_FUENTE, ORIGEN_RENGLONES = 39.0, 1.6, 13
+_MARCADO_RE = re.compile(r"\[img\][^\[]*\[/img\]|\[/?[a-z]+(?:=[^\]]*)?\]")
+
+
+def ancho_rem(texto, fuente):
+    """Anchura en rem con que el juego pinta el texto en una línea. Un %token%
+    cuenta como un nombre corto, igual en los dos idiomas."""
+    texto = TOKEN_RE.sub("Hans", _MARCADO_RE.sub("", texto))
+    return sum(ANCHO_CAR.get(c, 0.573) for c in texto) * fuente
+
+
+def renglones(texto, ancho, fuente):
+    """Renglones que ocupa el texto con ajuste por palabras en una columna."""
+    n = 0
+    for parrafo in _MARCADO_RE.sub("", texto).split("\n"):
+        n += 1
+        linea = ""
+        for palabra in parrafo.split(" "):
+            prueba = linea + " " + palabra if linea else palabra
+            if linea and ancho_rem(prueba, fuente) > ancho:
+                n += 1
+                linea = palabra
+            else:
+                linea = prueba
+    return n
+
+
+def _crudo(s):
+    return (s.replace("\\n", "\n").replace("\\x22", '"').replace('\\"', '"')
+             .replace("\\x7b", "{").replace("\\x7d", "}"))
+
+
+def ancho_recuadros(corpus=CORPUS):
+    """Traducciones que no caben en su recuadro fijo (ver ANCHO arriba)."""
+    avisos = []
+    for fichero, _pos, en, es in entradas_en_orden(corpus):
+        en, es = _crudo(en), _crudo(es)
+        if (fichero.endswith("_ambition.nut") and en.count("\n") == 1
+                and "[img]" not in en and "<" not in en):
+            lineas = es.split("\n")
+            peor = max(ancho_rem(l, BOTON_FUENTE) for l in lineas)
+            if peor > BOTON_REM or len(lineas) > 2:
+                avisos.append("%s: botón de %d líneas, la más ancha %.1f rem (máximo %s, 2 líneas): %s"
+                              % (fichero, len(lineas), peor, BOTON_REM, es[:50]))
+        elif fichero.endswith("_scenario.nut") and en.startswith("[p=c][img]"):
+            n = renglones(es, ORIGEN_REM, ORIGEN_FUENTE)
+            if n > ORIGEN_RENGLONES:
+                avisos.append("%s: la descripción ocupa %d renglones (máximo %d)"
+                              % (fichero, n, ORIGEN_RENGLONES))
+    return avisos
+
+
+# Lo que abre y cierra cada etiqueta en pantalla. El juego cambia %SPEECH_ON%
+# (o %SPEECH_START%) por un [color=...] y %SPEECH_OFF% por su [/color].
+_ETIQUETAS = ("color", "b", "i", "u")
+_MARCAS_RE = re.compile(r"(%SPEECH_(?:ON|START)%|\[color=[^\]]*\]|\[[biu]\])"
+                        r"|(%SPEECH_OFF%|\[/(?:color|[biu])\])")
+_VACIO = ((0, 0),) * len(_ETIQUETAS)
+
+
+def _seguir(a, b):
+    # (saldo, mínimo de los saldos parciales) de recorrer a y después b
+    return tuple((sa + sb, min(ma, sa + mb)) for (sa, ma), (sb, mb) in zip(a, b))
+
+
+def _marca(m):
+    s = m.group(0)
+    if s.startswith("%SPEECH"):
+        cual = "color"
+    else:
+        cual = s.strip("[/]").split("=")[0]
+    d = 1 if m.group(1) else -1
+    return tuple((d, min(0, d)) if e == cual else (0, 0) for e in _ETIQUETAS)
+
+
+def _estados(texto):
+    """Los estados posibles de las etiquetas al elegir el juego una rama de
+    cada {a | b}, con anidamiento. Una llave sin pareja cuenta como texto."""
+    def trozo(i, fin):
+        # estados posibles de texto[i:fin], que no tiene " | " de este nivel
+        res, j = {_VACIO}, i
+        while j < fin:
+            if texto[j] == "{":
+                k, prof = j + 1, 1
+                while k < fin and prof:
+                    prof += {"{": 1, "}": -1}.get(texto[k], 0)
+                    k += 1
+                if prof == 0:
+                    res = {_seguir(s, r) for s in res for r in bloque(j + 1, k - 1)}
+                    j = k
+                    continue
+            m = _MARCAS_RE.match(texto, j)
+            if m and m.end() <= fin:
+                res = {_seguir(s, _marca(m)) for s in res}
+                j = m.end()
+                continue
+            j += 1
+        return res
+
+    def bloque(i, fin):
+        # ramas de texto[i:fin] separadas por " | " del primer nivel
+        out, ini, prof, j = set(), i, 0, i
+        while j < fin:
+            prof += {"{": 1, "}": -1}.get(texto[j], 0)
+            if prof == 0 and texto.startswith(" | ", j):
+                out |= trozo(ini, j)
+                ini = j = j + 3
+                continue
+            j += 1
+        return out | trozo(ini, fin)
+
+    return trozo(0, len(texto))
+
+
+def etiquetas_rotas(texto):
+    """Las etiquetas que alguna rama deja abiertas, cerradas de más o
+    cerradas antes de abrirse."""
+    return {e for estado in _estados(texto)
+            for e, (saldo, minimo) in zip(_ETIQUETAS, estado) if saldo or minimo < 0}
+
+
+def _llaves_casan(texto):
+    prof = 0
+    for c in texto:
+        prof += {"{": 1, "}": -1}.get(c, 0)
+        if prof < 0:
+            return False
+    return prof == 0
+
+
 def revisar(datos, corpus=CORPUS):
     avisos = defaultdict(list)
 
-    # DUP_VECINO
+    # ETIQUETAS
+    for en, es in datos:
+        if not re.search(r"[{\[%]", es):
+            continue
+        if _llaves_casan(en) and not _llaves_casan(es):
+            avisos["ETIQUETAS"].append("llaves sin pareja donde el en casa: %s" % es[:60])
+            continue
+        nuevas = etiquetas_rotas(es) - etiquetas_rotas(en)
+        if nuevas:
+            avisos["ETIQUETAS"].append("el es puede dejar %s sin pareja donde el en no: %s"
+                                       % ("/".join(sorted(nuevas)), es[:60]))
+
+    # DUP_VECINO y ANCHO, que necesitan el fichero de cada par
     try:
         avisos["DUP_VECINO"] = dup_vecino(corpus)
+        avisos["ANCHO"] = ancho_recuadros(corpus)
     except OSError:
         pass  # sin corpus en disco el resto de chequeos sigue valiendo
 
@@ -474,10 +692,14 @@ def revisar(datos, corpus=CORPUS):
     # REGISTRO (solo lo que está fuera de la política acordada)
     # El vocabulario del propio corpus hace de diccionario para validar los
     # imperativos: "asaltad" solo cuenta si "asaltar" existe en el corpus.
-    infinitivos = set()
+    # Con clítico pegado vale también el participio ("degollad" por
+    # "degollado"), porque los infinitivos cortos ("dar") no pasan de 3 letras
+    # y otros ("degollar") no salen nunca en el corpus.
+    infinitivos, palabras = set(), set()
     for _en, es in datos:
         for w in WORD_RE.findall(es):
             w = sin_tildes(w)
+            palabras.add(w.lower())
             if len(w) > 3 and w.endswith(("ar", "er", "ir")):
                 infinitivos.add(w)
 
@@ -494,11 +716,12 @@ def revisar(datos, corpus=CORPUS):
             if OS_CLITICO_RE.search(limpio):
                 avisos["REGISTRO"].append("clítico os: %s" % es[:60])
                 continue
-            for m in IMPERATIVO_VOS_RE.finditer(limpio):
-                w = sin_tildes(m.group(1))
+            for m in [*IMPERATIVO_VOS_RE.finditer(limpio), *IMPERATIVO_CLITICO_RE.finditer(limpio)]:
+                w = sin_tildes(m.group(1)).lower()
                 if w in NO_ES_VERBO:
                     continue
-                if w[:-1] + "r" in infinitivos or w[:-2] + "ir" in infinitivos:
+                participio = m.re is IMPERATIVO_CLITICO_RE and w[:-1] + "do" in palabras
+                if w[:-1] + "r" in infinitivos or w[:-2] + "ir" in infinitivos or participio:
                     avisos["REGISTRO"].append("imperativo de vosotros (%s): %s"
                                               % (m.group(1), es[:50]))
                     break
@@ -521,7 +744,7 @@ def main(argv=None):
     print("pares con traduccion revisados: %d" % len(datos))
     total = 0
     for nombre in ("IMG", "VARIANTES", "TOKENS", "RECORTE", "DUP_ES", "DUP_VECINO",
-                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL"):
+                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL", "ANCHO", "ETIQUETAS"):
         items = avisos.get(nombre, [])
         total += len(items)
         print("\n%-11s %d" % (nombre, len(items)))

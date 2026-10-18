@@ -142,7 +142,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\allied_civilians_ambition.nut
     {
         en = "We need allies. Forging a bond of friendship and trust with one of the towns will\nget the company better prices, more volunteers and more steady work."
-        es = "Necesitamos aliados. Forjar un vínculo de amistad y confianza con una de las ciudades\nproporcionará a la compañía mejores precios, más voluntarios y trabajo más estable."
+        es = "Necesitamos aliados. Forjar amistad y confianza con una de las ciudades\nnos dará mejores precios, más voluntarios y trabajo más estable."
     }
     {
         en = "Get to 'Friendly' relations with a civilian faction"
@@ -169,7 +169,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\allied_nobles_ambition.nut
     {
         en = "We shall earn the trust of a noble house and become their ally. Surely they will\nshare the fruits of their well-stocked armories with good friends."
-        es = "Ganaremos la confianza de una casa noble y nos convertiremos en sus aliados. Seguramente\ncompartirán los frutos de sus bien surtidas armerías con buenos amigos."
+        es = "Ganaremos la confianza de una casa noble y seremos sus aliados. Seguro que\ncompartirán con sus buenos amigos los frutos de sus bien surtidas armerías."
     }
     {
         en = "You'll be awarded equipment unique to the noble house with which you ally"
@@ -261,7 +261,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\cart_ambition.nut
     {
         en = "We can barely carry any more equipment or spoils of war.\nLet us save up 7,500 crowns to buy us a cart and relieve our backs!"
-        es = "Apenas podemos cargar más equipo o botín de guerra.\n¡Ahorremos 7.500 coronas para comprarnos una carreta y aliviar nuestras espaldas!"
+        es = "Apenas podemos cargar más equipo o botín de guerra.\n¡Ahorremos 7.500 coronas para una carreta que nos alivie las espaldas!"
     }
     {
         en = "You'll unlock an additional 27 slots in your inventory."
@@ -352,7 +352,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_civilwar_ambition.nut
     {
         en = "If we can win this war for one of the noble houses, our name will be unmatched.\nLet us pick a side, bask in the glory of battle and get rich for it!"
-        es = "Si podemos ganar esta guerra para una de las casas nobles, nuestro nombre será inigualable.\n¡Elijamos un bando, deleitémonos en la gloria de la batalla y enriquezcámonos con ello!"
+        es = "Si ganamos esta guerra para una casa noble, nuestro nombre no tendrá igual.\n¡Elijamos bando, gocemos de la gloria de la batalla y hagámonos ricos!"
     }
     {
         en = "End the war between noble houses"
@@ -390,7 +390,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_goblin_location_ambition.nut
     {
         en = "Only the most daring take on goblins in larger numbers. We shall burn some\nof their fetid camps to the ground, and word of it will travel!"
-        es = "Solo los más audaces se enfrentan a goblins en grandes números. ¡Quemaremos algunos\nde sus fétidos campamentos hasta los cimientos, y se correrá la voz!"
+        es = "Solo los más audaces se enfrentan a los goblins en gran número. ¡Quemaremos\nalgunos de sus fétidos campamentos hasta los cimientos, y se correrá la voz!"
     }
     {
         en = "You'll be awarded a unique accessory that makes the wearer immune to being rooted."
@@ -458,7 +458,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_holywar_ambition.nut
     {
         en = "The fires of religious turmoil threaten to engulf the lands. Let the company be forged\nstronger than ever by its heat and flames, and earn a fortune by winning the war!"
-        es = "Los fuegos de la agitación religiosa amenazan con engullir las tierras. Que la compañía se forje\nmás fuerte que nunca con su calor y llamas, ¡y gane una fortuna ganando la guerra!"
+        es = "Las llamas de la discordia religiosa amenazan con devorar estas tierras.\n¡Que su calor nos forje más fuertes y hagamos fortuna ganando la guerra!"
     }
     {
         en = "End the war between north and south"
@@ -500,7 +500,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_mercenaries_ambition.nut
     {
         en = "The best way to prove that we are the strongest company around\nis to defeat another mercenary band in battle!"
-        es = "¡La mejor manera de demostrar que somos la compañía más fuerte de los alrededores\nes derrotar a otra banda mercenaria en batalla!"
+        es = "¡La mejor manera de demostrar que somos la compañía más fuerte de la región\nes derrotar en batalla a otra banda de mercenarios!"
     }
     {
         en = "Defeat another mercenary company"
@@ -522,7 +522,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_orc_location_ambition.nut
     {
         en = "Besting orcs in battle and burning down some of their camps would make people\nrecognize the company's ability on the battlefield. Let us do so!"
-        es = "Superar a los orcos en batalla y quemar algunos de sus campamentos haría que la gente reconociera la habilidad de la compañía en el campo de batalla. ¡Hagámoslo!"
+        es = "Vencer a los orcos y quemar algunos de sus campamentos haría que la gente\nreconociera la valía de la compañía en el campo de batalla. ¡Hagámoslo!"
     }
     {
         en = "You'll be awarded a unique accessory that makes the wearer immune to being stunned."
@@ -542,12 +542,12 @@ local pairs = [
     }
     {
         en = "Tell everyone it was the %companyname% who won here!"
-        es = "¡Decidles a todos que fuimos %companyname% los que vencieron aquí!"
+        es = "¡Díganles a todos que fuimos %companyname% los que vencieron aquí!"
     }
     // FILE: scripts\ambitions\ambitions\defeat_undead_ambition.nut
     {
         en = "The Undead are rising all over the lands, killing and devouring at sight.\nWe need to put an end to this, or soon there will be no world as we know it left!"
-        es = "Los No-Muertos se están levantando por todas las tierras, matando y devorando a la vista.\n¡Necesitamos poner fin a esto, o pronto no quedará ningún mundo tal como lo conocemos!"
+        es = "Los No-Muertos se alzan por todas las tierras, matando y devorando cuanto ven.\n¡Acabemos con esto, o pronto no quedará nada del mundo que conocemos!"
     }
     {
         en = "Defeat the Undead Scourge"
@@ -568,7 +568,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_undead_location_ambition.nut
     {
         en = "The walking dead are a terrible curse upon man.\nLet us burn some of their lairs to the ground and earn the respect of all decent folk!"
-        es = "Los muertos andantes son una maldición terrible sobre el hombre.\n¡Quememos algunas de sus guaridas hasta los cimientos y ganemos el respeto de toda la gente decente!"
+        es = "Los muertos andantes son una terrible maldición para el hombre.\n¡Quememos algunas guaridas y ganémonos el respeto de la gente decente!"
     }
     {
         en = "You'll be awarded a unique accessory that doubles the wearer's resolve when defending against fear and mind control effects."
@@ -593,7 +593,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_all_unique_locations_ambition.nut
     {
         en = "Places of legend dot the world, hiding wonderous secrets within.\nLet's not rest until we've found every last one of them!"
-        es = "Lugares de leyenda salpican el mundo, ocultando secretos maravillosos en su interior.\n¡No descansemos hasta que hayamos encontrado hasta el último de ellos!"
+        es = "Lugares de leyenda salpican el mundo y ocultan secretos maravillosos.\n¡No descansemos hasta que hayamos encontrado hasta el último de ellos!"
     }
     {
         en = "Discover all legendary locations in the world"
@@ -614,7 +614,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_locations_ambition.nut
     {
         en = "Great explorers become men of legend. Going into the wild lands is a dangerous\nbusiness, but the tales we'll tell afterward will surely increase our renown."
-        es = "Los grandes exploradores se convierten en hombres de leyenda. Adentrarse en las tierras salvajes es un negocio\npeligroso, pero los relatos que contaremos después seguramente aumentarán nuestro renombre."
+        es = "Los grandes exploradores se vuelven leyenda. Lo salvaje es peligroso,\npero las historias que contaremos después aumentarán nuestro renombre."
     }
     {
         en = "Discover hidden locations by exploring the world"
@@ -632,7 +632,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_unique_locations_ambition.nut
     {
         en = "The wilds are teeming with hidden treasures that others are not bold enough to claim.\nThis is our chance, so let us head out there and find three legendary places!"
-        es = "Lo salvaje está repleto de tesoros ocultos que otros no son suficientemente audaces para reclamar.\nEsta es nuestra oportunidad, ¡así que salgamos allí y encontremos tres lugares legendarios!"
+        es = "Lo salvaje rebosa de tesoros ocultos que otros no se atreven a reclamar.\nEsta es nuestra oportunidad: ¡salgamos a encontrar tres lugares legendarios!"
     }
     {
         en = "Discover legendary locations by exploring the world"
@@ -649,7 +649,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\find_and_destroy_location_ambition.nut
     {
         en = "Let us set out into the wilderness, discover the unknown, and plunder it.\nBe it a wizard's tomb, goblin camp, or aught else we may find."
-        es = "Adentrémonos en lo salvaje, descubramos lo desconocido, y saqueémoslo. \nYa sea la tumba de un mago, un campamento goblin, o cualquier otro lugar que hallemos."
+        es = "Adentrémonos en lo salvaje, descubramos lo desconocido y saqueémoslo,\nya sea la tumba de un mago, un campamento goblin o lo que hallemos."
     }
     {
         en = "Discover a ruin or hostile camp, and destroy it"
@@ -693,7 +693,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\hammer_mastery_ambition.nut
     {
         en = "Our company is ill-prepared to fight armored opponents. We shall train two men\nto master the hammer in combat, and no knight will be safe from us."
-        es = "Nuestra compañía está mal preparada para luchar contra oponentes acorazados. Entrenaremos a dos hombres\npara dominar el martillo en combate, y ningún caballero estará a salvo de nosotros."
+        es = "Nuestra compañía no está preparada para luchar contra oponentes acorazados.\nEntrenaremos a dos hombres en el martillo, y ningún caballero estará a salvo."
     }
     {
         en = "Have men with the hammer mastery perk"
@@ -750,7 +750,7 @@ local pairs = [
         // local ret = this.m.TooltipText + "\n\nYou\'re currently lacking some provisions.\n";
         mode = "pattern"
         en = "<tooltiptext:str>\n\nYou're currently lacking some provisions.\n"
-        es = "<tooltiptext>\n\nActualmente te faltan algunas provisiones.\n"
+        es = "<tooltiptext:t>\n\nActualmente te faltan algunas provisiones.\n"
     }
     {
         // ret = ret + "\n- Beer";
@@ -881,7 +881,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_talent_ambition.nut
     {
         en = "We need real talent to bolster our ranks further.\nWe'll recruit the most talented we can find and mold him into a god of war!"
-        es = "Necesitamos talento real para reforzar nuestras filas aún más.\n¡Reclutaremos al más talentoso que podamos encontrar y lo moldearemos en un dios de la guerra!"
+        es = "Necesitamos verdadero talento para reforzar aún más nuestras filas.\n¡Reclutaremos al más talentoso que haya y haremos de él un dios de la guerra!"
     }
     {
         en = "Have a character with three times three talent stars"
@@ -905,7 +905,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_y_crowns_ambition.nut
     {
         en = "Should a battle or two go against us we may find ourselves out of pocket and\nshort of equipment. The company will therefore build a reserve of 10,000 crowns."
-        es = "Si una batalla o dos nos van en contra podríamos encontrarnos sin dinero y\ncortos de equipo. Por lo tanto, la compañía construirá una reserva de 10.000 coronas."
+        es = "Si una batalla o dos nos van en contra podríamos quedarnos sin dinero y\ncortos de equipo. Así que la compañía reunirá una reserva de 10.000 coronas."
     }
     {
         en = "Have at least 10,000 crowns as a reserve, in order to persevere when things may turn bad in the future. You can make money by completing contracts, looting camps and ruins, or trading."
@@ -922,7 +922,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_y_renown_ambition.nut
     {
         en = "Already we are known in some parts of the land, yet we are still far from being\na legendary company. We shall increase our renown further!"
-        es = "Ya somos conocidos en algunas partes de la tierra, pero aún estamos lejos de ser\nuna compañía legendaria. ¡Incrementaremos aún más nuestro renombre!"
+        es = "Ya nos conocen en algunas partes, pero aún estamos lejos de ser\nuna compañía legendaria. ¡Incrementaremos aún más nuestro renombre!"
     }
     {
         en = "Reach 'Glorious' renown"
@@ -943,7 +943,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_z_crowns_ambition.nut
     {
         en = "Crowns mean power and influence, and we can never have enough of either.\nLet us gather 50,000 crowns and earn our seat amongst noblemen and kings!"
-        es = "Las coronas significan poder e influencia, y nunca podemos tener suficiente de ninguna.\n¡Reunamos 50.000 coronas y ganemos nuestro asiento entre nobles y reyes!"
+        es = "Las coronas son poder e influencia, y de eso nunca se tiene bastante.\n¡Reunamos 50.000 coronas y ganémonos un sitio entre nobles y reyes!"
     }
     {
         en = "Have at least 50,000 crowns."
@@ -960,7 +960,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_z_renown_ambition.nut
     {
         en = "There were few legendary mercenary companies throughout history.\nWe are close to having our name become immortal and be counted among them!"
-        es = "Pocas compañías mercenarias legendarias ha habido a lo largo de la historia.\n¡Estamos cerca de que nuestro nombre se vuelva inmortal y sea contado entre ellas!"
+        es = "Pocas compañías mercenarias legendarias ha habido a lo largo de la historia.\n¡Estamos cerca de que nuestro nombre sea inmortal y se cuente entre ellas!"
     }
     {
         en = "Reach 'Invincible' renown"
@@ -985,7 +985,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\hire_follower_ambition.nut
     {
         en = "There are cooks, scouts and many more who can support us off the battlefield.\nWe'll hire one that suits our needs best!"
-        es = "Existen cocineros, exploradores y muchos más que pueden apoyarnos fuera del campo de batalla.\n¡Contrataremos al que más nos convenga!"
+        es = "Cocineros, exploradores y muchos otros pueden ayudarnos fuera del combate.\n¡Contrataremos al que mejor se ajuste a nuestras necesidades!"
     }
     {
         en = "Hire someone for your retinue of non-combat followers"
@@ -1006,7 +1006,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\make_nobles_aware_ambition.nut
     {
         en = "We need to catch the eye of one of the noble houses for more profitable work. They\nplay their own dangerous game, but what does it matter as long as the pay is good?"
-        es = "Necesitamos llamar la atención de una de las casas nobles para trabajo más lucrativo.\nJuegan su propio juego peligroso, pero ¿qué importa mientras la paga sea buena?"
+        es = "Hay que llamar la atención de una casa noble para lograr trabajo más lucrativo.\nJuegan su propio juego peligroso, pero ¿qué más da si la paga es buena?"
     }
     {
         en = "You'll unlock entirely new contracts issued by nobles which pay better."
@@ -1035,7 +1035,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\named_item_ambition.nut
     {
         en = "A respectable company is recognized by their equipment. We should head out\nand claim either a famed weapon, shield, armor or helmet to increase our renown."
-        es = "Una compañía respetable se reconoce por su equipo. Deberíamos salir\ny reclamar un arma, escudo, armadura o yelmo afamado para aumentar nuestro renombre."
+        es = "Una compañía respetable se reconoce por su equipo. Deberíamos salir\na buscar un arma, escudo, armadura o yelmo célebre para ganar renombre."
     }
     {
         en = "Gain an additional 150 renown for your victory."
@@ -1066,7 +1066,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\named_item_set_ambition.nut
     {
         en = "A famed company is recognized by their equipment. We should head out\nand claim a prestigious weapon, shield, armor and helmet to increase our renown."
-        es = "Una compañía famosa se reconoce por su equipo. Deberíamos salir\ny reclamar un arma, escudo, armadura y yelmo prestigiosos para aumentar nuestro renombre."
+        es = "Una compañía famosa se reconoce por su equipo. Deberíamos salir a buscar\narma, escudo, armadura y yelmo de prestigio que aumenten nuestro renombre."
     }
     {
         en = "Have a famed weapon, shield, armor and helmet"
@@ -1117,7 +1117,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\ranged_mastery_ambition.nut
     {
         en = "The company lacks competent archers, limiting our tactical options.\nWe shall train three men to master bow or crossbow and be deadly from afar!"
-        es = "A la compañía le faltan arqueros competentes, lo que limita nuestras opciones tácticas.\n¡Entrenaremos a tres hombres para dominar el arco o la ballesta y ser letales desde la distancia!"
+        es = "A la compañía le faltan arqueros competentes, y eso limita nuestras tácticas.\n¡Entrenaremos a tres hombres en arco o ballesta para ser letales a distancia!"
     }
     {
         en = "Have men with the bow or crossbow mastery perk"
@@ -1185,7 +1185,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\sergeant_ambition.nut
     {
         en = "We fight well, but we need to be better organized in case things get dire.\nI shall name a sergeant to rally you on the battlefield."
-        es = "Luchamos bien, pero necesitamos estar mejor organizados en caso de que las cosas se pongan feas.Nombraré a un sargento para que los reúna en el campo de batalla."
+        es = "Luchamos bien, pero hay que organizarse mejor por si las cosas se ponen feas.\nNombraré a un sargento para que los reúna en el campo de batalla."
     }
     {
         en = "You'll be awarded a unique accessory that grants the wearer additional resolve."
@@ -1224,7 +1224,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\taxidermist_ambition.nut
     {
         en = "Nothing commands respect as a trophy of a giant beast of the frozen wastes.\nLet's go hunt and get the taxidermist some work!"
-        es = "Nada impone tanto respeto como el trofeo de una bestia gigante de los yermos helados.\n¡Vayamos de caza y consigamos trabajo para el taxidermista!"
+        es = "Nada impone tanto como el trofeo de una bestia gigante de los yermos helados.\n¡Vayamos de caza y démosle trabajo al taxidermista!"
     }
     {
         en = "Craft items at the taxidermist"
@@ -1302,7 +1302,7 @@ local pairs = [
         // local ret = this.m.TooltipText + "\n\nThere\'s still some settlements left to visit.\n";
         mode = "pattern"
         en = "<tooltiptext:str>\n\nThere's still some settlements left to visit.\n"
-        es = "<tooltiptext>\n\nAún quedan algunos asentamientos por visitar.\n"
+        es = "<tooltiptext:t>\n\nAún quedan algunos asentamientos por visitar.\n"
     }
     {
         // ret = ret + "\n... and others!";
@@ -1311,10 +1311,16 @@ local pairs = [
         es = "<ret:t>\n... ¡y otros!"
     }
     {
+        // ret = ret + ("\n- " + s.getName()): el último de la lista; <ret> es lo anterior
+        mode = "pattern"
+        en = "<ret:str>\n- <name:line>"
+        es = "<ret:t>\n- <name>"
+    }
+    {
         // local ret = this.m.TooltipText + "\n\nYou\'ve done what you set out to do.\n";
         mode = "pattern"
         en = "<tooltiptext:str>\n\nYou've done what you set out to do.\n"
-        es = "<tooltiptext>\n\nHas hecho lo que te propusiste hacer.\n"
+        es = "<tooltiptext:t>\n\nHas hecho lo que te propusiste hacer.\n"
     }
     // FILE: scripts\ambitions\ambitions\wagon_ambition.nut
     {
@@ -1336,7 +1342,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\weapon_mastery_ambition.nut
     {
         en = "Imagine the trail of terror we could blaze if your skills matched your bravery.\nWe shall train five men to master their weapons so that they may act as a vanguard!"
-        es = "Imagina el rastro de terror que podríamos dejar si tus habilidades igualaran tu valentía.\n¡Entrenaremos a cinco hombres para dominar sus armas y que actúen como vanguardia!"
+        es = "Imagina el rastro de terror que dejaríamos si tu destreza igualara tu valentía.\n¡Entrenaremos a cinco hombres en sus armas y serán nuestra vanguardia!"
     }
     {
         en = "Have men with a weapon mastery perk each"
@@ -1359,7 +1365,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_against_x_ambition.nut
     {
         en = "Let us set aside skirmishes for now and seek to defeat a group of at least a dozen\nopponents. That is how our name will become known throughout the land!"
-        es = "Dejemos de lado las escaramuzas por ahora y tratemos de derrotar a un grupo de al menos doce oponentes. ¡Así es como nuestro nombre será conocido en todos lados!"
+        es = "Dejemos las escaramuzas y tratemos de derrotar a un grupo de al menos doce\noponentes. ¡Así es como nuestro nombre se conocerá en todas partes!"
     }
     {
         en = "Win a battle against 12 or more enemies"
@@ -1384,7 +1390,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_against_y_ambition.nut
     {
         en = "We achieved some renown, but now you can see real fame on the horizon.\nLet us defeat a formidable force of two dozen opponents in battle!"
-        es = "Hemos alcanzado cierto renombre, pero ahora puedes ver la verdadera fama en el horizonte.\n¡Derrotemos a una fuerza formidable de dos docenas de oponentes en batalla!"
+        es = "Ya tenemos algo de renombre, pero la verdadera fama asoma en el horizonte.\n¡Derrotemos en batalla a una fuerza formidable de dos docenas de oponentes!"
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]After the fight, %lowesthp_brother% sits gazing at his feet, looking completely knackered, as do the others. %SPEECH_ON%That was the battle I was born to fight! Now if I die, it will be alongside the bravest and deadliest bunch of men I've ever known, and I'm proud to call them my brothers!%SPEECH_OFF%This is met with a chorus of weary assent all round.%SPEECH_ON%Peasants talk of sweat, blood and tears but the men of the %companyname% have walked through fire and prevailed!%SPEECH_OFF%Three times the men shout the company name, tired but victorious.\n\nIn the days to come you find that wherever civilized people gather, they point you out and whisper, whether in fear or admiration you do not know. Everywhere you go, word of your mighty victory has traveled the land before you."
@@ -1393,7 +1399,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_x_arena_fights_ambition.nut
     {
         en = "Let us seek fame and fortune fighting before crowds that chant our names.\nWe'll draw blood in the arenas of the south!"
-        es = "Busquemos fama y fortuna luchando ante multitudes que coreen nuestros nombres.\n¡Derramaremos sangre en las arenas del sur!"
+        es = "Busquemos fama y fortuna ante multitudes que coreen nuestros nombres.\n¡Derramaremos sangre en las arenas del sur!"
     }
     {
         en = "Win arena fights"
@@ -1440,7 +1446,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_camaraderie_ambition.nut
     {
         en = "No single Oathtaker can face all the evils of the world alone.\nLet us take an Oath of Camaraderie, lest we lose sight of our true allies!"
-        es = "Ningún Juramentado puede enfrentarse solo a todos los males del mundo. ¡Hagamos un Juramento de Camaradería para no perder de vista a nuestros verdaderos aliados!"
+        es = "Ningún Juramentado puede enfrentarse solo a todos los males del mundo.\n¡Hagamos un Juramento de Camaradería y no olvidemos a nuestros aliados!"
     }
     {
         en = "Young Anselm believed that, on occasion, it was right to bring as many to a battle as one could muster, even if the great throngs did threaten the chain of command. Indeed, \x22All men deserve to stand by their brothers.\x22"
@@ -1477,7 +1483,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_distinction_ambition.nut
     {
         en = "Truly distinguished are those who can follow Young Anselm's teachings.\nLet us take an Oath of Distinction and prove ourselves worthy to walk in his path!"
-        es = "Verdaderamente distinguidos son aquellos que pueden seguir las enseñanzas del Joven Anselm. ¡Hagamos un Juramento de Distinción y demostremos que somos dignos de seguir su camino!"
+        es = "Distinguidos de verdad son quienes siguen las enseñanzas del Joven Anselm.\n¡Hagamos un Juramento de Distinción y demostremos ser dignos de su senda!"
     }
     {
         en = "Young Anselm frequently pursued solitude, sometimes even on the battlefield. \x22Prove yourself worthy in such a manner that not even the old gods may claim their eyes have erred in what glories they have seen.\x22"
@@ -1510,7 +1516,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_dominion_ambition.nut
     {
         en = "Beasts have always threatened civilization.\nLet us take an Oath of Dominion and stake our claim against the tides of nature!"
-        es = "Las bestias siempre han amenazado a la civilización. ¡Hagamos un Juramento de Dominio e impongamos nuestro reclamo contra las mareas de la naturaleza!"
+        es = "Las bestias siempre han amenazado a la civilización.\n¡Hagamos un Juramento de Dominio y reclamemos lo nuestro a la naturaleza!"
     }
     {
         en = "\x22We are from the beasts, but the beasts wish to have us back. Distance oneself from nature's primitiveness, prove your worth over Her such that your humanity be held in the grip of your own hands and seen through thine own eyes.\x22 - Young Anselm"
@@ -1545,7 +1551,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_endurance_ambition.nut
     {
         en = "To uphold Young Anselm's Oaths is to take on a duty without end.\nLet us take an Oath of Endurance and prepare ourselves for the tasks to come!"
-        es = "Cumplir los Juramentos del Joven Anselm es asumir un deber sin fin. ¡Hagamos un Juramento de Resistencia y preparémonos para las tareas venideras!"
+        es = "Cumplir los Juramentos del Joven Anselm es asumir un deber sin fin.\n¡Hagamos un Juramento de Resistencia y preparémonos para lo que vendrá!"
     }
     {
         en = "\x22Thrice times thrice to climb, endurance they did find.\x22 It is said that when Young Anselm ascended the highest peak of the Higgarian mountain range, he took nine of his worthiest followers with him."
@@ -1580,7 +1586,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_fortification_ambition.nut
     {
         en = "Evil-doers skulk and hide away from the walls of the just.\nLet us take an Oath of Fortification and bring those walls to them!"
-        es = "Los malhechores se ocultan y se esconden lejos de las murallas de los justos. ¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!"
+        es = "Los malhechores acechan y se esconden lejos de las murallas de los justos.\n¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!"
     }
     {
         en = "\x22Trust your shields as you would put faith in the old gods, for the contribution of the trees and the earth shall not be wasted on the nervous hinge of a coward's arm.\x22 - Young Anselm"
@@ -1613,7 +1619,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_honor_ambition.nut
     {
         en = "As warriors, we must never lose sight of true honor.\nLet us take an Oath of Honor and meet our opponents in melee!"
-        es = "Como guerreros, nunca debemos perder de vista el verdadero honor. ¡Hagamos un Juramento de Honor y enfrentemos a nuestros oponentes cara a cara!"
+        es = "Como guerreros, nunca debemos perder de vista el verdadero honor.\n¡Hagamos un Juramento de Honor y enfrentemos al enemigo cara a cara!"
     }
     {
         en = "\x22While the arrow is nocked, the mind turns. While the sword swings, all is where it should be. Set aside the craft of archery and go unto the melee, trusting that what your steel seeks, it shall find.\x22 - Young Anselm"
@@ -1644,7 +1650,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_humility_ambition.nut
     {
         en = "Arrogance is an insidious killer.\nLet us take an Oath of Humility and reflect on our shortcomings for a time."
-        es = "La arrogancia es un asesino insidioso. Hagamos un Juramento de Humildad y reflexionemos sobre nuestros errores por un tiempo."
+        es = "La arrogancia es un asesino insidioso.\nHagamos un Juramento de Humildad y reflexionemos sobre nuestras faltas."
     }
     {
         en = "\x22As you are indeed men in pursuit of power, always listen to the weak...for the weak know the strong better than you do, and in turn they shall know you better than you know yourself.\x22 - Young Anselm"
@@ -1679,7 +1685,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_righteousness_ambition.nut
     {
         en = "Few aberrations are as repugnant as the undead.\nLet us take an Oath of Righteousness and strike down these mockeries of life!"
-        es = "Pocas aberraciones son tan repugnantes como los no-muertos. ¡Hagamos un Juramento de Justicia y exterminemos estas blasfemias a la vida!"
+        es = "Pocas aberraciones son tan repugnantes como los no-muertos.\n¡Hagamos un Juramento de Justicia y exterminemos estas burlas de la vida!"
     }
     {
         en = "\x22Beware the evil which has stolen into this realm. Set aside the worldly matters and dedicate oneself to putting our dead to rest once and for all. No man deserves to walk twice across this darkened land.\x22 - Young Anselm"
@@ -1714,7 +1720,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_sacrifice_ambition.nut
     {
         en = "We cannot live up to Young Anselm's example if we obsess over worldly matters.\nLet us take an Oath of Sacrifice and hone our purpose to its sharpest point."
-        es = "No podemos igualar el ejemplo de Joven Anselm si nos obsesionamos con asuntos mundanos. Tomemos un Juramento de Sacrificio y enfoquémonos en nuestro propósito."
+        es = "No seremos dignos del Joven Anselm si nos obsesionan los asuntos mundanos.\nTomemos un Juramento de Sacrificio y afilemos nuestro propósito al máximo."
     }
     {
         en = "\x22If all is within the realm of the old gods' gifts, then pain itself shall be their bitterest fruit. But an offering it is, nonetheless, and so our battle against pain is one of great selfishness. Abscise from the healer's mend, and equally so from the merchant's lend.\x22 - Young Anselm"
@@ -1751,7 +1757,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_valor_ambition.nut
     {
         en = "We must have the courage to face down any challenge, no matter how daunting.\nLet us take an Oath of Valor and prove our bravery to all!"
-        es = "Debemos tener el coraje de enfrentar cualquier desafío, por difícil que sea. ¡Hagamos un Juramento de Valor y demostremos nuestra valentía a todos!"
+        es = "Debemos tener el coraje de enfrentar cualquier desafío, por difícil que sea.\n¡Hagamos un Juramento de Valor y demostremos a todos nuestra valentía!"
     }
     {
         en = "\x22Remember in times of peril that courage can overcome skill. While little can be learned through bravery alone, sheer determination shall keep you alive and that is well enough as any conclusion to the lessons of battle.\x22 - Young Anselm"
@@ -1784,7 +1790,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_vengeance_ambition.nut
     {
         en = "For too long have greenskins plagued our lands.\nLet us take an Oath of Vengeance and strike back at this menace!"
-        es = "Durante demasiado tiempo, los pieles verdes han asolado nuestras tierras. Tomemos un Juramento de Venganza y respondamos a esta amenaza."
+        es = "Durante demasiado tiempo, los pieles verdes han asolado nuestras tierras.\n¡Tomemos un Juramento de Venganza y devolvamos el golpe a esta amenaza!"
     }
     {
         en = "Young Anselm's family was killed by orcs during the Battle of Many Names. When he himself faced greenskins, it is said he seemed an unstoppable warrior and his followers seek to emulate this vengeful surge of martial prowess."
@@ -1802,13 +1808,13 @@ local pairs = [
         // this.m.OathBoonText = "Your men have [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Resolve, [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee and Ranged Defense when fighting orcs or goblins.";
         mode = "pattern"
         en = "Your men have <v:int_tag> Resolve, <v2:int_tag> Melee and Ranged Skill, and <v3:int_tag> Melee and Ranged Defense when fighting orcs or goblins."
-        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo a distancia cuando luchen contra orcos o goblins."
+        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo y a distancia cuando luchen contra orcos o goblins."
     }
     {
         // this.m.OathBurdenText = "Your men have [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve, [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Defense when fighting any other foe.";
         mode = "pattern"
         en = "Your men have <v:int_tag> Resolve, <v2:int_tag> Melee and Ranged Skill, and <v3:int_tag> Melee and Ranged Defense when fighting any other foe."
-        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo a distancia cuando luchen contra cualquier otro oponente."
+        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo y a distancia cuando luchen contra cualquier otro oponente."
     }
     {
         // return "You gain extra Renown for slaying greenskins (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
@@ -1819,7 +1825,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_wrath_ambition.nut
     {
         en = "There is no error in battle more fatal than meekness.\nLet us take an Oath of Wrath and show our foes what it truly means to be lain low!"
-        es = "No hay error en la batalla más fatal que la mansedumbre. Tomemos un Juramento de Ira y mostremos a nuestros enemigos lo que realmente significa ser derrotados."
+        es = "No hay error en batalla más fatal que la mansedumbre.\n¡Tomemos un Juramento de Ira y mostremos al enemigo lo que es ser abatido!"
     }
     {
         en = "Young Anselm wrote many manuals on martial fighting, the most popular of which implore the use of two-handed weaponry and the absconsion of battle tact. Dried blood mottles the pages of these texts."
@@ -4367,7 +4373,7 @@ local pairs = [
     }
     {
         en = "The Cleaver"
-        es = "El Cuchillo"
+        es = "El Cuchilla"
     }
     {
         en = "%randomname% the Marksman"
@@ -6133,7 +6139,7 @@ local pairs = [
     }
     {
         en = "Let us be viewed by our actions"
-        es = "Juzgadnos por nuestras acciones"
+        es = "Que nos juzguen por nuestras acciones"
     }
     {
         en = "Strive without reproach"
@@ -6606,7 +6612,7 @@ local pairs = [
     }
     {
         en = "Cleaver"
-        es = "Navaja"
+        es = "Cuchilla"
     }
     {
         en = "Sword"
@@ -6630,7 +6636,7 @@ local pairs = [
     }
     {
         en = "Warblade"
-        es = "Cuchilla de guerra"
+        es = "Hoja de guerra"
     }
     {
         en = "Longblade"
@@ -6674,7 +6680,7 @@ local pairs = [
     }
     {
         en = "Razor"
-        es = "Cuchilla"
+        es = "Navaja"
     }
     {
         en = "Windblade"
@@ -6746,7 +6752,7 @@ local pairs = [
     }
     {
         en = "War Cleaver"
-        es = "Cuchillo de guerra"
+        es = "Cuchilla de guerra"
     }
     {
         en = "Fleshcutter"
@@ -8080,7 +8086,7 @@ local pairs = [
     }
     {
         en = "Manhunter's"
-        es = "del Cazador de hombres"
+        es = "del Cazahombres"
     }
     {
         en = "Gladiator's"
@@ -9065,7 +9071,7 @@ local pairs = [
     }
     {
         en = "Farkin' patrol duty. Barely got back 'ere, blisters on me feet still from all the marchin' and we're about to 'ead out again. Just put us on 'orses, I say!"
-        es = "Maldita patrulla. Apenas volvimos y todavía tengo ampollas en los pies por todo el camino, y estamos a punto de salir de nuevo. ¡Dadnos caballos, digo yo!"
+        es = "Maldita patrulla. Apenas volvimos y todavía tengo ampollas en los pies por todo el camino, y estamos a punto de salir de nuevo. ¡Que nos den caballos, digo yo!"
     }
     {
         en = "Got wounded bad some months back in a skirmish 'gainst goblins. Couldn't feel me legs anymore, but the lads carried me all the way back to %townname%. Gods bless 'em."
@@ -13837,7 +13843,7 @@ local pairs = [
     }
     {
         en = "Cleaver Mastery"
-        es = "Dominio de las Cuchillas y látigos"
+        es = "Dominio de la Cuchilla"
     }
     {
         en = "Dagger Mastery"
@@ -18190,6 +18196,12 @@ local pairs = [
         es = "Un hombre curtido, el Maestro de la Arena, sostiene un pergamino y lo golpea con el garfio que le hace de mano."
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>A grizzled man, the master of the arena, holds up a scroll and taps it with a hook for a hand."
+        es = "<a:t>Un hombre curtido, el Maestro de la Arena, sostiene un pergamino y lo golpea con el garfio que le hace de mano."
+    }
+    {
         en = "Enter the arena again to start the fight against one Swordmaster"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra un Maestro espadachín."
     }
@@ -18200,6 +18212,12 @@ local pairs = [
     {
         en = "%SPEECH_ON%They put a star beside his name, the mark of the Gilder. That means his path is a gilded one. What you need to know is that he is a swordmaster. You may find some comfort in that he is an elder man, but you'd not be the first I have said that to, understand? May your path be as Gilded, because this swordmaster's certainly was.%SPEECH_OFF%"
         es = "%SPEECH_ON%Le pusieron una estrella junto a su nombre, la marca del Dorado. Eso significa que su camino es un sendero empedrado en oro. Lo que necesitas saber es que es un maestro espadachín. Puede que encuentres cierto consuelo en que es un hombre mayor, pero no serías el primero a quien se lo he dicho, ¿entiendes? Que tu camino sea dorado, porque ciertamente el del maestro espadachín lo fue.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%They put a star beside his name, the mark of the Gilder. That means his path is a gilded one. What you need to know is that he is a swordmaster. You may find some comfort in that he is an elder man, but you'd not be the first I have said that to, understand? May your path be as Gilded, because this swordmaster's certainly was.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Le pusieron una estrella junto a su nombre, la marca del Dorado. Eso significa que su camino es un sendero empedrado en oro. Lo que necesitas saber es que es un maestro espadachín. Puede que encuentres cierto consuelo en que es un hombre mayor, pero no serías el primero a quien se lo he dicho, ¿entiendes? Que tu camino sea dorado, porque ciertamente el del maestro espadachín lo fue.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against one Hedge Knight"
@@ -18214,6 +18232,12 @@ local pairs = [
         es = "%SPEECH_ON%Creo que los del norte lo llaman un 'caballero del odio'. Puede que me equivoque. No le digas a los otros maestros de la arena que dije esto sobre la basura del norte, pero este caballero es uno de los hombres más peligrosos que he visto pasar por aquí, y si deseas que tu camino continúe siendo dorado, te sugiero que te prepares bien y descanses antes de la pelea.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%I believe northerners refer to him as a 'hate knight.' Might have that wrong. Don't tell the other arena masters I said this about northern trash, but this knight is one of the most dangerous men I've seen come through here and if you wish your path to continue being gilded then I suggest you make sharp preparations and get a good rest before the fight.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Creo que los del norte lo llaman un 'caballero del odio'. Puede que me equivoque. No le digas a los otros maestros de la arena que dije esto sobre la basura del norte, pero este caballero es uno de los hombres más peligrosos que he visto pasar por aquí, y si deseas que tu camino continúe siendo dorado, te sugiero que te prepares bien y descanses antes de la pelea.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against one Blade Dancer"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra un danzarín de cuchillas."
     }
@@ -18226,6 +18250,12 @@ local pairs = [
         es = "El Maestro de la Arena sostiene un pergamino y lo golpea con el garfio que le hace de mano.%SPEECH_ON%En la lista está un danzarín de cuchillas de las tribus nómadas. Puede que parezca un poco extravagante, pero para obtener el título de 'danzarín de cuchillas' debes ser tan hábil con la espada como un ave lo es con el viento. La destreza en la danza es opcional, pero todos son bastante buenos en eso también.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>The arena master holds up a scroll and taps it with a hook for a hand.%SPEECH_ON%A blade dancer of the nomad tribes is on the docket. Now, he might look a bit foppish, but to get the title of 'blade dancer' you must be as articulate with the blade as a bird is with the wind. Dancing expertise is optional, but they're all pretty good at that, too.%SPEECH_OFF%"
+        es = "<a:t>El Maestro de la Arena sostiene un pergamino y lo golpea con el garfio que le hace de mano.%SPEECH_ON%En la lista está un danzarín de cuchillas de las tribus nómadas. Puede que parezca un poco extravagante, pero para obtener el título de 'danzarín de cuchillas' debes ser tan hábil con la espada como un ave lo es con el viento. La destreza en la danza es opcional, pero todos son bastante buenos en eso también.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% ifrits"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% Ifrits."
     }
@@ -18234,12 +18264,24 @@ local pairs = [
         es = "%SPEECH_ON%No hay nada escrito en la página porque temo la ira del desierto si me atrevo a revelar su presencia. Estarás luchando contra %number% Ifrits. No sé cómo lograron traerlos aquí, solo sé que fue obra de alquimistas. Si me preguntas, prefiero que luches contra ellos en lugar de los Ifrits.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%There's nothing on the page because I fear the desert's wrath if I dare to illuminate its most ferocious presence. You're fighting %number% ifrits. I do not know how they managed to get them here, I just know it was the doing of alchemists. If you ask me, I'd rather you fight them than the ifrits.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%No hay nada escrito en la página porque temo la ira del desierto si me atrevo a revelar su presencia. Estarás luchando contra %number% Ifrits. No sé cómo lograron traerlos aquí, solo sé que fue obra de alquimistas. Si me preguntas, prefiero que luches contra ellos en lugar de los Ifrits.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% nachzehrers"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% Nachzehrers."
     }
     {
         en = "%SPEECH_ON%The alchemists call them, well, I can't even pronounce it. My tongue simply cannot shape itself to the word for it requires specialized northern lexicography and I've no time to narrow northern verbiage in a fruitless matter of mundane minutiae. Do I look like a phonetician to you? Let's just call them 'gnashslashers.' They're ghoulish cretins, it's %number% of them, and I've seen them eat men alive, so you'd best hope the Gilder is watching - I don't think He'll have any light for you in the belly of one of those beasts!%SPEECH_OFF%"
         es = "%SPEECH_ON%Los alquimistas los llaman... bueno, ni siquiera puedo pronunciarlo. Mi lengua simplemente no puede dar forma a esa palabra, requiere un conocimiento del lexico norteño y no tengo tiempo para farfullar un vocabulario bárbaro en una cuestión de minucias mundanas. ¿Acaso parezco un foneticista? Digamos que los llamaremos 'gnashslashers'. Son criaturas espeluznantes, hay %number% de ellos, y los he visto devorar hombres vivos, así que es mejor que esperes que el Dorado te esté observando. No creo que Él tenga luz para ti en el vientre de una de esas bestias.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%The alchemists call them, well, I can't even pronounce it. My tongue simply cannot shape itself to the word for it requires specialized northern lexicography and I've no time to narrow northern verbiage in a fruitless matter of mundane minutiae. Do I look like a phonetician to you? Let's just call them 'gnashslashers.' They're ghoulish cretins, it's %number% of them, and I've seen them eat men alive, so you'd best hope the Gilder is watching - I don't think He'll have any light for you in the belly of one of those beasts!%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Los alquimistas los llaman... bueno, ni siquiera puedo pronunciarlo. Mi lengua simplemente no puede dar forma a esa palabra, requiere un conocimiento del lexico norteño y no tengo tiempo para farfullar un vocabulario bárbaro en una cuestión de minucias mundanas. ¿Acaso parezco un foneticista? Digamos que los llamaremos 'gnashslashers'. Son criaturas espeluznantes, hay %number% de ellos, y los he visto devorar hombres vivos, así que es mejor que esperes que el Dorado te esté observando. No creo que Él tenga luz para ti en el vientre de una de esas bestias.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against one unhold"
@@ -18254,12 +18296,24 @@ local pairs = [
         es = "%SPEECH_ON%Te enfrentarás a %number% de lo que la escoria del norte llama un 'Unhold', trol o gigante. El Visir paga una buena cantidad de monedas para traerlos aquí, y a las masas les encantan esos gigantescos retorcidos. Hacen un buen trabajo destrozando a los luchadores e incluso en ocasiones lanzando a un guerrero directamente entre la multitud. Es realmente maravilloso. Creo que algunos de los trols incluso aprenden a disfrutarlo mientras más tiempo permanecen aquí, como si supieran qué anima a la multitud a aplaudir o abuchear. La brutalidad es algo sin igual. En fin, que el Dorado te proteja.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%You're against %number% of what the northern scum refer to as an 'unhold.' The Vizier pays a proper pile of coin to get them here, and the masses love the giant bastards. They do a good job smashing fighters and, on occasion, heaving a warrior clear into the crowds. It's quite wonderful. I think some of the unholds even learn to enjoy it the longer they stay here, like they learn what spurs the mob to cheers and jeer. The brutality is something else. Anyway, may the Gilder watch over you.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Te enfrentarás a %number% de lo que la escoria del norte llama un 'Unhold', trol o gigante. El Visir paga una buena cantidad de monedas para traerlos aquí, y a las masas les encantan esos gigantescos retorcidos. Hacen un buen trabajo destrozando a los luchadores e incluso en ocasiones lanzando a un guerrero directamente entre la multitud. Es realmente maravilloso. Creo que algunos de los trols incluso aprenden a disfrutarlo mientras más tiempo permanecen aquí, como si supieran qué anima a la multitud a aplaudir o abuchear. La brutalidad es algo sin igual. En fin, que el Dorado te proteja.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% nomads"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% nómadas"
     }
     {
         en = "%SPEECH_ON%Your opponents will be %number% recently retired desert bandits. And by retired, I mean taken by the Vizier's lawmen, of course. No bandit willingly steps foot in here, haghaghagh!%SPEECH_OFF%"
         es = "%SPEECH_ON%Tus oponentes serán %number% bandidos del desierto recién retirados. Y por retirados, quiero decir capturados por los agentes del Visir, por supuesto. Ningún bandido pone voluntariamente un pie aquí dentro, ¡jojojojo!%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Your opponents will be %number% recently retired desert bandits. And by retired, I mean taken by the Vizier's lawmen, of course. No bandit willingly steps foot in here, haghaghagh!%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Tus oponentes serán %number% bandidos del desierto recién retirados. Y por retirados, quiero decir capturados por los agentes del Visir, por supuesto. Ningún bandido pone voluntariamente un pie aquí dentro, ¡jojojojo!%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %amount% gladiators"
@@ -18270,12 +18324,24 @@ local pairs = [
         es = "%SPEECH_ON%Bueno, jeje, el Dorado debe tener un sentido del humor. Te enfrentarás a %number% gladiadores. Que tu camino siempre sea dorado, pero para ser honesto, también se lo dije a los gladiadores. Y se lo he estado diciendo todos los días. ¿Entiendes? Deberías prepararte lo mejor que puedas.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Well, heh, the Gilder must have a sense of humor. You'll be facing %number% gladiators. May your path be ever Gilded, but to be honest, I said that to the gladiators. And I've been saying it to them every day. Understand? You should prepare to the best of your abilities.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Bueno, jeje, el Dorado debe tener un sentido del humor. Te enfrentarás a %number% gladiadores. Que tu camino siempre sea dorado, pero para ser honesto, también se lo dije a los gladiadores. Y se lo he estado diciendo todos los días. ¿Entiendes? Deberías prepararte lo mejor que puedas.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% webknechts"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% Webknechts"
     }
     {
         en = "%SPEECH_ON%That is not a fig tree, it's a spider. The alchemists, bless their learned hearts, call them webknechts which is a silly northern name, in truth they're spiders. Unfortunately for you a boot will not be sufficient this time around for %number% of them.%SPEECH_OFF%"
         es = "%SPEECH_ON%Esa no es una higuera retorcida, es una araña. Los alquimistas, benditos sean sus sabios corazones, los llaman webknechts, que es un nombre tonto del norte, en realidad son arañas. Desafortunadamente para ti, una bota no será suficiente esta vez contra %number% de ellas.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%That is not a fig tree, it's a spider. The alchemists, bless their learned hearts, call them webknechts which is a silly northern name, in truth they're spiders. Unfortunately for you a boot will not be sufficient this time around for %number% of them.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Esa no es una higuera retorcida, es una araña. Los alquimistas, benditos sean sus sabios corazones, los llaman webknechts, que es un nombre tonto del norte, en realidad son arañas. Desafortunadamente para ti, una bota no será suficiente esta vez contra %number% de ellas.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %amount% serpents"
@@ -18286,12 +18352,24 @@ local pairs = [
         es = "%SPEECH_ON%¿Qué quieres decir con que no entiendes? ¿Eh? ¿Solo ves una línea ondulada? No. Mira, esto es la cola, y eso es la cabeza. Es una serpiente. Estarás luchando contra %number% serpientes. A los alquimistas les gusta escribir la palabra 'serpiente', pero yo creo que es más fácil dibujarlas. Aunque si quisiera dibujar una víbora de verdad, simplemente dibujaría a un alquimista, ¡jojojo!%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%What do you mean you don't understand? Huh, it's just a squiggly line? No. Look, this is its tail, and that's the head. It's a snake. You're fighting %number% snakes. 'Serpents' the alchemists like to call them, but if I wanted to draw a serpent I'd just draw an alchemist haghaghagh!%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%¿Qué quieres decir con que no entiendes? ¿Eh? ¿Solo ves una línea ondulada? No. Mira, esto es la cola, y eso es la cabeza. Es una serpiente. Estarás luchando contra %number% serpientes. A los alquimistas les gusta escribir la palabra 'serpiente', pero yo creo que es más fácil dibujarlas. Aunque si quisiera dibujar una víbora de verdad, simplemente dibujaría a un alquimista, ¡jojojo!%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% hyenas"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% hienas"
     }
     {
         en = "%SPEECH_ON%Hyenas. Heeheehee. Hyenas. %numberC% of the giggling mutts, to be exact. Good luck, and may the Gilder watch over you.%SPEECH_OFF%"
         es = "%SPEECH_ON%Hienas. Jejeje. Hienas. %numberC% de esos perros risueños, para ser exactos. Buena suerte, y que el Dorado te proteja.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Hyenas. Heeheehee. Hyenas. %numberC% of the giggling mutts, to be exact. Good luck, and may the Gilder watch over you.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Hienas. Jejeje. Hienas. %numberC% de esos perros risueños, para ser exactos. Buena suerte, y que el Dorado te proteja.%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %amount% frenzied hyenas"
@@ -18310,6 +18388,12 @@ local pairs = [
         es = "%SPEECH_ON%Tu oponente es... ¿un qué? ¿Un gusano? Es verde. Nunca he visto un gusano de ese color... ¡oh! ¡Un wyrm! No, espera, wurm. ¿Wurm? ¡Un lindwurm! Debo ser honesto contigo, no sé qué demonios es esto, pero imagino que nuestros queridos emparejadores no te harán pelear contra un simple gusano. O tal vez sí lo harán. ¡Quizás te lo hagan comer para nuestro entretenimiento! ¡Tal vez no sean emparejadores, sino creadores de sabores! ¡Muajajajajajaja!. Ais.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Your opponent is a... a... what is this? A worm? It's green. Never seen a worm that col- oh! A wyrm! No wait, 'wurm.' Wurm? A lindwurm! I gots'ta be honest with ya, I don't know what the hell this is, but I imagine our dear matchmakers won't be having you fightin' a worm of the regular sort. Or maybe they is. Maybe they'll just have ye eat it for our entertainment. Maybe they ain't matchmakers, but tastemakers! Herghgheeagghheeehoogh. Ha.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Tu oponente es... ¿un qué? ¿Un gusano? Es verde. Nunca he visto un gusano de ese color... ¡oh! ¡Un wyrm! No, espera, wurm. ¿Wurm? ¡Un lindwurm! Debo ser honesto contigo, no sé qué demonios es esto, pero imagino que nuestros queridos emparejadores no te harán pelear contra un simple gusano. O tal vez sí lo harán. ¡Quizás te lo hagan comer para nuestro entretenimiento! ¡Tal vez no sean emparejadores, sino creadores de sabores! ¡Muajajajajajaja!. Ais.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %amount% mercenaries"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %amount% mercenarios"
     }
@@ -18318,12 +18402,24 @@ local pairs = [
         es = "%SPEECH_ON%Coroneros como tú han venido desde el norte. Allá arriba, los llaman 'espadas a sueldo'. Ja. ¿Qué tipo de intento de poesía es este? ¿No saben que no todos los hombres usan espada? No son los más brillantes allá arriba. Por eso me gusta el sur. El sol es brillante, y por ende, también lo somos nosotros.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Crownlings like you have ventured down from the north. Up there, they call them 'sellswords.' Hagh! What sort of attempt at poetry is that? Don't they know not every man even uses a sword? They ain't the brightest up there. That's why I like it in the south. The sun is bright, and thus so are we.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%Coroneros como tú han venido desde el norte. Allá arriba, los llaman 'espadas a sueldo'. Ja. ¿Qué tipo de intento de poesía es este? ¿No saben que no todos los hombres usan espada? No son los más brillantes allá arriba. Por eso me gusta el sur. El sol es brillante, y por ende, también lo somos nosotros.%SPEECH_OFF%"
+    }
+    {
         en = "Enter the arena again to start the fight against %champion1% and %amount% gladiators"
         es = "Ingresa nuevamente a la arena para comenzar la pelea contra %champion1% y %amount% gladiadores"
     }
     {
         en = "%SPEECH_ON%Recognize this face? There's a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin' in those seats upstairs. It's %champion1%, one of the greatest fighters in this land. Maybe some day they'll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%"
         es = "%SPEECH_ON%¿Reconoces esta cara? Hay una razón por la que los artistas dedicaron tiempo a este panfleto y luego los reparten a cada par de ojos que están sentados en esos asientos de arriba. Es %champion1%, uno de los mejores luchadores de estas tierras. Tal vez algún día hagan que tu cara luzca tan bonita, si el Visir puede encontrar a alguien tan talentoso para sacar algo de, bueno, lo que sea que tengas ahí entre oreja y oreja, ¡jajajaja!%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>%SPEECH_ON%Recognize this face? There's a reason the artists spent time on this here pamphlet and then handed them out to every set of eyes settin' in those seats upstairs. It's %champion1%, one of the greatest fighters in this land. Maybe some day they'll make yer face look so pretty, if the Vizier could ever find someone so talented to salvage, well, whatever ye got there between the ears, hegheghegh.%SPEECH_OFF%"
+        es = "<a:t>%SPEECH_ON%¿Reconoces esta cara? Hay una razón por la que los artistas dedicaron tiempo a este panfleto y luego los reparten a cada par de ojos que están sentados en esos asientos de arriba. Es %champion1%, uno de los mejores luchadores de estas tierras. Tal vez algún día hagan que tu cara luzca tan bonita, si el Visir puede encontrar a alguien tan talentoso para sacar algo de, bueno, lo que sea que tengas ahí entre oreja y oreja, ¡jajajaja!%SPEECH_OFF%"
     }
     {
         en = "Enter the arena again to start the fight against %champion1% and %amount% mercenaries"
@@ -18338,8 +18434,20 @@ local pairs = [
         es = "Se detiene.%SPEECH_ON%Esperamos invitados importantes para esta pelea, así que todo está preparado para que mueras de manera adecuadamente sangrienta esta vez, ¿entendido? Y si no puedes hacer eso, entonces haz que tu grupo derrote a sus oponentes de la manera más espectacular para complacer a la multitud. Hazlo, y te entregaré un auténtico equipo de gladiador además de las monedas.%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>He pauses.%SPEECH_ON%We expect important guests for this bout, so everything is set up for you to die proper bloody this time, got it? And if you can't do that, then have your lot dispatch their opponents in the most spectacular way to please the crowd. Do that, and I'll hand you a proper piece of gladiator gear ontop of the coin.%SPEECH_OFF%"
+        es = "<a:t>Se detiene.%SPEECH_ON%Esperamos invitados importantes para esta pelea, así que todo está preparado para que mueras de manera adecuadamente sangrienta esta vez, ¿entendido? Y si no puedes hacer eso, entonces haz que tu grupo derrote a sus oponentes de la manera más espectacular para complacer a la multitud. Hazlo, y te entregaré un auténtico equipo de gladiador además de las monedas.%SPEECH_OFF%"
+    }
+    {
         en = "He points to some strange looking collars and continues.%SPEECH_ON%When you're ready, put these on the three men who'll be doing the fighting. This lets us know who to take into the pits. Anyone not wearing these will not be allowed in, not you, not the Vizier, dare I say even the Gilder may be turned down.%SPEECH_OFF%"
         es = "Señala unos collares de aspecto extraño y continúa.%SPEECH_ON%Cuando estén listos, coloquen estos collares en los tres hombres que participarán en la pelea. Esto nos permitirá saber a quiénes llevar a las fosas. Cualquier persona que no lleve uno de estos collares no será permitida entrar, ni tú, ni el Visir, me atrevo a decir que incluso el Dorado podría ser rechazado.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>He points to some strange looking collars and continues.%SPEECH_ON%When you're ready, put these on the three men who'll be doing the fighting. This lets us know who to take into the pits. Anyone not wearing these will not be allowed in, not you, not the Vizier, dare I say even the Gilder may be turned down.%SPEECH_OFF%"
+        es = "<a:t>Señala unos collares de aspecto extraño y continúa.%SPEECH_ON%Cuando estén listos, coloquen estos collares en los tres hombres que participarán en la pelea. Esto nos permitirá saber a quiénes llevar a las fosas. Cualquier persona que no lleve uno de estos collares no será permitida entrar, ni tú, ni el Visir, me atrevo a decir que incluso el Dorado podría ser rechazado.%SPEECH_OFF%"
     }
     {
         en = "This arena fight works as follows. Do you agree to the terms?"
@@ -18899,8 +19007,20 @@ local pairs = [
         es = "El Maestro de la Arena, normalmente el hombre más indiferente que has conocido incluso teniendo un trabajo tan interesante, está bastante animado hoy. Te presenta un pergamino en una mano y tres dedos levantados en la otra.%SPEECH_ON%¡Tres rondas! ¡Tres rondas, una tras otra, cada una más difícil que la anterior! ¡Gana las tres rondas con los mismos cinco hombres para ganar el gran premio de un famoso %prizetype% llamado %prizename%! ¡Es un torneo, ¿quieres participar o no?!%SPEECH_OFF%"
     }
     {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>The arena master, typically the most disinterested man you've ever met to have an interesting job, is actually rather lively today. He presents you with a scroll in one hand and three fingers held up in the other.%SPEECH_ON%Three rounds! Three rounds, one after the other and each harder than the last. Win all three with the same five men to earn the grand prize of a famed %prizetype% called %prizename%! It'sahtournamentah! You want in or not-ah?%SPEECH_OFF%"
+        es = "<a:t>El Maestro de la Arena, normalmente el hombre más indiferente que has conocido incluso teniendo un trabajo tan interesante, está bastante animado hoy. Te presenta un pergamino en una mano y tres dedos levantados en la otra.%SPEECH_ON%¡Tres rondas! ¡Tres rondas, una tras otra, cada una más difícil que la anterior! ¡Gana las tres rondas con los mismos cinco hombres para ganar el gran premio de un famoso %prizetype% llamado %prizename%! ¡Es un torneo, ¿quieres participar o no?!%SPEECH_OFF%"
+    }
+    {
         en = "The arena master continues.%SPEECH_ON%When you're ready, have the men who'll be doing the fighting put on the arena collars we'll give you.%SPEECH_OFF%"
         es = "El Maestro de la Arena continúa.%SPEECH_ON%Cuando estés listo, haz que los hombres que vayan a luchar se pongan los collares de la arena que te daremos.%SPEECH_OFF%"
+    }
+    {
+        // this.Text += este trozo, detrás de lo anterior (<a>, que se traduce aparte)
+        mode = "pattern"
+        en = "<a:str>The arena master continues.%SPEECH_ON%When you're ready, have the men who'll be doing the fighting put on the arena collars we'll give you.%SPEECH_OFF%"
+        es = "<a:t>El Maestro de la Arena continúa.%SPEECH_ON%Cuando estés listo, haz que los hombres que vayan a luchar se pongan los collares de la arena que te daremos.%SPEECH_OFF%"
     }
     {
         en = "This arena tournament works as follows. Do you agree to the terms?"
@@ -20060,11 +20180,11 @@ local pairs = [
     }
     {
         en = "Let's be honest what this is about. Here's %bribe% crowns if you return."
-        es = "Seamos honestos sobre de lo qué trata todo esto. Les entregaré %bribe% coronas si regresan."
+        es = "Seamos sinceros sobre lo que está en juego. Les daré %bribe% coronas si regresan."
     }
     {
         en = "[img]gfx/ui/events/event_88.png[/img]\x7bYou take out a bag and put %bribe% crowns into it.%SPEECH_ON%I will personally pay you men to come back with me to the war camp. %commander% is furious with you, make no farkin' mistake about it, but he needs every man he can get. If you fight for him in this coming battle, I've no doubt he'll pardon this little error you have made.%SPEECH_OFF% | You offer the deserters %bribe% crowns. The men look at one another, then speak to you.%SPEECH_ON%And what good is money when the commander hangs us all?%SPEECH_OFF%You nod and answer.%SPEECH_ON%Good question, but %commander% is no fool. He needs all the men he can muster for the coming battle. Prove yourself in that battle and this little pity party you've thrown for yourselves will be forgotten.%SPEECH_OFF%\x7d\x7bThe deserters mull their options and eventually agree to come back with you. | The deserters huddle and come to some sort of agreement. Breaking the huddle, their leader steps forward.%SPEECH_ON%Despite some objections, we agree to come back with you to the war camp. I hope I do not come to regret this.%SPEECH_OFF% | After a short time debating on what to do, the deserters put it to a vote. It isn't unanimous, but they come to an agreement: they'll go back with you to %commander%. | The deserters argue about what to do next. Inevitably, it comes to a vote. Predictably, that vote is a tie. The men then agree to toss a crown: heads they go back to camp, tails they leave. Their leader flips the coin and all the men watch as it turns and glints. The coin lands heads. Every single one of them sighs upon seeing it, as if chance and fortune relieved them of an enormous responsibility beyond their own choosing.\x7d"
-        es = "[img]gfx/ui/events/event_88.png[/img]\x7bSacas una bolsa y colocas %bribe% coronas en ella.%SPEECH_ON%\x7bYo personalmente les pagaré para que regresen conmigo al campamento de guerra. %commander% está furioso con ustedes, que no les quepa ninguna duda, pero necesita a cada hombre que pueda conseguir. Si luchan por él en la próxima batalla, no tengo ninguna duda de que les perdonará este pequeño error que han cometido.\x7d%SPEECH_OFF% | Ofreces a los desertores %bribe% coronas. Los hombres se miran entre sí y luego te hablan.%SPEECH_ON%\x7b¿Y de qué sirve el dinero cuando el comandante nos colgará a todos?\x7d%SPEECH_OFF%Asientes y respondes.%SPEECH_ON%\x7bBuena pregunta, pero %commander% no es ningún estúpido. Necesita a todos los hombres que pueda reunir para la próxima batalla. Demuestren su valía en esa batalla y esta pequeña fiesta de autocompasión que se han montado será olvidada.\x7d%SPEECH_OFF% | Los desertores consideran sus opciones y finalmente aceptan regresar contigo. | Los desertores se agrupan y llegan a algún tipo de acuerdo. Separandose del grupo, su líder se adelanta.%SPEECH_ON%A pesar de algunas objeciones, aceptamos regresar contigo al campamento de guerra. Espero no lamentarlo.\x7d%SPEECH_OFF% | Después de un breve debate sobre qué hacer, los desertores lo someten a votación. No es unánime, pero llegan a un acuerdo: volverán contigo al campamento de %commander%. | Los desertores discuten sobre qué hacer a continuación. Inevitablemente, se somete a votación. Predeciblemente, el voto termina en un empate. Luego acuerdan lanzar una corona: cara irán de vuelta al campamento, cruz se marcharán. Su líder lanza la moneda y todos los hombres observan cómo gira y brilla. La moneda cae en cara. Todos suspiran al verla, como si la casualidad y la fortuna los hubieran liberado de una enorme responsabilidad más allá de su elección.\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7bSacas una bolsa y colocas %bribe% coronas en ella.%SPEECH_ON%Yo personalmente les pagaré para que regresen conmigo al campamento de guerra. %commander% está furioso con ustedes, que no les quepa ninguna duda, pero necesita a cada hombre que pueda conseguir. Si luchan por él en la próxima batalla, no tengo ninguna duda de que les perdonará este pequeño error que han cometido.%SPEECH_OFF% | Ofreces a los desertores %bribe% coronas. Los hombres se miran entre sí y luego te hablan.%SPEECH_ON%¿Y de qué sirve el dinero cuando el comandante nos colgará a todos?%SPEECH_OFF%Asientes y respondes.%SPEECH_ON%Buena pregunta, pero %commander% no es ningún estúpido. Necesita a todos los hombres que pueda reunir para la próxima batalla. Demuestren su valía en esa batalla y esta pequeña fiesta de autocompasión que se han montado será olvidada.%SPEECH_OFF%\x7d\x7bLos desertores consideran sus opciones y finalmente aceptan regresar contigo. | Los desertores se agrupan y llegan a algún tipo de acuerdo. Separándose del grupo, su líder se adelanta.%SPEECH_ON%A pesar de algunas objeciones, aceptamos regresar contigo al campamento de guerra. Espero no lamentarlo.%SPEECH_OFF% | Después de un breve debate sobre qué hacer, los desertores lo someten a votación. No es unánime, pero llegan a un acuerdo: volverán contigo al campamento de %commander%. | Los desertores discuten sobre qué hacer a continuación. Inevitablemente, se somete a votación. Predeciblemente, el voto termina en un empate. Luego acuerdan lanzar una corona: cara irán de vuelta al campamento, cruz se marcharán. Su líder lanza la moneda y todos los hombres observan cómo gira y brilla. La moneda cae en cara. Todos suspiran al verla, como si la casualidad y la fortuna los hubieran liberado de una enorme responsabilidad más allá de su elección.\x7d"
     }
     {
         en = "This should help us in the coming battle."
@@ -20294,7 +20414,7 @@ local pairs = [
     }
     {
         en = "We need to seize this opportunity. Prepare the men to sally forth!"
-        es = "Tenemos que aprovechar esta oportunidad. ¡Prepara a los hombres para salir al frente!"
+        es = "Hay que aprovechar esta oportunidad. ¡Prepara a los hombres para salir!"
     }
     {
         en = "We have a defensible position here. We stay put."
@@ -21065,7 +21185,7 @@ local pairs = [
     // en = "Trap"
     {
         en = "[img]gfx/ui/events/event_45.png[/img]\x7b%employer% is looking at a poorly drawn map, then looks up at you as though you're the one responsible for making it.%SPEECH_ON%Look, mercenary, this is a strange thing to task you with, but you seem to have a good head on your shoulders. See this dark spot here? Would you be willing to venture that way and try and find the %location%? It's somewhere at or around the region of %region%.%SPEECH_OFF% | You step into %employer%'s room and he shoves a map into your face.%SPEECH_ON%\x7bSellsword! Time for you to go exploring! See this uncharted spot, %direction% of here in the region of %region%? That's where I need you to go in search of the %location%. Do you accept or not? | Alright, this might seem strange, but I need a place by the name of the %location% located and charted. Our maps are incomplete in regards to this spot which, at the very least, I believe is at or near the region of %region% %direction% of here. Go, find it, and come back with the coordinates and you will be properly rewarded. | There are parts of this world man still has yet to find and chart into his maps. I'm looking for %location% %direction% of here at or near the region of %region%. That's about all I know of it, but I do know it exists. So you go and find it for me and you'll be properly rewarded. | I need a place found, sellsword. It lies %direction% of here at or near to the region of %region%. The laymen call it %location%, but whatever it is, I need to know WHERE it is, understand? Find it and you will be paid handsomely. | I'm in need of a soldier and explorer, sellsword, and I think you're just the man to be both in one. Now, before you accuse me of being cheap by not hiring both vocations, let's just say I have plenty of crowns for you to earn in doing this for me. What is it, hm? Well, I know of a place by the name of %location%, but I know not where it is other than it resides %direction% of here in the strip of land called %region%. Find it, draw its place on the map, and you'll get the pay of both a soldier and an explorer!\x7d%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_45.png[/img]\x7b%employer% mira un mapa mal dibujado y luego te mira como si fueras responsable de haberlo dibujado.%SPEECH_ON%Mira, mercenario, es algo extraño encomendarte esto, pero pareces tener la cabeza en su sitio. ¿Ves este punto oscuro aquí? ¿Estarías dispuesto a aventurarte en esa dirección y tratar de encontrar %location%? Está en algún lugar de la región de %region% o cerca de ella.%SPEECH_OFF% | Entras en la habitación de %employer% y él te empuja un mapa hacia la cara.%SPEECH_ON%¡Mercenario! ¡Es hora de que vayas de expedición! ¿Ves este lugar sin explorar, al %direction% de aquí en la región de %region%? Ahí es donde necesito que vayas en busca de %location%. ¿Aceptas o no? | Muy bien, esto puede parecer extraño, pero necesito encontrar y cartografiar un lugar llamado %location%. Nuestros mapas están incompletos en lo que respecta a este lugar. Creemos que está en o cerca de la región de %region% al %direction% de aquí. Ve, encuéntralo y regresa con las coordenadas, y serás recompensado adecuadamente. | Hay partes de este mundo que el hombre aún no ha descubierto ni registrado en sus mapas. Estoy buscando %location% al %direction% de aquí, en o cerca de la región de %region%. Eso es todo lo que sé de ello, pero sé que existe. Así que ve y encuéntralo por mí, y serás recompensado adecuadamente. | Necesito encontrar un lugar, mercenario. Se encuentra al %direction% de aquí, en o cerca de la región de %region%. Los lugañeros lo llaman %location%, pero sea lo que sea, necesito saber DÓNDE está, ¿entiendes? Encuéntralo y te pagaré generosamente. | Necesito un soldado y un explorador, mercenario, y creo que eres el indicado para ser ambos trabajos. Antes de que me acuses de ser tacaño por no contratar un experto de ambos oficios, digamos que tengo muchas monedas para que las ganes al hacer esto por mí. ¿Qué dices? Bueno, conozco un lugar llamado %location%, pero no sé dónde está, aparte de que se encuentra al %direction% de aquí en la franja de tierra llamada %region%. Encuéntralo, marca su ubicación en el mapa, ¡y recibirás la paga tanto de un soldado como de un explorador!%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_45.png[/img]\x7b%employer% mira un mapa mal dibujado y luego te mira como si fueras responsable de haberlo dibujado.%SPEECH_ON%Mira, mercenario, es algo extraño encomendarte esto, pero pareces tener la cabeza en su sitio. ¿Ves este punto oscuro aquí? ¿Estarías dispuesto a aventurarte en esa dirección y tratar de encontrar %location%? Está en algún lugar de la región de %region% o cerca de ella.%SPEECH_OFF% | Entras en la habitación de %employer% y él te empuja un mapa hacia la cara.%SPEECH_ON%\x7b¡Mercenario! ¡Es hora de que vayas de expedición! ¿Ves este lugar sin explorar, al %direction% de aquí en la región de %region%? Ahí es donde necesito que vayas en busca de %location%. ¿Aceptas o no? | Muy bien, esto puede parecer extraño, pero necesito encontrar y cartografiar un lugar llamado %location%. Nuestros mapas están incompletos en lo que respecta a este lugar. Creemos que está en o cerca de la región de %region% al %direction% de aquí. Ve, encuéntralo y regresa con las coordenadas, y serás recompensado adecuadamente. | Hay partes de este mundo que el hombre aún no ha descubierto ni registrado en sus mapas. Estoy buscando %location% al %direction% de aquí, en o cerca de la región de %region%. Eso es todo lo que sé de ello, pero sé que existe. Así que ve y encuéntralo por mí, y serás recompensado adecuadamente. | Necesito encontrar un lugar, mercenario. Se encuentra al %direction% de aquí, en o cerca de la región de %region%. Los lugañeros lo llaman %location%, pero sea lo que sea, necesito saber DÓNDE está, ¿entiendes? Encuéntralo y te pagaré generosamente. | Necesito un soldado y un explorador, mercenario, y creo que eres el indicado para ser ambos trabajos. Antes de que me acuses de ser tacaño por no contratar un experto de ambos oficios, digamos que tengo muchas monedas para que las ganes al hacer esto por mí. ¿Qué dices? Bueno, conozco un lugar llamado %location%, pero no sé dónde está, aparte de que se encuentra al %direction% de aquí en la franja de tierra llamada %region%. Encuéntralo, marca su ubicación en el mapa, ¡y recibirás la paga tanto de un soldado como de un explorador!\x7d%SPEECH_OFF%\x7d"
     }
     {
         en = "\x7bWhat does it pay? | For the right price we'll find it.\x7d"
@@ -21257,7 +21377,7 @@ local pairs = [
     }
     {
         en = "Slit their throats."
-        es = "Cortadles la garganta"
+        es = "Córtenles la garganta"
     }
     {
         en = "Take their arms and chase them away."
@@ -21265,7 +21385,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]\x7bAltruism is for the naive. You have the prisoners slaughtered. | You recall how many times brigands slew hapless merchants. The thought is barely out of your mind when you give the order to have the prisoners executed. They pipe up a brief protest, but it is cut short by swords and spears. | You turn away.%SPEECH_ON%Through their necks. Make it quick.%SPEECH_OFF%The mercenaries follow the order and you soon here the gargling of dying men. It is not quick at all. | You shake your head 'no'. The prisoners cry out, but the men are already upon them, hacking and slashing and stabbing. The lucky ones are decapitated before they can even realize the immediacy of their own demise. Those with some fight in them suffer to the very end. | Mercy requires time. Time to look over your shoulder. Time to wonder if it was the right decision. You've no time. You've no mercy. The prisoners are executed and that takes little time at all.\x7d"
-        es = "[img]gfx/ui/events/event_22.png[/img]\x7bEl altruismo es para los ingenuos. Masacras a los prisioneros. | Recuerdas cuántas veces los bandidos mataron a desafortunados comerciantes. Apenas tienes ese pensamiento en mente cuando das la orden de ejecutar a los prisioneros. Protestan brevemente, pero sus voces son acalladas rápidamente por las espadas y lanzas. | Te alejas.%SPEECH_ON%Degolladlos. Que sea rápido.%SPEECH_OFF%Los mercenarios siguen la orden y pronto se escucha el gargoteo de hombres muriendo. No es para nada rápido. | Niegas con la cabeza. Los prisioneros gritan, pero los hombres ya están sobre ellos, cortando y apuñalando sin piedad. Los afortunados son decapitados antes de siquiera darse cuenta de la inmediatez de su propia muerte. Aquellos que se resisten sufren hasta el final. | La misericordia requiere tiempo. Tiempo para mirar por encima del hombro. Tiempo para preguntarse si fue la decisión correcta. Pero no tienes tiempo. No tienes misericordia. Los prisioneros son ejecutados y eso no cuesta demasiado tiempo.\x7d"
+        es = "[img]gfx/ui/events/event_22.png[/img]\x7bEl altruismo es para los ingenuos. Masacras a los prisioneros. | Recuerdas cuántas veces los bandidos mataron a desafortunados comerciantes. Apenas tienes ese pensamiento en mente cuando das la orden de ejecutar a los prisioneros. Protestan brevemente, pero sus voces son acalladas rápidamente por las espadas y lanzas. | Te alejas.%SPEECH_ON%Degüéllenlos. Que sea rápido.%SPEECH_OFF%Los mercenarios siguen la orden y pronto se escucha el gargoteo de hombres muriendo. No es para nada rápido. | Niegas con la cabeza. Los prisioneros gritan, pero los hombres ya están sobre ellos, cortando y apuñalando sin piedad. Los afortunados son decapitados antes de siquiera darse cuenta de la inmediatez de su propia muerte. Aquellos que se resisten sufren hasta el final. | La misericordia requiere tiempo. Tiempo para mirar por encima del hombro. Tiempo para preguntarse si fue la decisión correcta. Pero no tienes tiempo. No tienes misericordia. Los prisioneros son ejecutados y eso no cuesta demasiado tiempo.\x7d"
     }
     {
         en = "We have more important things to take care of."
@@ -21449,7 +21569,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_04.png[/img]\x7b%employer% welcomes your entrance with applause.%SPEECH_ON%My scouts tracked your company to the north and to its, dare I say, inevitable success! Splendid work murdering those savages. Surely this will make them think twice about venturing down here again!%SPEECH_OFF%The man pays you what you're owed. | You enter %employer%'s room and find him slackened into his chair. He's watching a naked woman saunter from one side of the room to the other. Shaking his head, he talks to you while not taking his eyes from the show.%SPEECH_ON%My scouts have already told me of your doings. Said you put it to the barbarians like they'd done their wrongs against you personally. I like that. I like the lack of restraint. Wish more of my own men had it.%SPEECH_OFF%A servant, previously unseen, quickly marches across the room. He's got a red candle atop his head and a chest of crowns in his hands. You take your pay and leave the room as quick as you can. | You find %employer% and a group of armored men standing around a table. A barbarian's corpse is on it. The flesh is greyed, but the body's musculature and grit has not yet been decayed. They ask if you truly fought men of this sort. You cut to the chase and ask for your pay. %employer% claps and shows you off to the group.%SPEECH_ON%Gentlemen, this is the sort of man I want in my ranks! Unfearful and always focused.%SPEECH_OFF%One of the nobles spits and says something you don't hear. You ask him to speak up if he's something to say, but %employer% rushes forward, chest of crowns in hand, and sends you on your way. | Finding %employer% proves a little difficult, a hunt that ends in a seemingly abandoned barn. You see him standing before a dead barbarian, the corpse hanging from the rafters by his legs like a fisherman's haul. The body has been burned, mutilated, and all else. %employer% crouches and washes his hands in a bucket.%SPEECH_ON%I've to say, sellsword, you killing a whole number of these savages is most impressive. This one here lasted a good long while. Took to the pain like he was gonna pay it forward to me tenfold. But he never did. Did you?%SPEECH_OFF%The man gently slaps the barbarian's face and the chains clink as the body gently twists. %employer% nods.%SPEECH_ON%A servant outside will have your pay. A job well done, sellsword.%SPEECH_OFF% | You find %employer% and a group of men overseeing the defense of %townname%, no doubt preparing themselves for whatever attack may come next. Judging by the appearance of the men, their ambitions of survival will meet a reality far more cruel than they are ready for. But you keep that to yourself. %employer% thanks you for a job well done and pays you what is owed. | A few denizens of %townname% see your return with horrified confusion, mistaking you for the savages that they'd come to know. Windows are shuttered, doors slammed closed, children hurried away, and a few braver souls step out with pitchforks. %employer% hurries out of his abode and sets them straight, explaining you are the heroes of the tale, that you went north and annihilated the savages, burned their village, and scattered them to the wastes. Windows swing wide and doors creak open and the children return to their play. Just when you think order has returned, an old woman snarls.%SPEECH_ON%A sellsword is just a savage by another name!%SPEECH_OFF%Sighing, you tell %employer% to pay what is owed. | %employer% is studying a few scrolls. He's also penning notes into them and crossing others out. Looking up, he explains that he's putting you into the records as a 'hero who went to the wastes' and 'slaughtered the savages in a fashion most proper and southernly.' He asks you to remind him what your name is. You ask him to pay you what you're owed. | %employer% is in the company of a group of sobbing women. He's consoling them and when you enter he stands and points you out to them.%SPEECH_ON%Behold! The man who has slain those who murdered your husbands!%SPEECH_OFF%The women wail and clamber to you, one after the other, and you know what to do besides nod sternly and stoically. %employer% is the last of the crowd to find you, a chest of crowns in his arm and a wry smile on his lips. You take your pay and the man returns to the women.%SPEECH_ON%There there, fine ladies, the world will see a new dawn. Please, come with me. Does anyone want wine?%SPEECH_OFF% | %employer% welcomes you with open arms. You decline a hug and ask for your pay. He returns to his desk.%SPEECH_ON%I wasn't trying to hug you, sellsword.%SPEECH_OFF%He taps the chest rather despondently.%SPEECH_ON%But you did a good job slaughtering those savages. I've a number of scouts who reported it as a 'splendid time' you had out there. You've earned this.%SPEECH_OFF%He pushes the chest across the desk and you take it at arm's length, meeting a slight bit of resistance as he holds onto it. You hurriedly leave the room without looking at him again. | You have a hard time finding %employer%, eventually finding him halfway down a well shaft plugging a hole with a stone slab. He shouts up to you.%SPEECH_ON%Ah, the sellsword. Hoist me up, men!%SPEECH_OFF%A pulley system draws up the plank upon which he sits. He swings his legs off and rests them on the rim of the wellhead.%SPEECH_ON%Our mason was killed by a donkey so I thought I'd lend a hand myself. Nothing like a little dirty work to get a good man up in the morn'.%SPEECH_OFF%He slaps your chest with his glove, it leaves a powdered outline. He nods and fetches a servant to go get your pay.%SPEECH_ON%A job well done, sellsword. Very, very well done. Heh.%SPEECH_OFF%You don't humor him. | %employer% is found giving a speech to a crowd of peasants. He describes an unnamed force of southerners that headed north and annihilated the savage scum. At no point are you or the %companyname% named. When he's done, the mob of peons cheer and clap and flowers are thrown and a general state of festivity takes over. %employer% seeks you out and shakes your hand while pushing a chest of crowns toward you.%SPEECH_ON%I wish I could call you the hero to these fine folk, but mercenaries are not seen in the best of light.%SPEECH_OFF%You wrap your hands around the payment and lean forward.%SPEECH_ON%All I want is the pay. Have fun out there, %employer%.%SPEECH_OFF% | You find %employer% attending a funeral ceremony. They're burning a pyre weighed with three corpses and what may possibly be a fourth, smaller one. Possibly a whole family. %employer% says a few kind words and then sets the woodwork ablaze. A servant surprises you with a chest of crowns.%SPEECH_ON%%employer% does not wish to be bothered. Here is your pay, sellsword. Please count if you do not trust it is all there.%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_04.png[/img]\x7b%employer% te recibe con aplausos al entrar.%SPEECH_ON%Mis exploradores rastrearon a tu compañía hacia el norte y, osaría decir, hacia el éxito inevitable. Espléndido trabajo matando a esos salvajes. Seguramente esto les hará pensárselo dos veces antes de aventurarse por aquí de nuevo.%SPEECH_OFF%El hombre te paga lo que te debe. | Entras en la habitación de %employer% y lo encuentras relajado en su silla. %SPEECH_ON%Mis exploradores ya me han contado lo que hiciste. Dicen que los enfrentaste como si hubieran cometido agravios personales contra ti. Me gusta eso. Me gusta la falta de restricción. Ojalá más de mis hombres la tuvieran.%SPEECH_OFF%Un sirviente, antes invisible, atraviesa rápidamente la habitación. Lleva una vela roja en la cabeza y un cofre de monedas en las manos. Recoges tu paga y sales de la habitación lo más rápido que puedes. | Encuentras a %employer% y a un grupo de hombres armados parados alrededor de una mesa. Hay un cadáver de un bárbaro sobre ella. La carne está grisácea, pero la musculatura y la determinación del cuerpo no han sido aún descompuestas. Te preguntan si realmente luchaste contra hombres de este tipo. Vas directo al grano y pides tu paga. %employer% aplaude y te presenta al grupo.%SPEECH_ON%Caballeros, ¡este es el tipo de hombre que quiero en mis filas! Sin miedo y siempre centrado.%SPEECH_OFF%Uno de los nobles escupe y dice algo que no escuchas. Le pides que hable más alto si tiene algo que decir, pero %employer% se adelanta rápidamente, con el cofre de monedas en la mano, y te despide. | Encontrar a %employer% resulta un poco difícil, una búsqueda que termina en un granero aparentemente abandonado. Lo ves parado frente a un bárbaro muerto, el cadáver colgando de las vigas por las piernas como una captura de un pescador. El cuerpo ha sido quemado, mutilado y demás. %employer% se agacha y lava sus manos en un cubo.%SPEECH_ON%Debo decir, mercenario, que matar a todo un poblado de estos salvajes es impresionante. Este de aquí duró un buen rato. Resistió el dolor como si fuera a devolvérmelo multiplicado por diez. Pero nunca lo hizo. ¿Y tú?%SPEECH_OFF%El hombre da una suave bofetada en la cara del bárbaro y las cadenas tintinean mientras el cuerpo gira suavemente. %employer% asiente.%SPEECH_ON%Un sirviente fuera te entregará tu paga. Un trabajo bien hecho, mercenario.%SPEECH_OFF% | Encuentras a %employer% y a un grupo de hombres supervisando la defensa de %townname%, sin duda preparándose para cualquier ataque que pueda venir a continuación. A juzgar por la apariencia de los hombres, sus ambiciones de supervivencia se encontrarán con una realidad mucho más cruel de lo que están preparados. Pero te guardas eso para ti mismo. %employer% te agradece por un trabajo bien hecho y te paga lo que te debe. | Algunos habitantes de %townname% te ven regresar con un semblante horrorizado, confundiéndote con los salvajes que habían llegado a conocer. Se cierran ventanas, se golpean puertas, se alejan a los niños y algunos valientes salen con horcas. %employer% sale apresuradamente de su morada y les aclara, explicando que tú eres los héroes de la historia, que fuiste al norte y aniquilaste a los salvajes, quemaste su pueblo y los dispersaste por el páramo helado. Las ventanas y las puertas se abren de par en par y los niños regresan a jugar. Justo cuando crees que el orden ha regresado, una anciana gruñe.%SPEECH_ON%¡Un mercenario no es más que un salvaje con otro nombre!%SPEECH_OFF%Suspirando, le dices a %employer% que pague lo que te deben. | %employer% está estudiando algunos pergaminos. También está tomando notas en ellos y tachando otros. Levantando la vista, explica que te está registrando en los registros como un 'héroe que fue a los paramos helados' y 'masacró a los salvajes de una manera muy adecuada y sureña'. Te pide que le recuerdes cuál es tu nombre. Tú le pides que te pague lo que te debe. | %employer% está acompañado de un grupo de mujeres llorosas. Él las consuela y cuando entras se levanta y te señala.%SPEECH_ON%¡He aquí! ¡El hombre que ha matado a aquellos que asesinaron a sus maridos!%SPEECH_OFF%Las mujeres siguen llorando y se acercan a ti, una tras otra, y tú sabes qué hacer además de asentir con severidad y estoicismo. %employer% es el último de la multitud en encontrarte, un cofre de monedas en su brazo y una sonrisa irónica en sus labios. Recoges tu paga y el hombre vuelve a las mujeres. %SPEECH_ON%Ahora, queridas damas, el mundo verá un nuevo amanecer. Por favor, vengan conmigo. ¿Alguien quiere vino?%SPEECH_OFF% | %employer% te da la bienvenida con los brazos abiertos. Tú rechazas un abrazo y pides tu paga. Él vuelve a su escritorio.%SPEECH_ON%No estaba tratando de abrazarte, mercenario.%SPEECH_OFF%Él golpea el cofre de manera un tanto desesperanzada.%SPEECH_ON%Pero hiciste un buen trabajo masacrando a esos salvajes. Tengo varios exploradores que me informaron del trabajo 'espléndido' que tuviste ahí fuera. Te lo has ganado.%SPEECH_OFF%Empuja el cofre sobre el escritorio e intentas cojerlo, encontrando una ligera resistencia mientras él lo sostiene. Sales apresuradamente de la habitación sin volver a mirarlo. | Tienes dificultades para encontrar a %employer%, encontrándolo finalmente a mitad de un pozo, tapando un agujero con una losa de piedra. Te grita desde abajo.%SPEECH_ON%Ah, el mercenario. ¡Subidme, hombres!%SPEECH_OFF%Un sistema de poleas sube la plataforma en la que está sentado. Balancea las piernas y las apoya en el borde de la cabeza del pozo.%SPEECH_ON%¡Nuestro albañil fue asesinado por un burro, así que pensé que me echaría una mano yo mismo! Nada como un poco de trabajo sucio para animar a un buen hombre por la mañana, ¿eh?%SPEECH_OFF%Te da una palmada en el pecho con su mano, dejando un rastro en polvo. Asientes con la cabeza y él llama a un sirviente para que vaya a buscar tu pago.%SPEECH_ON%Un trabajo bien hecho, mercenario. Muy, muy bien hecho. Heh.%SPEECH_OFF%No le sigues el juego. | %employer% se encuentra dando un discurso a una multitud de campesinos. Describe una fuerza sin nombre de sureños que se dirigió al norte y aniquiló a la escoria salvaje. En ningún momento se menciona a ti o a %companyname%. Cuando termina, la multitud de campesinos aplaude y lanza flores, y un estado general de festividad se apodera del lugar. %employer% te busca y te estrecha la mano mientras te acerca un cofre de monedas.%SPEECH_ON%Desearía poder llamarte el héroe ante esta gente, pero los mercenarios no son vistos con buenos ojos.%SPEECH_OFF%Envuelves tus manos alrededor del cofre y te inclinas hacia adelante.%SPEECH_ON%Todo lo que quiero es el pago. Diviértete por ahí, %employer%.%SPEECH_OFF% | Encuentras a %employer% asistiendo a una ceremonia funeraria. Queman una pira cargada con tres cadáveres y lo que posiblemente sea un cuarto, más pequeño. Posiblemente una familia entera. %employer% dice algunas palabras amables y luego prende fuego a la estructura de madera. Un sirviente te sorprende con un cofre de monedas.%SPEECH_ON%%employer% no quiere ser molestado. Aquí está tu pago, mercenario. Por favor, cuenta si no confías en que está todo ahí.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_04.png[/img]\x7b%employer% te recibe con aplausos al entrar.%SPEECH_ON%Mis exploradores rastrearon a tu compañía hacia el norte y, osaría decir, hacia el éxito inevitable. Espléndido trabajo matando a esos salvajes. Seguramente esto les hará pensárselo dos veces antes de aventurarse por aquí de nuevo.%SPEECH_OFF%El hombre te paga lo que te debe. | Entras en la habitación de %employer% y lo encuentras relajado en su silla. %SPEECH_ON%Mis exploradores ya me han contado lo que hiciste. Dicen que los enfrentaste como si hubieran cometido agravios personales contra ti. Me gusta eso. Me gusta la falta de restricción. Ojalá más de mis hombres la tuvieran.%SPEECH_OFF%Un sirviente, antes invisible, atraviesa rápidamente la habitación. Lleva una vela roja en la cabeza y un cofre de monedas en las manos. Recoges tu paga y sales de la habitación lo más rápido que puedes. | Encuentras a %employer% y a un grupo de hombres armados parados alrededor de una mesa. Hay un cadáver de un bárbaro sobre ella. La carne está grisácea, pero la musculatura y la determinación del cuerpo no han sido aún descompuestas. Te preguntan si realmente luchaste contra hombres de este tipo. Vas directo al grano y pides tu paga. %employer% aplaude y te presenta al grupo.%SPEECH_ON%Caballeros, ¡este es el tipo de hombre que quiero en mis filas! Sin miedo y siempre centrado.%SPEECH_OFF%Uno de los nobles escupe y dice algo que no escuchas. Le pides que hable más alto si tiene algo que decir, pero %employer% se adelanta rápidamente, con el cofre de monedas en la mano, y te despide. | Encontrar a %employer% resulta un poco difícil, una búsqueda que termina en un granero aparentemente abandonado. Lo ves parado frente a un bárbaro muerto, el cadáver colgando de las vigas por las piernas como una captura de un pescador. El cuerpo ha sido quemado, mutilado y demás. %employer% se agacha y lava sus manos en un cubo.%SPEECH_ON%Debo decir, mercenario, que matar a todo un poblado de estos salvajes es impresionante. Este de aquí duró un buen rato. Resistió el dolor como si fuera a devolvérmelo multiplicado por diez. Pero nunca lo hizo. ¿Y tú?%SPEECH_OFF%El hombre da una suave bofetada en la cara del bárbaro y las cadenas tintinean mientras el cuerpo gira suavemente. %employer% asiente.%SPEECH_ON%Un sirviente fuera te entregará tu paga. Un trabajo bien hecho, mercenario.%SPEECH_OFF% | Encuentras a %employer% y a un grupo de hombres supervisando la defensa de %townname%, sin duda preparándose para cualquier ataque que pueda venir a continuación. A juzgar por la apariencia de los hombres, sus ambiciones de supervivencia se encontrarán con una realidad mucho más cruel de lo que están preparados. Pero te guardas eso para ti mismo. %employer% te agradece por un trabajo bien hecho y te paga lo que te debe. | Algunos habitantes de %townname% te ven regresar con un semblante horrorizado, confundiéndote con los salvajes que habían llegado a conocer. Se cierran ventanas, se golpean puertas, se alejan a los niños y algunos valientes salen con horcas. %employer% sale apresuradamente de su morada y les aclara, explicando que tú eres los héroes de la historia, que fuiste al norte y aniquilaste a los salvajes, quemaste su pueblo y los dispersaste por el páramo helado. Las ventanas y las puertas se abren de par en par y los niños regresan a jugar. Justo cuando crees que el orden ha regresado, una anciana gruñe.%SPEECH_ON%¡Un mercenario no es más que un salvaje con otro nombre!%SPEECH_OFF%Suspirando, le dices a %employer% que pague lo que te deben. | %employer% está estudiando algunos pergaminos. También está tomando notas en ellos y tachando otros. Levantando la vista, explica que te está registrando en los registros como un 'héroe que fue a los paramos helados' y 'masacró a los salvajes de una manera muy adecuada y sureña'. Te pide que le recuerdes cuál es tu nombre. Tú le pides que te pague lo que te debe. | %employer% está acompañado de un grupo de mujeres llorosas. Él las consuela y cuando entras se levanta y te señala.%SPEECH_ON%¡He aquí! ¡El hombre que ha matado a aquellos que asesinaron a sus maridos!%SPEECH_OFF%Las mujeres siguen llorando y se acercan a ti, una tras otra, y tú sabes qué hacer además de asentir con severidad y estoicismo. %employer% es el último de la multitud en encontrarte, un cofre de monedas en su brazo y una sonrisa irónica en sus labios. Recoges tu paga y el hombre vuelve a las mujeres. %SPEECH_ON%Ahora, queridas damas, el mundo verá un nuevo amanecer. Por favor, vengan conmigo. ¿Alguien quiere vino?%SPEECH_OFF% | %employer% te da la bienvenida con los brazos abiertos. Tú rechazas un abrazo y pides tu paga. Él vuelve a su escritorio.%SPEECH_ON%No estaba tratando de abrazarte, mercenario.%SPEECH_OFF%Él golpea el cofre de manera un tanto desesperanzada.%SPEECH_ON%Pero hiciste un buen trabajo masacrando a esos salvajes. Tengo varios exploradores que me informaron del trabajo 'espléndido' que tuviste ahí fuera. Te lo has ganado.%SPEECH_OFF%Empuja el cofre sobre el escritorio e intentas cojerlo, encontrando una ligera resistencia mientras él lo sostiene. Sales apresuradamente de la habitación sin volver a mirarlo. | Tienes dificultades para encontrar a %employer%, encontrándolo finalmente a mitad de un pozo, tapando un agujero con una losa de piedra. Te grita desde abajo.%SPEECH_ON%Ah, el mercenario. ¡Súbanme, hombres!%SPEECH_OFF%Un sistema de poleas sube la plataforma en la que está sentado. Balancea las piernas y las apoya en el borde de la cabeza del pozo.%SPEECH_ON%¡Nuestro albañil fue asesinado por un burro, así que pensé que me echaría una mano yo mismo! Nada como un poco de trabajo sucio para animar a un buen hombre por la mañana, ¿eh?%SPEECH_OFF%Te da una palmada en el pecho con su mano, dejando un rastro en polvo. Asientes con la cabeza y él llama a un sirviente para que vaya a buscar tu pago.%SPEECH_ON%Un trabajo bien hecho, mercenario. Muy, muy bien hecho. Heh.%SPEECH_OFF%No le sigues el juego. | %employer% se encuentra dando un discurso a una multitud de campesinos. Describe una fuerza sin nombre de sureños que se dirigió al norte y aniquiló a la escoria salvaje. En ningún momento se menciona a ti o a %companyname%. Cuando termina, la multitud de campesinos aplaude y lanza flores, y un estado general de festividad se apodera del lugar. %employer% te busca y te estrecha la mano mientras te acerca un cofre de monedas.%SPEECH_ON%Desearía poder llamarte el héroe ante esta gente, pero los mercenarios no son vistos con buenos ojos.%SPEECH_OFF%Envuelves tus manos alrededor del cofre y te inclinas hacia adelante.%SPEECH_ON%Todo lo que quiero es el pago. Diviértete por ahí, %employer%.%SPEECH_OFF% | Encuentras a %employer% asistiendo a una ceremonia funeraria. Queman una pira cargada con tres cadáveres y lo que posiblemente sea un cuarto, más pequeño. Posiblemente una familia entera. %employer% dice algunas palabras amables y luego prende fuego a la estructura de madera. Un sirviente te sorprende con un cofre de monedas.%SPEECH_ON%%employer% no quiere ser molestado. Aquí está tu pago, mercenario. Por favor, cuenta si no confías en que está todo ahí.%SPEECH_OFF%\x7d"
     }
     // en = "barbarianname"
     // en = "champbrother"
@@ -21576,7 +21696,7 @@ local pairs = [
     }
     {
         en = "We aren't paid enough to make enemies of %noblehouse%. Take them."
-        es = "No nos pagan lo suficiente como para hacernos enemigos de los %noblehouse%. Entregadles los bienes."
+        es = "No nos pagan lo suficiente para enemistarnos con %noblehouse%. Llévense la mercancía."
     }
     {
         en = "Your lords won't appreciate their allies, the %companyname%, to be held up like this."
@@ -21639,7 +21759,7 @@ local pairs = [
     }
     {
         en = "This better be worth it. I'll hold you to your promises once I've freed you."
-        es = "Espero que esto valga la pena. Te haré responsable de tus promesas una vez que te haya liberado."
+        es = "Más vale que valga la pena. Cumplirás tus promesas cuando te libere."
     }
     {
         en = "[img]gfx/ui/events/event_60.png[/img]\x7bYou spit and clear you throat, then you quickly clear your sword of its sheath and strike the caravan guard down. %randombrother% sees this and quickly barks out an order for the rest of the %companyname% to follow suit. There's a brief, confused carnage, the caravan guards unsure of what's going on as your men set upon them.\n\n Freeing the prisoner, he thanks you profusely then tells you to lead the way.%SPEECH_ON%Once we get to %noblesettlement%, and they see my lively and grinning face, you will be washed in crowns!%SPEECH_OFF% | You draw your sword and slash the guard across the face. He spins around and you crash the blade of your weapon through his brainpain, his organ frothing between slanted boneshards like a burst souffle. %randombrother% sees this and calls the rest of the company to combat. They make short work of the rest of the caravan guards. When you free %noble%, he points down the road.%SPEECH_ON%To %noblesettlement% where my family shall reward you like you cannot believe!%SPEECH_OFF% | As the caravan guard turns around, you take a dagger and jam it beneath his arm pit and directly into his heart. He muffles something, then falls to the ground. Another guard comes around, sees this, then sees your sword disembowel him. His cries, however, are not muffled. A battle soon commences, though it is completely lopsided as the %companyname% makes short work of the caravan guards.\n\n Once it is all said and done, %noble% is freed. Rubbing his purpled wrists, he points you toward %noblesettlement%.%SPEECH_ON%Onward, return me to my family so that I can fill your pockets for this incredible bravery!%SPEECH_OFF%\x7d"
@@ -21846,7 +21966,7 @@ local pairs = [
     }
     {
         en = "Why bleed for crowns when you offer them freely? We have a deal."
-        es = "Por qué derramar sangre por coronas cuando te las ofrecen libremente. Tenemos un trato."
+        es = "¿Por qué sangrar por coronas si nos las ofreces gratis? Trato hecho."
     }
     {
         en = "If you want him, come and get him."
@@ -22886,7 +23006,7 @@ local pairs = [
     }
     {
         en = "Protect them!"
-        es = "¡Protegedlos!"
+        es = "¡Protéjanlos!"
     }
     {
         en = "[img]gfx/ui/events/event_169.png[/img]\x7bThe battle over, the head of the caravan comes to you personally.%SPEECH_ON%I thank you, Crownling. A slave to the coin you may be, but not without a chain or two adorned upon what we all wish we had, a sense of doing good.%SPEECH_OFF%Well, you were just here for the serpents and the caravan was but happenstance, a welcome supplement of live bait that kept the monsters off your own men. You're just about to tell him this, but he cuts you off with a bag of treasures in hand.%SPEECH_ON%As reward for your intervention, Crownling. May your road to the coin be ever more gilded.%SPEECH_OFF%Nodding, you shake his hand and then go about collecting the serpent scales. The merchant asks if he may have one, but with a hand on your sword you tell him this is not a trading post he has stopped at. He gets the message.\x7d"
@@ -24230,7 +24350,7 @@ local pairs = [
     }
     {
         en = "Sweep through from one side!"
-        es = "¡Barrédlos desde el flanco!"
+        es = "¡Bárranlos desde el flanco!"
     }
     {
         en = "[img]gfx/ui/events/event_141.png[/img]\x7bYou reach %location% and immediately tell your men to hold and get down. Peasants are afoot, but so are militia. This was not part of the deal and you must reassess the situation accordingly. | As you near %location%, %randombrother% returns to you with a scouting report. Apparently, there are not just peasants there. A few militiamen are in the area. If you are to do this, you'll have to fight them, too. What now? | Militia! They were not part of the plan at all! If you are to proceed, you'll have to take care of them along with the peasants. Time to think carefully about this... | What is this? You see militiamen marching around %location%. Now you'll have to do some real fighting if you want to complete your task. | As you ready to attack %location%, %randombrother% points out something in the distance. Slimming your eyes, you bring into focus a handful of what look like militiamen. This was not part of the agreement! You can still go through with the attack, but there will be some resistance...\x7d"
@@ -24867,7 +24987,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_31.png[/img]\x7b%commander% has given the order attack.\n\n \x7bThe %companyname% and a contingent of the nobleman's soldiers are to assault the front gate. You all stack up underneath the hood of a battering ram that's more shanty on wheels than a compelling war machine. With all arms on the rowbars, you push the ram forward. The roof rattles with a series of ponk-ponk-ponks as arrows riddle across it. You look up to see a few arrowheads have pierced through. When you get to the gate, you order the men to heave the ram backward, and then on command they let it go.\n\nGroaning with heavy oaken deliberation, the ram sails forward and slams against the gate. It fractures in the middle and through the gap you can see %objective%'s defenders waiting on the other side for you. Another order, another ramming. This time it batters straight through the gate, breaking the hinges and causing each door to fall away in a spray of splinters and metal. Arms at the ready, you and all the men rush through to the other side. | With a retinue of the commander's men, the %companyname% pushes a hooded battering ram toward the gates of %objective%. A few defenders bark down at you with jeers.%SPEECH_ON%\x7bAren't you going to take us out to dinner first? | Hmm, nice long ram you got there. Trying to make up for something? | Come and get it ya ugly cunts. | Hope yer praying to the old gods underneath that little roof of yours.\x7d%SPEECH_OFF%Their barbs go quiet as you bump against the gate and, with one swing of the ram, blow it apart. Your men quickly charge through the opening. | Taking a few of the commander's men, you and the %companyname% push a battering ram toward the gate of %objective%. The rooftop bumbles and rattles, disturbingly appearing more shanty than shield. You pray it holds. Arrows plock above while others ricochet with sharp scratches of metal across wood. As you get ever closer to %objective%'s gate, the arrows become rocks, cracking heavily against the war machine's hood. %randombrother% looks over the ram, laughing.%SPEECH_ON%Farkin' hell, man.%SPEECH_OFF%Suddenly a horrid hiss surrounds everyone as though you'd pitched yourself into a den of vipers. All becomes shade as hot oil runs off the sides of the roof. A stream of it pours down a nobleman's back and he cries out, falling forward and becoming a screaming golem of black sludge. You hurriedly order the men to start ramming. Thankfully, it only takes one swing of the ram to blow the gate of %objective% wide open. Your men quickly rush through the opening to battle what few defenders are around to meet you.\x7d | An order to assault %objective% comes down the line. You ready the %companyname%. Your men and %commander%'s push a battering ram toward the fortification's front gate. Arrows sail through the sky, blinkering in the light before whistling into the waves of attackers. Men fall aside in silent collapses, others go down clutching their wounds.\n\n The front gate is quickly bashed open and your men pour through the gap and into a courtyard where some of %objective%'s defenders await. | %commander% gives the order to begin an assault. Your company and his army rush the fortifications, a barrage of siege shots sailing overhead like a darkly hailstorm. The walls are battered and the defenders kept ducking as %commander%'s archers keep the pressure on. You manage to push a battering ram to the front gate and swiftly knock it open. As the %companyname% rushes through, the defenders of %objective% organize themselves in the courtyard to meet you. | The order to assault %objective%'s fortifications comes down the line. Preparations render an apocalyptic scene of a sky darkened with siege shot and arrows. Fires pipe over the walls of %objective% and you see %commander%'s men staging ladders against the crenelations and fighting their way up and in. Meanwhile, you and your men trundle beneath the hood of a battering ram, pushing it to a front gate and quickly knocking it open. As you rush in, defenders fill the courtyard and prepare to fight. | %commander% gives an order to assault %objective%'s fortifications. The assault goes like this: the sky darkens with exchanges of arrows, rattling rains that fly past and ricochet off one another. Siege shots hurtle through the sky like cold comets before bouldering into walls and towers. Defenders fight to push ladders off the crenelations. Attackers climb the ladders, the highest man holding up a shield, the man beneath him stabbing forth with a pike. You and the %companyname% push a rickety battering ram to the front gate, largely left alone under the cover of all this chaos.\n\n When the front gate is bashed open, you and your men rush through just in time to meet a group of defenders who have assembled there. All around the surrounding walls you can see %commander%'s men desperately fighting for control. | Unfortunately, %commander% sees fit to take the fortifications of %objective% head on. You and the %companyname% are charged with taking a battering ram to the front gate. As you push the siege machine through the mud, you notice a man with a steaming cauldron waiting for you just over the gate. You glance around to see soldiers carrying ladders start rushing the walls. They quickly climb up and start battling. When you look back forward, the defender with the burning oil is gone, but there's a pair of legs sticking out of the cauldron.\n\n There is no issue bashing open the front gate and rushing in. You are quickly met by an assembly of defenders while all around the surrounding walls %commander%'s men keep on fighting.\x7d"
-        es = "[img]gfx/ui/events/event_31.png[/img]\x7b%commander% ha dado la orden de atacar. \n\n\x7b%companyname% y un contingente de los soldados del noble deben asaltar la puerta principal. Todos se agrupan debajo del techo de un ariete que parece más una choza montada sobre ruedas que una máquina de guerra convincente. Con todos los brazos en las barras de remo, empujan el ariete hacia adelante. El techo retiembla con una serie de golpes mientras las flechas atraviesan. Miras hacia arriba y ves que algunas puntas de flechas han perforado. Cuando llegas a la puerta, ordenas a los hombres retroceder el ariete y, luego, con una orden, lo sueltan.\n\nGimiendo con una pesada deliberación de roble, el ariete avanza y se estrella contra la puerta. Se rompe en el medio y a través de la brecha puedes ver a los defensores de %objective% esperándote al otro lado. Otra orden, otro embate. Esta vez atraviesa la puerta, rompiendo las bisagras y haciendo que cada puerta caiga en una lluvia de astillas y metal. Con los brazos listos, tú y todos los hombres se precipitan al otro lado. | Con un séquito de los hombres del comandante, %companyname% empuja un ariete con cubierta hacia las puertas de %objective%. Algunos defensores te insultan desde arriba. %SPEECH_ON%\x7b¿No nos llevarán a cenar primero? | Mmm, buen ariete largo que tienes. ¿Tratando de compensar algo? | Vengan y tómenla, malditos. | Espero que estén rezando a los dioses antiguos debajo de ese techo.\x7d Sus comentarios se silencian cuando chocas contra la puerta y, con un solo golpe del ariete, la haces añicos. Tus hombres cargan rápidamente a través de la abertura. | Tomando a algunos de los hombres del comandante, tú y %companyname% empujan un ariete hacia la puerta de %objective%. El techo tiembla y retumba, pareciendo más una choza que un escudo. Ruegas porque aguante. Las flechas impactan arriba, algunas rebotan con fuertes raspaduras de metal en la madera. A medida que te acercas a la puerta de %objective%, las flechas se convierten en rocas que chocan pesadamente contra el techo del ariete. %randombrother% mira por encima del ariete y se ríe.\n\nDe repente, un horrible siseo rodea a todos como si te hubieras lanzado a un nido de víboras. Todo se oscurece cuando el aceite hirviendo corre por los lados del techo. Un chorro de aceite cae por la espalda de un noble y grita, cayendo hacia adelante y convirtiéndose en un gólem chillón de lodo negro. Ordenas apresuradamente a los hombres que comiencen a embestir el ariete. Afortunadamente, solo se necesita un golpe del ariete para abrir de par en par las puertas de %objective%. Tus hombres rápidamente corren a través de la abertura para enfrentar a los pocos defensores que hay en la brecha. | Llega la orden para asaltar las fortificaciones de %objective%. Preparas a %companyname%. Tus hombres y los del comandante empujan un ariete hacia la puerta frontal de la fortificación. Las flechas surcan el cielo, parpadeando a la luz antes de silbar hacia los atacantes. Los hombres caen en silencio, otros se desploman sujetándose las heridas. La puerta frontal se abre rápidamente y tus hombres se precipitan a través de la abertura y entran en un patio donde esperan algunos de los defensores de %objective%. | El comandante da la orden de comenzar el asalto. Tu compañía y su ejército avanzan hacia las fortificaciones, una lluvia de proyectiles de asedio cruza por encima como una lluvia de granizo oscuro. Las paredes están dañadas y los defensores se agachan mientras los arqueros del comandante mantienen la presión. Logras empujar un ariete hasta la puerta frontal y la abres rápidamente. Mientras %companyname% avanza, los defensores de %objective% se organizan en el patio para enfrentarte. | Llega la orden de asaltar las fortificaciones de %objective%. Las preparaciones crean una escena apocalíptica con un cielo oscurecido por proyectiles de asedio y flechas. El fuego se eleva sobre las paredes de %objective% y ves a los hombres del comandante colocando escaleras contra las almenas y luchando por abrirse camino. Mientras tanto, tú y tus hombres avanzan bajo el techo de un ariete, empujándolo hacia la puerta frontal y abriéndola rápidamente. Al entrar, los defensores llenan el patio y se preparan para la lucha. | El comandante da la orden de asaltar las fortificaciones de %objective%. El asalto es bastante caótico: el cielo se oscurece con el intercambio de flechas, lluvias que pasan silbando y rebotan unas contra otras. Los proyectiles de asedio caen del cielo como cometas frías antes de estrellarse contra las paredes y torres. Los defensores luchan por derribar las escaleras de las almenas. Los atacantes suben por las escaleras, el hombre más alto sosteniendo un escudo, el hombre debajo de él apuñalando con una pica. Tú y %companyname% empujan un endeble ariete hasta la puerta frontal, en gran parte sin que nadie los moleste bajo la cobertura de todo este caos. | Desafortunadamente, al comandante le parece apropiado asaltar directamente las fortificaciones de %objective%. A ti y a %companyname% se les encomienda llevar un ariete a la puerta frontal. Mientras empujas la máquina de asedio por el barro, notas a un hombre con un caldero hirviendo esperando justo sobre la puerta. Miras a tu alrededor y ves a los soldados llevando escaleras corriendo hacia las murallas. Suben rápidamente y comienzan la batalla. Cuando vuelves a mirar hacia adelante, el defensor con el aceite hirviendo ha desaparecido, pero hay un par de piernas sobresaliendo de dentro del caldero. | No hay ningún problema para abrir la puerta frontal y entrar. Te encuentras rápidamente con un grupo de defensores mientras alrededor de las paredes circundantes, los hombres del comandante siguen luchando desesperadamente por el control.\x7d"
+        es = "[img]gfx/ui/events/event_31.png[/img]\x7b%commander% ha dado la orden de atacar. \n\n\x7b%companyname% y un contingente de los soldados del noble deben asaltar la puerta principal. Todos se agrupan debajo del techo de un ariete que parece más una choza montada sobre ruedas que una máquina de guerra convincente. Con todos los brazos en las barras de remo, empujan el ariete hacia adelante. El techo retiembla con una serie de golpes mientras las flechas atraviesan. Miras hacia arriba y ves que algunas puntas de flechas han perforado. Cuando llegas a la puerta, ordenas a los hombres retroceder el ariete y, luego, con una orden, lo sueltan.\n\nGimiendo con una pesada deliberación de roble, el ariete avanza y se estrella contra la puerta. Se rompe en el medio y a través de la brecha puedes ver a los defensores de %objective% esperándote al otro lado. Otra orden, otro embate. Esta vez atraviesa la puerta, rompiendo las bisagras y haciendo que cada puerta caiga en una lluvia de astillas y metal. Con los brazos listos, tú y todos los hombres se precipitan al otro lado. | Con un séquito de los hombres del comandante, %companyname% empuja un ariete con cubierta hacia las puertas de %objective%. Algunos defensores te insultan desde arriba. %SPEECH_ON%\x7b¿No nos llevarán a cenar primero? | Mmm, buen ariete largo que tienes. ¿Tratando de compensar algo? | Vengan y tómenla, malditos. | Espero que estén rezando a los dioses antiguos debajo de ese techo.\x7d%SPEECH_OFF%Sus comentarios se silencian cuando chocas contra la puerta y, con un solo golpe del ariete, la haces añicos. Tus hombres cargan rápidamente a través de la abertura. | Tomando a algunos de los hombres del comandante, tú y %companyname% empujan un ariete hacia la puerta de %objective%. El techo tiembla y retumba, pareciendo más una choza que un escudo. Ruegas porque aguante. Las flechas impactan arriba, algunas rebotan con fuertes raspaduras de metal en la madera. A medida que te acercas a la puerta de %objective%, las flechas se convierten en rocas que chocan pesadamente contra el techo del ariete. %randombrother% mira por encima del ariete y se ríe.%SPEECH_ON%Maldita sea, hombre.%SPEECH_OFF%De repente, un horrible siseo rodea a todos como si te hubieras lanzado a un nido de víboras. Todo se oscurece cuando el aceite hirviendo corre por los lados del techo. Un chorro de aceite cae por la espalda de un noble y grita, cayendo hacia adelante y convirtiéndose en un gólem chillón de lodo negro. Ordenas apresuradamente a los hombres que comiencen a embestir el ariete. Afortunadamente, solo se necesita un golpe del ariete para abrir de par en par las puertas de %objective%. Tus hombres rápidamente corren a través de la abertura para enfrentar a los pocos defensores que hay en la brecha.\x7d | Llega la orden para asaltar las fortificaciones de %objective%. Preparas a %companyname%. Tus hombres y los de %commander% empujan un ariete hacia la puerta frontal de la fortificación. Las flechas surcan el cielo, parpadeando a la luz antes de silbar hacia los atacantes. Los hombres caen en silencio, otros se desploman sujetándose las heridas. La puerta frontal se abre rápidamente y tus hombres se precipitan a través de la abertura y entran en un patio donde esperan algunos de los defensores de %objective%. | %commander% da la orden de comenzar el asalto. Tu compañía y su ejército avanzan hacia las fortificaciones, una lluvia de proyectiles de asedio cruza por encima como una lluvia de granizo oscuro. Las paredes están dañadas y los defensores se agachan mientras los arqueros de %commander% mantienen la presión. Logras empujar un ariete hasta la puerta frontal y la abres rápidamente. Mientras %companyname% avanza, los defensores de %objective% se organizan en el patio para enfrentarte. | Llega la orden de asaltar las fortificaciones de %objective%. Las preparaciones crean una escena apocalíptica con un cielo oscurecido por proyectiles de asedio y flechas. El fuego se eleva sobre las paredes de %objective% y ves a los hombres de %commander% colocando escaleras contra las almenas y luchando por abrirse camino. Mientras tanto, tú y tus hombres avanzan bajo el techo de un ariete, empujándolo hacia la puerta frontal y abriéndola rápidamente. Al entrar, los defensores llenan el patio y se preparan para la lucha. | %commander% da la orden de asaltar las fortificaciones de %objective%. El asalto es bastante caótico: el cielo se oscurece con el intercambio de flechas, lluvias que pasan silbando y rebotan unas contra otras. Los proyectiles de asedio caen del cielo como cometas frías antes de estrellarse contra las paredes y torres. Los defensores luchan por derribar las escaleras de las almenas. Los atacantes suben por las escaleras, el hombre más alto sosteniendo un escudo, el hombre debajo de él apuñalando con una pica. Tú y %companyname% empujan un endeble ariete hasta la puerta frontal, en gran parte sin que nadie los moleste bajo la cobertura de todo este caos.\n\nCuando la puerta frontal cede, tú y tus hombres irrumpen justo a tiempo para toparse con un grupo de defensores reunidos allí. Por todas las murallas ves a los hombres de %commander% luchando desesperadamente por el control. | Desafortunadamente, a %commander% le parece apropiado asaltar directamente las fortificaciones de %objective%. A ti y a %companyname% se les encomienda llevar un ariete a la puerta frontal. Mientras empujas la máquina de asedio por el barro, notas a un hombre con un caldero hirviendo esperando justo sobre la puerta. Miras a tu alrededor y ves a los soldados llevando escaleras corriendo hacia las murallas. Suben rápidamente y comienzan la batalla. Cuando vuelves a mirar hacia adelante, el defensor con el aceite hirviendo ha desaparecido, pero hay un par de piernas sobresaliendo de dentro del caldero.\n\nNo hay ningún problema para abrir la puerta frontal y entrar. Te encuentras rápidamente con un grupo de defensores mientras alrededor de las paredes circundantes, los hombres de %commander% siguen luchando.\x7d"
     }
     {
         en = "[img]gfx/ui/events/event_68.png[/img]\x7bA line of archers poke their arrowheads into bundled cloth and dip them in pitch. As they hold the arrows out, a young boy runs across with a torch to set them all alight. The commander holds his hand up, the archers raise their fiery weapons. He lowers his hand, the bowmen let loose. Fire arrows sail into the sky, crackling and hissing before going quiet and dimly seen. They fall over the fortification and at first that's all that seems to happen. A soldier calls out and points at some smoke starting to rise. Soon, fire licking up into the sky. A few minutes later and the front gate bursts open, ashen and smoky men rushing out like golems of the hells.\n\n %commander% raises his arm again, but this time there's a sword in the hand.%SPEECH_ON%CHARGE!%SPEECH_OFF% | Catapults, ballistae, and archers launch fire over the walls of %objective%. The shots whistle and hiss as their capes of fire stretch across the sky.\n\n The fortification is soon brimming with an orange hue. Smoke bubbles in gobs of choking black. Fingers of fire slowly crawl up after them. The front gate rattles once, twice, then bursts open. Blackened and coughing men pour out, clambering over one another for fresh air. %commander% draws his sword and points it toward the enemy.%SPEECH_ON%No prisoners!%SPEECH_OFF%The defenders of %objective% seem to have heard this as they quickly rush to formation. For a moment, you wonder if perhaps they once had a white flag of surrender somewhere amongst their blackened shapes. | An order comes down to set %objective% ablaze. You watch as %commander%'s war camp sets the skies alight in a hellstorm of fiery siege shots and arrow showers. Fires soon start rising from behind the walls and you see men running around wrapped in flames. As the inferno begins to consume the insides of %objective%, the front gates open and a group of blackened, desperate men rush out. Seeing them, %commander% orders everyone to charge. | %commander% orders his men to set %objective% ablaze. This is done by loading catapults and trebuchets with stones wrapped in firewood and dipped in pitch. They're set alight and sent hurling through the air. Huge volleys of fire arrows follow suit, sailing deep into %objective%'s bowels where you start seeing smoke rise. An inferno builds within the fortifications and it isn't long at all before the front gates break open and men come running out. %commander% draws his sword.%SPEECH_ON%There they are, men. Let's put an end to this once and for all!%SPEECH_OFF% | Archers start wrapping their arrows in cloth and dipping them into pitch. Kids run around with buckets of oil and start lathering the catapult shots. When the preparations are done, %commander% gives the order to let loose. Man perhaps once worshipped fire, but here it is fashioned into a furious terror that goes whistling through the sky, barraging %objective% with fiery ruin. Siege shots pulverize towers and crash through roofs and set the entire place alight. Defenders run around with burning arrows sticking out of them. As the inferno intensifies, the front gate opens and golems of smoke and ash come hurtling out, clambering over themselves to escape the hell which was brought upon them.\n\n Seeing this, %commander% draws his weapon.%SPEECH_ON%At 'em, men, and show them no mercy!%SPEECH_OFF% | %commander% orders his men to launch hell itself upon %objective%. You watch as catapults, trebuchets, and archers fill the sky with a flurry of fiery shots. The fortifications are quickly brimming with fires that churn into an inferno. Desperate men open the front gates and rush out, coughing and desperately clawing over one another for air. %commander% draws his weapon and laughs at the sight of this.%SPEECH_ON%There they are, there they shall fall! Charge!%SPEECH_OFF% | You watch as the siege engineers fill their catapults and trebuchets with cow carcasses and other fatty morkin. Kids with buckets of pitch run the battle line, dousing each shot before setting them alight. The second after, the engineers send the corpses flying. They blubber and drip through the sky. You watch as one shot hits a tower and explodes outward, sending fire raining into the fortification's courtyard. It isn't long until this animalistic aerial assault has %objective% churning with an inferno.\n\n The front gates burst open and a mob of men come hurtling out. They clamber over one another, looking like smoke and ash come alive, a darkly bracken unfurling before the gate. %commander% draws his weapon.%SPEECH_ON%This is what we've been waiting for, men. Well, wait no more! Charge!%SPEECH_OFF%\x7d"
@@ -24987,7 +25107,7 @@ local pairs = [
     }
     {
         en = "Better to kill them now than face them again in battle in the days to come."
-        es = "Es mejor matarlos ahora que enfrentarlos nuevamente en batalla en los días venideros."
+        es = "Mejor matarlos ahora que volver a enfrentarlos en batalla en los próximos días."
     }
     {
         en = "[img]gfx/ui/events/event_53.png[/img]\x7bThe prisoners are of no use to you or anyone else. You cut them loose, hoping that you won't come to regret this decision. | You cut the prisoners loose. They cry as they thank you, but you simply hope that this was not a mistake. | You let the prisoners go. They thank you personally before taking off, hopefully to never be seen again.\x7d"
@@ -25090,7 +25210,7 @@ local pairs = [
     }
     {
         en = "Destroy them!"
-        es = "¡Destruidlos!"
+        es = "¡Destrúyanlos!"
     }
     {
         en = "[img]gfx/ui/events/event_71.png[/img]\x7bThe uprising has been crushed. In death, the faces of the slaves do seem to carry some relief, as though the end of all things is preferred to the relentless cruelty of living in the chain. %employer% and the Viziers will be awaiting your return.\x7d"
@@ -35535,7 +35655,6 @@ local pairs = [
         es = "Cuando llegue la mañana me dirigiré a %settlement%. Se dice que acaba de llegar un gran grupo de refugiados y necesito más manos para mi granja."
     }
     {
-        mode = "pattern"
         en = "From what I've heard, %settlement% is flooded with refugees nowadays. Those cowards should have stayed and fought for their home, I'd say!"
         es = "Por lo que he oído, %settlement% está inundado de refugiados hoy en día. ¡Diría que esos cobardes deberían haberse quedado y luchar por su hogar!"
     }
@@ -35856,7 +35975,6 @@ local pairs = [
         es = "Ayer vinieron unos cazadores de brujas. No encontraron lo que buscaban y se dirigieron a %settlement%."
     }
     {
-        mode = "pattern"
         en = "From what I hear they found a witch in %settlement% and will put her to the pyre. Come to think of it, maybe I should report that old shrew that bested me on the market the other day, she's a witch for sure!"
         es = "Por lo que he oído, encontraron una bruja en %settlement% y la arrojarán a la pira. Ahora que lo pienso, tal vez debería denunciar a esa vieja arpía que me superó en el mercado el otro día, ¡seguro que es una bruja!"
     }
@@ -37204,7 +37322,7 @@ local pairs = [
     // en = "B"
     {
         en = "Better to put it down now before it steals any of our supplies later."
-        es = "Más vale acabar con él ahora antes de que robe alguno de nuestros suministros después."
+        es = "Más vale acabar con él ahora, antes de que nos robe provisiones."
     }
     // en = "C"
     // en = "D"
@@ -39414,7 +39532,7 @@ local pairs = [
     }
     {
         en = "Search them for valuables!"
-        es = "¡Sacadles lo que tengan de valor!"
+        es = "¡Sáquenles lo que tengan de valor!"
     }
     {
         en = "[img]gfx/ui/events/event_59.png[/img]You order your men to take what they can. The refugees reel back in horror and some protest as your brothers file into their ranks. Suddenly, one of the refugees takes a large stone and bashes %injured_bro% over the head with it. Women and children scream and a few other men grab onto the mercenaries, fighting over weapons still sheathed. But the wandering souls haven't eaten in days and their weakened bodies are no match for your men. The %companyname% takes what it wants."
@@ -40317,7 +40435,7 @@ local pairs = [
     }
     {
         en = "You'll only make the undead ranks swell. Better we finish you now."
-        es = "Solo conseguirán que las filas de los no-muertos aumenten. Será mejor que acabemos ustedes ahora."
+        es = "Solo harán crecer las filas de los no-muertos. Mejor acabamos con ustedes ahora."
     }
     {
         en = "[img]gfx/ui/events/event_59.png[/img]You command these sickened souls to be well - by commanding your men to kill them all. The elder leads the women and children away while the men rise up to stand their ground. One, wavering on green and peeling legs, points at you.%SPEECH_ON%What a saint you are ya prick. I hope I do come back from the dead. I hope my corpse kills the lot of you ya farkin' savages.%SPEECH_OFF%"
@@ -43229,7 +43347,7 @@ local pairs = [
     }
     {
         en = "I can think only of %dumb% to be dim enough to race a horse."
-        es = "Solo puedo pensar que %dumb% es lo suficientemente torpe como para competir contra un caballo."
+        es = "Solo %dumb% es lo bastante torpe como para competir contra un caballo."
     }
     {
         en = "No, thanks."
@@ -43632,7 +43750,7 @@ local pairs = [
     }
     {
         en = "Doing mercenary work for them would further mend relations."
-        es = "Realizar trabajos como mercenario para ellos ayudará a mejorar aún más las relaciones."
+        es = "Trabajar para ellos como mercenarios mejoraría aún más las relaciones."
     }
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Crowns"
@@ -44899,7 +45017,7 @@ local pairs = [
     // FILE: scripts\events\events\dlc6\pirates_event.nut
     {
         en = "[img]gfx/ui/events/event_157.png[/img]\x7bYou come across a line of men being marched in chains. Their leader remarks that they are a part of the 'indebted,' but one of the men, clearly a northerner, yells out that they're merchant mariners who have been captured by pirates. The supposed manhunter at the head of this troop laughs.%SPEECH_ON%Don't believe his lies, traveler, those who are deeply indebted to the Gilder fear the long journey to redemption. He'd rather die and face hellfire than trouble himself with salvation. Is there nothing more human than that?%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_157.png[/img]\x7bTe encuentras con una fila de hombres siendo marchados en cadenas. Su líder comenta que son parte de los 'endeudados', pero uno de los hombres, claramente un norteño, grita que son marineros mercantes capturados por piratas. El supuesto cazador de hombres al frente de esta tropa se ríe.%SPEECH_ON%No creas sus mentiras, viajero, aquellos profundamente endeudados con el Dorado temen el largo viaje hacia la redención. Preferiría morir y enfrentarse al fuego del infierno que molestarse con la salvación. ¿Hay algo más humano que eso?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_157.png[/img]\x7bTe encuentras con una fila de hombres siendo marchados en cadenas. Su líder comenta que son parte de los 'endeudados', pero uno de los hombres, claramente un norteño, grita que son marineros mercantes capturados por piratas. El supuesto cazahombres al frente de esta tropa se ríe.%SPEECH_ON%No creas sus mentiras, viajero, aquellos profundamente endeudados con el Dorado temen el largo viaje hacia la redención. Preferiría morir y enfrentarse al fuego del infierno que molestarse con la salvación. ¿Hay algo más humano que eso?%SPEECH_OFF%\x7d"
     }
     {
         en = "Let these men go free at once!"
@@ -44915,11 +45033,11 @@ local pairs = [
     }
     {
         en = "Be on your way then, manhunters."
-        es = "Sigan su camino entonces, cazadores de hombres."
+        es = "Sigan su camino entonces, cazahombres."
     }
     {
         en = "[img]gfx/ui/events/event_157.png[/img]\x7bYou draw your sword and demand the 'indebted' be set free. The manhunter looks around, incredulous.%SPEECH_ON%Kind traveler, I am merely obeying the laws of the Gilder. These men have debts to pay, and hellfire awaits the ones who shall go unremitted.%SPEECH_OFF%Shaking your head, you tell him you won't repeat yourself. He sighs and goes about unshackling the men. Most immediately take off running, however one stays behind. But he's not there to join you, he stays with the manhunter, holding his wrists out.%SPEECH_ON%Please, let me into the Gilder's light.%SPEECH_OFF%Another man also stays behind, but mostly to convene with you. He announces himself with clear intentions: he'll join and fight for the %companyname%.%SPEECH_ON%If I've debts to pay off, it's with you, sir.%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_157.png[/img]\x7bTomas tu espada y exiges que los 'endeudados' sean liberados. El cazador de hombres mira a su alrededor, incrédulo.%SPEECH_ON%Amable viajero, simplemente estoy obedeciendo las leyes del Dorado. Estos hombres tienen deudas que pagar, y el fuego del infierno espera a aquellos que no se rediman.%SPEECH_OFF%Meneando la cabeza, le dices que no vas a repetirlo. Él suspira y comienza a desatar a los hombres. La mayoría se va corriendo inmediatamente, sin embargo, uno se queda atrás. Pero no está allí para unirse a ti, se queda con el cazador de hombres, extendiendo sus muñecas.%SPEECH_ON%Por favor, déjame entrar en la luz del Gilder.%SPEECH_OFF%Otro hombre también se queda atrás, principalmente para hablar contigo. Se presenta con claras intenciones: se unirá y luchará por %companyname%.%SPEECH_ON%Mira, si tengo alguna deuda que pagar, es contigo, capitán.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_157.png[/img]\x7bTomas tu espada y exiges que los 'endeudados' sean liberados. El cazahombres mira a su alrededor, incrédulo.%SPEECH_ON%Amable viajero, simplemente estoy obedeciendo las leyes del Dorado. Estos hombres tienen deudas que pagar, y el fuego del infierno espera a aquellos que no se rediman.%SPEECH_OFF%Meneando la cabeza, le dices que no vas a repetirlo. Él suspira y comienza a desatar a los hombres. La mayoría se va corriendo inmediatamente, sin embargo, uno se queda atrás. Pero no está allí para unirse a ti, se queda con el cazahombres, extendiendo sus muñecas.%SPEECH_ON%Por favor, déjame entrar en la luz del Gilder.%SPEECH_OFF%Otro hombre también se queda atrás, principalmente para hablar contigo. Se presenta con claras intenciones: se unirá y luchará por %companyname%.%SPEECH_ON%Mira, si tengo alguna deuda que pagar, es contigo, capitán.%SPEECH_OFF%\x7d"
     }
     {
         en = "I hope you know how to use a weapon."
@@ -44947,7 +45065,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_157.png[/img]\x7b%fisherman% the fisherman steps forward.%SPEECH_ON%Wait, I know this man! He's not indebted to no one, we used to sail together many winters ago.%SPEECH_OFF%The sailor nods.%SPEECH_ON%Yes, yes that's right!%SPEECH_OFF%The manhunter looks over, then walks forward and frees the sailor.%SPEECH_ON%I am no stranger the circumstances and complexities of the Gilder and can see the machinations of his designs. No doubt he wanted these two to meet. Please, have the man, and his salvation shall be true.%SPEECH_OFF%The manhunter continues on with his train of captured men. One turns to you.%SPEECH_ON%Real shame we don't farkin' know each other, yeah?%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_157.png[/img]\x7b%fisherman%, el pescador, se adelanta.%SPEECH_ON%¡Espera, conozco a este hombre! No está endeudado con nadie, solíamos navegar juntos hace muchos inviernos.%SPEECH_OFF%El marinero asiente.%SPEECH_ON%¡Sí, sí, eso es cierto!%SPEECH_OFF%El cazador de hombres mira hacia allí, luego camina hacia adelante y libera al marinero.%SPEECH_ON%No soy ajeno a las circunstancias y complejidades del Dorado y puedo ver las maquinaciones de sus diseños. Sin duda, quería que estos dos se encontraran. Por favor, toma al hombre, y su salvación será verdadera.%SPEECH_OFF%El cazador de hombres continúa con su grupo de hombres capturados. Uno de ellos se dirige a ti.%SPEECH_ON%Qué maldita pena que no nos conozcamos, ¿eh?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_157.png[/img]\x7b%fisherman%, el pescador, se adelanta.%SPEECH_ON%¡Espera, conozco a este hombre! No está endeudado con nadie, solíamos navegar juntos hace muchos inviernos.%SPEECH_OFF%El marinero asiente.%SPEECH_ON%¡Sí, sí, eso es cierto!%SPEECH_OFF%El cazahombres mira hacia allí, luego camina hacia adelante y libera al marinero.%SPEECH_ON%No soy ajeno a las circunstancias y complejidades del Dorado y puedo ver las maquinaciones de sus diseños. Sin duda, quería que estos dos se encontraran. Por favor, toma al hombre, y su salvación será verdadera.%SPEECH_OFF%El cazahombres continúa con su grupo de hombres capturados. Uno de ellos se dirige a ti.%SPEECH_ON%Qué maldita pena que no nos conozcamos, ¿eh?%SPEECH_OFF%\x7d"
     }
     {
         en = "Welcome. I hope you know how to use a weapon."
@@ -44971,7 +45089,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_157.png[/img]\x7bYou rattle a chain and bring a few of your indebted forward. Flexing your indebted-wrangling cred, you tell the manhunter that you've experience in these matters and you can tell these unruly sailors will find a moment to ambush and kill him.%SPEECH_ON%Hand them over to me and I will pursue their salvation accordingly. Keep them in your stead, and the Gilder Himself will not be able to protect you from the evil which lies in their hearts.%SPEECH_OFF%The manhunter thinks for a time, then nods in agreement.%SPEECH_ON%You're right. This was a good haul, but the Gilder shall see my deeds have already been enough and my intents true. Take them for yourself and may the Gilder shine sublimity upon your life and theirs.%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_157.png[/img]\x7bAgitas una cadena y traes adelante a algunos de tus endeudados. Exhibiendo tu habilidad para manejar a los endeudados, le dices al cazador de hombres que tienes experiencia en estos asuntos y puedes percibir que estos marineros rebeldes encontrarán un momento para emboscarlo y matarlo.%SPEECH_ON%Entrégamelos a mí y perseguiré su salvación adecuadamente. Mantenlos a tu lado, y el mismísimo Dorado no podrá protegerte del mal que reside en sus corazones.%SPEECH_OFF%El cazador de hombres reflexiona por un momento, luego asiente en acuerdo.%SPEECH_ON%Tienes razón. Esta fue una buena captura, pero el Dorado verá que mis acciones ya han sido suficientes y mis intenciones verdaderas. Tómalos para ti y que el Dorado brille sublime sobre tu vida y la de ellos.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_157.png[/img]\x7bAgitas una cadena y traes adelante a algunos de tus endeudados. Exhibiendo tu habilidad para manejar a los endeudados, le dices al cazahombres que tienes experiencia en estos asuntos y puedes percibir que estos marineros rebeldes encontrarán un momento para emboscarlo y matarlo.%SPEECH_ON%Entrégamelos a mí y perseguiré su salvación adecuadamente. Mantenlos a tu lado, y el mismísimo Dorado no podrá protegerte del mal que reside en sus corazones.%SPEECH_OFF%El cazahombres reflexiona por un momento, luego asiente en acuerdo.%SPEECH_ON%Tienes razón. Esta fue una buena captura, pero el Dorado verá que mis acciones ya han sido suficientes y mis intenciones verdaderas. Tómalos para ti y que el Dorado brille sublime sobre tu vida y la de ellos.%SPEECH_OFF%\x7d"
     }
     {
         en = "The Gilder is most benevolent to let you pay off your debt."
@@ -45903,11 +46021,63 @@ local pairs = [
     }
     {
         // text = _event.m.Ailing.getName() + " gains " + trait.getName()
-        // Sin :t a propósito (auditoría 29/08): trait.getName() está
-        // hookeado y el rasgo llega ya traducido.
+        // El rasgo llega ya traducido (el getName de los skills está hookeado).
+        // Una regla por cada uno de los once que da el evento: la genérica
+        // "<ailing:str> gains <trait:str>" convertía en «ahora es» cualquier
+        // frase inglesa sin traducir que dijera " gains ".
         mode = "pattern"
-        en = "<ailing:str> gains <trait:str>"
-        es = "<ailing> ahora es <trait>"
+        en = "<ailing:str> gains Sediento de sangre"
+        es = "<ailing> ahora es Sediento de sangre"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Bruto"
+        es = "<ailing> ahora es Bruto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Engreído"
+        es = "<ailing> ahora es Engreído"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Temerario"
+        es = "<ailing> ahora es Temerario"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Tonto"
+        es = "<ailing> ahora es Tonto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Glotón"
+        es = "<ailing> ahora es Glotón"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Impaciente"
+        es = "<ailing> ahora es Impaciente"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Irracional"
+        es = "<ailing> ahora es Irracional"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Paranoico"
+        es = "<ailing> ahora es Paranoico"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Espartano"
+        es = "<ailing> ahora es Espartano"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Supersticioso"
+        es = "<ailing> ahora es Supersticioso"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]\x7bYou tell %anatomist% no. %ailing% is strong enough to heal on his own. The anatomist sighs. You get a sense that he had no real interest in helping the sellsword, only an interest in experimenting on him.%SPEECH_ON%Great advances can only be made with great risks, captain.%SPEECH_OFF%He says before walking off, his quill pen scratching out a name on one of his tomes.\x7d"
@@ -45999,11 +46169,63 @@ local pairs = [
     }
     {
         // text = _event.m.Asthmatic.getName() + " gains " + trait.getName()
-        // Sin :t a propósito (auditoría 29/08): trait.getName() está
-        // hookeado y el rasgo llega ya traducido.
+        // El rasgo llega ya traducido (el getName de los skills está hookeado).
+        // Una regla por cada uno de los once que da el evento: la genérica
+        // "<ailing:str> gains <trait:str>" convertía en «ahora es» cualquier
+        // frase inglesa sin traducir que dijera " gains ".
         mode = "pattern"
-        en = "<ailing:str> gains <trait:str>"
-        es = "<ailing> ahora es <trait>"
+        en = "<ailing:str> gains Sediento de sangre"
+        es = "<ailing> ahora es Sediento de sangre"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Bruto"
+        es = "<ailing> ahora es Bruto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Engreído"
+        es = "<ailing> ahora es Engreído"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Temerario"
+        es = "<ailing> ahora es Temerario"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Tonto"
+        es = "<ailing> ahora es Tonto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Glotón"
+        es = "<ailing> ahora es Glotón"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Impaciente"
+        es = "<ailing> ahora es Impaciente"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Irracional"
+        es = "<ailing> ahora es Irracional"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Paranoico"
+        es = "<ailing> ahora es Paranoico"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Espartano"
+        es = "<ailing> ahora es Espartano"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Supersticioso"
+        es = "<ailing> ahora es Supersticioso"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]\x7bYou tell %anatomist% no. The anatomist purses his lips and makes some eggheaded argument about the value of medicine and science, and you tell him about the value of a sellsword who doesn't have some fool goofing around with his lungs.\x7d"
@@ -47080,7 +47302,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_96.png[/img]\x7b%hedgeknight% the hedge knight suddenly rounds the corner. The guards take a step back. He's eating an apple with one hand while the other sets on the pommel of his weapon like an executioner's hand on his lever. He looks down at the guards, casting his eye upon one person at a time, judging each and finding them wanting. He takes another bite of the apple and turns to you.%SPEECH_ON%Is there a problem here, captain?%SPEECH_OFF%One of the guards quickly steps forward, smiling anxiously.%SPEECH_ON%Ah, no problem. We were just, uh, doing our due diligence in a certain matter.%SPEECH_OFF%The hedge knight tosses an apple core over his shoulder and then takes a long stretch, pieces of his armor grinding and clanking against each other. He nods.%SPEECH_ON%And how's that coming along?%SPEECH_OFF%The guards announce that they just finished. The hedge knight grins and says that if a man's time is spent in error, he should be compensated. Swallowing nervously, one of the guards forks over a purse of coins. He apologizes to you for wasting your time. The group of scrawny guards then beat a spooked, backpedaling retreat until they are gone. %hedgeknight% sighs. He says he was waiting on you to give the word. You ask him the word to do what. He produces another apple and crushes it in the ferocious squeeze of his hand. He thumbs one of the chunks into his mouth.%SPEECH_ON%What do you think?%SPEECH_OFF%\x7d"
-        es = "[img]gfx/ui/events/event_96.png[/img]\x7b%hedgeknight% el caballero andante aparece de repente en la esquina. Los guardias retroceden. Está comiendo una manzana con una mano mientras la otra está en el pomo de su arma, como la mano de un verdugo en su palanca. Observa a los guardias, posando su mirada en una persona a la vez, juzgando a cada uno y encontrándolos insatisfactorios. Da otro mordisco a la manzana y se dirige a ti.%SPEECH_ON%¿Hay algún problema aquí, capitán?%SPEECH_OFF%Uno de los guardias da un paso al frente rápidamente, sonriendo ansiosamente.%SPEECH_ON%Ah, no hay ningún problema. Estábamos simplemente haciendo nuestra debida diligencia en un asunto en particular.%SPEECH_OFF%El caballero andante lanza el corazón de la manzana por encima del hombro y luego se estira largamente, con las piezas de su armadura chirriando y golpeándose entre sí. Su figura es como ver a un oso pardo parándose en dos patas para intimidar a una jauría de lobos, y es francamente aterradora. Él asiente.%SPEECH_ON%¿Y... cómo va eso, eh?%SPEECH_OFF%Los guardias anuncian que acaban de terminar. El caballero sonríe y dice que si el tiempo de un hombre se ha gastado en vano, debe ser compensado. Tragando nerviosamente, uno de los guardias entrega una bolsa de monedas. Se disculpa contigo por haberte hecho perder el tiempo. El grupo de guardias patéticos retrocede asustado, retrocediendo apresuradamente hasta que desaparecen. %hedgeknight% suspira. Dice que estaba esperando a que dieras la orden. Le preguntas \x22la orden para hacer qué\x22. Él saca otra manzana y la aplasta con la fuerza de su mano, y con el pulgar, lleva un trozo a su boca.%SPEECH_ON%¿Qué opinas?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7b%hedgeknight% el caballero errante aparece de repente en la esquina. Los guardias retroceden. Está comiendo una manzana con una mano mientras la otra está en el pomo de su arma, como la mano de un verdugo en su palanca. Observa a los guardias, posando su mirada en una persona a la vez, juzgando a cada uno y encontrándolos insatisfactorios. Da otro mordisco a la manzana y se dirige a ti.%SPEECH_ON%¿Hay algún problema aquí, capitán?%SPEECH_OFF%Uno de los guardias da un paso al frente rápidamente, sonriendo ansiosamente.%SPEECH_ON%Ah, no hay ningún problema. Estábamos simplemente haciendo nuestra debida diligencia en un asunto en particular.%SPEECH_OFF%El caballero errante lanza el corazón de la manzana por encima del hombro y luego se estira largamente, con las piezas de su armadura chirriando y golpeándose entre sí. Su figura es como ver a un oso pardo parándose en dos patas para intimidar a una jauría de lobos, y es francamente aterradora. Él asiente.%SPEECH_ON%¿Y... cómo va eso, eh?%SPEECH_OFF%Los guardias anuncian que acaban de terminar. El caballero sonríe y dice que si el tiempo de un hombre se ha gastado en vano, debe ser compensado. Tragando nerviosamente, uno de los guardias entrega una bolsa de monedas. Se disculpa contigo por haberte hecho perder el tiempo. El grupo de guardias patéticos retrocede asustado, retrocediendo apresuradamente hasta que desaparecen. %hedgeknight% suspira. Dice que estaba esperando a que dieras la orden. Le preguntas \x22la orden para hacer qué\x22. Él saca otra manzana y la aplasta con la fuerza de su mano, y con el pulgar, lleva un trozo a su boca.%SPEECH_ON%¿Qué opinas?%SPEECH_OFF%\x7d"
     }
     {
         en = "Ahh..."
@@ -48285,7 +48507,7 @@ local pairs = [
     }
     {
         en = "A man left to torture himself can find the truest of horrors."
-        es = "Un hombre capaz de torturarse a sí mismo puede encontrar los más verdaderos horrores."
+        es = "Un hombre que se tortura a sí mismo puede hallar los horrores más verdaderos."
     }
     {
         // text = _event.m.Monk.getName() + " is now a Monk turned Flagellant"
@@ -49386,7 +49608,7 @@ local pairs = [
     }
     {
         en = "You're a mercenary now, not a jouster. Better get used to it."
-        es = "Eres un mercenario ahora, no un caballero de torneos. Será mejor que te acostumbres."
+        es = "Ahora eres un mercenario, no un caballero de torneos. Acostúmbrate."
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]You stand up and pat %jouster% on the shoulder.%SPEECH_ON%I've no doubt that a man of your skill and prowess would have run clean through the tournament. But I need a man such as yourself here, at camp. You need not prove any lost earnings, I will compensate you for them simply enough.%SPEECH_OFF%The rather diplomatic words calm the man down. He nods and briefly looks as though it would be dishonorable to accept the payment. Not wanting the sellsword to test his resolve any further, or perhaps look a fool or a man of low honor, you order him to take it."
@@ -49560,7 +49782,7 @@ local pairs = [
     }
     {
         en = "[img]gfx/ui/events/event_35.png[/img]%hedgeknight% steps forward and heaves his weapon to the fore. He waves it at all the kids.%SPEECH_ON%Ah, so you want to be little bandits or heroes or some such shit? Well, that's good. That's fine. But I'll be watching to see who throws the first stone. He, or she, who does so will find out what happens when I get angry. And then after the rest of you have watched, I'll kill the lot of you. And I'll follow your little footprints all the way home, find your kin, and smash their farkin' heads in.%SPEECH_OFF%The hedge knight pauses to glare about.%SPEECH_ON%So, which of you shall throw the first stone?%SPEECH_OFF%The tyke in charge of this miniature army raises his hand and speaks.%SPEECH_ON%Let the men go. We've better things to do than quarrel with these travelers.%SPEECH_OFF%Hey, that's a wise move. With pride-swallowing smarts like that the red-headed bugger might someday lead a company to great fortunes. But this day is yours. You take the merchant's goods and make your leave."
-        es = "[img]gfx/ui/events/event_35.png[/img]%hedgeknight% da un paso adelante y levanta su arma al frente. La agita hacia todos los niños. %SPEECH_ON%Ah, ¿así que quieren ser pequeños bandidos o héroes o algo parecido? Bueno, está bien. Eso está bien. Pero estaré observando para ver quién lanza la primera piedra. Él o ella, quien lo haga, descubrirá lo que sucede cuando me enojo. Y luego, después de que el resto haya observado, los mataré a todos ustedes, a cada uno. Y seguiré las huellas de sus pequeños pies hasta llegar a sus hogares, encontraré a sus familiares y destrozaré sus cráneos. %SPEECH_OFF%El caballero andante hace una pausa para mirar a su alrededor.%SPEECH_ON%Entonces... ¿quién de ustedes lanzará la primera piedra?%SPEECH_OFF%El chico a cargo de este ejército en miniatura levanta la mano y habla. %SPEECH_ON%Dejen a los hombres. Tenemos cosas mejores que hacer que pelear con estos viajeros.%SPEECH_OFF%Una decisión sabia. Con una inteligencia que traga el orgullo como esa, el muchacho pelirrojo podría algún día liderar una compañía hacia grandes fortunas. Pero este día es tuyo. Tomas las mercancías del comerciante y te marchas."
+        es = "[img]gfx/ui/events/event_35.png[/img]%hedgeknight% da un paso adelante y levanta su arma al frente. La agita hacia todos los niños. %SPEECH_ON%Ah, ¿así que quieren ser pequeños bandidos o héroes o algo parecido? Bueno, está bien. Eso está bien. Pero estaré observando para ver quién lanza la primera piedra. Él o ella, quien lo haga, descubrirá lo que sucede cuando me enojo. Y luego, después de que el resto haya observado, los mataré a todos ustedes, a cada uno. Y seguiré las huellas de sus pequeños pies hasta llegar a sus hogares, encontraré a sus familiares y destrozaré sus cráneos. %SPEECH_OFF%El caballero errante hace una pausa para mirar a su alrededor.%SPEECH_ON%Entonces... ¿quién de ustedes lanzará la primera piedra?%SPEECH_OFF%El chico a cargo de este ejército en miniatura levanta la mano y habla. %SPEECH_ON%Dejen a los hombres. Tenemos cosas mejores que hacer que pelear con estos viajeros.%SPEECH_OFF%Una decisión sabia. Con una inteligencia que traga el orgullo como esa, el muchacho pelirrojo podría algún día liderar una compañía hacia grandes fortunas. Pero este día es tuyo. Tomas las mercancías del comerciante y te marchas."
     }
     {
         en = "Little pricks."
@@ -49675,7 +49897,7 @@ local pairs = [
     }
     {
         en = "Surely this isn't something that can't be solved with a fat purse of crowns?"
-        es = "¿Seguro que esto no es algo que no se pueda resolver con una gran bolsa de coronas?"
+        es = "¿Seguro que esto no se arregla con una bolsa bien llena de coronas?"
     }
     {
         en = "You know who it is you're threatening? The %companyname%!"
@@ -49869,7 +50091,7 @@ local pairs = [
     }
     {
         en = "Will probably have to kill him to get him out of our dreams anyway."
-        es = "Probablemente tendremos que matarlo para sacarlo de nuestros sueños de todos modos."
+        es = "De todos modos, tendremos que matarlo para sacarlo de nuestros sueños."
     }
     // FILE: scripts\events\events\man_in_forest_event.nut
     {
@@ -49994,7 +50216,7 @@ local pairs = [
     }
     {
         en = "No, we'd rather not be double-checking our food every time we take a bite."
-        es = "No, preferimos no tener que estar revisando nuestra comida cada vez que damos un bocado."
+        es = "No, preferimos no tener que revisar la comida cada vez que damos un bocado."
     }
     {
         en = "the Melon Mugger"
@@ -50168,7 +50390,7 @@ local pairs = [
     // FILE: scripts\events\events\minstrel_writes_song_event.nut
     {
         en = "[img]gfx/ui/events/event_26.png[/img]\x7b%minstrel% the minstrel picks up a lute. You've no clue where he got the instrument, but he gives the strings a few strokes, drawing the attention of the rest of the company. He picks up his head, eyes closed, and begins to sing.%SPEECH_ON%I... -strum- joined a band of mercenaries, my coffers all gone... -strum-... they wanted a fighter, but all I had were songs. The end.%SPEECH_OFF%The company laughs as the fool throws the lute over his shoulder. | %minstrel% the minstrel produces a lute seeming out of thin air like a magician would a rabbit. He gives it a practiced strum, then breaks into song.%SPEECH_ON%There once was a monster that terrorized fair Riggabong... -strum-... They called it, if I recall, a real problem... -strum strum-...\n\nThis beast could only feast on the ladies, but just the virgins oh yeah it had great taste!...-plucky strum-... but obviously that was not, for man or woman, a desired fate!...-sketchy strum, a new one-...\n\n So they hired Sir Galicock, the greatest sword-swinger in the land...-playful strum-...and so he went door to door, and vanquished every virgin a good swordsman can!...-a lingering, sad strum-... and the monster starved to death. The end.%SPEECH_OFF% | As a fire crackles and the men begin to get weary eyed in front of its flame, %minstrel% the minstrel clears his throat in a manner best described as 'everybody listen.' He stands up, too, and raises his hand as though it carried a glass with which to toast.%SPEECH_ON%Aye, you are some of the finest men I've ever met. I say that because I never knew my father and I spent all my years with the womenfolk.%SPEECH_OFF%He stares longingly into the distance.%SPEECH_ON%Damn, have I been with a lot of women.%SPEECH_OFF%And then he sits down. A moment of silence lingers in the air before it's broken with uproarious laughter. | %minstrel% the minstrel is looking for his lute. Upon not to being able to find it, he resorts to an 'air lute' instead, plucking playfully with his thumb.%SPEECH_ON%Hold on, that didn't sound quite right, lemme tune it.%SPEECH_OFF%He raises his hand and twists his finger, then goes for another strum.%SPEECH_ON%The hell? That was worse than the first. Just a sec, I'll get it, I promise.%SPEECH_OFF%He tries again, but apparently this 'strum' wasn't any good either.%SPEECH_ON%To hell with this piece of shite!%SPEECH_OFF%The minstrel jumps to his feet and repeatedly smashes the invisible lute against the ground before heaving it into the tall grass. He sweeps the sweat from his brow.%SPEECH_ON%You were right, dear father, I should have been a blacksmith.%SPEECH_OFF%And then he storms off, confused laughter from the company crackling behind him. | While throwing dirt into the fire, %minstrel% the minstrel begins to speak, to whom nobody can be sure.%SPEECH_ON%The old gods said let there be light, did they not? 'Tis the first thing they did, so clearly light must be important.%SPEECH_OFF%He picks up a piece of dirt and seems to analyze it.%SPEECH_ON%So why is there so much pleasure to be found where a woman is darkest?%SPEECH_OFF%The initially confused onlookers burst into laughter. | %minstrel% the minstrel stands up and clacks his boots together.%SPEECH_ON%Shall I show you fools how to dance?%SPEECH_OFF%A few men look up and shake their heads.%SPEECH_ON%Oh come on. It's simple. Watch.%SPEECH_OFF%The man raises a leg, it goes into an angle no man's leg should before planting back on the ground. He twirls, arms above his head. He then fans his arms out as if to fly. It's actually quite beautiful, though you'd never admit as much to any living soul. You watch as the minstrel continues, leaning forward when suddenly he rips a horrendous fart right into %otherbrother%'s face.\n\n %minstrel% straightens up in an instant, as though the gas had fixed a bad back and he sought the immediate use of it.%SPEECH_ON%I, uh... well, that's all folks! So hopefully you got the moves down pat!%SPEECH_OFF%He runs off, a particularly slighted and smelly man on his heels. The rest of the men bowl over with laughter.\x7d"
-        es = "[img]gfx/ui/events/event_26.png[/img]\x7b%minstrel%, el juglar, recoge un laúd. No tienes idea 'dónde' consiguió el instrumento, pero le da unas pocas pinceladas a las cuerdas, llamando la atención del resto de la compañía. Levanta la cabeza, con los ojos cerrados, y comienza a cantar.%SPEECH_ON%Sí... -rasgueo- me uní a una banda de mercenarios, mis arcas vacías... -rasgueo-... querían un luchador, pero todo lo que tenía eran canciones sin valor. Fin.%SPEECH_OFF%La compañía se ríe mientras el juglar coloca su laúd sobre su hombro. | %minstrel%, el juglar, comienza a tocar un laúd como si lo hubiera sacado de la nada, como un mago que saca un conejo de su sombrero. Da un rasgueo enérgico y luego comienza a cantar.%SPEECH_ON%Había una vez un monstruo que aterrorizaba la hermosa Riggabong... -rasgueo-... Lo llamaban, si no recuerdo mal, un verdadero problemón... -rasgueo rasgueo-...Este monstruo solo podía alimentarse de mujeres, pero solo de aquellas en flor, ¡tenía un gran gusto!...-rasgueo juguetón-... pero obviamente eso no era un destino deseado, ni para hombres ni para mujeres...-rasgueo titubeante, luego reinicia-... Así que contrataron a Sir Galicock, el mejor espadachín de la comarca...-rasgueo juguetón-... y así que puerta por puerta tocó, y desfloró cada flor que un buen espadachín puede vencer...-un rasgueo prolongado y triste-... y el monstruo de hambre tuvo que perecer. Fin.%SPEECH_OFF% | %minstrel%, el juglar, se aclara la garganta de una manera que podría describirse mejor como 'escuchen todos'. Se pone de pie y levanta la mano como si llevara un vaso con el que brindar.%SPEECH_ON%Ah sí, son algunos de los mejores hombres que he conocido... Lo digo porque nunca conocí a mi padre y pasé todos mis años con mujeres.%SPEECH_OFF%Mira melancólicamente hacia el horizonte.%SPEECH_ON%Maldición, si que he estado con muchas mujeres.%SPEECH_OFF%Luego se sienta. Un momento de silencio se cierne en el aire antes de romperse con carcajadas estruendosas. | %minstrel%, el juglar, busca su laúd. Al no poder encontrarlo, recurre a un 'laúd de aire' en su lugar, haciendo acordes juguetones con el pulgar.%SPEECH_ON%Espera un momento, eso no sonó del todo bien, déjame afinarlo.%SPEECH_OFF%Levanta la mano y gira el dedo, luego intenta otro rasgueo.%SPEECH_ON%¿Qué diablos? Eso fue peor que el primero. Espera un segundo, lo conseguiré, lo prometo.%SPEECH_OFF%Lo intenta de nuevo, pero aparentemente este 'rasgueo' tampoco es bueno.%SPEECH_ON%¡Al demonio con esta mierda!%SPEECH_ON%El juglar salta en pie y golpea repetidamente el instrumento invisible contra el suelo antes de lanzarlo hacia la hierba alta. Se seca el sudor de la frente.%SPEECH_ON%Tuviste razón, querido padre, debería haber sido herrero.%SPEECH_OFF%Luego se aleja, seguido de risas desconcertadas de la compañía. | Mientras arroja tierra al fuego, %minstrel% el juglar comienza a hablar, pero nadie está seguro a quién se dirige.%SPEECH_ON%Los antiguos dioses dijeron que debía haber luz, ¿verdad? Es lo primero que hicieron, así que claramente la luz debe de ser importante.%SPEECH_OFF%Toma un pedazo de tierra y parece analizarlo.%SPEECH_ON%Entonces, ¿por qué hay tanto placer en lo más oscuro de una mujer?%SPEECH_OFF%Los observadores inicialmente confundidos estallan en carcajadas. | %minstrel%, el juglar, se levanta y chasquea sus botas juntas.%SPEECH_ON%¿Debería mostrarles a los tontos cómo bailar?%SPEECH_OFF%Unos pocos hombres levantan la vista y niegan con la cabeza.%SPEECH_ON%Oh, vamos. Es simple. Observen.%SPEECH_OFF%El hombre levanta una pierna, la coloca en un ángulo que ninguna pierna humana debería tener y la vuelve a apoyar en el suelo. Gira, con los brazos sobre la cabeza. Luego extiende los brazos como si estuviera volando. Es realmente bastante hermoso, aunque nunca en tu jodida vida lo admitirías ante ningún alma viva (ni muerta). Observas cómo el juglar continúa, inclinándose hacia adelante cuando de repente se tira un pedo horrendo en la cara de %otherbrother%. %minstrel% se endereza en un instante, como si el gas hubiera arreglado un problema en su espalda y él buscara el uso inmediato de ella.%SPEECH_ON%Uh... bueno, eso es todo, amigos. ¡Espero que hayan aprendido los movimientos a la perfección!%SPEECH_OFF%Sale corriendo, con un hombre especialmente ofendido y maloliente pisándole los talones. El resto de los hombres se doblan de risa. | Mientras están alrededor de la fogata, %minstrel% el juglar se acerca con su laúd en la mano a la tenue luz que brindan las llamas.%SPEECH_ON%¿Saben? Esta fogata me recuerda a una canción. La compuse antes de ingresar a la compañía, cuando era un artista itinerante y apuesto. Y aunque sigo siendo itinerante y extremadamente apuesto, no puedo olvidar a mi anterior compañero de aventuras...%SPEECH_OFF%Los hermanos miran al juglar con curiosidad.%SPEECH_ON%Él era... ¡Ja! se los diré con una canción.%SPEECH_OFF%Enérgicamente, se para, y comienza a tocar suavemente su laúd y cantar.%SPEECH_ON%He oído que... vivo estás, queeee decepcionante\nYo tambieeen sobreviví, no gracias a ti\nNo te diiii compañía\nSeñor \x22Ohhh, Mírenme\x22\nQuemaré... mis recuerdos... de ti\n\n-aumenta la intensidad de su rasgeo-\n\nSendas solitarias\npor las que vaaaas\nAhora irás\nsin miii ni mi cantaaaar\n¿Alguna vez... te importó?\n¿Con tu cabello y medallón?\nVeme reír...\nmientras quemo... mis recuerdos... de ti\n\n-hace una pausa y luego continúa con más fuerza-\n\n¿Qué hay por deseaaaar?\nSi ya no hay vuelta atraaas\nTras lo que contigo hice y vi\nMe abandonaste, ¿qué es lo que más querreeeeeeeee?\n\nVer al carnicero ardeeeeeeeer\nAl final de mis días, me iré\nY de mis palabras la más veráz será\n'Ardeeeeeeer'\n\nVED AL CARNICERO ARDEEEER\nVED AL CARNICERO ARDER, ARDER, -su voz comienza a apagarse hasta ser un susurro-\nARDER, Arder, Arder, arder, arder, arder...\n\nQuemaré... mis recuerdos... de ti...%SPEECH_OFF%La compañía al unísono se pone de pie y comienza a aplaudir, gritar y tirar coronas al juglar. Él se limita a inclinarse ceremonialmente. Aunque puedes notar una mueca de tristeza en su rostro. Definitivamente, al juglar le dolió esa canción.\x7d"
+        es = "[img]gfx/ui/events/event_26.png[/img]\x7b%minstrel%, el juglar, recoge un laúd. No tienes idea 'dónde' consiguió el instrumento, pero le da unas pocas pinceladas a las cuerdas, llamando la atención del resto de la compañía. Levanta la cabeza, con los ojos cerrados, y comienza a cantar.%SPEECH_ON%Sí... -rasgueo- me uní a una banda de mercenarios, mis arcas vacías... -rasgueo-... querían un luchador, pero todo lo que tenía eran canciones sin valor. Fin.%SPEECH_OFF%La compañía se ríe mientras el juglar coloca su laúd sobre su hombro. | %minstrel%, el juglar, comienza a tocar un laúd como si lo hubiera sacado de la nada, como un mago que saca un conejo de su sombrero. Da un rasgueo enérgico y luego comienza a cantar.%SPEECH_ON%Había una vez un monstruo que aterrorizaba la hermosa Riggabong... -rasgueo-... Lo llamaban, si no recuerdo mal, un verdadero problemón... -rasgueo rasgueo-...Este monstruo solo podía alimentarse de mujeres, pero solo de aquellas en flor, ¡tenía un gran gusto!...-rasgueo juguetón-... pero obviamente eso no era un destino deseado, ni para hombres ni para mujeres...-rasgueo titubeante, luego reinicia-... Así que contrataron a Sir Galicock, el mejor espadachín de la comarca...-rasgueo juguetón-... y así que puerta por puerta tocó, y desfloró cada flor que un buen espadachín puede vencer...-un rasgueo prolongado y triste-... y el monstruo de hambre tuvo que perecer. Fin.%SPEECH_OFF% | %minstrel%, el juglar, se aclara la garganta de una manera que podría describirse mejor como 'escuchen todos'. Se pone de pie y levanta la mano como si llevara un vaso con el que brindar.%SPEECH_ON%Ah sí, son algunos de los mejores hombres que he conocido... Lo digo porque nunca conocí a mi padre y pasé todos mis años con mujeres.%SPEECH_OFF%Mira melancólicamente hacia el horizonte.%SPEECH_ON%Maldición, si que he estado con muchas mujeres.%SPEECH_OFF%Luego se sienta. Un momento de silencio se cierne en el aire antes de romperse con carcajadas estruendosas. | %minstrel%, el juglar, busca su laúd. Al no poder encontrarlo, recurre a un 'laúd de aire' en su lugar, haciendo acordes juguetones con el pulgar.%SPEECH_ON%Espera un momento, eso no sonó del todo bien, déjame afinarlo.%SPEECH_OFF%Levanta la mano y gira el dedo, luego intenta otro rasgueo.%SPEECH_ON%¿Qué diablos? Eso fue peor que el primero. Espera un segundo, lo conseguiré, lo prometo.%SPEECH_OFF%Lo intenta de nuevo, pero aparentemente este 'rasgueo' tampoco es bueno.%SPEECH_ON%¡Al demonio con esta mierda!%SPEECH_OFF%El juglar salta en pie y golpea repetidamente el instrumento invisible contra el suelo antes de lanzarlo hacia la hierba alta. Se seca el sudor de la frente.%SPEECH_ON%Tuviste razón, querido padre, debería haber sido herrero.%SPEECH_OFF%Luego se aleja, seguido de risas desconcertadas de la compañía. | Mientras arroja tierra al fuego, %minstrel% el juglar comienza a hablar, pero nadie está seguro a quién se dirige.%SPEECH_ON%Los antiguos dioses dijeron que debía haber luz, ¿verdad? Es lo primero que hicieron, así que claramente la luz debe de ser importante.%SPEECH_OFF%Toma un pedazo de tierra y parece analizarlo.%SPEECH_ON%Entonces, ¿por qué hay tanto placer en lo más oscuro de una mujer?%SPEECH_OFF%Los observadores inicialmente confundidos estallan en carcajadas. | %minstrel%, el juglar, se levanta y chasquea sus botas juntas.%SPEECH_ON%¿Debería mostrarles a los tontos cómo bailar?%SPEECH_OFF%Unos pocos hombres levantan la vista y niegan con la cabeza.%SPEECH_ON%Oh, vamos. Es simple. Observen.%SPEECH_OFF%El hombre levanta una pierna, la coloca en un ángulo que ninguna pierna humana debería tener y la vuelve a apoyar en el suelo. Gira, con los brazos sobre la cabeza. Luego extiende los brazos como si estuviera volando. Es realmente bastante hermoso, aunque nunca en tu jodida vida lo admitirías ante ningún alma viva (ni muerta). Observas cómo el juglar continúa, inclinándose hacia adelante cuando de repente se tira un pedo horrendo en la cara de %otherbrother%. %minstrel% se endereza en un instante, como si el gas hubiera arreglado un problema en su espalda y él buscara el uso inmediato de ella.%SPEECH_ON%Uh... bueno, eso es todo, amigos. ¡Espero que hayan aprendido los movimientos a la perfección!%SPEECH_OFF%Sale corriendo, con un hombre especialmente ofendido y maloliente pisándole los talones. El resto de los hombres se doblan de risa. | Mientras están alrededor de la fogata, %minstrel% el juglar se acerca con su laúd en la mano a la tenue luz que brindan las llamas.%SPEECH_ON%¿Saben? Esta fogata me recuerda a una canción. La compuse antes de ingresar a la compañía, cuando era un artista itinerante y apuesto. Y aunque sigo siendo itinerante y extremadamente apuesto, no puedo olvidar a mi anterior compañero de aventuras...%SPEECH_OFF%Los hermanos miran al juglar con curiosidad.%SPEECH_ON%Él era... ¡Ja! se los diré con una canción.%SPEECH_OFF%Enérgicamente, se para, y comienza a tocar suavemente su laúd y cantar.%SPEECH_ON%He oído que... vivo estás, queeee decepcionante\nYo tambieeen sobreviví, no gracias a ti\nNo te diiii compañía\nSeñor \x22Ohhh, Mírenme\x22\nQuemaré... mis recuerdos... de ti\n\n-aumenta la intensidad de su rasgeo-\n\nSendas solitarias\npor las que vaaaas\nAhora irás\nsin miii ni mi cantaaaar\n¿Alguna vez... te importó?\n¿Con tu cabello y medallón?\nVeme reír...\nmientras quemo... mis recuerdos... de ti\n\n-hace una pausa y luego continúa con más fuerza-\n\n¿Qué hay por deseaaaar?\nSi ya no hay vuelta atraaas\nTras lo que contigo hice y vi\nMe abandonaste, ¿qué es lo que más querreeeeeeeee?\n\nVer al carnicero ardeeeeeeeer\nAl final de mis días, me iré\nY de mis palabras la más veráz será\n'Ardeeeeeeer'\n\nVED AL CARNICERO ARDEEEER\nVED AL CARNICERO ARDER, ARDER, -su voz comienza a apagarse hasta ser un susurro-\nARDER, Arder, Arder, arder, arder, arder...\n\nQuemaré... mis recuerdos... de ti...%SPEECH_OFF%La compañía al unísono se pone de pie y comienza a aplaudir, gritar y tirar coronas al juglar. Él se limita a inclinarse ceremonialmente. Aunque puedes notar una mueca de tristeza en su rostro. Definitivamente, al juglar le dolió esa canción.\x7d"
     }
     // FILE: scripts\events\events\monk_vs_monk_event.nut
     {
@@ -50240,7 +50462,7 @@ local pairs = [
     }
     {
         en = "You're getting paid either way - and now you even get to live and spend the crowns."
-        es = "Estás siendo pagado, de todos modos, y ahora incluso puedes vivir y gastar esas coronas."
+        es = "Te pagan de todos modos, y ahora encima vives para gastar esas coronas."
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]You nod.%SPEECH_ON%I understand. You are two battle-earnest men. You even remind me of myself though, with your skills, I can assure you that only I come out looking better by such a comparison. You are fine warriors, but is it not true that you will be paid the same regardless of this battle or that? Why be so worried about battles? They will come. I've not paid you to sit. I've paid you to be ready to stand.%SPEECH_OFF%The men exchange a glance and then shrug and nod. They stand up in unison.%SPEECH_ON%You are right, sir. And, when the time comes, we will be ready to stand and fight for you!%SPEECH_OFF%"
@@ -51348,7 +51570,7 @@ local pairs = [
     }
     {
         en = "On second thought, promise to leave my body alone while I'm alive, too."
-        es = "Después de pensarlo mejor, promete dejar mi cuerpo en paz mientras esté vivo, también."
+        es = "Pensándolo mejor, promete dejar mi cuerpo en paz también mientras viva."
     }
     {
         en = "The Anatomists"
@@ -52048,6 +52270,20 @@ local pairs = [
         es = "[img]gfx/ui/events/event_180.png[/img]Los Juramentadores están ante ti, esperando que elijas a tus campeones.\n\n"
     }
     {
+        // this.Text += "You've already chosen " + Bro1 + " and " + Bro2 + ...: la suma entera,
+        // con el prefijo, para que no la coja a medias la regla genérica de abajo
+        mode = "pattern"
+        en = "[img]gfx/ui/events/event_180.png[/img]The Oathbringers stand before you, waiting for you to pick your champions.\n\nYou've already chosen <b1:str> and <b2:str> to fight. Is there another who shall help reclaim Young Anselm's jawbone?"
+        es = "[img]gfx/ui/events/event_180.png[/img]Los Juramentadores están ante ti, esperando que elijas a tus campeones.\n\nYa has elegido a <b1> y a <b2> para luchar. ¿Hay alguien más que quiera ayudar a recuperar la mandíbula del Joven Anselm?"
+    }
+    {
+        // this.Text += Bro1 + " stands ready to fight. Who shall join him?": la suma entera,
+        // con el prefijo; la genérica de abajo dejaba el prefijo en inglés
+        mode = "pattern"
+        en = "[img]gfx/ui/events/event_180.png[/img]The Oathbringers stand before you, waiting for you to pick your champions.\n\n<bro1:str> stands ready to fight. Who shall join him?"
+        es = "[img]gfx/ui/events/event_180.png[/img]Los Juramentadores están ante ti, esperando que elijas a tus campeones.\n\n<bro1> está de pie listo para luchar. ¿Quién luchará junto a él?"
+    }
+    {
         // this.Text += "You\'ve already chosen " + _event.m.Bro1.getName() + " and " + _event.m.Bro2.getName() + " to fight. Is there another who shall help reclaim Young Anselm\'s jawbone?";
         mode = "pattern"
         en = "You've already chosen <b1:str> and <b2:str> to fight. Is there another who shall help reclaim Young Anselm's jawbone?"
@@ -52130,7 +52366,7 @@ local pairs = [
         // Text = "[img]gfx/ui/events/event_82.png[/img]%squire% the young squire is eyeing %hedgeknight% from a safe distance. The hedge knight is sharpening his blades, running a whetstone over the edges and stropping the metals to give \'em a good sheen. Catching the squire staring, %hedgeknight% lowers his equipment.%SPEECH_ON%So you want to be a knight, is that it?%SPEECH_OFF%%squire% nods and answers proudly.%SPEECH_ON%It is my dream, yes, and one day it will happen.%SPEECH_OFF%The hedge knight stands and walks over, coming to tower over the youth.%SPEECH_ON%What is it you think a knight does? Saves damsels? Rules fiefs to be loved by the peasants? Owes allegiance to his lord? Well let me tell you, that\'s all bullshit. Dainty farks like yourself are nothing but mealworm. You want to be a knight you gotta learn to kill.%SPEECH_OFF%The squire straightens up and pulls his shoulders back.%SPEECH_ON%I\'ve no issue killing.%SPEECH_OFF%The hedge knight pushes the man back with only a single finger.%SPEECH_ON%Is that so? And have you gutted a man and murdered his family while he bled out on the ground? What of crushing a child\'s head in your hands because your liege gave the order? Would you gouge out a woman\'s eyes because your lord believed that was due punishment for stealing a loaf of bread? Who do you think I am, squire? Do you think I was born big, mean, and savage? No, little squire, you will have to kill, and who you kill first is none other than yourself. That is how you become a knight in these lands, in these times.%SPEECH_OFF%The hedge knight returns to his work. The squire is visibly shaken, but seems to be earnestly thinking over what he\'d just heard.",
         mode = "pattern"
         en = "[img]gfx/ui/events/event_82.png[/img]%squire% the young squire is eyeing %hedgeknight% from a safe distance. The hedge knight is sharpening his blades, running a whetstone over the edges and stropping the metals to give 'em a good sheen. Catching the squire staring, %hedgeknight% lowers his equipment.%SPEECH_ON%So you want to be a knight, is that it?%SPEECH_OFF%%squire% nods and answers proudly.%SPEECH_ON%It is my dream, yes, and one day it will happen.%SPEECH_OFF%The hedge knight stands and walks over, coming to tower over the youth.%SPEECH_ON%What is it you think a knight does? Saves damsels? Rules fiefs to be loved by the peasants? Owes allegiance to his lord? Well let me tell you, that's all bullshit. Dainty farks like yourself are nothing but mealworm. You want to be a knight you gotta learn to kill.%SPEECH_OFF%The squire straightens up and pulls his shoulders back.%SPEECH_ON%I've no issue killing.%SPEECH_OFF%The hedge knight pushes the man back with only a single finger.%SPEECH_ON%Is that so? And have you gutted a man and murdered his family while he bled out on the ground? What of crushing a child's head in your hands because your liege gave the order? Would you gouge out a woman's eyes because your lord believed that was due punishment for stealing a loaf of bread? Who do you think I am, squire? Do you think I was born big, mean, and savage? No, little squire, you will have to kill, and who you kill first is none other than yourself. That is how you become a knight in these lands, in these times.%SPEECH_OFF%The hedge knight returns to his work. The squire is visibly shaken, but seems to be earnestly thinking over what he'd just heard."
-        es = "[img]gfx/ui/events/event_82.png[/img]%squire%, el joven escudero, está observando a %hedgeknight% desde una distancia segura. El caballero andante está afilando sus armas, pasando una piedra de afilar por los filos y estropando los metales para darles un buen brillo. Al notar que el escudero lo está mirando, %hedgeknight% baja su equipo.%SPEECH_ON%Así que quieres ser un caballero, ¿no es así?%SPEECH_OFF%%squire% asiente y responde con orgullo.%SPEECH_ON%Es mi sueño, sí, y algún día sucederá.%SPEECH_OFF%El caballero andante se levanta y se acerca, quedando por encima del joven.%SPEECH_ON%¿Qué crees que hace un caballero? ¿Salva doncellas? ¿Gobierna feudos para ser amado por los campesinos? ¿Deberle lealtad a su señor? Permíteme decirte que todo eso es una tontería. Gente delicada como tú no son más que gusanos. Si quieres ser un caballero, debes aprender a matar.%SPEECH_OFF%El escudero endereza la espalda y echa los hombros hacia atrás.%SPEECH_ON%No tengo problema en matar.%SPEECH_OFF%El caballero andante empuja al joven hacia atrás con un solo dedo.%SPEECH_ON%¿Ah sí? ¿Has desgarrado a un hombre y asesinado a su familia mientras se desangraba en el suelo? ¿Y qué hay de aplastar la cabeza de un niño en tus manos porque tu señor dio la orden? ¿Arrancarías los ojos de una mujer porque tu señor creía que era un castigo adecuado por robar una hogaza de pan? ¿Quién crees que soy, escudero? ¿Crees que nací grande, malo y salvaje? No, joven escudero, tendrás que matar, y a quien mates primero no será otro que tú mismo. Así es como te conviertes en un caballero en estas tierras, en estos tiempos.%SPEECH_OFF%El caballero andante vuelve a su trabajo. El escudero está visiblemente perturbado, pero parece estar reflexionando sinceramente sobre lo que acaba de escuchar."
+        es = "[img]gfx/ui/events/event_82.png[/img]%squire%, el joven escudero, está observando a %hedgeknight% desde una distancia segura. El caballero errante está afilando sus armas, pasando una piedra de afilar por los filos y estropando los metales para darles un buen brillo. Al notar que el escudero lo está mirando, %hedgeknight% baja su equipo.%SPEECH_ON%Así que quieres ser un caballero, ¿no es así?%SPEECH_OFF%%squire% asiente y responde con orgullo.%SPEECH_ON%Es mi sueño, sí, y algún día sucederá.%SPEECH_OFF%El caballero errante se levanta y se acerca, quedando por encima del joven.%SPEECH_ON%¿Qué crees que hace un caballero? ¿Salva doncellas? ¿Gobierna feudos para ser amado por los campesinos? ¿Deberle lealtad a su señor? Permíteme decirte que todo eso es una tontería. Gente delicada como tú no son más que gusanos. Si quieres ser un caballero, debes aprender a matar.%SPEECH_OFF%El escudero endereza la espalda y echa los hombros hacia atrás.%SPEECH_ON%No tengo problema en matar.%SPEECH_OFF%El caballero errante empuja al joven hacia atrás con un solo dedo.%SPEECH_ON%¿Ah sí? ¿Has desgarrado a un hombre y asesinado a su familia mientras se desangraba en el suelo? ¿Y qué hay de aplastar la cabeza de un niño en tus manos porque tu señor dio la orden? ¿Arrancarías los ojos de una mujer porque tu señor creía que era un castigo adecuado por robar una hogaza de pan? ¿Quién crees que soy, escudero? ¿Crees que nací grande, malo y salvaje? No, joven escudero, tendrás que matar, y a quien mates primero no será otro que tú mismo. Así es como te conviertes en un caballero en estas tierras, en estos tiempos.%SPEECH_OFF%El caballero errante vuelve a su trabajo. El escudero está visiblemente perturbado, pero parece estar reflexionando sinceramente sobre lo que acaba de escuchar."
     }
     {
         en = "Life's not a knight's tale."
@@ -52434,11 +52670,11 @@ local pairs = [
     }
     {
         en = "Give that poor guy some food and water."
-        es = "Dadle a ese pobre muchacho algo de agua y comida."
+        es = "Denle a ese pobre muchacho algo de agua y comida."
     }
     {
         en = "Give him a good beating."
-        es = "Dadle una buena golpiza."
+        es = "Denle una buena golpiza."
     }
     {
         en = "Put him to the sword."
@@ -52907,7 +53143,7 @@ local pairs = [
     }
     {
         en = "Put the peasants in their place and search their homes for valuables!"
-        es = "¡Pongan a los campesinos en su lugar y registren sus casas en busca de objetos de valor!"
+        es = "¡Pongan a los campesinos en su lugar y registren sus casas en busca de botín!"
     }
     {
         en = "%peacekeeperfull%, see if you can calm %troublemaker% with your wisdom."
@@ -54468,7 +54704,6 @@ local pairs = [
     }
     {
         // this.m.Description = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of %sacrifice% from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot.";
-        mode = "pattern"
         en = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of %sacrifice% from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot."
         es = "Un aspecto espeluznante de Davkul, un antiguo poder que no es de este mundo, y los últimos restos de %sacrifice% a partir de cuyo cuerpo se ha creado. Nunca se romperá, sino que seguirá creciendo su piel llena de cicatrices en el lugar."
     }
@@ -59469,7 +59704,7 @@ local pairs = [
     }
     {
         en = "A very crude cleaver crafted from a sharpened antler. Heavy and blunt, but still dangerous."
-        es = "Un cuchillo muy tosco elaborado a partir de una cornamenta afilada. Pesado y contundente, pero aún así peligroso."
+        es = "Una cuchilla muy tosca elaborada a partir de una cornamenta afilada. Pesada y contundente, pero aun así peligrosa."
     }
     // FILE: scripts\items\weapons\barbarians\axehammer.nut
     {
@@ -59643,7 +59878,7 @@ local pairs = [
     // FILE: scripts\items\weapons\butchers_cleaver.nut
     {
         en = "Butcher's Cleaver"
-        es = "Cuchillo de carnicero"
+        es = "Cuchilla de carnicero"
     }
     {
         en = "A tool with a thick rectangular blade used for hacking through meat and bone."
@@ -61290,7 +61525,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Fueled by an unquenchable thirst for knowledge, the Anatomists have spent years dissecting the exotic and the alien. With social mores dogging their research, however, they've turned to you to form a mercenary company and provide them a new source of fresh specimens.\n\n[color=#bcad8c]Anatomists:[/color] Start with three men and high funds.\n[color=#bcad8c]Researchers:[/color] Research the corpses of your fallen foes and gain knowledge to empower your men.\n[color=#bcad8c]Not Fighters:[/color] Your men will never be of Confident morale.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Impulsados por sed de conocimiento, los Anatomistas han pasado años diseccionando lo exótico y lo extraño. Con las normas sociales obstaculizando su investigación, han recurrido a ti para formar una banda de mercenarios y proporcionarles una nueva fuente de especímenes frescos.\n\n[color=#bcad8c]Anatomistas:[/color] Comienza con tres hombres y fondos elevados.\n[color=#bcad8c]Investigadores:[/color] Investiga los cadáveres de tus enemigos caídos y obtén conocimientos para fortalecer a tus hombres.\n[color=#bcad8c]No son luchadores:[/color] Nunca tendrán una moral 'Confiado'.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Movidos por una sed insaciable de conocimiento, los Anatomistas llevan años diseccionando lo exótico y lo extraño. Pero las normas sociales estorban su labor, y han recurrido a ti para formar una compañía que les traiga especímenes frescos.\n\n[color=#bcad8c]Anatomistas:[/color] Comienza con tres hombres y fondos elevados.\n[color=#bcad8c]Investigadores:[/color] Investiga los cadáveres enemigos y obtén saber para fortalecer a tus hombres.\n[color=#bcad8c]No son luchadores:[/color] Nunca tendrán moral 'Confiado'.[/p]"
     }
     {
         en = "\x7bCaptain? Is it alright if I call you captain? Ah, of course it is. What? No, we were not calling you by another name. Yers is a smooth costard, good sir, and we would not be of such derring-do to refer to you as a sellsword who is as ordinary as any of our coetaneous clodpolls, or state that we were in some sense importuning commerce by conducting business with a man of your particular skills. No sir, we would not. We are not children of perdition, sir.\x7d"
@@ -61315,7 +61550,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]You and your men make your living by hunting down the many beasts that beset villages on the fringes of civilization. It's dangerous work, but it pays well enough, and there's always a bigger beast to slay and more crowns to earn.\n\n[color=#bcad8c]Beast Slayers:[/color] Start with three beast slayers and decent equipment, as well as some beast trophies.\n[color=#bcad8c]Expert Trackers:[/color] See tracks from further away.\n[color=#bcad8c]Expert Skinners:[/color] Each beast you slay has a 50% chance to drop an additional trophy.\n[color=#bcad8c]Prejudice:[/color] Most people don't trust your kind, so you get 10% worse prices.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Te ganas la vida cazando las numerosas bestias que azotan las tierras en los límites de la civilización. Es un trabajo peligroso, pero paga bastante bien, y siempre hay una bestia más grande que matar y más coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos.\n[color=#bcad8c]Rastreadores:[/color] Puedes ver huellas desde más lejos.\n[color=#bcad8c]Desolladores:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo adicional.\n[color=#bcad8c]Prejuicio:[/color] La mayoría de las personas no confían en los de tu tipo, por lo que obtienes precios un 10% peores.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Te ganas la vida cazando las bestias que acosan las aldeas en los límites de la civilización. Es peligroso, pero está bien pagado, y nunca faltan bestias mayores que matar ni coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos.\n[color=#bcad8c]Rastreadores:[/color] Ves huellas desde más lejos.\n[color=#bcad8c]Desolladores:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo más.\n[color=#bcad8c]Prejuicio:[/color] Casi nadie se fía de los tuyos, así que obtienes precios un 10% peores.[/p]"
     }
     {
         en = "Has slain a dangerous witch"
@@ -61365,7 +61600,7 @@ local pairs = [
     // FILE: scripts\scenarios\world\deserters_scenario.nut
     {
         en = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]For too long have you been dragged from one bloody battle to another at the whim of lords sitting in high towers. Last night, you absconded from camp together with three others. You're dressed like soldiers still, but you're deserters, and the noose will be your end if you stay here for too long.\n\n[color=#bcad8c]Deserters:[/color] Start with three deserters and decent armor, but lower funds and a noble house that wants to hunt you down.\n[color=#bcad8c]First to Run:[/color] Your men always are first to act in the very first round of combat.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Por demasiado tiempo te han arrastrado de una sangrienta batalla a otra, a merced de señores que se sientan en altas torres. Anoche, te escapaste del campamento junto con otros tres. Todavía están vestidos como soldados, pero son desertores, y la soga será su fin si se quedan aquí por demasiado tiempo.\n\n[color=#bcad8c]Desertores:[/color] Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n[color=#bcad8c]Primeros en huir:[/color] Tus hombres siempre son los primeros en actuar en la primera ronda del combate.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Demasiado tiempo te han arrastrado de una batalla sangrienta a otra al capricho de señores encerrados en altas torres. Anoche huiste del campamento con otros tres. Aún visten como soldados, pero son desertores, y la soga será su fin si se quedan aquí mucho tiempo.\n\n[color=#bcad8c]Desertores:[/color] Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n[color=#bcad8c]Primeros en huir:[/color] Tus hombres siempre actúan primero en la primera ronda del combate.[/p]"
     }
     {
         en = "Was dragged from one bloody battle to the next"
@@ -61458,11 +61693,11 @@ local pairs = [
     // FILE: scripts\scenarios\world\lone_wolf_scenario.nut
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]You've been traveling alone for a long time, taking part in tourneys and sparring with young nobles. A hedge knight tall as a tree, you never needed anybody for long. Is it true still?\n\n[color=#bcad8c]Lone Wolf:[/color] Start with a single experienced hedge knight and great equipment, but low funds.\n[color=#bcad8c]Elite Few:[/color] Can never have more than 12 men in your roster.\n[color=#bcad8c]Avatar:[/color] If your hedge knight dies, the campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Has estado viajando solo durante mucho tiempo, participando en torneos y enfrentándote a jóvenes nobles. Un caballero andante tan alto como un árbol, nunca necesitaste a nadie por mucho tiempo. ¿Sigue siendo cierto?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienza con un único caballero andante experimentado y un gran equipo, pero con pocos fondos.\n[color=#bcad8c]Núcleo de élite:[/color] Nunca puedes tener más de 12 hombres en tu lista.\n[color=#bcad8c]Avatar:[/color] Si tu caballero andante muere, la campaña termina.\n[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando solo, compitiendo en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie mucho tiempo. ¿Sigue siendo así?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienza con un solo caballero errante experimentado y gran equipo, pero pocos fondos.\n[color=#bcad8c]Núcleo de élite:[/color] Nunca tendrás más de 12 hombres en tu lista.\n[color=#bcad8c]Avatar:[/color] Si tu caballero errante muere, se acaba la campaña.[/p]"
     }
     {
         en = "A wandering hedge knight, you were a veteran of jousting and sparring tournaments. You were also a veteran of victory. Tis a scary thought for many, but if it were anything at all that turned your eye toward mercenary work it was boredom. Outwardly you state it is for the coin, but a part of you knows it's also for the company."
-        es = "Un caballero andante errante, eras un veterano de justas y torneos de esgrima. También eras un veterano de la victoria. Es un pensamiento aterrador para muchos, pero si hubo algo en absoluto que atrajo tu atención hacia el trabajo de mercenario, fue el aburrimiento. Exteriormente, afirmas luchar por la moneda, pero, una parte de ti, sabe que también luchas por la compañía y por tus hombres."
+        es = "Un caballero errante errante, eras un veterano de justas y torneos de esgrima. También eras un veterano de la victoria. Es un pensamiento aterrador para muchos, pero si hubo algo en absoluto que atrajo tu atención hacia el trabajo de mercenario, fue el aburrimiento. Exteriormente, afirmas luchar por la moneda, pero, una parte de ti, sabe que también luchas por la compañía y por tus hombres."
     }
     {
         en = "the Lone Wolf"
@@ -61475,7 +61710,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Constant conflict between city states and nomads makes for good business. The bulk of your outfit are captives, forced to fight to earn their freedom, and their ranks grow after each battle.\n\n[color=#bcad8c]Army of Captives:[/color] Start with two manhunters and four indebted. Take up to 16 men into battle at once. Having equal or fewer indebted than non-indebted will make your men dissatisfied.\n[color=#bcad8c]Overseers:[/color] All non-indebted can whip indebted in combat to reset their morale and buff their stats.\n[color=#bcad8c]Captives:[/color] Indebted earn 10% more experience, are capped at level 7, and will die if struck down.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El constante conflicto entre las ciudades-estado y los nómadas es un buen negocio. La mayoría de tu grupo son cautivos, obligados a luchar para ganar su libertad, y tus filas crecen después de cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados. Puedes llevar hasta 16 hombres a la batalla al mismo tiempo. Tener igual o menos endeudados que hombres libres hará que tus hombres estén insatisfechos.\n[color=#bcad8c]Supervisores:[/color] Todos los no endeudados pueden azotar a los endeudados en combate para restablecer su moral y mejorar sus estadísticas.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, tienen un límite de nivel 7 y morirán si son derribados en combate.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Las guerras entre ciudades-estado y nómadas son buen negocio. Tu tropa, sobre todo cautivos que luchan por su libertad, crece con cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazahombres y cuatro endeudados, y lleva hasta 16 hombres a la batalla. Si no hay más endeudados que libres, tus hombres se descontentan.\n[color=#bcad8c]Supervisores:[/color] En combate, los libres pueden azotar a los endeudados para reanimarlos y potenciarlos.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, no pasan del nivel 7 y mueren si caen.[/p]"
     }
     {
         en = "\x7bIn a sense, you don't particularly care for %name%. He's not hateful nor forgiving toward the prisoners of war, criminals, and the like. He just handles his business. But he's also this calm, unwavering way with you, and it's a bit bothersome. The man has so much potential, which is why you have him onboard for the %companyname%, but you just wished he showed some passion now and again.\x7d"
@@ -61554,7 +61789,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]It started as a ragtag militia made up of anyone brave or desperate enough to volunteer for defending their homes, but has grown into a small army. An army that needs to be fed each day. Perhaps the militia's services could be rented out?\n\n[color=#bcad8c]Peasant Army:[/color] Start with a roster of 12 poorly equipped peasants.\n[color=#bcad8c]Human Wave[/color]: Take up to 16 men into battle at once, and have up to 25 in your roster.\n[color=#bcad8c]Dirty Peasants[/color]: Can never hire anyone that isn't a lowborn peasant.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Comenzó como una milicia improvisada formada por cualquiera lo suficientemente valiente o desesperado como para ofrecerse como voluntario para defender sus hogares, pero ha crecido hasta convertirse en un pequeño ejército. Un ejército que necesita ser alimentado cada día. ¿Quizás los servicios de la milicia podrían alquilarse?\n\n[color=#bcad8c]Ejército de campesinos:[/color] Comienza con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Marea humana[/color]: Lleva hasta 16 hombres a la batalla a la vez y ten hasta 25 en tu lista.\n[color=#bcad8c]Sucios plebeyos[/color]: Nunca podrás contratar a nadie que no sea un campesino o plebeyo.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Empezó como una milicia improvisada de cualquiera lo bastante valiente o desesperado para defender su hogar, pero ha crecido hasta ser un pequeño ejército. Un ejército que hay que alimentar cada día. ¿Y si se alquilaran los servicios de la milicia?\n\n[color=#bcad8c]Ejército de campesinos:[/color] Comienza con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Marea humana[/color]: Lleva hasta 16 hombres a la batalla a la vez y ten hasta 25 en tu lista.\n[color=#bcad8c]Sucios plebeyos[/color]: Nunca podrás contratar a nadie que no sea un campesino o plebeyo.[/p]"
     }
     {
         en = "Lost many a friend in battle"
@@ -61655,7 +61890,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_180.png[/img][/p][p]Oathtakers are knightly warriors beholden not to liege lords, but to the ideals and teachings of their founder, Young Anselm. The order now finds itself in dire straits, and they've turned to you to reverse their fortunes. Can you teach these zealots to become successful mercenaries?\n\n[color=#bcad8c]Paladins:[/color] Start with two battle-hardened warriors and good equipment.\n[color=#bcad8c]Oathtakers:[/color] Sworn to Young Anselm's teachings, you must take oaths that confer various advantages and disadvantages until fulfilled.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_180.png[/img][/p][p]Los Juramentados son guerreros caballerescos que no están sujetos a señores feudales, sino a los ideales y enseñanzas de su fundador, Joven Anselm. La orden se encuentra ahora en una situación desesperada y han recurrido a ti para revertir su fortuna. ¿Puedes enseñar a estos fanáticos a convertirse en mercenarios exitosos?\n\n[color=#bcad8c]Paladines:[/color] Comienzas con dos guerreros curtidos en batalla y buen equipo.\n[color=#bcad8c]Juramentados:[/color] Siendo fiel a las enseñanzas del Joven Anselm, debes tomar juramentos que confieren varias ventajas y desventajas hasta que se cumplan.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_180.png[/img][/p][p]Los Juramentados son guerreros caballerescos que no se deben a ningún señor, sino a los ideales y enseñanzas de su fundador, Joven Anselm. La orden pasa por un momento desesperado y ha recurrido a ti para cambiar su suerte. ¿Lograrás que estos fanáticos sean mercenarios de éxito?\n\n[color=#bcad8c]Paladines:[/color] Comienzas con dos guerreros curtidos y buen equipo.\n[color=#bcad8c]Juramentados:[/color] Fiel a las enseñanzas del Joven Anselm, debes tomar juramentos que otorgan ventajas y desventajas hasta cumplirlos.[/p]"
     }
     {
         en = "\x7bPerhaps of an age more suitable for caretaking than oathtaking, %name% is a rather old, nigh on decrepit Oathtaker. While age has robbed him of his more natural talents, it has at least gifted him with learning and experience that no physical capabilities can match. He is a man of many spirits, having gone around this world in the shell of soldier, farmer, sellsword, and more. Now he is an Oathtaker, and all those skills and traits he built up over the years has made him quite a formidable one at that. | When First Oathtaker Anselm first met %name%, it is said that the prime paladin divulged details no one else could have possibly known, thus proving the aethereal power behind his beliefs. %name% is an ardent believer in the Oaths, and in seeing Young Anselm's vision through.\x7d"
@@ -61672,7 +61907,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]For all your adult life you've been raiding and pillaging in these lands. But with the local peasantry poor as mice, you may want to finally expand into the profitable field of mercenary work - that is, if your potential employers are willing to forgive your past transgressions.\n\n[color=#bcad8c]Warband:[/color] Start with three experienced barbarians.\n[color=#bcad8c]Pillagers:[/color] You have a higher chance to get any items from slain enemies as loot.\n[color=#bcad8c]Outlaws:[/color] Start with bad relations to most human factions.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Durante toda tu vida adulta, has estado saqueando y pillando en estas tierras. Pero con los campesinos locales tan pobres como ratones, es posible que finalmente desees expandirte al lucrativo campo del trabajo como mercenario, siempre y cuando tus posibles empleadores estén dispuestos a perdonar tus transgresiones pasadas.\n\n[color=#bcad8c]Banda de guerra:[/color] Comienza con tres bárbaros experimentados.\n[color=#bcad8c]Pillaje:[/color] Tienes una mayor probabilidad de obtener objetos de enemigos derrotados como botín.\n[color=#bcad8c]Forajidos:[/color] Comienzas con malas relaciones con la mayoría de las facciones humanas.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Llevas toda tu vida adulta saqueando estas tierras. Pero con los campesinos de aquí más pobres que las ratas, quizá quieras pasarte al lucrativo oficio de mercenario, si tus posibles empleadores están dispuestos a perdonar tus fechorías.\n\n[color=#bcad8c]Banda de guerra:[/color] Comienza con tres bárbaros experimentados.\n[color=#bcad8c]Pillaje:[/color] Es más probable que los enemigos abatidos dejen objetos como botín.\n[color=#bcad8c]Forajidos:[/color] Comienzas con malas relaciones con la mayoría de las facciones humanas.[/p]"
     }
     {
         en = "A sturdy warrior, %name% has been through many campaigns of raiding and pillaging. Although a man of few words, the raider is an absolutely vicious specimen in battle. Even for a raider, what he does to defeated villagers irks many. It is likely he came with you to satiate his more sadistic lusts."
@@ -61722,7 +61957,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]For years you've made a decent living by poaching in the local woods, evading your lord's men by being quick on your feet. But pickings have become slimmer and slimmer, and you're faced with a decision - how to make a living when all you know is how to use a bow?\n\n[color=#bcad8c]Hunters:[/color] Start with a group of three woodsmen.\n[color=#bcad8c]Expert Scouts:[/color] You move faster and can always get a scouting report for any enemies near you.\n[color=#bcad8c]Travel Light:[/color] You can carry fewer items in your company's inventory.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Durante años has ganado una vida decente cazando furtivamente en los bosques locales, evitando a los hombres de tu señor al ser rápido de pies. Pero las oportunidades se han vuelto cada vez más escasas, y te enfrentas a una decisión: ¿cómo ganarte la vida cuando todo lo que sabes es cómo usar un arco?\n\n[color=#bcad8c]Cazadores:[/color] Comienza con un grupo de tres guardabosques.\n[color=#bcad8c]Exploradores expertos:[/color] Te mueves más rápido y siempre puedes obtener un informe de exploración sobre cualquier enemigo cerca de ti.\n[color=#bcad8c]Viaje ligero:[/color] Puedes llevar menos objetos en el inventario de tu compañía.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Durante años te has ganado bien la vida cazando furtivamente, esquivando a los hombres de tu señor gracias a tus pies ligeros. Pero la caza escasea cada vez más y debes decidir: ¿cómo ganarte la vida si solo sabes usar un arco?\n\n[color=#bcad8c]Cazadores:[/color] Comienza con tres guardabosques.\n[color=#bcad8c]Exploradores expertos:[/color] Te mueves más rápido y siempre obtienes un informe de exploración de los enemigos cercanos.\n[color=#bcad8c]Viaje ligero:[/color] Puedes llevar menos objetos en el inventario de tu compañía.[/p]"
     }
     {
         en = "\x7bA bit of a devious runt, though a good man at heart. %name% used to hunt for his local liege, but when the nobleman died falling into an unseen ravine the hunter was blamed and kicked out of court. With some guile, he turned his hunting talents into poaching and fur trade. He is of a merchant's mind and was quick to engender the idea of mercenary work because of it.\x7d"
@@ -64463,7 +64698,7 @@ local pairs = [
     }
     {
         en = "the Cleaver"
-        es = "el Cuchillo"
+        es = "el Cuchilla"
     }
     {
         en = "Redmeat"
@@ -65300,15 +65535,15 @@ local pairs = [
     }
     {
         en = "Manhunters are used to hunting down people in the rough environment of the south."
-        es = "Los cazadores de hombres están acostumbrados a cazar personas en el duro entorno del sur."
+        es = "Los cazahombres están acostumbrados a cazar personas en el duro entorno del sur."
     }
     {
         en = "%name% the manhunter stuck with the %companyname% for a long while after you left it. You haven't gotten much word of the man other than he's found far more income in the world of sellswords than that of hunting down the indebted."
-        es = "%name% el cazador de hombres se mantuvo con %companyname% durante mucho tiempo después de que tú la dejaste. No has recibido muchas noticias del hombre, excepto que ha encontrado muchos más ingresos en el mundo de los mercenarios que en el de la caza de endeudados."
+        es = "%name% el cazahombres se mantuvo con %companyname% durante mucho tiempo después de que tú la dejaste. No has recibido muchas noticias del hombre, excepto que ha encontrado muchos más ingresos en el mundo de los mercenarios que en el de la caza de endeudados."
     }
     {
         en = "Upset with how his time in the company of the %companyname% has gone, %name% the manhunter deserted and returned south. It's hard to say what became of him, but the business of tracking and hunting human prey carries endless dangers. The only news you have of him is ancillary to his vocation: that of numerous indebted uprisings with many manhunters being buried alive or fed to a variety of desert-borne creatures."
-        es = "Molesto por cómo ha ido su tiempo en la compañía de %companyname%, %name% el cazahombres desertó y regresó al sur. Es difícil decir qué fue de él, pero el negocio de rastrear y cazar presas humanas conlleva peligros interminables. La única noticia que tienes de él está relacionada con su vocación: la de numerosos levantamientos de endeudados con muchos cazadores de hombres siendo enterrados vivos o dados como alimento a diversas criaturas del desierto."
+        es = "Molesto por cómo ha ido su tiempo en la compañía de %companyname%, %name% el cazahombres desertó y regresó al sur. Es difícil decir qué fue de él, pero el negocio de rastrear y cazar presas humanas conlleva peligros interminables. La única noticia que tienes de él está relacionada con su vocación: la de numerosos levantamientos de endeudados con muchos cazahombres siendo enterrados vivos o dados como alimento a diversas criaturas del desierto."
     }
     {
         en = "the Manhunter"
@@ -65352,7 +65587,7 @@ local pairs = [
     }
     {
         en = "\x7bThe large population of slaves, prisoners, criminals, and indebted servants in the south has produced an economy of sellers, buyers, and, given the flighty nature of the product, hunters. | Southern city states must have enormous reserves of labor to fuel their desert-borne economies. While many are born into working tirelessly for Viziers, some must be coerced into a life of servitude. | The deserts so sparse in natural resources, it is often an ample supply of captured criminals and indebted souls which bolsters the southern economy. And the business of hunting down these eventual servants is a prosperous one. | Southern Viziers are so fearful of rebellions that an entire market of Manhunters has emerged to nip them in the bud.\x7d \x7b%name% entered manhunting with a vengeful attitude: his entire family was massacred in a slave uprising. | %name% was once an ordinary caravan guard but turned to manhunting nomads who kept trying to ambush his convoys. Finding more profit in the human trade, he's stuck with it ever since. | %name% is a manhunter with a good nose for tracking criminals, deserters, prisoners of war, and more. You sometimes wonder if he's got a keen sense of smell for fearful sweat. | Once a big game hunter, %name% grew fond of chasing the greatest game of all: man. He is an expert tracker with a nose for sniffing out desperation.\x7d \x7bFor %name%, the opportunity of working for a mercenary band simply brings in more consistent work than waiting around for some pressed criminal to get antsy about his chains. | %name% is a rugged, shady individual and it is quite possible that he is just as flighty as the men he sought to hunt down. | Hunters like %name% carry traits and skills that would be useful in a mercenary band, but to some their past may be an ever present slight. Not all manhunters are seen in good light. | Capturing humans for the purpose of labor is frowned upon by many and catching those seeking their freedom equally so. Manhunters like %name% certainly have useful skills, but may rub some the wrong way. | To no surprise, many see men like %name% as opportunistic slugs. If he can make it with the company, it may take time to change the minds of some about his past.\x7d"
-        es = "\x7bLa gran población de esclavos, prisioneros, criminales y sirvientes endeudados en el sur ha creado una economía de vendedores, compradores y, dada la naturaleza 'volátil' del producto, cazadores. | Las ciudades-estado del sur deben tener enormes reservas de mano de obra para alimentar sus economías nacidas en el desierto. Mientras muchos nacen para trabajar incansablemente para los vizires, a otros se les debe obligar a una vida de servidumbre. | Los desiertos tan escasos en recursos naturales a menudo cuentan con un amplio suministro de criminales capturados y almas endeudadas que fortalecen la economía del sur. Y el negocio de cazar a estos futuros sirvientes es próspero. | Los vizires del sur tienen tanto miedo de las rebeliones que ha surgido todo un mercado de cazadores de hombres para sofocarlas desde el principio.\x7d \x7b%name% ingresó a la caza de hombres con una actitud vengativa: su familia entera fue masacrada en un levantamiento de esclavos. | %name% alguna vez fue un guardia de caravanas común, pero se volvió cazador de hombres nómadas que seguían intentando emboscar sus convoyes. Encontrando más ganancias en el comercio humano, se ha quedado con ello desde entonces. | %name% es un cazador de hombres con buen olfato para rastrear criminales, desertores, prisioneros de guerra y más. A veces te preguntas si tiene un agudo sentido del olfato para el temor. | Antes un cazador de grandes presas, %name% se encariñó con perseguir la presa más grande de todas: el hombre. Es un rastreador experto con un olfato para detectar la desesperación.\x7d \x7bPara %name%, la oportunidad de trabajar para una banda de mercenarios simplemente le brinda un trabajo más constante que esperar a que algún criminal presionado se inquiete por sus cadenas. | %name% es una persona ruda y sombría, y es bastante posible que sea tan voluble como los hombres a los que solía cazar. | Cazadores como %name% tienen rasgos y habilidades que serían útiles en una banda de mercenarios, pero para algunos, su pasado puede ser un agravio siempre presente. No todos los cazadores de hombres son vistos con buenos ojos. | Capturar humanos con fines de trabajo es desaprobado por muchos, y atrapar a aquellos que buscan su libertad igualmente. Cazahombres como %name% ciertamente tienen habilidades útiles, pero pueden molestar a algunos. | Como era de esperar, muchos ven a hombres como %name% como babosas oportunistas. Si puede lograrlo con la compañía, puede llevar tiempo cambiar la opinión de algunos sobre su pasado.\x7d"
+        es = "\x7bLa gran población de esclavos, prisioneros, criminales y sirvientes endeudados en el sur ha creado una economía de vendedores, compradores y, dada la naturaleza 'volátil' del producto, cazadores. | Las ciudades-estado del sur deben tener enormes reservas de mano de obra para alimentar sus economías nacidas en el desierto. Mientras muchos nacen para trabajar incansablemente para los vizires, a otros se les debe obligar a una vida de servidumbre. | Los desiertos tan escasos en recursos naturales a menudo cuentan con un amplio suministro de criminales capturados y almas endeudadas que fortalecen la economía del sur. Y el negocio de cazar a estos futuros sirvientes es próspero. | Los vizires del sur tienen tanto miedo de las rebeliones que ha surgido todo un mercado de cazahombres para sofocarlas desde el principio.\x7d \x7b%name% ingresó a la caza de hombres con una actitud vengativa: su familia entera fue masacrada en un levantamiento de esclavos. | %name% alguna vez fue un guardia de caravanas común, pero empezó a cazar a los nómadas que seguían intentando emboscar sus convoyes. Encontrando más ganancias en el comercio humano, se ha quedado con ello desde entonces. | %name% es un cazahombres con buen olfato para rastrear criminales, desertores, prisioneros de guerra y más. A veces te preguntas si tiene un agudo sentido del olfato para el temor. | Antes un cazador de grandes presas, %name% se encariñó con perseguir la presa más grande de todas: el hombre. Es un rastreador experto con un olfato para detectar la desesperación.\x7d \x7bPara %name%, la oportunidad de trabajar para una banda de mercenarios simplemente le brinda un trabajo más constante que esperar a que algún criminal presionado se inquiete por sus cadenas. | %name% es una persona ruda y sombría, y es bastante posible que sea tan voluble como los hombres a los que solía cazar. | Cazadores como %name% tienen rasgos y habilidades que serían útiles en una banda de mercenarios, pero para algunos, su pasado puede ser un agravio siempre presente. No todos los cazahombres son vistos con buenos ojos. | Capturar humanos con fines de trabajo es desaprobado por muchos, y atrapar a aquellos que buscan su libertad igualmente. Cazahombres como %name% ciertamente tienen habilidades útiles, pero pueden molestar a algunos. | Como era de esperar, muchos ven a hombres como %name% como babosas oportunistas. Si puede lograrlo con la compañía, puede llevar tiempo cambiar la opinión de algunos sobre su pasado.\x7d"
     }
     // FILE: scripts\skills\backgrounds\mason_background.nut
     {
@@ -66062,7 +66297,7 @@ local pairs = [
     }
     {
         en = "\x7bYou can tell %name% is a northerner simply by appearance. And his servitude in the south has come by way of being indebted to the Gilder whom he has transgressed with his faith in the heretical old gods. | %name% bears the features of a northerner, easily capturing the eye of passing men or women. It also happened to catch the attention of a priest who claimed the northerner was indebted to the Gilder and promptly sold the interloper into servitude. | A northerner, %name% was once a soldier sent south on patrol. Lost in the desert, his troop slowly dwindled until he was the last survivor. Manhunters caught him and brought him back from the brink, and of course sold him into servitude once his healed body was worth something. | Despite being a northerner and thus easily spotted, %name% unwisely sought the criminal life and was caught thieving pomegranates from a Vizier's garden. He's lucky to have his head, but now serves as a commodity of labor on the Manhunting markets.\x7d"
-        es = "\x7bPuedes decir que %name% es norteño simplemente por su apariencia. Y su servidumbre en el sur se debe a su deuda con el Dorado, a quien ha transgredido con su fe en los viejos dioses heréticos. | %name% tiene los rasgos de un norteño y capta fácilmente la atención de hombres o mujeres que pasan. También llamó la atención de un sacerdote que afirmó que el norteño estaba en deuda con el Dorado y rápidamente vendió al intruso como esclavo. | %name%, el norteño, fue una vez un soldado enviado al sur a patrullar. Perdido en el desierto, su tropa fue disminuyendo lentamente hasta convertirse en el último superviviente. Los cazadores de hombres lo atraparon y lo salvaron de la muerte y, por supuesto, lo vendieron en servidumbre una vez que su cuerpo curado valió algo. | A pesar de ser un norteño y, por lo tanto, fácil de detectar, %name% buscó imprudentemente la vida criminal y fue sorprendido robando granadas del jardín de un visir. Tiene suerte de tener su cabeza, pero ahora sirve como mano de obra en los mercados de trata de esclavos.\x7d"
+        es = "\x7bPuedes decir que %name% es norteño simplemente por su apariencia. Y su servidumbre en el sur se debe a su deuda con el Dorado, a quien ha transgredido con su fe en los viejos dioses heréticos. | %name% tiene los rasgos de un norteño y capta fácilmente la atención de hombres o mujeres que pasan. También llamó la atención de un sacerdote que afirmó que el norteño estaba en deuda con el Dorado y rápidamente vendió al intruso como esclavo. | %name%, el norteño, fue una vez un soldado enviado al sur a patrullar. Perdido en el desierto, su tropa fue disminuyendo lentamente hasta convertirse en el último superviviente. Los cazahombres lo atraparon y lo salvaron de la muerte y, por supuesto, lo vendieron en servidumbre una vez que su cuerpo curado valió algo. | A pesar de ser un norteño y, por lo tanto, fácil de detectar, %name% buscó imprudentemente la vida criminal y fue sorprendido robando granadas del jardín de un visir. Tiene suerte de tener su cabeza, pero ahora sirve como mano de obra en los mercados de trata de esclavos.\x7d"
     }
     // FILE: scripts\skills\backgrounds\slave_barbarian_background.nut
     {
@@ -69083,6 +69318,18 @@ local pairs = [
         es = "<text:t> pero lo perdió."
     }
     {
+        // text = this.getDescription() + text: la descripción llega ya traducida y va cruda
+        mode = "pattern"
+        en = "<description:str> So far, this character has fought in one match"
+        es = "<description> Hasta ahora, este personaje ha peleado en un combate"
+    }
+    {
+        // won = "all" cuando las ganó todas (arena_pit_fighter, arena_fighter, arena_veteran)
+        mode = "pattern"
+        en = "<description:str> So far, this character has fought in <matches:int> matches and won all of them."
+        es = "<description> Hasta ahora, este personaje ha luchado en <matches> peleas y las ha ganado todas."
+    }
+    {
         // text = " So far, this character has fought in " + matches + " matches and won " + won + " of them.";
         mode = "pattern"
         en = " So far, this character has fought in <matches:int> matches and won <won:int> of them."
@@ -71536,7 +71783,7 @@ local pairs = [
     }
     {
         en = "Melee Skill"
-        es = "Habilidad a cuerpo a cuerpo"
+        es = "Habilidad cuerpo a cuerpo"
     }
     {
         en = "Determines the base probability of hitting a target with a melee attack, such as with swords and spears. Can be increased as the character gains experience."

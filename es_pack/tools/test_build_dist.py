@@ -1,3 +1,4 @@
+import re
 import sys
 from pathlib import Path
 
@@ -1376,3 +1377,255 @@ def test_las_sumas_estaticas_de_legends_estan_enteras_en_el_corpus():
         v = {m.group(1): cadena(m.group(2)) for m in re.finditer(r"local (\w+) = " + lit + ";", texto)}
         sumas[rel] = "[img]gfx/ui/events/%s.png[/img]" % img + "".join(v[nombre + str(i)] for i in range(1, n + 1))
     assert [k for k, s in sumas.items() if s not in literales] == []
+
+
+# Emulación mínima del índice de reglas del runtime (_ruleKey, _iterKeys y
+# matchParts de !rosetta.nut) para el test de abajo.
+_PARADAS = set("a the of in at to as is be are do has have having not and or"
+               " it it's its this that he she his her him ah eh , .".split())
+_ETIQUETAS_RE = re.compile(r"\[img[^\]]*\][^\[]+\[/img\w*\]|\[[^\]]+]|&\w+;|<[^>]+>")
+_SUBS_RE = {"int": r"[+\-]?\d+", "val": r"[+\-]?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?%?",
+            "word": r"[^ \t\n,.:;!\[\]()]+", "line": r"[^\n]*(?:\n|$)",
+            "tag": r"\[[^\]]+\]", "img": r"\[img\][^\]]+\[/img\]"}
+
+
+def _clave_de_regla(en):
+    sin = re.sub(r"<\w+:(\w+)>", lambda m: " " if m.group(1).endswith("tag") else "", en)
+    for w in _ETIQUETAS_RE.sub(" ", sin).lower().split():
+        if w not in _PARADAS and not w[0].isdigit():
+            return w
+    return ""
+
+
+def _regex_de_regla(en):
+    partes, pos, capturas = [], 0, list(re.finditer(r"<(\w+):(\w+)>", en))
+    for i, m in enumerate(capturas):
+        partes.append(re.escape(en[pos:m.start()]))
+        sub = m.group(2)
+        if sub == "str":
+            partes.append(".*" if i == len(capturas) - 1 and m.end() == len(en) else ".*?")
+        elif sub.endswith("_tag"):
+            partes.append(r"\[[^\]]+\]" + _SUBS_RE.get(sub[:-4], ".*?") + r"\[/[^\]]+\]")
+        else:
+            partes.append(_SUBS_RE[sub])
+        pos = m.end()
+    partes.append(re.escape(en[pos:]))
+    return re.compile("".join(partes), re.S)
+
+
+def test_ningun_par_sin_capturas_queda_tapado_por_una_regla_anterior():
+    """Un par con mode="pattern" y sin capturas solo casa su cadena exacta,
+    pero el runtime lo archiva con las reglas, bajo su primera palabra y en
+    orden de carga. Si una regla anterior con la misma clave casa también esa
+    cadena, gana ella. Así salían dos rumores de taberna a medias: "From
+    <f:str>" (el remitente de una carta) se comía "From what I've heard,
+    %settlement% is flooded..." y el jugador leía "Desde what I've heard...".
+    Un par literal no tiene el problema, porque el runtime mira los literales
+    antes que las reglas.
+
+    shortcut: la emulación solo compara reglas de la misma clave, que es
+    donde cae una regla con el mismo arranque literal; una regla cuya clave
+    sea otra palabra de la cadena se probaría después y no tapa nada. Y no
+    cuenta las reglas con alguna captura <x:t> en el es: el runtime las
+    abandona si lo capturado no tiene traducción, que es lo que pasa con un
+    trozo de frase ("Some <troops:str>" frente a "Some witch hunters...").
+    """
+    from build_dist import CORPUS, is_rule_pair
+
+    reglas = [(get_field(b, "en"), get_field(b, "es"), b) for b in load_blocks(CORPUS)
+              if classify(b) == "dist" and is_rule_pair(b)]
+    vistas = {}
+    tapados = []
+    for en, es, bloque in reglas:
+        clave = _clave_de_regla(en)
+        if not re.search(r"<\w+:\w+>", en) and not re.search(r"^\s*(?:plural|split|use)\s*=", bloque, re.M):
+            for anterior in vistas.get(clave, []):
+                if _regex_de_regla(anterior).fullmatch(en):
+                    tapados.append("%r tapa %r" % (anterior[:40], en[:60]))
+                    break
+        if not re.search(r"<\w+:t>", es):
+            vistas.setdefault(clave, []).append(en)
+    assert tapados == []
+
+
+def test_la_emulacion_del_indice_ve_el_rumor_tapado():
+    assert _clave_de_regla("From <f:str>") == _clave_de_regla("From what I hear they found a witch") == "from"
+    assert _regex_de_regla("From <f:str>").fullmatch("From what I hear, %settlement% burns.")
+    assert not _regex_de_regla("Afraid of <m:str>").fullmatch("Not afraid of anything")
+    assert _regex_de_regla("Got <n:int> crowns").fullmatch("Got 12 crowns")
+    assert not _regex_de_regla("Got <n:int> crowns").fullmatch("Got many crowns")
+
+
+def test_ancho_mide_con_la_fuente_del_juego():
+    """La línea inglesa más ancha de los botones de ambición (discover unique
+    locations) mide 71.6 rem con la fuente real; el token cuenta igual en los
+    dos idiomas."""
+    from checks import BOTON_FUENTE, ancho_rem
+    linea = "The wilds are teeming with hidden treasures that others are not bold enough to claim."
+    assert 71.0 < ancho_rem(linea, BOTON_FUENTE) < 72.0
+    assert ancho_rem("[color=#bcad8c]Hola[/color] %name%", 1.0) == ancho_rem("Hola Hans", 1.0)
+    # la línea que en partida quedaba pegada al icono ya no cabe en el presupuesto
+    from checks import BOTON_REM
+    pegada = "No estaremos a la altura del Joven Anselm si nos obsesionan los asuntos mundanos."
+    assert ancho_rem(pegada, BOTON_FUENTE) > BOTON_REM
+
+
+def test_ancho_avisa_del_boton_sin_salto_y_de_la_descripcion_larga(tmp_path):
+    """El caso del jugador: el juramento había perdido el \\n del inglés y el
+    botón, que no parte línea, se cortaba por los dos lados."""
+    from checks import ancho_recuadros
+    en_boton = "Evil-doers skulk and hide away from the walls of the just.\\nLet us take an Oath of Fortification and bring those walls to them!"
+    largo = ("Los malhechores se ocultan y se esconden lejos de las murallas de los justos. "
+             "¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!")
+    corto = ("Los malhechores acechan y se esconden lejos de las murallas de los justos.\\n"
+             "¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!")
+    en_origen = "[p=c][img]gfx/ui/events/event_1.png[/img][/p][p]Short.[/p]"
+    origen_largo = "[p=c][img]gfx/ui/events/event_1.png[/img][/p][p]" + "Uno.\\n" * 14 + "[/p]"
+    ruta = _corpus_falso(tmp_path, [
+        ("oath_of_fortification_ambition.nut", [(en_boton, largo)]),
+        ("oath_of_honor_ambition.nut", [(en_boton.replace("Fortification", "Honor"), corto),
+                                        ("<ret:str>\\n- Beer", "<ret>\\n- " + "Cerveza " * 20)]),
+        ("lone_wolf_scenario.nut", [(en_origen, origen_largo)]),
+        ("militia_scenario.nut", [(en_origen, "[p=c][img]gfx/ui/events/event_1.png[/img][/p][p]Corto.[/p]")]),
+    ])
+    avisos = ancho_recuadros(ruta)
+    assert len(avisos) == 2
+    assert "oath_of_fortification" in avisos[0] and "lone_wolf" in avisos[1]
+
+
+def test_ancho_no_avisa_de_nada_en_el_corpus():
+    from checks import ancho_recuadros
+    assert ancho_recuadros() == []
+
+
+def test_literalizar_solo_quita_el_modo_a_los_pares_sin_capturas():
+    from build_dist import is_rule_pair, literalizar
+    sin = '{\n        mode = "pattern"\n        en = "From what I hear, %settlement% burns."\n        es = "Dicen que %settlement% arde."\n    }'
+    con = '{\n        mode = "pattern"\n        en = "From <f:str>"\n        es = "De <f>"\n    }'
+    plural = '{\n        mode = "pattern"\n        plural = "n"\n        en = "Got <n:int> crowns"\n        n1 = "a"\n        n2 = "b"\n    }'
+    literal = '{\n        en = "Your Task"\n        es = "Tu tarea"\n    }'
+    assert not is_rule_pair(literalizar(sin))
+    assert get_field(literalizar(sin), "en") == get_field(sin, "en")
+    assert get_field(literalizar(sin), "es") == get_field(sin, "es")
+    assert literalizar(con) == con and literalizar(plural) == plural and literalizar(literal) == literal
+
+
+def test_literalizar_no_cambia_el_cubo_de_ningun_par_del_corpus():
+    """Lo emitido cambia de forma, pero no de cubo: el recuento dist/wip/drop
+    por par es el mismo que el del corpus fuente."""
+    from build_dist import CORPUS, is_rule_pair, literalizar
+    bloques = load_blocks(CORPUS)
+    assert [classify(literalizar(b)) for b in bloques] == [classify(b) for b in bloques]
+    cambiados = [b for b in bloques if literalizar(b) != b]
+    assert cambiados and all(classify(b) == "dist" and is_rule_pair(b) for b in cambiados)
+
+
+def test_registro_ve_el_imperativo_de_vosotros_con_clitico():
+    """«Decidles», «Degolladlos» y «Dadle» se le escapaban: la palabra no acaba
+    en -d. La raíz se valida con el infinitivo o el participio del corpus."""
+    from checks import revisar
+    diccionario = [("x", "Hay que decir algo."), ("x", "Lo han degollado."), ("x", "Ya está dado."),
+                   ("x", "No te vayas a preocupar.")]
+    vos = [("x", "¡Decidles a todos!"), ("x", "Degolladlos. Que sea rápido."), ("x", "Dadle agua."),
+           ("x", "¡Barrédlos desde el flanco!")]
+    limpios = [("x", "¡Díganles a todos!"), ("x", "Las ciudadelas caen."), ("x", "Está preocupad%o%."),
+               ("x", "Rocks in the cradles"), ("x", "Denle agua.")]
+    avisos = revisar(diccionario + [("x", "Hay que barrer.")] + vos + limpios)["REGISTRO"]
+    assert len(avisos) == 4
+    assert all(any(v[1][:10] in a for a in avisos) for v in vos)
+
+
+def test_etiquetas_ve_el_color_suelto_de_las_llaves_perdidas():
+    """El caso del jugador (contrato de buscar un lugar): el inglés anida un
+    bloque de ramas dentro de un %SPEECH_ON%...%SPEECH_OFF% y el español
+    perdió esas llaves, de modo que una rama abría el [color] y otra lo
+    cerraba sin abrirlo."""
+    from checks import etiquetas_rotas, revisar
+    en = "{A.%SPEECH_ON%B.%SPEECH_OFF% | C.%SPEECH_ON%{D | E}%SPEECH_OFF%}"
+    roto = "{A.%SPEECH_ON%B.%SPEECH_OFF% | C.%SPEECH_ON%D | E%SPEECH_OFF%}"
+    assert etiquetas_rotas(en) == set()
+    assert etiquetas_rotas(roto) == {"color"}
+    # el intro de la negociación abre en sus ramas y cierra en el pago: cuadra
+    assert etiquetas_rotas("{a%SPEECH_ON%x | %SPEECH_ON%y} {b | c} pago.%SPEECH_OFF%") == set()
+    assert etiquetas_rotas("llave { suelta %SPEECH_START%hola%SPEECH_OFF%") == set()
+    avisos = revisar([(en, roto), (en, en.replace("B", "Be"))])["ETIQUETAS"]
+    assert len(avisos) == 1 and "C.%SPEECH_ON%D" in avisos[0]
+
+
+def test_etiquetas_ve_el_orden_las_otras_etiquetas_y_las_llaves():
+    from checks import etiquetas_rotas, revisar
+    # cierra antes de abrir: el saldo cuadra, el orden no
+    assert etiquetas_rotas("[/color]a[color=#fff]") == {"color"}
+    assert etiquetas_rotas("{[b]a | b}[/b]") == {"b"}
+    assert etiquetas_rotas("[i]{a | b}[/i] [u]c[/u]") == set()
+    datos = [("[b]A[/b]", "[b]A"),                    # negrita sin cerrar
+             ("{A | B}", "{A | B"),                    # llave sin cerrar
+             ("[color=x]A", "[color=x]A"),             # el inglés ya viene así
+             ("[u]A[/u] {B | C}", "[u]A[/u] {B | C}")]
+    avisos = revisar(datos)["ETIQUETAS"]
+    assert len(avisos) == 2 and "llaves" in avisos[1]
+
+
+def test_ancho_ve_el_origen_que_en_partida_se_salia(tmp_path):
+    """Los Desertores de la primera 1.0.1 se salían una palabra por abajo en
+    partida: con el presupuesto calibrado ocupan 14 renglones y avisa; con la
+    versión recortada, no."""
+    from checks import ORIGEN_FUENTE, ORIGEN_REM, ORIGEN_RENGLONES, renglones
+    img = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]"
+    c, f = "[color=#bcad8c]", "[/color]"
+    antes = (img + "Por demasiado tiempo te han arrastrado de una sangrienta batalla a otra, a merced de señores que se sientan en altas torres. Anoche, te escapaste del campamento junto con otros tres. Todavía están vestidos como soldados, pero son desertores, y la soga será su fin si se quedan aquí por demasiado tiempo.\n\n"
+             + c + "Desertores:" + f + " Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n"
+             + c + "Primeros en huir:" + f + " Tus hombres siempre son los primeros en actuar en la primera ronda del combate.[/p]")
+    despues = (img + "Demasiado tiempo te han arrastrado de una batalla sangrienta a otra al capricho de señores encerrados en altas torres. Anoche huiste del campamento con otros tres. Aún visten como soldados, pero son desertores, y la soga será su fin si se quedan aquí mucho tiempo.\n\n"
+               + c + "Desertores:" + f + " Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n"
+               + c + "Primeros en huir:" + f + " Tus hombres siempre actúan primero en la primera ronda del combate.[/p]")
+    assert renglones(antes, ORIGEN_REM, ORIGEN_FUENTE) > ORIGEN_RENGLONES
+    assert renglones(despues, ORIGEN_REM, ORIGEN_FUENTE) <= ORIGEN_RENGLONES
+
+
+def test_el_final_de_partida_solo_recorta_la_cola_de_cada_trozo():
+    """El hook del caso 39 parte el texto del final de partida y construye cada
+    trozo crudo aparte. Los párrafos de cierre empiezan por "\\n\\n{...}" y así
+    los tiene el corpus; si el hook les quita también el borde inicial, el
+    último párrafo del retiro sale en inglés. Se ejecuta la función real del
+    hook con el intérprete, y se comprueba que el corpus guarda ese borde."""
+    import subprocess
+    import pytest
+    from build_dist import CORPUS, SRC
+    from check_syntax import localiza_interprete
+
+    hooks = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es_hooks.nut").read_text(encoding="utf-8")
+    recorta = re.search(r"local recorta = function \(_s\) \{.*?\n    \};", hooks, re.S).group(0)
+    cierres = [get_field(b, "en") for b in load_blocks(CORPUS)
+               if (get_field(b, "en") or "").startswith("\n\n{You haven't gotten word from the others")]
+    assert cierres, "el corpus perdió el borde inicial del párrafo de cierre del retiro"
+
+    sq = localiza_interprete()
+    if sq is None:
+        pytest.skip("sin intérprete Squirrel disponible")
+    prueba = Path(__file__).resolve().parents[2] / "es_pack" / "build" / "prueba_recorta.nut"
+    prueba.parent.mkdir(parents=True, exist_ok=True)
+    prueba.write_text(recorta + '\nforeach (s in ["\\n\\n{A}\\n\\n", "{A}\\n\\n", "\\n\\n", "{A}"]) {\n'
+                      '    local p = recorta(s);\n    print(p[0].len() + "," + p[1].len() + ";");\n}\n',
+                      encoding="utf-8")
+    salida = subprocess.run([str(sq), str(prueba)], capture_output=True, text=True).stdout
+    assert salida == "5,2;3,2;0,2;3,0;"
+
+
+def test_las_reglas_golosas_se_emiten_detras_de_las_concretas():
+    """"<ailing:str> gains <trait:str>", sin :t, casa con cualquier "X gains Y"
+    y se adelantaba a "<bro:str> gains Deathwish" y compañía. Se reconoce como
+    golosa y el build la emite al final; las que llevan :t no se mueven."""
+    from build_dist import CORPUS, es_golosa
+    regla = '{\n        mode = "pattern"\n        en = "%s"\n        es = "%s"\n    }'
+    golosa = regla % ("<ailing:str> gains <trait:str>", "<ailing> ahora es <trait>")
+    concreta = regla % ("<bro:str> gains Deathwish", "<bro> gana Temerario")
+    con_t = regla % ("<actor:str> has <name:str>", "<actor> goza de <name:t>")
+    assert es_golosa(golosa) and not es_golosa(concreta) and not es_golosa(con_t)
+    assert sorted([golosa, concreta, con_t], key=es_golosa) == [concreta, con_t, golosa]
+    ens = [get_field(b, "en") for b in load_blocks(CORPUS) if es_golosa(b)]
+    assert "<who:str> joins the <company:str>" in ens
+    # la de "gains" ya no existe: hay una regla por cada rasgo que dan los eventos
+    todos = [get_field(b, "en") for b in load_blocks(CORPUS)]
+    assert "<ailing:str> gains <trait:str>" not in todos
+    assert "<ailing:str> gains Temerario" in todos

@@ -54,7 +54,7 @@ BUILD = REPO / "es_pack" / "build"
 GAME_VERSION = "1.5.2.3"
 # La versión del pack, semver propio desde la 1.0.0. La comparten los dos zips
 # y los dos preloads; test_build_dist impide que se separen.
-PACK_VERSION = "1.0.0"
+PACK_VERSION = "1.0.1"
 # Parte de las frases del juego que cubre el corpus, medida contra GAME_VERSION
 # con measure_coverage.py (necesita el juego instalado, así que no la mide la
 # CI). Se actualiza a mano al verificar contra una build nueva.
@@ -70,7 +70,7 @@ FECHA_FIJA = (1980, 1, 1, 0, 0, 0)
 # bloquean; con --estricto (lo que pasa la CI) el build falla si alguno sube
 # por encima de esto. Cada uno esta explicado en su chequeo de checks.py. Si
 # baja, se baja aqui en el mismo commit.
-LINEA_BASE = {"DUP_VECINO": 18, "TILDES": 2, "TOKENS": 1, "VARIANTES": 22}
+LINEA_BASE = {"DUP_VECINO": 18, "TILDES": 2, "TOKENS": 1, "VARIANTES": 19}
 
 
 def entrada_zip(arco):
@@ -196,6 +196,44 @@ def is_rule_pair(block):
     return 'mode = "pattern"' in block or bool(RULE_KEY_RE.search(block))
 
 
+CAPTURA_RE = re.compile(r"<\w+:\w+>")
+MODE_PATTERN_RE = re.compile(r'^[ \t]*mode = "pattern"\n', re.M)
+
+
+def literalizar(block):
+    """El bloque tal como se emite: un par mode="pattern" sin ninguna captura
+    sale como literal. Solo casa su cadena exacta, igual que un literal, pero
+    el runtime archiva las reglas por su primera palabra y las prueba en orden
+    de carga, así que una regla anterior con la misma clave le gana: "From
+    <f:str>" se comía "From what I've heard, %settlement%..." y el jugador leía
+    "Desde what I've heard...". Los literales se miran antes que cualquier
+    regla. El corpus no cambia: la marca la pone el extractor y volvería."""
+    if (MODE_PATTERN_RE.search(block) and not RULE_KEY_RE.search(block)
+            and not CAPTURA_RE.search(get_field(block, "en") or "")):
+        return MODE_PATTERN_RE.sub("", block, count=1)
+    return block
+
+
+GOLOSA_RE = re.compile(r"^<\w+:str>[^<]{1,16}<\w+:str>$")
+
+
+def es_golosa(block):
+    """Regla que casa con casi cualquier frase inglesa: dos :str abiertas por
+    los dos lados alrededor de un conector corto, y ninguna con :t que la haga
+    abandonar. "<ailing:str> gains <trait:str>" se comía cualquier "X gains Y"
+    que viniera detrás en el corpus: "Hackett gains Deathwish" salía «Hackett
+    ahora es Deathwish», y lo mismo con Iron Lungs, Training Experience y
+    "+3 Fatigue". Se emiten al final, para que cualquier regla más concreta de
+    la misma clave se pruebe antes; el corpus no cambia. Ir al final no basta
+    con una frase que no case nada más ("Something gains nothing" salía
+    «Something ahora es nothing»), así que esa regla se sustituyó en el
+    corpus por una por rasgo. Quedan "leaves the" y "joins the", cuyo
+    segundo hueco es el nombre de la compañía, que escribe el jugador."""
+    en, es = get_field(block, "en") or "", get_field(block, "es") or ""
+    return (is_rule_pair(block) and not RULE_KEY_RE.search(block)
+            and bool(GOLOSA_RE.match(en)) and ":t" not in es)
+
+
 def classify(block):
     en = get_field(block, "en")
     es = get_field(block, "es")
@@ -284,7 +322,7 @@ def main():
                          for d in ("scripts", "mod_battle_brothers_es")
                          for p in (SRC / d).rglob("*") if p.is_file())
 
-    emit(BUILD / pairs_rel, buckets["dist"])
+    emit(BUILD / pairs_rel, [literalizar(b) for b in sorted(buckets["dist"], key=es_golosa)])
     (BUILD / ids_rel).parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(IDS, BUILD / ids_rel)
     print("ids: %d pares por id" %

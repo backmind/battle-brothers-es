@@ -181,8 +181,10 @@ foreach (caso in [
     ["Something nobody translated and left alone", "Something nobody translated and left alone"],
     ["Something nobody translated on purpose", "Something nobody translated on purpose"],
     ["Hackett finds something nobody translated", "Hackett finds something nobody translated"],
-    ["This character has just dipped his toes into the brutal profession of arena fighting and did so without dying. So far, this character has fought in one match and won it.",
-     "This character has just dipped his toes into the brutal profession of arena fighting and did so without dying. So far, this character has fought in one match and won it."],
+    // Con " has ": el rasgo de foso de la 1.0.1 ya traduce su propio texto, así
+    // que la guardia va con una frase que no es de nadie.
+    ["This character has done something nobody translated and did so twice.",
+     "This character has done something nobody translated and did so twice."],
     [azul + "Hackett[/color] imbued " + azul + "Bors[/color]", azul + "Hackett[/color] imbuyó de poder a " + azul + "Bors[/color]"],
     [azul + "Hackett[/color] levitated " + azul + "Bors[/color] leaving them free to move", azul + "Hackett[/color] hizo levitar a " + azul + "Bors[/color], que ahora puede moverse libremente"],
     [azul + "Hackett[/color] levitated " + azul + "Bors[/color]", azul + "Hackett[/color] hizo levitar a " + azul + "Bors[/color]"],

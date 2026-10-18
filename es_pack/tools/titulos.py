@@ -84,7 +84,6 @@ EXCEPCIONES = {
     "Cascarón": "Cascarón",
     "Clavo": "Clavo",
     "Comodín": "Comodín",
-    "Cuchillo": "Cuchillo",
     "Cuervo": "Cuervo",
     "Error": "Error",
     "Escorpión": "Escorpión",
