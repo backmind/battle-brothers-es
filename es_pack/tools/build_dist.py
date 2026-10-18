@@ -44,7 +44,7 @@ BUILD = REPO / "es_pack" / "build"
 GAME_VERSION = "1.5.2.3"
 # La versión del pack, semver propio desde la 1.0.0. La comparten los dos zips
 # y los dos preloads; test_build_dist impide que se separen.
-PACK_VERSION = "1.0.0"
+PACK_VERSION = "1.0.1"
 # Parte de las frases del juego que cubre el corpus, medida contra GAME_VERSION
 # con measure_coverage.py (necesita el juego instalado, así que no la mide la
 # CI). Se actualiza a mano al verificar contra una build nueva.

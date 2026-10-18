@@ -36,7 +36,7 @@ local SONDA_CASO3 = false;
 local def = {
     ID = "mod_battle_brothers_es_hooks"
     Name = "Battle Brothers en Español (hooks)"
-    Version = "1.0.0"
+    Version = "1.0.1"
 }
 local mod = ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_rosetta >= 0.5.0");
