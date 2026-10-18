@@ -1293,22 +1293,6 @@ def test_literalizar_solo_quita_el_modo_a_los_pares_sin_capturas():
     assert literalizar(con) == con and literalizar(plural) == plural and literalizar(literal) == literal
 
 
-def test_gemelo_sin_saltos_para_los_finales_que_el_juego_concatena():
-    """El final de partida suma "\\n\\n{You haven't gotten word...}" a un texto
-    mayor y Rosetta busca el trozo sin los saltos: con la clave del extractor,
-    que los lleva, el jugador leía ese párrafo en inglés al retirarse."""
-    from build_dist import CORPUS, gemelo_sin_saltos
-    con = '    {\n        en = "\\n\\n\\x7bYou retire. | You rest.\\x7d"\n        es = "\\n\\n\\x7bTe retiras. | Descansas.\\x7d"\n    }'
-    gemelo = gemelo_sin_saltos(con)
-    assert get_field(gemelo, "en") == "{You retire. | You rest.}"
-    assert get_field(gemelo, "es") == "{Te retiras. | Descansas.}"
-    assert gemelo_sin_saltos('    {\n        en = "A"\n        es = "B"\n    }') is None
-    assert gemelo_sin_saltos('    {\n        mode = "pattern"\n        en = "\\n<a:str>"\n        es = "\\n<a>"\n    }') is None
-    ens = [get_field(g, "en") for g in map(gemelo_sin_saltos, load_blocks(CORPUS)) if g]
-    assert any(en.startswith("{You haven't gotten word from the others") for en in ens)
-    assert len(ens) == 8
-
-
 def test_literalizar_no_cambia_el_cubo_de_ningun_par_del_corpus():
     """Lo emitido cambia de forma, pero no de cubo: el recuento dist/wip/drop
     por par es el mismo que el del corpus fuente."""
@@ -1380,3 +1364,32 @@ def test_ancho_ve_el_origen_que_en_partida_se_salia(tmp_path):
                + c + "Primeros en huir:" + f + " Tus hombres siempre actúan primero en la primera ronda del combate.[/p]")
     assert renglones(antes, ORIGEN_REM, ORIGEN_FUENTE) > ORIGEN_RENGLONES
     assert renglones(despues, ORIGEN_REM, ORIGEN_FUENTE) <= ORIGEN_RENGLONES
+
+
+def test_el_final_de_partida_solo_recorta_la_cola_de_cada_trozo():
+    """El hook del caso 39 parte el texto del final de partida y construye cada
+    trozo crudo aparte. Los párrafos de cierre empiezan por "\\n\\n{...}" y así
+    los tiene el corpus; si el hook les quita también el borde inicial, el
+    último párrafo del retiro sale en inglés. Se ejecuta la función real del
+    hook con el intérprete, y se comprueba que el corpus guarda ese borde."""
+    import subprocess
+    import pytest
+    from build_dist import CORPUS, SRC
+    from check_syntax import localiza_interprete
+
+    hooks = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es_hooks.nut").read_text(encoding="utf-8")
+    recorta = re.search(r"local recorta = function \(_s\) \{.*?\n    \};", hooks, re.S).group(0)
+    cierres = [get_field(b, "en") for b in load_blocks(CORPUS)
+               if (get_field(b, "en") or "").startswith("\n\n{You haven't gotten word from the others")]
+    assert cierres, "el corpus perdió el borde inicial del párrafo de cierre del retiro"
+
+    sq = localiza_interprete()
+    if sq is None:
+        pytest.skip("sin intérprete Squirrel disponible")
+    prueba = Path(__file__).resolve().parents[2] / "es_pack" / "build" / "prueba_recorta.nut"
+    prueba.parent.mkdir(parents=True, exist_ok=True)
+    prueba.write_text(recorta + '\nforeach (s in ["\\n\\n{A}\\n\\n", "{A}\\n\\n", "\\n\\n", "{A}"]) {\n'
+                      '    local p = recorta(s);\n    print(p[0].len() + "," + p[1].len() + ";");\n}\n',
+                      encoding="utf-8")
+    salida = subprocess.run([str(sq), str(prueba)], capture_output=True, text=True).stdout
+    assert salida == "5,2;3,2;0,2;3,0;"

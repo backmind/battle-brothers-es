@@ -980,15 +980,19 @@ mod.queue(">mod_rosetta", function () {
     // del resto una vez concatenados, se marcan al salir de addBrotherEnding y
     // aquí se parte por la marca: los trozos marcados pasan intactos (ya están
     // traducidos) y cada trozo crudo se construye por separado, recortándole
-    // los espacios de la costura y devolviéndoselos después. Así cada bloque
+    // la cola de la costura y devolviéndosela después. Así cada bloque
     // llega a Rosetta como lo tiene el corpus y se traduce una sola vez, sin
     // segunda pasada sobre texto ya castellano.
+    // Solo se recorta el borde FINAL, que es lo único que el juego añade
+    // (el "\n\n" de asset_manager.nut:1724). El inicial forma parte del
+    // bloque: los ocho párrafos de cierre empiezan por "\n\n{...}", así los
+    // tiene el corpus, y quitárselo dejaba el último párrafo del retiro en
+    // inglés (QA del 18/10).
     local MARCA = format("%c", 1);
     local recorta = function (_s) {
-        local n = _s.len(), a = 0, b = n;
-        while (a < b && _s[a] <= ' ') a++;
-        while (b > a && _s[b - 1] <= ' ') b--;
-        return [_s.slice(0, a), _s.slice(a, b), _s.slice(b)];
+        local b = _s.len();
+        while (b > 0 && _s[b - 1] <= ' ') b--;
+        return [_s.slice(0, b), _s.slice(b)];
     };
     mod.hook("scripts/states/world/asset_manager", function (q) {
         q.getGameFinishData = @(__original) function (_gameWon) {
@@ -1009,7 +1013,7 @@ mod.queue(">mod_rosetta", function () {
                 local crudo = a == null ? _text.slice(i) : _text.slice(i, a);
                 if (crudo != "") {
                     local p = recorta(crudo);
-                    out += p[1] == "" ? crudo : p[0] + __original(p[1]) + p[2];
+                    out += p[0] == "" ? crudo : __original(p[0]) + p[1];
                 }
                 if (a == null) break;
                 local b = _text.find(MARCA, a + 1);
