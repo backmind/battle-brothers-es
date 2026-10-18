@@ -191,6 +191,20 @@ def literalizar(block):
     return block
 
 
+SALTOS_INICIALES_RE = re.compile(r'^([ \t]*(?:en|es) = ")(?:\\n)+', re.M)
+
+
+def gemelo_sin_saltos(block):
+    """Copia del literal sin los saltos de línea iniciales, o None. El final
+    de partida suma "\\n\\n{...}" a un texto mayor (asset_manager.nut) y
+    Rosetta busca ese trozo sin los saltos, así que la clave del extractor,
+    que los lleva, nunca casa. Se emiten las dos."""
+    en, es = get_field(block, "en") or "", get_field(block, "es") or ""
+    if is_rule_pair(block) or not (en.startswith("\n") and es.startswith("\n")):
+        return None
+    return SALTOS_INICIALES_RE.sub(r"\1", block)
+
+
 def classify(block):
     en = get_field(block, "en")
     es = get_field(block, "es")
@@ -276,7 +290,8 @@ def main():
     scripts_rel = sorted(p.relative_to(SRC)
                          for p in (SRC / "scripts").rglob("*") if p.is_file())
 
-    emit(BUILD / pairs_rel, [literalizar(b) for b in buckets["dist"]])
+    gemelos = [g for g in map(gemelo_sin_saltos, buckets["dist"]) if g]
+    emit(BUILD / pairs_rel, [literalizar(b) for b in buckets["dist"]] + gemelos)
     (BUILD / ids_rel).parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(IDS, BUILD / ids_rel)
     print("ids: %d pares por id" %

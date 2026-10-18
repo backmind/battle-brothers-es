@@ -1293,6 +1293,22 @@ def test_literalizar_solo_quita_el_modo_a_los_pares_sin_capturas():
     assert literalizar(con) == con and literalizar(plural) == plural and literalizar(literal) == literal
 
 
+def test_gemelo_sin_saltos_para_los_finales_que_el_juego_concatena():
+    """El final de partida suma "\\n\\n{You haven't gotten word...}" a un texto
+    mayor y Rosetta busca el trozo sin los saltos: con la clave del extractor,
+    que los lleva, el jugador leía ese párrafo en inglés al retirarse."""
+    from build_dist import CORPUS, gemelo_sin_saltos
+    con = '    {\n        en = "\\n\\n\\x7bYou retire. | You rest.\\x7d"\n        es = "\\n\\n\\x7bTe retiras. | Descansas.\\x7d"\n    }'
+    gemelo = gemelo_sin_saltos(con)
+    assert get_field(gemelo, "en") == "{You retire. | You rest.}"
+    assert get_field(gemelo, "es") == "{Te retiras. | Descansas.}"
+    assert gemelo_sin_saltos('    {\n        en = "A"\n        es = "B"\n    }') is None
+    assert gemelo_sin_saltos('    {\n        mode = "pattern"\n        en = "\\n<a:str>"\n        es = "\\n<a>"\n    }') is None
+    ens = [get_field(g, "en") for g in map(gemelo_sin_saltos, load_blocks(CORPUS)) if g]
+    assert any(en.startswith("{You haven't gotten word from the others") for en in ens)
+    assert len(ens) == 8
+
+
 def test_literalizar_no_cambia_el_cubo_de_ningun_par_del_corpus():
     """Lo emitido cambia de forma, pero no de cubo: el recuento dist/wip/drop
     por par es el mismo que el del corpus fuente."""
