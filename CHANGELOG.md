@@ -4,13 +4,15 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 
 ## [1.0.1] - sin publicar
 
-- **Botones que no cabían.** Los de elegir juramento o ambición se cortaban por los dos lados, porque los botones de evento no parten línea y el castellano había perdido el salto de línea del inglés. Recuperan el salto y se condensan hasta caber los 37 que se pasaban, junto con 18 opciones de evento y contrato y 6 descripciones de origen de la nueva partida que se salían de su columna.
+- **Botones que no cabían.** Los de elegir juramento o ambición se cortaban por los dos lados, porque los botones de evento no parten línea y el castellano había perdido el salto de línea del inglés. Recuperan el salto y se condensan hasta caber, dejando aire al icono, junto con 18 opciones de evento y contrato y las descripciones de origen de la nueva partida que se salían de su columna o quedaban a ras (Cazahombres, Juramentados, Desertores, Cazadores de bestias y otras).
+- **Un «[color]» suelto en la presentación de algunos contratos y eventos** (buscar un lugar, el asalto con ariete, los desertores sobornados, el juglar): el castellano había perdido el cierre de un bloque de diálogo.
+- **«Cazahombres»** en toda la narrativa, como el origen y el trasfondo.
 - **Dos rumores de taberna salían a medias** («Desde what I've heard...»): una regla de otro texto se les adelantaba.
 - **«Habilidad cuerpo a cuerpo»** en el rótulo del atributo, que decía «Habilidad a cuerpo a cuerpo».
 - **Doce órdenes en vosotros** («Decidles», «Degolladlos») pasan a ustedes, como el resto del texto.
 - **Hedge Knight es siempre «caballero errante»**; en tres eventos y en el origen Lobo solitario decía «caballero andante».
 - Los textos fijos marcados como patrón se instalan como texto literal, para que ninguna regla se les adelante.
-- Un chequeo nuevo, `ANCHO`, mide con la fuente del juego los botones de ambición y las descripciones de origen, para que no vuelvan a salirse.
+- Dos chequeos nuevos: `ANCHO` mide con la fuente del juego, calibrada en partida, los botones de ambición y las descripciones de origen; `HABLA` avisa de las ramas de diálogo que dejan un color abierto o cerrado de más.
 
 ## [1.0.0] - 2026-10-17
 
