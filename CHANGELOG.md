@@ -2,6 +2,10 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
+## [4.0.0] - 2026-10-18
+
+El mismo contenido que la 1.0.1, con la numeración nueva. La traducción pasa a publicarse también en la página de Nexus de la traducción anterior, que llegó a la 3.0.4, así que el pack continúa su numeración: la 4 es el cambio de base a Rosetta. Las 1.0.0 y 1.0.1 fueron las dos primeras versiones de este repositorio.
+
 ## [1.0.1] - 2026-10-18
 
 - **Botones que no cabían.** Los de elegir juramento o ambición se cortaban por los dos lados, porque los botones de evento no parten línea y el castellano había perdido el salto de línea del inglés. Recuperan el salto y se condensan hasta caber, dejando aire al icono, junto con 18 opciones de evento y contrato y las descripciones de origen de la nueva partida que se salían de su columna o quedaban a ras (Cazahombres, Juramentados, Desertores, Cazadores de bestias y otras).
@@ -29,5 +33,6 @@ Primera versión publicada. Verificada contra Battle Brothers 1.5.2.3 con todas 
 - **La pantalla de ajustes de MSU en español**, con una página propia del pack: versión, estado de verificación, créditos y enlaces.
 - **Seis pasadas de verificación en partida**, con el registro del juego revisado en cada una.
 
+[4.0.0]: https://github.com/backmind/battle-brothers-es/releases/tag/4.0.0
 [1.0.1]: https://github.com/backmind/battle-brothers-es/releases/tag/1.0.1
 [1.0.0]: https://github.com/backmind/battle-brothers-es/releases/tag/1.0.0
