@@ -1802,13 +1802,13 @@ local pairs = [
         // this.m.OathBoonText = "Your men have [color=" + this.Const.UI.Color.PositiveValue + "]+15[/color] Resolve, [color=" + this.Const.UI.Color.PositiveValue + "]+10[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.PositiveValue + "]+5[/color] Melee and Ranged Defense when fighting orcs or goblins.";
         mode = "pattern"
         en = "Your men have <v:int_tag> Resolve, <v2:int_tag> Melee and Ranged Skill, and <v3:int_tag> Melee and Ranged Defense when fighting orcs or goblins."
-        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo a distancia cuando luchen contra orcos o goblins."
+        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo y a distancia cuando luchen contra orcos o goblins."
     }
     {
         // this.m.OathBurdenText = "Your men have [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] Resolve, [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Skill, and [color=" + this.Const.UI.Color.NegativeValue + "]-5[/color] Melee and Ranged Defense when fighting any other foe.";
         mode = "pattern"
         en = "Your men have <v:int_tag> Resolve, <v2:int_tag> Melee and Ranged Skill, and <v3:int_tag> Melee and Ranged Defense when fighting any other foe."
-        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo a distancia cuando luchen contra cualquier otro oponente."
+        es = "Tus hombres tendrán <v> Resolución, <v2> Habilidad cuerpo a cuerpo y a distancia, y <v3> Defensa cuerpo a cuerpo y a distancia cuando luchen contra cualquier otro oponente."
     }
     {
         // return "You gain extra Renown for slaying greenskins (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
@@ -71533,7 +71533,7 @@ local pairs = [
     }
     {
         en = "Melee Skill"
-        es = "Habilidad a cuerpo a cuerpo"
+        es = "Habilidad cuerpo a cuerpo"
     }
     {
         en = "Determines the base probability of hitting a target with a melee attack, such as with swords and spears. Can be increased as the character gains experience."
