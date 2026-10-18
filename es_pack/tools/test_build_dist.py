@@ -1279,3 +1279,100 @@ def test_sonda_del_enganche_con_legends(tmp_path):
                        capture_output=True, env=env)
     salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
     assert "FALLOS: 0" in salida, salida
+
+
+def _stdlib_descomprimido(destino):
+    """stdlib para la sonda con el runtime real: STDLIB_DIR, o el stdlib.zip de la
+    carpeta data del juego (DATA_DIR) descomprimido en un temporal."""
+    import zipfile
+
+    from measure_coverage import _valor_env
+
+    v = _valor_env("STDLIB_DIR")
+    if v and Path(v).is_dir():
+        return Path(v)
+    data = _valor_env("DATA_DIR")
+    z = Path(data) / "stdlib.zip" if data else None
+    if z is None or not z.is_file():
+        return None
+    with zipfile.ZipFile(z) as f:
+        f.extractall(destino)
+    return destino
+
+
+def test_sonda_de_los_textos_que_monta_legends(tmp_path):
+    """Corre sq_probe_legends_textos.nut con el runtime real de Rosetta, los pares
+    que irían al zip y el código real de Legends: las descripciones de ventajas y
+    de runas salen con su par (el enganche de ::Legends.tooltip), la línea de
+    grupos sale en castellano y una sola vez, también al volver al menú
+    principal, los mensajes compuestos de las tiendas casan, y las reglas que
+    casaban con cualquier frase ya no lo hacen. Necesita la fuente de Legends,
+    un intérprete Squirrel y stdlib; sin ellos, se salta."""
+    import os
+    import re
+    import subprocess
+
+    import pytest
+
+    from build_dist import IDS, REPO, cabecera, corpus_del_pack, emit
+    from check_syntax import localiza_interprete
+
+    sq = localiza_interprete()
+    legends = REPO / "es_pack" / "legends" / "fuente"
+    if sq is None:
+        pytest.skip("sin interprete Squirrel disponible")
+    if not (legends / "mod_legends" / "afterHooks" / "perk_tooltips.nut").is_file():
+        pytest.skip("sin la fuente de Legends (lotes.py extraer)")
+    stdlib = _stdlib_descomprimido(tmp_path / "stdlib")
+    if stdlib is None:
+        pytest.skip("sin stdlib (STDLIB_DIR o DATA_DIR en .env)")
+    packs = []
+    for c in corpus_del_pack():
+        p = tmp_path / c["ruta"].name
+        emit(p, [b for b in load_blocks(c["ruta"]) if classify(b) == "dist"], cabecera(c["id"], c["version"]))
+        packs.append(p)
+    packs.insert(1, IDS)
+    env = dict(os.environ, ROSETTA_DIR=str(REPO), STDLIB_DIR=str(stdlib), LEGENDS_DIR=str(legends),
+               SONDA_PACKS=";".join(str(p) for p in packs))
+    r = subprocess.run([str(sq), str(REPO / "es_pack" / "tools" / "sq_probe_legends_textos.nut")],
+                       capture_output=True, env=env)
+    salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
+    assert "FALLOS: 0" in salida, salida[-6000:]
+    for que in ("ventajas", "runas"):
+        bien, total = map(int, re.search(que + r" en castellano: (\d+) / (\d+)", salida).groups())
+        assert bien == total > 30, salida[-6000:]
+
+
+def test_las_sumas_estaticas_de_legends_estan_enteras_en_el_corpus():
+    """Las descripciones de las tiendas del campamento y dos intros de eventos se
+    montan sumando literales; Rosetta ve la suma, así que el corpus tiene que
+    tenerla entera. Si Legends cambia un trozo, la suma del corpus deja de casar
+    y esto lo dice. Necesita la fuente de Legends; sin ella, se salta."""
+    import ast
+    import re
+
+    import pytest
+
+    from build_dist import REPO, is_rule_pair
+
+    fuente = REPO / "es_pack" / "legends" / "fuente" / "scripts"
+    if not fuente.is_dir():
+        pytest.skip("sin la fuente de Legends (lotes.py extraer)")
+    lit = r'"((?:[^"\\]|\\.)*)"'
+
+    def cadena(s):
+        return ast.literal_eval('"' + s.replace("\\'", "'") + '"')
+
+    literales = {get_field(b, "en") for b in load_blocks(REPO / "es_pack" / "corpus" / "mod_legends_es.nut")
+                 if not is_rule_pair(b)}
+    sumas = {}
+    for t in ["commander", "crafting", "enchanter", "fletcher", "gatherer", "healer", "rest", "scout", "training", "workshop"]:
+        texto = (fuente / "entity/world/camp/buildings" / (t + "_building.nut")).read_text(encoding="utf-8")
+        cuerpo = re.search(r"function getDescription\(\)\s*\{(.*?)return desc;", texto, re.S).group(1)
+        sumas[t] = "".join(cadena(m.group(1)) for m in re.finditer(r"desc\s*(?:\+=|=\s*desc\s*\+)\s*" + lit, cuerpo))
+    for rel, img, nombre, n in [("legend_escaped_slaves_intro_event.nut", "event_161", "introText", 5),
+                                ("escaped_slaves/legend_slave_recovers_event.nut", "event_05", "EventText", 6)]:
+        texto = (fuente / "events/events/legends/scenario" / rel).read_text(encoding="utf-8")
+        v = {m.group(1): cadena(m.group(2)) for m in re.finditer(r"local (\w+) = " + lit + ";", texto)}
+        sumas[rel] = "[img]gfx/ui/events/%s.png[/img]" % img + "".join(v[nombre + str(i)] for i in range(1, n + 1))
+    assert [k for k, s in sumas.items() if s not in literales] == []

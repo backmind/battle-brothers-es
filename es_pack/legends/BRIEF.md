@@ -105,5 +105,5 @@ La guía de capturas y tipos es la de Suor: [AGENTS_TRANSLATING.md](https://gith
 
 - Los ficheros `.js` de la interfaz de Legends: el extractor solo lee `.nut`.
 - 19 cadenas sueltas en 8 ficheros que el extractor de Rosetta 0.5.0 no sabe leer.
-- Las descripciones de perks pasan en partida por `::Legends.tooltip()`, que sustituye marcadores como `%passive%` y les añade texto; hay que comprobar en el juego que el par traducido llega a aplicarse.
+- Las descripciones de ventajas y de runas pasan por `::Legends.tooltip()`, que las recorta antes de sustituir marcadores como `%passive%`; el enganche (`src/mod_battle_brothers_es/legends.nut`) traduce el texto crudo antes del recorte, así que el par lleva los saltos del original. Falta verlo en partida.
 - Traducir nombres de objetos, trasfondos o lugares como literal global puede romper mecánicas de Legends que comparan nombres (lo ha documentado la traducción al japonés, `SUSANO-OOO/battle-brothers-jp`). Antes de fusionar lotes de nombres hay que comprobar cuáles admiten traducción global.
