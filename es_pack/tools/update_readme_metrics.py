@@ -66,7 +66,7 @@ OBJETIVOS = [
                    "https://www.gog.com/game/battle_brothers"),
     },
     {
-        "nombre": "El mod Legends",
+        "nombre": "Legends",
         "badge": "Legends",
         "estado": "Beta",
         "verificada": "Legends " + build_dist.LEGENDS_VERSION,

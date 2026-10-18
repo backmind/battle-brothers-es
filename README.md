@@ -9,7 +9,7 @@
 
 [![Verificada en Legends 19.4.22](https://img.shields.io/badge/verificada%20en-Legends%2019.4.22-2e7d32)](#qué-se-traduce)
 [![Última versión de Legends](https://img.shields.io/github/v/release/Battle-Brothers-Legends/Legends-public?label=%C3%BAltima%20de%20Legends&color=1565c0)](https://github.com/Battle-Brothers-Legends/Legends-public/releases/latest)
-[![El mod Legends: 99 %](https://img.shields.io/badge/Legends-99%20%25-2e7d32)](#qué-se-traduce)
+[![Legends: 99 %](https://img.shields.io/badge/Legends-99%20%25-2e7d32)](#qué-se-traduce)
 <!-- INSIGNIAS:FIN -->
 
 [![CI](https://github.com/backmind/battle-brothers-es/actions/workflows/ci.yml/badge.svg)](https://github.com/backmind/battle-brothers-es/actions/workflows/ci.yml)
@@ -35,7 +35,7 @@ Este pack toma aquel texto, lo revisa entero, establece una línea editorial hom
 | Qué | Estado | Verificada en | Frases cubiertas |
 |---|---|---|---|
 | Battle Brothers y sus expansiones | Disponible | Battle Brothers 1.5.2.3 | 100 % |
-| El mod Legends | Beta | Legends 19.4.22 | 99 % |
+| Legends | Beta | Legends 19.4.22 | 99 % |
 <!-- OBJETIVOS:FIN -->
 
 Las traducciones de mods se irán sumando a esta tabla, cada una con su cobertura. La cobertura se mide contra el juego instalado con `measure_coverage.py`: cuenta las frases que el jugador puede leer y descarta las claves internas y las trazas de depuración. Los restos que el extractor toma por texto sin serlo (condiciones de código, trozos de frases que en partida llegan enteras, etcétera) están revisados uno a uno y listados en la propia herramienta.
