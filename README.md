@@ -17,7 +17,7 @@ Traducción al español de Battle Brothers, de todas sus expansiones y, poco a p
 
 ![Negociación de un contrato, en español](es_pack/media/contrato.png)
 
-[Capturas](docs/CAPTURAS.md) · [Historia del proyecto](docs/HISTORIA.md) · [Problemas conocidos](es_pack/corpus/KNOWN_ISSUES.md) · [Colaborar](CONTRIBUTING.md)
+[Capturas](docs/CAPTURAS.md) · [Historia del proyecto](docs/HISTORIA.md) · [Problemas conocidos](es_pack/corpus/KNOWN_ISSUES.md) · [Hoja de ruta](ROADMAP.md) · [Colaborar](CONTRIBUTING.md)
 
 ## Por qué existe
 
