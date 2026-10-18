@@ -191,6 +191,22 @@ def literalizar(block):
     return block
 
 
+GOLOSA_RE = re.compile(r"^<\w+:str>[^<]{1,16}<\w+:str>$")
+
+
+def es_golosa(block):
+    """Regla que casa con casi cualquier frase inglesa: dos :str abiertas por
+    los dos lados alrededor de un conector corto, y ninguna con :t que la haga
+    abandonar. "<ailing:str> gains <trait:str>" se comía cualquier "X gains Y"
+    que viniera detrás en el corpus: "Hackett gains Deathwish" salía «Hackett
+    ahora es Deathwish», y lo mismo con Iron Lungs, Training Experience y
+    "+3 Fatigue". Se emiten al final, para que cualquier regla más concreta de
+    la misma clave se pruebe antes; el corpus no cambia."""
+    en, es = get_field(block, "en") or "", get_field(block, "es") or ""
+    return (is_rule_pair(block) and not RULE_KEY_RE.search(block)
+            and bool(GOLOSA_RE.match(en)) and ":t" not in es)
+
+
 def classify(block):
     en = get_field(block, "en")
     es = get_field(block, "es")
@@ -276,7 +292,7 @@ def main():
     scripts_rel = sorted(p.relative_to(SRC)
                          for p in (SRC / "scripts").rglob("*") if p.is_file())
 
-    emit(BUILD / pairs_rel, [literalizar(b) for b in buckets["dist"]])
+    emit(BUILD / pairs_rel, [literalizar(b) for b in sorted(buckets["dist"], key=es_golosa)])
     (BUILD / ids_rel).parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(IDS, BUILD / ids_rel)
     print("ids: %d pares por id" %

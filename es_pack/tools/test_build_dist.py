@@ -1393,3 +1393,18 @@ def test_el_final_de_partida_solo_recorta_la_cola_de_cada_trozo():
                       encoding="utf-8")
     salida = subprocess.run([str(sq), str(prueba)], capture_output=True, text=True).stdout
     assert salida == "5,2;3,2;0,2;3,0;"
+
+
+def test_las_reglas_golosas_se_emiten_detras_de_las_concretas():
+    """"<ailing:str> gains <trait:str>", sin :t, casa con cualquier "X gains Y"
+    y se adelantaba a "<bro:str> gains Deathwish" y compañía. Se reconoce como
+    golosa y el build la emite al final; las que llevan :t no se mueven."""
+    from build_dist import CORPUS, es_golosa
+    regla = '{\n        mode = "pattern"\n        en = "%s"\n        es = "%s"\n    }'
+    golosa = regla % ("<ailing:str> gains <trait:str>", "<ailing> ahora es <trait>")
+    concreta = regla % ("<bro:str> gains Deathwish", "<bro> gana Temerario")
+    con_t = regla % ("<actor:str> has <name:str>", "<actor> goza de <name:t>")
+    assert es_golosa(golosa) and not es_golosa(concreta) and not es_golosa(con_t)
+    assert sorted([golosa, concreta, con_t], key=es_golosa) == [concreta, con_t, golosa]
+    ens = [get_field(b, "en") for b in load_blocks(CORPUS) if es_golosa(b)]
+    assert "<ailing:str> gains <trait:str>" in ens
