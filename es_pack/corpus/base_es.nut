@@ -142,7 +142,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\allied_civilians_ambition.nut
     {
         en = "We need allies. Forging a bond of friendship and trust with one of the towns will\nget the company better prices, more volunteers and more steady work."
-        es = "Necesitamos aliados. Forjar un vínculo de amistad y confianza con una de las ciudades\nproporcionará a la compañía mejores precios, más voluntarios y trabajo más estable."
+        es = "Necesitamos aliados. Forjar amistad y confianza con una de las ciudades\nnos dará mejores precios, más voluntarios y trabajo más estable."
     }
     {
         en = "Get to 'Friendly' relations with a civilian faction"
@@ -169,7 +169,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\allied_nobles_ambition.nut
     {
         en = "We shall earn the trust of a noble house and become their ally. Surely they will\nshare the fruits of their well-stocked armories with good friends."
-        es = "Ganaremos la confianza de una casa noble y nos convertiremos en sus aliados. Seguramente\ncompartirán los frutos de sus bien surtidas armerías con buenos amigos."
+        es = "Ganaremos la confianza de una casa noble y seremos sus aliados. Seguro que\ncompartirán con sus buenos amigos los frutos de sus bien surtidas armerías."
     }
     {
         en = "You'll be awarded equipment unique to the noble house with which you ally"
@@ -352,7 +352,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_civilwar_ambition.nut
     {
         en = "If we can win this war for one of the noble houses, our name will be unmatched.\nLet us pick a side, bask in the glory of battle and get rich for it!"
-        es = "Si podemos ganar esta guerra para una de las casas nobles, nuestro nombre será inigualable.\n¡Elijamos un bando, deleitémonos en la gloria de la batalla y enriquezcámonos con ello!"
+        es = "Si ganamos esta guerra para una casa noble, nuestro nombre no tendrá igual.\n¡Elijamos un bando, gocemos de la gloria de la batalla y hagámonos ricos con ello!"
     }
     {
         en = "End the war between noble houses"
@@ -390,7 +390,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_goblin_location_ambition.nut
     {
         en = "Only the most daring take on goblins in larger numbers. We shall burn some\nof their fetid camps to the ground, and word of it will travel!"
-        es = "Solo los más audaces se enfrentan a goblins en grandes números. ¡Quemaremos algunos\nde sus fétidos campamentos hasta los cimientos, y se correrá la voz!"
+        es = "Solo los más audaces se enfrentan a los goblins en gran número. ¡Quemaremos\nalgunos de sus fétidos campamentos hasta los cimientos, y se correrá la voz!"
     }
     {
         en = "You'll be awarded a unique accessory that makes the wearer immune to being rooted."
@@ -458,7 +458,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_holywar_ambition.nut
     {
         en = "The fires of religious turmoil threaten to engulf the lands. Let the company be forged\nstronger than ever by its heat and flames, and earn a fortune by winning the war!"
-        es = "Los fuegos de la agitación religiosa amenazan con engullir las tierras. Que la compañía se forje\nmás fuerte que nunca con su calor y llamas, ¡y gane una fortuna ganando la guerra!"
+        es = "Las llamas de la discordia religiosa amenazan con devorar estas tierras. Que su calor\nforje la compañía más fuerte que nunca, ¡y hagamos fortuna ganando la guerra!"
     }
     {
         en = "End the war between north and south"
@@ -500,7 +500,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_mercenaries_ambition.nut
     {
         en = "The best way to prove that we are the strongest company around\nis to defeat another mercenary band in battle!"
-        es = "¡La mejor manera de demostrar que somos la compañía más fuerte de los alrededores\nes derrotar a otra banda mercenaria en batalla!"
+        es = "¡La mejor manera de demostrar que somos la compañía más fuerte de la región\nes derrotar en batalla a otra banda de mercenarios!"
     }
     {
         en = "Defeat another mercenary company"
@@ -522,7 +522,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_orc_location_ambition.nut
     {
         en = "Besting orcs in battle and burning down some of their camps would make people\nrecognize the company's ability on the battlefield. Let us do so!"
-        es = "Superar a los orcos en batalla y quemar algunos de sus campamentos haría que la gente reconociera la habilidad de la compañía en el campo de batalla. ¡Hagámoslo!"
+        es = "Vencer a los orcos y quemar algunos de sus campamentos haría que la gente\nreconociera la valía de la compañía en el campo de batalla. ¡Hagámoslo!"
     }
     {
         en = "You'll be awarded a unique accessory that makes the wearer immune to being stunned."
@@ -547,7 +547,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_undead_ambition.nut
     {
         en = "The Undead are rising all over the lands, killing and devouring at sight.\nWe need to put an end to this, or soon there will be no world as we know it left!"
-        es = "Los No-Muertos se están levantando por todas las tierras, matando y devorando a la vista.\n¡Necesitamos poner fin a esto, o pronto no quedará ningún mundo tal como lo conocemos!"
+        es = "Los No-Muertos se alzan por todas las tierras, matando y devorando cuanto ven.\n¡Hay que acabar con esto, o pronto no quedará nada del mundo que conocemos!"
     }
     {
         en = "Defeat the Undead Scourge"
@@ -568,7 +568,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_undead_location_ambition.nut
     {
         en = "The walking dead are a terrible curse upon man.\nLet us burn some of their lairs to the ground and earn the respect of all decent folk!"
-        es = "Los muertos andantes son una maldición terrible sobre el hombre.\n¡Quememos algunas de sus guaridas hasta los cimientos y ganemos el respeto de toda la gente decente!"
+        es = "Los muertos andantes son una terrible maldición para el hombre.\n¡Quememos algunas de sus guaridas y ganémonos el respeto de la gente decente!"
     }
     {
         en = "You'll be awarded a unique accessory that doubles the wearer's resolve when defending against fear and mind control effects."
@@ -614,7 +614,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_locations_ambition.nut
     {
         en = "Great explorers become men of legend. Going into the wild lands is a dangerous\nbusiness, but the tales we'll tell afterward will surely increase our renown."
-        es = "Los grandes exploradores se convierten en hombres de leyenda. Adentrarse en las tierras salvajes es un negocio\npeligroso, pero los relatos que contaremos después seguramente aumentarán nuestro renombre."
+        es = "Los grandes exploradores se vuelven leyenda. Las tierras salvajes son peligrosas,\npero las historias que contaremos después sin duda aumentarán nuestro renombre."
     }
     {
         en = "Discover hidden locations by exploring the world"
@@ -632,7 +632,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_unique_locations_ambition.nut
     {
         en = "The wilds are teeming with hidden treasures that others are not bold enough to claim.\nThis is our chance, so let us head out there and find three legendary places!"
-        es = "Lo salvaje está repleto de tesoros ocultos que otros no son suficientemente audaces para reclamar.\nEsta es nuestra oportunidad, ¡así que salgamos allí y encontremos tres lugares legendarios!"
+        es = "Las tierras salvajes rebosan de tesoros ocultos que otros no se atreven a reclamar.\nEsta es nuestra oportunidad: ¡salgamos a encontrar tres lugares legendarios!"
     }
     {
         en = "Discover legendary locations by exploring the world"
@@ -649,7 +649,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\find_and_destroy_location_ambition.nut
     {
         en = "Let us set out into the wilderness, discover the unknown, and plunder it.\nBe it a wizard's tomb, goblin camp, or aught else we may find."
-        es = "Adentrémonos en lo salvaje, descubramos lo desconocido, y saqueémoslo. \nYa sea la tumba de un mago, un campamento goblin, o cualquier otro lugar que hallemos."
+        es = "Adentrémonos en lo salvaje, descubramos lo desconocido y saqueémoslo,\nya sea la tumba de un mago, un campamento goblin o cualquier cosa que hallemos."
     }
     {
         en = "Discover a ruin or hostile camp, and destroy it"
@@ -693,7 +693,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\hammer_mastery_ambition.nut
     {
         en = "Our company is ill-prepared to fight armored opponents. We shall train two men\nto master the hammer in combat, and no knight will be safe from us."
-        es = "Nuestra compañía está mal preparada para luchar contra oponentes acorazados. Entrenaremos a dos hombres\npara dominar el martillo en combate, y ningún caballero estará a salvo de nosotros."
+        es = "Nuestra compañía no está preparada para luchar contra oponentes acorazados.\nEntrenaremos a dos hombres en el martillo, y ningún caballero estará a salvo."
     }
     {
         en = "Have men with the hammer mastery perk"
@@ -881,7 +881,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_talent_ambition.nut
     {
         en = "We need real talent to bolster our ranks further.\nWe'll recruit the most talented we can find and mold him into a god of war!"
-        es = "Necesitamos talento real para reforzar nuestras filas aún más.\n¡Reclutaremos al más talentoso que podamos encontrar y lo moldearemos en un dios de la guerra!"
+        es = "Necesitamos verdadero talento para reforzar aún más nuestras filas.\n¡Reclutaremos al más talentoso que haya y haremos de él un dios de la guerra!"
     }
     {
         en = "Have a character with three times three talent stars"
@@ -943,7 +943,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_z_crowns_ambition.nut
     {
         en = "Crowns mean power and influence, and we can never have enough of either.\nLet us gather 50,000 crowns and earn our seat amongst noblemen and kings!"
-        es = "Las coronas significan poder e influencia, y nunca podemos tener suficiente de ninguna.\n¡Reunamos 50.000 coronas y ganemos nuestro asiento entre nobles y reyes!"
+        es = "Las coronas son poder e influencia, y nunca se tiene suficiente de ninguno de los dos.\n¡Reunamos 50.000 coronas y ganémonos un sitio entre nobles y reyes!"
     }
     {
         en = "Have at least 50,000 crowns."
@@ -985,7 +985,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\hire_follower_ambition.nut
     {
         en = "There are cooks, scouts and many more who can support us off the battlefield.\nWe'll hire one that suits our needs best!"
-        es = "Existen cocineros, exploradores y muchos más que pueden apoyarnos fuera del campo de batalla.\n¡Contrataremos al que más nos convenga!"
+        es = "Cocineros, exploradores y muchos otros pueden ayudarnos fuera del combate.\n¡Contrataremos al que mejor se ajuste a nuestras necesidades!"
     }
     {
         en = "Hire someone for your retinue of non-combat followers"
@@ -1006,7 +1006,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\make_nobles_aware_ambition.nut
     {
         en = "We need to catch the eye of one of the noble houses for more profitable work. They\nplay their own dangerous game, but what does it matter as long as the pay is good?"
-        es = "Necesitamos llamar la atención de una de las casas nobles para trabajo más lucrativo.\nJuegan su propio juego peligroso, pero ¿qué importa mientras la paga sea buena?"
+        es = "Hay que llamar la atención de una casa noble para lograr trabajo más lucrativo.\nJuegan su propio juego peligroso, pero ¿qué importa mientras la paga sea buena?"
     }
     {
         en = "You'll unlock entirely new contracts issued by nobles which pay better."
@@ -1035,7 +1035,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\named_item_ambition.nut
     {
         en = "A respectable company is recognized by their equipment. We should head out\nand claim either a famed weapon, shield, armor or helmet to increase our renown."
-        es = "Una compañía respetable se reconoce por su equipo. Deberíamos salir\ny reclamar un arma, escudo, armadura o yelmo afamado para aumentar nuestro renombre."
+        es = "Una compañía respetable se reconoce por su equipo. Deberíamos salir\na buscar un arma, escudo, armadura o yelmo célebre para ganar renombre."
     }
     {
         en = "Gain an additional 150 renown for your victory."
@@ -1066,7 +1066,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\named_item_set_ambition.nut
     {
         en = "A famed company is recognized by their equipment. We should head out\nand claim a prestigious weapon, shield, armor and helmet to increase our renown."
-        es = "Una compañía famosa se reconoce por su equipo. Deberíamos salir\ny reclamar un arma, escudo, armadura y yelmo prestigiosos para aumentar nuestro renombre."
+        es = "Una compañía famosa se reconoce por su equipo. Deberíamos salir a buscar\narma, escudo, armadura y yelmo de prestigio que aumenten nuestro renombre."
     }
     {
         en = "Have a famed weapon, shield, armor and helmet"
@@ -1117,7 +1117,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\ranged_mastery_ambition.nut
     {
         en = "The company lacks competent archers, limiting our tactical options.\nWe shall train three men to master bow or crossbow and be deadly from afar!"
-        es = "A la compañía le faltan arqueros competentes, lo que limita nuestras opciones tácticas.\n¡Entrenaremos a tres hombres para dominar el arco o la ballesta y ser letales desde la distancia!"
+        es = "A la compañía le faltan arqueros competentes, y eso limita nuestras tácticas.\n¡Entrenaremos a tres hombres en el arco o la ballesta para ser letales a distancia!"
     }
     {
         en = "Have men with the bow or crossbow mastery perk"
@@ -1185,7 +1185,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\sergeant_ambition.nut
     {
         en = "We fight well, but we need to be better organized in case things get dire.\nI shall name a sergeant to rally you on the battlefield."
-        es = "Luchamos bien, pero necesitamos estar mejor organizados en caso de que las cosas se pongan feas.Nombraré a un sargento para que los reúna en el campo de batalla."
+        es = "Luchamos bien, pero hay que organizarse mejor por si las cosas se ponen feas.\nNombraré a un sargento para que los reúna en el campo de batalla."
     }
     {
         en = "You'll be awarded a unique accessory that grants the wearer additional resolve."
@@ -1224,7 +1224,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\taxidermist_ambition.nut
     {
         en = "Nothing commands respect as a trophy of a giant beast of the frozen wastes.\nLet's go hunt and get the taxidermist some work!"
-        es = "Nada impone tanto respeto como el trofeo de una bestia gigante de los yermos helados.\n¡Vayamos de caza y consigamos trabajo para el taxidermista!"
+        es = "Nada impone más respeto que el trofeo de una bestia gigante de los yermos helados.\n¡Vayamos de caza y démosle trabajo al taxidermista!"
     }
     {
         en = "Craft items at the taxidermist"
@@ -1336,7 +1336,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\weapon_mastery_ambition.nut
     {
         en = "Imagine the trail of terror we could blaze if your skills matched your bravery.\nWe shall train five men to master their weapons so that they may act as a vanguard!"
-        es = "Imagina el rastro de terror que podríamos dejar si tus habilidades igualaran tu valentía.\n¡Entrenaremos a cinco hombres para dominar sus armas y que actúen como vanguardia!"
+        es = "Imagina el rastro de terror que dejaríamos si tu destreza igualara tu valentía.\n¡Entrenaremos a cinco hombres en sus armas para que actúen como vanguardia!"
     }
     {
         en = "Have men with a weapon mastery perk each"
@@ -1359,7 +1359,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_against_x_ambition.nut
     {
         en = "Let us set aside skirmishes for now and seek to defeat a group of at least a dozen\nopponents. That is how our name will become known throughout the land!"
-        es = "Dejemos de lado las escaramuzas por ahora y tratemos de derrotar a un grupo de al menos doce oponentes. ¡Así es como nuestro nombre será conocido en todos lados!"
+        es = "Dejemos las escaramuzas y tratemos de derrotar a un grupo de al menos doce\noponentes. ¡Así es como nuestro nombre se conocerá en todas partes!"
     }
     {
         en = "Win a battle against 12 or more enemies"
@@ -1384,7 +1384,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_against_y_ambition.nut
     {
         en = "We achieved some renown, but now you can see real fame on the horizon.\nLet us defeat a formidable force of two dozen opponents in battle!"
-        es = "Hemos alcanzado cierto renombre, pero ahora puedes ver la verdadera fama en el horizonte.\n¡Derrotemos a una fuerza formidable de dos docenas de oponentes en batalla!"
+        es = "Hemos ganado algo de renombre, pero ya se ve la verdadera fama en el horizonte.\n¡Derrotemos en batalla a una fuerza formidable de dos docenas de oponentes!"
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]After the fight, %lowesthp_brother% sits gazing at his feet, looking completely knackered, as do the others. %SPEECH_ON%That was the battle I was born to fight! Now if I die, it will be alongside the bravest and deadliest bunch of men I've ever known, and I'm proud to call them my brothers!%SPEECH_OFF%This is met with a chorus of weary assent all round.%SPEECH_ON%Peasants talk of sweat, blood and tears but the men of the %companyname% have walked through fire and prevailed!%SPEECH_OFF%Three times the men shout the company name, tired but victorious.\n\nIn the days to come you find that wherever civilized people gather, they point you out and whisper, whether in fear or admiration you do not know. Everywhere you go, word of your mighty victory has traveled the land before you."
@@ -1440,7 +1440,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_camaraderie_ambition.nut
     {
         en = "No single Oathtaker can face all the evils of the world alone.\nLet us take an Oath of Camaraderie, lest we lose sight of our true allies!"
-        es = "Ningún Juramentado puede enfrentarse solo a todos los males del mundo. ¡Hagamos un Juramento de Camaradería para no perder de vista a nuestros verdaderos aliados!"
+        es = "Ningún Juramentado puede enfrentarse solo a todos los males del mundo.\n¡Hagamos un Juramento de Camaradería y no perdamos de vista a nuestros aliados!"
     }
     {
         en = "Young Anselm believed that, on occasion, it was right to bring as many to a battle as one could muster, even if the great throngs did threaten the chain of command. Indeed, \x22All men deserve to stand by their brothers.\x22"
@@ -1477,7 +1477,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_distinction_ambition.nut
     {
         en = "Truly distinguished are those who can follow Young Anselm's teachings.\nLet us take an Oath of Distinction and prove ourselves worthy to walk in his path!"
-        es = "Verdaderamente distinguidos son aquellos que pueden seguir las enseñanzas del Joven Anselm. ¡Hagamos un Juramento de Distinción y demostremos que somos dignos de seguir su camino!"
+        es = "Verdaderamente distinguidos son quienes siguen las enseñanzas del Joven Anselm.\n¡Hagamos un Juramento de Distinción y demostremos ser dignos de su senda!"
     }
     {
         en = "Young Anselm frequently pursued solitude, sometimes even on the battlefield. \x22Prove yourself worthy in such a manner that not even the old gods may claim their eyes have erred in what glories they have seen.\x22"
@@ -1510,7 +1510,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_dominion_ambition.nut
     {
         en = "Beasts have always threatened civilization.\nLet us take an Oath of Dominion and stake our claim against the tides of nature!"
-        es = "Las bestias siempre han amenazado a la civilización. ¡Hagamos un Juramento de Dominio e impongamos nuestro reclamo contra las mareas de la naturaleza!"
+        es = "Las bestias siempre han amenazado a la civilización.\n¡Hagamos un Juramento de Dominio y reclamemos lo nuestro frente a la naturaleza!"
     }
     {
         en = "\x22We are from the beasts, but the beasts wish to have us back. Distance oneself from nature's primitiveness, prove your worth over Her such that your humanity be held in the grip of your own hands and seen through thine own eyes.\x22 - Young Anselm"
@@ -1545,7 +1545,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_endurance_ambition.nut
     {
         en = "To uphold Young Anselm's Oaths is to take on a duty without end.\nLet us take an Oath of Endurance and prepare ourselves for the tasks to come!"
-        es = "Cumplir los Juramentos del Joven Anselm es asumir un deber sin fin. ¡Hagamos un Juramento de Resistencia y preparémonos para las tareas venideras!"
+        es = "Cumplir los Juramentos del Joven Anselm es asumir un deber sin fin.\n¡Hagamos un Juramento de Resistencia y preparémonos para las tareas venideras!"
     }
     {
         en = "\x22Thrice times thrice to climb, endurance they did find.\x22 It is said that when Young Anselm ascended the highest peak of the Higgarian mountain range, he took nine of his worthiest followers with him."
@@ -1580,7 +1580,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_fortification_ambition.nut
     {
         en = "Evil-doers skulk and hide away from the walls of the just.\nLet us take an Oath of Fortification and bring those walls to them!"
-        es = "Los malhechores se ocultan y se esconden lejos de las murallas de los justos. ¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!"
+        es = "Los malhechores acechan y se esconden lejos de las murallas de los justos.\n¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!"
     }
     {
         en = "\x22Trust your shields as you would put faith in the old gods, for the contribution of the trees and the earth shall not be wasted on the nervous hinge of a coward's arm.\x22 - Young Anselm"
@@ -1613,7 +1613,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_honor_ambition.nut
     {
         en = "As warriors, we must never lose sight of true honor.\nLet us take an Oath of Honor and meet our opponents in melee!"
-        es = "Como guerreros, nunca debemos perder de vista el verdadero honor. ¡Hagamos un Juramento de Honor y enfrentemos a nuestros oponentes cara a cara!"
+        es = "Como guerreros, nunca debemos perder de vista el verdadero honor.\n¡Hagamos un Juramento de Honor y enfrentemos a nuestros oponentes cara a cara!"
     }
     {
         en = "\x22While the arrow is nocked, the mind turns. While the sword swings, all is where it should be. Set aside the craft of archery and go unto the melee, trusting that what your steel seeks, it shall find.\x22 - Young Anselm"
@@ -1644,7 +1644,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_humility_ambition.nut
     {
         en = "Arrogance is an insidious killer.\nLet us take an Oath of Humility and reflect on our shortcomings for a time."
-        es = "La arrogancia es un asesino insidioso. Hagamos un Juramento de Humildad y reflexionemos sobre nuestros errores por un tiempo."
+        es = "La arrogancia es un asesino insidioso.\nHagamos un Juramento de Humildad y reflexionemos sobre nuestras faltas."
     }
     {
         en = "\x22As you are indeed men in pursuit of power, always listen to the weak...for the weak know the strong better than you do, and in turn they shall know you better than you know yourself.\x22 - Young Anselm"
@@ -1679,7 +1679,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_righteousness_ambition.nut
     {
         en = "Few aberrations are as repugnant as the undead.\nLet us take an Oath of Righteousness and strike down these mockeries of life!"
-        es = "Pocas aberraciones son tan repugnantes como los no-muertos. ¡Hagamos un Juramento de Justicia y exterminemos estas blasfemias a la vida!"
+        es = "Pocas aberraciones son tan repugnantes como los no-muertos.\n¡Hagamos un Juramento de Justicia y exterminemos estas blasfemias contra la vida!"
     }
     {
         en = "\x22Beware the evil which has stolen into this realm. Set aside the worldly matters and dedicate oneself to putting our dead to rest once and for all. No man deserves to walk twice across this darkened land.\x22 - Young Anselm"
@@ -1714,7 +1714,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_sacrifice_ambition.nut
     {
         en = "We cannot live up to Young Anselm's example if we obsess over worldly matters.\nLet us take an Oath of Sacrifice and hone our purpose to its sharpest point."
-        es = "No podemos igualar el ejemplo de Joven Anselm si nos obsesionamos con asuntos mundanos. Tomemos un Juramento de Sacrificio y enfoquémonos en nuestro propósito."
+        es = "No estaremos a la altura del Joven Anselm si nos obsesionan los asuntos mundanos.\nTomemos un Juramento de Sacrificio y afilemos nuestro propósito al máximo."
     }
     {
         en = "\x22If all is within the realm of the old gods' gifts, then pain itself shall be their bitterest fruit. But an offering it is, nonetheless, and so our battle against pain is one of great selfishness. Abscise from the healer's mend, and equally so from the merchant's lend.\x22 - Young Anselm"
@@ -1751,7 +1751,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_valor_ambition.nut
     {
         en = "We must have the courage to face down any challenge, no matter how daunting.\nLet us take an Oath of Valor and prove our bravery to all!"
-        es = "Debemos tener el coraje de enfrentar cualquier desafío, por difícil que sea. ¡Hagamos un Juramento de Valor y demostremos nuestra valentía a todos!"
+        es = "Debemos tener el coraje de enfrentar cualquier desafío, por difícil que sea.\n¡Hagamos un Juramento de Valor y demostremos a todos nuestra valentía!"
     }
     {
         en = "\x22Remember in times of peril that courage can overcome skill. While little can be learned through bravery alone, sheer determination shall keep you alive and that is well enough as any conclusion to the lessons of battle.\x22 - Young Anselm"
@@ -1784,7 +1784,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_vengeance_ambition.nut
     {
         en = "For too long have greenskins plagued our lands.\nLet us take an Oath of Vengeance and strike back at this menace!"
-        es = "Durante demasiado tiempo, los pieles verdes han asolado nuestras tierras. Tomemos un Juramento de Venganza y respondamos a esta amenaza."
+        es = "Durante demasiado tiempo, los pieles verdes han asolado nuestras tierras.\n¡Tomemos un Juramento de Venganza y devolvamos el golpe a esta amenaza!"
     }
     {
         en = "Young Anselm's family was killed by orcs during the Battle of Many Names. When he himself faced greenskins, it is said he seemed an unstoppable warrior and his followers seek to emulate this vengeful surge of martial prowess."
@@ -1819,7 +1819,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_wrath_ambition.nut
     {
         en = "There is no error in battle more fatal than meekness.\nLet us take an Oath of Wrath and show our foes what it truly means to be lain low!"
-        es = "No hay error en la batalla más fatal que la mansedumbre. Tomemos un Juramento de Ira y mostremos a nuestros enemigos lo que realmente significa ser derrotados."
+        es = "No hay error en batalla más fatal que la mansedumbre.\n¡Tomemos un Juramento de Ira y mostremos al enemigo lo que es ser abatido!"
     }
     {
         en = "Young Anselm wrote many manuals on martial fighting, the most popular of which implore the use of two-handed weaponry and the absconsion of battle tact. Dried blood mottles the pages of these texts."
@@ -20060,7 +20060,7 @@ local pairs = [
     }
     {
         en = "Let's be honest what this is about. Here's %bribe% crowns if you return."
-        es = "Seamos honestos sobre de lo qué trata todo esto. Les entregaré %bribe% coronas si regresan."
+        es = "Seamos sinceros sobre lo que está en juego. Les daré %bribe% coronas si regresan."
     }
     {
         en = "[img]gfx/ui/events/event_88.png[/img]\x7bYou take out a bag and put %bribe% crowns into it.%SPEECH_ON%I will personally pay you men to come back with me to the war camp. %commander% is furious with you, make no farkin' mistake about it, but he needs every man he can get. If you fight for him in this coming battle, I've no doubt he'll pardon this little error you have made.%SPEECH_OFF% | You offer the deserters %bribe% crowns. The men look at one another, then speak to you.%SPEECH_ON%And what good is money when the commander hangs us all?%SPEECH_OFF%You nod and answer.%SPEECH_ON%Good question, but %commander% is no fool. He needs all the men he can muster for the coming battle. Prove yourself in that battle and this little pity party you've thrown for yourselves will be forgotten.%SPEECH_OFF%\x7d\x7bThe deserters mull their options and eventually agree to come back with you. | The deserters huddle and come to some sort of agreement. Breaking the huddle, their leader steps forward.%SPEECH_ON%Despite some objections, we agree to come back with you to the war camp. I hope I do not come to regret this.%SPEECH_OFF% | After a short time debating on what to do, the deserters put it to a vote. It isn't unanimous, but they come to an agreement: they'll go back with you to %commander%. | The deserters argue about what to do next. Inevitably, it comes to a vote. Predictably, that vote is a tie. The men then agree to toss a crown: heads they go back to camp, tails they leave. Their leader flips the coin and all the men watch as it turns and glints. The coin lands heads. Every single one of them sighs upon seeing it, as if chance and fortune relieved them of an enormous responsibility beyond their own choosing.\x7d"
@@ -20294,7 +20294,7 @@ local pairs = [
     }
     {
         en = "We need to seize this opportunity. Prepare the men to sally forth!"
-        es = "Tenemos que aprovechar esta oportunidad. ¡Prepara a los hombres para salir al frente!"
+        es = "Hay que aprovechar esta oportunidad. ¡Prepara a los hombres para salir!"
     }
     {
         en = "We have a defensible position here. We stay put."
@@ -21576,7 +21576,7 @@ local pairs = [
     }
     {
         en = "We aren't paid enough to make enemies of %noblehouse%. Take them."
-        es = "No nos pagan lo suficiente como para hacernos enemigos de los %noblehouse%. Entregadles los bienes."
+        es = "No nos pagan lo suficiente para enemistarnos con %noblehouse%. Llévense la mercancía."
     }
     {
         en = "Your lords won't appreciate their allies, the %companyname%, to be held up like this."
@@ -21639,7 +21639,7 @@ local pairs = [
     }
     {
         en = "This better be worth it. I'll hold you to your promises once I've freed you."
-        es = "Espero que esto valga la pena. Te haré responsable de tus promesas una vez que te haya liberado."
+        es = "Más vale que valga la pena. Cumplirás tus promesas cuando te libere."
     }
     {
         en = "[img]gfx/ui/events/event_60.png[/img]\x7bYou spit and clear you throat, then you quickly clear your sword of its sheath and strike the caravan guard down. %randombrother% sees this and quickly barks out an order for the rest of the %companyname% to follow suit. There's a brief, confused carnage, the caravan guards unsure of what's going on as your men set upon them.\n\n Freeing the prisoner, he thanks you profusely then tells you to lead the way.%SPEECH_ON%Once we get to %noblesettlement%, and they see my lively and grinning face, you will be washed in crowns!%SPEECH_OFF% | You draw your sword and slash the guard across the face. He spins around and you crash the blade of your weapon through his brainpain, his organ frothing between slanted boneshards like a burst souffle. %randombrother% sees this and calls the rest of the company to combat. They make short work of the rest of the caravan guards. When you free %noble%, he points down the road.%SPEECH_ON%To %noblesettlement% where my family shall reward you like you cannot believe!%SPEECH_OFF% | As the caravan guard turns around, you take a dagger and jam it beneath his arm pit and directly into his heart. He muffles something, then falls to the ground. Another guard comes around, sees this, then sees your sword disembowel him. His cries, however, are not muffled. A battle soon commences, though it is completely lopsided as the %companyname% makes short work of the caravan guards.\n\n Once it is all said and done, %noble% is freed. Rubbing his purpled wrists, he points you toward %noblesettlement%.%SPEECH_ON%Onward, return me to my family so that I can fill your pockets for this incredible bravery!%SPEECH_OFF%\x7d"
@@ -21846,7 +21846,7 @@ local pairs = [
     }
     {
         en = "Why bleed for crowns when you offer them freely? We have a deal."
-        es = "Por qué derramar sangre por coronas cuando te las ofrecen libremente. Tenemos un trato."
+        es = "¿Por qué sangrar por coronas si nos las ofreces gratis? Trato hecho."
     }
     {
         en = "If you want him, come and get him."
@@ -24987,7 +24987,7 @@ local pairs = [
     }
     {
         en = "Better to kill them now than face them again in battle in the days to come."
-        es = "Es mejor matarlos ahora que enfrentarlos nuevamente en batalla en los días venideros."
+        es = "Mejor matarlos ahora que volver a enfrentarlos en batalla en los próximos días."
     }
     {
         en = "[img]gfx/ui/events/event_53.png[/img]\x7bThe prisoners are of no use to you or anyone else. You cut them loose, hoping that you won't come to regret this decision. | You cut the prisoners loose. They cry as they thank you, but you simply hope that this was not a mistake. | You let the prisoners go. They thank you personally before taking off, hopefully to never be seen again.\x7d"
@@ -37202,7 +37202,7 @@ local pairs = [
     // en = "B"
     {
         en = "Better to put it down now before it steals any of our supplies later."
-        es = "Más vale acabar con él ahora antes de que robe alguno de nuestros suministros después."
+        es = "Más vale acabar con él ahora, antes de que nos robe provisiones."
     }
     // en = "C"
     // en = "D"
@@ -40315,7 +40315,7 @@ local pairs = [
     }
     {
         en = "You'll only make the undead ranks swell. Better we finish you now."
-        es = "Solo conseguirán que las filas de los no-muertos aumenten. Será mejor que acabemos ustedes ahora."
+        es = "Solo harán crecer las filas de los no-muertos. Mejor acabamos con ustedes ahora."
     }
     {
         en = "[img]gfx/ui/events/event_59.png[/img]You command these sickened souls to be well - by commanding your men to kill them all. The elder leads the women and children away while the men rise up to stand their ground. One, wavering on green and peeling legs, points at you.%SPEECH_ON%What a saint you are ya prick. I hope I do come back from the dead. I hope my corpse kills the lot of you ya farkin' savages.%SPEECH_OFF%"
@@ -43227,7 +43227,7 @@ local pairs = [
     }
     {
         en = "I can think only of %dumb% to be dim enough to race a horse."
-        es = "Solo puedo pensar que %dumb% es lo suficientemente torpe como para competir contra un caballo."
+        es = "Solo %dumb% es lo bastante torpe como para competir contra un caballo."
     }
     {
         en = "No, thanks."
@@ -43630,7 +43630,7 @@ local pairs = [
     }
     {
         en = "Doing mercenary work for them would further mend relations."
-        es = "Realizar trabajos como mercenario para ellos ayudará a mejorar aún más las relaciones."
+        es = "Trabajar para ellos como mercenarios mejoraría aún más las relaciones."
     }
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Crowns"
@@ -48283,7 +48283,7 @@ local pairs = [
     }
     {
         en = "A man left to torture himself can find the truest of horrors."
-        es = "Un hombre capaz de torturarse a sí mismo puede encontrar los más verdaderos horrores."
+        es = "Un hombre que se tortura a sí mismo puede hallar los horrores más verdaderos."
     }
     {
         // text = _event.m.Monk.getName() + " is now a Monk turned Flagellant"
@@ -49384,7 +49384,7 @@ local pairs = [
     }
     {
         en = "You're a mercenary now, not a jouster. Better get used to it."
-        es = "Eres un mercenario ahora, no un caballero de torneos. Será mejor que te acostumbres."
+        es = "Ahora eres un mercenario, no un caballero de torneos. Acostúmbrate."
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]You stand up and pat %jouster% on the shoulder.%SPEECH_ON%I've no doubt that a man of your skill and prowess would have run clean through the tournament. But I need a man such as yourself here, at camp. You need not prove any lost earnings, I will compensate you for them simply enough.%SPEECH_OFF%The rather diplomatic words calm the man down. He nods and briefly looks as though it would be dishonorable to accept the payment. Not wanting the sellsword to test his resolve any further, or perhaps look a fool or a man of low honor, you order him to take it."
@@ -49673,7 +49673,7 @@ local pairs = [
     }
     {
         en = "Surely this isn't something that can't be solved with a fat purse of crowns?"
-        es = "¿Seguro que esto no es algo que no se pueda resolver con una gran bolsa de coronas?"
+        es = "¿Seguro que esto no se arregla con una bolsa bien llena de coronas?"
     }
     {
         en = "You know who it is you're threatening? The %companyname%!"
@@ -49867,7 +49867,7 @@ local pairs = [
     }
     {
         en = "Will probably have to kill him to get him out of our dreams anyway."
-        es = "Probablemente tendremos que matarlo para sacarlo de nuestros sueños de todos modos."
+        es = "De todos modos, tendremos que matarlo para sacarlo de nuestros sueños."
     }
     // FILE: scripts\events\events\man_in_forest_event.nut
     {
@@ -49992,7 +49992,7 @@ local pairs = [
     }
     {
         en = "No, we'd rather not be double-checking our food every time we take a bite."
-        es = "No, preferimos no tener que estar revisando nuestra comida cada vez que damos un bocado."
+        es = "No, preferimos no tener que revisar la comida cada vez que damos un bocado."
     }
     {
         en = "the Melon Mugger"
@@ -50238,7 +50238,7 @@ local pairs = [
     }
     {
         en = "You're getting paid either way - and now you even get to live and spend the crowns."
-        es = "Estás siendo pagado, de todos modos, y ahora incluso puedes vivir y gastar esas coronas."
+        es = "Te pagan de todos modos, y ahora encima vives para gastar esas coronas."
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]You nod.%SPEECH_ON%I understand. You are two battle-earnest men. You even remind me of myself though, with your skills, I can assure you that only I come out looking better by such a comparison. You are fine warriors, but is it not true that you will be paid the same regardless of this battle or that? Why be so worried about battles? They will come. I've not paid you to sit. I've paid you to be ready to stand.%SPEECH_OFF%The men exchange a glance and then shrug and nod. They stand up in unison.%SPEECH_ON%You are right, sir. And, when the time comes, we will be ready to stand and fight for you!%SPEECH_OFF%"
@@ -51346,7 +51346,7 @@ local pairs = [
     }
     {
         en = "On second thought, promise to leave my body alone while I'm alive, too."
-        es = "Después de pensarlo mejor, promete dejar mi cuerpo en paz mientras esté vivo, también."
+        es = "Pensándolo mejor, promete dejar mi cuerpo en paz también mientras viva."
     }
     {
         en = "The Anatomists"
@@ -52905,7 +52905,7 @@ local pairs = [
     }
     {
         en = "Put the peasants in their place and search their homes for valuables!"
-        es = "¡Pongan a los campesinos en su lugar y registren sus casas en busca de objetos de valor!"
+        es = "¡Pongan a los campesinos en su lugar y registren sus casas en busca de botín!"
     }
     {
         en = "%peacekeeperfull%, see if you can calm %troublemaker% with your wisdom."
@@ -61287,7 +61287,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Fueled by an unquenchable thirst for knowledge, the Anatomists have spent years dissecting the exotic and the alien. With social mores dogging their research, however, they've turned to you to form a mercenary company and provide them a new source of fresh specimens.\n\n[color=#bcad8c]Anatomists:[/color] Start with three men and high funds.\n[color=#bcad8c]Researchers:[/color] Research the corpses of your fallen foes and gain knowledge to empower your men.\n[color=#bcad8c]Not Fighters:[/color] Your men will never be of Confident morale.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Impulsados por sed de conocimiento, los Anatomistas han pasado años diseccionando lo exótico y lo extraño. Con las normas sociales obstaculizando su investigación, han recurrido a ti para formar una banda de mercenarios y proporcionarles una nueva fuente de especímenes frescos.\n\n[color=#bcad8c]Anatomistas:[/color] Comienza con tres hombres y fondos elevados.\n[color=#bcad8c]Investigadores:[/color] Investiga los cadáveres de tus enemigos caídos y obtén conocimientos para fortalecer a tus hombres.\n[color=#bcad8c]No son luchadores:[/color] Nunca tendrán una moral 'Confiado'.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_181.png[/img][/p][p]Movidos por una sed insaciable de conocimiento, los Anatomistas llevan años diseccionando lo exótico y lo extraño. Pero las normas sociales estorban su labor, y han recurrido a ti para formar una compañía que les traiga especímenes frescos.\n\n[color=#bcad8c]Anatomistas:[/color] Comienza con tres hombres y fondos elevados.\n[color=#bcad8c]Investigadores:[/color] Investiga los cadáveres enemigos y obtén saber para fortalecer a tus hombres.\n[color=#bcad8c]No son luchadores:[/color] Nunca tendrán moral 'Confiado'.[/p]"
     }
     {
         en = "\x7bCaptain? Is it alright if I call you captain? Ah, of course it is. What? No, we were not calling you by another name. Yers is a smooth costard, good sir, and we would not be of such derring-do to refer to you as a sellsword who is as ordinary as any of our coetaneous clodpolls, or state that we were in some sense importuning commerce by conducting business with a man of your particular skills. No sir, we would not. We are not children of perdition, sir.\x7d"
@@ -61455,7 +61455,7 @@ local pairs = [
     // FILE: scripts\scenarios\world\lone_wolf_scenario.nut
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]You've been traveling alone for a long time, taking part in tourneys and sparring with young nobles. A hedge knight tall as a tree, you never needed anybody for long. Is it true still?\n\n[color=#bcad8c]Lone Wolf:[/color] Start with a single experienced hedge knight and great equipment, but low funds.\n[color=#bcad8c]Elite Few:[/color] Can never have more than 12 men in your roster.\n[color=#bcad8c]Avatar:[/color] If your hedge knight dies, the campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Has estado viajando solo durante mucho tiempo, participando en torneos y enfrentándote a jóvenes nobles. Un caballero andante tan alto como un árbol, nunca necesitaste a nadie por mucho tiempo. ¿Sigue siendo cierto?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienza con un único caballero andante experimentado y un gran equipo, pero con pocos fondos.\n[color=#bcad8c]Núcleo de élite:[/color] Nunca puedes tener más de 12 hombres en tu lista.\n[color=#bcad8c]Avatar:[/color] Si tu caballero andante muere, la campaña termina.\n[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando solo, compitiendo en torneos y entrenando con jóvenes nobles. Caballero andante alto como un árbol, nunca has necesitado a nadie mucho tiempo. ¿Sigue siendo así?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienza con un solo caballero andante experimentado y gran equipo, pero pocos fondos.\n[color=#bcad8c]Núcleo de élite:[/color] Nunca tendrás más de 12 hombres en tu lista.\n[color=#bcad8c]Avatar:[/color] Si tu caballero andante muere, se acaba la campaña.[/p]"
     }
     {
         en = "A wandering hedge knight, you were a veteran of jousting and sparring tournaments. You were also a veteran of victory. Tis a scary thought for many, but if it were anything at all that turned your eye toward mercenary work it was boredom. Outwardly you state it is for the coin, but a part of you knows it's also for the company."
@@ -61472,7 +61472,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Constant conflict between city states and nomads makes for good business. The bulk of your outfit are captives, forced to fight to earn their freedom, and their ranks grow after each battle.\n\n[color=#bcad8c]Army of Captives:[/color] Start with two manhunters and four indebted. Take up to 16 men into battle at once. Having equal or fewer indebted than non-indebted will make your men dissatisfied.\n[color=#bcad8c]Overseers:[/color] All non-indebted can whip indebted in combat to reset their morale and buff their stats.\n[color=#bcad8c]Captives:[/color] Indebted earn 10% more experience, are capped at level 7, and will die if struck down.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El constante conflicto entre las ciudades-estado y los nómadas es un buen negocio. La mayoría de tu grupo son cautivos, obligados a luchar para ganar su libertad, y tus filas crecen después de cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados. Puedes llevar hasta 16 hombres a la batalla al mismo tiempo. Tener igual o menos endeudados que hombres libres hará que tus hombres estén insatisfechos.\n[color=#bcad8c]Supervisores:[/color] Todos los no endeudados pueden azotar a los endeudados en combate para restablecer su moral y mejorar sus estadísticas.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, tienen un límite de nivel 7 y morirán si son derribados en combate.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El conflicto entre ciudades-estado y nómadas es buen negocio. Tu tropa la forman sobre todo cautivos que luchan por su libertad, y crece tras cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados, y lleva hasta 16 hombres a la batalla. Si no hay más endeudados que libres, tus hombres se descontentan.\n[color=#bcad8c]Supervisores:[/color] Los libres pueden azotar en combate a los endeudados para restaurar su moral y potenciarlos.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, no pasan del nivel 7 y mueren si caen.[/p]"
     }
     {
         en = "\x7bIn a sense, you don't particularly care for %name%. He's not hateful nor forgiving toward the prisoners of war, criminals, and the like. He just handles his business. But he's also this calm, unwavering way with you, and it's a bit bothersome. The man has so much potential, which is why you have him onboard for the %companyname%, but you just wished he showed some passion now and again.\x7d"
@@ -61551,7 +61551,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]It started as a ragtag militia made up of anyone brave or desperate enough to volunteer for defending their homes, but has grown into a small army. An army that needs to be fed each day. Perhaps the militia's services could be rented out?\n\n[color=#bcad8c]Peasant Army:[/color] Start with a roster of 12 poorly equipped peasants.\n[color=#bcad8c]Human Wave[/color]: Take up to 16 men into battle at once, and have up to 25 in your roster.\n[color=#bcad8c]Dirty Peasants[/color]: Can never hire anyone that isn't a lowborn peasant.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Comenzó como una milicia improvisada formada por cualquiera lo suficientemente valiente o desesperado como para ofrecerse como voluntario para defender sus hogares, pero ha crecido hasta convertirse en un pequeño ejército. Un ejército que necesita ser alimentado cada día. ¿Quizás los servicios de la milicia podrían alquilarse?\n\n[color=#bcad8c]Ejército de campesinos:[/color] Comienza con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Marea humana[/color]: Lleva hasta 16 hombres a la batalla a la vez y ten hasta 25 en tu lista.\n[color=#bcad8c]Sucios plebeyos[/color]: Nunca podrás contratar a nadie que no sea un campesino o plebeyo.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Empezó como una milicia improvisada de cualquiera lo bastante valiente o desesperado para defender su hogar, pero ha crecido hasta ser un pequeño ejército. Un ejército que hay que alimentar cada día. ¿Y si se alquilaran los servicios de la milicia?\n\n[color=#bcad8c]Ejército de campesinos:[/color] Comienza con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Marea humana[/color]: Lleva hasta 16 hombres a la batalla a la vez y ten hasta 25 en tu lista.\n[color=#bcad8c]Sucios plebeyos[/color]: Nunca podrás contratar a nadie que no sea un campesino o plebeyo.[/p]"
     }
     {
         en = "Lost many a friend in battle"
@@ -61669,7 +61669,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]For all your adult life you've been raiding and pillaging in these lands. But with the local peasantry poor as mice, you may want to finally expand into the profitable field of mercenary work - that is, if your potential employers are willing to forgive your past transgressions.\n\n[color=#bcad8c]Warband:[/color] Start with three experienced barbarians.\n[color=#bcad8c]Pillagers:[/color] You have a higher chance to get any items from slain enemies as loot.\n[color=#bcad8c]Outlaws:[/color] Start with bad relations to most human factions.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Durante toda tu vida adulta, has estado saqueando y pillando en estas tierras. Pero con los campesinos locales tan pobres como ratones, es posible que finalmente desees expandirte al lucrativo campo del trabajo como mercenario, siempre y cuando tus posibles empleadores estén dispuestos a perdonar tus transgresiones pasadas.\n\n[color=#bcad8c]Banda de guerra:[/color] Comienza con tres bárbaros experimentados.\n[color=#bcad8c]Pillaje:[/color] Tienes una mayor probabilidad de obtener objetos de enemigos derrotados como botín.\n[color=#bcad8c]Forajidos:[/color] Comienzas con malas relaciones con la mayoría de las facciones humanas.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Llevas toda tu vida adulta saqueando estas tierras. Pero con los campesinos de aquí más pobres que las ratas, quizá quieras pasarte al lucrativo oficio de mercenario, si tus posibles empleadores están dispuestos a perdonar tus fechorías.\n\n[color=#bcad8c]Banda de guerra:[/color] Comienza con tres bárbaros experimentados.\n[color=#bcad8c]Pillaje:[/color] Es más probable que los enemigos abatidos dejen objetos como botín.\n[color=#bcad8c]Forajidos:[/color] Comienzas con malas relaciones con la mayoría de las facciones humanas.[/p]"
     }
     {
         en = "A sturdy warrior, %name% has been through many campaigns of raiding and pillaging. Although a man of few words, the raider is an absolutely vicious specimen in battle. Even for a raider, what he does to defeated villagers irks many. It is likely he came with you to satiate his more sadistic lusts."
@@ -61719,7 +61719,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]For years you've made a decent living by poaching in the local woods, evading your lord's men by being quick on your feet. But pickings have become slimmer and slimmer, and you're faced with a decision - how to make a living when all you know is how to use a bow?\n\n[color=#bcad8c]Hunters:[/color] Start with a group of three woodsmen.\n[color=#bcad8c]Expert Scouts:[/color] You move faster and can always get a scouting report for any enemies near you.\n[color=#bcad8c]Travel Light:[/color] You can carry fewer items in your company's inventory.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Durante años has ganado una vida decente cazando furtivamente en los bosques locales, evitando a los hombres de tu señor al ser rápido de pies. Pero las oportunidades se han vuelto cada vez más escasas, y te enfrentas a una decisión: ¿cómo ganarte la vida cuando todo lo que sabes es cómo usar un arco?\n\n[color=#bcad8c]Cazadores:[/color] Comienza con un grupo de tres guardabosques.\n[color=#bcad8c]Exploradores expertos:[/color] Te mueves más rápido y siempre puedes obtener un informe de exploración sobre cualquier enemigo cerca de ti.\n[color=#bcad8c]Viaje ligero:[/color] Puedes llevar menos objetos en el inventario de tu compañía.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Durante años te has ganado bien la vida cazando furtivamente, esquivando a los hombres de tu señor gracias a tus pies ligeros. Pero la caza escasea cada vez más y debes decidir: ¿cómo ganarte la vida si solo sabes usar un arco?\n\n[color=#bcad8c]Cazadores:[/color] Comienza con tres guardabosques.\n[color=#bcad8c]Exploradores expertos:[/color] Te mueves más rápido y siempre obtienes un informe de exploración de los enemigos cercanos.\n[color=#bcad8c]Viaje ligero:[/color] Puedes llevar menos objetos en el inventario de tu compañía.[/p]"
     }
     {
         en = "\x7bA bit of a devious runt, though a good man at heart. %name% used to hunt for his local liege, but when the nobleman died falling into an unseen ravine the hunter was blamed and kicked out of court. With some guile, he turned his hunting talents into poaching and fur trade. He is of a merchant's mind and was quick to engender the idea of mercenary work because of it.\x7d"
