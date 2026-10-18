@@ -2,6 +2,10 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
+## [4.0.1] - sin publicar
+
+- **El juego podía quedarse congelado al mostrar un texto largo en inglés que el pack no conoce**, sobre todo con mods como Legends: un evento de Legends tardaba más de 14 minutos en pasar por la traducción. Varias reglas del pack (las de «X has Y», «X had Y», «X's Y» y parecidas) prueban a traducir el resto de la frase para saber si les toca, y ese resto vuelve a casar con ellas; con cada «has» o «had» más el trabajo se multiplicaba. Una frase de 86 caracteres con doce de ellos ya costaba 15 segundos, y volver a pasar por la traducción el tooltip de la moral, ya en castellano, 4. Ahora el pack recuerda lo que ya tradujo mientras dura cada texto: las traducciones son exactamente las mismas, y el peor texto de Legends tarda menos de dos décimas de segundo.
+
 ## [4.0.0] - 2026-10-18
 
 El mismo contenido que la 1.0.1, con la numeración nueva. La traducción pasa a publicarse también en la página de Nexus de la traducción anterior, que llegó a la 3.0.4, así que el pack continúa su numeración: la 4 es el cambio de base a Rosetta. Las 1.0.0 y 1.0.1 fueron las dos primeras versiones de este repositorio.
