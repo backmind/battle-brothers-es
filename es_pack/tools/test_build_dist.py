@@ -1712,3 +1712,44 @@ def test_las_reglas_golosas_se_emiten_detras_de_las_concretas():
     todos = [get_field(b, "en") for b in load_blocks(CORPUS)]
     assert "<ailing:str> gains <trait:str>" not in todos
     assert "<ailing:str> gains Temerario" in todos
+
+
+def test_ninguna_traduccion_dispara_la_recursion_de_las_reglas_con_t(tmp_path):
+    """Las reglas golosas con :t ("<actor:str> has <name:str>", "had", "'s"...)
+    traducen la cola para decidir si valen, y la cola vuelve a casar con ellas:
+    sin memoria, las llamadas crecen de forma exponencial con los separadores
+    (un evento largo de Legends colgaba translate() más de 14 minutos, y una
+    frase de 86 caracteres con doce has/had tardaba 15 s). Corre
+    sq_probe_cuelgue.nut con el runtime real, los pares que irían al zip y
+    la memoria de translate() del preload, con un tope de llamadas por texto: sin
+    la memoria falla en segundos en vez de colgarse. Sin intérprete Squirrel o
+    sin stdlib, se salta."""
+    import os
+    import subprocess
+
+    import pytest
+
+    from build_dist import CORPUS, IDS, REPO, SRC, emit, es_golosa, literalizar
+    from check_syntax import localiza_interprete
+
+    sq = localiza_interprete()
+    if sq is None:
+        pytest.skip("sin interprete Squirrel disponible")
+    stdlib = _stdlib_descomprimido(tmp_path / "stdlib")
+    if stdlib is None:
+        pytest.skip("sin stdlib (STDLIB_DIR o DATA_DIR en .env)")
+    base = tmp_path / "base_es.nut"
+    dist = sorted((b for b in load_blocks(CORPUS) if classify(b) == "dist"), key=es_golosa)
+    emit(base, [literalizar(b) for b in dist])
+    preload = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es.nut").read_text(encoding="utf-8")
+    bloque = re.search(r"\n// Memoria de translate\(\).*?\n\}\)\(::Rosetta\);\n", preload, re.S)
+    assert bloque, "el preload perdió la memoria de translate()"
+    memo = tmp_path / "memo.nut"
+    memo.write_bytes(bloque.group(0).encode("utf-8"))
+    env = dict(os.environ, ROSETTA_DIR=str(REPO), STDLIB_DIR=str(stdlib),
+               SONDA_PACKS=";".join(str(p) for p in (base, IDS)), SONDA_MEMO=str(memo),
+               SONDA_TOPE="1000")
+    r = subprocess.run([str(sq), str(REPO / "es_pack" / "tools" / "sq_probe_cuelgue.nut")],
+                       capture_output=True, env=env, timeout=300)
+    salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
+    assert "FALLOS: 0" in salida, salida[-6000:]

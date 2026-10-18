@@ -38,7 +38,7 @@ Este pack toma aquel texto, lo revisa entero, establece una línea editorial hom
 | Legends | Beta | Legends 19.4.22 | 99 % |
 <!-- OBJETIVOS:FIN -->
 
-Las traducciones de mods se irán sumando a esta tabla, cada una con su cobertura. La cobertura se mide contra el juego instalado con `measure_coverage.py`: cuenta las frases que el jugador puede leer y descarta las claves internas y las trazas de depuración. Los restos que el extractor toma por texto sin serlo (condiciones de código, trozos de frases que en partida llegan enteras, etcétera) están revisados uno a uno y listados en la propia herramienta.
+Las traducciones de mods se irán sumando a esta tabla, cada una con su cobertura. La primera será la de [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), que está en preparación; cómo va y cuándo salen sus betas está en la [hoja de ruta](ROADMAP.md). La cobertura se mide contra el juego instalado con `measure_coverage.py`: cuenta las frases que el jugador puede leer y descarta las claves internas y las trazas de depuración. Los restos que el extractor toma por texto sin serlo (condiciones de código, trozos de frases que en partida llegan enteras, etcétera) están revisados uno a uno y listados en la propia herramienta.
 
 Ninguna medida estática ve una pantalla cuyo texto no pase por Rosetta. Eso solo lo destapa jugar, y para eso están las [incidencias](https://github.com/backmind/battle-brothers-es/issues/new/choose).
 
@@ -68,7 +68,7 @@ Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, ent
 
 **¿Steam o GOG?** Los dos. La traducción no depende de la tienda, solo de la versión del juego.
 
-**¿Y con otros mods?** Rosetta traduce los textos por coincidencia exacta, así que lo que un mod reutilice del juego base sale en español y lo que añada de su cosecha se queda en inglés. Las traducciones de mods que vayan entrando en el pack aparecen en [Qué se traduce](#qué-se-traduce). No se ha probado a fondo con los mods grandes (Legends, Reforged); si encuentras algo raro, [cuéntalo](https://github.com/backmind/battle-brothers-es/issues/new/choose).
+**¿Y con otros mods?** Rosetta traduce los textos por coincidencia exacta, así que lo que un mod reutilice del juego base sale en español y lo que añada de su cosecha se queda en inglés. Las traducciones de mods que vayan entrando en el pack aparecen en [Qué se traduce](#qué-se-traduce). La traducción de Legends está en preparación y tendrá betas antes de entrar en una versión estable ([hoja de ruta](ROADMAP.md)). Con otros mods grandes, como Reforged, no se ha probado a fondo; si encuentras algo raro, [cuéntalo](https://github.com/backmind/battle-brothers-es/issues/new/choose).
 
 **¿Por qué siete archivos?** Cinco son el andamiaje que comparten muchos mods del juego, y probablemente ya tengas alguno. Los dos últimos son el pack: uno con el texto y otro con las pantallas que el juego dibuja en JavaScript, que son las únicas que no pasan por Rosetta.
 

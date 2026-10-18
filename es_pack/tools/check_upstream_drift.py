@@ -70,6 +70,12 @@ PINES = {
         "ce06a7fec757bbc2",
         "define qué es una captura en el lado traducido, donde el tipo es "
         "opcional (<nombre> o <nombre:flag>)."),
+    "translate": (
+        "7e16a34e55acbfbd",
+        "el preload mod_battle_brothers_es.nut la envuelve con memoria: da por "
+        "supuestos su firma (_str, _id, _skip_rule) y que el resultado solo "
+        "depende del texto durante una llamada. Si upstream añade memoria "
+        "propia o cambia la firma, el envoltorio sobra o pierde argumentos."),
 }
 PIN_REF = "dde98e9"
 """Ref de upstream del que salieron los hashes de PINES. En la adopción de la

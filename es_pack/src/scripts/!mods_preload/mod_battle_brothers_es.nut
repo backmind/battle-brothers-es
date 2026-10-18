@@ -57,6 +57,44 @@ mod.queue(">mod_msu", function () {
 // de Rosetta (que mira strings ya traducidas) no aplica: activamos es.
 ::Rosetta.activate("es");
 
+// Memoria de translate() durante una traducción, contra el cuelgue de las
+// reglas golosas con :t.
+//
+// Las reglas del tipo "<actor:str> has <name:str>" (con <name:t>) casan con
+// cualquier texto que contenga " has ", y Rosetta traduce la cola para decidir
+// si la regla vale. Esa cola vuelve a casar con "has", "had", "'s"... y cada
+// regla la parte por su primera aparición, así que el número de llamadas crece
+// de forma exponencial con los separadores: un texto inglés sin par de 86
+// caracteres con doce "has"/"had" alternos ya costaba 15 s, y un evento largo
+// de Legends, minutos. Casi todas esas llamadas traducen colas repetidas.
+//
+// translate() es una función pura del texto mientras dura una traducción (el
+// mapa y el idioma no cambian a mitad), así que basta con recordar lo que ya
+// se tradujo dentro de la misma llamada exterior: el resultado es idéntico y
+// cada cola se traduce una sola vez. La memoria se vacía al salir, de modo que
+// no crece durante la partida. Las llamadas con id o con regla a saltar (las
+// de las reglas split) van directas, sin memoria.
+(function (_def) {
+    local translate = _def.translate, memo = null;
+    _def.translate <- function (_str, _id = null, _skip_rule = null) {
+        if (_id != null || _skip_rule != null || typeof _str != "string")
+            return translate.call(this, _str, _id, _skip_rule);
+        if (memo != null) {
+            if (!(_str in memo)) memo[_str] <- translate.call(this, _str);
+            return memo[_str];
+        }
+        memo = {};
+        try {
+            local ret = translate.call(this, _str);
+            memo = null;
+            return ret;
+        } catch (e) {
+            memo = null;
+            throw e;
+        }
+    };
+})(::Rosetta);
+
 // La traducción de cada mod viaja en este zip y solo se carga si el mod está.
 // Va en la cola y después del mod porque el enganche amplía lo que el mod
 // define en la suya, y después de Rosetta porque envuelve sus getters;
