@@ -2,6 +2,13 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
+## [1.0.1] - sin publicar
+
+- **Botones que no cabían.** Los de elegir juramento o ambición se cortaban por los dos lados, porque los botones de evento no parten línea y el castellano había perdido el salto de línea del inglés. Recuperan el salto y se condensan hasta caber los 37 que se pasaban, junto con 18 opciones de evento y contrato y 6 descripciones de origen de la nueva partida que se salían de su columna.
+- **Dos rumores de taberna salían a medias** («Desde what I've heard...»): una regla de otro texto se les adelantaba.
+- **«Habilidad cuerpo a cuerpo»** en el rótulo del atributo, que decía «Habilidad a cuerpo a cuerpo».
+- Un chequeo nuevo, `ANCHO`, mide con la fuente del juego los botones de ambición y las descripciones de origen, para que no vuelvan a salirse.
+
 ## [1.0.0] - 2026-10-17
 
 Primera versión publicada. Verificada contra Battle Brothers 1.5.2.3 con todas sus expansiones, y requiere Rosetta 0.5.0 o superior.
