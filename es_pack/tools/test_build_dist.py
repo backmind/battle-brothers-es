@@ -1247,6 +1247,10 @@ def test_ancho_mide_con_la_fuente_del_juego():
     linea = "The wilds are teeming with hidden treasures that others are not bold enough to claim."
     assert 71.0 < ancho_rem(linea, BOTON_FUENTE) < 72.0
     assert ancho_rem("[color=#bcad8c]Hola[/color] %name%", 1.0) == ancho_rem("Hola Hans", 1.0)
+    # la línea que en partida quedaba pegada al icono ya no cabe en el presupuesto
+    from checks import BOTON_REM
+    pegada = "No estaremos a la altura del Joven Anselm si nos obsesionan los asuntos mundanos."
+    assert ancho_rem(pegada, BOTON_FUENTE) > BOTON_REM
 
 
 def test_ancho_avisa_del_boton_sin_salto_y_de_la_descripcion_larga(tmp_path):

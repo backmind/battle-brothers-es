@@ -261,7 +261,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\cart_ambition.nut
     {
         en = "We can barely carry any more equipment or spoils of war.\nLet us save up 7,500 crowns to buy us a cart and relieve our backs!"
-        es = "Apenas podemos cargar más equipo o botín de guerra.\n¡Ahorremos 7.500 coronas para comprarnos una carreta y aliviar nuestras espaldas!"
+        es = "Apenas podemos cargar más equipo o botín de guerra.\n¡Ahorremos 7.500 coronas para una carreta que nos alivie las espaldas!"
     }
     {
         en = "You'll unlock an additional 27 slots in your inventory."
@@ -352,7 +352,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_civilwar_ambition.nut
     {
         en = "If we can win this war for one of the noble houses, our name will be unmatched.\nLet us pick a side, bask in the glory of battle and get rich for it!"
-        es = "Si ganamos esta guerra para una casa noble, nuestro nombre no tendrá igual.\n¡Elijamos un bando, gocemos de la gloria de la batalla y hagámonos ricos con ello!"
+        es = "Si ganamos esta guerra para una casa noble, nuestro nombre no tendrá igual.\n¡Elijamos bando, gocemos de la gloria de la batalla y hagámonos ricos!"
     }
     {
         en = "End the war between noble houses"
@@ -458,7 +458,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_holywar_ambition.nut
     {
         en = "The fires of religious turmoil threaten to engulf the lands. Let the company be forged\nstronger than ever by its heat and flames, and earn a fortune by winning the war!"
-        es = "Las llamas de la discordia religiosa amenazan con devorar estas tierras. Que su calor\nforje la compañía más fuerte que nunca, ¡y hagamos fortuna ganando la guerra!"
+        es = "Las llamas de la discordia religiosa amenazan con devorar estas tierras.\n¡Que su calor nos forje más fuertes y hagamos fortuna ganando la guerra!"
     }
     {
         en = "End the war between north and south"
@@ -547,7 +547,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_undead_ambition.nut
     {
         en = "The Undead are rising all over the lands, killing and devouring at sight.\nWe need to put an end to this, or soon there will be no world as we know it left!"
-        es = "Los No-Muertos se alzan por todas las tierras, matando y devorando cuanto ven.\n¡Hay que acabar con esto, o pronto no quedará nada del mundo que conocemos!"
+        es = "Los No-Muertos se alzan por todas las tierras, matando y devorando cuanto ven.\n¡Acabemos con esto, o pronto no quedará nada del mundo que conocemos!"
     }
     {
         en = "Defeat the Undead Scourge"
@@ -568,7 +568,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\defeat_undead_location_ambition.nut
     {
         en = "The walking dead are a terrible curse upon man.\nLet us burn some of their lairs to the ground and earn the respect of all decent folk!"
-        es = "Los muertos andantes son una terrible maldición para el hombre.\n¡Quememos algunas de sus guaridas y ganémonos el respeto de la gente decente!"
+        es = "Los muertos andantes son una terrible maldición para el hombre.\n¡Quememos algunas guaridas y ganémonos el respeto de la gente decente!"
     }
     {
         en = "You'll be awarded a unique accessory that doubles the wearer's resolve when defending against fear and mind control effects."
@@ -593,7 +593,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_all_unique_locations_ambition.nut
     {
         en = "Places of legend dot the world, hiding wonderous secrets within.\nLet's not rest until we've found every last one of them!"
-        es = "Lugares de leyenda salpican el mundo, ocultando secretos maravillosos en su interior.\n¡No descansemos hasta que hayamos encontrado hasta el último de ellos!"
+        es = "Lugares de leyenda salpican el mundo y ocultan secretos maravillosos.\n¡No descansemos hasta que hayamos encontrado hasta el último de ellos!"
     }
     {
         en = "Discover all legendary locations in the world"
@@ -614,7 +614,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_locations_ambition.nut
     {
         en = "Great explorers become men of legend. Going into the wild lands is a dangerous\nbusiness, but the tales we'll tell afterward will surely increase our renown."
-        es = "Los grandes exploradores se vuelven leyenda. Las tierras salvajes son peligrosas,\npero las historias que contaremos después sin duda aumentarán nuestro renombre."
+        es = "Los grandes exploradores se vuelven leyenda. Lo salvaje es peligroso,\npero las historias que contaremos después aumentarán nuestro renombre."
     }
     {
         en = "Discover hidden locations by exploring the world"
@@ -632,7 +632,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\discover_unique_locations_ambition.nut
     {
         en = "The wilds are teeming with hidden treasures that others are not bold enough to claim.\nThis is our chance, so let us head out there and find three legendary places!"
-        es = "Las tierras salvajes rebosan de tesoros ocultos que otros no se atreven a reclamar.\nEsta es nuestra oportunidad: ¡salgamos a encontrar tres lugares legendarios!"
+        es = "Lo salvaje rebosa de tesoros ocultos que otros no se atreven a reclamar.\nEsta es nuestra oportunidad: ¡salgamos a encontrar tres lugares legendarios!"
     }
     {
         en = "Discover legendary locations by exploring the world"
@@ -649,7 +649,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\find_and_destroy_location_ambition.nut
     {
         en = "Let us set out into the wilderness, discover the unknown, and plunder it.\nBe it a wizard's tomb, goblin camp, or aught else we may find."
-        es = "Adentrémonos en lo salvaje, descubramos lo desconocido y saqueémoslo,\nya sea la tumba de un mago, un campamento goblin o cualquier cosa que hallemos."
+        es = "Adentrémonos en lo salvaje, descubramos lo desconocido y saqueémoslo,\nya sea la tumba de un mago, un campamento goblin o lo que hallemos."
     }
     {
         en = "Discover a ruin or hostile camp, and destroy it"
@@ -905,7 +905,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_y_crowns_ambition.nut
     {
         en = "Should a battle or two go against us we may find ourselves out of pocket and\nshort of equipment. The company will therefore build a reserve of 10,000 crowns."
-        es = "Si una batalla o dos nos van en contra podríamos encontrarnos sin dinero y\ncortos de equipo. Por lo tanto, la compañía construirá una reserva de 10.000 coronas."
+        es = "Si una batalla o dos nos van en contra podríamos quedarnos sin dinero y\ncortos de equipo. Así que la compañía reunirá una reserva de 10.000 coronas."
     }
     {
         en = "Have at least 10,000 crowns as a reserve, in order to persevere when things may turn bad in the future. You can make money by completing contracts, looting camps and ruins, or trading."
@@ -922,7 +922,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_y_renown_ambition.nut
     {
         en = "Already we are known in some parts of the land, yet we are still far from being\na legendary company. We shall increase our renown further!"
-        es = "Ya somos conocidos en algunas partes de la tierra, pero aún estamos lejos de ser\nuna compañía legendaria. ¡Incrementaremos aún más nuestro renombre!"
+        es = "Ya nos conocen en algunas partes, pero aún estamos lejos de ser\nuna compañía legendaria. ¡Incrementaremos aún más nuestro renombre!"
     }
     {
         en = "Reach 'Glorious' renown"
@@ -943,7 +943,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_z_crowns_ambition.nut
     {
         en = "Crowns mean power and influence, and we can never have enough of either.\nLet us gather 50,000 crowns and earn our seat amongst noblemen and kings!"
-        es = "Las coronas son poder e influencia, y nunca se tiene suficiente de ninguno de los dos.\n¡Reunamos 50.000 coronas y ganémonos un sitio entre nobles y reyes!"
+        es = "Las coronas son poder e influencia, y de eso nunca se tiene bastante.\n¡Reunamos 50.000 coronas y ganémonos un sitio entre nobles y reyes!"
     }
     {
         en = "Have at least 50,000 crowns."
@@ -960,7 +960,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\have_z_renown_ambition.nut
     {
         en = "There were few legendary mercenary companies throughout history.\nWe are close to having our name become immortal and be counted among them!"
-        es = "Pocas compañías mercenarias legendarias ha habido a lo largo de la historia.\n¡Estamos cerca de que nuestro nombre se vuelva inmortal y sea contado entre ellas!"
+        es = "Pocas compañías mercenarias legendarias ha habido a lo largo de la historia.\n¡Estamos cerca de que nuestro nombre sea inmortal y se cuente entre ellas!"
     }
     {
         en = "Reach 'Invincible' renown"
@@ -1006,7 +1006,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\make_nobles_aware_ambition.nut
     {
         en = "We need to catch the eye of one of the noble houses for more profitable work. They\nplay their own dangerous game, but what does it matter as long as the pay is good?"
-        es = "Hay que llamar la atención de una casa noble para lograr trabajo más lucrativo.\nJuegan su propio juego peligroso, pero ¿qué importa mientras la paga sea buena?"
+        es = "Hay que llamar la atención de una casa noble para lograr trabajo más lucrativo.\nJuegan su propio juego peligroso, pero ¿qué más da si la paga es buena?"
     }
     {
         en = "You'll unlock entirely new contracts issued by nobles which pay better."
@@ -1117,7 +1117,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\ranged_mastery_ambition.nut
     {
         en = "The company lacks competent archers, limiting our tactical options.\nWe shall train three men to master bow or crossbow and be deadly from afar!"
-        es = "A la compañía le faltan arqueros competentes, y eso limita nuestras tácticas.\n¡Entrenaremos a tres hombres en el arco o la ballesta para ser letales a distancia!"
+        es = "A la compañía le faltan arqueros competentes, y eso limita nuestras tácticas.\n¡Entrenaremos a tres hombres en arco o ballesta para ser letales a distancia!"
     }
     {
         en = "Have men with the bow or crossbow mastery perk"
@@ -1224,7 +1224,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\taxidermist_ambition.nut
     {
         en = "Nothing commands respect as a trophy of a giant beast of the frozen wastes.\nLet's go hunt and get the taxidermist some work!"
-        es = "Nada impone más respeto que el trofeo de una bestia gigante de los yermos helados.\n¡Vayamos de caza y démosle trabajo al taxidermista!"
+        es = "Nada impone tanto como el trofeo de una bestia gigante de los yermos helados.\n¡Vayamos de caza y démosle trabajo al taxidermista!"
     }
     {
         en = "Craft items at the taxidermist"
@@ -1336,7 +1336,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\weapon_mastery_ambition.nut
     {
         en = "Imagine the trail of terror we could blaze if your skills matched your bravery.\nWe shall train five men to master their weapons so that they may act as a vanguard!"
-        es = "Imagina el rastro de terror que dejaríamos si tu destreza igualara tu valentía.\n¡Entrenaremos a cinco hombres en sus armas para que actúen como vanguardia!"
+        es = "Imagina el rastro de terror que dejaríamos si tu destreza igualara tu valentía.\n¡Entrenaremos a cinco hombres en sus armas y serán nuestra vanguardia!"
     }
     {
         en = "Have men with a weapon mastery perk each"
@@ -1384,7 +1384,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_against_y_ambition.nut
     {
         en = "We achieved some renown, but now you can see real fame on the horizon.\nLet us defeat a formidable force of two dozen opponents in battle!"
-        es = "Hemos ganado algo de renombre, pero ya se ve la verdadera fama en el horizonte.\n¡Derrotemos en batalla a una fuerza formidable de dos docenas de oponentes!"
+        es = "Ya tenemos algo de renombre, pero la verdadera fama asoma en el horizonte.\n¡Derrotemos en batalla a una fuerza formidable de dos docenas de oponentes!"
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]After the fight, %lowesthp_brother% sits gazing at his feet, looking completely knackered, as do the others. %SPEECH_ON%That was the battle I was born to fight! Now if I die, it will be alongside the bravest and deadliest bunch of men I've ever known, and I'm proud to call them my brothers!%SPEECH_OFF%This is met with a chorus of weary assent all round.%SPEECH_ON%Peasants talk of sweat, blood and tears but the men of the %companyname% have walked through fire and prevailed!%SPEECH_OFF%Three times the men shout the company name, tired but victorious.\n\nIn the days to come you find that wherever civilized people gather, they point you out and whisper, whether in fear or admiration you do not know. Everywhere you go, word of your mighty victory has traveled the land before you."
@@ -1393,7 +1393,7 @@ local pairs = [
     // FILE: scripts\ambitions\ambitions\win_x_arena_fights_ambition.nut
     {
         en = "Let us seek fame and fortune fighting before crowds that chant our names.\nWe'll draw blood in the arenas of the south!"
-        es = "Busquemos fama y fortuna luchando ante multitudes que coreen nuestros nombres.\n¡Derramaremos sangre en las arenas del sur!"
+        es = "Busquemos fama y fortuna ante multitudes que coreen nuestros nombres.\n¡Derramaremos sangre en las arenas del sur!"
     }
     {
         en = "Win arena fights"
@@ -1440,7 +1440,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_camaraderie_ambition.nut
     {
         en = "No single Oathtaker can face all the evils of the world alone.\nLet us take an Oath of Camaraderie, lest we lose sight of our true allies!"
-        es = "Ningún Juramentado puede enfrentarse solo a todos los males del mundo.\n¡Hagamos un Juramento de Camaradería y no perdamos de vista a nuestros aliados!"
+        es = "Ningún Juramentado puede enfrentarse solo a todos los males del mundo.\n¡Hagamos un Juramento de Camaradería y no olvidemos a nuestros aliados!"
     }
     {
         en = "Young Anselm believed that, on occasion, it was right to bring as many to a battle as one could muster, even if the great throngs did threaten the chain of command. Indeed, \x22All men deserve to stand by their brothers.\x22"
@@ -1477,7 +1477,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_distinction_ambition.nut
     {
         en = "Truly distinguished are those who can follow Young Anselm's teachings.\nLet us take an Oath of Distinction and prove ourselves worthy to walk in his path!"
-        es = "Verdaderamente distinguidos son quienes siguen las enseñanzas del Joven Anselm.\n¡Hagamos un Juramento de Distinción y demostremos ser dignos de su senda!"
+        es = "Distinguidos de verdad son quienes siguen las enseñanzas del Joven Anselm.\n¡Hagamos un Juramento de Distinción y demostremos ser dignos de su senda!"
     }
     {
         en = "Young Anselm frequently pursued solitude, sometimes even on the battlefield. \x22Prove yourself worthy in such a manner that not even the old gods may claim their eyes have erred in what glories they have seen.\x22"
@@ -1510,7 +1510,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_dominion_ambition.nut
     {
         en = "Beasts have always threatened civilization.\nLet us take an Oath of Dominion and stake our claim against the tides of nature!"
-        es = "Las bestias siempre han amenazado a la civilización.\n¡Hagamos un Juramento de Dominio y reclamemos lo nuestro frente a la naturaleza!"
+        es = "Las bestias siempre han amenazado a la civilización.\n¡Hagamos un Juramento de Dominio y reclamemos lo nuestro a la naturaleza!"
     }
     {
         en = "\x22We are from the beasts, but the beasts wish to have us back. Distance oneself from nature's primitiveness, prove your worth over Her such that your humanity be held in the grip of your own hands and seen through thine own eyes.\x22 - Young Anselm"
@@ -1545,7 +1545,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_endurance_ambition.nut
     {
         en = "To uphold Young Anselm's Oaths is to take on a duty without end.\nLet us take an Oath of Endurance and prepare ourselves for the tasks to come!"
-        es = "Cumplir los Juramentos del Joven Anselm es asumir un deber sin fin.\n¡Hagamos un Juramento de Resistencia y preparémonos para las tareas venideras!"
+        es = "Cumplir los Juramentos del Joven Anselm es asumir un deber sin fin.\n¡Hagamos un Juramento de Resistencia y preparémonos para lo que vendrá!"
     }
     {
         en = "\x22Thrice times thrice to climb, endurance they did find.\x22 It is said that when Young Anselm ascended the highest peak of the Higgarian mountain range, he took nine of his worthiest followers with him."
@@ -1613,7 +1613,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_honor_ambition.nut
     {
         en = "As warriors, we must never lose sight of true honor.\nLet us take an Oath of Honor and meet our opponents in melee!"
-        es = "Como guerreros, nunca debemos perder de vista el verdadero honor.\n¡Hagamos un Juramento de Honor y enfrentemos a nuestros oponentes cara a cara!"
+        es = "Como guerreros, nunca debemos perder de vista el verdadero honor.\n¡Hagamos un Juramento de Honor y enfrentemos al enemigo cara a cara!"
     }
     {
         en = "\x22While the arrow is nocked, the mind turns. While the sword swings, all is where it should be. Set aside the craft of archery and go unto the melee, trusting that what your steel seeks, it shall find.\x22 - Young Anselm"
@@ -1679,7 +1679,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_righteousness_ambition.nut
     {
         en = "Few aberrations are as repugnant as the undead.\nLet us take an Oath of Righteousness and strike down these mockeries of life!"
-        es = "Pocas aberraciones son tan repugnantes como los no-muertos.\n¡Hagamos un Juramento de Justicia y exterminemos estas blasfemias contra la vida!"
+        es = "Pocas aberraciones son tan repugnantes como los no-muertos.\n¡Hagamos un Juramento de Justicia y exterminemos estas burlas de la vida!"
     }
     {
         en = "\x22Beware the evil which has stolen into this realm. Set aside the worldly matters and dedicate oneself to putting our dead to rest once and for all. No man deserves to walk twice across this darkened land.\x22 - Young Anselm"
@@ -1714,7 +1714,7 @@ local pairs = [
     // FILE: scripts\ambitions\oaths\oath_of_sacrifice_ambition.nut
     {
         en = "We cannot live up to Young Anselm's example if we obsess over worldly matters.\nLet us take an Oath of Sacrifice and hone our purpose to its sharpest point."
-        es = "No estaremos a la altura del Joven Anselm si nos obsesionan los asuntos mundanos.\nTomemos un Juramento de Sacrificio y afilemos nuestro propósito al máximo."
+        es = "No seremos dignos del Joven Anselm si nos obsesionan los asuntos mundanos.\nTomemos un Juramento de Sacrificio y afilemos nuestro propósito al máximo."
     }
     {
         en = "\x22If all is within the realm of the old gods' gifts, then pain itself shall be their bitterest fruit. But an offering it is, nonetheless, and so our battle against pain is one of great selfishness. Abscise from the healer's mend, and equally so from the merchant's lend.\x22 - Young Anselm"

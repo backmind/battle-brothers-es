@@ -416,8 +416,11 @@ for _w, _cs in {
     for _c in _cs:
         ANCHO_CAR[_c] = _w / 1000
 # Botones de evento: 1.8 rem en una etiqueta de unos 77 rem. El inglés más
-# largo de la clase usa 71.6 (discover unique locations, línea 1).
-BOTON_REM, BOTON_FUENTE = 72.0, 1.8
+# largo de la clase usa 71.6 (discover unique locations, línea 1), pero el
+# texto va centrado y a la izquierda está el icono de la ambición (22 px desde
+# 1 rem): en partida, una línea de 71.1 quedaba pegada a él. 67.5 deja algo
+# más de 1.5 rem de aire a cada lado del icono.
+BOTON_REM, BOTON_FUENTE = 67.5, 1.8
 # Descripción de origen: la columna mide 41 rem a 1.6 rem, pero el juego pinta
 # las letras algo más anchas que sus avances (el redondeo del hinting a
 # píxeles), y la primera medida, a 41 rem y 13 renglones, dejó cuatro orígenes
