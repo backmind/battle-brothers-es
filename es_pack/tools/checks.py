@@ -85,6 +85,11 @@ no vuelva a pasar inadvertida:
              validado contra el infinitivo en el propio corpus, que es lo que
              evita marcar "ciudad" o "juventud". Probado en los dos sentidos:
              caza las catorce formas de prueba y no da ningún falso positivo.
+             Tras la 1.0.0 aparecieron doce más que ninguna vía veía, con el
+             clítico pegado ("Decidles", "Degolladlos", "Dadle"): ahora el
+             imperativo se busca también con clítico, validado además por el
+             participio ("degollado"), y nunca delante de un %token%, que es
+             un participio con marca de género.
   CONTROL    carácter de control o invisible dentro de una traducción. Salió de
              la QA del 31/08: una cadena llevaba dos tabuladores verticales
              (U+000B) donde el inglés no tenía ningún salto, y ni se veían al
@@ -167,7 +172,13 @@ OS_CLITICO_RE = re.compile(
     r"(?:^|[\s¡¿\"])os\s+(?:he|ha|han|voy|doy|dar|dig|digo|lo|la|los|las|"
     r"le|les|pag|dej|llev|ofrez|espera|juro|prometo|advierto|aseguro|"
     r"ruego|pido|suplico|maldig|mat|vais|dais)", re.I)
-IMPERATIVO_VOS_RE = re.compile(r"\b([a-záéíóúñ]{5,}(?:ad|ed|id))\b", re.I)
+IMPERATIVO_VOS_RE = re.compile(r"\b([a-záéíóúñ]{5,}(?:ad|ed|id))\b(?!%)", re.I)
+# El mismo imperativo con clítico pegado ("Decidles", "Degolladlos",
+# "Barrédlos"): el anterior no lo ve porque la palabra no acaba en -d. La raíz
+# se valida igual, contra el infinitivo del corpus.
+IMPERATIVO_CLITICO_RE = re.compile(
+    r"\b([a-záéíóúñ]+?(?:ad|ed|id|ád|éd|íd))(?:me|te|le|les|lo|la|los|las|nos|se)"
+    r"(?:lo|la|los|las)?\b(?!%)", re.I)
 # Sustantivos en -ad/-ud/-id que no son imperativos de nada. La validacion
 # contra el infinitivo ya filtra casi todo; esto cubre los que coinciden por
 # casualidad con un verbo del corpus.
@@ -566,10 +577,14 @@ def revisar(datos, corpus=CORPUS):
     # REGISTRO (solo lo que está fuera de la política acordada)
     # El vocabulario del propio corpus hace de diccionario para validar los
     # imperativos: "asaltad" solo cuenta si "asaltar" existe en el corpus.
-    infinitivos = set()
+    # Con clítico pegado vale también el participio ("degollad" por
+    # "degollado"), porque los infinitivos cortos ("dar") no pasan de 3 letras
+    # y otros ("degollar") no salen nunca en el corpus.
+    infinitivos, palabras = set(), set()
     for _en, es in datos:
         for w in WORD_RE.findall(es):
             w = sin_tildes(w)
+            palabras.add(w.lower())
             if len(w) > 3 and w.endswith(("ar", "er", "ir")):
                 infinitivos.add(w)
 
@@ -586,11 +601,12 @@ def revisar(datos, corpus=CORPUS):
             if OS_CLITICO_RE.search(limpio):
                 avisos["REGISTRO"].append("clítico os: %s" % es[:60])
                 continue
-            for m in IMPERATIVO_VOS_RE.finditer(limpio):
-                w = sin_tildes(m.group(1))
+            for m in [*IMPERATIVO_VOS_RE.finditer(limpio), *IMPERATIVO_CLITICO_RE.finditer(limpio)]:
+                w = sin_tildes(m.group(1)).lower()
                 if w in NO_ES_VERBO:
                     continue
-                if w[:-1] + "r" in infinitivos or w[:-2] + "ir" in infinitivos:
+                participio = m.re is IMPERATIVO_CLITICO_RE and w[:-1] + "do" in palabras
+                if w[:-1] + "r" in infinitivos or w[:-2] + "ir" in infinitivos or participio:
                     avisos["REGISTRO"].append("imperativo de vosotros (%s): %s"
                                               % (m.group(1), es[:50]))
                     break

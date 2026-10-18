@@ -1297,3 +1297,18 @@ def test_literalizar_no_cambia_el_cubo_de_ningun_par_del_corpus():
     assert [classify(literalizar(b)) for b in bloques] == [classify(b) for b in bloques]
     cambiados = [b for b in bloques if literalizar(b) != b]
     assert cambiados and all(classify(b) == "dist" and is_rule_pair(b) for b in cambiados)
+
+
+def test_registro_ve_el_imperativo_de_vosotros_con_clitico():
+    """«Decidles», «Degolladlos» y «Dadle» se le escapaban: la palabra no acaba
+    en -d. La raíz se valida con el infinitivo o el participio del corpus."""
+    from checks import revisar
+    diccionario = [("x", "Hay que decir algo."), ("x", "Lo han degollado."), ("x", "Ya está dado."),
+                   ("x", "No te vayas a preocupar.")]
+    vos = [("x", "¡Decidles a todos!"), ("x", "Degolladlos. Que sea rápido."), ("x", "Dadle agua."),
+           ("x", "¡Barrédlos desde el flanco!")]
+    limpios = [("x", "¡Díganles a todos!"), ("x", "Las ciudadelas caen."), ("x", "Está preocupad%o%."),
+               ("x", "Rocks in the cradles"), ("x", "Denle agua.")]
+    avisos = revisar(diccionario + [("x", "Hay que barrer.")] + vos + limpios)["REGISTRO"]
+    assert len(avisos) == 4
+    assert all(any(v[1][:10] in a for a in avisos) for v in vos)
