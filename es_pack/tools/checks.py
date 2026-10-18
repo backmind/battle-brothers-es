@@ -94,6 +94,22 @@ no vuelva a pasar inadvertida:
              avisar de nada. Se vigilan también el espacio duro, los de ancho
              cero y la marca de orden de bytes, por el mismo motivo: no se ven.
              El recuento tiene que ser 0.
+  ANCHO      traducción que no cabe en un recuadro de tamaño fijo. Salió de un
+             jugador tras la 1.0.0: los botones de los juramentos se cortaban
+             por los dos lados, porque el español había perdido el salto de
+             línea del inglés y los botones de evento no parten línea
+             (white-space: nowrap), y alguna descripción de origen se salía
+             por abajo de su columna, que no tiene barra. Se mide con la
+             anchura real de la fuente del juego (ANCHO_CAR), y el presupuesto
+             es lo que usa el inglés más largo de la clase. Mira dos clases
+             que se reconocen sin ambigüedad en el corpus: los botones de
+             ambición y juramento (ficheros *_ambition.nut, el único texto con
+             un salto de línea suelto) y las descripciones de origen
+             (*_scenario.nut, las que empiezan por [p=c][img]). Las opciones de
+             evento normales tienen el mismo presupuesto por línea, pero el
+             corpus no las distingue de otros textos de evento sin el código
+             del juego delante, y se revisaron aparte. El recuento tiene que
+             ser 0.
 
 Salida: recuento por chequeo y unos pocos ejemplos. Código de salida siempre 0.
 """
@@ -355,12 +371,89 @@ def dup_vecino(corpus=CORPUS):
     return avisos
 
 
+# Avance de cada carácter en milésimas de em, sacado de la fuente con la que el
+# juego pinta botones y descripciones (gfx/fonts/free_universal/
+# FreeUniversal-Regular-edited.ttf, ui/fonts.css). Lo que no está aquí mide
+# como una "n".
+ANCHO_CAR = {}
+for _w, _cs in {
+    229: "ilí", 254: "’", 261: "IÍ", 275: ",.:;", 286: "j", 300: " ", 319: "-",
+    329: "f", 345: "|", 350: "t", 359: "()", 362: "r", 368: "!'¡", 396: "/[\\]",
+    436: "“”", 451: '"', 468: "z", 487: "{}", 498: "k", 500: "_–", 503: "s",
+    517: "?¿", 521: "c", 529: "L", 534: "vy", 547: "x", 552: "aàá", 557: "eé",
+    559: "0123456789", 568: "J", 569: "F", 572: "huúü", 573: "nñ", 590: "bg",
+    591: "d", 592: "oó", 599: "pq", 606: "EÉ", 612: "T", 615: "Z", 622: "P",
+    629: "R", 653: "V", 656: "*", 661: "S", 664: "K", 665: "Y", 673: "B",
+    680: "C", 703: "X", 709: "H", 720: "D", 723: "NÑ", 736: "UÚ", 745: "#",
+    750: "AÁ", 761: "G", 766: "&", 773: "OÓ", 784: "Q", 813: "w", 896: "m",
+    897: "M", 928: "%", 972: "W", 1000: "+<=>@—",
+}.items():
+    for _c in _cs:
+        ANCHO_CAR[_c] = _w / 1000
+# Botones de evento: 1.8 rem en una etiqueta de unos 77 rem. El inglés más
+# largo de la clase usa 71.6 (discover unique locations, línea 1).
+BOTON_REM, BOTON_FUENTE = 72.0, 1.8
+# Descripción de origen: columna de 41 rem a 1.6 rem. El inglés más largo
+# ocupa 13 renglones (manhunters y beast hunters).
+ORIGEN_REM, ORIGEN_FUENTE, ORIGEN_RENGLONES = 41.0, 1.6, 13
+_MARCADO_RE = re.compile(r"\[img\][^\[]*\[/img\]|\[/?[a-z]+(?:=[^\]]*)?\]")
+
+
+def ancho_rem(texto, fuente):
+    """Anchura en rem con que el juego pinta el texto en una línea. Un %token%
+    cuenta como un nombre corto, igual en los dos idiomas."""
+    texto = TOKEN_RE.sub("Hans", _MARCADO_RE.sub("", texto))
+    return sum(ANCHO_CAR.get(c, 0.573) for c in texto) * fuente
+
+
+def renglones(texto, ancho, fuente):
+    """Renglones que ocupa el texto con ajuste por palabras en una columna."""
+    n = 0
+    for parrafo in _MARCADO_RE.sub("", texto).split("\n"):
+        n += 1
+        linea = ""
+        for palabra in parrafo.split(" "):
+            prueba = linea + " " + palabra if linea else palabra
+            if linea and ancho_rem(prueba, fuente) > ancho:
+                n += 1
+                linea = palabra
+            else:
+                linea = prueba
+    return n
+
+
+def _crudo(s):
+    return (s.replace("\\n", "\n").replace("\\x22", '"').replace('\\"', '"')
+             .replace("\\x7b", "{").replace("\\x7d", "}"))
+
+
+def ancho_recuadros(corpus=CORPUS):
+    """Traducciones que no caben en su recuadro fijo (ver ANCHO arriba)."""
+    avisos = []
+    for fichero, _pos, en, es in entradas_en_orden(corpus):
+        en, es = _crudo(en), _crudo(es)
+        if (fichero.endswith("_ambition.nut") and en.count("\n") == 1
+                and "[img]" not in en and "<" not in en):
+            lineas = es.split("\n")
+            peor = max(ancho_rem(l, BOTON_FUENTE) for l in lineas)
+            if peor > BOTON_REM or len(lineas) > 2:
+                avisos.append("%s: botón de %d líneas, la más ancha %.1f rem (máximo %s, 2 líneas): %s"
+                              % (fichero, len(lineas), peor, BOTON_REM, es[:50]))
+        elif fichero.endswith("_scenario.nut") and en.startswith("[p=c][img]"):
+            n = renglones(es, ORIGEN_REM, ORIGEN_FUENTE)
+            if n > ORIGEN_RENGLONES:
+                avisos.append("%s: la descripción ocupa %d renglones (máximo %d)"
+                              % (fichero, n, ORIGEN_RENGLONES))
+    return avisos
+
+
 def revisar(datos, corpus=CORPUS):
     avisos = defaultdict(list)
 
-    # DUP_VECINO
+    # DUP_VECINO y ANCHO, que necesitan el fichero de cada par
     try:
         avisos["DUP_VECINO"] = dup_vecino(corpus)
+        avisos["ANCHO"] = ancho_recuadros(corpus)
     except OSError:
         pass  # sin corpus en disco el resto de chequeos sigue valiendo
 
@@ -518,7 +611,7 @@ def main():
     print("pares con traduccion revisados: %d" % len(datos))
     total = 0
     for nombre in ("IMG", "VARIANTES", "TOKENS", "RECORTE", "DUP_ES", "DUP_VECINO",
-                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL"):
+                   "PUNTUACION", "TILDES", "REGISTRO", "CONTROL", "ANCHO"):
         items = avisos.get(nombre, [])
         total += len(items)
         print("\n%-11s %d" % (nombre, len(items)))

@@ -55,7 +55,7 @@ Las cifras cumplen `total = dist + wip + drop`; las demás cuentan poblaciones a
 PYTHONUTF8=1 uv run pytest -q
 ```
 
-**`checks.py`** se puede lanzar suelto para ver solo los avisos, sin reconstruir el pack. Cada familia corresponde a una clase de fallo que ya apareció de verdad: `IMG` (imagen de evento que no cuadra entre idiomas), `DUP_VECINO` y `DUP_ES` (una entrada con la traducción de otra, la firma del corrimiento), `TOKENS` (marcadores `%x%` deformados o ausentes), `VARIANTES` y `RECORTE` (bloques `{a|b}` desparejados, y ramas resumidas en una), `PUNTUACION` (interrogación o exclamación sin su signo de apertura), `TILDES`, `REGISTRO` (vosotros o voseo, que están fuera de política) y `NFD` (acentos descompuestos, que se ven bien y no coinciden al comparar).
+**`checks.py`** se puede lanzar suelto para ver solo los avisos, sin reconstruir el pack. Cada familia corresponde a una clase de fallo que ya apareció de verdad: `IMG` (imagen de evento que no cuadra entre idiomas), `DUP_VECINO` y `DUP_ES` (una entrada con la traducción de otra, la firma del corrimiento), `TOKENS` (marcadores `%x%` deformados o ausentes), `VARIANTES` y `RECORTE` (bloques `{a|b}` desparejados, y ramas resumidas en una), `PUNTUACION` (interrogación o exclamación sin su signo de apertura), `TILDES`, `REGISTRO` (vosotros o voseo, que están fuera de política), `NFD` (acentos descompuestos, que se ven bien y no coinciden al comparar) y `ANCHO` (botones de ambición y descripciones de origen que no caben en su recuadro, medidos con la anchura real de la fuente del juego).
 
 Ningún aviso bloquea el build, porque en cada familia hay casos legítimos; lo que se pide es que tu cambio no suba la cuenta.
 

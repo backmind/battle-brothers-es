@@ -1237,3 +1237,41 @@ def test_la_emulacion_del_indice_ve_el_rumor_tapado():
     assert not _regex_de_regla("Afraid of <m:str>").fullmatch("Not afraid of anything")
     assert _regex_de_regla("Got <n:int> crowns").fullmatch("Got 12 crowns")
     assert not _regex_de_regla("Got <n:int> crowns").fullmatch("Got many crowns")
+
+
+def test_ancho_mide_con_la_fuente_del_juego():
+    """La línea inglesa más ancha de los botones de ambición (discover unique
+    locations) mide 71.6 rem con la fuente real; el token cuenta igual en los
+    dos idiomas."""
+    from checks import BOTON_FUENTE, ancho_rem
+    linea = "The wilds are teeming with hidden treasures that others are not bold enough to claim."
+    assert 71.0 < ancho_rem(linea, BOTON_FUENTE) < 72.0
+    assert ancho_rem("[color=#bcad8c]Hola[/color] %name%", 1.0) == ancho_rem("Hola Hans", 1.0)
+
+
+def test_ancho_avisa_del_boton_sin_salto_y_de_la_descripcion_larga(tmp_path):
+    """El caso del jugador: el juramento había perdido el \\n del inglés y el
+    botón, que no parte línea, se cortaba por los dos lados."""
+    from checks import ancho_recuadros
+    en_boton = "Evil-doers skulk and hide away from the walls of the just.\\nLet us take an Oath of Fortification and bring those walls to them!"
+    largo = ("Los malhechores se ocultan y se esconden lejos de las murallas de los justos. "
+             "¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!")
+    corto = ("Los malhechores acechan y se esconden lejos de las murallas de los justos.\\n"
+             "¡Tomemos un Juramento de Fortificación y llevemos esas murallas hasta ellos!")
+    en_origen = "[p=c][img]gfx/ui/events/event_1.png[/img][/p][p]Short.[/p]"
+    origen_largo = "[p=c][img]gfx/ui/events/event_1.png[/img][/p][p]" + "Uno.\\n" * 14 + "[/p]"
+    ruta = _corpus_falso(tmp_path, [
+        ("oath_of_fortification_ambition.nut", [(en_boton, largo)]),
+        ("oath_of_honor_ambition.nut", [(en_boton.replace("Fortification", "Honor"), corto),
+                                        ("<ret:str>\\n- Beer", "<ret>\\n- " + "Cerveza " * 20)]),
+        ("lone_wolf_scenario.nut", [(en_origen, origen_largo)]),
+        ("militia_scenario.nut", [(en_origen, "[p=c][img]gfx/ui/events/event_1.png[/img][/p][p]Corto.[/p]")]),
+    ])
+    avisos = ancho_recuadros(ruta)
+    assert len(avisos) == 2
+    assert "oath_of_fortification" in avisos[0] and "lone_wolf" in avisos[1]
+
+
+def test_ancho_no_avisa_de_nada_en_el_corpus():
+    from checks import ancho_recuadros
+    assert ancho_recuadros() == []
