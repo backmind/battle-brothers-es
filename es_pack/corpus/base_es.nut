@@ -46021,11 +46021,63 @@ local pairs = [
     }
     {
         // text = _event.m.Ailing.getName() + " gains " + trait.getName()
-        // Sin :t a propósito (auditoría 29/08): trait.getName() está
-        // hookeado y el rasgo llega ya traducido.
+        // El rasgo llega ya traducido (el getName de los skills está hookeado).
+        // Una regla por cada uno de los once que da el evento: la genérica
+        // "<ailing:str> gains <trait:str>" convertía en «ahora es» cualquier
+        // frase inglesa sin traducir que dijera " gains ".
         mode = "pattern"
-        en = "<ailing:str> gains <trait:str>"
-        es = "<ailing> ahora es <trait>"
+        en = "<ailing:str> gains Sediento de sangre"
+        es = "<ailing> ahora es Sediento de sangre"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Bruto"
+        es = "<ailing> ahora es Bruto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Engreído"
+        es = "<ailing> ahora es Engreído"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Temerario"
+        es = "<ailing> ahora es Temerario"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Tonto"
+        es = "<ailing> ahora es Tonto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Glotón"
+        es = "<ailing> ahora es Glotón"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Impaciente"
+        es = "<ailing> ahora es Impaciente"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Irracional"
+        es = "<ailing> ahora es Irracional"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Paranoico"
+        es = "<ailing> ahora es Paranoico"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Espartano"
+        es = "<ailing> ahora es Espartano"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Supersticioso"
+        es = "<ailing> ahora es Supersticioso"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]\x7bYou tell %anatomist% no. %ailing% is strong enough to heal on his own. The anatomist sighs. You get a sense that he had no real interest in helping the sellsword, only an interest in experimenting on him.%SPEECH_ON%Great advances can only be made with great risks, captain.%SPEECH_OFF%He says before walking off, his quill pen scratching out a name on one of his tomes.\x7d"
@@ -46117,11 +46169,63 @@ local pairs = [
     }
     {
         // text = _event.m.Asthmatic.getName() + " gains " + trait.getName()
-        // Sin :t a propósito (auditoría 29/08): trait.getName() está
-        // hookeado y el rasgo llega ya traducido.
+        // El rasgo llega ya traducido (el getName de los skills está hookeado).
+        // Una regla por cada uno de los once que da el evento: la genérica
+        // "<ailing:str> gains <trait:str>" convertía en «ahora es» cualquier
+        // frase inglesa sin traducir que dijera " gains ".
         mode = "pattern"
-        en = "<ailing:str> gains <trait:str>"
-        es = "<ailing> ahora es <trait>"
+        en = "<ailing:str> gains Sediento de sangre"
+        es = "<ailing> ahora es Sediento de sangre"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Bruto"
+        es = "<ailing> ahora es Bruto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Engreído"
+        es = "<ailing> ahora es Engreído"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Temerario"
+        es = "<ailing> ahora es Temerario"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Tonto"
+        es = "<ailing> ahora es Tonto"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Glotón"
+        es = "<ailing> ahora es Glotón"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Impaciente"
+        es = "<ailing> ahora es Impaciente"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Irracional"
+        es = "<ailing> ahora es Irracional"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Paranoico"
+        es = "<ailing> ahora es Paranoico"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Espartano"
+        es = "<ailing> ahora es Espartano"
+    }
+    {
+        mode = "pattern"
+        en = "<ailing:str> gains Supersticioso"
+        es = "<ailing> ahora es Supersticioso"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]\x7bYou tell %anatomist% no. The anatomist purses his lips and makes some eggheaded argument about the value of medicine and science, and you tell him about the value of a sellsword who doesn't have some fool goofing around with his lungs.\x7d"

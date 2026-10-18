@@ -1407,4 +1407,8 @@ def test_las_reglas_golosas_se_emiten_detras_de_las_concretas():
     assert es_golosa(golosa) and not es_golosa(concreta) and not es_golosa(con_t)
     assert sorted([golosa, concreta, con_t], key=es_golosa) == [concreta, con_t, golosa]
     ens = [get_field(b, "en") for b in load_blocks(CORPUS) if es_golosa(b)]
-    assert "<ailing:str> gains <trait:str>" in ens
+    assert "<who:str> joins the <company:str>" in ens
+    # la de "gains" ya no existe: hay una regla por cada rasgo que dan los eventos
+    todos = [get_field(b, "en") for b in load_blocks(CORPUS)]
+    assert "<ailing:str> gains <trait:str>" not in todos
+    assert "<ailing:str> gains Temerario" in todos

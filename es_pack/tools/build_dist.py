@@ -201,7 +201,11 @@ def es_golosa(block):
     que viniera detrás en el corpus: "Hackett gains Deathwish" salía «Hackett
     ahora es Deathwish», y lo mismo con Iron Lungs, Training Experience y
     "+3 Fatigue". Se emiten al final, para que cualquier regla más concreta de
-    la misma clave se pruebe antes; el corpus no cambia."""
+    la misma clave se pruebe antes; el corpus no cambia. Ir al final no basta
+    con una frase que no case nada más ("Something gains nothing" salía
+    «Something ahora es nothing»), así que esa regla se sustituyó en el
+    corpus por una por rasgo. Quedan "leaves the" y "joins the", cuyo
+    segundo hueco es el nombre de la compañía, que escribe el jugador."""
     en, es = get_field(block, "en") or "", get_field(block, "es") or ""
     return (is_rule_pair(block) and not RULE_KEY_RE.search(block)
             and bool(GOLOSA_RE.match(en)) and ":t" not in es)
