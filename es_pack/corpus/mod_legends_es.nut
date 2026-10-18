@@ -12643,6 +12643,301 @@ local pairs = [
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
+        // Nombre de grupo propio, decidido por el propietario: el par global de
+        // "Sword", "Polearm" y "Sturdy" es el del objeto o el adjetivo del juego base
+        // («Espada recta», «Alabarda», «de recio porte»), que aquí no vale.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sword perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Espada[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Polearm perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Arma de asta[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sturdy perk group[/color]"
+        es = "<desc><c>Del grupo de ventajas Recio[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        // El mismo nombre dentro de una lista de 2 a 4 grupos (el máximo en Legends
+        // 19.4.22), en cada posición, porque el orden lo da el recorrido de
+        // ::Const.Perks. Ninguna ventaja está en dos de estos grupos a la vez. Van
+        // antes que las generales, que traducirían el nombre con su par global.
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sword or <g2:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Espada o <g2:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str> or Sword perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t> o Espada[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sword, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Espada, <g2:t> o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Sword or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Espada o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Sword perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Espada[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sword, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Espada, <g2:t>, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Sword, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Espada, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Sword or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Espada o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Sword perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Espada[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Polearm or <g2:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Arma de asta o <g2:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str> or Polearm perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t> o Arma de asta[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Polearm, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Arma de asta, <g2:t> o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Polearm or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Arma de asta o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Polearm perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Arma de asta[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Polearm, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Arma de asta, <g2:t>, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Polearm, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Arma de asta, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Polearm or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Arma de asta o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Polearm perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Arma de asta[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sturdy or <g2:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Recio o <g2:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str> or Sturdy perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t> o Recio[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sturdy, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Recio, <g2:t> o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Sturdy or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Recio o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Sturdy perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Recio[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Sturdy, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Recio, <g2:t>, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Sturdy, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Recio, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Sturdy or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Recio o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Sturdy perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Recio[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Berserker or <g2:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Berserker o <g2:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str> or Berserker perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t> o Berserker[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Berserker, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Berserker, <g2:t> o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Berserker or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Berserker o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Berserker perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Berserker[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Berserker, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Berserker, <g2:t>, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Berserker, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Berserker, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Berserker or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Berserker o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Berserker perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Berserker[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Trained or <g2:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Entrenado o <g2:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str> or Trained perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t> o Entrenado[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Trained, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Entrenado, <g2:t> o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Trained or <g3:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Entrenado o <g3:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Trained perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Entrenado[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the Trained, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas Entrenado, <g2:t>, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, Trained, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, Entrenado, <g3:t> o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Trained or <g4:str> perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Entrenado o <g4:t>[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
+        mode = "pattern"
+        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Trained perk groups[/color]"
+        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Entrenado[/color]"
+    }
+    // context: ::Legends.updatePerkGroupTooltips
+    {
         // @composicion: perk_tooltips.nut suma a cada descripción "\n" + pre + mid + ap
         // (:33) y, al volver al menú principal, la rama de strArray (:52) la rehace con
         // "\n\n" delante; <desc> se queda los saltos. La descripción ya llega en

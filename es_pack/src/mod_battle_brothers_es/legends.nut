@@ -76,6 +76,25 @@ local tooltip = ::Legends.tooltip, GRUPO = "[color=#0b0084]From the ";
     return tooltip.acall(args) + cabeza.slice(n) + _text.slice(i);
 }
 
+// Tres grupos de ventajas se llaman igual que un objeto o un adjetivo del juego
+// base, y su par global («Espada recta», «Alabarda», «de recio porte») no vale
+// para el grupo. El tooltip de los grupos que conoce el personaje
+// (extendKnownPerksTooltip, que Legends añade a character_background) los pone
+// aquí con su nombre de grupo antes de que lo vea Rosetta; en la línea de grupos
+// de cada ventaja lo hacen las reglas del corpus.
+local GRUPOS = {Sword = "Espada", Polearm = "Arma de asta", Sturdy = "Recio"};
+mod.hookTree("scripts/skills/backgrounds/character_background", function (q) {
+    q.extendKnownPerksTooltip = @(__original) function (_arr) {
+        local n = _arr.len();
+        __original(_arr);
+        for (local i = n; i < _arr.len(); i++) {
+            local fila = _arr[i];
+            if ("type" in fila && fila.type == "textDualColumn" && fila.text in GRUPOS)
+                fila.text = GRUPOS[fila.text];
+        }
+    }
+})
+
 // El nombre de las armaduras y cascos por capas une las piezas con " on "
 // (legend_armor.nut y legend_helmet.nut, makeName), y las piezas ya llegan en
 // castellano por los getters de Rosetta. El corpus lo resolvía con la regla

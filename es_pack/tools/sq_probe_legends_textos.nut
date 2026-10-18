@@ -140,7 +140,9 @@ local function esperado( _tooltip, _desc ) {
         lista = Str.split(", ", nombres[0]);
         lista.push(nombres[1]);
     }
-    local es = lista.map(@(g) ::Rosetta.translate(g));
+    // Tres grupos tienen nombre propio, distinto del par global del juego base.
+    local propios = {Sword = "Espada", Polearm = "Arma de asta", Sturdy = "Recio"};
+    local es = lista.map(@(g) g in propios ? propios[g] : ::Rosetta.translate(g));
     local cab = es.len() == 1 ? "Del grupo de ventajas " + es[0]
         : "De los grupos de ventajas " + Str.join(", ", es.slice(0, -1)) + " o " + es.top();
     return _desc + _tooltip.slice(k, i) + "[color=#0b0084]" + cab + "[/color]";
@@ -194,6 +196,31 @@ foreach (clase in ["scripts/items/legend_armor/legend_armor", "scripts/items/leg
     enganches[clase](q);
     comprueba(clase + ".makeName", q.makeName(@() "Hombreras de cuero on Sobrevesta acolchada")(),
               "Hombreras de cuero sobre Sobrevesta acolchada");
+}
+
+print("=== nombres de grupo propios (Sword, Polearm, Sturdy) ===\n");
+local linea = "Hola.\n[color=#0b0084]";
+foreach (caso in [
+    ["Sword perk group", "Del grupo de ventajas Espada"],
+    ["Shield or Sword perk groups", "De los grupos de ventajas Escudo o Espada"],
+    ["Polearm, Shield or Axe perk groups", "De los grupos de ventajas Arma de asta, Escudo o Hacha"],
+    ["Shield, Axe, Mace or Sturdy perk groups", "De los grupos de ventajas Escudo, Hacha, Maza o Recio"],
+    ["Shield, Berserker or Axe perk groups", "De los grupos de ventajas Escudo, Berserker o Hacha"],
+]) comprueba("línea «" + caso[0] + "»", ::Rosetta.translate(linea + "From the " + caso[0] + "[/color]"),
+             linea + caso[1] + "[/color]");
+// Los pares globales no cambian: siguen siendo el objeto y el adjetivo.
+foreach (en, es in {Sword = "Espada recta", Polearm = "Alabarda", Sturdy = "de recio porte"})
+    comprueba("par global " + en, ::Rosetta.translate(en), es);
+{
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/skills/backgrounds/character_background"](q);
+    local filas = [{id = 1, type = "text", text = "Sword"}];
+    q.extendKnownPerksTooltip(function ( _arr ) {
+        foreach (g in ["Sword", "Polearm", "Sturdy", "Shield"]) _arr.push({id = 2, type = "textDualColumn", text = g});
+    })(filas);
+    comprueba("grupos conocidos del personaje",
+              Str.join(", ", filas.map(@(f) ::Rosetta.translate(f.text))), "Espada recta, Espada, Arma de asta, Recio, Escudo");
 }
 
 print("FALLOS: " + ::probe.fallos + "\n");
