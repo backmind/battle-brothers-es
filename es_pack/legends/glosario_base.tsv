@@ -528,7 +528,7 @@ Caravan Hands	Ayudantes de caravana	general	scripts\config\strings.nut
 Catapult	Catapulta	general	scripts\config\item_names.nut	
 Citizens	Ciudadanos	general	scripts\config\strings.nut	
 Claw	Garra	general	scripts\config\item_names.nut	
-Cleaver	Navaja	general	scripts\config\item_names.nut	
+Cleaver	Cuchilla	general	scripts\config\item_names.nut	
 Conqueror	Conquistador	general	scripts\ai\world\orders\conquer_order.nut	
 Conscript	Recluta	general	scripts\config\strings.nut	
 Conscripts	Reclutas	general	scripts\config\strings.nut	
@@ -1032,7 +1032,7 @@ Bundle of Spiked Bolas	Bolsa de bolas con pinchos	objeto	scripts\items\weapons\g
 Bundle of Throwing Axes	Bolsa de hachas arrojadizas	objeto	scripts\items\weapons\throwing_axe.nut	
 Burlap Robes	Túnicas de arpillera	objeto	scripts\items\armor\golems\flesh_golem_robes.nut	
 Butcher's Apron	Delantal de carnicero	objeto	scripts\items\armor\butcher_apron.nut	
-Butcher's Cleaver	Cuchillo de carnicero	objeto	scripts\items\weapons\butchers_cleaver.nut	
+Butcher's Cleaver	Cuchilla de carnicero	objeto	scripts\items\weapons\butchers_cleaver.nut	
 Carapace of the Desert	Caparazón del desierto	objeto	scripts\items\armor\named\leopard_armor.nut	
 Carried in Bag	Llevado en bolsa	objeto	scripts\items\accessory\accessory.nut	
 Carved Ivory Iconographs	Iconografías de marfil tallado	objeto	scripts\items\loot\goblin_carved_ivory_iconographs_item.nut	
