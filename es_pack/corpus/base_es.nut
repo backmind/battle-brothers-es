@@ -7148,7 +7148,7 @@ local pairs = [
     }
     {
         en = "Executioner"
-        es = "Ejecutor"
+        es = "Verdugo"
     }
     {
         en = "Orcslayer"
@@ -55977,7 +55977,7 @@ local pairs = [
     // FILE: scripts\items\helmets\aketon_cap.nut
     {
         en = "Aketon Cap"
-        es = "Sombero de cuero"
+        es = "Gorro de aketon"
     }
     {
         en = "A padded cloth cap."
@@ -73372,6 +73372,50 @@ local pairs = [
         // @composicion
         en = "Show MSU-based information in skill tooltips e.g. Damage Type."
         es = "Muestra en los tooltips de habilidad información de MSU, como el tipo de daño."
+    }
+    {
+        // MSU (hooks/skills/skill.nut, getDescription) antepone el tipo de daño a
+        // la descripción ya traducida: "[color=...]Inflicts " + tipos + " Damage [/color]\n\n" + desc.
+        // Los tipos salen de DamageTypeName; con dos, cada uno lleva su porcentaje y
+        // el segundo siempre es Piercing (weighted_container_damage_type.nut).
+        mode = "pattern"
+        en = "<open:tag>Inflicts Cutting Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño cortante<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts Piercing Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño perforante<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts Blunt Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño contundente<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts Burning Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño de fuego<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts Unknown Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño de tipo desconocido<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts <a:int>% Blunt, <b:int>% Piercing Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño contundente (<a>%) y perforante (<b>%)<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts <a:int>% Burning, <b:int>% Piercing Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño de fuego (<a>%) y perforante (<b>%)<close>\n\n<desc>"
+    }
+    {
+        mode = "pattern"
+        en = "<open:tag>Inflicts <a:int>% Cutting, <b:int>% Piercing Damage <close:tag>\n\n<desc:str>"
+        es = "<open>Inflige daño cortante (<a>%) y perforante (<b>%)<close>\n\n<desc>"
     }
     {
         // @composicion

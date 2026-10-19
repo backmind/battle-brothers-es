@@ -65,6 +65,17 @@ mod.queue(">mod_rosetta", function () {
         }
     })
 
+    // Las dos intros de partida (early_access y southern_quickstart) titulan
+    // "The " + nombre de la compañía, ya concatenado, así que el par de
+    // "The %companyname%" no casa y salía "The Los Focalistas". En
+    // castellano el título es el nombre tal cual, sin traducirlo.
+    mod.hook("scripts/events/event", function (q) {
+        q.getUITitle = @(__original) function () {
+            local nombre = ::World.Assets.getName();
+            return this.m.Title == "The " + nombre ? nombre : __original();
+        }
+    })
+
     // Caso 6: aviso del menú principal. El literal viene incrustado en
     // main_menu_screen.connect(), así que se deja conectar y se re-empuja el
     // MOTD traducido. Si el juego cambia el literal, el par no casa y no se
