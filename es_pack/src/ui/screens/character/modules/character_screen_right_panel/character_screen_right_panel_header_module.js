@@ -209,11 +209,11 @@ CharacterScreenRightPanelHeaderModule.prototype.updateButtonsByBrother = functio
     var perkPoints = this.mDataSource.getBrotherPerkPoints(_brother);
     if (perkPoints > 0)
     {
-        this.mSwitchToPerksButton.findButtonText().html('Habilidades (<span class="font-bold font-color-positive-value">' + perkPoints + '</span>)');
+        this.mSwitchToPerksButton.findButtonText().html('Ventajas (<span class="font-bold font-color-positive-value">' + perkPoints + '</span>)');
     }
     else
     {
-        this.mSwitchToPerksButton.findButtonText().html('Habilidades');
+        this.mSwitchToPerksButton.findButtonText().html('Ventajas');
     }
 };
 

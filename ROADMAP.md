@@ -18,7 +18,7 @@ El pack se apoya en [Rosetta](https://github.com/Suor/battle-brothers-rosetta), 
 
 | Propuesta en Rosetta | Qué cambiaría en el pack |
 |---|---|
-| [#19](https://github.com/Suor/battle-brothers-rosetta/pull/19): el tooltip de entidad se engancha dos veces | El texto de los tooltips del mapa dejaría de pasar dos veces por el traductor. |
+| [#19](https://github.com/Suor/battle-brothers-rosetta/pull/19): el tooltip de entidad se engancha dos veces (aceptada; falta que salga en una release) | El texto de los tooltips del mapa dejará de pasar dos veces por el traductor. |
 | [#18](https://github.com/Suor/battle-brothers-rosetta/pull/18): el extractor no lee las cadenas `@"..."` | Sobraría el paso propio que las convierte antes de extraer el texto de Legends. |
 | [#11](https://github.com/Suor/battle-brothers-rosetta/pull/11) y [#10](https://github.com/Suor/battle-brothers-rosetta/issues/10): `:t` que conserva el hueco sin traducir | Algunas reglas podrían dejar de fallar cuando un hueco no tiene traducción. |
 | [#15](https://github.com/Suor/battle-brothers-rosetta/issues/15): probar el texto sin espacios en los bordes | Sobrarían los arreglos de bordes, como el enganche de `::Legends.tooltip`. |

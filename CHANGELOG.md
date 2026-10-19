@@ -5,6 +5,15 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 ## [4.0.1] - sin publicar
 
 - **El juego podía quedarse congelado al mostrar un texto largo en inglés que el pack no conoce**, sobre todo con mods como Legends: un evento de Legends tardaba más de 14 minutos en pasar por la traducción. Varias reglas del pack (las de «X has Y», «X had Y», «X's Y» y parecidas) prueban a traducir el resto de la frase para saber si les toca, y ese resto vuelve a casar con ellas; con cada «has» o «had» más el trabajo se multiplicaba. Una frase de 86 caracteres con doce de ellos ya costaba 15 segundos, y volver a pasar por la traducción el tooltip de la moral, ya en castellano, 4. Ahora el pack recuerda lo que ya tradujo mientras dura cada texto: las traducciones son exactamente las mismas, y el peor texto de Legends tarda menos de dos décimas de segundo.
+- **El tipo de daño que MSU añade a los tooltips de habilidad salía en inglés** («Inflicts Cutting Damage»). Ahora dice «Inflige daño cortante», «perforante», «contundente» o «de fuego», y en las habilidades con dos tipos, cada uno con su porcentaje.
+- **El título de la presentación de la partida decía «The» delante del nombre de la compañía** («The Los Focalistas»). Ahora sale solo el nombre, como en el texto.
+- **El trasfondo Executioner es «Verdugo»**, como en su descripción; decía «Ejecutor».
+- **Aketon Cap es «Gorro de aketon»**, a juego con la «Capucha de aketon»; decía «Sombero de cuero».
+- **Frases inglesas que salían a medias con «deja a» o «se une a».** Dos reglas de los eventos de deserción y compañía se comían cualquier frase con «leaves the» o «joins the». Ahora solo se traduce la que acaba en el nombre de tu compañía.
+- **«Ventaja» en todo el juego** para los perks, como el resto del texto: el botón y el árbol de la pantalla de personaje, los puntos de ventaja, las ambiciones y los consejos decían «habilidad», «beneficio» o «pericia».
+- **Términos unificados:** «troles» (el plural regular) en lugar de «trols» y «trolls», «necrófago» para ghoul, el rasgo «Ojos de águila» como el apodo «Ojo de águila», «no muerto» siempre sin guion y Billman es «soldado de guja», como su arma, en lugar de «piquero».
+- **Erratas:** «Laureles antiguos», «Regente en ausencia» (decía «en Absenta»), «Poción de segundo aliento» y la «Pasiva de trol».
+- Dos opciones de evento que no cabían en su botón (el soldado retirado y el monje viajero). El chequeo `ANCHO` mide ahora todas las opciones de evento y contrato si tiene delante el código descompilado del juego.
 
 ## [4.0.0] - 2026-10-18
 
