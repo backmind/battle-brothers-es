@@ -205,8 +205,9 @@ def es_golosa(block):
     la misma clave se pruebe antes; el corpus no cambia. Ir al final no basta
     con una frase que no case nada más ("Something gains nothing" salía
     «Something ahora es nothing»), así que esa regla se sustituyó en el
-    corpus por una por rasgo. Quedan "leaves the" y "joins the", cuyo
-    segundo hueco es el nombre de la compañía, que escribe el jugador."""
+    corpus por una por rasgo. Las de "leaves the" y "joins the" (el segundo
+    hueco es el nombre de la compañía) se retiraron en la 4.0.1: las traduce
+    el gancho de event.getUIList del pack, que sí sabe ese nombre."""
     en, es = get_field(block, "en") or "", get_field(block, "es") or ""
     return (is_rule_pair(block) and not RULE_KEY_RE.search(block)
             and bool(GOLOSA_RE.match(en)) and ":t" not in es)

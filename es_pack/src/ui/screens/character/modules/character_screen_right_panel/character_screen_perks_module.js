@@ -287,7 +287,7 @@ CharacterScreenPerksModule.prototype.showPerkUnlockDialog = function(_perk)
     this.mDataSource.notifyBackendPopupDialogIsVisible(true);
 
     var self = this;
-    var popupDialog = $('.character-screen').createPopupDialog('Desbloquear Habilidad', null, null, 'unlock-perk-popup');
+    var popupDialog = $('.character-screen').createPopupDialog('Desbloquear ventaja', null, null, 'unlock-perk-popup');
     
     popupDialog.addPopupDialogContent(this.createPerkUnlockDialogContent(_perk));
 

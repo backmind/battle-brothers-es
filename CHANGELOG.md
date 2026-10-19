@@ -9,6 +9,11 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 - **El título de la presentación de la partida decía «The» delante del nombre de la compañía** («The Los Focalistas»). Ahora sale solo el nombre, como en el texto.
 - **El trasfondo Executioner es «Verdugo»**, como en su descripción; decía «Ejecutor».
 - **Aketon Cap es «Gorro de aketon»**, a juego con la «Capucha de aketon»; decía «Sombero de cuero».
+- **Frases inglesas que salían a medias con «deja a» o «se une a».** Dos reglas de los eventos de deserción y compañía se comían cualquier frase con «leaves the» o «joins the». Ahora solo se traduce la que acaba en el nombre de tu compañía.
+- **«Ventaja» en todo el juego** para los perks, como el resto del texto: el botón y el árbol de la pantalla de personaje, los puntos de ventaja, las ambiciones y los consejos decían «habilidad», «beneficio» o «pericia».
+- **Términos unificados:** «troles» (el plural regular) en lugar de «trols» y «trolls», «necrófago» para ghoul, el rasgo «Ojos de águila» como el apodo «Ojo de águila», «no muerto» siempre sin guion y Billman es «soldado de guja», como su arma, en lugar de «piquero».
+- **Erratas:** «Laureles antiguos», «Regente en ausencia» (decía «en Absenta»), «Poción de segundo aliento» y la «Pasiva de trol».
+- Dos opciones de evento que no cabían en su botón (el soldado retirado y el monje viajero). El chequeo `ANCHO` mide ahora todas las opciones de evento y contrato si tiene delante el código descompilado del juego.
 
 ## [4.0.0] - 2026-10-18
 

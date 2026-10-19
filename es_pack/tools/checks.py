@@ -116,10 +116,12 @@ no vuelva a pasar inadvertida:
              ambición y juramento (ficheros *_ambition.nut, el único texto con
              un salto de línea suelto) y las descripciones de origen
              (*_scenario.nut, las que empiezan por [p=c][img]). Las opciones de
-             evento normales tienen el mismo presupuesto por línea, pero el
-             corpus no las distingue de otros textos de evento sin el código
-             del juego delante, y se revisaron aparte. El recuento tiene que
-             ser 0.
+             evento y contrato normales tienen el mismo presupuesto por línea,
+             pero el corpus no las distingue de otros textos sin el código del
+             juego delante: si BB_HERRAMIENTAS apunta al árbol descompilado
+             (comparer/original_current), se sacan de ahí (el Text de cada
+             opción) y se miden también, con la rama más ancha de cada llave.
+             Sin el árbol, esa parte se salta. El recuento tiene que ser 0.
   ETIQUETAS  alguna rama del español deja una etiqueta sin pareja, o la cierra
              antes de abrirla, donde ninguna rama del inglés lo hace: [color]
              (también el que pone el juego por %SPEECH_ON% y %SPEECH_OFF%),
@@ -482,6 +484,44 @@ def ancho_recuadros(corpus=CORPUS):
     return avisos
 
 
+# Una opción de evento o contrato es una tabla que empieza por su Text.
+_OPCION_RE = re.compile(r'\{\s*Text = "((?:[^"\\]|\\.)*)"')
+_LLAVE_RE = re.compile(r"\{([^{}]*)\}")
+
+
+def textos_de_opciones(arbol):
+    """Los Text de las opciones de events/ y contracts/ del árbol descompilado."""
+    textos = set()
+    for sub in ("events", "contracts"):
+        for f in (arbol / sub).rglob("*.nut"):
+            textos.update(_crudo(m.group(1)) for m in
+                          _OPCION_RE.finditer(f.read_text(encoding="utf-8", errors="replace")))
+    return textos
+
+
+def linea_mas_ancha(texto):
+    """Anchura en botón de la línea más ancha, quedándose con la rama más ancha
+    de cada {a | b} (las llaves de dentro primero)."""
+    while _LLAVE_RE.search(texto):
+        texto = _LLAVE_RE.sub(lambda m: max(m.group(1).split("|"),
+                                            key=lambda r: ancho_rem(r.strip(), BOTON_FUENTE)).strip(), texto)
+    return max(ancho_rem(l, BOTON_FUENTE) for l in texto.split("\n"))
+
+
+def ancho_opciones(arbol, corpus=CORPUS):
+    """Opciones de evento cuyo español no cabe en el botón y el inglés sí."""
+    textos = textos_de_opciones(arbol)
+    avisos = []
+    for fichero, _pos, en, es in entradas_en_orden(corpus):
+        en, es = _crudo(en), _crudo(es)
+        if en not in textos or "<" in en:
+            continue
+        a_en, a_es = linea_mas_ancha(en), linea_mas_ancha(es)
+        if a_es > BOTON_REM >= a_en:
+            avisos.append("%s: opción de %.1f rem (máximo %s): %s" % (fichero, a_es, BOTON_REM, es[:60]))
+    return avisos
+
+
 # Lo que abre y cierra cada etiqueta en pantalla. El juego cambia %SPEECH_ON%
 # (o %SPEECH_START%) por un [color=...] y %SPEECH_OFF% por su [/color].
 _ETIQUETAS = ("color", "b", "i", "u")
@@ -579,6 +619,9 @@ def revisar(datos, corpus=CORPUS):
     try:
         avisos["DUP_VECINO"] = dup_vecino(corpus)
         avisos["ANCHO"] = ancho_recuadros(corpus)
+        from rutas import ARBOLES
+        if (ARBOLES / "original_current" / "scripts" / "events").is_dir():
+            avisos["ANCHO"] += ancho_opciones(ARBOLES / "original_current" / "scripts", corpus)
     except OSError:
         pass  # sin corpus en disco el resto de chequeos sigue valiendo
 

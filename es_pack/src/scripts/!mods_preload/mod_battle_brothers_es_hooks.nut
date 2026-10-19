@@ -69,10 +69,33 @@ mod.queue(">mod_rosetta", function () {
     // "The " + nombre de la compañía, ya concatenado, así que el par de
     // "The %companyname%" no casa y salía "The Los Focalistas". En
     // castellano el título es el nombre tal cual, sin traducirlo.
+    //
+    // Lo mismo en la lista de efectos de seis eventos: "X leaves the " o
+    // "X joins the " + el nombre (deserción, el bastardo y el asesino, el noble
+    // repudiado, el mercenario que se va...). Una regla "<a:str> leaves the
+    // <b:str>" se comía cualquier frase con "leaves the"; aquí solo se toca la
+    // que acaba exactamente en el nombre de la compañía.
+    local VERBOS = [[" leaves the ", " deja a "], [" joins the ", " se une a "]];
     mod.hook("scripts/events/event", function (q) {
         q.getUITitle = @(__original) function () {
             local nombre = ::World.Assets.getName();
             return this.m.Title == "The " + nombre ? nombre : __original();
+        }
+        q.getUIList = @(__original) function () {
+            local ret = __original();
+            local nombre = ::World.Assets.getName();
+            foreach (list in ret)
+                foreach (item in list.items) {
+                    if (typeof item.text != "string") continue;
+                    foreach (v in VERBOS) {
+                        local cola = v[0] + nombre;
+                        if (item.text.len() > cola.len() && ::std.Str.endswith(item.text, cola)) {
+                            item.text = item.text.slice(0, -cola.len()) + v[1] + nombre;
+                            break;
+                        }
+                    }
+                }
+            return ret;
         }
     })
 

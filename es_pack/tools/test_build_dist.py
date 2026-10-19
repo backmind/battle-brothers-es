@@ -1395,6 +1395,40 @@ def test_el_final_de_partida_solo_recorta_la_cola_de_cada_trozo():
     assert salida == "5,2;3,2;0,2;3,0;"
 
 
+def test_el_gancho_de_eventos_solo_toca_el_nombre_de_la_compania():
+    """Las intros titulan "The " + nombre y seis eventos listan "X leaves the " o
+    "X joins the " + nombre, ya concatenado. El gancho de event los traduce solo
+    si acaban exactamente en el nombre de la compañía; cualquier otra frase con
+    "leaves the" pasa intacta (antes una regla golosa se la comía)."""
+    import subprocess
+    import pytest
+    from build_dist import SRC
+    from check_syntax import localiza_interprete
+
+    hooks = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es_hooks.nut").read_text(encoding="utf-8")
+    gancho = re.search(r'\n    local VERBOS = .*?\n    mod\.hook\("scripts/events/event".*?\n    \}\)\n', hooks, re.S).group(0)
+    sq = localiza_interprete()
+    if sq is None:
+        pytest.skip("sin intérprete Squirrel disponible")
+    prueba = Path(__file__).resolve().parents[2] / "es_pack" / "build" / "prueba_gancho_eventos.nut"
+    prueba.parent.mkdir(parents=True, exist_ok=True)
+    prueba.write_text(
+        '::World <- {Assets = {getName = @() "Los Focalistas"}};\n'
+        '::std <- {Str = {endswith = @(s, c) s.len() >= c.len() && s.slice(s.len() - c.len()) == c}};\n'
+        'local q = {getUITitle = null, getUIList = null};\n'
+        'local mod = {hook = function (_p, _f) { _f(q); }};\n'
+        + gancho +
+        'local lista = [{title = "", items = [{text = "Hans leaves the Los Focalistas"}, {text = "Otto joins the Los Focalistas"},\n'
+        '    {text = "The arrow leaves the bow"}, {text = " leaves the Los Focalistas"}, {text = 5}]}];\n'
+        'foreach (i in q.getUIList(@() lista).call({})[0].items) print(i.text + "|");\n'
+        'foreach (t in ["The Los Focalistas", "The Arrival"])\n'
+        '    print(q.getUITitle(@() "orig").call({m = {Title = t}}) + "|");\n',
+        encoding="utf-8")
+    r = subprocess.run([str(sq), str(prueba)], capture_output=True, text=True)
+    assert r.stdout == ("Hans deja a Los Focalistas|Otto se une a Los Focalistas|The arrow leaves the bow|"
+                        " leaves the Los Focalistas|5|Los Focalistas|orig|"), r.stdout + r.stderr
+
+
 def test_las_reglas_golosas_se_emiten_detras_de_las_concretas():
     """"<ailing:str> gains <trait:str>", sin :t, casa con cualquier "X gains Y"
     y se adelantaba a "<bro:str> gains Deathwish" y compañía. Se reconoce como
@@ -1406,10 +1440,10 @@ def test_las_reglas_golosas_se_emiten_detras_de_las_concretas():
     con_t = regla % ("<actor:str> has <name:str>", "<actor> goza de <name:t>")
     assert es_golosa(golosa) and not es_golosa(concreta) and not es_golosa(con_t)
     assert sorted([golosa, concreta, con_t], key=es_golosa) == [concreta, con_t, golosa]
-    ens = [get_field(b, "en") for b in load_blocks(CORPUS) if es_golosa(b)]
-    assert "<who:str> joins the <company:str>" in ens
     # la de "gains" ya no existe: hay una regla por cada rasgo que dan los eventos
     todos = [get_field(b, "en") for b in load_blocks(CORPUS)]
+    # ni las de "leaves the"/"joins the": las traduce el gancho de los eventos
+    assert not any(e.endswith((" leaves the <assets:str>", " joins the <company:str>")) for e in todos if e)
     assert "<ailing:str> gains <trait:str>" not in todos
     assert "<ailing:str> gains Temerario" in todos
 
@@ -1472,3 +1506,12 @@ def test_ninguna_traduccion_dispara_la_recursion_de_las_reglas_con_t(tmp_path):
                        capture_output=True, env=env, timeout=300)
     salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
     assert "FALLOS: 0" in salida, salida[-6000:]
+
+
+def test_la_opcion_se_mide_por_su_rama_mas_ancha():
+    """ANCHO de opciones: cada {a | b} cuenta por su rama más ancha, con las
+    llaves de dentro primero, y no por la suma de todas."""
+    from checks import ancho_rem, BOTON_FUENTE, linea_mas_ancha
+    larga = "Una rama bastante más larga"
+    assert linea_mas_ancha("{Sí | %s}" % larga) == ancho_rem(larga, BOTON_FUENTE)
+    assert linea_mas_ancha("A {b | {c | %s}}" % larga) == ancho_rem("A " + larga, BOTON_FUENTE)
