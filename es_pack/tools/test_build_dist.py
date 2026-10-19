@@ -1457,8 +1457,9 @@ def _clave_de_regla(en, salta_trozos=False):
 def test_ninguna_regla_de_mod_queda_bajo_una_clave_imposible():
     """Una regla cuya clave es un trozo de etiqueta ("[color=") no se prueba
     nunca. Las de los mods las rescata claves.nut, y esto comprueba que lo
-    consigue. En el juego base queda una, el sobre del rumor de taberna, que
-    claves.nut no toca porque el base se carga antes: pendiente de la 4.0.1."""
+    consigue. En el juego base, que se carga antes de claves.nut, no puede
+    haber ninguna (la última, el sobre del rumor de taberna, se retiró en la
+    4.0.1: la cubre el gancho de la taberna)."""
     from build_dist import corpus_del_pack, is_rule_pair
 
     imposibles = {"base": [], "mods": []}
@@ -1470,8 +1471,7 @@ def test_ninguna_regla_de_mod_queda_bajo_una_clave_imposible():
             k = _clave_de_regla(en, salta_trozos=c["id"] != "vanilla")
             if "[" in k or "]" in k:
                 imposibles["base" if c["id"] == "vanilla" else "mods"].append(en)
-    assert imposibles["mods"] == []
-    assert [en[:11] for en in imposibles["base"]] == ["<intro:str>"]
+    assert imposibles == {"base": [], "mods": []}
 
 
 def test_la_emulacion_de_la_clave_ve_el_trozo_de_etiqueta():
