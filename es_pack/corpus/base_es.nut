@@ -61502,7 +61502,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]You and your men make your living by hunting down the many beasts that beset villages on the fringes of civilization. It's dangerous work, but it pays well enough, and there's always a bigger beast to slay and more crowns to earn.\n\n[color=#bcad8c]Beast Slayers:[/color] Start with three beast slayers and decent equipment, as well as some beast trophies.\n[color=#bcad8c]Expert Trackers:[/color] See tracks from further away.\n[color=#bcad8c]Expert Skinners:[/color] Each beast you slay has a 50% chance to drop an additional trophy.\n[color=#bcad8c]Prejudice:[/color] Most people don't trust your kind, so you get 10% worse prices.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Tú y tus hombres se ganan la vida cazando bestias que acosan las aldeas en los límites de la civilización. Es peligroso, pero rentable, y nunca faltan bestias mayores que matar ni coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos.\n[color=#bcad8c]Rastreadores expertos:[/color] Ves huellas desde más lejos.\n[color=#bcad8c]Desolladores expertos:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo más.\n[color=#bcad8c]Prejuicio:[/color] Casi nadie se fía de los tuyos, así que obtienes precios un 10% peores.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Tú y tus hombres se ganan la vida cazando bestias que acosan las aldeas al borde de la civilización. Es peligroso pero rentable, y no faltan bestias mayores que matar ni coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos.\n[color=#bcad8c]Rastreadores expertos:[/color] Ves huellas desde más lejos.\n[color=#bcad8c]Desolladores expertos:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo más.\n[color=#bcad8c]Prejuicio:[/color] Casi nadie se fía de los tuyos, así que obtienes precios un 10% peores.[/p]"
     }
     {
         en = "Has slain a dangerous witch"
@@ -63732,7 +63732,7 @@ local pairs = [
         // return "Prepare to immediately attack any opponent that attempts to move into melee range and, on a hit, prevent that opponent from closing in. Targets hit will receive half the damage of a normal " + this.m.BaseAttackName + " attack.";
         mode = "pattern"
         en = "Prepare to immediately attack any opponent that attempts to move into melee range and, on a hit, prevent that opponent from closing in. Targets hit will receive half the damage of a normal <baseattack:str> attack."
-        es = "Prepárate para atacar inmediatamente a cualquier oponente que intente moverse dentro del alcance cuerpo a cuerpo y, con un golpe, evitar que ese oponente se acerque. Los objetivos golpeados recibirán la mitad del daño de un ataque normal de <baseattack>."
+        es = "Prepárate para atacar inmediatamente a cualquier oponente que intente moverse dentro del alcance cuerpo a cuerpo y, con un golpe, evitar que ese oponente se acerque. Los objetivos golpeados recibirán la mitad del daño de un <baseattack:t> normal."
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " uses Spearwall");
