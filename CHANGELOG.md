@@ -13,6 +13,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 - **«Ventaja» en todo el juego** para los perks, como el resto del texto: el botón y el árbol de la pantalla de personaje, los puntos de ventaja, las ambiciones y los consejos decían «habilidad», «beneficio» o «pericia».
 - **Términos unificados:** «troles» (el plural regular) en lugar de «trols» y «trolls», «necrófago» para ghoul, el rasgo «Ojos de águila» como el apodo «Ojo de águila», «no muerto» siempre sin guion y Billman es «soldado de guja», como su arma, en lugar de «piquero».
 - **Erratas:** «Laureles antiguos», «Regente en ausencia» (decía «en Absenta»), «Poción de segundo aliento» y la «Pasiva de trol».
+- **Unos 500 textos de eventos y contratos repasados contra el inglés**, a partir de las notas que dejó la revisión del corpus de Legends: erratas, frases rotas o a medias, sentidos cambiados, calcos y concordancias. Donde la traducción había suavizado el original, recupera su crudeza, como pide la línea del pack. «Sellsword» se dice «mercenario» y «lieutenant», «teniente». Los guiños de la traducción anterior que recoge `GUINOS.md` se quedan como estaban.
 - Dos opciones de evento que no cabían en su botón (el soldado retirado y el monje viajero). El chequeo `ANCHO` mide ahora todas las opciones de evento y contrato si tiene delante el código descompilado del juego.
 
 ## [4.0.0] - 2026-10-18
