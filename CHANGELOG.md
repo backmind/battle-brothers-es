@@ -47,6 +47,7 @@ Primera versión publicada. Verificada contra Battle Brothers 1.5.2.3 con todas 
 - **La pantalla de ajustes de MSU en español**, con una página propia del pack: versión, estado de verificación, créditos y enlaces.
 - **Seis pasadas de verificación en partida**, con el registro del juego revisado en cada una.
 
+[4.0.1]: https://github.com/backmind/battle-brothers-es/releases/tag/4.0.1
 [4.0.0]: https://github.com/backmind/battle-brothers-es/releases/tag/4.0.0
 [1.0.1]: https://github.com/backmind/battle-brothers-es/releases/tag/1.0.1
 [1.0.0]: https://github.com/backmind/battle-brothers-es/releases/tag/1.0.0

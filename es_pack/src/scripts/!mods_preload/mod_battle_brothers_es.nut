@@ -9,7 +9,7 @@ if (!("Rosetta" in getroottable())) return;
 local def = {
     ID = "mod_battle_brothers_es"
     Name = "Battle Brothers en Español"
-    Version = "4.0.0"
+    Version = "4.0.1"
     // Contra qué build del juego se verificó y qué parte de sus textos cubre,
     // medida con es_pack/tools/measure_coverage.py. Los tests exigen que
     // coincidan con build_dist.py.
