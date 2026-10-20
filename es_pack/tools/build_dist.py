@@ -55,7 +55,7 @@ GAME_VERSION = "1.5.2.3"
 # La versión del pack, semver propio. Desde la 4.0.0 continúa la numeración de la
 # traducción anterior en Nexus (3.x); las 1.0.x fueron las dos primeras del repo. La comparten los dos zips
 # y los dos preloads; test_build_dist impide que se separen.
-PACK_VERSION = "4.0.0"
+PACK_VERSION = "4.0.1"
 # Parte de las frases del juego que cubre el corpus, medida contra GAME_VERSION
 # con measure_coverage.py (necesita el juego instalado, así que no la mide la
 # CI). Se actualiza a mano al verificar contra una build nueva.
@@ -76,7 +76,8 @@ FECHA_FIJA = (1980, 1, 1, 0, 0, 0)
 # bloquean; con --estricto (lo que pasa la CI) el build falla si alguno sube
 # por encima de esto. Cada uno esta explicado en su chequeo de checks.py. Si
 # baja, se baja aqui en el mismo commit.
-LINEA_BASE = {"DUP_VECINO": 18, "TILDES": 2, "TOKENS": 1, "VARIANTES": 19}
+# DUP_VECINO 19 desde la 4.0.1: la reconstruccion con y sin lugar dicen lo mismo a proposito.
+LINEA_BASE = {"DUP_VECINO": 19, "TILDES": 2, "TOKENS": 1, "VARIANTES": 16}
 
 
 def entrada_zip(arco):

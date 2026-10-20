@@ -36,7 +36,7 @@ local SONDA_CASO3 = false;
 local def = {
     ID = "mod_battle_brothers_es_hooks"
     Name = "Battle Brothers en Español (hooks)"
-    Version = "4.0.0"
+    Version = "4.0.1"
 }
 local mod = ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_rosetta >= 0.5.0");
@@ -526,7 +526,12 @@ mod.queue(">mod_rosetta", function () {
             local ret = __original();
             if (ret == null) return ret;
             if ("BusinessReputation" in ret) ret.BusinessReputation = _(ret.BusinessReputation);
-            if ("MoralReputation" in ret) ret.MoralReputation = _(ret.MoralReputation);
+            // "Cruel" comparte par con el prefijo de arma legendaria, que va en
+            // minúscula ("Hacha cruel"); la reputación es rótulo y empieza en mayúscula.
+            if ("MoralReputation" in ret) {
+                local t = _(ret.MoralReputation);
+                ret.MoralReputation = t.len() > 0 ? t.slice(0, 1).toupper() + t.slice(1) : t;
+            }
             if ("Factions" in ret) {
                 foreach (f in ret.Factions) {
                     if ("Name" in f) f.Name = _(f.Name);
