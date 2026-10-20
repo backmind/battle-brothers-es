@@ -2,7 +2,7 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
-## [4.0.1] - sin publicar
+## [4.0.1] - 2026-10-21
 
 - **El juego podía quedarse congelado al mostrar un texto largo en inglés que el pack no conoce**, sobre todo con mods como Legends: un evento de Legends tardaba más de 14 minutos en pasar por la traducción. Varias reglas del pack (las de «X has Y», «X had Y», «X's Y» y parecidas) prueban a traducir el resto de la frase para saber si les toca, y ese resto vuelve a casar con ellas; con cada «has» o «had» más el trabajo se multiplicaba. Una frase de 86 caracteres con doce de ellos ya costaba 15 segundos, y volver a pasar por la traducción el tooltip de la moral, ya en castellano, 4. Ahora el pack recuerda lo que ya tradujo mientras dura cada texto: las traducciones son exactamente las mismas, y el peor texto de Legends tarda menos de dos décimas de segundo.
 - **El tipo de daño que MSU añade a los tooltips de habilidad salía en inglés** («Inflicts Cutting Damage»). Ahora dice «Inflige daño cortante», «perforante», «contundente» o «de fuego», y en las habilidades con dos tipos, cada uno con su porcentaje.
@@ -14,6 +14,10 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 - **Términos unificados:** «troles» (el plural regular) en lugar de «trols» y «trolls», «necrófago» para ghoul, el rasgo «Ojos de águila» como el apodo «Ojo de águila», «cuentacoronas» para Crownling (había cuatro formas distintas), «no muerto» siempre sin guion y Billman es «soldado de guja», como su arma, en lugar de «piquero».
 - **Erratas:** «Laureles antiguos», «Regente en ausencia» (decía «en Absenta»), «Poción de segundo aliento» y la «Pasiva de trol».
 - **Unos 500 textos de eventos y contratos repasados contra el inglés**, a partir de las notas que dejó la revisión del corpus de Legends: erratas, frases rotas o a medias, sentidos cambiados, calcos y concordancias. Donde la traducción había suavizado el original, recupera su crudeza, como pide la línea del pack. «Sellsword» se dice «mercenario» y «lieutenant», «teniente». Los guiños de la traducción anterior que recoge `GUINOS.md` se quedan como estaban.
+- **Textos que mezclaban una frase traducida con un nombre en inglés**: «Mantén el Oath of Valor», «Brigands pasaron recientemente por aquí» en las huellas del mapa, «Reputación: Saintly», «...un ataque normal de Thrust» en Muro de lanzas y la reconstrucción de un lugar cercano. La ventana para ampliar el inventario del séquito salía entera en inglés. Ahora todo sale en castellano: «Mantén el Juramento de Valor», «Bandidos pasaron...», «un Lanzazo normal».
+- **La reputación «Cruel» salía en minúscula** en la pantalla de relaciones.
+- **«Tú y tus hombres se ganan la vida»** y otras 79 frases con «tú y» más un verbo en plural se reescriben con «tú» como sujeto: «Con tus hombres te ganas la vida», «Necesito que flanquees a sus cañoneros con tus hombres». El pack sigue en castellano neutro, pero esa construcción sonaba muy forzada.
+- La descripción del origen Cazadores de bestias cabe en su columna sin que la última línea quede a ras.
 - Dos opciones de evento que no cabían en su botón (el soldado retirado y el monje viajero). El chequeo `ANCHO` mide ahora todas las opciones de evento y contrato si tiene delante el código descompilado del juego.
 
 ## [4.0.0] - 2026-10-18
