@@ -1435,13 +1435,13 @@ local pairs = [
         // return "Uphold an " + this.m.OathName + " for " + (timeRemaining > 1 ? "another " + timeRemaining + " days" : "1 more day");
         mode = "pattern"
         en = "Uphold an <oath:str> for another <timeremaining:int> days"
-        es = "Mantén el <oath> por otros <timeremaining> días."
+        es = "Mantén el <oath:t> por otros <timeremaining> días."
     }
     {
         // return "Uphold an " + this.m.OathName + " for " + (timeRemaining > 1 ? "another " + timeRemaining + " days" : "1 more day");
         mode = "pattern"
         en = "Uphold an <oath:str> for 1 more day"
-        es = "Mantén el <oath> por 1 día más."
+        es = "Mantén el <oath:t> por 1 día más."
     }
     // FILE: scripts\ambitions\oaths\oath_of_camaraderie_ambition.nut
     {
@@ -35630,7 +35630,7 @@ local pairs = [
         // return "In an effort to rebuild the nearby " + this.m.Target.tolower() + ", building materials are in high demand and low supply.";
         mode = "pattern"
         en = "In an effort to rebuild the nearby <target:str>, building materials are in high demand and low supply."
-        es = "En un esfuerzo por reconstruir <target>, aquí cerca, los materiales de construcción tienen una gran demanda y una baja oferta."
+        es = "En un esfuerzo por reconstruir un sitio cercano, los materiales de construcción tienen una gran demanda y una oferta escasa."
     }
     // FILE: scripts\entity\world\settlements\situations\refugees_situation.nut
     {
@@ -52128,7 +52128,7 @@ local pairs = [
         // _event.m.Title = active.getOathName() + " Fulfilled";
         mode = "pattern"
         en = "<oath:str> Fulfilled"
-        es = "<oath> Completado"
+        es = "<oath:t> Completado"
     }
     // FILE: scripts\events\events\special\choose_ambition_event.nut
     {
@@ -63732,7 +63732,12 @@ local pairs = [
         // return "Prepare to immediately attack any opponent that attempts to move into melee range and, on a hit, prevent that opponent from closing in. Targets hit will receive half the damage of a normal " + this.m.BaseAttackName + " attack.";
         mode = "pattern"
         en = "Prepare to immediately attack any opponent that attempts to move into melee range and, on a hit, prevent that opponent from closing in. Targets hit will receive half the damage of a normal <baseattack:str> attack."
-        es = "Prepárate para atacar inmediatamente a cualquier oponente que intente moverse dentro del alcance cuerpo a cuerpo y, con un golpe, evitar que ese oponente se acerque. Los objetivos golpeados recibirán la mitad del daño de un <baseattack:t> normal."
+        es = "Prepárate para atacar inmediatamente a cualquier oponente que intente moverse dentro del alcance cuerpo a cuerpo y, con un golpe, evitar que ese oponente se acerque. Los objetivos golpeados recibirán la mitad del daño de un <baseattack> normal."
+    }
+    {
+        // BaseAttackName = "Thrust" es un campo crudo, sin getName que lo traduzca
+        en = "Prepare to immediately attack any opponent that attempts to move into melee range and, on a hit, prevent that opponent from closing in. Targets hit will receive half the damage of a normal Thrust attack."
+        es = "Prepárate para atacar inmediatamente a cualquier oponente que intente moverse dentro del alcance cuerpo a cuerpo y, con un golpe, evitar que ese oponente se acerque. Los objetivos golpeados recibirán la mitad del daño de un Lanzazo normal."
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " uses Spearwall");
@@ -71452,7 +71457,108 @@ local pairs = [
         // text = this.Const.Strings.FootprintsType[i] + " recently passed through here"
         mode = "pattern"
         en = "<footprints:str> recently passed through here"
-        es = "<footprints> pasaron recientemente por aquí"
+        es = "<footprints:t> pasaron recientemente por aquí"
+    }
+    {
+        // Const.Strings.FootprintsType entero: el :t del patrón no sirve para los nombres que quedan igual en castellano ni para los dos singulares
+        en = "A caravan recently passed through here"
+        es = "Una caravana pasó recientemente por aquí"
+    }
+    {
+        en = "A Kraken recently passed through here"
+        es = "Un kraken pasó recientemente por aquí"
+    }
+    {
+        en = "Northern soldiers recently passed through here"
+        es = "Soldados norteños pasaron recientemente por aquí"
+    }
+    {
+        en = "Gilded soldiers recently passed through here"
+        es = "Soldados dorados pasaron recientemente por aquí"
+    }
+    {
+        en = "Peasants recently passed through here"
+        es = "Campesinos pasaron recientemente por aquí"
+    }
+    {
+        en = "Militia recently passed through here"
+        es = "Milicianos pasaron recientemente por aquí"
+    }
+    {
+        en = "Refugees recently passed through here"
+        es = "Refugiados pasaron recientemente por aquí"
+    }
+    {
+        en = "Brigands recently passed through here"
+        es = "Bandidos pasaron recientemente por aquí"
+    }
+    {
+        en = "Undead recently passed through here"
+        es = "No muertos pasaron recientemente por aquí"
+    }
+    {
+        en = "Orcs recently passed through here"
+        es = "Orcos pasaron recientemente por aquí"
+    }
+    {
+        en = "Goblins recently passed through here"
+        es = "Goblins pasaron recientemente por aquí"
+    }
+    {
+        en = "Barbarians recently passed through here"
+        es = "Bárbaros pasaron recientemente por aquí"
+    }
+    {
+        en = "Nomads recently passed through here"
+        es = "Nómadas pasaron recientemente por aquí"
+    }
+    {
+        en = "Direwolves recently passed through here"
+        es = "Lobos huargo pasaron recientemente por aquí"
+    }
+    {
+        en = "Nachzehrers recently passed through here"
+        es = "Nachzehrers pasaron recientemente por aquí"
+    }
+    {
+        en = "Hyenas recently passed through here"
+        es = "Hienas pasaron recientemente por aquí"
+    }
+    {
+        en = "Serpents recently passed through here"
+        es = "Serpientes pasaron recientemente por aquí"
+    }
+    {
+        en = "Webknechts recently passed through here"
+        es = "Webknechts pasaron recientemente por aquí"
+    }
+    {
+        en = "Unholds recently passed through here"
+        es = "Troles pasaron recientemente por aquí"
+    }
+    {
+        en = "Alps recently passed through here"
+        es = "Alps pasaron recientemente por aquí"
+    }
+    {
+        en = "Hexen recently passed through here"
+        es = "Hexen pasaron recientemente por aquí"
+    }
+    {
+        en = "Schrats recently passed through here"
+        es = "Schrats pasaron recientemente por aquí"
+    }
+    {
+        en = "Ifrits recently passed through here"
+        es = "Ifrits pasaron recientemente por aquí"
+    }
+    {
+        en = "Lindwurms recently passed through here"
+        es = "Lindwurms pasaron recientemente por aquí"
+    }
+    {
+        en = "Mercenaries recently passed through here"
+        es = "Mercenarios pasaron recientemente por aquí"
     }
     {
         en = "Available, but this character has no perk point to spend"
@@ -71635,7 +71741,16 @@ local pairs = [
         // text = "Reputation: " + this.World.Assets.getMoralReputationAsText()
         mode = "pattern"
         en = "Reputation: <moralreputationastext:str>"
-        es = "Reputación: <moralreputationastext>"
+        es = "Reputación: <moralreputationastext:t>"
+    }
+    {
+        // Neutral es idéntico (el :t lo descarta) y Cruel tiene par en minúscula de otro uso
+        en = "Reputation: Neutral"
+        es = "Reputación: Neutral"
+    }
+    {
+        en = "Reputation: Cruel"
+        es = "Reputación: Cruel"
     }
     {
         en = "Your reputation reflects how people in the world judge your mercenary company to conduct itself based on past actions. Do you show mercy to your enemies? Do you burn down farmsteads and massacre the peasantry? Based on your reputation, people may offer you different kinds of contracts, and both contracts and events may play out differently."
@@ -72922,14 +73037,14 @@ local pairs = [
     {
         // this.showDialogPopup(this.Const.Strings.InventoryUpgradeHeader[this.World.Retinue.getInventoryUpgrades()], "You can choose to " + this.Const.Strings.InventoryUpgradeText[this.World.Retinue.getInventoryUpgrades()] + " in order to gain 27 more inventory slots for the cost of " + this.Const.Strings.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()] + " crowns. Is this what you want to do?", this.onUpgradeInventorySpace.bindenv(this), null);
         mode = "pattern"
-        en = "You can choose to <action:str> in order to gain 27 more inventory slots for the cost of <cost:int> crowns. Is this what you want to do?"
-        es = "Puedes escoger <action> para ganar 27 espacios de inventario más por el costo de <cost> coronas. ¿Es esto lo que quieres hacer?"
+        en = "You can choose to <action:str> in order to gain 27 more inventory slots for the cost of <cost:str> crowns. Is this what you want to do?"
+        es = "Puedes escoger <action:t> para ganar 27 espacios de inventario más por el costo de <cost> coronas. ¿Es esto lo que quieres hacer?"
     }
     {
         // this.showDialogPopup(this.Const.Strings.InventoryUpgradeHeader[this.World.Retinue.getInventoryUpgrades()], "Sadly, you can not afford the " + this.Const.Strings.InventoryUpgradeCosts[this.World.Retinue.getInventoryUpgrades()] + " crowns necessary to " + this.Const.Strings.InventoryUpgradeText[this.World.Retinue.getInventoryUpgrades()] + " and gain more inventory space at this time.", null, null, true);
         mode = "pattern"
-        en = "Sadly, you can not afford the <cost:int> crowns necessary to <action:str> and gain more inventory space at this time."
-        es = "Lamentablemente, no puedes permitirte el costo de <cost> coronas necesario para <action> y ganar más espacio de inventario en este momento."
+        en = "Sadly, you can not afford the <cost:str> crowns necessary to <action:str> and gain more inventory space at this time."
+        es = "Lamentablemente, no puedes permitirte el costo de <cost> coronas necesario para <action:t> y ganar más espacio de inventario en este momento."
     }
     // FILE: scripts\ui\screens\world\modules\world_contract_screen\world_active_contract_panel_module.nut
     {
@@ -73618,13 +73733,13 @@ local pairs = [
         // @composicion
         mode = "pattern"
         en = "Failed to secure a ruined <x:str>"
-        es = "No logró asegurar las ruinas de <x>"
+        es = "No logró asegurar unas ruinas: <x:t>"
     }
     {
         // @composicion
         mode = "pattern"
         en = "Helped rebuild a <x:str>"
-        es = "Ayudó a reconstruir <x>"
+        es = "Ayudó a reconstruir: <x:t>"
     }
     {
         // @composicion
