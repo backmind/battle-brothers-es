@@ -1664,7 +1664,7 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Stun"
-        es = "Deslumbrar"
+        es = "Aturdir"
     }
     // context: activesDefs.push().Name
     {
@@ -1981,7 +1981,7 @@ local pairs = [
     // context: activesDefs.push().Name
     {
         en = "Second Wind"
-        es = "Segundo aire"
+        es = "Segundo aliento"
     }
     // en = "Castigate"
     // en base_es
@@ -2141,7 +2141,7 @@ local pairs = [
     // context: ::Const.BackgroundTypeName.Ranger
     {
         en = "Ranger"
-        es = "Montaraz"
+        es = "Guardabosques"
     }
     // context: ::Const.BackgroundTypeName.Stabled
     {
@@ -10981,7 +10981,7 @@ local pairs = [
         // ::Const.Strings.PerkDescription.LegendSecondWind <- "\nEven the fiercest battles can't keep you down.\n\n[color=%passive%][u]Passive:[/u][/color]\n• When falling below [color=%negative%]50%[/color] Hitpoints for the first time in each combat, fully refresh your Fatigue, and grant [color=%positive%]+5[/color] Fatigue Recovery for 3 turns.\n\n• Additionally, remove any [color=%status%]Stun[/color], [color=%status%]Daze[/color], [color=%status%]Stagger[/color], [color=%status%]Baffle[/color], [color=%status%]Charmed[/color] or [color=%status%]Sleeping[/color] status.\n\n• Only occurs once per combat.\n\n[color=%active%][u]Active:[/u][/color]\n• Unlocks the [color=%skill%]Second Wind[/color] skill with the same effects as the passive.\n\n• Costs [color=%negative%]4[/color] AP and [color=%negative%]0[/color] Fatigue. Can only be used once per combat when accumulated fatigue is more than 50% of maximum. If the passive effect activates the active can't be used.\n";
         mode = "pattern"
         en = "\nEven the fiercest battles can't keep you down.\n\n[color=%passive%][u]Passive:[/u][/color]\n• When falling below [color=%negative%]50%[/color] Hitpoints for the first time in each combat, fully refresh your Fatigue, and grant [color=%positive%]+5[/color] Fatigue Recovery for 3 turns.\n\n• Additionally, remove any [color=%status%]Stun[/color], [color=%status%]Daze[/color], [color=%status%]Stagger[/color], [color=%status%]Baffle[/color], [color=%status%]Charmed[/color] or [color=%status%]Sleeping[/color] status.\n\n• Only occurs once per combat.\n\n[color=%active%][u]Active:[/u][/color]\n• Unlocks the [color=%skill%]Second Wind[/color] skill with the same effects as the passive.\n\n• Costs [color=%negative%]4[/color] AP and [color=%negative%]0[/color] Fatigue. Can only be used once per combat when accumulated fatigue is more than 50% of maximum. If the passive effect activates the active can't be used.\n"
-        es = "\nNi las batallas más feroces pueden contigo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La primera vez en cada combate que bajes del [color=%negative%]50%[/color] de los Puntos de vida, recuperas por completo la Fatiga y obtienes [color=%positive%]+5[/color] a la recuperación de Fatiga durante 3 turnos.\n\n• Además, elimina cualquier estado de [color=%status%]Aturdido[/color], [color=%status%]Atontado[/color], [color=%status%]Tambaleante[/color], [color=%status%]Desconcertado[/color], [color=%status%]Encantado[/color] o [color=%status%]Durmiendo[/color].\n\n• Solo ocurre una vez por combate.\n\n[color=%active%][u]Activo:[/u][/color]\n• Desbloquea la habilidad [color=%skill%]Segundo aire[/color], con los mismos efectos que la pasiva.\n\n• Cuesta [color=%negative%]4[/color] PA y [color=%negative%]0[/color] de Fatiga. Solo se puede usar una vez por combate, cuando la fatiga acumulada supera el 50% del máximo. Si se activa el efecto pasivo, no se puede usar la activa.\n"
+        es = "\nNi las batallas más feroces pueden contigo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La primera vez en cada combate que bajes del [color=%negative%]50%[/color] de los Puntos de vida, recuperas por completo la Fatiga y obtienes [color=%positive%]+5[/color] a la recuperación de Fatiga durante 3 turnos.\n\n• Además, elimina cualquier estado de [color=%status%]Aturdido[/color], [color=%status%]Atontado[/color], [color=%status%]Tambaleante[/color], [color=%status%]Desconcertado[/color], [color=%status%]Encantado[/color] o [color=%status%]Durmiendo[/color].\n\n• Solo ocurre una vez por combate.\n\n[color=%active%][u]Activo:[/u][/color]\n• Desbloquea la habilidad [color=%skill%]Segundo aliento[/color], con los mismos efectos que la pasiva.\n\n• Cuesta [color=%negative%]4[/color] PA y [color=%negative%]0[/color] de Fatiga. Solo se puede usar una vez por combate, cuando la fatiga acumulada supera el 50% del máximo. Si se activa el efecto pasivo, no se puede usar la activa.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendMarkTarget
     {
@@ -11245,7 +11245,7 @@ local pairs = [
         // ::Const.Strings.PerkDescription.LegendClarity <- "\nA well honed mind can perceive more in each instant, making time appear slower in key instants of need.\n\n[color=%passive%][u]Passive:[/u][/color]\n• An additional [color=%positive%]+10%[/color] of any damage ignores armor.\n\n• Does not work if you are [color=%status%]Dazed[/color], [color=%status%]Drunk[/color], [color=%status%]Hungover[/color], [color=%status%]Taunted[/color], [color=%status%]Staggered[/color], [color=%status%]Horrified[/color], [color=%status%]Concussed[/color] or [color=%status%]Wavering[/color].\n\n• Doubles the armor ignore bonus if under the effect of the following potions: Iron Will, Lionheart, Cat, Second Wind or Hexen Ichor.\n";
         mode = "pattern"
         en = "\nA well honed mind can perceive more in each instant, making time appear slower in key instants of need.\n\n[color=%passive%][u]Passive:[/u][/color]\n• An additional [color=%positive%]+10%[/color] of any damage ignores armor.\n\n• Does not work if you are [color=%status%]Dazed[/color], [color=%status%]Drunk[/color], [color=%status%]Hungover[/color], [color=%status%]Taunted[/color], [color=%status%]Staggered[/color], [color=%status%]Horrified[/color], [color=%status%]Concussed[/color] or [color=%status%]Wavering[/color].\n\n• Doubles the armor ignore bonus if under the effect of the following potions: Iron Will, Lionheart, Cat, Second Wind or Hexen Ichor.\n"
-        es = "\nUna mente bien afilada percibe más en cada instante, y hace que el tiempo parezca ralentizarse en los momentos clave.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Un [color=%positive%]+10%[/color] adicional de cualquier daño ignora la armadura.\n\n• No funciona bajo los estados [color=%status%]Atontado[/color], [color=%status%]Ebrio[/color], [color=%status%]Con resaca[/color], [color=%status%]Provocado[/color], [color=%status%]Tambaleante[/color], [color=%status%]Horrorizado[/color], [color=%status%]Con conmoción[/color] o [color=%status%]Vacilante[/color].\n\n• Duplica la bonificación de ignorar armadura si estás bajo el efecto de alguna de estas pociones: Voluntad de Hierro, Corazón de León, Gato, Segundo aire o Icor de Hexen.\n"
+        es = "\nUna mente bien afilada percibe más en cada instante, y hace que el tiempo parezca ralentizarse en los momentos clave.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Un [color=%positive%]+10%[/color] adicional de cualquier daño ignora la armadura.\n\n• No funciona bajo los estados [color=%status%]Atontado[/color], [color=%status%]Ebrio[/color], [color=%status%]Con resaca[/color], [color=%status%]Provocado[/color], [color=%status%]Tambaleante[/color], [color=%status%]Horrorizado[/color], [color=%status%]Con conmoción[/color] o [color=%status%]Vacilante[/color].\n\n• Duplica la bonificación de ignorar armadura si estás bajo el efecto de alguna de estas pociones: Voluntad de Hierro, Corazón de León, Gato, Segundo aliento o Icor de Hexen.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendAlert
     {
@@ -58959,19 +58959,19 @@ local pairs = [
     // context: legend_hunting_skin_ghouls_contract.create.m.DescriptionTemplates
     {
         en = "Skin ghouls are abominations of nature, their pallid forms and insatiable hunger for flesh making them a terror to encounter."
-        es = "Los gules desollados son abominaciones de la naturaleza; sus formas pálidas y su hambre insaciable de carne hacen que toparse con ellos sea aterrador."
+        es = "Los necrófagos desollados son abominaciones de la naturaleza; sus formas pálidas y su hambre insaciable de carne hacen que toparse con ellos sea aterrador."
     }
     // context: legend_hunting_skin_ghouls_contract.create.m.DescriptionTemplates
     {
         en = "Skin ghouls are cursed beings, their rotting flesh and ravenous appetites make them a gruesome sight to behold."
-        es = "Los gules desollados son seres malditos; su carne putrefacta y su apetito voraz los convierten en un espectáculo espeluznante."
+        es = "Los necrófagos desollados son seres malditos; su carne putrefacta y su apetito voraz los convierten en un espectáculo espeluznante."
     }
     // context: legend_hunting_skin_ghouls_contract.createStates.m.States.push().start.Contract.m.BulletpointsObjectives
     {
         // "Hunt down skin ghouls around " + this.Contract.m.Home.getName()
         mode = "pattern"
         en = "Hunt down skin ghouls around <town:str>"
-        es = "Da caza a los gules desollados en los alrededores de <town>"
+        es = "Da caza a los necrófagos desollados en los alrededores de <town>"
     }
     // context: legend_hunting_skin_ghouls_contract.createScreens.m.Screens.push().Text
     {
@@ -58986,33 +58986,33 @@ local pairs = [
     // context: legend_hunting_skin_ghouls_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_25.png[/img]{You stumble across a dead farmer with its flesh ripped to pieces. %randombrother% crouches and runs and inspects the corpse. %SPEECH_ON%This is clearly the work of a skin ghoul. They're close...%SPEECH_OFF% | %randombrother% spits and nods.%SPEECH_ON%Alright. We're close. Rather, they're close. %SPEECH_OFF%Well that's good. Time for the men to find these monsters. }"
-        es = "[img]gfx/ui/events/event_25.png[/img]{Te topas con un granjero muerto, con la carne hecha jirones. %randombrother% se agacha y examina el cadáver. %SPEECH_ON%Esto es obra de un gul desollado, sin duda. Están cerca...%SPEECH_OFF% | %randombrother% escupe y asiente.%SPEECH_ON%Bien. Estamos cerca. Mejor dicho, ellos están cerca. %SPEECH_OFF%Pues eso es bueno. Es hora de que los hombres encuentren a esos monstruos. }"
+        es = "[img]gfx/ui/events/event_25.png[/img]{Te topas con un granjero muerto, con la carne hecha jirones. %randombrother% se agacha y examina el cadáver. %SPEECH_ON%Esto es obra de un necrófago desollado, sin duda. Están cerca...%SPEECH_OFF% | %randombrother% escupe y asiente.%SPEECH_ON%Bien. Estamos cerca. Mejor dicho, ellos están cerca. %SPEECH_OFF%Pues eso es bueno. Es hora de que los hombres encuentren a esos monstruos. }"
     }
     // context: legend_hunting_skin_ghouls_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/legend_skin_ghoul.png[/img]{The horde of skin ghouls suddenly turn as one. They let out a screech unlike anything you've ever heard before. Claws raised before them, the began to swarm towards the company.}"
-        es = "[img]gfx/ui/events/legend_skin_ghoul.png[/img]{La horda de gules desollados se vuelve de pronto al unísono. Sueltan un chillido distinto de todo lo que has oído jamás. Con las garras en alto, empiezan a abalanzarse en tropel hacia la compañía.}"
+        es = "[img]gfx/ui/events/legend_skin_ghoul.png[/img]{La horda de necrófagos desollados se vuelve de pronto al unísono. Sueltan un chillido distinto de todo lo que has oído jamás. Con las garras en alto, empiezan a abalanzarse en tropel hacia la compañía.}"
     }
     // context: legend_hunting_skin_ghouls_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/legend_skin_ghoul_dead.png[/img]{The last of the skin ghouls is dealt with. You nod at the company's good work then order the men to gather weapons and tend to the wounded, glad these beasts have been vanquished. }"
-        es = "[img]gfx/ui/events/legend_skin_ghoul_dead.png[/img]{Acaban con el último de los gules desollados. Asientes ante el buen trabajo de la compañía y luego ordenas a los hombres que recojan las armas y atiendan a los heridos, con el alivio de saber que esas bestias han caído. }"
+        es = "[img]gfx/ui/events/legend_skin_ghoul_dead.png[/img]{Acaban con el último de los necrófagos desollados. Asientes ante el buen trabajo de la compañía y luego ordenas a los hombres que recojan las armas y atiendan a los heridos, con el alivio de saber que esas bestias han caído. }"
     }
     // context: legend_hunting_skin_ghouls_contract.createScreens.m.Screens.push().Text
     {
         // corrige base: "alrdedor" es errata de "alrededor"; "un gran aplauso" por "a great clap" es una palmada, no un aplauso; "evidencia" calca "evidence" (prueba); "parte de las posesiones ... lo que quede de ella" no concordaba y el inglés habla de la herencia entera ("the estate"), así que pasa a "la herencia ... lo que queda de ella".
         en = "[img]gfx/ui/events/event_85.png[/img]{%employer% meets you at the town entrance and there's a crowd of folks beside him. He welcomes you warmly, stating he had a scout following you who saw the whole battle unfold. After he hands you your reward, the townsfolk come forward one by one, many of which are reluctant to stare a sellsword in the eyes, but they offer a few gifts as thanks for relieving them of the skin ghoul horrors. | You have to track down %employer%, ultimately finding the man in a stable livery with a peasant girl. He bolts upward from the hay, startling the horses which whinny and stamp their hooves. Half-dressed, the man states he already has your pay and forks it over. Eyeing you eyeing the girl, he then starts to grab whatever's in reach, including from the saddlebags of stabled mounts, and hands them over.%SPEECH_ON%The, uh, townsfolk also sought to pitch in. You know, as thanks.%SPEECH_OFF%Right. For further 'thanks' you ask if he'll give you whatever's in a nearby satchel. | %employer% welcomes you back with a great clap and rub of his hands, as though you'd just brought in a turkey and not the horrifying evidence of your victory. After paying you the agreed reward, you hear some surprising news. The mayor states that the estate of a lost townsman could not be properly divvied up and, as further thanks, you're free to take what's left of it.}"
-        es = "[img]gfx/ui/events/event_85.png[/img]{%employer% te recibe en la entrada del pueblo y hay una multitud de personas a su alrededor. Te da una cálida bienvenida y te cuenta que tenía a un explorador siguiéndote que presenció toda la batalla. Después de entregarte tu recompensa, los habitantes del pueblo se acercan uno a uno, muchos de ellos reacios a mirar a un mercenario a los ojos, pero te ofrecen algunos regalos como agradecimiento por librarlos de los horrores de los gules desollados. | Tienes que dar con %employer%, y acabas encontrándolo en la cuadra de un establo con una campesina. Se incorpora de un salto entre la paja y asusta a los caballos, que relinchan y patean el suelo con los cascos. A medio vestir, el hombre dice que ya tiene tu pago y te lo suelta. Al ver que tú miras a la chica, empieza a agarrar todo lo que tiene a mano, incluido lo que hay en las alforjas de las monturas del establo, y te lo entrega.%SPEECH_ON%Los, eh, habitantes del pueblo también quisieron poner de su parte. Ya sabes, como agradecimiento.%SPEECH_OFF%Claro. Como 'agradecimiento' adicional, le preguntas si te dará lo que haya en una bolsa que hay cerca. | %employer% te recibe con una gran palmada y frotándose las manos, como si acabaras de traer un pavo y no la aterradora prueba de tu victoria. Después de pagarte la recompensa acordada, escuchas una noticia sorprendente. El alcalde declara que la herencia de un vecino desaparecido no ha podido repartirse como es debido y que, como muestra de agradecimiento adicional, eres libre de llevarte lo que queda de ella.}"
+        es = "[img]gfx/ui/events/event_85.png[/img]{%employer% te recibe en la entrada del pueblo y hay una multitud de personas a su alrededor. Te da una cálida bienvenida y te cuenta que tenía a un explorador siguiéndote que presenció toda la batalla. Después de entregarte tu recompensa, los habitantes del pueblo se acercan uno a uno, muchos de ellos reacios a mirar a un mercenario a los ojos, pero te ofrecen algunos regalos como agradecimiento por librarlos de los horrores de los necrófagos desollados. | Tienes que dar con %employer%, y acabas encontrándolo en la cuadra de un establo con una campesina. Se incorpora de un salto entre la paja y asusta a los caballos, que relinchan y patean el suelo con los cascos. A medio vestir, el hombre dice que ya tiene tu pago y te lo suelta. Al ver que tú miras a la chica, empieza a agarrar todo lo que tiene a mano, incluido lo que hay en las alforjas de las monturas del establo, y te lo entrega.%SPEECH_ON%Los, eh, habitantes del pueblo también quisieron poner de su parte. Ya sabes, como agradecimiento.%SPEECH_OFF%Claro. Como 'agradecimiento' adicional, le preguntas si te dará lo que haya en una bolsa que hay cerca. | %employer% te recibe con una gran palmada y frotándose las manos, como si acabaras de traer un pavo y no la aterradora prueba de tu victoria. Después de pagarte la recompensa acordada, escuchas una noticia sorprendente. El alcalde declara que la herencia de un vecino desaparecido no ha podido repartirse como es debido y que, como muestra de agradecimiento adicional, eres libre de llevarte lo que queda de ella.}"
     }
     // context: legend_hunting_skin_ghouls_contract.createScreens.m.Screens.push().Options.getResult.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation()
     {
         en = "Rid the town of skin ghouls"
-        es = "Libró al pueblo de gules desollados"
+        es = "Libró al pueblo de necrófagos desollados"
     }
     // context: legend_hunting_skin_ghouls_contract.spawnEnemies.party.setDescription()
     {
         en = "A horde of terrorizing skin ghouls."
-        es = "Una horda de aterradores gules desollados."
+        es = "Una horda de aterradores necrófagos desollados."
     }
     // FILE: scripts\contracts\contracts\legend_hunting_stollwurms_contract.nut
     // context: legend_hunting_stollwurms_contract.create.m.Name
@@ -81251,12 +81251,12 @@ local pairs = [
     // context: mage_background.create.m.Name
     {
         en = "Sorcerer"
-        es = "Taumaturgo"
+        es = "Hechicero"
     }
     // context: mage_background.create.m.Name
     {
         en = "Wizard"
-        es = "Hechicero"
+        es = "Mago"
     }
     // context: mage_background.create.m.Titles
     {
@@ -81292,7 +81292,7 @@ local pairs = [
     // context: mage_legend_mage_commander_background.create.m.Titles
     {
         en = "the Wizard"
-        es = "la Hechicera"
+        es = "la Maga"
     }
     // context: mage_legend_mage_commander_background.create.m.Titles
     {
