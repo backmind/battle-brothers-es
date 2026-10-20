@@ -223,7 +223,28 @@ foreach (en, es in {Sword = "Espada recta", Polearm = "Alabarda", Sturdy = "de r
     })(filas);
     comprueba("grupos conocidos del personaje",
               Str.join(", ", filas.map(@(f) ::Rosetta.translate(f.text))), "Espada recta, Espada, Arma de asta, Recio, Escudo");
+    // Línea de aptitudes: una descripción por grupo, para que el sorteo no importe.
+    if (!("Math" in getroottable())) ::Math <- {rand = @(_a, _b) _a};
+    local grupos = ["heavy armor", "light armor", "cloth armor"].map(@(d) {Descriptions = [d]});
+    local aptitud = q.getPerkTreeGroupDescription(null);
+    comprueba("aptitudes, un grupo", aptitud(grupos.slice(0, 1), "Likes wearing"), "Le gusta llevar armadura pesada.\n");
+    comprueba("aptitudes, dos grupos", aptitud(grupos.slice(0, 2), "Likes wearing"),
+              "Le gusta llevar armadura pesada y armadura ligera.\n");
+    comprueba("aptitudes, tres grupos", aptitud(grupos, "Likes wearing"),
+              "Le gusta llevar armadura pesada, armadura ligera y armadura de tela.\n");
+    comprueba("aptitudes, sin prefijo", aptitud(grupos.slice(0, 1)), " armadura pesada.\n");
+    comprueba("aptitudes, sin grupos", aptitud([], "Likes wearing"), "");
 }
+{
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/entity/tactical/legends_player_horserider"](q);
+    local jinete = {m = {Name = ""}, getHorse = @() {getName = @() "Rocinante"}};
+    q.setScenarioValues(function () { this.m.Name = "Hackett el Valiente and Rocinante"; }).call(jinete);
+    comprueba("nombre del jinete y su caballo", jinete.m.Name, "Hackett el Valiente y Rocinante");
+}
+comprueba("ventaja del libro", ::Rosetta.translate("[leg_img](gfx/ui/perks/clarity.png,height=20px,width=20px)[/leg_img] [color=%perk%]Clarity[/color]"),
+          "[leg_img](gfx/ui/perks/clarity.png,height=20px,width=20px)[/leg_img] [color=%perk%]" + ::Rosetta.translate("Clarity") + "[/color]");
 
 print("=== textos montados con colores o format() ===\n");
 ::Const.UI.getColorized = @(_t, _c) "[color=" + _c + "]" + _t + "[/color]";

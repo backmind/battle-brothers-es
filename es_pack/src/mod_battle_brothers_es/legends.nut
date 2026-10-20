@@ -93,6 +93,30 @@ mod.hookTree("scripts/skills/backgrounds/character_background", function (q) {
                 fila.text = GRUPOS[fila.text];
         }
     }
+    // La línea de aptitudes del trasfondo («Has an aptitude for swords, maces
+    // and bows.») se compone con " and " entre descripciones de grupo al azar;
+    // el corpus tiene el prefijo y cada descripción, pero la frase entera nunca
+    // casaba. Se rehace con las piezas traducidas, mismo sorteo y misma forma.
+    q.getPerkTreeGroupDescription = @(__original) function (_p, _prefix = "") {
+        if (_p.len() == 0) return "";
+        local partes = _p.map(@(g) ::Rosetta._(g.Descriptions[::Math.rand(0, g.Descriptions.len() - 1)]));
+        local text = partes[0];
+        for (local i = 1; i < partes.len(); i++)
+            text += (i == partes.len() - 1 ? " y " : ", ") + partes[i];
+        return (_prefix == "" ? "" : ::Rosetta._(_prefix)) + " " + text + ".\n";
+    }
+})
+
+// El jinete montado toma el nombre «<jinete> and <caballo>»
+// (legends_player_horserider.setScenarioValues). Una regla "<a:str> and <b:str>"
+// casaría con cualquier frase; aquí se cambia solo esa unión.
+mod.hookTree("scripts/entity/tactical/legends_player_horserider", function (q) {
+    q.setScenarioValues = @(__original) function () {
+        __original();
+        local cola = " and " + this.getHorse().getName();
+        if (::std.Str.endswith(this.m.Name, cola))
+            this.m.Name = this.m.Name.slice(0, -cola.len()) + " y " + this.getHorse().getName();
+    }
 })
 
 // El nombre de las armaduras y cascos por capas une las piezas con " on "

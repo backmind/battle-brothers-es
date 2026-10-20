@@ -72769,6 +72769,13 @@ local pairs = [
     }
     // context: legend_skill_book.::inherit().getTooltip.result.push().text
     {
+        // text = "[leg_img](gfx/" + perk.Icon + ",height=20px,width=20px)[/leg_img] [color=%perk%]" + perk.Name + "[/color]"
+        mode = "pattern"
+        en = "[leg_img]<icon:str>[/leg_img] [color=%perk%]<name:str>[/color]"
+        es = "[leg_img]<icon>[/leg_img] [color=%perk%]<name:t>[/color]"
+    }
+    // context: legend_skill_book.::inherit().getTooltip.result.push().text
+    {
         // text = "Reading this will allow the user to learn [color=%negative%]" + selection + "[/color] perk group. Following perks will be added if not already in the tree:"
         mode = "pattern"
         en = "Reading this will allow the user to learn [color=%negative%]<group:str>[/color] perk group. Following perks will be added if not already in the tree:"
