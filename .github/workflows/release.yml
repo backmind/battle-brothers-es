@@ -2,6 +2,9 @@
 # actualizaciones de MSU): pasa las comprobaciones, construye los dos
 # zips y crea la release de GitHub con el apartado del CHANGELOG. Los builds
 # son deterministas, así que los zips son los mismos que salen en local.
+# Una versión previa (5.0.0-beta.1, también semver) sale como pre-release y sin
+# marca de última, porque el aviso de MSU consulta /releases/latest y no debe
+# ofrecer la beta a quien tiene la estable. El patrón de la etiqueta ya la admite.
 name: release
 on:
   push:
@@ -55,7 +58,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           version="$GITHUB_REF_NAME"
-          gh release create "$GITHUB_REF_NAME" \
+          previa=()
+          case "$version" in *-*) previa=(--prerelease --latest=false) ;; esac
+          gh release create "$GITHUB_REF_NAME" "${previa[@]}" \
             --title "Battle Brothers en Español $version" \
             --notes-file notas.md \
             "es_pack/build/mod_battle_brothers_es_${version}.zip" \
