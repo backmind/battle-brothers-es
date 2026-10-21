@@ -108,8 +108,6 @@ La traducción es de cinco autores, y se publica también en [su página de Nexu
 - **backmind**: la traducción sobre Rosetta desde la 4.0.0, con la revisión completa del texto, lo que faltaba por traducir, la línea editorial y el mantenimiento.
 - **Framework**: [Rosetta](https://github.com/Suor/battle-brothers-rosetta), de Suor.
 
-Si eres uno de los autores originales y quieres cambiar algo de la atribución o del uso de tu texto, abre una incidencia y se arregla cuanto antes.
-
 ## Licencias
 
 El repositorio reúne piezas de autores distintos, y cada una conserva la suya:
