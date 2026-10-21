@@ -101,8 +101,11 @@ Si ves un texto en inglés, una errata o una traducción mejorable, [abre una in
 
 ## Créditos
 
-- **Traducción original**: MagnusLioncaster, Hjensikk, AMarauder y ElGranFoca, autores de la traducción completa al castellano que este pack continúa en [su página de Nexus](https://www.nexusmods.com/battlebrothers/mods/640). Sin sus años de trabajo este pack no existiría. Si te gusta, déjale allí tu endorse.
-- **Revisión, traducción y mantenimiento**: backmind. Revisión completa del texto heredado, traducción de todo lo que faltaba, revisión de la línea editorial y adaptación a Rosetta.
+La traducción es de cinco autores, y se publica también en [su página de Nexus](https://www.nexusmods.com/battlebrothers/mods/640). Si te gusta, déjale allí tu endorse.
+
+- **AMarauder, MagnusLioncaster y Hjensikk**: la traducción original, de la 0.1 a la 3.0.3, con los guiños de Magnus.
+- **ElGranFoca**: la adaptación a los parches del juego y la traducción nueva de la 3.0.4 y la 3.0.5.
+- **backmind**: la traducción sobre Rosetta desde la 4.0.0, con la revisión completa del texto, lo que faltaba por traducir, la línea editorial y el mantenimiento.
 - **Framework**: [Rosetta](https://github.com/Suor/battle-brothers-rosetta), de Suor.
 
 Si eres uno de los autores originales y quieres cambiar algo de la atribución o del uso de tu texto, abre una incidencia y se arregla cuanto antes.
@@ -112,7 +115,7 @@ Si eres uno de los autores originales y quieres cambiar algo de la atribución o
 El repositorio reúne piezas de autores distintos, y cada una conserva la suya:
 
 - **Código propio** (herramientas, hooks del pack, CI): [MIT](LICENSE).
-- **Texto de la traducción** (`es_pack/corpus/`): de sus autores originales, usado con su permiso expreso. No lleva licencia libre: no se puede reutilizar fuera de este proyecto sin permiso de sus autores, ni usar en mods de pago o con puntos de donación.
+- **Texto de la traducción** (`es_pack/corpus/`): de sus cinco autores, con el permiso expreso de los autores originales. No lleva licencia libre: no se puede reutilizar fuera de este proyecto sin permiso de sus autores, ni usar en mods de pago o con puntos de donación.
 - **Capa de interfaz** (`es_pack/src/ui/`): ficheros del juego, propiedad de Overhype Studios, con los textos traducidos. Se distribuyen como es costumbre en los mods del juego, sin reclamar licencia sobre ellos.
 - **Rosetta vendorizado** (`vendor/rosetta/`): de Suor, bajo su [licencia BSD](vendor/rosetta/LICENSE).
 
