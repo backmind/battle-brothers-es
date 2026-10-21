@@ -4,7 +4,7 @@ Hacia dónde va el pack. El detalle de cada tarea está en las [issues](https://
 
 ## Ahora: el juego base
 
-La traducción del juego base y sus expansiones está completa desde la 1.0.0. La numeración salta de la 1.0.1 a la 4.0.0 para continuar la de la traducción anterior en Nexus, que llegó a la 3.0.4. Las versiones 4.0.x mantienen el base: erratas, textos que se cuelan en inglés o no caben en pantalla, y lo que traiga cada parche del juego. Lo pendiente está en el milestone [4.0.1](https://github.com/backmind/battle-brothers-es/milestone/1).
+La traducción del juego base y sus expansiones está completa desde la 1.0.0. La numeración salta de la 1.0.1 a la 4.0.0 para continuar la de la traducción anterior en Nexus, que llegó a la 3.0.5. Las versiones 4.0.x mantienen el base: erratas, textos que se cuelan en inglés o no caben en pantalla, y lo que traiga cada parche del juego. Lo pendiente está en el milestone [4.0.1](https://github.com/backmind/battle-brothers-es/milestone/1).
 
 ## Siguiente: Legends
 

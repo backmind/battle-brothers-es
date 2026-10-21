@@ -17,13 +17,13 @@ Traducción al español de Battle Brothers, de todas sus expansiones y, poco a p
 
 ![Negociación de un contrato, en español](es_pack/media/contrato.png)
 
-[Capturas](docs/CAPTURAS.md) · [Historia del proyecto](docs/HISTORIA.md) · [Problemas conocidos](es_pack/corpus/KNOWN_ISSUES.md) · [Hoja de ruta](ROADMAP.md) · [Colaborar](CONTRIBUTING.md)
+[Nexus](https://www.nexusmods.com/battlebrothers/mods/640) · [Capturas](docs/CAPTURAS.md) · [Historia del proyecto](docs/HISTORIA.md) · [Problemas conocidos](es_pack/corpus/KNOWN_ISSUES.md) · [Hoja de ruta](ROADMAP.md) · [Colaborar](CONTRIBUTING.md)
 
 ## Por qué existe
 
 Battle Brothers es, en buena parte, un juego de leer: los contratos se negocian leyendo y los eventos son pequeños relatos, de los que el juego tiene cientos. La comunidad hispanohablante lleva años con una [traducción completa al castellano](https://www.nexusmods.com/battlebrothers/mods/640), pero sustituía los archivos del juego y cada parche la dejaba fuera de juego hasta que alguien la rehacía.
 
-Este pack toma aquel texto, lo revisa entero, establece una línea editorial homogénea, lo completa y lo monta sobre [Rosetta](https://github.com/Suor/battle-brothers-rosetta). Rosetta es la clave: un framework que traduce los textos mientras juegas, desde la memoria, en lugar de reemplazar archivos. Si un parche trae frases nuevas, esas salen en inglés hasta que se traduzcan, y todo lo demás sigue en español. Cómo se hizo, con sus tropiezos, está en la [historia del proyecto](docs/HISTORIA.md).
+Este pack toma aquel texto, lo revisa entero, establece una línea editorial homogénea, lo completa y lo monta sobre [Rosetta](https://github.com/Suor/battle-brothers-rosetta). Rosetta es la clave: un framework que traduce los textos mientras juegas, desde la memoria, en lugar de reemplazar archivos. Si un parche trae frases nuevas, esas salen en inglés hasta que se traduzcan, y todo lo demás sigue en español. Cómo se hizo, con sus tropiezos, está en la [historia del proyecto](docs/HISTORIA.md). Desde la 4.0.0 se publica en la [misma página de Nexus](https://www.nexusmods.com/battlebrothers/mods/640) que aquella traducción, como su continuación.
 
 ## Qué se traduce
 
@@ -48,8 +48,8 @@ Copia estos siete archivos `.zip` en la carpeta `data` del juego, tal cual, sin 
 | 3 | MSU, 1.6.0 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/479) |
 | 4 | stdlib, 2.5 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/676) |
 | 5 | Rosetta, 0.5.0 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/802) |
-| 6 | `mod_battle_brothers_es_<versión>.zip`, la traducción | [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
-| 7 | `mod_battle_brothers_es_ui_<versión>.zip`, los menús y pantallas que el juego dibuja en JavaScript | [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
+| 6 | `mod_battle_brothers_es_<versión>.zip`, la traducción | [Nexus](https://www.nexusmods.com/battlebrothers/mods/640?tab=files) o [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
+| 7 | `mod_battle_brothers_es_ui_<versión>.zip`, los menús y pantallas que el juego dibuja en JavaScript | [Nexus](https://www.nexusmods.com/battlebrothers/mods/640?tab=files) o [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
 
 Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, entra en **Ajustes de mods** desde el menú principal: en la lista sale «Battle Brothers en Español», con su versión y la del juego contra la que se verificó.
 
@@ -101,7 +101,7 @@ Si ves un texto en inglés, una errata o una traducción mejorable, [abre una in
 
 ## Créditos
 
-- **Traducción original**: MagnusLioncaster, Hjensikk, AMarauder y ElGranFoca, autores de la [Traducción completa al Castellano](https://www.nexusmods.com/battlebrothers/mods/640). Sin sus años de trabajo este pack no existiría. Si te gusta, pásate por su página y déjales tu endorse.
+- **Traducción original**: MagnusLioncaster, Hjensikk, AMarauder y ElGranFoca, autores de la traducción completa al castellano que este pack continúa en [su página de Nexus](https://www.nexusmods.com/battlebrothers/mods/640). Sin sus años de trabajo este pack no existiría. Si te gusta, déjale allí tu endorse.
 - **Revisión, traducción y mantenimiento**: backmind. Revisión completa del texto heredado, traducción de todo lo que faltaba, revisión de la línea editorial y adaptación a Rosetta.
 - **Framework**: [Rosetta](https://github.com/Suor/battle-brothers-rosetta), de Suor.
 
