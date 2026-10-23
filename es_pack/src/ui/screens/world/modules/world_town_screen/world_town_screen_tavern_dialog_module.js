@@ -78,7 +78,7 @@ WorldTownScreenTavernDialogModule.prototype.createDIV = function (_parentDiv)
     // create: containers (init hidden!)
     this.mContainer = $('<div class="l-tavern-dialog-container display-none opacity-none"/>');
     _parentDiv.append(this.mContainer);
-    this.mDialogContainer = this.mContainer.createDialog('Taverna', '', '', true, 'dialog-1024-768');
+    this.mDialogContainer = this.mContainer.createDialog('Taberna', '', '', true, 'dialog-1024-768');
 
     // create tabs
     var tabButtonsContainer = $('<div class="l-tab-container"/>');

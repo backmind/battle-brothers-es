@@ -188,7 +188,7 @@ WorldTownScreenTaxidermistDialogModule.prototype.createDIV = function (_parentDi
     this.mDetailsPanel.Container.append(detailsRow);
     var craftButtonLayout = $('<div class="l-hire-button"/>');
     detailsRow.append(craftButtonLayout);
-    this.mDetailsPanel.CraftButton = craftButtonLayout.createTextButton("Crear", function ()
+    this.mDetailsPanel.CraftButton = craftButtonLayout.createTextButton("Elaborar", function ()
     {
         if (self.mSelectedEntry !== null)
         {

@@ -253,7 +253,7 @@ NewCampaignMenuModule.prototype.buildCompanyCrisisSelectionPanel = function (con
 	row.append(evilGreenskinsControl);
 	this.mEvilGreenskinsCheckbox = $('<input type="radio" id="cb-evil-greenskins" name="evil"/>');
 	evilGreenskinsControl.append(this.mEvilGreenskinsCheckbox);
-	this.mEvilGreenskinsLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-evil-greenskins">Invasión de Pieles verdes</label>');
+	this.mEvilGreenskinsLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-evil-greenskins">Invasión de pieles verdes</label>');
 	evilGreenskinsControl.append(this.mEvilGreenskinsLabel);
 	this.mEvilGreenskinsCheckbox.iCheck({
 		checkboxClass: 'icheckbox_flat-orange',
@@ -270,7 +270,7 @@ NewCampaignMenuModule.prototype.buildCompanyCrisisSelectionPanel = function (con
 	row.append(evilUndeadControl);
 	this.mEvilUndeadCheckbox = $('<input type="radio" id="cb-evil-undead" name="evil"/>');
 	evilUndeadControl.append(this.mEvilUndeadCheckbox);
-	this.mEvilUndeadLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-evil-undead">Plaga de No-Muertos</label>');
+	this.mEvilUndeadLabel = $('<label class="text-font-normal font-color-subtitle" for="cb-evil-undead">Plaga de no muertos</label>');
 	evilUndeadControl.append(this.mEvilUndeadLabel);
 	this.mEvilUndeadCheckbox.iCheck({
 		checkboxClass: 'icheckbox_flat-orange',

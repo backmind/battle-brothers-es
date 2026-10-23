@@ -232,7 +232,7 @@ CharacterScreenLeftPanelHeaderModule.prototype.createDIV = function (_parentDiv)
         }
 
         self.mDataSource.notifyBackendPopupDialogIsVisible(true);
-        self.mCurrentPopupDialog = $('.character-screen').createPopupDialog('Cambia el nombre y el título', null, null, 'change-name-and-title-popup');
+        self.mCurrentPopupDialog = $('.character-screen').createPopupDialog('Cambiar nombre y título', null, null, 'change-name-and-title-popup');
 
         self.mCurrentPopupDialog.addPopupDialogOkButton(function (_dialog)
         {

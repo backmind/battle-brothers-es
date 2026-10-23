@@ -67,7 +67,7 @@ TacticalDialogScreen.prototype.createDIV = function (_parentDiv)
     // create: buttons
     var layout = $('<div class="l-yes-button"/>');
     footerButtonBar.append(layout);
-    this.mYesButton = layout.createTextButton("Si", function ()
+    this.mYesButton = layout.createTextButton("Sí", function ()
     {
         self.notifyBackendYesButtonPressed();
     }, '', 1);
