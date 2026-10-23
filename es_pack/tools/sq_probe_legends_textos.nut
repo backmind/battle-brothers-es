@@ -50,8 +50,9 @@ foreach (k, v in {PositiveEventValue = "#00ff01", NegativeEventValue = "#ff0001"
 ::Const.Items.ItemType <- {Shield = 1, Helmet = 2, Armor = 3, Weapon = 4, MeleeWeapon = 4, RangedWeapon = 4};
 ::Const.Strings.PerkName <- {}.setdelegate({_get = @(_k) _k});
 ::Const.Strings.PerkDescription <- {};
-::Const.LegendMod <- {PronounTable = {}, Pronouns = []};
-::BattleBrothersEs <- {TitulosFemeninos = {}};
+::Const.LegendMod <- {};
+dofile(getenv("LEGENDS_DIR") + "/mod_legends/config/z_legends_language.nut", true);
+::BattleBrothersEs <- {TitulosFemeninos = {}, Hechos = {}};
 ::MSU <- {String = {replace = function ( _s, _find, _rep ) {
     local i = _s.find(_find);
     return i == null ? _s : _s.slice(0, i) + _rep + _s.slice(i + _find.len());
@@ -59,7 +60,16 @@ foreach (k, v in {PositiveEventValue = "#00ff01", NegativeEventValue = "#ff0001"
 local porNombre = {}.setdelegate({_get = @(_k) _k});
 ::Legends <- {Perk = porNombre, Effect = porNombre};
 local enganches = {};
-::Hooks.getMod <- @(_id) {hookTree = function ( _src, _f ) { enganches[_src] <- _f; }};
+// Si un fichero se engancha dos veces (hookTree de camp_building), se encadenan.
+local engancha = function ( _src, _f ) {
+    if (!(_src in enganches)) { enganches[_src] <- _f; return; }
+    local antes = enganches[_src];
+    enganches[_src] = function ( _q ) { antes(_q); _f(_q); };
+};
+::Hooks.getMod <- @(_id) {hookTree = engancha, hook = engancha};
+::mods_hookNewObject <- engancha;
+::mods_hookNewObjectOnce <- engancha;
+::mods_hookBaseClass <- engancha;
 // La plantilla del juego, sin Rosetta: el wrapper de Rosetta se emula aparte.
 local function plantilla( _text, _vars ) {
     foreach (v in _vars) _text = Str.replace(_text, "%" + v[0] + "%", "" + v[1]);
@@ -69,6 +79,7 @@ local function plantilla( _text, _vars ) {
 
 dofile(fuente + "!!config/_color_ui.nut", true);
 dofile(fuente + "!!config/_tooltip_templates.nut", true);
+::ModJimmysTooltips <- {modTacticalTooltip = @(_t, _s, _e) _t};
 local original = ::Legends.tooltip;
 dofile(raiz + "/es_pack/src/mod_battle_brothers_es/legends.nut", true);
 comprueba("legends.nut envuelve ::Legends.tooltip", ::Legends.tooltip != original, true);
@@ -223,6 +234,23 @@ foreach (en, es in {Sword = "Espada recta", Polearm = "Alabarda", Sturdy = "de r
     })(filas);
     comprueba("grupos conocidos del personaje",
               Str.join(", ", filas.map(@(f) ::Rosetta.translate(f.text))), "Espada recta, Espada, Arma de asta, Recio, Escudo");
+    filas = [{id = 1, type = "text", text = "x"}];
+    q.extendKnownPerksTooltip(function ( _arr ) {
+        _arr.push({id = 2, type = "text", text = "\n[u]Weapon[/u]"});
+        foreach (g in ["Trained", "Swordsman"]) _arr.push({id = 2, type = "textDualColumn", text = g});
+        _arr.push({id = 3, type = "text", text = "\n[u]Enemy[/u]"});
+    })(filas);
+    comprueba("cabeceras y grupos sin par", Str.join("|", filas.slice(1).map(@(f) f.text)),
+              "\n[u]Armas[/u]|Entrenado|Espadachín|\n[u]Enemigos[/u]");
+    ::Const.BackgroundTypeName <- {Female = "Female"};
+    ::Const.BackgroundType <- {Female = 1};
+    local fondo = {isBackgroundType = @(_t) true};
+    comprueba("tipo de trasfondo", q.getBackgroundTypes(null).call(fondo),
+              "[color=%negative%]Tipo de trasfondo: " + ::Rosetta._("Female") + "[/color]");
+    local terreno = q.getBackgroundDescriptionTooltip(@(_d) [
+        {id = 6, type = "hint", text = "[u]Terrain Movement Modifiers[/u]"},
+        {id = 6, type = "hint", icon = "ui/icons/tracking_disabled.png", text = "Swamps [color=#135213]+25%[/color]"}])(false);
+    comprueba("línea de terreno", terreno[1].text, ::Rosetta._("Swamps") + " [color=#135213]+25%[/color]");
     // Línea de aptitudes: una descripción por grupo, para que el sorteo no importe.
     if (!("Math" in getroottable())) ::Math <- {rand = @(_a, _b) _a};
     local grupos = ["heavy armor", "light armor", "cloth armor"].map(@(d) {Descriptions = [d]});
@@ -257,10 +285,9 @@ print("=== textos montados con colores o format() ===\n");
     ::Const.UI.Color.getHighlightLightBackgroundValue <- @() "#1e468f";
     ::Const.UI.Color.PositiveValue <- "#135213";
     ::Const.HuntingLoot <- {ExpertHunterBackgrounds = [0, 1], RequiredBackgrounds = ["Hunter", "Poacher"]};
-    ::Const.LegendMod.Language <- {arrayToText = @(_a, _y, _c) _a[0] + " " + _y + " " + _a[1]};
     local r = ::Rosetta.translate(compilestring(src.slice(ini, fin + "return desc;".len()))());
     comprueba("Cocina del campamento en castellano", r.find("Las partidas de caza") == 0
-              && r.find("[color=#1e468f]Destiladores[/color]") != null && r.find("Hunter and Poacher\n\nTrasfondos de cocina") != null, true);
+              && r.find("[color=#1e468f]Destiladores[/color]") != null && r.find(::Rosetta._("Hunter") + " y " + ::Rosetta._("Poacher") + "\n\nTrasfondos de cocina") != null, true);
 }
 foreach (caso in [
     ["Hackett has received a Voice of Davkul", "Hackett ha recibido " + ::Rosetta.translate("Voice of Davkul")],
@@ -274,6 +301,158 @@ foreach (caso in [
     ["[color=%positive%]3[/color] Perk point", "[color=%positive%]3[/color] punto de ventaja"],
     ["[color=%negative%]-2[/color] Vision", "[color=%negative%]-2[/color] Visión"],
     ["+[color=%positive%]10%[/color] Melee Damage", "+[color=%positive%]10%[/color] Daño cuerpo a cuerpo"],
+    ["Preset Slot 8", "Ranura de preajuste 8"],
+    // QA del 22/10.
+    ["Contract Category: [color=%positive%]Battle[/color]", "Categoría del contrato: [color=%positive%]Batalla[/color]"],
+    ["Successful hunt will take approximately [color=%positive%]inf[/color] hours.", "Sin nadie asignado a la tienda, la caza no terminará nunca."],
+    ["Shieldmaiden", "Doncella escudera"],
+    ["His wife's cherished [color=#0237bd]Ceremonial Staff[/color] has been stolen. This nobleman needs you to track it down or he'll never hear the end of it.",
+     "Han robado [color=#0237bd]" + ::Rosetta._("Ceremonial Staff") + "[/color], la posesión más querida de la esposa de este noble. Necesita que des con ella o tendrá que oír reproches el resto de su vida."],
 ]) comprueba(caso[0], ::Rosetta.translate(caso[0]), caso[1]);
+{
+    // La negociación por objetos suma la entrada y el apéndice (contract_template_items.nut).
+    local src = "", f = file(fuente + "!!config/contract_template__flavors_items.nut", "r"), b = f.readblob(f.len());
+    foreach (ch in b) src += ch.tochar();
+    ::Legends.ContractTemplate <- {};
+    compilestring(src)();
+    local h = ::Legends.ContractTemplate.Items.FlavorCampHuman;
+    local r = ::Rosetta.translate(h.IsNegotiatingText + h.MultipleOfferAppendix);
+    comprueba("negociación por objetos en castellano", r.find("este montón de %reward_item_count% objetos") != null && r.find("Yes. Good") == null, true);
+}
+{
+    // Los consejos del campamento: uno por párrafo, cabecera y términos en color.
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/encounters/camp/_legend_tips_encounter"](q);
+    ::Const.TipOfTheDay <- ["If you are having trouble killing trees, try bringing axes.",
+        "Shields take minor damage each time they are used to deflect an attack, shield expert reduces this damage significantly."];
+    local enc = {m = {Screens = []}};
+    q.createScreens(function () { this.m.Screens.push({ID = "Task", Text = "x"}); }).call(enc);
+    local az = "[color=#1e468f]";
+    comprueba("consejos del campamento", enc.m.Screens[0].Text,
+        az + "Aquí tienes algunos consejos:[/color]\n\n- Si te cuesta matar árboles, intenta llevar hachas.\n\n- Los escudos sufren un daño leve cada vez que se usan para desviar un ataque; la "
+        + az + "ventaja[/color] Experto en escudos reduce considerablemente ese daño.");
+    comprueba("consejos apuntados como ya traducidos", enc.m.Screens[0].Text in ::BattleBrothersEs.Hechos, true);
+}
+
+{
+    // El tooltip táctico de Jimmy's Tooltips: cabeceras y lista de ventajas.
+    local f = @(_t) "[u][size=14]" + _t + "[/size][/u]";
+    local filas = ::ModJimmysTooltips.modTacticalTooltip([
+        {id = 150, type = "text", text = f("Status perks")},
+        {id = 300, type = "text", text = f("Perks")},
+        {id = 301, type = "text", icon = "ui/icons/perks.png", text = "[color=%negative%]F[/color]earsome, [color=%negative%]R[/color]otation"},
+        {id = 400, type = "text", text = f("Equipped Items:")},
+        {id = 701, type = "text", text = "Throwing Spear Ammo: infinite"},
+        {id = 700, type = "hint", text = f("Chance to loot equipment:")}], null, null);
+    comprueba("JT: cabecera de estado", filas[0].text, f("Ventajas de estado"));
+    comprueba("JT: cabecera de ventajas", filas[1].text, f("Ventajas"));
+    comprueba("JT: lista de ventajas", filas[2].text, "[color=%negative%]T[/color]emible, [color=%negative%]R[/color]otación");
+    comprueba("JT: objetos equipados sin dos puntos", filas[3].text, f("Objetos equipados"));
+    comprueba("JT: munición", filas[4].text, "Throwing Spear Munición: infinita");
+    comprueba("JT: botín", filas[5].text, f("Probabilidad de saquear el equipo"));
+}
+
+comprueba("tropa con cifra exacta", ::Rosetta.translate("2 Ancient Auxiliaries"), "2 Soldados auxiliares ancestrales");
+
+{
+    // Las tiendas del campamento: traducidas, con cifras y términos en color,
+    // y apuntadas como ya hechas.
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/entity/world/camp/camp_building"](q);
+    local en = "Repairing equipment takes tools. Break down and reuse equipment in your stash to create tools to repair other gear. Once an item reaches zero durability, it will be consumed and destroyed. Every 30 durability equals a tool. \n\nThe more people assigned to the tent, the quicker items will be salvaged. People with salvage skills increase the speed further.\n\nThe salvage tent can be upgraded by purchasing a salvage cart from a settlement merchant. An upgraded tent has a 15% increase in salvage speed and every 10 durability equals a tool.\n\nHolding Alt and right clicking on an item in your inventory can send it to your repair or salvage queues";
+    local filas = q.getTooltip(@() [{id = 1, type = "title", text = "x"}, {id = 2, type = "description", text = en}]).call({});
+    local s = filas[1].text, az = "[color=#1e468f]", ve = "[color=#135213]";
+    print("  tienda de desguace: " + s + "\n");
+    comprueba("campamento: herramientas en color", s.find(az + "herramientas[/color]") != null, true);
+    comprueba("campamento: durabilidad en color", s.find(az + "durabilidad[/color]") != null, true);
+    comprueba("campamento: tienda mejorada en color", s.find(az + "tienda mejorada[/color]") != null, true);
+    comprueba("campamento: 15% en color", s.find(ve + "15%[/color]") != null, true);
+    comprueba("campamento: 30 en color", s.find(ve + "30[/color]") != null, true);
+    comprueba("campamento: apuntada como hecha", s in ::BattleBrothersEs.Hechos, true);
+    local sinPar = q.getTooltip(@() [{type = "description", text = "Zzz no pair 15%"}]).call({});
+    comprueba("campamento: sin par, intacta", sinPar[0].text, "Zzz no pair 15%");
+}
+
+// Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
+// el enganche se registra después del suyo y traduce lo que devuelven.
+{
+    local o = {addStatsToUIData = function (_e, _t) { _t.moraleLabel <- "Steady"; }};
+    enganches["ui/global/data_helper"](o);
+    local t = {};
+    o.addStatsToUIData(null, t);
+    comprueba("etiqueta de moral traducida", t.moraleLabel != "Steady" && t.moraleLabel == ::Rosetta.translate("Steady"), true);
+    local renombre = [{id = 1, type = "title", text = "Insufficient Renown"}];
+    local te = {onQueryUIElementTooltipData = @(_e, _id, _o) clone renombre, onQueryFollowerTooltipData = @(_f) clone renombre};
+    enganches["ui/screens/tooltip/tooltip_events"](te);
+    comprueba("tooltip propio de Legends (obituario)", te.onQueryUIElementTooltipData(0, "x", "y")[0].text, "Renombre insuficiente");
+    comprueba("tooltip propio de Legends (séquito)", te.onQueryFollowerTooltipData(3)[0].text, "Renombre insuficiente");
+
+    // El pago: lo que devuelve el envoltorio de Legends cuando el del base ya
+    // ha puesto "Pago" (bloque inglés aparte y coronas de relleno).
+    foreach (bolsa in [0, 500]) {
+        local c = {m = {ID = "x", Payment = {Pool = bolsa}}};
+        c.getUIBulletpoints <- @(_o = true, _p = true) [
+            {title = "Pago", items = [{icon = "", text = "Obtendrás 100 coronas"}]},
+            {title = "Payment", items = [{icon = "", text = "You gain 2x Collar de cuentas on completion"}], fixed = true}];
+        enganches["contracts/contract"](c);
+        local r = c.getUIBulletpoints();
+        comprueba("pago con bolsa " + bolsa, Str.join(" | ", r.map(@(e) e.title + ": " + Str.join(", ", e.items.map(@(i) i.text)))),
+                  "Pago: " + (bolsa == 0 ? "" : "Obtendrás 100 coronas, ") + "Ganas 2x Collar de cuentas al completar");
+    }
+}
+foreach (clase in ["scripts/items/legend_armor/legend_armor_upgrade", "scripts/items/legend_helmets/legend_helmet_upgrade"]) {
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches[clase](q);
+    comprueba(clase + ".getArmorDescription", q.getArmorDescription(@() "Insufficient Renown")(), "Renombre insuficiente");
+}
+
+print("=== listas de Legends y frases con HTML ===\n");
+local lista = ::Const.LegendMod.Language.arrayToText;
+comprueba("lista con y", lista(["Hackett", "Bors", "Otto"]), "Hackett, Bors y Otto");
+comprueba("lista con e", lista(["Hackett", "Ivo"]), "Hackett e Ivo");
+comprueba("lista con y ante hie-", lista(["Hackett", "Hierro"]), "Hackett y Hierro");
+comprueba("lista con u", lista(["Bors", "Otto"], "or"), "Bors u Otto");
+comprueba("lista de trasfondos", lista(["Barbarian", "Poacher"], "or"), "Bárbaro o " + ::Rosetta._("Poacher"));
+local c = @(_t) "[color=#1e468f]" + _t + "[/color]";
+foreach (caso in [
+    ["[color=#8f1e1e]Imported[/color] from " + c("Tuchow") + " to " + c("Berg"),
+     "[color=#8f1e1e]Importado[/color] de " + c("Tuchow") + " a " + c("Berg")],
+    ["[color=#8f1e1e]Imported[/color] from " + c("Tuchow") + " to " + c("Berg") + " via " + lista(["Ulm", "Ivo"]),
+     "[color=#8f1e1e]Importado[/color] de " + c("Tuchow") + " a " + c("Berg") + " pasando por Ulm e Ivo"],
+    ["Requires Hunt Tier 3", "Requiere nivel de caza 3"],
+]) comprueba(caso[0], ::Rosetta.translate(caso[0]), caso[1]);
+{
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/entity/world/camp/buildings/hunter_building"](q);
+    local rojo = "<span style=\"color:%negative%; padding-left: 2rem;\">";
+    local info = q.getInfo(@() [
+        "Current mode: <span style=\"color:#1e468f;\">Hunt</span>",
+        "Current biome: <span style=\"color:#1e468f;\">on the plains</span>",
+        "<s>- Wolf (around 3 hours)</s>",
+        rojo + "Requires Hunt Tier 2</span>",
+        rojo + "Requires " + lista(["Hunter", "Poacher"], "or") + "</span>",
+        "<u>Forageable</u>",
+    ])();
+    foreach (i, esperado in [
+        "Modo actual: <span style=\"color:#1e468f;\">Caza</span>",
+        "Bioma actual: <span style=\"color:#1e468f;\">en las llanuras</span>",
+        "<s>" + ::Rosetta._("- Wolf (around 3 hours)") + "</s>",
+        rojo + "Requiere nivel de caza 2</span>",
+        rojo + "Requiere " + ::Rosetta._("Hunter") + " o " + ::Rosetta._("Poacher") + "</span>",
+        "<u>Recolectable</u>",
+    ]) comprueba("campamento de caza, línea " + i, info[i], esperado);
+
+    q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/ui/screens/world/modules/world_town_screen/town_training_dialog_module"](q);
+    local bloque = @(_a, _b) "<div style='display: block;'><span style='font-size: 18px;'>" + _a + "</span><br><span style='color:#135213;'>" + _b + "</span></div>";
+    local r = q.queryRosterInformation(@() {Roster = [{Training = [{name = bloque("Merciless Regimen", "Current: Iron Lungs")}, {name = "Thorough Training"}]}]})();
+    comprueba("Merciless Regimen", r.Roster[0].Training[0].name, bloque("Régimen despiadado", "Actual: Iron Lungs"));
+    comprueba("nombre de entrenamiento", r.Roster[0].Training[1].name, "Entrenamiento a fondo");
+}
 
 print("FALLOS: " + ::probe.fallos + "\n");

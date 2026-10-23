@@ -17,8 +17,10 @@ scripts/!mods_preload/!rosetta.nut):
   drop  sin traduccion (es = "")
   wip   algun placeholder <...> que no cumpla <nombre:tipo> en en o
         <nombre[:flag]> en es; o un tipo de sub no soportado (subRes);
-        o dos <...:str> adyacentes en en; o una label en es que no
-        existe en en (el runtime 0.4.0 haria throw al cargar el pack)
+        o un <...:str> seguido de otro hueco en en (el assert de
+        matchParts lleva dos argumentos y el del juego admite uno); o un
+        <...:val>% en en (val ya se come el %, y la regla no casa nunca); o una
+        label en es que no existe en en (el runtime 0.4.0 haria throw al cargar el pack)
   dist  todo lo demas
 """
 import ast
@@ -55,7 +57,7 @@ GAME_VERSION = "1.5.2.3"
 # La versión del pack, semver propio. Desde la 4.0.0 continúa la numeración de la
 # traducción anterior en Nexus (3.x); las 1.0.x fueron las dos primeras del repo. La comparten los dos zips
 # y los dos preloads; test_build_dist impide que se separen.
-PACK_VERSION = "4.0.1"
+PACK_VERSION = "5.0.0-beta.1"
 # Parte de las frases del juego que cubre el corpus, medida contra GAME_VERSION
 # con measure_coverage.py (necesita el juego instalado, así que no la mide la
 # CI). Se actualiza a mano al verificar contra una build nueva.
@@ -263,7 +265,8 @@ def classify(block):
     ok_en = (all(EN_PLACE_RE.match(p) for p in ph_en)
              and all(t in SUBS for t in en_labels.values())
              and len(en_caps) == len(en_labels)
-             and not re.search(r"<\w+:str><\w+:str>", en))
+             and not re.search(r"<\w+:str><\w+:\w+>", en)
+             and not re.search(r"<\w+:val>%", en))
     ok_es = (all(ES_PLACE_RE.match(p) for p in ph_es)
              and all(m.group(1) in en_labels
                      for m in re.finditer(r"<(\w+)(?::\w+)?>", es)))

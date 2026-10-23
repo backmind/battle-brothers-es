@@ -622,7 +622,7 @@ local pairs = [
     // context: ::Const.EntityType.NoblePollax.::Const.EntityType.addNew()
     {
         en = "Pollaxes"
-        es = "Pollaxes"
+        es = "Hachas de armas"
     }
     // en = "Sureshot"
     // en base_es
@@ -2076,7 +2076,7 @@ local pairs = [
     // context: ::Legends.CampContracts.IntroLegion.Title
     {
         en = "An Envoy"
-        es = "Una embajada"
+        es = "Un enviado"
     }
     // context: ::Legends.CampContracts.IntroLegion.Text
     {
@@ -2126,7 +2126,7 @@ local pairs = [
     // context: ::Const.BackgroundTypeName.Outlaw
     {
         en = "Outlaw"
-        es = "Fuera de la ley"
+        es = "Proscrito"
     }
     // context: ::Const.BackgroundTypeName.Performing
     {
@@ -2770,7 +2770,7 @@ local pairs = [
     // context: ::Const.Strings.NobleGreatswordTitles
     {
         en = "the Orcslayer"
-        es = "el Matarorcos"
+        es = "el Mataorcos"
     }
     // context: ::Const.Strings.NobleGreatswordTitles
     {
@@ -6445,7 +6445,7 @@ local pairs = [
     // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.IsNegotiatingText
     {
         en = "[img]gfx/ui/events/event_04.png[/img]{%They_employer% nods.%SPEECH_ON%Yes. Good. I was thinking about payment for your task earlier. | %They_employer% straightens up.%SPEECH_ON%So, payment. | %They_employer% smiles.%SPEECH_ON%This will make you rich, my friend. | %They_employer% takes a deep breath.%SPEECH_ON%Very well, this is what I'm prepared to offer you. | %They_employer% puts %their_employer% hand on your shoulder, smiling reaffirmingly.%SPEECH_ON%I think I know an adequate compensation for your services. | %They_employer% gesticulates with %their_employer% hands, pointing at %their_employer% fingers as if counting something, but it means nothing to you.%SPEECH_ON%Judging from experience, this is good payment for the task. | %They_employer% nods. %SPEECH_ON%You look able, so I am willing to pay quite a bit. | %They_employer% opens the palm of %their_employer% hands.%SPEECH_ON%I'm tight on crowns, so before you ask, this is all I have right now. | %SPEECH_ON%Rest assured that what I'm offering you now is a fine prize for your work.} "
-        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuesto a pagar bastante. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} "
+        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuest%o_employer% a pagar bastante. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} "
     }
     // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.FinalOfferText
     {
@@ -6483,6 +6483,60 @@ local pairs = [
     {
         en = "{You'll be paid nothing. Is that what you want?%SPEECH_OFF%}"
         es = "{No se te pagará nada. ¿Es eso lo que quieres?%SPEECH_OFF%}"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%They_employer% nods.%SPEECH_ON%Yes. Good. I was thinking about payment for your task earlier. | %They_employer% straightens up.%SPEECH_ON%So, payment. | %They_employer% smiles.%SPEECH_ON%This will make you rich, my friend. | %They_employer% takes a deep breath.%SPEECH_ON%Very well, this is what I'm prepared to offer you. | %They_employer% puts %their_employer% hand on your shoulder, smiling reaffirmingly.%SPEECH_ON%I think I know an adequate compensation for your services. | %They_employer% gesticulates with %their_employer% hands, pointing at %their_employer% fingers as if counting something, but it means nothing to you.%SPEECH_ON%Judging from experience, this is good payment for the task. | %They_employer% nods. %SPEECH_ON%You look able, so I am willing to pay quite a bit. | %They_employer% opens the palm of %their_employer% hands.%SPEECH_ON%I'm tight on crowns, so before you ask, this is all I have right now. | %SPEECH_ON%Rest assured that what I'm offering you now is a fine prize for your work.} {You'll get | You are to receive | You'll be paid with | It's} this item from my private collection when the contract is done.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuest%o_employer% a pagar bastante. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} {Obtendrás | Vas a recibir | Se te pagará con | Es} este objeto de mi colección privada cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%They_employer% nods.%SPEECH_ON%Yes. Good. I was thinking about payment for your task earlier. | %They_employer% straightens up.%SPEECH_ON%So, payment. | %They_employer% smiles.%SPEECH_ON%This will make you rich, my friend. | %They_employer% takes a deep breath.%SPEECH_ON%Very well, this is what I'm prepared to offer you. | %They_employer% puts %their_employer% hand on your shoulder, smiling reaffirmingly.%SPEECH_ON%I think I know an adequate compensation for your services. | %They_employer% gesticulates with %their_employer% hands, pointing at %their_employer% fingers as if counting something, but it means nothing to you.%SPEECH_ON%Judging from experience, this is good payment for the task. | %They_employer% nods. %SPEECH_ON%You look able, so I am willing to pay quite a bit. | %They_employer% opens the palm of %their_employer% hands.%SPEECH_ON%I'm tight on crowns, so before you ask, this is all I have right now. | %SPEECH_ON%Rest assured that what I'm offering you now is a fine prize for your work.} {You'll get | You are to receive | You'll be paid | It's} this pile of %reward_item_count% items when the contract is done.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuest%o_employer% a pagar bastante. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} {Obtendrás | Vas a recibir | Se te pagará con | Es} este montón de %reward_item_count% objetos cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%They_employer% nods.%SPEECH_ON%Yes. Good. I was thinking about payment for your task earlier. | %They_employer% straightens up.%SPEECH_ON%So, payment. | %They_employer% smiles.%SPEECH_ON%This will make you rich, my friend. | %They_employer% takes a deep breath.%SPEECH_ON%Very well, this is what I'm prepared to offer you. | %They_employer% puts %their_employer% hand on your shoulder, smiling reaffirmingly.%SPEECH_ON%I think I know an adequate compensation for your services. | %They_employer% gesticulates with %their_employer% hands, pointing at %their_employer% fingers as if counting something, but it means nothing to you.%SPEECH_ON%Judging from experience, this is good payment for the task. | %They_employer% nods. %SPEECH_ON%You look able, so I am willing to pay quite a bit. | %They_employer% opens the palm of %their_employer% hands.%SPEECH_ON%I'm tight on crowns, so before you ask, this is all I have right now. | %SPEECH_ON%Rest assured that what I'm offering you now is a fine prize for your work.} {You'll be paid nothing. Is that what you want?%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuest%o_employer% a pagar bastante. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} {No se te pagará nada. ¿Es eso lo que quieres?%SPEECH_OFF%}"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%I refuse to pay any more for this.  | %SPEECH_START%Be reasonable.  | %SPEECH_START%No, no, no.  | %SPEECH_START%Who do you think you are? I tell you how you're getting paid.  | %They_employer% just looks at you sternly and shakes %their_employer% head.%SPEECH_ON% | %SPEECH_START%No, you are already getting more than you're worth.  | %SPEECH_START%No. Do not push me too far!  | %SPEECH_START%I don't think you quite understand how this works. We need to come to terms if you want to be paid for this. My offer still stands. }{You'll get | You are to receive | You'll be paid with | It's} this item from my private collection when the contract is done.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%Me niego a pagar más por esto.  | %SPEECH_START%Sé razonable.  | %SPEECH_START%No, no, no.  | %SPEECH_START%¿Quién te crees que eres? Aquí quien decide cómo se te paga soy yo.  | Simplemente te mira con severidad y niega con la cabeza.%SPEECH_ON% | %SPEECH_START%No, ya estás obteniendo más de lo que vales.  | %SPEECH_START%No. ¡No me presiones demasiado!  | %SPEECH_START%No creo que entiendas muy bien cómo funciona esto. Necesitamos llegar a un acuerdo si quieres que te pague por esto. Mi oferta sigue en pie. }{Obtendrás | Vas a recibir | Se te pagará con | Es} este objeto de mi colección privada cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%I refuse to pay any more for this.  | %SPEECH_START%Be reasonable.  | %SPEECH_START%No, no, no.  | %SPEECH_START%Who do you think you are? I tell you how you're getting paid.  | %They_employer% just looks at you sternly and shakes %their_employer% head.%SPEECH_ON% | %SPEECH_START%No, you are already getting more than you're worth.  | %SPEECH_START%No. Do not push me too far!  | %SPEECH_START%I don't think you quite understand how this works. We need to come to terms if you want to be paid for this. My offer still stands. }{You'll get | You are to receive | You'll be paid | It's} this pile of %reward_item_count% items when the contract is done.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%Me niego a pagar más por esto.  | %SPEECH_START%Sé razonable.  | %SPEECH_START%No, no, no.  | %SPEECH_START%¿Quién te crees que eres? Aquí quien decide cómo se te paga soy yo.  | Simplemente te mira con severidad y niega con la cabeza.%SPEECH_ON% | %SPEECH_START%No, ya estás obteniendo más de lo que vales.  | %SPEECH_START%No. ¡No me presiones demasiado!  | %SPEECH_START%No creo que entiendas muy bien cómo funciona esto. Necesitamos llegar a un acuerdo si quieres que te pague por esto. Mi oferta sigue en pie. }{Obtendrás | Vas a recibir | Se te pagará con | Es} este montón de %reward_item_count% objetos cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%I refuse to pay any more for this.  | %SPEECH_START%Be reasonable.  | %SPEECH_START%No, no, no.  | %SPEECH_START%Who do you think you are? I tell you how you're getting paid.  | %They_employer% just looks at you sternly and shakes %their_employer% head.%SPEECH_ON% | %SPEECH_START%No, you are already getting more than you're worth.  | %SPEECH_START%No. Do not push me too far!  | %SPEECH_START%I don't think you quite understand how this works. We need to come to terms if you want to be paid for this. My offer still stands. }{You'll be paid nothing. Is that what you want?%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%Me niego a pagar más por esto.  | %SPEECH_START%Sé razonable.  | %SPEECH_START%No, no, no.  | %SPEECH_START%¿Quién te crees que eres? Aquí quien decide cómo se te paga soy yo.  | Simplemente te mira con severidad y niega con la cabeza.%SPEECH_ON% | %SPEECH_START%No, ya estás obteniendo más de lo que vales.  | %SPEECH_START%No. ¡No me presiones demasiado!  | %SPEECH_START%No creo que entiendas muy bien cómo funciona esto. Necesitamos llegar a un acuerdo si quieres que te pague por esto. Mi oferta sigue en pie. }{No se te pagará nada. ¿Es eso lo que quieres?%SPEECH_OFF%}"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%This is it then?  | %They_employer% takes a deep breath.%SPEECH_ON% | %They_employer% sighs.%SPEECH_ON% | %SPEECH_START%Fair enough.  | %SPEECH_START%Fine, fine.  | %SPEECH_START%If it must be. | %SPEECH_START%Fine. How about this?  | %SPEECH_START%Sure, sure, I understand.  | %SPEECH_START%Reasonable.  | %SPEECH_START%Interesting. I think this would be more appropiate then.  | %SPEECH_START%Would you take this instead?  | %SPEECH_START%Let me make the following offer.  | %SPEECH_ON%Fair. Would you accept this instead?  | %SPEECH_START%Very well. Given your demands I offer you this.  | %SPEECH_START%Let's get this over with quickly. Here is my new offer.  | %SPEECH_START%We're all friends here, aren't we? Let's see... }{You'll get | You are to receive | You'll be paid with | It's} this item from my private collection when the contract is done.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%¿Así que esto es todo?  | Respira profundamente.%SPEECH_ON% | Suspira.%SPEECH_ON% | %SPEECH_START%Es justo.  | %SPEECH_START%Bien, bien.  | %SPEECH_START%Si es necesario. | %SPEECH_START%Bien. ¿Qué tal esto?  | %SPEECH_START%Claro, claro, lo entiendo.  | %SPEECH_START%Razonable.  | %SPEECH_START%Interesante. Creo que esto sería más apropiado entonces.  | %SPEECH_START%¿Aceptarías esto en su lugar?  | %SPEECH_START%Permíteme hacerte la siguiente oferta.  | %SPEECH_ON%Aceptable. ¿Aceptarías esto en su lugar?  | %SPEECH_START%Muy bien. Ante tus exigencias te ofrezco esto.  | %SPEECH_START%Terminemos con esto rápidamente. Aquí está mi nueva oferta.  | %SPEECH_START%Todos somos amigos aquí, ¿no? Vamos a ver... }{Obtendrás | Vas a recibir | Se te pagará con | Es} este objeto de mi colección privada cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%This is it then?  | %They_employer% takes a deep breath.%SPEECH_ON% | %They_employer% sighs.%SPEECH_ON% | %SPEECH_START%Fair enough.  | %SPEECH_START%Fine, fine.  | %SPEECH_START%If it must be. | %SPEECH_START%Fine. How about this?  | %SPEECH_START%Sure, sure, I understand.  | %SPEECH_START%Reasonable.  | %SPEECH_START%Interesting. I think this would be more appropiate then.  | %SPEECH_START%Would you take this instead?  | %SPEECH_START%Let me make the following offer.  | %SPEECH_ON%Fair. Would you accept this instead?  | %SPEECH_START%Very well. Given your demands I offer you this.  | %SPEECH_START%Let's get this over with quickly. Here is my new offer.  | %SPEECH_START%We're all friends here, aren't we? Let's see... }{You'll get | You are to receive | You'll be paid | It's} this pile of %reward_item_count% items when the contract is done.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%¿Así que esto es todo?  | Respira profundamente.%SPEECH_ON% | Suspira.%SPEECH_ON% | %SPEECH_START%Es justo.  | %SPEECH_START%Bien, bien.  | %SPEECH_START%Si es necesario. | %SPEECH_START%Bien. ¿Qué tal esto?  | %SPEECH_START%Claro, claro, lo entiendo.  | %SPEECH_START%Razonable.  | %SPEECH_START%Interesante. Creo que esto sería más apropiado entonces.  | %SPEECH_START%¿Aceptarías esto en su lugar?  | %SPEECH_START%Permíteme hacerte la siguiente oferta.  | %SPEECH_ON%Aceptable. ¿Aceptarías esto en su lugar?  | %SPEECH_START%Muy bien. Ante tus exigencias te ofrezco esto.  | %SPEECH_START%Terminemos con esto rápidamente. Aquí está mi nueva oferta.  | %SPEECH_START%Todos somos amigos aquí, ¿no? Vamos a ver... }{Obtendrás | Vas a recibir | Se te pagará con | Es} este montón de %reward_item_count% objetos cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // context: ::Legends.ContractTemplate.Items.FlavorCampHuman.combinado
+    {
+        // contract_template_items.nut concatena la entrada y el apéndice; este par es la suma de los dos.
+        en = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%This is it then?  | %They_employer% takes a deep breath.%SPEECH_ON% | %They_employer% sighs.%SPEECH_ON% | %SPEECH_START%Fair enough.  | %SPEECH_START%Fine, fine.  | %SPEECH_START%If it must be. | %SPEECH_START%Fine. How about this?  | %SPEECH_START%Sure, sure, I understand.  | %SPEECH_START%Reasonable.  | %SPEECH_START%Interesting. I think this would be more appropiate then.  | %SPEECH_START%Would you take this instead?  | %SPEECH_START%Let me make the following offer.  | %SPEECH_ON%Fair. Would you accept this instead?  | %SPEECH_START%Very well. Given your demands I offer you this.  | %SPEECH_START%Let's get this over with quickly. Here is my new offer.  | %SPEECH_START%We're all friends here, aren't we? Let's see... }{You'll be paid nothing. Is that what you want?%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_04.png[/img]{%SPEECH_START%¿Así que esto es todo?  | Respira profundamente.%SPEECH_ON% | Suspira.%SPEECH_ON% | %SPEECH_START%Es justo.  | %SPEECH_START%Bien, bien.  | %SPEECH_START%Si es necesario. | %SPEECH_START%Bien. ¿Qué tal esto?  | %SPEECH_START%Claro, claro, lo entiendo.  | %SPEECH_START%Razonable.  | %SPEECH_START%Interesante. Creo que esto sería más apropiado entonces.  | %SPEECH_START%¿Aceptarías esto en su lugar?  | %SPEECH_START%Permíteme hacerte la siguiente oferta.  | %SPEECH_ON%Aceptable. ¿Aceptarías esto en su lugar?  | %SPEECH_START%Muy bien. Ante tus exigencias te ofrezco esto.  | %SPEECH_START%Terminemos con esto rápidamente. Aquí está mi nueva oferta.  | %SPEECH_START%Todos somos amigos aquí, ¿no? Vamos a ver... }{No se te pagará nada. ¿Es eso lo que quieres?%SPEECH_OFF%}"
     }
     // FILE: mod_legends\!!config\contract_template_items.nut
     // en = "Negotiation"
@@ -6523,7 +6577,7 @@ local pairs = [
     // context: ::Const.Contracts.NegotiationMoneyAndItems.start.Text
     {
         en = "[img]gfx/ui/events/event_04.png[/img]{%They_employer% nods.%SPEECH_ON%Yes. Good. I was thinking about payment for your task earlier. | %They_employer% straightens up.%SPEECH_ON%So, payment. | %They_employer% smiles.%SPEECH_ON%This will make you rich, my friend. | %They_employer% takes a deep breath.%SPEECH_ON%Very well, this is what I'm prepared to offer you. | %They_employer% puts %their_employer% hand on your shoulder, smiling reaffirmingly.%SPEECH_ON%I think I know an adequate compensation for your services. | %They_employer% gesticulates with %their_employer% hands, pointing at %their_employer% fingers as if counting something, but it means nothing to you.%SPEECH_ON%Judging from experience, this is good payment for the task. | %They_employer% nods. %SPEECH_ON%You look able, so I am willing to pay quite a bit. | %They_employer% jingles with a bag of coins.%SPEECH_ON%This will be yours if you help me out on this. | %They_employer% opens the palm of %their_employer% hands.%SPEECH_ON%I'm tight on crowns, so before you ask, this is all I have right now. | %SPEECH_ON%Rest assured that what I'm offering you now is a fine prize for your work.} "
-        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuesto a pagar bastante. | Hace tintinear una bolsa de monedas.%SPEECH_ON%Será tuya si me echas una mano con esto. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} "
+        es = "[img]gfx/ui/events/event_04.png[/img]{Asiente.%SPEECH_ON%Sí. Bien. Hace un rato estaba pensando en el pago por tu tarea. | Se endereza.%SPEECH_ON%Entonces, el pago. | Sonríe.%SPEECH_ON%Esto te hará rico, amigo mío. | Respira profundamente.%SPEECH_ON%Muy bien, esto es lo que puedo ofrecerte. | Te pone la mano en el hombro con una sonrisa tranquilizadora.%SPEECH_ON%Creo que sé cuál es una compensación adecuada por tus servicios. | Gesticula con las manos y se señala los dedos como si contara algo, pero a ti no te dice nada.%SPEECH_ON%Por experiencia, esta es una buena paga por la tarea. | Asiente. %SPEECH_ON%Pareces capaz, así que estoy dispuest%o_employer% a pagar bastante. | Hace tintinear una bolsa de monedas.%SPEECH_ON%Será tuya si me echas una mano con esto. | Abre las palmas de las manos.%SPEECH_ON%No me sobran las coronas, así que, antes de que lo preguntes, esto es todo lo que tengo ahora mismo. | %SPEECH_ON%Ten la certeza de que lo que te ofrezco ahora es una buena recompensa por tu trabajo.} "
     }
     // en = "\x7bYou'll get | You are to receive | You'll be paid | It's\x7d %reward_completion% crowns when the contract is done.%SPEECH_OFF%"
     // en base_es
@@ -6537,6 +6591,13 @@ local pairs = [
     {
         en = "%SPEECH_START%{You'll also get} this pile of %reward_item_count% items when the contract is done.%SPEECH_OFF%"
         es = "%SPEECH_START%{También obtendrás} este montón de %reward_item_count% objetos cuando se finalice el contrato.%SPEECH_OFF%"
+    }
+    // La negociación de dinero y objetos pega este apéndice tras la cláusula de
+    // las coronas; la regla lo pela y devuelve el resto a las reglas del base.
+    {
+        mode = "pattern"
+        en = "<intro:str>%SPEECH_START%\x7bYou'll also get\x7d this pile of %reward_item_count% items when the contract is done.%SPEECH_OFF%"
+        es = "<intro:t>%SPEECH_START%\x7bTambién obtendrás\x7d este montón de %reward_item_count% objetos cuando se finalice el contrato.%SPEECH_OFF%"
     }
     // en = "We won't risk our lives for such meager pay..."
     // en base_es
@@ -9790,7 +9851,7 @@ local pairs = [
     // context: ::Const.Strings.PerkName.LegendSpecialistClub
     {
         en = "Browbeater's Bludgeon"
-        es = "Garrote del intimidador"
+        es = "Maza barreteada del intimidador"
     }
     // context: ::Const.Strings.PerkName.LegendSpecialistRaider
     {
@@ -10316,7 +10377,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendAthlete
     {
         en = "\nYou're a well-rounded athlete!\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduce the Fatigue cost of all your skills and movement by a percentage equal to [color=%negative%]20%[/color] of your maximum usable Fatigue after gear weight is accounted for.\n"
-        es = "\n¡Eres un atleta completo!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce el coste de Fatiga de todas tus habilidades y del movimiento en un porcentaje igual al [color=%negative%]20%[/color] de tu Fatiga máxima utilizable tras descontar el peso del equipo.\n"
+        es = "\n¡Tienes un físico completo!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce el coste de Fatiga de todas tus habilidades y del movimiento en un porcentaje igual al [color=%negative%]20%[/color] de tu Fatiga máxima utilizable tras descontar el peso del equipo.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendSpecPoison
     {
@@ -10957,7 +11018,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendSpecialistRaider
     {
         en = "\nAn axe to the back of the head solves many issues, you even get to keep the loot!\n\n[color=%passive%][u]Specialist Weapon Perk:[/u][/color]\n• Gain [color=%positive%]+12[/color] chance to hit while using a Crude Axe or Throwing Axe.\n\n• When taking [color=%perk%]Axe Mastery[/color] or [color=%perk%]Throwing Mastery[/color] gain [color=%positive%]10%[/color] damage.\n\n• For other weapons classified as One-Handed Axes, you can get a scaling percentage of these bonuses, starting from 25% and increasing gradually to 100% by 5% for each level with the maximum bonus gained at level 15.\n"
-        es = "\nUn hachazo en la nuca resuelve muchos problemas, ¡y encima te quedas con el botín!\n\n[color=%passive%][u]Ventaja de arma de especialista:[/u][/color]\n• Obtienes [color=%positive%]+12[/color] a la probabilidad de impactar al usar un Hacha cruda o un Hacha arrojadiza.\n\n• Al adquirir [color=%perk%]Dominio del Hacha[/color] o [color=%perk%]Dominio de Armas arrojadizas[/color] obtienes un [color=%positive%]10%[/color] de daño.\n\n• Con otras armas clasificadas como Hachas a una mano, obtienes un porcentaje progresivo de estas bonificaciones, que empieza en el 25% y aumenta un 5% por nivel hasta llegar al 100% en el nivel 15.\n"
+        es = "\nUn hachazo en la nuca resuelve muchos problemas, ¡y encima te quedas con el botín!\n\n[color=%passive%][u]Ventaja de arma de especialista:[/u][/color]\n• Obtienes [color=%positive%]+12[/color] a la probabilidad de impactar al usar un Hacha tosca o un Hacha arrojadiza.\n\n• Al adquirir [color=%perk%]Dominio del Hacha[/color] o [color=%perk%]Dominio de Armas arrojadizas[/color] obtienes un [color=%positive%]10%[/color] de daño.\n\n• Con otras armas clasificadas como Hachas a una mano, obtienes un porcentaje progresivo de estas bonificaciones, que empieza en el 25% y aumenta un 5% por nivel hasta llegar al 100% en el nivel 15.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendSpecialistSpearfisher
     {
@@ -11109,7 +11170,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendFavouredEnemyCivilization
     {
         en = "\nWe live in a society.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Grants bonuses to Melee Skill, Ranged Skill and maximum damage while fighting law-abiding citizens. This bonus increases with every Lawful kill made by this character.\n\n• Increase per kill:\n  - Footman | [color=%positive%]+0.125%[/color]\n  - Zweihander | [color=%positive%]+0.25%[/color]\n  - Billman | [color=%positive%]+0.125%[/color]\n  - Arbalester | [color=%positive%]+0.125%[/color]\n  - Standard Bearer | [color=%positive%]+0.5%[/color]\n  - Sergeant | [color=%positive%]+0.5%[/color]\n  - Fencer | [color=%positive%]+0.25%[/color]\n  - Halberdier | [color=%positive%]+0.25%[/color]\n  - Slinger | [color=%positive%]+0.125%[/color]\n  - Knight | [color=%positive%]+1%[/color]\n  - Elite Footman | [color=%positive%]+0.125%[/color]\n  - Pollaxe | [color=%positive%]+0.125%[/color]\n  - Sureshot | [color=%positive%]+0.125%[/color]\n\n• Increases the likelihood of encountering Lawful champions.\n\n• [color=%positive%]5%[/color] chance to get any items from slain enemies, that otherwise might not be available to loot. Stacks with itself and effects of a similar nature.\n"
-        es = "\nVivimos en una sociedad.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Otorga bonificaciones a la Habilidad cuerpo a cuerpo, la Habilidad a distancia y el daño máximo al luchar contra ciudadanos respetuosos de la ley. La bonificación aumenta con cada enemigo Legal que mate este personaje.\n\n• Aumento por muerte:\n  - Soldado a pie | [color=%positive%]+0.125%[/color]\n  - Zweihander | [color=%positive%]+0.25%[/color]\n  - Piquero | [color=%positive%]+0.125%[/color]\n  - Arbalestero | [color=%positive%]+0.125%[/color]\n  - Abanderado | [color=%positive%]+0.5%[/color]\n  - Sargento | [color=%positive%]+0.5%[/color]\n  - Esgrimista | [color=%positive%]+0.25%[/color]\n  - Alabardero | [color=%positive%]+0.25%[/color]\n  - Hondero | [color=%positive%]+0.125%[/color]\n  - Caballero | [color=%positive%]+1%[/color]\n  - Soldado a pie de élite | [color=%positive%]+0.125%[/color]\n  - Hacha de armas | [color=%positive%]+0.125%[/color]\n  - Tirador certero | [color=%positive%]+0.125%[/color]\n\n• Aumenta la probabilidad de encontrar campeones Legales.\n\n• [color=%positive%]5%[/color] de probabilidad de obtener de los enemigos abatidos cualquier objeto que de otro modo no se podría saquear. Se acumula consigo mismo y con efectos de naturaleza similar.\n"
+        es = "\nVivimos en una sociedad.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Otorga bonificaciones a la Habilidad cuerpo a cuerpo, la Habilidad a distancia y el daño máximo al luchar contra ciudadanos respetuosos de la ley. La bonificación aumenta con cada enemigo Legal que mate este personaje.\n\n• Aumento por muerte:\n  - Soldado a pie | [color=%positive%]+0.125%[/color]\n  - Zweihander | [color=%positive%]+0.25%[/color]\n  - Soldado de guja | [color=%positive%]+0.125%[/color]\n  - Arbalestero | [color=%positive%]+0.125%[/color]\n  - Abanderado | [color=%positive%]+0.5%[/color]\n  - Sargento | [color=%positive%]+0.5%[/color]\n  - Esgrimista | [color=%positive%]+0.25%[/color]\n  - Alabardero | [color=%positive%]+0.25%[/color]\n  - Hondero | [color=%positive%]+0.125%[/color]\n  - Caballero | [color=%positive%]+1%[/color]\n  - Soldado a pie de élite | [color=%positive%]+0.125%[/color]\n  - Hacha de armas | [color=%positive%]+0.125%[/color]\n  - Tiroseguro | [color=%positive%]+0.125%[/color]\n\n• Aumenta la probabilidad de encontrar campeones Legales.\n\n• [color=%positive%]5%[/color] de probabilidad de obtener de los enemigos abatidos cualquier objeto que de otro modo no se podría saquear. Se acumula consigo mismo y con efectos de naturaleza similar.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendFavouredEnemyOutlaw
     {
@@ -11158,7 +11219,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendInTheZone
     {
         en = "\nUse your armor's blend of protection and mobility to punish your foes' mistakes!\n\n[color=%passive%][u]Passive:[/u][/color]\n• Gain a stacking buff that boosts your Melee Skill and Melee Damage by [color=%positive%]0.5%[/color] up to a maximum of [color=%positive%]12.5%[/color].\n\n• You gain [color=%positive%]0.5%[/color] when you dodge a Melee attack and lose [color=%negative%]1%[/color] when you get hit by any attack.\n\n• When engaged in Melee, the Melee Damage bonus is doubled, up to a maximum of [color=%positive%]25%[/color].\n\n• If your Initiative is higher than twice your armor's weight (penalty to Maximum Fatigue), you start the battle with stacks equal to your armor's weight above 15.\n"
-        es = "\n¡Aprovecha la mezcla de protección y movilidad de tu armadura para castigar los errores de tus enemigos!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Obtienes una mejora acumulable que aumenta tu Habilidad cuerpo a cuerpo y tu daño cuerpo a cuerpo en un [color=%positive%]0.5%[/color], hasta un máximo del [color=%positive%]12.5%[/color].\n\n• Ganas un [color=%positive%]0.5%[/color] cada vez que esquivas un ataque cuerpo a cuerpo y pierdes un [color=%negative%]1%[/color] cada vez que te alcanza cualquier ataque.\n\n• Mientras estés trabado en combate cuerpo a cuerpo, la bonificación de daño cuerpo a cuerpo se duplica, hasta un máximo del [color=%positive%]25%[/color].\n\n• Si tu Iniciativa es mayor que el doble del peso de tu armadura (penalización a la Fatiga máxima), empiezas la batalla con tantas acumulaciones como puntos de peso tenga tu armadura por encima de 15.\n"
+        es = "\n¡Aprovecha la mezcla de protección y movilidad de tu armadura para castigar los errores de tus enemigos!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Obtienes una mejora acumulable que aumenta tu Habilidad cuerpo a cuerpo y tu daño cuerpo a cuerpo en un [color=%positive%]0.5%[/color], hasta un máximo del [color=%positive%]12.5%[/color].\n\n• Ganas un [color=%positive%]0.5%[/color] cada vez que esquivas un ataque cuerpo a cuerpo y pierdes un [color=%negative%]1%[/color] cada vez que te alcanza cualquier ataque.\n\n• Mientras combatas cuerpo a cuerpo, la bonificación de daño cuerpo a cuerpo se duplica, hasta un máximo del [color=%positive%]25%[/color].\n\n• Si tu Iniciativa es mayor que el doble del peso de tu armadura (penalización a la Fatiga máxima), empiezas la batalla con tantas acumulaciones como puntos de peso tenga tu armadura por encima de 15.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendHidden
     {
@@ -12610,36 +12671,36 @@ local pairs = [
     {
         // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Inventor perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Inventor[/color]"
+        en = "<desc:str>[color=#0b0084]From the Inventor perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Inventor[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Berserker perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Berserker[/color]"
+        en = "<desc:str>[color=#0b0084]From the Berserker perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Berserker[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Swordsman perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Espadachín[/color]"
+        en = "<desc:str>[color=#0b0084]From the Swordsman perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Espadachín[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Trained perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Entrenado[/color]"
+        en = "<desc:str>[color=#0b0084]From the Trained perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Entrenado[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // Un solo grupo cuyo nombre no traduce el :t de la regla general (ver abajo).
         mode = "pattern"
-        en = "<desc:str><c:tag>From the ArcherCommand perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Mando de arqueros[/color]"
+        en = "<desc:str>[color=#0b0084]From the ArcherCommand perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Mando de arqueros[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
@@ -12647,20 +12708,20 @@ local pairs = [
         // "Sword", "Polearm" y "Sturdy" es el del objeto o el adjetivo del juego base
         // («Espada recta», «Alabarda», «de recio porte»), que aquí no vale.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sword perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Espada[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sword perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Espada[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Polearm perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Arma de asta[/color]"
+        en = "<desc:str>[color=#0b0084]From the Polearm perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Arma de asta[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sturdy perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas Recio[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sturdy perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas Recio[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
@@ -12669,272 +12730,272 @@ local pairs = [
         // ::Const.Perks. Ninguna ventaja está en dos de estos grupos a la vez. Van
         // antes que las generales, que traducirían el nombre con su par global.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sword or <g2:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Espada o <g2:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sword or <g2:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Espada o <g2:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str> or Sword perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t> o Espada[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str> or Sword perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t> o Espada[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sword, <g2:str> or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Espada, <g2:t> o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sword, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Espada, <g2:t> o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Sword or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Espada o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Sword or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Espada o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Sword perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Espada[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str> or Sword perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t> o Espada[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sword, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Espada, <g2:t>, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sword, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Espada, <g2:t>, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Sword, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Espada, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Sword, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Espada, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Sword or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Espada o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, Sword or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, Espada o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Sword perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Espada[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str> or Sword perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Espada[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Polearm or <g2:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Arma de asta o <g2:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Polearm or <g2:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Arma de asta o <g2:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str> or Polearm perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t> o Arma de asta[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str> or Polearm perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t> o Arma de asta[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Polearm, <g2:str> or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Arma de asta, <g2:t> o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Polearm, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Arma de asta, <g2:t> o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Polearm or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Arma de asta o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Polearm or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Arma de asta o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Polearm perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Arma de asta[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str> or Polearm perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t> o Arma de asta[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Polearm, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Arma de asta, <g2:t>, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Polearm, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Arma de asta, <g2:t>, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Polearm, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Arma de asta, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Polearm, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Arma de asta, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Polearm or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Arma de asta o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, Polearm or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, Arma de asta o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Polearm perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Arma de asta[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str> or Polearm perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Arma de asta[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sturdy or <g2:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Recio o <g2:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sturdy or <g2:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Recio o <g2:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str> or Sturdy perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t> o Recio[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str> or Sturdy perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t> o Recio[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sturdy, <g2:str> or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Recio, <g2:t> o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sturdy, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Recio, <g2:t> o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Sturdy or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Recio o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Sturdy or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Recio o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Sturdy perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Recio[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str> or Sturdy perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t> o Recio[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Sturdy, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Recio, <g2:t>, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Sturdy, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Recio, <g2:t>, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Sturdy, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Recio, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Sturdy, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Recio, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Sturdy or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Recio o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, Sturdy or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, Recio o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Sturdy perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Recio[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str> or Sturdy perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Recio[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Berserker or <g2:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Berserker o <g2:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Berserker or <g2:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Berserker o <g2:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str> or Berserker perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t> o Berserker[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str> or Berserker perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t> o Berserker[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Berserker, <g2:str> or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Berserker, <g2:t> o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Berserker, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Berserker, <g2:t> o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Berserker or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Berserker o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Berserker or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Berserker o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Berserker perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Berserker[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str> or Berserker perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t> o Berserker[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Berserker, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Berserker, <g2:t>, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Berserker, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Berserker, <g2:t>, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Berserker, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Berserker, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Berserker, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Berserker, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Berserker or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Berserker o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, Berserker or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, Berserker o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Berserker perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Berserker[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str> or Berserker perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Berserker[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Trained or <g2:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Entrenado o <g2:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Trained or <g2:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Entrenado o <g2:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str> or Trained perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t> o Entrenado[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str> or Trained perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t> o Entrenado[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Trained, <g2:str> or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Entrenado, <g2:t> o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Trained, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Entrenado, <g2:t> o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Trained or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Entrenado o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Trained or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Entrenado o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or Trained perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o Entrenado[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str> or Trained perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t> o Entrenado[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the Trained, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas Entrenado, <g2:t>, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the Trained, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas Entrenado, <g2:t>, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, Trained, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, Entrenado, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, Trained, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, Entrenado, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, Trained or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, Entrenado o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, Trained or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, Entrenado o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or Trained perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Entrenado[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str> or Trained perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o Entrenado[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
@@ -12947,43 +13008,43 @@ local pairs = [
         // El color va capturado como tag: escrito como literal, la clave de la regla
         // en Rosetta sería "=#0b0084]from", que ninguna cadena real genera.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g:str> perk group[/color]"
-        es = "<desc><c>Del grupo de ventajas <g:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g:str> perk group[/color]"
+        es = "<desc>[color=#0b0084]Del grupo de ventajas <g:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // 2 grupos.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str> or <g2:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t> o <g2:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str> or <g2:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t> o <g2:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // 3 grupos.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str> or <g3:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t> o <g3:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str> or <g3:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t> o <g3:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // 4 grupos.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o <g4:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str> or <g4:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t> o <g4:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // 5 grupos.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str>, <g4:str> or <g5:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t>, <g4:t> o <g5:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str>, <g4:str> or <g5:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t>, <g4:t> o <g5:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips
     {
         // 6 grupos.
         mode = "pattern"
-        en = "<desc:str><c:tag>From the <g1:str>, <g2:str>, <g3:str>, <g4:str>, <g5:str> or <g6:str> perk groups[/color]"
-        es = "<desc><c>De los grupos de ventajas <g1:t>, <g2:t>, <g3:t>, <g4:t>, <g5:t> o <g6:t>[/color]"
+        en = "<desc:str>[color=#0b0084]From the <g1:str>, <g2:str>, <g3:str>, <g4:str>, <g5:str> or <g6:str> perk groups[/color]"
+        es = "<desc>[color=#0b0084]De los grupos de ventajas <g1:t>, <g2:t>, <g3:t>, <g4:t>, <g5:t> o <g6:t>[/color]"
     }
     // context: ::Legends.updatePerkGroupTooltips.strArray[strArray.len()-1]
     // en = "color=#0b0084]From the <mid + ap>"  // fragmento intermedio que el código vuelve a unir a la descripción (perk_tooltips.nut:52); nunca llega solo a la interfaz
@@ -30208,7 +30269,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LoneWolf
     {
         en = "\nI work best alone.\n\n[color=%passive%][u]Passive:[/u][/color]\n• With no ally within two tiles, gain a [color=%positive%]15%[/color] bonus to Melee Skill, Ranged Skill, Melee Defense, Ranged Defense, and Resolve. Additionally AP cost of moving accross all terrain is reduced by [color=%positive%]1[/color]\n"
-        es = "\nTrabajo mejor solo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Sin aliados a dos casillas o menos, obtienes una bonificación del [color=%positive%]15%[/color] a la Habilidad cuerpo a cuerpo, la Habilidad a distancia, la Defensa cuerpo a cuerpo, la Defensa a distancia y la Resolución. Además, el coste en PA de moverse por cualquier terreno se reduce en [color=%positive%]1[/color]\n"
+        es = "\nTrabajo mejor por mi cuenta.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Sin aliados a dos casillas o menos, obtienes una bonificación del [color=%positive%]15%[/color] a la Habilidad cuerpo a cuerpo, la Habilidad a distancia, la Defensa cuerpo a cuerpo, la Defensa a distancia y la Resolución. Además, el coste en PA de moverse por cualquier terreno se reduce en [color=%positive%]1[/color]\n"
     }
     // context: ::Const.Strings.PerkDescription.Recover
     {
@@ -30239,7 +30300,7 @@ local pairs = [
         // ::Const.Strings.PerkDescription.Duelist <- "\nBecome one with your weapon and go for the weak spots!\n\n[color=%passive%][u]Passive:[/u][/color]\n• When holding a Buckler or Mummy Shield in your offhand an extra [color=%positive%]+25%[/color] of damage ignores armor on Melee Attacks.\n\n[color=%passive%][u]Active:[/u][/color] Unlocks the [color=%skill%]Flourish[/color] skill, which will increase fatigue cost by [color=%positive%]75%[/color], Action Point Cost [color=%positive%]1[/color] and as long as you are faster than your target grants a chance on each attack to ignore armor completely based on the initiative difference between you and your target. As long as you are faster than the target, any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of the Initiative difference between you and the target.\n";
         mode = "pattern"
         en = "\nBecome one with your weapon and go for the weak spots!\n\n[color=%passive%][u]Passive:[/u][/color]\n• When holding a Buckler or Mummy Shield in your offhand an extra [color=%positive%]+25%[/color] of damage ignores armor on Melee Attacks.\n\n[color=%passive%][u]Active:[/u][/color] Unlocks the [color=%skill%]Flourish[/color] skill, which will increase fatigue cost by [color=%positive%]75%[/color], Action Point Cost [color=%positive%]1[/color] and as long as you are faster than your target grants a chance on each attack to ignore armor completely based on the initiative difference between you and your target. As long as you are faster than the target, any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of the Initiative difference between you and the target.\n"
-        es = "\n¡Hazte uno con tu arma y busca los puntos débiles!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Al llevar un broquel o un escudo de momia en la mano secundaria, un [color=%positive%]+25%[/color] adicional del daño ignora la armadura en los ataques cuerpo a cuerpo.\n\n[color=%passive%][u]Activo:[/u][/color] Desbloquea la habilidad [color=%skill%]Floritura[/color], que aumenta el coste de Fatiga un [color=%positive%]75%[/color] y el coste en Puntos de acción en [color=%positive%]1[/color] y, siempre que tengas más Iniciativa que tu objetivo, otorga en cada ataque una probabilidad de ignorar por completo la armadura según la diferencia de Iniciativa entre ambos. Siempre que tengas más Iniciativa que el objetivo, cualquier ataque que inflija al menos [color=%positive%]1[/color] punto de daño a los Puntos de vida provoca una tirada de moral en el oponente con una penalización igual al [color=%negative%]20%[/color] de la diferencia de Iniciativa entre ambos.\n"
+        es = "\n¡Hazte uno con tu arma y busca los puntos débiles!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Al llevar una rodela o un escudo de momia en la mano secundaria, un [color=%positive%]+25%[/color] adicional del daño ignora la armadura en los ataques cuerpo a cuerpo.\n\n[color=%passive%][u]Activo:[/u][/color] Desbloquea la habilidad [color=%skill%]Floritura[/color], que aumenta el coste de Fatiga un [color=%positive%]75%[/color] y el coste en Puntos de acción en [color=%positive%]1[/color] y, siempre que tengas más Iniciativa que tu objetivo, otorga en cada ataque una probabilidad de ignorar por completo la armadura según la diferencia de Iniciativa entre ambos. Siempre que tengas más Iniciativa que el objetivo, cualquier ataque que inflija al menos [color=%positive%]1[/color] punto de daño a los Puntos de vida provoca una tirada de moral en el oponente con una penalización igual al [color=%negative%]20%[/color] de la diferencia de Iniciativa entre ambos.\n"
     }
     // context: ::Const.Strings.PerkDescription.CripplingStrikes
     {
@@ -33930,7 +33991,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Snarebush Range"
-        es = "Sierra del Matorral Trampa"
+        es = "Campo del Matorral Trampa"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34028,7 +34089,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Black Bog"
-        es = "La Ciénaga Negra"
+        es = "El Pantano Negro"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34038,7 +34099,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Downbody Bog"
-        es = "Ciénaga del Cuerpo Hundido"
+        es = "Pantano del Cuerpo Hundido"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34048,7 +34109,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Underbog"
-        es = "La Ciénaga Honda"
+        es = "El Pantano Hondo"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34178,7 +34239,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Stankfoot bog"
-        es = "Ciénaga de los Pies Apestosos"
+        es = "Pantano de los Pies Apestosos"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34228,7 +34289,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Acrid Bog"
-        es = "Ciénaga Acre"
+        es = "Pantano Acre"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34238,7 +34299,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Lost Bog"
-        es = "La Ciénaga Perdida"
+        es = "El Pantano Perdido"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34492,7 +34553,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Sapper's Covert"
-        es = "Espesura del Zapador"
+        es = "Escondite del Zapador"
     }
     // en = "Wicked Woods"
     // en base_es
@@ -34708,7 +34769,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Crimson Covert"
-        es = "Espesura Carmesí"
+        es = "Escondite Carmesí"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34852,7 +34913,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Weston Range"
-        es = "Sierra de Weston"
+        es = "Cordillera de Weston"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -34957,7 +35018,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Kilgore Range"
-        es = "Sierra de Kilgore"
+        es = "Cordillera de Kilgore"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -35050,7 +35111,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Chittering Wastes"
-        es = "Yermos Chirriantes"
+        es = "Desiertos Chirriantes"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -35085,7 +35146,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Crystal Flats"
-        es = "Las Planicies de Cristal"
+        es = "Las Llanuras de Cristal"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -35095,7 +35156,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Bonechill Hold"
-        es = "Bastión Calahuesos"
+        es = "Fuerte Calahuesos"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -35234,7 +35295,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Longbone Flats"
-        es = "Llanos del Hueso Largo"
+        es = "Llanuras del Hueso Largo"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -35404,7 +35465,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Ash Flats"
-        es = "Llanos de Ceniza"
+        es = "Llanuras de Ceniza"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -36102,7 +36163,7 @@ local pairs = [
     // context: ::Const.TipOfTheDay
     {
         en = "Peddlers trade bonuses stack, trade runs are possible."
-        es = "Las bonificaciones de comercio de los buhoneros se acumulan, así que puedes hacer rutas comerciales."
+        es = "Las bonificaciones de comercio de los vendedores ambulantes se acumulan, así que puedes hacer rutas comerciales."
     }
     // context: ::Const.TipOfTheDay
     {
@@ -36147,12 +36208,12 @@ local pairs = [
     // context: ::Const.TipOfTheDay
     {
         en = "Houndmasters can improve the combat skills of dogs and breed them."
-        es = "Los adiestradores de perros pueden criarlos y mejorar sus habilidades de combate."
+        es = "Los maestros de sabuesos pueden criarlos y mejorar sus habilidades de combate."
     }
     // context: ::Const.TipOfTheDay
     {
         en = "Fishermen and Ratcatchers can develop powerful net skills."
-        es = "Los pescadores y los cazarratas pueden desarrollar poderosas habilidades con la red."
+        es = "Los pescadores y los cazadores de ratas pueden desarrollar poderosas habilidades con la red."
     }
     // context: ::Const.TipOfTheDay
     {
@@ -37382,7 +37443,7 @@ local pairs = [
         // text = _item.text + " on completion"
         mode = "pattern"
         en = "<text:str> on completion"
-        es = "<text> al completar"
+        es = "<text:t> al completar"
     }
     // context: contract.o.getUIBulletpoints.ret.map(@(_e)_e.title).find()
     // en = "<find(Payment)==null>"  // artefacto del extractor: el código busca el título "Payment" en la lista, no se muestra
@@ -37625,15 +37686,15 @@ local pairs = [
     {
         // corrige base: "su cabeza pagana" omite "fat"; queda "con su gorda cabeza pagana o sin ella". "sus tierras" pasa a "estas tierras" (the lands).
         en = "[img]gfx/ui/events/event_31.png[/img]{%employer% welcomes you reluctantly.%SPEECH_ON%You realize I have scouts and spies everywhere, don't you?%SPEECH_OFF%Holding up your empty hands, you tell %them_employer% you had no intent on lying. The 'barbarian king' will bother the lands no more. Your employer taps %their_employer% fingers together a few times then nods.%SPEECH_ON%Your honesty is refreshing, though I must say it is quite unfortunate the man and his warband still live. That said, all reports suggest they are moving away so I suppose your work is done all the same, a fat pagan head or not. Your pay, as agreed upon.%SPEECH_OFF%}"
-        es = "[img]gfx/ui/events/event_31.png[/img]{%employer% te recibe a regañadientes.%SPEECH_ON%Te das cuenta de que tengo exploradores y espías por todas partes, ¿verdad?%SPEECH_OFF%Levantando las manos vacías, le dices que no tenías intención de mentir. El 'rey bárbaro' ya no molestará más a estas tierras. Tu empleador junta las yemas de los dedos unas cuantas veces y luego asiente.%SPEECH_ON%Tu honestidad es refrescante, aunque debo decir que es bastante desafortunado que ese hombre y su hueste sigan con vida. Dicho esto, todos los informes sugieren que se están alejando, así que supongo que tu trabajo está hecho de todos modos, con su gorda cabeza pagana o sin ella. Tu paga, como se acordó.%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_31.png[/img]{%employer% te recibe a regañadientes.%SPEECH_ON%Te das cuenta de que tengo exploradores y espías por todas partes, ¿verdad?%SPEECH_OFF%Levantando las manos vacías, le dices que no tenías intención de mentir. El 'rey bárbaro' ya no molestará más a estas tierras. %employer% junta las yemas de los dedos unas cuantas veces y luego asiente.%SPEECH_ON%Tu honestidad es refrescante, aunque debo decir que es bastante desafortunado que ese hombre y su hueste sigan con vida. Dicho esto, todos los informes sugieren que se están alejando, así que supongo que tu trabajo está hecho de todos modos, con su gorda cabeza pagana o sin ella. Tu paga, como se acordó.%SPEECH_OFF%}"
     }
     // FILE: mod_legends\hooks\contracts\contracts\big_game_hunt_contract.nut
     // context: big_game_hunt_contract.o.create.m.DescriptionTemplates
     {
         // "Foul beasts, ghouls and other monstrosities are roaming the land with impunity. %s needs someone of your caliber to slay them all.",
         mode = "pattern"
-        en = "Foul beasts, ghouls and other monstrosities are roaming the land with impunity. %s needs someone of your caliber to slay them all."
-        es = "Bestias inmundas, necrófagos y otras monstruosidades vagan por estas tierras con total impunidad. %s necesita a alguien de tu calibre para matarlos a todos."
+        en = "Foul beasts, ghouls and other monstrosities are roaming the land with impunity. [color=<c1:str>]<s1:str>[/color] needs someone of your caliber to slay them all."
+        es = "Bestias inmundas, necrófagos y otras monstruosidades vagan por estas tierras con total impunidad. [color=<c1>]<s1>[/color] necesita a alguien de tu calibre para matarlos a todos."
     }
     // context: big_game_hunt_contract.o.create.m.DescriptionTemplates
     {
@@ -37644,15 +37705,15 @@ local pairs = [
     {
         // "%s is calling all skilled hunters to join an open monster hunt contract for honor and coin.",
         mode = "pattern"
-        en = "%s is calling all skilled hunters to join an open monster hunt contract for honor and coin."
-        es = "%s convoca a todos los cazadores hábiles a sumarse a un contrato abierto de caza de monstruos a cambio de honor y monedas."
+        en = "[color=<c1:str>]<s1:str>[/color] is calling all skilled hunters to join an open monster hunt contract for honor and coin."
+        es = "[color=<c1>]<s1>[/color] convoca a todos los cazadores hábiles a sumarse a un contrato abierto de caza de monstruos a cambio de honor y monedas."
     }
     // context: big_game_hunt_contract.o.create.m.DescriptionTemplates
     {
         // "Daring souls wanted! Take up arms for %s and kill monsters for great rewards.",
         mode = "pattern"
-        en = "Daring souls wanted! Take up arms for %s and kill monsters for great rewards."
-        es = "¡Se buscan almas audaces! Empuña las armas por %s y mata monstruos a cambio de grandes recompensas."
+        en = "Daring souls wanted! Take up arms for [color=<c1:str>]<s1:str>[/color] and kill monsters for great rewards."
+        es = "¡Se buscan almas audaces! Empuña las armas por [color=<c1>]<s1>[/color] y mata monstruos a cambio de grandes recompensas."
     }
     // context: big_game_hunt_contract.o.create.m.DescriptionTemplates
     {
@@ -37692,22 +37753,22 @@ local pairs = [
     {
         // "Greenskins are besieging %s. With local forces depleted the inhabitants face a terrible slaughter.",
         mode = "pattern"
-        en = "Greenskins are besieging %s. With local forces depleted the inhabitants face a terrible slaughter."
-        es = "Los pieles verdes asedian %s. Con las fuerzas locales mermadas, sus habitantes se enfrentan a una terrible matanza."
+        en = "Greenskins are besieging [color=<c1:str>]<s1:str>[/color]. With local forces depleted the inhabitants face a terrible slaughter."
+        es = "Los pieles verdes asedian [color=<c1>]<s1>[/color]. Con las fuerzas locales mermadas, sus habitantes se enfrentan a una terrible matanza."
     }
     // context: break_greenskin_siege_contract.o.create.m.DescriptionTemplates
     {
         // "Every dawn brings fresh horrors as %s wakes to another day of orc siege.",
         mode = "pattern"
-        en = "Every dawn brings fresh horrors as %s wakes to another day of orc siege."
-        es = "Cada amanecer trae nuevos horrores mientras %s despierta a otro día de asedio orco."
+        en = "Every dawn brings fresh horrors as [color=<c1:str>]<s1:str>[/color] wakes to another day of orc siege."
+        es = "Cada amanecer trae nuevos horrores mientras [color=<c1>]<s1>[/color] despierta a otro día de asedio orco."
     }
     // context: break_greenskin_siege_contract.o.create.m.DescriptionTemplates
     {
         // "The citizens of %s cowers behind its walls, besieged by the relentless onslaught of orcs.",
         mode = "pattern"
-        en = "The citizens of %s cowers behind its walls, besieged by the relentless onslaught of orcs."
-        es = "Los ciudadanos de %s se acobardan tras sus murallas, asediados por la implacable embestida de los orcos."
+        en = "The citizens of [color=<c1:str>]<s1:str>[/color] cowers behind its walls, besieged by the relentless onslaught of orcs."
+        es = "Los ciudadanos de [color=<c1>]<s1>[/color] se acobardan tras sus murallas, asediados por la implacable embestida de los orcos."
     }
     // context: break_greenskin_siege_contract.o.create.m.DescriptionTemplates
     {
@@ -37718,15 +37779,15 @@ local pairs = [
     {
         // "Homes burn and streets run red as %s faces the brutal siege of greenskin invaders.",
         mode = "pattern"
-        en = "Homes burn and streets run red as %s faces the brutal siege of greenskin invaders."
-        es = "Los hogares arden y las calles se tiñen de rojo mientras %s sufre el brutal asedio de los invasores pieles verdes."
+        en = "Homes burn and streets run red as [color=<c1:str>]<s1:str>[/color] faces the brutal siege of greenskin invaders."
+        es = "Los hogares arden y las calles se tiñen de rojo mientras [color=<c1>]<s1>[/color] sufre el brutal asedio de los invasores pieles verdes."
     }
     // context: break_greenskin_siege_contract.o.create.m.DescriptionTemplates
     {
         // "People are praying for the salvation of %s, which is good, as salvation never comes cheap.",
         mode = "pattern"
-        en = "People are praying for the salvation of %s, which is good, as salvation never comes cheap."
-        es = "La gente reza por la salvación de %s, lo cual está bien, porque la salvación nunca sale barata."
+        en = "People are praying for the salvation of [color=<c1:str>]<s1:str>[/color], which is good, as salvation never comes cheap."
+        es = "La gente reza por la salvación de [color=<c1>]<s1>[/color], lo cual está bien, porque la salvación nunca sale barata."
     }
     // context: break_greenskin_siege_contract.o.createScreens.s.Title
     {
@@ -38090,8 +38151,8 @@ local pairs = [
     {
         // "Judging by the fire-gutted outskirts, %s has a serious raider problem. You may just be the cure.",
         mode = "pattern"
-        en = "Judging by the fire-gutted outskirts, %s has a serious raider problem. You may just be the cure."
-        es = "A juzgar por las afueras arrasadas por el fuego, %s tiene un grave problema con los saqueadores. Quizá tú seas la cura."
+        en = "Judging by the fire-gutted outskirts, [color=<c1:str>]<s1:str>[/color] has a serious raider problem. You may just be the cure."
+        es = "A juzgar por las afueras arrasadas por el fuego, [color=<c1>]<s1>[/color] tiene un grave problema con los saqueadores. Quizá tú seas la cura."
     }
     // context: defend_settlement_bandits_contract.o.create.m.DescriptionTemplates
     {
@@ -38107,15 +38168,15 @@ local pairs = [
     {
         // "In %s, the makeshift barricades and fire-gutted buildings hint how dangerous the local brigands have become.",
         mode = "pattern"
-        en = "In %s, the makeshift barricades and fire-gutted buildings hint how dangerous the local brigands have become."
-        es = "En %s, las barricadas improvisadas y los edificios calcinados dan una idea de lo peligrosos que se han vuelto los bandidos de la zona."
+        en = "In [color=<c1:str>]<s1:str>[/color], the makeshift barricades and fire-gutted buildings hint how dangerous the local brigands have become."
+        es = "En [color=<c1>]<s1>[/color], las barricadas improvisadas y los edificios calcinados dan una idea de lo peligrosos que se han vuelto los bandidos de la zona."
     }
     // context: defend_settlement_bandits_contract.o.create.m.DescriptionTemplates
     {
         // "Sellswords are being sought in %s to repel a ruthless band of brigands terrorising the town.",
         mode = "pattern"
-        en = "Sellswords are being sought in %s to repel a ruthless band of brigands terrorising the town."
-        es = "En %s se buscan mercenarios para repeler a una despiadada partida de bandidos que aterroriza el pueblo."
+        en = "Sellswords are being sought in [color=<c1:str>]<s1:str>[/color] to repel a ruthless band of brigands terrorising the town."
+        es = "En [color=<c1>]<s1>[/color] se buscan mercenarios para repeler a una despiadada partida de bandidos que aterroriza el pueblo."
     }
     // context: defend_settlement_bandits_contract.o.create.m.DescriptionTemplates
     {
@@ -38134,7 +38195,7 @@ local pairs = [
         // corrige base: «It scatters» es que la copa se hace añicos, no que «se aleja rodando».
         // corrige base: «ataque masivo y destructivo» añadía «destructivo», que el inglés no tiene; errata «cercanias».
         en = "[img]gfx/ui/events/event_20.png[/img]{%employer%'s looking out the window. %They_employer% waves you to join %them_employer%.%SPEECH_ON%Look at those people.%SPEECH_OFF%There's a throng of people below, wailing about this or that.%SPEECH_ON%Brigands have been roaming these parts for awhile now and people believe that they are about to attack us in great numbers.%SPEECH_OFF%The %person_employer% throws the curtains closed and goes to light a candle. %They_employer% speaks over it, %their_employer% breath flicking the flame.%SPEECH_ON%We need you to protect us, mercenary. If you can stop these brigands, you'll be paid handsomely. Are you interested?%SPEECH_OFF% | A few peasants are roaming outside the halls of the room. You can hear their shouting and it is of a nervous tone. %employer% pours a drink and sips it with a shaking hand.%SPEECH_ON%I'll just be clear with you, sellsword. We have many, many reports that brigands are about to attack this town. If you want to know, those reports came by way of dead women and children. Clearly, we've no reason to doubt the seriousness of these reports. So, the question is, will you protect us?%SPEECH_OFF% | %employer%'s looking at some papers on %their_employer% desk. You take a seat and ask what it is %they_employer% wants.%SPEECH_ON%Hello, sellsword. We have a problem I think you will... excel at taking care of.%SPEECH_OFF%You ask %them_employer% to be straight with you and %they_employer% jumps right to the point.%SPEECH_ON%Brigands have burned down some homes and hovels just outside town. News is that they are preparing a much larger, gustier attack. I need you here to stop them. Do you think you can handle this task?%SPEECH_OFF% | %employer%'s staring at %their_employer% bookshelf, %their_employer% back to you. %They_employer% talks somberly.%SPEECH_ON%It's a shame not many can read these. Maybe our issues would go away if they could. Or maybe they'd just get worse.%SPEECH_OFF%%They_employer% shakes his head and turns around.%SPEECH_ON%We've got a gang of brigands soon to descend upon us. I need you, sellsword, to stop them. My books sure as hell won't. If the pay is right, which I promise it will be, are you in?%SPEECH_OFF% | %employer%'s got two papers in hand. There are faces sketched onto them.%SPEECH_ON%We caught these two the other day. Hanged 'em, burned the remains.%SPEECH_OFF%You shrug.%SPEECH_ON%Congratulations?%SPEECH_OFF%The %person_employer% is not very amused.%SPEECH_ON%Now we've gotten word that their brigand friends are coming to exact revenge on us! And, yes, we need your help to fight them off. Are you interested?%SPEECH_OFF% | You settle into %employer%'s room, taking a seat, rubbing your hands along the wooden frame. It's a good oak. A once-tree worth sitting in.%SPEECH_ON%Glad you're comfortable, sellsword, but I sure as hell ain't. We have many, many warnings that a large group of brigands are about to attack our town. We're quite short on defense, but not short on crowns. Obviously, that's where you come in. Are you interested?%SPEECH_OFF% | %employer% slams a cup against the wall. It scatters, turning and pinwheeling, flecks of wine dotting your cheek.%SPEECH_ON%Vagabonds! Brigands! Marauders! It never ends!%SPEECH_OFF%%They_employer% absently hands you a napkin.%SPEECH_ON%Now I'm getting news that a large group of these thugs are coming to burn this town to the ground! Well, I've gotten something in store for them: you. What do you say, sellsword? Will you defend us?%SPEECH_OFF% | A few grieving women can be heard wailing just outside %employer%'s room. %They_employer% turns to you.%SPEECH_ON%Hear that? That's what happens when brigands come here. They steal, they rape, and they murder.%SPEECH_OFF%You nod. It is, after all, the way of the brigand.%SPEECH_ON%Now some peasants in the hinterland say the thugs are preparing for a massive assault on our village. You must do something to help us, sellsword. Heh, of course I say 'must'. What I really mean is that we'll pay you to help us...%SPEECH_OFF%}"
-        es = "[img]gfx/ui/events/event_20.png[/img]{%employer% está mirando por la ventana. Te hace un gesto para que te unas a %el_employer%.%SPEECH_ON%Mira a esa gente.%SPEECH_OFF%Hay una multitud abajo, lamentándose por esto y aquello.%SPEECH_ON%Los bandidos llevan un tiempo rondando por la zona y la gente cree que están a punto de atacarnos en gran número.%SPEECH_OFF%%Art_employer% %hombre_employer% cierra las cortinas y va a encender una vela. Habla inclinad%o_employer% sobre ella, y su aliento hace parpadear la llama.%SPEECH_ON%Necesitamos que nos protejas, mercenario. Si logras detener a estos bandidos, se te pagará generosamente. ¿Te interesa?%SPEECH_OFF% | Unos campesinos deambulan por los pasillos, fuera de la sala. Oyes sus gritos, de tono nervioso. %employer% se sirve una bebida y le da un sorbo con mano temblorosa.%SPEECH_ON%Seré direct%o_employer% contigo, mercenario. Tenemos muchos, muchos informes de que los bandidos están a punto de atacar esta ciudad. Si quieres saberlo, esos informes nos llegaron en forma de mujeres y niños muertos. Está claro que no tenemos motivos para dudar de su seriedad. Así que la pregunta es: ¿nos protegerás?%SPEECH_OFF% | %employer% está mirando unos papeles en su escritorio. Tomas asiento y le preguntas qué es lo que quiere.%SPEECH_ON%Hola, mercenario. Tenemos un problema que creo que se te dará... de maravilla resolver.%SPEECH_OFF%Le pides que sea franc%o_employer% contigo y va directo al grano.%SPEECH_ON%Los bandidos han quemado algunas casas y chozas justo a las afueras de la ciudad. Dicen que están preparando un ataque mucho mayor y más audaz. Necesito que te quedes aquí para detenerlos. ¿Crees que puedes encargarte de esta tarea?%SPEECH_OFF% | %employer% está mirando su estantería, de espaldas a ti. Habla con aire sombrío.%SPEECH_ON%Es una lástima que no muchos sepan leer estos libros. Tal vez nuestros problemas desaparecerían si supieran. O tal vez solo empeorarían.%SPEECH_OFF%Niega con la cabeza y se da la vuelta.%SPEECH_ON%Tenemos una banda de bandidos a punto de caer sobre nosotros. Te necesito, mercenario, para detenerlos. Te aseguro que mis libros no lo harán, maldita sea. Si el pago es el adecuado, y te prometo que lo será, ¿estás dentro?%SPEECH_OFF% | %employer% tiene dos papeles en la mano. En ellos hay caras dibujadas.%SPEECH_ON%Atrapamos a estos dos el otro día. Los ahorcamos y quemamos los restos.%SPEECH_OFF%Te encoges de hombros.%SPEECH_ON%¿Felicidades?%SPEECH_OFF%A %art_employer% %hombre_employer% no le hace mucha gracia.%SPEECH_ON%¡Ahora nos han informado de que sus amigos bandidos vienen a vengarse de nosotros! Y sí, necesitamos tu ayuda para repelerlos. ¿Te interesa?%SPEECH_OFF% | Te acomodas en la habitación de %employer%, tomas asiento y pasas las manos por el armazón de madera de la silla. Es buen roble. Un antiguo árbol en el que da gusto sentarse.%SPEECH_ON%Me alegra que estés a gusto, mercenario, pero yo no lo estoy, maldita sea. Tenemos muchos, muchos avisos de que un gran grupo de bandidos está a punto de atacar nuestra ciudad. Andamos bastante escasos de defensas, pero no de coronas. Obviamente, ahí es donde entras tú. ¿Te interesa?%SPEECH_OFF% | %employer% estampa una copa contra la pared. Se hace añicos que salen girando como molinetes, y unas gotas de vino te salpican la mejilla.%SPEECH_ON%¡Vagabundos! ¡Bandidos! ¡Merodeadores! ¡Esto no se acaba nunca!%SPEECH_OFF%Te tiende distraídamente una servilleta.%SPEECH_ON%¡Y ahora me llegan noticias de que un gran grupo de estos matones viene a quemar esta ciudad hasta los cimientos! Pues bien, les tengo algo reservado: a ti. ¿Qué dices, mercenario? ¿Nos defenderás?%SPEECH_OFF% | Se oye a unas mujeres llorando de pena justo fuera de la habitación de %employer%. Se gira hacia ti.%SPEECH_ON%¿Oyes eso? Eso es lo que pasa cuando los bandidos vienen aquí. Roban, violan y asesinan.%SPEECH_OFF%Asientes. Es, después de todo, el modo de actuar de los bandidos.%SPEECH_ON%Ahora algunos campesinos de las tierras del interior dicen que los matones se están preparando para un ataque masivo contra nuestro pueblo. Debes hacer algo para ayudarnos, mercenario. Heh, claro que cuando digo 'debes', lo que realmente quiero decir es que te pagaremos por ayudarnos...%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_20.png[/img]{%employer% está mirando por la ventana. Te hace un gesto para que te unas a %el_employer%.%SPEECH_ON%Mira a esa gente.%SPEECH_OFF%Hay una multitud abajo, lamentándose por esto y aquello.%SPEECH_ON%Los bandidos llevan un tiempo rondando por la zona y la gente cree que están a punto de atacarnos en gran número.%SPEECH_OFF%%Art_employer% %hombre_employer% cierra las cortinas y va a encender una vela. Habla inclinad%o_employer% sobre ella, y su aliento hace parpadear la llama.%SPEECH_ON%Necesitamos que nos protejas, mercenario. Si logras detener a estos bandidos, se te pagará generosamente. ¿Te interesa?%SPEECH_OFF% | Unos campesinos deambulan por los pasillos, fuera de la sala. Oyes sus gritos, de tono nervioso. %employer% se sirve una bebida y le da un sorbo con mano temblorosa.%SPEECH_ON%Seré direct%o_employer% contigo, mercenario. Tenemos muchos, muchos informes de que los bandidos están a punto de atacar esta ciudad. Si quieres saberlo, esos informes nos llegaron en forma de mujeres y niños muertos. Está claro que no tenemos motivos para dudar de su seriedad. Así que la pregunta es: ¿nos protegerás?%SPEECH_OFF% | %employer% está mirando unos papeles en su escritorio. Tomas asiento y le preguntas qué es lo que quiere.%SPEECH_ON%Hola, mercenario. Tenemos un problema que creo que se te dará... de maravilla resolver.%SPEECH_OFF%Le pides que sea franc%o_employer% contigo y va directo al grano.%SPEECH_ON%Los bandidos han quemado algunas casas y chozas justo a las afueras de la ciudad. Dicen que están preparando un ataque mucho mayor y más audaz. Necesito que te quedes aquí para detenerlos. ¿Crees que puedes encargarte de esta tarea?%SPEECH_OFF% | %employer% está mirando su estantería, de espaldas a ti. Habla con aire sombrío.%SPEECH_ON%Es una lástima que no muchos sepan leer estos libros. Tal vez nuestros problemas desaparecerían si supieran. O tal vez solo empeorarían.%SPEECH_OFF%Niega con la cabeza y se da la vuelta.%SPEECH_ON%Tenemos una banda de bandidos a punto de caer sobre nosotros. Te necesito, mercenario, para detenerlos. Te aseguro que mis libros no lo harán, maldita sea. Si el pago es el adecuado, y te prometo que lo será, ¿estás dentro?%SPEECH_OFF% | %employer% tiene dos papeles en la mano. En ellos hay caras dibujadas.%SPEECH_ON%Atrapamos a estos dos el otro día. Los ahorcamos y quemamos los restos.%SPEECH_OFF%Te encoges de hombros.%SPEECH_ON%¿Felicidades?%SPEECH_OFF%%Al_employer% %hombre_employer% no le hace mucha gracia.%SPEECH_ON%¡Ahora nos han informado de que sus amigos bandidos vienen a vengarse de nosotros! Y sí, necesitamos tu ayuda para repelerlos. ¿Te interesa?%SPEECH_OFF% | Te acomodas en la habitación de %employer%, tomas asiento y pasas las manos por el armazón de madera de la silla. Es buen roble. Un antiguo árbol en el que da gusto sentarse.%SPEECH_ON%Me alegra que estés a gusto, mercenario, pero yo no lo estoy, maldita sea. Tenemos muchos, muchos avisos de que un gran grupo de bandidos está a punto de atacar nuestra ciudad. Andamos bastante escasos de defensas, pero no de coronas. Obviamente, ahí es donde entras tú. ¿Te interesa?%SPEECH_OFF% | %employer% estampa una copa contra la pared. Se hace añicos que salen girando como molinetes, y unas gotas de vino te salpican la mejilla.%SPEECH_ON%¡Vagabundos! ¡Bandidos! ¡Merodeadores! ¡Esto no se acaba nunca!%SPEECH_OFF%Te tiende distraídamente una servilleta.%SPEECH_ON%¡Y ahora me llegan noticias de que un gran grupo de estos matones viene a quemar esta ciudad hasta los cimientos! Pues bien, les tengo algo reservado: a ti. ¿Qué dices, mercenario? ¿Nos defenderás?%SPEECH_OFF% | Se oye a unas mujeres llorando de pena justo fuera de la habitación de %employer%. Se gira hacia ti.%SPEECH_ON%¿Oyes eso? Eso es lo que pasa cuando los bandidos vienen aquí. Roban, violan y asesinan.%SPEECH_OFF%Asientes. Es, después de todo, el modo de actuar de los bandidos.%SPEECH_ON%Ahora algunos campesinos de las tierras del interior dicen que los matones se están preparando para un ataque masivo contra nuestro pueblo. Debes hacer algo para ayudarnos, mercenario. Heh, claro que cuando digo 'debes', lo que realmente quiero decir es que te pagaremos por ayudarnos...%SPEECH_OFF%}"
     }
     // context: defend_settlement_bandits_contract.o.createScreens.s.Text
     {
@@ -38207,29 +38268,29 @@ local pairs = [
     {
         // "Greenskins are heading this way, murdering and destroying all that stands before them. %s seeks sellsword aid.",
         mode = "pattern"
-        en = "Greenskins are heading this way, murdering and destroying all that stands before them. %s seeks sellsword aid."
-        es = "Los pieles verdes vienen hacia aquí, asesinando y destruyendo todo lo que se interpone en su camino. %s busca la ayuda de mercenarios."
+        en = "Greenskins are heading this way, murdering and destroying all that stands before them. [color=<c1:str>]<s1:str>[/color] seeks sellsword aid."
+        es = "Los pieles verdes vienen hacia aquí, asesinando y destruyendo todo lo que se interpone en su camino. [color=<c1>]<s1>[/color] busca la ayuda de mercenarios."
     }
     // context: defend_settlement_greenskins_contract.o.create.m.DescriptionTemplates
     {
         // "Desperation mounts in %s as the town faces the suddenly very real prospect of a greenskin raid.",
         mode = "pattern"
-        en = "Desperation mounts in %s as the town faces the suddenly very real prospect of a greenskin raid."
-        es = "La desesperación crece en %s ahora que la ciudad afronta la amenaza, de pronto muy real, de una incursión de pieles verdes."
+        en = "Desperation mounts in [color=<c1:str>]<s1:str>[/color] as the town faces the suddenly very real prospect of a greenskin raid."
+        es = "La desesperación crece en [color=<c1>]<s1>[/color] ahora que la ciudad afronta la amenaza, de pronto muy real, de una incursión de pieles verdes."
     }
     // context: defend_settlement_greenskins_contract.o.create.m.DescriptionTemplates
     {
         // "Fear grips the townsfolk of %s as they prepare for the imminent onslaught of an orc raid.",
         mode = "pattern"
-        en = "Fear grips the townsfolk of %s as they prepare for the imminent onslaught of an orc raid."
-        es = "El miedo se apodera de los habitantes de %s mientras se preparan para la inminente embestida de una incursión orca."
+        en = "Fear grips the townsfolk of [color=<c1:str>]<s1:str>[/color] as they prepare for the imminent onslaught of an orc raid."
+        es = "El miedo se apodera de los habitantes de [color=<c1>]<s1>[/color] mientras se preparan para la inminente embestida de una incursión orca."
     }
     // context: defend_settlement_greenskins_contract.o.create.m.DescriptionTemplates
     {
         // "Funds have hastily been made available to hire defenders for %s. Orcs do have a nice way of focusing the mind on current matters.",
         mode = "pattern"
-        en = "Funds have hastily been made available to hire defenders for %s. Orcs do have a nice way of focusing the mind on current matters."
-        es = "Se han reunido fondos a toda prisa para contratar defensores para %s. Nada como los orcos para centrar la mente en los asuntos del momento."
+        en = "Funds have hastily been made available to hire defenders for [color=<c1:str>]<s1:str>[/color]. Orcs do have a nice way of focusing the mind on current matters."
+        es = "Se han reunido fondos a toda prisa para contratar defensores para [color=<c1>]<s1>[/color]. Nada como los orcos para centrar la mente en los asuntos del momento."
     }
     // context: defend_settlement_greenskins_contract.o.create.m.DescriptionTemplates
     {
@@ -38462,29 +38523,29 @@ local pairs = [
     {
         // "A loathsome goblin camp has been reported near %s. Treacherous creatures who fight without honor - something often also said of sellswords.",
         mode = "pattern"
-        en = "A loathsome goblin camp has been reported near %s. Treacherous creatures who fight without honor - something often also said of sellswords."
-        es = "Se ha avistado un repugnante campamento goblin cerca de %s. Criaturas traicioneras que luchan sin honor, algo que a menudo también se dice de los mercenarios."
+        en = "A loathsome goblin camp has been reported near [color=<c1:str>]<s1:str>[/color]. Treacherous creatures who fight without honor - something often also said of sellswords."
+        es = "Se ha avistado un repugnante campamento goblin cerca de [color=<c1>]<s1>[/color]. Criaturas traicioneras que luchan sin honor, algo que a menudo también se dice de los mercenarios."
     }
     // context: destroy_goblin_camp_contract.o.create.m.DescriptionTemplates
     {
         // "%s is offering a hefty bounty for some brave souls to go destroy a nearby goblin camp.",
         mode = "pattern"
-        en = "%s is offering a hefty bounty for some brave souls to go destroy a nearby goblin camp."
-        es = "%s ofrece una recompensa considerable a las almas valientes que vayan a destruir un campamento goblin cercano."
+        en = "[color=<c1:str>]<s1:str>[/color] is offering a hefty bounty for some brave souls to go destroy a nearby goblin camp."
+        es = "[color=<c1>]<s1>[/color] ofrece una recompensa considerable a las almas valientes que vayan a destruir un campamento goblin cercano."
     }
     // context: destroy_goblin_camp_contract.o.create.m.DescriptionTemplates
     {
         // "Residents of %s live in fear with a goblin camp nearby, its threat looming ever closer.",
         mode = "pattern"
-        en = "Residents of %s live in fear with a goblin camp nearby, its threat looming ever closer."
-        es = "Los habitantes de %s viven atemorizados por un campamento goblin cercano, una amenaza cada vez más próxima."
+        en = "Residents of [color=<c1:str>]<s1:str>[/color] live in fear with a goblin camp nearby, its threat looming ever closer."
+        es = "Los habitantes de [color=<c1>]<s1>[/color] viven atemorizados por un campamento goblin cercano, una amenaza cada vez más próxima."
     }
     // context: destroy_goblin_camp_contract.o.create.m.DescriptionTemplates
     {
         // "With a goblin camp nearby, the safety of %s is brought into question. You are being hired to correct that.",
         mode = "pattern"
-        en = "With a goblin camp nearby, the safety of %s is brought into question. You are being hired to correct that."
-        es = "Con un campamento goblin tan cerca, la seguridad de %s está en entredicho. Te contratan para remediarlo."
+        en = "With a goblin camp nearby, the safety of [color=<c1:str>]<s1:str>[/color] is brought into question. You are being hired to correct that."
+        es = "Con un campamento goblin tan cerca, la seguridad de [color=<c1>]<s1>[/color] está en entredicho. Te contratan para remediarlo."
     }
     // context: destroy_goblin_camp_contract.o.create.m.DescriptionTemplates
     {
@@ -38500,8 +38561,8 @@ local pairs = [
     {
         // "Goblin raiders have been terrorising the roads around %s, you are being hired to eradicate them.",
         mode = "pattern"
-        en = "Goblin raiders have been terrorising the roads around %s, you are being hired to eradicate them."
-        es = "Unos saqueadores goblins tienen aterrorizados los caminos alrededor de %s, y te contratan para erradicarlos."
+        en = "Goblin raiders have been terrorising the roads around [color=<c1:str>]<s1:str>[/color], you are being hired to eradicate them."
+        es = "Unos saqueadores goblins tienen aterrorizados los caminos alrededor de [color=<c1>]<s1>[/color], y te contratan para erradicarlos."
     }
     // context: destroy_goblin_camp_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
@@ -38547,8 +38608,8 @@ local pairs = [
     {
         // "A brutal greenskin warcamp has settled near %s, becoming the source of much death and strife in the region.",
         mode = "pattern"
-        en = "A brutal greenskin warcamp has settled near %s, becoming the source of much death and strife in the region."
-        es = "Un brutal campamento de guerra de pieles verdes se ha asentado cerca de %s y se ha convertido en fuente de mucha muerte y discordia en la región."
+        en = "A brutal greenskin warcamp has settled near [color=<c1:str>]<s1:str>[/color], becoming the source of much death and strife in the region."
+        es = "Un brutal campamento de guerra de pieles verdes se ha asentado cerca de [color=<c1>]<s1>[/color] y se ha convertido en fuente de mucha muerte y discordia en la región."
     }
     // context: destroy_orc_camp_contract.o.create.m.DescriptionTemplates
     {
@@ -38564,8 +38625,8 @@ local pairs = [
     {
         // "Residents of %s live in constant dread with a greenskin warcamp lurking dangerously close by.",
         mode = "pattern"
-        en = "Residents of %s live in constant dread with a greenskin warcamp lurking dangerously close by."
-        es = "Los habitantes de %s viven con un temor constante, con un campamento de guerra de pieles verdes acechando peligrosamente cerca."
+        en = "Residents of [color=<c1:str>]<s1:str>[/color] live in constant dread with a greenskin warcamp lurking dangerously close by."
+        es = "Los habitantes de [color=<c1>]<s1>[/color] viven con un temor constante, con un campamento de guerra de pieles verdes acechando peligrosamente cerca."
     }
     // context: destroy_orc_camp_contract.o.create.m.DescriptionTemplates
     {
@@ -39746,43 +39807,43 @@ local pairs = [
     {
         // "Southern raiders are coming to burn the homes, shops and farms in lands belonging to %s. Times are grim.",
         mode = "pattern"
-        en = "Southern raiders are coming to burn the homes, shops and farms in lands belonging to %s. Times are grim."
-        es = "Unos saqueadores del sur vienen a quemar las casas, las tiendas y las granjas de las tierras que pertenecen a %s. Corren tiempos sombríos."
+        en = "Southern raiders are coming to burn the homes, shops and farms in lands belonging to [color=<c1:str>]<s1:str>[/color]. Times are grim."
+        es = "Unos saqueadores del sur vienen a quemar las casas, las tiendas y las granjas de las tierras que pertenecen a [color=<c1>]<s1>[/color]. Corren tiempos sombríos."
     }
     // context: intercept_raiding_parties_contract.o.create.m.DescriptionTemplates
     {
         // "Tension hangs heavy in the air, as folk are expecting troops from the South to descend upon %s any day now.",
         mode = "pattern"
-        en = "Tension hangs heavy in the air, as folk are expecting troops from the South to descend upon %s any day now."
-        es = "La tensión se palpa en el aire, pues la gente espera que las tropas del sur caigan sobre %s cualquier día de estos."
+        en = "Tension hangs heavy in the air, as folk are expecting troops from the South to descend upon [color=<c1:str>]<s1:str>[/color] any day now."
+        es = "La tensión se palpa en el aire, pues la gente espera que las tropas del sur caigan sobre [color=<c1>]<s1>[/color] cualquier día de estos."
     }
     // context: intercept_raiding_parties_contract.o.create.m.DescriptionTemplates
     {
         // "Due to spectacular mismanagement, the nobles have no troops to spare to defend %s from an incoming raid.",
         mode = "pattern"
-        en = "Due to spectacular mismanagement, the nobles have no troops to spare to defend %s from an incoming raid."
-        es = "Por culpa de una gestión espectacularmente desastrosa, los nobles no tienen tropas de sobra para defender %s de una incursión inminente."
+        en = "Due to spectacular mismanagement, the nobles have no troops to spare to defend [color=<c1:str>]<s1:str>[/color] from an incoming raid."
+        es = "Por culpa de una gestión espectacularmente desastrosa, los nobles no tienen tropas de sobra para defender [color=<c1>]<s1>[/color] de una incursión inminente."
     }
     // context: intercept_raiding_parties_contract.o.create.m.DescriptionTemplates
     {
         // "%s is a community on edge, as the looming threat of southern raiders casts a pall over daily life.",
         mode = "pattern"
-        en = "%s is a community on edge, as the looming threat of southern raiders casts a pall over daily life."
-        es = "%s es una comunidad en vilo, pues la amenaza inminente de los saqueadores del sur ensombrece el día a día."
+        en = "[color=<c1:str>]<s1:str>[/color] is a community on edge, as the looming threat of southern raiders casts a pall over daily life."
+        es = "[color=<c1>]<s1>[/color] es una comunidad en vilo, pues la amenaza inminente de los saqueadores del sur ensombrece el día a día."
     }
     // context: intercept_raiding_parties_contract.o.create.m.DescriptionTemplates
     {
         // "In these troubled times %s seeks sellswords - the more ruthless the better - to deter the threat of southern invaders.",
         mode = "pattern"
-        en = "In these troubled times %s seeks sellswords - the more ruthless the better - to deter the threat of southern invaders."
-        es = "En estos tiempos difíciles, %s busca mercenarios, cuanto más despiadados mejor, para frenar la amenaza de los invasores del sur."
+        en = "In these troubled times [color=<c1:str>]<s1:str>[/color] seeks sellswords - the more ruthless the better - to deter the threat of southern invaders."
+        es = "En estos tiempos difíciles, [color=<c1>]<s1>[/color] busca mercenarios, cuanto más despiadados mejor, para frenar la amenaza de los invasores del sur."
     }
     // context: intercept_raiding_parties_contract.o.create.m.DescriptionTemplates
     {
         // "%s seeks valiant sellswords - you assume the \'valiant\' part is optional - to defend against southern raiders.",
         mode = "pattern"
-        en = "%s seeks valiant sellswords - you assume the 'valiant' part is optional - to defend against southern raiders."
-        es = "%s busca mercenarios valientes (supones que lo de 'valientes' es opcional) para defenderse de los saqueadores del sur."
+        en = "[color=<c1:str>]<s1:str>[/color] seeks valiant sellswords - you assume the 'valiant' part is optional - to defend against southern raiders."
+        es = "[color=<c1>]<s1>[/color] busca mercenarios valientes (supones que lo de 'valientes' es opcional) para defenderse de los saqueadores del sur."
     }
     // FILE: mod_legends\hooks\contracts\contracts\investigate_cemetery_contract.nut
     // context: investigate_cemetery_contract.o.create.m.Name
@@ -39866,7 +39927,7 @@ local pairs = [
     // context: investigate_cemetery_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_56.png[/img]{Having slain all the undead, you find a piece of cloth that glows purple in your hand. You're not sure what it is, but for some reason are drawn to keep it. %randombrother% thinks this is stupid, but %they're_randombrother% not the one in charge. | After the battle, %randombrother% finds a shovelhead with what appears to be a symbol burned into it. %They_randombrother% wonders if maybe %employer%, your employer, knows something about it. You agree, taking the scrap of metal with you to see if the local %person_employer% can identify it. | With the monstrosities laid low, you sheathe your sword and scour the battlefield. In your search, you find an odd talisman of crow feathers and cow leather. You pocket it, figuring %employer%, your employer, might know something about it.}"
-        es = "[img]gfx/ui/events/event_56.png[/img]{Tras matar a todos los no muertos, encuentras un trozo de tela que brilla con un tono púrpura en tu mano. No sabes qué es, pero por algún motivo sientes la necesidad de quedártelo. A %randombrother% le parece una estupidez, pero no es quien manda. | Después de la batalla, %randombrother% encuentra la hoja de una pala con lo que parece un símbolo grabado a fuego. Se pregunta si quizá %employer%, tu empleador, sepa algo al respecto. Estás de acuerdo y te llevas el trozo de metal para ver si sabe identificarlo. | Abatidas las monstruosidades, envainas la espada y registras el campo de batalla. En tu búsqueda, encuentras un extraño talismán de plumas de cuervo y cuero de vaca. Te lo guardas, pensando que %employer%, tu empleador, quizá sepa algo de él.}"
+        es = "[img]gfx/ui/events/event_56.png[/img]{Tras matar a todos los no muertos, encuentras un trozo de tela que brilla con un tono púrpura en tu mano. No sabes qué es, pero por algún motivo sientes la necesidad de quedártelo. A %randombrother% le parece una estupidez, pero no es quien manda. | Después de la batalla, %randombrother% encuentra la hoja de una pala con lo que parece un símbolo grabado a fuego. Se pregunta si quizá %employer%, quien te contrató, sepa algo al respecto. Estás de acuerdo y te llevas el trozo de metal para ver si sabe identificarlo. | Abatidas las monstruosidades, envainas la espada y registras el campo de batalla. En tu búsqueda, encuentras un extraño talismán de plumas de cuervo y cuero de vaca. Te lo guardas, pensando que %employer%, tu empleador, quizá sepa algo de él.}"
     }
     // context: investigate_cemetery_contract.o.createScreens.::Legends.Screens.hook()
     // en = "Necromancer1"
@@ -39941,58 +40002,58 @@ local pairs = [
     {
         // "The dead have come for %s. Only the mad or the desperate remain there to stand against them.",
         mode = "pattern"
-        en = "The dead have come for %s. Only the mad or the desperate remain there to stand against them."
-        es = "Los muertos han venido por %s. Solo los locos o los desesperados se quedan allí para hacerles frente."
+        en = "The dead have come for [color=<c1:str>]<s1:str>[/color]. Only the mad or the desperate remain there to stand against them."
+        es = "Los muertos han venido por [color=<c1>]<s1>[/color]. Solo los locos o los desesperados se quedan allí para hacerles frente."
     }
     // context: last_stand_contract.o.create.m.DescriptionTemplates
     {
         // "Life in %s is currently a grim existence, with every day bringing fresh horrors as the undead close in.",
         mode = "pattern"
-        en = "Life in %s is currently a grim existence, with every day bringing fresh horrors as the undead close in."
-        es = "La vida en %s es ahora una existencia sombría: cada día trae nuevos horrores a medida que los no muertos se acercan."
+        en = "Life in [color=<c1:str>]<s1:str>[/color] is currently a grim existence, with every day bringing fresh horrors as the undead close in."
+        es = "La vida en [color=<c1>]<s1>[/color] es ahora una existencia sombría: cada día trae nuevos horrores a medida que los no muertos se acercan."
     }
     // context: last_stand_contract.o.create.m.DescriptionTemplates
     {
         // "Time has run out for %s, for the dead have come to claim it.",
         mode = "pattern"
-        en = "Time has run out for %s, for the dead have come to claim it."
-        es = "Se le ha acabado el tiempo a %s, pues los muertos han venido a apoderarse del lugar."
+        en = "Time has run out for [color=<c1:str>]<s1:str>[/color], for the dead have come to claim it."
+        es = "Se le ha acabado el tiempo a [color=<c1>]<s1>[/color], pues los muertos han venido a apoderarse del lugar."
     }
     // context: last_stand_contract.o.create.m.DescriptionTemplates
     {
         // "Without aid, the defenders of %s will soon perish and join the ranks of the dead.",
         mode = "pattern"
-        en = "Without aid, the defenders of %s will soon perish and join the ranks of the dead."
-        es = "Sin ayuda, los defensores de %s pronto perecerán y se unirán a las filas de los muertos."
+        en = "Without aid, the defenders of [color=<c1:str>]<s1:str>[/color] will soon perish and join the ranks of the dead."
+        es = "Sin ayuda, los defensores de [color=<c1>]<s1>[/color] pronto perecerán y se unirán a las filas de los muertos."
     }
     // context: last_stand_contract.o.create.m.DescriptionTemplates
     {
         // "As the army of the dead advances, the air grows heavy with the stench of decay. Soon they will engulf %s.",
         mode = "pattern"
-        en = "As the army of the dead advances, the air grows heavy with the stench of decay. Soon they will engulf %s."
-        es = "A medida que avanza el ejército de los muertos, el aire se vuelve denso con el hedor de la putrefacción. Pronto engullirán %s."
+        en = "As the army of the dead advances, the air grows heavy with the stench of decay. Soon they will engulf [color=<c1:str>]<s1:str>[/color]."
+        es = "A medida que avanza el ejército de los muertos, el aire se vuelve denso con el hedor de la putrefacción. Pronto engullirán [color=<c1>]<s1>[/color]."
     }
     // context: last_stand_contract.o.create.m.DescriptionTemplates
     {
         // "With each passing moment, the army of the dead draws closer to %s. Folk have started to flee.",
         mode = "pattern"
-        en = "With each passing moment, the army of the dead draws closer to %s. Folk have started to flee."
-        es = "Con cada momento que pasa, el ejército de los muertos se acerca más a %s. La gente ha empezado a huir."
+        en = "With each passing moment, the army of the dead draws closer to [color=<c1:str>]<s1:str>[/color]. Folk have started to flee."
+        es = "Con cada momento que pasa, el ejército de los muertos se acerca más a [color=<c1>]<s1>[/color]. La gente ha empezado a huir."
     }
     // FILE: mod_legends\hooks\contracts\contracts\marauding_greenskins_contract.nut
     // context: marauding_greenskins_contract.o.create.m.DescriptionTemplates
     {
         // "Greenskins are terrorizing the region around %s, burning everything in their path. The ferocity of the attacks have left many unnerved.",
         mode = "pattern"
-        en = "Greenskins are terrorizing the region around %s, burning everything in their path. The ferocity of the attacks have left many unnerved."
-        es = "Los pieles verdes aterrorizan la región en torno a %s y queman todo a su paso. La ferocidad de los ataques ha dejado inquietos a muchos."
+        en = "Greenskins are terrorizing the region around [color=<c1:str>]<s1:str>[/color], burning everything in their path. The ferocity of the attacks have left many unnerved."
+        es = "Los pieles verdes aterrorizan la región en torno a [color=<c1>]<s1>[/color] y queman todo a su paso. La ferocidad de los ataques ha dejado inquietos a muchos."
     }
     // context: marauding_greenskins_contract.o.create.m.DescriptionTemplates
     {
         // "Greenskin raiders have brought a miserable tide of violence and bloodshed to %s.",
         mode = "pattern"
-        en = "Greenskin raiders have brought a miserable tide of violence and bloodshed to %s."
-        es = "Los saqueadores pieles verdes han traído a %s una miserable marea de violencia y derramamiento de sangre."
+        en = "Greenskin raiders have brought a miserable tide of violence and bloodshed to [color=<c1:str>]<s1:str>[/color]."
+        es = "Los saqueadores pieles verdes han traído a [color=<c1>]<s1>[/color] una miserable marea de violencia y derramamiento de sangre."
     }
     // context: marauding_greenskins_contract.o.create.m.DescriptionTemplates
     {
@@ -40240,8 +40301,8 @@ local pairs = [
     {
         // "Hiring mercenaries to protect the roads is a costly business, but it appears %s has been left with little choice.",
         mode = "pattern"
-        en = "Hiring mercenaries to protect the roads is a costly business, but it appears %s has been left with little choice."
-        es = "Contratar mercenarios para proteger los caminos sale caro, pero parece que a %s no le han quedado muchas opciones."
+        en = "Hiring mercenaries to protect the roads is a costly business, but it appears [color=<c1:str>]<s1:str>[/color] has been left with little choice."
+        es = "Contratar mercenarios para proteger los caminos sale caro, pero parece que a [color=<c1>]<s1>[/color] no le han quedado muchas opciones."
     }
     // context: patrol_contract.o.create.m.DescriptionTemplates
     {
@@ -40257,15 +40318,15 @@ local pairs = [
     {
         // "As rumors of bandit gangs plundering the trade routes to %s spread, the need for vigilant patrols becomes paramount.",
         mode = "pattern"
-        en = "As rumors of bandit gangs plundering the trade routes to %s spread, the need for vigilant patrols becomes paramount."
-        es = "A medida que se extienden los rumores de bandas de salteadores que saquean las rutas comerciales hacia %s, la necesidad de patrullas vigilantes se vuelve primordial."
+        en = "As rumors of bandit gangs plundering the trade routes to [color=<c1:str>]<s1:str>[/color] spread, the need for vigilant patrols becomes paramount."
+        es = "A medida que se extienden los rumores de bandas de salteadores que saquean las rutas comerciales hacia [color=<c1>]<s1>[/color], la necesidad de patrullas vigilantes se vuelve primordial."
     }
     // context: patrol_contract.o.create.m.DescriptionTemplates
     {
         // "With merchants hesitant to travel to %s due to the growing threat of banditry, the nobility needs to be seen doing something to restore confidence.",
         mode = "pattern"
-        en = "With merchants hesitant to travel to %s due to the growing threat of banditry, the nobility needs to be seen doing something to restore confidence."
-        es = "Con los mercaderes reacios a viajar a %s por la creciente amenaza de los bandidos, la nobleza necesita que se la vea hacer algo para devolver la confianza."
+        en = "With merchants hesitant to travel to [color=<c1:str>]<s1:str>[/color] due to the growing threat of banditry, the nobility needs to be seen doing something to restore confidence."
+        es = "Con los mercaderes reacios a viajar a [color=<c1>]<s1>[/color] por la creciente amenaza de los bandidos, la nobleza necesita que se la vea hacer algo para devolver la confianza."
     }
     // context: patrol_contract.o.create.m.DescriptionTemplates
     {
@@ -40496,57 +40557,57 @@ local pairs = [
     {
         // "The townsfolk of %s are looking to rebuild the %s, ideally with some heartless sellswords to deal with any trouble.",
         mode = "pattern"
-        en = "The townsfolk of %s are looking to rebuild the %s, ideally with some heartless sellswords to deal with any trouble."
-        es = "Los habitantes de %s buscan reconstruir %s, a ser posible con unos cuantos mercenarios despiadados que se encarguen de cualquier problema."
+        en = "The townsfolk of [color=<c1:str>]<s1:str>[/color] are looking to rebuild the [color=<c2:str>]<s2:str>[/color], ideally with some heartless sellswords to deal with any trouble."
+        es = "Los habitantes de [color=<c1>]<s1>[/color] buscan reconstruir [color=<c2>]<s2>[/color], a ser posible con unos cuantos mercenarios despiadados que se encarguen de cualquier problema."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "%s seeks to reclaim the %s. Mercenary assistance will be needed to secure the site.",
         mode = "pattern"
-        en = "%s seeks to reclaim the %s. Mercenary assistance will be needed to secure the site."
-        es = "%s quiere recuperar %s. Hará falta ayuda mercenaria para asegurar el lugar."
+        en = "[color=<c1:str>]<s1:str>[/color] seeks to reclaim the [color=<c2:str>]<s2:str>[/color]. Mercenary assistance will be needed to secure the site."
+        es = "[color=<c1>]<s1>[/color] quiere recuperar [color=<c2>]<s2>[/color]. Hará falta ayuda mercenaria para asegurar el lugar."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "Help %s expel vagrants and thieves from the %s, so the area can be rebuilt.",
         mode = "pattern"
-        en = "Help %s expel vagrants and thieves from the %s, so the area can be rebuilt."
-        es = "Ayuda a %s a expulsar a vagabundos y ladrones de %s para poder reconstruir la zona."
+        en = "Help [color=<c1:str>]<s1:str>[/color] expel vagrants and thieves from the [color=<c2:str>]<s2:str>[/color], so the area can be rebuilt."
+        es = "Ayuda a [color=<c1>]<s1>[/color] a expulsar a vagabundos y ladrones de [color=<c2>]<s2>[/color] para poder reconstruir la zona."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "Rebuilding efforts in %s are ready to get underway, there is just the matter of site security to attend to first.",
         mode = "pattern"
-        en = "Rebuilding efforts in %s are ready to get underway, there is just the matter of site security to attend to first."
-        es = "Los trabajos de reconstrucción en %s están listos para empezar; solo falta ocuparse primero de la seguridad del lugar."
+        en = "Rebuilding efforts in [color=<c1:str>]<s1:str>[/color] are ready to get underway, there is just the matter of site security to attend to first."
+        es = "Los trabajos de reconstrucción en [color=<c1>]<s1>[/color] están listos para empezar; solo falta ocuparse primero de la seguridad del lugar."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "%s wishes to rebuild the fire-gutted ruins of the %s. First the area must be made safe.",
         mode = "pattern"
-        en = "%s wishes to rebuild the fire-gutted ruins of the %s. First the area must be made safe."
-        es = "%s quiere reconstruir las ruinas calcinadas de %s. Antes hay que asegurar la zona."
+        en = "[color=<c1:str>]<s1:str>[/color] wishes to rebuild the fire-gutted ruins of the [color=<c2:str>]<s2:str>[/color]. First the area must be made safe."
+        es = "[color=<c1>]<s1>[/color] quiere reconstruir las ruinas calcinadas de [color=<c2>]<s2>[/color]. Antes hay que asegurar la zona."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "Squatters, thieves and all kinds of miscreants love to lurk in ruins. Drive them out so %s can rebuild.",
         mode = "pattern"
-        en = "Squatters, thieves and all kinds of miscreants love to lurk in ruins. Drive them out so %s can rebuild."
-        es = "Ocupas, ladrones y toda clase de maleantes adoran merodear entre ruinas. Échalos para que %s pueda reconstruir."
+        en = "Squatters, thieves and all kinds of miscreants love to lurk in ruins. Drive them out so [color=<c1:str>]<s1:str>[/color] can rebuild."
+        es = "Ocupas, ladrones y toda clase de maleantes adoran merodear entre ruinas. Échalos para que [color=<c1>]<s1>[/color] pueda reconstruir."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "With the danger now passed, it is time for %s to reclaim and rebuild the %s.",
         mode = "pattern"
-        en = "With the danger now passed, it is time for %s to reclaim and rebuild the %s."
-        es = "Pasado ya el peligro, es hora de que %s recupere y reconstruya %s."
+        en = "With the danger now passed, it is time for [color=<c1:str>]<s1:str>[/color] to reclaim and rebuild the [color=<c2:str>]<s2:str>[/color]."
+        es = "Pasado ya el peligro, es hora de que [color=<c1>]<s1>[/color] recupere y reconstruya [color=<c2>]<s2>[/color]."
     }
     // context: restore_location_contract.o.create.m.DescriptionTemplates
     {
         // "The nobility of %s will not tolerate such unsightly ruins on the city outskirts. Help reclaim the %s.",
         mode = "pattern"
-        en = "The nobility of %s will not tolerate such unsightly ruins on the city outskirts. Help reclaim the %s."
-        es = "La nobleza de %s no tolerará unas ruinas tan feas a las afueras de la ciudad. Ayuda a recuperar %s."
+        en = "The nobility of [color=<c1:str>]<s1:str>[/color] will not tolerate such unsightly ruins on the city outskirts. Help reclaim the [color=<c2:str>]<s2:str>[/color]."
+        es = "La nobleza de [color=<c1>]<s1>[/color] no tolerará unas ruinas tan feas a las afueras de la ciudad. Ayuda a recuperar [color=<c2>]<s2>[/color]."
     }
     // context: restore_location_contract.o.createScreens.::Legends.Screens.hook()._screen.Text
     {
@@ -40628,7 +40689,7 @@ local pairs = [
     // context: return_item_contract.o.m.StolenItemNames
     {
         en = "Ornate Lockbox"
-        es = "Arqueta ornamentada"
+        es = "Caja fuerte ornamentada"
     }
     // en = "Demonic Statuette"
     // en base_es
@@ -40915,29 +40976,29 @@ local pairs = [
     {
         // "Brigands have stolen the %s from his lordship. He wants it back.",
         mode = "pattern"
-        en = "Brigands have stolen the %s from his lordship. He wants it back."
-        es = "Unos bandidos le han robado %s a su señoría. Exige su devolución."
+        en = "Brigands have stolen the [color=<c1:str>]<s1:str>[/color] from his lordship. He wants it back."
+        es = "Unos bandidos le han robado [color=<c1>]<s1:t>[/color] a su señoría. Exige su devolución."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Some dastards have stolen the famed %s!",
         mode = "pattern"
-        en = "Some dastards have stolen the famed %s!"
-        es = "¡Unos canallas han robado %s, una pieza de gran fama!"
+        en = "Some dastards have stolen the famed [color=<c1:str>]<s1:str>[/color]!"
+        es = "¡Unos canallas han robado [color=<c1>]<s1:t>[/color], una pieza de gran fama!"
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Follow the tracks, return the stolen %s.",
         mode = "pattern"
-        en = "Follow the tracks, return the stolen %s."
-        es = "Sigue el rastro y devuelve el objeto robado: %s."
+        en = "Follow the tracks, return the stolen [color=<c1:str>]<s1:str>[/color]."
+        es = "Sigue el rastro y devuelve el objeto robado: [color=<c1>]<s1:t>[/color]."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Thieves have made off with the %s!",
         mode = "pattern"
-        en = "Thieves have made off with the %s!"
-        es = "¡Unos ladrones se han llevado %s!"
+        en = "Thieves have made off with the [color=<c1:str>]<s1:str>[/color]!"
+        es = "¡Unos ladrones se han llevado [color=<c1>]<s1:t>[/color]!"
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
@@ -40948,43 +41009,43 @@ local pairs = [
     {
         // "Some thieves have stolen the %s from a noble lord, who is frankly astonished at their audacity.",
         mode = "pattern"
-        en = "Some thieves have stolen the %s from a noble lord, who is frankly astonished at their audacity."
-        es = "Unos ladrones le han robado %s a un noble señor, francamente asombrado por su audacia."
+        en = "Some thieves have stolen the [color=<c1:str>]<s1:str>[/color] from a noble lord, who is frankly astonished at their audacity."
+        es = "Unos ladrones le han robado [color=<c1>]<s1:t>[/color] a un noble señor, francamente asombrado por su audacia."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "A local lord woke up to find his %s display case was emptier than a bard\'s promise.",
         mode = "pattern"
-        en = "A local lord woke up to find his %s display case was emptier than a bard's promise."
-        es = "Un señor local se ha despertado y ha descubierto que la vitrina de su %s estaba más vacía que la promesa de un bardo."
+        en = "A local lord woke up to find his [color=<c1:str>]<s1:str>[/color] display case was emptier than a bard's promise."
+        es = "Un señor local se ha despertado y ha descubierto que la vitrina de su [color=<c1>]<s1:t>[/color] estaba más vacía que la promesa de un bardo."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "A local lord discovered his cherished %s has vanished after hosting a banquet.",
         mode = "pattern"
-        en = "A local lord discovered his cherished %s has vanished after hosting a banquet."
-        es = "Tras ofrecer un banquete, un señor local ha descubierto que ha desaparecido una de sus posesiones más queridas: %s."
+        en = "A local lord discovered his cherished [color=<c1:str>]<s1:str>[/color] has vanished after hosting a banquet."
+        es = "Tras ofrecer un banquete, un señor local ha descubierto que ha desaparecido una de sus posesiones más queridas: [color=<c1>]<s1:t>[/color]."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "A noble lord is flabbergasted to find his cherished %s missing. He wants it found.",
         mode = "pattern"
-        en = "A noble lord is flabbergasted to find his cherished %s missing. He wants it found."
-        es = "Un noble señor se ha quedado de piedra al ver que falta %s, una de sus posesiones más queridas. Quiere que la encuentren."
+        en = "A noble lord is flabbergasted to find his cherished [color=<c1:str>]<s1:str>[/color] missing. He wants it found."
+        es = "Un noble señor se ha quedado de piedra al ver que falta [color=<c1>]<s1:t>[/color], una de sus posesiones más queridas. Quiere que la encuentren."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "His wife\'s cherished %s has been stolen. This nobleman needs you to track it down or he\'ll never hear the end of it.",
         mode = "pattern"
-        en = "His wife's cherished %s has been stolen. This nobleman needs you to track it down or he'll never hear the end of it."
-        es = "Han robado %s, la posesión más querida de la esposa de este noble. Necesita que des con ella o tendrá que oír reproches el resto de su vida."
+        en = "His wife's cherished [color=<c1:str>]<s1:str>[/color] has been stolen. This nobleman needs you to track it down or he'll never hear the end of it."
+        es = "Han robado [color=<c1>]<s1:t>[/color], la posesión más querida de la esposa de este noble. Necesita que des con ella o tendrá que oír reproches el resto de su vida."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Enterprising thieves have made off with the %s, seeking to make a fortune.",
         mode = "pattern"
-        en = "Enterprising thieves have made off with the %s, seeking to make a fortune."
-        es = "Unos ladrones emprendedores se han llevado %s con la esperanza de hacer fortuna."
+        en = "Enterprising thieves have made off with the [color=<c1:str>]<s1:str>[/color], seeking to make a fortune."
+        es = "Unos ladrones emprendedores se han llevado [color=<c1>]<s1:t>[/color] con la esperanza de hacer fortuna."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
@@ -41000,36 +41061,36 @@ local pairs = [
     {
         // "The prized %s has been stolen from his lordship by moonlight. Track down the thief for a reward.",
         mode = "pattern"
-        en = "The prized %s has been stolen from his lordship by moonlight. Track down the thief for a reward."
-        es = "A la luz de la luna le han robado a su señoría %s, una de sus piezas más preciadas. Da con el ladrón y obtendrás una recompensa."
+        en = "The prized [color=<c1:str>]<s1:str>[/color] has been stolen from his lordship by moonlight. Track down the thief for a reward."
+        es = "A la luz de la luna le han robado a su señoría [color=<c1>]<s1:t>[/color], una de sus piezas más preciadas. Da con el ladrón y obtendrás una recompensa."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "The %s has been stolen from under the nose of this lordship. Venture forth to reclaim it.",
         mode = "pattern"
-        en = "The %s has been stolen from under the nose of this lordship. Venture forth to reclaim it."
-        es = "Han robado %s en las mismísimas narices de su señoría. Sal en busca de lo robado."
+        en = "The [color=<c1:str>]<s1:str>[/color] has been stolen from under the nose of this lordship. Venture forth to reclaim it."
+        es = "Han robado [color=<c1>]<s1:t>[/color] en las mismísimas narices de su señoría. Sal en busca de lo robado."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "A noble lord has what he terms a \'fetch\' quest for you to retrieve his missing %s.",
         mode = "pattern"
-        en = "A noble lord has what he terms a 'fetch' quest for you to retrieve his missing %s."
-        es = "Un noble señor tiene para ti lo que él llama una misión de 'tráeme esto': recuperar %s, que ha desaparecido."
+        en = "A noble lord has what he terms a 'fetch' quest for you to retrieve his missing [color=<c1:str>]<s1:str>[/color]."
+        es = "Un noble señor tiene para ti lo que él llama una misión de 'tráeme esto': recuperar [color=<c1>]<s1:t>[/color], que ha desaparecido."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Find the thieves, kill them if you want, just bring back the %s.",
         mode = "pattern"
-        en = "Find the thieves, kill them if you want, just bring back the %s."
-        es = "Encuentra a los ladrones, mátalos si quieres, pero trae de vuelta %s."
+        en = "Find the thieves, kill them if you want, just bring back the [color=<c1:str>]<s1:str>[/color]."
+        es = "Encuentra a los ladrones, mátalos si quieres, pero trae de vuelta [color=<c1>]<s1:t>[/color]."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Reclaim the stolen %s before it falls into the wrong hands.",
         mode = "pattern"
-        en = "Reclaim the stolen %s before it falls into the wrong hands."
-        es = "Recupera lo robado, %s, antes de que caiga en malas manos."
+        en = "Reclaim the stolen [color=<c1:str>]<s1:str>[/color] before it falls into the wrong hands."
+        es = "Recupera lo robado, [color=<c1>]<s1:t>[/color], antes de que caiga en malas manos."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
@@ -41040,8 +41101,8 @@ local pairs = [
     {
         // "Recover the stolen %s for his lordship and you may earn his gratitude.",
         mode = "pattern"
-        en = "Recover the stolen %s for his lordship and you may earn his gratitude."
-        es = "Recupera lo que le robaron a su señoría, %s, y quizá te ganes su gratitud."
+        en = "Recover the stolen [color=<c1:str>]<s1:str>[/color] for his lordship and you may earn his gratitude."
+        es = "Recupera lo que le robaron a su señoría, [color=<c1>]<s1:t>[/color], y quizá te ganes su gratitud."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
@@ -41067,36 +41128,36 @@ local pairs = [
     {
         // "His lordship\'s honor is at stake! Hunt down the thieves and return the stolen %s swiftly.",
         mode = "pattern"
-        en = "His lordship's honor is at stake! Hunt down the thieves and return the stolen %s swiftly."
-        es = "¡El honor de su señoría está en juego! Da caza a los ladrones y devuelve lo robado, %s, sin demora."
+        en = "His lordship's honor is at stake! Hunt down the thieves and return the stolen [color=<c1:str>]<s1:str>[/color] swiftly."
+        es = "¡El honor de su señoría está en juego! Da caza a los ladrones y devuelve lo robado, [color=<c1>]<s1:t>[/color], sin demora."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Pursue the thieves and recover the stolen %s with utmost haste. Their lives matter not.",
         mode = "pattern"
-        en = "Pursue the thieves and recover the stolen %s with utmost haste. Their lives matter not."
-        es = "Persigue a los ladrones y recupera lo robado, %s, con la máxima urgencia. Sus vidas no importan."
+        en = "Pursue the thieves and recover the stolen [color=<c1:str>]<s1:str>[/color] with utmost haste. Their lives matter not."
+        es = "Persigue a los ladrones y recupera lo robado, [color=<c1>]<s1:t>[/color], con la máxima urgencia. Sus vidas no importan."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Pursue the footpads and bring back the missing %s directly to his lordship. No-one else.",
         mode = "pattern"
-        en = "Pursue the footpads and bring back the missing %s directly to his lordship. No-one else."
-        es = "Persigue a los salteadores y entrégale %s directamente a su señoría. A nadie más."
+        en = "Pursue the footpads and bring back the missing [color=<c1:str>]<s1:str>[/color] directly to his lordship. No-one else."
+        es = "Persigue a los salteadores y entrégale [color=<c1>]<s1:t>[/color] directamente a su señoría. A nadie más."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Track down the thieves and ensure the stolen %s is returned to its rightful owner.",
         mode = "pattern"
-        en = "Track down the thieves and ensure the stolen %s is returned to its rightful owner."
-        es = "Da con los ladrones y asegúrate de que lo robado, %s, vuelva a manos de su legítimo dueño."
+        en = "Track down the thieves and ensure the stolen [color=<c1:str>]<s1:str>[/color] is returned to its rightful owner."
+        es = "Da con los ladrones y asegúrate de que lo robado, [color=<c1>]<s1:t>[/color], vuelva a manos de su legítimo dueño."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "Seek out the knaves and restore the stolen %s to the noble lord\'s estate.",
         mode = "pattern"
-        en = "Seek out the knaves and restore the stolen %s to the noble lord's estate."
-        es = "Busca a los bribones y devuelve lo robado, %s, a la hacienda del noble señor."
+        en = "Seek out the knaves and restore the stolen [color=<c1:str>]<s1:str>[/color] to the noble lord's estate."
+        es = "Busca a los bribones y devuelve lo robado, [color=<c1>]<s1:t>[/color], a la hacienda del noble señor."
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
@@ -41107,15 +41168,15 @@ local pairs = [
     {
         // "The %s has been stolen from his lordships chambers!",
         mode = "pattern"
-        en = "The %s has been stolen from his lordships chambers!"
-        es = "¡Han robado %s de los aposentos de su señoría!"
+        en = "The [color=<c1:str>]<s1:str>[/color] has been stolen from his lordships chambers!"
+        es = "¡Han robado [color=<c1>]<s1:t>[/color] de los aposentos de su señoría!"
     }
     // context: return_item_contract.o.create.m.DescriptionTemplates
     {
         // "The local ruler has taken the theft of his %s rather badly. Find and kill everyone involved.",
         mode = "pattern"
-        en = "The local ruler has taken the theft of his %s rather badly. Find and kill everyone involved."
-        es = "El gobernante local se ha tomado bastante mal el robo de su %s. Encuentra y mata a todos los implicados."
+        en = "The local ruler has taken the theft of his [color=<c1:str>]<s1:str>[/color] rather badly. Find and kill everyone involved."
+        es = "El gobernante local se ha tomado bastante mal el robo de su [color=<c1>]<s1:t>[/color]. Encuentra y mata a todos los implicados."
     }
     // context: return_item_contract.o.createScreens.s.Text
     {
@@ -41166,36 +41227,36 @@ local pairs = [
     {
         // "Fell beasts have been preying on the citizens of %s. Folk are afraid to leave their homes.",
         mode = "pattern"
-        en = "Fell beasts have been preying on the citizens of %s. Folk are afraid to leave their homes."
-        es = "Unas bestias terribles se están cebando con los habitantes de %s. La gente tiene miedo de salir de casa."
+        en = "Fell beasts have been preying on the citizens of [color=<c1:str>]<s1:str>[/color]. Folk are afraid to leave their homes."
+        es = "Unas bestias terribles se están cebando con los habitantes de [color=<c1>]<s1>[/color]. La gente tiene miedo de salir de casa."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
         // "Roaming beasts prowl the outskirts of %s, attacking travelers and livestock.",
         mode = "pattern"
-        en = "Roaming beasts prowl the outskirts of %s, attacking travelers and livestock."
-        es = "Hay bestias errantes merodeando por las afueras de %s que atacan a viajeros y ganado."
+        en = "Roaming beasts prowl the outskirts of [color=<c1:str>]<s1:str>[/color], attacking travelers and livestock."
+        es = "Hay bestias errantes merodeando por las afueras de [color=<c1>]<s1>[/color] que atacan a viajeros y ganado."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
         // "Outlandish tales are being told of fell creatures attacking folk around %s.",
         mode = "pattern"
-        en = "Outlandish tales are being told of fell creatures attacking folk around %s."
-        es = "Corren historias extrañas sobre criaturas terribles que atacan a la gente en los alrededores de %s."
+        en = "Outlandish tales are being told of fell creatures attacking folk around [color=<c1:str>]<s1:str>[/color]."
+        es = "Corren historias extrañas sobre criaturas terribles que atacan a la gente en los alrededores de [color=<c1>]<s1>[/color]."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
         // "Rumor is that weird beastlings have been devouring livestock and even people around %s.",
         mode = "pattern"
-        en = "Rumor is that weird beastlings have been devouring livestock and even people around %s."
-        es = "Se rumorea que unas extrañas bestezuelas han estado devorando ganado e incluso personas en los alrededores de %s."
+        en = "Rumor is that weird beastlings have been devouring livestock and even people around [color=<c1:str>]<s1:str>[/color]."
+        es = "Se rumorea que unas extrañas bestezuelas han estado devorando ganado e incluso personas en los alrededores de [color=<c1>]<s1>[/color]."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
         // "The gnawed bones of deceased travelers are starting to pile up around %s.",
         mode = "pattern"
-        en = "The gnawed bones of deceased travelers are starting to pile up around %s."
-        es = "Los huesos roídos de viajeros muertos empiezan a amontonarse en los alrededores de %s."
+        en = "The gnawed bones of deceased travelers are starting to pile up around [color=<c1:str>]<s1:str>[/color]."
+        es = "Los huesos roídos de viajeros muertos empiezan a amontonarse en los alrededores de [color=<c1>]<s1>[/color]."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
@@ -41206,8 +41267,8 @@ local pairs = [
     {
         // "%s seeks mercenaries and beastmasters to confront the wild threats in its lands.",
         mode = "pattern"
-        en = "%s seeks mercenaries and beastmasters to confront the wild threats in its lands."
-        es = "%s busca mercenarios y domadores de bestias para hacer frente a las amenazas salvajes de sus tierras."
+        en = "[color=<c1:str>]<s1:str>[/color] seeks mercenaries and beastmasters to confront the wild threats in its lands."
+        es = "[color=<c1>]<s1>[/color] busca mercenarios y domadores de bestias para hacer frente a las amenazas salvajes de sus tierras."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
@@ -41218,8 +41279,8 @@ local pairs = [
     {
         // "Ferocious beasts have reportedly been attacking folk on the road to %s.",
         mode = "pattern"
-        en = "Ferocious beasts have reportedly been attacking folk on the road to %s."
-        es = "Según cuentan, unas bestias feroces han estado atacando a la gente en el camino a %s."
+        en = "Ferocious beasts have reportedly been attacking folk on the road to [color=<c1:str>]<s1:str>[/color]."
+        es = "Según cuentan, unas bestias feroces han estado atacando a la gente en el camino a [color=<c1>]<s1>[/color]."
     }
     // context: roaming_beasts_contract.o.create.m.DescriptionTemplates
     {
@@ -41283,7 +41344,7 @@ local pairs = [
         // corrige base: «a better walk-about of this world» es haber recorrido más mundo, no «una mejor experiencia».
         // corrige base: «sentandose» sin tilde y un espacio de más tras %SPEECH_OFF% que el inglés no tiene.
         en = "[img]gfx/ui/events/event_43.png[/img]{While you wait for %employer% to explain what %they_employer% needs your services for, you contemplate on how silent and eerie the whole settlement was when you first arrived. %employer% raises %their_employer% voice %SPEECH_ON%This place is cursed by the gods and haunted by unearthly beasts! They come in the night with glowing red eyes and take lives at their whim. Most of our cattle is dead and I fear that once there are no more, we are next to be torn apart. The other day we sent our strongest lads out to find and kill the beasts but we haven't heard of them since.%SPEECH_OFF%%They_employer% sighs deeply.%SPEECH_ON%Follow the tracks %direction% and hunt down and kill those creatures so that we can live in peace again! We are not wealthy, but all chipped in to pay for your services.%SPEECH_OFF% | %employer%'s looking out %their_employer% window when you find %them_employer%. There's a goblet in %their_employer% hand - and there's nothing but silence outside. %They_employer% turns to you, almost somber.%SPEECH_ON%When you came here, did you realize how quiet it was?%SPEECH_OFF%You remark that you did, but you're a sellsword who looks the part. It's just what you are accustomed to. %employer% nods and takes a drink.%SPEECH_ON%Ah, of course. Unfortunately, it isn't that people are afraid of you. Not this time. We have had people being attacked these past weeks. Beasts of some sort are on the loose, we know not what they are, but only who they take. We've pleaded with our lord, of course, but he has done nothing to help us...%SPEECH_OFF%%Their_employer% next drink is a long one. When %they_employer% finishes, %they_employer% turns to you, empty cup in hand.%SPEECH_ON%Would you go hunt these monsters down? Please, sellsword, help us.%SPEECH_OFF% | %employer%'s listening to the talk of a few peasants when you find %them_employer%. When they see you, they quickly depart, leaving the man with a satchel in hand. %They_employer% holds it up.%SPEECH_ON%There's crowns in here. Crowns that those people are giving me to give someone, anyone, to help us. People are disappearing, sellsword, and when they are found they're... not just dead, but... mangled. Mutilated. Everyone is too scared to go anywhere.%SPEECH_OFF%%They_employer% stares into the sack, then looks to you.%SPEECH_ON%I do hope you are interested in this task.%SPEECH_OFF% | You find %employer% reading a scroll. %They_employer% throws the paper at you and asks you to read off the names. The handwriting is difficult, but not moreso than the names themselves. You stop and apologize, stating you are not from these parts. The man nods and takes the scroll back.%SPEECH_ON%Tis alright, sellsword. If you were wondering, those were the names of men, women, and children who have passed in the last week.%SPEECH_OFF%Last week? There were a lot of names on that list. The %person_employer%, seeming to read you, nods somberly.%SPEECH_ON%Aye, we are in a bad way. So many lives lost. We believe this to be the work of foul creatures, beasts beyond our ability to reason. Obviously, we'd like you to go find and destroy them. Would you be interested in such a task, mercenary?%SPEECH_OFF% | %employer%'s got a few dogs at %their_employer% feet, all tuckered out with their tongues lolling.%SPEECH_ON%They've spent the past few days hunting for missing folks. Folks that are seemingly disappearing to the gods know where.%SPEECH_OFF%%They_employer% leans down and pets one of the hounds, scratching it behind the ear. Usually, a dog would respond to that, but the poor thing barely even responds.%SPEECH_ON%The folks don't know what I know, though, which is that people ain't just disappearing... they're being taken. Horrible beasts are afoot, sellsword, and I need you to go after them. Hell, maybe you'll even find someone or two of the townsfolk, though I doubt it.%SPEECH_OFF%One of the mutts lets out a long, tired wheeze almost as if on cue. | %employer%'s got a satchel with a scroll attached, but the name written on the paper is not yours. %They_employer% weighs it carefully, the lumps of coin curving about %their_employer% fingers, their chink and chanks muted. %They_employer% turns to you.%SPEECH_ON%You recognize that name?%SPEECH_OFF%You shake your head. The %person_employer% continues.%SPEECH_ON%A week ago we sent the famed %randomnoble% %direction% of here to go hunt down some foul beasts that have been terrorizing the town and surrounding farmsteads for weeks. Do you know why this satchel has remained in my ownership?%SPEECH_OFF%You shrug and answer.%SPEECH_ON%Because he hasn't returned?%SPEECH_OFF%%employer% nods and sets the satchel down. %They_employer% sits on the edge of his table.%SPEECH_ON%Correct. Because he has not returned. Now, why do you think that is? I think it's because he's dead, but let's not be so negative. I think it's because the beasts out there require more. I think they require someone like you, sellsword. Would you be willing to help us now that this nobleman has failed?%SPEECH_OFF% | %employer% takes a book from his shelf. When %they_employer% sets it on his table, dust or maybe even ash plume outward. %They_employer% opens it up, thumbing slowly from page to page.%SPEECH_ON%Do you believe in monsters, sellsword? I'm asking honestly, as I believe you've had a better walk-about of this world than I.%SPEECH_OFF%You nod and speak.%SPEECH_ON%More than just a belief, yes.%SPEECH_OFF%The man thumbs another page. %They_employer% looks up at you.%SPEECH_ON%Well, we believe monsters have come to %townname%. We believe that's why people are going missing. Understand where this is going? I need you to find these 'make believe' creatures and kill them like any other. Are you interested?%SPEECH_OFF%}"
-        es = "[img]gfx/ui/events/event_43.png[/img]{Mientras esperas a que %employer% te explique para qué necesita tus servicios, piensas en lo silencioso y siniestro que estaba todo el asentamiento cuando llegaste. %employer% alza la voz.%SPEECH_ON%¡Este lugar está maldito por los dioses y lo acechan bestias sobrenaturales! Vienen de noche, con ojos rojos y brillantes, y se cobran vidas a su antojo. La mayor parte de nuestro ganado ha muerto y temo que, cuando ya no quede, seremos los siguientes en ser despedazados. Hace unos días enviamos a nuestros mozos más fuertes a buscar y matar a las bestias, pero no hemos vuelto a saber de ellos.%SPEECH_OFF%Suspira profundamente.%SPEECH_ON%¡Sigue las huellas hacia el %direction%, da caza a esas criaturas y mátalas para que podamos volver a vivir en paz! No somos ricos, pero todos hemos puesto algo para pagar tus servicios.%SPEECH_OFF% | %employer% está mirando por la ventana cuando %lo_employer% encuentras. Tiene una copa en la mano, y fuera no hay más que silencio. Se vuelve hacia ti, casi sombrí%o_employer%.%SPEECH_ON%Cuando llegaste, ¿te diste cuenta de lo tranquilo que estaba todo?%SPEECH_OFF%Comentas que sí, pero que eres un mercenario y tienes pinta de serlo; es a lo que estás acostumbrado. %employer% asiente y da un trago.%SPEECH_ON%Ah, claro. Por desgracia, no es que la gente te tenga miedo. Esta vez no. Estas últimas semanas han atacado a varias personas. Hay bestias de algún tipo sueltas; no sabemos qué son, solo a quiénes se llevan. Hemos suplicado a nuestro señor, por supuesto, pero no ha hecho nada por ayudarnos...%SPEECH_OFF%El siguiente trago es largo. Cuando termina, se vuelve hacia ti con la copa vacía en la mano.%SPEECH_ON%¿Irías a dar caza a esos monstruos? Por favor, mercenario, ayúdanos.%SPEECH_OFF% | %employer% está escuchando lo que cuentan unos campesinos cuando %lo_employer% encuentras. Al verte, se marchan a toda prisa y dejan a %art_employer% %hombre_employer% con una bolsa en la mano. La levanta.%SPEECH_ON%Aquí dentro hay coronas. Coronas que esa gente me da para que se las dé a alguien, a quien sea, que nos ayude. La gente está desapareciendo, mercenario, y cuando los encuentran... no solo están muertos, sino... destrozados. Mutilados. Todos tienen demasiado miedo para ir a ninguna parte.%SPEECH_OFF%Mira dentro del saco y luego te mira a ti.%SPEECH_ON%Espero de veras que te interese este trabajo.%SPEECH_OFF% | Encuentras a %employer% leyendo un pergamino. Te lanza el papel y te pide que leas los nombres en voz alta. La letra es difícil, pero no tanto como los propios nombres. Te detienes y te disculpas, diciendo que no eres de estas tierras. %Art_employer% %hombre_employer% asiente y recupera el pergamino.%SPEECH_ON%No pasa nada, mercenario. Por si te lo preguntabas, eran los nombres de hombres, mujeres y niños que han fallecido en la última semana.%SPEECH_OFF%¿En la última semana? En esa lista había muchísimos nombres. %Art_employer% %hombre_employer%, como si te leyera el pensamiento, asiente con solemnidad.%SPEECH_ON%Sí, estamos pasando por un mal momento. Tantas vidas perdidas. Creemos que es obra de criaturas inmundas, bestias que escapan a nuestra comprensión. Como es lógico, queremos que vayas a encontrarlas y destruirlas. ¿Te interesaría un trabajo así, mercenario?%SPEECH_OFF% | %employer% tiene unos cuantos perros a sus pies, todos agotados y con la lengua fuera.%SPEECH_ON%Se han pasado los últimos días buscando a gente desaparecida. Gente que aparentemente desaparece solo los dioses saben adónde.%SPEECH_OFF%Se agacha y acaricia a uno de los perros, rascándole detrás de la oreja. Normalmente un perro respondería a eso, pero el pobre animal apenas reacciona.%SPEECH_ON%Pero la gente no sabe lo que sé yo, y es que no es que la gente desaparezca sin más... es que se la llevan. Andan sueltas unas bestias horribles, mercenario, y necesito que vayas tras ellas. Demonios, puede que incluso encuentres a uno o dos vecinos del pueblo, aunque lo dudo.%SPEECH_OFF%Uno de los chuchos suelta un resoplido largo y cansado, casi como si le hubieran dado la entrada. | %employer% tiene una bolsa con un pergamino atado, pero el nombre escrito en el papel no es el tuyo. La sopesa con cuidado; los bultos de las monedas se amoldan a sus dedos y su tintineo suena apagado. Se vuelve hacia ti.%SPEECH_ON%¿Reconoces ese nombre?%SPEECH_OFF%Niegas con la cabeza. %Art_employer% %hombre_employer% continúa.%SPEECH_ON%Hace una semana enviamos al famoso %randomnoble% al %direction% de aquí para que diera caza a unas bestias inmundas que llevan semanas aterrorizando el pueblo y las granjas de los alrededores. ¿Sabes por qué esta bolsa sigue en mi poder?%SPEECH_OFF%Te encoges de hombros y respondes.%SPEECH_ON%¿Porque no ha vuelto?%SPEECH_OFF%%employer% asiente y deja la bolsa. Se sienta en el borde de su mesa.%SPEECH_ON%Correcto. Porque no ha vuelto. Y ahora, ¿por qué crees que será? Yo creo que es porque está muerto, pero no seamos tan negativos. Creo que es porque las bestias de ahí fuera requieren algo más. Creo que requieren a alguien como tú, mercenario. ¿Estarías dispuesto a ayudarnos ahora que ese noble ha fracasado?%SPEECH_OFF% | %employer% saca un libro de su estantería. Cuando lo deja sobre la mesa, se levanta una nube de polvo, o quizá incluso de ceniza. Lo abre y pasa despacio las páginas con el pulgar.%SPEECH_ON%¿Crees en los monstruos, mercenario? Te lo pregunto en serio, porque creo que has recorrido este mundo bastante más que yo.%SPEECH_OFF%Asientes y respondes.%SPEECH_ON%Más que creer en ellos, sí.%SPEECH_OFF%%Art_employer% %hombre_employer% pasa otra página. Levanta la vista hacia ti.%SPEECH_ON%Pues bien, creemos que los monstruos han llegado a %townname%. Creemos que por eso está desapareciendo la gente. ¿Entiendes adónde quiero llegar? Necesito que encuentres a esas criaturas 'imaginarias' y las mates como a cualquier otra. ¿Te interesa?%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_43.png[/img]{Mientras esperas a que %employer% te explique para qué necesita tus servicios, piensas en lo silencioso y siniestro que estaba todo el asentamiento cuando llegaste. %employer% alza la voz.%SPEECH_ON%¡Este lugar está maldito por los dioses y lo acechan bestias sobrenaturales! Vienen de noche, con ojos rojos y brillantes, y se cobran vidas a su antojo. La mayor parte de nuestro ganado ha muerto y temo que, cuando ya no quede, seremos los siguientes en ser despedazados. Hace unos días enviamos a nuestros mozos más fuertes a buscar y matar a las bestias, pero no hemos vuelto a saber de ellos.%SPEECH_OFF%Suspira profundamente.%SPEECH_ON%¡Sigue las huellas hacia el %direction%, da caza a esas criaturas y mátalas para que podamos volver a vivir en paz! No somos ricos, pero todos hemos puesto algo para pagar tus servicios.%SPEECH_OFF% | %employer% está mirando por la ventana cuando %lo_employer% encuentras. Tiene una copa en la mano, y fuera no hay más que silencio. Se vuelve hacia ti, casi sombrí%o_employer%.%SPEECH_ON%Cuando llegaste, ¿te diste cuenta de lo tranquilo que estaba todo?%SPEECH_OFF%Comentas que sí, pero que eres un mercenario y tienes pinta de serlo; es a lo que estás acostumbrado. %employer% asiente y da un trago.%SPEECH_ON%Ah, claro. Por desgracia, no es que la gente te tenga miedo. Esta vez no. Estas últimas semanas han atacado a varias personas. Hay bestias de algún tipo sueltas; no sabemos qué son, solo a quiénes se llevan. Hemos suplicado a nuestro señor, por supuesto, pero no ha hecho nada por ayudarnos...%SPEECH_OFF%El siguiente trago es largo. Cuando termina, se vuelve hacia ti con la copa vacía en la mano.%SPEECH_ON%¿Irías a dar caza a esos monstruos? Por favor, mercenario, ayúdanos.%SPEECH_OFF% | %employer% está escuchando lo que cuentan unos campesinos cuando %lo_employer% encuentras. Al verte, se marchan a toda prisa y dejan %al_employer% %hombre_employer% con una bolsa en la mano. La levanta.%SPEECH_ON%Aquí dentro hay coronas. Coronas que esa gente me da para que se las dé a alguien, a quien sea, que nos ayude. La gente está desapareciendo, mercenario, y cuando los encuentran... no solo están muertos, sino... destrozados. Mutilados. Todos tienen demasiado miedo para ir a ninguna parte.%SPEECH_OFF%Mira dentro del saco y luego te mira a ti.%SPEECH_ON%Espero de veras que te interese este trabajo.%SPEECH_OFF% | Encuentras a %employer% leyendo un pergamino. Te lanza el papel y te pide que leas los nombres en voz alta. La letra es difícil, pero no tanto como los propios nombres. Te detienes y te disculpas, diciendo que no eres de estas tierras. %Art_employer% %hombre_employer% asiente y recupera el pergamino.%SPEECH_ON%No pasa nada, mercenario. Por si te lo preguntabas, eran los nombres de hombres, mujeres y niños que han fallecido en la última semana.%SPEECH_OFF%¿En la última semana? En esa lista había muchísimos nombres. %Art_employer% %hombre_employer%, como si te leyera el pensamiento, asiente con solemnidad.%SPEECH_ON%Sí, estamos pasando por un mal momento. Tantas vidas perdidas. Creemos que es obra de criaturas inmundas, bestias que escapan a nuestra comprensión. Como es lógico, queremos que vayas a encontrarlas y destruirlas. ¿Te interesaría un trabajo así, mercenario?%SPEECH_OFF% | %employer% tiene unos cuantos perros a sus pies, todos agotados y con la lengua fuera.%SPEECH_ON%Se han pasado los últimos días buscando a gente desaparecida. Gente que aparentemente desaparece solo los dioses saben adónde.%SPEECH_OFF%Se agacha y acaricia a uno de los perros, rascándole detrás de la oreja. Normalmente un perro respondería a eso, pero el pobre animal apenas reacciona.%SPEECH_ON%Pero la gente no sabe lo que sé yo, y es que no es que la gente desaparezca sin más... es que se la llevan. Andan sueltas unas bestias horribles, mercenario, y necesito que vayas tras ellas. Demonios, puede que incluso encuentres a uno o dos vecinos del pueblo, aunque lo dudo.%SPEECH_OFF%Uno de los chuchos suelta un resoplido largo y cansado, casi como si le hubieran dado la entrada. | %employer% tiene una bolsa con un pergamino atado, pero el nombre escrito en el papel no es el tuyo. La sopesa con cuidado; los bultos de las monedas se amoldan a sus dedos y su tintineo suena apagado. Se vuelve hacia ti.%SPEECH_ON%¿Reconoces ese nombre?%SPEECH_OFF%Niegas con la cabeza. %Art_employer% %hombre_employer% continúa.%SPEECH_ON%Hace una semana enviamos al famoso %randomnoble% al %direction% de aquí para que diera caza a unas bestias inmundas que llevan semanas aterrorizando el pueblo y las granjas de los alrededores. ¿Sabes por qué esta bolsa sigue en mi poder?%SPEECH_OFF%Te encoges de hombros y respondes.%SPEECH_ON%¿Porque no ha vuelto?%SPEECH_OFF%%employer% asiente y deja la bolsa. Se sienta en el borde de su mesa.%SPEECH_ON%Correcto. Porque no ha vuelto. Y ahora, ¿por qué crees que será? Yo creo que es porque está muerto, pero no seamos tan negativos. Creo que es porque las bestias de ahí fuera requieren algo más. Creo que requieren a alguien como tú, mercenario. ¿Estarías dispuesto a ayudarnos ahora que ese noble ha fracasado?%SPEECH_OFF% | %employer% saca un libro de su estantería. Cuando lo deja sobre la mesa, se levanta una nube de polvo, o quizá incluso de ceniza. Lo abre y pasa despacio las páginas con el pulgar.%SPEECH_ON%¿Crees en los monstruos, mercenario? Te lo pregunto en serio, porque creo que has recorrido este mundo bastante más que yo.%SPEECH_OFF%Asientes y respondes.%SPEECH_ON%Más que creer en ellos, sí.%SPEECH_OFF%%Art_employer% %hombre_employer% pasa otra página. Levanta la vista hacia ti.%SPEECH_ON%Pues bien, creemos que los monstruos han llegado a %townname%. Creemos que por eso está desapareciendo la gente. ¿Entiendes adónde quiero llegar? Necesito que encuentres a esas criaturas 'imaginarias' y las mates como a cualquier otra. ¿Te interesa?%SPEECH_OFF%}"
     }
     // context: roaming_beasts_contract.o.createScreens.s.Text
     {
@@ -41417,15 +41478,15 @@ local pairs = [
     {
         // "Sieges often lead to violent, unpredictable outcomes. %s are seeking hardened sellswords to provide a steadying hand should things turn to ratshit.",
         mode = "pattern"
-        en = "Sieges often lead to violent, unpredictable outcomes. %s are seeking hardened sellswords to provide a steadying hand should things turn to ratshit."
-        es = "Los asedios suelen acabar de forma violenta e impredecible. %s busca mercenarios curtidos que pongan mano firme por si todo se va a la mierda."
+        en = "Sieges often lead to violent, unpredictable outcomes. [color=<c1:str>]<s1:str>[/color] are seeking hardened sellswords to provide a steadying hand should things turn to ratshit."
+        es = "Los asedios suelen acabar de forma violenta e impredecible. [color=<c1>]<s1>[/color] busca mercenarios curtidos que pongan mano firme por si todo se va a la mierda."
     }
     // context: siege_fortification_contract.o.create.m.DescriptionTemplates
     {
         // "Finishing a siege is always a dicey business. %s wants some hardened mercenaries to tip the odds.",
         mode = "pattern"
-        en = "Finishing a siege is always a dicey business. %s wants some hardened mercenaries to tip the odds."
-        es = "Rematar un asedio siempre es un asunto arriesgado. %s quiere unos cuantos mercenarios curtidos que inclinen la balanza."
+        en = "Finishing a siege is always a dicey business. [color=<c1:str>]<s1:str>[/color] wants some hardened mercenaries to tip the odds."
+        es = "Rematar un asedio siempre es un asunto arriesgado. [color=<c1>]<s1>[/color] quiere unos cuantos mercenarios curtidos que inclinen la balanza."
     }
     // context: siege_fortification_contract.o.create.m.DescriptionTemplates
     {
@@ -41436,8 +41497,8 @@ local pairs = [
     {
         // "Siege actions nearly always turn to ratshit in your experience. Probably why %s wants you down there.",
         mode = "pattern"
-        en = "Siege actions nearly always turn to ratshit in your experience. Probably why %s wants you down there."
-        es = "Según tu experiencia, los asedios casi siempre se van a la mierda. Seguramente por eso %s te quiere allí."
+        en = "Siege actions nearly always turn to ratshit in your experience. Probably why [color=<c1:str>]<s1:str>[/color] wants you down there."
+        es = "Según tu experiencia, los asedios casi siempre se van a la mierda. Seguramente por eso [color=<c1>]<s1>[/color] te quiere allí."
     }
     // context: siege_fortification_contract.o.start.m.Name.buildText()
     {
@@ -41868,7 +41929,7 @@ local pairs = [
     // context: gold_mine_location.o.create.m.Description
     {
         en = "A deep mine built atop a gold ore vein. This rare metal has a tendency to bring out the worst in people. Contributes gold and silver ingots, miners, caravan hands, sellswords and thieves to the local town."
-        es = "Una mina profunda excavada sobre una veta de oro. Este metal raro tiende a sacar lo peor de la gente. Aporta lingotes de oro y plata, mineros, ayudantes de caravana, mercenarios y ladrones al asentamiento cercano."
+        es = "Una mina profunda excavada sobre una veta de oro. Este raro metal tiende a sacar lo peor de la gente. Aporta lingotes de oro y plata, mineros, ayudantes de caravana, mercenarios y ladrones al asentamiento cercano."
     }
     // FILE: mod_legends\hooks\entity\world\attached_location\guarded_checkpoint_location.nut
     // context: guarded_checkpoint_location.o.create.m.Description
@@ -42394,6 +42455,14 @@ local pairs = [
     // en base_es
     // context: world_entity.o.getTroopComposition.entities.push().text.removeFromBeginningOfText()
     // en = "<start + this.removeFromBeginningOfText(The , this.Const.Strings.EntityName[i])>"  // no es texto: solo concatena expresiones de código (cantidad y nombre de entidad sin «The »); el nombre se traduce en su propio par
+    // context: world_entity.o.getTroopComposition y world_state.o.showCombatDialog
+    {
+        // Con el ajuste ExactEngageNumbers, la tropa sale como cifra + plural
+        // ("2 Ancient Auxiliaries"); el par del plural está en base_es.
+        mode = "pattern"
+        en = "<n:int> <troops:str>"
+        es = "<n> <troops:t>"
+    }
     // FILE: mod_legends\hooks\events\event.nut
     // en = "OOC"
     // en = "randomnoblehouse"
@@ -42438,7 +42507,7 @@ local pairs = [
     // context: adopt_wardog_event.o.create.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_27.png[/img]You ask %houndmaster% the houndmaster if %they_houndmaster% can try and 'woo' this dog. %They_houndmaster% nods and steps toward it. The wild mongrel's ears go from pinned to pointed. Crouched, the houndmaster slowly edges %their_houndmaster% way toward the beast. %They_houndmaster% keeps %their_houndmaster% hand out with a piece of meat in the palm. Hunger overcomes heedfulness and the dog sniffs its way ever closer to the houndmaster's hand. The dog tongues it out of %their_houndmaster% palm and chows down. The dog trainer feeds him another bite. %They_houndmaster% scruffs him up and finds the sweet spot behind his ears. Looking back, %houndmaster% nods.%SPEECH_ON%Aye, it's an agreeable beast and will be easily trained.%SPEECH_OFF%That's great. You ask if it can fight. The houndmaster purses %their_houndmaster% lips.%SPEECH_ON%A dog is akin to a man. If it can breathe, it can fight.%SPEECH_OFF%"
-        es = "[img]gfx/ui/events/event_27.png[/img]Le preguntas a %houndmaster%, %art_houndmaster% maestr%o_houndmaster% de sabuesos, si puede intentar «ganarse» a este perro. Asiente y da un paso hacia él. Las orejas del chucho salvaje pasan de gachas a tiesas. Agachad%o_houndmaster%, %houndmaster% se va acercando poco a poco a la bestia, con la mano extendida y un trozo de carne en la palma. El hambre vence a la cautela, y el perro se acerca cada vez más a la mano, olfateando. Se lo quita de la palma con la lengua y lo engulle. %houndmaster% le da otro bocado, le revuelve el pelo y le encuentra el punto justo detrás de las orejas. Al volverse, asiente.%SPEECH_ON%Sí, es un animal dócil y será fácil de adiestrar.%SPEECH_OFF%Estupendo. Preguntas si sabe pelear. %houndmaster% frunce los labios.%SPEECH_ON%Un perro es como un hombre. Si puede respirar, puede pelear.%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_27.png[/img]Le preguntas a %houndmaster% si puede intentar «ganarse» a este perro. Asiente y da un paso hacia él. Las orejas del chucho salvaje pasan de gachas a tiesas. Agachad%o_houndmaster%, %houndmaster% se va acercando poco a poco a la bestia, con la mano extendida y un trozo de carne en la palma. El hambre vence a la cautela, y el perro se acerca cada vez más a la mano, olfateando. Se lo quita de la palma con la lengua y lo engulle. %houndmaster% le da otro bocado, le revuelve el pelo y le encuentra el punto justo detrás de las orejas. Al volverse, asiente.%SPEECH_ON%Sí, es un animal dócil y será fácil de adiestrar.%SPEECH_OFF%Estupendo. Preguntas si sabe pelear. %houndmaster% frunce los labios.%SPEECH_ON%Un perro es como un hombre. Si puede respirar, puede pelear.%SPEECH_OFF%"
     }
     // FILE: mod_legends\hooks\events\events\aging_swordmaster_event.nut
     // en = "A"
@@ -43785,7 +43854,7 @@ local pairs = [
     // context: fountain_of_youth_event.o.create.::Legends.Screens.hook()._screen.Text
     {
         en = "[img]gfx/ui/events/event_114.png[/img]{You throw the waterskin aside and put your mouth into the puddle and drink. The world beneath the puddle's surface is empty and silent. Your lips move, your throat gulps, but there is nothing to drink here. You scream. There is nothing. Not even a feeling. Just the notion of fear, a tickle with no means to scratch it. When you put your hands to the earth to try and remove yourself, you find that you cannot leave the puddle.\n\n Faint faces wink in and out of the void. They are like the tree's, dramatically inanimate, painfully issued from past to present to future, and here they approach, gathering in number, bubbling and jostling forward, turning this black hell into a frothy white. As they near, you realize you've been not looking right. Individually, they are but faces without presence. Taken as a whole, as the great white sheet on the approach, you realize that they make up one large face: yours. And it is laughing.\n\n Screaming, you finally fall back out of the puddle. %randombrother% has you under %their_randombrother% arm and %they're_randombrother% looking at you with concern.%SPEECH_ON%Sir, are you alright? You was napping then your head slid into the water there.%SPEECH_OFF%You look up, thinking to see the grotesque tree and its awful faces. It is not there and no matter how many times you look or in how many places, it is never there again.}"
-        es = "[img]gfx/ui/events/event_114.png[/img]{Tiras el odre a un lado, metes la boca en el charco y bebes. El mundo bajo la superficie del charco está vacío y en silencio. Tus labios se mueven, tu garganta traga, pero aquí no hay nada que beber. Gritas. No hay nada. Ni siquiera una sensación. Solo la idea del miedo, un picor sin forma de rascarlo. Cuando apoyas las manos en la tierra para intentar salir, descubres que no puedes abandonar el charco.\n\nRostros tenues aparecen y desaparecen en el vacío. Son como los del árbol, dramáticamente inanimados, arrancados dolorosamente del pasado al presente y al futuro, y ahí se acercan, cada vez más numerosos, burbujeando y empujándose hacia delante, convirtiendo este infierno negro en un blanco espumoso. A medida que se acercan, te das cuenta de que no estabas mirando bien. Uno a uno, no son más que rostros sin presencia. Vistos en conjunto, como la gran sábana blanca que se aproxima, te das cuenta de que forman un único rostro enorme: el tuyo. Y se está riendo.\n\nEntre gritos, por fin caes de espaldas fuera del charco. %randombrother% te sujeta bajo el brazo y te mira con preocupación.%SPEECH_ON%Señor, ¿estás bien? Te echaste una siesta y se te fue la cabeza al agua.%SPEECH_OFF%Levantas la vista, pensando que verás el árbol grotesco y sus horribles caras. No está, y por más veces que mires y por más sitios que recorras, nunca vuelve a estar ahí.}"
+        es = "[img]gfx/ui/events/event_114.png[/img]{Tiras el odre a un lado, metes la boca en el charco y bebes. El mundo bajo la superficie del charco está vacío y en silencio. Tus labios se mueven, tu garganta traga, pero aquí no hay nada que beber. Gritas. No hay nada. Ni siquiera una sensación. Solo la idea del miedo, un picor sin forma de rascarlo. Cuando apoyas las manos en la tierra para intentar salir, descubres que no puedes abandonar el charco.\n\nRostros tenues aparecen y desaparecen en el vacío. Son como los del árbol, rotundamente inanimados, arrancados dolorosamente del pasado al presente y al futuro, y ahí se acercan, cada vez más numerosos, burbujeando y empujándose hacia delante, convirtiendo este infierno negro en un blanco espumoso. A medida que se acercan, te das cuenta de que no estabas mirando bien. Uno a uno, no son más que rostros sin presencia. Vistos en conjunto, como la gran sábana blanca que se aproxima, te das cuenta de que forman un único rostro enorme: el tuyo. Y se está riendo.\n\nEntre gritos, por fin caes de espaldas fuera del charco. %randombrother% te sujeta bajo el brazo y te mira con preocupación.%SPEECH_ON%Señor, ¿estás bien? Te echaste una siesta y se te fue la cabeza al agua.%SPEECH_OFF%Levantas la vista, pensando que verás el árbol grotesco y sus horribles caras. No está, y por más veces que mires y por más sitios que recorras, nunca vuelve a estar ahí.}"
     }
     // FILE: mod_legends\hooks\events\events\dlc2\location\goblin_city_enter_event.nut
     // context: goblin_city_enter_event.o.create.::Legends.Screens.hook()._screen.Text
@@ -44749,7 +44818,7 @@ local pairs = [
         // corrige base: "Desafortunadamente, estoy feliz de que" → "Una lástima, aunque me alegra que" (Unfortunate, though...: la 1.0 invertía el sentido)
         // corrige base: "seguramente puede ver" → "sin duda puede ver" (absolutely); "pregunta si el campesino pensó [...], ¿alguna vez se lo habría preguntado?" → "le pregunta si, de creer que eso fuera remotamente cierto, se atrevería siquiera a preguntárselo" (la 1.0 mezclaba pregunta directa e indirecta); "Dice." → "Dice:"
         en = "[img]gfx/ui/events/event_43.png[/img]{Despite the noise of the surrounding villagers and their commerce, %anatomist% opens up a book of dissections and starts poring through its contents. While a local peasant might not be able to read the texts, he can absolutely see the disgusting images drawn on the pages: lurid documentation of opened bodies, identifications of body parts the peasant didn't even know he had, and a number of inane symbolism that any layman would use to invite his own devilments. Unsurprisingly, the peasant takes an interest in the anatomist's tome.%SPEECH_ON%So are you some sort of sorcerer or something?%SPEECH_OFF%Smiling, %anatomist% turns and says if the peasant thought that was remotely true, would he ever ask it of %them_anatomist%? The peasant leans back.%SPEECH_ON%Oh, so yer a wiseacre, huh? Some smartass with a book for fools.%SPEECH_OFF%%anatomist% watches the peasant turn and leave, then looks at you with a wide grin.%SPEECH_ON%That peasant had a curious bulge on his cheek. He'll be dead within a year. Two if he's unlucky and death is too generous with its time.%SPEECH_OFF% | Taking a break from the road and sellswording, %anatomist% sets down on a stone and opens up one of %their_anatomist% books. A few moments into %their_anatomist% studies, a little girl approaches, flowers in hand. She hands him one and asks what it is %they_anatomist%'s reading. The anatomist holds up %their_anatomist% book and turns it around. She stares at the grisly drawings of beasts and monsters ripped open and their curious insides churned out. After a pause, she slowly pushes the book down to stare at the anatomist holding it. She says.%SPEECH_ON%I know of a beast you could have.%SPEECH_OFF%You and the anatomist turn a keen ear. The little girl lowers her voice, nearly hissing with childlike conspiracy.%SPEECH_ON%My little brother. He's two, but I swear he forsakes the old gods and the devilry is in him.%SPEECH_OFF%%anatomist% nods dutifully.%SPEECH_ON%But of course. I will put it in my notes to see to this matter, and if I have time I will find the foulness within your kin.%SPEECH_OFF%The little girl thanks the anatomist once more and gives %them_anatomist% more flowers for %their_anatomist% promised aid. %anatomist% holds the flowers softly, rolling them back and forth as %they_anatomist% goes back to %their_anatomist% reading, a small smile on %their_anatomist% face. You're hoping that the smile is just an indicator that %they_anatomist%'s bemused by a child, and not that %they_anatomist% actually wishes to see to some ungodly boy. | As the company takes a rest, a man stands off at the side of the path, watching curiously. He nods.%SPEECH_ON%You lot have the stench of death about you, but I can't say I'd take ye for butcherers or executioners. Yer something else entire.%SPEECH_OFF%Without missing a beat, %anatomist% steps up and eyes the man, getting right up in his face, and the man leans away, but doesn't retreat. The anatomist's lost gaze ends with a dutiful nod.%SPEECH_ON%You are right, we do carry a stench, as do you. Ours is a matter of science, yours a matter of disease. And yours, hmm, yes, yours is a hint of the pox. Lemme see your feet.%SPEECH_OFF%The peasant nervously declines the request. He steps back as the anatomist hunts forward, fingers clambering like a spider, his eyes wide. The man eventually screams and runs off. %anatomist% turns around with a smile.%SPEECH_ON%What a curious subject, that man. I believe he was very, very ill, but he does not yet know it. Oh well.%SPEECH_OFF% | You come across an open-air wagon carrying a casket, its pathing trailed by a retinue of mourners. %anatomist% steps out from the company and inquires about the death of the individual. They said it was from a beast's strike. Curious, the anatomist inquires what sort of beast would be capable killing a man. The people look at one another before opening the coffin to reveal a man with a small scratch across his cheek. The wound had long since turned dark purple with veins of green and other disturbing discoloration, evidence that his demise was one of being stricken. One of the peasants looks up.%SPEECH_ON%It was his housecat that did it. Nicked him right there, and he paid little mind to it, then the colors went out and wandered his flesh until he was dead within two nights.%SPEECH_OFF%The anatomist shares some words with the mourners then returns to you. %They_anatomist% sighs.%SPEECH_ON%T'was a simple blighting. All he needed to do was clean the cut. Unfortunate, though I am happy that my learnings are giving me real world insights, even if it is too late to apply them.%SPEECH_OFF%You ask what came of the cat. The anatomist nods and says it was in the coffin with its victim, the feline 'beast' tucked there seemingly unawares of its final destination.}"
-        es = "[img]gfx/ui/events/event_43.png[/img]{A pesar del ruido de los aldeanos y su comercio circundante, %anatomist% abre un libro de disecciones y comienza a hojear su contenido. Mientras que un campesino local puede que no sea capaz de leer los textos, sin duda puede ver las imágenes repugnantes dibujadas en las páginas: documentación vívida de cuerpos abiertos, identificación de partes del cuerpo que el campesino ni siquiera sabía que tenía, y una serie de símbolos inanes que cualquier laico usaría para invocar sus propios demonios. Como era de esperar, el campesino se interesa en el tomo %del_anatomist% anatomista.%SPEECH_ON%Entonces, ¿eres algún tipo de hechicer%o_anatomist% o algo así?%SPEECH_OFF%Sonriendo, %anatomist% se vuelve y le pregunta si, de creer que eso fuera remotamente cierto, se atrevería siquiera a preguntárselo. El campesino se echa para atrás.%SPEECH_ON%Oh, ¿así que eres %un_anatomist% sabelotodo, eh? %Un_anatomist% sabiond%o_anatomist% con un libro para tontos.%SPEECH_OFF%%anatomist% observa al campesino alejarse y luego te mira con una amplia sonrisa.%SPEECH_ON%Ese campesino tenía un bulto curioso en la mejilla. Estará muerto en un año. Dos si tiene mala suerte y la muerte es demasiado generosa con su tiempo.%SPEECH_OFF% | Tomando un descanso de la carretera y del oficio de mercenario, %anatomist% se sienta en una piedra y abre uno de sus libros. Unos momentos después, se acerca una niña pequeña con flores en la mano. Le entrega una y le pregunta qué está leyendo. %Art_anatomist% anatomista levanta su libro y lo gira. Ella mira los dibujos macabros de bestias y monstruos abiertos en canal, con sus curiosas entrañas desparramadas. Después de una pausa, empuja lentamente el libro hacia abajo para mirar %al_anatomist% anatomista que lo sostiene. Dice:%SPEECH_ON%Sé de una bestia que podrías tener.%SPEECH_OFF%Junto %al_anatomist% anatomista, prestas mucha atención. La niña baja la voz, casi susurrando con complicidad infantil.%SPEECH_ON%Mi hermanito. Tiene dos años, pero te juro que reniega de los viejos dioses y la maldad está en él.%SPEECH_OFF%%anatomist% asiente con diligencia.%SPEECH_ON%Claro, lo anotaré para ocuparme de este asunto, y si tengo tiempo, buscaré la maldad dentro de tu familia.%SPEECH_OFF%La niña agradece %al_anatomist% anatomista una vez más y le da más flores por su prometida ayuda. %anatomist% sostiene las flores suavemente, haciéndolas rodar de un lado a otro mientras vuelve a sus lecturas, con una pequeña sonrisa en el rostro. Esperas que esa sonrisa sea simplemente un indicador de que le divierte la compañía de una niña y no que realmente desee ocuparse de un niño impío. | Mientras la compañía descansa, un hombre se para en un lado del camino, observando con curiosidad. Asiente.%SPEECH_ON%Tienen el hedor de la muerte sobre ustedes, pero no diría que son carniceros o verdugos. Son algo completamente distinto.%SPEECH_OFF%Sin perder un segundo, %anatomist% se acerca y mira al hombre, poniéndose justo delante de su rostro, y el hombre se echa hacia atrás, pero no retrocede. La mirada perdida %del_anatomist% anatomista termina con un asentimiento de deber cumplido.%SPEECH_ON%Tienes razón, llevamos un hedor, al igual que tú. El nuestro es un asunto de ciencia, el tuyo un asunto de enfermedad. Y el tuyo, hmm, sí, tiene un toque de viruela. Déjame ver tus pies.%SPEECH_OFF%El campesino declina nerviosamente la solicitud. Retrocede mientras %art_anatomist% anatomista avanza, sus dedos trepando como una araña, sus ojos bien abiertos. El hombre finalmente grita y se aleja corriendo. %anatomist% se da la vuelta con una sonrisa.%SPEECH_ON%Qué sujeto tan curioso, ese hombre. Creo que estaba muy, muy enfermo, pero él aún no lo sabe. Bueno, qué se le va a hacer.%SPEECH_OFF% | Te encuentras con un carro al aire libre que lleva un ataúd, seguido por un séquito de dolientes. %anatomist% se aparta de la compañía y pregunta acerca de la muerte del individuo. Dicen que fue a causa de un golpe de una bestia. Con curiosidad, %art_anatomist% anatomista pregunta qué tipo de bestia sería capaz de matar a un hombre. La gente se mira entre sí antes de abrir el ataúd para revelar a un hombre con un pequeño rasguño en la mejilla. La herida hacía mucho tiempo que se había vuelto morada oscura con venas verdes y otras decoloraciones perturbadoras, evidencia de su fallecimiento por un golpe. Uno de los campesinos mira hacia arriba.%SPEECH_ON%Fue su gato doméstico quien lo hizo. Lo arañó justo ahí, y él apenas le prestó atención, luego los colores se dispersaron y se extendieron por su carne hasta que murió en dos noches.%SPEECH_OFF%%Art_anatomist% anatomista intercambia algunas palabras con los dolientes y luego vuelve a ti. Suspira.%SPEECH_ON%Tuvo una simple gangrena. Todo lo que necesitaba era limpiar la herida. Una lástima, aunque me alegra que mis estudios me estén brindando conocimientos del mundo real, aun cuando sea demasiado tarde para aplicarlos.%SPEECH_OFF%Le preguntas qué pasó con el gato. %Art_anatomist% anatomista asiente y dice que estaba en el ataúd con su víctima, el felino 'bestia', aparentemente ajeno a su destino final.}"
+        es = "[img]gfx/ui/events/event_43.png[/img]{A pesar del ruido de los aldeanos y su comercio circundante, %anatomist% abre un libro de disecciones y comienza a hojear su contenido. Mientras que un campesino local puede que no sea capaz de leer los textos, sin duda puede ver las imágenes repugnantes dibujadas en las páginas: documentación vívida de cuerpos abiertos, identificación de partes del cuerpo que el campesino ni siquiera sabía que tenía, y una serie de símbolos inanes que cualquier laico usaría para invocar sus propios demonios. Como era de esperar, el campesino se interesa en el tomo %del_anatomist% anatomista.%SPEECH_ON%Entonces, ¿eres algún tipo de hechicer%o_anatomist% o algo así?%SPEECH_OFF%Sonriendo, %anatomist% se vuelve y le pregunta si, de creer que eso fuera remotamente cierto, se atrevería siquiera a preguntárselo. El campesino se echa para atrás.%SPEECH_ON%Oh, ¿así que eres %un_anatomist% sabelotodo, eh? %Un_anatomist% sabiond%o_anatomist% con un libro para tontos.%SPEECH_OFF%%anatomist% observa al campesino alejarse y luego te mira con una amplia sonrisa.%SPEECH_ON%Ese campesino tenía un bulto curioso en la mejilla. Estará muerto en un año. Dos si tiene mala suerte y la muerte es demasiado generosa con su tiempo.%SPEECH_OFF% | Tomando un descanso de la carretera y del oficio de mercenario, %anatomist% se sienta en una piedra y abre uno de sus libros. Unos momentos después, se acerca una niña pequeña con flores en la mano. Le entrega una y le pregunta qué está leyendo. %Art_anatomist% anatomista levanta su libro y lo gira. Ella mira los dibujos macabros de bestias y monstruos abiertos en canal, con sus curiosas entrañas desparramadas. Después de una pausa, empuja lentamente el libro hacia abajo para mirar %al_anatomist% anatomista que lo sostiene. Dice:%SPEECH_ON%Sé de una bestia que podrías tener.%SPEECH_OFF%Junto %al_anatomist% anatomista, prestas mucha atención. La niña baja la voz, casi susurrando con complicidad infantil.%SPEECH_ON%Mi hermanito. Tiene dos años, pero te juro que reniega de los viejos dioses y la maldad está en él.%SPEECH_OFF%%anatomist% asiente con diligencia.%SPEECH_ON%Claro, lo anotaré para ocuparme de este asunto, y si tengo tiempo, buscaré la maldad dentro de tu familia.%SPEECH_OFF%La niña agradece %al_anatomist% anatomista una vez más y le da más flores por su prometida ayuda. %anatomist% sostiene las flores suavemente, haciéndolas rodar de un lado a otro mientras vuelve a sus lecturas, con una pequeña sonrisa en el rostro. Esperas que esa sonrisa sea simplemente un indicador de que le divierte la compañía de una niña y no que realmente desee ocuparse de un niño impío. | Mientras la compañía descansa, un hombre se para en un lado del camino, observando con curiosidad. Asiente.%SPEECH_ON%Tienen el hedor de la muerte sobre ustedes, pero no diría que son carniceros o verdugos. Son algo completamente distinto.%SPEECH_OFF%Sin perder un segundo, %anatomist% se acerca y mira al hombre, poniéndose justo delante de su rostro, y el hombre se echa hacia atrás, pero no retrocede. La mirada perdida %del_anatomist% anatomista termina con un asentimiento de deber cumplido.%SPEECH_ON%Tienes razón, llevamos un hedor, al igual que tú. El nuestro es un asunto de ciencia, el tuyo un asunto de enfermedad. Y el tuyo, hmm, sí, tiene un toque de viruela. Déjame ver tus pies.%SPEECH_OFF%El campesino declina nerviosamente la solicitud. Retrocede mientras %art_anatomist% anatomista avanza, sus dedos trepando como una araña, sus ojos bien abiertos. El hombre finalmente grita y se aleja corriendo. %anatomist% se da la vuelta con una sonrisa.%SPEECH_ON%Qué sujeto tan curioso, ese hombre. Creo que estaba muy, muy enfermo, pero él aún no lo sabe. Bueno, qué se le va a hacer.%SPEECH_OFF% | Te encuentras con un carro al aire libre que lleva un ataúd, seguido por un séquito de dolientes. %anatomist% se aparta de la compañía y pregunta acerca de la muerte del individuo. Dicen que fue a causa de un golpe de una bestia. Con curiosidad, %art_anatomist% anatomista pregunta qué tipo de bestia sería capaz de matar a un hombre. La gente se mira entre sí antes de abrir el ataúd para revelar a un hombre con un pequeño rasguño en la mejilla. La herida hacía mucho tiempo que se había vuelto morada oscura con venas verdes y otras decoloraciones perturbadoras, señal de que su muerte había sido por un golpe. Uno de los campesinos mira hacia arriba.%SPEECH_ON%Fue su gato doméstico quien lo hizo. Lo arañó justo ahí, y él apenas le prestó atención, luego los colores se dispersaron y se extendieron por su carne hasta que murió en dos noches.%SPEECH_OFF%%Art_anatomist% anatomista intercambia algunas palabras con los dolientes y luego vuelve a ti. Suspira.%SPEECH_ON%Tuvo una simple gangrena. Todo lo que necesitaba era limpiar la herida. Una lástima, aunque me alegra que mis estudios me estén brindando conocimientos del mundo real, aun cuando sea demasiado tarde para aplicarlos.%SPEECH_OFF%Le preguntas qué pasó con el gato. %Art_anatomist% anatomista asiente y dice que estaba en el ataúd con su víctima, el felino 'bestia', aparentemente ajeno a su destino final.}"
     }
     // context: anatomist_creeps_out_locals_event.o.create.s.Options[0].Text
     {
@@ -44893,7 +44962,7 @@ local pairs = [
         // corrige base: "un rastrillo" → "una horca" (pitchfork; un rastrillo es un rake)
         // corrige base: "Tomas distancia" → "Extiendes las manos" (You hold your hands out)
         en = "[img]gfx/ui/events/event_04.png[/img]{You tell %anatomist% %they_anatomist% can take the skull. %They_anatomist% stares at you for a time, then says %they_anatomist% thought you were the one that was going to do it. You tell %them_anatomist% there's no way you're taking a skull from local peasants who worship said skull. If %they_anatomist% wishes to do the studying, then it is %they_anatomist% who should do the stealing. %anatomist% draws a hand to %their_anatomist% chest.%SPEECH_ON%I'm a %their_anatomist% of science, and no ordinary scribe, I could not deign myself to a task of such lowness. It requires someone of knowhow, one who understands the grit and grime of daily life, to steal this skull.%SPEECH_OFF%The anatomist clenches a fist, so certain that %their_anatomist% speech is not an insult to you, and %their_anatomist% eyes staring off with determined ferocity that could only be vicarious at best.%SPEECH_ON%What the fark you two strangers talkin' about?%SPEECH_OFF%You both turn around to see a peasant holding a pitchfork, and as a few more join %them_anatomist% %they_anatomist% motions toward you.%SPEECH_ON%These fellas were aimin' to steal the skull!%SPEECH_OFF%You hold your hands out, explaining that- before you finish, %anatomist% turns and sprints away. Thinking fast, you call %them_anatomist% a thief and promise to have %their_anatomist% head, making a grand show of drawing out your sword and waving it at the peasants. You pretend to accidentally drop a purse of crowns, turning the peasants' anger into greed, and giving you enough time to escape.}"
-        es = "[img]gfx/ui/events/event_04.png[/img]{Le dices a %anatomist% que puede llevarse el cráneo. Te mira durante un rato y luego dice que pensaba que eras tú quien iba a hacerlo. Le dices que no tienes intención de llevarte un cráneo de los aldeanos locales que adoran dicho cráneo. Si es %el_anatomist% quien desea hacer el estudio, entonces es %el_anatomist% quien debe hacer el robo. %anatomist% se lleva una mano al pecho.%SPEECH_ON%Soy %un_anatomist% %hombre_anatomist% de ciencia, y no %un_anatomist% simple escriba; no podría rebajarme a una tarea de tan poca importancia. Hace falta alguien entendido, alguien que comprenda la dureza y la suciedad de la vida cotidiana, para robar este cráneo.%SPEECH_OFF%%Art_anatomist% anatomista aprieta el puño, tan segur%o_anatomist% de que su discurso no es un insulto hacia ti, y sus ojos miran con una ferocidad determinada que a lo sumo podría ser vicaria.%SPEECH_ON%¿De qué diablos están hablando ustedes dos, forasteros?%SPEECH_OFF%Ambos se dan la vuelta para ver a un campesino sosteniendo una horca, y cuando se le unen algunos más, hace un gesto hacia ti.%SPEECH_ON%¡Estos tipos querían robar el cráneo!%SPEECH_OFF%Extiendes las manos, explicando que... antes de que termines, %anatomist% se da la vuelta y se aleja corriendo. Pensando rápido, %lo_anatomist% acusas de robo y prometes tener su cabeza, haciendo un gran espectáculo de sacar tu espada y agitarla ante los campesinos. Finges que dejas caer accidentalmente un saco de coronas, convirtiendo la ira de los campesinos en codicia, y dándote tiempo suficiente para escapar.}"
+        es = "[img]gfx/ui/events/event_04.png[/img]{Le dices a %anatomist% que puede llevarse el cráneo. Te mira durante un rato y luego dice que pensaba que eras tú quien iba a hacerlo. Le dices que no tienes intención de llevarte un cráneo de los aldeanos locales que adoran dicho cráneo. Si es %el_anatomist% quien desea hacer el estudio, entonces es %el_anatomist% quien debe hacer el robo. %anatomist% se lleva una mano al pecho.%SPEECH_ON%Soy %un_anatomist% %hombre_anatomist% de ciencia, y no %un_anatomist% simple escriba; no podría rebajarme a una tarea de tan poca importancia. Hace falta alguien entendido, alguien que comprenda la dureza y la suciedad de la vida cotidiana, para robar este cráneo.%SPEECH_OFF%%Art_anatomist% anatomista aprieta el puño, tan segur%o_anatomist% de que su discurso no es un insulto hacia ti, y sus ojos miran con una ferocidad resuelta que a lo sumo podría ser vicaria.%SPEECH_ON%¿De qué diablos están hablando ustedes dos, forasteros?%SPEECH_OFF%Ambos se dan la vuelta para ver a un campesino sosteniendo una horca, y cuando se le unen algunos más, hace un gesto hacia ti.%SPEECH_ON%¡Estos tipos querían robar el cráneo!%SPEECH_OFF%Extiendes las manos, explicando que... antes de que termines, %anatomist% se da la vuelta y se aleja corriendo. Pensando rápido, %lo_anatomist% acusas de robo y prometes tener su cabeza, haciendo un gran espectáculo de sacar tu espada y agitarla ante los campesinos. Finges que dejas caer accidentalmente un saco de coronas, convirtiendo la ira de los campesinos en codicia, y dándote tiempo suficiente para escapar.}"
     }
     // context: anatomist_wants_skull_event.o.create.s.Text
     {
@@ -45348,7 +45417,7 @@ local pairs = [
     // context: flagellation_event.o.create.s.Text
     {
         en = "[img]gfx/ui/events/event_38.png[/img]You get up and have %them_otherguy% lead you to whatever it is that's causing an issue. You come across a throng of brothers circled around something or someone. Breaking your way through the crowd, the company quiets as you come into the clearing to find %flagellant_short% the flagellant unconscious on the ground.\n\n%Their_flagellant% back is stripped raw and you think you can even see a rib or two. Thorns have broken off %their_flagellant% brutish whip, embedding themselves in %their_flagellant% flesh, and %their_flagellant% skin hangs in strands where it hangs at all. It is good %they_flagellant% has passed out. Not because %they_flagellant% would be horrible in pain, but because you think %they_flagellant% might not otherwise have stopped. You order the men to clean %them_flagellant% up, dress %their_flagellant% wounds, and hide %their_flagellant% tools of misery."
-        es = "[img]gfx/ui/events/event_38.png[/img]Te levantas y le pides que te lleve hasta lo que sea que está causando el problema. Te topas con un corrillo de hermanos en círculo alrededor de algo o de alguien. Te abres paso entre la multitud y la compañía enmudece cuando llegas al claro y encuentras a %flagellant_short%, %art_flagellant% flagelante, inconsciente en el suelo.\n\nTiene la espalda en carne viva y te parece ver incluso una costilla o dos. Del brutal látigo se han desprendido espinas que se le han clavado en la carne, y la piel le cuelga en tiras allí donde aún le cuelga. Menos mal que se ha desmayado. No porque fuera a sufrir un dolor horrible, sino porque crees que, de lo contrario, no habría parado. Ordenas a los hombres que %lo_flagellant% limpien, le venden las heridas y escondan sus herramientas de tormento."
+        es = "[img]gfx/ui/events/event_38.png[/img]Te levantas y le pides que te lleve hasta lo que sea que está causando el problema. Te topas con un corrillo de hermanos en círculo alrededor de algo o de alguien. Te abres paso entre la multitud y la compañía enmudece cuando llegas al claro y encuentras a %flagellant_short%, %art_flagellant% flagelante, inconsciente en el suelo.\n\nTiene la espalda en carne viva y te parece ver incluso una costilla o dos. Del brutal látigo se han desprendido espinas que se le han clavado en la carne, y la piel le cuelga en tiras allí donde aún le cuelga. Menos mal que se ha desmayado. No porque fuera a sufrir un dolor horrible, sino porque crees que, de lo contrario, no habría parado. Ordenas a los hombres que %lo_flagellant% limpien, le vendan las heridas y escondan sus herramientas de tormento."
     }
     // FILE: mod_legends\hooks\events\events\flagellation_horrifies_other_event.nut
     // context: flagellation_horrifies_other_event.o.create.::Legends.Screens.hook()._screen.Text
@@ -48544,7 +48613,7 @@ local pairs = [
         // corrige base: «algunos trofeos» por «algunos trofeos de bestias» («beast trophies»)
         // corrige base: «Rastreadores» y «Desolladores» pierden el «Expert» de «Expert Trackers» y «Expert Skinners»
         en = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]You and your kind make your living by hunting down the many beasts that beset villages on the fringes of civilization. It is dangerous work, but it pays well enough and there is always a bigger beast to slay and more crowns to earn.\n\n[color=#bcad8c]Beast Slayers:[/color] Start with three Beast Slayers and decent equipment, as well as some beast trophies. Beast Slayers gain a unique trait when fighting beasts. Chance to find others that support your cause.\n[color=#bcad8c]Expert Skulkers:[/color] See tracks from further away. Recruits gain a random Favoured Beast Enemy perk.\n[color=#bcad8c]Expert Skinners:[/color] Each beast you slay has a 50% chance to drop an additional trophy.\n[color=#bcad8c]Prejudice:[/color] Most people do not trust your kind, get 20% worse prices.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Con los tuyos te ganas la vida cazando las numerosas bestias que azotan las aldeas en los límites de la civilización. Es un trabajo peligroso, pero paga bastante bien, y siempre hay una bestia más grande que matar y más coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos de bestias. Los cazadores de bestias obtienen un rasgo único al luchar contra bestias. Posibilidad de encontrar a otros que apoyen tu causa.\n[color=#bcad8c]Acechadores expertos:[/color] Puedes ver huellas desde más lejos. Los reclutas obtienen una ventaja aleatoria de enemigo predilecto contra bestias.\n[color=#bcad8c]Desolladores expertos:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo adicional.\n[color=#bcad8c]Prejuicio:[/color] La mayoría de las personas no confían en los de tu tipo; obtienes precios un 20% peores.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Con los tuyos te ganas la vida cazando las numerosas bestias que azotan las aldeas en los límites de la civilización. Es un trabajo peligroso, pero paga bastante bien, y siempre hay una bestia más grande que matar y más coronas que ganar.\n\n[color=#dda21f]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos de bestias. Los cazadores de bestias obtienen un rasgo único al luchar contra bestias. Posibilidad de encontrar a otros que apoyen tu causa.\n[color=#dda21f]Acechadores expertos:[/color] Puedes ver huellas desde más lejos. Los reclutas obtienen una ventaja aleatoria de enemigo predilecto contra bestias.\n[color=#dda21f]Desolladores expertos:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo adicional.\n[color=#dda21f]Prejuicio:[/color] La mayoría de las personas no confían en los de tu tipo; obtienes precios un 20% peores.[/p]"
     }
     // en = "Has slain a dangerous witch"
     // en base_es
@@ -48565,7 +48634,7 @@ local pairs = [
         // corrige base: sobra la coma entre sujeto y verbo en «y %name%, ciertamente no es uno»
         // corrige base: «Aún así» por «Aun así» (sin tilde: equivale a «incluso así»)
         en = "Grizzled vets are a rarity in beast slaying, and %name% sure ain't one. Instead, the 'slayer' started the foray into monster hunting by reading books instead of training the sword. Still a good enough warrior at heart, it is the study and preparation that gives %name% the edge in battle."
-        es = "Los veteranos curtidos son una rareza en la caza de bestias, y desde luego no es el caso de %name%. Su incursión en la caza de monstruos empezó leyendo libros en lugar de entrenar con la espada. Aun así, sigue teniendo alma de guerrero, y son el estudio y la preparación lo que da a %name% ventaja en la batalla."
+        es = "Los veteranos curtidos son una rareza en la caza de bestias, y desde luego no es el caso de %name%. Su incursión en la caza de monstruos empezó leyendo libros en lugar de entrenar con la espada. Aun así, sigue teniendo alma guerrera, y son el estudio y la preparación lo que da a %name% ventaja en la batalla."
     }
     // context: beast_hunters_scenario.o.onGenerateBro.bro.improveMood()
     {
@@ -48593,7 +48662,7 @@ local pairs = [
     // context: cultists_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul awaits. You lead a small flock devoted to the elder god, and it is time to spread the word. Find more followers, acquire riches, and please Davkul with sacrifices.\n\n[color=#bcad8c]Cultists:[/color] Start with a group of five cultists and encounter fanatical special cultists in towns.\n[color=#bcad8c]Sacrifices:[/color] Davkul will occasionally demand sacrifices from you, but also bestow boons upon those loyal to him. Davkul will not sacrifice his chosen elite. Cultists cost 25% less to hire and maintain.\n[color=#c90000]Let the Blood Flow:[/color] All cultists gain bonus melee skill and the [color=#008060]True Believer[/color] perk.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul aguarda. Guías a un pequeño rebaño consagrado al dios antiguo, y es hora de difundir la palabra. Encuentra más seguidores, consigue riquezas y complace a Davkul con sacrificios.\n\n[color=#bcad8c]Cultistas:[/color] Comienza con un grupo de cinco cultistas y encuentra cultistas fanáticos especiales en las ciudades.\n[color=#bcad8c]Sacrificios:[/color] De vez en cuando, Davkul te exigirá sacrificios, pero también concederá dones a quienes le sean leales. Davkul no sacrificará a sus elegidos de élite. Contratar y mantener cultistas cuesta un 25% menos.\n[color=#c90000]Que fluya la sangre:[/color] Todos los cultistas obtienen una bonificación de Habilidad cuerpo a cuerpo y la ventaja [color=#008060]Verdadero creyente[/color].[/p]"
+        es = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul aguarda. Guías a un pequeño rebaño consagrado al dios antiguo, y es hora de difundir la palabra. Encuentra más seguidores, consigue riquezas y complace a Davkul con sacrificios.\n\n[color=#dda21f]Cultistas:[/color] Comienza con un grupo de cinco cultistas y encuentra cultistas fanáticos especiales en las ciudades.\n[color=#dda21f]Sacrificios:[/color] De vez en cuando, Davkul te exigirá sacrificios, pero también concederá dones a quienes le sean leales. Davkul no sacrificará a sus elegidos de élite. Contratar y mantener cultistas cuesta un 25% menos.\n[color=#c90000]Que fluya la sangre:[/color] Todos los cultistas obtienen una bonificación de Habilidad cuerpo a cuerpo y la ventaja [color=#008060]Verdadero creyente[/color].[/p]"
     }
     // context: cultists_scenario.o.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -48641,7 +48710,7 @@ local pairs = [
     // context: deserters_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]For too long have you been dragged from one bloody battle to another at the whim of lords sitting in high towers. Last night, you absconded from camp together with three others. You're dressed like soldiers still, but you're deserters, and the noose will be your end if you stay here for too long.\n[color=#bcad8c]Deserters:[/color] Start with three deserters and decent armor, but lower funds, you can only be joined by outlaws or combat backgrounds, and a noble house that wants to hunt you down.\n[color=#bcad8c]First to Run:[/color] Your men always are first to act in the very first round of combat.\n[color=#c90000]Like Minded:[/color] Increased chance of finding craven dastards, deserters and the disowned. [/p]"
-        es = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Por demasiado tiempo te han arrastrado de una sangrienta batalla a otra, a merced de señores que se sientan en altas torres. Anoche, te escapaste del campamento junto con otros tres. Todavía están vestidos como soldados, pero son desertores, y la soga será su fin si se quedan aquí por demasiado tiempo.\n[color=#bcad8c]Desertores:[/color] Comienzas con tres desertores y una armadura decente, pero con menos fondos y con una casa noble que quiere darte caza; además, solo pueden unirse a ti proscritos o personas con trasfondos de combate.\n[color=#bcad8c]Primeros en huir:[/color] Tus hombres siempre son los primeros en actuar en la primera ronda del combate.\n[color=#c90000]Afines:[/color] Mayor probabilidad de encontrar cobardes rastreros, desertores y repudiados. [/p]"
+        es = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Por demasiado tiempo te han arrastrado de una sangrienta batalla a otra, a merced de señores que se sientan en altas torres. Anoche, te escapaste del campamento junto con otros tres. Todavía están vestidos como soldados, pero son desertores, y la soga será su fin si se quedan aquí por demasiado tiempo.\n[color=#dda21f]Desertores:[/color] Comienzas con tres desertores y una armadura decente, pero con menos fondos y con una casa noble que quiere darte caza; además, solo pueden unirse a ti proscritos o personas con trasfondos de combate.\n[color=#dda21f]Primeros en huir:[/color] Tus hombres siempre son los primeros en actuar en la primera ronda del combate.\n[color=#c90000]Afines:[/color] Mayor probabilidad de encontrar cobardes rastreros, desertores y repudiados. [/p]"
     }
     // en = "Was dragged from one bloody battle to the next"
     // en base_es
@@ -48692,7 +48761,7 @@ local pairs = [
     // context: gladiators_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]You've fought in the arenas of the south for years. First for your freedom, then for crowns, and finally to become immortal. What else does fate have in stock for you?\n\n[color=#bcad8c]Gladiators:[/color] Start with three experienced gladiators with good equipment, but very high daily wages.\n[color=#bcad8c]Legends of the Arena:[/color] Each gladiator has a unique trait in combat.\n[color=#bcad8c]Glorious Three:[/color] You can never have more than 16 fighters in your roster, and if all of your three starting men should die, your campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Has luchado en las arenas del sur durante años. Primero por tu libertad, luego por coronas y finalmente para volverte inmortal. ¿Qué más tiene el destino en reserva para ti?\n\n[color=#bcad8c]Gladiadores:[/color] Comienzas con tres gladiadores experimentados con buen equipo, pero con salarios diarios muy altos.\n[color=#bcad8c]Leyendas de la Arena:[/color] Cada gladiador tiene un rasgo único en combate.\n[color=#bcad8c]Los Gloriosos Tres:[/color] Nunca puedes tener más de 16 luchadores en tu lista y si tus tres hombres iniciales mueren, tu campaña termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Has luchado en las arenas del sur durante años. Primero por tu libertad, luego por coronas y finalmente para volverte inmortal. ¿Qué más tiene el destino en reserva para ti?\n\n[color=#dda21f]Gladiadores:[/color] Comienzas con tres gladiadores experimentados con buen equipo, pero con salarios diarios muy altos.\n[color=#dda21f]Leyendas de la Arena:[/color] Cada gladiador tiene un rasgo único en combate.\n[color=#dda21f]Los Gloriosos Tres:[/color] Nunca puedes tener más de 16 luchadores en tu lista y si tus tres hombres iniciales mueren, tu campaña termina.[/p]"
     }
     // en = "the Lion"
     // en base_es
@@ -48716,7 +48785,7 @@ local pairs = [
     // context: lone_wolf_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]You have been traveling for a long time, taking part in tourneys and sparring with young nobles. A hedge knight as tall as a tree, you never needed anybody for long. Is it true still?\n\n[color=#bcad8c]Lone Wolf:[/color] Start with a single experienced hedge knight with great equipment but low funds. All encounters are two-thirds harder than normal.\n[color=#bcad8c]Elite Few:[/color] Can never have more than 12 fighters in your roster. You may encounter other champions and special allies through events to join your cause.\n[color=#bcad8c]Avatar:[/color] If your lone wolf dies, the campaign ends.\n[color=#c90000]Living Legend:[/color] As your renown grows, the more recruits will be present in towns. Higher renown increases quality of hires, but you will start with being unable to hire anyone.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando, participando en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie por mucho tiempo. ¿Sigue siendo así?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienzas con un único caballero errante experimentado, con un equipo excelente pero pocos fondos. Todos los enfrentamientos son dos tercios más difíciles de lo normal.\n[color=#bcad8c]Pocos pero selectos:[/color] Nunca puedes tener más de 12 luchadores en tu lista. Mediante eventos, puedes encontrar a otros campeones y aliados especiales que se unan a tu causa.\n[color=#bcad8c]Avatar:[/color] Si tu lobo solitario muere, la campaña termina.\n[color=#c90000]Leyenda viviente:[/color] Cuanto más crezca tu renombre, más reclutas habrá en las ciudades. Un mayor renombre aumenta la calidad de las contrataciones, pero al principio no podrás contratar a nadie.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando, participando en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie por mucho tiempo. ¿Sigue siendo así?\n\n[color=#dda21f]Lobo solitario:[/color] Comienzas con un único caballero errante experimentado, con un equipo excelente pero pocos fondos. Todos los enfrentamientos son dos tercios más difíciles de lo normal.\n[color=#dda21f]Pocos pero selectos:[/color] Nunca puedes tener más de 12 luchadores en tu lista. Mediante eventos, puedes encontrar a otros campeones y aliados especiales que se unan a tu causa.\n[color=#dda21f]Avatar:[/color] Si tu lobo solitario muere, la campaña termina.\n[color=#c90000]Leyenda viviente:[/color] Cuanto más crezca tu renombre, más reclutas habrá en las ciudades. Un mayor renombre aumenta la calidad de las contrataciones, pero al principio no podrás contratar a nadie.[/p]"
     }
     // en = "the Lone Wolf"
     // en base_es
@@ -48763,7 +48832,7 @@ local pairs = [
     {
         // corrige base: «tus filas crecen» por «sus filas crecen»: «their ranks» son las filas de los cautivos
         en = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Constant conflict between city states and nomads makes for good business. The bulk of your outfit are captives, forced to fight to earn their freedom, and their ranks grow after each battle.\n\n[color=#bcad8c]Army of Captives:[/color] Start with two manhunters and four indebted. Take up to 16 men into battle at once. Having equal or fewer indebted than non-indebted will make your men dissatisfied.\n[color=#bcad8c]Overseers:[/color] All non-indebted can whip indebted in combat to reset their morale and buff their stats.\n[color=#bcad8c]Captives:[/color] Indebted earn 10% more experience, are capped at level 7, and will die if struck down. However, they are 50% cheaper to buy in towns.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El constante conflicto entre las ciudades-estado y los nómadas es un buen negocio. La mayoría de tu grupo son cautivos, obligados a luchar para ganar su libertad, y sus filas crecen después de cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados. Puedes llevar hasta 16 hombres a la batalla al mismo tiempo. Tener igual o menos endeudados que hombres libres hará que tus hombres estén insatisfechos.\n[color=#bcad8c]Supervisores:[/color] Todos los no endeudados pueden azotar a los endeudados en combate para restablecer su moral y mejorar sus estadísticas.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, tienen un límite de nivel 7 y morirán si son derribados en combate. Sin embargo, comprarlos en las ciudades cuesta un 50% menos.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El constante conflicto entre las ciudades-estado y los nómadas es un buen negocio. La mayoría de tu grupo son cautivos, obligados a luchar para ganar su libertad, y sus filas crecen después de cada batalla.\n\n[color=#dda21f]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados. Puedes llevar hasta 16 hombres a la batalla al mismo tiempo. Tener igual o menos endeudados que hombres libres hará que tus hombres estén insatisfechos.\n[color=#dda21f]Supervisores:[/color] Todos los no endeudados pueden azotar a los endeudados en combate para restablecer su moral y mejorar sus estadísticas.\n[color=#dda21f]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, tienen un límite de nivel 7 y morirán si son derribados en combate. Sin embargo, comprarlos en las ciudades cuesta un 50% menos.[/p]"
     }
     // en = "the Stoic"
     // en base_es
@@ -48831,7 +48900,7 @@ local pairs = [
     // context: militia_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]It started as a ragtag militia made up of anyone brave or desperate enough to volunteer for defending their homes, but has grown into a small army. An army that needs to be fed each day. \n[color=#bcad8c]Peasant Army:[/color] Start with a roster of 12 poorly equipped peasants.\n[color=#bcad8c]Human Wave:[/color] Take up to [color=#c90000]22[/color] men into battle at once, with no need to build renown.\n[color=#bcad8c]Dirty Peasants:[/color] Can only hire lowborn peasants, lose reputation with nobles faster. \n[color=#c90000]Reduced scaling:[/color] Each member of your company only counts for two thirds of a person in scaling. \n[color=#c90000]Class warfare:[/color] Each person you hire gains a hatred of nobles[/p]"
-        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Empezó como una milicia variopinta formada por cualquiera lo bastante valiente o desesperado para ofrecerse a defender su hogar, pero se ha convertido en un pequeño ejército. Un ejército que hay que alimentar cada día. \n[color=#bcad8c]Ejército campesino:[/color] Comienzas con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Oleada humana:[/color] Puedes llevar hasta [color=#c90000]22[/color] hombres a la batalla al mismo tiempo, sin necesidad de ganar renombre.\n[color=#bcad8c]Campesinos sucios:[/color] Solo puedes contratar campesinos de baja cuna, y pierdes reputación con los nobles más rápido. \n[color=#c90000]Escalado reducido:[/color] Cada miembro de tu compañía cuenta solo como dos tercios de una persona a efectos de escalado. \n[color=#c90000]Guerra de clases:[/color] Cada persona que contrates desarrolla odio hacia los nobles[/p]"
+        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Empezó como una milicia variopinta formada por cualquiera lo bastante valiente o desesperado para ofrecerse a defender su hogar, pero se ha convertido en un pequeño ejército. Un ejército que hay que alimentar cada día. \n[color=#dda21f]Ejército campesino:[/color] Comienzas con una lista de 12 campesinos mal equipados.\n[color=#dda21f]Oleada humana:[/color] Puedes llevar hasta [color=#c90000]22[/color] hombres a la batalla al mismo tiempo, sin necesidad de ganar renombre.\n[color=#dda21f]Campesinos sucios:[/color] Solo puedes contratar campesinos de baja cuna, y pierdes reputación con los nobles más rápido. \n[color=#c90000]Escalado reducido:[/color] Cada miembro de tu compañía cuenta solo como dos tercios de una persona a efectos de escalado. \n[color=#c90000]Guerra de clases:[/color] Cada persona que contrates desarrolla odio hacia los nobles[/p]"
     }
     // en = "Lost many a friend in battle"
     // en base_es
@@ -48949,7 +49018,7 @@ local pairs = [
     // context: raiders_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_135.png[/img][/p][p]For all your adult life you have been raiding and pillaging in these lands. But with the local peasantry poor as mice, you may want to finally expand into the profitable field of mercenary work - that is, if your potential employers are willing to forgive your past transgressions.\n[color=#bcad8c]Warband:[/color] Start with three experienced barbarians, and increased chance of finding [color=#c90000]bloodthirsty brutes, barbarians, killers and assassins[/color].\n[color=#bcad8c]Pillagers:[/color] [color=%positive%]15%[/color] chance to get any items from slain enemies, that might not otherwise be available to loot.\n[color=#bcad8c]Outlaws:[/color] Start with [color=#c90000]perks for hunting civilians[/color], bad relations to most human factions, only other outlaws are keen to work for you.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_135.png[/img][/p][p]Llevas toda tu vida adulta asaltando y saqueando estas tierras. Pero, con el campesinado local más pobre que las ratas, quizá quieras expandirte por fin al lucrativo terreno del trabajo mercenario, siempre que tus posibles empleadores estén dispuestos a perdonar tus faltas pasadas.\n[color=#bcad8c]Banda de guerra:[/color] Comienzas con tres bárbaros experimentados y mayor probabilidad de encontrar [color=#c90000]brutos sanguinarios, bárbaros, asesinos y sicarios[/color].\n[color=#bcad8c]Saqueadores:[/color] [color=%positive%]15%[/color] de probabilidad de obtener cualquier objeto de los enemigos abatidos, aunque de otro modo no pudiera saquearse.\n[color=#bcad8c]Proscritos:[/color] Comienzas con [color=#c90000]ventajas para cazar civiles[/color] y malas relaciones con la mayoría de las facciones humanas; solo otros proscritos están dispuestos a trabajar para ti.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_135.png[/img][/p][p]Llevas toda tu vida adulta asaltando y saqueando estas tierras. Pero, con el campesinado local más pobre que las ratas, quizá quieras expandirte por fin al lucrativo terreno del trabajo mercenario, siempre que tus posibles empleadores estén dispuestos a perdonar tus faltas pasadas.\n[color=#dda21f]Banda de guerra:[/color] Comienzas con tres bárbaros experimentados y mayor probabilidad de encontrar [color=#c90000]brutos sanguinarios, bárbaros, asesinos y sicarios[/color].\n[color=#dda21f]Saqueadores:[/color] [color=%positive%]15%[/color] de probabilidad de obtener cualquier objeto de los enemigos abatidos, aunque de otro modo no pudiera saquearse.\n[color=#dda21f]Proscritos:[/color] Comienzas con [color=#c90000]ventajas para cazar civiles[/color] y malas relaciones con la mayoría de las facciones humanas; solo otros proscritos están dispuestos a trabajar para ti.[/p]"
     }
     // context: raiders_scenario.o.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -49003,7 +49072,7 @@ local pairs = [
     // context: rangers_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]For years you have made a decent living by poaching in the local woods, evading your lord's men by being quick on your feet. But pickings have become slimmer and slimmer, and you are faced with a decision - how to make a living when all you know is how to use a bow?\n\n[color=#bcad8c]Hunters:[/color] Start with a group of three woodsmen.\n[color=#bcad8c]Expert Scouts:[/color] You move faster and can always get a scouting report for any enemies near you.\n[color=#bcad8c]Travel Light:[/color] You can carry fewer items in your company's inventory.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Durante años te has ganado la vida decentemente cazando de forma furtiva en los bosques de la zona, esquivando a los hombres de tu señor gracias a tus pies ligeros. Pero las presas escasean cada vez más y te enfrentas a una decisión: ¿cómo ganarse la vida cuando lo único que sabes es usar un arco?\n\n[color=#bcad8c]Cazadores:[/color] Comienzas con un grupo de tres moradores del bosque.\n[color=#bcad8c]Exploradores expertos:[/color] Te mueves más rápido y siempre puedes obtener un informe de exploración de cualquier enemigo cercano.\n[color=#bcad8c]Viajar liviano:[/color] Puedes llevar menos objetos en el inventario de tu compañía.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_10.png[/img][/p][p]Durante años te has ganado la vida cazando furtivamente en los bosques de la zona, esquivando a los hombres de tu señor con tus pies ligeros. Pero las presas escasean cada vez más y toca decidir: ¿cómo ganarse la vida si solo sabes usar un arco?\n\n[color=#dda21f]Cazadores:[/color] Empiezas con tres moradores del bosque.\n[color=#dda21f]Exploradores expertos:[/color] Te mueves más rápido y siempre obtienes un informe de exploración de los enemigos cercanos.\n[color=#dda21f]Viajar liviano:[/color] Puedes llevar menos objetos en el inventario de tu compañía.[/p]"
     }
     // context: rangers_scenario.o.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -49029,7 +49098,7 @@ local pairs = [
     // context: southern_quickstart_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_156.png[/img][/p][p]You and your small band of mercenaries have done the dirty work of small-time merchants for years, yet you are barely a step above brigands. You want to be bigger than that. You want it all. And the Gilder will reveal the way to you.\n\n[color=#bcad8c]A quick start into the southern part of the world, without any particular advantages or disadvantages.[/color][/p]"
-        es = "[p=c][img]gfx/ui/events/event_156.png[/img][/p][p]Con tu pequeña banda de mercenarios, has realizado el trabajo sucio para comerciantes de poca monta durante años, pero apenas estás un paso por encima de los bandidos. Quieres ser más que eso. Quieres tenerlo todo. Y el Dorado te revelará el camino.\n\n[color=#bcad8c]Un inicio rápido en la parte sur del mundo, sin ventajas o desventajas particulares.[/color][/p]"
+        es = "[p=c][img]gfx/ui/events/event_156.png[/img][/p][p]Con tu pequeña banda de mercenarios, has realizado el trabajo sucio para comerciantes de poca monta durante años, pero apenas estás un paso por encima de los bandidos. Quieres ser más que eso. Quieres tenerlo todo. Y el Dorado te revelará el camino.\n\n[color=#dda21f]Un inicio rápido en la parte sur del mundo, sin ventajas o desventajas especiales.[/color][/p]"
     }
     // context: southern_quickstart_scenario.o.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -49050,7 +49119,7 @@ local pairs = [
     // context: trader_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]You are running a small trading caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there are rumors of even worse things out there.\n\n [color=#bcad8c]Not a Warrior:[/color] Start with no renown, every non-combat recruit gains the Peaceable perk. Professional soldiers will cost 25% more and have a high chance of having additional bad traits and be less eager to stick around if things get tough. Cannot recruit outlaws.\n [color=#bcad8c]Avatar:[/color] Start with a cunning and wealthy merchant, the caravan will be dissolved if they die.\n [color=#bcad8c]Bribery:[/color] Pay off human enemies instead of fighting them. Peddlers cost 25% less.\n\n"
-        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]Diriges una pequeña caravana comercial y tienes la mayor parte de tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pieles verdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n [color=#bcad8c]No eres un guerrero:[/color] Comienzas sin renombre y cada recluta no combatiente obtiene la ventaja Pacífico. Los soldados profesionales cuestan un 25% más, tienen muchas probabilidades de tener rasgos negativos adicionales y estarán menos dispuestos a quedarse si las cosas se ponen difíciles. No puedes reclutar proscritos.\n [color=#bcad8c]Avatar:[/color] Comienzas con una figura mercantil de gran astucia y fortuna; si muere, la caravana se disolverá.\n [color=#bcad8c]Soborno:[/color] Paga a los enemigos humanos en lugar de luchar contra ellos. Los vendedores ambulantes cuestan un 25% menos.\n\n"
+        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]Diriges una pequeña caravana comercial y tienes la mayor parte de tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pieles verdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n [color=#dda21f]No eres un guerrero:[/color] Comienzas sin renombre y cada recluta no combatiente obtiene la ventaja Pacífico. Los soldados profesionales cuestan un 25% más, tienen muchas probabilidades de tener rasgos negativos adicionales y estarán menos dispuestos a quedarse si las cosas se ponen difíciles. No puedes reclutar proscritos.\n [color=#dda21f]Avatar:[/color] Comienzas con una figura mercantil de gran astucia y fortuna; si muere, la caravana se disolverá.\n [color=#dda21f]Soborno:[/color] Paga a los enemigos humanos en lugar de luchar contra ellos. Los vendedores ambulantes cuestan un 25% menos.\n\n"
     }
     // en = "Encountered another caravan slaughtered by greenskins"
     // en base_es
@@ -49067,7 +49136,7 @@ local pairs = [
     // context: trader_scenario.o.onHiredByScenario._bro.improveMood()
     {
         en = "Glad to be out of the fighting line"
-        es = "Le alegra estar fuera de la línea de combate"
+        es = "Le alegra estar fuera de la línea de batalla"
     }
     // FILE: mod_legends\hooks\scenarios\world\tutorial_scenario.nut
     // context: tutorial_scenario.o.create.m.Name
@@ -49721,7 +49790,7 @@ local pairs = [
         // return this.m.Description + " Attacks from this ability are considered attacks of opportunity."
         mode = "pattern"
         en = "<desc:str> Attacks from this ability are considered attacks of opportunity."
-        es = "<desc> Los ataques de esta habilidad se consideran ataques de oportunidad."
+        es = "<desc:t> Los ataques de esta habilidad se consideran ataques de oportunidad."
     }
     // FILE: mod_legends\hooks\skills\actives\root_skill.nut
     // context: root_skill.o.create.m.Description
@@ -49757,12 +49826,12 @@ local pairs = [
         // text = "Has [color=%positive%]" + ammo + "[/color] bolts left"
         mode = "pattern"
         en = "Has [color=%positive%]<ammo:int>[/color] bolts left"
-        es = "Le quedan [color=%positive%]<ammo>[/color] pernos"
+        es = "Le quedan [color=%positive%]<ammo>[/color] virotes"
     }
     // context: shoot_bolt.o.getTooltip.tooltip.push().text
     {
         en = "[color=%negative%]Needs a non-empty quiver of bolts equipped[/color]"
-        es = "[color=%negative%]Necesita equipado un carcaj de pernos que no esté vacío[/color]"
+        es = "[color=%negative%]Necesita equipado un carcaj de virotes que no esté vacío[/color]"
     }
     // context: shoot_bolt.o.getTooltip.tooltip.push().text
     {
@@ -49773,7 +49842,7 @@ local pairs = [
     // context: shoot_stake.o.create.m.Description
     {
         en = "A quick pull of the trigger to loose a heavy bolt. Must be reloaded after each shot to be able to fire again. Will stagger on hit."
-        es = "Un rápido apretón del gatillo para soltar un perno pesado. Debe recargarse después de cada disparo para poder volver a disparar. Hace tambalear al impactar."
+        es = "Un rápido apretón del gatillo para soltar un virote pesado. Debe recargarse después de cada disparo para poder volver a disparar. Hace tambalear al impactar."
     }
     // context: shoot_stake.o.getTooltip.tooltip.push().text
     {
@@ -50680,14 +50749,6 @@ local pairs = [
     }
     // en = "Background: <name:str>"
     // en base_es
-    // context: character_background.o.getPerkTreeGroupDescription.text
-    {
-        // text = text + " and " + _p[i].Descriptions[this.Math.rand(0, _p[i].Descriptions.len() - 1)];
-        // DUDA: el patrón válido sería «<text:str> and <desc:str>» -> «<text> y <desc>», pero casaría con cualquier texto en inglés que lleve « and » y lo destrozaría; hace falta decidir si se puede acotar o si se deja sin patrón.
-        mode = "pattern"
-        en = "<text> and <_p[i].Descriptions[this.Math.rand(0, _p[i].Descriptions.len()-1)]>"
-        es = ""
-    }
     // en = "<ret:str> and "
     // en base_es
     // context: character_background.o.getPerkBackgroundDescription.getPerkTreeGroupDescription()
@@ -50829,6 +50890,99 @@ local pairs = [
     {
         en = "[u]Company Capacity[/u]"
         es = "[u]Capacidad de la compañía[/u]"
+    }
+    // context: character_background.o.getBackgroundDescriptionTooltip (capacidades y habilidades)
+    // El nombre y el valor coloreado van en una sola cadena: text = c.name + " " + colorize(...).
+    // Una regla por nombre, con el literal delante, para no casar con cualquier "X [color]N[/color]".
+    {
+        mode = "pattern"
+        en = "Inventory Space <v:val_tag>"
+        es = "Espacio de inventario <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Tools and Supplies <v:val_tag>"
+        es = "Herramientas y suministros <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Ammunition <v:val_tag>"
+        es = "Munición <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Medical Supplies <v:val_tag>"
+        es = "Suministros médicos <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Healing <v:val_tag>"
+        es = "Curación <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Treating Injuries <v:val_tag>"
+        es = "Tratar heridas <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Medical Supplies Efficiency <v:val_tag>"
+        es = "Eficiencia de suministros médicos <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Repairing <v:val_tag>"
+        es = "Reparación <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Tools Efficiency <v:val_tag>"
+        es = "Eficiencia de herramientas <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Salvaging <v:val_tag>"
+        es = "Desguace <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Crafting <v:val_tag>"
+        es = "Fabricación <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Scouting <v:val_tag>"
+        es = "Exploración <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Training <v:val_tag>"
+        es = "Entrenamiento <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Fletching <v:val_tag>"
+        es = "Fabricación de flechas <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Gathering Supplies <v:val_tag>"
+        es = "Recolección de suministros <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Hunting <v:val_tag>"
+        es = "Caza <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Enchanting <v:val_tag>"
+        es = "Encantamiento <v>"
+    }
+    {
+        mode = "pattern"
+        en = "Bartering <v:val_tag>"
+        es = "Regateo <v>"
     }
     // context: character_background.o.getBackgroundDescriptionTooltip.skills.key
     // en = "Injury"  // clave interna de Modifiers, no se muestra (el nombre visible es "Treating Injuries")
@@ -52127,7 +52281,7 @@ local pairs = [
     // context: poacher_background.o.onBuildDescription
     {
         en = "{Interested in the thrill of the hunt, | Looking to support a family, | With a grumbling stomach, | After a long and hard winter without a stock of food,} %name% {set off into the woods in chase of deer | sought wildlife to which, if skittishness is any indication, the hunter may or may not have had proper claim | ate a fill of all manner of woodland creatures, a well-used bow yoked across shoulders indicating the means to the meals | took to the woods to hunt game with bow and spear}. Hailing from %townname%, %name% {was, as a poacher, the hunter and the hunted | needed to feed the children back home | sought to support oneself, one's own hide, and one's ever-growling stomach | was poaching, an act of rebellion against the order of things as much as a means to a full belly}. {Fearful these pursuits would attract bounty hunters or lawmen, decided to settle on life as a bow for hire. | Tired of working so hard just to put food on the table, buying a meal with a sellsword's pay just seemed so much easier. | After a bad hunt led to a long stay in a lord's dungeon, the poacher would rather put neck on the line as a mercenary now than in the noose as a poacher. | Years of lonely hunting wore on. Although life as a mercenary is exceedingly dangerous, it seems better to die with company than alone. | With a mother pleading for a change of ways, lest the whole family pay for the crimes. the poacher stands here now, a testament to who won the argument.}"
-        es = "{Por la emoción de la caza, | Para mantener a una familia, | Con el estómago rugiendo, | Tras un invierno largo y duro sin provisiones,} %name% {se adentró en el bosque persiguiendo ciervos | buscó presas sobre las que, a juzgar por su nerviosismo, quizá no tuviera ningún derecho | se dio un atracón de toda clase de criaturas del bosque, con un arco muy usado cruzado sobre los hombros como prueba de cómo conseguía la comida | se echó al bosque para cazar con arco y lanza}. Natural de %townname%, %name% {practicaba la caza furtiva siendo a la vez quien caza y a quien cazan | necesitaba alimentar a los hijos que esperaban en casa | buscaba mantener su propio pellejo y su estómago siempre rugiente | cazaba furtivamente, como acto de rebeldía contra el orden de las cosas tanto como para llenar la barriga}. {Por miedo a que estas andanzas atrajeran a cazarrecompensas o a la ley, se decidió por la vida de arco a sueldo. | Tras tanto esfuerzo solo para poner comida en la mesa, comprar el sustento con la paga de un mercenario parecía mucho más fácil. | Después de que una mala cacería acabara en una larga estancia en la mazmorra de un señor, ahora prefiere jugarse el cuello como mercenario antes que en la horca por caza furtiva. | Los años de caza solitaria pasaron factura. Aunque la vida de mercenario es sumamente peligrosa, parece mejor morir en compañía que en soledad. | Ante las súplicas de una madre para que cambiara de vida, no fuera a ser que toda la familia pagara por sus crímenes, aquí está ahora, como testimonio de quién ganó la discusión.}"
+        es = "{Por la emoción de la caza, | Para mantener a una familia, | Con el estómago rugiendo, | Tras un invierno largo y duro sin provisiones,} %name% {se adentró en el bosque persiguiendo ciervos | buscó presas sobre las que, a juzgar por su nerviosismo, quizá no tuviera ningún derecho | se dio un atracón de toda clase de criaturas del bosque, con un arco muy usado cruzado sobre los hombros como prueba de cómo conseguía la comida | se echó al bosque para cazar con arco y lanza}. Natural de %townname%, %name% {practicaba la caza furtiva siendo a la vez quien caza y a quien cazan | necesitaba alimentar a los hijos que esperaban en casa | buscaba mantener su propio pellejo y su estómago siempre rugiente | cazaba furtivamente, como acto de rebeldía contra el orden de las cosas tanto como para llenar la barriga}. {Por miedo a que estas andanzas atrajeran a cazarrecompensas o a la ley, se decidió por la vida de arco a sueldo. | Tras tanto esfuerzo solo para poner comida en la mesa, comprar el sustento con la paga de un mercenario parecía mucho más fácil. | Después de que una mala cacería acabara en una larga estancia en la mazmorra de un señor, ahora prefiere jugarse el cuello en el oficio mercenario antes que en la horca por caza furtiva. | Los años de caza solitaria pasaron factura. Aunque la vida de mercenario es sumamente peligrosa, parece mejor morir en compañía que en soledad. | Ante las súplicas de una madre para que cambiara de vida, no fuera a ser que toda la familia pagara por sus crímenes, aquí está ahora, como testimonio de quién ganó la discusión.}"
     }
     // FILE: mod_legends\hooks\skills\backgrounds\raider_background.nut
     // en = "Any raider that survived so far will have some expertise in fighting."
@@ -52830,8 +52984,8 @@ local pairs = [
     {
         // text = "Deal [color=%positive%]" + this.m.DamageBonus + "%[/color] more damage"
         mode = "pattern"
-        en = "Deal [color=%positive%]<bonus:val>%[/color] more damage"
-        es = "Inflige un [color=%positive%]<bonus>%[/color] más de daño"
+        en = "Deal [color=%positive%]<bonus:val>[/color] more damage"
+        es = "Inflige un [color=%positive%]<bonus>[/color] más de daño"
     }
     // context: double_strike_effect.o.getTooltip.ret.text
     {
@@ -53076,8 +53230,8 @@ local pairs = [
     {
         // text = "Only receive [color=%positive%]" + (100 - this.getReductionPercentage()) + "%[/color] of any damage to armor from attacks"
         mode = "pattern"
-        en = "Only receive [color=%positive%]<pct:val>%[/color] of any damage to armor from attacks"
-        es = "Solo recibe un [color=%positive%]<pct>%[/color] del daño que los ataques causan a la armadura"
+        en = "Only receive [color=%positive%]<pct:val>[/color] of any damage to armor from attacks"
+        es = "Solo recibe un [color=%positive%]<pct>[/color] del daño que los ataques causan a la armadura"
     }
     // FILE: mod_legends\hooks\skills\perks\perk_bullseye.nut
     // context: perk_bullseye.o.onAnySkillUsed._skill.getID().find()
@@ -53126,15 +53280,15 @@ local pairs = [
     {
         // text = rdef + "% more damage \n" + "  " +  this.getName()
         mode = "pattern"
-        en = "<pct:val>% more damage \n  <perk:str>"
-        es = "<pct>% más de daño \n  <perk>"
+        en = "<pct:val> more damage \n  <perk:str>"
+        es = "<pct> más de daño \n  <perk>"
     }
     // context: perk_legend_point_blank.o.onGetHitFactors._tooltip.push().text
     {
         // text = rdef  + "% less damage \n" + "  " + this.getName()
         mode = "pattern"
-        en = "<pct:val>% less damage \n  <perk:str>"
-        es = "<pct>% menos de daño \n  <perk>"
+        en = "<pct:val> less damage \n  <perk:str>"
+        es = "<pct> menos de daño \n  <perk>"
     }
     // FILE: mod_legends\hooks\skills\perks\perk_nimble.nut
     // context: perk_nimble.o.getTooltip.tooltip.push().text
@@ -53224,8 +53378,8 @@ local pairs = [
     {
         // text = "Has a combined total [color=%positive%]" + this.Math.min(100, p.HitChance[this.Const.BodyPart.Head]) + "%[/color] chance to hit the head"
         mode = "pattern"
-        en = "Has a combined total [color=%positive%]<chance:val>%[/color] chance to hit the head"
-        es = "Tiene en total una probabilidad combinada del [color=%positive%]<chance>%[/color] de acertar en la cabeza"
+        en = "Has a combined total [color=%positive%]<chance:val>[/color] chance to hit the head"
+        es = "Tiene en total una probabilidad combinada del [color=%positive%]<chance>[/color] de acertar en la cabeza"
     }
     // context: skill.o.getDefaultTooltip.ret.push().text
     {
@@ -53236,22 +53390,22 @@ local pairs = [
     {
         // text = "[color=%positive%]" + this.Math.min(100, this.m.ChanceSmash * p.FatalityChanceMult) + "%[/color] chance to smash the target on hits to the head that are killing blows"
         mode = "pattern"
-        en = "[color=%positive%]<chance:val>%[/color] chance to smash the target on hits to the head that are killing blows"
-        es = "[color=%positive%]<chance>%[/color] de probabilidad de reventar la cabeza del objetivo con los golpes mortales a la cabeza"
+        en = "[color=%positive%]<chance:val>[/color] chance to smash the target on hits to the head that are killing blows"
+        es = "[color=%positive%]<chance>[/color] de probabilidad de reventar la cabeza del objetivo con los golpes mortales a la cabeza"
     }
     // context: skill.o.getDefaultTooltip.ret.push().text
     {
         // text = "[color=%positive%]" + this.Math.min(100, this.m.ChanceDecapitate * p.FatalityChanceMult) + "%[/color] chance to decapitate the target on hits to the head that are killing blows"
         mode = "pattern"
-        en = "[color=%positive%]<chance:val>%[/color] chance to decapitate the target on hits to the head that are killing blows"
-        es = "[color=%positive%]<chance>%[/color] de probabilidad de decapitar al objetivo con los golpes mortales a la cabeza"
+        en = "[color=%positive%]<chance:val>[/color] chance to decapitate the target on hits to the head that are killing blows"
+        es = "[color=%positive%]<chance>[/color] de probabilidad de decapitar al objetivo con los golpes mortales a la cabeza"
     }
     // context: skill.o.getDefaultTooltip.ret.push().text
     {
         // text = "[color=%positive%]" + this.Math.min(100, this.m.ChanceDisembowel * p.FatalityChanceMult) + "%[/color] chance to disembowel the target on hits to the body that are killing blows"
         mode = "pattern"
-        en = "[color=%positive%]<chance:val>%[/color] chance to disembowel the target on hits to the body that are killing blows"
-        es = "[color=%positive%]<chance>%[/color] de probabilidad de destripar al objetivo con los golpes mortales al cuerpo"
+        en = "[color=%positive%]<chance:val>[/color] chance to disembowel the target on hits to the body that are killing blows"
+        es = "[color=%positive%]<chance>[/color] de probabilidad de destripar al objetivo con los golpes mortales al cuerpo"
     }
     // en = "Surrounded"
     // en base_es
@@ -53424,8 +53578,8 @@ local pairs = [
     {
         // text = "[color=%positive%]"+ bonus + "%[/color] of any damage ignores armor"
         mode = "pattern"
-        en = "[color=%positive%]<bonus:val>%[/color] of any damage ignores armor"
-        es = "El [color=%positive%]<bonus>%[/color] de todo el daño ignora la armadura"
+        en = "[color=%positive%]<bonus:val>[/color] of any damage ignores armor"
+        es = "El [color=%positive%]<bonus>[/color] de todo el daño ignora la armadura"
     }
     // FILE: mod_legends\hooks\skills\terrain\hidden_effect.nut
     // context: hidden_effect.o.create.m.Description
@@ -54366,19 +54520,16 @@ local pairs = [
     // en = "bottom"
     // context: tooltip_events.o.tactical_helper_addHintsToTooltip.tooltip.push().text.::Const.UI.getColorized()
     {
-        // text = ::Const.UI.getColorized("Imported", ::Const.UI.Color.NegativeValue) + " from " + ::Const.UI.getColorized(_item.getOriginSettlement().getName(), ::Const.UI.Color.getHighlightLightBackgroundValue()) + " to " + ::Const.UI.getColorized(_item.getTradeHistorySettlements()[0].getName(), ::Const.UI.Color.getHighlightLightBackgroundValue()),
         mode = "pattern"
-        // DUDA: getColorized envuelve la palabra «Imported» en una etiqueta [color] cuyo valor (NegativeValue) no sé reproducir literalmente en el en; con una captura str en su lugar, «Imported» se quedaría en inglés. Hace falta saber el formato exacto de getColorized para escribir el patrón.
-        en = "<::Const.UI.getColorized(Imported, ::Const.UI.Color.NegativeValue)> from <::Const.UI.getColorized(_item.getOriginSettlement().getName(), ::Const.UI.Color.getHighlightLightBackgroundValue())> to <::Const.UI.getColorized(_item.getTradeHistorySettlements()[0].getName(), ::Const.UI.Color.getHighlightLightBackgroundValue())>"
-        es = ""
+        en = "<c1:tag>Imported[/color] from <c2:tag><from:str>[/color] to <c3:tag><to:str>[/color]"
+        es = "<c1>Importado[/color] de <c2><from>[/color] a <c3><to>[/color]"
     }
     // context: tooltip_events.o.tactical_helper_addHintsToTooltip.tooltip.push().text.::Const.UI.getColorized()
     {
-        // text = ::Const.UI.getColorized("Imported", ::Const.UI.Color.NegativeValue) + " from " + ::Const.UI.getColorized(_item.getOriginSettlement().getName(), ::Const.UI.Color.getHighlightLightBackgroundValue()) + " to " + ::Const.UI.getColorized(arr[arr.len() - 1], ::Const.UI.Color.getHighlightLightBackgroundValue()) + " via " + ::Const.LegendMod.Language.arrayToText(slice, "and"),
+        // getColorized da BBCode, no HTML; la lista de via la traduce el enganche de arrayToText (legends.nut).
         mode = "pattern"
-        // DUDA: igual que el anterior, «Imported» va dentro de getColorized y no sé escribir su etiqueta [color] en el en. Además, la lista que sigue a «via» la une arrayToText con «and» en inglés, y una captura str dejaría ese «and» sin traducir.
-        en = "<::Const.UI.getColorized(Imported, ::Const.UI.Color.NegativeValue)> from <::Const.UI.getColorized(_item.getOriginSettlement().getName(), ::Const.UI.Color.getHighlightLightBackgroundValue())> to <::Const.UI.getColorized(arr[arr.len()-1], ::Const.UI.Color.getHighlightLightBackgroundValue())> via <::Const.LegendMod.Language.arrayToText(slice, and)>"
-        es = ""
+        en = "<c1:tag>Imported[/color] from <c2:tag><from:str>[/color] to <c3:tag><to:str>[/color] via <via:str>"
+        es = "<c1>Importado[/color] de <c2><from>[/color] a <c3><to>[/color] pasando por <via>"
     }
     // context: tooltip_events.o.tactical_helper_addHintsToTooltip.tooltip.push().text
     {
@@ -54471,8 +54622,15 @@ local pairs = [
     {
         // L[2] = L[2] + " [color=%positive%]" + bm + "%[/color] Barter";
         mode = "pattern"
-        en = "<prev:str> [color=%positive%]<bm:int>%[/color] Barter"
-        es = "<prev> [color=%positive%]<bm>%[/color] Regateo"
+        en = "<prev:str> [color=%positive%]<bm:val>[/color] Barter"
+        es = "<prev> [color=%positive%]<bm>[/color] Regateo"
+    }
+    // context: tooltip_events.o.general_queryUIElementTooltipData.ret.push().text
+    {
+        // text = "[color=%negative%]" + bro[0] + "[/color] " + bro[1] + " (" + bro[2] + ")", con bro[2] acabado en la cola de Barter
+        mode = "pattern"
+        en = "[color=%negative%]<cost:int>[/color] <prev:str> [color=%positive%]<bm:val>[/color] Barter)"
+        es = "[color=%negative%]<cost>[/color] <prev> [color=%positive%]<bm>[/color] Regateo)"
     }
     // en = "Crowns"
     // en base_es
@@ -54499,8 +54657,8 @@ local pairs = [
     {
         // text = "[color=%positive%]+" + barterMult + "[/color]% Barter Multiplier"
         mode = "pattern"
-        en = "[color=%positive%]+<barterMult:int>[/color]% Barter Multiplier"
-        es = "[color=%positive%]+<barterMult>[/color]% de multiplicador de Regateo"
+        en = "[color=%positive%]+<barterMult:val>[/color]% Barter Multiplier"
+        es = "[color=%positive%]+<barterMult>%[/color] de multiplicador de Regateo"
     }
     // en = "Hiring Fee"
     // en base_es
@@ -54579,6 +54737,13 @@ local pairs = [
     {
         en = "\nTool efficiency when repairing damaged items may be increased by recruiting specialized backgrounds. Tool efficiency is capped at [color=%negative%]50%[/color]."
         es = "\nLa eficiencia de las herramientas al reparar objetos dañados puede aumentar si reclutas gente con trasfondos especializados. La eficiencia de las herramientas tiene un límite de [color=%negative%]50%[/color]."
+    }
+    // context: tooltip_events.o.general_queryUIElementTooltipData.desc (assets.Supplies)
+    {
+        // las cuatro piezas de arriba llegan unidas en un solo desc
+        mode = "pattern"
+        en = "<desc:str>\nItems can be repaired while camping or out in the open. However, in that case, only one item can be repaired at a time per bro.\nYou can carry [color=%positive%]<max:int>[/color] units at most.\nTool efficiency when repairing damaged items may be increased by recruiting specialized backgrounds. Tool efficiency is capped at [color=%negative%]50%[/color]."
+        es = "<desc:t>\nLos objetos pueden repararse en el campamento o a la intemperie. Sin embargo, en ese caso, cada hermano solo puede reparar un objeto a la vez.\nPuedes llevar como máximo [color=%positive%]<max>[/color] unidades.\nLa eficiencia de las herramientas al reparar objetos dañados puede aumentar si reclutas gente con trasfondos especializados. La eficiencia de las herramientas tiene un límite de [color=%negative%]50%[/color]."
     }
     // context: tooltip_events.o.general_queryUIElementTooltipData.ret.push().text
     {
@@ -54659,36 +54824,23 @@ local pairs = [
     {
         // desc = desc + ("\n\nHealing up all your fighters will take between [color=%positive%]" + heal.DaysMin + "[/color] and [color=%positive%]" + heal.DaysMax + "[/color] days and requires between ");
         mode = "pattern"
-        en = "<desc:str>\n\nHealing up all your fighters will take between [color=%positive%]<daysmin:int>[/color] and [color=%positive%]<daysmax:int>[/color] days and requires between "
-        es = "<desc>\n\nCurar a todos tus combatientes llevará entre [color=%positive%]<daysmin>[/color] y [color=%positive%]<daysmax>[/color] días y requiere entre "
-    }
-    // context: tooltip_events.o.general_queryUIElementTooltipData.desc
-    {
-        // desc = desc + (heal.MedicineMin + "[/color] and ");
-        mode = "pattern"
-        en = "<desc:str>[/color] and "
-        es = "<desc>[/color] y "
-    }
-    // context: tooltip_events.o.general_queryUIElementTooltipData.desc
-    {
-        // desc = desc + (heal.MedicineMax + "[/color] Medical Supplies.");
-        mode = "pattern"
-        en = "<desc:str>[/color] Medical Supplies."
-        es = "<desc>[/color] suministros médicos."
+        // y sigue con dos colores y cantidades hasta "[/color] Medical Supplies."; la frase entera va en una regla
+        en = "<desc:str>\n\nHealing up all your fighters will take between [color=%positive%]<daysmin:int>[/color] and [color=%positive%]<daysmax:int>[/color] days and requires between <c1:tag><mmin:int>[/color] and <c2:tag><mmax:int>[/color] Medical Supplies."
+        es = "<desc:t>\n\nCurar a todos tus combatientes llevará entre [color=%positive%]<daysmin>[/color] y [color=%positive%]<daysmax>[/color] días y requiere entre <c1><mmin>[/color] y <c2><mmax>[/color] suministros médicos."
     }
     // context: tooltip_events.o.general_queryUIElementTooltipData.desc
     {
         // desc = desc + (" You need [color=%negative%]" + meds + "[/color] units each day to maintain your supply of flesh and bones for summoning.");
         mode = "pattern"
         en = "<desc:str> You need [color=%negative%]<meds:int>[/color] units each day to maintain your supply of flesh and bones for summoning."
-        es = "<desc> Necesitas [color=%negative%]<meds>[/color] unidades al día para mantener tu provisión de carne y huesos para las invocaciones."
+        es = "<desc:t> Necesitas [color=%negative%]<meds>[/color] unidades al día para mantener tu provisión de carne y huesos para las invocaciones."
     }
     // context: tooltip_events.o.general_queryUIElementTooltipData.desc
     {
         // desc = desc + ("\n\nYou can carry " + this.World.Assets.getMaxMedicine() + " units at most.");
         mode = "pattern"
         en = "<desc:str>\n\nYou can carry <max:int> units at most."
-        es = "<desc>\n\nPuedes llevar como máximo <max> unidades."
+        es = "<desc:t>\n\nPuedes llevar como máximo <max> unidades."
     }
     // context: tooltip_events.o.general_queryUIElementTooltipData.ret.push().text
     {
@@ -54785,7 +54937,7 @@ local pairs = [
     // context: tooltip_events.o.general_queryUIElementTooltipData.text
     {
         en = "Fighters in Fighting Line"
-        es = "Combatientes en la línea de combate"
+        es = "Combatientes en la línea de batalla"
     }
     // context: tooltip_events.o.general_queryUIElementTooltipData.text
     {
@@ -55261,15 +55413,20 @@ local pairs = [
         en = "This character has leveled up. Increase their attributes and select a perk!"
         es = "Este personaje ha subido de nivel. ¡Aumenta sus atributos y selecciona una ventaja!"
     }
+    // context: tooltip_events.o.general_queryUIElementTooltipData.title
+    {
+        en = "Reserves/Fighting Status"
+        es = "Reserva o línea de batalla"
+    }
     // context: tooltip_events.o.general_queryUIElementTooltipData.text
     {
         en = "This character is currently in the fighting line. Click to toggle character into reserves status. (Hotkey 'S', 'A' and 'D' to cycle bros)"
-        es = "Este personaje está en la línea de combate. Haz clic para pasarlo a la reserva. (Teclas 'S', 'A' y 'D' para pasar de un hermano a otro)"
+        es = "Este personaje está en la línea de batalla. Haz clic para pasarlo a la reserva. (Teclas 'S', 'A' y 'D' para pasar de un hermano a otro)"
     }
     // context: tooltip_events.o.general_queryUIElementTooltipData.text
     {
         en = "This character is currently in reserves. Click to toggle character into the fighting line. While in reserves, character will eat and drink more supplies, and only participate in combat if company is under attack. (Hotkey 'S', 'A' and 'D' to cycle bros)"
-        es = "Este personaje está en la reserva. Haz clic para pasarlo a la línea de combate. Mientras esté en la reserva, el personaje consumirá más provisiones y solo participará en combate si atacan a la compañía. (Teclas 'S', 'A' y 'D' para pasar de un hermano a otro)"
+        es = "Este personaje está en la reserva. Haz clic para pasarlo a la línea de batalla. Mientras esté en la reserva, el personaje consumirá más provisiones y solo participará en combate si atacan a la compañía. (Teclas 'S', 'A' y 'D' para pasar de un hermano a otro)"
     }
     // en = "Dismiss"
     // en base_es
@@ -55455,7 +55612,7 @@ local pairs = [
         // text = "Contract Category: [color=%positive%]" + contract.getCategory() + "[/color]"
         mode = "pattern"
         en = "Contract Category: [color=%positive%]<cat:str>[/color]"
-        es = "Categoría del contrato: [color=%positive%]<cat>[/color]"
+        es = "Categoría del contrato: [color=%positive%]<cat:t>[/color]"
     }
     // en = "The terms of this contract have been negotiated. All that's left is for you to sign it."
     // en base_es
@@ -55866,7 +56023,7 @@ local pairs = [
     // context: world_screen_topbar_daytime_module.o.showMessage._primary
     {
         en = "ENCAMPED\n(PAUSED)"
-        es = "ACAMPANDO\n(EN PAUSA)"
+        es = "ACAMPANDO\n(PAUSADO)"
     }
     // FILE: mod_legends\hooks\ui\screens\world\modules\world_town_screen\town_barber_dialog_module.nut
     // context: town_barber_dialog_module.o.queryRosterInformation.result.SubTitle
@@ -55894,16 +56051,6 @@ local pairs = [
     // FILE: mod_legends\hooks\ui\screens\world\modules\world_town_screen\town_training_dialog_module.nut
     // en = "Have your men train for combat and learn from veterans"
     // en base_es
-    // context: town_training_dialog_module.o.queryRosterInformation.mercilessRegimenNameBlock
-    {
-        // mercilessRegimenNameBlock = "<div style='display: block; line-height: 18px; margin-top: -8px;'>" +
-        //         "<span style='font-size: 18px;'>Merciless Regimen</span><br>" +
-        //         "<span style='color:" + this.Const.UI.Color.PositiveValue + "; font-size: 16px;'>Current: " + this.new(::Legends.Traits.TraitDefObjects[trait.m.TraitGained].Script).getName() + "</span>" +
-        mode = "pattern"
-        // DUDA: el en lleva etiquetas HTML (<div ...>, <span ...>, <br>, </span>) con la misma sintaxis <...> que las capturas, y una de las pistas va anidada dentro de un atributo (style='color:<...>'). La validación rechaza la conversión a patrón porque no reconoce el en resultante, y no veo cómo convertirlo en un patrón válido. Propuesta de traducción: «Merciless Regimen» = «Régimen despiadado», «Current:» = «Actual:».
-        en = "<div style='display: block; line-height: 18px; margin-top: -8px;'><span style='font-size: 18px;'>Merciless Regimen</span><br><span style='color:<this.Const.UI.Color.PositiveValue>; font-size: 16px;'>Current: <this.new(::Legends.Traits.TraitDefObjects[trait.m.TraitGained].Script).getName()></span></div>"
-        es = ""
-    }
     // context: town_training_dialog_module.o.onTrainExt.::Time.scheduleEvent().::format()
     {
         // ::format("Trait [color=%s]%s[/color] gained. [color=%s]1[/color] perk point granted.", ::Const.UI.Color.PositiveEventValue, ::Legends.Traits.get(entity, traitConst).getName(), ::Const.UI.Color.PositiveEventValue)
@@ -56108,7 +56255,7 @@ local pairs = [
     // context: map.::Legends.Mod.ModSettings.addPage()
     {
         en = "Map Options"
-        es = "Opciones de mapa"
+        es = "Mapa"
     }
     // context: addNCSetting().::MSU.Class.RangeSetting()
     {
@@ -56193,7 +56340,7 @@ local pairs = [
     // context: config.::Legends.Mod.ModSettings.addPage()
     {
         en = "Campaign Options"
-        es = "Opciones de campaña"
+        es = "Campaña"
     }
     // context: addNCSetting().::MSU.Class.EnumSetting()
     {
@@ -56213,7 +56360,7 @@ local pairs = [
     // context: addNCSetting().::MSU.Class.EnumSetting()
     {
         en = "Battle Sisters"
-        es = "Battle Sisters"
+        es = "Hermanas de batalla"
     }
     // context: addNCSetting().::MSU.Class.EnumSetting()
     {
@@ -56323,7 +56470,7 @@ local pairs = [
     // context: tooltip.addElement().::MSU.Class.BooleanSetting()
     {
         en = "Expanded Armor Layer Tooltips"
-        es = "Descripciones de capas ampliadas"
+        es = "Descripciones de capas de armadura ampliadas"
     }
     // context: tooltip.addElement().::MSU.Class.BooleanSetting()
     {
@@ -56675,6 +56822,12 @@ local pairs = [
     {
         en = "Preset Slot "
         es = "Ranura de preajuste "
+    }
+    {
+        // @(_data) "Preset Slot " + (_data.index + 1)
+        mode = "pattern"
+        en = "Preset Slot <n:int>"
+        es = "Ranura de preajuste <n>"
     }
     // context: ::Legends.getEncounterUIData.::Legends.Mod.Tooltips.setTooltips().CampingPresets.PresetNameDialog.ButtonDelete.::MSU.Class.BasicTooltip()
     {
@@ -57410,7 +57563,7 @@ local pairs = [
     // context: legend_bandit_army_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_45.png[/img]Not long after you enter %Home%, your employer summons you. This time you enter meeting that is more war council than a social visit — All local militia captains are present, discussing the defensive capabilities of %Home% and outlying farms in case of a siege. With the rumours you gathered and information from other agents, the location of the bandit army is finally determined to be not far from here.\n\n You begin to wonder if this job is worth the risk, but so close to the end and with the threat confirmed, there is no turning back now. Your hesitance clearly terrifies your employer greatly, they assure you that coin promised will be paid to the last crown if threat is eliminated. Food, wine and company are offered if you succeed; anything to convince you to stop the bandits or die trying, or at least to slow it down.\n Preparing to move out from %Home% you notice unusual mobilization of the locals."
-        es = "[img]gfx/ui/events/event_45.png[/img]Poco después de entrar en %Home%, tu patrón te manda llamar. Esta vez entras en una reunión que es más consejo de guerra que visita de cortesía: están presentes todos los capitanes de la milicia local, discutiendo la capacidad defensiva de %Home% y de las granjas de los alrededores en caso de asedio. Con los rumores que reuniste y la información de otros agentes, por fin se determina que el ejército de bandidos no está lejos de aquí.\n\n Empiezas a preguntarte si este trabajo vale el riesgo, pero tan cerca del final y con la amenaza confirmada, ya no hay vuelta atrás. Tu vacilación aterra visiblemente a tu patrón, que te asegura que la moneda prometida se pagará hasta la última corona si se elimina la amenaza. Te ofrecen comida, vino y compañía si tienes éxito; lo que sea con tal de convencerte de detener a los bandidos o morir en el intento, o al menos de frenarlos.\n Mientras te preparas para partir de %Home%, notas una movilización inusual de los lugareños."
+        es = "[img]gfx/ui/events/event_45.png[/img]Poco después de entrar en %Home%, quien te contrató te manda llamar. Esta vez entras en una reunión que es más consejo de guerra que visita de cortesía: están presentes todos los capitanes de la milicia local, discutiendo la capacidad defensiva de %Home% y de las granjas de los alrededores en caso de asedio. Con los rumores que reuniste y la información de otros agentes, por fin se determina que el ejército de bandidos no está lejos de aquí.\n\n Empiezas a preguntarte si este trabajo vale el riesgo, pero tan cerca del final y con la amenaza confirmada, ya no hay vuelta atrás. Tu vacilación aterra visiblemente a quien te contrató, que te asegura que la moneda prometida se pagará hasta la última corona si se elimina la amenaza. Te ofrecen comida, vino y compañía si tienes éxito; lo que sea con tal de convencerte de detener a los bandidos o morir en el intento, o al menos de frenarlos.\n Mientras te preparas para partir de %Home%, notas una movilización inusual de los lugareños."
     }
     // context: legend_bandit_army_contract.createScreens.m.Screens.push().Options.Text
     {
@@ -58084,7 +58237,7 @@ local pairs = [
     // context: legend_camp_unhold_bondage_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_31.png[/img]{The barbarian host rises at the sight of the bound and caged unhold. Several of the more hardened warriors approach and measure the specimen brought before them; %employer% is amongst those brave enough to examine the beast up close, ducking and bobbing around the metal prison to confirm its quality. A sudden explosion of stunted rage sends some of the men reeling, earning laughs from the seasoned barbarians. Though the beast strains against its restraints, it quickly abandons its efforts, resigning against the bars with a huff. %SPEECH_ON%Good work, [i]leigumaðr[/i]. I can see its spirit is still strong, despite your violent work. You have earned your price.%SPEECH_OFF%%employer% gestures to a chest containing your agreed upon pay: a collection of barbarian trinkets and artefacts of the north that should sell for a crown or two somewhere warmer. Looking back at the unhold, you can almost sense sadness and mourning in its vacant eyes, but it closes them with a sigh before you can be sure. | The company leads the unhold with a system of prodding spears, ropes, and nets towards the barbarian employer. Their unfamiliarity with such a task is apparent, and for once you're relieved to see barbarian trappers and handlers approach to take over wrangling the beast. The handover is thankfully bloodless, most eyes fixed on the placated yet ever-hazardous unhold mere feet beside you. %employer% however remains fixed on you, a stoic yet visibly satisfied nod tells you the job is done, and they gesture a thrall to hand over your reward. \nInside an odd smelling sack of unknown leather, you count your prize of an assortment of barbarian treasures and baubles. You add the valuables to inventory, making sure to discretely discard the strange sack they came with. | Not long after the unhold is subdued and an uneasy peace restored to the battlefield, a swarm of barbarians descend upon the scene of your beast wrangling. For a moment you expect the whole situation was a trap to weaken and lure the company to their doom, but %employer% quickly sweeps those fears away with a broad smile and open arms.%SPEECH_ON%Good fight, outsider. My tribe enjoyed your performance, as did I...%SPEECH_OFF%They produce a fine box of carved bone and gold, and begin counting out your reward- a collection of barbarian curios as stand-in for crowns. Brushing away what you can only explain as an ivory phallus from the box, the barbarian leader quickly passes you your reward, perhaps hoping to distract from the growing confusion. Beside, you feel the burning hatred of the captured unhold sear your flesh as their life is traded for trinkets.%SPEECH_ON%Now. Begone, and hope my new trophy does not recognise you when we next meet.%SPEECH_OFF%}"
-        es = "[img]gfx/ui/events/event_31.png[/img]{La horda bárbara se levanta al ver al trol atado y enjaulado. Varios de los guerreros más curtidos se acercan y evalúan el ejemplar que les han traído; %employer% está entre quienes tienen el valor de examinar a la bestia de cerca, agachándose y moviéndose alrededor de la prisión de metal para comprobar su calidad. Un repentino estallido de rabia contenida hace retroceder a algunos de los hombres, lo que arranca carcajadas a los bárbaros veteranos. Aunque la bestia forcejea contra sus ataduras, abandona pronto sus esfuerzos y se deja caer resignada contra los barrotes con un resoplido. %SPEECH_ON%Buen trabajo, [i]leigumaðr[/i]. Veo que su espíritu sigue fuerte, a pesar de tu violento trabajo. Te has ganado tu precio.%SPEECH_OFF%%employer% señala un cofre que contiene la paga acordada: una colección de baratijas bárbaras y artefactos del norte que deberían venderse por una o dos coronas en algún lugar más cálido. Al volver a mirar al trol, casi puedes percibir tristeza y duelo en sus ojos vacíos, pero los cierra con un suspiro antes de que puedas estar seguro. | La compañía conduce al trol hacia el patrón bárbaro con un sistema de lanzas para azuzarlo, cuerdas y redes. Su falta de costumbre en semejante tarea es evidente y, por una vez, te alivia ver que se acercan tramperos y cuidadores bárbaros para encargarse de manejar a la bestia. Por suerte, la entrega es incruenta; la mayoría de las miradas están fijas en el trol, apaciguado pero siempre peligroso, a escasos pasos de ti. %employer%, en cambio, sigue con la mirada fija en ti; un asentimiento estoico pero visiblemente satisfecho te dice que el trabajo está hecho, y hace un gesto a un siervo para que te entregue la recompensa. \nDentro de un saco de cuero desconocido y de olor extraño, cuentas tu premio: un surtido de tesoros y chucherías bárbaras. Añades los objetos de valor al inventario, asegurándote de deshacerte discretamente del extraño saco en que venían. | Poco después de someter al trol y de que una paz incómoda vuelva al campo de batalla, un enjambre de bárbaros desciende sobre el escenario de tu doma. Por un momento crees que todo ha sido una trampa para debilitar a la compañía y arrastrarla a su perdición, pero %employer% disipa enseguida esos temores con una amplia sonrisa y los brazos abiertos.%SPEECH_ON%Buena pelea, forastero. Mi tribu disfrutó de tu actuación, igual que yo...%SPEECH_OFF%Saca una fina caja de hueso tallado y oro y empieza a contar tu recompensa: una colección de curiosidades bárbaras a falta de coronas. Tras apartar de la caja lo que solo puedes describir como un falo de marfil, el líder bárbaro te pasa rápidamente la recompensa, quizá con la esperanza de distraer de la creciente confusión. A tu lado, sientes cómo el odio ardiente del trol capturado te abrasa la carne mientras cambian su vida por baratijas.%SPEECH_ON%Y ahora, lárgate, y reza para que mi nuevo trofeo no te reconozca la próxima vez que nos veamos.%SPEECH_OFF%}"
+        es = "[img]gfx/ui/events/event_31.png[/img]{La horda bárbara se levanta al ver al trol atado y enjaulado. Varios de los guerreros más curtidos se acercan y evalúan el ejemplar que les han traído; %employer% está entre quienes tienen el valor de examinar a la bestia de cerca, agachándose y moviéndose alrededor de la prisión de metal para comprobar su calidad. Un repentino estallido de rabia contenida hace retroceder a algunos de los hombres, lo que arranca carcajadas a los bárbaros veteranos. Aunque la bestia forcejea contra sus ataduras, abandona pronto sus esfuerzos y se deja caer resignada contra los barrotes con un resoplido. %SPEECH_ON%Buen trabajo, [i]leigumaðr[/i]. Veo que su espíritu sigue fuerte, a pesar de tu violento trabajo. Te has ganado tu precio.%SPEECH_OFF%%employer% señala un cofre que contiene la paga acordada: una colección de baratijas bárbaras y artefactos del norte que deberían venderse por una o dos coronas en algún lugar más cálido. Al volver a mirar al trol, casi puedes percibir tristeza y duelo en sus ojos vacíos, pero los cierra con un suspiro antes de que puedas estar seguro. | La compañía conduce al trol hacia %employer% con un sistema de lanzas para azuzarlo, cuerdas y redes. Su falta de costumbre en semejante tarea es evidente y, por una vez, te alivia ver que se acercan tramperos y cuidadores bárbaros para encargarse de manejar a la bestia. Por suerte, la entrega es incruenta; la mayoría de las miradas están fijas en el trol, apaciguado pero siempre peligroso, a escasos pasos de ti. %employer%, en cambio, sigue con la mirada fija en ti; un asentimiento estoico pero visiblemente satisfecho te dice que el trabajo está hecho, y hace un gesto a un siervo para que te entregue la recompensa. \nDentro de un saco de cuero desconocido y de olor extraño, cuentas tu premio: un surtido de tesoros y chucherías bárbaras. Añades los objetos de valor al inventario, asegurándote de deshacerte discretamente del extraño saco en que venían. | Poco después de someter al trol y de que una paz incómoda vuelva al campo de batalla, un enjambre de bárbaros desciende sobre el escenario de tu doma. Por un momento crees que todo ha sido una trampa para debilitar a la compañía y arrastrarla a su perdición, pero %employer% disipa enseguida esos temores con una amplia sonrisa y los brazos abiertos.%SPEECH_ON%Buena pelea, forastero. Mi tribu disfrutó de tu actuación, igual que yo...%SPEECH_OFF%Saca una fina caja de hueso tallado y oro y empieza a contar tu recompensa: una colección de curiosidades bárbaras a falta de coronas. Tras apartar de la caja lo que solo puedes describir como un falo de marfil, %employer% te pasa rápidamente la recompensa, quizá con la esperanza de distraer de la creciente confusión. A tu lado, sientes cómo el odio ardiente del trol capturado te abrasa la carne mientras cambian su vida por baratijas.%SPEECH_ON%Y ahora, lárgate, y reza para que mi nuevo trofeo no te reconozca la próxima vez que nos veamos.%SPEECH_OFF%}"
     }
     // context: legend_camp_unhold_bondage_contract.createScreens.m.Screens.push().Text
     {
@@ -59452,7 +59605,7 @@ local pairs = [
     // context: legend_preemptive_beasts_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_22.png[/img]{Your mercenaries take the fools' disguises lest your employer, %employer%, not believe your doings here. | Your employer might not believe what was going on here. You order everyone to collect the disguises. %randombrother%, stripping a mask off one of the slain, starts to wonder.%SPEECH_ON%So they dressed themselves up as the sort of thing to attract us, and now they're all dead. I hope they didn't think it a game.%SPEECH_OFF%%randombrother2% cleans %their_randombrother2% blade in the folds of one of the disguises.%SPEECH_ON%Well, if it were a game, I sure enjoyed playing it.%SPEECH_OFF% | %randombrother% nods at the slain.%SPEECH_ON%It's mighty likely that %employer% wouldn't believe a group of brigands were dressing up as beasts.%SPEECH_OFF%Agreeing, you order everyone to begin collecting the masks and disguises as evidence. | You'll need evidence to show your employer, %employer%. These weren't the beasts you were looking for, but they do carry a lot of disguises that your employer would probably be most interested in seeing. One of your mercenaries wonders aloud.%SPEECH_ON%So what were they playing dress up for?%SPEECH_OFF%%randombrother2% folds some of the disguises over %their_randombrother2% arm as he goes about collecting them.%SPEECH_ON%Suicide by ceremony? Their dance and fun got our attention, after all.%SPEECH_OFF%%They_randombrother2% picks up one of the disguises only for the head of the dead to get slinged up with it. The sellsword laughs as %they_randombrother2% kicks the dead man's head out.}"
-        es = "[img]gfx/ui/events/event_22.png[/img]{Tus mercenarios se llevan los disfraces de esos idiotas, no sea que tu empleador, %employer%, no se crea lo que ha pasado aquí. | Puede que tu empleador no se crea lo que ha pasado aquí. Ordenas a todos que recojan los disfraces. %randombrother%, mientras le arranca la máscara a uno de los muertos, se pone a cavilar.%SPEECH_ON%Así que se disfrazaron de lo que fuera que nos atrajera, y ahora están todos muertos. Espero que no se lo tomaran como un juego.%SPEECH_OFF%%randombrother2% limpia su hoja en los pliegues de uno de los disfraces.%SPEECH_ON%Bueno, si era un juego, a mí sí que me ha gustado jugarlo.%SPEECH_OFF% | %randombrother% señala a los muertos con la cabeza.%SPEECH_ON%Es muy probable que %employer% no se crea que unos bandidos se disfrazaban de bestias.%SPEECH_OFF%Le das la razón y ordenas a todos que empiecen a recoger las máscaras y los disfraces como prueba. | Necesitarás pruebas para enseñarle a tu empleador, %employer%. Estas no eran las bestias que buscabas, pero llevan un montón de disfraces que seguramente a tu empleador le interesará mucho ver. Uno de tus mercenarios se pregunta en voz alta:%SPEECH_ON%¿Y para qué jugaban a disfrazarse?%SPEECH_OFF%%randombrother2% va doblando algunos de los disfraces sobre el brazo mientras los recoge.%SPEECH_ON%¿Suicidio ceremonial? Al fin y al cabo, sus bailes y su jolgorio nos llamaron la atención.%SPEECH_OFF%Levanta uno de los disfraces y, con él, sale colgando la cabeza del muerto. Suelta una carcajada mientras se la quita de una patada.}"
+        es = "[img]gfx/ui/events/event_22.png[/img]{Tus mercenarios se llevan los disfraces de esos idiotas, no sea que %employer%, quien te contrató, no se crea lo que ha pasado aquí. | Puede que quien te contrató no se crea lo que ha pasado aquí. Ordenas a todos que recojan los disfraces. %randombrother%, mientras le arranca la máscara a uno de los muertos, se pone a cavilar.%SPEECH_ON%Así que se disfrazaron de lo que fuera que nos atrajera, y ahora están todos muertos. Espero que no se lo tomaran como un juego.%SPEECH_OFF%%randombrother2% limpia su hoja en los pliegues de uno de los disfraces.%SPEECH_ON%Bueno, si era un juego, a mí sí que me ha gustado jugarlo.%SPEECH_OFF% | %randombrother% señala a los muertos con la cabeza.%SPEECH_ON%Es muy probable que %employer% no se crea que unos bandidos se disfrazaban de bestias.%SPEECH_OFF%Le das la razón y ordenas a todos que empiecen a recoger las máscaras y los disfraces como prueba. | Necesitarás pruebas para enseñarle a tu empleador, %employer%. Estas no eran las bestias que buscabas, pero llevan un montón de disfraces que seguramente a tu empleador le interesará mucho ver. Uno de tus mercenarios se pregunta en voz alta:%SPEECH_ON%¿Y para qué jugaban a disfrazarse?%SPEECH_OFF%%randombrother2% va doblando algunos de los disfraces sobre el brazo mientras los recoge.%SPEECH_ON%¿Suicidio ceremonial? Al fin y al cabo, sus bailes y su jolgorio nos llamaron la atención.%SPEECH_OFF%Levanta uno de los disfraces y, con él, sale colgando la cabeza del muerto. Suelta una carcajada mientras se la quita de una patada.}"
     }
     // en = "[img]gfx/ui/events/event_123.png[/img]\x7bYou order your men to scour the field and collect as many parts as they can of the spiders. A few make the mistake of touching the hairs on the webknechts' legs, leaving them scratching quickly forming rashes. | The spiders litter the field like they would the corner of an attic. In death, they look like giant gloves stiffly clasped together. You have the men wrench the legs apart to harvest evidence of the bestial remains. | The mercenaries scour the field, hacking and sawing at the spiders' stiff remains to take back to %employer%. Even in death, the webknechts are ghastly, looking only a moment away from flinching back to life and wrapping themselves around the nearest breathing animal. Their horrifying features and surreal size does not stop some sellswords from dancing around, clicking their tongues and hissing, and all around preying upon the phobias of those less inclined to go near the damned things.\x7d"
     // en base_es
@@ -59759,7 +59912,7 @@ local pairs = [
     // context: legend_spider_abductions_contract.createScreens.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_110.png[/img]{You give the signal and %companyname% start to grimly advance towards the trapped victims, wading through webs and eggs along the way, some getting caught in the webs themselves and jumping over the larger clusters of eggs.\n\n The whole nest reverberates like a silent lyre string. At first this is just your movement, but then something further away pulls a different chord. Once, twice then thrice the smaller, faster notes are plucked. With mounting dread you feel the notes being played from a different direction and quickly draw your weapon. They are all around you now, in silent communion with one another as an excited, frantic song is played.\n\n They know you are here.}"
-        es = "[img]gfx/ui/events/event_110.png[/img]{Das la señal y la %companyname% empieza a avanzar con gravedad hacia las víctimas atrapadas, abriéndose paso entre telarañas y huevos; algunos se quedan enredados en las telas y otros saltan por encima de los racimos de huevos más grandes.\n\n Todo el nido vibra como la cuerda muda de una lira. Al principio es solo tu propio movimiento, pero luego algo más lejos pulsa un acorde distinto. Una, dos y hasta tres veces se pulsan notas más breves y rápidas. Con un pavor creciente, sientes que las notas llegan desde otra dirección y desenvainas el arma a toda prisa. Ahora están a tu alrededor, en silenciosa comunión entre ellas, mientras suena una canción excitada y frenética.\n\n Saben que estás aquí.}"
+        es = "[img]gfx/ui/events/event_110.png[/img]{Das la señal y la %companyname% empieza a avanzar con gravedad hacia las víctimas atrapadas, abriéndose paso entre telarañas y huevos; algunos se quedan enredados en las telas y otros saltan por encima de los racimos de huevos más grandes.\n\n Todo el nido vibra como la cuerda muda de una lira. Al principio es solo tu propio movimiento, pero luego algo más lejos pulsa un acorde distinto. Una, dos y hasta tres veces se pulsan notas más breves y rápidas. Con un pavor creciente, sientes que las notas llegan desde otra dirección y desenvainas el arma a toda prisa. Ahora están a tu alrededor, en silenciosa comunión entre ellas, mientras suena una canción exaltada y frenética.\n\n Saben que estás aquí.}"
     }
     // context: legend_spider_abductions_contract.createScreens.m.Screens.push().Options.Text
     {
@@ -59938,6 +60091,15 @@ local pairs = [
     {
         en = "Here are some tips for you:"
         es = "Aquí tienes algunos consejos:"
+    }
+    // context: _legend_tips_encounter.createScreens.text
+    {
+        // El encuentro pega los 283 consejos con "\n- ". La regla genérica del base
+        // "<ret:str>\n- <name:line>" pela un renglón por llamada y reentra: 283 niveles
+        // de translate() desbordan la pila del juego. Esta parte la lista de una vez.
+        split = "\n- "
+        en = "Here are some tips for you:\n- <tips:str>"
+        es = "Aquí tienes algunos consejos:\n- <tips>"
     }
     // context: _legend_tips_encounter.createScreens.m.Screens.extend().Options.Text
     {
@@ -61337,7 +61499,7 @@ local pairs = [
         // Rosetta ve la suma entera. La lista de trasfondos la une arrayToText con "and" y sale en ingles.
         mode = "pattern"
         en = "Hunting parties can only be sent out while encamped. The more people assigned, the more food foraged or hunted. Returns different food items depending on the current biome. Some items require the knowledge of specific backgrounds to be obtainable.\n\nAssigning mercenaries with [color=<c1:str>]Expert Hunter[/color] backgrounds increases the [color=<c2:str>]Hunt Tier[/color] (based on each character's level), which allows the hunting party to hunt rarer or more dangerous prey.\nAssigning mercenaries with the [color=<c3:str>]Meal Preparation[/color] perk gives a chance to yield [color=<c4:str>]improved versions[/color] of the obtained food items.\nAssigning mercenaries with the [color=<c5:str>]Alcohol Brewing[/color] perk gives a chance to yield [color=<c6:str>]wine and beer[/color]. \n\nUpgrading this tent grants the following effects:\n- Increases foraging / hunting speed by [color=<c7:str>]15%[/color]\n- Unlock the [color=<c8:str>]Hunting Mode[/color] button, allowing you to customize the priorities of the hunting party\n- Increases the chance to obtain bonus loot, improved food items, and brewed items\n- Assigning [color=<c9:str>]Expert Hunter[/color] backgrounds increases the [color=<c10:str>]Hunt Tier[/color] at a much greater rate\n- [color=<c11:str>]Expert Hunters[/color] have a chance to obtain [color=<c12:str>]bonus loot[/color] from hunting, such as trophies or crafting ingredients\n- Assigning [color=<c13:str>]cooking backgrounds[/color] slightly increases the chance to yield [color=<c14:str>]improved versions[/color] of obtained food items even without the Meal Preparation perk\n- Assigning [color=<c15:str>]cooking backgrounds[/color] slightly increases the chance to yield [color=<c16:str>]brewed items[/color] even without the Alcohol Brewing perk\n- [color=<c17:str>]Brewers[/color] can also produce [color=<c18:str>]mead[/color]\n- Advanced food can also be made using spices in the [color=<c19:str>]crafting[/color] tent\n\nExpert Hunter backgrounds: <bgs:str>\n\nCooking backgrounds: Miller / Baker, Butcher / Fishmonger, Servant, Cannibal"
-        es = "Las partidas de caza solo pueden salir mientras se está acampado. Cuantas más personas asignadas, más comida se recolecta o se caza. Proporciona distintos alimentos según el bioma actual. Algunos solo se pueden obtener con los conocimientos de trasfondos concretos.\n\nAsignar mercenarios con trasfondos de [color=<c1>]Cazador experto[/color] aumenta el [color=<c2>]Nivel de caza[/color] (según el nivel de cada personaje), lo que permite a la partida de caza perseguir presas más raras o peligrosas.\nAsignar mercenarios con la ventaja [color=<c3>]Preparación de comidas[/color] da la posibilidad de obtener [color=<c4>]versiones mejoradas[/color] de los alimentos conseguidos.\nAsignar mercenarios con la ventaja [color=<c5>]Destilación de alcohol[/color] da la posibilidad de obtener [color=<c6>]vino y cerveza[/color]. \n\nMejorar esta tienda otorga los siguientes efectos:\n- Aumenta un [color=<c7>]15%[/color] la velocidad de recolección / caza\n- Desbloquea el botón [color=<c8>]Modo de caza[/color], que permite ajustar las prioridades de la partida de caza\n- Aumenta la probabilidad de obtener botín extra, alimentos mejorados y bebidas elaboradas\n- Asignar trasfondos de [color=<c9>]Cazador experto[/color] aumenta el [color=<c10>]Nivel de caza[/color] mucho más deprisa\n- Los [color=<c11>]Cazadores expertos[/color] pueden obtener [color=<c12>]botín extra[/color] al cazar, como trofeos o ingredientes de fabricación\n- Asignar [color=<c13>]trasfondos de cocina[/color] aumenta un poco la probabilidad de obtener [color=<c14>]versiones mejoradas[/color] de los alimentos conseguidos, incluso sin la ventaja Preparación de comidas\n- Asignar [color=<c15>]trasfondos de cocina[/color] aumenta un poco la probabilidad de obtener [color=<c16>]bebidas elaboradas[/color], incluso sin la ventaja Destilación de alcohol\n- Los [color=<c17>]Destiladores[/color] también pueden producir [color=<c18>]hidromiel[/color]\n- Con especias también se puede preparar comida avanzada en la tienda de [color=<c19>]fabricación[/color]\n\nTrasfondos de Cazador experto: <bgs:t>\n\nTrasfondos de cocina: Molinero / Panadero, Carnicero / Pescadero, Sirviente, Caníbal"
+        es = "Las partidas de caza solo pueden salir mientras se está acampado. Cuantas más personas asignadas, más comida se recolecta o se caza. Proporciona distintos alimentos según el bioma actual. Algunos solo se pueden obtener con los conocimientos de trasfondos concretos.\n\nAsignar mercenarios con trasfondos de [color=<c1>]Cazador experto[/color] aumenta el [color=<c2>]Nivel de caza[/color] (según el nivel de cada personaje), lo que permite a la partida de caza perseguir presas más raras o peligrosas.\nAsignar mercenarios con la ventaja [color=<c3>]Preparación de comidas[/color] da la posibilidad de obtener [color=<c4>]versiones mejoradas[/color] de los alimentos conseguidos.\nAsignar mercenarios con la ventaja [color=<c5>]Destilación de alcohol[/color] da la posibilidad de obtener [color=<c6>]vino y cerveza[/color]. \n\nMejorar esta tienda otorga los siguientes efectos:\n- Aumenta un [color=<c7>]15%[/color] la velocidad de recolección / caza\n- Desbloquea el botón [color=<c8>]Modo de caza[/color], que permite ajustar las prioridades de la partida de caza\n- Aumenta la probabilidad de obtener botín extra, alimentos mejorados y bebidas elaboradas\n- Asignar trasfondos de [color=<c9>]Cazador experto[/color] aumenta el [color=<c10>]Nivel de caza[/color] mucho más deprisa\n- Los [color=<c11>]Cazadores expertos[/color] pueden obtener [color=<c12>]botín extra[/color] al cazar, como trofeos o ingredientes de fabricación\n- Asignar [color=<c13>]trasfondos de cocina[/color] aumenta un poco la probabilidad de obtener [color=<c14>]versiones mejoradas[/color] de los alimentos conseguidos, incluso sin la ventaja Preparación de comidas\n- Asignar [color=<c15>]trasfondos de cocina[/color] aumenta un poco la probabilidad de obtener [color=<c16>]bebidas elaboradas[/color], incluso sin la ventaja Destilación de alcohol\n- Los [color=<c17>]Destiladores[/color] también pueden producir [color=<c18>]hidromiel[/color]\n- Con especias también se puede preparar comida avanzada en la tienda de [color=<c19>]fabricación[/color]\n\nTrasfondos de Cazador experto: <bgs>\n\nTrasfondos de cocina: Molinero / Panadero, Carnicero / Pescadero, Sirviente, Caníbal"
     }
     // context: hunter_building.getDescription
     {
@@ -61371,13 +61533,7 @@ local pairs = [
         // desc += "Expert Hunter backgrounds: " + ::Const.LegendMod.Language.arrayToText(::Const.HuntingLoot.ExpertHunterBackgrounds.map(function(bg){return ::Const.HuntingLoot.RequiredBackgrounds[bg]}),"and",false) + "\n\n";
         mode = "pattern"
         en = "Expert Hunter backgrounds: <list:str>\n\n"
-        es = "Trasfondos de Cazador experto: <list:t>\n\n"
-    }
-    // context: hunter_building.getDescription
-    {
-        // Lista fija de ::Const.HuntingLoot.ExpertHunterBackgrounds unida con arrayToText; la traducen <list:t> y <bgs:t>. Si Legends cambia la lista, hay que rehacer este par.
-        en = "Barbarian, Beast Slayer, Hunter, Cannibal, Ranger Commander, Muladí, Master Archer, Ranger, Nomad, Poacher, Ratcatcher and Wildman"
-        es = "Bárbaro, Cazador de Bestias, Cazador, Caníbal, Comandante guardabosques, Muladí, Maestro arquero, Guardabosques, Nómada, Cazador furtivo, Cazador de ratas y Salvaje"
+        es = "Trasfondos de Cazador experto: <list>\n\n"
     }
     // context: hunter_building.getDescription
     {
@@ -61390,6 +61546,12 @@ local pairs = [
         mode = "pattern"
         en = "Successful hunt will take approximately [color=%positive%]<hours:int>[/color] hours."
         es = "Una caza exitosa llevará unas [color=%positive%]<hours>[/color] horas."
+    }
+    // context: hunter_building.getModifierToolip.ret.text
+    {
+        // Sin nadie en la tienda, la estimación divide por cero y Squirrel pinta "inf".
+        en = "Successful hunt will take approximately [color=%positive%]inf[/color] hours."
+        es = "Sin nadie asignado a la tienda, la caza no terminará nunca."
     }
     // context: hunter_building.getResults.categories
     // en = "Food"  // clave interna de categoría de resultados, no se muestra
@@ -61406,11 +61568,10 @@ local pairs = [
     }
     // context: hunter_building.getResults.res.push().text
     {
-        // text = item.Name + " x" + item.Count + ::Const.UI.getColorized(" (from " + ::Const.LegendMod.Language.arrayToText(item.Targets, "and", false) + ")", ::Const.UI.Color.getFadeDarkBackgroundValue())
-        // DUDA: la pista está mal extraída (la segunda expresión mezcla item.Count con el literal " (from " coloreado); una sola captura dejaría "(from" en inglés y partirla en varias cambiaría el `en`. Hace falta revisar la extracción o decidir cómo tratar el literal coloreado.
+        // La lista de presas llega ya en castellano por el enganche de arrayToText (legends.nut).
         mode = "pattern"
-        en = "<item.Name> x<item.Count + ::Const.UI.getColorized( (from  + ::Const.LegendMod.Language.arrayToText(item.Targets, and, false) + ), ::Const.UI.Color.getFadeDarkBackgroundValue())>"
-        es = ""
+        en = "<name:str> x<n:int><c:tag> (from <targets:str>)[/color]"
+        es = "<name:t> x<n><c> (de <targets>)[/color]"
     }
     // context: hunter_building.getResults
     // en = "<this.m.VerboseResults[>Hunt<].Items.len()>0>"  // condición de código mal extraída, no se muestra
@@ -61462,19 +61623,21 @@ local pairs = [
     }
     // context: hunter_building.getInfo.ret.push()
     {
-        // ret.push("Current mode: <span style=\"color:" + ::Const.UI.Color.getHighlightLightBackgroundValue() + ";\">" + ::Const.HuntingLoot.HunterCampModeNameMap[this.m.Mode] + "</span>");
-        // DUDA: el runtime lee la etiqueta <span style="color:...;"> como una captura inválida, así que cualquier patrón con ella va a cuarentena. No se puede convertir sin cambio en el runtime o en el extractor.
-        mode = "pattern"
-        en = "Current mode: <span style=\"color:<::Const.UI.Color.getHighlightLightBackgroundValue()>;\"><::Const.HuntingLoot.HunterCampModeNameMap[this.m.Mode]></span>"
-        es = ""
+        en = "Current mode:"
+        es = "Modo actual:"
+    }
+    {
+        en = "Cook"
+        es = "Cocina"
+    }
+    {
+        en = "Brew"
+        es = "Destilación"
     }
     // context: hunter_building.getInfo.ret.push()
     {
-        // ret.push("Current biome: <span style=\"color:" + ::Const.UI.Color.getHighlightLightBackgroundValue() + ";\">" + ::Const.World.TerrainLocation[::World.State.getPlayer().getTile().Type] + "</span>") ;
-        // DUDA: el runtime lee la etiqueta <span style="color:...;"> como una captura inválida, así que cualquier patrón con ella va a cuarentena. No se puede convertir sin cambio en el runtime o en el extractor.
-        mode = "pattern"
-        en = "Current biome: <span style=\"color:<::Const.UI.Color.getHighlightLightBackgroundValue()>;\"><::Const.World.TerrainLocation[::World.State.getPlayer().getTile().Type]></span>"
-        es = ""
+        en = "Current biome:"
+        es = "Bioma actual:"
     }
     // context: hunter_building.getInfo.text
     {
@@ -61499,19 +61662,9 @@ local pairs = [
     }
     // context: hunter_building.getInfo.requirements.push()
     {
-        // requirements.push("<span style=\"color:%negative%; display: inline-block; padding-left: 2rem;\">Requires " + ::Const.LegendMod.Language.arrayToText(bgNames,"or",false) + "</span>");
-        // DUDA: el runtime lee la etiqueta <span style="color:%negative%; ...;"> como una captura inválida, así que el par iría a cuarentena. No se puede convertir sin cambio en el runtime o en el extractor.
         mode = "pattern"
-        en = "<span style=\"color:%negative%; display: inline-block; padding-left: 2rem;\">Requires <::Const.LegendMod.Language.arrayToText(bgNames, or, false)></span>"
-        es = ""
-    }
-    // context: hunter_building.getInfo.requirements.push()
-    {
-        // requirements.push("<span style=\"color:%negative%; padding-left: 2rem;\">Requires Hunt Tier " + target.Tier + "</span>");
-        // DUDA: el runtime lee la etiqueta <span style="color:%negative%; ...;"> como una captura inválida, así que el par iría a cuarentena. No se puede convertir sin cambio en el runtime o en el extractor.
-        mode = "pattern"
-        en = "<span style=\"color:%negative%; padding-left: 2rem;\">Requires Hunt Tier <target.Tier></span>"
-        es = ""
+        en = "Requires Hunt Tier <n:int>"
+        es = "Requiere nivel de caza <n>"
     }
     // context: hunter_building.getInfo.ret.push()
     {
@@ -69983,7 +70136,7 @@ local pairs = [
     // context: legend_enclave_vanilla_kettle_sallet_01.create.m.Name
     {
         en = "Kettle Sallet With Bevor"
-        es = "Sallet capelina con babera"
+        es = "Celada capelina con babera"
     }
     // context: legend_enclave_vanilla_kettle_sallet_01.create.m.Description
     {
@@ -69994,7 +70147,7 @@ local pairs = [
     // context: legend_enclave_vanilla_kettle_sallet_02.create.m.Name
     {
         en = "Kettle Sallet With Coif"
-        es = "Sallet capelina con cofia"
+        es = "Celada capelina con cofia"
     }
     // context: legend_enclave_vanilla_kettle_sallet_02.create.m.Description
     {
@@ -70005,7 +70158,7 @@ local pairs = [
     // context: legend_enclave_vanilla_kettle_sallet_03.create.m.Name
     {
         en = "Kettle Sallet"
-        es = "Sallet capelina"
+        es = "Celada capelina"
     }
     // context: legend_enclave_vanilla_kettle_sallet_03.create.m.Description
     {
@@ -70016,7 +70169,7 @@ local pairs = [
     // context: legend_enclave_vanilla_skullcap_01.create.m.Name
     {
         en = "Skull Cap"
-        es = "Cervellera"
+        es = "Casquete"
     }
     // context: legend_enclave_vanilla_skullcap_01.create.m.Description
     {
@@ -70793,7 +70946,7 @@ local pairs = [
     // context: legend_pauldron_named_upgrade.create.m.NameList
     {
         en = "Gilded Pauldrons"
-        es = "Hombreras doradas"
+        es = "Espaldares dorados"
     }
     // context: legend_pauldron_named_upgrade.create.m.NameList
     {
@@ -71040,7 +71193,7 @@ local pairs = [
     // context: legend_stollwurm_scales_cloak.create.m.Description
     {
         en = "A cloak made out of the scales of a Stollwurm. Not only is it a rare and impressive trophy, it also offers excellent protection against any kind of crowd control effects on top of the immunity against acid."
-        es = "Una capa hecha con las escamas de un Stollwurm. No solo es un trofeo raro e imponente, sino que además ofrece una protección excelente contra cualquier efecto de control, sumada a la inmunidad al ácido."
+        es = "Una capa hecha con las escamas de un Stollwurm. No solo es un trofeo poco común e imponente, sino que además ofrece una protección excelente contra cualquier efecto de control, sumada a la inmunidad al ácido."
     }
     // context: legend_stollwurm_scales_cloak.create.m.ArmorDescription
     {
@@ -71233,13 +71386,7 @@ local pairs = [
     // en base_es
     // FILE: scripts\items\legend_armor\legend_cloth_named.nut
     // context: legend_cloth_named.onEquip.setName()
-    {
-        // this.setName(this.getContainer().getActor().getName() + "\'s ");
-        // DUDA: el posesivo inglés antepone el nombre ("Hans's ..."); en castellano iría detrás del sustantivo ("... de Hans"), que no está en esta cadena. No veo cómo ordenarlo sin saber qué se concatena después.
-        mode = "pattern"
-        en = "<name:str>'s "
-        es = ""
-    }
+    // en = "<name:str>'s "  // prefijo: setName le pega detrás un nombre de NameList, y el nombre entero lo cubre el patrón "<bowyer:str>'s <name:str>" del base
     // FILE: scripts\items\legend_armor\legendary\legend_armor_mountain_named.nut
     // context: legend_armor_mountain_named.create.m.Description
     {
@@ -72691,6 +72838,12 @@ local pairs = [
         es = "La gruesa piel de un trol combina las mejores propiedades de la piel y de la roca: flexible, pero casi indestructible"
     }
     // FILE: scripts\items\misc\legend_scroll_item.nut
+    // context: legend_scroll_item.create.m.Name
+    {
+        // El extractor lo dejó solo como clave o ID interno, que Rosetta no toca.
+        en = "Scroll"
+        es = "Pergamino"
+    }
     // context: legend_scroll_item.::inherit().create.m.Description
     {
         en = "A freshly minted scroll. Could be a masterpiece used to train your mercenaries or gibberish that will be of interest to local scribes."
@@ -74192,6 +74345,12 @@ local pairs = [
         es = "Un látigo corto de cuero con varias colas, hecho para castigar, no para pelear"
     }
     // FILE: scripts\items\weapons\legend_chain.nut
+    // context: legend_chain.create.m.Name
+    {
+        // El extractor lo dejó solo como clave o ID interno, que Rosetta no toca.
+        en = "Chain"
+        es = "Cadena"
+    }
     // context: legend_chain.create.m.Description
     {
         en = "A length of intertwined metal links. As a weapon it's ungainly and rather unpredictable but useful to spin, strike around shield cover and pull in enemies."
@@ -74946,7 +75105,7 @@ local pairs = [
     // context: legend_random_3_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Having fled a raid, three fellows decide to forge out a new path.\n\n[color=#bcad8c]Random Backgrounds:[/color] The backgrounds are different each time you start.\n[color=#bcad8c]Random equipment:[/color] The equipment you begin with is different each time.\n[color=#bcad8c]Random perks:[/color] The abilities of your mercenaries will be different each time.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Tras huir de un saqueo, tres compañeros deciden abrirse un nuevo camino.\n\n[color=#bcad8c]Trasfondos aleatorios:[/color] Los trasfondos cambian cada vez que empiezas.\n[color=#bcad8c]Equipo aleatorio:[/color] El equipo con el que empiezas es distinto cada vez.\n[color=#bcad8c]Ventajas aleatorias:[/color] Las capacidades de tus mercenarios serán distintas cada vez.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Tras huir de un saqueo, tres compañeros deciden abrirse un nuevo camino.\n\n[color=#dda21f]Trasfondos aleatorios:[/color] Los trasfondos cambian cada vez que empiezas.\n[color=#dda21f]Equipo aleatorio:[/color] El equipo con el que empiezas es distinto cada vez.\n[color=#dda21f]Ventajas aleatorias:[/color] Las capacidades de tus mercenarios serán distintas cada vez.[/p]"
     }
     // FILE: scripts\scenarios\world\legend_random_party_scenario.nut
     // context: legend_random_party_scenario.create.m.Name
@@ -74957,7 +75116,7 @@ local pairs = [
     // context: legend_random_party_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]A wild new adventure each time, 1-6 party members randomly chosen from all backgrounds.\n\n[color=#bcad8c]Random Backgrounds:[/color] The backgrounds are different each time you start.\n[color=#bcad8c]Random equipment:[/color] The equipment you begin with is different each time.\n[color=#bcad8c]Random perks:[/color] The abilities of your mercenaries will be different each time.\n[color=#bcad8c]Random supplies:[/color] Randomly get 3 times less to 3 times more money, tools, meds and ammo.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Una aventura nueva y descabellada cada vez, con 1-6 miembros elegidos al azar entre todos los trasfondos.\n\n[color=#bcad8c]Trasfondos aleatorios:[/color] Los trasfondos cambian cada vez que empiezas.\n[color=#bcad8c]Equipo aleatorio:[/color] El equipo con el que empiezas es distinto cada vez.\n[color=#bcad8c]Ventajas aleatorias:[/color] Las capacidades de tus mercenarios serán distintas cada vez.\n[color=#bcad8c]Suministros aleatorios:[/color] Recibes al azar entre 3 veces menos y 3 veces más dinero, herramientas, medicina y munición.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]Una aventura nueva y descabellada cada vez, con 1-6 miembros elegidos al azar entre todos los trasfondos.\n\n[color=#dda21f]Trasfondos aleatorios:[/color] Los trasfondos cambian cada vez que empiezas.\n[color=#dda21f]Equipo aleatorio:[/color] El equipo con el que empiezas es distinto cada vez.\n[color=#dda21f]Ventajas aleatorias:[/color] Las capacidades de tus mercenarios serán distintas cada vez.\n[color=#dda21f]Suministros aleatorios:[/color] Recibes al azar entre 3 veces menos y 3 veces más dinero, herramientas, medicina y munición.[/p]"
     }
     // FILE: scripts\scenarios\world\legend_random_solo_scenario.nut
     // context: legend_random_solo_scenario.create.m.Name
@@ -74968,7 +75127,7 @@ local pairs = [
     // context: legend_random_solo_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Striking out on your own, who knows what the world has in store?\n\n[color=#bcad8c]Random Backgrounds:[/color] Your background will be different each time you start.\n[color=#bcad8c]Random Equipment:[/color] The equipment you begin with is different each time.\n[color=#bcad8c]Avatar:[/color] If you die, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Te lanzas a la aventura por tu cuenta: ¿quién sabe qué te depara el mundo?\n\n[color=#bcad8c]Trasfondos aleatorios:[/color] Tu trasfondo será distinto cada vez que empieces.\n[color=#bcad8c]Equipo aleatorio:[/color] El equipo con el que empiezas es distinto cada vez.\n[color=#bcad8c]Avatar:[/color] Si mueres, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Te lanzas a la aventura por tu cuenta: ¿quién sabe qué te depara el mundo?\n\n[color=#dda21f]Trasfondos aleatorios:[/color] Tu trasfondo será distinto cada vez que empieces.\n[color=#dda21f]Equipo aleatorio:[/color] El equipo con el que empiezas es distinto cada vez.\n[color=#dda21f]Avatar:[/color] Si mueres, se acaba la partida.[/p]"
     }
     // FILE: scripts\scenarios\world\legend_risen_legion_scenario.nut
     // context: legend_risen_legion_scenario.create.m.Name
@@ -74979,7 +75138,7 @@ local pairs = [
     // context: legend_risen_legion_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_73.png[/img][/p]An ancient legion risen from the dead with orders to reclaim the world.\n\n[color=#bcad8c]Dreaded:[/color] All towns will begin and stay hostile to you.\n[color=#bcad8c]Fighting Legion:[/color] Higher than average marching speed across difficult terrain, begin with 8 fighters and field up to 25.\n[color=#bcad8c]Dead Walking:[/color] You cannot hire in towns, but you may find recruits by patrolling near Mass graves, Sunken Castles and The Monolith. Ancient dead are allied to you.\n"
-        es = "[p=c][img]gfx/ui/events/event_73.png[/img][/p]Una antigua legión alzada de entre los muertos con órdenes de reconquistar el mundo.\n\n[color=#bcad8c]Temidos:[/color] Todas las ciudades te serán hostiles desde el principio y para siempre.\n[color=#bcad8c]Legión combatiente:[/color] Velocidad de marcha superior a la media en terreno difícil; empiezas con 8 combatientes y puedes desplegar hasta 25.\n[color=#bcad8c]Muertos andantes:[/color] No puedes contratar en las ciudades, pero puedes encontrar reclutas patrullando cerca de fosas comunes, castillos hundidos y el Monolito. Los antiguos muertos son tus aliados.\n"
+        es = "[p=c][img]gfx/ui/events/event_73.png[/img][/p]Una antigua legión alzada de entre los muertos con órdenes de reconquistar el mundo.\n\n[color=#dda21f]Temidos:[/color] Todas las ciudades te serán hostiles desde el principio y para siempre.\n[color=#dda21f]Legión combatiente:[/color] Velocidad de marcha superior a la media en terreno difícil; empiezas con 8 combatientes y puedes desplegar hasta 25.\n[color=#dda21f]Muertos andantes:[/color] No puedes contratar en las ciudades, pero puedes encontrar reclutas patrullando cerca de fosas comunes, castillos hundidos y el Monolito. Los antiguos muertos son tus aliados.\n"
     }
     // context: legend_risen_legion_scenario.onSpawnPlayer.n.addPlayerRelation()
     {
@@ -74990,7 +75149,7 @@ local pairs = [
     // context: legends_assassin_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_51.png[/img][/p][p] An assassin down on their luck with limited supplies. \n\n[color=#bcad8c]Dirty Deeds:[/color] You will grant the Backstabber perk to anyone who joins you. \n[color=#bcad8c]Underworld:[/color] You have a small chance of finding other Assassins for hire. Outlaws are 50% cheaper to hire and maintain, all other backgrounds are the same cost.\n[color=#bcad8c]Avatar:[/color] Begin alone. If you die, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_51.png[/img][/p][p] Te dedicas al asesinato, pero la suerte te ha dado la espalda y apenas tienes provisiones. \n\n[color=#bcad8c]Trabajos sucios:[/color] Concederás la ventaja Oportunista a todo el que se te una. \n[color=#bcad8c]Bajos fondos:[/color] Tienes una pequeña probabilidad de encontrar otros Asesinos a sueldo. Los Proscritos cuestan un 50% menos de contratar y mantener; los demás trasfondos cuestan lo mismo.\n[color=#bcad8c]Avatar:[/color] Empiezas en solitario. Si mueres, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_51.png[/img][/p][p] Te dedicas al asesinato, pero la suerte te ha dado la espalda y apenas tienes provisiones. \n\n[color=#dda21f]Trabajos sucios:[/color] Concederás la ventaja Oportunista a todo el que se te una. \n[color=#dda21f]Bajos fondos:[/color] Tienes una pequeña probabilidad de encontrar otros Asesinos a sueldo. Los Proscritos cuestan un 50% menos de contratar y mantener; los demás trasfondos cuestan lo mismo.\n[color=#dda21f]Avatar:[/color] Empiezas en solitario. Si mueres, se acaba la partida.[/p]"
     }
     // context: legends_assassin_scenario.onHiredByScenario._bro.worsenMood()
     {
@@ -75011,7 +75170,7 @@ local pairs = [
     // context: legends_beggar_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_70.png[/img][/p][p]A lowly unskilled beggar, you witnessed something in an alley and now a noble house wants you dead. This is a challenge run with a very weak starting character. \n\n[color=#bcad8c]Knows Too Much:[/color] All noble houses hate you.\n[color=#bcad8c]Begin alone Avatar[/color]: If the beggar dies, the campaign ends.\n[color=#bcad8c]Dirty Peasant[/color]: You can only hire lowerborn backgrounds.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_70.png[/img][/p][p]Vives de pedir limosna, sin oficio alguno; viste algo en un callejón y ahora una casa noble quiere tu cabeza. Es una partida de desafío con un personaje inicial muy débil. \n\n[color=#bcad8c]Sabe demasiado:[/color] Todas las casas nobles te odian.\n[color=#bcad8c]Avatar en solitario[/color]: Si tu personaje muere, la campaña termina.\n[color=#bcad8c]Mugre campesina[/color]: Solo puedes contratar trasfondos de baja cuna.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_70.png[/img][/p][p]Vives de pedir limosna, sin oficio alguno; viste algo en un callejón y ahora una casa noble quiere tu cabeza. Es una partida de desafío con un personaje inicial muy débil. \n\n[color=#dda21f]Sabe demasiado:[/color] Todas las casas nobles te odian.\n[color=#dda21f]Avatar en solitario[/color]: Si tu personaje muere, la campaña termina.\n[color=#dda21f]Mugre campesina[/color]: Solo puedes contratar trasfondos de baja cuna.[/p]"
     }
     // context: legends_beggar_scenario.onSpawnAssets.bro.worsenMood()
     {
@@ -75032,7 +75191,7 @@ local pairs = [
     // context: legends_berserker_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]You are a barbarian berserker, driven by an unbound rage. Watching your family be slaughtered drove you into a self-destructive frenzy of violence and revenge.\n\n[color=#bcad8c]Berserker Madness:[/color] Unlock powerful abilities that allow you to fight naked and bare-handed.\n[color=#bcad8c]Infectious Rage:[/color] Only the insane, violent or desperate will join you. You will grant the Berserk perk to anyone who joins you in battle. You have a tiny chance of finding other berserkers for hire.\n[color=#bcad8c]Avatar:[/color] Begin alone. If you die, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Eres berserker, de sangre bárbara, y te mueve una furia sin límites. Ver cómo masacraban a tu familia te arrojó a un frenesí autodestructivo de violencia y venganza.\n\n[color=#bcad8c]Locura berserker:[/color] Desbloqueas poderosas capacidades que te permiten luchar a pecho descubierto y a mano limpia.\n[color=#bcad8c]Furia contagiosa:[/color] Solo se te unirán dementes, violentos o desesperados. Concederás la ventaja Berserker a todo el que se te una en batalla. Tienes una probabilidad ínfima de encontrar otros berserkers a sueldo.\n[color=#bcad8c]Avatar:[/color] Empiezas en solitario. Si mueres, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_139.png[/img][/p][p]Eres un berserker bárbaro movido por una furia sin límites. Ver cómo masacraban a tu familia te arrojó a un frenesí autodestructivo de violencia y venganza.\n\n[color=#dda21f]Locura berserker:[/color] Desbloqueas capacidades poderosas para luchar desnudo y a mano limpia.\n[color=#dda21f]Furia contagiosa:[/color] Solo se te unirán dementes, violentos o desesperados. Todo el que se te una en batalla obtiene la ventaja Berserker. Hay una probabilidad ínfima de encontrar otros berserkers a sueldo.\n[color=#dda21f]Avatar:[/color] Empiezas en solitario. Si mueres, se acaba la partida.[/p]"
     }
     // context: legends_berserker_scenario.onSpawnPlayer.houses[i].Faction.addPlayerRelation()
     {
@@ -75058,7 +75217,7 @@ local pairs = [
     // context: legends_crusader_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Sent on a holy quest to rid the world of undead, you walk a righteous path. \n\n[color=#bcad8c]Pure of Heart:[/color] You cannot recruit outlaw backgrounds, while pious recruits and squires cost less.\n[color=#bcad8c]Strict Sermons:[/color] You will grant the Fortified Mind perk to any pious background that joins you. Find Pilgrims to aid you on your journey.\n[color=#bcad8c]Avatar:[/color] If your crusader dies, the campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Te enviaron en una misión sagrada para librar al mundo de los no muertos, y recorres una senda justa. \n\n[color=#bcad8c]Pureza de corazón:[/color] No puedes reclutar trasfondos proscritos, y los reclutas piadosos y los escuderos cuestan menos.\n[color=#bcad8c]Sermones estrictos:[/color] Concederás la ventaja Mentalidad fuerte a cualquier trasfondo piadoso que se te una. Encuentra Peregrinos que te ayuden en tu viaje.\n[color=#bcad8c]Avatar:[/color] Si mueres, la campaña termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Te enviaron en una misión sagrada para librar al mundo de los no muertos, y recorres una senda justa. \n\n[color=#dda21f]Pureza de corazón:[/color] No puedes reclutar trasfondos proscritos, y los reclutas piadosos y los escuderos cuestan menos.\n[color=#dda21f]Sermones estrictos:[/color] Concederás la ventaja Mentalidad fuerte a cualquier trasfondo piadoso que se te una. Encuentra Peregrinos que te ayuden en tu viaje.\n[color=#dda21f]Avatar:[/color] Si mueres, la campaña termina.[/p]"
     }
     // context: legends_crusader_scenario.onHiredByScenario._bro.improveMood()
     {
@@ -75119,7 +75278,7 @@ local pairs = [
     // context: legends_druid_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_25.png[/img][/p][p]The druids of the wild woods are wary of humans, prefering the company of beasts \n\n[color=#bcad8c]Wildform:[/color] Can take on the form of beasts in battle.\n[color=#bcad8c]Solitary:[/color] The Druid hates nearly all humans except wildlings, herbalists and practictioners of wild magic \n[color=#bcad8c]Avatar:[/color] If your druid dies, its game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_25.png[/img][/p][p]Los druidas de los bosques salvajes recelan de los humanos y prefieren la compañía de las bestias \n\n[color=#bcad8c]Forma salvaje:[/color] Puede adoptar forma de bestia en combate.\n[color=#bcad8c]Vida solitaria:[/color] Odia a casi todos los humanos, excepto a los salvajes, los herbolarios y quienes practican la magia salvaje \n[color=#bcad8c]Avatar:[/color] Si tu druida muere, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_25.png[/img][/p][p]Los druidas de los bosques salvajes recelan de los humanos y prefieren la compañía de las bestias \n\n[color=#dda21f]Forma salvaje:[/color] Puede adoptar forma de bestia en combate.\n[color=#dda21f]Vida solitaria:[/color] Odia a casi todos los humanos, excepto a los salvajes, los herbolarios y quienes practican la magia salvaje \n[color=#dda21f]Avatar:[/color] Si tu druida muere, se acaba la partida.[/p]"
     }
     // context: legends_druid_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75130,7 +75289,7 @@ local pairs = [
     // context: legends_escaped_slaves_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_166.png[/img][/p][p]You lead a group of slaves trying to escape their cruel fate, but you cannot run forever. Can you keep your band intact and start a new life as mercenaries?\n\n[color=#bcad8c]Escapees:[/color] Start with five escaped Indebted and find others held in captivity.\n[color=#bcad8c]Brothers in Chains:[/color] Your newfound family of Indebted are stronger together and gain skill based on how many you field.\n[color=#bcad8c]Downtrodden and Discarded:[/color] Good relations with any faction decay 15% faster and bad relations recover 15% slower.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_166.png[/img][/p][p]Lideras a un grupo de esclavos que intenta escapar de su cruel destino, pero no puedes huir para siempre. ¿Lograrás mantener unida a tu banda y empezar una nueva vida como mercenarios?\n\n[color=#bcad8c]Fugitivos:[/color] Empiezas con cinco Endeudados fugados y encuentras a otros en cautiverio.\n[color=#bcad8c]Hermanos encadenados:[/color] Tu nueva familia de Endeudados es más fuerte unida y gana destreza según cuántos despliegues.\n[color=#bcad8c]Oprimidos y desechados:[/color] Las buenas relaciones con cualquier facción se deterioran un 15% más rápido y las malas se recuperan un 15% más despacio.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_166.png[/img][/p][p]Lideras a un grupo de esclavos que intenta escapar de su cruel destino, pero no puedes huir para siempre. ¿Lograrás mantener unida a tu banda y empezar una nueva vida como mercenarios?\n\n[color=#dda21f]Fugitivos:[/color] Empiezas con cinco Endeudados fugados y encuentras a otros en cautiverio.\n[color=#dda21f]Hermanos encadenados:[/color] Tu nueva familia de Endeudados es más fuerte unida y gana destreza según cuántos despliegues.\n[color=#dda21f]Oprimidos y desechados:[/color] Las buenas relaciones con cualquier facción se deterioran un 15% más rápido y las malas se recuperan un 15% más despacio.[/p]"
     }
     // context: legends_escaped_slaves_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75229,7 +75388,7 @@ local pairs = [
     // context: legends_free_company_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_65.png[/img][/p][p]No desperate circumstances or fates to be rewritten. Take control of a successful mercenary company on the brink of becoming famous. \n[color=#bcad8c]Professional Army:[/color] Start with a roster of 5 experienced fighters in a well rounded company.\n[color=#bcad8c]Almost famous:[/color] Start with a larger roster size and professional renown.\n[color=#bcad8c]Soldiers of fortune:[/color] Can recruit everyone except unique backgrounds from other origins. No effect on trade, recruiting or upkeep.\n[color=#bcad8c]Recommended for newer players fresh from vanilla or who want a jump start.[/color][/p]"
-        es = "[p=c][img]gfx/ui/events/event_65.png[/img][/p][p]Ni circunstancias desesperadas ni destinos que reescribir. Toma el mando de una compañía mercenaria de éxito a punto de hacerse famosa. \n[color=#bcad8c]Ejército profesional:[/color] Empiezas con 5 combatientes con experiencia en una compañía equilibrada.\n[color=#bcad8c]Casi famosos:[/color] Empiezas con una plantilla más amplia y renombre de nivel profesional.\n[color=#bcad8c]Soldados de fortuna:[/color] Puedes reclutar a cualquiera salvo los trasfondos únicos de otros orígenes. Sin efecto en el comercio, el reclutamiento ni la manutención.\n[color=#bcad8c]Recomendado para quienes llegan del juego base o quieren empezar con ventaja.[/color][/p]"
+        es = "[p=c][img]gfx/ui/events/event_65.png[/img][/p][p]Ni circunstancias desesperadas ni destinos que reescribir. Toma el mando de una compañía mercenaria de éxito a punto de hacerse famosa. \n[color=#dda21f]Ejército profesional:[/color] Empiezas con 5 combatientes con experiencia en una compañía equilibrada.\n[color=#dda21f]Casi famosos:[/color] Empiezas con una plantilla más amplia y renombre de nivel profesional.\n[color=#dda21f]Soldados de fortuna:[/color] Puedes reclutar a cualquiera salvo los trasfondos únicos de otros orígenes. Sin efecto en el comercio, el reclutamiento ni la manutención.\n[color=#dda21f]Recomendado para quienes llegan del juego base o quieren empezar con ventaja.[/color][/p]"
     }
     // FILE: scripts\scenarios\world\legends_horse_scenario.nut
     // context: legends_horse_scenario.create.m.Name
@@ -75240,13 +75399,13 @@ local pairs = [
     // context: legends_horse_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]You are running a small trading caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there are rumors of even worse things out there.\n\n[color=#bcad8c]Caravan:[/color] Start with a trader and a donkey.\n[color=#bcad8c]Trader:[/color] Get 10% better prices for buying and selling.\n[color=#bcad8c]Not a Warrior:[/color] Start with no renown, and gain renown at half the normal rate.\n[color=#bcad8c]Bribery:[/color] Pay off human enemies instead of fighting them[/p]"
-        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Diriges una pequeña caravana comercial y tienes casi todas tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pielesverdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n[color=#bcad8c]Caravana:[/color] Empiezas con tu comerciante y un burro.\n[color=#bcad8c]Comerciante:[/color] Obtienes precios un 10% mejores al comprar y vender.\n[color=#bcad8c]Sin madera de guerrero:[/color] Empiezas sin renombre y ganas renombre a la mitad del ritmo normal.\n[color=#bcad8c]Soborno:[/color] Paga a los enemigos humanos en lugar de combatirlos[/p]"
+        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Diriges una pequeña caravana comercial y tienes casi todas tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pielesverdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n[color=#dda21f]Caravana:[/color] Empiezas con tu comerciante y un burro.\n[color=#dda21f]Comerciante:[/color] Obtienes precios un 10% mejores al comprar y vender.\n[color=#dda21f]Sin madera de guerrero:[/color] Empiezas sin renombre y ganas renombre a la mitad del ritmo normal.\n[color=#dda21f]Soborno:[/color] Paga a los enemigos humanos en lugar de combatirlos[/p]"
     }
     // FILE: scripts\scenarios\world\legends_inquisition_scenario.nut
     // context: legends_inquisition_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_40.png[/img][/p]There is a great evil in the world, the undead walk the earth and cultists hide in every town. The holy must purge the filth.\n\n[color=#bcad8c]Endless Dead:[/color] Begins with the Undead Crisis already underway, and it can repeat \n\n[color=#bcad8c]Righteous Cause:[/color] Can't recruit outlaw backgrounds but more holy backgrounds available to hire\n[color=#bcad8c]Penitence:[/color] Anyone you hire gains the Mind over Body perk.\n"
-        es = "[p=c][img]gfx/ui/events/event_40.png[/img][/p]Hay un gran mal en el mundo: los no muertos caminan sobre la tierra y hay cultistas escondidos en cada pueblo. Los santos deben purgar la inmundicia.\n\n[color=#bcad8c]Muertos sin fin:[/color] Empieza con la crisis de los no muertos ya en marcha, y puede repetirse \n\n[color=#bcad8c]Causa justa:[/color] No puedes reclutar trasfondos de forajido, pero hay más trasfondos sagrados disponibles para contratar\n[color=#bcad8c]Penitencia:[/color] Todo el que contrates obtiene la ventaja Mente sobre cuerpo.\n"
+        es = "[p=c][img]gfx/ui/events/event_40.png[/img][/p]Hay un gran mal en el mundo: los no muertos caminan sobre la tierra y hay cultistas escondidos en cada pueblo. Los santos deben purgar la inmundicia.\n\n[color=#dda21f]Muertos sin fin:[/color] Empieza con la crisis de los no muertos ya en marcha, y puede repetirse \n\n[color=#dda21f]Causa justa:[/color] No puedes reclutar trasfondos de forajido, pero hay más trasfondos sagrados disponibles para contratar\n[color=#dda21f]Penitencia:[/color] Todo el que contrates obtiene la ventaja Mente sobre cuerpo.\n"
     }
     // context: legends_inquisition_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75277,7 +75436,7 @@ local pairs = [
     // context: legends_mage_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_120.png[/img][/p][p]You have always been different from those around you. By training your spirit, you discovered that you could concentrate the magic that normally only exists as a whisper in the background. Bring together those who would support you and make good use of your power.\n\n[color=#bcad8c]Sage:[/color] Educated people want to work for you, the uneducated fear you.\n[color=#bcad8c]Teacher[/color] Anyone you fight with gains the Student perk.\n[color=#bcad8c]Avatar:[/color] If your mage dies, the campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_120.png[/img][/p][p]Siempre te has diferenciado de quienes te rodean. Al entrenar tu espíritu, descubriste que podías concentrar la magia que normalmente solo existe como un susurro de fondo. Reúne a quienes estén dispuestos a apoyarte y haz buen uso de tu poder.\n\n[color=#bcad8c]Sabiduría:[/color] La gente instruida quiere trabajar para ti; la que no lo es te teme.\n[color=#bcad8c]Mentor[/color] Todo el que luche contigo obtiene la ventaja Estudiante.\n[color=#bcad8c]Avatar:[/color] Si tu personaje muere, la campaña termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_120.png[/img][/p][p]Siempre te has diferenciado de quienes te rodean. Al entrenar tu espíritu, descubriste que podías concentrar la magia que normalmente solo existe como un susurro de fondo. Reúne a quienes estén dispuestos a apoyarte y haz buen uso de tu poder.\n\n[color=#dda21f]Sabiduría:[/color] La gente instruida quiere trabajar para ti; la que no lo es te teme.\n[color=#dda21f]Mentor[/color] Todo el que luche contigo obtiene la ventaja Estudiante.\n[color=#dda21f]Avatar:[/color] Si tu personaje muere, la campaña termina.[/p]"
     }
     // context: legends_mage_scenario.onHiredByScenario._bro.improveMood()
     {
@@ -75318,7 +75477,7 @@ local pairs = [
     // context: legends_necro_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] Death is no barrier, others flee from its yawning abyss, but we embrace the other side. \n\n[color=#bcad8c]Dark arts:[/color] Start with three apprentice necromancers, each with their own strengths and weaknesses. Killed fighters in your employ have a chance to survive as undead.\n[color=#bcad8c]Gruesome harvest:[/color] Collect human corpses to fashion new minions, maintain them with medical supplies.\n[color=#bcad8c]Blood magic:[/color] Cultists and other macabre backgrounds will flock to join you and cost 25% less to maintain. Cannot hire pious backgrounds. Everyone else costs 50% more to upkeep.\n[color=#bcad8c]Avatars:[/color] If all three necromancers die, the spell is broken and the story ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] La muerte no es ninguna barrera; otros huyen de su abismo insondable, pero nosotros abrazamos el otro lado. \n\n[color=#bcad8c]Artes oscuras:[/color] Empiezas con tres aprendices de nigromante, cada uno con sus propias virtudes y defectos. Los combatientes a tu servicio que mueran tienen una probabilidad de sobrevivir como no muertos.\n[color=#bcad8c]Cosecha macabra:[/color] Recoge cadáveres humanos para fabricar nuevos esbirros y mantenlos con medicina.\n[color=#bcad8c]Magia de sangre:[/color] Los cultistas y otros trasfondos macabros acudirán en masa a unirse a ti y su mantenimiento costará un 25% menos. No puedes contratar trasfondos piadosos. El mantenimiento de todos los demás cuesta un 50% más.\n[color=#bcad8c]Avatares:[/color] Si los tres nigromantes mueren, el hechizo se rompe y la historia termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] La muerte no es ninguna barrera; otros huyen de su abismo insondable, pero nosotros abrazamos el otro lado. \n\n[color=#dda21f]Artes oscuras:[/color] Empiezas con tres aprendices de nigromante, cada uno con sus propias virtudes y defectos. Los combatientes a tu servicio que mueran tienen una probabilidad de sobrevivir como no muertos.\n[color=#dda21f]Cosecha macabra:[/color] Recoge cadáveres humanos para fabricar nuevos esbirros y mantenlos con medicina.\n[color=#dda21f]Magia de sangre:[/color] Los cultistas y otros trasfondos macabros acudirán en masa a unirse a ti y su mantenimiento costará un 25% menos. No puedes contratar trasfondos piadosos. El mantenimiento de todos los demás cuesta un 50% más.\n[color=#dda21f]Avatares:[/color] Si los tres nigromantes mueren, el hechizo se rompe y la historia termina.[/p]"
     }
     // context: legends_necro_scenario.onSpawnAssets.bros[3].getBackground().m.RawDescription
     {
@@ -75354,7 +75513,7 @@ local pairs = [
     // context: legends_noble_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_96.png[/img][/p][p] You are a noble on the run from your house with your retainers. \n\n[color=#bcad8c]Usurper:[/color] Can unlock noble contracts from the start.\n[color=#bcad8c]Highborn:[/color] Nobles will cost 25% less, lowborns will cost 50% more, can't hire outlaws\n[color=#bcad8c]Trained leader:[/color] Your studies at the academy gave tactical skills, everyone begins with Tactical Maneuvers and future hires have Tactical Maneuvers as well.\n[color=#bcad8c]Avatar:[/color] if your character dies, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_96.png[/img][/p][p] Perteneces a la nobleza y huyes de tu casa junto a tus vasallos. \n\n[color=#bcad8c]Usurpación:[/color] Puedes desbloquear contratos de nobles desde el principio.\n[color=#bcad8c]De alta cuna:[/color] Los nobles costarán un 25% menos y los de baja cuna un 50% más; no puedes contratar forajidos\n[color=#bcad8c]Formación de mando:[/color] Tus estudios en la academia te dieron conocimientos tácticos: todos empiezan con la ventaja Maniobras tácticas, y los futuros reclutas también lo tendrán.\n[color=#bcad8c]Avatar:[/color] si tu personaje muere, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_96.png[/img][/p][p] Perteneces a la nobleza y huyes de tu casa junto a tus vasallos. \n\n[color=#dda21f]Usurpación:[/color] Puedes desbloquear contratos de nobles desde el principio.\n[color=#dda21f]De alta cuna:[/color] Los nobles costarán un 25% menos y los de baja cuna un 50% más; no puedes contratar forajidos\n[color=#dda21f]Formación de mando:[/color] Tus estudios en la academia te dieron conocimientos tácticos: todos empiezan con la ventaja Maniobras tácticas, y los futuros reclutas también lo tendrán.\n[color=#dda21f]Avatar:[/color] si tu personaje muere, se acaba la partida.[/p]"
     }
     // context: legends_noble_scenario.onSpawnAssets.bros[1].getBackground().m.RawDescription
     {
@@ -75405,7 +75564,7 @@ local pairs = [
     // context: legends_nomad_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_170.png[/img][/p][p]Displaced from your land, take control of 4 nomads and a conscript hunted in the desert. \n[color=#bcad8c]Hunted:[/color] Start in the desert away from civilisation. City States are hostile and will always decline in favour with you while Northern Nobles will have a cold relationship with you but will not decline. The more nomads in your party the stronger this effect will be.\n[color=#bcad8c]Nomadic:[/color] Vision radius is increased by 30% on the world map. Settlements may contain Nomads and Bladedancers displaced from their lands willing to fight for you. Nomads, Muladis and Bladedancers cost 25% less to hire and upkeep.\n[color=#bcad8c]The Path of the Interloper:[/color] Nomads and Muladis gain the 'Wind Reader' perk when recruited. Bladedancers gain the 'Dodge' perk. Other Nomads are friendly to you.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_170.png[/img][/p][p]Lejos de la tierra que te arrebataron, toma el mando de 4 nómadas y un recluta perseguidos en el desierto. \n[color=#bcad8c]Perseguidos:[/color] Empiezas en el desierto, lejos de la civilización. Las Ciudades Estado son hostiles y su favor hacia ti no dejará de caer, mientras que los nobles del norte mantendrán contigo una relación fría, pero no irá a peor. Cuantos más nómadas haya en tu grupo, más fuerte será este efecto.\n[color=#bcad8c]Vida nómada:[/color] El radio de visión aumenta un 30% en el mapa del mundo. En los asentamientos puede haber nómadas y Danzadores de la Espada desplazados de sus tierras y dispuestos a luchar por ti. Los nómadas, muladíes y Danzadores de la Espada cuestan un 25% menos de contratar y mantener.\n[color=#bcad8c]La senda del intruso:[/color] Los nómadas y muladíes obtienen la ventaja 'Lector del viento' al ser reclutados. Los Danzadores de la Espada obtienen la ventaja 'Esquivar'. Los demás nómadas te son amistosos.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_170.png[/img][/p][p]Lejos de la tierra que te arrebataron, toma el mando de 4 nómadas y un recluta perseguidos en el desierto. \n[color=#dda21f]Perseguidos:[/color] Empiezas en el desierto, lejos de la civilización. Las Ciudades Estado son hostiles y su favor hacia ti no dejará de caer, mientras que los nobles del norte mantendrán contigo una relación fría, pero no irá a peor. Cuantos más nómadas haya en tu grupo, más fuerte será este efecto.\n[color=#dda21f]Vida nómada:[/color] El radio de visión aumenta un 30% en el mapa del mundo. En los asentamientos puede haber nómadas y Danzadores de la Espada desplazados de sus tierras y dispuestos a luchar por ti. Los nómadas, muladíes y Danzadores de la Espada cuestan un 25% menos de contratar y mantener.\n[color=#dda21f]La senda del intruso:[/color] Los nómadas y muladíes obtienen la ventaja 'Lector del viento' al ser reclutados. Los Danzadores de la Espada obtienen la ventaja 'Esquivar'. Los demás nómadas te son amistosos.[/p]"
     }
     // context: legends_nomad_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75466,7 +75625,7 @@ local pairs = [
     // context: legends_party_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]After an unlikely meeting in a tavern, an unlikely group of strangers has formed an adventuring party. They have set out in search of both dragons and dungeons.\n\n[color=#bcad8c]A party of six overpowered adventurers, each with their own skills and increased chances of encountering hostile champions[/color][/p]"
-        es = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]Tras un encuentro improbable en una taberna, un grupo improbable de desconocidos ha formado un grupo de aventureros. Han partido en busca tanto de dragones como de mazmorras.\n\n[color=#bcad8c]Un grupo de seis aventureros desmesuradamente poderosos, cada uno con sus propias habilidades, y más probabilidades de encontrarse con campeones hostiles[/color][/p]"
+        es = "[p=c][img]gfx/ui/events/event_134.png[/img][/p][p]Tras un encuentro improbable en una taberna, un grupo improbable de desconocidos ha formado un grupo de aventureros. Han partido en busca tanto de dragones como de mazmorras.\n\n[color=#dda21f]Un grupo de seis aventureros desmesuradamente poderosos, cada uno con sus propias habilidades, y más probabilidades de encontrarse con campeones hostiles[/color][/p]"
     }
     // context: legends_party_scenario.onSpawnAssets.bro.improveMood()
     {
@@ -75507,7 +75666,7 @@ local pairs = [
     // context: legends_rangers_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_115.png[/img][/p][p]Originally hailing from far afield, the rangers are sworn to protect their ancestral woodlands. Increasing intrusions have led the rangers to these lands. \n\n[color=#bcad8c]Outdoorsmen:[/color] Not everyone is cut out for the Rangers, some love nature and are eager to join, others will need more coin to convince. Outdoor recruits gain Pathfinder.\n[color=#bcad8c]Expert Scouts:[/color] You move faster on the campaign map and can always get a scouting report for any enemies near you.\n[color=#bcad8c]Guardians:[/color] If your ranger and druid die, its game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_115.png[/img][/p][p]Originarios de tierras lejanas, los guardabosques han jurado proteger los bosques de sus ancestros. Las crecientes intrusiones los han traído a estas tierras. \n\n[color=#bcad8c]Gente de campo:[/color] No todo el mundo vale para los Guardabosques: a algunos les encanta la naturaleza y están deseando unirse, y a otros hará falta convencerlos con más monedas. Los reclutas acostumbrados a la vida al aire libre obtienen Rastreador.\n[color=#bcad8c]Batidores expertos:[/color] Te mueves más rápido en el mapa de campaña y siempre puedes obtener un informe de exploración de cualquier enemigo cercano.\n[color=#bcad8c]Guardianes:[/color] Si tu guardabosques y tu druida mueren, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_115.png[/img][/p][p]Originarios de tierras lejanas, los guardabosques han jurado proteger los bosques de sus ancestros. Las crecientes intrusiones los han traído a estas tierras. \n\n[color=#dda21f]Gente de campo:[/color] No todo el mundo vale para los Guardabosques: a algunos les encanta la naturaleza y están deseando unirse, y a otros hará falta convencerlos con más monedas. Los reclutas acostumbrados a la vida al aire libre obtienen Rastreador.\n[color=#dda21f]Batidores expertos:[/color] Te mueves más rápido en el mapa de campaña y siempre puedes obtener un informe de exploración de cualquier enemigo cercano.\n[color=#dda21f]Guardianes:[/color] Si tu guardabosques y tu druida mueren, se acaba la partida.[/p]"
     }
     // context: legends_rangers_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75553,13 +75712,13 @@ local pairs = [
     // context: legends_scaling_beggar_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_70.png[/img][/p][p]A lowly unskilled beggar, you witnessed something in an alley and now a noble house wants you dead. This is a challenge run with a very weak starting character. Can you awaken the true power of your avatar? \n\n[color=#bcad8c]Knows Too Much:[/color] All noble houses hate you.\n[color=#bcad8c]Learning in battles[/color]:  The beggar can gain stats and perks by defeating enemies.\n[color=#bcad8c]Begin alone Avatar[/color]: If the beggar dies, the campaign ends.\n[color=#bcad8c]Dirty Peasant[/color]: You can only hire lowerborn backgrounds.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_70.png[/img][/p][p]Malvives mendigando sin oficio alguno; presenciaste algo en un callejón y ahora una casa noble quiere acabar contigo. Es una partida de desafío con un personaje inicial muy débil. ¿Lograrás despertar el verdadero poder de tu avatar? \n\n[color=#bcad8c]Sabe demasiado:[/color] Todas las casas nobles te odian.\n[color=#bcad8c]Aprender en batalla[/color]:  Tu personaje puede ganar atributos y ventajas derrotando enemigos.\n[color=#bcad8c]Avatar en solitario[/color]: Si tu personaje muere, la campaña termina.\n[color=#bcad8c]Mugre campesina[/color]: Solo puedes contratar trasfondos de baja cuna.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_70.png[/img][/p][p]Malvives mendigando sin oficio alguno; presenciaste algo en un callejón y ahora una casa noble quiere acabar contigo. Es una partida de desafío con un personaje inicial muy débil. ¿Lograrás despertar el verdadero poder de tu avatar? \n\n[color=#dda21f]Sabe demasiado:[/color] Todas las casas nobles te odian.\n[color=#dda21f]Aprender en batalla[/color]:  Tu personaje puede ganar atributos y ventajas derrotando enemigos.\n[color=#dda21f]Avatar en solitario[/color]: Si tu personaje muere, la campaña termina.\n[color=#dda21f]Mugre campesina[/color]: Solo puedes contratar trasfondos de baja cuna.[/p]"
     }
     // FILE: scripts\scenarios\world\legends_seer_scenario.nut
     // context: legends_seer_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_120.png[/img][/p][p]After studying alchemy and mystic secrets for years, you have set out to confront the evils of the world \n\n[color=#bcad8c]Bookworm:[/color] Educated people want to work for you, the uneducated find you boring to be around.\n[color=#bcad8c]Teacher[/color] Anyone you fight with gains the Student perk.\n[color=#bcad8c]Avatar:[/color] If your seer dies, the campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_120.png[/img][/p][p]Tras estudiar alquimia y secretos místicos durante años, te has puesto en marcha para enfrentarte a los males del mundo \n\n[color=#bcad8c]Ratón de biblioteca:[/color] La gente instruida quiere trabajar para ti; a la que no lo es le aburre tu compañía.\n[color=#bcad8c]Mentor[/color] Todo el que luche contigo obtiene la ventaja Estudiante.\n[color=#bcad8c]Avatar:[/color] Si tu vidente muere, la campaña termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_120.png[/img][/p][p]Tras estudiar alquimia y secretos místicos durante años, te has puesto en marcha para enfrentarte a los males del mundo \n\n[color=#dda21f]Ratón de biblioteca:[/color] La gente instruida quiere trabajar para ti; a la que no lo es le aburre tu compañía.\n[color=#dda21f]Mentor[/color] Todo el que luche contigo obtiene la ventaja Estudiante.\n[color=#dda21f]Avatar:[/color] Si tu vidente muere, la campaña termina.[/p]"
     }
     // context: legends_seer_scenario.onHiredByScenario._bro.improveMood()
     {
@@ -75582,7 +75741,7 @@ local pairs = [
         // this.m.Description = "[p=c][img]gfx/ui/events/event_91.png[/img][/p][p]Born into a world dominated by kings and bishops, you have studied the old ways of the wise women. Now you lead a band of powerful women shaping their own destinies. \n\n[color=#bcad8c]Sisterhood:[/color] You can only hire women and each gains the [color=" + this.Const.UI.Color.Perk + "]Resillient[/color] perk.\n[color=#bcad8c]Threads of fate:[/color] Your chants and trances alter the minds of your allies and enemies.\n[color=#bcad8c]Rune stones:[/color] You can craft powerful items imbued with ancient runes.\n[color=#bcad8c]Avatar:[/color] If you die, it is game over.[/p]";
         mode = "pattern"
         en = "[p=c][img]gfx/ui/events/event_91.png[/img][/p][p]Born into a world dominated by kings and bishops, you have studied the old ways of the wise women. Now you lead a band of powerful women shaping their own destinies. \n\n[color=#bcad8c]Sisterhood:[/color] You can only hire women and each gains the [color=<color:str>]Resillient[/color] perk.\n[color=#bcad8c]Threads of fate:[/color] Your chants and trances alter the minds of your allies and enemies.\n[color=#bcad8c]Rune stones:[/color] You can craft powerful items imbued with ancient runes.\n[color=#bcad8c]Avatar:[/color] If you die, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_91.png[/img][/p][p]Nacida en un mundo dominado por reyes y obispos, has estudiado las viejas costumbres de las mujeres sabias. Ahora lideras a un grupo de mujeres poderosas que forjan su propio destino. \n\n[color=#bcad8c]Las Hermanas:[/color] Solo puedes contratar mujeres y cada una obtiene la ventaja [color=<color>]Resiliente[/color].\n[color=#bcad8c]Hilos del destino:[/color] Tus cánticos y trances alteran la mente de tus aliados y enemigos.\n[color=#bcad8c]Piedras rúnicas:[/color] Puedes fabricar objetos poderosos imbuidos de runas antiguas.\n[color=#bcad8c]Avatar:[/color] Si mueres, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_91.png[/img][/p][p]Nacida en un mundo dominado por reyes y obispos, has estudiado las viejas costumbres de las mujeres sabias. Ahora lideras a un grupo de mujeres poderosas que forjan su propio destino. \n\n[color=#dda21f]Las Hermanas:[/color] Solo puedes contratar mujeres y cada una obtiene la ventaja [color=<color>]Resiliente[/color].\n[color=#dda21f]Hilos del destino:[/color] Tus cánticos y trances alteran la mente de tus aliados y enemigos.\n[color=#dda21f]Piedras rúnicas:[/color] Puedes fabricar objetos poderosos imbuidos de runas antiguas.\n[color=#dda21f]Avatar:[/color] Si mueres, se acaba la partida.[/p]"
     }
     // context: legends_sisterhood_scenario.onHiredByScenario._bro.improveMood()
     {
@@ -75598,7 +75757,7 @@ local pairs = [
     // context: legends_solo_necro_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] What is there to do when you have reached the top? Perhaps more dangers and intrigue await? \n\n[color=#bcad8c]Dark sway:[/color] Start with a master necromancer, two puppets and three mortals.\n[color=#bcad8c]Not a fighter:[/color] The master necromancer gains martial perks later into their development, but gains experience faster. If the master necromancer dies, the binds are broken and the journey ends. Puppets under your control gain bonuses to health, while mortals wither away from sickness. There is a chance mortals in your party will be risen again as undead if killed.\n[color=#bcad8c]Dark company:[/color] Cultists, Gravediggers, Graverobbers and Anatomists will flock to join you and gain the 'Siphon' skill. Most other backgrounds cost 20% more to recruit and maintain. Cannot hire pious backgrounds.\n[color=#bcad8c]A terrible reputation:[/color] Recruits cannot hate the undead, relationships are poor with all factions and degrade slowly each day. Undead are passive towards you, and will steadily gain in relationship over time if attacked.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] ¿Qué queda por hacer cuando has llegado a la cima? ¿Quizá te esperan más peligros e intrigas? \n\n[color=#bcad8c]Dominio oscuro:[/color] Empiezas con tu nigromante, ya en plena maestría, dos marionetas y tres mortales.\n[color=#bcad8c]Sin madera de luchador:[/color] Tu nigromante obtiene ventajas marciales más adelante en su desarrollo, pero gana experiencia más rápido. Si tu nigromante muere, los lazos se rompen y el viaje termina. Las marionetas bajo tu control obtienen bonificaciones de salud, mientras que los mortales se consumen por la enfermedad. Hay una probabilidad de que los mortales de tu grupo se levanten de nuevo como no muertos si mueren.\n[color=#bcad8c]Compañía oscura:[/color] Los cultistas, sepultureros, ladrones de tumbas y anatomistas acudirán en masa a unirse a ti y obtendrán la habilidad 'Absorber'. La mayoría de los demás trasfondos cuestan un 20% más de reclutar y mantener. No puedes contratar trasfondos piadosos.\n[color=#bcad8c]Una reputación terrible:[/color] Los reclutas no pueden odiar a los no muertos, las relaciones con todas las facciones son malas y empeoran poco a poco cada día. Los no muertos se muestran pasivos contigo y su relación mejorará de forma constante con el tiempo si son atacados.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] ¿Qué queda por hacer cuando has llegado a la cima? ¿Quizá te esperan más peligros e intrigas? \n\n[color=#dda21f]Dominio oscuro:[/color] Empiezas con tu nigromante, ya en plena maestría, dos marionetas y tres mortales.\n[color=#dda21f]Sin madera de luchador:[/color] Tu nigromante obtiene ventajas marciales más adelante en su desarrollo, pero gana experiencia más rápido. Si tu nigromante muere, los lazos se rompen y el viaje termina. Las marionetas bajo tu control obtienen bonificaciones de salud, mientras que los mortales se consumen por la enfermedad. Hay una probabilidad de que los mortales de tu grupo se levanten de nuevo como no muertos si mueren.\n[color=#dda21f]Compañía oscura:[/color] Los cultistas, sepultureros, ladrones de tumbas y anatomistas acudirán en masa a unirse a ti y obtendrán la habilidad 'Absorber'. La mayoría de los demás trasfondos cuestan un 20% más de reclutar y mantener. No puedes contratar trasfondos piadosos.\n[color=#dda21f]Una reputación terrible:[/color] Los reclutas no pueden odiar a los no muertos, las relaciones con todas las facciones son malas y empeoran poco a poco cada día. Los no muertos se muestran pasivos contigo y su relación mejorará de forma constante con el tiempo si son atacados.[/p]"
     }
     // context: legends_solo_necro_scenario.onSpawnAssets.bros[1].getBackground().m.RawDescription
     {
@@ -75644,7 +75803,7 @@ local pairs = [
     // context: legends_troupe_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_26.png[/img][/p]The life of an artist is not an easy one, misunderstood and under appreciated. Perhaps performers will have more luck together, find an audience, travel the world, or at least stop having things thrown at you. \n\n[color=#bcad8c]Acrobatics:[/color] Anyone you hire gains the Leap ability \n[color=#bcad8c]Exposure:[/color] You will encounter more performers, and they will be cheaper to hire.\n[color=#bcad8c]Busking:[/color] You gain 10 crowns each day for each member of the troupe. Tavern rumors and drinks are cheaper."
-        es = "[p=c][img]gfx/ui/events/event_26.png[/img][/p]La vida de artista no es fácil: incomprendida e infravalorada. Quizá los intérpretes tengan más suerte juntos: encontrar público, recorrer el mundo o, al menos, dejar de recibir cosas lanzadas a la cabeza. \n\n[color=#bcad8c]Acrobacias:[/color] Todo el que contrates obtiene la habilidad Salto \n[color=#bcad8c]Notoriedad:[/color] Te encontrarás con más artistas, y serán más baratos de contratar.\n[color=#bcad8c]Actuar en la calle:[/color] Ganas 10 coronas al día por cada miembro de la compañía. Los rumores y las bebidas de la taberna son más baratos."
+        es = "[p=c][img]gfx/ui/events/event_26.png[/img][/p]La vida de artista no es fácil: incomprendida e infravalorada. Quizá los intérpretes tengan más suerte juntos: encontrar público, recorrer el mundo o, al menos, dejar de recibir cosas lanzadas a la cabeza. \n\n[color=#dda21f]Acrobacias:[/color] Todo el que contrates obtiene la habilidad Salto \n[color=#dda21f]Notoriedad:[/color] Te encontrarás con más artistas, y serán más baratos de contratar.\n[color=#dda21f]Actuar en la calle:[/color] Ganas 10 coronas al día por cada miembro de la compañía. Los rumores y las bebidas de la taberna son más baratos."
     }
     // context: legends_troupe_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -79537,7 +79696,7 @@ local pairs = [
     // context: legend_conscript_background.onBuildDescription
     {
         en = "{Like many southerners, %name% is someone who grew up in the desert, however they were destined to not stray far from the city walls. | Born into a military family, %name% took up the tradiation of service to the Vizier from an early age. | %name% family has had a foothold in this area for some time — begging, trading and eventually carving out a life for their children on the backs of their own toil. | Nomads often wander, while conscripts like %name% wanted the adventure without the walking. | %name% rarely speaks of their time under the banner, but you get the impression that they find much of the work required of them below their expectations.} {Politics are differant here in the south, and you find %name% always treats you with respect and reverence — even if you suspect it is not sincere. | %name% had a recent falling out with their commanding officer — something about a mortar, a goat and a half dozen buckets of rice. | %name% narrowly avoided execution when they were found with several bottles of wine in their tent. The life of a conscript has not appealed to them since. | %name% always carries a set of 'lucky' dice around — which have not been working correctly so far, based on how many questions they asked you about their pay. | After a greenskin ambush, %name% managed to survive by hiding in the barrel of a mortar, gently cooking themselves in the desert heat until they were found and warned for their cowardice.} {Mounting debts has caused them to seek a new path — either to escape their debtors or to earn enough coin to buy their way out of trouble. | While better trained and drilled than other militia, %name% does have some rough edges that could be rounded off — assuming you can get them away from the bottle. | A life of steel, gunpowder and searing heat is enough for anyone to want a change, and %name% intends to do just that. | %name% thought about running with some nomads for a while, but given the strength of the Vizier's army in which they saw first hand has made them reconsider and seek more legitimate employment. | While not as experienced as a professional soldier, %name% can stand alone and tall against almost any threat.}"
-        es = "{Como tanta gente del sur, %name% creció en el desierto, aunque su destino era no alejarse mucho de las murallas de la ciudad. | En el seno de una familia militar, %name% asumió desde muy temprano la tradición de servir al Visir. | La familia de %name% lleva tiempo afincada en esta zona: mendigando, comerciando y, al final, labrando una vida para sus hijos a costa de su propio esfuerzo. | Los nómadas suelen vagar, mientras que los conscriptos como %name% querían aventura sin tener que caminar. | %name% rara vez habla de su tiempo bajo el estandarte, pero te da la impresión de que gran parte del trabajo que se le exigía estaba por debajo de lo que esperaba.} {Aquí en el sur la política es distinta, y ves que %name% siempre te trata con respeto y reverencia, aunque sospeches que no es sincero. | %name% tuvo hace poco un desencuentro con su oficial al mando, algo relacionado con un mortero, una cabra y media docena de cubos de arroz. | %name% se libró por poco de la ejecución cuando le encontraron varias botellas de vino en su tienda. Desde entonces, la vida militar ha dejado de atraerle. | %name% siempre lleva encima unos dados 'de la suerte', que de momento no le están funcionando, a juzgar por cuántas preguntas te ha hecho sobre su paga. | Tras una emboscada de pieles verdes, %name% logró sobrevivir escondiéndose en el tubo de un mortero, cociéndose a fuego lento bajo el calor del desierto hasta que dieron con su escondite y recibió una amonestación por su cobardía.} {Sus crecientes deudas le han hecho buscar un nuevo camino: o bien escapar de sus acreedores, o bien ganar suficientes monedas para salir de los problemas pagando. | Aunque cuenta con mejor instrucción que otras milicias, %name% tiene algunas asperezas que podrían limarse, siempre que consigas que deje la botella. | Una vida de acero, pólvora y calor abrasador basta para que cualquiera quiera un cambio, y eso es justo lo que %name% pretende hacer. | %name% pensó en unirse durante un tiempo a unos nómadas, pero la fuerza del ejército del Visir, que vio con sus propios ojos, le hizo reconsiderarlo y buscar un empleo más legítimo. | Aunque no tiene la experiencia de un soldado profesional, %name% es capaz de mantenerse firme y sin ayuda frente a casi cualquier amenaza.}"
+        es = "{Como tanta gente del sur, %name% creció en el desierto, aunque su destino era no alejarse mucho de las murallas de la ciudad. | En el seno de una familia militar, %name% asumió desde muy temprano la tradición de servir al Visir. | La familia de %name% lleva tiempo afincada en esta zona: mendigando, comerciando y, al final, labrando una vida para sus hijos a costa de su propio esfuerzo. | Los nómadas suelen vagar, mientras que los conscriptos como %name% querían aventura sin tener que caminar. | %name% rara vez habla de su tiempo bajo el estandarte, pero te da la impresión de que gran parte del trabajo que se le exigía estaba por debajo de lo que esperaba.} {Aquí en el sur la política es distinta, y ves que %name% siempre te trata con respeto y reverencia, aunque sospeches que no lo hace con sinceridad. | %name% tuvo hace poco un desencuentro con su oficial al mando, algo relacionado con un mortero, una cabra y media docena de cubos de arroz. | %name% se libró por poco de la ejecución cuando le encontraron varias botellas de vino en su tienda. Desde entonces, la vida militar ha dejado de atraerle. | %name% siempre lleva encima unos dados 'de la suerte', que de momento no le están funcionando, a juzgar por cuántas preguntas te ha hecho sobre su paga. | Tras una emboscada de pieles verdes, %name% logró sobrevivir escondiéndose en el tubo de un mortero, cociéndose a fuego lento bajo el calor del desierto hasta que dieron con su escondite y recibió una amonestación por su cobardía.} {Sus crecientes deudas le han hecho buscar un nuevo camino: o bien escapar de sus acreedores, o bien ganar suficientes monedas para salir de los problemas pagando. | Aunque cuenta con mejor instrucción que otras milicias, %name% tiene algunas asperezas que podrían limarse, siempre que consigas que deje la botella. | Una vida de acero, pólvora y calor abrasador basta para que cualquiera quiera un cambio, y eso es justo lo que %name% pretende hacer. | %name% pensó en unirse durante un tiempo a unos nómadas, pero la fuerza del ejército del Visir, que vio con sus propios ojos, le hizo reconsiderarlo y buscar un empleo más legítimo. | Aunque no tiene la experiencia de un soldado profesional, %name% es capaz de mantenerse firme y sin ayuda frente a casi cualquier amenaza.}"
     }
     // FILE: scripts\skills\backgrounds\legend_conscript_ranged_background.nut
     // context: legend_conscript_ranged_background.create.m.Name
@@ -79568,6 +79727,12 @@ local pairs = [
         es = "Weidermante"
     }
     // FILE: scripts\skills\backgrounds\legend_dervish_background.nut
+    // context: legend_dervish_background.create.m.Name
+    {
+        // El extractor lo dejó solo como clave o ID interno, que Rosetta no toca.
+        en = "Dervish"
+        es = "Derviche"
+    }
     // context: legend_dervish_background.create.m.BackgroundDescription
     {
         en = "The dervish is a religious background that enters an almost trance-like state in combat."
@@ -80302,7 +80467,7 @@ local pairs = [
     // context: legend_legion_legionary_background.onBuildDescription
     {
         en = "{Hailing from a long line of soldiers, %name% joined the Legion eager to serve the Emperor through force of arms. | With few prospects in civilian life, %name% turned to a career in the military as a rank and file soldier. After falling into the Legion, they have dedicated their new life to perfecting their martial skills in hopes of one day finding peace. | Having signed a short military contract to pay off debts, %name% found their service extended indefinitely upon being drafted into the Legion. While they still hope to one day complete their contract, for now- duty calls. | With a choice between punishment in a penal colony, or a shorter sentence in the Legion, %name% figured the latter would be safer and better for their personal growth. Wrong on both counts and bound by eternal service, the Legion is the only place they have left. | Found amongst an old battlefield by the Legion, %name% was all too eager to link up with their new unit upon hearing their mission. With new companions and a purpose renewed, they promise a strong presence in the ranks.} {Confidently filling the ranks of the fighting Legion, this legionary is well versed in formation fighting and sustained combat- through years of training, they're well equipped to deliver death to the Emperor's foes. | Killing men is this legionary's speciality, able to maintain pike ranks with relentless discipline and lead charges in shield formation. With men needing killing more than ever, the front might just be this legionary's best chance at it. | Between battles, the endless apparatus of the Legion is maintained by its many skilled troops. This legionary in particular assists in the logistics and camp works before whetting their blade on the Emperor's foes. | When orders are given, you need strong and devoted men to obey them. This legionary follows the call of duty without question, and is invaluable in any formation, whether protecting their comrades or slaying the enemy.} {Stoic and reserved, %name% dedicates what's left of their humanity to quiet reflection, and is often seen reflecting on the minutia of their daily observations. Whether they're still lucid enough to understand or appreciate them is another matter. | %name% brings a loud and haughty personality to the ranks that betrays a deep satisfaction in their station. While simple to some, they enjoy the honest routine that comes from their position. | Thriving on a diet of violence and honourable service, %name% relishes each encounter with the enemy as a fresh opportunity to see their foes vanquished and the Empire's glory bolstered. | %name% avoids their fellow soldiers when they can, muttering nonsense about the dead not staying dead. While peculiar at times, they remain a strong and loyal soldier to the Emperor. | Between the cynical mockery of their station and cheek often bordering on insubordinate, %name% is as devoted to the Emperor as they come, and is ready to lay down their life for their mission when the time comes.}"
-        es = "{Descendiente de un largo linaje de soldados, %name% se unió a la Legión con ganas de servir al Emperador por la fuerza de las armas. | Con pocas perspectivas en la vida civil, %name% se dedicó a la carrera militar como soldado raso. Desde que acabó en la Legión, ha consagrado su nueva vida a perfeccionar sus habilidades marciales con la esperanza de encontrar algún día la paz. | Tras firmar un breve contrato militar para saldar sus deudas, %name% vio cómo su servicio se prolongaba sin fecha de fin al pasar a las filas de la Legión. Aunque aún espera cumplir algún día su contrato, por ahora, el deber llama. | Ante la elección entre cumplir condena en una colonia penal o una sentencia más corta en la Legión, %name% pensó que lo segundo sería más seguro y mejor para su crecimiento personal. Se equivocó en las dos cosas y ahora, con un servicio eterno por delante, la Legión es el único lugar que le queda. | Cuando la Legión dio con %name% en un antiguo campo de batalla, no se hizo de rogar para unirse a su nueva unidad en cuanto supo cuál era su misión. Con nuevos compañeros y un propósito renovado, promete ser una presencia sólida en las filas.} {Ocupa con aplomo su puesto en las filas de la Legión combatiente y domina la lucha en formación y el combate prolongado; tras años de entrenamiento, tiene todo lo necesario para llevar la muerte a los enemigos del Emperador. | Matar hombres es su especialidad: sabe mantener las filas de picas con una disciplina implacable y encabezar cargas en formación de escudos. Ahora que hay más hombres que matar que nunca, puede que el frente sea su mejor oportunidad para hacerlo. | Entre batalla y batalla, el interminable aparato de la Legión se mantiene gracias a sus muchas tropas hábiles. En su caso, colabora en la logística y las obras del campamento antes de afilar su hoja en los enemigos del Emperador. | Cuando se dan órdenes, hacen falta hombres fuertes y entregados que las cumplan. Sigue la llamada del deber sin rechistar y resulta inestimable en cualquier formación, ya sea protegiendo a sus camaradas o matando al enemigo.} {Con estoicismo y reserva, %name% dedica lo que le queda de humanidad a la reflexión silenciosa, y a menudo se le ve cavilando sobre las minucias de lo que observa a diario. Otra cosa es que aún conserve la lucidez suficiente para entenderlas o apreciarlas. | %name% aporta a las filas una personalidad ruidosa y altiva que delata una profunda satisfacción con su puesto. Aunque para algunos sea poca cosa, disfruta de la honrada rutina que conlleva su posición. | %name% prospera a base de violencia y servicio honorable, y saborea cada encuentro con el enemigo como una nueva oportunidad de ver a sus enemigos vencidos y la gloria del Imperio reforzada. | %name% evita a sus compañeros siempre que puede y masculla sinsentidos sobre muertos que no se quedan muertos. Aunque a veces tiene sus rarezas, sigue sirviendo al Emperador con fuerza y lealtad. | Pese a sus burlas cínicas sobre su puesto y un descaro que a menudo roza la insubordinación, nadie sirve al Emperador con más devoción que %name%, que cuando llegue el momento dará la vida por su misión.}"
+        es = "{Descendiente de un largo linaje de soldados, %name% se unió a la Legión con ganas de servir al Emperador por la fuerza de las armas. | Con pocas perspectivas en la vida civil, %name% se dedicó a la carrera militar como soldado de a pie. Desde que acabó en la Legión, ha consagrado su nueva vida a perfeccionar sus habilidades marciales con la esperanza de encontrar algún día la paz. | Tras firmar un breve contrato militar para saldar sus deudas, %name% vio cómo su servicio se prolongaba sin fecha de fin al pasar a las filas de la Legión. Aunque aún espera cumplir algún día su contrato, por ahora, el deber llama. | Ante la elección entre cumplir condena en una colonia penal o una sentencia más corta en la Legión, %name% pensó que lo segundo sería más seguro y mejor para su crecimiento personal. Se equivocó en las dos cosas y ahora, con un servicio eterno por delante, la Legión es el único lugar que le queda. | Cuando la Legión dio con %name% en un antiguo campo de batalla, no se hizo de rogar para unirse a su nueva unidad en cuanto supo cuál era su misión. Con nuevos compañeros y un propósito renovado, promete ser una presencia sólida en las filas.} {Ocupa con aplomo su puesto en las filas de la Legión combatiente y domina la lucha en formación y el combate prolongado; tras años de entrenamiento, tiene todo lo necesario para llevar la muerte a los enemigos del Emperador. | Matar hombres es su especialidad: sabe mantener las filas de picas con una disciplina implacable y encabezar cargas en formación de escudos. Ahora que hay más hombres que matar que nunca, puede que el frente sea su mejor oportunidad para hacerlo. | Entre batalla y batalla, el interminable aparato de la Legión se mantiene gracias a sus muchas tropas hábiles. En su caso, colabora en la logística y las obras del campamento antes de afilar su hoja en los enemigos del Emperador. | Cuando se dan órdenes, hacen falta hombres fuertes y entregados que las cumplan. Sigue la llamada del deber sin rechistar y resulta inestimable en cualquier formación, ya sea protegiendo a sus camaradas o matando al enemigo.} {Con estoicismo y reserva, %name% dedica lo que le queda de humanidad a la reflexión silenciosa, y a menudo se le ve cavilando sobre las minucias de lo que observa a diario. Otra cosa es que aún conserve la lucidez suficiente para entenderlas o apreciarlas. | %name% aporta a las filas una personalidad ruidosa y altiva que delata una profunda satisfacción con su puesto. Aunque para algunos sea poca cosa, disfruta de la honrada rutina que conlleva su posición. | %name% prospera a base de violencia y servicio honorable, y saborea cada encuentro con el enemigo como una nueva oportunidad de ver a sus enemigos vencidos y la gloria del Imperio reforzada. | %name% evita a sus compañeros siempre que puede y masculla sinsentidos sobre muertos que no se quedan muertos. Aunque a veces tiene sus rarezas, sigue sirviendo al Emperador con fuerza y lealtad. | Pese a sus burlas cínicas sobre su puesto y un descaro que a menudo roza la insubordinación, nadie sirve al Emperador con más devoción que %name%, que cuando llegue el momento dará la vida por su misión.}"
     }
     // FILE: scripts\skills\backgrounds\legend_legion_prefect_background.nut
     // context: legend_legion_prefect_background.create.m.Name
@@ -81038,6 +81203,12 @@ local pairs = [
         es = "{%name% pica una piedra con meticulosidad mientras miras  }"
     }
     // FILE: scripts\skills\backgrounds\legend_shieldmaiden_background.nut
+    // context: legend_shieldmaiden_background.create.m.Name
+    {
+        // El extractor lo dejó solo como ID de pantalla de dos eventos; Rosetta no toca esos ID.
+        en = "Shieldmaiden"
+        es = "Doncella escudera"
+    }
     // context: legend_shieldmaiden_background.create.m.BackgroundDescription
     {
         en = "Shieldmaidens are fierce female warriors from the northern settlements."
@@ -81212,7 +81383,7 @@ local pairs = [
     // context: legend_trader_commander_background.onBuildDescription
     {
         en = "This is your commander, when they die it is game over. {House to house, | Once a proud merchant, now | An annoyance to most, | In tough times, everyone has to scrape by somehow, hence why | Not of the trades, but instead of trade itself,} %name% is a mere peddler. {Dancing, singing, boasting or acting a king, anything to make that sale. | Pushy and unrelenting, their tenacity is admirable. | %name% will try to sell off a rusty bucket for a helm once worn by kings. This trader will sell anything. | %name% will make you crave things you never knew you wanted. No refunds, though. | %name% used to make a decent living selling {used carts | pots, pans and jars }, until fierce competition ended the business - with a broken arm.} {Self marketing is what this frail merchant does best, though few believe the pitch about having 'Great swordsmanship and resolute bravery'. | Supposedly handed out 'coupons' for 'services', whatever those are. %name% is chippy, though, and any outfit these days could use a warm body no matter its real value. | If hired, %name% promises, you'll get a special discount on a virility enhancing potion. | %name% lowers their voice and tells you they've got a great deal on rusted arrow tips, just for you. The merchant looks disappointed at your lack of interest. | This merchant knows a man who knows a man who knows a man. All three strangers potentially better at fighting than %name%. | A shame a war can't be fought with words these days. %name% would be unstoppable.}"
-        es = "Es tu comandante: si muere, se acaba la partida. {De casa en casa, | Tras años al frente de un próspero negocio, ahora | Para fastidio de casi todos, | En tiempos difíciles todo el mundo tiene que apañárselas como sea, y por eso | Sin más oficio que el comercio mismo,} %name% se dedica a la venta ambulante. {Baila, canta, fanfarronea o se hace pasar por rey: lo que haga falta para cerrar la venta. | Insistente e implacable, su tenacidad es admirable. | %name% intentará colarte un cubo oxidado como el yelmo que un día llevaron los reyes. Vende lo que sea. | %name% te hará desear cosas que ni sabías que querías. Eso sí, no se aceptan devoluciones. | %name% se ganaba la vida dignamente vendiendo {carros usados | ollas, sartenes y jarras }, hasta que la feroz competencia acabó con el negocio... y con un brazo roto.} {Con lo endeble que es, lo que mejor se le da a %name% es venderse, aunque pocos se creen eso de su 'gran destreza con la espada y su valentía inquebrantable'. | Al parecer repartía 'vales' para 'servicios', sean lo que sean. Eso sí, %name% sale barato, y hoy en día a cualquier grupo le viene bien un cuerpo caliente, valga lo que valga. | Si contratas sus servicios, promete %name%, te hará un descuento especial en una poción para la virilidad. | %name% baja la voz y te dice que tiene una oferta estupenda en puntas de flecha oxidadas, solo para ti. Tu falta de interés le arranca una mueca de decepción. | Dice conocer a un hombre que conoce a un hombre que conoce a un hombre. Seguramente cualquiera de esos tres desconocidos pelea mejor que %name%. | Lástima que hoy en día las guerras no se libren con palabras. %name% sería imparable.}"
+        es = "Es tu comandante: si muere, se acaba la partida. {De casa en casa, | Tras años al frente de un próspero negocio, ahora | Para fastidio de casi todos, | En tiempos difíciles todo el mundo tiene que apañárselas como sea, y por eso | Sin más oficio que el comercio mismo,} %name% se dedica a la venta ambulante. {Baila, canta, fanfarronea o se hace pasar por rey: lo que haga falta para cerrar la venta. | Insistente e implacable, su tenacidad es admirable. | %name% intentará colarte un cubo oxidado como el yelmo que un día llevaron los reyes. Vende lo que sea. | %name% te hará desear cosas que ni sabías que querías. Eso sí, no se aceptan devoluciones. | %name% se ganaba la vida dignamente vendiendo {carros usados | ollas, sartenes y jarras }, hasta que la feroz competencia acabó con el negocio... y con un brazo roto.} {Con lo endeble que es, lo que mejor se le da a %name% es venderse, aunque pocos se creen eso de su 'gran destreza con la espada y su valentía inquebrantable'. | Al parecer repartía 'vales' para 'servicios', sean lo que sean. Eso sí, %name% cuesta poco, y hoy en día a cualquier grupo le viene bien un cuerpo caliente, valga lo que valga. | Si contratas sus servicios, promete %name%, te hará un descuento especial en una poción para la virilidad. | %name% baja la voz y te dice que tiene una oferta estupenda en puntas de flecha oxidadas, solo para ti. Tu falta de interés le arranca una mueca de decepción. | Dice conocer a un hombre que conoce a un hombre que conoce a un hombre. Seguramente cualquiera de esos tres desconocidos pelea mejor que %name%. | Lástima que hoy en día las guerras no se libren con palabras. %name% sería imparable.}"
     }
     // FILE: scripts\skills\backgrounds\legend_transmuter_background.nut
     // context: legend_transmuter_background.create.m.Name
@@ -81275,7 +81446,7 @@ local pairs = [
     // context: legend_warlock_summoner_background.create.m.BadEnding
     {
         en = "Seeing their affliction as a permament problem that wouldn't go away, %name% split from the company shorting after your departure. They took a differant approach and looked for cures closer to the grave, allowing a puppet of their own correction to bite them. Upon taking their own life shortly after, %name% did not rise as co herant as they intended - instead as a spectator to their own body's actions. They remained trapped and decaying until a mercenary company cut them down outside of a nameless hamlet."
-        es = "Viendo su aflicción como un problema permanente que no iba a desaparecer, %name% se separó de la compañía poco después de tu marcha. Probó otro enfoque y buscó curas más cerca de la tumba: se dejó morder por una marioneta de su propia creación. Al quitarse la vida poco después, %name% no se alzó con la lucidez que pretendía, sino que se limitó a contemplar lo que hacía su propio cuerpo. Su conciencia siguió atrapada en un cuerpo que se pudría hasta que una compañía de mercenarios lo abatió a las afueras de una aldea sin nombre."
+        es = "Viendo su aflicción como un problema permanente que no iba a desaparecer, %name% se separó de la compañía poco después de tu marcha. Probó otro enfoque y buscó curas más cerca de la tumba: se dejó morder por una marioneta de su propia creación. Al quitarse la vida poco después, %name% no se alzó con la lucidez que pretendía, sino que se limitó a contemplar lo que hacía su propio cuerpo. Su conciencia siguió atrapada en un cuerpo que se pudría hasta que una compañía de mercenarios puso fin a su existencia a las afueras de una aldea sin nombre."
     }
     // context: legend_warlock_summoner_background.create.m.Titles
     {
@@ -81764,7 +81935,7 @@ local pairs = [
         // return "Bucklers work best against a single opponent. Gain [color=%positive%]+" + this.m.DefenseSingleEnemy + "[/color] Melee Defense when facing one enemy, [color=%positive%]+" + this.m.DefenseTwoEnemies + "[/color] when facing two, or [color=%positive%]+" + this.m.DefenseThreeEnemies + "[/color] when facing three, and half as much Ranged Defense.";
         mode = "pattern"
         en = "Bucklers work best against a single opponent. Gain [color=%positive%]+<one:int>[/color] Melee Defense when facing one enemy, [color=%positive%]+<two:int>[/color] when facing two, or [color=%positive%]+<three:int>[/color] when facing three, and half as much Ranged Defense."
-        es = "Los broqueles funcionan mejor contra un único oponente. Otorgan [color=%positive%]+<one>[/color] de Defensa cuerpo a cuerpo frente a un enemigo, [color=%positive%]+<two>[/color] frente a dos o [color=%positive%]+<three>[/color] frente a tres, y la mitad de Defensa a distancia."
+        es = "Las rodelas funcionan mejor contra un único oponente. Otorgan [color=%positive%]+<one>[/color] de Defensa cuerpo a cuerpo frente a un enemigo, [color=%positive%]+<two>[/color] frente a dos o [color=%positive%]+<three>[/color] frente a tres, y la mitad de Defensa a distancia."
     }
     // context: legend_buckler_effect.getTooltip.tooltip.extend().text
     {
@@ -85667,7 +85838,7 @@ local pairs = [
     // context: camp_commander_dialog_module.m.Description
     {
         en = "Select a tent to assign workers from the list. Workers sorted from best to worse."
-        es = "Selecciona una tienda para asignarle trabajadores de la lista. Los trabajadores están ordenados de mejor a peor."
+        es = "Elige una tienda y asígnale trabajadores de la lista, ordenados de mejor a peor."
     }
     // FILE: scripts\ui\screens\world\modules\camp_screen\camp_crafting_dialog_module.nut
     // context: camp_crafting_dialog_module.m.Description
@@ -85712,6 +85883,5800 @@ local pairs = [
     {
         en = "Salvage equipment and produce tools. Queue is left to right, top to bottom. Assign workers to salvage items in the commanders tent."
         es = "Desmonta equipo y produce herramientas. La cola va de izquierda a derecha y de arriba abajo. Asigna trabajadores para desmontar objetos en la tienda del comandante."
+    }
+    // Scripts que trae el zip de Legends 19.4.22 y no su fuente pública (armaduras y cascos por capas).
+    // FILE: scripts\items\legend_armor\chain\legend_armor_ancient_double_mail.nut
+    // context: legend_armor_ancient_double_mail.create.m.Description
+    {
+        en = "Heavy and rotten double-layered mail of ancient design offering decent protection, but very fatiguing to wear."
+        es = "Una cota de malla de doble capa, pesada y podrida, de diseño antiguo. Ofrece una protección decente, pero es muy fatigante de llevar."
+    }
+    // context: legend_armor_ancient_double_mail.create.m.ArmorDescription
+    {
+        en = "Includes a set of heavy and rotten double-layered mail of ancient design."
+        es = "Incluye una cota de malla de doble capa, pesada y podrida, de diseño antiguo."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_ancient_mail.nut
+    // context: legend_armor_ancient_mail.create.m.Description
+    {
+        en = "Old and crusted heavy mail of ancient design offering some protection, but fatiguing to wear."
+        es = "Una cota de malla pesada, vieja y cubierta de costras, de diseño antiguo. Ofrece algo de protección, pero es fatigante de llevar."
+    }
+    // context: legend_armor_ancient_mail.create.m.ArmorDescription
+    {
+        en = "Includes a set of old and crusted heavy mail of ancient design."
+        es = "Incluye una cota de malla pesada, vieja y cubierta de costras, de diseño antiguo."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_basic_mail.nut
+    // context: legend_armor_basic_mail.create.m.Name
+    {
+        en = "Basic Mail"
+        es = "Malla básica"
+    }
+    // context: legend_armor_basic_mail.create.m.Description
+    {
+        en = "A set of chain mail that offers good protection, but is very fatiguing to wear."
+        es = "Una cota de malla que ofrece buena protección, pero es muy fatigante de llevar."
+    }
+    // context: legend_armor_basic_mail.create.m.ArmorDescription
+    {
+        en = "Includes a set of long and heavy chain mail."
+        es = "Incluye una cota de malla larga y pesada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_hauberk.nut
+    // context: legend_armor_hauberk.create.m.Name
+    {
+        en = "Hauberk"
+        es = "Loriga"
+    }
+    // context: legend_armor_hauberk.create.m.Description
+    {
+        en = "Heavy chain mail that offers good protection, but is very fatiguing to wear."
+        es = "Una cota de malla pesada que ofrece buena protección, pero es muy fatigante de llevar."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_hauberk_full.nut
+    // context: legend_armor_hauberk_full.create.m.Name
+    {
+        en = "Full Hauberk"
+        es = "Loriga completa"
+    }
+    // context: legend_armor_hauberk_full.create.m.Description
+    {
+        en = "Long and heavy chain mail that offers good protection, but is very fatiguing to wear."
+        es = "Una cota de malla larga y pesada que ofrece buena protección, pero es muy fatigante de llevar."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_hauberk_full_named.nut
+    // context: legend_armor_hauberk_full_named.create.m.ArmorDescription
+    {
+        en = "Includes a mail hauberk made from the highest quality materials and boasting precious decorations and ornaments."
+        es = "Incluye una loriga de malla hecha con materiales de la máxima calidad y adornada con valiosas decoraciones y ornamentos."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_hauberk_full_rusted.nut
+    // context: legend_armor_hauberk_full_rusted.create.m.Name
+    {
+        en = "Rusty Full Hauberk"
+        es = "Loriga completa oxidada"
+    }
+    // context: legend_armor_hauberk_full_rusted.create.m.Description
+    {
+        en = "Long chain mail, eaten by rust and very heavy."
+        es = "Una cota de malla larga, carcomida por el óxido y muy pesada."
+    }
+    // context: legend_armor_hauberk_full_rusted.create.m.ArmorDescription
+    {
+        en = "Includes a set of long, rusty and very heavy chain mail."
+        es = "Incluye una cota de malla larga, oxidada y muy pesada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_hauberk_sleeveless.nut
+    // context: legend_armor_hauberk_sleeveless.create.m.Name
+    {
+        en = "Sleeveless Hauberk"
+        es = "Loriga sin mangas"
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_mail_shirt.nut
+    // context: legend_armor_mail_shirt.create.m.Description
+    {
+        en = "A basic mail shirt. Offers decent and affordable protection against slashing and piercing attacks."
+        es = "Una camisa de malla básica. Ofrece una protección decente y asequible contra ataques cortantes y perforantes."
+    }
+    // context: legend_armor_mail_shirt.create.m.ArmorDescription
+    {
+        en = "Includes a basic mail shirt."
+        es = "Incluye una camisa de malla básica."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_mail_shirt_simple.nut
+    // context: legend_armor_mail_shirt_simple.create.m.Name
+    {
+        en = "Simple Mail Shirt"
+        es = "Camisa de malla sencilla"
+    }
+    // context: legend_armor_mail_shirt_simple.create.m.Description
+    {
+        en = "A simple mail shirt. Offers decent and affordable protection against slashing and piercing attacks."
+        es = "Una camisa de malla sencilla. Ofrece una protección decente y asequible contra ataques cortantes y perforantes."
+    }
+    // context: legend_armor_mail_shirt_simple.create.m.ArmorDescription
+    {
+        en = "Includes a simple mail shirt."
+        es = "Incluye una camisa de malla sencilla."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_reinforced_mail.nut
+    // context: legend_armor_reinforced_mail.create.m.Description
+    {
+        en = "Long and heavy reinforced chain mail that offers good protection, but is very fatiguing to wear."
+        es = "Una cota de malla reforzada, larga y pesada, que ofrece buena protección, pero es muy fatigante de llevar."
+    }
+    // context: legend_armor_reinforced_mail.create.m.ArmorDescription
+    {
+        en = "Includes a set of long and heavy reinforced chain mail."
+        es = "Incluye una cota de malla reforzada, larga y pesada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_reinforced_mail_shirt.nut
+    // context: legend_armor_reinforced_mail_shirt.create.m.Name
+    {
+        en = "Reinforced Mail Shirt"
+        es = "Camisa de malla reforzada"
+    }
+    // context: legend_armor_reinforced_mail_shirt.create.m.Description
+    {
+        en = "A reinforced mail shirt with shoulder guards providing excellent protection against most weapons."
+        es = "Una camisa de malla reforzada con hombreras que ofrece una protección excelente contra la mayoría de las armas."
+    }
+    // context: legend_armor_reinforced_mail_shirt.create.m.ArmorDescription
+    {
+        en = "Includes a reinforced mail shirt."
+        es = "Incluye una camisa de malla reforzada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_reinforced_rotten_mail_shirt.nut
+    // context: legend_armor_reinforced_rotten_mail_shirt.create.m.Name
+    {
+        en = "Rotten Reinforced Mail Shirt"
+        es = "Camisa de malla reforzada podrida"
+    }
+    // context: legend_armor_reinforced_rotten_mail_shirt.create.m.Description
+    {
+        en = "A reinforced mail shirt that is rotting at the seams."
+        es = "Una camisa de malla reforzada que se está pudriendo por las costuras."
+    }
+    // context: legend_armor_reinforced_rotten_mail_shirt.create.m.ArmorDescription
+    {
+        en = "Includes a rotten, reinforced mail shirt."
+        es = "Incluye una camisa de malla reforzada y podrida."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_reinforced_worn_mail.nut
+    // context: legend_armor_reinforced_worn_mail.create.m.Name
+    {
+        en = "Reinforced Worn Mail"
+        es = "Malla reforzada desgastada"
+    }
+    // context: legend_armor_reinforced_worn_mail.create.m.ArmorDescription
+    {
+        en = "Includes a set of long and heavy reinforced, worn chain mail."
+        es = "Incluye una cota de malla reforzada, larga, pesada y desgastada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_reinforced_worn_mail_shirt.nut
+    // context: legend_armor_reinforced_worn_mail_shirt.create.m.Name
+    {
+        en = "Worn Reinforced Mail Shirt"
+        es = "Camisa de malla reforzada desgastada"
+    }
+    // context: legend_armor_reinforced_worn_mail_shirt.create.m.ArmorDescription
+    {
+        en = "Includes a worn reinforced mail shirt."
+        es = "Incluye una camisa de malla reforzada y desgastada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_rusty_mail_shirt.nut
+    // context: legend_armor_rusty_mail_shirt.create.m.Description
+    {
+        // corrige base: «ha pasado por tiempos mejores» calca «has seen better times»; en castellano es «ha conocido tiempos mejores» (y falta la coma ante «pero»)
+        en = "This light mail shirt has seen better times, but still grants decent protection."
+        es = "Esta camisa de malla ligera ha conocido tiempos mejores, pero aún ofrece una protección decente."
+    }
+    // context: legend_armor_rusty_mail_shirt.create.m.ArmorDescription
+    {
+        en = "Includes a rusty and patched mail shirt."
+        es = "Incluye una camisa de malla oxidada y remendada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_short_mail.nut
+    // context: legend_armor_short_mail.create.m.Name
+    {
+        en = "Short Mail"
+        es = "Malla corta"
+    }
+    // context: legend_armor_short_mail.create.m.Description
+    {
+        en = "Short chain mail that offers good protection, but is fatiguing to wear."
+        es = "Una cota de malla corta que ofrece buena protección, pero es fatigante de llevar."
+    }
+    // context: legend_armor_short_mail.create.m.ArmorDescription
+    {
+        en = "Includes a set of short chain mail."
+        es = "Incluye una cota de malla corta."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_southern_cloth.nut
+    // context: legend_armor_southern_cloth.create.m.Name
+    {
+        en = "Nomad Outer Robe"
+        es = "Túnica exterior nómada"
+    }
+    // context: legend_armor_southern_cloth.create.m.Description
+    {
+        en = "A durable cloth robe designed to shield the wearer from the sun's heat and the sting of minor cuts."
+        es = "Una túnica de tela resistente pensada para proteger del calor del sol y del escozor de los cortes leves."
+    }
+    // context: legend_armor_southern_cloth.create.m.ArmorDescription
+    {
+        en = "Includes a heavy nomad robe."
+        es = "Incluye una túnica nómada pesada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_southern_mail.nut
+    // context: legend_armor_southern_mail.create.m.Name
+    {
+        en = "Southern Mail"
+        es = "Malla sureña"
+    }
+    // context: legend_armor_southern_mail.create.m.Description
+    {
+        en = "A long and heavy mail shirt of southern design made with slightly thinner and lighter metal rings than those used in the north"
+        es = "Una camisa de malla larga y pesada de diseño sureño, hecha con anillas de metal algo más finas y ligeras que las que se usan en el norte"
+    }
+    // context: legend_armor_southern_mail.create.m.ArmorDescription
+    {
+        en = "Includes a long and heavy mail shirt."
+        es = "Incluye una camisa de malla larga y pesada."
+    }
+    // FILE: scripts\items\legend_armor\chain\legend_armor_southern_padded_chest.nut
+    // context: legend_armor_southern_padded_chest.create.m.ArmorDescription
+    {
+        en = "Includes a thick cloth vest."
+        es = "Incluye un chaleco grueso de tela."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_anatomist_hood.nut
+    // context: legend_armor_anatomist_hood.create.m.Name
+    {
+        en = "Anatomist Hood"
+        es = "Capucha de anatomista"
+    }
+    // context: legend_armor_anatomist_hood.create.m.Description
+    {
+        en = "A dark hood with reinforced edges popular with those working with filth and entrails."
+        es = "Una capucha oscura de bordes reforzados, popular entre quienes trabajan con inmundicia y entrañas."
+    }
+    // context: legend_armor_anatomist_hood.create.m.ArmorDescription
+    {
+        en = "Includes a dark hood with reinforced edges."
+        es = "Incluye una capucha oscura de bordes reforzados."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_animal_pelt.nut
+    // context: legend_armor_animal_pelt.create.m.Name
+    {
+        en = "Animal Pelt"
+        es = "Piel de animal"
+    }
+    // context: legend_armor_animal_pelt.create.m.Description
+    {
+        en = "A pelt of spotted fur that wraps around the shoulders."
+        es = "Una piel de pelaje moteado que envuelve los hombros."
+    }
+    // context: legend_armor_animal_pelt.create.m.ArmorDescription
+    {
+        en = "Includes a pelt of spotted fur."
+        es = "Incluye una piel de pelaje moteado."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak.nut
+    // context: legend_armor_cloak.create.m.Name
+    {
+        en = "Simple Cloak"
+        es = "Capa sencilla"
+    }
+    // context: legend_armor_cloak.create.m.Description
+    {
+        en = "A rustic cloak of strong, warm wool that provides protection from the weather if nothing else."
+        es = "Una capa rústica de lana recia y abrigada que, como mínimo, protege del mal tiempo."
+    }
+    // context: legend_armor_cloak.create.m.ArmorDescription
+    {
+        en = "Includes a rustic wool cloak."
+        es = "Incluye una capa rústica de lana."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_cowl_ragged.nut
+    // context: legend_armor_cloak_cowl_ragged.create.m.Name
+    {
+        en = "Ragged Cowl"
+        es = "Capucha harapienta"
+    }
+    // context: legend_armor_cloak_cowl_ragged.create.m.Description
+    {
+        en = "A ragged cowl weathered by the elements throughout the years."
+        es = "Una capucha harapienta, curtida por los elementos a lo largo de los años."
+    }
+    // context: legend_armor_cloak_cowl_ragged.create.m.ArmorDescription
+    {
+        en = "Includes a ragged cowl."
+        es = "Incluye una capucha harapienta."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_crusader.nut
+    // context: legend_armor_cloak_crusader.create.m.Name
+    {
+        en = "Crusader's Cloak"
+        es = "Capa de cruzado"
+    }
+    // context: legend_armor_cloak_crusader.create.m.Description
+    {
+        en = "A holy cloak of thick, layered, warm wool that provides some protection, but is quite hefty."
+        es = "Una capa sagrada de lana gruesa, en varias capas y abrigada, que ofrece algo de protección, pero es bastante pesada."
+    }
+    // context: legend_armor_cloak_crusader.create.m.ArmorDescription
+    {
+        en = "Includes a holy cloak of thick, layered wool."
+        es = "Incluye una capa sagrada de lana gruesa en varias capas."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_cursed.nut
+    // context: legend_armor_cloak_cursed.create.m.Name
+    {
+        en = "Cursed Cloak"
+        es = "Capa maldita"
+    }
+    // context: legend_armor_cloak_cursed.create.m.Description
+    {
+        en = "A cloak of the feathers of a strange creature of the abyss. "
+        es = "Una capa hecha con las plumas de una extraña criatura del abismo. "
+    }
+    // context: legend_armor_cloak_cursed.create.m.ArmorDescription
+    {
+        en = "Includes a cloak of the feathers of a strange creature of the abyss."
+        es = "Incluye una capa hecha con las plumas de una extraña criatura del abismo."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_duke.nut
+    // context: legend_armor_cloak_duke.create.m.Name
+    {
+        en = "Duke's Cloak"
+        es = "Capa de duque"
+    }
+    // context: legend_armor_cloak_duke.create.m.Description
+    {
+        en = "A refined cloak of fine, lightweight silk that marks the wearer as a distinguished figure of the highest circles."
+        es = "Una capa refinada de seda fina y ligera que distingue a quien la lleva como una figura ilustre de los círculos más altos."
+    }
+    // context: legend_armor_cloak_duke.create.m.ArmorDescription
+    {
+        en = "Includes a refined cloak of fine, lightweight silk."
+        es = "Incluye una capa refinada de seda fina y ligera."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_fur.nut
+    // context: legend_armor_cloak_fur.create.m.Name
+    {
+        en = "Fur Cloak"
+        es = "Capa de piel"
+    }
+    // context: legend_armor_cloak_fur.create.m.Description
+    {
+        en = "A cloak made of rough chain and the thick fur of a beast."
+        es = "Una capa hecha de malla tosca y de la piel gruesa de una bestia."
+    }
+    // context: legend_armor_cloak_fur.create.m.ArmorDescription
+    {
+        en = "Includes a thick fur cloak."
+        es = "Incluye una capa gruesa de piel."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_heavy.nut
+    // context: legend_armor_cloak_heavy.create.m.Name
+    {
+        en = "Heavy Cloak"
+        es = "Capa pesada"
+    }
+    // context: legend_armor_cloak_heavy.create.m.Description
+    {
+        en = "A rustic cloak of thick, layered, warm wool that provides some protection, but is quite hefty. "
+        es = "Una capa rústica de lana gruesa, en varias capas y abrigada, que ofrece algo de protección, pero es bastante pesada. "
+    }
+    // context: legend_armor_cloak_heavy.create.m.ArmorDescription
+    {
+        en = "Includes a heavy wool cloak."
+        es = "Incluye una capa pesada de lana."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_noble.nut
+    // context: legend_armor_cloak_noble.create.m.Name
+    {
+        en = "Noble Cloak"
+        es = "Capa noble"
+    }
+    // context: legend_armor_cloak_noble.create.m.Description
+    {
+        en = "A fine, flowing cloak made of light foreign silk that provides protection while looking exceptionally grand."
+        es = "Una capa fina y vaporosa de ligera seda extranjera que protege y luce excepcionalmente majestuosa."
+    }
+    // context: legend_armor_cloak_noble.create.m.ArmorDescription
+    {
+        en = "Includes a fine, flowing cloak of light foreign silk."
+        es = "Incluye una capa fina y vaporosa de ligera seda extranjera."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_cloak_wooly_dark.nut
+    // context: legend_armor_cloak_wooly_dark.create.m.Name
+    {
+        en = "Dark Wooly Cloak"
+        es = "Capa de lana oscura"
+    }
+    // context: legend_armor_cloak_wooly_dark.create.m.Description
+    {
+        en = "A cloak of dark wool that wraps around the shoulders."
+        es = "Una capa de lana oscura que envuelve los hombros."
+    }
+    // context: legend_armor_cloak_wooly_dark.create.m.ArmorDescription
+    {
+        en = "Includes a cloak of dark wool."
+        es = "Incluye una capa de lana oscura."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_decorative_hood.nut
+    // context: legend_armor_decorative_hood.create.m.Name
+    {
+        en = "Decorative Cowl"
+        es = "Capucha decorativa"
+    }
+    // context: legend_armor_decorative_hood.create.m.Description
+    {
+        en = "A hooded cowl with decorated, scalloped edges that provides a quite dashing appearance."
+        es = "Una capucha de bordes festoneados y decorados que da un aspecto bastante gallardo."
+    }
+    // context: legend_armor_decorative_hood.create.m.ArmorDescription
+    {
+        en = "Includes a hooded cowl with decorated, scalloped edges."
+        es = "Incluye una capucha de bordes festoneados y decorados."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_noble_shawl.nut
+    // context: legend_armor_noble_shawl.create.m.Name
+    {
+        en = "Noble Shawl"
+        es = "Chal noble"
+    }
+    // context: legend_armor_noble_shawl.create.m.Description
+    {
+        en = "A shawl of exquisite material that wraps around the shoulders, signifying high status and wealth."
+        es = "Un chal de un material exquisito que envuelve los hombros y denota alto rango y riqueza."
+    }
+    // context: legend_armor_noble_shawl.create.m.ArmorDescription
+    {
+        en = "Includes a fine noble shawl."
+        es = "Incluye un chal noble y fino."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_nun_wimple.nut
+    // context: legend_armor_nun_wimple.create.m.Name
+    {
+        en = "Nun's Wimple"
+        es = "Griñón de monja"
+    }
+    // context: legend_armor_nun_wimple.create.m.Description
+    {
+        en = "A basic wimple of plain grey cloth that signifies a life of devotion and poverty."
+        es = "Un griñón sencillo de tela gris lisa que denota una vida de devoción y pobreza."
+    }
+    // context: legend_armor_nun_wimple.create.m.ArmorDescription
+    {
+        en = "Includes a basic wimple of plain grey cloth."
+        es = "Incluye un griñón sencillo de tela gris lisa."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_relic_hood.nut
+    // context: legend_armor_relic_hood.create.m.Name
+    {
+        en = "Relic Hood and Belts"
+        es = "Capucha y correas con reliquia"
+    }
+    // context: legend_armor_relic_hood.create.m.Description
+    {
+        en = "A set of straps, bags, a hooded cowl and a relic of a knightly order that offer physical and spiritual protection."
+        es = "Un juego de correas, bolsas, una capucha y una reliquia de una orden de caballería que ofrecen protección física y espiritual."
+    }
+    // context: legend_armor_relic_hood.create.m.ArmorDescription
+    {
+        en = "Includes a set of leather straps, bags, a hooded cowl and a relic of a knightly order."
+        es = "Incluye un juego de correas de cuero, bolsas, una capucha y una reliquia de una orden de caballería."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_religious_scarf.nut
+    // context: legend_armor_religious_scarf.create.m.Name
+    {
+        en = "Religious Scarf"
+        es = "Pañuelo religioso"
+    }
+    // context: legend_armor_religious_scarf.create.m.Description
+    {
+        en = "A plain scarf that wraps around the shoulders with a beaded religious icon."
+        es = "Un pañuelo sencillo que envuelve los hombros, con un icono religioso de cuentas."
+    }
+    // context: legend_armor_religious_scarf.create.m.ArmorDescription
+    {
+        en = "Includes a plain scarf with a religious icon attached."
+        es = "Incluye un pañuelo sencillo con un icono religioso prendido."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_sash.nut
+    // context: legend_armor_sash.create.m.Name
+    {
+        en = "Sash"
+        es = "Faja"
+    }
+    // context: legend_armor_sash.create.m.Description
+    {
+        en = "A flowing cloth sash that adds a vibrant splash of color to any attire."
+        es = "Una faja de tela vaporosa que añade un vivo toque de color a cualquier atuendo."
+    }
+    // context: legend_armor_sash.create.m.ArmorDescription
+    {
+        en = "Includes a flowing cloth sash."
+        es = "Incluye una faja de tela vaporosa."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_shoulder_cloth.nut
+    // context: legend_armor_shoulder_cloth.create.m.Name
+    {
+        en = "Shoulder Cloth"
+        es = "Paño de hombro"
+    }
+    // context: legend_armor_shoulder_cloth.create.m.Description
+    {
+        en = "A piece of cloth draped over the shoulder to protect against the sun and wind."
+        es = "Un trozo de tela echado sobre el hombro para protegerse del sol y del viento."
+    }
+    // context: legend_armor_shoulder_cloth.create.m.ArmorDescription
+    {
+        en = "Includes a piece of cloth draped over the shoulder."
+        es = "Incluye un trozo de tela echado sobre el hombro."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_southern_scarf.nut
+    // context: legend_armor_southern_scarf.create.m.Name
+    {
+        en = "Southern Scarf"
+        es = "Pañuelo sureño"
+    }
+    // context: legend_armor_southern_scarf.create.m.Description
+    {
+        en = "A simple scarf that wraps around the shoulders."
+        es = "Un pañuelo sencillo que envuelve los hombros."
+    }
+    // context: legend_armor_southern_scarf.create.m.ArmorDescription
+    {
+        en = "Includes a simple scarf."
+        es = "Incluye un pañuelo sencillo."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_southern_scarf_wrap.nut
+    // context: legend_armor_southern_scarf_wrap.create.m.Name
+    {
+        en = "Southern Scarf Wrap"
+        es = "Pañuelo envolvente sureño"
+    }
+    // context: legend_armor_southern_scarf_wrap.create.m.Description
+    {
+        en = "A simple scarf that wraps around the neck and shoulders."
+        es = "Un pañuelo sencillo que envuelve el cuello y los hombros."
+    }
+    // FILE: scripts\items\legend_armor\cloak\legend_armor_tabbed_hood.nut
+    // context: legend_armor_tabbed_hood.create.m.Name
+    {
+        en = "Tabbed Cowl"
+        es = "Capucha dentada"
+    }
+    // context: legend_armor_tabbed_hood.create.m.Description
+    {
+        en = "A hooded cowl with dour, tabbed edges that helps one stay unremarkable and unassuming."
+        es = "Una capucha de bordes dentados y sobrios que ayuda a pasar desapercibido y a no llamar la atención."
+    }
+    // context: legend_armor_tabbed_hood.create.m.ArmorDescription
+    {
+        en = "Includes a hooded cowl with dour, tabbed edges."
+        es = "Incluye una capucha de bordes dentados y sobrios."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_ancient_cloth.nut
+    // context: legend_armor_ancient_cloth.create.m.Name
+    {
+        en = "Ancient Cloth"
+        es = "Tela antigua"
+    }
+    // context: legend_armor_ancient_cloth.create.m.Description
+    {
+        en = "An ancient cloth wrap, heavy and offering little protection."
+        es = "Una envoltura de tela antigua, pesada y de poca protección."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_ancient_cloth_restored.nut
+    // context: legend_armor_ancient_cloth_restored.create.m.Description
+    {
+        en = "A restored ancient cloth wrap, heavy and offering little protection."
+        es = "Una envoltura de tela antigua restaurada, pesada y de poca protección."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_apron.nut
+    // context: legend_armor_apron.create.m.Name
+    {
+        en = "Blacksmith Apron"
+        es = "Delantal de herrero"
+    }
+    // context: legend_armor_apron.create.m.Description
+    {
+        en = "A heavy leather apron of withstanding intense heat and stray sparks. Favored by blacksmiths."
+        es = "Un pesado delantal de cuero que resiste el calor intenso y las chispas sueltas. Preferido por los herreros."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_bandages.nut
+    // context: legend_armor_bandages.create.m.Description
+    {
+        en = "Normally used for dressing wounds rather than preventing new ones."
+        es = "Suelen usarse para vendar heridas, no para evitar otras nuevas."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_fleshcultist_tunic.nut
+    // context: legend_armor_fleshcultist_tunic.create.m.Name
+    {
+        en = "Fleshcultist Tunic"
+        es = "Jubón de cultista de la carne"
+    }
+    // context: legend_armor_fleshcultist_tunic.create.m.Description
+    {
+        en = "An elaborate leather tunic."
+        es = "Un elaborado jubón de cuero."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_fur_rabble.nut
+    // context: legend_armor_fur_rabble.create.m.Name
+    {
+        en = "Fur Armor"
+        es = "Armadura de pieles"
+    }
+    // context: legend_armor_fur_rabble.create.m.Description
+    {
+        en = "Matted fur and rags, torn and filthy."
+        es = "Pieles apelmazadas y harapos, rotos y mugrientos."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_gambeson.nut
+    // context: legend_armor_gambeson.create.m.Description
+    {
+        en = "A heavy, padded tunic that offers decent protection."
+        es = "Una túnica pesada y acolchada que ofrece una protección decente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_gambeson_named.nut
+    // context: legend_armor_gambeson_named.create.m.Description
+    {
+        en = "A mastercrafted heavy padded tunic that offers excellent protection."
+        es = "Una túnica pesada y acolchada, obra maestra de artesanía, que ofrece una protección excelente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_gambeson_wolf.nut
+    // context: legend_armor_gambeson_wolf.create.m.Name
+    {
+        en = "Wolf Gambeson"
+        es = "Gambesón de lobo"
+    }
+    // context: legend_armor_gambeson_wolf.create.m.Description
+    {
+        en = "A heavy tunic lined with a thick wolf pelt that offers decent protection."
+        es = "Una túnica pesada forrada con una gruesa piel de lobo que ofrece una protección decente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_knightly_robe.nut
+    // context: legend_armor_knightly_robe.create.m.Name
+    {
+        en = "Knight's Robe"
+        es = "Túnica de caballero"
+    }
+    // context: legend_armor_knightly_robe.create.m.Description
+    {
+        en = "A padded robe of superior quality designed to go under armor and absorb blows."
+        es = "Una túnica acolchada de calidad superior, pensada para llevarse bajo la armadura y absorber los golpes."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_peasant_dress.nut
+    // context: legend_armor_peasant_dress.create.m.Name
+    {
+        en = "Peasant's Dress"
+        es = "Vestido campesino"
+    }
+    // context: legend_armor_peasant_dress.create.m.Description
+    {
+        en = "A simple dress of rough fabric commonly dyed."
+        es = "Un vestido sencillo de tela basta, normalmente teñido."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_quilted_aketon.nut
+    // context: legend_armor_quilted_aketon.create.m.Name
+    {
+        en = "Quilted Aketon"
+        es = "Aketon acolchado"
+    }
+    // context: legend_armor_quilted_aketon.create.m.Description
+    {
+        en = "A sturdy, quilted coat that offers decent protection."
+        es = "Un abrigo recio y acolchado que ofrece una protección decente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_robes_anatomist.nut
+    // context: legend_armor_robes_anatomist.create.m.Name
+    {
+        en = "Anatomist's Robe"
+        es = "Túnica de anatomista"
+    }
+    // context: legend_armor_robes_anatomist.create.m.Description
+    {
+        en = "A dark robe and gloves worn by those who tinker with flesh and filth."
+        es = "Una túnica oscura y unos guantes que llevan quienes trastean con la carne y la inmundicia."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_robes_magic.nut
+    // context: legend_armor_robes_magic.create.m.Name
+    {
+        en = "Magician's Robe"
+        es = "Túnica de prestidigitador"
+    }
+    // context: legend_armor_robes_magic.create.m.Description
+    {
+        en = "A soft, shiny robe worn by practitioners of the arcane arts."
+        es = "Una túnica suave y brillante que llevan los practicantes de las artes arcanas."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_robes_nun.nut
+    // context: legend_armor_robes_nun.create.m.Name
+    {
+        en = "Nun's Robe"
+        es = "Túnica de monja"
+    }
+    // context: legend_armor_robes_nun.create.m.Description
+    {
+        en = "A rugged, large robe made of simple cloth. Usually worn by young nuns."
+        es = "Una túnica grande y recia de tela sencilla. Suelen llevarla las monjas jóvenes."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_robes_wizard.nut
+    // context: legend_armor_robes_wizard.create.m.Name
+    {
+        en = "Beautiful Robe"
+        es = "Túnica hermosa"
+    }
+    // context: legend_armor_robes_wizard.create.m.Description
+    {
+        en = "A soft, wide robe worn by practitioners of the arcane arts."
+        es = "Una túnica suave y amplia que llevan los practicantes de las artes arcanas."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_sackcloth.nut
+    // context: legend_armor_sackcloth.create.m.Description
+    {
+        en = "A thin cloth sack that offers a touch of protection."
+        es = "Un fino saco de tela que ofrece un mínimo de protección."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_sackcloth_patched.nut
+    // context: legend_armor_sackcloth_patched.create.m.Description
+    {
+        en = "Various uneven patches of rough leather sewn together."
+        es = "Varios retazos desiguales de cuero basto cosidos entre sí."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_sackcloth_tattered.nut
+    // context: legend_armor_sackcloth_tattered.create.m.Description
+    {
+        en = "A thin, tattered cloth sack that offers a sliver of protection."
+        es = "Un fino saco de tela, hecho jirones, que ofrece una pizca de protección."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_southern_gambeson.nut
+    // context: legend_armor_southern_gambeson.create.m.Name
+    {
+        en = "Southern Gambeson"
+        es = "Gambesón sureño"
+    }
+    // context: legend_armor_southern_gambeson.create.m.Description
+    {
+        en = "A long, sturdy and tunic of southern origin that offers decent protection."
+        es = "Una túnica larga y recia de origen sureño que ofrece una protección decente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_southern_gladiator_harness.nut
+    // context: legend_armor_southern_gladiator_harness.create.m.Description
+    {
+        en = "A flashy harness commonly worn by pit fighters in arenas of the southern city states."
+        es = "Un arnés vistoso que suelen llevar los luchadores de las arenas de las ciudades-estado del sur."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_southern_noble_aketon.nut
+    // context: legend_armor_southern_noble_aketon.create.m.Name
+    {
+        en = "Southern Noble Aketon"
+        es = "Aketon noble sureño"
+    }
+    // context: legend_armor_southern_noble_aketon.create.m.Description
+    {
+        en = "A bright, decorated coat that offers decent protection."
+        es = "Un abrigo de colores vivos y decorado que ofrece una protección decente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_southern_robe.nut
+    // context: legend_armor_southern_robe.create.m.Name
+    {
+        en = "Southern Wool Robe"
+        es = "Túnica de lana sureña"
+    }
+    // context: legend_armor_southern_robe.create.m.Description
+    {
+        en = "A dense wool wrap to protect against blunt hits."
+        es = "Una envoltura de lana densa para protegerse de los golpes contundentes."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_southern_split_gambeson.nut
+    // context: legend_armor_southern_split_gambeson.create.m.Name
+    {
+        en = "Southern Split Gambeson"
+        es = "Gambesón abierto sureño"
+    }
+    // context: legend_armor_southern_split_gambeson.create.m.Description
+    {
+        en = "A long, sturdy tunic of southern origin that is split at the bottom."
+        es = "Una túnica larga y recia de origen sureño, abierta por abajo."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_southern_tunic.nut
+    // context: legend_armor_southern_tunic.create.m.Name
+    {
+        en = "Southern Tunic"
+        es = "Túnica sureña"
+    }
+    // context: legend_armor_southern_tunic.create.m.Description
+    {
+        en = "A light and well made checkered tunic of southern origin."
+        es = "Una túnica a cuadros, ligera y bien hecha, de origen sureño."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_studded_aketon.nut
+    // context: legend_armor_studded_aketon.create.m.Name
+    {
+        en = "Studded Aketon"
+        es = "Aketon tachonado"
+    }
+    // context: legend_armor_studded_aketon.create.m.Description
+    {
+        en = "A long, sturdy coat reinforced with metal studs that offers good protection."
+        es = "Un abrigo largo y recio, reforzado con tachones de metal, que ofrece buena protección."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_thick_tunic.nut
+    // context: legend_armor_thick_tunic.create.m.Description
+    {
+        en = "A thick cloth tunic that offers protection from light blows and weather alike."
+        es = "Una túnica gruesa de tela que protege tanto de los golpes leves como del mal tiempo."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic.nut
+    // context: legend_armor_tunic.create.m.Description
+    {
+        en = "A simple cloth tunic that offers limited protection."
+        es = "Una sencilla túnica de tela que ofrece una protección limitada."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_collar_deep.nut
+    // context: legend_armor_tunic_collar_deep.create.m.Name
+    {
+        en = "Deep Collar Linen Tunic"
+        es = "Túnica de lino de cuello hondo"
+    }
+    // context: legend_armor_tunic_collar_deep.create.m.Description
+    {
+        en = "A simple cloth tunic with a deep collar that offers limited protection."
+        es = "Una sencilla túnica de tela de cuello hondo que ofrece una protección limitada."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_collar_thin.nut
+    // context: legend_armor_tunic_collar_thin.create.m.Name
+    {
+        en = "Thin Collar Linen Tunic"
+        es = "Túnica de lino de cuello fino"
+    }
+    // context: legend_armor_tunic_collar_thin.create.m.Description
+    {
+        en = "A simple cloth tunic with a thin collar that offers limited protection."
+        es = "Una sencilla túnica de tela de cuello fino que ofrece una protección limitada."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_dark.nut
+    // context: legend_armor_tunic_dark.create.m.Name
+    {
+        en = "Dark Tunic"
+        es = "Túnica oscura"
+    }
+    // context: legend_armor_tunic_dark.create.m.Description
+    {
+        en = "A dark, heavy cloth tunic. Bulky, but offering additional protection."
+        es = "Una túnica oscura de tela gruesa. Abultada, pero ofrece protección adicional."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_noble.nut
+    // context: legend_armor_tunic_noble.create.m.Description
+    {
+        en = "A thin, linen tunic of exquisite material, embroidered with pleasing patterns. Fashionable, but offering little protection."
+        es = "Una fina túnica de lino de un material exquisito, bordada con motivos agradables. A la moda, pero ofrece poca protección."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_noble_named.nut
+    // context: legend_armor_tunic_noble_named.create.m.Description
+    {
+        en = "A fine, linen tunic of exquisite material, embroidered with pleasing patterns. Light and sturdy."
+        es = "Una túnica de lino fina, de un material exquisito, bordada con motivos agradables. Ligera y resistente."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_wrap.nut
+    // context: legend_armor_tunic_wrap.create.m.Name
+    {
+        en = "Linen Tunic Wrap"
+        es = "Túnica de lino cruzada"
+    }
+    // context: legend_armor_tunic_wrap.create.m.Description
+    {
+        en = "A simple cloth wrapped tunic that offers limited protection."
+        es = "Una sencilla túnica de tela cruzada que ofrece una protección limitada."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_vala_dress.nut
+    // context: legend_armor_vala_dress.create.m.Name
+    {
+        en = "Vala's Dress"
+        es = "Vestido de vala"
+    }
+    // context: legend_armor_vala_dress.create.m.Description
+    {
+        en = "A strong leather dress worn by a vala on her travels."
+        es = "Un recio vestido de cuero que una vala lleva en sus viajes."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_vala_robe.nut
+    // context: legend_armor_vala_robe.create.m.Name
+    {
+        en = "Vala's Cloak"
+        es = "Capa de vala"
+    }
+    // context: legend_armor_vala_robe.create.m.Description
+    {
+        en = "A rugged, surprisingly light cloak ideal for a vala's journeys through the lands."
+        es = "Una capa recia y sorprendentemente ligera, ideal para los viajes de una vala por estas tierras."
+    }
+    // FILE: scripts\items\legend_armor\cloth\legend_armor_wanderers_coat.nut
+    // context: legend_armor_wanderers_coat.create.m.Description
+    {
+        en = "A coat well suited to wandering the lands."
+        es = "Un abrigo muy adecuado para vagar por estas tierras."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_animal_hide_armor.nut
+    // context: legend_armor_animal_hide_armor.create.m.ArmorDescription
+    {
+        en = "Includes heavy hides patched together to create a decent makeshift armor."
+        es = "Incluye pieles pesadas remendadas entre sí para formar una armadura improvisada decente."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_animal_hide_armor_reinforced.nut
+    // context: legend_armor_animal_hide_armor_reinforced.create.m.ArmorDescription
+    {
+        en = "Includes a reinforced animal hide armor fashioned from thick leather pieces with added mail and metal scales."
+        es = "Incluye una armadura reforzada de piel de animal, hecha con gruesas piezas de cuero, con malla y escamas de metal añadidas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_apron_undertakers.nut
+    // context: legend_armor_apron_undertakers.create.m.Description
+    {
+        en = "A heavy leather apron designed to protect the wearer's clothing from stains and fluids. Usually worn by those who tend to the dead."
+        es = "Un pesado delantal de cuero pensado para proteger la ropa de quien lo lleva de manchas y fluidos. Suelen llevarlo quienes se ocupan de los muertos."
+    }
+    // context: legend_armor_apron_undertakers.create.m.ArmorDescription
+    {
+        en = "Includes a heavy leather undertaker's apron."
+        es = "Incluye un pesado delantal de cuero de sepulturero."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_cult_armor.nut
+    // context: legend_armor_cult_armor.create.m.Name
+    {
+        en = "Cultist Leather Armor"
+        es = "Armadura de cuero cultista"
+    }
+    // context: legend_armor_cult_armor.create.m.Description
+    {
+        en = "Dark, heavy leather armor adorned with occult symbols. It offers sturdy protection and was likely used in grim rituals."
+        es = "Una armadura de cuero oscura y pesada, adornada con símbolos ocultistas. Ofrece una protección sólida y probablemente se usó en rituales siniestros."
+    }
+    // context: legend_armor_cult_armor.create.m.ArmorDescription
+    {
+        en = "Includes leather armor adorned with occult symbols."
+        es = "Incluye una armadura de cuero adornada con símbolos ocultistas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_diviner_jacket.nut
+    // context: legend_armor_diviner_jacket.create.m.Name
+    {
+        en = "Diviner's Jacket"
+        es = "Chaqueta del Adivino"
+    }
+    // context: legend_armor_diviner_jacket.create.m.Description
+    {
+        en = "An embellished jacket previously worn by the Diviner. You'd expect the stench of rotting flesh to cling to it, but it remains pristine."
+        es = "Una chaqueta ornamentada que antes llevaba el Adivino. Cabría esperar que el hedor a carne podrida se le hubiera pegado, pero sigue impecable."
+    }
+    // context: legend_armor_diviner_jacket.create.m.ArmorDescription
+    {
+        en = "Includes an embellished jacket."
+        es = "Incluye una chaqueta ornamentada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_fleshcultist_jacket.nut
+    // context: legend_armor_fleshcultist_jacket.create.m.Name
+    {
+        en = "Faultfinder Jacket"
+        es = "Chaqueta de buscador de defectos"
+    }
+    // context: legend_armor_fleshcultist_jacket.create.m.Description
+    {
+        en = "A heavy linen jacket worn by fault finders."
+        es = "Una pesada chaqueta de lino que llevan los buscadores de defectos."
+    }
+    // context: legend_armor_fleshcultist_jacket.create.m.ArmorDescription
+    {
+        en = "Includes a heavy linen jacket worn by fault finders."
+        es = "Incluye una pesada chaqueta de lino de las que llevan los buscadores de defectos."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_heavy_iron_armor.nut
+    // context: legend_armor_heavy_iron_armor.create.m.Description
+    {
+        // corrige base: «placas de metal pesado» cambia el sentido; lo pesado son las placas («heavy metal plates»): «pesadas placas de metal»
+        en = "This armor is made from heavy metal plates, scales and pieces of chain mail. The true armor of a northern warrior."
+        es = "Esta armadura está hecha de pesadas placas de metal, escamas y trozos de malla. La verdadera armadura de un guerrero del norte."
+    }
+    // context: legend_armor_heavy_iron_armor.create.m.ArmorDescription
+    {
+        en = "Includes heavy metal plates, scales and pieces of chain mail. The true armor of a northern warrior."
+        es = "Incluye pesadas placas de metal, escamas y trozos de malla. La verdadera armadura de un guerrero del norte."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_hide_and_bone_armor.nut
+    // context: legend_armor_hide_and_bone_armor.create.m.ArmorDescription
+    {
+        en = "Includes hide and bone armor that is decent protection."
+        es = "Incluye una armadura de piel y hueso que ofrece una protección decente."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_brigandine.nut
+    // context: legend_armor_leather_brigandine.create.m.Name
+    {
+        en = "Leather Brigandine Armor"
+        es = "Brigantina de cuero"
+    }
+    // context: legend_armor_leather_brigandine.create.m.Description
+    {
+        en = "A thick leather brigandine studded with steel rivets for added protection."
+        es = "Una gruesa brigantina de cuero tachonada con remaches de acero para mayor protección."
+    }
+    // context: legend_armor_leather_brigandine.create.m.ArmorDescription
+    {
+        en = "Includes a thick studded leather brigandine."
+        es = "Incluye una gruesa brigantina de cuero tachonada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_brigandine_hardened.nut
+    // context: legend_armor_leather_brigandine_hardened.create.m.Name
+    {
+        en = "Hardened Leather Brigandine Armor"
+        es = "Brigantina de cuero endurecido"
+    }
+    // context: legend_armor_leather_brigandine_hardened.create.m.Description
+    {
+        en = "A boiled and hardened leather brigandine studded with steel rivets for added protection."
+        es = "Una brigantina de cuero hervido y endurecido, tachonada con remaches de acero para mayor protección."
+    }
+    // context: legend_armor_leather_brigandine_hardened.create.m.ArmorDescription
+    {
+        en = "Includes a boiled and hardened leather brigandine."
+        es = "Incluye una brigantina de cuero hervido y endurecido."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_brigandine_hardened_full.nut
+    // context: legend_armor_leather_brigandine_hardened_full.create.m.Name
+    {
+        en = "Reinforced Hardened Leather Brigandine Armor"
+        es = "Brigantina de cuero endurecido reforzada"
+    }
+    // context: legend_armor_leather_brigandine_hardened_full.create.m.Description
+    {
+        en = "A boiled and hardened brigandine studded with steel rivets and reinforced with steel padded shoulders for added protection."
+        es = "Una brigantina hervida y endurecida, tachonada con remaches de acero y reforzada con hombreras acolchadas de acero para mayor protección."
+    }
+    // context: legend_armor_leather_brigandine_hardened_full.create.m.ArmorDescription
+    {
+        en = "Includes a reinforced and hardened leather brigandine."
+        es = "Incluye una brigantina de cuero endurecido y reforzada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_brigandine_named.nut
+    // context: legend_armor_leather_brigandine_named.create.m.Description
+    {
+        en = "A rare thick leather brigandine studded with steel rivets for added protection. A piece of true craftsmanship!"
+        es = "Una rara y gruesa brigantina de cuero tachonada con remaches de acero para mayor protección. ¡Una auténtica obra de artesanía!"
+    }
+    // context: legend_armor_leather_brigandine_named.create.m.ArmorDescription
+    {
+        en = "Includes a masterwork reinforced leather brigandine."
+        es = "Incluye una brigantina de cuero reforzada, obra maestra de artesanía."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_jacket.nut
+    // context: legend_armor_leather_jacket.create.m.Name
+    {
+        en = "Leather Jacket"
+        es = "Chaqueta de cuero"
+    }
+    // context: legend_armor_leather_jacket.create.m.Description
+    {
+        en = "A leather jacket that offers modest protection against the elements and light physical harm."
+        es = "Una chaqueta de cuero que ofrece una protección modesta contra los elementos y los daños físicos leves."
+    }
+    // context: legend_armor_leather_jacket.create.m.ArmorDescription
+    {
+        en = "Includes a leather jacket providing basic protection."
+        es = "Incluye una chaqueta de cuero que da una protección básica."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_jacket_fine.nut
+    // context: legend_armor_leather_jacket_fine.create.m.Name
+    {
+        en = "Fine Leather Jacket"
+        es = "Chaqueta de cuero fina"
+    }
+    // context: legend_armor_leather_jacket_fine.create.m.Description
+    {
+        en = "A well-crafted leather jacket of northern make that offers good protection and flexibility."
+        es = "Una chaqueta de cuero bien elaborada, de factura norteña, que ofrece buena protección y flexibilidad."
+    }
+    // context: legend_armor_leather_jacket_fine.create.m.ArmorDescription
+    {
+        en = "Includes a well-crafted leather jacket."
+        es = "Incluye una chaqueta de cuero bien elaborada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_jacket_named.nut
+    // context: legend_armor_leather_jacket_named.create.m.Description
+    {
+        en = "A well-crafted, hardened leather armor. Light to wear, yet exceptionally sturdy."
+        es = "Una armadura de cuero endurecido bien elaborada. Ligera de llevar, pero excepcionalmente resistente."
+    }
+    // context: legend_armor_leather_jacket_named.create.m.ArmorDescription
+    {
+        en = "Includes a masterwork hardened leather jacket."
+        es = "Incluye una chaqueta de cuero endurecido, obra maestra de artesanía."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_jacket_simple.nut
+    // context: legend_armor_leather_jacket_simple.create.m.Name
+    {
+        en = "Simple Leather Jacket"
+        es = "Chaqueta de cuero sencilla"
+    }
+    // context: legend_armor_leather_jacket_simple.create.m.Description
+    {
+        en = "A basic leather jacket offering modest protection."
+        es = "Una chaqueta de cuero básica que ofrece una protección modesta."
+    }
+    // context: legend_armor_leather_jacket_simple.create.m.ArmorDescription
+    {
+        en = "Includes a basic leather jacket."
+        es = "Incluye una chaqueta de cuero básica."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_lamellar.nut
+    // context: legend_armor_leather_lamellar.create.m.ArmorDescription
+    {
+        en = "Includes armor of overlapping leather plates."
+        es = "Incluye una armadura de placas de cuero superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_lamellar_harness_heavy.nut
+    // context: legend_armor_leather_lamellar_harness_heavy.create.m.Description
+    {
+        en = "A rugged body harness made of thick overlapping metal plates that cover most of the upper body, but is exceptionally heavy."
+        es = "Un recio arnés de cuerpo hecho de gruesas placas de metal superpuestas que cubren la mayor parte del torso, pero es excepcionalmente pesado."
+    }
+    // context: legend_armor_leather_lamellar_harness_heavy.create.m.ArmorDescription
+    {
+        en = "Includes a heavy lamellar harness made of thick overlapping metal plates."
+        es = "Incluye un arnés laminar pesado hecho de gruesas placas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_lamellar_harness_reinforced.nut
+    // context: legend_armor_leather_lamellar_harness_reinforced.create.m.Name
+    {
+        en = "Reinforced Lamellar Harness"
+        es = "Arnés laminar reforzado"
+    }
+    // context: legend_armor_leather_lamellar_harness_reinforced.create.m.ArmorDescription
+    {
+        en = "Includes body armor made of thick overlapping metal plates that cover most of the upper body."
+        es = "Incluye una armadura de cuerpo hecha de gruesas placas de metal superpuestas que cubren la mayor parte del torso."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_lamellar_heavy.nut
+    // context: legend_armor_leather_lamellar_heavy.create.m.ArmorDescription
+    {
+        en = "Includes heavy lamellar armor that covers most parts of the body with thick, overlapping metal plates."
+        es = "Incluye una armadura laminar pesada que cubre la mayor parte del cuerpo con gruesas placas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_lamellar_heavy_named.nut
+    // context: legend_armor_leather_lamellar_heavy_named.create.m.Description
+    {
+        // corrige base: concordancia, «recubierto... lo hace... llamativo» se refiere a «pieza» (femenino): «cubierta... la hace... llamativa»
+        en = "An extraordinarily well-crafted piece of lamellar armor. It is overlaid with beaten gold, which makes it truly stand out."
+        es = "Una pieza de armadura laminar extraordinariamente bien elaborada. Está cubierta de oro batido, lo que la hace realmente llamativa."
+    }
+    // context: legend_armor_leather_lamellar_heavy_named.create.m.ArmorDescription
+    {
+        en = "Includes an extraordinarily well-crafted gold plated lamellar harness."
+        es = "Incluye un arnés laminar chapado en oro y extraordinariamente bien elaborado."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_lamellar_reinforced.nut
+    // context: legend_armor_leather_lamellar_reinforced.create.m.Name
+    {
+        en = "Reinforced Leather Lamellar Armor"
+        es = "Armadura de cuero laminada reforzada"
+    }
+    // context: legend_armor_leather_lamellar_reinforced.create.m.Description
+    {
+        en = "Numerous overlapping metal reinforced leather plates that provides excellent protection for most of the upper body but is very heavy."
+        es = "Numerosas placas de cuero superpuestas y reforzadas con metal que dan una protección excelente a la mayor parte del torso, pero son muy pesadas."
+    }
+    // context: legend_armor_leather_lamellar_reinforced.create.m.ArmorDescription
+    {
+        en = "Includes armor of overlapping reinforced metal leather plates."
+        es = "Incluye una armadura de placas de cuero superpuestas y reforzadas con metal."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_padded.nut
+    // context: legend_armor_leather_padded.create.m.Name
+    {
+        en = "Padded Leather Armor"
+        es = "Armadura de cuero acolchada"
+    }
+    // context: legend_armor_leather_padded.create.m.Description
+    {
+        en = "A suit of padded leather reinforced with metal studs for added protection."
+        es = "Un conjunto de cuero acolchado reforzado con tachones de metal para mayor protección."
+    }
+    // context: legend_armor_leather_padded.create.m.ArmorDescription
+    {
+        en = "Includes a suit of reinforced padded leather armor."
+        es = "Incluye una armadura de cuero acolchado reforzada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_riveted.nut
+    // context: legend_armor_leather_riveted.create.m.Name
+    {
+        en = "Sellsword's Leather Armor"
+        es = "Armadura de cuero de mercenario"
+    }
+    // context: legend_armor_leather_riveted.create.m.Description
+    {
+        en = "A long leather coat reinforced with large metal rivets offering good protection, but very fatiguing to wear."
+        es = "Un largo abrigo de cuero reforzado con grandes remaches de metal que ofrece buena protección, pero es muy fatigante de llevar."
+    }
+    // context: legend_armor_leather_riveted.create.m.ArmorDescription
+    {
+        en = "Includes a long leather coat reinforced with large metal rivets."
+        es = "Incluye un largo abrigo de cuero reforzado con grandes remaches de metal."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_riveted_light.nut
+    // context: legend_armor_leather_riveted_light.create.m.Name
+    {
+        en = "Footman's Leather Armor"
+        es = "Armadura de cuero de infante"
+    }
+    // context: legend_armor_leather_riveted_light.create.m.Description
+    {
+        en = "A leather armor reinforced with metal rivets. Fatiguing to wear."
+        es = "Una armadura de cuero reforzada con remaches de metal. Fatigante de llevar."
+    }
+    // context: legend_armor_leather_riveted_light.create.m.ArmorDescription
+    {
+        en = "Includes a leather armor reinforced with metal rivets."
+        es = "Incluye una armadura de cuero reforzada con remaches de metal."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_scale.nut
+    // context: legend_armor_leather_scale.create.m.Description
+    {
+        en = "A thick leather scale armor that offers extra protection."
+        es = "Una gruesa armadura de cuero con escamas que ofrece protección adicional."
+    }
+    // context: legend_armor_leather_scale.create.m.ArmorDescription
+    {
+        en = "Includes a thick scaled leather armor."
+        es = "Incluye una gruesa armadura de cuero con escamas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_studded_jacket_named.nut
+    // context: legend_armor_leather_studded_jacket_named.create.m.Description
+    {
+        en = "A well-crafted, studded leather jacket with reinforced padding. Light to wear, but very sturdy."
+        es = "Una chaqueta de cuero tachonada y bien elaborada, con acolchado reforzado. Ligera de llevar, pero muy resistente."
+    }
+    // context: legend_armor_leather_studded_jacket_named.create.m.ArmorDescription
+    {
+        en = "Includes a well-crafted studded leather jacket."
+        es = "Incluye una chaqueta de cuero tachonada y bien elaborada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_leather_tunic_bloodstained.nut
+    // context: legend_armor_leather_tunic_bloodstained.create.m.Name
+    {
+        en = "Bloodstained Tunic"
+        es = "Jubón ensangrentado"
+    }
+    // context: legend_armor_leather_tunic_bloodstained.create.m.Description
+    {
+        en = "A leather tunic caked and crusted with dried remnants of past executions."
+        es = "Un jubón de cuero cubierto de costras de restos secos de ejecuciones pasadas."
+    }
+    // context: legend_armor_leather_tunic_bloodstained.create.m.ArmorDescription
+    {
+        en = "Includes a bloodstained leather tunic."
+        es = "Incluye un jubón de cuero ensangrentado."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_noble_padded.nut
+    // context: legend_armor_noble_padded.create.m.Name
+    {
+        en = "Padded Noble Vest"
+        es = "Chaleco noble acolchado"
+    }
+    // context: legend_armor_noble_padded.create.m.Description
+    {
+        en = "An expensive padded vest with thick leather strapping, tailored for high-society protection."
+        es = "Un caro chaleco acolchado con gruesas correas de cuero, confeccionado para proteger a la alta sociedad."
+    }
+    // context: legend_armor_noble_padded.create.m.ArmorDescription
+    {
+        en = "Includes an expensive padded vest with thick leather strapping."
+        es = "Incluye un caro chaleco acolchado con gruesas correas de cuero."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_noble_scale.nut
+    // context: legend_armor_noble_scale.create.m.Description
+    {
+        en = "A very well crafted scale armor of considerable value."
+        es = "Una armadura de escamas muy bien elaborada y de considerable valor."
+    }
+    // context: legend_armor_noble_scale.create.m.ArmorDescription
+    {
+        en = "Includes a well crafted scale armor."
+        es = "Incluye una armadura de escamas bien elaborada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_chest.nut
+    // context: legend_armor_plate_ancient_chest.create.m.Description
+    {
+        en = "A heavy tarnished thick breastplate of ancient origin that offers some protection."
+        es = "Una coraza gruesa, pesada y deslustrada, de origen antiguo, que ofrece algo de protección."
+    }
+    // context: legend_armor_plate_ancient_chest.create.m.ArmorDescription
+    {
+        en = "Includes a heavy tarnished thick breastplate of ancient origin."
+        es = "Incluye una coraza gruesa, pesada y deslustrada, de origen antiguo."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_chest_restored.nut
+    // context: legend_armor_plate_ancient_chest_restored.create.m.Name
+    {
+        en = "Restored Ancient Breastplate"
+        es = "Coraza antigua restaurada"
+    }
+    // context: legend_armor_plate_ancient_chest_restored.create.m.Description
+    {
+        en = "A restored thick breastplate of ancient origin made lighter and more durable."
+        es = "Una gruesa coraza de origen antiguo, restaurada para hacerla más ligera y duradera."
+    }
+    // context: legend_armor_plate_ancient_chest_restored.create.m.ArmorDescription
+    {
+        en = "Includes a restored thick breastplate of ancient origin."
+        es = "Incluye una gruesa coraza restaurada de origen antiguo."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_gladiator.nut
+    // context: legend_armor_plate_ancient_gladiator.create.m.Name
+    {
+        en = "Ancient Gladiator Harness"
+        es = "Arnés de gladiador ancestral"
+    }
+    // context: legend_armor_plate_ancient_gladiator.create.m.Description
+    {
+        en = "A tarnished gladiator outfit of ancient origin providing basic protection."
+        es = "Un atuendo de gladiador deslustrado, de origen antiguo, que ofrece una protección básica."
+    }
+    // context: legend_armor_plate_ancient_gladiator.create.m.ArmorDescription
+    {
+        en = "Includes a tarnished gladiator outfit of ancient origin."
+        es = "Incluye un atuendo de gladiador deslustrado de origen antiguo."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_harness.nut
+    // context: legend_armor_plate_ancient_harness.create.m.Description
+    {
+        en = "Made of thick metal plates and mail, this heavy ancient armor still offers great protection even after countless years. It's crusted and rotten in parts, however, severely limiting the mobility of the wearer."
+        es = "Hecha de gruesas placas de metal y malla, esta pesada armadura antigua aún ofrece una gran protección tras incontables años. Sin embargo, tiene partes cubiertas de costras y podridas, lo que limita gravemente la movilidad de quien la lleva."
+    }
+    // context: legend_armor_plate_ancient_harness.create.m.ArmorDescription
+    {
+        en = "Includes an ancient plate harness of thick metal plates and mail."
+        es = "Incluye un antiguo arnés de placas hecho de gruesas placas de metal y malla."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_mail.nut
+    // context: legend_armor_plate_ancient_mail.create.m.Name
+    {
+        en = "Ancient Plated Mail"
+        es = "Malla chapada antigua"
+    }
+    // context: legend_armor_plate_ancient_mail.create.m.Description
+    {
+        en = "An ancient mail armor with plated arm guards. Despite offering limited protection, it's very heavy and severely limits the mobility of the wearer."
+        es = "Una antigua armadura de malla con protectores de brazos chapados. Aunque ofrece una protección limitada, es muy pesada y limita gravemente la movilidad del usuario."
+    }
+    // context: legend_armor_plate_ancient_mail.create.m.ArmorDescription
+    {
+        en = "Includes an ancient mail armor with plated arm guards."
+        es = "Incluye una antigua armadura de malla con protectores de brazos chapados."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_scale.nut
+    // context: legend_armor_plate_ancient_scale.create.m.Description
+    {
+        en = "A heavy, tarnished scale coat of ancient design, which belongs in a collection rather than on the battlefield."
+        es = "Una cota de escamas pesada y deslustrada, de diseño antiguo, que pertenece más a una colección que al campo de batalla."
+    }
+    // context: legend_armor_plate_ancient_scale.create.m.ArmorDescription
+    {
+        en = "Includes an ancient, heavy, tarnished scale coat."
+        es = "Incluye una cota de escamas antigua, pesada y deslustrada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_scale_coat.nut
+    // context: legend_armor_plate_ancient_scale_coat.create.m.Name
+    {
+        // corrige base: «Hauberk de escamas chapada antigua» deja «Hauberk» sin traducir y «chapada» sin concordar; con las formas fijadas, «Cota de escamas chapada antigua»
+        en = "Ancient Plated Scale Coat"
+        es = "Cota de escamas chapada antigua"
+    }
+    // context: legend_armor_plate_ancient_scale_coat.create.m.ArmorDescription
+    {
+        en = "Includes an ancient, heavy, reinforced scale coat."
+        es = "Incluye una cota de escamas antigua, pesada y reforzada."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_scale_coat_restored.nut
+    // context: legend_armor_plate_ancient_scale_coat_restored.create.m.Name
+    {
+        en = "Embalmed Ancient Scale Coat"
+        es = "Cota de escamas antigua embalsamada"
+    }
+    // context: legend_armor_plate_ancient_scale_coat_restored.create.m.Description
+    {
+        en = "A scale coat of ancient design, miraculously well preserved and functional despite its age."
+        es = "Una cota de escamas de diseño antiguo, milagrosamente bien conservada y funcional pese a su edad."
+    }
+    // context: legend_armor_plate_ancient_scale_coat_restored.create.m.ArmorDescription
+    {
+        en = "Includes an ancient heavy scale coat in excellent condition."
+        es = "Incluye una pesada cota de escamas antigua en excelente estado."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_scale_harness.nut
+    // context: legend_armor_plate_ancient_scale_harness.create.m.ArmorDescription
+    {
+        en = "Includes a heavy and partly decayed ancient scale harness."
+        es = "Incluye un pesado arnés de escamas antiguo, en parte descompuesto."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_ancient_scale_harness_restored.nut
+    // context: legend_armor_plate_ancient_scale_harness_restored.create.m.Name
+    {
+        en = "Embalmed Ancient Scale Harness"
+        es = "Arnés de escamas antiguo embalsamado"
+    }
+    // context: legend_armor_plate_ancient_scale_harness_restored.create.m.Description
+    {
+        en = "A sturdy, ancient scale harness, remarkably well-preserved and functional."
+        es = "Un recio arnés de escamas antiguo, notablemente bien conservado y funcional."
+    }
+    // context: legend_armor_plate_ancient_scale_harness_restored.create.m.ArmorDescription
+    {
+        en = "Includes a remarkably well-preserved ancient scale harness."
+        es = "Incluye un arnés de escamas antiguo notablemente bien conservado."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_chest.nut
+    // context: legend_armor_plate_chest.create.m.Name
+    {
+        en = "Breastplate Armor"
+        es = "Armadura de coraza"
+    }
+    // context: legend_armor_plate_chest.create.m.Description
+    {
+        en = "A heavy breastplate made of solid, plated steel, offering formidable protection at the cost of significant weight."
+        es = "Una pesada coraza de sólido acero en placas que ofrece una protección formidable a costa de un peso considerable."
+    }
+    // context: legend_armor_plate_chest.create.m.ArmorDescription
+    {
+        en = "Includes a breastplate of solid, plated steel."
+        es = "Incluye una coraza de sólido acero en placas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_cuirass.nut
+    // context: legend_armor_plate_cuirass.create.m.Name
+    {
+        en = "Plate Cuirass Armor"
+        es = "Armadura de coraza de placas"
+    }
+    // context: legend_armor_plate_cuirass.create.m.Description
+    {
+        en = "A heavy body vest of solid, plated steel designed for protecting the vitals."
+        es = "Un pesado chaleco de sólido acero en placas, pensado para proteger los órganos vitales."
+    }
+    // context: legend_armor_plate_cuirass.create.m.ArmorDescription
+    {
+        en = "Includes a heavy body vest of solid, plated steel."
+        es = "Incluye un pesado chaleco de sólido acero en placas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_full.nut
+    // context: legend_armor_plate_full.create.m.Name
+    {
+        en = "Full Coat of Plate Armor"
+        es = "Armadura de placas completa"
+    }
+    // context: legend_armor_plate_full.create.m.Description
+    {
+        en = "A full set of solid, plated steel armor."
+        es = "Un juego completo de armadura de sólido acero en placas."
+    }
+    // context: legend_armor_plate_full.create.m.ArmorDescription
+    {
+        en = "Includes a full set of solid, plated steel armor."
+        es = "Incluye un juego completo de armadura de sólido acero en placas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_full_greaves.nut
+    // context: legend_armor_plate_full_greaves.create.m.Name
+    {
+        en = "Full Coat of Heavy Plate Armor"
+        es = "Armadura de placas pesada completa"
+    }
+    // context: legend_armor_plate_full_greaves.create.m.Description
+    {
+        en = "A complete harness of solid, plated steel that provides complete protection for the torso and limbs."
+        es = "Un arnés completo de sólido acero en placas que protege por completo el torso y las extremidades."
+    }
+    // context: legend_armor_plate_full_greaves.create.m.ArmorDescription
+    {
+        en = "Includes a full set of solid, plated steel armor with greaves."
+        es = "Incluye un juego completo de armadura de sólido acero en placas, con grebas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_full_greaves_named.nut
+    // context: legend_armor_plate_full_greaves_named.create.m.Description
+    {
+        en = "A masterfully crafted harness of solid, plated steel."
+        es = "Un arnés de sólido acero en placas, forjado con maestría."
+    }
+    // context: legend_armor_plate_full_greaves_named.create.m.ArmorDescription
+    {
+        en = "Includes a masterfully crafted set of painted, solid plated steel with matching greaves."
+        es = "Incluye un juego de sólido acero en placas, pintado y forjado con maestría, con grebas a juego."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_plate_full_greaves_painted.nut
+    // context: legend_armor_plate_full_greaves_painted.create.m.Description
+    {
+        en = "A masterfully crafted harness of solid, plated steel, finished with a layer of decorative paint."
+        es = "Un arnés de sólido acero en placas, forjado con maestría y acabado con una capa de pintura decorativa."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_rotten_plate_chest.nut
+    // context: legend_armor_rotten_plate_chest.create.m.Name
+    {
+        en = "Decayed Breastplate Armor"
+        es = "Armadura de coraza deteriorada"
+    }
+    // context: legend_armor_rotten_plate_chest.create.m.Description
+    {
+        en = "A worn breastplate of decaying, plated steel. Long years of neglect have left the metal pitted and brittle, offering only some of its former protection."
+        es = "Una coraza gastada de acero en placas en descomposición. Largos años de abandono han dejado el metal picado y quebradizo, y solo conserva parte de su antigua protección."
+    }
+    // context: legend_armor_rotten_plate_chest.create.m.ArmorDescription
+    {
+        en = "Includes a worn breastplate of decaying, plated steel."
+        es = "Incluye una coraza gastada de acero en placas en descomposición."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_rotten_scale_coat.nut
+    // context: legend_armor_rotten_scale_coat.create.m.Description
+    {
+        en = "A heavy coat of thick, overlapping metal scales that are worn and missing in places, offering questionable protection for its weight."
+        es = "Una pesada cota de gruesas escamas de metal superpuestas, gastadas y ausentes en algunos puntos, que ofrece una protección dudosa para lo que pesa."
+    }
+    // context: legend_armor_rotten_scale_coat.create.m.ArmorDescription
+    {
+        en = "Includes a heavy coat of thick, overlapping metal scales that are worn and decaying."
+        es = "Incluye una pesada cota de gruesas escamas de metal superpuestas, gastadas y deterioradas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_rugged_scale_armor.nut
+    // context: legend_armor_rugged_scale_armor.create.m.ArmorDescription
+    {
+        en = "Includes a heavy body armor made from thick iron scales."
+        es = "Incluye una pesada armadura de cuerpo hecha de gruesas escamas de hierro."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_scale.nut
+    // context: legend_armor_scale.create.m.Description
+    {
+        en = "A sturdy body vest made of overlapping metal scales."
+        es = "Un recio chaleco de escamas de metal superpuestas."
+    }
+    // context: legend_armor_scale.create.m.ArmorDescription
+    {
+        en = "Includes a body vest of overlapping metal scales."
+        es = "Incluye un chaleco de escamas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_scale_coat.nut
+    // context: legend_armor_scale_coat.create.m.Description
+    {
+        en = "A heavy coat of thick, overlapping metal scales, which cover most of the body."
+        es = "Una pesada cota de gruesas escamas de metal superpuestas que cubren la mayor parte del cuerpo."
+    }
+    // context: legend_armor_scale_coat.create.m.ArmorDescription
+    {
+        en = "Includes a heavy coat of thick, overlapping metal scales."
+        es = "Incluye una pesada cota de gruesas escamas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_scale_coat_named.nut
+    // context: legend_armor_scale_coat_named.create.m.Description
+    {
+        en = "A heavy coat of small, interlocking metal scales that cover most of the body. The style and craftsmanship hint at the armor coming from a far-away region."
+        es = "Una pesada cota de pequeñas escamas de metal entrelazadas que cubren la mayor parte del cuerpo. El estilo y la factura sugieren que la armadura viene de una región lejana."
+    }
+    // context: legend_armor_scale_coat_named.create.m.ArmorDescription
+    {
+        en = "Includes a heavy coat of small, interlocking metal scales."
+        es = "Incluye una pesada cota de pequeñas escamas de metal entrelazadas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_scale_shirt.nut
+    // context: legend_armor_scale_shirt.create.m.Description
+    {
+        en = "A sturdy yet flexible shirt of small, overlapping metal scales."
+        es = "Una camisa resistente pero flexible de pequeñas escamas de metal superpuestas."
+    }
+    // context: legend_armor_scale_shirt.create.m.ArmorDescription
+    {
+        en = "Includes body vest with small overlapping metal scales."
+        es = "Incluye un chaleco con pequeñas escamas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_scrap_metal_armor.nut
+    // context: legend_armor_scrap_metal_armor.create.m.ArmorDescription
+    {
+        en = "Includes armor that is pieced together from scavenged metal parts that are fixed to a crude leather tunic."
+        es = "Incluye una armadura hecha con piezas de metal rapiñadas y fijadas a un tosco jubón de cuero."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_arm_guards.nut
+    // context: legend_armor_southern_arm_guards.create.m.Name
+    {
+        en = "Southern arm guards"
+        es = "Brazales sureños"
+    }
+    // context: legend_armor_southern_arm_guards.create.m.Description
+    {
+        en = "A pair of leather arm guards favored by southern assassins for their lightweight design."
+        es = "Un par de brazales de cuero que prefieren los asesinos del sur por su diseño ligero."
+    }
+    // context: legend_armor_southern_arm_guards.create.m.ArmorDescription
+    {
+        en = "Includes a pair of leather arm guards."
+        es = "Incluye un par de brazales de cuero."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_leather_jacket.nut
+    // context: legend_armor_southern_leather_jacket.create.m.Name
+    {
+        en = "Nomad Leather Jacket"
+        es = "Chaqueta de cuero nómada"
+    }
+    // context: legend_armor_southern_leather_jacket.create.m.Description
+    {
+        en = "A jacket of patched southern leather that is light enough for long journeys through the desert."
+        es = "Una chaqueta de cuero sureño remendado, lo bastante ligera para largos viajes por el desierto."
+    }
+    // context: legend_armor_southern_leather_jacket.create.m.ArmorDescription
+    {
+        en = "Includes a jacket of patched southern leather."
+        es = "Incluye una chaqueta de cuero sureño remendado."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_leather_plates.nut
+    // context: legend_armor_southern_leather_plates.create.m.ArmorDescription
+    {
+        en = "Includes a stitched armor of leather hide and scraps."
+        es = "Incluye una armadura cosida de piel y retales de cuero."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_leather_scale.nut
+    // context: legend_armor_southern_leather_scale.create.m.Name
+    {
+        en = "Rusted Nomad Mail"
+        es = "Malla nómada oxidada"
+    }
+    // context: legend_armor_southern_leather_scale.create.m.Description
+    {
+        en = "A worn-down, light mail shirt with rusted metal plates grafted onto it."
+        es = "Una camisa de malla ligera y gastada, con placas de metal oxidadas injertadas encima."
+    }
+    // context: legend_armor_southern_leather_scale.create.m.ArmorDescription
+    {
+        en = "Includes a light mail shirt with rusted metal plates grafted onto it."
+        es = "Incluye una camisa de malla ligera con placas de metal oxidadas injertadas encima."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_named_plate.nut
+    // context: legend_armor_southern_named_plate.create.m.Description
+    {
+        en = "Ancient knowledge has been used when forging this unique set of armor. Its light mail overlapped with golden splints offers high protection with manageable encumbrance."
+        es = "Se han utilizado conocimientos antiguos al forjar este conjunto único de armadura. Su malla ligera superpuesta con tablillas doradas ofrece una alta protección con un peso manejable."
+    }
+    // context: legend_armor_southern_named_plate.create.m.ArmorDescription
+    {
+        en = "Includes light mail overlapped with golden splints offering high protection with manageable encumbrance."
+        es = "Incluye una malla ligera superpuesta con tablillas doradas que ofrece una alta protección con un peso manejable."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_padded.nut
+    // context: legend_armor_southern_padded.create.m.Name
+    {
+        en = "Southern padded shirt"
+        es = "Camisa acolchada sureña"
+    }
+    // context: legend_armor_southern_padded.create.m.Description
+    {
+        en = "A padded shirt fashioned from slightly thinner and lighter leather than that used in the north."
+        es = "Una camisa acolchada hecha con un cuero algo más fino y ligero que el que se usa en el norte."
+    }
+    // context: legend_armor_southern_padded.create.m.ArmorDescription
+    {
+        en = "Includes a light padded shirt."
+        es = "Incluye una camisa acolchada ligera."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_plate.nut
+    // context: legend_armor_southern_plate.create.m.Description
+    {
+        en = "A heavy shirt of interlapping metal plates worn over mail."
+        es = "Una pesada camisa de placas de metal superpuestas que se lleva sobre la malla."
+    }
+    // context: legend_armor_southern_plate.create.m.ArmorDescription
+    {
+        en = "Includes a heavy shirt of interlapping metal plates."
+        es = "Incluye una pesada camisa de placas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_plate_full.nut
+    // context: legend_armor_southern_plate_full.create.m.Name
+    {
+        en = "Southern Long Mail Coat with Padding"
+        es = "Cota larga de malla acolchada sureña"
+    }
+    // context: legend_armor_southern_plate_full.create.m.Description
+    {
+        en = "A padded, heavy coat of overlapping metal plates that provides extensive protection for the torso."
+        es = "Una cota pesada y acolchada de placas de metal superpuestas que protege casi todo el torso."
+    }
+    // context: legend_armor_southern_plate_full.create.m.ArmorDescription
+    {
+        en = "Includes a padded, heavy coat of overlapping metal plates."
+        es = "Incluye una cota pesada y acolchada de placas de metal superpuestas."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_scale.nut
+    // context: legend_armor_southern_scale.create.m.Name
+    {
+        en = "Heavy Southern Lamellar"
+        es = "Laminar sureña pesada"
+    }
+    // context: legend_armor_southern_scale.create.m.Description
+    {
+        en = "A heavy lamellar harness of metal plates that provides good protection, but is very fatiguing to wear."
+        es = "Un pesado arnés laminar de placas de metal que protege bien, pero que cansa mucho llevar."
+    }
+    // context: legend_armor_southern_scale.create.m.ArmorDescription
+    {
+        en = "Includes a heavy lamellar harness of metal plates."
+        es = "Incluye un pesado arnés laminar de placas de metal."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_southern_strips.nut
+    // context: legend_armor_southern_strips.create.m.Description
+    {
+        en = "A breastplate made of several layers of linen that provides basic protection."
+        es = "Una coraza confeccionada con varias capas de lino que ofrece una protección básica."
+    }
+    // context: legend_armor_southern_strips.create.m.ArmorDescription
+    {
+        en = "Includes a light breastplate made of several layers of linen."
+        es = "Incluye una coraza ligera confeccionada con varias capas de lino."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_thick_furs_armor.nut
+    // context: legend_armor_thick_furs_armor.create.m.ArmorDescription
+    {
+        en = "Includes thick furs that are crudely dried and tied together to protect from both the cold and any incoming blows."
+        es = "Incluye unas gruesas pieles, secadas y atadas toscamente, que protegen tanto del frío como de cualquier golpe."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_thick_plated_barbarian_armor.nut
+    // context: legend_armor_thick_plated_barbarian_armor.create.m.ArmorDescription
+    {
+        en = "Includes a heavy armor that is made from mostly metal. Only one chosen by the ancestors will own a set like this."
+        es = "Incluye una armadura pesada hecha casi toda de metal. Solo alguien a quien hayan escogido los ancestros tendrá un conjunto así."
+    }
+    // FILE: scripts\items\legend_armor\plate\legend_armor_thick_plated_barbarian_armor_named.nut
+    // context: legend_armor_thick_plated_barbarian_armor_named.create.m.ArmorDescription
+    {
+        en = "Includes a heavy armor composed of a strange alloy, and well crafted for barbarian standards. A truly rare and remarkable piece."
+        es = "Incluye una armadura pesada de una extraña aleación, bien forjada para lo que se estila entre los bárbaros. Una pieza de verdad rara y notable."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_diviner_tabard.nut
+    // context: legend_armor_diviner_tabard.create.m.Name
+    {
+        en = "Diviner's Sash"
+        es = "Faja del Adivino"
+    }
+    // context: legend_armor_diviner_tabard.create.m.Description
+    {
+        en = "A decorated sash and belt previously worn by the Diviner."
+        es = "Una faja decorada y un cinturón que antes llevaba el Adivino."
+    }
+    // context: legend_armor_diviner_tabard.create.m.ArmorDescription
+    {
+        en = "Includes a decorated sash and belt previously worn by the Diviner."
+        es = "Incluye una faja decorada y un cinturón que antes llevaba el Adivino."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_fleshcultist_tabard.nut
+    // context: legend_armor_fleshcultist_tabard.create.m.Name
+    {
+        en = "Fleshcultist's Sash"
+        es = "Faja de cultista de la carne"
+    }
+    // context: legend_armor_fleshcultist_tabard.create.m.Description
+    {
+        en = "A linen sash and belt previously worn by followers of the Diviner."
+        es = "Una faja de lino y un cinturón que antes llevaban los seguidores del Adivino."
+    }
+    // context: legend_armor_fleshcultist_tabard.create.m.ArmorDescription
+    {
+        en = "Includes a linen sash and belt previously worn by followers of the Diviner."
+        es = "Incluye una faja de lino y un cinturón que antes llevaban los seguidores del Adivino."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_noble_vest.nut
+    // context: legend_armor_noble_vest.create.m.Name
+    {
+        en = "Noble Vest"
+        es = "Chaleco noble"
+    }
+    // context: legend_armor_noble_vest.create.m.Description
+    {
+        en = "A studded leather vest with decorative metallic fasteners popular among the southern nobles."
+        es = "Un chaleco de cuero tachonado con broches metálicos decorativos, popular entre los nobles del sur."
+    }
+    // context: legend_armor_noble_vest.create.m.ArmorDescription
+    {
+        en = "Includes a studded leather vest."
+        es = "Incluye un chaleco de cuero tachonado."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_overcloth.nut
+    // context: legend_armor_southern_overcloth.create.m.Name
+    {
+        en = "Southern Overcloak"
+        es = "Sobrecapa sureña"
+    }
+    // context: legend_armor_southern_overcloth.create.m.Description
+    {
+        en = "A heavy cloth overcloak cinched with a buckled leather strap."
+        es = "Una pesada sobrecapa de tela ceñida con una correa de cuero con hebilla."
+    }
+    // context: legend_armor_southern_overcloth.create.m.ArmorDescription
+    {
+        en = "Includes a heavy cloth overcloak."
+        es = "Incluye una pesada sobrecapa de tela."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_shoulder_cloth.nut
+    // context: legend_armor_southern_shoulder_cloth.create.m.Name
+    {
+        en = "Southern Shoulder Cloth"
+        es = "Paño de hombro sureño"
+    }
+    // context: legend_armor_southern_shoulder_cloth.create.m.Description
+    {
+        en = "A simple cloth wrap draped over the shoulder."
+        es = "Un sencillo paño de tela echado sobre el hombro."
+    }
+    // context: legend_armor_southern_shoulder_cloth.create.m.ArmorDescription
+    {
+        en = "Includes a simple cloth wrap."
+        es = "Incluye un sencillo paño de tela."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_tabard.nut
+    // context: legend_armor_southern_tabard.create.m.Name
+    {
+        en = "Southern Tabard"
+        es = "Tabardo sureño"
+    }
+    // context: legend_armor_southern_tabard.create.m.Description
+    {
+        en = "A flowing cloth covering for armor that displays some colors or heraldry cut in the southern style. It provides a layer of protection and a sense of belonging."
+        es = "Una holgada cubierta de tela para la armadura que luce unos colores o una heráldica de corte sureño. Da una capa de protección y sentido de pertenencia."
+    }
+    // context: legend_armor_southern_tabard.create.m.ArmorDescription
+    {
+        en = "Includes a flowing cloth tabard."
+        es = "Incluye un holgado tabardo de tela."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_wide_belt.nut
+    // context: legend_armor_southern_wide_belt.create.m.Name
+    {
+        en = "Southern Wide Belt"
+        es = "Cinturón ancho sureño"
+    }
+    // context: legend_armor_southern_wide_belt.create.m.Description
+    {
+        en = "A simple wide belt that wraps around the waist."
+        es = "Un sencillo cinturón ancho que rodea la cintura."
+    }
+    // context: legend_armor_southern_wide_belt.create.m.ArmorDescription
+    {
+        en = "Includes a simple wide belt."
+        es = "Incluye un sencillo cinturón ancho."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_wrap.nut
+    // context: legend_armor_southern_wrap.create.m.Name
+    {
+        en = "Southern Cloth Wrap"
+        es = "Paño sureño"
+    }
+    // context: legend_armor_southern_wrap.create.m.Description
+    {
+        en = "A simple cloth wrap with a studded leather belt and pouches."
+        es = "Un sencillo paño de tela con un cinturón de cuero tachonado y bolsas."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_wrap_left.nut
+    // context: legend_armor_southern_wrap_left.create.m.Name
+    {
+        en = "Left Sided Wrap"
+        es = "Paño izquierdo"
+    }
+    // context: legend_armor_southern_wrap_left.create.m.Description
+    {
+        en = "A southern cloth draped over and the left shoulder."
+        es = "Un paño sureño echado sobre el hombro izquierdo."
+    }
+    // context: legend_armor_southern_wrap_left.create.m.ArmorDescription
+    {
+        en = "Includes a left sided southern wrap."
+        es = "Incluye un paño sureño sobre el hombro izquierdo."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_southern_wrap_right.nut
+    // context: legend_armor_southern_wrap_right.create.m.Name
+    {
+        en = "Right Sided Wrap"
+        es = "Paño derecho"
+    }
+    // context: legend_armor_southern_wrap_right.create.m.Description
+    {
+        en = "A southern cloth wrapped around the right shoulder."
+        es = "Un paño sureño enrollado al hombro derecho."
+    }
+    // context: legend_armor_southern_wrap_right.create.m.ArmorDescription
+    {
+        en = "Includes a right sided southern wrap."
+        es = "Incluye un paño sureño sobre el hombro derecho."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_tabard.nut
+    // context: legend_armor_tabard.create.m.Description
+    {
+        en = "A flowing cloth covering for armor that displays some colors or heraldry. It provides a layer of protection and a sense of belonging."
+        es = "Una holgada cubierta de tela para la armadura que luce unos colores o una heráldica. Da una capa de protección y sentido de pertenencia."
+    }
+    // FILE: scripts\items\legend_armor\tabard\legend_armor_tabard_noble.nut
+    // context: legend_armor_tabard_noble.create.m.Name
+    {
+        en = "Noble Tabard"
+        es = "Tabardo noble"
+    }
+    // context: legend_armor_tabard_noble.create.m.Description
+    {
+        en = "A fine, flowing cloth covering for armor that displays noble colors or heraldry. It provides a layer of protection and a sense of belonging."
+        es = "Una fina y holgada cubierta de tela para la armadura que luce colores o heráldica nobles. Da una capa de protección y sentido de pertenencia."
+    }
+    // context: legend_armor_tabard_noble.create.m.ArmorDescription
+    {
+        en = "Includes a fine, flowing cloth tabard."
+        es = "Incluye un tabardo de tela fino y holgado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_conic_helm.nut
+    // context: legend_helmet_ancient_conic_helm.create.m.Name
+    {
+        en = "Ancient Conical Helm"
+        es = "Yelmo cónico antiguo"
+    }
+    // context: legend_helmet_ancient_conic_helm.create.m.Description
+    {
+        en = "A conical helm with a nasal guard from a bygone era, its ragged leather lining barely hanging from the weathered shell."
+        es = "Un yelmo cónico con nasal de una época pasada, con el forro de cuero hecho jirones apenas colgando del casco curtido por los años."
+    }
+    // context: legend_helmet_ancient_conic_helm.create.m.ArmorDescription
+    {
+        en = "Includes an ancient conical helm."
+        es = "Incluye un yelmo cónico antiguo."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_crested.nut
+    // context: legend_helmet_ancient_crested.create.m.Name
+    {
+        en = "Ancient Crested Helm"
+        es = "Yelmo antiguo con cresta"
+    }
+    // context: legend_helmet_ancient_crested.create.m.Description
+    {
+        en = "A helm with a heavy crest and jutting cheek guards, its glory faded by the passage of time."
+        es = "Un yelmo con una pesada cresta y carrilleras salientes, cuya gloria ha apagado el paso del tiempo."
+    }
+    // context: legend_helmet_ancient_crested.create.m.ArmorDescription
+    {
+        en = "Includes an ancient crested helm."
+        es = "Incluye un yelmo antiguo con cresta."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_dome.nut
+    // context: legend_helmet_ancient_dome.create.m.Name
+    {
+        en = "Ancient Dome"
+        es = "Yelmo de cúpula antiguo"
+    }
+    // context: legend_helmet_ancient_dome.create.m.Description
+    {
+        en = "A dome helm with heavy riveted bands that has once been in possession of an ancient household guard."
+        es = "Un yelmo de cúpula con pesadas bandas remachadas que perteneció a un antiguo guardia de una casa."
+    }
+    // context: legend_helmet_ancient_dome.create.m.ArmorDescription
+    {
+        en = "Includes an ancient dome helm."
+        es = "Incluye un yelmo de cúpula antiguo."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_dome_tailed.nut
+    // context: legend_helmet_ancient_dome_tailed.create.m.Name
+    {
+        en = "Tailed Ancient Dome"
+        es = "Yelmo de cúpula antiguo con cola"
+    }
+    // context: legend_helmet_ancient_dome_tailed.create.m.Description
+    {
+        en = "A heavy dome helm topped with a tail, on which the time has left its distinctive mark."
+        es = "Un pesado yelmo de cúpula rematado con una cola, en el que el tiempo ha dejado su huella inconfundible."
+    }
+    // context: legend_helmet_ancient_dome_tailed.create.m.ArmorDescription
+    {
+        en = "Includes a heavy domed helm."
+        es = "Incluye un pesado yelmo de cúpula."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_face_helm.nut
+    // context: legend_helmet_ancient_face_helm.create.m.Name
+    {
+        en = "Ancient Face Helm"
+        es = "Yelmo antiguo con máscara"
+    }
+    // context: legend_helmet_ancient_face_helm.create.m.Description
+    {
+        en = "A sturdy helm with a face mask of an ancient honor guard. Despite its age, the helm is in remarkably good condition."
+        es = "Un robusto yelmo con máscara de un guardia de honor ancestral. Pese a su edad, está en un estado sorprendentemente bueno."
+    }
+    // context: legend_helmet_ancient_face_helm.create.m.ArmorDescription
+    {
+        en = "Includes a sturdy, ancient helm with a metal face mask."
+        es = "Incluye un robusto yelmo antiguo con una máscara de metal."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_face_plate.nut
+    // context: legend_helmet_ancient_face_plate.create.m.Name
+    {
+        en = "Ancient Plate Helm"
+        es = "Yelmo de placas antiguo"
+    }
+    // context: legend_helmet_ancient_face_plate.create.m.Description
+    {
+        en = "A heavy, dilapidated plate helm with a faceplate and a tail, belonging to a legionary of yore."
+        es = "Un pesado y ruinoso yelmo de placas, con máscara y cola, que perteneció a un legionario de antaño."
+    }
+    // context: legend_helmet_ancient_face_plate.create.m.ArmorDescription
+    {
+        en = "Includes a heavy, ancient plate helm."
+        es = "Incluye un pesado yelmo de placas antiguo."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_gladiator.nut
+    // context: legend_helmet_ancient_gladiator.create.m.Name
+    {
+        en = "Ancient Gladiator Helm"
+        es = "Yelmo de gladiador ancestral"
+    }
+    // context: legend_helmet_ancient_gladiator.create.m.Description
+    {
+        en = "A heavy helm with a tall, bladed crest and a perforated faceplate. A battered echo of past glories of those who once bled for the entertainment of a dead empire."
+        es = "Un pesado yelmo con una alta cresta afilada y una máscara perforada. Un eco maltrecho de las viejas glorias de quienes sangraron para entretener a un imperio muerto."
+    }
+    // context: legend_helmet_ancient_gladiator.create.m.ArmorDescription
+    {
+        en = "Includes an ancient gladiator helm."
+        es = "Incluye un yelmo de gladiador ancestral."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_kettle.nut
+    // context: legend_helmet_ancient_kettle.create.m.Name
+    {
+        en = "Ancient Kettle"
+        es = "Capelina antigua"
+    }
+    // context: legend_helmet_ancient_kettle.create.m.Description
+    {
+        en = "An ancient kettle helm decorated with a tall metal crest, topped with twin feathers that have since lost their lustre."
+        es = "Una capelina antigua decorada con una alta cresta de metal, rematada con dos plumas que hace tiempo perdieron su lustre."
+    }
+    // context: legend_helmet_ancient_kettle.create.m.ArmorDescription
+    {
+        en = "Includes an ancient kettle helm."
+        es = "Incluye una capelina antigua."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_legionary_helm.nut
+    // context: legend_helmet_ancient_legionary_helm.create.m.Name
+    {
+        en = "Ancient Legionary Helm"
+        es = "Yelmo de legionario ancestral"
+    }
+    // context: legend_helmet_ancient_legionary_helm.create.m.Description
+    {
+        en = "A heavy helm with a tattered horsehair plume and dulled finish, once a symbol of a legion's iron discipline."
+        es = "Un pesado yelmo de acabado deslucido con un penacho de crin raído, antaño símbolo de la férrea disciplina de una legión."
+    }
+    // context: legend_helmet_ancient_legionary_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy helm of an ancient legionary."
+        es = "Incluye el pesado yelmo de un legionario ancestral."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_legionary_helm_restored.nut
+    // context: legend_helmet_ancient_legionary_helm_restored.create.m.Name
+    {
+        en = "Restored Ancient Legionary helm"
+        es = "Yelmo de legionario ancestral restaurado"
+    }
+    // context: legend_helmet_ancient_legionary_helm_restored.create.m.Description
+    {
+        en = "A restored and polished helm of a long dead legionary, once again serving its purpose after centuries of decay and neglect."
+        es = "El yelmo restaurado y pulido de un legionario muerto hace mucho, que vuelve a cumplir su función tras siglos de deterioro y abandono."
+    }
+    // context: legend_helmet_ancient_legionary_helm_restored.create.m.ArmorDescription
+    {
+        en = "Includes a restored ancient legionary helm."
+        es = "Incluye un yelmo de legionario ancestral restaurado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_side_hawk.nut
+    // context: legend_helmet_ancient_side_hawk.create.m.Name
+    {
+        en = "Ancient Side Hawk"
+        es = "Halcón lateral antiguo"
+    }
+    // context: legend_helmet_ancient_side_hawk.create.m.Description
+    {
+        en = "A heavy ancient helm with a once prominent side crest that has since deteriorated into a set of tattered plumes."
+        es = "Un pesado yelmo antiguo con una cresta lateral, antaño imponente, que se ha quedado en unas cuantas plumas raídas."
+    }
+    // context: legend_helmet_ancient_side_hawk.create.m.ArmorDescription
+    {
+        en = "Includes a heavy, ancient side-crested helm."
+        es = "Incluye un pesado yelmo antiguo con cresta lateral."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_ancient_tailed_conic_helm.nut
+    // context: legend_helmet_ancient_tailed_conic_helm.create.m.Name
+    {
+        en = "Tailed Ancient Conical Helm"
+        es = "Yelmo cónico antiguo con cola"
+    }
+    // context: legend_helmet_ancient_tailed_conic_helm.create.m.Description
+    {
+        en = "A conical helm of ancient design, topped with a tail long stiff and matted with rot."
+        es = "Un yelmo cónico de diseño antiguo, rematado con una cola tiesa desde hace mucho y apelmazada por la podredumbre."
+    }
+    // context: legend_helmet_ancient_tailed_conic_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy, ancient tailed conical helm."
+        es = "Incluye un pesado yelmo cónico antiguo con cola."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_armet.nut
+    // context: legend_helmet_armet.create.m.Description
+    {
+        en = "A sophisticated steel helm offering excellent protection despite its agile silhouette."
+        es = "Un sofisticado yelmo de acero que ofrece una protección excelente pese a su silueta ágil."
+    }
+    // context: legend_helmet_armet.create.m.ArmorDescription
+    {
+        en = "Includes a steel armet."
+        es = "Incluye un almete de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_armet_named.nut
+    // context: legend_helmet_armet_named.create.m.Description
+    {
+        en = "A sophisticated steel helm offering excellent protection despite its agile silhouette. Masterfully crafted of exquisite steel and layered with decorative paint."
+        es = "Un sofisticado yelmo de acero que ofrece una protección excelente pese a su silueta ágil. Forjado con maestría en un acero exquisito y cubierto de pintura decorativa."
+    }
+    // context: legend_helmet_armet_named.create.m.ArmorDescription
+    {
+        en = "Includes a masterfully crafted armet of exquisite steel."
+        es = "Incluye un almete de acero exquisito forjado con maestría."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_barb_metal_cap.nut
+    // context: legend_helmet_barb_metal_cap.create.m.Name
+    {
+        en = "Rusted Metal Helm"
+        es = "Yelmo de metal oxidado"
+    }
+    // context: legend_helmet_barb_metal_cap.create.m.Description
+    {
+        en = "A rusted and dented metal cap that provides protection against bumps to the head."
+        es = "Un gorro de metal oxidado y abollado que protege la cabeza de los golpes."
+    }
+    // context: legend_helmet_barb_metal_cap.create.m.ArmorDescription
+    {
+        en = "Includes a rusted metal cap."
+        es = "Incluye un gorro de metal oxidado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_barb_ritual_helm.nut
+    // context: legend_helmet_barb_ritual_helm.create.m.Name
+    {
+        en = "Northern Ritual Helm"
+        es = "Yelmo ritual norteño"
+    }
+    // context: legend_helmet_barb_ritual_helm.create.m.Description
+    {
+        en = "This menacing and heavy full faced mask of solid iron is used during barbarian warbands rituals for reasons unknown."
+        es = "Esta amenazante y pesada máscara de hierro macizo, que cubre toda la cara, la usan las bandas de guerra bárbaras en sus rituales por razones desconocidas."
+    }
+    // context: legend_helmet_barb_ritual_helm.create.m.ArmorDescription
+    {
+        en = "Includes a northern ritual helm."
+        es = "Incluye un yelmo ritual norteño."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_barbute.nut
+    // context: legend_helmet_barbute.create.m.Name
+    {
+        en = "Barbute"
+        es = "Barbuta"
+    }
+    // context: legend_helmet_barbute.create.m.Description
+    {
+        en = "A sturdy yet light barbute helm, a design uncommon in these lands, made from especially light and durable steel."
+        es = "Un yelmo barbuta robusto y a la vez ligero, un diseño poco común en estas tierras, fabricado con acero especialmente ligero y duradero."
+    }
+    // context: legend_helmet_barbute.create.m.ArmorDescription
+    {
+        en = "Includes a sturdy yet light barbute helm."
+        es = "Incluye un yelmo barbuta robusto y a la vez ligero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_barbute_named.nut
+    // context: legend_helmet_barbute_named.create.m.Description
+    {
+        en = "A superb barbute helm of foreign origin, this piece has been painted and polished to an intense shine."
+        es = "Un soberbio yelmo barbuta de origen extranjero, pintado y pulido hasta darle un brillo intenso."
+    }
+    // context: legend_helmet_barbute_named.create.m.ArmorDescription
+    {
+        en = "Includes a superb barbute helm of foreign origin,."
+        es = "Incluye un soberbio yelmo barbuta de origen extranjero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_barbute_two_piece_named.nut
+    // context: legend_helmet_barbute_two_piece_named.create.m.Description
+    {
+        en = "A mastercrafted two-piece barbute helm, meticulously joined and well-maintained."
+        es = "Un yelmo barbuta de dos piezas, obra maestra de la forja, ensamblado con minuciosidad y bien conservado."
+    }
+    // context: legend_helmet_barbute_two_piece_named.create.m.ArmorDescription
+    {
+        en = "Includes a mastercrafted two-piece barbute helm."
+        es = "Incluye un yelmo barbuta de dos piezas, obra maestra de la forja."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_bascinet.nut
+    // context: legend_helmet_bascinet.create.m.Name
+    {
+        en = "Bascinet"
+        es = "Bascinete"
+    }
+    // context: legend_helmet_bascinet.create.m.Description
+    {
+        en = "A rounded steel helm with a reinforced dome, providing solid protection for the cranium."
+        es = "Un yelmo redondeado de acero con la cúpula reforzada, que protege bien el cráneo."
+    }
+    // context: legend_helmet_bascinet.create.m.ArmorDescription
+    {
+        en = "Includes a steel bascinet."
+        es = "Incluye un bascinete de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_bascinet_named.nut
+    // context: legend_helmet_bascinet_named.create.m.Description
+    {
+        en = "An exquisite bascinet with a pointed head. Very comfortable thanks to its soft leather interior."
+        es = "Un exquisito bascinete de copa puntiaguda. Muy cómodo gracias a su suave interior de cuero."
+    }
+    // context: legend_helmet_bascinet_named.create.m.ArmorDescription
+    {
+        en = "Includes an exquisite bascinet."
+        es = "Incluye un exquisito bascinete."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_carthaginian.nut
+    // context: legend_helmet_carthaginian.create.m.Name
+    {
+        en = "Carthaginian Helm"
+        es = "Yelmo cartaginés"
+    }
+    // context: legend_helmet_carthaginian.create.m.Description
+    {
+        en = "A sturdy alloy helm of foreign design."
+        es = "Un robusto yelmo de aleación de diseño extranjero."
+    }
+    // context: legend_helmet_carthaginian.create.m.ArmorDescription
+    {
+        en = "Includes a foreign alloy helm."
+        es = "Incluye un yelmo extranjero de aleación."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_cervelliere.nut
+    // context: legend_helmet_cervelliere.create.m.Name
+    {
+        en = "Reinforced Cervelliere"
+        es = "Cervellera reforzada"
+    }
+    // context: legend_helmet_cervelliere.create.m.Description
+    {
+        en = "A heavy steel helm with added bolted cheek guards that offers extensive coverage for the jaw and the temples."
+        es = "Un pesado yelmo de acero con carrilleras atornilladas que cubre casi por completo la mandíbula y las sienes."
+    }
+    // context: legend_helmet_cervelliere.create.m.ArmorDescription
+    {
+        en = "Includes a steel cervelliere with bolted cheek guards."
+        es = "Incluye una cervellera de acero con carrilleras atornilladas."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_cervelliere_named.nut
+    // context: legend_helmet_cervelliere_named.create.m.Description
+    {
+        en = "A skillfully painted cervelliere with added bolted cheek guards. Made of strong steel capable of protecting one's skull from all kinds of trauma."
+        es = "Una cervellera pintada con destreza, con carrilleras atornilladas. Está hecha de un acero resistente, capaz de proteger el cráneo de toda clase de golpes."
+    }
+    // context: legend_helmet_cervelliere_named.create.m.ArmorDescription
+    {
+        en = "Includes a skillfully painted cervelliere with bolted cheek guards."
+        es = "Incluye una cervellera pintada con destreza, con carrilleras atornilladas."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_conic_helm.nut
+    // context: legend_helmet_conic_helm.create.m.Name
+    {
+        en = "Conical Helm"
+        es = "Yelmo cónico"
+    }
+    // context: legend_helmet_conic_helm.create.m.Description
+    {
+        en = "A conical helm fluted to redirect the force of the incoming blows."
+        es = "Un yelmo cónico acanalado para desviar la fuerza de los golpes."
+    }
+    // context: legend_helmet_conic_helm.create.m.ArmorDescription
+    {
+        en = "Includes a fluted conical helm."
+        es = "Incluye un yelmo cónico acanalado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_crude_cylinder_helm.nut
+    // context: legend_helmet_crude_cylinder_helm.create.m.Name
+    {
+        en = "Crude Cylinder Helm"
+        es = "Yelmo cilíndrico tosco"
+    }
+    // context: legend_helmet_crude_cylinder_helm.create.m.Description
+    {
+        en = "This heavy metal helm also protects the wearers face, albeit at the cost of visibility."
+        es = "Este yelmo de metal pesado también protege la cara de quien lo lleva, aunque a costa de la visibilidad."
+    }
+    // context: legend_helmet_crude_cylinder_helm.create.m.ArmorDescription
+    {
+        en = "Includes a crude cylinder helm."
+        es = "Incluye un yelmo cilíndrico tosco."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_crude_metal_helm.nut
+    // context: legend_helmet_crude_metal_helm.create.m.Name
+    {
+        en = "Crude Metal Helm"
+        es = "Yelmo de metal tosco"
+    }
+    // context: legend_helmet_crude_metal_helm.create.m.Description
+    {
+        en = "Although crudely made and rusty, this metal helm is a durable and sturdy piece of armor."
+        es = "Aunque está toscamente fabricado y oxidado, este yelmo de metal es una pieza de armadura duradera y resistente."
+    }
+    // context: legend_helmet_crude_metal_helm.create.m.ArmorDescription
+    {
+        en = "Includes a crude metal helm."
+        es = "Incluye un yelmo de metal tosco."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_crude_skull_helm.nut
+    // context: legend_helmet_crude_skull_helm.create.m.Description
+    {
+        en = "A heavy helm typical of the northern barbarians with a skull-like face mask. This piece is as massive as it is impressive."
+        es = "Un pesado yelmo, típico de los bárbaros del norte, con una máscara en forma de calavera. Es tan macizo como impresionante."
+    }
+    // context: legend_helmet_crude_skull_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy helm with a skull-like face mask."
+        es = "Incluye un pesado yelmo con una máscara en forma de calavera."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_deep_cervelliere.nut
+    // context: legend_helmet_deep_cervelliere.create.m.Name
+    {
+        en = "Reinforced Deep Cervelliere"
+        es = "Cervellera honda reforzada"
+    }
+    // context: legend_helmet_deep_cervelliere.create.m.Description
+    {
+        en = "A metal cervelliere with a deep, rounded bowl and bolted cheek guards, providing good protection."
+        es = "Una cervellera de metal con una copa honda y redondeada y carrilleras atornilladas, que protege bien."
+    }
+    // context: legend_helmet_deep_cervelliere.create.m.ArmorDescription
+    {
+        en = "Includes a deep steel cervelliere."
+        es = "Incluye una cervellera honda de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_deep_cervelliere_named.nut
+    // context: legend_helmet_deep_cervelliere_named.create.m.Description
+    {
+        en = "A decorated deep cervelliere with bolted cheek guards. It bears a gilded trim with decorative leaf plates pinned to the front ridge."
+        es = "Una cervellera honda decorada, con carrilleras atornilladas. Lleva un ribete dorado y placas decorativas en forma de hoja clavadas a la cresta frontal."
+    }
+    // context: legend_helmet_deep_cervelliere_named.create.m.ArmorDescription
+    {
+        en = "Includes an intricately decorated deep cervelliere."
+        es = "Incluye una cervellera honda de intrincada decoración."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_diviner_top.nut
+    // context: legend_helmet_diviner_top.create.m.Name
+    {
+        en = "Diviner's Crown"
+        es = "Corona del Adivino"
+    }
+    // context: legend_helmet_diviner_top.create.m.Description
+    {
+        en = "The crown of The Diviner. Upon placing it on your head it was as if your mind expanded out from your body."
+        es = "La corona del Adivino. Al ponértela en la cabeza, fue como si tu mente se expandiera más allá de tu cuerpo."
+    }
+    // context: legend_helmet_diviner_top.create.m.ArmorDescription
+    {
+        en = "Includes the crown of The Diviner."
+        es = "Incluye la corona del Adivino."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_enclave_armet.nut
+    // context: legend_helmet_enclave_armet.create.m.Name
+    {
+        en = "Open Armet"
+        es = "Almete abierto"
+    }
+    // context: legend_helmet_enclave_armet.create.m.Description
+    {
+        en = "A light armet without a visor."
+        es = "Un almete ligero sin visor."
+    }
+    // context: legend_helmet_enclave_armet.create.m.ArmorDescription
+    {
+        en = "Includes a light open armet."
+        es = "Incluye un almete abierto ligero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_enclave_great_bascinet.nut
+    // context: legend_helmet_enclave_great_bascinet.create.m.Name
+    {
+        en = "Great Bascinet"
+        es = "Gran bascinete"
+    }
+    // context: legend_helmet_enclave_great_bascinet.create.m.Description
+    {
+        en = "A tall helm composed of a peaked bascinet and riveted cheek protection."
+        es = "Un yelmo alto formado por un bascinete puntiagudo y unas carrilleras remachadas."
+    }
+    // context: legend_helmet_enclave_great_bascinet.create.m.ArmorDescription
+    {
+        en = "Includes a great bascinet."
+        es = "Incluye un gran bascinete."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_enclave_great_helm.nut
+    // context: legend_helmet_enclave_great_helm.create.m.Description
+    {
+        en = "A sturdy steel helm with a perforated breath. Very heavy and limiting the field of view."
+        es = "Un robusto yelmo de acero con respiraderos. Muy pesado, y limita el campo de visión."
+    }
+    // context: legend_helmet_enclave_great_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy great helm."
+        es = "Incluye un pesado gran yelmo."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_enclave_kettle.nut
+    // context: legend_helmet_enclave_kettle.create.m.Description
+    {
+        en = "A steel helm that melds the defensive brim of a kettle hat with the sleek, protective form of a sallet."
+        es = "Un yelmo de acero que une el ala defensiva de una capelina con la forma estilizada y protectora de una celada."
+    }
+    // context: legend_helmet_enclave_kettle.create.m.ArmorDescription
+    {
+        en = "Includes a steel kettle sallet."
+        es = "Incluye una celada capelina de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_enclave_peaked_bascinet.nut
+    // context: legend_helmet_enclave_peaked_bascinet.create.m.Name
+    {
+        en = "Peaked Bascinet"
+        es = "Bascinete puntiagudo"
+    }
+    // context: legend_helmet_enclave_peaked_bascinet.create.m.Description
+    {
+        en = "An imposing steel helm that extends into a flared gorget to protect the throat."
+        es = "Un imponente yelmo de acero que se prolonga en un gorjal acampanado para proteger la garganta."
+    }
+    // context: legend_helmet_enclave_peaked_bascinet.create.m.ArmorDescription
+    {
+        en = "Includes a peaked bascinet with a gorget."
+        es = "Incluye un bascinete puntiagudo con gorjal."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_enclave_skullcap.nut
+    // context: legend_helmet_enclave_skullcap.create.m.Name
+    {
+        en = "Metal Skullcap"
+        es = "Casquete de metal"
+    }
+    // context: legend_helmet_enclave_skullcap.create.m.Description
+    {
+        en = "A simple, light steel cap that covers the head."
+        es = "Un gorro de acero sencillo y ligero que cubre la cabeza."
+    }
+    // context: legend_helmet_enclave_skullcap.create.m.ArmorDescription
+    {
+        en = "Includes a steel cap."
+        es = "Incluye un gorro de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_flat_top_face_plate.nut
+    // context: legend_helmet_flat_top_face_plate.create.m.Name
+    {
+        en = "Flat Top Face Plate"
+        es = "Yelmo plano con máscara"
+    }
+    // context: legend_helmet_flat_top_face_plate.create.m.Description
+    {
+        en = "A flat metal helm with a bolted face plate with a perforated breath."
+        es = "Un yelmo plano de metal con una máscara atornillada y con respiraderos."
+    }
+    // context: legend_helmet_flat_top_face_plate.create.m.ArmorDescription
+    {
+        en = "Includes a flat metal helm with a bolted face plate."
+        es = "Incluye un yelmo plano de metal con una máscara atornillada."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_flat_top_helm.nut
+    // context: legend_helmet_flat_top_helm.create.m.Name
+    {
+        en = "Flat Top Helm"
+        es = "Yelmo plano"
+    }
+    // context: legend_helmet_flat_top_helm.create.m.Description
+    {
+        en = "A flat metal helm with a nose guard, popular among the soldiers."
+        es = "Un yelmo plano de metal con nasal, popular entre los soldados."
+    }
+    // context: legend_helmet_flat_top_helm.create.m.ArmorDescription
+    {
+        en = "Includes a flat metal helm."
+        es = "Incluye un yelmo plano de metal."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_flat_top_helm_rusted.nut
+    // context: legend_helmet_flat_top_helm_rusted.create.m.Name
+    {
+        en = "Rusted Flat Top Helm"
+        es = "Yelmo plano oxidado"
+    }
+    // context: legend_helmet_flat_top_helm_rusted.create.m.Description
+    {
+        en = "A rusted and dented helm with a flat top, a telling sign of a negligent owner."
+        es = "Un yelmo plano oxidado y abollado, señal inequívoca de un dueño descuidado."
+    }
+    // context: legend_helmet_flat_top_helm_rusted.create.m.ArmorDescription
+    {
+        en = "Includes a rusted flat metal helm."
+        es = "Incluye un yelmo plano de metal oxidado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_frogmouth.nut
+    // context: legend_helmet_frogmouth.create.m.Name
+    {
+        en = "Frogmouth"
+        es = "Boca de rana"
+    }
+    // context: legend_helmet_frogmouth.create.m.Description
+    {
+        en = "A sturdy steel helm with a crafty sloped design meant to deflect blows."
+        es = "Un robusto yelmo de acero con un ingenioso diseño inclinado pensado para desviar los golpes."
+    }
+    // context: legend_helmet_frogmouth.create.m.ArmorDescription
+    {
+        en = "Includes a steel frogmouth helm."
+        es = "Incluye un yelmo de boca de rana de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_frogmouth_named.nut
+    // context: legend_helmet_frogmouth_named.create.m.Description
+    {
+        en = "A prestigious helm with a crafty sloped design meant to deflect blows. Such a masterpiece surely belonged to a champion of many great tournaments."
+        es = "Un prestigioso yelmo con un ingenioso diseño inclinado pensado para desviar los golpes. Semejante obra maestra seguro que perteneció a un campeón de muchos grandes torneos."
+    }
+    // context: legend_helmet_frogmouth_named.create.m.ArmorDescription
+    {
+        en = "Includes a prestigious frogmouth helm of excellent construction."
+        es = "Incluye un prestigioso yelmo de boca de rana de excelente factura."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_full_helm.nut
+    // context: legend_helmet_full_helm.create.m.Description
+    {
+        en = "A sturdy, pointed helm of heavy steel with a perforated breath, offering great protection."
+        es = "Un yelmo puntiagudo y robusto de acero pesado, con respiraderos, que ofrece una gran protección."
+    }
+    // context: legend_helmet_full_helm.create.m.ArmorDescription
+    {
+        en = "Includes a sturdy full helm."
+        es = "Incluye un robusto yelmo completo."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_giles_helm.nut
+    // context: legend_helmet_giles_helm.create.m.Name
+    {
+        en = "Sir Giles Helm"
+        es = "Yelmo de Sir Giles"
+    }
+    // context: legend_helmet_giles_helm.create.m.Description
+    {
+        en = "A tight fitting helm with a perforated visor in a unique style."
+        es = "Un yelmo ceñido con un visor perforado de estilo único."
+    }
+    // context: legend_helmet_giles_helm.create.m.ArmorDescription
+    {
+        en = "Includes a tight fitting helm with a perforated visor."
+        es = "Incluye un yelmo ceñido con un visor perforado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_great_helm.nut
+    // context: legend_helmet_great_helm.create.m.Description
+    {
+        en = "A heavy, cylindrical helm reinforced with a cross-plate and a perforated breath, offering near-total head protection at the cost of peripheral vision."
+        es = "Un pesado yelmo cilíndrico reforzado con una placa en cruz y con respiraderos, que protege casi por completo la cabeza a costa de la visión periférica."
+    }
+    // context: legend_helmet_great_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy, cylindrical helm."
+        es = "Incluye un pesado yelmo cilíndrico."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_heavy_plate_helm.nut
+    // context: legend_helmet_heavy_plate_helm.create.m.Name
+    {
+        en = "Heavy Plate Helm"
+        es = "Yelmo de placas pesado"
+    }
+    // context: legend_helmet_heavy_plate_helm.create.m.Description
+    {
+        en = "This heavy helm usually is worn as a sign of high standing and reputation within barbarian warbands."
+        es = "Este pesado yelmo suele llevarse como señal de alto rango y reputación en las bandas de guerra bárbaras."
+    }
+    // context: legend_helmet_heavy_plate_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy plate helm."
+        es = "Incluye un pesado yelmo de placas."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_heavy_plate_helm_named.nut
+    // context: legend_helmet_heavy_plate_helm_named.create.m.Description
+    {
+        en = "This heavy helm has ornamental horns attached and is of exceptional quality among the barbarian clans. This is a sign of high standing and reputation within barbarian warbands."
+        es = "Este pesado yelmo lleva cuernos ornamentales y es de una calidad excepcional entre los clanes bárbaros. Es señal de alto rango y reputación en las bandas de guerra bárbaras."
+    }
+    // context: legend_helmet_heavy_plate_helm_named.create.m.ArmorDescription
+    {
+        en = "Includes a heavy plate helm with ornamental horns."
+        es = "Incluye un pesado yelmo de placas con cuernos ornamentales."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_heavy_spiked_helm.nut
+    // context: legend_helmet_heavy_spiked_helm.create.m.Description
+    {
+        en = "This helm must have belonged to a distinct warrior of the barbarians. Its size and design appear alien to all southern folks."
+        es = "Este yelmo debió de pertenecer a un guerrero destacado de los bárbaros. Su tamaño y su diseño resultan extraños a todas las gentes del sur."
+    }
+    // context: legend_helmet_heavy_spiked_helm.create.m.ArmorDescription
+    {
+        en = "Includes a heavy spiked helm."
+        es = "Incluye un pesado yelmo con púas."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_horsetail.nut
+    // context: legend_helmet_horsetail.create.m.Name
+    {
+        en = "Steppe Helm"
+        es = "Yelmo de la estepa"
+    }
+    // context: legend_helmet_horsetail.create.m.Description
+    {
+        en = "A nasal helm with an attached tail fashioned in the way of the steppe folks."
+        es = "Un yelmo nasal con una cola sujeta, hecho a la manera de las gentes de la estepa."
+    }
+    // context: legend_helmet_horsetail.create.m.ArmorDescription
+    {
+        en = "Includes a nasal helm with an attached tail."
+        es = "Incluye un yelmo nasal con una cola sujeta."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_horsetail_named.nut
+    // context: legend_helmet_horsetail_named.create.m.Description
+    {
+        en = "An expertly crafted nasal helm decorated with intricate golden ornaments."
+        es = "Un yelmo nasal de factura experta decorado con intrincados adornos dorados."
+    }
+    // context: legend_helmet_horsetail_named.create.m.ArmorDescription
+    {
+        en = "Includes an expertly crafted nasal helm."
+        es = "Incluye un yelmo nasal de factura experta."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_italo_norman_helm.nut
+    // context: legend_helmet_italo_norman_helm.create.m.Name
+    {
+        en = "Italo Norman Helm"
+        es = "Yelmo italonormando"
+    }
+    // context: legend_helmet_italo_norman_helm.create.m.Description
+    {
+        en = "A pointed conical helm with a large duck-bill shaped faceplate covering the front."
+        es = "Un yelmo cónico puntiagudo con una gran máscara en forma de pico de pato que cubre el frente."
+    }
+    // context: legend_helmet_italo_norman_helm.create.m.ArmorDescription
+    {
+        en = "Includes a conical helm with a duck-bill shaped faceplate."
+        es = "Incluye un yelmo cónico con una máscara en forma de pico de pato."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_italo_norman_helm_named.nut
+    // context: legend_helmet_italo_norman_helm_named.create.m.Description
+    {
+        en = "A well-built and lavishly decorated pointed conical helm with a large duck-bill shaped faceplate covering the front."
+        es = "Un yelmo cónico puntiagudo, bien construido y profusamente decorado, con una gran máscara en forma de pico de pato que cubre el frente."
+    }
+    // context: legend_helmet_italo_norman_helm_named.create.m.ArmorDescription
+    {
+        en = "Includes a well-built pointed conical helm with a duck-bill shaped faceplate."
+        es = "Incluye un yelmo cónico puntiagudo y bien construido con una máscara en forma de pico de pato."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_kettle_hat.nut
+    // context: legend_helmet_kettle_hat.create.m.Name
+    {
+        en = "Kettle Hat"
+        es = "Capelina"
+    }
+    // context: legend_helmet_kettle_hat.create.m.Description
+    {
+        en = "A simple metal helm with a wide, sloping brim and a pointy top."
+        es = "Un sencillo yelmo de metal con un ala ancha e inclinada y la copa en punta."
+    }
+    // context: legend_helmet_kettle_hat.create.m.ArmorDescription
+    {
+        en = "Includes a steel kettle hat."
+        es = "Incluye una capelina de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_kettle_helm.nut
+    // context: legend_helmet_kettle_helm.create.m.Name
+    {
+        en = "Kettle Helm"
+        es = "Yelmo capelina"
+    }
+    // context: legend_helmet_kettle_helm.create.m.Description
+    {
+        en = "A metal helm with a broad rim, popular among the soldiers."
+        es = "Un yelmo de metal de ala ancha, popular entre los soldados."
+    }
+    // context: legend_helmet_kettle_helm.create.m.ArmorDescription
+    {
+        en = "Includes a steel kettle helm."
+        es = "Incluye un yelmo capelina de acero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_kettle_helm_high.nut
+    // context: legend_helmet_kettle_helm_high.create.m.Name
+    {
+        en = "Deep Kettle Helm"
+        es = "Yelmo capelina hondo"
+    }
+    // context: legend_helmet_kettle_helm_high.create.m.Description
+    {
+        en = "A tall metal helm with a broad rim."
+        es = "Un yelmo de metal alto y de ala ancha."
+    }
+    // context: legend_helmet_kettle_helm_high.create.m.ArmorDescription
+    {
+        en = "Includes a tall kettle helm."
+        es = "Incluye un yelmo capelina alto."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_kettle_helm_named.nut
+    // context: legend_helmet_kettle_helm_named.create.m.Description
+    {
+        en = "An exceptional kettle helm of unmatched quality. Adorned with golden decorative elements."
+        es = "Un yelmo capelina excepcional, de una calidad sin igual. Adornado con elementos decorativos dorados."
+    }
+    // context: legend_helmet_kettle_helm_named.create.m.ArmorDescription
+    {
+        en = "Includes an exceptional kettle helm of unmatched quality."
+        es = "Incluye un yelmo capelina excepcional, de una calidad sin igual."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_kettle_helm_rusted.nut
+    // context: legend_helmet_kettle_helm_rusted.create.m.Name
+    {
+        en = "Rusted Kettle Helm"
+        es = "Yelmo capelina oxidado"
+    }
+    // context: legend_helmet_kettle_helm_rusted.create.m.Description
+    {
+        en = "A low, broad-rimmed metal helm, rusted and dented."
+        es = "Un yelmo de metal bajo y de ala ancha, oxidado y abollado."
+    }
+    // context: legend_helmet_kettle_helm_rusted.create.m.ArmorDescription
+    {
+        en = "Includes a rusted steel kettle helm."
+        es = "Incluye un yelmo capelina de acero oxidado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_nordic_helm.nut
+    // context: legend_helmet_nordic_helm.create.m.Name
+    {
+        en = "Nordic Helm"
+        es = "Yelmo nórdico"
+    }
+    // context: legend_helmet_nordic_helm.create.m.Description
+    {
+        en = "A nordic helm guarding face and neck with additional metal plates."
+        es = "Un yelmo nórdico que protege la cara y el cuello con placas de metal añadidas."
+    }
+    // context: legend_helmet_nordic_helm.create.m.ArmorDescription
+    {
+        en = "Includes a nordic helm."
+        es = "Incluye un yelmo nórdico."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_nordic_helm_high.nut
+    // context: legend_helmet_nordic_helm_high.create.m.Name
+    {
+        en = "Hardened Nordic Helm"
+        es = "Yelmo nórdico endurecido"
+    }
+    // context: legend_helmet_nordic_helm_high.create.m.Description
+    {
+        en = "A spectacularly well constructed and maintained nordic helm guarding face and neck with additional metal plates."
+        es = "Un yelmo nórdico espectacularmente bien construido y conservado, que protege la cara y el cuello con placas de metal añadidas."
+    }
+    // context: legend_helmet_nordic_helm_high.create.m.ArmorDescription
+    {
+        en = "Includes a hardened nordic helm."
+        es = "Incluye un yelmo nórdico endurecido."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_nordic_helm_low.nut
+    // context: legend_helmet_nordic_helm_low.create.m.Name
+    {
+        en = "Rusted Nordic Helm"
+        es = "Yelmo nórdico oxidado"
+    }
+    // context: legend_helmet_nordic_helm_low.create.m.Description
+    {
+        en = "A poorly maintained nordic helm guarding face and neck with additional metal plates. It is rusted, dented, bent and will never be fully repaired."
+        es = "Un yelmo nórdico mal conservado que protege la cara y el cuello con placas de metal añadidas. Está oxidado, abollado y torcido, y nunca podrá repararse del todo."
+    }
+    // context: legend_helmet_nordic_helm_low.create.m.ArmorDescription
+    {
+        en = "Includes a rusted nordic helm."
+        es = "Incluye un yelmo nórdico oxidado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_norman_helm.nut
+    // context: legend_helmet_norman_helm.create.m.Name
+    {
+        en = "Nasal Helm"
+        es = "Yelmo nasal"
+    }
+    // context: legend_helmet_norman_helm.create.m.Description
+    {
+        en = "A light metal helm with a nose guard."
+        es = "Un yelmo de metal ligero con nasal."
+    }
+    // context: legend_helmet_norman_helm.create.m.ArmorDescription
+    {
+        en = "Includes a light metal helm."
+        es = "Incluye un yelmo de metal ligero."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_norman_helm_named.nut
+    // context: legend_helmet_norman_helm_named.create.m.Description
+    {
+        en = "A conical helm of excellent quality with polished, golden elements that catch the light with a sharp, brilliant glint."
+        es = "Un yelmo cónico de excelente calidad con elementos dorados y pulidos que atrapan la luz con un destello vivo y brillante."
+    }
+    // context: legend_helmet_norman_helm_named.create.m.ArmorDescription
+    {
+        en = "Includes a conical helm of excellent quality with polished, golden elements."
+        es = "Incluye un yelmo cónico de excelente calidad con elementos dorados y pulidos."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_orc_behemoth_helmet.nut
+    // context: legend_helmet_orc_behemoth_helmet.create.m.Name
+    {
+        en = "Orc Behemoth Helm"
+        es = "Yelmo de behemot orco"
+    }
+    // context: legend_helmet_orc_behemoth_helmet.create.m.Description
+    {
+        en = "The distinctive helm of an orc behemoth, adorned with huge, jutting tusks."
+        es = "El característico yelmo de un behemot orco, adornado con enormes colmillos salientes."
+    }
+    // context: legend_helmet_orc_behemoth_helmet.create.m.ArmorDescription
+    {
+        en = "Includes an orc behemoth helm."
+        es = "Incluye un yelmo de behemot orco."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_orc_double_helm.nut
+    // context: legend_helmet_orc_double_helm.create.m.Name
+    {
+        en = "Orc Looted Kettle Hat"
+        es = "Capelina saqueada orca"
+    }
+    // context: legend_helmet_orc_double_helm.create.m.Description
+    {
+        en = "A simplistic orc helm made from two kettle hats tied together and reinforced with chain mail."
+        es = "Un burdo yelmo orco hecho con dos capelinas atadas y reforzado con cota de malla."
+    }
+    // context: legend_helmet_orc_double_helm.create.m.ArmorDescription
+    {
+        en = "Includes an orc kettle hat."
+        es = "Incluye una capelina orca."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_orc_elite_double_helm.nut
+    // context: legend_helmet_orc_elite_double_helm.create.m.Name
+    {
+        en = "Orc Reinforced Looted Kettle Hat"
+        es = "Capelina saqueada orca reforzada"
+    }
+    // context: legend_helmet_orc_elite_double_helm.create.m.Description
+    {
+        en = "An orc helm made from two kettle hats tied together and reinforced with chain mail. Craftsmanship is exceptional for orc armor."
+        es = "Un yelmo orco hecho con dos capelinas atadas y reforzado con cota de malla. La factura es excepcional para ser una armadura orca."
+    }
+    // context: legend_helmet_orc_elite_double_helm.create.m.ArmorDescription
+    {
+        en = "Includes a reinforced orc kettle hat."
+        es = "Incluye una capelina orca reforzada."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_orc_great_helm.nut
+    // context: legend_helmet_orc_great_helm.create.m.Name
+    {
+        en = "Orc Great Helm"
+        es = "Gran yelmo orco"
+    }
+    // context: legend_helmet_orc_great_helm.create.m.Description
+    {
+        en = "The distinctive helm of an orc warlord, extremely heavy and severely limiting sight."
+        es = "El característico yelmo de un caudillo orco, pesadísimo y que limita mucho la vista."
+    }
+    // context: legend_helmet_orc_great_helm.create.m.ArmorDescription
+    {
+        en = "Includes an orc great helm."
+        es = "Incluye un gran yelmo orco."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_orc_scale_helm.nut
+    // context: legend_helmet_orc_scale_helm.create.m.Name
+    {
+        en = "Orc Looted Scale Plate Helm"
+        es = "Yelmo de escamas saqueado orco"
+    }
+    // context: legend_helmet_orc_scale_helm.create.m.Description
+    {
+        en = "An orc helm made from looted heavy plated helms, patched and forged together."
+        es = "Un yelmo orco hecho con pesados yelmos de placas saqueados, remendados y forjados juntos."
+    }
+    // context: legend_helmet_orc_scale_helm.create.m.ArmorDescription
+    {
+        en = "Includes an orc scale helm."
+        es = "Incluye un yelmo de escamas orco."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_orc_strapped_helm.nut
+    // context: legend_helmet_orc_strapped_helm.create.m.Name
+    {
+        en = "Orc Looted Nasal Helm"
+        es = "Yelmo nasal saqueado orco"
+    }
+    // context: legend_helmet_orc_strapped_helm.create.m.Description
+    {
+        en = "An orc helm made of scavenged helm parts crudely lashed together."
+        es = "Un yelmo orco hecho con piezas de yelmos rapiñadas y atadas toscamente."
+    }
+    // context: legend_helmet_orc_strapped_helm.create.m.ArmorDescription
+    {
+        en = "Includes an orc nasal helm."
+        es = "Incluye un yelmo nasal orco."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_rondel_helm.nut
+    // context: legend_helmet_rondel_helm.create.m.Name
+    {
+        en = "Rondel Helm"
+        es = "Yelmo de rondeles"
+    }
+    // context: legend_helmet_rondel_helm.create.m.Description
+    {
+        en = "A short skullcap with a pair of rondels affixed to the sides, providing extra protection to the wearer's head."
+        es = "Un casquete corto con un par de rondeles fijados a los lados, que dan protección adicional a la cabeza de quien lo lleva."
+    }
+    // context: legend_helmet_rondel_helm.create.m.ArmorDescription
+    {
+        en = "Includes a skullcap with protective side rondels."
+        es = "Incluye un casquete con rondeles laterales de protección."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_rotten_flat_top_face_mask.nut
+    // context: legend_helmet_rotten_flat_top_face_mask.create.m.Name
+    {
+        en = "Rotten Flat Top Face Mask"
+        es = "Yelmo plano podrido con máscara"
+    }
+    // context: legend_helmet_rotten_flat_top_face_mask.create.m.Description
+    {
+        en = "A decayed flat-topped helm with a pitted faceplate, now little more than a crumbling shell of its former self."
+        es = "Un yelmo plano deteriorado con una máscara picada, que ya no es más que el despojo ruinoso de lo que fue."
+    }
+    // context: legend_helmet_rotten_flat_top_face_mask.create.m.ArmorDescription
+    {
+        en = "Includes a decayed flat-topped helm."
+        es = "Incluye un yelmo plano deteriorado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_rotten_great_helm.nut
+    // context: legend_helmet_rotten_great_helm.create.m.Name
+    {
+        en = "Rotten Great Helm"
+        es = "Gran yelmo podrido"
+    }
+    // context: legend_helmet_rotten_great_helm.create.m.Description
+    {
+        en = "A heavy, cylindrical helm choked with rust and mold, marred by deep corrosion."
+        es = "Un pesado yelmo cilíndrico cubierto de óxido y moho, desfigurado por una profunda corrosión."
+    }
+    // context: legend_helmet_rotten_great_helm.create.m.ArmorDescription
+    {
+        en = "Includes a decayed great helm."
+        es = "Incluye un gran yelmo deteriorado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_rotten_great_helm_named.nut
+    // context: legend_helmet_rotten_great_helm_named.create.m.Description
+    {
+        en = "A heavy, cylindrical helm, which once belonged to a decorated knight. Incrusted with gold and precious gems, it betrays a craftsmanship which years of neglect could not diminish."
+        es = "Un pesado yelmo cilíndrico que perteneció a un condecorado caballero. Incrustado de oro y piedras preciosas, deja ver una factura que años de abandono no han podido menguar."
+    }
+    // context: legend_helmet_rotten_great_helm_named.create.m.ArmorDescription
+    {
+        en = "Includes a decayed, heavy, cylindrical helm of exquisite craftsmanship."
+        es = "Incluye un pesado yelmo cilíndrico deteriorado de exquisita factura."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_sallet.nut
+    // context: legend_helmet_sallet.create.m.Name
+    {
+        en = "Sallet"
+        es = "Celada"
+    }
+    // context: legend_helmet_sallet.create.m.Description
+    {
+        en = "A metal sallet helm with an extended neck guard, a design uncommon in these lands. Well crafted to offer maximum protection with minimum weight, and without impairing vision."
+        es = "Una celada de metal con protector de cuello extendido, un diseño poco común en estas tierras. Su fabricación es impecable para ofrecer la máxima protección con un peso mínimo y sin afectar la visión."
+    }
+    // context: legend_helmet_sallet.create.m.ArmorDescription
+    {
+        en = "Includes a metal sallet."
+        es = "Incluye una celada de metal."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_sallet_named.nut
+    // context: legend_helmet_sallet_named.create.m.Name
+    {
+        en = "Gilded Sallet"
+        es = "Celada dorada"
+    }
+    // context: legend_helmet_sallet_named.create.m.Description
+    {
+        en = "A beautifully designed metal sallet helm with an extended neck guard, a design uncommon in these lands. Expertly crafted to offer maximum protection with minimum weight, and without impairing vision."
+        es = "Una celada de metal de bello diseño con protector de cuello extendido, un diseño poco común en estas tierras. Su fabricación experta ofrece la máxima protección con un peso mínimo y sin afectar la visión."
+    }
+    // context: legend_helmet_sallet_named.create.m.ArmorDescription
+    {
+        en = "Includes a beautifully designed metal sallet."
+        es = "Incluye una celada de metal de bello diseño."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_scale_helm.nut
+    // context: legend_helmet_scale_helm.create.m.Name
+    {
+        en = "Scale Skullcap"
+        es = "Casquete de escamas"
+    }
+    // context: legend_helmet_scale_helm.create.m.Description
+    {
+        en = "A skullcap composed of overlapping metal scales."
+        es = "Un casquete formado por escamas de metal superpuestas."
+    }
+    // context: legend_helmet_scale_helm.create.m.ArmorDescription
+    {
+        en = "Includes a scale skullcap."
+        es = "Incluye un casquete de escamas."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_skin_helm.nut
+    // context: legend_helmet_skin_helm.create.m.Description
+    {
+        // corrige base: "seguirá creciendo su piel llena de cicatrices en el lugar" no traduce "keep regrowing" (volver a crecer, regenerarse); pasa a "su piel llena de cicatrices volverá a crecer en el mismo lugar".
+        en = "The Glimpse of Davkul is a gift bestowed upon man by ancient and dark powers, a helm merged with human skin and bones through the most unspeakable of rituals. A glimpse of a future where man shall become one with creations from a realm beyond. It shall never break, but instead keep regrowing its scarred skin on the spot."
+        es = "El Vislumbre de Davkul es un regalo otorgado al hombre por poderes antiguos y oscuros, un yelmo fusionado con piel y huesos humanos a través del más indescriptible de los rituales. Un vistazo a un futuro en el que el hombre se volverá uno con las creaciones de un reino más allá. Nunca se romperá, sino que su piel llena de cicatrices volverá a crecer en el mismo lugar."
+    }
+    // context: legend_helmet_skin_helm.create.m.ArmorDescription
+    {
+        en = "Includes the Glimpse of Davkul."
+        es = "Incluye el Vislumbre de Davkul."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_cap_smooth.nut
+    // context: legend_helmet_southern_cap_smooth.create.m.Name
+    {
+        en = "Southern Smooth Cap"
+        es = "Gorro liso sureño"
+    }
+    // context: legend_helmet_southern_cap_smooth.create.m.Description
+    {
+        en = "An unadorned metal cap with smooth texture, common in the southern desert cities."
+        es = "Un gorro de metal liso y sin adornos, común en las ciudades del desierto del sur."
+    }
+    // context: legend_helmet_southern_cap_smooth.create.m.ArmorDescription
+    {
+        en = "Includes a smooth metal cap."
+        es = "Incluye un gorro de metal liso."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_cap_spiked.nut
+    // context: legend_helmet_southern_cap_spiked.create.m.Name
+    {
+        en = "Southern Spiked Cap"
+        es = "Gorro sureño con púa"
+    }
+    // context: legend_helmet_southern_cap_spiked.create.m.Description
+    {
+        en = "A metal skull cap topped with a fashionable spike."
+        es = "Un casquete metálico rematado con una punta a la moda."
+    }
+    // context: legend_helmet_southern_cap_spiked.create.m.ArmorDescription
+    {
+        en = "Includes a spiked metal cap."
+        es = "Incluye un gorro metálico con púa."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_conic_helm.nut
+    // context: legend_helmet_southern_conic_helm.create.m.Name
+    {
+        en = "Southern Conical Helm"
+        es = "Yelmo cónico sureño"
+    }
+    // context: legend_helmet_southern_conic_helm.create.m.Description
+    {
+        en = "A sturdy metal helm with a spiked conical crown and a reinforced nasal guard."
+        es = "Un robusto yelmo de metal con una copa cónica terminada en punta y un nasal reforzado."
+    }
+    // context: legend_helmet_southern_conic_helm.create.m.ArmorDescription
+    {
+        en = "Includes a spiked conical helm."
+        es = "Incluye un yelmo cónico terminado en punta."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_conic_named.nut
+    // context: legend_helmet_southern_conic_named.create.m.Description
+    {
+        en = "A masterwork metal helm with a spiked conical crown and a reinforced nasal guard, crested by twin feathers. Light yet sturdy."
+        es = "Un yelmo de metal, obra maestra, con una copa cónica terminada en punta y un nasal reforzado, coronado por dos plumas. Ligero y a la vez robusto."
+    }
+    // context: legend_helmet_southern_conic_named.create.m.ArmorDescription
+    {
+        en = "Includes a masterwork spiked conical helm."
+        es = "Incluye un yelmo cónico terminado en punta, obra maestra."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_gladiator_helm_crested.nut
+    // context: legend_helmet_southern_gladiator_helm_crested.create.m.Name
+    {
+        en = "Crested Gladiator Helm"
+        es = "Yelmo de gladiador con cresta"
+    }
+    // context: legend_helmet_southern_gladiator_helm_crested.create.m.Description
+    {
+        en = "An impressive metal helm crested by a vibrant plume, meant to intimidate the opponents of celebrated pit fighters of the southern city states."
+        es = "Un impresionante yelmo de metal coronado por un vistoso penacho, pensado para intimidar a los rivales de los célebres luchadores de foso de las ciudades-estado del sur."
+    }
+    // context: legend_helmet_southern_gladiator_helm_crested.create.m.ArmorDescription
+    {
+        en = "Includes a metal helm with a vibrant plume."
+        es = "Incluye un yelmo de metal con un vistoso penacho."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_gladiator_helm_masked.nut
+    // context: legend_helmet_southern_gladiator_helm_masked.create.m.Name
+    {
+        en = "Masked Gladiator Helm"
+        es = "Yelmo de gladiador con máscara"
+    }
+    // context: legend_helmet_southern_gladiator_helm_masked.create.m.Description
+    {
+        en = "An impressive metal helm with a stoic face mask, crested by twin feathers, meant to intimidate the opponents of celebrated pit fighters of the southern city states."
+        es = "Un impresionante yelmo de metal con una máscara de rostro impasible, coronado por dos plumas, pensado para intimidar a los rivales de los célebres luchadores de foso de las ciudades-estado del sur."
+    }
+    // context: legend_helmet_southern_gladiator_helm_masked.create.m.ArmorDescription
+    {
+        en = "Includes a metal helm with a stoic face mask and a twin feather crest."
+        es = "Incluye un yelmo de metal con una máscara de rostro impasible y una cresta de dos plumas."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_gladiator_helm_split.nut
+    // context: legend_helmet_southern_gladiator_helm_split.create.m.Name
+    {
+        en = "Split Gladiator Helm"
+        es = "Yelmo de gladiador hendido"
+    }
+    // context: legend_helmet_southern_gladiator_helm_split.create.m.Description
+    {
+        en = "An impressive metal helm featuring an ornate crest and a heavy lattice faceplate, meant to intimidate the opponents of celebrated pit fighters of the southern city states."
+        es = "Un impresionante yelmo de metal con una cresta ornamentada y una pesada máscara de celosía, pensado para intimidar a los rivales de los célebres luchadores de foso de las ciudades-estado del sur."
+    }
+    // context: legend_helmet_southern_gladiator_helm_split.create.m.ArmorDescription
+    {
+        en = "Includes a metal helm with an ornate crest and a heavy lattice faceplate."
+        es = "Incluye un yelmo de metal con una cresta ornamentada y una pesada máscara de celosía."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_helmet_nasal.nut
+    // context: legend_helmet_southern_helmet_nasal.create.m.Name
+    {
+        en = "Heavy Lamellar Helm"
+        es = "Yelmo laminar pesado"
+    }
+    // context: legend_helmet_southern_helmet_nasal.create.m.Description
+    {
+        en = "A heavy helm made from overlapping metal plates, featuring an ornate nasal guard."
+        es = "Un pesado yelmo hecho de placas de metal superpuestas, con un nasal ornamentado."
+    }
+    // context: legend_helmet_southern_helmet_nasal.create.m.ArmorDescription
+    {
+        en = "Includes a heavy lamellar helm."
+        es = "Incluye un pesado yelmo laminar."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_leather_helm.nut
+    // context: legend_helmet_southern_leather_helm.create.m.Name
+    {
+        en = "Leather Helm"
+        es = "Yelmo de cuero"
+    }
+    // context: legend_helmet_southern_leather_helm.create.m.Description
+    {
+        en = "A traditional southern leather helm. Light and providing decent protection from the sun."
+        es = "Un yelmo de cuero tradicional del sur. Ligero, y protege bastante bien del sol."
+    }
+    // context: legend_helmet_southern_leather_helm.create.m.ArmorDescription
+    {
+        en = "Includes a leather helm of southern make."
+        es = "Incluye un yelmo de cuero de factura sureña."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_peaked_helm.nut
+    // context: legend_helmet_southern_peaked_helm.create.m.Name
+    {
+        en = "Southern Peaked Helm"
+        es = "Yelmo puntiagudo sureño"
+    }
+    // context: legend_helmet_southern_peaked_helm.create.m.Description
+    {
+        en = "A sturdy metal helm with a heavy skullcap featuring a high pointed crown of southern design."
+        es = "Un robusto yelmo de metal con un pesado casquete de copa alta y puntiaguda de diseño sureño."
+    }
+    // context: legend_helmet_southern_peaked_helm.create.m.ArmorDescription
+    {
+        en = "Includes a peaked helm of southern design."
+        es = "Incluye un yelmo puntiagudo de diseño sureño."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_peaked_nasal_helm.nut
+    // context: legend_helmet_southern_peaked_nasal_helm.create.m.Name
+    {
+        en = "Turban Helm"
+        es = "Yelmo turbante"
+    }
+    // context: legend_helmet_southern_peaked_nasal_helm.create.m.Description
+    {
+        en = "A full helm crafted from overlapping long metal splints in the shape of a traditional southern head wrap."
+        es = "Un yelmo completo hecho con largas tablillas de metal superpuestas en forma de turbante tradicional del sur."
+    }
+    // context: legend_helmet_southern_peaked_nasal_helm.create.m.ArmorDescription
+    {
+        en = "Includes a southern full helm with a nose guard."
+        es = "Incluye un yelmo completo sureño con nasal."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_southern_studded_leather_helm.nut
+    // context: legend_helmet_southern_studded_leather_helm.create.m.Description
+    {
+        en = "A southern leather helm reinforced with metal studs without sacrificing flexibility."
+        es = "Un yelmo de cuero sureño reforzado con tachuelas de metal sin perder flexibilidad."
+    }
+    // context: legend_helmet_southern_studded_leather_helm.create.m.ArmorDescription
+    {
+        en = "Includes a studded southern leather helm."
+        es = "Incluye un yelmo de cuero sureño tachonado."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_stag_helm.nut
+    // context: legend_helmet_stag_helm.create.m.Description
+    {
+        en = "The helm of a noble house champion bearing the towering antlers of a great stag, of unparalleled craftsmanship, yet quite unwieldy."
+        es = "El yelmo del campeón de una casa noble, coronado por la imponente cornamenta de un gran ciervo, de una factura sin parangón, aunque bastante aparatoso."
+    }
+    // context: legend_helmet_stag_helm.create.m.ArmorDescription
+    {
+        en = "Includes a helm with the horns of a great stag."
+        es = "Incluye un yelmo con la cornamenta de un gran ciervo."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_swan_helm.nut
+    // context: legend_helmet_swan_helm.create.m.Description
+    {
+        en = "The helm of a noble house champion bearing the elegant wings of a swan, beautifully designed, yet quite impractical."
+        es = "El yelmo del campeón de una casa noble, adornado con las elegantes alas de un cisne, de bello diseño, aunque bastante poco práctico."
+    }
+    // context: legend_helmet_swan_helm.create.m.ArmorDescription
+    {
+        en = "Includes a helm adorned with the likeness of a swan."
+        es = "Incluye un yelmo adornado con la figura de un cisne."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_tailed_conic.nut
+    // context: legend_helmet_tailed_conic.create.m.Description
+    {
+        en = "A hardened nasal helm with a cloth band and a tail."
+        es = "Un yelmo nasal endurecido con una banda de tela y una cola."
+    }
+    // context: legend_helmet_tailed_conic.create.m.ArmorDescription
+    {
+        en = "Includes a nasal helm with a tail."
+        es = "Incluye un yelmo nasal con cola."
+    }
+    // FILE: scripts\items\legend_helmets\helm\legend_helmet_viking_helm.nut
+    // context: legend_helmet_viking_helm.create.m.Name
+    {
+        en = "Viking Helm"
+        es = "Yelmo vikingo"
+    }
+    // context: legend_helmet_viking_helm.create.m.Description
+    {
+        en = "A nordic helm with a metal face mask and cheek guards."
+        es = "Un yelmo nórdico con máscara facial de metal y carrilleras."
+    }
+    // context: legend_helmet_viking_helm.create.m.ArmorDescription
+    {
+        en = "Includes a nordic metal helm."
+        es = "Incluye un yelmo nórdico de metal."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_aventail.nut
+    // context: legend_helmet_aventail.create.m.Name
+    {
+        en = "Aventail"
+        es = "Camal"
+    }
+    // context: legend_helmet_aventail.create.m.Description
+    {
+        en = "A mail aventail that extends from below the eyeline to cover the neck and lower face."
+        es = "Un camal de malla que se extiende desde debajo de los ojos para cubrir el cuello y la parte inferior del rostro."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_aventail_named.nut
+    // context: legend_helmet_aventail_named.create.m.Description
+    {
+        en = "Truly fit for a knight, this mail aventail is made from the highest quality materials and boasts precious decorations and ornaments."
+        es = "Verdaderamente digno de un caballero, este camal de malla está fabricado con materiales de la más alta calidad y cuenta con preciosas decoraciones y ornamentos."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_barb_chain_scarf.nut
+    // context: legend_helmet_barb_chain_scarf.create.m.Name
+    {
+        en = "Rusted Aventail"
+        es = "Camal oxidado"
+    }
+    // context: legend_helmet_barb_chain_scarf.create.m.Description
+    {
+        en = "A worn chain mail neck guard. The links are thick but neglected, covered in a layer of deep rust."
+        es = "Un protector de cuello de cota de malla gastado. Las anillas son gruesas pero descuidadas, cubiertas por una profunda capa de óxido."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_barb_leather_cap.nut
+    // context: legend_helmet_barb_leather_cap.create.m.Name
+    {
+        en = "Patched Leather Cap"
+        es = "Gorro de cuero con parches"
+    }
+    // context: legend_helmet_barb_leather_cap.create.m.Description
+    {
+        en = "A crude cap made from overlapping scraps of leather stitched together with thick twine to provide basic, rigid protection for the crown of the head."
+        es = "Un gorro tosco hecho de retazos de cuero superpuestos y cosidos con bramante grueso, que da una protección básica y rígida a la coronilla."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_barb_open_chain.nut
+    // context: legend_helmet_barb_open_chain.create.m.Name
+    {
+        en = "Rusted Open Chain"
+        es = "Malla abierta oxidada"
+    }
+    // context: legend_helmet_barb_open_chain.create.m.Description
+    {
+        en = "A worn chain mail head covering. The links are thick but neglected, covered in a layer of deep rust."
+        es = "Una cubierta de cota de malla gastada para la cabeza. Las anillas son gruesas pero descuidadas, cubiertas por una profunda capa de óxido."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_beak_hood.nut
+    // context: legend_helmet_beak_hood.create.m.Name
+    {
+        en = "Beaked Hood"
+        es = "Capucha con pico"
+    }
+    // context: legend_helmet_beak_hood.create.m.Description
+    {
+        // corrige base: la 1.0 añade "plagas que se transmiten por el aire"; el inglés dice "ward away sickness and disease" (ahuyentar enfermedades y dolencias)
+        en = "A thick leather hood with a distinctive, bird-like mask. The beak acts as a ventilator, containing sweet-smelling herbs to ward away sickness and disease. Counts as a cultist item."
+        es = "Una gruesa capucha de cuero con una distintiva máscara parecida a un pájaro. El pico actúa como ventilador y contiene hierbas aromáticas para ahuyentar enfermedades y dolencias. Cuenta como objeto de cultista."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_bronze_chain.nut
+    // context: legend_helmet_bronze_chain.create.m.Name
+    {
+        en = "Bronze Chain"
+        es = "Malla de bronce"
+    }
+    // context: legend_helmet_bronze_chain.create.m.Description
+    {
+        en = "A hood made of interlocking bronze rings. Very heavy, but offers excellent protection."
+        es = "Una capucha de anillas de bronce entrelazadas. Muy pesada, pero ofrece una protección excelente."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_chain_hood.nut
+    // context: legend_helmet_chain_hood.create.m.Description
+    {
+        en = "A sturdy mail hood, lined with leather for comfort."
+        es = "Una robusta capucha de malla, forrada de cuero para mayor comodidad."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_chain_hood_full.nut
+    // context: legend_helmet_chain_hood_full.create.m.Name
+    {
+        en = "Full Mail Coif"
+        es = "Cofia de malla completa"
+    }
+    // context: legend_helmet_chain_hood_full.create.m.Description
+    {
+        en = "A full mail hood with an integrated neck guard."
+        es = "Una capucha de malla completa con protector de cuello integrado."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_chain_hood_full_named.nut
+    // context: legend_helmet_chain_hood_full_named.create.m.Description
+    {
+        en = "Truly fit for a knight, this mail coif is made from the highest quality materials and boasts precious decorations and ornaments."
+        es = "Verdaderamente digna de un caballero, esta cofia de malla está fabricada con materiales de la más alta calidad y cuenta con preciosas decoraciones y ornamentos."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_chain_hood_masked.nut
+    // context: legend_helmet_chain_hood_masked.create.m.Name
+    {
+        en = "Masked Chain Mail Hood"
+        es = "Capucha de cota de malla con máscara"
+    }
+    // context: legend_helmet_chain_hood_masked.create.m.Description
+    {
+        en = "A hood made of chain mail with a leather brim and a cloth mask. Keeps the wearer's face obstructed while being surprisingly comfortable to wear."
+        es = "Una capucha de cota de malla con reborde de cuero y una máscara de tela. Mantiene oculto el rostro de quien la lleva y es sorprendentemente cómoda."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_cloth_bandana.nut
+    // context: legend_helmet_cloth_bandana.create.m.Description
+    {
+        en = "A light cloth wrap for the head. A practical choice for shielding oneself from the sun and dust."
+        es = "Un paño ligero para envolver la cabeza. Una opción práctica para protegerse del sol y del polvo."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_cloth_cap.nut
+    // context: legend_helmet_cloth_cap.create.m.Name
+    {
+        en = "Cloth Cap"
+        es = "Gorro de tela"
+    }
+    // context: legend_helmet_cloth_cap.create.m.Description
+    {
+        en = "A simple piece of cloth covering the top of the head."
+        es = "Un simple trozo de tela que cubre la parte superior de la cabeza."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_cloth_scarf.nut
+    // context: legend_helmet_cloth_scarf.create.m.Name
+    {
+        en = "Cloth Scarf"
+        es = "Pañuelo de tela"
+    }
+    // context: legend_helmet_cloth_scarf.create.m.Description
+    {
+        en = "A simple cloth wrap for the neck, favored by those who prefer to pass through unnoticed."
+        es = "Un simple paño de tela para el cuello, preferido por quienes quieren pasar desapercibidos."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_diviner_wraps.nut
+    // context: legend_helmet_diviner_wraps.create.m.Name
+    {
+        en = "Diviner's Wraps"
+        es = "Vendas del Adivino"
+    }
+    // context: legend_helmet_diviner_wraps.create.m.Description
+    {
+        en = "The headwear of The Diviner, despite not having any way to see through the fabric, once it sits on your face you can see through it as if it was never there at all."
+        es = "El tocado del Adivino. La tela no deja ver nada a través de ella, pero en cuanto la tienes sobre la cara ves como si no estuviera ahí."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_enclave_bevor.nut
+    // context: legend_helmet_enclave_bevor.create.m.Name
+    {
+        en = "Bevor"
+        es = "Babera"
+    }
+    // context: legend_helmet_enclave_bevor.create.m.Description
+    {
+        en = "A rigid plate of shaped steel designed to guard the neck and the lower face."
+        es = "Una placa rígida de acero moldeado, diseñada para proteger el cuello y la parte inferior del rostro."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_full_mask.nut
+    // context: legend_helmet_full_mask.create.m.Name
+    {
+        en = "Full Cloth Mask"
+        es = "Máscara de tela completa"
+    }
+    // context: legend_helmet_full_mask.create.m.Description
+    {
+        en = "An ominous mask of thin, tightly wrapped cloth. It helps the wearer insulate themselves from the foul stench of decay and the humors of the dead and the diseased."
+        es = "Una máscara siniestra de tela fina y bien ceñida. Ayuda a quien la lleva a aislarse del hedor nauseabundo de la putrefacción y de los humores de los muertos y los enfermos."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_goblin_scarf.nut
+    // context: legend_helmet_goblin_scarf.create.m.Name
+    {
+        en = "Goblin Scarf"
+        es = "Pañuelo goblin"
+    }
+    // context: legend_helmet_goblin_scarf.create.m.Description
+    {
+        en = "A tattered, foul-smelling scrap of cloth that offers little more than a bit of warmth."
+        es = "Un trapo andrajoso y maloliente que apenas da algo de calor."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_leather_cap.nut
+    // context: legend_helmet_leather_cap.create.m.Name
+    {
+        en = "Leather Cap"
+        es = "Gorro de cuero"
+    }
+    // context: legend_helmet_leather_cap.create.m.Description
+    {
+        en = "A sturdy leather cap that fits tightly over the head. It offers basic coverage but leaves the ears and neck exposed."
+        es = "Un robusto gorro de cuero que se ciñe a la cabeza. Ofrece una protección básica, pero deja expuestos las orejas y el cuello."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_leather_hood.nut
+    // context: legend_helmet_leather_hood.create.m.Name
+    {
+        en = "Leather Hood"
+        es = "Capucha de cuero"
+    }
+    // context: legend_helmet_leather_hood.create.m.Description
+    {
+        en = "A sturdy hood made of thick leather, padded for extra protection. Counts as a cultist item."
+        es = "Una robusta capucha de cuero grueso, acolchada para mayor protección. Cuenta como objeto de cultista."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_mail_coif.nut
+    // context: legend_helmet_mail_coif.create.m.Description
+    {
+        en = "A heavy mail hood. It features extra leather layering to help prevent chafing."
+        es = "Una pesada capucha de malla. Lleva capas adicionales de cuero para evitar rozaduras."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_open_chain_hood.nut
+    // context: legend_helmet_open_chain_hood.create.m.Name
+    {
+        en = "Chain Mail Hood"
+        es = "Capucha de cota de malla"
+    }
+    // context: legend_helmet_open_chain_hood.create.m.Description
+    {
+        en = "A hood made of chain mail with a leather brim. Offers good protection and while leaving the face unobstructed."
+        es = "Una capucha de cota de malla con reborde de cuero. Ofrece buena protección y deja el rostro despejado."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_padded_cap.nut
+    // context: legend_helmet_padded_cap.create.m.Description
+    {
+        en = "A light cap of quilted linen, providing a layer of padding for the head."
+        es = "Un gorro ligero de lino acolchado que protege la cabeza con una capa de relleno."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_padded_hood.nut
+    // context: legend_helmet_padded_hood.create.m.Description
+    {
+        en = "A light cap of quilted linen, providing a layer of padding for the head and the neck."
+        es = "Un gorro ligero de lino acolchado que protege la cabeza y el cuello con una capa de relleno."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_patched_hood.nut
+    // context: legend_helmet_patched_hood.create.m.Name
+    {
+        en = "Patched Hood"
+        es = "Capucha con parches"
+    }
+    // context: legend_helmet_patched_hood.create.m.Description
+    {
+        en = "A coarse hood held together by crude, heavy stitching. The garments of a man with little to his name but the will to keep moving forward."
+        es = "Una capucha basta sujeta con costuras toscas y gruesas. La ropa de un hombre sin más bienes que la voluntad de seguir adelante."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_rotten_chain_scarf.nut
+    // context: legend_helmet_rotten_chain_scarf.create.m.Name
+    {
+        en = "Rotten Aventail"
+        es = "Camal podrido"
+    }
+    // context: legend_helmet_rotten_chain_scarf.create.m.Description
+    {
+        en = "A decaying chain mail neck guard. The metal is brittle and structurally compromised by deep corrosion."
+        es = "Un protector de cuello de cota de malla en descomposición. El metal está quebradizo y la corrosión profunda ha minado su estructura."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_rusty_chain_hood.nut
+    // context: legend_helmet_rusty_chain_hood.create.m.Description
+    {
+        en = "A mail hood covered in a layer of rust. Offers good protection, but leaves horrible stains."
+        es = "Una capucha de malla cubierta por una capa de óxido. Ofrece buena protección, pero deja unas manchas horribles."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_simple_hood.nut
+    // context: legend_helmet_simple_hood.create.m.Name
+    {
+        en = "Simple Hood"
+        es = "Capucha sencilla"
+    }
+    // context: legend_helmet_simple_hood.create.m.Description
+    {
+        en = "A plain cloth hood offering a modicum of protection against the elements and light blows alike."
+        es = "Una sencilla capucha de tela que ofrece algo de protección tanto contra los elementos como contra los golpes ligeros."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_cap.nut
+    // context: legend_helmet_southern_cap.create.m.Name
+    {
+        en = "Southern Cap"
+        es = "Gorro sureño"
+    }
+    // context: legend_helmet_southern_cap.create.m.Description
+    {
+        en = "A thin cap of rough fabric. Provides some reprieve from the sun."
+        es = "Un gorro fino de tela basta. Da algo de alivio contra el sol."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_chain_hood.nut
+    // context: legend_helmet_southern_chain_hood.create.m.Name
+    {
+        en = "Southern Mail Hood"
+        es = "Capucha de malla sureña"
+    }
+    // context: legend_helmet_southern_chain_hood.create.m.Description
+    {
+        en = "A mail hood of southern design with a reinforced circular face opening."
+        es = "Una capucha de malla de diseño sureño con una abertura circular reforzada para la cara."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_headband_coin.nut
+    // context: legend_helmet_southern_headband_coin.create.m.Name
+    {
+        en = "Southern Coin Headband"
+        es = "Diadema sureña de monedas"
+    }
+    // context: legend_helmet_southern_headband_coin.create.m.Description
+    {
+        en = "A thin headband decorated with small jingling coins. Typically worn by entertainers, designed to catch the light and the ear of onlookers."
+        es = "Una diadema fina decorada con pequeñas monedas tintineantes. La suelen llevar los artistas y está pensada para captar la luz y el oído del público."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_niqaab.nut
+    // context: legend_helmet_southern_niqaab.create.m.Name
+    {
+        en = "Niqaab"
+        es = "Nicab"
+    }
+    // context: legend_helmet_southern_niqaab.create.m.Description
+    {
+        en = "A full cloth head and face wrap that conceals the wearer's features entirely, leaving only a narrow opening for the eyes."
+        es = "Un paño que envuelve por completo la cabeza y la cara y oculta del todo los rasgos de quien lo lleva; solo deja una estrecha abertura para los ojos."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_open_chain_hood.nut
+    // context: legend_helmet_southern_open_chain_hood.create.m.Name
+    {
+        en = "Southern Chain Mail Hood"
+        es = "Capucha de cota de malla sureña"
+    }
+    // context: legend_helmet_southern_open_chain_hood.create.m.Description
+    {
+        en = "A hood made of chain mail of southern design. Offers good protection and while leaving the face unobstructed."
+        es = "Una capucha de cota de malla de diseño sureño. Ofrece buena protección y deja el rostro despejado."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_open_hood.nut
+    // context: legend_helmet_southern_open_hood.create.m.Name
+    {
+        en = "Southern Hood"
+        es = "Capucha sureña"
+    }
+    // context: legend_helmet_southern_open_hood.create.m.Description
+    {
+        en = "A southern hood made of cloth that wraps around the head leaving the face unobstructed."
+        es = "Una capucha sureña de tela que envuelve la cabeza y deja el rostro despejado."
+    }
+    // FILE: scripts\items\legend_helmets\hood\legend_helmet_southern_turban_light_hood.nut
+    // context: legend_helmet_southern_turban_light_hood.create.m.Name
+    {
+        en = "Southern Light Hood"
+        es = "Capucha sureña ligera"
+    }
+    // context: legend_helmet_southern_turban_light_hood.create.m.Description
+    {
+        en = "A head covering made of wrapped cloth layers. Its thick folds help insulate the head against heat and dust."
+        es = "Un tocado de capas de tela enrolladas. Sus gruesos pliegues ayudan a aislar la cabeza del calor y del polvo."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_ancient_beard_mask.nut
+    // context: legend_helmet_ancient_beard_mask.create.m.Name
+    {
+        en = "Ancient Bearded Mask"
+        es = "Máscara barbada antigua"
+    }
+    // context: legend_helmet_ancient_beard_mask.create.m.Description
+    {
+        en = "A heavy, weathered faceplate depicting a stern, bearded visage from another time."
+        es = "Una máscara pesada y desgastada que muestra un rostro severo y barbudo de otra época."
+    }
+    // context: legend_helmet_ancient_beard_mask.create.m.ArmorDescription
+    {
+        en = "Includes a heavy, weathered faceplate."
+        es = "Incluye una máscara pesada y desgastada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_ancient_crown.nut
+    // context: legend_helmet_ancient_crown.create.m.Name
+    {
+        en = "Ancient Diadem"
+        es = "Diadema antigua"
+    }
+    // context: legend_helmet_ancient_crown.create.m.Description
+    {
+        en = "An ancient crown from ages past."
+        es = "Una corona antigua de eras pasadas."
+    }
+    // context: legend_helmet_ancient_crown.create.m.ArmorDescription
+    {
+        en = "Includes an ancient crown."
+        es = "Incluye una corona antigua."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_ancient_lion_mask.nut
+    // context: legend_helmet_ancient_lion_mask.create.m.Name
+    {
+        en = "Ancient Lion Mask"
+        es = "Máscara de león antigua"
+    }
+    // context: legend_helmet_ancient_lion_mask.create.m.Description
+    {
+        en = "An dilapidated helm featuring a noble lion crest, worn by the elite guardians of a forgotten empire."
+        es = "Un yelmo deteriorado con una noble cresta de león, que llevaban los guardianes de élite de un imperio olvidado."
+    }
+    // context: legend_helmet_ancient_lion_mask.create.m.ArmorDescription
+    {
+        en = "Includes a dilapidated helm with a noble lion crest."
+        es = "Incluye un yelmo deteriorado con una noble cresta de león."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_ancient_mask.nut
+    // context: legend_helmet_ancient_mask.create.m.Name
+    {
+        en = "Ancient Mask"
+        es = "Máscara antigua"
+    }
+    // context: legend_helmet_ancient_mask.create.m.Description
+    {
+        en = "A haunting, weathered faceplate featuring a hollow, open-mouthed expression typical of the funerary masks of the ancients."
+        es = "Una máscara inquietante y desgastada, con la expresión hueca y boquiabierta típica de las máscaras funerarias de los antiguos."
+    }
+    // context: legend_helmet_ancient_mask.create.m.ArmorDescription
+    {
+        en = "Includes a weathered faceplate."
+        es = "Incluye una máscara desgastada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_barb_hood_leather.nut
+    // context: legend_helmet_barb_hood_leather.create.m.Name
+    {
+        en = "Barbarian Leather Hood"
+        es = "Capucha de cuero bárbara"
+    }
+    // context: legend_helmet_barb_hood_leather.create.m.Description
+    {
+        en = "The crude padded leather hood of a barbarian, it is heavy and surprisingly protective. Counts as a cultist item."
+        es = "La tosca capucha de cuero acolchado de un bárbaro; es pesada y sorprendentemente protectora. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_barb_hood_leather.create.m.ArmorDescription
+    {
+        en = "Includes a crude leather hood."
+        es = "Incluye una tosca capucha de cuero."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_bascinet_visor_named.nut
+    // context: legend_helmet_bascinet_visor_named.create.m.Description
+    {
+        en = "A gilded visor with a pointed snout and plenty of holes to breathe through, providing great protection for a knight of high standing."
+        es = "Un visor dorado con un hocico puntiagudo y muchos agujeros para respirar, que da una gran protección a un caballero de alto rango."
+    }
+    // context: legend_helmet_bascinet_visor_named.create.m.ArmorDescription
+    {
+        en = "Includes a gilded hounskull faceplate."
+        es = "Incluye una máscara dorada de hocico de perro."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_chain_attachment.nut
+    // context: legend_helmet_chain_attachment.create.m.Name
+    {
+        en = "Chain Attachment"
+        es = "Cortina de malla"
+    }
+    // context: legend_helmet_chain_attachment.create.m.Description
+    {
+        en = "A curtain of mail designed to be hanged over the mouth."
+        es = "Una cortina de malla pensada para colgar sobre la boca."
+    }
+    // context: legend_helmet_chain_attachment.create.m.ArmorDescription
+    {
+        en = "Includes a mail mouth protector."
+        es = "Incluye un protector bucal de malla."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_cult_hood.nut
+    // context: legend_helmet_cult_hood.create.m.Name
+    {
+        en = "Cult Leather Hood"
+        es = "Capucha de cuero de culto"
+    }
+    // context: legend_helmet_cult_hood.create.m.Description
+    {
+        en = "A rough leather hood commonly used in cultist ceremonies. Counts as a cultist item."
+        es = "Una basta capucha de cuero que suele usarse en las ceremonias de los cultistas. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_cult_hood.create.m.ArmorDescription
+    {
+        en = "Includes a rough leather hood."
+        es = "Incluye una basta capucha de cuero."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_enclave_armet_visor.nut
+    // context: legend_helmet_enclave_armet_visor.create.m.Name
+    {
+        en = "Armet Visor"
+        es = "Visor de almete"
+    }
+    // context: legend_helmet_enclave_armet_visor.create.m.Description
+    {
+        en = "A visor that fits on an armet, protecting the lower jaw while leaving a slit for eyesight."
+        es = "Un visor que encaja en un almete; protege la mandíbula y deja una rendija para la vista."
+    }
+    // context: legend_helmet_enclave_armet_visor.create.m.ArmorDescription
+    {
+        en = "Includes an armet visor."
+        es = "Incluye un visor de almete."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_enclave_great_bascinet_visor.nut
+    // context: legend_helmet_enclave_great_bascinet_visor.create.m.Name
+    {
+        en = "Great Bascinet Visor"
+        es = "Visor de gran bascinete"
+    }
+    // context: legend_helmet_enclave_great_bascinet_visor.create.m.Description
+    {
+        en = "A robust, rounded iron visor designed for a great bascinet."
+        es = "Un visor de hierro robusto y redondeado, diseñado para un gran bascinete."
+    }
+    // context: legend_helmet_enclave_great_bascinet_visor.create.m.ArmorDescription
+    {
+        en = "Includes a rounded iron visor."
+        es = "Incluye un visor de hierro redondeado."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_enclave_great_jaw.nut
+    // context: legend_helmet_enclave_great_jaw.create.m.Name
+    {
+        en = "Rough Metal Bevor"
+        es = "Babera de metal tosca"
+    }
+    // context: legend_helmet_enclave_great_jaw.create.m.Description
+    {
+        en = "A crudely forged, heavy plate of iron designed to shield the throat and the jaw."
+        es = "Una pesada placa de hierro de forja tosca, diseñada para proteger la garganta y la mandíbula."
+    }
+    // context: legend_helmet_enclave_great_jaw.create.m.ArmorDescription
+    {
+        en = "Includes a crudely forged metal bevor."
+        es = "Incluye una babera de metal de forja tosca."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_enclave_peaked_bascinet_visor.nut
+    // context: legend_helmet_enclave_peaked_bascinet_visor.create.m.Name
+    {
+        en = "Peaked Bascinet Visor"
+        es = "Visor de bascinete puntiagudo"
+    }
+    // context: legend_helmet_enclave_peaked_bascinet_visor.create.m.Description
+    {
+        en = "A reinforced iron faceplate featuring a sharp peak and a perforated breath made for specifically the peaked bascinet."
+        es = "Una máscara de hierro reforzada con un pico afilado y respiraderos perforados, hecha específicamente para el bascinete puntiagudo."
+    }
+    // context: legend_helmet_enclave_peaked_bascinet_visor.create.m.ArmorDescription
+    {
+        en = "Includes a reinforced iron faceplate with a sharp peak."
+        es = "Incluye una máscara de hierro reforzada con un pico afilado."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_executioner_hood.nut
+    // context: legend_helmet_executioner_hood.create.m.Name
+    {
+        en = "Executioner's Cowl"
+        es = "Capucha de verdugo"
+    }
+    // context: legend_helmet_executioner_hood.create.m.Description
+    {
+        en = "A heavy, deep cowl designed to hide the identity of the executioner from the vengeance of those sympathetic to the condemned. Counts as a cultist item."
+        es = "Una capucha pesada y honda, pensada para ocultar la identidad del verdugo de la venganza de quienes simpatizan con el condenado. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_executioner_hood.create.m.ArmorDescription
+    {
+        en = "Includes a heavy cloth hood."
+        es = "Incluye una pesada capucha de tela."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_executioner_hood_full.nut
+    // context: legend_helmet_executioner_hood_full.create.m.Description
+    {
+        en = "A hood worn by executioners to protect their identity and prevent retaliation. Counts as a cultist item."
+        es = "Una capucha usada por verdugos para proteger su identidad y evitar represalias. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_executioner_hood_full.create.m.ArmorDescription
+    {
+        en = "Includes a tall leather hood."
+        es = "Incluye una alta capucha de cuero."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_eyemask.nut
+    // context: legend_helmet_eyemask.create.m.Name
+    {
+        en = "Eye Mask"
+        es = "Máscara ocular"
+    }
+    // context: legend_helmet_eyemask.create.m.Description
+    {
+        en = "A metal mask covering the eyes and nose from blows."
+        es = "Una máscara de metal que protege de los golpes los ojos y la nariz."
+    }
+    // context: legend_helmet_eyemask.create.m.ArmorDescription
+    {
+        en = "Includes a metal eye mask."
+        es = "Incluye una máscara ocular de metal."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_facemask.nut
+    // context: legend_helmet_facemask.create.m.Name
+    {
+        en = "Face Mask"
+        es = "Máscara facial"
+    }
+    // context: legend_helmet_facemask.create.m.Description
+    {
+        en = "A metal faceplate in the shape of a human face."
+        es = "Una máscara de metal con la forma de un rostro humano."
+    }
+    // context: legend_helmet_facemask.create.m.ArmorDescription
+    {
+        en = "Includes a metal anthropomorphic faceplate."
+        es = "Incluye una máscara de metal antropomorfa."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_facemask_named.nut
+    // context: legend_helmet_facemask_named.create.m.Description
+    {
+        en = "A heavy, exquisite metal faceplate in the shape of a face frozen in a mocking smile."
+        es = "Una máscara de metal pesada y exquisita, con la forma de un rostro congelado en una sonrisa burlona."
+    }
+    // context: legend_helmet_facemask_named.create.m.ArmorDescription
+    {
+        en = "Includes a heavy, exquisite metal anthropomorphic faceplate."
+        es = "Incluye una máscara de metal antropomorfa, pesada y exquisita."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_curved.nut
+    // context: legend_helmet_faceplate_curved.create.m.Name
+    {
+        en = "Curved Faceplate"
+        es = "Máscara curva"
+    }
+    // context: legend_helmet_faceplate_curved.create.m.Description
+    {
+        en = "A steel faceplate expertly shaped to deflect incoming thrusts away from the face."
+        es = "Una máscara de acero moldeada con maestría para desviar las estocadas lejos del rostro."
+    }
+    // context: legend_helmet_faceplate_curved.create.m.ArmorDescription
+    {
+        en = "Includes a curved metal faceplate."
+        es = "Incluye una máscara de metal curva."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_flat.nut
+    // context: legend_helmet_faceplate_flat.create.m.Name
+    {
+        en = "Flat Faceplate"
+        es = "Máscara plana"
+    }
+    // context: legend_helmet_faceplate_flat.create.m.Description
+    {
+        en = "A heavy, perforated metal faceplate."
+        es = "Una máscara de metal pesada y perforada."
+    }
+    // context: legend_helmet_faceplate_flat.create.m.ArmorDescription
+    {
+        en = "Includes a heavy metal faceplate."
+        es = "Incluye una máscara de metal pesada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_full.nut
+    // context: legend_helmet_faceplate_full.create.m.Name
+    {
+        en = "Full Faceplate"
+        es = "Máscara completa"
+    }
+    // context: legend_helmet_faceplate_full.create.m.Description
+    {
+        en = "A sturdy metal faceplate covering the entirety of the face as well as the neck."
+        es = "Una robusta máscara de metal que cubre todo el rostro y también el cuello."
+    }
+    // context: legend_helmet_faceplate_full.create.m.ArmorDescription
+    {
+        en = "Includes a full faceplate."
+        es = "Incluye una máscara completa."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_full_breaths.nut
+    // context: legend_helmet_faceplate_full_breaths.create.m.Name
+    {
+        en = "Breathed Faceplate"
+        es = "Máscara con respiraderos"
+    }
+    // context: legend_helmet_faceplate_full_breaths.create.m.Description
+    {
+        en = "A rounded iron visor heavily perforated with breaths."
+        es = "Un visor de hierro redondeado, muy perforado de respiraderos."
+    }
+    // context: legend_helmet_faceplate_full_breaths.create.m.ArmorDescription
+    {
+        en = "Includes a breathable iron faceplate."
+        es = "Incluye una máscara de hierro con respiraderos."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_long.nut
+    // context: legend_helmet_faceplate_long.create.m.Name
+    {
+        en = "Long Faceplate"
+        es = "Máscara larga"
+    }
+    // context: legend_helmet_faceplate_long.create.m.Description
+    {
+        en = "A sturdy iron jaw guard adjoined with a neck guard."
+        es = "Un robusto protector de mandíbula de hierro unido a un protector de cuello."
+    }
+    // context: legend_helmet_faceplate_long.create.m.ArmorDescription
+    {
+        en = "Includes a jaw guard with a neck guard."
+        es = "Incluye un protector de mandíbula con protector de cuello."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_pointed.nut
+    // context: legend_helmet_faceplate_pointed.create.m.Name
+    {
+        en = "Sharp Hounskull Faceplate"
+        es = "Máscara de hocico de perro afilada"
+    }
+    // context: legend_helmet_faceplate_pointed.create.m.Description
+    {
+        en = "A long nosed iron faceplate assuring great ventilation."
+        es = "Una máscara de hierro de nariz larga que garantiza una gran ventilación."
+    }
+    // context: legend_helmet_faceplate_pointed.create.m.ArmorDescription
+    {
+        en = "Includes a long nosed hounskull faceplate."
+        es = "Incluye una máscara de hocico de perro de nariz larga."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_pointed_slit.nut
+    // context: legend_helmet_faceplate_pointed_slit.create.m.Name
+    {
+        en = "Creased Hounskull Faceplate"
+        es = "Máscara de hocico de perro con arista"
+    }
+    // context: legend_helmet_faceplate_pointed_slit.create.m.Description
+    {
+        en = "An iron faceplate forged with a sharp vertical crease and narrow sights, that is easy to breathe through."
+        es = "Una máscara de hierro forjada con una marcada arista vertical y mirillas estrechas, por la que es fácil respirar."
+    }
+    // context: legend_helmet_faceplate_pointed_slit.create.m.ArmorDescription
+    {
+        en = "Includes a creased hounskull faceplate."
+        es = "Incluye una máscara de hocico de perro con arista."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_raised.nut
+    // context: legend_helmet_faceplate_raised.create.m.Description
+    {
+        en = "A heavy, reinforced faceplate raised up to allow the user to breathe freely without obscuring his face."
+        es = "Una máscara pesada y reforzada, levantada para que quien la lleva respire con libertad sin taparse el rostro."
+    }
+    // context: legend_helmet_faceplate_raised.create.m.ArmorDescription
+    {
+        en = "Includes a raised reinforced faceplate."
+        es = "Incluye una máscara reforzada levantada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_sharp.nut
+    // context: legend_helmet_faceplate_sharp.create.m.Name
+    {
+        en = "Sharp Faceplate"
+        es = "Máscara afilada"
+    }
+    // context: legend_helmet_faceplate_sharp.create.m.Description
+    {
+        en = "A metal faceplate with an aggressive profile designed to deflect blows away from the wearer's face."
+        es = "Una máscara de metal de perfil agresivo, diseñada para desviar los golpes lejos del rostro de quien la lleva."
+    }
+    // context: legend_helmet_faceplate_sharp.create.m.ArmorDescription
+    {
+        en = "Includes a sharply curved metal faceplate."
+        es = "Incluye una máscara de metal de curva afilada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_short.nut
+    // context: legend_helmet_faceplate_short.create.m.Name
+    {
+        en = "Short Faceplate"
+        es = "Máscara corta"
+    }
+    // context: legend_helmet_faceplate_short.create.m.Description
+    {
+        en = "A compact iron jaw guard that doesn't obstruct the user's field of vision."
+        es = "Un protector de mandíbula de hierro compacto que no estorba el campo de visión."
+    }
+    // context: legend_helmet_faceplate_short.create.m.ArmorDescription
+    {
+        en = "Includes a compact iron jaw guard."
+        es = "Incluye un protector de mandíbula de hierro compacto."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_snub_nose.nut
+    // context: legend_helmet_faceplate_snub_nose.create.m.Name
+    {
+        en = "Hounskull Faceplate"
+        es = "Máscara de hocico de perro"
+    }
+    // context: legend_helmet_faceplate_snub_nose.create.m.Description
+    {
+        en = "A sturdy iron faceplate with a design focused around increased breathability during combat."
+        es = "Una robusta máscara de hierro cuyo diseño busca respirar mejor en combate."
+    }
+    // context: legend_helmet_faceplate_snub_nose.create.m.ArmorDescription
+    {
+        en = "Includes a sturdy hounskull faceplate."
+        es = "Incluye una robusta máscara de hocico de perro."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_snub_slit.nut
+    // context: legend_helmet_faceplate_snub_slit.create.m.Name
+    {
+        en = "Slit-Visored Hounskull Faceplate"
+        es = "Máscara de hocico de perro con mirilla"
+    }
+    // context: legend_helmet_faceplate_snub_slit.create.m.Description
+    {
+        en = "A reinforced iron faceplate with a singular visor slit, providing ample air volume."
+        es = "Una máscara de hierro reforzada con una única mirilla, que deja pasar aire de sobra."
+    }
+    // context: legend_helmet_faceplate_snub_slit.create.m.ArmorDescription
+    {
+        en = "Includes a reinforced hounskull faceplate."
+        es = "Incluye una máscara de hocico de perro reforzada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_winged.nut
+    // context: legend_helmet_faceplate_winged.create.m.Name
+    {
+        en = "Winged Faceplate"
+        es = "Máscara alada"
+    }
+    // context: legend_helmet_faceplate_winged.create.m.Description
+    {
+        en = "A metal jaw guard formed into the shape of wings with a faceplate."
+        es = "Un protector de mandíbula de metal con forma de alas y una máscara."
+    }
+    // context: legend_helmet_faceplate_winged.create.m.ArmorDescription
+    {
+        en = "Includes a metal winged jaw guard with a faceplate."
+        es = "Incluye un protector de mandíbula alado de metal con máscara."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_winged_full.nut
+    // context: legend_helmet_faceplate_winged_full.create.m.Name
+    {
+        en = "Full Winged Faceplate"
+        es = "Máscara alada completa"
+    }
+    // context: legend_helmet_faceplate_winged_full.create.m.Description
+    {
+        en = "A metal jaw guard formed into the shape of wings with a faceplate and a neck guard."
+        es = "Un protector de mandíbula de metal con forma de alas, con máscara y protector de cuello."
+    }
+    // context: legend_helmet_faceplate_winged_full.create.m.ArmorDescription
+    {
+        en = "Includes a metal winged jaw guard with a faceplate and a neck guard."
+        es = "Incluye un protector de mandíbula alado de metal con máscara y protector de cuello."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_winged_full_named.nut
+    // context: legend_helmet_faceplate_winged_full_named.create.m.Description
+    {
+        en = "An exceptionally well crafted faceplate adorned with angelic wings. The design is very light and the materials are of the highest quality."
+        es = "Una máscara de factura excepcional adornada con alas angelicales. Su diseño es muy ligero y los materiales son de la más alta calidad."
+    }
+    // context: legend_helmet_faceplate_winged_full_named.create.m.ArmorDescription
+    {
+        en = "Includes an exceptionally well crafted faceplate adorned with angelic wings."
+        es = "Incluye una máscara de factura excepcional adornada con alas angelicales."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_faceplate_winged_long.nut
+    // context: legend_helmet_faceplate_winged_long.create.m.Description
+    {
+        en = "A metal jaw guard formed into the shape of wings with a neck guard."
+        es = "Un protector de mandíbula de metal con forma de alas y protector de cuello."
+    }
+    // context: legend_helmet_faceplate_winged_long.create.m.ArmorDescription
+    {
+        en = "Includes a metal winged jaw guard with a neck guard."
+        es = "Incluye un protector de mandíbula alado de metal con protector de cuello."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_fleshcultist_mask.nut
+    // context: legend_helmet_fleshcultist_mask.create.m.Name
+    {
+        en = "Fleshcultist Mask"
+        es = "Máscara de cultista de la carne"
+    }
+    // context: legend_helmet_fleshcultist_mask.create.m.Description
+    {
+        en = "A tattered mask that once belonged to a twisted flesh cultist."
+        es = "Una máscara andrajosa que perteneció a un retorcido cultista de la carne."
+    }
+    // context: legend_helmet_fleshcultist_mask.create.m.ArmorDescription
+    {
+        en = "Includes a tattered mask."
+        es = "Incluye una máscara andrajosa."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_chain_helm.nut
+    // context: legend_helmet_goblin_chain_helm.create.m.Name
+    {
+        en = "Goblin Chain Helm"
+        es = "Yelmo de malla goblin"
+    }
+    // context: legend_helmet_goblin_chain_helm.create.m.Description
+    {
+        en = "A scavenged skullcap reinforced with curtains of rusted mail."
+        es = "Un casquete rapiñado, reforzado con cortinas de malla oxidada."
+    }
+    // context: legend_helmet_goblin_chain_helm.create.m.ArmorDescription
+    {
+        en = "Includes a skullcap reinforced with curtains of rusted mail."
+        es = "Incluye un casquete reforzado con cortinas de malla oxidada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_gillie.nut
+    // context: legend_helmet_goblin_gillie.create.m.Name
+    {
+        en = "Goblin Gillie"
+        es = "Camuflaje goblin"
+    }
+    // context: legend_helmet_goblin_gillie.create.m.Description
+    {
+        en = "Thick layers of forest foliage and used to disguise oneself."
+        es = "Gruesas capas de follaje del bosque que sirven para camuflarse."
+    }
+    // context: legend_helmet_goblin_gillie.create.m.ArmorDescription
+    {
+        en = "Includes a disguise made of foliage."
+        es = "Incluye un disfraz de follaje."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_leaf_helm.nut
+    // context: legend_helmet_goblin_leaf_helm.create.m.Name
+    {
+        en = "Goblin Leaf Mask"
+        es = "Máscara de hojas goblin"
+    }
+    // context: legend_helmet_goblin_leaf_helm.create.m.Description
+    {
+        en = "A rudimentary mask fashioned from foliage and bark, designed to help the wearer blend into the natural surroundings."
+        es = "Una máscara rudimentaria de follaje y corteza, pensada para que quien la lleva se confunda con el entorno natural."
+    }
+    // context: legend_helmet_goblin_leaf_helm.create.m.ArmorDescription
+    {
+        en = "Includes a rudimentary goblin mask."
+        es = "Incluye una máscara goblin rudimentaria."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_leather_helm.nut
+    // context: legend_helmet_goblin_leather_helm.create.m.Name
+    {
+        en = "Leather Goblin Helm"
+        es = "Yelmo de cuero goblin"
+    }
+    // context: legend_helmet_goblin_leather_helm.create.m.Description
+    {
+        en = "A basic leather helm made of odd scraps stitched together."
+        es = "Un yelmo de cuero básico hecho de retazos dispares cosidos entre sí."
+    }
+    // context: legend_helmet_goblin_leather_helm.create.m.ArmorDescription
+    {
+        en = "Includes a basic leather goblin helm."
+        es = "Incluye un yelmo de cuero goblin básico."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_leather_mask.nut
+    // context: legend_helmet_goblin_leather_mask.create.m.Name
+    {
+        en = "Leather Goblin Mask"
+        es = "Máscara de cuero goblin"
+    }
+    // context: legend_helmet_goblin_leather_mask.create.m.Description
+    {
+        en = "A primitive mask made of tanned hides and thick stitching. Counts as a cultist item."
+        es = "Una máscara primitiva de pieles curtidas y costuras gruesas. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_goblin_leather_mask.create.m.ArmorDescription
+    {
+        en = "Includes a primitive leather mask."
+        es = "Incluye una máscara de cuero primitiva."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_leaves.nut
+    // context: legend_helmet_goblin_leaves.create.m.Name
+    {
+        en = "Goblin Leaves"
+        es = "Hojas goblin"
+    }
+    // context: legend_helmet_goblin_leaves.create.m.Description
+    {
+        en = "A set of leaves used by goblins to disguise themselves."
+        es = "Un manojo de hojas que usan los goblins para camuflarse."
+    }
+    // context: legend_helmet_goblin_leaves.create.m.ArmorDescription
+    {
+        en = "Includes a set of leaves."
+        es = "Incluye un manojo de hojas."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_goblin_spiked_helm.nut
+    // context: legend_helmet_goblin_spiked_helm.create.m.Name
+    {
+        en = "Spiked Goblin Helm"
+        es = "Yelmo goblin con púas"
+    }
+    // context: legend_helmet_goblin_spiked_helm.create.m.Description
+    {
+        en = "The distinctive spiked helm of a goblin overseer, designed to instill a greater fear of the master than of the enemy in the ranks below."
+        es = "El característico yelmo con púas de un capataz goblin, pensado para que las filas de abajo teman más a su amo que al enemigo."
+    }
+    // context: legend_helmet_goblin_spiked_helm.create.m.ArmorDescription
+    {
+        en = "Includes a cruel helm with several iron spikes."
+        es = "Incluye un cruel yelmo con varias púas de hierro."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_golden_helm.nut
+    // context: legend_helmet_golden_helm.create.m.Description
+    {
+        en = "A golden helm and facemask, showing the visage of an emperor from an age long past, imbued with mystical energies. When you hold it into the light, it almost looks as if the face were moving and making expressions of disgust."
+        es = "Un yelmo y una máscara de oro que muestran el rostro de un emperador de una era muy lejana, imbuidos de energías místicas. Si lo pones a la luz, casi parece que el rostro se mueve y hace muecas de asco."
+    }
+    // context: legend_helmet_golden_helm.create.m.ArmorDescription
+    {
+        en = "Includes a golden helm and facemask, showing the visage of an emperor from an age long past."
+        es = "Incluye un yelmo y una máscara de oro que muestran el rostro de un emperador de una era muy lejana."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_golden_mask.nut
+    // context: legend_helmet_golden_mask.create.m.Description
+    {
+        en = "An exquisite golden mask of distant royalty, its impassive, youthful features are rendered with such exceptional craftsmanship that one could mistake the cold metal for a living face."
+        es = "Una exquisita máscara de oro de una realeza lejana; sus rasgos impasibles y juveniles están labrados con una maestría tan excepcional que se podría confundir el frío metal con un rostro vivo."
+    }
+    // context: legend_helmet_golden_mask.create.m.ArmorDescription
+    {
+        en = "Includes an exquisite golden mask of distant royalty."
+        es = "Incluye una exquisita máscara de oro de una realeza lejana."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_headband_nose.nut
+    // context: legend_helmet_headband_nose.create.m.Name
+    {
+        en = "Headband Nose"
+        es = "Diadema con nasal"
+    }
+    // context: legend_helmet_headband_nose.create.m.Description
+    {
+        en = "A rough leather headband with a small nasal guard."
+        es = "Una diadema de cuero basto con un pequeño protector nasal."
+    }
+    // context: legend_helmet_headband_nose.create.m.ArmorDescription
+    {
+        en = "Includes a rough leather headband."
+        es = "Incluye una diadema de cuero basto."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_headband_side.nut
+    // context: legend_helmet_headband_side.create.m.Name
+    {
+        en = "Headband Side"
+        es = "Diadema lateral"
+    }
+    // context: legend_helmet_headband_side.create.m.Description
+    {
+        en = "A rugged leather headband."
+        es = "Una diadema de cuero resistente."
+    }
+    // context: legend_helmet_headband_side.create.m.ArmorDescription
+    {
+        en = "Includes a rugged leather headband."
+        es = "Incluye una diadema de cuero resistente."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_helm_adornment.nut
+    // context: legend_helmet_helm_adornment.create.m.Name
+    {
+        en = "Helm Adornment"
+        es = "Adorno de yelmo"
+    }
+    // context: legend_helmet_helm_adornment.create.m.Description
+    {
+        en = "A set of relics of adornment used to create the helm of a true questing knight."
+        es = "Un conjunto de reliquias ornamentales con las que se compone el yelmo de un verdadero caballero andante."
+    }
+    // context: legend_helmet_helm_adornment.create.m.ArmorDescription
+    {
+        en = "Includes a set of relics of adornment."
+        es = "Incluye un conjunto de reliquias ornamentales."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_mask_beak.nut
+    // context: legend_helmet_mask_beak.create.m.Description
+    {
+        en = "A distinctive, bird-like mask. The beak acts as a ventilator, containing sweet-smelling herbs to ward away sickness and disease."
+        es = "Una distintiva máscara parecida a un pájaro. El pico actúa como ventilador y contiene hierbas aromáticas para ahuyentar enfermedades y dolencias."
+    }
+    // context: legend_helmet_mask_beak.create.m.ArmorDescription
+    {
+        en = "Includes a distinctive, bird-like mask."
+        es = "Incluye una distintiva máscara parecida a un pájaro."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_mummy_mask.nut
+    // context: legend_helmet_mummy_mask.create.m.Name
+    {
+        en = "Ancient Southern Face Mask"
+        es = "Máscara facial sureña antigua"
+    }
+    // context: legend_helmet_mummy_mask.create.m.Description
+    {
+        en = "A weathered golden visage recovered from a forgotten tomb of a long dead civilization."
+        es = "Un rostro de oro desgastado, recuperado de la tumba olvidada de una civilización muerta hace mucho."
+    }
+    // context: legend_helmet_mummy_mask.create.m.ArmorDescription
+    {
+        en = "Includes a weathered golden faceplate."
+        es = "Incluye una máscara de oro desgastada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_nose_plate.nut
+    // context: legend_helmet_nose_plate.create.m.Name
+    {
+        en = "Nose Plate"
+        es = "Placa nasal"
+    }
+    // context: legend_helmet_nose_plate.create.m.Description
+    {
+        en = "A strip of metal tied on with a leather band, used for protecting the face from frontal blows."
+        es = "Una tira de metal atada con una correa de cuero, que protege la cara de los golpes frontales."
+    }
+    // context: legend_helmet_nose_plate.create.m.ArmorDescription
+    {
+        en = "Includes a nose plate."
+        es = "Incluye una placa nasal."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_orc_horn_mask.nut
+    // context: legend_helmet_orc_horn_mask.create.m.Name
+    {
+        en = "Orc Horn Mask"
+        es = "Máscara de cuernos de orco"
+    }
+    // context: legend_helmet_orc_horn_mask.create.m.Description
+    {
+        en = "A rough horned face mask, worn by young orcs. Counts as a cultist item."
+        es = "Una tosca máscara con cuernos que llevan los orcos jóvenes. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_orc_horn_mask.create.m.ArmorDescription
+    {
+        en = "Includes a rough, heavy horned face mask."
+        es = "Incluye una máscara con cuernos tosca y pesada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_orc_leather_mask.nut
+    // context: legend_helmet_orc_leather_mask.create.m.Name
+    {
+        en = "Orc Leather Mask"
+        es = "Máscara de cuero de orco"
+    }
+    // context: legend_helmet_orc_leather_mask.create.m.Description
+    {
+        en = "A simple, heavy construction of strange leather, worn by young orcs. Counts as a cultist item."
+        es = "Una pieza sencilla y pesada de un cuero extraño que llevan los orcos jóvenes. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_orc_leather_mask.create.m.ArmorDescription
+    {
+        en = "Includes a simple, heavy leather mask."
+        es = "Incluye una máscara de cuero sencilla y pesada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_orc_metal_mask.nut
+    // context: legend_helmet_orc_metal_mask.create.m.Name
+    {
+        en = "Orc Metal Plated Mask"
+        es = "Máscara de placas de orco"
+    }
+    // context: legend_helmet_orc_metal_mask.create.m.Description
+    {
+        en = "A simple, heavy construction of metal plates, worn by young orcs."
+        es = "Una pieza sencilla y pesada de placas de metal que llevan los orcos jóvenes."
+    }
+    // context: legend_helmet_orc_metal_mask.create.m.ArmorDescription
+    {
+        en = "Includes a simple, heavy metal mask."
+        es = "Incluye una máscara de metal sencilla y pesada."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_rotten_helm_adornment.nut
+    // context: legend_helmet_rotten_helm_adornment.create.m.Name
+    {
+        en = "Tarnished Helm Adornment"
+        es = "Adorno de yelmo deslustrado"
+    }
+    // context: legend_helmet_rotten_helm_adornment.create.m.Description
+    {
+        en = "Ancient decayed relics of adornment from the helm of a long dead questing knight."
+        es = "Antiguas reliquias ornamentales, ya decrépitas, del yelmo de un caballero andante muerto hace mucho."
+    }
+    // context: legend_helmet_rotten_helm_adornment.create.m.ArmorDescription
+    {
+        en = "Includes a set of decayed relics of adornment."
+        es = "Incluye un conjunto de reliquias ornamentales decrépitas."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_southern_faceplate.nut
+    // context: legend_helmet_southern_faceplate.create.m.Name
+    {
+        en = "Southern Faceplate"
+        es = "Máscara sureña"
+    }
+    // context: legend_helmet_southern_faceplate.create.m.Description
+    {
+        en = "The grim faceplate favored by southern assassin to mask their identity as well as their intent."
+        es = "La siniestra máscara que prefieren los asesinos sureños para ocultar tanto su identidad como sus intenciones."
+    }
+    // context: legend_helmet_southern_faceplate.create.m.ArmorDescription
+    {
+        en = "Includes a grim metal faceplate."
+        es = "Incluye una siniestra máscara de metal."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_southern_faceplate_bearded.nut
+    // context: legend_helmet_southern_faceplate_bearded.create.m.Name
+    {
+        en = "Southern Bearded Faceplate"
+        es = "Máscara barbada sureña"
+    }
+    // context: legend_helmet_southern_faceplate_bearded.create.m.Description
+    {
+        en = "An exquisite golden faceplate forged into the likeness of a bearded patriarch."
+        es = "Una exquisita máscara de oro forjada a semejanza de un patriarca barbudo."
+    }
+    // context: legend_helmet_southern_faceplate_bearded.create.m.ArmorDescription
+    {
+        en = "Includes an exquisite golden faceplate."
+        es = "Incluye una exquisita máscara de oro."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_southern_veil.nut
+    // context: legend_helmet_southern_veil.create.m.Description
+    {
+        en = "A thin, wispy southern veil."
+        es = "Un velo sureño fino y vaporoso."
+    }
+    // context: legend_helmet_southern_veil.create.m.ArmorDescription
+    {
+        en = "Includes a thin veil."
+        es = "Incluye un velo fino."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_undertakers_scarf.nut
+    // context: legend_helmet_undertakers_scarf.create.m.Name
+    {
+        en = "Undertaker's Scarf"
+        es = "Pañuelo del sepulturero"
+    }
+    // context: legend_helmet_undertakers_scarf.create.m.Description
+    {
+        en = "A cloth scarf designed to shield the face from the elements and the cloying stench of the dead."
+        es = "Un pañuelo de tela pensado para proteger la cara de los elementos y del hedor empalagoso de los muertos."
+    }
+    // context: legend_helmet_undertakers_scarf.create.m.ArmorDescription
+    {
+        en = "Includes a cloth scarf worn over the mouth."
+        es = "Incluye un pañuelo de tela que se lleva sobre la boca."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_unhold_head_chain.nut
+    // context: legend_helmet_unhold_head_chain.create.m.Name
+    {
+        en = "Unhold Head Chain"
+        es = "Cadena de cabeza de trol"
+    }
+    // context: legend_helmet_unhold_head_chain.create.m.Description
+    {
+        en = "The chain used by barbarian beastmasters for controlling unholds."
+        es = "La cadena con la que los maestros de bestias bárbaros controlan a los troles."
+    }
+    // context: legend_helmet_unhold_head_chain.create.m.ArmorDescription
+    {
+        en = "Includes an unhold head chain."
+        es = "Incluye una cadena de cabeza de trol."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_unhold_head_spike.nut
+    // context: legend_helmet_unhold_head_spike.create.m.Name
+    {
+        en = "Unhold Head Spike"
+        es = "Púa de cabeza de trol"
+    }
+    // context: legend_helmet_unhold_head_spike.create.m.Description
+    {
+        en = "The heavy spiked armor used by barbarian unholds."
+        es = "La pesada armadura con púas que llevan los troles bárbaros."
+    }
+    // context: legend_helmet_unhold_head_spike.create.m.ArmorDescription
+    {
+        en = "Includes an unhold head spike."
+        es = "Incluye una púa de cabeza de trol."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_wallace_sallet_visor.nut
+    // context: legend_helmet_wallace_sallet_visor.create.m.Name
+    {
+        en = "Sallet Visor"
+        es = "Visor de celada"
+    }
+    // context: legend_helmet_wallace_sallet_visor.create.m.Description
+    {
+        en = "A gracefully curved iron visor, featuring two eye-slits and a few breaths in the center."
+        es = "Un visor de hierro de curva elegante, con dos rendijas para los ojos y unos cuantos respiraderos en el centro."
+    }
+    // context: legend_helmet_wallace_sallet_visor.create.m.ArmorDescription
+    {
+        en = "Includes a curved iron visor."
+        es = "Incluye un visor de hierro curvo."
+    }
+    // FILE: scripts\items\legend_helmets\top\legend_helmet_wallace_sallet_visor_named.nut
+    // context: legend_helmet_wallace_sallet_visor_named.create.m.Description
+    {
+        en = "A beautifully painted visor bearing an exquisite caricature of a beast's visage upon the front, striking terror - and perhaps a touch of bewilderment - into any who gaze upon it."
+        es = "Un visor bellamente pintado con una exquisita caricatura del rostro de una bestia en el frente, que infunde terror, y quizá algo de desconcierto, en cualquiera que lo mire."
+    }
+    // context: legend_helmet_wallace_sallet_visor_named.create.m.ArmorDescription
+    {
+        en = "Includes a beautifully painted curved iron visor."
+        es = "Incluye un visor de hierro curvo bellamente pintado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_ancient_priest_hat.nut
+    // context: legend_helmet_ancient_priest_hat.create.m.Name
+    {
+        en = "Ancient Lich Crown"
+        es = "Corona de liche antigua"
+    }
+    // context: legend_helmet_ancient_priest_hat.create.m.Description
+    {
+        en = "A ceremonial crown that has endured the passage of time. It still carries the authority of ancient Lich Priests."
+        es = "Una corona ceremonial que ha resistido el paso del tiempo. Aún conserva la autoridad de los antiguos sacerdotes liches."
+    }
+    // context: legend_helmet_ancient_priest_hat.create.m.ArmorDescription
+    {
+        en = "Includes an ancient ceremonial crown."
+        es = "Incluye una antigua corona ceremonial."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_ancient_wig.nut
+    // context: legend_helmet_ancient_wig.create.m.Name
+    {
+        en = "Ancient Wig"
+        es = "Peluca antigua"
+    }
+    // context: legend_helmet_ancient_wig.create.m.Description
+    {
+        en = "An wig of stiff fibers, taken from an ancient embalmed noble."
+        es = "Una peluca de fibras rígidas, tomada de un antiguo noble embalsamado."
+    }
+    // context: legend_helmet_ancient_wig.create.m.ArmorDescription
+    {
+        en = "Includes a wig."
+        es = "Incluye una peluca."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_antler.nut
+    // context: legend_helmet_antler.create.m.Name
+    {
+        en = "Antlers"
+        es = "Astas"
+    }
+    // context: legend_helmet_antler.create.m.Description
+    {
+        en = "The wide antlers of a beast, often a mark of distinction among the northern tribes."
+        es = "Las amplias astas de una bestia, a menudo una marca de distinción entre las tribus del norte."
+    }
+    // context: legend_helmet_antler.create.m.ArmorDescription
+    {
+        en = "Includes the antlers of a beast."
+        es = "Incluye las astas de una bestia."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_back_crest.nut
+    // context: legend_helmet_back_crest.create.m.Name
+    {
+        en = "Crest"
+        es = "Cresta"
+    }
+    // context: legend_helmet_back_crest.create.m.Description
+    {
+        en = "A huge crest of colorful feathers arrayed behind a helm."
+        es = "Una enorme cresta de plumas de colores dispuesta detrás de un yelmo."
+    }
+    // context: legend_helmet_back_crest.create.m.ArmorDescription
+    {
+        en = "Includes a crest of colorful feathers."
+        es = "Incluye una cresta de plumas de colores."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_back_feathers.nut
+    // context: legend_helmet_back_feathers.create.m.Name
+    {
+        en = "Feathers"
+        es = "Plumas"
+    }
+    // context: legend_helmet_back_feathers.create.m.Description
+    {
+        en = "A set of rich feathers to be displayed behind a helm."
+        es = "Un conjunto de plumas vistosas para lucir detrás de un yelmo."
+    }
+    // context: legend_helmet_back_feathers.create.m.ArmorDescription
+    {
+        en = "Includes a set of rich feathers."
+        es = "Incluye un conjunto de plumas vistosas."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_bear_head.nut
+    // context: legend_helmet_bear_head.create.m.Description
+    {
+        en = "The dried and prepped head of a large bear. Offers some protection, but is mostly donned for the intimidating looks."
+        es = "La cabeza seca y preparada de un oso grande. Ofrece cierta protección, pero se usa principalmente por su apariencia intimidante."
+    }
+    // context: legend_helmet_bear_head.create.m.ArmorDescription
+    {
+        en = "Includes a headpiece made from a pelt of a large bear."
+        es = "Incluye un tocado hecho con la piel de un oso grande."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_beret.nut
+    // context: legend_helmet_beret.create.m.Name
+    {
+        en = "Beret"
+        es = "Birrete"
+    }
+    // context: legend_helmet_beret.create.m.Description
+    {
+        en = "A fine cloth hat typically worn by the nobles."
+        es = "Un fino sombrero de tela que suelen llevar los nobles."
+    }
+    // context: legend_helmet_beret.create.m.ArmorDescription
+    {
+        en = "Includes a fine cloth hat."
+        es = "Incluye un fino sombrero de tela."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_bull_horns.nut
+    // context: legend_helmet_bull_horns.create.m.Name
+    {
+        en = "Bull Horns"
+        es = "Cuernos de toro"
+    }
+    // context: legend_helmet_bull_horns.create.m.Description
+    {
+        en = "The horns of a wild beast, marking the user a competent hunter among the northern tribes."
+        es = "Los cuernos de una bestia salvaje, que distinguen a quien los lleva como un cazador competente entre las tribus del norte."
+    }
+    // context: legend_helmet_bull_horns.create.m.ArmorDescription
+    {
+        en = "Includes a pair of bull horns."
+        es = "Incluye un par de cuernos de toro."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_chaperon.nut
+    // context: legend_helmet_chaperon.create.m.Name
+    {
+        en = "Chaperon"
+        es = "Chaperón"
+    }
+    // context: legend_helmet_chaperon.create.m.Description
+    {
+        en = "A dyed cloth piece of storied headwear adorning a questing knight on their path of atonement."
+        es = "Un tocado de tela teñida con mucha historia, que adorna a un caballero andante en su camino de expiación."
+    }
+    // context: legend_helmet_chaperon.create.m.ArmorDescription
+    {
+        en = "Includes a dyed cloth headpiece."
+        es = "Incluye un tocado de tela teñida."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_crown.nut
+    // context: legend_helmet_crown.create.m.Name
+    {
+        en = "Crown"
+        es = "Corona"
+    }
+    // context: legend_helmet_crown.create.m.Description
+    {
+        en = "An ornately designed symbol of kingly authority, commanding immediate respect among those born in lower castes."
+        es = "Un símbolo de autoridad regia de diseño ornamentado, que impone respeto inmediato entre los nacidos en castas inferiores."
+    }
+    // context: legend_helmet_crown.create.m.ArmorDescription
+    {
+        en = "Includes a crown."
+        es = "Incluye una corona."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_faction_helmet.nut
+    // context: legend_helmet_faction_helmet.create.m.Name
+    {
+        en = "Faction Helm Ornament"
+        es = "Ornamento de yelmo de facción"
+    }
+    // context: legend_helmet_faction_helmet.create.m.Description
+    {
+        en = "A lavish crested heraldic ornament of a noble house, leaving no doubt as to the wearer's allegiance."
+        es = "Un lujoso ornamento heráldico con cresta de una casa noble, que no deja dudas sobre la lealtad de quien lo lleva."
+    }
+    // context: legend_helmet_faction_helmet.create.m.ArmorDescription
+    {
+        en = "Includes a crested ornament of a noble house."
+        es = "Incluye un ornamento con cresta de una casa noble."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_faction_helmet_2.nut
+    // context: legend_helmet_faction_helmet_2.create.m.Name
+    {
+        en = "Zweihander's Hat"
+        es = "Sombrero de zweihander"
+    }
+    // context: legend_helmet_faction_helmet_2.create.m.Description
+    {
+        en = "A slumped, feathered hat favoured by noble swordsman who value a dashing appearance as much as a sharp blade."
+        es = "Un sombrero caído y emplumado, preferido por los espadachines nobles que valoran tanto una apariencia gallarda como una hoja afilada."
+    }
+    // context: legend_helmet_faction_helmet_2.create.m.ArmorDescription
+    {
+        en = "Includes a feathered hat."
+        es = "Incluye un sombrero emplumado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_feather_band.nut
+    // context: legend_helmet_feather_band.create.m.Name
+    {
+        en = "Feathered Headband"
+        es = "Diadema emplumada"
+    }
+    // context: legend_helmet_feather_band.create.m.Description
+    {
+        en = "A simple cloth headband adorned with a trio of upright feathers."
+        es = "Una sencilla diadema de tela adornada con un trío de plumas erguidas."
+    }
+    // context: legend_helmet_feather_band.create.m.ArmorDescription
+    {
+        en = "Includes a feathered headband."
+        es = "Incluye una diadema emplumada."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_feather_crest.nut
+    // context: legend_helmet_feather_crest.create.m.Name
+    {
+        en = "Feather Crest"
+        es = "Cresta de plumas"
+    }
+    // context: legend_helmet_feather_crest.create.m.Description
+    {
+        en = "A fan of large feathers to be displayed behind a helm."
+        es = "Un abanico de grandes plumas para lucir detrás de un yelmo."
+    }
+    // context: legend_helmet_feather_crest.create.m.ArmorDescription
+    {
+        en = "Includes a fan of large feathers."
+        es = "Incluye un abanico de grandes plumas."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_feathered_hat.nut
+    // context: legend_helmet_feathered_hat.create.m.Description
+    {
+        en = "A fancy hat decorated with a pair of vibrant feathers usually worn by minstrels or nobles."
+        es = "Un sombrero elegante decorado con un par de plumas vistosas, que suelen llevar juglares o nobles."
+    }
+    // context: legend_helmet_feathered_hat.create.m.ArmorDescription
+    {
+        en = "Includes a fancy feathered hat."
+        es = "Incluye un elegante sombrero emplumado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_felt_chaperon.nut
+    // context: legend_helmet_felt_chaperon.create.m.Name
+    {
+        en = "Felt Chaperon"
+        es = "Chaperón de fieltro"
+    }
+    // context: legend_helmet_felt_chaperon.create.m.Description
+    {
+        en = "A simple wrap of felted cloth, extremely popular in the streets of the southern city-states."
+        es = "Una sencilla pieza de fieltro para envolver la cabeza, muy popular en las calles de las ciudades-estado del sur."
+    }
+    // context: legend_helmet_felt_chaperon.create.m.ArmorDescription
+    {
+        en = "Includes a simple felted cloth headpiece."
+        es = "Incluye un sencillo tocado de fieltro."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_fencer_hat.nut
+    // context: legend_helmet_fencer_hat.create.m.Name
+    {
+        en = "Fencer Hat"
+        es = "Sombrero de esgrimista"
+    }
+    // context: legend_helmet_fencer_hat.create.m.Description
+    {
+        en = "The floppy hat of a swordsman."
+        es = "El sombrero de ala caída de un espadachín."
+    }
+    // context: legend_helmet_fencer_hat.create.m.ArmorDescription
+    {
+        en = "A floppy hat."
+        es = "Un sombrero de ala caída."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_fleshcultist_book.nut
+    // context: legend_helmet_fleshcultist_book.create.m.Name
+    {
+        en = "Fleshcultist Book"
+        es = "Libro de cultista de la carne"
+    }
+    // context: legend_helmet_fleshcultist_book.create.m.Description
+    {
+        en = "An old book strapped to the head that once belonged to a twisted flesh cultist, every page of the book is blank."
+        es = "Un viejo libro atado a la cabeza que perteneció a un retorcido cultista de la carne; todas sus páginas están en blanco."
+    }
+    // context: legend_helmet_fleshcultist_book.create.m.ArmorDescription
+    {
+        en = "Includes a book strapped to the head."
+        es = "Incluye un libro atado a la cabeza."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_fleshcultist_straps.nut
+    // context: legend_helmet_fleshcultist_straps.create.m.Name
+    {
+        en = "Fleshcultist Straps"
+        es = "Correas de cultista de la carne"
+    }
+    // context: legend_helmet_fleshcultist_straps.create.m.Description
+    {
+        en = "A spattering of supple leather straps that once belonged to a twisted flesh cultist."
+        es = "Un puñado de correas de cuero flexible que pertenecieron a un retorcido cultista de la carne."
+    }
+    // context: legend_helmet_fleshcultist_straps.create.m.ArmorDescription
+    {
+        en = "Includes some leather straps."
+        es = "Incluye unas correas de cuero."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_goat_horns.nut
+    // context: legend_helmet_goat_horns.create.m.Name
+    {
+        en = "Goat Horns"
+        es = "Cuernos de cabra"
+    }
+    // context: legend_helmet_goat_horns.create.m.Description
+    {
+        en = "A pair of tall horns of a mountain goat, an item of choice among barbarian beast tamers."
+        es = "Un par de altos cuernos de cabra montés, muy apreciados por los domadores de bestias bárbaros."
+    }
+    // context: legend_helmet_goat_horns.create.m.ArmorDescription
+    {
+        en = "Includes a pair of goat horns."
+        es = "Incluye un par de cuernos de cabra."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_goblin_bones.nut
+    // context: legend_helmet_goblin_bones.create.m.Name
+    {
+        en = "Goblin Bones"
+        es = "Huesos goblin"
+    }
+    // context: legend_helmet_goblin_bones.create.m.Description
+    {
+        en = "A ritualistic skull ornament etched with arcane symbols. Used by greenskin shamans both as a focus for primal spirits and a terrifying mark of tribal authority."
+        es = "Un ornamento ritual de calavera grabado con símbolos arcanos. Los chamanes pieles verdes lo usan como foco de los espíritus primigenios y como temible marca de autoridad tribal."
+    }
+    // context: legend_helmet_goblin_bones.create.m.ArmorDescription
+    {
+        en = "Includes a skull ornament etched with arcane symbols."
+        es = "Incluye un ornamento de calavera grabado con símbolos arcanos."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_goblin_tail.nut
+    // context: legend_helmet_goblin_tail.create.m.Name
+    {
+        en = "Goblin Tail"
+        es = "Coleta goblin"
+    }
+    // context: legend_helmet_goblin_tail.create.m.Description
+    {
+        en = "A wiry plume of matted dark hair used by a goblin to crest a helm."
+        es = "Un penacho hirsuto de pelo oscuro y apelmazado con el que un goblin corona su yelmo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_headband.nut
+    // context: legend_helmet_headband.create.m.Name
+    {
+        en = "Headband"
+        es = "Diadema"
+    }
+    // context: legend_helmet_headband.create.m.Description
+    {
+        en = "A simple cloth headband, conveniently keeping the wearer's hair away from the eyes."
+        es = "Una sencilla diadema de tela que, muy oportunamente, le aparta el pelo de los ojos a quien la lleva."
+    }
+    // context: legend_helmet_headband.create.m.ArmorDescription
+    {
+        en = "Includes a cloth headband."
+        es = "Incluye una diadema de tela."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_hood_cloth_long.nut
+    // context: legend_helmet_hood_cloth_long.create.m.Name
+    {
+        en = "Cloth Long Hood"
+        es = "Capucha larga de tela"
+    }
+    // context: legend_helmet_hood_cloth_long.create.m.Description
+    {
+        en = "A long, oversized hood that keeps the rain off the neck."
+        es = "Una capucha larga y holgada que protege el cuello de la lluvia."
+    }
+    // context: legend_helmet_hood_cloth_long.create.m.ArmorDescription
+    {
+        en = "Includes a long cloth hood."
+        es = "Incluye una capucha larga de tela."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_hood_cloth_round.nut
+    // context: legend_helmet_hood_cloth_round.create.m.Name
+    {
+        en = "Round Hood Cloth"
+        es = "Capucha redonda de tela"
+    }
+    // context: legend_helmet_hood_cloth_round.create.m.Description
+    {
+        en = "A rounded hood designed to be worn over a helm, shielding more expensive pieces from the rain."
+        es = "Una capucha redondeada pensada para llevarla sobre el yelmo y proteger de la lluvia las piezas más caras."
+    }
+    // context: legend_helmet_hood_cloth_round.create.m.ArmorDescription
+    {
+        en = "Includes a rounded cloth hood."
+        es = "Incluye una capucha redondeada de tela."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_hood_cloth_square.nut
+    // context: legend_helmet_hood_cloth_square.create.m.Name
+    {
+        en = "Square Hood Cloth"
+        es = "Capucha cuadrada de tela"
+    }
+    // context: legend_helmet_hood_cloth_square.create.m.Description
+    {
+        en = "A broadly tailored hood that drapes over the shoulders, keeping the wearer protected from foul weather."
+        es = "Una capucha de corte amplio que cae sobre los hombros y protege del mal tiempo a quien la lleva."
+    }
+    // context: legend_helmet_hood_cloth_square.create.m.ArmorDescription
+    {
+        en = "Includes a square cloth hood."
+        es = "Incluye una capucha cuadrada de tela."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_hood_cloth_wide.nut
+    // context: legend_helmet_hood_cloth_wide.create.m.Name
+    {
+        en = "Wide Hood Cloth"
+        es = "Capucha ancha de tela"
+    }
+    // context: legend_helmet_hood_cloth_wide.create.m.Description
+    {
+        en = "A squared hood, pulled over a helmet to protect the underlying gear from the elements."
+        es = "Una capucha cuadrada que se pone sobre el casco para proteger de la intemperie el equipo de debajo."
+    }
+    // context: legend_helmet_hood_cloth_wide.create.m.ArmorDescription
+    {
+        en = "Includes a wide cloth hood."
+        es = "Incluye una capucha ancha de tela."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_horn_decorations.nut
+    // context: legend_helmet_horn_decorations.create.m.Name
+    {
+        en = "Horn Decorations"
+        es = "Adornos de cuernos"
+    }
+    // context: legend_helmet_horn_decorations.create.m.Description
+    {
+        en = "Decorative horns, used in the northern tribes as a totem of strength."
+        es = "Cuernos decorativos que las tribus del norte usan como tótem de fuerza."
+    }
+    // context: legend_helmet_horn_decorations.create.m.ArmorDescription
+    {
+        en = "Includes a set of decorative horns."
+        es = "Incluye un juego de cuernos decorativos."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_impaled_head.nut
+    // context: legend_helmet_impaled_head.create.m.Name
+    {
+        en = "Impaled Head"
+        es = "Cabeza empalada"
+    }
+    // context: legend_helmet_impaled_head.create.m.Description
+    {
+        en = "The severed head of a fallen foe, pointed atop a helm as a gruesome trophy as a warning to any future foe."
+        es = "La cabeza cercenada de un enemigo caído, clavada sobre el yelmo como trofeo macabro y advertencia para cualquier enemigo futuro."
+    }
+    // context: legend_helmet_impaled_head.create.m.ArmorDescription
+    {
+        en = "Includes a severed head impaled on a spike."
+        es = "Incluye una cabeza cercenada empalada en una pica."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_knotted_tail.nut
+    // context: legend_helmet_knotted_tail.create.m.Name
+    {
+        en = "Knotted Tail"
+        es = "Coleta anudada"
+    }
+    // context: legend_helmet_knotted_tail.create.m.Description
+    {
+        en = "A knotted pony tail. A sign of prowess in some of the lands."
+        es = "Una coleta anudada. Señal de destreza en algunas tierras."
+    }
+    // context: legend_helmet_knotted_tail.create.m.ArmorDescription
+    {
+        en = "Includes a knotted pony tail."
+        es = "Incluye una coleta anudada."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_lion_pelt.nut
+    // context: legend_helmet_lion_pelt.create.m.Name
+    {
+        en = "Lion Pelt"
+        es = "Piel de león"
+    }
+    // context: legend_helmet_lion_pelt.create.m.Description
+    {
+        en = "A luxurious pelt of a rare beast, turned by a taxidermist into a regal head covering."
+        es = "La lujosa piel de una bestia rara, convertida por un taxidermista en un tocado regio."
+    }
+    // context: legend_helmet_lion_pelt.create.m.ArmorDescription
+    {
+        en = "Includes a lion's pelt head covering."
+        es = "Incluye un tocado de piel de león."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_metal_bird.nut
+    // context: legend_helmet_metal_bird.create.m.Name
+    {
+        en = "Metal Bird"
+        es = "Pájaro de metal"
+    }
+    // context: legend_helmet_metal_bird.create.m.Description
+    {
+        en = "An ancient metal bird ornament, its carefully crafted shape and intricate details a testament to the skill of its maker."
+        es = "Un antiguo ornamento de metal con forma de pájaro; su forma cuidadosamente trabajada y sus intrincados detalles dan fe de la maestría de su artífice."
+    }
+    // context: legend_helmet_metal_bird.create.m.ArmorDescription
+    {
+        en = "Includes an ancient bird ornament."
+        es = "Incluye un antiguo ornamento con forma de pájaro."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_mummy_crown.nut
+    // context: legend_helmet_mummy_crown.create.m.Name
+    {
+        en = "Ancient Southern Crown"
+        es = "Corona sureña antigua"
+    }
+    // context: legend_helmet_mummy_crown.create.m.Description
+    {
+        en = "A tall, once-majestic crown. Years of intense desert sun have left it desiccated and scarred."
+        es = "Una corona alta, majestuosa en otro tiempo. Años de sol abrasador del desierto la han dejado reseca y marcada."
+    }
+    // context: legend_helmet_mummy_crown.create.m.ArmorDescription
+    {
+        en = "Includes a tall, ancient crown."
+        es = "Incluye una corona alta y antigua."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_mummy_crown_king.nut
+    // context: legend_helmet_mummy_crown_king.create.m.Name
+    {
+        en = "Ancient Southern Crested Crown"
+        es = "Corona sureña antigua con cresta"
+    }
+    // context: legend_helmet_mummy_crown_king.create.m.Description
+    {
+        en = "A lion crested crown belonging to a king of a long dead civilization."
+        es = "Una corona con cresta de león que perteneció a un rey de una civilización muerta hace mucho."
+    }
+    // context: legend_helmet_mummy_crown_king.create.m.ArmorDescription
+    {
+        en = "Includes a lion crested crown."
+        es = "Incluye una corona con cresta de león."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_mummy_headband.nut
+    // context: legend_helmet_mummy_headband.create.m.Name
+    {
+        en = "Ancient Southern Headband"
+        es = "Diadema sureña antigua"
+    }
+    // context: legend_helmet_mummy_headband.create.m.Description
+    {
+        en = "A thin serpent headband that has lost much of its luster over the centuries."
+        es = "Una fina diadema en forma de serpiente que ha perdido buena parte de su brillo con los siglos."
+    }
+    // context: legend_helmet_mummy_headband.create.m.ArmorDescription
+    {
+        en = "Includes an ancient serpent headband."
+        es = "Incluye una antigua diadema en forma de serpiente."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_mummy_headress.nut
+    // context: legend_helmet_mummy_headress.create.m.Name
+    {
+        en = "Ancient Southern Headdress"
+        es = "Tocado sureño antiguo"
+    }
+    // context: legend_helmet_mummy_headress.create.m.Description
+    {
+        en = "A headdress adorned with a idol resembling the sun, looted from a tomb of a long dead civilization."
+        es = "Un tocado adornado con un ídolo que recuerda al sol, saqueado de la tumba de una civilización muerta hace mucho."
+    }
+    // context: legend_helmet_mummy_headress.create.m.ArmorDescription
+    {
+        en = "Includes an ancient ritualistic headdress."
+        es = "Incluye un antiguo tocado ritual."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_noble_buckle.nut
+    // context: legend_helmet_noble_buckle.create.m.Name
+    {
+        en = "Noble Buckle"
+        es = "Hebilla noble"
+    }
+    // context: legend_helmet_noble_buckle.create.m.Description
+    {
+        en = "A finely wrought golden buckle used to adorn noble headwear."
+        es = "Una hebilla dorada finamente labrada con la que se adornan los tocados nobles."
+    }
+    // context: legend_helmet_noble_buckle.create.m.ArmorDescription
+    {
+        en = "Includes a golden buckle."
+        es = "Incluye una hebilla dorada."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_noble_feather.nut
+    // context: legend_helmet_noble_feather.create.m.Name
+    {
+        en = "Noble Feather"
+        es = "Pluma noble"
+    }
+    // context: legend_helmet_noble_feather.create.m.Description
+    {
+        en = "A cluster of rich, decorative feathers worn by nobles in their headwear."
+        es = "Un manojo de plumas lujosas y decorativas que los nobles lucen en sus tocados."
+    }
+    // context: legend_helmet_noble_feather.create.m.ArmorDescription
+    {
+        en = "Includes cluster a rich feathers."
+        es = "Incluye un manojo de plumas lujosas."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_noble_floppy_hat.nut
+    // context: legend_helmet_noble_floppy_hat.create.m.Name
+    {
+        en = "Floppy Noble Hat"
+        es = "Sombrero noble de ala caída"
+    }
+    // context: legend_helmet_noble_floppy_hat.create.m.Description
+    {
+        en = "A fashionable fabric hat with a golden band, usually worn by the aristocrats."
+        es = "Un sombrero de tela a la moda con una cinta dorada, que suelen llevar los aristócratas."
+    }
+    // context: legend_helmet_noble_floppy_hat.create.m.ArmorDescription
+    {
+        en = "Includes a fashionable fabric hat."
+        es = "Incluye un sombrero de tela a la moda."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_noble_hat.nut
+    // context: legend_helmet_noble_hat.create.m.Description
+    {
+        en = "A beautiful hat adorned with a set of richly hued feathers, held fast by a decorative band."
+        es = "Un precioso sombrero adornado con un juego de plumas de vivos colores, sujetas por una cinta decorativa."
+    }
+    // context: legend_helmet_noble_hat.create.m.ArmorDescription
+    {
+        en = "Includes a hate adorned with a set of richly hued feathers."
+        es = "Incluye un sombrero adornado con un juego de plumas de vivos colores."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_noble_hood.nut
+    // context: legend_helmet_noble_hood.create.m.Description
+    {
+        en = "A hood of fine cloth decorated with gilded bosses."
+        es = "Una capucha de tela fina decorada con tachones dorados."
+    }
+    // context: legend_helmet_noble_hood.create.m.ArmorDescription
+    {
+        en = "Includes a fine cloth hood."
+        es = "Incluye una capucha de tela fina."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_nun_habit.nut
+    // context: legend_helmet_nun_habit.create.m.Description
+    {
+        en = "A modest head covering of the women of the cloth, its white lining symboling purity and innocence."
+        es = "El recatado tocado de las mujeres consagradas; su forro blanco simboliza la pureza y la inocencia."
+    }
+    // context: legend_helmet_nun_habit.create.m.ArmorDescription
+    {
+        en = "Includes a nun habit."
+        es = "Incluye una toca de monja."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_orc_bones.nut
+    // context: legend_helmet_orc_bones.create.m.Name
+    {
+        en = "Orc Bones"
+        es = "Huesos de orco"
+    }
+    // context: legend_helmet_orc_bones.create.m.Description
+    {
+        en = "A jagged, intimidating arrangement of bones, fashioned by orcs into a grisly trophy."
+        es = "Un amasijo de huesos afilados e intimidante que los orcos han convertido en un trofeo espeluznante."
+    }
+    // context: legend_helmet_orc_bones.create.m.ArmorDescription
+    {
+        en = "Includes an arrangement of bones."
+        es = "Incluye un amasijo de huesos."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_orc_great_horns.nut
+    // context: legend_helmet_orc_great_horns.create.m.Name
+    {
+        en = "Orc Great Horns"
+        es = "Grandes cuernos de orco"
+    }
+    // context: legend_helmet_orc_great_horns.create.m.Description
+    {
+        en = "A pair of enormous horns of a massive beast, worn by the largest of orcs."
+        es = "Un par de cuernos enormes de una bestia descomunal, que lucen los orcos más grandes."
+    }
+    // context: legend_helmet_orc_great_horns.create.m.ArmorDescription
+    {
+        en = "Includes a pair of enormous horns."
+        es = "Incluye un par de cuernos enormes."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_orc_tail.nut
+    // context: legend_helmet_orc_tail.create.m.Name
+    {
+        en = "Orc Tail"
+        es = "Coleta de orco"
+    }
+    // context: legend_helmet_orc_tail.create.m.Description
+    {
+        en = "A thick tail of hair decorated with bone pieces. A symbol of status among the orcs."
+        es = "Una gruesa coleta de pelo decorada con trozos de hueso. Un símbolo de rango entre los orcos."
+    }
+    // context: legend_helmet_orc_tail.create.m.ArmorDescription
+    {
+        en = "Includes a thick tail of hair."
+        es = "Incluye una gruesa coleta de pelo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_physicians_hood.nut
+    // context: legend_helmet_physicians_hood.create.m.Name
+    {
+        en = "Physician's Hood"
+        es = "Capucha del médico"
+    }
+    // context: legend_helmet_physicians_hood.create.m.Description
+    {
+        en = "A thick hood designed to keep out splatters and vapours."
+        es = "Una gruesa capucha pensada para protegerse de salpicaduras y vapores."
+    }
+    // context: legend_helmet_physicians_hood.create.m.ArmorDescription
+    {
+        en = "Includes a thick hood."
+        es = "Incluye una gruesa capucha."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_plait.nut
+    // context: legend_helmet_plait.create.m.Name
+    {
+        en = "Plait"
+        es = "Trenza"
+    }
+    // context: legend_helmet_plait.create.m.Description
+    {
+        en = "A decorative plait used to adorn helms."
+        es = "Una trenza decorativa con la que se adornan los yelmos."
+    }
+    // context: legend_helmet_plait.create.m.ArmorDescription
+    {
+        en = "Includes a decorative plait."
+        es = "Incluye una trenza decorativa."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_ponytail.nut
+    // context: legend_helmet_ponytail.create.m.Name
+    {
+        en = "Ponytail"
+        es = "Cola de caballo"
+    }
+    // context: legend_helmet_ponytail.create.m.Description
+    {
+        en = "A long tail of horsehair used to crest helms."
+        es = "Una larga cola de crin de caballo con la que se coronan los yelmos."
+    }
+    // context: legend_helmet_ponytail.create.m.ArmorDescription
+    {
+        en = "Includes a horsehair ponytail."
+        es = "Incluye una cola de crin de caballo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_ram_horns.nut
+    // context: legend_helmet_ram_horns.create.m.Name
+    {
+        en = "Ram Horns"
+        es = "Cuernos de carnero"
+    }
+    // context: legend_helmet_ram_horns.create.m.Description
+    {
+        en = "A pair of curled horns of a wild beast, used as a sign of competency in northern tribes."
+        es = "Un par de cuernos retorcidos de una bestia salvaje, que en las tribus del norte son señal de valía."
+    }
+    // context: legend_helmet_ram_horns.create.m.ArmorDescription
+    {
+        en = "Includes a pair of curled horns."
+        es = "Incluye un par de cuernos retorcidos."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_rotten_faction_helmet.nut
+    // context: legend_helmet_rotten_faction_helmet.create.m.Name
+    {
+        en = "Decayed Faction Helm Ornament"
+        es = "Ornamento de yelmo de facción deteriorado"
+    }
+    // context: legend_helmet_rotten_faction_helmet.create.m.Description
+    {
+        en = "A crested ornament of a noble house tarnished by time and rot, a grim reminder that even the highborn are not exempt from the common fate of all mortals."
+        es = "El ornamento de cimera de una casa noble, deslucido por el tiempo y la podredumbre; un sombrío recordatorio de que ni los de alta cuna se libran del destino común a todos los mortales."
+    }
+    // context: legend_helmet_rotten_faction_helmet.create.m.ArmorDescription
+    {
+        en = "Includes a decayed crested ornament of a noble house."
+        es = "Incluye el ornamento de cimera deteriorado de una casa noble."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_rotten_thick_braid.nut
+    // context: legend_helmet_rotten_thick_braid.create.m.Name
+    {
+        en = "Rotten Torse"
+        es = "Burelete podrido"
+    }
+    // context: legend_helmet_rotten_thick_braid.create.m.Description
+    {
+        en = "An old mouldy linen torse, its fabric brittle and colors faded."
+        es = "Un viejo burelete de lino enmohecido, de tela quebradiza y colores desvaídos."
+    }
+    // context: legend_helmet_rotten_thick_braid.create.m.ArmorDescription
+    {
+        en = "Includes a decayed linen torse."
+        es = "Incluye un burelete de lino deteriorado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_royal_hood.nut
+    // context: legend_helmet_royal_hood.create.m.Name
+    {
+        en = "Royal Hood"
+        es = "Capucha real"
+    }
+    // context: legend_helmet_royal_hood.create.m.Description
+    {
+        en = "The ornate hood of distant royalty, made from the finest materials. Despite having fallen into hands of lesser men, it retains some of its former succulence."
+        es = "La ornamentada capucha de una realeza lejana, hecha con los mejores materiales. Aunque ha caído en manos de hombres de menor rango, conserva algo de su antigua opulencia."
+    }
+    // context: legend_helmet_royal_hood.create.m.ArmorDescription
+    {
+        en = "Includes an ornate hood."
+        es = "Incluye una capucha ornamentada."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_sack.nut
+    // context: legend_helmet_sack.create.m.Name
+    {
+        en = "Sack"
+        es = "Saco"
+    }
+    // context: legend_helmet_sack.create.m.Description
+    {
+        en = "A rough hewn hessian sack with two holes for eyes in it. Counts as a cultist item."
+        es = "Un tosco saco de arpillera con dos agujeros para los ojos. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_sack.create.m.ArmorDescription
+    {
+        en = "Includes a sack with holes for eyes."
+        es = "Incluye un saco con agujeros para los ojos."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_side_feather.nut
+    // context: legend_helmet_side_feather.create.m.Name
+    {
+        en = "Side Feather"
+        es = "Pluma lateral"
+    }
+    // context: legend_helmet_side_feather.create.m.Description
+    {
+        en = "A decorative feather clasped on hats."
+        es = "Una pluma decorativa que se prende en los sombreros."
+    }
+    // context: legend_helmet_side_feather.create.m.ArmorDescription
+    {
+        en = "Includes a decorative feather."
+        es = "Incluye una pluma decorativa."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_cloth_headress.nut
+    // context: legend_helmet_southern_cloth_headress.create.m.Name
+    {
+        en = "Southern Cloth Headdress"
+        es = "Tocado sureño de tela"
+    }
+    // context: legend_helmet_southern_cloth_headress.create.m.Description
+    {
+        en = "A fashionable southern headdress made of soft fabrics, effectively mimicking the finery of the high courts."
+        es = "Un tocado sureño a la moda hecho de telas suaves, que imita con acierto las galas de las altas cortes."
+    }
+    // context: legend_helmet_southern_cloth_headress.create.m.ArmorDescription
+    {
+        en = "Includes a fashionable southern headdress."
+        es = "Incluye un tocado sureño a la moda."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_earings.nut
+    // context: legend_helmet_southern_earings.create.m.Name
+    {
+        en = "Southern Earrings"
+        es = "Pendientes sureños"
+    }
+    // context: legend_helmet_southern_earings.create.m.Description
+    {
+        en = "A pair of delicate southern metal earrings."
+        es = "Un par de delicados pendientes sureños de metal."
+    }
+    // context: legend_helmet_southern_earings.create.m.ArmorDescription
+    {
+        en = "Includes a pair of earrings."
+        es = "Incluye un par de pendientes."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_feathered_turban.nut
+    // context: legend_helmet_southern_feathered_turban.create.m.Name
+    {
+        en = "Feathered Turban"
+        es = "Turbante emplumado"
+    }
+    // context: legend_helmet_southern_feathered_turban.create.m.Description
+    {
+        en = "A light, feathered cloth with featuring a thin face mask."
+        es = "Una tela ligera y emplumada con una fina máscara para la cara."
+    }
+    // context: legend_helmet_southern_feathered_turban.create.m.ArmorDescription
+    {
+        en = "Includes a feathered cloth head wrap."
+        es = "Incluye un turbante de tela emplumado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_headband.nut
+    // context: legend_helmet_southern_headband.create.m.Name
+    {
+        en = "Southern Headband"
+        es = "Diadema sureña"
+    }
+    // context: legend_helmet_southern_headband.create.m.Description
+    {
+        en = "A beautiful cloth headband from southern lands where dyes are plentiful."
+        es = "Una bonita diadema de tela de las tierras del sur, donde abundan los tintes."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_headress_coin.nut
+    // context: legend_helmet_southern_headress_coin.create.m.Description
+    {
+        en = "A southern headdress adorned with coins. Typically worn by entertainers, designed to catch the light and the ear of onlookers."
+        es = "Un tocado sureño adornado con monedas. Lo suelen llevar los artistas ambulantes y está pensado para atrapar la luz y el oído de los curiosos."
+    }
+    // context: legend_helmet_southern_headress_coin.create.m.ArmorDescription
+    {
+        en = "Includes a southern headdress adorned with coins."
+        es = "Incluye un tocado sureño adornado con monedas."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_helm_tailed.nut
+    // context: legend_helmet_southern_helm_tailed.create.m.Name
+    {
+        en = "Tailed Desert Wrap"
+        es = "Turbante desértico con cola"
+    }
+    // context: legend_helmet_southern_helm_tailed.create.m.Description
+    {
+        en = "A light tailed cloth head wrap bound by a gilded band."
+        es = "Un turbante de tela ligero y con cola, sujeto por una cinta dorada."
+    }
+    // context: legend_helmet_southern_helm_tailed.create.m.ArmorDescription
+    {
+        en = "Includes a tailed cloth head wrap."
+        es = "Incluye un turbante de tela con cola."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_noble_crown.nut
+    // context: legend_helmet_southern_noble_crown.create.m.Name
+    {
+        en = "Vizier's Peak"
+        es = "Pináculo del visir"
+    }
+    // context: legend_helmet_southern_noble_crown.create.m.Description
+    {
+        en = "A tall crown of a southern vizier. While its bright finish catches the eye, its light weight suggests ceremonial use."
+        es = "La alta corona de un visir sureño. Su acabado reluciente llama la atención, pero su poco peso apunta a un uso ceremonial."
+    }
+    // context: legend_helmet_southern_noble_crown.create.m.ArmorDescription
+    {
+        en = "Includes a crown of a southern vizier."
+        es = "Incluye la corona de un visir sureño."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_noble_hat.nut
+    // context: legend_helmet_southern_noble_hat.create.m.Name
+    {
+        en = "Vizier's Hat"
+        es = "Sombrero del visir"
+    }
+    // context: legend_helmet_southern_noble_hat.create.m.Description
+    {
+        en = "A floppy cloth hat of a southern vizier."
+        es = "El sombrero de tela de ala caída de un visir sureño."
+    }
+    // context: legend_helmet_southern_noble_hat.create.m.ArmorDescription
+    {
+        en = "Includes a hat of a southern vizier."
+        es = "Incluye el sombrero de un visir sureño."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_noble_turban.nut
+    // context: legend_helmet_southern_noble_turban.create.m.Name
+    {
+        en = "Vizier's Turban"
+        es = "Turbante del visir"
+    }
+    // context: legend_helmet_southern_noble_turban.create.m.Description
+    {
+        en = "A tall, feathered turban of a southern vizier, made from layers of modest cloth."
+        es = "El turbante alto y emplumado de un visir sureño, hecho con capas de tela sencilla."
+    }
+    // context: legend_helmet_southern_noble_turban.create.m.ArmorDescription
+    {
+        en = "Includes a turban of a southern vizier."
+        es = "Incluye el turbante de un visir sureño."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_patterned_headband.nut
+    // context: legend_helmet_southern_patterned_headband.create.m.Name
+    {
+        en = "Patterned Headband"
+        es = "Diadema estampada"
+    }
+    // context: legend_helmet_southern_patterned_headband.create.m.Description
+    {
+        en = "A patterned cloth headband with a simple pattern, favoured by southern merchants."
+        es = "Una diadema de tela con un estampado sencillo, la preferida de los mercaderes sureños."
+    }
+    // context: legend_helmet_southern_patterned_headband.create.m.ArmorDescription
+    {
+        en = "Includes a patterned cloth headband."
+        es = "Incluye una diadema de tela estampada."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_patterned_headwrap.nut
+    // context: legend_helmet_southern_patterned_headwrap.create.m.Name
+    {
+        en = "Patterned Head Wrap"
+        es = "Turbante de tela estampada"
+    }
+    // context: legend_helmet_southern_patterned_headwrap.create.m.Description
+    {
+        en = "A patterned cloth head wrap made by southern tailors."
+        es = "Un turbante de tela estampada hecho por sastres sureños."
+    }
+    // context: legend_helmet_southern_patterned_headwrap.create.m.ArmorDescription
+    {
+        en = "Includes a patterned cloth head wrap."
+        es = "Incluye un turbante de tela estampada."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_silk_headscarf.nut
+    // context: legend_helmet_southern_silk_headscarf.create.m.Name
+    {
+        en = "Southern Headscarf"
+        es = "Bandana sureña"
+    }
+    // context: legend_helmet_southern_silk_headscarf.create.m.Description
+    {
+        en = "A headscarf made of breathable silk, offering comfort to a desert traveler."
+        es = "Una bandana de seda transpirable que da alivio a quien viaja por el desierto."
+    }
+    // context: legend_helmet_southern_silk_headscarf.create.m.ArmorDescription
+    {
+        en = "Includes a silk headscarf."
+        es = "Incluye una bandana de seda."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_top_tail.nut
+    // context: legend_helmet_southern_top_tail.create.m.Name
+    {
+        en = "Southern Top Tail"
+        es = "Coleta alta sureña"
+    }
+    // context: legend_helmet_southern_top_tail.create.m.Description
+    {
+        en = "A decorative tail made of desert animal hair."
+        es = "Una coleta decorativa hecha con pelo de animales del desierto."
+    }
+    // context: legend_helmet_southern_top_tail.create.m.ArmorDescription
+    {
+        en = "Includes a decorative animal hair tail."
+        es = "Incluye una coleta decorativa de pelo animal."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_turban_feather.nut
+    // context: legend_helmet_southern_turban_feather.create.m.Description
+    {
+        en = "A southern head wrap topped by a decorative feather."
+        es = "Un turbante sureño rematado con una pluma decorativa."
+    }
+    // context: legend_helmet_southern_turban_feather.create.m.ArmorDescription
+    {
+        en = "Includes a feathered head wrap."
+        es = "Incluye un turbante emplumado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_turban_full.nut
+    // context: legend_helmet_southern_turban_full.create.m.Name
+    {
+        en = "Full Turban"
+        es = "Turbante completo"
+    }
+    // context: legend_helmet_southern_turban_full.create.m.Description
+    {
+        en = "A voluminous linen turban, providing ample protection from the southern sun."
+        es = "Un voluminoso turbante de lino que protege de sobra del sol del sur."
+    }
+    // context: legend_helmet_southern_turban_full.create.m.ArmorDescription
+    {
+        en = "Includes a voluminous linen turban."
+        es = "Incluye un voluminoso turbante de lino."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_turban_light.nut
+    // context: legend_helmet_southern_turban_light.create.m.Name
+    {
+        en = "Light Turban"
+        es = "Turbante ligero"
+    }
+    // context: legend_helmet_southern_turban_light.create.m.Description
+    {
+        en = "A simple turban made of light materials, perfect for desert heat."
+        es = "Un turbante sencillo de materiales ligeros, perfecto para el calor del desierto."
+    }
+    // context: legend_helmet_southern_turban_light.create.m.ArmorDescription
+    {
+        en = "Includes a simple turban."
+        es = "Incluye un turbante sencillo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_turban_open.nut
+    // context: legend_helmet_southern_turban_open.create.m.Name
+    {
+        en = "Open Turban"
+        es = "Turbante abierto"
+    }
+    // context: legend_helmet_southern_turban_open.create.m.Description
+    {
+        en = "A large linen turban, worn to protect the head from the overbearing sun."
+        es = "Un gran turbante de lino que protege la cabeza del sol implacable."
+    }
+    // context: legend_helmet_southern_turban_open.create.m.ArmorDescription
+    {
+        en = "Includes a large linen turban."
+        es = "Incluye un gran turbante de lino."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_southern_turban_patterned.nut
+    // context: legend_helmet_southern_turban_patterned.create.m.Name
+    {
+        en = "Patterned Turban"
+        es = "Turbante estampado"
+    }
+    // context: legend_helmet_southern_turban_patterned.create.m.Description
+    {
+        en = "A common turban with dyed pattern. Common among travelers looking to keep the sun off their necks."
+        es = "Un turbante corriente con un estampado teñido. Habitual entre los viajeros que quieren protegerse el cuello del sol."
+    }
+    // context: legend_helmet_southern_turban_patterned.create.m.ArmorDescription
+    {
+        en = "Includes a patterned turban."
+        es = "Incluye un turbante estampado."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_straw_hat.nut
+    // context: legend_helmet_straw_hat.create.m.Description
+    {
+        en = "A simple straw hat, often used by farmers and peasants."
+        es = "Un sencillo sombrero de paja que suelen usar granjeros y campesinos."
+    }
+    // context: legend_helmet_straw_hat.create.m.ArmorDescription
+    {
+        en = "Includes a straw hat."
+        es = "Incluye un sombrero de paja."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_thick_braid.nut
+    // context: legend_helmet_thick_braid.create.m.Name
+    {
+        en = "Torse"
+        es = "Burelete"
+    }
+    // context: legend_helmet_thick_braid.create.m.Description
+    {
+        en = "A twisted roll of linen, commonly put on the top of helm to help identify a warrior during the battle."
+        es = "Un rollo de lino retorcido que suele ponerse en lo alto del yelmo para identificar a un guerrero durante la batalla."
+    }
+    // context: legend_helmet_thick_braid.create.m.ArmorDescription
+    {
+        en = "Includes a linen torse."
+        es = "Incluye un burelete de lino."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_top_feather.nut
+    // context: legend_helmet_top_feather.create.m.Name
+    {
+        en = "Top Feather"
+        es = "Pluma alta"
+    }
+    // context: legend_helmet_top_feather.create.m.Description
+    {
+        en = "A short, decorative feather that can be pinned on a hat to add a dash of color."
+        es = "Una pluma corta y decorativa que se puede prender en un sombrero para darle un toque de color."
+    }
+    // context: legend_helmet_top_feather.create.m.ArmorDescription
+    {
+        en = "Includes a short, decorative feather."
+        es = "Incluye una pluma corta y decorativa."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_top_plume.nut
+    // context: legend_helmet_top_plume.create.m.Name
+    {
+        en = "Top Plume"
+        es = "Penacho alto"
+    }
+    // context: legend_helmet_top_plume.create.m.Description
+    {
+        en = "A sleek plume of light hair designed to crest a helm."
+        es = "Un penacho lustroso de pelo claro pensado para coronar un yelmo."
+    }
+    // context: legend_helmet_top_plume.create.m.ArmorDescription
+    {
+        en = "Includes a plume of hair."
+        es = "Incluye un penacho de pelo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_undertakers_hat.nut
+    // context: legend_helmet_undertakers_hat.create.m.Description
+    {
+        en = "A wide-brimmed feathered hat, a practical choice for those whose work continues regardless of the weather."
+        es = "Un sombrero emplumado de ala ancha, una elección práctica para quienes siguen trabajando haga el tiempo que haga."
+    }
+    // context: legend_helmet_undertakers_hat.create.m.ArmorDescription
+    {
+        en = "Includes a wide-brimmed feathered hat."
+        es = "Incluye un sombrero emplumado de ala ancha."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_warlock_hood.nut
+    // context: legend_helmet_warlock_hood.create.m.Name
+    {
+        en = "Warlock's Hood"
+        es = "Capucha del brujo"
+    }
+    // context: legend_helmet_warlock_hood.create.m.Description
+    {
+        en = "A tattered hood of discolored fabric. Counts as a cultist item."
+        es = "Una capucha andrajosa de tela descolorida. Cuenta como objeto de cultista."
+    }
+    // context: legend_helmet_warlock_hood.create.m.ArmorDescription
+    {
+        en = "Includes a tattered hood."
+        es = "Incluye una capucha andrajosa."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_wings.nut
+    // context: legend_helmet_wings.create.m.Name
+    {
+        en = "Wings"
+        es = "Alas"
+    }
+    // context: legend_helmet_wings.create.m.Description
+    {
+        en = "A set of feathers arrayed on supports to form wings."
+        es = "Un juego de plumas dispuestas sobre soportes para formar unas alas."
+    }
+    // context: legend_helmet_wings.create.m.ArmorDescription
+    {
+        en = "Includes a set of feathers in the form of wings."
+        es = "Incluye un juego de plumas en forma de alas."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_wizard_cowl.nut
+    // context: legend_helmet_wizard_cowl.create.m.Name
+    {
+        en = "Wizard's Cowl"
+        es = "Capucha de mago"
+    }
+    // context: legend_helmet_wizard_cowl.create.m.Description
+    {
+        en = "A weathered pointy hat with a broad rim. Typically used by charlatans and fortune tellers trying to look the part, though a real wizard could actually wear one."
+        es = "Un gastado sombrero puntiagudo de ala ancha. Lo suelen llevar charlatanes y adivinos que quieren dar el pego, aunque un mago de verdad también podría ponérselo."
+    }
+    // context: legend_helmet_wizard_cowl.create.m.ArmorDescription
+    {
+        en = "Includes a pointy hat."
+        es = "Incluye un sombrero puntiagudo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_wolf_helm.nut
+    // context: legend_helmet_wolf_helm.create.m.Name
+    {
+        en = "Wolf Helm"
+        es = "Yelmo lupino"
+    }
+    // context: legend_helmet_wolf_helm.create.m.Description
+    {
+        en = "An impressive pelt of a dire wolf made into a head covering."
+        es = "La imponente piel de un lobo huargo convertida en tocado."
+    }
+    // context: legend_helmet_wolf_helm.create.m.ArmorDescription
+    {
+        en = "Includes a dire wolf pelt head covering."
+        es = "Incluye un tocado de piel de lobo huargo."
+    }
+    // FILE: scripts\items\legend_helmets\vanity\legend_helmet_wreath.nut
+    // context: legend_helmet_wreath.create.m.Name
+    {
+        en = "Wreath"
+        es = "Guirnalda"
+    }
+    // context: legend_helmet_wreath.create.m.Description
+    {
+        en = "A wreath of woven, metallic leaves, symbolizing the past triumphs of a long gone empire."
+        es = "Una guirnalda de hojas metálicas entrelazadas que simboliza los triunfos pasados de un imperio desaparecido hace mucho."
+    }
+    // context: legend_helmet_wreath.create.m.ArmorDescription
+    {
+        en = "Includes a wreath."
+        es = "Incluye una guirnalda."
     }
 ]
 ::Rosetta.add(rosetta, pairs);

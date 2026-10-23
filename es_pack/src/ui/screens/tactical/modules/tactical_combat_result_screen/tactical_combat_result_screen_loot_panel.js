@@ -95,7 +95,7 @@ TacticalCombatResultScreenLootPanel.prototype.createDIV = function (_parentDiv)
     // create found loot
     var rightColumn = $('<div class="column is-right"/>');
     this.mContainer.append(rightColumn);
-    headerRow = $('<div class="row is-header title-font-normal font-bold font-color-title">Botín Encontrado</div>');
+    headerRow = $('<div class="row is-header title-font-normal font-bold font-color-title">Botín encontrado</div>');
     rightColumn.append(headerRow);
     contentRow = $('<div class="row is-content"/>');
     rightColumn.append(contentRow);

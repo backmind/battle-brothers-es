@@ -35,15 +35,10 @@ if (::SQ_ROSETTA.slice(::SQ_ROSETTA.len() - 1) != "/") ::SQ_ROSETTA += "/";
 ::logWarning <- function ( _s ) {};
 ::logError <- function ( _s ) {};
 // matchParts() en !rosetta.nut llama assert() con mensaje (dos argumentos),
-// sintaxis de Squirrel 3.2. El sq.exe de las herramientas del juego es 3.0.7,
-// cuyo assert() nativo solo admite un argumento y revienta con "wrong number
-// of parameters" en cuanto una regla dispara ese camino (una captura :str
-// seguida de otra captura sin texto literal entre medias). No hace falta que
-// el corpus tenga ese caso hoy para que haga falta el shim: basta con que
-// alguna sonda ejecute translate() contra reglas que si lo tengan.
-::assert <- function ( _cond, _msg = null ) {
-    if (!_cond) throw (_msg != null ? _msg : "assertion failed");
-};
+// y el assert() nativo de este sq.exe (3.0.7) y del juego solo admite uno:
+// "wrong number of parameters" en cuanto una captura :str va seguida de otra.
+// No se sustituye: la sonda tiene que fallar donde falla el juego (build_dist
+// manda esas reglas a cuarentena).
 ::Const <- {
     UI = {
         Color = {PositiveValue = "#00ff00", NegativeValue = "#ff0000", DamageValue = "#ff0000"}

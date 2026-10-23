@@ -36,7 +36,7 @@ local SONDA_CASO3 = false;
 local def = {
     ID = "mod_battle_brothers_es_hooks"
     Name = "Battle Brothers en Español (hooks)"
-    Version = "4.0.1"
+    Version = "5.0.0-beta.1"
 }
 local mod = ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_rosetta >= 0.5.0");
@@ -505,10 +505,13 @@ mod.queue(">mod_rosetta", function () {
 
     // Caso 24: el mensaje central de pausa del mapa ("PAUSED" y
     // "(Press Spacebar)"), que world_state empuja por showMessage directo a
-    // JS. Los dos pares existen.
+    // JS. Los dos pares existen. Legends envuelve este hook desde fuera y
+    // llega aquí con _secondary hecho lista (el aviso y el parte del
+    // campamento), así que se traduce cada renglón.
     mod.hook("scripts/ui/screens/world/modules/topbar/world_screen_topbar_daytime_module", function (q) {
         q.showMessage = @(__original) function (_primary, _secondary) {
-            return __original(_(_primary), _(_secondary));
+            local sec = typeof _secondary == "array" ? _secondary.map(@(s) _(s)) : _(_secondary);
+            return __original(_(_primary), sec);
         }
     })
 

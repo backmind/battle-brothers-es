@@ -9,7 +9,7 @@ if (!("Rosetta" in getroottable())) return;
 local def = {
     ID = "mod_battle_brothers_es"
     Name = "Battle Brothers en Español"
-    Version = "4.0.1"
+    Version = "5.0.0-beta.1"
     // Contra qué build del juego se verificó y qué parte de sus textos cubre,
     // medida con es_pack/tools/measure_coverage.py. Los tests exigen que
     // coincidan con build_dist.py.
@@ -74,9 +74,16 @@ mod.queue(">mod_msu", function () {
 // cada cola se traduce una sola vez. La memoria se vacía al salir, de modo que
 // no crece durante la partida. Las llamadas con id o con regla a saltar (las
 // de las reglas split) van directas, sin memoria.
+//
+// Los textos que el pack monta ya en castellano (los consejos del campamento
+// de Legends) se apuntan en ::BattleBrothersEs.Hechos y salen tal cual: sin
+// par, las reglas golosas los recorrían trozo a trozo hasta agotar la pila.
+if (!("BattleBrothersEs" in getroottable())) ::BattleBrothersEs <- {};
+::BattleBrothersEs.Hechos <- {};
 (function (_def) {
-    local translate = _def.translate, memo = null;
+    local translate = _def.translate, memo = null, hechos = ::BattleBrothersEs.Hechos;
     _def.translate <- function (_str, _id = null, _skip_rule = null) {
+        if (typeof _str == "string" && _str in hechos) return _str;
         if (_id != null || _skip_rule != null || typeof _str != "string")
             return translate.call(this, _str, _id, _skip_rule);
         if (memo != null) {
@@ -99,8 +106,11 @@ mod.queue(">mod_msu", function () {
 // Va en la cola y después del mod porque el enganche amplía lo que el mod
 // define en la suya, y después de Rosetta porque envuelve sus getters;
 // build_dist.MODS lista los mods y un test exige que estén todos aquí.
-mod.queue(">mod_legends", ">mod_rosetta", function () {
+mod.queue(">mod_legends", ">mod_rosetta", ">mod_Jimmys_Tooltips_legends", function () {
     if (!::Hooks.hasMod("mod_legends")) return;
+    // Los textos de la interfaz de Legends que no pasan por Rosetta (menú,
+    // nueva campaña, botones de ajustes). Va tarde para envolver sus módulos.
+    ::Hooks.registerLateJS("ui/mods/mod_battle_brothers_es/legends_es.js");
     ::include("mod_battle_brothers_es/claves");
     ::include("mod_battle_brothers_es/mod_legends_es");
     ::include("mod_battle_brothers_es/titulos_es");

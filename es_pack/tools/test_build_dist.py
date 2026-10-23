@@ -150,6 +150,24 @@ def test_classify_adjacent_str_placeholders_is_wip():
     assert classify(block) == "wip"
 
 
+def test_classify_str_seguido_de_otro_hueco_is_wip():
+    # matchParts llega a assert(cond, "msg"), y el assert del juego solo admite
+    # un argumento: "wrong number of parameters" con cualquier texto de la clave.
+    block = ('{\n mode = "pattern"\n'
+             ' en = "<desc:str><c:tag>From the Sword perk group[/color]"\n'
+             ' es = "<desc><c>Del grupo de ventajas Espada[/color]"\n}')
+    assert classify(block) == "wip"
+
+
+def test_classify_val_seguido_de_porcentaje_is_wip():
+    # El sub val termina en %? y matchParts no retrocede: "25%" entero va al
+    # hueco y el "%" literal ya no casa.
+    block = ('{\n mode = "pattern"\n'
+             ' en = "Deal [color=%positive%]<bonus:val>%[/color] more damage"\n'
+             ' es = "Inflige un [color=%positive%]<bonus>%[/color] más de daño"\n}')
+    assert classify(block) == "wip"
+
+
 # --- F4: cuarentena no debe ser un pack cargable ---
 
 def test_emit_wip_has_no_rosetta_add(tmp_path):
@@ -732,7 +750,8 @@ def test_los_dos_zips_y_los_dos_preloads_declaran_la_misma_version():
     from build_ui_addon import UI_VERSION
 
     assert UI_VERSION == PACK_VERSION
-    assert _re.fullmatch(r"\d+\.\d+\.\d+", PACK_VERSION), PACK_VERSION
+    # semver: X.Y.Z, con etiqueta de prerelease opcional (5.0.0-beta.1)
+    assert _re.fullmatch(r"\d+\.\d+\.\d+(-[0-9A-Za-z.]+)?", PACK_VERSION), PACK_VERSION
     preloads = sorted((SRC / "scripts" / "!mods_preload").glob("*.nut"))
     assert len(preloads) == 2, preloads
     for p in preloads:

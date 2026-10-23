@@ -72,7 +72,7 @@ EXCEPCIONES = {
     "Toro": "Toro",
     "Verdugo": "Verdugo",
     "Zorrillo": "Zorrillo",
-    # Provisional, para el propietario: «caballera» no es la mujer caballero,
+    # Decisión del propietario: «caballera» no es la mujer caballero,
     # y «perra» y «zorra» son insultos que el masculino no lleva.
     "Caballero": "Caballero",
     "Perro": "Perro",
