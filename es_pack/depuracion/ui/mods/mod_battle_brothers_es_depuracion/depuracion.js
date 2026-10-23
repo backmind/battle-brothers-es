@@ -24,6 +24,8 @@ BattleBrothersEsDepuracion.pareceIngles = function (_t)
 BattleBrothersEsDepuracion.prototype.onConnection = function (_handle)
 {
 	MSUBackendConnection.prototype.onConnection.call(this, _handle);
+	// Primera línea en el log: si no aparece, la conexión no llegó a arrancar.
+	SQ.call(this.mSQHandle, 'textoIngles', '(modo de depuración activo)');
 	var self = this;
 	var programa = function ()
 	{
