@@ -27,6 +27,7 @@ local enganche = function (_src, _f) {
 ::mods_hookNewObject <- @(_src, _f) null;
 ::mods_hookNewObjectOnce <- @(_src, _f) null;
 ::mods_hookBaseClass <- @(_src, _f) null;
+::mods_hookExactClass <- @(_src, _f) null;
 local tr = {["the Brave"] = "el Valiente", ["the Old Wolf"] = "el Viejo Lobo",
             ["the Shieldmaiden"] = "la Escudera"};
 ::Rosetta <- {_ = @(_s, _id = null) _s in tr ? tr[_s] : _s};

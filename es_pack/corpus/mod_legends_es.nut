@@ -41674,6 +41674,13 @@ local pairs = [
         en = "{ The most powerful opponent %they% vanquished was <opponent:str>.}"
         es = "{ El oponente más poderoso que venció fue <opponent>.}"
     }
+    {
+        // La cola ya llega en castellano: la plantilla de arriba casa al componer el
+        // texto, antes de que el tooltip pase entero por Rosetta. Aquí se traduce la cabeza.
+        mode = "pattern"
+        en = "<text:str> El oponente más poderoso que venció fue <opponent:str>."
+        es = "<text:t> El oponente más poderoso que venció fue <opponent>."
+    }
     // en = "Level <n:int>"
     // en base_es
     // en = "Paid <money:img><cost:int> daily"
@@ -48215,7 +48222,7 @@ local pairs = [
     // context: blacksmith_follower.o.create.m.Effects
     {
         en = "Increases repair speed by 33%"
-        es = "Aumenta la velocidad de reparación en [color=#1e861e]33%[/color]"
+        es = "Aumenta la velocidad de reparación en 33%"
     }
     // context: blacksmith_follower.o.create.addSkillRequirement()
     {
@@ -48263,7 +48270,7 @@ local pairs = [
     // context: brigand_follower.o.create.m.Effects
     {
         en = "Allows you to see up to 3 of the most valuable items that are being transporting by caravans"
-        es = "Te permite ver hasta [color=#1e861e]3[/color] de los objetos más valiosos que transportan las caravanas"
+        es = "Te permite ver hasta 3 de los objetos más valiosos que transportan las caravanas"
     }
     // context: brigand_follower.o.create.addRequirement()
     {
@@ -48316,7 +48323,7 @@ local pairs = [
     // context: cook_follower.o.create.m.Effects
     {
         en = "Makes all provisions last 4 extra days"
-        es = "Hace que todas las provisiones duren [color=#1e861e]4 días[/color] adicionales"
+        es = "Hace que todas las provisiones duren 4 días adicionales"
     }
     // context: cook_follower.o.create.addSkillRequirement()
     {
@@ -48337,7 +48344,7 @@ local pairs = [
     // context: drill_sergeant_follower.o.create.m.Effects
     {
         en = "Makes your mercenaries gain 20% more experience if they are under level 12"
-        es = "Hace que tus mercenarios ganen un [color=#1e861e]20%[/color] más de experiencia si están por debajo del nivel 12"
+        es = "Hace que tus mercenarios ganen un 20% más de experiencia si están por debajo del nivel 12"
     }
     // context: drill_sergeant_follower.o.create.m.Effects
     {
@@ -48447,7 +48454,7 @@ local pairs = [
         // format("Reduces the daily wage of each man by %s%%", ((1.0 - this.m.Multiplier) * 100).tostring()),
         mode = "pattern"
         en = "Reduces the daily wage of each man by <pct:str>%%"
-        es = "Reduce el salario diario de cada hombre en un [color=#1e861e]<pct>%%[/color]"
+        es = "Reduce el salario diario de cada hombre en un <pct>%%"
     }
     // en = "Reduces the chance of desertion by 50%"
     // en base_es
@@ -48469,12 +48476,12 @@ local pairs = [
     // context: quartermaster_follower.o.create.m.Effects
     {
         en = "Increases the amount of you can carry of ammunition by 100, medical supplies and tools by 50"
-        es = "Aumenta en [color=#1e861e]100[/color] la munición que puedes llevar, y en [color=#1e861e]50[/color] la medicina y las herramientas"
+        es = "Aumenta en 100 la munición que puedes llevar, y en 50 la medicina y las herramientas"
     }
     // context: quartermaster_follower.o.create.m.Effects
     {
         en = "Increases stash size by 27"
-        es = "Aumenta en [color=#1e861e]27[/color] el tamaño del alijo"
+        es = "Aumenta en 27 el tamaño del alijo"
     }
     // context: quartermaster_follower.o.create.addSkillRequirement()
     {
@@ -48535,7 +48542,7 @@ local pairs = [
     // context: scout_follower.o.create.m.Effects
     {
         en = "Reduces the movement penalty of difficult terrain by 15%"
-        es = "Reduce un [color=#1e861e]15%[/color] la penalización de movimiento en terreno difícil"
+        es = "Reduce un 15% la penalización de movimiento en terreno difícil"
     }
     // en = "Prevents sickness and accidents due to terrain"
     // en base_es
@@ -48697,12 +48704,12 @@ local pairs = [
     // context: cultists_scenario.o.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%positive%]+10[/color] Melee Skill from being a cultist in a cultist mercenary company"
-        es = "[color=%positive%]+10[/color] de Habilidad cuerpo a cuerpo por ser cultista en una compañía de mercenarios cultistas"
+        es = "[color=#135213]+10[/color] de Habilidad cuerpo a cuerpo por ser cultista en una compañía de mercenarios cultistas"
     }
     // context: cultists_scenario.o.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%positive%]+10[/color] Melee Skill from being a cultist in a cultist mercenary company and will never be offered up to be sacrificed"
-        es = "[color=%positive%]+10[/color] de Habilidad cuerpo a cuerpo por ser cultista en una compañía de mercenarios cultistas, y nunca se le ofrecerá en sacrificio"
+        es = "[color=#135213]+10[/color] de Habilidad cuerpo a cuerpo por ser cultista en una compañía de mercenarios cultistas, y nunca se le ofrecerá en sacrificio"
     }
     // FILE: mod_legends\hooks\scenarios\world\deserters_scenario.nut
     // en = "Deserters"
@@ -48785,7 +48792,7 @@ local pairs = [
     // context: lone_wolf_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]You have been traveling for a long time, taking part in tourneys and sparring with young nobles. A hedge knight as tall as a tree, you never needed anybody for long. Is it true still?\n\n[color=#bcad8c]Lone Wolf:[/color] Start with a single experienced hedge knight with great equipment but low funds. All encounters are two-thirds harder than normal.\n[color=#bcad8c]Elite Few:[/color] Can never have more than 12 fighters in your roster. You may encounter other champions and special allies through events to join your cause.\n[color=#bcad8c]Avatar:[/color] If your lone wolf dies, the campaign ends.\n[color=#c90000]Living Legend:[/color] As your renown grows, the more recruits will be present in towns. Higher renown increases quality of hires, but you will start with being unable to hire anyone.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando, participando en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie por mucho tiempo. ¿Sigue siendo así?\n\n[color=#dda21f]Lobo solitario:[/color] Comienzas con un único caballero errante experimentado, con un equipo excelente pero pocos fondos. Todos los enfrentamientos son dos tercios más difíciles de lo normal.\n[color=#dda21f]Pocos pero selectos:[/color] Nunca puedes tener más de [color=#c90000]12[/color] luchadores en tu lista. Mediante eventos, puedes encontrar a otros campeones y aliados especiales que se unan a tu causa.\n[color=#dda21f]Avatar:[/color] Si tu lobo solitario muere, la campaña termina.\n[color=#c90000]Leyenda viviente:[/color] Cuanto más crezca tu renombre, más reclutas habrá en las ciudades. Un mayor renombre aumenta la calidad de las contrataciones, pero al principio no podrás contratar a nadie.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando, participando en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie por mucho tiempo. ¿Sigue siendo así?\n\n[color=#dda21f]Lobo solitario:[/color] Comienzas con un único caballero errante experimentado, con un equipo excelente pero pocos fondos. Todos los enfrentamientos son dos tercios más difíciles de lo normal.\n[color=#dda21f]Pocos pero selectos:[/color] Nunca puedes tener más de [color=#a22424]12[/color] luchadores en tu lista. Mediante eventos, puedes encontrar a otros campeones y aliados especiales que se unan a tu causa.\n[color=#dda21f]Avatar:[/color] Si tu lobo solitario muere, la campaña termina.\n[color=#c90000]Leyenda viviente:[/color] Cuanto más crezca tu renombre, más reclutas habrá en las ciudades. Un mayor renombre aumenta la calidad de las contrataciones, pero al principio no podrás contratar a nadie.[/p]"
     }
     // en = "the Lone Wolf"
     // en base_es
@@ -48873,22 +48880,22 @@ local pairs = [
     // context: manhunters_scenario.o.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%negative%]-25%[/color] Experience Gain"
-        es = "[color=%negative%]-25%[/color] de experiencia ganada"
+        es = "[color=#8f1e1e]-25%[/color] de experiencia ganada"
     }
     // context: manhunters_scenario.o.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%positive%]+5%[/color] Experience Gain"
-        es = "[color=%positive%]+5%[/color] de experiencia ganada"
+        es = "[color=#135213]+5%[/color] de experiencia ganada"
     }
     // context: manhunters_scenario.o.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%negative%]-10%[/color] Experience Gain"
-        es = "[color=%negative%]-10%[/color] de experiencia ganada"
+        es = "[color=#8f1e1e]-10%[/color] de experiencia ganada"
     }
     // context: manhunters_scenario.o.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%positive%]+10%[/color] Experience Gain"
-        es = "[color=%positive%]+10%[/color] de experiencia ganada"
+        es = "[color=#135213]+10%[/color] de experiencia ganada"
     }
     // en = "Limited to character level 7"
     // en base_es
@@ -49018,7 +49025,7 @@ local pairs = [
     // context: raiders_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_135.png[/img][/p][p]For all your adult life you have been raiding and pillaging in these lands. But with the local peasantry poor as mice, you may want to finally expand into the profitable field of mercenary work - that is, if your potential employers are willing to forgive your past transgressions.\n[color=#bcad8c]Warband:[/color] Start with three experienced barbarians, and increased chance of finding [color=#c90000]bloodthirsty brutes, barbarians, killers and assassins[/color].\n[color=#bcad8c]Pillagers:[/color] [color=%positive%]15%[/color] chance to get any items from slain enemies, that might not otherwise be available to loot.\n[color=#bcad8c]Outlaws:[/color] Start with [color=#c90000]perks for hunting civilians[/color], bad relations to most human factions, only other outlaws are keen to work for you.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_135.png[/img][/p][p]Llevas toda tu vida adulta asaltando y saqueando estas tierras. Pero, con el campesinado local más pobre que las ratas, quizá quieras expandirte por fin al lucrativo terreno del trabajo mercenario, siempre que tus posibles empleadores estén dispuestos a perdonar tus faltas pasadas.\n[color=#dda21f]Banda de guerra:[/color] Comienzas con tres bárbaros experimentados y mayor probabilidad de encontrar [color=#c90000]brutos sanguinarios, bárbaros, asesinos y sicarios[/color].\n[color=#dda21f]Saqueadores:[/color] [color=%positive%]15%[/color] de probabilidad de obtener cualquier objeto de los enemigos abatidos, aunque de otro modo no pudiera saquearse.\n[color=#dda21f]Proscritos:[/color] Comienzas con [color=#c90000]ventajas para cazar civiles[/color] y malas relaciones con la mayoría de las facciones humanas; solo otros proscritos están dispuestos a trabajar para ti.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_135.png[/img][/p][p]Llevas toda tu vida adulta asaltando y saqueando estas tierras. Pero, con el campesinado local más pobre que las ratas, quizá quieras expandirte por fin al lucrativo terreno del trabajo mercenario, siempre que tus posibles empleadores estén dispuestos a perdonar tus faltas pasadas.\n[color=#dda21f]Banda de guerra:[/color] Comienzas con tres bárbaros experimentados y mayor probabilidad de encontrar [color=#c90000]brutos sanguinarios, bárbaros, asesinos y sicarios[/color].\n[color=#dda21f]Saqueadores:[/color] [color=#1e861e]15%[/color] de probabilidad de obtener cualquier objeto de los enemigos abatidos, aunque de otro modo no pudiera saquearse.\n[color=#dda21f]Proscritos:[/color] Comienzas con [color=#c90000]ventajas para cazar civiles[/color] y malas relaciones con la mayoría de las facciones humanas; solo otros proscritos están dispuestos a trabajar para ti.[/p]"
     }
     // context: raiders_scenario.o.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -54459,6 +54466,13 @@ local pairs = [
     {
         en = "Insufficient Renown"
         es = "Renombre insuficiente"
+    }
+    // context: tooltip_events.o.onQueryFollowerTooltipData.ret.text
+    {
+        // renown = "'" + rango + "' (" + cifra + ")": el rango tiene par en el base.
+        mode = "pattern"
+        en = "Your company lacks the renown necessary to accommodate more equipment in your camp. Attain at least '<rank:str>' (<n:int>) renown in order to unlock this space. Gain renown by completing ambitions and contracts, as well as by winning battles."
+        es = "Tu compañía no tiene el renombre necesario para albergar más equipo en tu campamento. Alcanza al menos un renombre de '<rank:t>' (<n>) para desbloquear este espacio. Gana renombre completando ambiciones y contratos, y también ganando batallas."
     }
     // context: tooltip_events.o.onQueryFollowerTooltipData.ret.text
     {
@@ -75080,12 +75094,12 @@ local pairs = [
     // context: arena_follower.create.m.Effects
     {
         en = "Increase winnings from the arena by 25%"
-        es = "Aumenta un [color=#1e861e]25%[/color] las ganancias de la arena"
+        es = "Aumenta un 25% las ganancias de la arena"
     }
     // context: arena_follower.create.m.Effects
     {
         en = "Fight up to 3 arena matches per day"
-        es = "Lucha hasta [color=#1e861e]3[/color] combates de arena al día"
+        es = "Lucha hasta 3 combates de arena al día"
     }
     // context: arena_follower.create.addRequirement()
     {
@@ -75507,7 +75521,7 @@ local pairs = [
     // context: legends_necro_scenario.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%positive%]+10[/color] Melee Skill from being in a necromancer's employ"
-        es = "[color=%positive%]+10[/color] Habilidad cuerpo a cuerpo por estar al servicio de un nigromante"
+        es = "[color=#135213]+10[/color] Habilidad cuerpo a cuerpo por estar al servicio de un nigromante"
     }
     // FILE: scripts\scenarios\world\legends_noble_scenario.nut
     // context: legends_noble_scenario.create.m.Description
@@ -75797,7 +75811,7 @@ local pairs = [
     // context: legends_solo_necro_scenario.onGetBackgroundTooltip._tooltip.push().text
     {
         en = "[color=%positive%]+12[/color] Hitpoints due to being under the control of a powerful necromancer"
-        es = "[color=%positive%]+12[/color] Puntos de vida por estar bajo el control de un poderoso nigromante"
+        es = "[color=#135213]+12[/color] Puntos de vida por estar bajo el control de un poderoso nigromante"
     }
     // FILE: scripts\scenarios\world\legends_troupe_scenario.nut
     // context: legends_troupe_scenario.create.m.Description
@@ -91677,6 +91691,417 @@ local pairs = [
     {
         en = "Includes a wreath."
         es = "Incluye una guirnalda."
+    }
+    // context: getKilledName de los enemigos de Legends ("a " + nombre), para el oponente más poderoso del obituario (QA 24/10)
+    {
+        // @composicion
+        en = "a Bandit Rabble"
+        es = "una chusma bandida"
+    }
+    {
+        // @composicion
+        en = "a Cat"
+        es = "un gato"
+    }
+    {
+        // @composicion
+        en = "an Orc Elite"
+        es = "un orco de élite"
+    }
+    {
+        // @composicion
+        en = "an Orc Tyrant"
+        es = "un tirano orco"
+    }
+    {
+        // @composicion
+        en = "an Orc Behemoth"
+        es = "un behemot orco"
+    }
+    {
+        // @composicion
+        en = "an Orc Mad Berserker"
+        es = "un berserker orco enloquecido"
+    }
+    {
+        // @composicion
+        en = "a White Direwolf"
+        es = "un lobo huargo blanco"
+    }
+    {
+        // @composicion
+        en = "a Skin Ghoul"
+        es = "un necrófago desollado"
+    }
+    {
+        // @composicion
+        en = "a Stollwurm"
+        es = "un stollwurm"
+    }
+    {
+        // @composicion
+        en = "a Rock Unhold"
+        es = "un trol de roca"
+    }
+    {
+        // @composicion
+        en = "a Redback Spider"
+        es = "una araña de lomo rojo"
+    }
+    {
+        // @composicion
+        en = "a Webknecht Cluster"
+        es = "una colonia de Webknechts"
+    }
+    {
+        // @composicion
+        en = "a Demon Alp"
+        es = "un alp demoníaco"
+    }
+    {
+        // @composicion
+        en = "a Hexe Coven Leader"
+        es = "una líder del aquelarre de Hexen"
+    }
+    {
+        // @composicion
+        en = "a Heartwood Schrat"
+        es = "un schrat de duramen"
+    }
+    {
+        // @composicion
+        en = "a Heartwood Sapling"
+        es = "un árbol joven de duramen"
+    }
+    {
+        // @composicion
+        en = "a White Warwolf"
+        es = "un lobo de guerra blanco"
+    }
+    {
+        // @composicion
+        en = "a Winselmutter"
+        es = "una winselmutter"
+    }
+    {
+        // @composicion
+        en = "a Höllenhund"
+        es = "un höllenhund"
+    }
+    {
+        // @composicion
+        en = "a Necrosavant Lord"
+        es = "un señor necrosavante"
+    }
+    {
+        // @composicion
+        en = "a Robber Baron"
+        es = "un barón ladrón"
+    }
+    {
+        // @composicion
+        en = "a Butcher"
+        es = "un carnicero"
+    }
+    {
+        // @composicion
+        en = "a Blacksmith"
+        es = "un herrero"
+    }
+    {
+        // @composicion
+        en = "a Monk"
+        es = "un monje"
+    }
+    {
+        // @composicion
+        en = "a Farmhand"
+        es = "un peón de granja"
+    }
+    {
+        // @composicion
+        en = "a Minstrel"
+        es = "un juglar"
+    }
+    {
+        // @composicion
+        en = "a Poacher"
+        es = "un cazador furtivo"
+    }
+    {
+        // @composicion
+        en = "a Woodcutter"
+        es = "un leñador"
+    }
+    {
+        // @composicion
+        en = "a Miner"
+        es = "un minero"
+    }
+    {
+        // @composicion
+        en = "a Squire"
+        es = "un escudero"
+    }
+    {
+        // @composicion
+        en = "a Witch Hunter"
+        es = "un cazador de brujas"
+    }
+    {
+        // @composicion
+        en = "a Halberdier"
+        es = "un alabardero"
+    }
+    {
+        // @composicion
+        en = "a Slinger"
+        es = "un hondero"
+    }
+    {
+        // @composicion
+        en = "a Fencer"
+        es = "un esgrimista"
+    }
+    {
+        // @composicion
+        en = "a Bandit Outrider"
+        es = "un batidor bandido"
+    }
+    {
+        // @composicion
+        en = "a Bear"
+        es = "un oso"
+    }
+    {
+        // @composicion
+        en = "a Catapult"
+        es = "una catapulta"
+    }
+    {
+        // @composicion
+        en = "a Horse"
+        es = "un caballo"
+    }
+    {
+        // @composicion
+        en = "an Ancient Gladiator"
+        es = "un gladiador ancestral"
+    }
+    {
+        // @composicion
+        en = "a Bandit Rabble Poacher"
+        es = "un cazador furtivo de la chusma"
+    }
+    {
+        // @composicion
+        en = "an Infected Bandit"
+        es = "un bandido infectado"
+    }
+    {
+        // @composicion
+        en = "a Manhunter"
+        es = "un cazahombres"
+    }
+    {
+        // @composicion
+        en = "a Manhunter Veteran"
+        es = "un cazahombres veterano"
+    }
+    {
+        // @composicion
+        en = "an Embalmed Slave"
+        es = "un esclavo embalsamado"
+    }
+    {
+        // @composicion
+        en = "an Embalmed Soldier"
+        es = "un soldado embalsamado"
+    }
+    {
+        // @composicion
+        en = "an Embalmed Noble"
+        es = "un noble embalsamado"
+    }
+    {
+        // @composicion
+        en = "an Embalmed Queen"
+        es = "una reina embalsamada"
+    }
+    {
+        // @composicion
+        en = "an Embalmed Priest"
+        es = "un sacerdote embalsamado"
+    }
+    {
+        // @composicion
+        en = "a Free Company Spearman"
+        es = "un lancero de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Slayer"
+        es = "un asesino de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Footman"
+        es = "un soldado a pie de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Archer"
+        es = "un arquero de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Crossbow"
+        es = "un ballestero de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Longbow"
+        es = "un arquero de arco largo de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Billman"
+        es = "un soldado de guja de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Pikeman"
+        es = "un piquero de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Infantry"
+        es = "una infantería de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Leader"
+        es = "un líder de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Free Company Ringleader"
+        es = "un cabecilla de compañía libre"
+    }
+    {
+        // @composicion
+        en = "a Manhunter Handgonner"
+        es = "un cañonero cazahombres"
+    }
+    {
+        // @composicion
+        en = "a Manhunter Veteran Handgonner"
+        es = "un cañonero cazahombres veterano"
+    }
+    {
+        // @composicion
+        en = "a Royal Guard"
+        es = "un guardia real"
+    }
+    {
+        // @composicion
+        en = "a Veteran Knight"
+        es = "un caballero veterano"
+    }
+    {
+        // @composicion
+        en = "a Basilisk Drone"
+        es = "un basilisco obrero"
+    }
+    {
+        // @composicion
+        en = "a Caravan Polearm"
+        es = "un ayudante de caravana con asta"
+    }
+    {
+        // @composicion
+        en = "an Elite Footman"
+        es = "un soldado a pie de élite"
+    }
+    {
+        // @composicion
+        en = "a Pollaxe"
+        es = "un hacha de armas"
+    }
+    {
+        // @composicion
+        en = "a Sureshot"
+        es = "un tiroseguro"
+    }
+    {
+        // @composicion
+        en = "a Basilisk Sentry"
+        es = "un basilisco centinela"
+    }
+    {
+        // @composicion
+        en = "a Sighthound"
+        es = "un lebrel"
+    }
+    {
+        // @composicion
+        en = "an Armored Sighthound"
+        es = "un lebrel con armadura"
+    }
+    {
+        // @composicion
+        en = "an Enraged Hyena"
+        es = "una hiena enfurecida"
+    }
+    {
+        // @composicion
+        en = "a Goblin Harrier"
+        es = "un hostigador goblin"
+    }
+    {
+        // @composicion
+        en = "a Goblin Berserker"
+        es = "un berserker goblin"
+    }
+    {
+        // @composicion
+        en = "a Goblin Tribe Defender"
+        es = "un defensor tribal goblin"
+    }
+    {
+        // @composicion
+        en = "a Direwolf Rider"
+        es = "un jinete de lobo huargo"
+    }
+    {
+        // @composicion
+        en = "a White Direwolf Rider"
+        es = "un jinete de lobo huargo blanco"
+    }
+    {
+        // @composicion
+        en = "a Goblin Witchdoctor"
+        es = "un curandero goblin"
+    }
+    {
+        // @composicion
+        en = "a Barbarian Pillager"
+        es = "un saqueador bárbaro"
+    }
+    {
+        // @composicion
+        en = "a Barbarian Bloodletter"
+        es = "un sangrador bárbaro"
+    }
+    {
+        // @composicion
+        en = "a Barbarian Runechosen"
+        es = "un elegido rúnico bárbaro"
+    }
+    {
+        // @composicion
+        en = "a Wicht"
+        es = "un wicht"
     }
 ]
 ::Rosetta.add(rosetta, pairs);

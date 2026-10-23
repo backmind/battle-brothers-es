@@ -516,13 +516,40 @@
 				'Si continúas, se borrarán los últimos $1 objetos de tu inventario.'));
 		});
 
-	// Aviso de la barra superior al acampar: Legends lo parte en varias líneas
-	// sin centrarlas, y en castellano se nota más porque los rótulos son largos.
+	// Contratar seguidor (séquito): las cajas de descripción y de efectos miden
+	// más que el hueco que tienen (absolutas, de alto fijo), y el castellano,
+	// más largo, se montaba sobre lo de debajo. Se acortan para que hagan scroll.
+	if (typeof WorldCampfireScreenHireDialogModule !== 'undefined')
+	{
+		envuelve(WorldCampfireScreenHireDialogModule.prototype, 'createDIV', function ()
+		{
+			var d = this.mDetailsPanel.Container;
+			d.find('.column.is-character-background-container .row.is-bottom').css('height', '13.0rem');
+			d.find('.row.is-ingredients-container > .is-components-container')
+				.css({ top: '3.0rem', width: '47.0rem', height: '11.0rem' });
+		});
+		envuelve(WorldCampfireScreenHireDialogModule.prototype, 'updateDetailsPanel', function ()
+		{
+			retoca(this.mDetailsPanel.RequirementsContainer, 'div',
+				{ 'Fulfill one of the below requirements:': 'Cumple uno de los siguientes requisitos:' });
+		});
+	}
+
+	// Aviso de la barra superior al acampar: el contenedor mide 12.8rem y
+	// «ACAMPANDO» no cabe, así que la línea desbordaba hacia la derecha
+	// (text-align no centra una línea que desborda). Se ensancha la caja y se
+	// centra con margen negativo, (12.8 - ancho) / 2. El salto del encabezado
+	// se hace explícito: en HTML el \n es un espacio.
 	if (typeof WorldScreenTopbarDayTimeModule !== 'undefined')
 		envuelve(WorldScreenTopbarDayTimeModule.prototype, 'showMessage', function ()
 		{
-			this.mPausedDiv.css('text-align', 'center');
-			this.mPausedSpacebarDiv.css('text-align', 'center');
+			var centra = function (_d, _ancho)
+			{
+				_d.css({ 'text-align': 'center', 'width': _ancho + 'rem', 'margin-left': ((12.8 - _ancho) / 2) + 'rem' });
+			};
+			this.mPausedDiv.html(this.mPausedDiv.html().replace(/\n/g, '<br>'));
+			centra(this.mPausedDiv, 48);
+			centra(this.mPausedSpacebarDiv, 40);
 		});
 
 	// Menú principal: el anuncio lleva una imagen dentro, así que se cambia

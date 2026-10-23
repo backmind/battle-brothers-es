@@ -305,14 +305,25 @@ local trHTML = function (_s) {
 mod.hook("scripts/entity/world/camp/buildings/hunter_building", function (q) {
     q.getInfo = @(__original) function () { return __original().map(trHTML); }
 })
-mod.hook("scripts/ui/screens/world/modules/world_town_screen/town_training_dialog_module", function (q) {
-    q.queryRosterInformation = @(__original) function () {
-        local ret = __original();
+// Legends reescribe entera queryRosterInformation de la sala de entrenamiento
+// (mods_hookExactClass, con Title y SubTitle en inglés); el mismo mecanismo
+// registrado después envuelve la suya. Igual el barbero y el taxidermista, que
+// ponen su SubTitle en inglés tras el original.
+local WTS = "ui/screens/world/modules/world_town_screen/";
+::mods_hookExactClass(WTS + "town_training_dialog_module", function (o) {
+    local f = o.queryRosterInformation;
+    o.queryRosterInformation = function () {
+        local ret = tituloES(f.call(this));
         foreach (e in ret.Roster)
             if ("Training" in e) foreach (t in e.Training) t.name = trHTML(t.name);
         return ret;
     }
 })
+foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_taxidermist_dialog_module = "queryBlueprints"})
+    ::mods_hookExactClass(WTS + m, function (o) {
+        local f = o[fn];
+        o[fn] = function () { return tituloES(f.call(this)); }
+    })
 
 // El tooltip de la plantilla pinta "<terreno> [color]50.00%[/color]" con los
 // nombres en inglés que getRosterDescription (asset_manager.nut) deja en
@@ -403,14 +414,28 @@ local resalta = function (_s, _color, _terminos = TERMINOS, _primera = false) {
 }
 local colorResalte = @() "getHighlightLightBackgroundValue" in ::Const.UI.Color
     ? ::Const.UI.Color.getHighlightLightBackgroundValue() : "#1e468f";
-mod.hook("scripts/encounters/camp/_legend_tips_encounter", function (q) {
-    q.createScreens = @(__original) function () {
-        __original();
-        local color = colorResalte();
-        local text = "[color=" + color + "]" + ::Rosetta._("Here are some tips for you:") + "[/color]";
-        foreach (tip in ::Const.TipOfTheDay) text += "\n\n- " + resalta(::Rosetta._(tip), color);
-        ::BattleBrothersEs.Hechos[text] <- true;  // ver la memoria de translate() en el preload
-        foreach (s in this.m.Screens) if (s.ID == "Task") s.Text = text;
+// Se engancha buildText de la clase base y no createScreens del encuentro: el
+// enganche de createScreens no llegaba a la partida (la prueba del 23/10 seguía
+// desbordando la pila con el texto inglés). buildText es lo que pasa el texto
+// de la pantalla a Rosetta; para los consejos se devuelve el texto ya montado,
+// sin pasar por ella, también en los clics siguientes, en los que la pantalla
+// ya guarda el castellano.
+local CONSEJOS = "Here are some tips for you:", consejos = null;
+mod.hook("scripts/encounters/encounter", function (q) {
+    // El título de la pantalla no pasa por buildText ni por Rosetta (getUITitle
+    // lo devuelve tal cual: «Walking through the market...»).
+    q.getUITitle = @(__original) function () { return ::Rosetta._(__original()); }
+    q.buildText = @(__original) function (_text, _full = true) {
+        if (typeof _text != "string" || this.m.Type != "encounter.legend_tips_encounter"
+                || !(::std.Str.startswith(_text, CONSEJOS) || _text == consejos))
+            return __original(_text, _full);
+        if (consejos == null) {
+            local color = colorResalte();
+            consejos = "[color=" + color + "]" + ::Rosetta._(CONSEJOS) + "[/color]";
+            foreach (tip in ::Const.TipOfTheDay) consejos += "\n\n- " + resalta(::Rosetta._(tip), color);
+            ::BattleBrothersEs.Hechos[consejos] <- true;  // por si otra vía lo pasa a translate()
+        }
+        return consejos;
     }
 })
 
@@ -500,5 +525,64 @@ mod.hookTree("scripts/entity/world/camp/camp_building", function (q) {
                 fila.text = s;
             }
         return ret;
+    }
+})
+
+// La contratación del séquito de Legends pide los requisitos a
+// getRequirementsForUI (hooks/retinue/follower.nut), no a getRequirements, que
+// es el que traduce el caso 10 de los hooks. Los textos con cifras ya llegan
+// compuestos (UpdateText en evaluate) y los cubren los pares y patrones del
+// corpus; el método devuelve clones, así que se puede escribir en ellos.
+::mods_hookBaseClass("retinue/follower", function (o) {
+    while (!("ID" in o.m)) o = o[o.SuperName];
+    if (!("getRequirementsForUI" in o)) return;
+    local getReq = o.getRequirementsForUI;
+    o.getRequirementsForUI = function () {
+        local ret = getReq.call(this);
+        foreach (r in ret) if ("Text" in r) r.Text = ::Rosetta._(r.Text);
+        return ret;
+    }
+})
+
+// El oponente más poderoso del obituario se guarda con su nombre inglés
+// (getKilledName al morir el enemigo); en las partidas guardadas ya está
+// escrito, así que se traduce al consultar el tooltip. Legends reescribe
+// getRosterTooltip del jugador y del caído con mods_hookExactClass.
+foreach (c in ["entity/tactical/player", "entity/tactical/player_corpse_stub"])
+    ::mods_hookExactClass(c, function (o) {
+        local f = o.getRosterTooltip;
+        o.getRosterTooltip = function () {
+            local s = this.m.LifetimeStats;
+            if ("MostPowerfulVanquished" in s && s.MostPowerfulVanquished != "")
+                s.MostPowerfulVanquished = ::Rosetta._(s.MostPowerfulVanquished);
+            return f.call(this);
+        }
+    })
+
+// modGetHitFactors (hooks/skills/skill.nut de Legends) reescribe filas de la
+// probabilidad de golpe como "<color>N%</color> <descripción>" y usa la
+// descripción inglesa de clave: se traduce la descripción después.
+::mods_hookBaseClass("skills/skill", function (o) {
+    while (!("ID" in o.m)) o = o[o.SuperName];
+    if (!("modGetHitFactors" in o)) return;
+    local f = o.modGetHitFactors;
+    o.modGetHitFactors = function (_ret, _targetTile) {
+        local ret = f.call(this, _ret, _targetTile);
+        foreach (fila in ret) {
+            if (typeof fila != "table" || !("text" in fila) || typeof fila.text != "string") continue;
+            local s = fila.text, i = s.find("[/color] ");
+            fila.text = s.find("[color=") == 0 && i != null ? s.slice(0, i + 9) + ::Rosetta._(s.slice(i + 9)) : ::Rosetta._(s);
+        }
+        return ret;
+    }
+})
+
+// Los libros de habilidad se llaman "<libro> <grupo>" («Astrology and Tarot
+// Readings: Trained»); la suma no casa con ningún par.
+mod.hookTree("scripts/items/misc/legend_skill_book", function (q) {
+    q.getName = @(__original) function () {
+        local ret = __original(), libro = this.m.BookName, grupo = this.m.PerkGroupSelection;
+        if (libro == "" || typeof grupo != "string" || ret != libro + " " + grupo) return ret;
+        return ::Rosetta._(libro) + " " + (grupo in GRUPOS ? GRUPOS[grupo] : ::Rosetta._(grupo));
     }
 })

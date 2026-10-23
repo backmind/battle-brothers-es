@@ -70,6 +70,7 @@ local engancha = function ( _src, _f ) {
 ::mods_hookNewObject <- engancha;
 ::mods_hookNewObjectOnce <- engancha;
 ::mods_hookBaseClass <- engancha;
+::mods_hookExactClass <- engancha;
 // La plantilla del juego, sin Rosetta: el wrapper de Rosetta se emula aparte.
 local function plantilla( _text, _vars ) {
     foreach (v in _vars) _text = Str.replace(_text, "%" + v[0] + "%", "" + v[1]);
@@ -323,16 +324,21 @@ foreach (caso in [
     // Los consejos del campamento: uno por párrafo, cabecera y términos en color.
     local q = {};
     q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
-    enganches["scripts/encounters/camp/_legend_tips_encounter"](q);
+    enganches["scripts/encounters/encounter"](q);
     ::Const.TipOfTheDay <- ["If you are having trouble killing trees, try bringing axes.",
         "Shields take minor damage each time they are used to deflect an attack, shield expert reduces this damage significantly."];
-    local enc = {m = {Screens = []}};
-    q.createScreens(function () { this.m.Screens.push({ID = "Task", Text = "x"}); }).call(enc);
+    local orig = @(_t, _f = true) "original: " + _t;
+    local enc = {m = {Type = "encounter.legend_tips_encounter"}};
+    local bt = q.buildText(orig);
+    local primero = bt.call(enc, "Here are some tips for you:\n- a\n- b");
+    comprueba("consejos: segundo clic igual", bt.call(enc, primero), primero);
+    comprueba("consejos: el título va al original", bt.call(enc, "Tips"), "original: Tips");
+    comprueba("consejos: otro encuentro va al original", bt.call({m = {Type = "x"}}, "Here are some tips for you:"), "original: Here are some tips for you:");
     local az = "[color=#1e468f]";
-    comprueba("consejos del campamento", enc.m.Screens[0].Text,
+    comprueba("consejos del campamento", primero,
         az + "Aquí tienes algunos consejos:[/color]\n\n- Si te cuesta matar árboles, intenta llevar hachas.\n\n- Los escudos sufren un daño leve cada vez que se usan para desviar un ataque; la "
         + az + "ventaja[/color] Experto en escudos reduce considerablemente ese daño.");
-    comprueba("consejos apuntados como ya traducidos", enc.m.Screens[0].Text in ::BattleBrothersEs.Hechos, true);
+    comprueba("consejos apuntados como ya traducidos", primero in ::BattleBrothersEs.Hechos, true);
 }
 
 {
@@ -373,6 +379,31 @@ comprueba("tropa con cifra exacta", ::Rosetta.translate("2 Ancient Auxiliaries")
     comprueba("campamento: apuntada como hecha", s in ::BattleBrothersEs.Hechos, true);
     local sinPar = q.getTooltip(@() [{type = "description", text = "Zzz no pair 15%"}]).call({});
     comprueba("campamento: sin par, intacta", sinPar[0].text, "Zzz no pair 15%");
+}
+
+{
+    // Requisitos del séquito de Legends (getRequirementsForUI).
+    local o = {m = {ID = "follower.x"}, getRequirementsForUI = @() [{Text = "Discovered a legendary location", IsSatisfied = false}]};
+    enganches["retinue/follower"](o);
+    local r = o.getRequirementsForUI()[0].Text;
+    comprueba("séquito: requisito traducido", r != "Discovered a legendary location" && r == ::Rosetta.translate("Discovered a legendary location"), true);
+}
+
+{
+    // Título de encuentro (getUITitle) y oponente del obituario.
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/encounters/encounter"](q);
+    comprueba("título de encuentro traducido", q.getUITitle(@() "Walking through the market...")(), ::Rosetta.translate("Walking through the market..."));
+    local s = {MostPowerfulVanquished = "a Bandit Rabble Poacher"};
+    local o = {m = {LifetimeStats = s}, getRosterTooltip = @() this.m.LifetimeStats.MostPowerfulVanquished};
+    enganches["entity/tactical/player"](o);
+    comprueba("obituario: oponente traducido", o.getRosterTooltip(), "un cazador furtivo de la chusma");
+    comprueba("obituario: cabeza con cola ya traducida",
+        ::Rosetta.translate("With the company for 3 days. El oponente más poderoso que venció fue un cazador furtivo de la chusma.").find("With the company") == null, true);
+    comprueba("Hired by con nombre que no cambia", ::Rosetta.translate("Hired by Harlingen"), "Contratados por Harlingen");
+    comprueba("renombre del campamento", ::Rosetta.translate("Your company lacks the renown necessary to accommodate more equipment in your camp. Attain at least 'Reputable' (1400) renown in order to unlock this space. Gain renown by completing ambitions and contracts, as well as by winning battles.").find("Your company") == null, true);
+    comprueba("You gain a con artículo inglés", ::Rosetta.translate("You gain a Pico militar"), "Ganas Pico militar");
 }
 
 // Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
@@ -446,11 +477,13 @@ foreach (caso in [
         "<u>Recolectable</u>",
     ]) comprueba("campamento de caza, línea " + i, info[i], esperado);
 
-    q = {};
-    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
-    enganches["scripts/ui/screens/world/modules/world_town_screen/town_training_dialog_module"](q);
     local bloque = @(_a, _b) "<div style='display: block;'><span style='font-size: 18px;'>" + _a + "</span><br><span style='color:#135213;'>" + _b + "</span></div>";
-    local r = q.queryRosterInformation(@() {Roster = [{Training = [{name = bloque("Merciless Regimen", "Current: Iron Lungs")}, {name = "Thorough Training"}]}]})();
+    local o = {queryRosterInformation = @() {Title = "Training Hall", SubTitle = "Have your men train for combat and learn from veterans",
+        Roster = [{Training = [{name = bloque("Merciless Regimen", "Current: Iron Lungs")}, {name = "Thorough Training"}]}]}};
+    enganches["ui/screens/world/modules/world_town_screen/town_training_dialog_module"](o);
+    local r = o.queryRosterInformation();
+    comprueba("sala de entrenamiento: título", r.Title, ::Rosetta.translate("Training Hall"));
+    comprueba("sala de entrenamiento: título traducido", r.Title != "Training Hall", true);
     comprueba("Merciless Regimen", r.Roster[0].Training[0].name, bloque("Régimen despiadado", "Actual: Iron Lungs"));
     comprueba("nombre de entrenamiento", r.Roster[0].Training[1].name, "Entrenamiento a fondo");
 }
