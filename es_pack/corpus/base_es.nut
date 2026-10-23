@@ -137,7 +137,7 @@ local pairs = [
     }
     {
         en = "Your Renown will increase, which means higher pay for contracts and potentially unlocking new types of contracts."
-        es = "Tu renombre aumentará, lo que significa que recibirás un pago más alto por los contratos y potencialmente desbloquearas nuevos tipos de misiones."
+        es = "Tu [color=#1e468f]renombre[/color] aumentará, lo que significa que recibirás un pago más alto por los contratos y potencialmente desbloquearas nuevos tipos de misiones."
     }
     // FILE: scripts\ambitions\ambitions\allied_civilians_ambition.nut
     {
@@ -213,11 +213,11 @@ local pairs = [
     }
     {
         en = "Have 3 pieces of armor and helmets with 230+ durability"
-        es = "Tener 3 piezas de armadura y yelmos con 230+ de durabilidad"
+        es = "Tener [color=#bcad8c]3[/color] piezas de armadura y yelmos con [color=#bcad8c]230+[/color] de durabilidad"
     }
     {
         en = "Have 3 pieces of body armor, and 3 helmets, each with 230 durability or more. Whether you buy them or loot them off of the battlefield, they will protect your men equally well."
-        es = "Tener 3 piezas de armadura corporal y 3 yelmos, cada uno con 230 de durabilidad o más. Ya sea que los compres o los saquees del campo de batalla, protegerán a tus hombres igualmente bien."
+        es = "Tener [color=#1e468f]3[/color] piezas de armadura corporal y [color=#1e468f]3[/color] yelmos, cada uno con [color=#1e468f]230[/color] de durabilidad o más. Ya sea que los compres o los saquees del campo de batalla, protegerán a tus hombres igualmente bien."
     }
     {
         en = "[img]gfx/ui/events/event_35.png[/img]Spirits rise with the acquisition of more heavy armor and helmets for the %companyname%.%SPEECH_ON%Feel that? That is craftsmanship.%SPEECH_OFF%%randombrother% says, rapping a hardwood pommel against his fellow brother's newly armored head.%SPEECH_ON%Think of all the well-paid contracts we missed out on because of our crummy armor and pathetic equipment before.%SPEECH_OFF%From now on, the backline can breathe easier going into battle, knowing that their heavily armored brothers will be there to take the brunt of the assault. Should they fall, their unwieldy bulk will at least delay the enemy, giving their lightly armored companions a chance to swiftly retreat."
@@ -238,11 +238,11 @@ local pairs = [
     }
     {
         en = "Have at least 2,000 crowns"
-        es = "Tener al menos 2.000 coronas"
+        es = "Tener al menos [color=#bcad8c]2.000[/color] coronas"
     }
     {
         en = "Gather the amount of 2,000 crowns or more, so that you can afford to have a battle standard made for the company. You can make money by completing contracts, looting camps and ruins, or trading. You'll also need space enough in your inventory for a new item."
-        es = "Reúne la cantidad de 2.000 coronas o más para poder costear la fabricación de un estandarte de batalla para la compañía. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando. También necesitarás espacio suficiente en tu inventario para un objeto nuevo."
+        es = "Reúne la cantidad de [color=#1e468f]2.000[/color] coronas o más para poder costear la fabricación de un estandarte de batalla para la compañía. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando. También necesitarás espacio suficiente en tu inventario para un objeto nuevo."
     }
     {
         en = "[img]gfx/ui/events/event_65.png[/img]No one likes a skinflint, least of all a group of wandering, bloodthirsty rabble motivated primarily by a love of coin. Not everyone, or more precisely, no one, was thrilled when you suggested cutting back on spending to save up for a company standard.\n\nOnce the %companyname%'s standard is finally paid for and hoisted for the first time to proudly snap in a fresh dawn breeze, however, no one claims it wasn't worth it. The men are proud of their new standard, even tossing around names for it around the campfire, though none of them really stick.\n\nIt's clear for everyone to see now, this is not some band of hired thugs, this is becoming a true mercenary company. Who should have the honor of carrying the standard?"
@@ -265,11 +265,11 @@ local pairs = [
     }
     {
         en = "You'll unlock an additional 27 slots in your inventory."
-        es = "Desbloquearás 27 ranuras adicionales en tu inventario."
+        es = "Desbloquearás [color=#135213]27[/color] ranuras adicionales en tu inventario."
     }
     {
         en = "Gather the amount of 7,500 crowns or more, so that you can afford to buy a cart for additional inventory space. You can make money by completing contracts, looting camps and ruins, or trading."
-        es = "Reúne la cantidad de 7.500 coronas o más para poder costear la compra de una carreta con espacio de inventario adicional. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
+        es = "Reúne la cantidad de [color=#1e468f]7.500[/color] coronas o más para poder costear la compra de una carreta con espacio de inventario adicional. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
     }
     {
         en = "[img]gfx/ui/events/event_158.png[/img]Gathering enough crowns to pay the cartmaker for his work did cost you an arm and a leg, quite literally in some cases. Now the proud owner of a new wagon, you're able to carry both more equipment and more spoils of war, be it silverware and golden crowns, or the half-torn and lice filled gambeson of a random thug.\n\nAfter traveling the first miles with the new wheels you notice that %randombrother% seems to be missing. Looking around, you eventually find him hidden behind some grain bags on the wagon, snoring away peacefully. Some cold water to the head and a boot to the butt quickly get the sluggard back on his feet and walking like the others. Still, you better make sure the men know their place.%SPEECH_ON%I won't have any of this! The only way anyone of the %companyname% will ever find himself on this wagon is carrying his own head under the arm! Be ever watchful and have your arms at the ready when we travel these lands!%SPEECH_OFF%The men grumble and continue on."
@@ -281,7 +281,7 @@ local pairs = [
     }
     {
         en = "You gain 27 additional inventory slots"
-        es = "Ganas 27 espacios de inventario adicional"
+        es = "Ganas [color=#1e861e]27[/color] espacios de inventario adicional"
     }
     // FILE: scripts\ambitions\ambitions\contracts_ambition.nut
     {
@@ -294,7 +294,7 @@ local pairs = [
     }
     {
         en = "Complete 8 more contracts of any kind to prove yourselves reliable beyond doubt."
-        es = "Completa 8 contratos más de cualquier tipo para demostrar que son fiables sin lugar a dudas."
+        es = "Completa [color=#1e468f]8[/color] contratos más de cualquier tipo para demostrar que son fiables sin lugar a dudas."
     }
     {
         en = "[img]gfx/ui/events/event_62.png[/img]When starting out, the world saw you for what you were: ambition armed with a weapon. Everyone has a dream, and about half those men have weapons on them. You were not unique, not outstanding, not even particularly dangerous if you're giving your old self a good look in the eye. But you made it. The doors shut in your face. The attempts at haggling that lost you good deals. The spitting. So much spitting. It's a cold world and you dared to warm your own damn self. And you succeeded.\n\n Contracts under your belt, contracts on the horizon, they're blurring together. A culture of victory has started to wash over the %companyname% and you've good reason to be proud of your command of it."
@@ -339,7 +339,7 @@ local pairs = [
     }
     {
         en = "Defeat 5 packs of roving beasts in battle, such as Direwolves or Nachzehrers, whether as part of a contract or by seeking them out on your own."
-        es = "Derrota 5 manadas de bestias errantes en batalla, tales como Lobos huargo o Nachzehrers, ya sea como parte de un contrato o buscándolas por tu cuenta."
+        es = "Derrota [color=#1e468f]5[/color] manadas de bestias errantes en batalla, tales como Lobos huargo o Nachzehrers, ya sea como parte de un contrato o buscándolas por tu cuenta."
     }
     {
         en = "[img]gfx/ui/events/event_56.png[/img]Having dispatched yet another band of beasts, you find yourself pondering the nature of your ancestors. Here you are, organized, armed and armored, world-traveled, experienced in matters of war and combat, and yet the monsters of this world still serve to be as dangerous as ever. Your ancestors, what did they have? No civilization to blanket themselves under, no cities to light the night and warm the courage, no maps to give a comforting border to the world. And yet... they survived. What was it? How? Perhaps, in those days, it was man who was the threat, and the beasts saw him the monster. Or perhaps there are times before the ancients, times of when they had their own cities, and all the world simply shifts in balance, beast and man, since time immemorial. And if that is the case, then it is not the past you should dwell on, but the days and years and millennia to come..."
@@ -622,7 +622,7 @@ local pairs = [
     }
     {
         en = "Discover 8 hidden locations, like ruins or hostile camps, by going off on your own and exploring the world. Make sure to stock up on provisions before heading out!"
-        es = "Descubre 8 localizaciones ocultas, como ruinas o campamentos hostiles, marchando por tu cuenta y explorando el mundo. ¡Asegúrate de aprovisionarte antes de partir!"
+        es = "Descubre [color=#1e468f]8[/color] localizaciones ocultas, como ruinas o campamentos hostiles, marchando por tu cuenta y explorando el mundo. ¡Asegúrate de aprovisionarte antes de partir!"
     }
     {
         en = "[img]gfx/ui/events/event_54.png[/img]Seizing destiny by the beard, you declared your intention to travel across the land and make your mark as an explorer. Reasoning that uncovering new locations, be they dens of evil or prosperous villages, would lead to new opportunities for wealth, the men enthusiastically followed.\n\nIn the succeeding days, the company has looked upon many a broad vista, surveying high towers and treacherous canyons. You have dodged enemy scouts, and made fireless camps beneath stars like a thousand candle flames in the void. Charting the course of untamed rivers and skirting the hostile edges of uncrossable mountain ranges, the %companyname% can honestly claim themselves more widely traveled than many other band of their kind."
@@ -640,7 +640,7 @@ local pairs = [
     }
     {
         en = "Discover 3 legendary locations by going off on your own and exploring the world. Make sure to stock up on provisions before heading out!"
-        es = "Descubre 3 localizaciones legendarias marchando por tu cuenta y explorando el mundo. ¡Asegúrate de aprovisionarte antes de partir!"
+        es = "Descubre [color=#1e468f]3[/color] localizaciones legendarias marchando por tu cuenta y explorando el mundo. ¡Asegúrate de aprovisionarte antes de partir!"
     }
     {
         en = "[img]gfx/ui/events/event_41.png[/img]A man with a mule approaches the party. As he nears, you notice that the draught animal is laden with panniers long and rolled tight like telescopes. Sleek feathervanes stick out of the saddlebags and there's a tub of ink bouncing alongside them. He introduces himself as a cartographer of these parts and knows your company by name. He bows.%SPEECH_ON%As a fellow man of the map, you have my thanks.%SPEECH_OFF%You ask what for. The stranger seems rather shocked that he has to explain his adorations, as if you've no notion of your celebrity. Which you don't.%SPEECH_ON%Why, because you opened this land up! Before you not a soul would walk these parts and I'd nothing to plot to the page besides warnings to not go there. You ever see the line about 'here there be dragons'? That's my doing! And now I've mind to erase it and I've never been happier to do so. Thank you, explorer, and you may have one of these, an ornament so that others may know your deeds!%SPEECH_OFF%Explorer? Fellow man of the map? It appears this stranger has you all wrong, but you entertain his notions anyway. He hands you a fancy feather as thanks and then bids adieu. It appears the %companyname% is acquiring a name for itself beyond just killing and slaying. You're not sure if that is good or bad."
@@ -701,7 +701,7 @@ local pairs = [
     }
     {
         en = "Have 2 men with the hammer mastery perk."
-        es = "Tener 2 hombres con la ventaja de maestría del martillo."
+        es = "Tener [color=#1e468f]2[/color] hombres con la ventaja de maestría del martillo."
     }
     {
         en = "[img]gfx/ui/events/event_82.png[/img]The men gather around to watch %hammerbrother%'s prowess as he practices his strokes against a pine tree, crack-crack-crack.%SPEECH_ON%Behold the hammer head! You could practically punch right through any helmet and have a good look what's inside that skull-bowl!%SPEECH_OFF%He swings once more and the tree trunk splits in the middle, with the upper half falling directly into the camp. %nothammerbrother% scrambles up from his seat, spilling soup all over himself, to narrowly avoid being crushed. %SPEECH_ON%Here I thought there was nothing new to see in the world but I have never killed a man with a falling tree before!%SPEECH_OFF%%hammerbrother% shouts laughingly. You anticipate that you will fare well next time you come up against heavily armored enemies."
@@ -864,11 +864,11 @@ local pairs = [
     }
     {
         en = "Have at least 6 armors with attachments"
-        es = "Tener al menos 6 armaduras con accesorios"
+        es = "Tener al menos [color=#bcad8c]6[/color] armaduras con accesorios"
     }
     {
         en = "Have at least 6 armors with attachments in your possession. Buy them, loot them, or have a taxidermist craft them for you, then combine them with the armor of your men."
-        es = "Tener al menos 6 armaduras con accesorios en tu posesión. Cómpralas, saquéalas, o haz que un taxidermista las fabrique para ti, luego combínalas con la armadura de tus hombres."
+        es = "Tener al menos [color=#1e468f]6[/color] armaduras con accesorios en tu posesión. Cómpralas, saquéalas, o haz que un taxidermista las fabrique para ti, luego combínalas con la armadura de tus hombres."
     }
     {
         en = "[img]gfx/ui/events/event_82.png[/img]When you took command of the company it was a ragtag band of men clinging for life, an ad hoc assembly of sellswords stitched together with nothing if not sheer stubbornness and absolute contempt for common sense. Now you watch as the men walk around like frayed revenants of an unworldly wild, their armor adorned with hideous scalps and pelts and bones, the ill-shapen recreation of conquest fitted such that others may know the %companyname% could not be sorted by any measure known to the earth whether it be monster or man."
@@ -909,7 +909,7 @@ local pairs = [
     }
     {
         en = "Have at least 10,000 crowns as a reserve, in order to persevere when things may turn bad in the future. You can make money by completing contracts, looting camps and ruins, or trading."
-        es = "Tener al menos 10.000 coronas como reserva, para perseverar cuando las cosas puedan ponerse mal en el futuro. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
+        es = "Tener al menos [color=#1e468f]10.000[/color] coronas como reserva, para perseverar cuando las cosas puedan ponerse mal en el futuro. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
     }
     {
         en = "[img]gfx/ui/events/event_04.png[/img]Your increased store of coin and other valuables lets you sleep easier. The men do too, knowing that they won't have to chase you across the steppe when payroll is due. You'll no longer be at a disadvantage when it comes to contract negotiations, and you'll not end up short on men or equipment should a battle or two go against you.\n\nYour new reserve also begins to open doors for the %companyname%. Merchants, money lenders and nobles have one thing in common: they prefer to rub elbows with their own kind. Merely getting an audience can be a chore if they suspect you have empty pockets. But now that you've proven yourself to be a man of resource, the company has become more attractive to wealthy individuals and decision makers."
@@ -930,7 +930,7 @@ local pairs = [
     }
     {
         en = "Become known as 'Glorious' (2,750 renown) throughout the land. You can increase your renown by completing contracts and winning battles."
-        es = "Hazte conocido como 'Glorioso' (2.750 de renombre) por toda la tierra. Puedes incrementar tu renombre completando contratos y ganando batallas."
+        es = "Hazte conocido como 'Glorioso' ([color=#1e468f]2.750[/color] de renombre) por toda la tierra. Puedes incrementar tu renombre completando contratos y ganando batallas."
     }
     {
         en = "[img]gfx/ui/events/event_82.png[/img]Marching through forests and over plains, the band has smashed any opposition they've been sent after. Trampling foes, shattering battle lines, and sending heads flying, the %companyname% find that they are seldom alone. Crows circle high over the company as they march, they sing as the men take their supper, and more often than not they feast well after their daily work is done.\n\nIn their wake, the men leave scorched earth and outlandish rumors everywhere their booted feet have tread, each tale burgeoning in the telling until everyone from milkmaids to blacksmiths to burgomeisters seems to be talking about your exploits. Gossip is a currency valued in every corner of the land, and neither broad rivers nor tall peaks will slow the tales of your victories, and in turn, the prices you can now demand for your services."
@@ -947,11 +947,11 @@ local pairs = [
     }
     {
         en = "Have at least 50,000 crowns."
-        es = "Tener al menos 50.000 coronas."
+        es = "Tener al menos [color=#bcad8c]50.000[/color] coronas."
     }
     {
         en = "Have at least 50,000 crowns to be counted among the wealthy. You can make money by completing contracts, looting camps and ruins, or trading."
-        es = "Ten al menos 50.000 coronas para ser contado entre los ricos. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
+        es = "Ten al menos [color=#1e468f]50.000[/color] coronas para ser contado entre los ricos. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
     }
     {
         en = "[img]gfx/ui/events/event_04.png[/img]Plunder, plunder and, yes, more plunder! The company has accumulated riches to rival a dragon's hoard. The finest armor and weapons are yours for the asking. Should you wish to hire a ship, or a fleet of ships, you need merely snap your fingers. Vendors of all kinds lay out their best wares when you are in town, most eager to help you find new ways to spend your gold.\n\nAs your wealth rivals that of a nobleman, you no longer need defer to them. You could purchase your own noble title and lands, or take up the career of a merchant banker, should you ever tire of acting nursemaid to this bunch of hardheaded, temperamental louts."
@@ -968,7 +968,7 @@ local pairs = [
     }
     {
         en = "Become known as 'Invincible' (8,000 renown) and leave your mark in history. You can increase your renown by completing contracts and winning battles."
-        es = "Vuélvete conocido como 'Invencible' (8.000 de renombre) y deja tu marca en la historia. Puedes incrementar tu renombre completando contratos y ganando batallas."
+        es = "Vuélvete conocido como 'Invencible' ([color=#1e468f]8.000[/color] de renombre) y deja tu marca en la historia. Puedes incrementar tu renombre completando contratos y ganando batallas."
     }
     {
         en = "[img]gfx/ui/events/event_82.png[/img]With rivers of blood, a hundred burned fortresses, and ten thousand fat, feasting crows at your back, the tales of your company's prowess will never die. The name '%companyname%' is spoken in triumphant shouts and hushed awe in every corner of the known world. Fathers name their sons after your bravest men, and those boys will grow up acting out the many famous battles you fought.\n\nYour renown is such now that is has become an inconvenience to visit any place larger than a hamlet. Everywhere you travel you are harried day and night. Eligible maidens competing for the mens' attention end up in fisticuffs. Shopkeepers, thinking you magnificently wealthy, call at all hours with their wares. Worst of all, every braggart in the land wishes to challenge your men, with the militia waiting for the outcome, hoping that the simple fine for fighting in the street may be elevated to a blood debt.\n\nBut you achieved what you set out to, even if the result is not quite what you anticipated. Whatever your fate, the %companyname% has already become immortal in the history of the world."
@@ -993,7 +993,7 @@ local pairs = [
     }
     {
         en = "Gain a renown of at least 'Recognized' (250) to unlock the first slot for a non-combat follower in your retinue. You can increase your renown by completing contracts and winning battles. Then, hire a non-combat follower in the retinue screen. Some followers require you to fulfill specific prerequisites to unlock their services."
-        es = "Alcanza el renombre de al menos 'Reconocido' (250) para desbloquear el primer espacio para un seguidor no combatiente en tu séquito. Puedes incrementar tu renombre completando contratos y ganando combates. Luego, contrata a un seguidor no combatiente en la pantalla de séquito. Algunos seguidores requieren cumplir prerrequisitos específicos para acceder a sus servicios."
+        es = "Alcanza el renombre de al menos 'Reconocido' ([color=#1e468f]250[/color]) para desbloquear el primer espacio para un seguidor no combatiente en tu séquito. Puedes incrementar tu renombre completando contratos y ganando combates. Luego, contrata a un seguidor no combatiente en la pantalla de séquito. Algunos seguidores requieren cumplir prerrequisitos específicos para acceder a sus servicios."
     }
     {
         en = "[img]gfx/ui/events/event_82.png[/img]%SPEECH_ON%So they're not a fighter?%SPEECH_OFF%One of the sellswords asks. You shake your head, and they scratch theirs.%SPEECH_ON%But they're hired on anyway?%SPEECH_OFF%You nod. The sellsword purses their lips for a second then clarifies.%SPEECH_ON%And absolutely no fighting?%SPEECH_OFF%No fighting.%SPEECH_ON%None? So they'll just fart around doing whatever task here and there?%SPEECH_OFF%You explain that not every important role in a mercenary band needs to be one of fighting. After you've laid out all the jobs others could help out around here, the sellsword thinks for a time.%SPEECH_ON%Can they take up inventory counting, then? Cause I'm real tired of that.%SPEECH_OFF%No. Of course not. You'll never let your secret punishment go to someone else."
@@ -1018,7 +1018,7 @@ local pairs = [
     }
     {
         en = "Become known as 'Professional' (1,050 renown) in order to catch the attention of the noble houses. You can increase your renown by completing contracts and winning battles."
-        es = "Hazte conocido como 'Profesional' (1.050 de renombre) para llamar la atención de las casas nobles. Puedes incrementar tu renombre completando contratos y ganando batallas."
+        es = "Hazte conocido como 'Profesional' ([color=#1e468f]1.050[/color] de renombre) para llamar la atención de las casas nobles. Puedes incrementar tu renombre completando contratos y ganando batallas."
     }
     {
         en = "[img]gfx/ui/events/event_31.png[/img]Thinking to set tongues wagging with the name the %companyname%, and thereby increase your prospects with the nobility, you pushed your men to great deeds, outstanding bravery, and plentiful bloodshed. After several contracts and more than a few skirmishes, you worked hard enough and long enough to have some of the lords take notice of the company's competence.\n\nThese are the gentlefolk who rule the land by virtue of some long-dead ancestor subjugating a group of unarmed peasants. As %highestexperience_brother% puts it, now these pampered, inbred fops are well impressed enough with you to grind the company in one of their feuds. If you wash your face and ask politely, they should favor you with a profitable contract now and again. You can congratulate yourself!"
@@ -1039,15 +1039,15 @@ local pairs = [
     }
     {
         en = "Gain an additional 150 renown for your victory."
-        es = "Gana 150 de renombre adicional por tu victoria."
+        es = "Gana [color=#135213]150[/color] de renombre adicional por tu victoria."
     }
     {
         en = "Have at least 1 famed piece of equipment"
-        es = "Tener al menos 1 pieza de equipo afamado"
+        es = "Tener al menos [color=#bcad8c]1[/color] pieza de equipo afamado"
     }
     {
         en = "Have at least 1 famed piece of equipment in your possession - weapon, shield, armor or helmet. Follow rumors in taverns to learn where famed items can be found, purchase them at specialized shops in large cities and castles, or go out on your own to explore and raid ruins and camps. The further away from civilization, the higher the chance of finding rare items."
-        es = "Ten al menos 1 pieza de equipo afamado en tu posesión: arma, escudo, armadura o yelmo. Sigue rumores en tabernas para aprender dónde pueden encontrarse objetos afamados, cómpralos en tiendas especializadas en grandes ciudades y castillos, o sal por tu cuenta a explorar y saquear ruinas y campamentos. Cuanto más lejos de la civilización, mayor la probabilidad de encontrar objetos raros."
+        es = "Ten al menos [color=#1e468f]1[/color] pieza de equipo afamado en tu posesión: arma, escudo, armadura o yelmo. Sigue rumores en tabernas para aprender dónde pueden encontrarse objetos afamados, cómpralos en tiendas especializadas en grandes ciudades y castillos, o sal por tu cuenta a explorar y saquear ruinas y campamentos. Cuanto más lejos de la civilización, mayor la probabilidad de encontrar objetos raros."
     }
     {
         en = "[img]gfx/ui/events/event_28.png[/img]It was no easy task seeking out one of those rare items recognized as a talisman of fighting men, but the %nameditem% is truly remarkable. The men fairly glow with pride after acquiring it. Around the fire, some of the brothers even grow maudlin and teary-eyed when in their cups, pawing it like a favorite hound.%SPEECH_ON%Isn't it beautiful?%SPEECH_OFF%%randombrother% asks while admiring it in the glow of the campfire, quickly cut off by another of the men.%SPEECH_ON%Turn it this way so I can have a proper peek!%SPEECH_OFF%In the days that follow your men are parading the %nameditem% around like the trophy head of some fearsome beast. Usually in taverns or at festivals, and near other sources of mead and beer, the brothers make a habit of showing their prize off everywhere you go."
@@ -1104,7 +1104,7 @@ local pairs = [
     }
     {
         en = "Raid 4 trade or supply caravans along the road. If you're not already hostile to their faction, you can force an attack by holding the CTRL key while left-clicking on them - but only if you're not currently hired for a contract."
-        es = "Saquea 4 caravanas comerciales o de suministro en el camino. Si no eres hostil a su facción, puedes forzar un ataque sosteniendo la tecla CTRL mientras haces clic izquierdo en ellas - pero solo si no estás en proceso de cumplir un contrato."
+        es = "Saquea [color=#1e468f]4[/color] caravanas comerciales o de suministro en el camino. Si no eres hostil a su facción, puedes forzar un ataque sosteniendo la tecla CTRL mientras haces clic izquierdo en ellas - pero solo si no estás en proceso de cumplir un contrato."
     }
     {
         en = "[img]gfx/ui/events/event_60.png[/img]A dead merchant's voice rings in your head.%SPEECH_ON%Why did you do it? We'd have given you it all.%SPEECH_OFF%But the memory isn't about him. It's about his wagon, and what parts of it he wouldn't even divulge with his life on the balance. Since setting out to raid them, attacking caravans has turned into something of a sport for you and the %companyname%. Awashed in the riches of your ambushes, the men are happy, and you've accrued a bit of renown for your dastardly deeds."
@@ -1125,7 +1125,7 @@ local pairs = [
     }
     {
         en = "Have 3 men with the bow or crossbow mastery perk."
-        es = "Tener 3 hombres con la ventaja de maestría en arco o ballesta."
+        es = "Tener [color=#1e468f]3[/color] hombres con la ventaja de maestría en arco o ballesta."
     }
     {
         en = "[img]gfx/ui/events/event_10.png[/img]At every opportunity, you encourage the men under your command to let loose a few volleys. Everyone participates, even the slow witted louts who would sleep in their armor if you let them. Any target at all suffices: the bole of a small tree, a doe grazing in the early hours, or a goblin scout fleeing for his life.%SPEECH_ON%Yes, we are the terror of hay bales throughout the land!%SPEECH_OFF%%randombrother% says, referring to a common choice of target during practice. He ducks when an arrow from one of his comrades whistles close past his skull and starts cursing at the shooter.\n\nWith plenty of practice, those arrows are striking closer and closer to the bullseye, and now that the company is fielding better trained bowmen, your frontline is breathing easier and living, at least marginally, longer."
@@ -1138,11 +1138,11 @@ local pairs = [
     }
     {
         en = "Have a roster of at least 12 men"
-        es = "Tener una plantilla de al menos 12 hombres"
+        es = "Tener una plantilla de al menos [color=#bcad8c]12[/color] hombres"
     }
     {
         en = "Hire enough men to have a full roster of at least 12 men. Visit settlements across the lands to find recruits that suit your needs. Having a full roster will allow you to take on more dangerous and better paying contracts."
-        es = "Contrata suficientes hombres para tener una plantilla completa de al menos 12 hombres. Visita asentamientos por las tierras para encontrar reclutas que se ajusten a tus necesidades. Tener una plantilla completa te permitirá aceptar contratos más peligrosos y mejor pagados."
+        es = "Contrata suficientes hombres para tener una plantilla completa de al menos [color=#1e468f]12[/color] hombres. Visita asentamientos por las tierras para encontrar reclutas que se ajusten a tus necesidades. Tener una plantilla completa te permitirá aceptar contratos más peligrosos y mejor pagados."
     }
     {
         en = "[img]gfx/ui/events/event_80.png[/img]Having finally gathered the coin and equipment, you manage to assemble a full complement of twelve able fighters. When next you walk down %currenttown%'s main street, the men break into a full-throated marching song. A few of the townsfolk mutter under their breath about dirty mercenaries taking over the town, but others walk alongside and shout the words with you. %SPEECH_ON%Stand tall, brothers. People can see this is a real mercenary company now, and not a handful of wandering vagabonds.%SPEECH_OFF%%highestexperience_brother% declares.%SPEECH_ON%We trade in strength, and now that our numbers have gone up, so will our price.%SPEECH_OFF%It appears he has the right of it. You notice one particularly fat nobleman sizing up the company as if he already has a task in mind. The %companyname% are now a force to be reckoned with. Once the men have settled in for a celebratory drink, perhaps you should take another stroll through town to see if any more lucrative contracts may be available."
@@ -1168,11 +1168,11 @@ local pairs = [
     }
     {
         en = "Have a roster of 20 men"
-        es = "Tener una plantilla de 20 hombres"
+        es = "Tener una plantilla de [color=#bcad8c]20[/color] hombres"
     }
     {
         en = "Hire enough men to have a full roster of 20 men. Visit settlements across the lands to find recruits that suit your needs."
-        es = "Contrata suficientes hombres para tener una plantilla completa de 20 hombres. Visita asentamientos por todas las tierras para encontrar reclutas que se ajusten a tus necesidades."
+        es = "Contrata suficientes hombres para tener una plantilla completa de [color=#1e468f]20[/color] hombres. Visita asentamientos por todas las tierras para encontrar reclutas que se ajusten a tus necesidades."
     }
     {
         en = "[img]gfx/ui/events/event_80.png[/img]For many days you speak with potential recruits from different backgrounds and from every corner of society, weeding out the incompetent and haggling with the greedy. It seems as if in troubled times every vagrant, daytaler and nobleman's youngest son wishes to become a mercenary.\n\nThe men are glad for the company's bigger roster, and those you rejected will be the butt of many jests for weeks to come. %highestexperience_brother% claps you on the shoulder.%SPEECH_ON%How about that man who said he'd taken the heads of a bunch of orcs, but was really a baker from %randomtown%! Pinching flabby biceps and beating farmers' sons with tree branches was good sport for the first few days but by the end it was more work than chasing brigands around, if you ask me.%SPEECH_OFF%You now have twenty men under your command. Not all are veterans, and not all have been tested, but being able to rotate out your wounded will mean fresher units in the field."
@@ -1232,7 +1232,7 @@ local pairs = [
     }
     {
         en = "Have at least 12 items crafted from beast trophies at the taxidermist. A taxidermist can be found in settlements mostly near woods and swamp, and can craft useful items from trophies dropped by beasts, such as the unusually large wolf pelts dropped by direwolves."
-        es = "Haz que se fabriquen al menos 12 objetos a partir de trofeos de bestias con el taxidermista. Puede encontrarse un taxidermista en asentamientos principalmente cercanos a bosques y pantanos, y puede fabricar objetos útiles a partir de trofeos dejados por bestias, como las pieles de lobo inusualmente grandes dejadas por los lobos huargo."
+        es = "Haz que se fabriquen al menos [color=#1e468f]12[/color] objetos a partir de trofeos de bestias con el taxidermista. Puede encontrarse un taxidermista en asentamientos principalmente cercanos a bosques y pantanos, y puede fabricar objetos útiles a partir de trofeos dejados por bestias, como las pieles de lobo inusualmente grandes dejadas por los lobos huargo."
     }
     {
         en = "[img]gfx/ui/events/event_97.png[/img]A young boy hails you down and asks if you're the leader of the %companyname%. Eyeing the surrounding parts, you ask what it is to him. He shrugs.%SPEECH_ON%Well, I mean nothing by it, sir. If I find and fetch him I get paid three gold coins. Thas all.%SPEECH_OFF%Intrigued, you ask who it is set to pay this reward. The boy is picking a booger and looks up.%SPEECH_ON%Whussat? Ah, I ain't seen the gold yet! Gotta find the man first!%SPEECH_OFF%Sighing, you pull the boys' hand aside, snot and all, and ask him again. The boy snorts, thinking, staring at the dirt, at the worms there. He nods.%SPEECH_ON%T'was a taxman. Not the gold fetching sort. He'd not pay me a coin, that man's a long-fingered devil so says my pa. I mean the animal taxman. Strips the beasts and fashions something fierce with them, coats, blankets, poisons, dranks. That taxman. Well, they all talkin' to one another. They says the %companyname%'s work makes for the best business in all the land and they all itching to meet them again!%SPEECH_OFF%Ah, he's speaking of the taxidermists. Smiling, you pat the boy on the head and wish him the best of luck in his hunt. He snorts and hocks a loogie.%SPEECH_ON%Luck ain't much all to do with this, I aim to find that man the learned way. Keepin' my eyes open and ears peeled and my britches high and tight.%SPEECH_OFF%"
@@ -1259,7 +1259,7 @@ local pairs = [
     }
     {
         en = "Buy and sell 25 items of trading goods, such as furs, salt or spices. Buying them in small villages that produce them and selling them in big cities will earn you the most coin. Some trading goods are also exclusive to certain regions, like the southern deserts, and selling them in other parts of the world can further increase your profit margin."
-        es = "Compra y vende 25 unidades de mercancías, como pieles, sal o especias. Comprarlas en aldeas pequeñas que las producen y venderlas en grandes ciudades te dará la mayor ganancia. Algunas mercancías son exclusivas de ciertas regiones, como los desiertos del sur, y venderlas en otras partes del mundo puede incrementar aún más tu margen de beneficio."
+        es = "Compra y vende [color=#1e468f]25[/color] unidades de mercancías, como pieles, sal o especias. Comprarlas en aldeas pequeñas que las producen y venderlas en grandes ciudades te dará la mayor ganancia. Algunas mercancías son exclusivas de ciertas regiones, como los desiertos del sur, y venderlas en otras partes del mundo puede incrementar aún más tu margen de beneficio."
     }
     {
         en = "[img]gfx/ui/events/event_55.png[/img]The thought bore down on you from the start, and it is one that escapes many a mercenary captain. A thought so simple that perhaps its very simplicity camouflages it from a sword wielding leader's ego. If the %companyname% is to be traveling from city to city looking for sellsword work, it may as already have one foot in another vocation altogether: that of trade. You picked up on it quick, realizing that goods carry a different sort of currency than which appears at face, a value hidden from the eye, and hidden in the ripples of time and location themselves. Now you spend evenings struggling to tabulate the crowns. For once, it's a good problem to have."
@@ -1329,7 +1329,7 @@ local pairs = [
     }
     {
         en = "Gather the amount of 15,000 crowns or more, so that you can afford to buy a wagon for additional inventory space. You can make money by completing contracts, looting camps and ruins, or trading."
-        es = "Reúne la cantidad de 15.000 coronas o más para poder comprar un carromato que proporcione espacio de inventario adicional. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
+        es = "Reúne la cantidad de [color=#1e468f]15.000[/color] coronas o más para poder comprar un carromato que proporcione espacio de inventario adicional. Puedes ganar dinero completando contratos, saqueando campamentos y ruinas, o comerciando."
     }
     {
         en = "[img]gfx/ui/events/event_158.png[/img]A wise man once told you that a wagon loses value the second it leaves the lot. The axiom dwells in the back of your head as you hand over 10,000 crowns for the wagon. But then you step up into the boxseat and jack your boot against the toeboard and feel right at home. You turn and take a look into the bed. There the wagonmaker installed a series of side-turned gates with iron spikes situated to hang trophies, pelts, and other goods. There is also a cage to hold a dog or a dog of a man if need be. A wooden toolbox with a heavy slaplatch carries all the means necessary to repair weapons and armor. Spare axles and wheels are held undercarriage.\n\nNodding, you turn back around and gander at the workhorse. The draught animal is a squat creature with muscled legs and an indifferent demeanor. It mindlessly crops the grass at its feet until you take up the jerkline and jockey it forward. The wagon trundles and tips and sags with nothing to suggest it was made to do anything you've beckoned it to do. And yet there it goes.\n\n %randombrother% walks by swigging a wine bottle. When he asks how's the ride you steal his bottle and smash it across the wagon's side and yell out 'rawhide!'"
@@ -1350,7 +1350,7 @@ local pairs = [
     }
     {
         en = "Have 5 of your men with a weapon mastery perk each, no matter which one."
-        es = "Tener 5 de tus hombres con una ventaja de maestría en armas cada uno, sin importar cuál."
+        es = "Tener [color=#1e468f]5[/color] de tus hombres con una ventaja de maestría en armas cada uno, sin importar cuál."
     }
     {
         en = "[img]gfx/ui/events/event_50.png[/img]Introducing a new regimen to train the brothers in mastering a weapon is good for everyone's morale. Those who do the training improve their prowess and chances of survival, and earn the admiration of their companions, while the others have something fun to watch while sitting on a log and stuffing their faces with mutton.\n\nThe trainees practice in every spare moment with a variety of weapons until hard arms have become like oaken branches, and sharp eyes grow as keen and unforgiving as those of a great cat.%SPEECH_ON%Not only is %weaponbrother% a fearsome threat to our enemies, but his swift footwork makes you think of dancing girls.%SPEECH_OFF%%notweaponbrother% remarks, only to be soundly chastised with a training sword by %weaponbrother%."
@@ -1369,11 +1369,11 @@ local pairs = [
     }
     {
         en = "Win a battle against 12 or more enemies"
-        es = "Gana una batalla contra 12 o más enemigos"
+        es = "Gana una batalla contra [color=#bcad8c]12[/color] o más enemigos"
     }
     {
         en = "Win a battle against 12 or more enemies, whether by killing them or having them scatter and flee. You can do so as part of a contract or by fighting on your own terms."
-        es = "Gana una batalla contra 12 o más enemigos, ya sea matándolos o haciendo que se dispersen y huyan. Puedes hacerlo como parte de un contrato o peleando en tus propios términos."
+        es = "Gana una batalla contra [color=#1e468f]12[/color] o más enemigos, ya sea matándolos o haciendo que se dispersen y huyan. Puedes hacerlo como parte de un contrato o peleando en tus propios términos."
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]As all your enemies either lie dead or are in retreat, %bravest_brother% waves the company's banner in celebration.%SPEECH_ON%Once more the %companyname% fought, and once more the %companyname% prevailed!%SPEECH_OFF%Raucous cheers echo him all around. You soon discover that your recent battle is the talk of the local towns and villages. Whenever they stop at a tavern along the road, the brothers find that drinks are poured when the story of that battle is told, and the more the telling is embellished, the more freely the libations flow."
@@ -1407,7 +1407,7 @@ local pairs = [
     }
     {
         en = "Enter and win 5 fights in the arena of the southern city states."
-        es = "Participa y gana 5 combates en la arena de las ciudades-estado del sur."
+        es = "Participa y gana [color=#1e468f]5[/color] combates en la arena de las ciudades-estado del sur."
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]Having dispatched all manner of creatures that walk on two legs or more, and sometimes perhaps none at all, you've come to collect a fair bit of renown for your gladiatorial prowess. Southerners speak your name as though itself were the carrier of good news, vicariously relishing in your victories and hoping to see you win more. It is an odd spin of fate, as most attend the arenas to see gladiators find as grisly a demise as possible. To have the masses cheer for you is a strange realization indeed, though you just realize that when it is you in that light, your very presence filling the stands and bannisters, that there is still an ugly end the crowd seeks: that of your opponent. And, frankly, for that much coin you've no problem satiating the audience's bloodlust."
@@ -1425,7 +1425,7 @@ local pairs = [
     {
         // text = "Your Renown will increase, which means higher pay for contracts and potentially unlocking new types of contracts." + (reward_tooltip == "" ? "\n\n" : "")
         en = "Your Renown will increase, which means higher pay for contracts and potentially unlocking new types of contracts.\n\n"
-        es = "Tu renombre crecerá, lo que significa mayor pago en contratos y posiblemente desbloquear nuevos tipos de contratos.\n\n"
+        es = "Tu [color=#1e468f]renombre[/color] crecerá, lo que significa mayor pago en contratos y posiblemente desbloquear nuevos tipos de contratos.\n\n"
     }
     {
         en = "Oath Burden"
@@ -1435,13 +1435,13 @@ local pairs = [
         // return "Uphold an " + this.m.OathName + " for " + (timeRemaining > 1 ? "another " + timeRemaining + " days" : "1 more day");
         mode = "pattern"
         en = "Uphold an <oath:str> for another <timeremaining:int> days"
-        es = "Mantén el <oath:t> por otros <timeremaining> días."
+        es = "Mantén el <oath:t> por otros [color=#bcad8c]<timeremaining>[/color] días."
     }
     {
         // return "Uphold an " + this.m.OathName + " for " + (timeRemaining > 1 ? "another " + timeRemaining + " days" : "1 more day");
         mode = "pattern"
         en = "Uphold an <oath:str> for 1 more day"
-        es = "Mantén el <oath:t> por 1 día más."
+        es = "Mantén el <oath:t> por [color=#bcad8c]1[/color] día más."
     }
     // FILE: scripts\ambitions\oaths\oath_of_camaraderie_ambition.nut
     {
@@ -1478,7 +1478,7 @@ local pairs = [
         // return "You gain extra Renown if your men become confident in battle enough times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown if your men become confident in battle enough times (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional si tus hombres adquieren 'Confiado' en la batalla suficientes veces (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional si tus hombres adquieren 'Confiado' en la batalla suficientes veces (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_distinction_ambition.nut
     {
@@ -1511,7 +1511,7 @@ local pairs = [
         // return "You gain extra Renown if one of your men levels up " + this.getBonusObjectiveGoal() + " times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown if one of your men levels up <goal:int> times (<progress:int>/<total:int>)."
-        es = "Obtendrás renombre adicional si uno de tus hombres sube de nivel <goal> veces (<progress>/<total>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional si uno de tus hombres sube de nivel [color=#1e468f]<goal>[/color] veces (<progress>/<total>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_dominion_ambition.nut
     {
@@ -1546,7 +1546,7 @@ local pairs = [
         // return "You gain extra Renown for slaying beasts (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for slaying beasts (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por matar bestias (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por matar bestias (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_endurance_ambition.nut
     {
@@ -1581,7 +1581,7 @@ local pairs = [
         // return "You gain extra Renown for winning many battles (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for winning many battles (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por ganar muchas batallas (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por ganar muchas batallas (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_fortification_ambition.nut
     {
@@ -1614,7 +1614,7 @@ local pairs = [
         // return "You gain extra Renown if none of your men fall in battle during the Oath (" + this.getBonusObjectiveProgress() + " fallen so far).";
         mode = "pattern"
         en = "You gain extra Renown if none of your men fall in battle during the Oath (<n:int> fallen so far)."
-        es = "Ganas renombre adicional si ninguno de tus hombres cae en batalla durante el Juramento (<n> caídos hasta ahora)."
+        es = "Ganas [color=#1e468f]renombre[/color] adicional si ninguno de tus hombres cae en batalla durante el Juramento (<n> caídos hasta ahora)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_honor_ambition.nut
     {
@@ -1645,7 +1645,7 @@ local pairs = [
         // return "You gain extra Renown for defeating enemies without them being engaged by other combatants (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for defeating enemies without them being engaged by other combatants (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por derrotar a enemigos sin que estén comprometidos por otros combatientes (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por derrotar a enemigos sin que estén comprometidos por otros combatientes (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_humility_ambition.nut
     {
@@ -1680,7 +1680,7 @@ local pairs = [
         // return "You gain extra Renown for completing enough contracts (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for completing enough contracts (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por completar suficientes contratos (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por completar suficientes contratos (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_righteousness_ambition.nut
     {
@@ -1715,7 +1715,7 @@ local pairs = [
         // return "You gain extra Renown for slaying the undead (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for slaying the undead (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por matar no muertos (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por matar no muertos (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_sacrifice_ambition.nut
     {
@@ -1746,13 +1746,13 @@ local pairs = [
         // return "You gain extra Renown for suffering no more than " + this.getBonusObjectiveGoal() + " combat injuries (" + this.getBonusObjectiveProgress() + (this.getBonusObjectiveProgress() == 1 ? " injury" : " injuries") + " taken so far).";
         mode = "pattern"
         en = "You gain extra Renown for suffering no more than <goal:int> combat injuries (<progress:int> injury taken so far)."
-        es = "Obtendrás renombre adicional por sufrir no más de <goal> lesiones en combate (<progress> lesión recibida)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por sufrir no más de [color=#1e468f]<goal>[/color] lesiones en combate (<progress> lesión recibida)."
     }
     {
         // return "You gain extra Renown for suffering no more than " + this.getBonusObjectiveGoal() + " combat injuries (" + this.getBonusObjectiveProgress() + (this.getBonusObjectiveProgress() == 1 ? " injury" : " injuries") + " taken so far).";
         mode = "pattern"
         en = "You gain extra Renown for suffering no more than <goal:int> combat injuries (<progress:int> injuries taken so far)."
-        es = "Obtendrás renombre adicional por sufrir no más de <goal> lesiones en combate (<progress> lesiones recibidas)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por sufrir no más de [color=#1e468f]<goal>[/color] lesiones en combate (<progress> lesiones recibidas)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_valor_ambition.nut
     {
@@ -1785,7 +1785,7 @@ local pairs = [
         // return "You gain extra Renown for winning battles where you are outnumbered (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for winning battles where you are outnumbered (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional al ganar batallas en las que te superen en número (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional al ganar batallas en las que te superen en número (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_vengeance_ambition.nut
     {
@@ -1820,7 +1820,7 @@ local pairs = [
         // return "You gain extra Renown for slaying greenskins (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for slaying greenskins (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por matar pieles verdes (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por matar pieles verdes (<progress>/<goal>)."
     }
     // FILE: scripts\ambitions\oaths\oath_of_wrath_ambition.nut
     {
@@ -1855,7 +1855,7 @@ local pairs = [
         // return "You gain extra Renown for slaying your foes (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
         en = "You gain extra Renown for slaying your foes (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional por matar enemigos (<progress>/<goal>)."
+        es = "Obtendrás [color=#1e468f]renombre[/color] adicional por matar enemigos (<progress>/<goal>)."
     }
     // FILE: scripts\config\ai.nut
     // en = "None"
@@ -61083,7 +61083,7 @@ local pairs = [
     }
     {
         en = "Has a 25% chance of not consuming any crafting component used by you"
-        es = "Tiene un 25% de posibilidades de no consumir ningún componente de elaboración utilizado por ti."
+        es = "Tiene un [color=#1e861e]25%[/color] de posibilidades de no consumir ningún componente de elaboración utilizado por ti."
     }
     {
         en = "Unlocks 'Snake Oil' recipe to earn money by crafting from various low tier components"
@@ -61110,11 +61110,11 @@ local pairs = [
     }
     {
         en = "Increases repair speed by 20%"
-        es = "Aumenta la velocidad de reparación en 20%"
+        es = "Aumenta la velocidad de reparación en [color=#1e861e]20%[/color]"
     }
     {
         en = "Reduces tool consumption by 20%"
-        es = "Reduce el consumo de Herramientas y suministros en 20%"
+        es = "Reduce el consumo de Herramientas y suministros en [color=#1e861e]20%[/color]"
     }
     {
         // this.m.Requirements[0].Text = "Had " + this.Math.min(5, this.World.Statistics.getFlags().getAsInt("ItemsRepaired")) + "/5 items repaired at a town\'s smith";
@@ -61137,7 +61137,7 @@ local pairs = [
     }
     {
         en = "Pays between 300 and 750 crowns for every champion slain"
-        es = "Paga entre 300 y 750 coronas por cada campeón asesinado"
+        es = "Paga entre [color=#1e861e]300[/color] y [color=#1e861e]750[/color] coronas por cada campeón asesinado"
     }
     {
         // this.m.Requirements[0].Text = "Have " + this.Math.min(3, namedItems) + "/3 named or legendary items in your possession";
@@ -61175,7 +61175,7 @@ local pairs = [
     }
     {
         en = "Pays you between 100 and 400 crowns for every location you discover on your own. The further away from civilization, the more you're paid. Legendary locations pay double."
-        es = "Te paga entre 100 y 400 coronas por cada lugar que descubras por tu cuenta. Cuanto más lejos de la civilización, más te pagan. Las ubicaciones legendarias pagan el doble."
+        es = "Te paga entre [color=#1e861e]100[/color] y [color=#1e861e]400[/color] coronas por cada lugar que descubras por tu cuenta. Cuanto más lejos de la civilización, más te pagan. Las ubicaciones legendarias pagan el doble."
     }
     {
         en = "Discovered a legendary location"
@@ -61192,11 +61192,11 @@ local pairs = [
     }
     {
         en = "Makes all provisions last 3 extra days"
-        es = "Hace que todas las provisiones duren 3 días adicionales"
+        es = "Hace que todas las provisiones duren [color=#1e861e]3 días[/color] adicionales"
     }
     {
         en = "Increases hitpoint recovery by 1 per hour"
-        es = "Aumenta la recuperación de puntos de vida en 1 por hora"
+        es = "Aumenta la recuperación de puntos de vida en [color=#1e861e]1[/color] por hora"
     }
     {
         // this.m.Requirements[0].Text = "Have " + this.Math.min(8, uniqueProvisions) + "/8 different types of provisions";
@@ -61215,7 +61215,7 @@ local pairs = [
     }
     {
         en = "Makes your men gain 20% more experience at level 1, with 2% less at each further level"
-        es = "Hace que tus hombres ganen un 20% más de experiencia en el nivel 1, y un 2% menos en cada nivel adicional (10% en nivel 6)"
+        es = "Hace que tus hombres ganen un [color=#1e861e]20%[/color] más de experiencia en el nivel 1, y un [color=#a22424]2%[/color] menos en cada nivel adicional ([color=#1e861e]10%[/color] en nivel 6)"
     }
     {
         en = "Makes men in reserve never lose mood from not taking part in battles"
@@ -61236,7 +61236,7 @@ local pairs = [
     }
     {
         en = "Increases your sight radius by 25%"
-        es = "Incrementa el alcance de visión en un 25%"
+        es = "Incrementa el alcance de visión en un [color=#1e861e]25%[/color]"
     }
     {
         en = "Reveals extended information about footprints"
@@ -61259,7 +61259,7 @@ local pairs = [
     }
     {
         en = "Makes you earn 15% more renown with every action"
-        es = "Te hace ganar un 15% más de renombre con cada acción"
+        es = "Te hace ganar un [color=#1e861e]15%[/color] más de renombre con cada acción"
     }
     {
         en = "Makes tavern rumors more likely to contain useful information"
@@ -61305,11 +61305,11 @@ local pairs = [
     }
     {
         en = "Reduces the daily wage of each man by 15%"
-        es = "Reduce el salario diario de cada hombre un 15%"
+        es = "Reduce el salario diario de cada hombre un [color=#1e861e]15%[/color]"
     }
     {
         en = "Reduces the chance of desertion by 50%"
-        es = "Reduce las probabilidades de deserción un 50%"
+        es = "Reduce las probabilidades de deserción un [color=#1e861e]50%[/color]"
     }
     {
         en = "Prevents men demanding more pay in events"
@@ -61332,11 +61332,11 @@ local pairs = [
     }
     {
         en = "Increases the amount of ammunition you can carry by 100"
-        es = "Incrementa la cantidad de munición que puedes cargar en 100"
+        es = "Incrementa la cantidad de munición que puedes cargar en [color=#1e861e]100[/color]"
     }
     {
         en = "Increases the amount of medical supplies and tools you can carry by 50 each"
-        es = "Incrementa la cantidad de suministros médicos y herramientas que puedes cargar en 50"
+        es = "Incrementa la cantidad de suministros médicos y herramientas que puedes cargar en [color=#1e861e]50[/color]"
     }
     {
         // this.m.Requirements[0].Text = "Completed " + this.Math.min(5, this.World.Statistics.getFlags().getAsInt("EscortCaravanContractsDone")) + "/5 caravan escort contracts";
@@ -61355,11 +61355,11 @@ local pairs = [
     }
     {
         en = "Makes you pay 10% less up front for hiring new men, and 50% less for tryouts"
-        es = "Hace que pagues un 10% menos por adelantado al contratar nuevos hombres, y un 50% menos por las pruebas de reclutamiento."
+        es = "Hace que pagues un [color=#1e861e]10%[/color] menos por adelantado al contratar nuevos hombres, y un [color=#1e861e]50%[/color] menos por las pruebas de reclutamiento."
     }
     {
         en = "Makes between 2 and 4 additional men available to recruit in every settlement"
-        es = "Hace que estén disponibles entre 2 y 4 hombres adicionales para reclutar en cada asentamiento."
+        es = "Hace que estén disponibles entre [color=#1e861e]2[/color] y [color=#1e861e]4[/color] hombres adicionales para reclutar en cada asentamiento."
     }
     {
         // this.m.Requirements[0].Text = "Recruited " + this.Math.min(12, this.World.Statistics.getFlags().getAsInt("BrosHired")) + "/12 men";
@@ -61399,7 +61399,7 @@ local pairs = [
     }
     {
         en = "Makes the company travel 15% faster on any terrain"
-        es = "Acelera el viaje de la compañía en un 15% en cualquier terreno"
+        es = "Acelera el viaje de la compañía en un [color=#1e861e]15%[/color] en cualquier terreno"
     }
     {
         en = "Prevents sickness and accidents due to terrain"
@@ -61445,7 +61445,7 @@ local pairs = [
     }
     {
         en = "Increases the amount of trade goods for sale by 1 for each location that produces them, like salt near salt mines, allowing you to trade at higher volumes"
-        es = "Aumenta la cantidad de productos comerciales a la venta en 1 por cada ubicación que los produce, como la sal cerca de las minas de sal, lo que te permite comerciar en volúmenes más altos."
+        es = "Aumenta la cantidad de productos comerciales a la venta en [color=#1e861e]1[/color] por cada ubicación que los produce, como la sal cerca de las minas de sal, lo que te permite comerciar en volúmenes más altos."
     }
     {
         // this.m.Requirements[0].Text = "Sold " + this.Math.min(25, this.World.Statistics.getFlags().getAsInt("TradeGoodsSold")) + "/25 trade goods";
@@ -61502,7 +61502,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]You and your men make your living by hunting down the many beasts that beset villages on the fringes of civilization. It's dangerous work, but it pays well enough, and there's always a bigger beast to slay and more crowns to earn.\n\n[color=#bcad8c]Beast Slayers:[/color] Start with three beast slayers and decent equipment, as well as some beast trophies.\n[color=#bcad8c]Expert Trackers:[/color] See tracks from further away.\n[color=#bcad8c]Expert Skinners:[/color] Each beast you slay has a 50% chance to drop an additional trophy.\n[color=#bcad8c]Prejudice:[/color] Most people don't trust your kind, so you get 10% worse prices.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Con tus hombres te ganas la vida cazando bestias que acosan las aldeas al borde de la civilización. Es peligroso pero rentable, y no faltan bestias mayores que matar ni coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos.\n[color=#bcad8c]Rastreadores expertos:[/color] Ves huellas desde más lejos.\n[color=#bcad8c]Desolladores expertos:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo más.\n[color=#bcad8c]Prejuicio:[/color] Casi nadie se fía de los tuyos, así que obtienes precios un 10% peores.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Con tus hombres te ganas la vida cazando bestias que acosan las aldeas al borde de la civilización. Es peligroso pero rentable, y no faltan bestias mayores que matar ni coronas que ganar.\n\n[color=#bcad8c]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos.\n[color=#bcad8c]Rastreadores expertos:[/color] Ves huellas desde más lejos.\n[color=#bcad8c]Desolladores expertos:[/color] Cada bestia que mates tiene un [color=#1e861e]50%[/color] de probabilidad de soltar un trofeo más.\n[color=#bcad8c]Prejuicio:[/color] Casi nadie se fía de los tuyos, así que obtienes precios un [color=#a22424]10%[/color] peores.[/p]"
     }
     {
         en = "Has slain a dangerous witch"
@@ -61606,7 +61606,7 @@ local pairs = [
     // FILE: scripts\scenarios\world\gladiators_scenario.nut
     {
         en = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]You've fought in the arenas of the south for years. First for your freedom, then for crowns, and finally to become immortal. What else does fate have in stock for you?\n\n[color=#bcad8c]Gladiators:[/color] Start with three experienced gladiators with good equipment, but very high daily wages.\n[color=#bcad8c]Legends of the Arena:[/color] Each gladiator has a unique trait in combat.\n[color=#bcad8c]Glorious Three:[/color] You can never have more than 12 men in your roster, and if all of your three starting men should die, your campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Has luchado en las arenas del sur durante años. Primero por tu libertad, luego por coronas y finalmente para volverte inmortal. ¿Qué más tiene el destino en reserva para ti?\n\n[color=#bcad8c]Gladiadores:[/color] Comienzas con tres gladiadores experimentados con buen equipo, pero con salarios diarios muy altos.\n[color=#bcad8c]Leyendas de la Arena:[/color] Cada gladiador tiene un rasgo único en combate.\n[color=#bcad8c]Los Gloriosos Tres:[/color] Nunca puedes tener más de 12 hombres en tu lista y si tus tres hombres iniciales mueren, tu campaña termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Has luchado en las arenas del sur durante años. Primero por tu libertad, luego por coronas y finalmente para volverte inmortal. ¿Qué más tiene el destino en reserva para ti?\n\n[color=#bcad8c]Gladiadores:[/color] Comienzas con tres gladiadores experimentados con buen equipo, pero con salarios diarios muy altos.\n[color=#bcad8c]Leyendas de la Arena:[/color] Cada gladiador tiene un rasgo único en combate.\n[color=#bcad8c]Los Gloriosos Tres:[/color] Nunca puedes tener más de [color=#a22424]12[/color] hombres en tu lista y si tus tres hombres iniciales mueren, tu campaña termina.[/p]"
     }
     {
         // bros[0].getBackground().m.RawDescription = "{%fullname% thinks muscles make for glory. Wrong. Captain, it is I, " + bros[2].getName() + ", who commands the ladies of this realm. Need not ask me how. Behold! Look at it! Look at the size of it! Yeah. That\'s what I thought. Fools, train all you want, you can\'t have this!}";
@@ -61645,7 +61645,7 @@ local pairs = [
     // FILE: scripts\scenarios\world\lone_wolf_scenario.nut
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]You've been traveling alone for a long time, taking part in tourneys and sparring with young nobles. A hedge knight tall as a tree, you never needed anybody for long. Is it true still?\n\n[color=#bcad8c]Lone Wolf:[/color] Start with a single experienced hedge knight and great equipment, but low funds.\n[color=#bcad8c]Elite Few:[/color] Can never have more than 12 men in your roster.\n[color=#bcad8c]Avatar:[/color] If your hedge knight dies, the campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando solo, compitiendo en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie mucho tiempo. ¿Sigue siendo así?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienza con un solo caballero errante experimentado y gran equipo, pero pocos fondos.\n[color=#bcad8c]Núcleo de élite:[/color] Nunca tendrás más de 12 hombres en tu lista.\n[color=#bcad8c]Avatar:[/color] Si tu caballero errante muere, se acaba la campaña.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando solo, compitiendo en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie mucho tiempo. ¿Sigue siendo así?\n\n[color=#bcad8c]Lobo solitario:[/color] Comienza con un solo caballero errante experimentado y gran equipo, pero pocos fondos.\n[color=#bcad8c]Núcleo de élite:[/color] Nunca tendrás más de [color=#a22424]12[/color] hombres en tu lista.\n[color=#bcad8c]Avatar:[/color] Si tu caballero errante muere, se acaba la campaña.[/p]"
     }
     {
         en = "A wandering hedge knight, you were a veteran of jousting and sparring tournaments. You were also a veteran of victory. Tis a scary thought for many, but if it were anything at all that turned your eye toward mercenary work it was boredom. Outwardly you state it is for the coin, but a part of you knows it's also for the company."
@@ -61662,7 +61662,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Constant conflict between city states and nomads makes for good business. The bulk of your outfit are captives, forced to fight to earn their freedom, and their ranks grow after each battle.\n\n[color=#bcad8c]Army of Captives:[/color] Start with two manhunters and four indebted. Take up to 16 men into battle at once. Having equal or fewer indebted than non-indebted will make your men dissatisfied.\n[color=#bcad8c]Overseers:[/color] All non-indebted can whip indebted in combat to reset their morale and buff their stats.\n[color=#bcad8c]Captives:[/color] Indebted earn 10% more experience, are capped at level 7, and will die if struck down.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Las guerras entre ciudades-estado y nómadas son buen negocio. Tu tropa, sobre todo cautivos que luchan por su libertad, crece con cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazahombres y cuatro endeudados, y lleva hasta 16 hombres a la batalla. Si no hay más endeudados que libres, tus hombres se descontentan.\n[color=#bcad8c]Supervisores:[/color] En combate, los libres pueden azotar a los endeudados para reanimarlos y potenciarlos.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, no pasan del nivel 7 y mueren si caen.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Las guerras entre ciudades-estado y nómadas son buen negocio. Tu tropa, sobre todo cautivos que luchan por su libertad, crece con cada batalla.\n\n[color=#bcad8c]Ejército de cautivos:[/color] Comienza con dos cazahombres y cuatro endeudados, y lleva hasta [color=#1e861e]16[/color] hombres a la batalla. Si no hay más endeudados que libres, tus hombres se descontentan.\n[color=#bcad8c]Supervisores:[/color] En combate, los libres pueden azotar a los endeudados para reanimarlos y potenciarlos.\n[color=#bcad8c]Cautivos:[/color] Los endeudados ganan un [color=#1e861e]10%[/color] más de experiencia, no pasan del nivel [color=#a22424]7[/color] y mueren si caen.[/p]"
     }
     {
         en = "\x7bIn a sense, you don't particularly care for %name%. He's not hateful nor forgiving toward the prisoners of war, criminals, and the like. He just handles his business. But he's also this calm, unwavering way with you, and it's a bit bothersome. The man has so much potential, which is why you have him onboard for the %companyname%, but you just wished he showed some passion now and again.\x7d"
@@ -61741,7 +61741,7 @@ local pairs = [
     }
     {
         en = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]It started as a ragtag militia made up of anyone brave or desperate enough to volunteer for defending their homes, but has grown into a small army. An army that needs to be fed each day. Perhaps the militia's services could be rented out?\n\n[color=#bcad8c]Peasant Army:[/color] Start with a roster of 12 poorly equipped peasants.\n[color=#bcad8c]Human Wave[/color]: Take up to 16 men into battle at once, and have up to 25 in your roster.\n[color=#bcad8c]Dirty Peasants[/color]: Can never hire anyone that isn't a lowborn peasant.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Empezó como una milicia improvisada de cualquiera lo bastante valiente o desesperado para defender su hogar, pero ha crecido hasta ser un pequeño ejército. Un ejército que hay que alimentar cada día. ¿Y si se alquilaran los servicios de la milicia?\n\n[color=#bcad8c]Ejército de campesinos:[/color] Comienza con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Marea humana[/color]: Lleva hasta 16 hombres a la batalla a la vez y ten hasta 25 en tu lista.\n[color=#bcad8c]Sucios plebeyos[/color]: Nunca podrás contratar a nadie que no sea un campesino o plebeyo.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_141.png[/img][/p][p]Empezó como una milicia improvisada de cualquiera lo bastante valiente o desesperado para defender su hogar, pero ha crecido hasta ser un pequeño ejército. Un ejército que hay que alimentar cada día. ¿Y si se alquilaran los servicios de la milicia?\n\n[color=#bcad8c]Ejército de campesinos:[/color] Comienza con una lista de 12 campesinos mal equipados.\n[color=#bcad8c]Marea humana[/color]: Lleva hasta [color=#1e861e]16[/color] hombres a la batalla a la vez y ten hasta [color=#1e861e]25[/color] en tu lista.\n[color=#bcad8c]Sucios plebeyos[/color]: Nunca podrás contratar a nadie que no sea un campesino o plebeyo.[/p]"
     }
     {
         en = "Lost many a friend in battle"
@@ -61951,7 +61951,7 @@ local pairs = [
     // FILE: scripts\scenarios\world\trader_scenario.nut
     {
         en = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]You're running a small trade caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there's rumors of even worse things out there.\n\n[color=#bcad8c]Caravan:[/color] Start with two caravan hands in your employ.\n[color=#bcad8c]Trader:[/color] Get 10% better prices for buying and selling.\n[color=#bcad8c]Not a Warrior:[/color] Start with no renown, and gain renown at only 66% the normal rate.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Estás dirigiendo una pequeña caravana comercial y la mayoría de tus coronas están invertidas en bienes de comercio. Pero los caminos se han vuelto peligrosos: bandidos y pieles verdes acechan, y hay rumores de cosas aún peores por ahí.\n\n[color=#bcad8c]Caravana:[/color] Comienza con dos ayudantes de caravana a tu servicio.\n[color=#bcad8c]Comerciante:[/color] Obtén un 10% mejores precios al comprar y vender.\n[color=#bcad8c]No son Guerreros:[/color] Comienzas sin renombre y ganas renombre a solo el 66% de la tasa normal.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Estás dirigiendo una pequeña caravana comercial y la mayoría de tus coronas están invertidas en bienes de comercio. Pero los caminos se han vuelto peligrosos: bandidos y pieles verdes acechan, y hay rumores de cosas aún peores por ahí.\n\n[color=#bcad8c]Caravana:[/color] Comienza con dos ayudantes de caravana a tu servicio.\n[color=#bcad8c]Comerciante:[/color] Obtén un [color=#1e861e]10%[/color] mejores precios al comprar y vender.\n[color=#bcad8c]No son Guerreros:[/color] Comienzas sin renombre y ganas renombre a solo el [color=#a22424]66%[/color] de la tasa normal.[/p]"
     }
     {
         en = "Encountered another caravan slaughtered by greenskins"
@@ -62121,7 +62121,7 @@ local pairs = [
     }
     {
         en = "A strike that can cover the distance of 2 tiles. Its effect can be felt through the thickest of armor."
-        es = "Un golpe que puede cubrir una distancia de 2 casillas. Su efecto se puede sentir a través de la armadura más gruesa."
+        es = "Un golpe que puede cubrir una distancia de [color=#135213]2[/color] casillas. Su efecto se puede sentir a través de la armadura más gruesa."
     }
     {
         en = "Hammered to death"
@@ -62152,7 +62152,7 @@ local pairs = [
     }
     {
         en = "Give to an adjacent ally or eat yourself strange mushrooms to enter a state of trance-like rage with no regard for your safety. May result in sickness. The effect will slowly wear off over 4 turns. Can not be used while engaged in melee, and anyone receiving the item needs to have a free bag slot."
-        es = "Dale a un aliado adyacente o cómete estos hongos extraños para entrar en un estado de ira parecido a un trance guerrero sin tener en cuenta tu seguridad. Puede resultar en 'Enfermo'. El efecto desaparecerá lentamente a lo largo de 4 turnos. No se puede usar mientras se está en combate cuerpo a cuerpo, y cualquiera que reciba el artículo debe tener un espacio libre en la bolsa."
+        es = "Dale a un aliado adyacente o cómete estos hongos extraños para entrar en un estado de ira parecido a un trance guerrero sin tener en cuenta tu seguridad. Puede resultar en 'Enfermo'. El efecto desaparecerá lentamente a lo largo de [color=#135213]4[/color] turnos. No se puede usar mientras se está en combate cuerpo a cuerpo, y cualquiera que reciba el artículo debe tener un espacio libre en la bolsa."
     }
     {
         // text = "Grants [color=" + this.Const.UI.Color.PositiveValue + "]+40%[/color] Damage in Melee"
@@ -62254,11 +62254,11 @@ local pairs = [
     }
     {
         en = "Can hit up to 3 targets"
-        es = "Puede alcanzar hasta 3 objetivos"
+        es = "Puede alcanzar hasta [color=#135213]3[/color] objetivos"
     }
     {
         en = "Can hit up to 6 targets"
-        es = "Puede alcanzar hasta 6 objetivos"
+        es = "Puede alcanzar hasta [color=#135213]6[/color] objetivos"
     }
     {
         en = "Leaves a cloud of miasma on target tiles"
@@ -62271,7 +62271,7 @@ local pairs = [
     }
     {
         en = "Strike a target with a weaponized censer and leave a harmful miasma in the attack's wake. Somewhat unpredictable, but able to strike at a distance of 2 tiles and over or around shield cover with a bit of luck and skill."
-        es = "Golpea a un objetivo con un incensario convertido en arma y deja una estela de miasma dañino. Es algo impredecible, pero puede golpear a una distancia de 2 casillas y por encima o alrededor de la cobertura del escudo con un poco de suerte y habilidad."
+        es = "Golpea a un objetivo con un incensario convertido en arma y deja una estela de miasma dañino. Es algo impredecible, pero puede golpear a una distancia de [color=#135213]2[/color] casillas y por encima o alrededor de la cobertura del escudo con un poco de suerte y habilidad."
     }
     {
         en = "Pounded to death"
@@ -62351,7 +62351,7 @@ local pairs = [
         // text = "Inflicts additional stacking [color=" + this.Const.UI.Color.DamageValue + "]" + dmg + "[/color] bleeding damage per turn, for 2 turns"
         mode = "pattern"
         en = "Inflicts additional stacking <bleeddamage:val_tag> bleeding damage per turn, for 2 turns"
-        es = "Inflige <bleeddamage> daño de sangrado acumulable adicional por turno, durante 2 turnos"
+        es = "Inflige <bleeddamage> daño de sangrado acumulable adicional por turno, durante [color=#135213]2[/color] turnos"
     }
     // FILE: scripts\skills\actives\coat_with_poison_skill.nut
     {
@@ -62427,7 +62427,7 @@ local pairs = [
     }
     {
         en = "A heavy strike to make the enemy formation crumble. It can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most other melee weapons."
-        es = "Un fuerte golpe para desmoronar la formación enemiga. Puede cubrir la distancia de 2 casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las otras armas cuerpo a cuerpo."
+        es = "Un fuerte golpe para desmoronar la formación enemiga. Puede cubrir la distancia de [color=#135213]2[/color] casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las otras armas cuerpo a cuerpo."
     }
     // FILE: scripts\skills\actives\crush_armor.nut
     {
@@ -62566,7 +62566,7 @@ local pairs = [
     }
     {
         en = "Grants immunity to Poison for 3 turns"
-        es = "Otorga inmunidad al Veneno por 3 turnos."
+        es = "Otorga inmunidad al Veneno por [color=#135213]3[/color] turnos."
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(user) + " drinks Antidote");
@@ -62981,7 +62981,7 @@ local pairs = [
     // FILE: scripts\skills\actives\hook.nut
     {
         en = "A target 2 tiles away is hooked and pulled close if there is space. Anyone hit will be staggered and lose initiative. A target can not be pulled up a level of height, but may take damage if it is pulled down several levels of height at once. Shieldwall, Spearwall and Riposte will be canceled for a successfully hooked-in target. A rooted target can not be hooked."
-        es = "Un objetivo a 2 casillas de distancia es enganchado y atraído si hay espacio. Cualquiera que sea alcanzado quedará asombrado y perderá la iniciativa. Un objetivo no puede subir un nivel de altura, pero puede sufrir daños si se baja varios niveles de altura a la vez. Muro de escudos, Muro de lanzas y Contrataque se cancelarán si el objetivo se engancha con éxito. Un objetivo enraizado no puede ser enganchado."
+        es = "Un objetivo a [color=#135213]2[/color] casillas de distancia es enganchado y atraído si hay espacio. Cualquiera que sea alcanzado quedará asombrado y perderá la iniciativa. Un objetivo no puede subir un nivel de altura, pero puede sufrir daños si se baja varios niveles de altura a la vez. Muro de escudos, Muro de lanzas y Contrataque se cancelarán si el objetivo se engancha con éxito. Un objetivo enraizado no puede ser enganchado."
     }
     {
         // text = "Has a [color=" + this.Const.UI.Color.PositiveValue + "]100%[/color] chance to stagger on a hit"
@@ -63048,7 +63048,7 @@ local pairs = [
     // FILE: scripts\skills\actives\impale.nut
     {
         en = "A thrusting attack that can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most melee weapons."
-        es = "Un ataque punzante que puede cubrir una distancia de 2 casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las armas cuerpo a cuerpo."
+        es = "Un ataque punzante que puede cubrir una distancia de [color=#135213]2[/color] casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las armas cuerpo a cuerpo."
     }
     {
         en = "Impaled"
@@ -63226,7 +63226,7 @@ local pairs = [
     }
     {
         en = "A swift lunge towards a target 2 tiles away, followed by a precise thrusting attack to catch them unprepared. The faster you are, the more damage you do."
-        es = "Una rápida estocada hacia un objetivo a 2 casillas de distancia, seguida de un ataque preciso para atraparlo desprevenido. Cuanto más rápido eres, más daño haces."
+        es = "Una rápida estocada hacia un objetivo a [color=#135213]2[/color] casillas de distancia, seguida de un ataque preciso para atraparlo desprevenido. Cuanto más rápido eres, más daño haces."
     }
     {
         en = "Sliced up"
@@ -63403,17 +63403,17 @@ local pairs = [
         // text = "Triggers a morale check to rally fleeing allies within 4 tiles distance, with a bonus to Resolve of [color=" + this.Const.UI.Color.PositiveValue + "]+" + bravery + "[/color] based on this character\'s Resolve"
         mode = "pattern"
         en = "Triggers a morale check to rally fleeing allies within 4 tiles distance, with a bonus to Resolve of <bravery:val_tag> based on this character's Resolve"
-        es = "Activa un chequeo de moral para reunir a los aliados que están Huyendo dentro de una distancia de 4 casillas, con un bono a la Resolución de <bravery> basado en la Resolución de este personaje"
+        es = "Activa un chequeo de moral para reunir a los aliados que están Huyendo dentro de una distancia de [color=#135213]4[/color] casillas, con un bono a la Resolución de <bravery> basado en la Resolución de este personaje"
     }
     {
         // text = "Triggers a morale check to raise the morale of anyone wavering or worse within 4 tiles distance, with a bonus to Resolve of [color=" + this.Const.UI.Color.PositiveValue + "]+" + bravery + "[/color] based on this character\'s Resolve, but lowered by [color=" + this.Const.UI.Color.NegativeValue + "]-10[/color] per tile distance"
         mode = "pattern"
         en = "Triggers a morale check to raise the morale of anyone wavering or worse within 4 tiles distance, with a bonus to Resolve of <bravery:val_tag> based on this character's Resolve, but lowered by <v:int_tag> per tile distance"
-        es = "Activa un chequeo de moral para elevar la moral de cualquiera que esté Vacilante o peor. dentro de una distancia de 4 casillas, con un bono a la Resolución de <bravery> basado en la Resolución de este personaje, pero disminuyendo <v> por casilla de distancia"
+        es = "Activa un chequeo de moral para elevar la moral de cualquiera que esté Vacilante o peor. dentro de una distancia de [color=#135213]4[/color] casillas, con un bono a la Resolución de <bravery> basado en la Resolución de este personaje, pero disminuyendo <v> por casilla de distancia"
     }
     {
         en = "Removes the Sleeping status effect of allies within 4 tiles distance"
-        es = "Elimina el efecto de estado de Durmiendo de los aliados dentro de una distancia de 4 casillas"
+        es = "Elimina el efecto de estado de Durmiendo de los aliados dentro de una distancia de [color=#135213]4[/color] casillas"
     }
     {
         // text = "[color=" + this.Const.UI.Color.NegativeValue + "]Can not rally others the same turn as being rallied himself[/color]"
@@ -63446,7 +63446,7 @@ local pairs = [
     }
     {
         en = "Release your falcon to gain vision of the surrounding 12 tiles for the duration of the current round. Can be used once per battle."
-        es = "Libera tu halcón para obtener visión de las 12 casillas circundantes durante la ronda actual. Se puede usar una vez por batalla."
+        es = "Libera tu halcón para obtener visión de las [color=#135213]12[/color] casillas circundantes durante la ronda actual. Se puede usar una vez por batalla."
     }
     // FILE: scripts\skills\actives\reload_bolt.nut
     {
@@ -63539,7 +63539,7 @@ local pairs = [
     }
     {
         en = "A thrusting attack that can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most melee weapons, and can tear bleeding wounds if not stopped by armor."
-        es = "Un ataque perforante que puede cubrir una distancia de 2 casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las armas cuerpo a cuerpo. Además, puede provocar heridas sangrantes si no lo detiene la armadura."
+        es = "Un ataque perforante que puede cubrir una distancia de [color=#135213]2[/color] casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las armas cuerpo a cuerpo. Además, puede provocar heridas sangrantes si no lo detiene la armadura."
     }
     {
         // text = "Inflicts additional [color=" + this.Const.UI.Color.DamageValue + "]" + 10 + "[/color] bleeding damage over time if not stopped by armor"
@@ -63842,7 +63842,7 @@ local pairs = [
     // FILE: scripts\skills\actives\strike_skill.nut
     {
         en = "A sweeping strike that can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most other melee weapons."
-        es = "Un golpe de barrido que puede cubrir una distancia de 2 casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las otras armas cuerpo a cuerpo."
+        es = "Un golpe de barrido que puede cubrir una distancia de [color=#135213]2[/color] casillas y puede usarse desde detrás de la línea del frente, fuera del alcance de la mayoría de las otras armas cuerpo a cuerpo."
     }
     {
         // text = "Has [color=" + this.Const.UI.Color.NegativeValue + "]-15%[/color] chance to hit targets directly adjacent"
@@ -63929,7 +63929,7 @@ local pairs = [
         // text = "Reduces the target\'s armor by [color=" + this.Const.UI.Color.DamageValue + "]20%[/color] each turn for 3 turns."
         mode = "pattern"
         en = "Reduces the target's armor by <v:val_tag> each turn for 3 turns."
-        es = "Reduce la armadura del objetivo un <v> cada turno por 3 turnos."
+        es = "Reduce la armadura del objetivo un <v> cada turno por [color=#135213]3[/color] turnos."
     }
     // FILE: scripts\skills\actives\throw_axe.nut
     {
@@ -63998,7 +63998,7 @@ local pairs = [
         // text = "Give up to [color=" + this.Const.UI.Color.DamageValue + "]7[/color] targets the Dazed status effect for 2 turns"
         mode = "pattern"
         en = "Give up to <v:int_tag> targets the Dazed status effect for 2 turns"
-        es = "Provoca en hasta <v> objetivos el efecto de estado 'Atontado' por 2 turnos"
+        es = "Provoca en hasta <v> objetivos el efecto de estado 'Atontado' por [color=#135213]2[/color] turnos"
     }
     // FILE: scripts\skills\actives\throw_dirt_skill.nut
     {
@@ -64024,7 +64024,7 @@ local pairs = [
         // text = "Set an area of [color=" + this.Const.UI.Color.DamageValue + "]7[/color] tiles ablaze with fire for 2 rounds. Water and snow can not burn."
         mode = "pattern"
         en = "Set an area of <v:int_tag> tiles ablaze with fire for 2 rounds. Water and snow can not burn."
-        es = "Prende fuego a un área de <v> casillas por 2 turnos. El agua y la nieve no pueden arder."
+        es = "Prende fuego a un área de <v> casillas por [color=#135213]2[/color] turnos. El agua y la nieve no pueden arder."
     }
     {
         en = "Burns away existing tile effects like Smoke or Miasma"
@@ -64222,7 +64222,7 @@ local pairs = [
     }
     {
         en = "Gives the targeted indebted the 'Whipped' status effect, increasing many of their stats for 2 rounds. The higher the level of the character using this skill, the higher the increase."
-        es = "Le otorga al endeudado objetivo el efecto de estado 'Azotado', aumentando muchas de sus estadísticas durante 2 rondas. Cuanto mayor sea el nivel del personaje que usa esta habilidad, mayor será el aumento."
+        es = "Le otorga al endeudado objetivo el efecto de estado 'Azotado', aumentando muchas de sus estadísticas durante [color=#135213]2[/color] rondas. Cuanto mayor sea el nivel del personaje que usa esta habilidad, mayor será el aumento."
     }
     {
         en = "Resets the morale of the targeted indebted to 'Steady' if currently below"
