@@ -16951,7 +16951,7 @@ local pairs = [
     {
         // corrige base: "ventaja" por "perk" → "talento", según el vocabulario fijado.
         en = "Have 3 men with the bow, sling, or crossbow mastery perk"
-        es = "Tener 3 hombres con la ventaja de maestría en arco, honda o ballesta"
+        es = "Tener [color=#bcad8c]3[/color] hombres con la ventaja de maestría en arco, honda o ballesta"
     }
     // FILE: mod_legends\hooks\ambitions\ambitions\roster_of_12_ambition.nut
     // context: roster_of_12_ambition.o.create.m.SuccessText
@@ -48215,7 +48215,7 @@ local pairs = [
     // context: blacksmith_follower.o.create.m.Effects
     {
         en = "Increases repair speed by 33%"
-        es = "Aumenta la velocidad de reparación en 33%"
+        es = "Aumenta la velocidad de reparación en [color=#1e861e]33%[/color]"
     }
     // context: blacksmith_follower.o.create.addSkillRequirement()
     {
@@ -48263,7 +48263,7 @@ local pairs = [
     // context: brigand_follower.o.create.m.Effects
     {
         en = "Allows you to see up to 3 of the most valuable items that are being transporting by caravans"
-        es = "Te permite ver hasta 3 de los objetos más valiosos que transportan las caravanas"
+        es = "Te permite ver hasta [color=#1e861e]3[/color] de los objetos más valiosos que transportan las caravanas"
     }
     // context: brigand_follower.o.create.addRequirement()
     {
@@ -48316,7 +48316,7 @@ local pairs = [
     // context: cook_follower.o.create.m.Effects
     {
         en = "Makes all provisions last 4 extra days"
-        es = "Hace que todas las provisiones duren 4 días adicionales"
+        es = "Hace que todas las provisiones duren [color=#1e861e]4 días[/color] adicionales"
     }
     // context: cook_follower.o.create.addSkillRequirement()
     {
@@ -48337,7 +48337,7 @@ local pairs = [
     // context: drill_sergeant_follower.o.create.m.Effects
     {
         en = "Makes your mercenaries gain 20% more experience if they are under level 12"
-        es = "Hace que tus mercenarios ganen un 20% más de experiencia si están por debajo del nivel 12"
+        es = "Hace que tus mercenarios ganen un [color=#1e861e]20%[/color] más de experiencia si están por debajo del nivel 12"
     }
     // context: drill_sergeant_follower.o.create.m.Effects
     {
@@ -48447,7 +48447,7 @@ local pairs = [
         // format("Reduces the daily wage of each man by %s%%", ((1.0 - this.m.Multiplier) * 100).tostring()),
         mode = "pattern"
         en = "Reduces the daily wage of each man by <pct:str>%%"
-        es = "Reduce el salario diario de cada hombre en un <pct>%%"
+        es = "Reduce el salario diario de cada hombre en un [color=#1e861e]<pct>%%[/color]"
     }
     // en = "Reduces the chance of desertion by 50%"
     // en base_es
@@ -48469,12 +48469,12 @@ local pairs = [
     // context: quartermaster_follower.o.create.m.Effects
     {
         en = "Increases the amount of you can carry of ammunition by 100, medical supplies and tools by 50"
-        es = "Aumenta en 100 la munición que puedes llevar, y en 50 la medicina y las herramientas"
+        es = "Aumenta en [color=#1e861e]100[/color] la munición que puedes llevar, y en [color=#1e861e]50[/color] la medicina y las herramientas"
     }
     // context: quartermaster_follower.o.create.m.Effects
     {
         en = "Increases stash size by 27"
-        es = "Aumenta en 27 el tamaño del alijo"
+        es = "Aumenta en [color=#1e861e]27[/color] el tamaño del alijo"
     }
     // context: quartermaster_follower.o.create.addSkillRequirement()
     {
@@ -48535,7 +48535,7 @@ local pairs = [
     // context: scout_follower.o.create.m.Effects
     {
         en = "Reduces the movement penalty of difficult terrain by 15%"
-        es = "Reduce un 15% la penalización de movimiento en terreno difícil"
+        es = "Reduce un [color=#1e861e]15%[/color] la penalización de movimiento en terreno difícil"
     }
     // en = "Prevents sickness and accidents due to terrain"
     // en base_es
@@ -48613,7 +48613,7 @@ local pairs = [
         // corrige base: «algunos trofeos» por «algunos trofeos de bestias» («beast trophies»)
         // corrige base: «Rastreadores» y «Desolladores» pierden el «Expert» de «Expert Trackers» y «Expert Skinners»
         en = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]You and your kind make your living by hunting down the many beasts that beset villages on the fringes of civilization. It is dangerous work, but it pays well enough and there is always a bigger beast to slay and more crowns to earn.\n\n[color=#bcad8c]Beast Slayers:[/color] Start with three Beast Slayers and decent equipment, as well as some beast trophies. Beast Slayers gain a unique trait when fighting beasts. Chance to find others that support your cause.\n[color=#bcad8c]Expert Skulkers:[/color] See tracks from further away. Recruits gain a random Favoured Beast Enemy perk.\n[color=#bcad8c]Expert Skinners:[/color] Each beast you slay has a 50% chance to drop an additional trophy.\n[color=#bcad8c]Prejudice:[/color] Most people do not trust your kind, get 20% worse prices.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Con los tuyos te ganas la vida cazando las numerosas bestias que azotan las aldeas en los límites de la civilización. Es un trabajo peligroso, pero paga bastante bien, y siempre hay una bestia más grande que matar y más coronas que ganar.\n\n[color=#dda21f]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos de bestias. Los cazadores de bestias obtienen un rasgo único al luchar contra bestias. Posibilidad de encontrar a otros que apoyen tu causa.\n[color=#dda21f]Acechadores expertos:[/color] Puedes ver huellas desde más lejos. Los reclutas obtienen una ventaja aleatoria de enemigo predilecto contra bestias.\n[color=#dda21f]Desolladores expertos:[/color] Cada bestia que mates tiene un 50% de probabilidad de soltar un trofeo adicional.\n[color=#dda21f]Prejuicio:[/color] La mayoría de las personas no confían en los de tu tipo; obtienes precios un 20% peores.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_122.png[/img][/p][p]Con los tuyos te ganas la vida cazando las numerosas bestias que azotan las aldeas en los límites de la civilización. Es un trabajo peligroso, pero paga bastante bien, y siempre hay una bestia más grande que matar y más coronas que ganar.\n\n[color=#dda21f]Cazadores de bestias:[/color] Comienza con tres cazadores de bestias, equipo decente y algunos trofeos de bestias. Los cazadores de bestias obtienen un rasgo único al luchar contra bestias. Posibilidad de encontrar a otros que apoyen tu causa.\n[color=#dda21f]Acechadores expertos:[/color] Puedes ver huellas desde más lejos. Los reclutas obtienen una ventaja aleatoria de enemigo predilecto contra bestias.\n[color=#dda21f]Desolladores expertos:[/color] Cada bestia que mates tiene un [color=#1e861e]50%[/color] de probabilidad de soltar un trofeo adicional.\n[color=#dda21f]Prejuicio:[/color] La mayoría de las personas no confían en los de tu tipo; obtienes precios un [color=#a22424]20%[/color] peores.[/p]"
     }
     // en = "Has slain a dangerous witch"
     // en base_es
@@ -48662,7 +48662,7 @@ local pairs = [
     // context: cultists_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul awaits. You lead a small flock devoted to the elder god, and it is time to spread the word. Find more followers, acquire riches, and please Davkul with sacrifices.\n\n[color=#bcad8c]Cultists:[/color] Start with a group of five cultists and encounter fanatical special cultists in towns.\n[color=#bcad8c]Sacrifices:[/color] Davkul will occasionally demand sacrifices from you, but also bestow boons upon those loyal to him. Davkul will not sacrifice his chosen elite. Cultists cost 25% less to hire and maintain.\n[color=#c90000]Let the Blood Flow:[/color] All cultists gain bonus melee skill and the [color=#008060]True Believer[/color] perk.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul aguarda. Guías a un pequeño rebaño consagrado al dios antiguo, y es hora de difundir la palabra. Encuentra más seguidores, consigue riquezas y complace a Davkul con sacrificios.\n\n[color=#dda21f]Cultistas:[/color] Comienza con un grupo de cinco cultistas y encuentra cultistas fanáticos especiales en las ciudades.\n[color=#dda21f]Sacrificios:[/color] De vez en cuando, Davkul te exigirá sacrificios, pero también concederá dones a quienes le sean leales. Davkul no sacrificará a sus elegidos de élite. Contratar y mantener cultistas cuesta un 25% menos.\n[color=#c90000]Que fluya la sangre:[/color] Todos los cultistas obtienen una bonificación de Habilidad cuerpo a cuerpo y la ventaja [color=#008060]Verdadero creyente[/color].[/p]"
+        es = "[p=c][img]gfx/ui/events/event_140.png[/img][/p][p]Davkul aguarda. Guías a un pequeño rebaño consagrado al dios antiguo, y es hora de difundir la palabra. Encuentra más seguidores, consigue riquezas y complace a Davkul con sacrificios.\n\n[color=#dda21f]Cultistas:[/color] Comienza con un grupo de cinco cultistas y encuentra cultistas fanáticos especiales en las ciudades.\n[color=#dda21f]Sacrificios:[/color] De vez en cuando, Davkul te exigirá sacrificios, pero también concederá dones a quienes le sean leales. Davkul no sacrificará a sus elegidos de élite. Contratar y mantener cultistas cuesta un [color=#1e861e]25%[/color] menos.\n[color=#c90000]Que fluya la sangre:[/color] Todos los cultistas obtienen una bonificación de Habilidad cuerpo a cuerpo y la ventaja [color=#008060]Verdadero creyente[/color].[/p]"
     }
     // context: cultists_scenario.o.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -48761,7 +48761,7 @@ local pairs = [
     // context: gladiators_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]You've fought in the arenas of the south for years. First for your freedom, then for crowns, and finally to become immortal. What else does fate have in stock for you?\n\n[color=#bcad8c]Gladiators:[/color] Start with three experienced gladiators with good equipment, but very high daily wages.\n[color=#bcad8c]Legends of the Arena:[/color] Each gladiator has a unique trait in combat.\n[color=#bcad8c]Glorious Three:[/color] You can never have more than 16 fighters in your roster, and if all of your three starting men should die, your campaign ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Has luchado en las arenas del sur durante años. Primero por tu libertad, luego por coronas y finalmente para volverte inmortal. ¿Qué más tiene el destino en reserva para ti?\n\n[color=#dda21f]Gladiadores:[/color] Comienzas con tres gladiadores experimentados con buen equipo, pero con salarios diarios muy altos.\n[color=#dda21f]Leyendas de la Arena:[/color] Cada gladiador tiene un rasgo único en combate.\n[color=#dda21f]Los Gloriosos Tres:[/color] Nunca puedes tener más de 16 luchadores en tu lista y si tus tres hombres iniciales mueren, tu campaña termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_155.png[/img][/p][p]Has luchado en las arenas del sur durante años. Primero por tu libertad, luego por coronas y finalmente para volverte inmortal. ¿Qué más tiene el destino en reserva para ti?\n\n[color=#dda21f]Gladiadores:[/color] Comienzas con tres gladiadores experimentados con buen equipo, pero con salarios diarios muy altos.\n[color=#dda21f]Leyendas de la Arena:[/color] Cada gladiador tiene un rasgo único en combate.\n[color=#dda21f]Los Gloriosos Tres:[/color] Nunca puedes tener más de [color=#a22424]16[/color] luchadores en tu lista y si tus tres hombres iniciales mueren, tu campaña termina.[/p]"
     }
     // en = "the Lion"
     // en base_es
@@ -48785,7 +48785,7 @@ local pairs = [
     // context: lone_wolf_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]You have been traveling for a long time, taking part in tourneys and sparring with young nobles. A hedge knight as tall as a tree, you never needed anybody for long. Is it true still?\n\n[color=#bcad8c]Lone Wolf:[/color] Start with a single experienced hedge knight with great equipment but low funds. All encounters are two-thirds harder than normal.\n[color=#bcad8c]Elite Few:[/color] Can never have more than 12 fighters in your roster. You may encounter other champions and special allies through events to join your cause.\n[color=#bcad8c]Avatar:[/color] If your lone wolf dies, the campaign ends.\n[color=#c90000]Living Legend:[/color] As your renown grows, the more recruits will be present in towns. Higher renown increases quality of hires, but you will start with being unable to hire anyone.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando, participando en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie por mucho tiempo. ¿Sigue siendo así?\n\n[color=#dda21f]Lobo solitario:[/color] Comienzas con un único caballero errante experimentado, con un equipo excelente pero pocos fondos. Todos los enfrentamientos son dos tercios más difíciles de lo normal.\n[color=#dda21f]Pocos pero selectos:[/color] Nunca puedes tener más de 12 luchadores en tu lista. Mediante eventos, puedes encontrar a otros campeones y aliados especiales que se unan a tu causa.\n[color=#dda21f]Avatar:[/color] Si tu lobo solitario muere, la campaña termina.\n[color=#c90000]Leyenda viviente:[/color] Cuanto más crezca tu renombre, más reclutas habrá en las ciudades. Un mayor renombre aumenta la calidad de las contrataciones, pero al principio no podrás contratar a nadie.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_35.png[/img][/p][p]Llevas mucho tiempo viajando, participando en torneos y entrenando con jóvenes nobles. Caballero errante alto como un árbol, nunca has necesitado a nadie por mucho tiempo. ¿Sigue siendo así?\n\n[color=#dda21f]Lobo solitario:[/color] Comienzas con un único caballero errante experimentado, con un equipo excelente pero pocos fondos. Todos los enfrentamientos son dos tercios más difíciles de lo normal.\n[color=#dda21f]Pocos pero selectos:[/color] Nunca puedes tener más de [color=#c90000]12[/color] luchadores en tu lista. Mediante eventos, puedes encontrar a otros campeones y aliados especiales que se unan a tu causa.\n[color=#dda21f]Avatar:[/color] Si tu lobo solitario muere, la campaña termina.\n[color=#c90000]Leyenda viviente:[/color] Cuanto más crezca tu renombre, más reclutas habrá en las ciudades. Un mayor renombre aumenta la calidad de las contrataciones, pero al principio no podrás contratar a nadie.[/p]"
     }
     // en = "the Lone Wolf"
     // en base_es
@@ -48832,7 +48832,7 @@ local pairs = [
     {
         // corrige base: «tus filas crecen» por «sus filas crecen»: «their ranks» son las filas de los cautivos
         en = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]Constant conflict between city states and nomads makes for good business. The bulk of your outfit are captives, forced to fight to earn their freedom, and their ranks grow after each battle.\n\n[color=#bcad8c]Army of Captives:[/color] Start with two manhunters and four indebted. Take up to 16 men into battle at once. Having equal or fewer indebted than non-indebted will make your men dissatisfied.\n[color=#bcad8c]Overseers:[/color] All non-indebted can whip indebted in combat to reset their morale and buff their stats.\n[color=#bcad8c]Captives:[/color] Indebted earn 10% more experience, are capped at level 7, and will die if struck down. However, they are 50% cheaper to buy in towns.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El constante conflicto entre las ciudades-estado y los nómadas es un buen negocio. La mayoría de tu grupo son cautivos, obligados a luchar para ganar su libertad, y sus filas crecen después de cada batalla.\n\n[color=#dda21f]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados. Puedes llevar hasta 16 hombres a la batalla al mismo tiempo. Tener igual o menos endeudados que hombres libres hará que tus hombres estén insatisfechos.\n[color=#dda21f]Supervisores:[/color] Todos los no endeudados pueden azotar a los endeudados en combate para restablecer su moral y mejorar sus estadísticas.\n[color=#dda21f]Cautivos:[/color] Los endeudados ganan un 10% más de experiencia, tienen un límite de nivel 7 y morirán si son derribados en combate. Sin embargo, comprarlos en las ciudades cuesta un 50% menos.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_172.png[/img][/p][p]El constante conflicto entre las ciudades-estado y los nómadas es un buen negocio. La mayoría de tu grupo son cautivos, obligados a luchar para ganar su libertad, y sus filas crecen después de cada batalla.\n\n[color=#dda21f]Ejército de cautivos:[/color] Comienza con dos cazadores de hombres y cuatro endeudados. Puedes llevar hasta [color=#1e861e]16[/color] hombres a la batalla al mismo tiempo. Tener igual o menos endeudados que hombres libres hará que tus hombres estén insatisfechos.\n[color=#dda21f]Supervisores:[/color] Todos los no endeudados pueden azotar a los endeudados en combate para restablecer su moral y mejorar sus estadísticas.\n[color=#dda21f]Cautivos:[/color] Los endeudados ganan un [color=#1e861e]10%[/color] más de experiencia, tienen un límite de nivel [color=#a22424]7[/color] y morirán si son derribados en combate. Sin embargo, comprarlos en las ciudades cuesta un [color=#1e861e]50%[/color] menos.[/p]"
     }
     // en = "the Stoic"
     // en base_es
@@ -49119,7 +49119,7 @@ local pairs = [
     // context: trader_scenario.o.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]You are running a small trading caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there are rumors of even worse things out there.\n\n [color=#bcad8c]Not a Warrior:[/color] Start with no renown, every non-combat recruit gains the Peaceable perk. Professional soldiers will cost 25% more and have a high chance of having additional bad traits and be less eager to stick around if things get tough. Cannot recruit outlaws.\n [color=#bcad8c]Avatar:[/color] Start with a cunning and wealthy merchant, the caravan will be dissolved if they die.\n [color=#bcad8c]Bribery:[/color] Pay off human enemies instead of fighting them. Peddlers cost 25% less.\n\n"
-        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]Diriges una pequeña caravana comercial y tienes la mayor parte de tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pieles verdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n [color=#dda21f]No eres un guerrero:[/color] Comienzas sin renombre y cada recluta no combatiente obtiene la ventaja Pacífico. Los soldados profesionales cuestan un 25% más, tienen muchas probabilidades de tener rasgos negativos adicionales y estarán menos dispuestos a quedarse si las cosas se ponen difíciles. No puedes reclutar proscritos.\n [color=#dda21f]Avatar:[/color] Comienzas con una figura mercantil de gran astucia y fortuna; si muere, la caravana se disolverá.\n [color=#dda21f]Soborno:[/color] Paga a los enemigos humanos en lugar de luchar contra ellos. Los vendedores ambulantes cuestan un 25% menos.\n\n"
+        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p]Diriges una pequeña caravana comercial y tienes la mayor parte de tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pieles verdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n [color=#dda21f]No eres un guerrero:[/color] Comienzas sin renombre y cada recluta no combatiente obtiene la ventaja Pacífico. Los soldados profesionales cuestan un [color=#a22424]25%[/color] más, tienen muchas probabilidades de tener rasgos negativos adicionales y estarán menos dispuestos a quedarse si las cosas se ponen difíciles. No puedes reclutar proscritos.\n [color=#dda21f]Avatar:[/color] Comienzas con una figura mercantil de gran astucia y fortuna; si muere, la caravana se disolverá.\n [color=#dda21f]Soborno:[/color] Paga a los enemigos humanos en lugar de luchar contra ellos. Los vendedores ambulantes cuestan un [color=#1e861e]25%[/color] menos.\n\n"
     }
     // en = "Encountered another caravan slaughtered by greenskins"
     // en base_es
@@ -49350,13 +49350,13 @@ local pairs = [
         // corrige base: «Inflige <bleeddamage> daño» por «Inflige <bleeddamage> de daño»: falta la preposición tras la cifra
         mode = "pattern"
         en = "Inflicts additional stacking [color=%damage%]<dmg:int>[/color] bleeding damage per turn, for 2 turns"
-        es = "Inflige [color=%damage%]<dmg>[/color] de daño de sangrado acumulable adicional por turno, durante 2 turnos"
+        es = "Inflige [color=%damage%]<dmg>[/color] de daño de sangrado acumulable adicional por turno, durante [color=%damage%]2[/color] turnos"
     }
     // FILE: mod_legends\hooks\skills\actives\coat_with_poison_skill.nut
     // context: coat_with_poison_skill.o.create.m.Description
     {
         en = "Coat your weapons and arrowtips with poison. Can not be used while engaged in melee. Costs 0 Action Points during the first round of combat."
-        es = "Recubre tus armas y puntas de flecha con veneno. No se puede utilizar mientras se está en combate cuerpo a cuerpo. Cuesta 0 Puntos de acción durante la primera ronda de combate."
+        es = "Recubre tus armas y puntas de flecha con veneno. No se puede utilizar mientras se está en combate cuerpo a cuerpo. Cuesta [color=#135213]0[/color] Puntos de acción durante la primera ronda de combate."
     }
     // FILE: mod_legends\hooks\skills\actives\crush_armor.nut
     // context: crush_armor.o.create.m.Description
@@ -49540,7 +49540,7 @@ local pairs = [
     // context: hook.o.setItem.m.Description
     {
         en = "A target up to 3 tiles away is hooked and pulled close if there is space. Anyone hit will be staggered and lose initiative. A target can not be pulled up a level of height, but may take damage if it is pulled down several levels of height at once. Shieldwall, Spearwall and Riposte will be canceled for a successfully hooked-in target. A rooted target can not be hooked."
-        es = "Un objetivo a hasta 3 casillas de distancia es enganchado y atraído si hay espacio. Cualquiera que sea alcanzado quedará tambaleante y perderá iniciativa. No se puede atraer a un objetivo a un nivel de altura superior, pero puede recibir daño si se le hace bajar varios niveles de altura a la vez. Muro de escudos, Muro de lanzas y Contraataque se cancelan en un objetivo enganchado con éxito. Un objetivo inmovilizado no puede ser enganchado."
+        es = "Un objetivo a hasta [color=#135213]3[/color] casillas de distancia es enganchado y atraído si hay espacio. Cualquiera que sea alcanzado quedará tambaleante y perderá iniciativa. No se puede atraer a un objetivo a un nivel de altura superior, pero puede recibir daño si se le hace bajar varios niveles de altura a la vez. Muro de escudos, Muro de lanzas y Contraataque se cancelan en un objetivo enganchado con éxito. Un objetivo inmovilizado no puede ser enganchado."
     }
     // FILE: mod_legends\hooks\skills\actives\ignite_firelance_skill.nut
     // en = "Can hit up to 2 targets"
@@ -49610,7 +49610,7 @@ local pairs = [
     // context: knock_out.o.setItem.m.Description
     {
         en = "A heavy blow intended to daze anyone unlucky enough to be hit for one turn, but not to do the most damage. Dazed targets have their damage, initiative and stamina reduced by 35%"
-        es = "Un golpe contundente destinado a atontar durante un turno a quien tenga la mala suerte de recibirlo, más que a causar el mayor daño posible. Los objetivos atontados ven reducidos su daño, su iniciativa y su aguante en un 35%"
+        es = "Un golpe contundente destinado a atontar durante un turno a quien tenga la mala suerte de recibirlo, más que a causar el mayor daño posible. Los objetivos atontados ven reducidos su daño, su iniciativa y su aguante en un [color=#8f1e1e]35%[/color]"
     }
     // context: knock_out.o.setItem.m.Name
     {
@@ -49683,7 +49683,7 @@ local pairs = [
     // context: lunge_skill.o.setItem.m.Description
     {
         en = "A stronger lunge towards a target 2 tiles away, followed by a precise thrusting attack to catch them unprepared. The faster you are, the more damage you do."
-        es = "Una arremetida más potente hacia un objetivo a 2 casillas de distancia, seguida de una estocada precisa para sorprenderlo con la guardia baja. Cuanta más velocidad tengas, más daño harás."
+        es = "Una arremetida más potente hacia un objetivo a [color=#135213]2[/color] casillas de distancia, seguida de una estocada precisa para sorprenderlo con la guardia baja. Cuanta más velocidad tengas, más daño harás."
     }
     // FILE: mod_legends\hooks\skills\actives\perfect_focus.nut
     // context: perfect_focus.o.getTooltip.ret.text
@@ -49737,14 +49737,14 @@ local pairs = [
         // text = "Triggers a morale check to rally fleeing allies within 4 tiles distance, with a bonus to Resolve of [color=%positive%]+" + bravery + "[/color] based on this character\'s Resolve"
         mode = "pattern"
         en = "Triggers a morale check to rally fleeing allies within 4 tiles distance, with a bonus to Resolve of [color=%positive%]+<bravery:int>[/color] based on this character's Resolve"
-        es = "Activa un chequeo de moral para reunir a los aliados que están Huyendo dentro de una distancia de 4 casillas, con un bono a la Resolución de [color=%positive%]+<bravery>[/color] basado en la Resolución de este personaje"
+        es = "Activa un chequeo de moral para reunir a los aliados que están Huyendo dentro de una distancia de [color=%positive%]4[/color] casillas, con un bono a la Resolución de [color=%positive%]+<bravery>[/color] basado en la Resolución de este personaje"
     }
     // context: rally_the_troops.o.getTooltip.tooltip.text
     {
         // text = "Triggers a morale check to raise the morale of anyone wavering or worse within 4 tiles distance, with a bonus to Resolve of [color=%positive%]+" + bravery + "[/color] based on this character\'s Resolve, but lowered by [color=%negative%]-10[/color] per tile distance"
         mode = "pattern"
         en = "Triggers a morale check to raise the morale of anyone wavering or worse within 4 tiles distance, with a bonus to Resolve of [color=%positive%]+<bravery:int>[/color] based on this character's Resolve, but lowered by [color=%negative%]-10[/color] per tile distance"
-        es = "Activa un chequeo de moral para elevar la moral de cualquiera que esté vacilante o peor dentro de una distancia de 4 casillas, con un bono a la Resolución de [color=%positive%]+<bravery>[/color] basado en la Resolución de este personaje, pero reducido en [color=%negative%]-10[/color] por cada casilla de distancia"
+        es = "Activa un chequeo de moral para elevar la moral de cualquiera que esté vacilante o peor dentro de una distancia de [color=%positive%]4[/color] casillas, con un bono a la Resolución de [color=%positive%]+<bravery>[/color] basado en la Resolución de este personaje, pero reducido en [color=%negative%]-10[/color] por cada casilla de distancia"
     }
     // context: rally_the_troops.o.getTooltip.tooltip.text
     {
@@ -49763,7 +49763,7 @@ local pairs = [
     {
         // corrige base: falta la preposición en "Inflige <bleeddamage> daño"; debe ser "Inflige <bleeddamage> de daño"
         en = "Inflicts additional stacking [color=%damage%]5[/color] bleeding damage per turn, for 2 turns"
-        es = "Inflige [color=%damage%]5[/color] de daño de sangrado acumulable adicional por turno, durante 2 turnos"
+        es = "Inflige [color=%damage%]5[/color] de daño de sangrado acumulable adicional por turno, durante [color=%damage%]2[/color] turnos"
     }
     // FILE: mod_legends\hooks\skills\actives\recover_skill.nut
     // context: recover_skill.o.getTooltip.ret.text
@@ -49979,7 +49979,7 @@ local pairs = [
     // context: strike_skill.o.setItem.m.Description
     {
         en = "A thrusting or sweeping strike that can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most other melee weapons."
-        es = "Una estocada o un golpe de barrido que alcanza una distancia de 2 casillas y puede usarse desde detrás de la primera línea, fuera del alcance de la mayoría de las demás armas cuerpo a cuerpo."
+        es = "Una estocada o un golpe de barrido que alcanza una distancia de [color=#135213]2[/color] casillas y puede usarse desde detrás de la primera línea, fuera del alcance de la mayoría de las demás armas cuerpo a cuerpo."
     }
     // en = "A sweeping strike that can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most other melee weapons."
     // en base_es
@@ -50089,7 +50089,7 @@ local pairs = [
     // context: throw_dirt_skill.o.create.m.Description
     {
         en = "Throws dirt to distract the enemy. Reduces inititive and damage output of the target by 35% for one turn. Can only be used once per battle."
-        es = "Arroja tierra para distraer al enemigo. Reduce la iniciativa y el daño infligido por el objetivo en un 35% durante un turno. Solo se puede usar una vez por batalla."
+        es = "Arroja tierra para distraer al enemigo. Reduce la iniciativa y el daño infligido por el objetivo en un [color=#8f1e1e]35%[/color] durante un turno. Solo se puede usar una vez por batalla."
     }
     // FILE: mod_legends\hooks\skills\actives\throw_javelin.nut
     // context: throw_javelin.o.setItem.m.Name
@@ -50202,7 +50202,7 @@ local pairs = [
     // context: uproot_skill.o.getTooltip.text
     {
         en = "Uproot can target the ground and hits up to 3 tiles in a line"
-        es = "Desarraigar puede apuntar al suelo y golpea hasta 3 casillas en línea"
+        es = "Desarraigar puede apuntar al suelo y golpea hasta [color=#135213]3[/color] casillas en línea"
     }
     // en = "uproot"
     // FILE: mod_legends\hooks\skills\actives\voice_of_davkul_skill.nut
@@ -50236,7 +50236,7 @@ local pairs = [
     // context: zombie_bite.o.create.m.Description
     {
         en = "A vicious bite with a 15% increased chance to hit the head. Infects on legendary difficulty. Will revive humanoid enemies as allied Wiedergangers if dealt as a killing blow."
-        es = "Un mordisco feroz con un 15% más de probabilidad de golpear en la cabeza. Infecta en la dificultad legendaria. Si da el golpe mortal, revive a los enemigos humanoides como Wiedergangers aliados."
+        es = "Un mordisco feroz con un [color=#135213]15%[/color] más de probabilidad de golpear en la cabeza. Infecta en la dificultad legendaria. Si da el golpe mortal, revive a los enemigos humanoides como Wiedergangers aliados."
     }
     // context: zombie_bite.o.onTargetKilled.isKindOf()
     // en = "<!this.isKindOf(_targetEntity, , , player)&&!this.isKindOf(_targetEntity, , , human)>"  // código: condición con isKindOf, no se muestra
@@ -57360,12 +57360,12 @@ local pairs = [
     // context: legend_roster_of_6_ambition.create.m.UIText
     {
         en = "Have a roster of at least 6 men"
-        es = "Tener una plantilla de al menos 6 hombres"
+        es = "Tener una plantilla de al menos [color=#bcad8c]6[/color] hombres"
     }
     // context: legend_roster_of_6_ambition.create.m.TooltipText
     {
         en = "Hire enough men to have a crew roster of at least 6 men. Visit settlements across the lands to find recruits that suit your needs. Having a fuller roster will allow you to take on more dangerous and better paying contracts."
-        es = "Contrata suficientes hombres para tener una plantilla de al menos 6 hombres. Visita asentamientos por todas estas tierras para encontrar reclutas que se ajusten a tus necesidades. Una plantilla más completa te permitirá aceptar contratos más peligrosos y mejor pagados."
+        es = "Contrata suficientes hombres para tener una plantilla de al menos [color=#1e468f]6[/color] hombres. Visita asentamientos por todas estas tierras para encontrar reclutas que se ajusten a tus necesidades. Una plantilla más completa te permitirá aceptar contratos más peligrosos y mejor pagados."
     }
     // context: legend_roster_of_6_ambition.create.m.SuccessText
     {
@@ -75080,12 +75080,12 @@ local pairs = [
     // context: arena_follower.create.m.Effects
     {
         en = "Increase winnings from the arena by 25%"
-        es = "Aumenta un 25% las ganancias de la arena"
+        es = "Aumenta un [color=#1e861e]25%[/color] las ganancias de la arena"
     }
     // context: arena_follower.create.m.Effects
     {
         en = "Fight up to 3 arena matches per day"
-        es = "Lucha hasta 3 combates de arena al día"
+        es = "Lucha hasta [color=#1e861e]3[/color] combates de arena al día"
     }
     // context: arena_follower.create.addRequirement()
     {
@@ -75138,7 +75138,7 @@ local pairs = [
     // context: legend_risen_legion_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_73.png[/img][/p]An ancient legion risen from the dead with orders to reclaim the world.\n\n[color=#bcad8c]Dreaded:[/color] All towns will begin and stay hostile to you.\n[color=#bcad8c]Fighting Legion:[/color] Higher than average marching speed across difficult terrain, begin with 8 fighters and field up to 25.\n[color=#bcad8c]Dead Walking:[/color] You cannot hire in towns, but you may find recruits by patrolling near Mass graves, Sunken Castles and The Monolith. Ancient dead are allied to you.\n"
-        es = "[p=c][img]gfx/ui/events/event_73.png[/img][/p]Una antigua legión alzada de entre los muertos con órdenes de reconquistar el mundo.\n\n[color=#dda21f]Temidos:[/color] Todas las ciudades te serán hostiles desde el principio y para siempre.\n[color=#dda21f]Legión combatiente:[/color] Velocidad de marcha superior a la media en terreno difícil; empiezas con 8 combatientes y puedes desplegar hasta 25.\n[color=#dda21f]Muertos andantes:[/color] No puedes contratar en las ciudades, pero puedes encontrar reclutas patrullando cerca de fosas comunes, castillos hundidos y el Monolito. Los antiguos muertos son tus aliados.\n"
+        es = "[p=c][img]gfx/ui/events/event_73.png[/img][/p]Una antigua legión alzada de entre los muertos con órdenes de reconquistar el mundo.\n\n[color=#dda21f]Temidos:[/color] Todas las ciudades te serán hostiles desde el principio y para siempre.\n[color=#dda21f]Legión combatiente:[/color] Velocidad de marcha superior a la media en terreno difícil; empiezas con 8 combatientes y puedes desplegar hasta [color=#1e861e]25[/color].\n[color=#dda21f]Muertos andantes:[/color] No puedes contratar en las ciudades, pero puedes encontrar reclutas patrullando cerca de fosas comunes, castillos hundidos y el Monolito. Los antiguos muertos son tus aliados.\n"
     }
     // context: legend_risen_legion_scenario.onSpawnPlayer.n.addPlayerRelation()
     {
@@ -75149,7 +75149,7 @@ local pairs = [
     // context: legends_assassin_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_51.png[/img][/p][p] An assassin down on their luck with limited supplies. \n\n[color=#bcad8c]Dirty Deeds:[/color] You will grant the Backstabber perk to anyone who joins you. \n[color=#bcad8c]Underworld:[/color] You have a small chance of finding other Assassins for hire. Outlaws are 50% cheaper to hire and maintain, all other backgrounds are the same cost.\n[color=#bcad8c]Avatar:[/color] Begin alone. If you die, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_51.png[/img][/p][p] Te dedicas al asesinato, pero la suerte te ha dado la espalda y apenas tienes provisiones. \n\n[color=#dda21f]Trabajos sucios:[/color] Concederás la ventaja Oportunista a todo el que se te una. \n[color=#dda21f]Bajos fondos:[/color] Tienes una pequeña probabilidad de encontrar otros Asesinos a sueldo. Los Proscritos cuestan un 50% menos de contratar y mantener; los demás trasfondos cuestan lo mismo.\n[color=#dda21f]Avatar:[/color] Empiezas en solitario. Si mueres, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_51.png[/img][/p][p] Te dedicas al asesinato, pero la suerte te ha dado la espalda y apenas tienes provisiones. \n\n[color=#dda21f]Trabajos sucios:[/color] Concederás la ventaja Oportunista a todo el que se te una. \n[color=#dda21f]Bajos fondos:[/color] Tienes una pequeña probabilidad de encontrar otros Asesinos a sueldo. Los Proscritos cuestan un [color=#1e861e]50%[/color] menos de contratar y mantener; los demás trasfondos cuestan lo mismo.\n[color=#dda21f]Avatar:[/color] Empiezas en solitario. Si mueres, se acaba la partida.[/p]"
     }
     // context: legends_assassin_scenario.onHiredByScenario._bro.worsenMood()
     {
@@ -75289,7 +75289,7 @@ local pairs = [
     // context: legends_escaped_slaves_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_166.png[/img][/p][p]You lead a group of slaves trying to escape their cruel fate, but you cannot run forever. Can you keep your band intact and start a new life as mercenaries?\n\n[color=#bcad8c]Escapees:[/color] Start with five escaped Indebted and find others held in captivity.\n[color=#bcad8c]Brothers in Chains:[/color] Your newfound family of Indebted are stronger together and gain skill based on how many you field.\n[color=#bcad8c]Downtrodden and Discarded:[/color] Good relations with any faction decay 15% faster and bad relations recover 15% slower.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_166.png[/img][/p][p]Lideras a un grupo de esclavos que intenta escapar de su cruel destino, pero no puedes huir para siempre. ¿Lograrás mantener unida a tu banda y empezar una nueva vida como mercenarios?\n\n[color=#dda21f]Fugitivos:[/color] Empiezas con cinco Endeudados fugados y encuentras a otros en cautiverio.\n[color=#dda21f]Hermanos encadenados:[/color] Tu nueva familia de Endeudados es más fuerte unida y gana destreza según cuántos despliegues.\n[color=#dda21f]Oprimidos y desechados:[/color] Las buenas relaciones con cualquier facción se deterioran un 15% más rápido y las malas se recuperan un 15% más despacio.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_166.png[/img][/p][p]Lideras a un grupo de esclavos que intenta escapar de su cruel destino, pero no puedes huir para siempre. ¿Lograrás mantener unida a tu banda y empezar una nueva vida como mercenarios?\n\n[color=#dda21f]Fugitivos:[/color] Empiezas con cinco Endeudados fugados y encuentras a otros en cautiverio.\n[color=#dda21f]Hermanos encadenados:[/color] Tu nueva familia de Endeudados es más fuerte unida y gana destreza según cuántos despliegues.\n[color=#dda21f]Oprimidos y desechados:[/color] Las buenas relaciones con cualquier facción se deterioran un [color=#a22424]15%[/color] más rápido y las malas se recuperan un [color=#a22424]15%[/color] más despacio.[/p]"
     }
     // context: legends_escaped_slaves_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75399,7 +75399,7 @@ local pairs = [
     // context: legends_horse_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]You are running a small trading caravan and have most of your crowns invested into trading goods. But the roads have become dangerous - brigands and greenskins lay in ambush, and there are rumors of even worse things out there.\n\n[color=#bcad8c]Caravan:[/color] Start with a trader and a donkey.\n[color=#bcad8c]Trader:[/color] Get 10% better prices for buying and selling.\n[color=#bcad8c]Not a Warrior:[/color] Start with no renown, and gain renown at half the normal rate.\n[color=#bcad8c]Bribery:[/color] Pay off human enemies instead of fighting them[/p]"
-        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Diriges una pequeña caravana comercial y tienes casi todas tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pielesverdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n[color=#dda21f]Caravana:[/color] Empiezas con tu comerciante y un burro.\n[color=#dda21f]Comerciante:[/color] Obtienes precios un 10% mejores al comprar y vender.\n[color=#dda21f]Sin madera de guerrero:[/color] Empiezas sin renombre y ganas renombre a la mitad del ritmo normal.\n[color=#dda21f]Soborno:[/color] Paga a los enemigos humanos en lugar de combatirlos[/p]"
+        es = "[p=c][img]gfx/ui/events/event_41.png[/img][/p][p]Diriges una pequeña caravana comercial y tienes casi todas tus coronas invertidas en mercancías. Pero los caminos se han vuelto peligrosos: bandidos y pielesverdes acechan emboscados, y se rumorea que ahí fuera hay cosas aún peores.\n\n[color=#dda21f]Caravana:[/color] Empiezas con tu comerciante y un burro.\n[color=#dda21f]Comerciante:[/color] Obtienes precios un [color=#1e861e]10%[/color] mejores al comprar y vender.\n[color=#dda21f]Sin madera de guerrero:[/color] Empiezas sin renombre y ganas renombre a la mitad del ritmo normal.\n[color=#dda21f]Soborno:[/color] Paga a los enemigos humanos en lugar de combatirlos[/p]"
     }
     // FILE: scripts\scenarios\world\legends_inquisition_scenario.nut
     // context: legends_inquisition_scenario.create.m.Description
@@ -75477,7 +75477,7 @@ local pairs = [
     // context: legends_necro_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] Death is no barrier, others flee from its yawning abyss, but we embrace the other side. \n\n[color=#bcad8c]Dark arts:[/color] Start with three apprentice necromancers, each with their own strengths and weaknesses. Killed fighters in your employ have a chance to survive as undead.\n[color=#bcad8c]Gruesome harvest:[/color] Collect human corpses to fashion new minions, maintain them with medical supplies.\n[color=#bcad8c]Blood magic:[/color] Cultists and other macabre backgrounds will flock to join you and cost 25% less to maintain. Cannot hire pious backgrounds. Everyone else costs 50% more to upkeep.\n[color=#bcad8c]Avatars:[/color] If all three necromancers die, the spell is broken and the story ends.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] La muerte no es ninguna barrera; otros huyen de su abismo insondable, pero nosotros abrazamos el otro lado. \n\n[color=#dda21f]Artes oscuras:[/color] Empiezas con tres aprendices de nigromante, cada uno con sus propias virtudes y defectos. Los combatientes a tu servicio que mueran tienen una probabilidad de sobrevivir como no muertos.\n[color=#dda21f]Cosecha macabra:[/color] Recoge cadáveres humanos para fabricar nuevos esbirros y mantenlos con medicina.\n[color=#dda21f]Magia de sangre:[/color] Los cultistas y otros trasfondos macabros acudirán en masa a unirse a ti y su mantenimiento costará un 25% menos. No puedes contratar trasfondos piadosos. El mantenimiento de todos los demás cuesta un 50% más.\n[color=#dda21f]Avatares:[/color] Si los tres nigromantes mueren, el hechizo se rompe y la historia termina.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] La muerte no es ninguna barrera; otros huyen de su abismo insondable, pero nosotros abrazamos el otro lado. \n\n[color=#dda21f]Artes oscuras:[/color] Empiezas con tres aprendices de nigromante, cada uno con sus propias virtudes y defectos. Los combatientes a tu servicio que mueran tienen una probabilidad de sobrevivir como no muertos.\n[color=#dda21f]Cosecha macabra:[/color] Recoge cadáveres humanos para fabricar nuevos esbirros y mantenlos con medicina.\n[color=#dda21f]Magia de sangre:[/color] Los cultistas y otros trasfondos macabros acudirán en masa a unirse a ti y su mantenimiento costará un [color=#1e861e]25%[/color] menos. No puedes contratar trasfondos piadosos. El mantenimiento de todos los demás cuesta un [color=#a22424]50%[/color] más.\n[color=#dda21f]Avatares:[/color] Si los tres nigromantes mueren, el hechizo se rompe y la historia termina.[/p]"
     }
     // context: legends_necro_scenario.onSpawnAssets.bros[3].getBackground().m.RawDescription
     {
@@ -75513,7 +75513,7 @@ local pairs = [
     // context: legends_noble_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_96.png[/img][/p][p] You are a noble on the run from your house with your retainers. \n\n[color=#bcad8c]Usurper:[/color] Can unlock noble contracts from the start.\n[color=#bcad8c]Highborn:[/color] Nobles will cost 25% less, lowborns will cost 50% more, can't hire outlaws\n[color=#bcad8c]Trained leader:[/color] Your studies at the academy gave tactical skills, everyone begins with Tactical Maneuvers and future hires have Tactical Maneuvers as well.\n[color=#bcad8c]Avatar:[/color] if your character dies, it is game over.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_96.png[/img][/p][p] Perteneces a la nobleza y huyes de tu casa junto a tus vasallos. \n\n[color=#dda21f]Usurpación:[/color] Puedes desbloquear contratos de nobles desde el principio.\n[color=#dda21f]De alta cuna:[/color] Los nobles costarán un 25% menos y los de baja cuna un 50% más; no puedes contratar forajidos\n[color=#dda21f]Formación de mando:[/color] Tus estudios en la academia te dieron conocimientos tácticos: todos empiezan con la ventaja Maniobras tácticas, y los futuros reclutas también lo tendrán.\n[color=#dda21f]Avatar:[/color] si tu personaje muere, se acaba la partida.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_96.png[/img][/p][p] Perteneces a la nobleza y huyes de tu casa junto a tus vasallos. \n\n[color=#dda21f]Usurpación:[/color] Puedes desbloquear contratos de nobles desde el principio.\n[color=#dda21f]De alta cuna:[/color] Los nobles costarán un [color=#1e861e]25%[/color] menos y los de baja cuna un [color=#a22424]50%[/color] más; no puedes contratar forajidos\n[color=#dda21f]Formación de mando:[/color] Tus estudios en la academia te dieron conocimientos tácticos: todos empiezan con la ventaja Maniobras tácticas, y los futuros reclutas también lo tendrán.\n[color=#dda21f]Avatar:[/color] si tu personaje muere, se acaba la partida.[/p]"
     }
     // context: legends_noble_scenario.onSpawnAssets.bros[1].getBackground().m.RawDescription
     {
@@ -75564,7 +75564,7 @@ local pairs = [
     // context: legends_nomad_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_170.png[/img][/p][p]Displaced from your land, take control of 4 nomads and a conscript hunted in the desert. \n[color=#bcad8c]Hunted:[/color] Start in the desert away from civilisation. City States are hostile and will always decline in favour with you while Northern Nobles will have a cold relationship with you but will not decline. The more nomads in your party the stronger this effect will be.\n[color=#bcad8c]Nomadic:[/color] Vision radius is increased by 30% on the world map. Settlements may contain Nomads and Bladedancers displaced from their lands willing to fight for you. Nomads, Muladis and Bladedancers cost 25% less to hire and upkeep.\n[color=#bcad8c]The Path of the Interloper:[/color] Nomads and Muladis gain the 'Wind Reader' perk when recruited. Bladedancers gain the 'Dodge' perk. Other Nomads are friendly to you.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_170.png[/img][/p][p]Lejos de la tierra que te arrebataron, toma el mando de 4 nómadas y un recluta perseguidos en el desierto. \n[color=#dda21f]Perseguidos:[/color] Empiezas en el desierto, lejos de la civilización. Las Ciudades Estado son hostiles y su favor hacia ti no dejará de caer, mientras que los nobles del norte mantendrán contigo una relación fría, pero no irá a peor. Cuantos más nómadas haya en tu grupo, más fuerte será este efecto.\n[color=#dda21f]Vida nómada:[/color] El radio de visión aumenta un 30% en el mapa del mundo. En los asentamientos puede haber nómadas y Danzadores de la Espada desplazados de sus tierras y dispuestos a luchar por ti. Los nómadas, muladíes y Danzadores de la Espada cuestan un 25% menos de contratar y mantener.\n[color=#dda21f]La senda del intruso:[/color] Los nómadas y muladíes obtienen la ventaja 'Lector del viento' al ser reclutados. Los Danzadores de la Espada obtienen la ventaja 'Esquivar'. Los demás nómadas te son amistosos.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_170.png[/img][/p][p]Lejos de la tierra que te arrebataron, toma el mando de 4 nómadas y un recluta perseguidos en el desierto. \n[color=#dda21f]Perseguidos:[/color] Empiezas en el desierto, lejos de la civilización. Las Ciudades Estado son hostiles y su favor hacia ti no dejará de caer, mientras que los nobles del norte mantendrán contigo una relación fría, pero no irá a peor. Cuantos más nómadas haya en tu grupo, más fuerte será este efecto.\n[color=#dda21f]Vida nómada:[/color] El radio de visión aumenta un [color=#1e861e]30%[/color] en el mapa del mundo. En los asentamientos puede haber nómadas y Danzadores de la Espada desplazados de sus tierras y dispuestos a luchar por ti. Los nómadas, muladíes y Danzadores de la Espada cuestan un [color=#1e861e]25%[/color] menos de contratar y mantener.\n[color=#dda21f]La senda del intruso:[/color] Los nómadas y muladíes obtienen la ventaja 'Lector del viento' al ser reclutados. Los Danzadores de la Espada obtienen la ventaja 'Esquivar'. Los demás nómadas te son amistosos.[/p]"
     }
     // context: legends_nomad_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75757,7 +75757,7 @@ local pairs = [
     // context: legends_solo_necro_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] What is there to do when you have reached the top? Perhaps more dangers and intrigue await? \n\n[color=#bcad8c]Dark sway:[/color] Start with a master necromancer, two puppets and three mortals.\n[color=#bcad8c]Not a fighter:[/color] The master necromancer gains martial perks later into their development, but gains experience faster. If the master necromancer dies, the binds are broken and the journey ends. Puppets under your control gain bonuses to health, while mortals wither away from sickness. There is a chance mortals in your party will be risen again as undead if killed.\n[color=#bcad8c]Dark company:[/color] Cultists, Gravediggers, Graverobbers and Anatomists will flock to join you and gain the 'Siphon' skill. Most other backgrounds cost 20% more to recruit and maintain. Cannot hire pious backgrounds.\n[color=#bcad8c]A terrible reputation:[/color] Recruits cannot hate the undead, relationships are poor with all factions and degrade slowly each day. Undead are passive towards you, and will steadily gain in relationship over time if attacked.[/p]"
-        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] ¿Qué queda por hacer cuando has llegado a la cima? ¿Quizá te esperan más peligros e intrigas? \n\n[color=#dda21f]Dominio oscuro:[/color] Empiezas con tu nigromante, ya en plena maestría, dos marionetas y tres mortales.\n[color=#dda21f]Sin madera de luchador:[/color] Tu nigromante obtiene ventajas marciales más adelante en su desarrollo, pero gana experiencia más rápido. Si tu nigromante muere, los lazos se rompen y el viaje termina. Las marionetas bajo tu control obtienen bonificaciones de salud, mientras que los mortales se consumen por la enfermedad. Hay una probabilidad de que los mortales de tu grupo se levanten de nuevo como no muertos si mueren.\n[color=#dda21f]Compañía oscura:[/color] Los cultistas, sepultureros, ladrones de tumbas y anatomistas acudirán en masa a unirse a ti y obtendrán la habilidad 'Absorber'. La mayoría de los demás trasfondos cuestan un 20% más de reclutar y mantener. No puedes contratar trasfondos piadosos.\n[color=#dda21f]Una reputación terrible:[/color] Los reclutas no pueden odiar a los no muertos, las relaciones con todas las facciones son malas y empeoran poco a poco cada día. Los no muertos se muestran pasivos contigo y su relación mejorará de forma constante con el tiempo si son atacados.[/p]"
+        es = "[p=c][img]gfx/ui/events/event_29.png[/img][/p][p] ¿Qué queda por hacer cuando has llegado a la cima? ¿Quizá te esperan más peligros e intrigas? \n\n[color=#dda21f]Dominio oscuro:[/color] Empiezas con tu nigromante, ya en plena maestría, dos marionetas y tres mortales.\n[color=#dda21f]Sin madera de luchador:[/color] Tu nigromante obtiene ventajas marciales más adelante en su desarrollo, pero gana experiencia más rápido. Si tu nigromante muere, los lazos se rompen y el viaje termina. Las marionetas bajo tu control obtienen bonificaciones de salud, mientras que los mortales se consumen por la enfermedad. Hay una probabilidad de que los mortales de tu grupo se levanten de nuevo como no muertos si mueren.\n[color=#dda21f]Compañía oscura:[/color] Los cultistas, sepultureros, ladrones de tumbas y anatomistas acudirán en masa a unirse a ti y obtendrán la habilidad 'Absorber'. La mayoría de los demás trasfondos cuestan un [color=#a22424]20%[/color] más de reclutar y mantener. No puedes contratar trasfondos piadosos.\n[color=#dda21f]Una reputación terrible:[/color] Los reclutas no pueden odiar a los no muertos, las relaciones con todas las facciones son malas y empeoran poco a poco cada día. Los no muertos se muestran pasivos contigo y su relación mejorará de forma constante con el tiempo si son atacados.[/p]"
     }
     // context: legends_solo_necro_scenario.onSpawnAssets.bros[1].getBackground().m.RawDescription
     {
@@ -75803,7 +75803,7 @@ local pairs = [
     // context: legends_troupe_scenario.create.m.Description
     {
         en = "[p=c][img]gfx/ui/events/event_26.png[/img][/p]The life of an artist is not an easy one, misunderstood and under appreciated. Perhaps performers will have more luck together, find an audience, travel the world, or at least stop having things thrown at you. \n\n[color=#bcad8c]Acrobatics:[/color] Anyone you hire gains the Leap ability \n[color=#bcad8c]Exposure:[/color] You will encounter more performers, and they will be cheaper to hire.\n[color=#bcad8c]Busking:[/color] You gain 10 crowns each day for each member of the troupe. Tavern rumors and drinks are cheaper."
-        es = "[p=c][img]gfx/ui/events/event_26.png[/img][/p]La vida de artista no es fácil: incomprendida e infravalorada. Quizá los intérpretes tengan más suerte juntos: encontrar público, recorrer el mundo o, al menos, dejar de recibir cosas lanzadas a la cabeza. \n\n[color=#dda21f]Acrobacias:[/color] Todo el que contrates obtiene la habilidad Salto \n[color=#dda21f]Notoriedad:[/color] Te encontrarás con más artistas, y serán más baratos de contratar.\n[color=#dda21f]Actuar en la calle:[/color] Ganas 10 coronas al día por cada miembro de la compañía. Los rumores y las bebidas de la taberna son más baratos."
+        es = "[p=c][img]gfx/ui/events/event_26.png[/img][/p]La vida de artista no es fácil: incomprendida e infravalorada. Quizá los intérpretes tengan más suerte juntos: encontrar público, recorrer el mundo o, al menos, dejar de recibir cosas lanzadas a la cabeza. \n\n[color=#dda21f]Acrobacias:[/color] Todo el que contrates obtiene la habilidad Salto \n[color=#dda21f]Notoriedad:[/color] Te encontrarás con más artistas, y serán más baratos de contratar.\n[color=#dda21f]Actuar en la calle:[/color] Ganas [color=#1e861e]10[/color] coronas al día por cada miembro de la compañía. Los rumores y las bebidas de la taberna son más baratos."
     }
     // context: legends_troupe_scenario.onSpawnAssets.bros[0].getBackground().m.RawDescription
     {
@@ -75834,7 +75834,7 @@ local pairs = [
     // context: legend_albedo_skill.create.m.Description
     {
         en = "Repair up to 25 armor."
-        es = "Repara hasta 25 de armadura."
+        es = "Repara hasta [color=#135213]25[/color] de armadura."
     }
     // context: legend_albedo_skill.getTooltip.ret.push().text
     {
@@ -75889,7 +75889,7 @@ local pairs = [
     // context: legend_apothecary_mushrooms_skill.create.m.Description
     {
         en = "Give these strange mushrooms to an adjacent ally, or eat them yourself to enter a state of trance-like state with otherworldy dodging and no sense of pain. May result in sickness. The effect will slowly wear off over 4 turns. Can not be used while engaged in melee, and anyone receiving the item needs to have a free bag slot."
-        es = "Da estos extraños champiñones a un aliado adyacente, o cómetelos para entrar en un estado de trance con una capacidad de esquiva sobrenatural y sin sentir dolor. Puede provocar enfermedad. El efecto se disipa poco a poco a lo largo de 4 turnos. No se puede usar mientras se está trabado en combate cuerpo a cuerpo, y quien reciba el objeto necesita tener una ranura libre en la bolsa."
+        es = "Da estos extraños champiñones a un aliado adyacente, o cómetelos para entrar en un estado de trance con una capacidad de esquiva sobrenatural y sin sentir dolor. Puede provocar enfermedad. El efecto se disipa poco a poco a lo largo de [color=#135213]4[/color] turnos. No se puede usar mientras se está trabado en combate cuerpo a cuerpo, y quien reciba el objeto necesita tener una ranura libre en la bolsa."
     }
     // context: legend_apothecary_mushrooms_skill.getTooltip.ret.text
     {
@@ -76008,7 +76008,7 @@ local pairs = [
         // text = " Heals for" + this.Math.floor(bodyHealth/10) + " hitpoints [10% of your maximum hp]"
         mode = "pattern"
         en = " Heals for<heal:int> hitpoints [10% of your maximum hp]"
-        es = " Cura <heal> Puntos de vida [10% de tus Puntos de vida máximos]"
+        es = " Cura [color=#135213]<heal>[/color] Puntos de vida [10% de tus Puntos de vida máximos]"
     }
     // FILE: scripts\skills\actives\legend_bear_claws_skill.nut
     // context: legend_bear_claws_skill.create.m.Description
@@ -76164,7 +76164,7 @@ local pairs = [
     // context: legend_chain_lightning_skill.getTooltip.ret.extend().text
     {
         en = "Chains up to 3 more additional targets"
-        es = "Se encadena a hasta 3 objetivos adicionales"
+        es = "Se encadena a hasta [color=#135213]3[/color] objetivos adicionales"
     }
     // context: legend_chain_lightning_skill.getTooltip.ret.push().text
     {
@@ -76192,7 +76192,7 @@ local pairs = [
     // context: legend_cheer_on_skill.getTooltip.ret.text
     {
         en = "Grants the target 2 additional Action Points for their next turn."
-        es = "Otorga al objetivo 2 Puntos de acción adicionales en su siguiente turno."
+        es = "Otorga al objetivo [color=#135213]2[/color] Puntos de acción adicionales en su siguiente turno."
     }
     // FILE: scripts\skills\actives\legend_choke_skill.nut
     // context: legend_choke_skill.create.m.Description
@@ -76786,7 +76786,7 @@ local pairs = [
     // context: legend_drink_stollwurm_blood_skill.getTooltip.ret.text
     {
         en = "grants 50% damage reduction, and immunity to stun, grab and knockback for three turns"
-        es = "otorga un 50% de reducción de daño e inmunidad al aturdimiento, los agarres y los empujones durante tres turnos"
+        es = "otorga un [color=#135213]50%[/color] de reducción de daño e inmunidad al aturdimiento, los agarres y los empujones durante tres turnos"
     }
     // context: legend_drink_stollwurm_blood_skill.tacticalLogDrink
     {
@@ -76851,7 +76851,7 @@ local pairs = [
     // context: legend_drums_of_life_skill.create.m.Description
     {
         en = "Heal allies on with your music, restoring the health of all allies within 8 tiles. Must be holding a musical instrument to use. Songs apply once per turn."
-        es = "Cura a tus aliados con tu música y restaura la salud de todos los aliados en un radio de 8 casillas. Hay que empuñar un instrumento musical para usarla. Las canciones se aplican una vez por turno."
+        es = "Cura a tus aliados con tu música y restaura la salud de todos los aliados en un radio de [color=#135213]8[/color] casillas. Hay que empuñar un instrumento musical para usarla. Las canciones se aplican una vez por turno."
     }
     // context: legend_drums_of_life_skill.getTooltip.ret.text
     {
@@ -76864,14 +76864,14 @@ local pairs = [
     // context: legend_drums_of_war_skill.create.m.Description
     {
         en = "Push allies on with your music, lowering the fatigue of all allies within 8 tiles. Must be holding a musical instrument to use. Songs apply once per turn."
-        es = "Empuja a tus aliados a seguir adelante con tu música y reduce la fatiga de todos los aliados en un radio de 8 casillas. Hay que empuñar un instrumento musical para usarla. Las canciones se aplican una vez por turno."
+        es = "Empuja a tus aliados a seguir adelante con tu música y reduce la fatiga de todos los aliados en un radio de [color=#135213]8[/color] casillas. Hay que empuñar un instrumento musical para usarla. Las canciones se aplican una vez por turno."
     }
     // context: legend_drums_of_war_skill.getTooltip.ret.text
     {
         // text = "Restores [color=%positive%]" + this.getBonus() + "[/color] fatigue to all allied units within 8 tiles"
         mode = "pattern"
         en = "Restores [color=%positive%]<bonus:str>[/color] fatigue to all allied units within 8 tiles"
-        es = "Recupera [color=%positive%]<bonus>[/color] de fatiga a todas las unidades aliadas en un radio de 8 casillas"
+        es = "Recupera [color=%positive%]<bonus>[/color] de fatiga a todas las unidades aliadas en un radio de [color=%positive%]8[/color] casillas"
     }
     // FILE: scripts\skills\actives\legend_eat_pie_skill.nut
     // context: legend_eat_pie_skill.create.m.Description
@@ -76882,12 +76882,12 @@ local pairs = [
     // context: legend_eat_pie_skill.getTooltip.ret.text
     {
         en = "[color=%positive%]+1[/color] Hitpoints per turn for 10 turns"
-        es = "[color=%positive%]+1[/color] Punto de vida por turno durante 10 turnos"
+        es = "[color=%positive%]+1[/color] Punto de vida por turno durante [color=%positive%]10[/color] turnos"
     }
     // context: legend_eat_pie_skill.getTooltip.ret.text
     {
         en = "[color=%positive%]+1[/color] Fatigue per turn for 10 turns"
-        es = "[color=%positive%]+1[/color] de Fatiga por turno durante 10 turnos"
+        es = "[color=%positive%]+1[/color] de Fatiga por turno durante [color=%positive%]10[/color] turnos"
     }
     // context: legend_eat_pie_skill.onUse.Tactical.EventLog.log()
     {
@@ -76912,7 +76912,7 @@ local pairs = [
     // context: legend_eat_porridge_skill.getTooltip.ret.text
     {
         en = "[color=%positive%]+10[/color] Hitpoints per turn for 15 turns"
-        es = "[color=%positive%]+10[/color] Puntos de vida por turno durante 15 turnos"
+        es = "[color=%positive%]+10[/color] Puntos de vida por turno durante [color=%positive%]15[/color] turnos"
     }
     // context: legend_eat_porridge_skill.onUse.Tactical.EventLog.log()
     {
@@ -76937,17 +76937,17 @@ local pairs = [
     // context: legend_eat_pudding_skill.getTooltip.ret.text
     {
         en = "[color=%positive%]+5[/color] Hitpoints per turn for 10 turns"
-        es = "[color=%positive%]+5[/color] Puntos de vida por turno durante 10 turnos"
+        es = "[color=%positive%]+5[/color] Puntos de vida por turno durante [color=%positive%]10[/color] turnos"
     }
     // context: legend_eat_pudding_skill.getTooltip.ret.text
     {
         en = "[color=%negative%]-5[/color] Fatigue per turn for 10 turns"
-        es = "[color=%negative%]-5[/color] de Fatiga por turno durante 10 turnos"
+        es = "[color=%negative%]-5[/color] de Fatiga por turno durante [color=%negative%]10[/color] turnos"
     }
     // context: legend_eat_pudding_skill.getTooltip.ret.text
     {
         en = "[color=%positive%]+20[/color] Resolve to morale checks for 10 turns"
-        es = "[color=%positive%]+20[/color] de Resolución en las pruebas de moral durante 10 turnos"
+        es = "[color=%positive%]+20[/color] de Resolución en las pruebas de moral durante [color=%positive%]10[/color] turnos"
     }
     // context: legend_eat_pudding_skill.onUse.Tactical.EventLog.log()
     {
@@ -77029,7 +77029,7 @@ local pairs = [
     // context: legend_en_garde_skill.create.m.Description
     {
         en = "Block your enemy's weapons in a way that leaves them open to counter attack. Applies the Vulnerable effect to an enemy, lowering their melee and ranged defenses by 10."
-        es = "Bloquea las armas de tu enemigo de manera que quede expuesto a un contraataque. Aplica el efecto Vulnerable a un enemigo, lo que reduce en 10 su defensa cuerpo a cuerpo y a distancia."
+        es = "Bloquea las armas de tu enemigo de manera que quede expuesto a un contraataque. Aplica el efecto Vulnerable a un enemigo, lo que reduce en [color=#8f1e1e]10[/color] su defensa cuerpo a cuerpo y a distancia."
     }
     // context: legend_en_garde_skill.getTooltip.ret.push().text
     {
@@ -77149,7 +77149,7 @@ local pairs = [
     // context: legend_falcon_skill.create.m.Description
     {
         en = "Use your falcon to gain vision of the surrounding 12 tiles for the duration of the current round. Can be used once per battle."
-        es = "Usa tu halcón para obtener visión en un radio de 12 casillas durante la ronda actual. Se puede usar una vez por combate."
+        es = "Usa tu halcón para obtener visión en un radio de [color=#135213]12[/color] casillas durante la ronda actual. Se puede usar una vez por combate."
     }
     // FILE: scripts\skills\actives\legend_field_repairs_skill.nut
     // context: legend_field_repairs_skill.create.m.Description
@@ -77177,7 +77177,7 @@ local pairs = [
     // context: legend_field_treats_skill.create.m.Description
     {
         en = "Restore confidence through liberal application of alcohol and food, taking someone from wavering to steady for 20 food."
-        es = "Restaura la confianza a base de generosas raciones de alcohol y comida, haciendo que alguien pase de vacilante a firme a cambio de 20 de comida."
+        es = "Restaura la confianza a base de generosas raciones de alcohol y comida, haciendo que alguien pase de vacilante a firme a cambio de [color=#8f1e1e]20[/color] de comida."
     }
     // context: legend_field_treats_skill.getTooltip.ret.push().text
     {
@@ -77195,7 +77195,7 @@ local pairs = [
     // context: legend_field_triage_skill.create.m.Description
     {
         en = "Heal a unit at a rate of 1 medicine for every 2 hitpoints. Heals up to 20 hitpoints per use."
-        es = "Cura a una unidad a razón de 1 de medicina por cada 2 Puntos de vida. Cura hasta 20 Puntos de vida por uso."
+        es = "Cura a una unidad a razón de 1 de medicina por cada 2 Puntos de vida. Cura hasta [color=#135213]20[/color] Puntos de vida por uso."
     }
     // context: legend_field_triage_skill.getTooltip.ret.push().text
     {
@@ -77260,7 +77260,7 @@ local pairs = [
         // text = "Inflicts 3 bleeds each dealing a stacking [color=%damage%]" + dmg + "[/color] bleeding damage per turn, for 2 turns"
         mode = "pattern"
         en = "Inflicts 3 bleeds each dealing a stacking [color=%damage%]<dmg:int>[/color] bleeding damage per turn, for 2 turns"
-        es = "Inflige 3 sangrados que causan cada uno [color=%damage%]<dmg>[/color] de daño por sangrado acumulable por turno, durante 2 turnos"
+        es = "Inflige [color=%damage%]3[/color] sangrados que causan cada uno [color=%damage%]<dmg>[/color] de daño por sangrado acumulable por turno, durante [color=%damage%]2[/color] turnos"
     }
     // FILE: scripts\skills\actives\legend_flogging_skill.nut
     // context: legend_flogging_skill.create.m.Description
@@ -77278,7 +77278,7 @@ local pairs = [
     // context: legend_flogging_skill.getTooltip.ret.push().text
     {
         en = "Flog up to three targets, inflicting a bleed of 2 damage per turn over 5 turns"
-        es = "Azota hasta a tres objetivos y les inflige un sangrado de 2 de daño por turno durante 5 turnos"
+        es = "Azota hasta a tres objetivos y les inflige un sangrado de [color=#135213]2[/color] de daño por turno durante [color=#135213]5[/color] turnos"
     }
     // context: legend_flogging_skill.onUse.Tactical.EventLog.log()
     {
@@ -77344,7 +77344,7 @@ local pairs = [
     // context: legend_grapple_skill.create.m.Description
     {
         en = "Grab, hold, and restrain a target, reducing their melee defense by 12 and initiative by 30% for 2 turns. A particularly lucky or skilled maneuver may disarm the opponent. One hand must be free to use."
-        es = "Agarra, sujeta e inmoviliza a un objetivo, reduciendo su Defensa cuerpo a cuerpo en 12 y su Iniciativa en un 30% durante 2 turnos. Una maniobra especialmente afortunada o hábil puede desarmar al oponente. Requiere tener una mano libre."
+        es = "Agarra, sujeta e inmoviliza a un objetivo, reduciendo su Defensa cuerpo a cuerpo en [color=#8f1e1e]12[/color] y su Iniciativa en un [color=#8f1e1e]30%[/color] durante [color=#8f1e1e]2[/color] turnos. Una maniobra especialmente afortunada o hábil puede desarmar al oponente. Requiere tener una mano libre."
     }
     // context: legend_grapple_skill.getTooltip.ret.push().text
     {
@@ -77433,7 +77433,7 @@ local pairs = [
     // context: legend_harvest_bush_skill.getTooltip.ret.extend().text
     {
         en = "Chop down any bush with a 50% percent chance to harvest fruit"
-        es = "Corta cualquier arbusto con un 50% de probabilidad de cosechar fruta"
+        es = "Corta cualquier arbusto con un [color=#135213]50%[/color] de probabilidad de cosechar fruta"
     }
     // FILE: scripts\skills\actives\legend_harvest_rock_skill.nut
     // context: legend_harvest_rock_skill.create.m.Description
@@ -77444,7 +77444,7 @@ local pairs = [
     // context: legend_harvest_rock_skill.getTooltip.ret.extend().text
     {
         en = "Crush any rock with a 10% percent chance to harvest valuable gems"
-        es = "Rompe cualquier roca con un 10% de probabilidad de extraer gemas valiosas"
+        es = "Rompe cualquier roca con un [color=#135213]10%[/color] de probabilidad de extraer gemas valiosas"
     }
     // FILE: scripts\skills\actives\legend_harvest_skill.nut
     // context: legend_harvest_skill.create.m.Description
@@ -77515,7 +77515,7 @@ local pairs = [
         // text = "Will last for " + this.m.DurationUntouchable + " end of rounds"
         mode = "pattern"
         en = "Will last for <n:int> end of rounds"
-        es = "Durará <n> finales de ronda"
+        es = "Durará [color=#135213]<n>[/color] finales de ronda"
     }
     // context: legend_hidden_skill.getTooltip.ret.push().text
     // en = "Will last for <this.m.Duration> end of rounds"  // cubierto por el patrón "Will last for <n:int> end of rounds"
@@ -77530,7 +77530,7 @@ local pairs = [
     // context: legend_hold_the_line.create.m.Description
     {
         en = "Instruct your mercenaries to hold their ground! Grants the following bonuses to self and allies of your faction within 4 tiles."
-        es = "¡Ordena a tus mercenarios que mantengan la posición! Otorga las siguientes bonificaciones a quien la usa y a los aliados de su facción en un radio de 4 casillas."
+        es = "¡Ordena a tus mercenarios que mantengan la posición! Otorga las siguientes bonificaciones a quien la usa y a los aliados de su facción en un radio de [color=#135213]4[/color] casillas."
     }
     // context: legend_hold_the_line.getTooltip.tooltip.extend().text
     {
@@ -77553,7 +77553,7 @@ local pairs = [
         // this.m.Description = "Bless an area and apply hallowed ground over a 1-tile radius for " + ::Const.UI.getColorized("2", ::Const.UI.Color.PositiveValue) + " turns. The holy shall be sanctified when entering, the damned shall be consecrated.";
         mode = "pattern"
         en = "Bless an area and apply hallowed ground over a 1-tile radius for <turns:val_tag> turns. The holy shall be sanctified when entering, the damned shall be consecrated."
-        es = "Bendice un área y convierte en suelo sagrado un radio de 1 casilla durante <turns> turnos. Los santos quedarán santificados al entrar; los condenados, consagrados."
+        es = "Bendice un área y convierte en suelo sagrado un radio de [color=#135213]1[/color] casilla durante <turns> turnos. Los santos quedarán santificados al entrar; los condenados, consagrados."
     }
     // context: legend_holyflame_skill.getTooltip.ret.extend().text
     {
@@ -77579,7 +77579,7 @@ local pairs = [
     // context: legend_horrific_scream.create.m.Description
     {
         en = "Blare out a piercing, unworldly sound that is more than likely to distress anyone unfortunate enough to hear it within 4 tiles. Uses ranged skill."
-        es = "Emite un sonido penetrante y sobrenatural que muy probablemente angustiará a cualquiera que tenga la desgracia de oírlo en un radio de 4 casillas. Usa la Habilidad a distancia."
+        es = "Emite un sonido penetrante y sobrenatural que muy probablemente angustiará a cualquiera que tenga la desgracia de oírlo en un radio de [color=#135213]4[/color] casillas. Usa la Habilidad a distancia."
     }
     // en = "<actor:str_tag> uses Horrific Scream"
     // en base_es
@@ -77656,7 +77656,7 @@ local pairs = [
     // context: legend_inspire_skill.getTooltip.ret.text
     {
         en = "Grants the target 4 additional Action Points for their next turn."
-        es = "Otorga al objetivo 4 Puntos de acción adicionales en su siguiente turno."
+        es = "Otorga al objetivo [color=#135213]4[/color] Puntos de acción adicionales en su siguiente turno."
     }
     // FILE: scripts\skills\actives\legend_intensely_charm_skill.nut
     // context: legend_intensely_charm_skill.onDelayedEffect.Time.scheduleEvent().Tactical.EventLog.log()
@@ -77677,7 +77677,7 @@ local pairs = [
     // context: legend_into_the_fray_skill.create.m.Description
     {
         en = "Charge at an enemy up to 2 tiles away, attacking them in the process."
-        es = "Carga contra un enemigo situado a hasta 2 casillas de distancia y lo ataca de paso."
+        es = "Carga contra un enemigo situado a hasta [color=#135213]2[/color] casillas de distancia y lo ataca de paso."
     }
     // en = "Moves the user next to the target, ignoring Zone of Control"
     // en base_es
@@ -77710,7 +77710,7 @@ local pairs = [
     // context: legend_launch_acid_flask_skill.getTooltip.ret.push().text
     {
         en = "Reduces the target's armor by [color=%damage%]20%[/color] each turn for 3 turns."
-        es = "Reduce la armadura del objetivo un [color=%damage%]20%[/color] cada turno por 3 turnos."
+        es = "Reduce la armadura del objetivo un [color=%damage%]20%[/color] cada turno por [color=%damage%]3[/color] turnos."
     }
     // context: legend_launch_acid_flask_skill.getTooltip.ret.push().text
     {
@@ -77732,7 +77732,7 @@ local pairs = [
     {
         // corrige base: falta «hasta» ("up to"); «Provoca a» → «Provoca en»
         en = "Give up to [color=%damage%]7[/color] targets the Dazed status effect for 2 turns"
-        es = "Provoca en hasta [color=%damage%]7[/color] objetivos el efecto de estado 'Atontado' por 2 turnos"
+        es = "Provoca en hasta [color=%damage%]7[/color] objetivos el efecto de estado 'Atontado' por [color=%damage%]2[/color] turnos"
     }
     // FILE: scripts\skills\actives\legend_launch_fire_bomb_skill.nut
     // context: legend_launch_fire_bomb_skill.create.m.Description
@@ -77744,7 +77744,7 @@ local pairs = [
     {
         // corrige base: «arder en llamas ... con fuego» es redundante; se dice «Prende fuego a un área de»
         en = "Set an area of [color=%damage%]7[/color] tiles ablaze with fire for 2 rounds. Water and snow can not burn."
-        es = "Prende fuego a un área de [color=%damage%]7[/color] casillas por 2 turnos. El agua y la nieve no pueden arder."
+        es = "Prende fuego a un área de [color=%damage%]7[/color] casillas por [color=%damage%]2[/color] turnos. El agua y la nieve no pueden arder."
     }
     // en = "Burns away existing tile effects like Smoke or Miasma"
     // en base_es
@@ -77783,12 +77783,12 @@ local pairs = [
     // context: legend_leap_skill.create.m.Description
     {
         en = "Learning to jump extended distances allows escape from usually impossible situations. Fatigue cost is 15 plus the weight of your armor. Range can be increased with the Backflip perk, and by taking Staff Mastery and wielding a staff."
-        es = "Aprender a saltar grandes distancias permite escapar de situaciones normalmente imposibles. El coste de Fatiga es 15 más el peso de tu armadura. El alcance puede aumentarse con la ventaja Voltereta atrás, y aprendiendo Dominio del Bastón mágico y empuñando un bastón."
+        es = "Aprender a saltar grandes distancias permite escapar de situaciones normalmente imposibles. El coste de Fatiga es [color=#8f1e1e]15[/color] más el peso de tu armadura. El alcance puede aumentarse con la ventaja Voltereta atrás, y aprendiendo Dominio del Bastón mágico y empuñando un bastón."
     }
     // context: legend_leap_skill.getTooltip.ret.push().text
     {
         en = "Leap range increased by 1 tile while wielding a staff and having staff mastery"
-        es = "El alcance de Salto aumenta en 1 casilla al empuñar un bastón y tener Dominio del Bastón mágico"
+        es = "El alcance de Salto aumenta en [color=#135213]1[/color] casilla al empuñar un bastón y tener Dominio del Bastón mágico"
     }
     // FILE: scripts\skills\actives\legend_levitate_person_skill.nut
     // context: legend_levitate_person_skill.create.m.Description
@@ -77849,7 +77849,7 @@ local pairs = [
     // context: legend_magic_burning_hands.getTooltip.ret.extend().text
     {
         en = "Hits a cone of range 3, or up to 9 tiles in total. Usable in melee"
-        es = "Alcanza un cono de alcance 3, es decir, hasta 9 casillas en total. Se puede usar cuerpo a cuerpo"
+        es = "Alcanza un cono de alcance [color=#135213]3[/color], es decir, hasta [color=#135213]9[/color] casillas en total. Se puede usar cuerpo a cuerpo"
     }
     // context: legend_magic_burning_hands.getTooltip.ret.push().text
     {
@@ -77902,7 +77902,7 @@ local pairs = [
         // text = "All allies currently within range [color=%positive%]" + this.m.Range + "[/color] gain [color=%positive%]" + this.getDefBonus() + "[/color] melee/ranged defense and [color=%positive%]" + this.getResolveBonus() + "[/color] resolve for 2 turns or until they leave the circle."
         mode = "pattern"
         en = "All allies currently within range [color=%positive%]<range:int>[/color] gain [color=%positive%]<def:int>[/color] melee/ranged defense and [color=%positive%]<res:int>[/color] resolve for 2 turns or until they leave the circle."
-        es = "Todos los aliados que estén ahora dentro del alcance [color=%positive%]<range>[/color] obtienen [color=%positive%]<def>[/color] de Defensa cuerpo a cuerpo y a distancia y [color=%positive%]<res>[/color] de Resolución durante 2 turnos o hasta que salgan del círculo."
+        es = "Todos los aliados que estén ahora dentro del alcance [color=%positive%]<range>[/color] obtienen [color=%positive%]<def>[/color] de Defensa cuerpo a cuerpo y a distancia y [color=%positive%]<res>[/color] de Resolución durante [color=%positive%]2[/color] turnos o hasta que salgan del círculo."
     }
     // FILE: scripts\skills\actives\legend_magic_daze_skill.nut
     // context: legend_magic_daze_skill.create.m.Description
@@ -77951,7 +77951,7 @@ local pairs = [
     // context: legend_magic_healing_wind_skill.create.m.Description
     {
         en = "Restore the health of all allies within 4 tiles. Must be holding a magic staff to use."
-        es = "Restaura la salud de todos los aliados en un radio de 4 casillas. Para usarla hay que empuñar un bastón mágico."
+        es = "Restaura la salud de todos los aliados en un radio de [color=#135213]4[/color] casillas. Para usarla hay que empuñar un bastón mágico."
     }
     // context: legend_magic_healing_wind_skill.getTooltip.ret.text
     {
@@ -77964,7 +77964,7 @@ local pairs = [
     // context: legend_magic_imbue_skill.create.m.Description
     {
         en = "Imbue someone with magical power, increasing accuracy and damage for 3 turns."
-        es = "Imbuye a alguien de poder mágico, aumentando su precisión y su daño durante 3 turnos."
+        es = "Imbuye a alguien de poder mágico, aumentando su precisión y su daño durante [color=#135213]3[/color] turnos."
     }
     // context: legend_magic_imbue_skill.getTooltip.ret.push().text
     {
@@ -78022,7 +78022,7 @@ local pairs = [
     // context: legend_magic_psybeam_skill.getTooltip.ret.push().text
     {
         en = "Stun (or daze) your opponent for 2 rounds."
-        es = "Aturde (o atonta) a tu oponente durante 2 rondas."
+        es = "Aturde (o atonta) a tu oponente durante [color=#135213]2[/color] rondas."
     }
     // context: legend_magic_psybeam_skill.getTooltip.ret.push().text
     {
@@ -78064,7 +78064,7 @@ local pairs = [
     // context: legend_magic_sleep_skill.getTooltip.ret.push().text
     {
         en = "Chance to apply to all enemies within 1 range of target tile."
-        es = "Probabilidad de afectar a todos los enemigos a 1 casilla de la casilla objetivo."
+        es = "Probabilidad de afectar a todos los enemigos a [color=#135213]1[/color] casilla de la casilla objetivo."
     }
     // context: legend_magic_sleep_skill.onDelayedEffect.Tactical.EventLog.log()
     {
@@ -78086,7 +78086,7 @@ local pairs = [
     // context: legend_magic_soothing_wind_skill.create.m.Description
     {
         en = "Restore the fatigue of all allies within 4 tiles. Must be holding a magic staff to use."
-        es = "Recupera la Fatiga de todos los aliados en un radio de 4 casillas. Requiere empuñar un bastón mágico."
+        es = "Recupera la Fatiga de todos los aliados en un radio de [color=#135213]4[/color] casillas. Requiere empuñar un bastón mágico."
     }
     // context: legend_magic_soothing_wind_skill.getTooltip.ret.text
     {
@@ -78154,7 +78154,7 @@ local pairs = [
     // context: legend_mark_target_skill.create.m.Description
     {
         en = "Analyse the weak points on an opponent and tell your comrades, reducing the target's Defense by 10 and increasing Damage Taken from all sources by 1% of their total Hitpoints for 2 turns."
-        es = "Analiza los puntos débiles de un oponente y avisa a tus compañeros: reduce en 10 la Defensa del objetivo y aumenta el daño que recibe de todas las fuentes en un 1% de sus Puntos de vida totales durante 2 turnos."
+        es = "Analiza los puntos débiles de un oponente y avisa a tus compañeros: reduce en [color=#8f1e1e]10[/color] la Defensa del objetivo y aumenta el daño que recibe de todas las fuentes en un [color=#135213]1%[/color] de sus Puntos de vida totales durante [color=#8f1e1e]2[/color] turnos."
     }
     // context: legend_mark_target_skill.getTooltip.ret.extend().text
     {
@@ -78187,7 +78187,7 @@ local pairs = [
     // context: legend_martial_march_skill.getTooltip.ret.text
     {
         en = "Grants all allied units within 8 tiles [color=%positive%]1[/color] additional Action Point for their next turn"
-        es = "Otorga a todas las unidades aliadas en un radio de 8 casillas [color=%positive%]1[/color] Punto de acción adicional para su siguiente turno"
+        es = "Otorga a todas las unidades aliadas en un radio de [color=%positive%]8[/color] casillas [color=%positive%]1[/color] Punto de acción adicional para su siguiente turno"
     }
     // FILE: scripts\skills\actives\legend_miasma_skill.nut
     // context: legend_miasma_skill.create.m.Description
@@ -78198,7 +78198,7 @@ local pairs = [
     // context: legend_miasma_skill.getTooltip.text
     {
         en = "Deals 5-10 damage per turn over four turns"
-        es = "Inflige 5-10 de daño por turno durante cuatro turnos"
+        es = "Inflige [color=#135213]5-10[/color] de daño por turno durante cuatro turnos"
     }
     // FILE: scripts\skills\actives\legend_minor_sleep_skill.nut
     // context: legend_minor_sleep_skill.onDelayedEffect.Tactical.EventLog.log()
@@ -78329,7 +78329,7 @@ local pairs = [
     // context: legend_piercing_bolt_skill.::inherit().getTooltip.ret.insert().text
     {
         en = "If the bolt hits its target, it will continue through and damage any target behind, dealing 50% damage."
-        es = "Si el virote acierta, seguirá su trayectoria y dañará a cualquier objetivo que haya detrás, infligiendo un 50% del daño."
+        es = "Si el virote acierta, seguirá su trayectoria y dañará a cualquier objetivo que haya detrás, infligiendo un [color=#135213]50%[/color] del daño."
     }
     // context: legend_piercing_bolt_skill.::inherit().onScheduledTargetHit.::Tactical.EventLog.logEx().format()
     {
@@ -78349,7 +78349,7 @@ local pairs = [
     // context: legend_piercing_shot_skill.::inherit().getTooltip.ret.insert().text
     {
         en = "If the arrow hits its target, it will continue through and damage any target behind, dealing 50% damage."
-        es = "Si la flecha acierta, seguirá su trayectoria y dañará a cualquier objetivo que haya detrás, infligiendo un 50% del daño."
+        es = "Si la flecha acierta, seguirá su trayectoria y dañará a cualquier objetivo que haya detrás, infligiendo un [color=#135213]50%[/color] del daño."
     }
     // FILE: scripts\skills\actives\legend_poison_weapon_skill.nut
     // context: legend_poison_weapon_skill.getTooltip.ret.text
@@ -78361,13 +78361,13 @@ local pairs = [
     // context: legend_prayer_of_faith_skill.create.m.Description
     {
         en = "Grant defense to your allies with your chant of holy scripture, granting +20% of your resolve as melee and ranged defense. Adjacent undead and cultists are Baffled."
-        es = "Protege a tus aliados con tu cántico de las sagradas escrituras: ganan un +20% de tu Resolución como Defensa cuerpo a cuerpo y a distancia. Los no muertos y cultistas adyacentes quedan Desconcertados."
+        es = "Protege a tus aliados con tu cántico de las sagradas escrituras: ganan un [color=#135213]+20%[/color] de tu Resolución como Defensa cuerpo a cuerpo y a distancia. Los no muertos y cultistas adyacentes quedan Desconcertados."
     }
     // FILE: scripts\skills\actives\legend_prayer_of_life_skill.nut
     // context: legend_prayer_of_life_skill.create.m.Description
     {
         en = "Push allies on with your chant of holy scripture, restoring the health of all allies within 1 tile by 20% of your resolve. Does not work on cultists. Inflicts a disintegrating ailment on each adjacent undead."
-        es = "Alienta a tus aliados con tu cántico de las sagradas escrituras y restaura la salud de todos los aliados a 1 casilla en un 20% de tu Resolución. No funciona con cultistas. Inflige una dolencia desintegradora a cada no muerto adyacente."
+        es = "Alienta a tus aliados con tu cántico de las sagradas escrituras y restaura la salud de todos los aliados a [color=#135213]1[/color] casilla en un [color=#135213]20%[/color] de tu Resolución. No funciona con cultistas. Inflige una dolencia desintegradora a cada no muerto adyacente."
     }
     // FILE: scripts\skills\actives\legend_prepare_bleed_skill.nut
     // context: legend_prepare_bleed_skill.create.m.Description
@@ -78418,7 +78418,7 @@ local pairs = [
     // context: legend_pry_armor_skill.create.m.Description
     {
         en = "Tear a weak spot in your opponent's armor to reveal a weakspot. Will apply Compromised Armor on every successful hit, which increases damage ignoring armor and armor damage by 20%."
-        es = "Abre una brecha en la armadura de tu oponente para dejar al descubierto un punto débil. Aplica Armadura comprometida con cada golpe acertado, lo que aumenta en un 20% el daño que ignora la armadura y el daño a la armadura."
+        es = "Abre una brecha en la armadura de tu oponente para dejar al descubierto un punto débil. Aplica Armadura comprometida con cada golpe acertado, lo que aumenta en un [color=#135213]20%[/color] el daño que ignora la armadura y el daño a la armadura."
     }
     // context: legend_pry_armor_skill.create.m.KilledString
     {
@@ -78428,7 +78428,7 @@ local pairs = [
     // context: legend_pry_armor_skill.setItem.m.Description
     {
         en = "Tear a weak spot in your opponent's armor to reveal a weakspot. Will apply Compromised Armor on every successful hit, which increases damage ignoring armor and armor damage by 20%. Can cover the distance of 2 tiles and can be used from behind the frontline, outside the range of most melee weapons."
-        es = "Abre una brecha en la armadura de tu oponente para dejar al descubierto un punto débil. Aplica Armadura comprometida con cada golpe acertado, lo que aumenta en un 20% el daño que ignora la armadura y el daño a la armadura. Alcanza una distancia de 2 casillas y puede usarse desde detrás de la primera línea, fuera del alcance de la mayoría de las armas cuerpo a cuerpo."
+        es = "Abre una brecha en la armadura de tu oponente para dejar al descubierto un punto débil. Aplica Armadura comprometida con cada golpe acertado, lo que aumenta en un [color=#135213]20%[/color] el daño que ignora la armadura y el daño a la armadura. Alcanza una distancia de [color=#135213]2[/color] casillas y puede usarse desde detrás de la primera línea, fuera del alcance de la mayoría de las armas cuerpo a cuerpo."
     }
     // context: legend_pry_armor_skill.getTooltip.ret.extend().text
     {
@@ -78445,7 +78445,7 @@ local pairs = [
     // context: legend_puncture_parry_dagger_skill.getTooltip.ret.extend().text
     {
         en = "Hit chance determined by your targets fatigue, 0% if they are fresh and 100% if they are exhausted. If your target is dazed or parried hitchance is increased by +10%.  If they are stunned or netted you gain +25%. If they are grappled or sleeping you gain +50%. Dagger mastery doubles your chance to hit. These bonuses stack up to 100%.  "
-        es = "La probabilidad de acierto depende de la Fatiga de tu objetivo: 0% si está fresco y 100% si está agotado. Si tu objetivo está atontado o contrarrestado, la probabilidad de acierto aumenta un +10%.  Si está aturdido o atrapado en una red, ganas un +25%. Si está agarrado o dormido, ganas un +50%. El Dominio de la Daga duplica tu probabilidad de acierto. Estas bonificaciones se acumulan hasta el 100%.  "
+        es = "La probabilidad de acierto depende de la Fatiga de tu objetivo: 0% si está fresco y 100% si está agotado. Si tu objetivo está atontado o contrarrestado, la probabilidad de acierto aumenta un [color=#135213]+10%[/color].  Si está aturdido o atrapado en una red, ganas un [color=#135213]+25%[/color]. Si está agarrado o dormido, ganas un [color=#135213]+50%[/color]. El Dominio de la Daga duplica tu probabilidad de acierto. Estas bonificaciones se acumulan hasta el 100%.  "
     }
     // en = "Completely ignores armor"
     // en base_es
@@ -78504,7 +78504,7 @@ local pairs = [
     // context: legend_rat_bite_skill.create.m.Description
     {
         en = "A vicious bite with a 15% increased chance to hit the head and 100% chance to infect."
-        es = "Un mordisco feroz con un 15% más de probabilidad de alcanzar la cabeza y un 100% de probabilidad de infectar."
+        es = "Un mordisco feroz con un [color=#135213]15%[/color] más de probabilidad de alcanzar la cabeza y un [color=#135213]100%[/color] de probabilidad de infectar."
     }
     // context: legend_rat_bite_skill.create.m.KilledString
     {
@@ -78521,7 +78521,7 @@ local pairs = [
     // context: legend_read_omens_trance_skill.create.m.Description
     {
         en = "Toggle Read Omens On (+15% reroll on hit)"
-        es = "Activa Leer presagios (+15% de probabilidad de repetir la tirada de acierto)"
+        es = "Activa Leer presagios ([color=#135213]+15%[/color] de probabilidad de repetir la tirada de acierto)"
     }
     // context: legend_read_omens_trance_skill.create.m.ToggleOffDescription
     {
@@ -78542,7 +78542,7 @@ local pairs = [
     // context: legend_redback_puncture_skill.getTooltip.ret.extend().text
     {
         en = "Completely ignores armor and applies redback poison, dealing 55 damage over 10 turns. Damage doubled vs targets in a web "
-        es = "Ignora totalmente la armadura y aplica veneno de espalda roja, que inflige 55 de daño a lo largo de 10 turnos. Daño doble contra objetivos atrapados en una telaraña "
+        es = "Ignora totalmente la armadura y aplica veneno de espalda roja, que inflige [color=#135213]55[/color] de daño a lo largo de [color=#135213]10[/color] turnos. Daño doble contra objetivos atrapados en una telaraña "
     }
     // FILE: scripts\skills\actives\legend_relax_skill.nut
     // context: legend_relax_skill.create.m.Description
@@ -78617,7 +78617,7 @@ local pairs = [
     // context: legend_scry_skill.create.m.Description
     {
         en = "Gain vision of the surrounding 12 tiles for the duration of the current round."
-        es = "Obtén visión de las 12 casillas circundantes durante la ronda actual."
+        es = "Obtén visión de las [color=#135213]12[/color] casillas circundantes durante la ronda actual."
     }
     // context: legend_scry_skill.create.m.Overlay
     // en = "scry"  // identificador de la imagen de overlay, no se muestra
@@ -78625,7 +78625,7 @@ local pairs = [
     // context: legend_scry_trance_skill.create.m.Description
     {
         en = "Toggle Scry Trance On (12 Tile Scry at the beginning of turn until cancelled)"
-        es = "Activa Trance de escrutar (Escrutar 12 casillas al inicio de cada turno hasta cancelarlo)"
+        es = "Activa Trance de escrutar (Escrutar [color=#135213]12[/color] casillas al inicio de cada turno hasta cancelarlo)"
     }
     // context: legend_scry_trance_skill.create.m.ToggleOffDescription
     {
@@ -78636,7 +78636,7 @@ local pairs = [
     // context: legend_second_wind_skill.create.m.Description
     {
         en = "'I'm not out yet'. Fully refresh your Fatigue, and grant [color=%positive%]+5[/color] Fatigue Recovery for 3 turns. Additionally, remove any [color=#731f39]Stun[/color], [color=#731f39]Daze[/color], [color=#731f39]Stagger[/color], [color=#731f39]Baffle[/color], [color=#731f39]Charmed[/color] or [color=#731f39]Sleeping[/color] status. Can only be used once per combat and is only usable if accumulated fatigue is more than 50% of the maximum."
-        es = "'Todavía sigo en pie'. Recupera por completo tu Fatiga y obtén [color=%positive%]+5[/color] de Recuperación de fatiga durante 3 turnos. Además, elimina cualquier estado [color=#731f39]Aturdido[/color], [color=#731f39]Atontado[/color], [color=#731f39]Tambaleante[/color], [color=#731f39]Desconcertado[/color], [color=#731f39]Encantado[/color] o [color=#731f39]Durmiendo[/color]. Solo puede usarse una vez por combate y solo si la Fatiga acumulada supera el 50% del máximo."
+        es = "'Todavía sigo en pie'. Recupera por completo tu Fatiga y obtén [color=%positive%]+5[/color] de Recuperación de fatiga durante [color=%positive%]3[/color] turnos. Además, elimina cualquier estado [color=#731f39]Aturdido[/color], [color=#731f39]Atontado[/color], [color=#731f39]Tambaleante[/color], [color=#731f39]Desconcertado[/color], [color=#731f39]Encantado[/color] o [color=#731f39]Durmiendo[/color]. Solo puede usarse una vez por combate y solo si la Fatiga acumulada supera el 50% del máximo."
     }
     // context: legend_second_wind_skill.getTooltip.ret.extend().text
     {
@@ -78657,7 +78657,7 @@ local pairs = [
     // context: legend_shoot_dart_skill.create.m.Description
     {
         en = "A quick puff of air to propel a dart. A hit to the head will put the target to sleep, a hit to the body has a 50% chance to daze the target."
-        es = "Un soplido rápido para propulsar un dardo. Un impacto en la cabeza dormirá al objetivo; uno en el cuerpo tiene un 50% de probabilidad de atontarlo."
+        es = "Un soplido rápido para propulsar un dardo. Un impacto en la cabeza dormirá al objetivo; uno en el cuerpo tiene un [color=#135213]50%[/color] de probabilidad de atontarlo."
     }
     // context: legend_shoot_dart_skill.create.m.KilledString
     {
@@ -78809,7 +78809,7 @@ local pairs = [
     // context: legend_sprint_skill.create.m.Description
     {
         en = "For the remainder of this turn, the Action Point cost for movement is reduced by 1 for each tile, but the Fatigue cost is doubled."
-        es = "Durante el resto de este turno, el coste en Puntos de acción del movimiento se reduce en 1 por casilla, pero el coste de Fatiga se duplica."
+        es = "Durante el resto de este turno, el coste en Puntos de acción del movimiento se reduce en [color=#135213]1[/color] por casilla, pero el coste de Fatiga se duplica."
     }
     // context: legend_sprint_skill.getTooltip.ret.text
     {
@@ -78908,7 +78908,7 @@ local pairs = [
     // context: legend_strafing_run_skill.create.m.Description
     {
         en = "Quickly reposition and fire if your crossbow is loaded. Can only fire at a target that is at most 4 tiles away from the reposition location"
-        es = "Cambia de posición rápidamente y dispara si tu ballesta está cargada. Solo puede disparar a un objetivo que esté como máximo a 4 casillas de la nueva posición"
+        es = "Cambia de posición rápidamente y dispara si tu ballesta está cargada. Solo puede disparar a un objetivo que esté como máximo a [color=#135213]4[/color] casillas de la nueva posición"
     }
     // context: legend_strafing_run_skill.getTooltip.ret.push().text
     {
@@ -78919,13 +78919,13 @@ local pairs = [
     // context: legend_summon_storm_skill.create.m.Description
     {
         en = "Summons rain to the battlefield. Anyone caught in the rain will have their vision reduced by 1 and their ranged skill and ranged defense reduces by 10%. If cast when you are already wet, it will be like drinking a lionheart potion."
-        es = "Invoca la lluvia sobre el campo de batalla. Quien quede bajo la lluvia verá reducida su visión en 1 y su Habilidad a distancia y su Defensa a distancia en un 10%. Si lo lanzas cuando la lluvia ya te ha calado, será como beber una Poción Corazón de León."
+        es = "Invoca la lluvia sobre el campo de batalla. Quien quede bajo la lluvia verá reducida su visión en [color=#8f1e1e]1[/color] y su Habilidad a distancia y su Defensa a distancia en un [color=#8f1e1e]10%[/color]. Si lo lanzas cuando la lluvia ya te ha calado, será como beber una Poción Corazón de León."
     }
     // FILE: scripts\skills\actives\legend_tackle_skill.nut
     // context: legend_tackle_skill.create.m.Description
     {
         en = "Tackle an enemy to the ground. On a hit, decrease their melee defence by 50%, their initiative by 70%, and increases the damage they take by 25%. The more fatigued your target, the more likely the tackle is to succeed."
-        es = "Derriba a un enemigo con un placaje. Al acertar, reduce su Defensa cuerpo a cuerpo un 50% y su Iniciativa un 70%, y aumenta un 25% el daño que recibe. Cuanto más fatigado esté tu objetivo, más probable es que el placaje tenga éxito."
+        es = "Derriba a un enemigo con un placaje. Al acertar, reduce su Defensa cuerpo a cuerpo un [color=#8f1e1e]50%[/color] y su Iniciativa un [color=#8f1e1e]70%[/color], y aumenta un [color=#135213]25%[/color] el daño que recibe. Cuanto más fatigado esté tu objetivo, más probable es que el placaje tenga éxito."
     }
     // context: legend_tackle_skill.getTooltip.ret.push().text
     {
@@ -79093,7 +79093,7 @@ local pairs = [
     // context: legend_violent_decomposition_skill.getDescription
     {
         en = "Corrupt the force sustaining one of your thralls, causing them to detonate destructively after the corruption has time to build. Affected dead explode at the end of their turn next round, dealing damage in a 1 tile radius. The less HP they have, the more damage the explosion inflicts. If they are killed before they explode, the effect no longer triggers."
-        es = "Corrompe la fuerza que sostiene a uno de tus siervos y haz que detone de forma devastadora cuando la corrupción haya tenido tiempo de acumularse. Los muertos afectados explotan al final de su turno en la ronda siguiente e infligen daño en un radio de 1 casilla. Cuantos menos puntos de vida tengan, más daño inflige la explosión. Si los matan antes de que exploten, el efecto ya no se activa."
+        es = "Corrompe la fuerza que sostiene a uno de tus siervos y haz que detone de forma devastadora cuando la corrupción haya tenido tiempo de acumularse. Los muertos afectados explotan al final de su turno en la ronda siguiente e infligen daño en un radio de [color=#135213]1[/color] casilla. Cuantos menos puntos de vida tengan, más daño inflige la explosión. Si los matan antes de que exploten, el efecto ya no se activa."
     }
     // context: legend_violent_decomposition_skill.getTooltip.ret.push().text
     {
