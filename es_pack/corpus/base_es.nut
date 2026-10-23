@@ -201,6 +201,29 @@ local pairs = [
         es = "Ganas <v> coronas"
     }
     {
+        // text = "You gain " + getArticle(item.getName()) + item.getName(): el articulo
+        // ingles se calcula sobre el nombre ya traducido y sobra (QA 24/10, "Ganas a Pico militar").
+        // Van antes de la generica "You gain <item:str>".
+        mode = "pattern"
+        en = "You gain a <item:str>"
+        es = "Ganas <item>"
+    }
+    {
+        mode = "pattern"
+        en = "You gain an <item:str>"
+        es = "Ganas <item>"
+    }
+    {
+        mode = "pattern"
+        en = "You lose a <item:str>"
+        es = "Pierdes <item>"
+    }
+    {
+        mode = "pattern"
+        en = "You lose an <item:str>"
+        es = "Pierdes <item>"
+    }
+    {
         // text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
         mode = "pattern"
         en = "You gain <item:str>"
@@ -31451,8 +31474,10 @@ local pairs = [
     {
         // text = "Hired by " + f.getName()
         mode = "pattern"
+        // El nombre ya llega traducido (party.getTooltip, caso 33 de los hooks): un :t
+        // abortaba con los nombres que se quedan igual ("Harlingen") y con los ya traducidos.
         en = "Hired by <faction:str>"
-        es = "Contratados por <faction:t>"
+        es = "Contratados por <faction>"
     }
     {
         // La específica de las casas va antes que la genérica; la genérica queda cruda a propósito:
@@ -61083,7 +61108,7 @@ local pairs = [
     }
     {
         en = "Has a 25% chance of not consuming any crafting component used by you"
-        es = "Tiene un [color=#1e861e]25%[/color] de posibilidades de no consumir ningún componente de elaboración utilizado por ti."
+        es = "Tiene un 25% de posibilidades de no consumir ningún componente de elaboración utilizado por ti."
     }
     {
         en = "Unlocks 'Snake Oil' recipe to earn money by crafting from various low tier components"
@@ -61110,11 +61135,11 @@ local pairs = [
     }
     {
         en = "Increases repair speed by 20%"
-        es = "Aumenta la velocidad de reparación en [color=#1e861e]20%[/color]"
+        es = "Aumenta la velocidad de reparación en 20%"
     }
     {
         en = "Reduces tool consumption by 20%"
-        es = "Reduce el consumo de Herramientas y suministros en [color=#1e861e]20%[/color]"
+        es = "Reduce el consumo de Herramientas y suministros en 20%"
     }
     {
         // this.m.Requirements[0].Text = "Had " + this.Math.min(5, this.World.Statistics.getFlags().getAsInt("ItemsRepaired")) + "/5 items repaired at a town\'s smith";
@@ -61137,7 +61162,7 @@ local pairs = [
     }
     {
         en = "Pays between 300 and 750 crowns for every champion slain"
-        es = "Paga entre [color=#1e861e]300[/color] y [color=#1e861e]750[/color] coronas por cada campeón asesinado"
+        es = "Paga entre 300 y 750 coronas por cada campeón asesinado"
     }
     {
         // this.m.Requirements[0].Text = "Have " + this.Math.min(3, namedItems) + "/3 named or legendary items in your possession";
@@ -61175,7 +61200,7 @@ local pairs = [
     }
     {
         en = "Pays you between 100 and 400 crowns for every location you discover on your own. The further away from civilization, the more you're paid. Legendary locations pay double."
-        es = "Te paga entre [color=#1e861e]100[/color] y [color=#1e861e]400[/color] coronas por cada lugar que descubras por tu cuenta. Cuanto más lejos de la civilización, más te pagan. Las ubicaciones legendarias pagan el doble."
+        es = "Te paga entre 100 y 400 coronas por cada lugar que descubras por tu cuenta. Cuanto más lejos de la civilización, más te pagan. Las ubicaciones legendarias pagan el doble."
     }
     {
         en = "Discovered a legendary location"
@@ -61192,11 +61217,11 @@ local pairs = [
     }
     {
         en = "Makes all provisions last 3 extra days"
-        es = "Hace que todas las provisiones duren [color=#1e861e]3 días[/color] adicionales"
+        es = "Hace que todas las provisiones duren 3 días adicionales"
     }
     {
         en = "Increases hitpoint recovery by 1 per hour"
-        es = "Aumenta la recuperación de puntos de vida en [color=#1e861e]1[/color] por hora"
+        es = "Aumenta la recuperación de puntos de vida en 1 por hora"
     }
     {
         // this.m.Requirements[0].Text = "Have " + this.Math.min(8, uniqueProvisions) + "/8 different types of provisions";
@@ -61215,7 +61240,7 @@ local pairs = [
     }
     {
         en = "Makes your men gain 20% more experience at level 1, with 2% less at each further level"
-        es = "Hace que tus hombres ganen un [color=#1e861e]20%[/color] más de experiencia en el nivel 1, y un [color=#a22424]2%[/color] menos en cada nivel adicional ([color=#1e861e]10%[/color] en nivel 6)"
+        es = "Hace que tus hombres ganen un 20% más de experiencia en el nivel 1, y un 2% menos en cada nivel adicional (10% en nivel 6)"
     }
     {
         en = "Makes men in reserve never lose mood from not taking part in battles"
@@ -61236,7 +61261,7 @@ local pairs = [
     }
     {
         en = "Increases your sight radius by 25%"
-        es = "Incrementa el alcance de visión en un [color=#1e861e]25%[/color]"
+        es = "Incrementa el alcance de visión en un 25%"
     }
     {
         en = "Reveals extended information about footprints"
@@ -61259,7 +61284,7 @@ local pairs = [
     }
     {
         en = "Makes you earn 15% more renown with every action"
-        es = "Te hace ganar un [color=#1e861e]15%[/color] más de renombre con cada acción"
+        es = "Te hace ganar un 15% más de renombre con cada acción"
     }
     {
         en = "Makes tavern rumors more likely to contain useful information"
@@ -61305,11 +61330,11 @@ local pairs = [
     }
     {
         en = "Reduces the daily wage of each man by 15%"
-        es = "Reduce el salario diario de cada hombre un [color=#1e861e]15%[/color]"
+        es = "Reduce el salario diario de cada hombre un 15%"
     }
     {
         en = "Reduces the chance of desertion by 50%"
-        es = "Reduce las probabilidades de deserción un [color=#1e861e]50%[/color]"
+        es = "Reduce las probabilidades de deserción un 50%"
     }
     {
         en = "Prevents men demanding more pay in events"
@@ -61332,11 +61357,11 @@ local pairs = [
     }
     {
         en = "Increases the amount of ammunition you can carry by 100"
-        es = "Incrementa la cantidad de munición que puedes cargar en [color=#1e861e]100[/color]"
+        es = "Incrementa la cantidad de munición que puedes cargar en 100"
     }
     {
         en = "Increases the amount of medical supplies and tools you can carry by 50 each"
-        es = "Incrementa la cantidad de suministros médicos y herramientas que puedes cargar en [color=#1e861e]50[/color]"
+        es = "Incrementa la cantidad de suministros médicos y herramientas que puedes cargar en 50"
     }
     {
         // this.m.Requirements[0].Text = "Completed " + this.Math.min(5, this.World.Statistics.getFlags().getAsInt("EscortCaravanContractsDone")) + "/5 caravan escort contracts";
@@ -61355,11 +61380,11 @@ local pairs = [
     }
     {
         en = "Makes you pay 10% less up front for hiring new men, and 50% less for tryouts"
-        es = "Hace que pagues un [color=#1e861e]10%[/color] menos por adelantado al contratar nuevos hombres, y un [color=#1e861e]50%[/color] menos por las pruebas de reclutamiento."
+        es = "Hace que pagues un 10% menos por adelantado al contratar nuevos hombres, y un 50% menos por las pruebas de reclutamiento."
     }
     {
         en = "Makes between 2 and 4 additional men available to recruit in every settlement"
-        es = "Hace que estén disponibles entre [color=#1e861e]2[/color] y [color=#1e861e]4[/color] hombres adicionales para reclutar en cada asentamiento."
+        es = "Hace que estén disponibles entre 2 y 4 hombres adicionales para reclutar en cada asentamiento."
     }
     {
         // this.m.Requirements[0].Text = "Recruited " + this.Math.min(12, this.World.Statistics.getFlags().getAsInt("BrosHired")) + "/12 men";
@@ -61399,7 +61424,7 @@ local pairs = [
     }
     {
         en = "Makes the company travel 15% faster on any terrain"
-        es = "Acelera el viaje de la compañía en un [color=#1e861e]15%[/color] en cualquier terreno"
+        es = "Acelera el viaje de la compañía en un 15% en cualquier terreno"
     }
     {
         en = "Prevents sickness and accidents due to terrain"
@@ -61445,7 +61470,7 @@ local pairs = [
     }
     {
         en = "Increases the amount of trade goods for sale by 1 for each location that produces them, like salt near salt mines, allowing you to trade at higher volumes"
-        es = "Aumenta la cantidad de productos comerciales a la venta en [color=#1e861e]1[/color] por cada ubicación que los produce, como la sal cerca de las minas de sal, lo que te permite comerciar en volúmenes más altos."
+        es = "Aumenta la cantidad de productos comerciales a la venta en 1 por cada ubicación que los produce, como la sal cerca de las minas de sal, lo que te permite comerciar en volúmenes más altos."
     }
     {
         // this.m.Requirements[0].Text = "Sold " + this.Math.min(25, this.World.Statistics.getFlags().getAsInt("TradeGoodsSold")) + "/25 trade goods";
