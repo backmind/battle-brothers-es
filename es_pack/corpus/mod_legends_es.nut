@@ -21286,7 +21286,7 @@ local pairs = [
     // context: ranged_mastery_ambition.o.create.m.ButtonText
     {
         en = "The company lacks competent archers, limiting our tactical options.\nWe shall train three men to master bow, crossbow or sling and be deadly from afar!"
-        es = "A la compañía le faltan arqueros competentes, lo que limita nuestras opciones tácticas.\n¡Entrenaremos a tres hombres para dominar el arco, la ballesta o la honda y ser letales desde la distancia!"
+        es = "A la compañía le faltan arqueros competentes, lo que limita nuestra táctica.\n¡Entrenaremos a tres hombres en arco, ballesta u honda y serán letales de lejos!"
     }
     // context: ranged_mastery_ambition.o.create.m.UIText
     {
@@ -61717,7 +61717,7 @@ local pairs = [
     // context: legend_have_all_camp_activities_ambition.create.m.ButtonText
     {
         en = "We need to enhance our camping skills. Visit the local towns and learn what you can."
-        es = "Necesitamos mejorar nuestras habilidades de campamento. Visitemos los pueblos de la zona y aprendamos lo que podamos."
+        es = "Necesitamos mejorar el campamento. Visitemos los pueblos y aprendamos."
     }
     // context: legend_have_all_camp_activities_ambition.create.m.UIText
     {
@@ -61819,7 +61819,7 @@ local pairs = [
     // context: legend_roster_of_6_ambition.create.m.ButtonText
     {
         en = "We shall get the company strength back to a half dozen men! It will make us\na formidable force again and will allow us to take on more profitable work."
-        es = "¡Volveremos a llevar la fuerza de la compañía a media docena de hombres! Nos convertirá\nde nuevo en una fuerza formidable y nos permitirá aceptar trabajos más provechosos."
+        es = "¡Volveremos a ser media docena de hombres! Eso nos hará de nuevo\nuna fuerza formidable y nos permitirá aceptar trabajos más provechosos."
     }
     // context: legend_roster_of_6_ambition.create.m.UIText
     {
