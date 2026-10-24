@@ -6,7 +6,7 @@ De dónde viene el texto de [Battle Brothers en Español](../README.md) y qué s
 
 La traducción nació en 2023 en [su página de NexusMods](https://www.nexusmods.com/battlebrothers/mods/640), un trabajo comunitario de años que reunió más de medio millón de palabras traducidas. La empezó AMarauder y la escribió con MagnusLioncaster y Hjensikk. ElGranFoca ayudó a adaptarla a los parches del juego y, cuando el 1.5.1.8 la dejó sin funcionar, hizo una traducción nueva, publicada como 3.0.4 y 3.0.5. En febrero de 2026 backmind propuso llevarla a Rosetta, y esa versión parte del texto de Magnus y AMarauder, con sus guiños: en concreto, del árbol de enero de 2026, anterior a la traducción nueva. Por qué no se adoptó en bloque la 3.0.5 está medido y razonado en [FUENTE-305.md](../es_pack/corpus/FUENTE-305.md).
 
-Aquella traducción sustituía los archivos del juego, así que cada parche oficial la rompía y obligaba a rehacerla. Sobre Rosetta sobrevive a los parches. Desde la 4.0.0 es un solo proyecto de sus cinco autores y se publica en la misma página de Nexus, donde puedes dejar tu endorse.
+Aquella traducción sustituía los archivos del juego, así que cada parche oficial la rompía y obligaba a rehacerla. Sobre Rosetta sobrevive a los parches. Desde la 4.0.0 es un solo proyecto de sus cinco autores y se publica en la misma página de Nexus, donde puedes dejar tu endorse. Cómo presentaban la traducción sus autores hasta la 3.0.5, con sus changelogs, está en [la página original](PAGINA_ORIGINAL.md).
 
 ## Lo que ha hecho este proyecto
 
