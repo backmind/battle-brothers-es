@@ -406,6 +406,8 @@ comprueba("tropa con cifra exacta", ::Rosetta.translate("2 Ancient Auxiliaries")
     comprueba("You gain a con artículo inglés", ::Rosetta.translate("You gain a Pico militar"), "Ganas Pico militar");
 }
 
+comprueba("objeto con runas", ::Rosetta.translate("Arming Sword[color=#bf2aac] (Runed)[/color]").find("(Runed)") == null, true);
+
 // Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
 // el enganche se registra después del suyo y traduce lo que devuelven.
 {
