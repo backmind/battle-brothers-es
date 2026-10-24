@@ -20409,7 +20409,7 @@ local pairs = [
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + amount + "[/color] Tools and Supplies."
         mode = "pattern"
         en = "You gain <amount:val_tag> Tools and Supplies."
-        es = "Obtienes <amount> Herramientas y Suministros."
+        es = "Obtienes <amount> Herramientas y suministros."
     }
     {
         en = "[img]gfx/ui/events/%illustration%.png[/img]\x7bWhat few faithful still linger around the %holysite% must be the most fervid and zealous. Being that you are here representing the north, you have the men pick out a few hardy looking old gods zealots and ask that they fight for their gods. It is a convenient recruiting tool if there ever was one, and they are quick to arm themselves and undergo the shortest of training. You can only hope they are of any use in the actual battle to come.\x7d"
@@ -51306,7 +51306,7 @@ local pairs = [
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + food + "[/color] Provisions"
         mode = "pattern"
         en = "You lose <food:val_tag> Provisions"
-        es = "Pierde <food> Provisiones"
+        es = "Pierdes <food> Provisiones"
     }
     {
         // text = lowestBro.getName() + " is sick"
