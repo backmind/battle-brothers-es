@@ -127,6 +127,7 @@ El repositorio reúne piezas de autores distintos, y cada una conserva la suya:
 
 - **Código propio** (herramientas, hooks del pack, CI): [MIT](LICENSE).
 - **Texto de la traducción** (`es_pack/corpus/`): de sus cinco autores, con el permiso expreso de los autores originales. No lleva licencia libre: no se puede reutilizar fuera de este proyecto sin permiso de sus autores, ni usar en mods de pago o con puntos de donación.
+- **Traducción de Legends** (`es_pack/corpus/mod_legends_es.nut`): el pack no incluye ningún archivo de Legends; solo lleva sus textos en inglés como claves para encontrar cada traducción. El equipo de Legends confirmó en su Discord que, sin archivos suyos, no hace falta su permiso, y que usar sus textos como claves está bien.
 - **Capa de interfaz** (`es_pack/src/ui/`): ficheros del juego, propiedad de Overhype Studios, con los textos traducidos. Se distribuyen como es costumbre en los mods del juego, sin reclamar licencia sobre ellos.
 - **Rosetta vendorizado** (`vendor/rosetta/`): de hackflow, bajo su [licencia BSD](vendor/rosetta/LICENSE).
 
