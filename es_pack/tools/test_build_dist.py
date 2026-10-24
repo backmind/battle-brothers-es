@@ -1515,3 +1515,61 @@ def test_la_opcion_se_mide_por_su_rama_mas_ancha():
     larga = "Una rama bastante más larga"
     assert linea_mas_ancha("{Sí | %s}" % larga) == ancho_rem(larga, BOTON_FUENTE)
     assert linea_mas_ancha("A {b | {c | %s}}" % larga) == ancho_rem("A " + larga, BOTON_FUENTE)
+
+
+def test_una_regla_golosa_no_tapa_a_otra_mas_concreta(tmp_path):
+    """Rosetta prueba las reglas de cada clave en orden de carga, y una con
+    <x:str> abierto ("You gain <item:str>") casaba antes que las concretas que
+    venían detrás, también las de Legends («Ganas 5 Crowns and 3 Experience»).
+    ordenaReglas del preload las pone al final de su clave. Corre
+    sq_probe_orden.nut con el runtime real, los pares del zip y ese bloque.
+    Sin intérprete Squirrel o sin stdlib, se salta."""
+    import os
+    import subprocess
+
+    import pytest
+
+    from build_dist import CORPUS, IDS, REPO, SRC, emit, es_golosa, literalizar
+    from check_syntax import localiza_interprete
+
+    sq = localiza_interprete()
+    if sq is None:
+        pytest.skip("sin interprete Squirrel disponible")
+    stdlib = _stdlib_descomprimido(tmp_path / "stdlib")
+    if stdlib is None:
+        pytest.skip("sin stdlib (STDLIB_DIR o DATA_DIR en .env)")
+    base = tmp_path / "base_es.nut"
+    dist = sorted((b for b in load_blocks(CORPUS) if classify(b) == "dist"), key=es_golosa)
+    emit(base, [literalizar(b) for b in dist])
+    preload = (SRC / "scripts" / "!mods_preload" / "mod_battle_brothers_es.nut").read_text(encoding="utf-8")
+    bloque = re.search(r"::BattleBrothersEs\.ordenaReglas <- function \(\) \{.*?\n\};\n", preload, re.S)
+    assert bloque, "el preload perdió ordenaReglas"
+    orden = tmp_path / "orden.nut"
+    orden.write_bytes(bloque.group(0).encode("utf-8"))
+    packs = [base, IDS]
+    casos = [
+        ("You lose [color=#135213]5[/color] Medical Supplies", "Pierdes [color=#135213]5[/color] Suministros médicos"),
+        ("You lose [color=#135213]5[/color] Provisions", "Pierdes [color=#135213]5[/color] Provisiones"),
+        ("Destroy Bob near Bob", "Destruye Bob cerca de Bob"),
+    ]
+    try:
+        from build_dist import cabecera, corpus_del_pack
+    except ImportError:
+        corpus_del_pack = None
+    if corpus_del_pack is not None:
+        for c in corpus_del_pack():
+            if c["ruta"] == CORPUS:
+                continue
+            p = tmp_path / c["ruta"].name
+            emit(p, [b for b in load_blocks(c["ruta"]) if classify(b) == "dist"], cabecera(c["id"], c["version"]))
+            packs.append(p)
+        packs.insert(2, REPO / "es_pack" / "src" / "mod_battle_brothers_es" / "claves.nut")
+        casos.append(("You gain [color=#1e861e]5[/color] Crowns and [color=#1e861e]3[/color] Experience",
+                      "Obtienes [color=#1e861e]5[/color] coronas y [color=#1e861e]3[/color] de experiencia"))
+    env = dict(os.environ, ROSETTA_DIR=str(REPO), STDLIB_DIR=str(stdlib),
+               SONDA_PACKS=";".join(str(p) for p in packs), SONDA_ORDEN=str(orden),
+               SONDA_CASOS=";".join(en + "|" + es for en, es in casos))
+    r = subprocess.run([str(sq), str(REPO / "es_pack" / "tools" / "sq_probe_orden.nut")],
+                       capture_output=True, env=env, timeout=300)
+    salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
+    assert "FALLOS: 0" in salida, salida[-6000:]

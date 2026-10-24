@@ -49,6 +49,39 @@ mod.queue(">mod_msu", function () {
 ::include("mod_battle_brothers_es/base_es");
 ::include("mod_battle_brothers_es/ids_es");
 
+// Orden de las reglas de patrón. Rosetta guarda cada regla bajo su primera
+// palabra y las prueba en orden de carga, así que una con un <x:str> abierto
+// ("You gain <item:str>") casaba antes que cualquier otra más concreta que
+// viniera detrás, también las de Legends, que se cargan después del base:
+// «You gain 5 Crowns and 3 Experience» salía «Ganas 5 Crowns and 3
+// Experience». Aquí, en cada clave, primero van las reglas sin <x:str>, en su
+// orden, y después las golosas, de la de más texto literal a la de menos
+// (empate: su orden). Rosetta compara las reglas por identidad, así que
+// reordenarlas no cambia nada más. Se llama tras cargar cada corpus.
+if (!("BattleBrothersEs" in getroottable())) ::BattleBrothersEs <- {};
+::BattleBrothersEs.ordenaReglas <- function () {
+    foreach (clave, lista in ::Rosetta.maps.es.rules) {
+        local libres = [], golosas = [];
+        foreach (i, r in lista) {
+            local abierta = false, n = 0;
+            if ("parts" in r)
+                foreach (p in r.parts) {
+                    if (typeof p == "string") n += p.len();
+                    else if ("sub" in p && p.sub == "str") abierta = true;
+                }
+            if (abierta) golosas.push({r = r, n = n, i = i});
+            else libres.push(r);
+        }
+        golosas.sort(function (a, b) {
+            local c = b.n <=> a.n;
+            return c != 0 ? c : a.i <=> b.i;
+        });
+        foreach (g in golosas) libres.push(g.r);
+        ::Rosetta.maps.es.rules[clave] = libres;
+    }
+};
+::BattleBrothersEs.ordenaReglas();
+
 // El juego instalado esta en ingles, asi que la autodeteccion de idioma
 // de Rosetta (que mira strings ya traducidas) no aplica: activamos es.
 ::Rosetta.activate("es");
