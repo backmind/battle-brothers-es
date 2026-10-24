@@ -19,7 +19,7 @@
 
 Traducción al español de Battle Brothers, de todas sus expansiones y de [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande del juego: eventos, contratos, combate, interfaz y tooltips, en español neutro para todo el ámbito hispanohablante. No toca ningún archivo del juego, así que un parche no la rompe.
 
-**Novedad en la 5.0.0: Legends, traducido.** Unas 15.800 frases y más de 380.000 palabras del original, dentro del mismo pack. Se carga solo si tienes Legends instalado. Y el pack es ahora un solo archivo.
+**Novedad en la 5.0.0: Legends, traducido.** Unas 15.800 frases y más de 380.000 palabras del original, dentro del mismo pack, que además pasa a ser un solo archivo.
 
 ![Negociación de un contrato, en español](es_pack/media/contrato.png)
 
@@ -77,7 +77,7 @@ Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, ent
 
 ## El corpus en cifras
 
-Las cifras del juego base y sus expansiones salen del corpus de este repositorio, y la CI comprueba en cada cambio que siguen al día. La traducción de Legends suma otros 15.783 pares, con unas 384.000 palabras del original (408.000 en castellano), frente a las 558.000 del juego base: entre los dos, cerca de un millón de palabras.
+Las cifras del juego base y sus expansiones salen del corpus de este repositorio, y la CI comprueba en cada cambio que siguen al día. La traducción de Legends suma otros 15.783 pares, con unas 384.000 palabras del original (408.000 en castellano), frente a las 558.000 del juego base. Entre los dos suman cerca de un millón.
 
 <!-- METRICAS:INICIO (autogenerado por es_pack/tools/update_readme_metrics.py; no editar a mano) -->
 | | |

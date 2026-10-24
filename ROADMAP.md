@@ -6,7 +6,7 @@ Hacia dónde va el pack. El detalle de cada tarea está en las [issues](https://
 
 La traducción del juego base y sus expansiones está completa desde la 1.0.0. La numeración salta de la 1.0.1 a la 4.0.0 para continuar la de la traducción anterior en Nexus, que llegó a la 3.0.5.
 
-[Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, está traducido desde la 5.0.0: unas 15.800 frases, dentro del mismo pack, que se cargan solo si Legends está instalado. Se probó en partida en varias rondas de pruebas y con una auditoría de su código fuente en busca de pantallas que el juego no enseña a menudo.
+[Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, está traducido desde la 5.0.0: unas 15.800 frases, dentro del mismo pack, que se cargan solo si Legends está instalado. Se probó en varias partidas y con una auditoría de su código fuente, en busca de las pantallas que el juego enseña poco.
 
 ## Ahora: mantener los dos
 

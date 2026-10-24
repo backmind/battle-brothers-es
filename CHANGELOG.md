@@ -6,15 +6,15 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 
 **Legends, traducido.** [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, se juega ahora en castellano: unas 15.800 frases y más de 380.000 palabras del original, con sus eventos, contratos, ventajas, trasfondos, el campamento, el séquito y sus pantallas propias. Viaja dentro del mismo pack y solo se carga si Legends está instalado; sin él, el pack se comporta como siempre. Está verificada en Legends 19.4.22 y cubre el 99 % de sus frases.
 
-**Un solo archivo.** El pack es ahora un único `mod_battle_brothers_es_<versión>.zip`, con el texto y las pantallas que el juego dibuja en JavaScript juntos: un archivo menos que descargar, copiar y actualizar. Si vienes de una versión anterior, borra también el `mod_battle_brothers_es_ui_<versión>.zip` que tengas: si se queda, pisa la interfaz nueva con la antigua.
+**Un solo archivo.** El pack es ahora un único `mod_battle_brothers_es_<versión>.zip`, con el texto y las pantallas que el juego dibuja en JavaScript juntos. Es un archivo menos que bajar y copiar. Si vienes de una versión anterior, borra también el `mod_battle_brothers_es_ui_<versión>.zip` que tengas: si se queda, pisa la interfaz nueva con la antigua.
 
 ### General
 
-- **Las reglas concretas ya no las tapa una genérica.** Rosetta prueba las reglas de traducción en el orden en que se cargan, y una genérica como «You gain X» se adelantaba a otras más precisas: salían frases a medias como «Ganas 5 Crowns and 3 Experience» o «Regresa a any town of X». Ahora las genéricas van siempre detrás. Se revisaron una a una las frases que cambian con el nuevo orden: todas mejoran.
-- **Cifras en color en los tooltips.** Los efectos, costes y probabilidades se leen de un vistazo: lo que te favorece en verde y lo que te perjudica en rojo, sin tocar la redacción. Los orígenes, las ambiciones, las habilidades y las tiendas del campamento de Legends llevan además sus términos clave resaltados.
+- **Las reglas concretas ya no las tapa una genérica.** Rosetta prueba las reglas de traducción en el orden en que se cargan, y una genérica como «You gain X» se adelantaba a otras más precisas: salían frases a medias como «Ganas 5 Crowns and 3 Experience» o «Regresa a any town of X». Ahora las genéricas van siempre detrás. Se revisaron una a una las frases que cambian con el nuevo orden, y todas salen mejor.
+- **Cifras en color en los tooltips.** En los efectos, costes y probabilidades, lo que te favorece va en verde y lo que te perjudica, en rojo. La redacción no cambia. Los orígenes, las ambiciones, las habilidades y las tiendas del campamento de Legends llevan además sus términos clave resaltados.
 - **Los textos que el pack ya ha traducido no vuelven a pasar por la traducción.** Algunos, como los consejos del campamento de Legends, colgaban el juego al abrirse.
 - **Los valores que llegan coloreados a un texto** («los [Lobos huargo] se fueron hacia el [oeste]») se traducen también.
-- **La ficha del pack en Ajustes de mods** se rehace: más clara, con lo que incluye, sus autores y los enlaces a Nexus y a GitHub.
+- **La ficha del pack en Ajustes de mods** se rehace, con lo que incluye, sus autores y los enlaces a Nexus y a GitHub.
 
 ### Juego base
 
