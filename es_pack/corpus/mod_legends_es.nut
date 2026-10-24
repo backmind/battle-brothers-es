@@ -10268,7 +10268,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendImmovableObject
     {
         en = "\nHeavy armor, a trusty shield and your heels dug into the ground and you can weather any storm.\n\n[color=%passive%][u]Passive:[/u][/color]\n• For every 10 points of gear weight from all slots gain [color=%positive%]1[/color] Resolve and [color=%negative%]1%[/color] less damage ignoring armor.\n\n• If you have at least 50 gear weight any attack that would stun you will instead daze you.\n\n• If you have at least 80 gear weight and [color=%perk%]Steel Brow[/color] become immune to knockback and grab.\n"
-        es = "\nCon armadura pesada, un escudo de confianza y los talones clavados en el suelo, puedes capear cualquier tormenta.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Por cada 10 puntos de peso del equipo en todas las ranuras, obtienes [color=%positive%]1[/color] de Resolución y un [color=%negative%]1%[/color] menos de daño que ignora la armadura.\n\n• Si tienes al menos 50 de peso de equipo, cualquier ataque que fuera a aturdirte te atontará en su lugar.\n\n• Si tienes al menos 80 de peso de equipo y [color=%perk%]Cabeza dura[/color], te vuelves inmune a los empujones y los agarres.\n"
+        es = "\nCon armadura pesada, un escudo de confianza y los talones clavados en el suelo, puedes capear cualquier tormenta.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Por cada 10 puntos de peso del equipo en todas las ranuras, obtienes [color=%positive%]1[/color] de Resolución y un [color=%positive%]1%[/color] menos de daño que ignora la armadura.\n\n• Si tienes al menos 50 de peso de equipo, cualquier ataque que fuera a aturdirte te atontará en su lugar.\n\n• Si tienes al menos 80 de peso de equipo y [color=%perk%]Cabeza dura[/color], te vuelves inmune a los empujones y los agarres.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendDoubleStrike
     {
@@ -10300,7 +10300,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendSlaughterer
     {
         en = "\n'I powdered my pigeon for the ribcage slaughter!!!'\n\n[color=%passive%][u]Passive:[/u][/color]\n• Melee kills are always fatalities (if the weapon allows).\n\n• Fatalities have a [color=%negative%]-5[/color] penalty to enemy Resolve checks.\n\n• Having the 'Bloodthirsty' trait allows you to trigger an additional positive morale check when killing an enemy.\n"
-        es = "\n'¡¡¡Empolvé a mi pichón para la matanza de costillares!!!'\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Las muertes cuerpo a cuerpo son siempre muertes brutales (si el arma lo permite).\n\n• Las muertes brutales imponen una penalización de [color=%negative%]-5[/color] a las tiradas de Resolución del enemigo.\n\n• Tener el rasgo 'Sediento de sangre' te permite provocar una tirada de moral positiva adicional al matar a un enemigo.\n"
+        es = "\n'¡¡¡Empolvé a mi pichón para la matanza de costillares!!!'\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Las muertes cuerpo a cuerpo son siempre muertes brutales (si el arma lo permite).\n\n• Las muertes brutales imponen una penalización de [color=%positive%]-5[/color] a las tiradas de Resolución del enemigo.\n\n• Tener el rasgo 'Sediento de sangre' te permite provocar una tirada de moral positiva adicional al matar a un enemigo.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendBetweenTheEyes
     {
@@ -10310,7 +10310,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendDeflect
     {
         en = "\nLearn to better deflect hits to the side instead of blocking them head on.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Shield damage received is reduced by [color=%negative%]-50%[/color] to a minimum of [color=%damage%]1[/color].\n"
-        es = "\nAprende a desviar mejor los golpes hacia un lado en lugar de bloquearlos de frente.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• El daño que recibe el escudo se reduce en un [color=%negative%]-50%[/color], hasta un mínimo de [color=%damage%]1[/color].\n"
+        es = "\nAprende a desviar mejor los golpes hacia un lado en lugar de bloquearlos de frente.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• El daño que recibe el escudo se reduce en un [color=%positive%]-50%[/color], hasta un mínimo de [color=%damage%]1[/color].\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendLastStand
     {
@@ -10322,7 +10322,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendIronside
     {
         en = "\nAll damage received is reduced.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduced by [color=%negative%]-5%[/color] for every opponent adjacent and in melee range.\n\n• Up to a [color=%negative%]-30%[/color] total damage reduction.\n"
-        es = "\nTodo el daño recibido se reduce.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Se reduce un [color=%negative%]-5%[/color] por cada oponente adyacente y a distancia cuerpo a cuerpo.\n\n• Hasta una reducción total del daño del [color=%negative%]-30%[/color].\n"
+        es = "\nTodo el daño recibido se reduce.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Se reduce un [color=%positive%]-5%[/color] por cada oponente adyacente y a distancia cuerpo a cuerpo.\n\n• Hasta una reducción total del daño del [color=%positive%]-30%[/color].\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendRebound
     {
@@ -10377,7 +10377,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendAthlete
     {
         en = "\nYou're a well-rounded athlete!\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduce the Fatigue cost of all your skills and movement by a percentage equal to [color=%negative%]20%[/color] of your maximum usable Fatigue after gear weight is accounted for.\n"
-        es = "\n¡Tienes un físico completo!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce el coste de Fatiga de todas tus habilidades y del movimiento en un porcentaje igual al [color=%negative%]20%[/color] de tu Fatiga máxima utilizable tras descontar el peso del equipo.\n"
+        es = "\n¡Tienes un físico completo!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce el coste de Fatiga de todas tus habilidades y del movimiento en un porcentaje igual al [color=%positive%]20%[/color] de tu Fatiga máxima utilizable tras descontar el peso del equipo.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendSpecPoison
     {
@@ -10653,7 +10653,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendChanneledPower
     {
         en = "\nLearn to better focus your art so it is less draining on your body.\n\n[color=%passive%][u]Passive:[/u][/color]\n• All skills that raise dead build up [color=%negative%]30%[/color] less Fatigue.\n"
-        es = "\nAprende a concentrar mejor tu arte para que agote menos tu cuerpo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Todas las habilidades que alzan a los muertos acumulan un [color=%negative%]30%[/color] menos de Fatiga.\n"
+        es = "\nAprende a concentrar mejor tu arte para que agote menos tu cuerpo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Todas las habilidades que alzan a los muertos acumulan un [color=%positive%]30%[/color] menos de Fatiga.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendReclamation
     {
@@ -10663,7 +10663,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendConservation
     {
         en = "\nConduct profane rituals meant to stave off the passage of time, further preserving the means of your craft.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduces the daily medicine cost of maintaining Human Corpses, Bones, and other Carrion by [color=%negative%]50%[/color].\n"
-        es = "\nCelebra rituales profanos destinados a frenar el paso del tiempo y preserva aún más los recursos de tu oficio.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en un [color=%negative%]50%[/color] el coste diario de medicina para conservar cadáveres humanos, huesos y demás carroña.\n"
+        es = "\nCelebra rituales profanos destinados a frenar el paso del tiempo y preserva aún más los recursos de tu oficio.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en un [color=%positive%]50%[/color] el coste diario de medicina para conservar cadáveres humanos, huesos y demás carroña.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendEnthrall
     {
@@ -10747,7 +10747,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendValaTranceMastery
     {
         en = "\nIncrease your mastery over trances.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Entering trances builds up [color=%negative%]25%[/color] less Fatigue.\n\n• Gain a [color=%positive%]50%[/color] chance to not drop out of trance when receiving damage.\n\n• Trances gain [color=%positive%]+15%[/color] chance to succeed.\n"
-        es = "\nAumenta tu dominio de los trances.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Entrar en trance acumula un [color=%negative%]25%[/color] menos de Fatiga.\n\n• Obtienes un [color=%positive%]50%[/color] de probabilidad de no salir del trance al recibir daño.\n\n• Los trances obtienen un [color=%positive%]+15%[/color] de probabilidad de éxito.\n"
+        es = "\nAumenta tu dominio de los trances.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Entrar en trance acumula un [color=%positive%]25%[/color] menos de Fatiga.\n\n• Obtienes un [color=%positive%]50%[/color] de probabilidad de no salir del trance al recibir daño.\n\n• Los trances obtienen un [color=%positive%]+15%[/color] de probabilidad de éxito.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendValaTrancePerspective
     {
@@ -10776,12 +10776,12 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendValaThreads
     {
         en = "\nAs the Vala swings and weaves her staff she spins and twines the threads of fate of those she hits with it.\n\n[color=%passive%][u]Passive:[/u][/color]\n• The Vala needs her staff equipped for this perk to work\n\n• When the Vala hits a target, gain a chance based on Resolve, to apply a stacking debuff that lowers maximum Hitpoints and increases the amount of damage taken.\n\n• Each stack reduces maximum Hitpoints by [color=%negative%]10%[/color] and increases damage taken by [color=%positive%]10%[/color], up to a maximum of 5 stacks.\n"
-        es = "\nAl blandir y hacer girar su bastón, la Vala hila y entrelaza los hilos del destino de aquellos a quienes golpea con él.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La Vala necesita tener equipado su bastón para que esta ventaja funcione\n\n• Cuando la Vala golpea a un objetivo, obtiene una probabilidad, basada en la Resolución, de aplicar una penalización acumulable que reduce los Puntos de vida máximos y aumenta el daño recibido.\n\n• Cada acumulación reduce los Puntos de vida máximos en un [color=%negative%]10%[/color] y aumenta el daño recibido en un [color=%positive%]10%[/color], hasta un máximo de 5 acumulaciones.\n"
+        es = "\nAl blandir y hacer girar su bastón, la Vala hila y entrelaza los hilos del destino de aquellos a quienes golpea con él.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La Vala necesita tener equipado su bastón para que esta ventaja funcione\n\n• Cuando la Vala golpea a un objetivo, obtiene una probabilidad, basada en la Resolución, de aplicar una penalización acumulable que reduce los Puntos de vida máximos y aumenta el daño recibido.\n\n• Cada acumulación reduce los Puntos de vida máximos en un [color=%positive%]10%[/color] y aumenta el daño recibido en un [color=%positive%]10%[/color], hasta un máximo de 5 acumulaciones.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendValaPremonition
     {
         en = "\nAs if being warned by some higher being, the Vala occasionally gets glimpses of the immediate future and any dangers it may hold, letting her prepare herself accordingly.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Grants a chance that an attacker will need two successful rolls to damage the Vala.\n\n• This chance begins at [color=%positive%]9%[/color] and scales with levels, up to a maximum of [color=%positive%]33%[/color] at level 12.\n\n• Additionally, reduces chance to be targeted by enemies by [color=%negative%]9%[/color], scaling with levels up to a maximum of [color=%negative%]33%[/color] at level 12.\n"
-        es = "\nComo si algún ser superior la advirtiera, la Vala vislumbra de vez en cuando el futuro inmediato y los peligros que pueda encerrar, lo que le permite prepararse en consecuencia.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Otorga una probabilidad de que un atacante necesite dos tiradas con éxito para dañar a la Vala.\n\n• Esta probabilidad empieza en un [color=%positive%]9%[/color] y escala con el nivel, hasta un máximo del [color=%positive%]33%[/color] en el nivel 12.\n\n• Además, reduce la probabilidad de que los enemigos la elijan como objetivo en un [color=%negative%]9%[/color], que escala con el nivel hasta un máximo del [color=%negative%]33%[/color] en el nivel 12.\n"
+        es = "\nComo si algún ser superior la advirtiera, la Vala vislumbra de vez en cuando el futuro inmediato y los peligros que pueda encerrar, lo que le permite prepararse en consecuencia.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Otorga una probabilidad de que un atacante necesite dos tiradas con éxito para dañar a la Vala.\n\n• Esta probabilidad empieza en un [color=%positive%]9%[/color] y escala con el nivel, hasta un máximo del [color=%positive%]33%[/color] en el nivel 12.\n\n• Además, reduce la probabilidad de que los enemigos la elijan como objetivo en un [color=%positive%]9%[/color], que escala con el nivel hasta un máximo del [color=%positive%]33%[/color] en el nivel 12.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendInventorAnatomy
     {
@@ -11112,7 +11112,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendLevitate
     {
         en = "\nLevitate a person above the ground, making movement across any terrain cost less.\n\n[color=%active%][u]Active:[/u][/color]\n• Movement across any terrain cost [color=%negative%]1[/color] AP and [color=%negative%]2[/color] Fatigue per tile.\n\n• Costs [color=%negative%]4[/color] AP and [color=%negative%]20[/color] Fatigue.\n"
-        es = "\nHaz levitar a una persona sobre el suelo, lo que abarata el movimiento por cualquier terreno.\n\n[color=%active%][u]Activo:[/u][/color]\n• Moverse por cualquier terreno cuesta [color=%negative%]1[/color] PA y [color=%negative%]2[/color] de Fatiga por casilla.\n\n• Cuesta [color=%negative%]4[/color] PA y [color=%negative%]20[/color] de Fatiga.\n"
+        es = "\nHaz levitar a una persona sobre el suelo, lo que abarata el movimiento por cualquier terreno.\n\n[color=%active%][u]Activo:[/u][/color]\n• Moverse por cualquier terreno cuesta [color=%positive%]1[/color] PA y [color=%positive%]2[/color] de Fatiga por casilla.\n\n• Cuesta [color=%negative%]4[/color] PA y [color=%negative%]20[/color] de Fatiga.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendTeleport
     {
@@ -11138,7 +11138,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendMasteryNets
     {
         en = "\nMaster the ability to ensnare others and to disentangle yourself.\n\n[color=%passive%][u]Passive:[/u][/color]\n• When throwing nets reduce Fatigue cost by [color=%negative%]25%[/color] and AP cost to [color=%negative%]3[/color].\n\n• When freeing yourself or allies gain a baseline [color=%positive%]99%[/color] chance to succeed in removing rooting effects, such as nets, vines, webs, and ensnarement by some beasts.\n\n• Reduces Fatigue cost of freeing yourself or allies by [color=%negative%]66%[/color] and AP cost to [color=%negative%]3[/color].\n\n• Can now double grip with a net in your offhand and unlocks Hand to Hand abilities that might be locked from holding a net in offhand.\n"
-        es = "\nDomina la técnica de atrapar a otros y de desenredarte.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Al lanzar redes, reduce el coste de Fatiga en un [color=%negative%]25%[/color] y el coste en PA a [color=%negative%]3[/color].\n\n• Al liberarte a ti o a tus aliados, obtienes una probabilidad base del [color=%positive%]99%[/color] de eliminar efectos de inmovilización, como redes, enredaderas, telarañas y las trampas de algunas bestias.\n\n• Reduce en un [color=%negative%]66%[/color] el coste de Fatiga de liberarte a ti o a tus aliados, y el coste en PA a [color=%negative%]3[/color].\n\n• Ahora puedes usar el doble agarre con una red en la mano secundaria, y se desbloquean las habilidades de Mano a mano que llevar una red en la mano secundaria podría bloquear.\n"
+        es = "\nDomina la técnica de atrapar a otros y de desenredarte.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Al lanzar redes, reduce el coste de Fatiga en un [color=%positive%]25%[/color] y el coste en PA a [color=%positive%]3[/color].\n\n• Al liberarte a ti o a tus aliados, obtienes una probabilidad base del [color=%positive%]99%[/color] de eliminar efectos de inmovilización, como redes, enredaderas, telarañas y las trampas de algunas bestias.\n\n• Reduce en un [color=%positive%]66%[/color] el coste de Fatiga de liberarte a ti o a tus aliados, y el coste en PA a [color=%positive%]3[/color].\n\n• Ahora puedes usar el doble agarre con una red en la mano secundaria, y se desbloquean las habilidades de Mano a mano que llevar una red en la mano secundaria podría bloquear.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendMasterySlings
     {
@@ -11202,7 +11202,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendPerfectFit
     {
         en = "\nWell fitting armor lets you strike faster and fight longer.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduce the Fatigue cost of all your skills and movement by [color=%negative%]15%[/color], and gain [color=%positive%]30%[/color] Initiative.\n\n• The bonus decreases if the combined Weight penalties of your body and head armor exceed half of your maximum Fatigue. Maximum fatigue is influenced by the weight of all your combined gear, not just armor.\n"
-        es = "\nUna armadura bien ajustada te permite golpear más rápido y luchar más tiempo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en un [color=%negative%]15%[/color] el coste de Fatiga de todas tus habilidades y movimientos, y obtienes un [color=%positive%]30%[/color] de Iniciativa.\n\n• La bonificación disminuye si la suma de las penalizaciones de peso de tu armadura de cuerpo y de cabeza supera la mitad de tu Fatiga máxima. La Fatiga máxima depende del peso de todo tu equipo, no solo de la armadura.\n"
+        es = "\nUna armadura bien ajustada te permite golpear más rápido y luchar más tiempo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en un [color=%positive%]15%[/color] el coste de Fatiga de todas tus habilidades y movimientos, y obtienes un [color=%positive%]30%[/color] de Iniciativa.\n\n• La bonificación disminuye si la suma de las penalizaciones de peso de tu armadura de cuerpo y de cabeza supera la mitad de tu Fatiga máxima. La Fatiga máxima depende del peso de todo tu equipo, no solo de la armadura.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendThrustMaster
     {
@@ -11214,7 +11214,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendLithe
     {
         en = "\nMedium armor provides a sweet spot between movement and protection.\n\n[color=%passive%][u]Passive:[/u][/color]\n• All incoming damage to your Armor and Hitpoints is reduced by [color=%negative%]30%[/color], when the combined weight of head and body armor is between 25 and 35.\n\n• Outside this range, the bonus drops exponentially.\n\n• As your armor takes damage, the damage mitigation to Armor drops slowly to half its maximum value, but remains unchanged for Hitpoint damage mitigation.\n"
-        es = "\nLa armadura media ofrece el punto justo entre movilidad y protección.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Todo el daño recibido en tu armadura y tus Puntos de vida se reduce en un [color=%negative%]30%[/color] cuando el peso combinado de la armadura de cabeza y de cuerpo está entre 25 y 35.\n\n• Fuera de ese rango, la bonificación cae de forma exponencial.\n\n• A medida que tu armadura recibe daño, la reducción del daño a la armadura baja poco a poco hasta la mitad de su valor máximo, pero la reducción del daño a los Puntos de vida no cambia.\n"
+        es = "\nLa armadura media ofrece el punto justo entre movilidad y protección.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Todo el daño recibido en tu armadura y tus Puntos de vida se reduce en un [color=%positive%]30%[/color] cuando el peso combinado de la armadura de cabeza y de cuerpo está entre 25 y 35.\n\n• Fuera de ese rango, la bonificación cae de forma exponencial.\n\n• A medida que tu armadura recibe daño, la reducción del daño a la armadura baja poco a poco hasta la mitad de su valor máximo, pero la reducción del daño a los Puntos de vida no cambia.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendInTheZone
     {
@@ -11323,7 +11323,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendTerrifyingVisage
     {
         en = "\nThe mere sight of this character sends enemies fleeing.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduces Resolve of adjacent enemies by [color=%negative%]-15[/color].\n"
-        es = "\nCon solo ver a este personaje, los enemigos huyen.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en [color=%negative%]-15[/color] la Resolución de los enemigos adyacentes.\n"
+        es = "\nCon solo ver a este personaje, los enemigos huyen.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en [color=%positive%]-15[/color] la Resolución de los enemigos adyacentes.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendFreedomOfMovement
     {
@@ -11356,7 +11356,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendMindOverBody
     {
         en = "\nPush your body beyond what is humanly possible through your sheer force of will.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Gain scaling Fatigue reduction on skills and Fatigue cost of getting hit for each point of Resolve over 60.\n\n70 Resolve: [color=%negative%]7%[/color] Fatigue reduction\n80 Resolve: [color=%negative%]10%[/color] Fatigue reduction\n90 Resolve: [color=%negative%]18%[/color] Fatigue reduction\n100 Resolve: [color=%negative%]22%[/color] Fatigue reduction\n120 Resolve: [color=%negative%]29%[/color] Fatigue reduction\n140 Resolve: [color=%negative%]34%[/color] Fatigue reduction\n160 Resolve: [color=%negative%]39%[/color] Fatigue reduction\n"
-        es = "\nLleva tu cuerpo más allá de lo humanamente posible con la pura fuerza de tu voluntad.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Obtienes una reducción progresiva de la Fatiga de las habilidades y del coste de Fatiga de recibir golpes por cada punto de Resolución por encima de 60.\n\n70 de Resolución: [color=%negative%]7%[/color] de reducción de Fatiga\n80 de Resolución: [color=%negative%]10%[/color] de reducción de Fatiga\n90 de Resolución: [color=%negative%]18%[/color] de reducción de Fatiga\n100 de Resolución: [color=%negative%]22%[/color] de reducción de Fatiga\n120 de Resolución: [color=%negative%]29%[/color] de reducción de Fatiga\n140 de Resolución: [color=%negative%]34%[/color] de reducción de Fatiga\n160 de Resolución: [color=%negative%]39%[/color] de reducción de Fatiga\n"
+        es = "\nLleva tu cuerpo más allá de lo humanamente posible con la pura fuerza de tu voluntad.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Obtienes una reducción progresiva de la Fatiga de las habilidades y del coste de Fatiga de recibir golpes por cada punto de Resolución por encima de 60.\n\n70 de Resolución: [color=%positive%]7%[/color] de reducción de Fatiga\n80 de Resolución: [color=%positive%]10%[/color] de reducción de Fatiga\n90 de Resolución: [color=%positive%]18%[/color] de reducción de Fatiga\n100 de Resolución: [color=%positive%]22%[/color] de reducción de Fatiga\n120 de Resolución: [color=%positive%]29%[/color] de reducción de Fatiga\n140 de Resolución: [color=%positive%]34%[/color] de reducción de Fatiga\n160 de Resolución: [color=%positive%]39%[/color] de reducción de Fatiga\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendEscapeArtist
     {
@@ -11625,7 +11625,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendQuartermaster
     {
         en = "\nBy cooking bulk meals, using scraps, and saving leftovers you can save food for the company.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Reduces food consumption by [color=%negative%]1[/color] for every mercenary.\n\n• This perk is only counted once per company.\n"
-        es = "\nCocinando en grandes cantidades, aprovechando los restos y guardando las sobras, puedes ahorrar comida a la compañía.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en [color=%negative%]1[/color] el consumo de comida de cada mercenario.\n\n• Esta ventaja solo cuenta una vez por compañía.\n"
+        es = "\nCocinando en grandes cantidades, aprovechando los restos y guardando las sobras, puedes ahorrar comida a la compañía.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Reduce en [color=%positive%]1[/color] el consumo de comida de cada mercenario.\n\n• Esta ventaja solo cuenta una vez por compañía.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendBarterGreed
     {
@@ -11949,7 +11949,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendNightRaider
     {
         en = "\nGain enhanced vision and tactical advantages at night.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Gain [color=%positive%]+1[/color] vision and become unaffected by night time penalties.\n\n• When attacking at night, adjacent enemies will lose [color=%negative%]10[/color] Resolve.\n\n• Gain [color=%positive%]+10%[/color] Melee and Ranged Skill while fighting at night.\n"
-        es = "\nObtén una visión mejorada y ventajas tácticas de noche.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Obtienes [color=%positive%]+1[/color] de visión y no te afectan las penalizaciones nocturnas.\n\n• Al atacar de noche, los enemigos adyacentes pierden [color=%negative%]10[/color] de Resolución.\n\n• Obtienes [color=%positive%]+10%[/color] de Habilidad cuerpo a cuerpo y Habilidad a distancia al combatir de noche.\n"
+        es = "\nObtén una visión mejorada y ventajas tácticas de noche.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Obtienes [color=%positive%]+1[/color] de visión y no te afectan las penalizaciones nocturnas.\n\n• Al atacar de noche, los enemigos adyacentes pierden [color=%positive%]10[/color] de Resolución.\n\n• Obtienes [color=%positive%]+10%[/color] de Habilidad cuerpo a cuerpo y Habilidad a distancia al combatir de noche.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendAdaptive
     {
@@ -11981,7 +11981,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.LegendHimshaw
     {
         en = "\n'In short, we tailored.'\n\n[color=%passive%][u]Passive:[/u][/color]\n• This mercenary will care for their own equipment. Once a day, at the end of combat repair [color=%negative%]20%[/color] of their body and helmet.\n\n• At the start of each day additionally repair [color=%negative%]10%[/color] of their body and helmet.\n"
-        es = "\n'En pocas palabras, cosimos.'\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Este personaje cuidará de su propio equipo. Una vez al día, al final del combate, repara el [color=%negative%]20%[/color] de su armadura y su yelmo.\n\n• Además, al comienzo de cada día repara el [color=%negative%]10%[/color] de su armadura y su yelmo.\n"
+        es = "\n'En pocas palabras, cosimos.'\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Este personaje cuidará de su propio equipo. Una vez al día, al final del combate, repara el [color=%positive%]20%[/color] de su armadura y su yelmo.\n\n• Además, al comienzo de cada día repara el [color=%positive%]10%[/color] de su armadura y su yelmo.\n"
     }
     // context: ::Const.Strings.PerkDescription.LegendSwagger
     {
@@ -18878,12 +18878,12 @@ local pairs = [
     // context: ::Legends.Rune.LegendRsaEndurance.::Legends.Runes.add().Tooltip
     {
         en = "\nThis item has the power of the rune sigil of Endurance:\n[color=%positive%]+%bonus1%[/color] Fatigue recovery per turn.\n[color=%negative%]%bonus2%%[/color] reduced Fatigue cost of all your skills.\n	"
-        es = "\nEste objeto posee el poder del sello rúnico de Resistencia:\n[color=%positive%]+%bonus1%[/color] de recuperación de Fatiga por turno.\n[color=%negative%]%bonus2%%[/color] de reducción del coste de Fatiga de todas tus habilidades.\n	"
+        es = "\nEste objeto posee el poder del sello rúnico de Resistencia:\n[color=%positive%]+%bonus1%[/color] de recuperación de Fatiga por turno.\n[color=%positive%]%bonus2%%[/color] de reducción del coste de Fatiga de todas tus habilidades.\n	"
     }
     // context: ::Legends.Rune.LegendRsaEndurance.::Legends.Runes.add().RuneTooltip
     {
         en = "\nThis item has the power of the rune sigil of Endurance:\n[color=%positive%]+0[/color] to [color=%positive%]+%max1%[/color] Fatigue recovery per turn.\n[color=%negative%]3%[/color] to [color=%positive%]%max2%%[/color] reduced Fatigue cost of all your skills.\n	"
-        es = "\nEste objeto posee el poder del sello rúnico de Resistencia:\n[color=%positive%]+0[/color] a [color=%positive%]+%max1%[/color] de recuperación de Fatiga por turno.\n[color=%negative%]3%[/color] a [color=%positive%]%max2%%[/color] de reducción del coste de Fatiga de todas tus habilidades.\n	"
+        es = "\nEste objeto posee el poder del sello rúnico de Resistencia:\n[color=%positive%]+0[/color] a [color=%positive%]+%max1%[/color] de recuperación de Fatiga por turno.\n[color=%positive%]3%[/color] a [color=%positive%]%max2%%[/color] de reducción del coste de Fatiga de todas tus habilidades.\n	"
     }
     // context: ::Legends.Rune.LegendRsaEndurance.::Legends.Runes.add().getTooltip.::Legends.tooltip()
     // en = "bonus1"  // clave del marcador %bonus1% de ::Legends.tooltip(), no se muestra
@@ -18901,12 +18901,12 @@ local pairs = [
     // context: ::Legends.Rune.LegendRsaSafety.::Legends.Runes.add().Tooltip
     {
         en = "\nThis item has the power of the rune sigil of Safety:\n[color=%positive%]+%bonus1%%[/color] Hitpoints.\n[color=%negative%]-%bonus2%%[/color] Damage received.\n	"
-        es = "\nEste objeto posee el poder del sello rúnico de Seguridad:\n[color=%positive%]+%bonus1%%[/color] de Puntos de vida.\n[color=%negative%]-%bonus2%%[/color] de daño recibido.\n	"
+        es = "\nEste objeto posee el poder del sello rúnico de Seguridad:\n[color=%positive%]+%bonus1%%[/color] de Puntos de vida.\n[color=%positive%]-%bonus2%%[/color] de daño recibido.\n	"
     }
     // context: ::Legends.Rune.LegendRsaSafety.::Legends.Runes.add().RuneTooltip
     {
         en = "\nThis item has the power of the rune sigil of Safety:\n[color=%positive%]+3%[/color] to [color=%positive%]+%max1%%[/color] Hitpoints.\n[color=%negative%]-3%[/color] to [color=%positive%]-%max2%%[/color] Damage received.\n	"
-        es = "\nEste objeto posee el poder del sello rúnico de Seguridad:\n[color=%positive%]+3%[/color] a [color=%positive%]+%max1%%[/color] de Puntos de vida.\n[color=%negative%]-3%[/color] a [color=%positive%]-%max2%%[/color] de daño recibido.\n	"
+        es = "\nEste objeto posee el poder del sello rúnico de Seguridad:\n[color=%positive%]+3%[/color] a [color=%positive%]+%max1%%[/color] de Puntos de vida.\n[color=%positive%]-3%[/color] a [color=%positive%]-%max2%%[/color] de daño recibido.\n	"
     }
     // context: ::Legends.Rune.LegendRsaResilience.::Legends.Runes.add().Name
     {
@@ -19013,12 +19013,12 @@ local pairs = [
     // context: ::Legends.Rune.LegendRssRadiance.::Legends.Runes.add().Tooltip
     {
         en = "\nThis item has the power of the rune sigil of Radiance:\n[color=%negative%]-%bonus1%%[/color] to all adjacent enemies' Melee skill.\n[color=%negative%]-%bonus2%%[/color] to all adjacent enemies' Melee defense.\n	"
-        es = "\nEste objeto posee el poder del sello rúnico de Resplandor:\n[color=%negative%]-%bonus1%%[/color] a la Habilidad cuerpo a cuerpo de todos los enemigos adyacentes.\n[color=%negative%]-%bonus2%%[/color] a la Defensa cuerpo a cuerpo de todos los enemigos adyacentes.\n	"
+        es = "\nEste objeto posee el poder del sello rúnico de Resplandor:\n[color=%positive%]-%bonus1%%[/color] a la Habilidad cuerpo a cuerpo de todos los enemigos adyacentes.\n[color=%positive%]-%bonus2%%[/color] a la Defensa cuerpo a cuerpo de todos los enemigos adyacentes.\n	"
     }
     // context: ::Legends.Rune.LegendRssRadiance.::Legends.Runes.add().RuneTooltip
     {
         en = "\nThis item has the power of the rune sigil of Radiance:\n[color=%negative%]-3%[/color] to [color=%negative%]-%max1%%[/color] to all adjacent enemies' Melee skill.\n[color=%negative%]-3%[/color] to [color=%negative%]-%max2%%[/color] to all adjacent enemies' Melee defense.\n	"
-        es = "\nEste objeto posee el poder del sello rúnico de Resplandor:\n[color=%negative%]-3%[/color] a [color=%negative%]-%max1%%[/color] a la Habilidad cuerpo a cuerpo de todos los enemigos adyacentes.\n[color=%negative%]-3%[/color] a [color=%negative%]-%max2%%[/color] a la Defensa cuerpo a cuerpo de todos los enemigos adyacentes.\n	"
+        es = "\nEste objeto posee el poder del sello rúnico de Resplandor:\n[color=%positive%]-3%[/color] a [color=%positive%]-%max1%%[/color] a la Habilidad cuerpo a cuerpo de todos los enemigos adyacentes.\n[color=%positive%]-3%[/color] a [color=%positive%]-%max2%%[/color] a la Defensa cuerpo a cuerpo de todos los enemigos adyacentes.\n	"
     }
     // context: ::Legends.Rune.LegendRssDurability.::Legends.Runes.add().Name
     {
@@ -34431,7 +34431,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.Steadfast
     {
         en = "\nFirm and resolute.\n\n[color=%passive%][u]Passive:[/u][/color]\n• The Fatigue cost of getting hit or missed by regular attacks is reduced by [color=%negative%]90%[/color]. Attacks that specifically target Fatigue are unaffected.\n\n• Additionally for every 10 points of gear weight from all slots, gain [color=%positive%]1[/color] melee defense.\n"
-        es = "\nFirmeza y resolución.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• El coste de Fatiga de recibir ataques normales, acierten o fallen, se reduce un [color=%negative%]90%[/color]. Los ataques dirigidos específicamente a la Fatiga no se ven afectados.\n\n• Además, por cada 10 puntos de peso del equipo en todas las ranuras, obtienes [color=%positive%]1[/color] de defensa cuerpo a cuerpo.\n"
+        es = "\nFirmeza y resolución.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• El coste de Fatiga de recibir ataques normales, acierten o fallen, se reduce un [color=%positive%]90%[/color]. Los ataques dirigidos específicamente a la Fatiga no se ven afectados.\n\n• Además, por cada 10 puntos de peso del equipo en todas las ranuras, obtienes [color=%positive%]1[/color] de defensa cuerpo a cuerpo.\n"
     }
     // context: ::Const.Strings.PerkDescription.SunderingStrikes
     {
@@ -34441,17 +34441,17 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.BattleFlow
     {
         en = "\nGlide through battle like a leaf in a stream.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Once per turn, upon killing an opponent, reduce current Fatigue by [color=%negative%]10%[/color] of characters base maximum Fatigue (before penalties due to armor weight are applied).\n"
-        es = "\nDeslízate por la batalla como una hoja en un arroyo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Una vez por turno, al matar a un oponente, la Fatiga actual se reduce en un [color=%negative%]10%[/color] de la Fatiga máxima base del personaje (antes de aplicar las penalizaciones por el peso de la armadura).\n"
+        es = "\nDeslízate por la batalla como una hoja en un arroyo.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Una vez por turno, al matar a un oponente, la Fatiga actual se reduce en un [color=%positive%]10%[/color] de la Fatiga máxima base del personaje (antes de aplicar las penalizaciones por el peso de la armadura).\n"
     }
     // context: ::Const.Strings.PerkDescription.SpecBow
     {
         en = "\nMaster the art of archery and pelting your opponents with arrows from afar.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Skills build up [color=%negative%]25%[/color] less Fatigue.\n\n• View range and maximum firing range with bows is increased by [color=%positive%]+1[/color].\n"
-        es = "\nDomina el arte del tiro con arco y acribilla a tus oponentes con flechas desde lejos.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Las habilidades acumulan un [color=%negative%]25%[/color] menos de Fatiga.\n\n• El alcance de visión y el alcance máximo de disparo con arcos aumentan en [color=%positive%]+1[/color].\n"
+        es = "\nDomina el arte del tiro con arco y acribilla a tus oponentes con flechas desde lejos.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Las habilidades acumulan un [color=%positive%]25%[/color] menos de Fatiga.\n\n• El alcance de visión y el alcance máximo de disparo con arcos aumentan en [color=%positive%]+1[/color].\n"
     }
     // context: ::Const.Strings.PerkDescription.SpecCrossbow
     {
         en = "\nMaster crossbows and firearms, and learn where to aim best.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Skills build up [color=%negative%]25%[/color] less Fatigue.\n\n• An additional [color=%positive%]20%[/color] of damage inflicted with crossbows ignores armor.\n\n• Handgonnes now require [color=%negative%]6[/color] Action Points to reload and can be fired every turn instead of every other turn.\n"
-        es = "\nDomina las ballestas y las armas de fuego, y aprende dónde apuntar mejor.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Las habilidades acumulan un [color=%negative%]25%[/color] menos de Fatiga.\n\n• Un [color=%positive%]20%[/color] adicional del daño infligido con ballestas ignora la armadura.\n\n• Los cañones de mano ahora requieren [color=%negative%]6[/color] Puntos de acción para recargar y pueden dispararse cada turno en lugar de cada dos turnos.\n"
+        es = "\nDomina las ballestas y las armas de fuego, y aprende dónde apuntar mejor.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Las habilidades acumulan un [color=%positive%]25%[/color] menos de Fatiga.\n\n• Un [color=%positive%]20%[/color] adicional del daño infligido con ballestas ignora la armadura.\n\n• Los cañones de mano ahora requieren [color=%positive%]6[/color] Puntos de acción para recargar y pueden dispararse cada turno en lugar de cada dos turnos.\n"
     }
     // context: ::Const.Strings.PerkDescription.SpecThrowing
     {
@@ -34543,7 +34543,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.Nimble
     {
         en = "\nSpecialize in light armor!\n\n[color=%passive%][u]Passive:[/u][/color]\n• Hitpoint damage taken is reduced by up to [color=%negative%]60%[/color]. If you also have [color=%perk%]Relentless[/color], damage done to armor is reduced by [color=%negative%]33%[/color] of your Nimble damage reduction.\n\n• This value is lowered exponentially by the total penalty to Maximum Fatigue from body and head armor above 15.\n\n• Does not affect damage from mental attacks or status effects.\n"
-        es = "\n¡Especialízate en armadura ligera!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• El daño recibido a los Puntos de vida se reduce hasta un [color=%negative%]60%[/color]. Si también tienes [color=%perk%]Implacable[/color], el daño a la armadura se reduce en un [color=%negative%]33%[/color] de tu reducción de daño de Ligero.\n\n• Este valor disminuye exponencialmente según la penalización total a la Fatiga máxima de la armadura corporal y de cabeza por encima de 15.\n\n• No afecta al daño de ataques mentales ni de efectos de estado.\n"
+        es = "\n¡Especialízate en armadura ligera!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• El daño recibido a los Puntos de vida se reduce hasta un [color=%positive%]60%[/color]. Si también tienes [color=%perk%]Implacable[/color], el daño a la armadura se reduce en un [color=%positive%]33%[/color] de tu reducción de daño de Ligero.\n\n• Este valor disminuye exponencialmente según la penalización total a la Fatiga máxima de la armadura corporal y de cabeza por encima de 15.\n\n• No afecta al daño de ataques mentales ni de efectos de estado.\n"
     }
     // context: ::Const.Strings.PerkDescription.Dodge
     {
@@ -34572,7 +34572,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.Brawny
     {
         en = "\nAll this exercise has you in great shape.\n\n[color=%passive%][u]Passive:[/u][/color]\n• Fatigue is increased by [color=%positive%]25%[/color] of your Base Fatigue. This bonus will also offset Initiative penalties from wearing armor.\n\n• Weapons with extra Fatigue build-up on skills have this penalty reduced by [color=%negative%]1[/color]\n"
-        es = "\nTanto ejercicio te ha puesto en plena forma.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La Fatiga aumenta en un [color=%positive%]25%[/color] de tu Fatiga base. Esta bonificación también compensa las penalizaciones a la Iniciativa por llevar armadura.\n\n• Las armas cuyas habilidades acumulan Fatiga adicional reducen esa penalización en [color=%negative%]1[/color]\n"
+        es = "\nTanto ejercicio te ha puesto en plena forma.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La Fatiga aumenta en un [color=%positive%]25%[/color] de tu Fatiga base. Esta bonificación también compensa las penalizaciones a la Iniciativa por llevar armadura.\n\n• Las armas cuyas habilidades acumulan Fatiga adicional reducen esa penalización en [color=%positive%]1[/color]\n"
     }
     // context: ::Const.Strings.PerkDescription.ShieldBash
     {
@@ -34622,7 +34622,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.Underdog
     {
         en = "\nI'm used to it.\n\n[color=%passive%][u]Passive:[/u][/color]\n• The defense malus due to being surrounded by opponents is reduced by [color=%negative%]5[/color].\n\n• If an attacker has the [color=%perk%]Strength In Numbers[/color] perk, the effect of that perk is negated, and the normal defense malus due to being surrounded is applied instead.\n\n• Gain an additional stacking [color=%positive%]+5%[/color] chance to hit each time you dodge an attack.\n"
-        es = "\nNada nuevo para mí.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La penalización a la defensa cuando te rodean oponentes se reduce en [color=%negative%]5[/color].\n\n• Si un atacante tiene la ventaja [color=%perk%]La unión hace la fuerza[/color], el efecto de esa ventaja se anula y se aplica en su lugar la penalización normal a la defensa por el cerco.\n\n• Obtienes un [color=%positive%]+5%[/color] acumulable adicional de probabilidad de acierto cada vez que esquivas un ataque.\n"
+        es = "\nNada nuevo para mí.\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• La penalización a la defensa cuando te rodean oponentes se reduce en [color=%positive%]5[/color].\n\n• Si un atacante tiene la ventaja [color=%perk%]La unión hace la fuerza[/color], el efecto de esa ventaja se anula y se aplica en su lugar la penalización normal a la defensa por el cerco.\n\n• Obtienes un [color=%positive%]+5%[/color] acumulable adicional de probabilidad de acierto cada vez que esquivas un ataque.\n"
     }
     // context: ::Const.Strings.PerkDescription.Berserk
     {
@@ -34731,7 +34731,7 @@ local pairs = [
     // context: ::Const.Strings.PerkDescription.Fearsome
     {
         en = "\nMake them scatter and flee!\n\n[color=%passive%][u]Passive:[/u][/color]\n• Any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of your current Resolve.\n\n[color=%negative%]Does not trigger multiple times from the same attacker on the same target in one attack.[/color]\n"
-        es = "\n¡Haz que se dispersen y huyan!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Cualquier ataque que inflija al menos [color=%positive%]1[/color] punto de daño a los Puntos de vida provoca una tirada de moral en el oponente con una penalización igual al [color=%negative%]20%[/color] de tu Resolución actual.\n\n[color=%negative%]No se activa varias veces por el mismo atacante sobre el mismo objetivo en un solo ataque.[/color]\n"
+        es = "\n¡Haz que se dispersen y huyan!\n\n[color=%passive%][u]Pasivo:[/u][/color]\n• Cualquier ataque que inflija al menos [color=%positive%]1[/color] punto de daño a los Puntos de vida provoca una tirada de moral en el oponente con una penalización igual al [color=%positive%]20%[/color] de tu Resolución actual.\n\n[color=%negative%]No se activa varias veces por el mismo atacante sobre el mismo objetivo en un solo ataque.[/color]\n"
     }
     // context: ::Const.Strings.PerkDescription.HeadHunter
     {
@@ -51819,7 +51819,7 @@ local pairs = [
     // context: ghoul_trophy_item.o.getTooltip.result.push().text
     {
         en = "Reduces the Resolve of any opponent engaged in melee by [color=%negative%]-3[/color]"
-        es = "Reduce la Resolución de cualquier oponente involucrado en combate cuerpo a cuerpo en [color=%negative%]-3[/color]"
+        es = "Reduce la Resolución de cualquier oponente involucrado en combate cuerpo a cuerpo en [color=%positive%]-3[/color]"
     }
     // FILE: mod_legends\hooks\items\accessory\poison_item.nut
     // context: poison_item.o.create.m.Description
@@ -52494,7 +52494,7 @@ local pairs = [
     // context: named_flail.o.getTooltip.result.push().text
     {
         en = "Has a [color=%negative%]100%[/color] chance to daze a target on a hit to the head"
-        es = "Tiene un [color=%negative%]100%[/color] de probabilidad de atontar al objetivo con un golpe a la cabeza"
+        es = "Tiene un [color=%positive%]100%[/color] de probabilidad de atontar al objetivo con un golpe a la cabeza"
     }
     // FILE: mod_legends\hooks\items\weapons\named\named_goblin_spear.nut
     // context: named_goblin_spear.o.create.m.Description
@@ -53830,7 +53830,7 @@ local pairs = [
     // context: debilitate.o.getDescription
     {
         en = "Prepare your next attack to debilitate a target for one turn, reducing their ability to inflict damage by [color=%negative%]-25%[/color] and increasing the damage they take by [color=%positive%]-15%[/color]. Missing the target will waste the effect."
-        es = "Prepara tu siguiente ataque para debilitar a un objetivo durante un turno, reduciendo su capacidad de infligir daño en un [color=%negative%]-25%[/color] y aumentando el daño que recibe en un [color=%positive%]-15%[/color]. Fallar el ataque desperdiciará el efecto."
+        es = "Prepara tu siguiente ataque para debilitar a un objetivo durante un turno, reduciendo su capacidad de infligir daño en un [color=%positive%]-25%[/color] y aumentando el daño que recibe en un [color=%positive%]-15%[/color]. Fallar el ataque desperdiciará el efecto."
     }
     // FILE: mod_legends\hooks\skills\actives\decapitate.nut
     // context: decapitate.o.setItem.m.Description
@@ -53874,7 +53874,7 @@ local pairs = [
     // context: fire_handgonne_skill.o.getTooltip.tooltip.push().text
     {
         en = "Has a [color=%negative%]100%[/color] chance to Shellshock a target on a hit to the head"
-        es = "Tiene un [color=%negative%]100%[/color] de probabilidad de conmocionar al objetivo con un golpe en la cabeza"
+        es = "Tiene un [color=%positive%]100%[/color] de probabilidad de conmocionar al objetivo con un golpe en la cabeza"
     }
     // FILE: mod_legends\hooks\skills\actives\flail_skill.nut
     // context: flail_skill.o.setItem.m.Name
@@ -54004,27 +54004,27 @@ local pairs = [
     // context: insects_skill.o.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Melee Skill"
-        es = "[color=%negative%]-50%[/color] Habilidad cuerpo a cuerpo"
+        es = "[color=%positive%]-50%[/color] Habilidad cuerpo a cuerpo"
     }
     // context: insects_skill.o.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Ranged Skill"
-        es = "[color=%negative%]-50%[/color] Habilidad a distancia"
+        es = "[color=%positive%]-50%[/color] Habilidad a distancia"
     }
     // context: insects_skill.o.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Melee Defense"
-        es = "[color=%negative%]-50%[/color] Defensa cuerpo a cuerpo"
+        es = "[color=%positive%]-50%[/color] Defensa cuerpo a cuerpo"
     }
     // context: insects_skill.o.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Ranged Defense"
-        es = "[color=%negative%]-50%[/color] Defensa a distancia"
+        es = "[color=%positive%]-50%[/color] Defensa a distancia"
     }
     // context: insects_skill.o.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Initiative"
-        es = "[color=%negative%]-50%[/color] Iniciativa"
+        es = "[color=%positive%]-50%[/color] Iniciativa"
     }
     // context: insects_skill.o.getTooltip.ret.push().text
     {
@@ -54321,7 +54321,7 @@ local pairs = [
     // context: sling_stone_skill.o.getTooltip.ret.push().text
     {
         en = "Has a [color=%negative%]100%[/color] chance to baffle a target on a hit to the head"
-        es = "Tiene un [color=%negative%]100%[/color] de probabilidad de desconcertar al objetivo con un golpe en la cabeza"
+        es = "Tiene un [color=%positive%]100%[/color] de probabilidad de desconcertar al objetivo con un golpe en la cabeza"
     }
     // context: sling_stone_skill.o.getTooltip.ret.extend().text
     {
@@ -57116,7 +57116,7 @@ local pairs = [
     // context: swordmaster_background.o.getTooltip.ret.push().text
     {
         en = "At all times your Initiative is reduced only by [color=%negative%]50%[/color] of your accumulated Fatigue, instead of all of it. Stacks with [color=%perk%]Relentless[/color]"
-        es = "En todo momento, tu Iniciativa solo se reduce en un [color=%negative%]50%[/color] de tu Fatiga acumulada, en lugar de en su totalidad. Se acumula con [color=%perk%]Implacable[/color]"
+        es = "En todo momento, tu Iniciativa solo se reduce en un [color=%positive%]50%[/color] de tu Fatiga acumulada, en lugar de en su totalidad. Se acumula con [color=%perk%]Implacable[/color]"
     }
     // context: swordmaster_background.o.onBuildDescription
     {
@@ -57393,12 +57393,12 @@ local pairs = [
     // context: debilitating_attack_effect.o.getTooltip.text
     {
         en = "[color=%negative%]-25%[/color] Damage inflicted by target hit for two turns"
-        es = "[color=%negative%]-25%[/color] al daño que inflige el objetivo alcanzado durante dos turnos"
+        es = "[color=%positive%]-25%[/color] al daño que inflige el objetivo alcanzado durante dos turnos"
     }
     // context: debilitating_attack_effect.o.getTooltip.text
     {
         en = "[color=%negative%]+15%[/color] Damage taken by target hit for two turns"
-        es = "[color=%negative%]+15%[/color] al daño que recibe el objetivo alcanzado durante dos turnos"
+        es = "[color=%positive%]+15%[/color] al daño que recibe el objetivo alcanzado durante dos turnos"
     }
     // FILE: mod_legends\hooks\skills\effects\dodge_effect.nut
     // context: dodge_effect.o.getTooltip.text
@@ -57477,7 +57477,7 @@ local pairs = [
     // context: smoke_effect.o.getTooltip.text
     {
         en = "[color=%negative%]50%[/color] less Ranged Damage received"
-        es = "[color=%negative%]50%[/color] menos de daño a distancia recibido"
+        es = "[color=%positive%]50%[/color] menos de daño a distancia recibido"
     }
     // context: smoke_effect.o.getTooltip.text
     {
@@ -75043,7 +75043,7 @@ local pairs = [
     // context: legend_additional_padding_upgrade.updateTooltip._tooltip.push().text
     {
         en = "Reduces any ranged damage to the body by [color=%negative%]-10%[/color]"
-        es = "Reduce en un [color=%negative%]-10%[/color] todo el daño a distancia recibido en el cuerpo"
+        es = "Reduce en un [color=%positive%]-10%[/color] todo el daño a distancia recibido en el cuerpo"
     }
     // FILE: scripts\items\legend_armor\armor_upgrades\legend_armor_chain_and_mail_upgrade.nut
     // context: legend_armor_chain_and_mail_upgrade.create.m.Name
@@ -75625,7 +75625,7 @@ local pairs = [
     // context: legend_serpent_skin_cloak.getTooltip.result.push().text
     {
         en = "Reduces damage from fire and firearms by [color=%negative%]-33%[/color]"
-        es = "Reduce el daño del fuego y de las armas de fuego en un [color=%negative%]-33%[/color]"
+        es = "Reduce el daño del fuego y de las armas de fuego en un [color=%positive%]-33%[/color]"
     }
     // FILE: scripts\items\legend_armor\cloak\legend_stollwurm_scales_cloak.nut
     // context: legend_stollwurm_scales_cloak.create.m.Name
@@ -75661,7 +75661,7 @@ local pairs = [
     // context: legend_unhold_fur_cloak.getTooltip.result.push().text
     {
         en = "Reduces any ranged damage to the body by [color=%negative%]-20%[/color]"
-        es = "Reduce todo el daño a distancia recibido en el cuerpo en un [color=%negative%]-20%[/color]"
+        es = "Reduce todo el daño a distancia recibido en el cuerpo en un [color=%positive%]-20%[/color]"
     }
     // FILE: scripts\items\legend_armor\legend_armor.nut
     // context: legend_armor.makeName.NAME
@@ -79467,7 +79467,7 @@ local pairs = [
     // context: legend_named_rusty_serrated_axe.getTooltip.result.push().text
     {
         en = "Has a [color=%negative%]33%[/color] lower threshold to inflict injuries"
-        es = "Tiene un umbral un [color=%negative%]33%[/color] más bajo para infligir heridas"
+        es = "Tiene un umbral un [color=%positive%]33%[/color] más bajo para infligir heridas"
     }
     // FILE: scripts\items\weapons\named\legend_named_rusty_warcleaver.nut
     // context: legend_named_rusty_warcleaver.create.m.Description
@@ -80557,7 +80557,7 @@ local pairs = [
     // context: legend_cascade_skill.getTooltip.ret.extend().text
     {
         en = "Increases damage by [color=%negative%]+10%[/color] of the Initiative difference between you and the target"
-        es = "Aumenta el daño en un [color=%negative%]+10%[/color] de la diferencia de Iniciativa entre tú y el objetivo"
+        es = "Aumenta el daño en un [color=%positive%]+10%[/color] de la diferencia de Iniciativa entre tú y el objetivo"
     }
     // FILE: scripts\skills\actives\legend_cat_bite_skill.nut
     // en = "Mangled"
@@ -80651,7 +80651,7 @@ local pairs = [
     // context: legend_choke_skill.getTooltip.tooltip.extend().text
     {
         en = "Adds the Choked effect which reduces enemy fatigue recovery by [color=%negative%]15[/color]"
-        es = "Aplica el efecto Estrangulado, que reduce la recuperación de fatiga del enemigo en [color=%negative%]15[/color]"
+        es = "Aplica el efecto Estrangulado, que reduce la recuperación de fatiga del enemigo en [color=%positive%]15[/color]"
     }
     // context: legend_choke_skill.onGetHitFactors._tooltip.push().text
     {
@@ -81385,7 +81385,7 @@ local pairs = [
     // context: legend_eat_pudding_skill.getTooltip.ret.text
     {
         en = "[color=%negative%]-5[/color] Fatigue per turn for 10 turns"
-        es = "[color=%negative%]-5[/color] de Fatiga por turno durante [color=%negative%]10[/color] turnos"
+        es = "[color=%positive%]-5[/color] de Fatiga por turno durante [color=%positive%]10[/color] turnos"
     }
     // context: legend_eat_pudding_skill.getTooltip.ret.text
     {
@@ -81739,12 +81739,12 @@ local pairs = [
     // context: legend_flourish_skill.getTooltip.text
     {
         en = "Increases fatigue use of all attack skills by [color=%positive%]75%[/color]"
-        es = "Aumenta en un [color=%positive%]75%[/color] el gasto de Fatiga de todas las habilidades de ataque"
+        es = "Aumenta en un [color=%negative%]75%[/color] el gasto de Fatiga de todas las habilidades de ataque"
     }
     // context: legend_flourish_skill.getTooltip.text
     {
         en = "Increases Action Point cost of all attack skills by [color=%positive%]1[/color]"
-        es = "Aumenta en [color=%positive%]1[/color] el coste en Puntos de acción de todas las habilidades de ataque"
+        es = "Aumenta en [color=%negative%]1[/color] el coste en Puntos de acción de todas las habilidades de ataque"
     }
     // context: legend_flourish_skill.getTooltip.text
     {
@@ -81754,7 +81754,7 @@ local pairs = [
     // context: legend_flourish_skill.getTooltip.text
     {
         en = "As long as you are faster than the target, any attack that inflicts at least [color=%positive%]1[/color] point of damage to Hitpoints triggers a morale check for the opponent with a penalty equal to [color=%negative%]20%[/color] of the Initiative difference between you and the target"
-        es = "Mientras tu Iniciativa sea mayor que la del objetivo, cualquier ataque que inflija al menos [color=%positive%]1[/color] punto de daño a los Puntos de vida provoca una comprobación de moral al oponente con una penalización igual al [color=%negative%]20%[/color] de la diferencia de Iniciativa entre tú y el objetivo"
+        es = "Mientras tu Iniciativa sea mayor que la del objetivo, cualquier ataque que inflija al menos [color=%positive%]1[/color] punto de daño a los Puntos de vida provoca una comprobación de moral al oponente con una penalización igual al [color=%positive%]20%[/color] de la diferencia de Iniciativa entre tú y el objetivo"
     }
     // FILE: scripts\skills\actives\legend_fortify_skill.nut
     // context: legend_fortify_skill.create.m.Description
@@ -82602,12 +82602,12 @@ local pairs = [
     // context: legend_mark_target_skill.getTooltip.ret.extend().text
     {
         en = "[color=%negative%]-10[/color] Melee Defense"
-        es = "[color=%negative%]-10[/color] de Defensa cuerpo a cuerpo"
+        es = "[color=%positive%]-10[/color] de Defensa cuerpo a cuerpo"
     }
     // context: legend_mark_target_skill.getTooltip.ret.extend().text
     {
         en = "[color=%negative%]-10[/color] Ranged Defense"
-        es = "[color=%negative%]-10[/color] de Defensa a distancia"
+        es = "[color=%positive%]-10[/color] de Defensa a distancia"
     }
     // context: legend_mark_target_skill.getTooltip.ret.extend().text
     {
@@ -83167,12 +83167,12 @@ local pairs = [
     // context: legend_sling_heavy_stone_skill.getTooltip.ret.push().text
     {
         en = "Has a [color=%negative%]100%[/color] chance to stun and daze target on a hit to the head if not immune and always staggers the target"
-        es = "Tiene un [color=%negative%]100%[/color] de probabilidad de aturdir y atontar al objetivo con un impacto en la cabeza si no es inmune, y siempre lo hace tambalearse"
+        es = "Tiene un [color=%positive%]100%[/color] de probabilidad de aturdir y atontar al objetivo con un impacto en la cabeza si no es inmune, y siempre lo hace tambalearse"
     }
     // context: legend_sling_heavy_stone_skill.getTooltip.ret.push().text
     {
         en = "Has a [color=%negative%]100%[/color] chance to daze a target on a hit to the head and always staggers the target"
-        es = "Tiene un [color=%negative%]100%[/color] de probabilidad de atontar al objetivo con un impacto en la cabeza, y siempre lo hace tambalearse"
+        es = "Tiene un [color=%positive%]100%[/color] de probabilidad de atontar al objetivo con un impacto en la cabeza, y siempre lo hace tambalearse"
     }
     // FILE: scripts\skills\actives\legend_slingstaff_bash_skill.nut
     // context: legend_slingstaff_bash_skill.create.m.Description
@@ -83606,7 +83606,7 @@ local pairs = [
     // context: legend_wither_skill.create.m.Description
     {
         en = "Wither a target for three turns, reducing their damage, fatigue and initiative by [color=%negative%]-30%[/color]. The effect reduces by 10% each turn."
-        es = "Marchita a un objetivo durante tres turnos, lo que reduce su daño, su fatiga y su Iniciativa en [color=%negative%]-30%[/color]. El efecto disminuye un 10% cada turno."
+        es = "Marchita a un objetivo durante tres turnos, lo que reduce su daño, su fatiga y su Iniciativa en [color=%positive%]-30%[/color]. El efecto disminuye un 10% cada turno."
     }
     // context: legend_wither_skill.create.m.Overlay
     // en = "wither"  // m.Overlay es el nombre del icono que se superpone al objetivo; no se muestra como texto
@@ -86141,12 +86141,12 @@ local pairs = [
     // context: legend_armor_tracking_effect.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Fatigue Cost for [color=#400080]Round Swing[/color], [color=#400080]Swing[/color], [color=#400080]Thresh[/color], [color=#400080]Reap[/color], [color=#400080]Castigate[/color]"
-        es = "[color=%negative%]-50%[/color] al coste de Fatiga de [color=#400080]Golpe circular[/color], [color=#400080]Corte amplio[/color], [color=#400080]Trillar[/color], [color=#400080]Segar[/color], [color=#400080]Castigar[/color]"
+        es = "[color=%positive%]-50%[/color] al coste de Fatiga de [color=#400080]Golpe circular[/color], [color=#400080]Corte amplio[/color], [color=#400080]Trillar[/color], [color=#400080]Segar[/color], [color=#400080]Castigar[/color]"
     }
     // context: legend_armor_tracking_effect.getTooltip.ret.text
     {
         en = "[color=%negative%]-50%[/color] Action Point cost for [color=#400080]Round Swing[/color], [color=#400080]Swing[/color], [color=#400080]Thresh[/color], [color=#400080]Reap[/color], [color=#400080]Castigate[/color]"
-        es = "[color=%negative%]-50%[/color] al coste de Puntos de acción de [color=#400080]Golpe circular[/color], [color=#400080]Corte amplio[/color], [color=#400080]Trillar[/color], [color=#400080]Segar[/color], [color=#400080]Castigar[/color]"
+        es = "[color=%positive%]-50%[/color] al coste de Puntos de acción de [color=#400080]Golpe circular[/color], [color=#400080]Corte amplio[/color], [color=#400080]Trillar[/color], [color=#400080]Segar[/color], [color=#400080]Castigar[/color]"
     }
     // context: legend_armor_tracking_effect.getTooltip.ret.text
     {
@@ -86426,7 +86426,7 @@ local pairs = [
     // context: legend_compromised_armor_effect.getDescription
     {
         en = "This character has their armor compromised from a recent strike. Increase damage ignoring armor and armor damage done by [color=%positive%]20%[/color]."
-        es = "La armadura de este personaje ha quedado comprometida por un golpe reciente. Aumenta en un [color=%positive%]20%[/color] el daño que ignora la armadura y el daño causado a la armadura."
+        es = "La armadura de este personaje ha quedado comprometida por un golpe reciente. Aumenta en un [color=%negative%]20%[/color] el daño que ignora la armadura y el daño causado a la armadura."
     }
     // FILE: scripts\skills\effects\legend_consecrated_effect.nut
     // context: legend_consecrated_effect.create.m.Description
@@ -86783,7 +86783,7 @@ local pairs = [
     // context: legend_graze_prepared_effect.getDescription
     {
         en = "This character is preparing an attack to inflict slow bleeding by grazing the flesh. The next hit will infict [color=%negative%]2[/color] bleed damage for the next five turns."
-        es = "Este personaje prepara un ataque para causar un sangrado lento rozando la carne. El próximo impacto infligirá [color=%negative%]2[/color] de daño por sangrado durante los cinco turnos siguientes."
+        es = "Este personaje prepara un ataque para causar un sangrado lento rozando la carne. El próximo impacto infligirá [color=%positive%]2[/color] de daño por sangrado durante los cinco turnos siguientes."
     }
     // context: legend_graze_prepared_effect.resetTime.spawnIcon()
     // en = "graze"  // nombre del icono que recibe spawnIcon(), no se muestra
@@ -87975,7 +87975,7 @@ local pairs = [
     // context: legend_burned_injury.getTooltip.ret.text
     {
         en = "Reduces the Resolve of any opponent engaged in melee by [color=%negative%]-10[/color]"
-        es = "Reduce la Resolución de cualquier oponente involucrado en combate cuerpo a cuerpo en [color=%negative%]-10[/color]"
+        es = "Reduce la Resolución de cualquier oponente involucrado en combate cuerpo a cuerpo en [color=%positive%]-10[/color]"
     }
     // FILE: scripts\skills\injury_permanent\legend_donkey_injury.nut
     // context: legend_donkey_injury.create.m.Name
