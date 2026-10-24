@@ -9,7 +9,7 @@ Hay **dos** árboles de la traducción comunitaria en disco, y son revisiones di
 - `comparer/spanish_tr`, fechado en enero de 2026, 2.345 ficheros. **Es del que se construyó nuestro corpus.**
 - `comparer/spanish_305`, la versión 3.0.5, 2.252 ficheros. **Nunca se absorbió en bloque**, aunque sí se ha usado como referencia para valores sueltos (los pares por id, los nombres de trasfondo y de rasgo del 31/08).
 
-La [historia del proyecto](../../docs/HISTORIA.md) dice que partimos de la serie 3.x de ElGranFoca, y en cuanto a la autoría es cierto, pero el árbol concreto que alimentó el corpus es el de enero. La distinción salió a la luz el 31/08, cuando el propietario preguntó por qué "Auxiliar antiguo" y no "Auxiliar Ancestral": lo segundo es lo que dice la 3.0.5.
+El árbol que alimentó el corpus es el de enero, el de Magnus y AMarauder, anterior a la traducción nueva de ElGranFoca (3.0.4 y 3.0.5); así lo cuenta también la [historia del proyecto](../../docs/HISTORIA.md). La distinción salió a la luz el 31/08, cuando el propietario preguntó por qué "Auxiliar antiguo" y no "Auxiliar Ancestral": lo segundo es lo que dice la 3.0.5.
 
 ## La medida
 

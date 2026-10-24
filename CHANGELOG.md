@@ -27,7 +27,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 
 ## [4.0.0] - 2026-10-18
 
-El mismo contenido que la 1.0.1, con la numeración nueva. La traducción pasa a publicarse también en la página de Nexus de la traducción anterior, que llegó a la 3.0.4, así que el pack continúa su numeración: la 4 es el cambio de base a Rosetta. Las 1.0.0 y 1.0.1 fueron las dos primeras versiones de este repositorio.
+El mismo contenido que la 1.0.1, con la numeración nueva. La traducción pasa a publicarse también en la página de Nexus de la traducción anterior, que llegó a la 3.0.5, así que el pack continúa su numeración: la 4 es el cambio de base a Rosetta. Las 1.0.0 y 1.0.1 fueron las dos primeras versiones de este repositorio.
 
 ## [1.0.1] - 2026-10-18
 
