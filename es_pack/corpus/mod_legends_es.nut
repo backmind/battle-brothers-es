@@ -54378,6 +54378,19 @@ local pairs = [
     // en = "banner"
     // en = "Day <day:int>"
     // en base_es
+    // context: data_helper.o.convertCampaignStorageToUIData.dayName
+    {
+        // dayName = "Day " + días + " (<dificultad>/<dificultad>[ Ironman])"; lo pasa por Rosetta el enganche de legends.nut.
+        mode = "pattern"
+        en = "Day <day:int> (<a:str>/<b:str> Ironman)"
+        es = "Día <day> (<a:t>/<b:t>, Hombre de hierro)"
+    }
+    // context: data_helper.o.convertCampaignStorageToUIData.dayName
+    {
+        mode = "pattern"
+        en = "Day <day:int> (<a:str>/<b:str>)"
+        es = "Día <day> (<a:t>/<b:t>)"
+    }
     // FILE: mod_legends\hooks\ui\screens\character\character_screen.nut
     // en = "show"
     // en = "Glad to see <bro:str> get reparations for his time"
@@ -83741,7 +83754,7 @@ local pairs = [
     }
     // context: perk_legend_adaptive.getUnactivatedPerkTooltipHints
     {
-        // 3 grupos. shortcut: con 4 o más grupos (lista de rasgos) o con un grupo de par idéntico en una lista, la línea sale en inglés; añadir reglas si se ve en juego.
+        // 3 grupos. Con 2 o más grupos la línea la rehace el enganche de perk_legend_adaptive (legends.nut), que también cubre las listas de rasgos de 4 o más; estas reglas quedan de respaldo.
         mode = "pattern"
         en = "Activating this Perk will randomly grant one of the following Perk Groups:\n<c:tag><g1:str>, <g2:str>, or <g3:str>[/color]"
         es = "Activar esta ventaja otorgará al azar uno de los siguientes grupos de ventajas:\n<c><g1:t>, <g2:t> o <g3:t>[/color]"
