@@ -135,6 +135,13 @@ if (!("BattleBrothersEs" in getroottable())) ::BattleBrothersEs <- {};
     };
 })(::Rosetta);
 
+// Swifter: sus ajustes y atajos de MSU y un tooltip (swifter.nut). Va tras
+// Swifter, que los crea en su cola.
+mod.queue(">mod_swifter", ">mod_msu", function () {
+    if (!::Hooks.hasMod("mod_swifter") || !("Swifter" in getroottable()) || !("Mod" in ::Swifter)) return;
+    ::include("mod_battle_brothers_es/swifter");
+});
+
 // La traducción de cada mod viaja en este zip y solo se carga si el mod está.
 // Va en la cola y después del mod porque el enganche amplía lo que el mod
 // define en la suya, y después de Rosetta porque envuelve sus getters;
