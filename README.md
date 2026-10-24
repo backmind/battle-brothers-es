@@ -56,6 +56,9 @@ Copia estos seis archivos `.zip` en la carpeta `data` del juego, tal cual, sin d
 | 4 | stdlib, 2.5 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/676) |
 | 5 | Rosetta, 0.5.0 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/802) |
 | 6 | `mod_battle_brothers_es_<versión>.zip`, la traducción, con los menús y pantallas que el juego dibuja en JavaScript | [Nexus](https://www.nexusmods.com/battlebrothers/mods/640?tab=files) o [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
+| 7 | Opcional: Legends, 19.4.22, con sus dos zips (el mod y sus recursos) | [GitHub](https://github.com/Battle-Brothers-Legends/Legends-public/releases) |
+
+Para jugar con Legends, instálalo según sus instrucciones. Su traducción ya va en el zip del pack y se activa sola cuando Legends está en `data`; sin él, el pack traduce el juego base como siempre.
 
 Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, entra en **Ajustes de mods** desde el menú principal: en la lista sale «Battle Brothers en Español», con su versión y la del juego contra la que se verificó.
 
