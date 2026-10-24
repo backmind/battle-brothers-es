@@ -10,7 +10,10 @@ Uso:
     PYTHONUTF8=1 uv run python es_pack/tools/build_ui_addon.py
 
 Lee     es_pack/src/ui/**/*.js
-Escribe es_pack/build/mod_battle_brothers_es_ui_<version>.zip
+Escribe es_pack/build/mod_battle_brothers_es_ui_<version>.zip (solo para
+        revisarlo suelto: desde la 5.0.0 la release no lo publica, porque
+        build_dist mete estos mismos .js en el zip del pack, con la misma
+        validación de comprueba())
 
 ## El zip lleva sólo ui/, y eso no es un detalle de estilo
 
@@ -161,9 +164,8 @@ def main():
     print("zip:       %s  (%.0f KB)"
           % (destino, destino.stat().st_size / 1024))
     print()
-    print("Para instalarlo, copia ese zip a la carpeta data del juego y BORRA")
-    print("cualquier mod_battle_brothers_es_ui_*.zip anterior que haya: dos")
-    print("copias sustituyen los mismos ficheros de interfaz.")
+    print("Desde la 5.0.0 esta capa va dentro del zip del pack (build_dist):")
+    print("este zip suelto es solo para revisarla, no se instala ni se publica.")
     print()
     print("Estos .js sustituyen ficheros del juego, así que son la única parte")
     print("del pack que una actualización puede tapar en silencio. Después de")

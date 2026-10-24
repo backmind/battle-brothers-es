@@ -44,7 +44,7 @@ Ninguna medida estática ve una pantalla cuyo texto no pase por Rosetta. Eso sol
 
 ## Instalación
 
-Copia estos siete archivos `.zip` en la carpeta `data` del juego, tal cual, sin descomprimir ni renombrar. Está en `<instalación>\Battle Brothers\data` en GOG y en `<Steam>\steamapps\common\Battle Brothers\data` en Steam.
+Copia estos seis archivos `.zip` en la carpeta `data` del juego, tal cual, sin descomprimir ni renombrar. Está en `<instalación>\Battle Brothers\data` en GOG y en `<Steam>\steamapps\common\Battle Brothers\data` en Steam.
 
 | | Archivo | Descarga |
 |---|---|---|
@@ -53,14 +53,13 @@ Copia estos siete archivos `.zip` en la carpeta `data` del juego, tal cual, sin 
 | 3 | MSU, 1.6.0 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/479) |
 | 4 | stdlib, 2.5 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/676) |
 | 5 | Rosetta, 0.5.0 o superior | [Nexus](https://www.nexusmods.com/battlebrothers/mods/802) |
-| 6 | `mod_battle_brothers_es_<versión>.zip`, la traducción | [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
-| 7 | `mod_battle_brothers_es_ui_<versión>.zip`, los menús y pantallas que el juego dibuja en JavaScript | [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
+| 6 | `mod_battle_brothers_es_<versión>.zip`, la traducción, con los menús y pantallas que el juego dibuja en JavaScript | [Releases](https://github.com/backmind/battle-brothers-es/releases/latest) |
 
 Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, entra en **Ajustes de mods** desde el menú principal: en la lista sale «Battle Brothers en Español», con su versión y la del juego contra la que se verificó.
 
-**Para actualizar**, borra los dos zips (`mod_battle_brothers_es_<versión>.zip` y `mod_battle_brothers_es_ui_<versión>.zip`) de la versión anterior y copia los nuevos. Cuando sale una versión nueva, MSU la anuncia en el menú principal.
+**Para actualizar**, borra el zip de la versión anterior y copia el nuevo. Si vienes de una versión anterior a la 5.0.0, borra también `mod_battle_brothers_es_ui_<versión>.zip`: la interfaz va ahora dentro del zip principal, y el viejo, si se queda, la pisa con la versión antigua. Cuando sale una versión nueva, MSU la anuncia en el menú principal.
 
-**Para desinstalar**, borra esos dos zips. Las partidas guardadas siguen funcionando.
+**Para desinstalar**, borra ese zip. Las partidas guardadas siguen funcionando.
 
 ## Preguntas frecuentes
 

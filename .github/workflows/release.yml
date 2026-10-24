@@ -35,13 +35,11 @@ jobs:
       - name: Construir los zips
         run: |
           python es_pack/tools/build_dist.py
-          python es_pack/tools/build_ui_addon.py
 
       - name: La etiqueta coincide con la versión del pack
         run: |
           version="$GITHUB_REF_NAME"
           test -f "es_pack/build/mod_battle_brothers_es_${version}.zip"
-          test -f "es_pack/build/mod_battle_brothers_es_ui_${version}.zip"
 
       - name: Notas de la versión desde el CHANGELOG
         run: |
@@ -63,5 +61,4 @@ jobs:
           gh release create "$GITHUB_REF_NAME" "${previa[@]}" \
             --title "Battle Brothers en Español $version" \
             --notes-file notas.md \
-            "es_pack/build/mod_battle_brothers_es_${version}.zip" \
-            "es_pack/build/mod_battle_brothers_es_ui_${version}.zip"
+            "es_pack/build/mod_battle_brothers_es_${version}.zip"

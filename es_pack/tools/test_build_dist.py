@@ -1873,3 +1873,19 @@ def test_una_regla_golosa_no_tapa_a_otra_mas_concreta(tmp_path):
                        capture_output=True, env=env, timeout=300)
     salida = (r.stdout + r.stderr).decode("utf-8", errors="replace")
     assert "FALLOS: 0" in salida, salida[-6000:]
+
+
+def test_el_zip_del_pack_lleva_la_capa_de_interfaz():
+    """Desde la 5.0.0 hay un solo zip: los .js de src/ui van dentro del zip
+    del pack, con las mismas rutas que llevaba el addon suelto, y no hay más
+    ui/ que esas."""
+    import zipfile
+
+    from build_dist import BUILD, PACK_VERSION, main
+    from build_ui_addon import ficheros
+
+    main()
+    with zipfile.ZipFile(BUILD / ("mod_battle_brothers_es_%s.zip" % PACK_VERSION)) as z:
+        ui = sorted(n for n in z.namelist() if n.startswith("ui/"))
+    assert ui == sorted(arco for _, arco in ficheros())
+    assert "ui/mods/mod_battle_brothers_es/legends_es.js" in ui

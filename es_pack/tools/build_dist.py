@@ -369,10 +369,18 @@ def main():
         (BUILD / rel).parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(SRC / rel, BUILD / rel)
 
+    # Desde la 5.0.0 la capa de interfaz (los .js de src/ui) va en este mismo
+    # zip; antes iba en su propio mod_battle_brothers_es_ui_<versión>.zip.
+    # build_ui_addon la recorre y aborta si lleva algo que no toca.
+    from build_ui_addon import comprueba, ficheros
+    ui = ficheros()
+    comprueba(ui)
     zip_path = BUILD / ("mod_battle_brothers_es_%s.zip" % PACK_VERSION)
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
         for rel in list(scripts_rel) + [pairs_rel, ids_rel] + mods_rel + [titulos_rel]:
             z.writestr(entrada_zip(rel.as_posix()), (BUILD / rel).read_bytes())
+        for ruta, arco in ui:
+            z.writestr(entrada_zip(arco), ruta.read_bytes())
     print("zip:", zip_path)
     sintaxis_ok = avisar_sintaxis()
     avisos = avisar_calidad(blocks)

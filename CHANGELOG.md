@@ -5,6 +5,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 ## [5.0.0-beta.1] - sin publicar
 
 - **Traducción de Legends** (19.4.22), en beta.
+- **Un solo zip.** La interfaz (los menús y pantallas que el juego dibuja en JavaScript) va ahora dentro de `mod_battle_brothers_es_<versión>.zip`. Al actualizar, borra también el `mod_battle_brothers_es_ui_<versión>.zip` de la versión anterior: si se queda, pisa la interfaz nueva con la antigua.
 
 ## [4.0.1] - 2026-10-21
 
