@@ -54324,7 +54324,7 @@ local pairs = [
         // "ha sido destruido" no concordaba: casi toda la armadura del juego es
         // femenina (sobrevesta, tunica, cota, armadura). "Se ha destrozado" es
         // invariable y sirve a los dos generos.
-        es = "¡<item> de <actor> ha recibido [b]<dmg>[/b] de daño y se ha destrozado!"
+        es = "¡<actor> ha recibido [b]<dmg>[/b] de daño en su <item>, que se ha destrozado!"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + "\'s " + this.getName() + " is hit for [b]" + this.Math.floor(_damage) + "[/b] damage");
@@ -54337,12 +54337,12 @@ local pairs = [
         // YA en castellano: el :t no encontraba par para "Sobrevesta resistente"
         // y el guardia tumbaba la regla entera, asi que la linea salia en ingles
         // en mitad del registro de combate (QA 31/08). Al fallar la primera, el
-        // runtime sigue probando y cae en esta. Se pone el nombre delante para
-        // no tener que concordar articulo ni escribirlo en minuscula, igual que
-        // en el par de arriba.
+        // runtime sigue probando y cae en esta. Desde el 24/10 dice lo mismo que
+        // la de actor.nut ("en su <pieza>"): antes ponia el nombre delante y el
+        // registro mezclaba las dos formas segun llegara traducida o no la pieza.
         mode = "pattern"
         en = "<actor:str_tag>'s <item:str> is hit for [b]<dmg:int>[/b] damage"
-        es = "<item> de <actor> ha recibido [b]<dmg>[/b] de daño"
+        es = "<actor> ha recibido [b]<dmg>[/b] de daño en su <item>"
     }
     // FILE: scripts\items\armor\barbarians\animal_hide_armor.nut
     {
