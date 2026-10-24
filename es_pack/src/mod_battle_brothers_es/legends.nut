@@ -373,11 +373,14 @@ mod.hook("scripts/entity/world/camp/buildings/hunter_building", function (q) {
     q.getInfo = @(__original) function () { return __original().map(trHTML); }
 })
 // Legends reescribe entera queryRosterInformation de la sala de entrenamiento
-// (mods_hookExactClass, con Title y SubTitle en inglés); el mismo mecanismo
-// registrado después envuelve la suya. Igual el barbero y el taxidermista, que
-// ponen su SubTitle en inglés tras el original.
+// (mods_hookExactClass, con Title y SubTitle en inglés), y el barbero y el
+// taxidermista ponen su SubTitle en inglés tras el original. Un
+// mods_hookExactClass nuestro quedaba por DENTRO del suyo aunque se registrara
+// después (prueba del 24/10: el título del taxidermista salía traducido y el
+// subtítulo no), así que estos enganches van a la instancia ya creada
+// (mods_hookNewObject), que siempre envuelve la función final.
 local WTS = "ui/screens/world/modules/world_town_screen/";
-::mods_hookExactClass(WTS + "town_training_dialog_module", function (o) {
+::mods_hookNewObject(WTS + "town_training_dialog_module", function (o) {
     envuelveSq(o, "queryRosterInformation", @(f) function () {
         local ret = tituloES(f.call(this));
         foreach (e in ret.Roster)
@@ -388,11 +391,11 @@ local WTS = "ui/screens/world/modules/world_town_screen/";
     envuelveSq(o, "showTraitPopup", @(popup) function (_text) { return popup.call(this, ::Rosetta._(_text)); })
 })
 foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_taxidermist_dialog_module = "queryBlueprints"})
-    ::mods_hookExactClass(WTS + m, function (o) {
+    ::mods_hookNewObject(WTS + m, function (o) {
         envuelveSq(o, fn, @(f) function () { return tituloES(f.call(this)); })
     })
 // La taberna: Legends pisa RightInfo en inglés después del original (caso 19).
-::mods_hookExactClass(WTS + "town_tavern_dialog_module", function (o) {
+::mods_hookNewObject(WTS + "town_tavern_dialog_module", function (o) {
     envuelveSq(o, "queryData", @(f) function () {
         local ret = f.call(this);
         if (ret != null && "RightInfo" in ret && typeof ret.RightInfo == "string") ret.RightInfo = ::Rosetta._(ret.RightInfo);
@@ -403,7 +406,7 @@ foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_ta
 // el menú de escenarios (tapa el caso 3b), el nombre de la formación de la
 // ficha («Formation 1»; el que escribe el jugador no tiene par y no cambia) y
 // el texto de progreso de la pantalla de carga al generar el mapa.
-::mods_hookExactClass("states/main_menu_state", function (o) {
+::mods_hookNewObject("states/main_menu_state", function (o) {
     envuelveSq(o, "scenario_menu_module_onQueryData", @(f) function () {
         local ret = f.call(this);
         foreach (r in ret)
@@ -412,7 +415,7 @@ foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_ta
         return ret;
     })
 })
-::mods_hookExactClass("ui/screens/character/character_screen", function (o) {
+::mods_hookNewObject("ui/screens/character/character_screen", function (o) {
     envuelveSq(o, "queryData", @(f) function () {
         local ret = f.call(this);
         if (ret != null && "formationName" in ret && typeof ret.formationName == "string")
@@ -420,7 +423,7 @@ foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_ta
         return ret;
     })
 })
-::mods_hookExactClass("ui/screens/loading/loading_screen", function (o) {
+::mods_hookNewObject("ui/screens/loading/loading_screen", function (o) {
     envuelveSq(o, "updateProgress", @(f) function (_text) { return f.call(this, ::Rosetta._(_text)); })
 })
 
@@ -438,7 +441,7 @@ mod.hook("scripts/states/world/asset_manager", function (q) {
 // el epílogo de jubilación entra entero en buildGameFinishText, sin casar con
 // nada. Se marca aquí, con el mismo carácter; sin Legends vale el del base.
 local MARCA_FIN = format("%c", 1);
-::mods_hookExactClass("states/world/asset_manager", function (o) {
+::mods_hookNewObject("states/world/asset_manager", function (o) {
     envuelveSq(o, "addBrotherEnding", @(f) function (_brothers, _excludedBackgrounds, _isPositive) {
         local r = f.call(this, _brothers, _excludedBackgrounds, _isPositive);
         return typeof r == "string" && r != "" ? MARCA_FIN + r + MARCA_FIN : r;
@@ -680,7 +683,7 @@ mod.hookTree("scripts/entity/world/camp/camp_building", function (q) {
 // escrito, así que se traduce al consultar el tooltip. Legends reescribe
 // getRosterTooltip del jugador y del caído con mods_hookExactClass.
 foreach (c in ["entity/tactical/player", "entity/tactical/player_corpse_stub"])
-    ::mods_hookExactClass(c, function (o) {
+    ::mods_hookNewObject(c, function (o) {
         envuelveSq(o, "getRosterTooltip", @(f) function () {
             local s = this.m.LifetimeStats;
             if ("MostPowerfulVanquished" in s && s.MostPowerfulVanquished != "")

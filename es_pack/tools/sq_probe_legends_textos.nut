@@ -419,6 +419,8 @@ comprueba("objeto con runas", ::Rosetta.translate("Arming Sword[color=#bf2aac] (
     comprueba("enganche sin la función de Legends no falla", ok, true);
 }
 
+comprueba("factor de acierto con la descripción inglesa", ::Rosetta.translate("Line of fire blocked\n([color=%negative%]-25%[/color] Total hit chance)").find("Line of fire") == null, true);
+
 // Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
 // el enganche se registra después del suyo y traduce lo que devuelven.
 {

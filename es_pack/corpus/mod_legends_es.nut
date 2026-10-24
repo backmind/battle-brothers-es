@@ -57898,9 +57898,10 @@ local pairs = [
     // context: skill.o.modGetHitFactors.modifier["Line of fire blocked"].row.text
     {
         // row.text = description + "\n(" + red("-" + blockChance + "%") + " Total hit chance)";
+        // description es la clave inglesa de la tabla modifier: llega sin traducir.
         mode = "pattern"
         en = "<description:str>\n(<chance:str> Total hit chance)"
-        es = "<description>\n(<chance> a la probabilidad total de acertar)"
+        es = "<description:t>\n(<chance> a la probabilidad total de acertar)"
     }
     // context: skill.o.modGetHitFactors
     // en = "<modifier[>Resistance against ranged weapons<]>"  // clave de la tabla modifier[...] con la que el código localiza la fila del tooltip; no se muestra
@@ -57909,7 +57910,7 @@ local pairs = [
         // row.text = description + "\n(" + red("-" + damageResistance + "%") + " Total HP damage using " + thisSkill.getName() + ")";
         mode = "pattern"
         en = "<description:str>\n(<pct:str> Total HP damage using <skill:str>)"
-        es = "<description>\n(<pct> al daño total a los Puntos de vida con <skill>)"
+        es = "<description:t>\n(<pct> al daño total a los Puntos de vida con <skill>)"
     }
     // context: skill.o.modGetHitFactors
     // en = "<modifier[>Resistance against piercing attacks<]>"  // clave de la tabla modifier[...] con la que el código localiza la fila del tooltip; no se muestra
@@ -64018,6 +64019,17 @@ local pairs = [
     {
         en = "[img]gfx/ui/events/event_126.png[/img]{%randombrother% calls out to the party, calling everyone to a halt.%SPEECH_ON%Tracks! I've found some strange-looking tracks!%SPEECH_OFF%The %companyname% gather around %them_randombrother% and attempt to identify the tracks. | You come across some tracks around the outskirts of %townname%. Thankfully, it seems the beasts have not struck yet. You take a closer look and try to make out what the tracks are. | As you scan your surroundings for signs of the beasts, you notice some tracks not too far off. You approach the tracks to take a closer look.}"
         es = "[img]gfx/ui/events/event_126.png[/img]{%randombrother% da una voz y hace que todos se detengan.%SPEECH_ON%¡Huellas! ¡He encontrado unas huellas muy raras!%SPEECH_OFF%La %companyname% se reúne a su alrededor e intenta identificar las huellas. | Encuentras unas huellas en las afueras de %townname%. Por suerte, parece que las bestias aún no han atacado. Te acercas para examinarlas e intentar averiguar de qué son. | Mientras buscas a tu alrededor señales de las bestias, ves unas huellas no muy lejos. Te acercas a ellas para mirarlas mejor.}"
+    }
+    // context: legend_preemptive_beasts_contract.onPrepareVariables.beasts
+    // (Direwolves ya tiene par en el base: «Lobos huargo».)
+    {
+        en = "Ghouls"
+        es = "Necrófagos"
+    }
+    // context: legend_preemptive_beasts_contract.onPrepareVariables.beasts
+    {
+        en = "Spiders"
+        es = "Arañas"
     }
     // context: legend_preemptive_beasts_contract.createScreens.m.Screens.push().Options.Text
     {
