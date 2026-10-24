@@ -409,16 +409,43 @@ comprueba("tropa con cifra exacta", ::Rosetta.translate("2 Ancient Auxiliaries")
 // Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
 // el enganche se registra después del suyo y traduce lo que devuelven.
 {
-    local o = {addStatsToUIData = function (_e, _t) { _t.moraleLabel <- "Steady"; }};
+    // El árbol de ventajas es compartido: el enganche tiene que devolver copias.
+    local arbol = [[{ID = "perk.a", Name = "Pathfinder"}, {ID = "perk.b", Name = "Relentless"}]];
+    local o = {addStatsToUIData = function (_e, _t) { _t.moraleLabel <- "Steady"; },
+        convertCampaignStorageToUIData = @(_m) {dayName = _m[0], legendsVersion = _m[1]},
+        convertEntityToUIData = @(_e, _a) {perkTree = arbol},
+        convertEntityHireInformationToUIData = @(_e) {perkTree = arbol}};
     enganches["ui/global/data_helper"](o);
     local t = {};
     o.addStatsToUIData(null, t);
     comprueba("etiqueta de moral traducida", t.moraleLabel != "Steady" && t.moraleLabel == ::Rosetta.translate("Steady"), true);
+    foreach (caso in [
+        [["Day 14 (Veteran/Expert Ironman)", "Legends Version: 19.4.22"],
+         [::Rosetta._("Veteran"), ::Rosetta._("Expert")], "Día 14 (%s/%s, Hombre de hierro)", "Versión de Legends: 19.4.22"],
+        [["Day 3 (Beginner/Legendary)", ""], [::Rosetta._("Beginner"), ::Rosetta._("Legendary")], "Día 3 (%s/%s)", ""],
+    ]) {
+        local r = o.convertCampaignStorageToUIData(caso[0]);
+        comprueba("partida guardada: " + caso[0][0], r.dayName, format(caso[2], caso[1][0], caso[1][1]));
+        comprueba("partida guardada: versión", r.legendsVersion, caso[3]);
+    }
+    comprueba("partida guardada: dificultades traducidas", ::Rosetta._("Veteran") != "Veteran" && ::Rosetta._("Legendary") != "Legendary", true);
+    foreach (fn, r in [o.convertEntityToUIData(null, null), o.convertEntityHireInformationToUIData(null)])
+        comprueba("árbol de ventajas (" + ["ficha", "contratación"][fn] + ")", r.perkTree[0][0].Name + ", " + r.perkTree[0][1].Name,
+                  ::Rosetta.translate("Pathfinder") + ", " + ::Rosetta.translate("Relentless"));
+    comprueba("árbol de ventajas: nombre traducido", ::Rosetta.translate("Pathfinder") != "Pathfinder", true);
+    comprueba("árbol de ventajas: el original no cambia", arbol[0][0].Name, "Pathfinder");
     local renombre = [{id = 1, type = "title", text = "Insufficient Renown"}];
-    local te = {onQueryUIElementTooltipData = @(_e, _id, _o) clone renombre, onQueryFollowerTooltipData = @(_f) clone renombre};
+    local cambio = [{id = 1, type = "title", text = "Switch to Wooden Shield"},
+        {id = 2, type = "description", text = "Quickly switch to another item from your bag"},
+        {id = 3, type = "text", text = "Costs [b][color=%positive%] 4[/color][/b] AP to switch"}];
+    local te = {onQueryUIElementTooltipData = @(_e, _id, _o) clone renombre, onQueryFollowerTooltipData = @(_f) clone renombre,
+        onQuerySkillTooltipData = @(_e, _s) _s == "objeto" ? cambio.map(@(f) clone f) : [{id = 1, type = "title", text = "Insufficient Renown"}]};
     enganches["ui/screens/tooltip/tooltip_events"](te);
     comprueba("tooltip propio de Legends (obituario)", te.onQueryUIElementTooltipData(0, "x", "y")[0].text, "Renombre insuficiente");
     comprueba("tooltip propio de Legends (séquito)", te.onQueryFollowerTooltipData(3)[0].text, "Renombre insuficiente");
+    comprueba("cambio de objeto de la bolsa", Str.join(" | ", te.onQuerySkillTooltipData(1, "objeto").map(@(f) f.text)),
+        "Cambiar a Wooden Shield | Cambia rápidamente a otro objeto de tu bolsa | Cambiar cuesta [b][color=%positive%] 4[/color][/b] PA");
+    comprueba("tooltip de habilidad, sin tocar", te.onQuerySkillTooltipData(1, "skill")[0].text, "Insufficient Renown");
 
     // El pago: lo que devuelve el envoltorio de Legends cuando el del base ya
     // ha puesto "Pago" (bloque inglés aparte y coronas de relleno).
@@ -479,13 +506,88 @@ foreach (caso in [
 
     local bloque = @(_a, _b) "<div style='display: block;'><span style='font-size: 18px;'>" + _a + "</span><br><span style='color:#135213;'>" + _b + "</span></div>";
     local o = {queryRosterInformation = @() {Title = "Training Hall", SubTitle = "Have your men train for combat and learn from veterans",
-        Roster = [{Training = [{name = bloque("Merciless Regimen", "Current: Iron Lungs")}, {name = "Thorough Training"}]}]}};
+        Roster = [{Training = [{name = bloque("Merciless Regimen", "Current: Iron Lungs")}, {name = "Thorough Training"}]}]},
+        showTraitPopup = @(_t) _t};
     enganches["ui/screens/world/modules/world_town_screen/town_training_dialog_module"](o);
     local r = o.queryRosterInformation();
     comprueba("sala de entrenamiento: título", r.Title, ::Rosetta.translate("Training Hall"));
     comprueba("sala de entrenamiento: título traducido", r.Title != "Training Hall", true);
     comprueba("Merciless Regimen", r.Roster[0].Training[0].name, bloque("Régimen despiadado", "Actual: Iron Lungs"));
     comprueba("nombre de entrenamiento", r.Roster[0].Training[1].name, "Entrenamiento a fondo");
+    local ve = "[color=#135213]";
+    comprueba("aviso de rasgo entrenado", o.showTraitPopup("Trait " + ve + "Frugal[/color] gained. " + ve + "1[/color] perk point granted."),
+        "Rasgo " + ve + "Frugal[/color] obtenido. Se otorga " + ve + "1[/color] punto de ventaja.");
+    comprueba("aviso de rasgo cambiado", o.showTraitPopup("Trained trait changed to " + ve + "Frugal[/color]."),
+        "El rasgo entrenado ha cambiado a " + ve + "Frugal[/color].");
+}
+
+print("=== pantallas que Legends rehace o añade ===\n");
+{
+    local o = {queryData = @() {RightInfo = "Pay a round for your mercenaries to get their spirits up ([img]gfx/ui/tooltips/money.png[/img]35)."}};
+    enganches["ui/screens/world/modules/world_town_screen/town_tavern_dialog_module"](o);
+    comprueba("taberna: ronda", o.queryData().RightInfo,
+        "Paga una ronda a tus mercenarios para levantarles el ánimo ([img]gfx/ui/tooltips/money.png[/img]35).");
+
+    local en = [{id = 41, name = "Basilisks", description = "[p=c][img]gfx/ui/events/event_05.png[/img][/p]\n[p=c]Fight against Basilisk Drones[/p]"}];
+    o = {scenario_menu_module_onQueryData = @() en.map(@(e) clone e)};
+    enganches["states/main_menu_state"](o);
+    local r = o.scenario_menu_module_onQueryData()[0];
+    comprueba("escenarios: nombre y descripción", r.name != en[0].name && r.description != en[0].description
+        && r.name == ::Rosetta.translate(en[0].name) && r.description == ::Rosetta.translate(en[0].description), true);
+
+    o = {queryData = @() {brothers = [], formationName = "Formation 3"}};
+    enganches["ui/screens/character/character_screen"](o);
+    comprueba("formación por defecto", o.queryData().formationName, "Formación 3");
+    o = {queryData = @() {brothers = [], formationName = "Muro de escudos"}};
+    enganches["ui/screens/character/character_screen"](o);
+    comprueba("formación con nombre del jugador", o.queryData().formationName, "Muro de escudos");
+
+    o = {updateProgress = @(_t) _t};
+    enganches["ui/screens/loading/loading_screen"](o);
+    comprueba("pantalla de carga", o.updateProgress("Building Settlements ..."), "Construyendo asentamientos ...");
+
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/entity/world/camp/buildings/healer_building"](q);
+    local roster = q.getRoster(@() [{ID = 1, Injuries = [{id = "injury.x", name = "Pierced Hand"}]}])();
+    comprueba("curandero del campamento: lesión", roster[0].Injuries[0].name, "Mano perforada");
+
+    o = {addBrotherEnding = @(_b, _e, _p) _p ? "\n\nHackett se retiró." : ""};
+    enganches["states/world/asset_manager"](o);
+    local M = format("%c", 1);
+    comprueba("epílogo: final de hermano marcado", o.addBrotherEnding([], [], true), M + "\n\nHackett se retiró." + M);
+    comprueba("epílogo: sin final, sin marca", o.addBrotherEnding([], [], false), "");
+
+    // Encuentros: filas de resultado, sin tocar la lista de la pantalla.
+    q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/encounters/encounter"](q);
+    local filas = [{id = 10, icon = "ui/icons/special.png", text = "Barbering unlocked in camp"}];
+    local lista = q.getUIList(@() [{title = "", items = filas, fixed = false}])();
+    comprueba("encuentro: fila de resultado", lista[0].items[0].text, "Barbería desbloqueada en el campamento");
+    comprueba("encuentro: lista de la pantalla intacta", filas[0].text, "Barbering unlocked in camp");
+}
+{
+    // Jimmy's Tooltips: efectos de cada herida en children.
+    local filas = ::ModJimmysTooltips.modTacticalTooltip([
+        {id = 200, type = "text", text = "Pierced Hand", children = [{id = 1, type = "text", text = "[color=%negative%]-10[/color] Melee Skill"}]}], null, null);
+    comprueba("JT: efecto de herida", filas[0].children[0].text, ::Rosetta.translate("[color=%negative%]-10[/color] Melee Skill"));
+    comprueba("JT: efecto de herida traducido", filas[0].children[0].text.find("Melee Skill") == null, true);
+}
+{
+    // La ventaja Adaptativo sin activar: lista de grupos de cualquier tamaño.
+    local q = {};
+    q.setdelegate({_set = function ( _k, _v ) { this.rawset(_k, _v); }});
+    enganches["scripts/skills/perks/perk_legend_adaptive"](q);
+    local hints = @(_lista) q.getUnactivatedPerkTooltipHints(@(_a = null) [{id = 3, type = "hint", icon = "ui/tooltips/positive.png",
+        text = "Activating this Perk will randomly grant one of the following Perk Groups:\n[color=#0b0084]" + _lista + "[/color]"}])()[0].text;
+    local cab = "Activar esta ventaja otorgará al azar uno de los siguientes grupos de ventajas:\n[color=#0b0084]";
+    local g = @(_n) ::Rosetta._(_n);
+    comprueba("Adaptativo, cinco grupos", hints("Agile, Tenacious, Martyr, Vicious, or Trained"),
+        cab + g("Agile") + ", " + g("Tenacious") + ", " + g("Martyr") + ", " + g("Vicious") + " o Entrenado[/color]");
+    comprueba("Adaptativo, dos grupos con nombre propio", hints("Sword, or Polearm"), cab + "Espada o Arma de asta[/color]");
+    local uno = "Activating this Perk will grant the following Perk Group:\n[color=#0b0084]Sword[/color]";
+    comprueba("Adaptativo, un grupo: lo deja al corpus", q.getUnactivatedPerkTooltipHints(@(_a = null) [{type = "hint", text = uno}])()[0].text, uno);
 }
 
 print("FALLOS: " + ::probe.fallos + "\n");

@@ -158,12 +158,37 @@ mod.hookTree("scripts/entity/tactical/legends_player_horserider", function (q) {
 // enganche de clase, también el del caso 14 de los hooks. La etiqueta de la
 // barra de moral ("Steady") se traduce con el mismo mecanismo, registrado
 // después del suyo.
+// Lo mismo con otras tres que Legends sustituye ahí: la lista de partidas
+// guardadas («Day 14 (Veteran/Expert Ironman)» y «Legends Version: ...») y el
+// árbol de ventajas de la ficha y de la contratación, cuyas ventajas llevan
+// el Name inglés de PerkDefObjects (el diálogo de desbloqueo lo pinta tal
+// cual). El árbol se copia: es el del personaje.
 ::mods_hookNewObjectOnce("ui/global/data_helper", function (o) {
     local addStats = o.addStatsToUIData;
     o.addStatsToUIData = function (_entity, _target) {
         addStats.call(this, _entity, _target);
         if ("moraleLabel" in _target) _target.moraleLabel = ::Rosetta._(_target.moraleLabel);
     }
+    local partida = o.convertCampaignStorageToUIData;
+    o.convertCampaignStorageToUIData = function (_meta) {
+        local r = partida.call(this, _meta);
+        foreach (k in ["dayName", "legendsVersion"])
+            if (k in r && typeof r[k] == "string" && r[k] != "") r[k] = ::Rosetta._(r[k]);
+        return r;
+    }
+    local arbol = function (r) {
+        if ("perkTree" in r && typeof r.perkTree == "array")
+            r.perkTree = r.perkTree.map(@(fila) fila.map(function (p) {
+                local c = clone p;
+                if ("Name" in c && typeof c.Name == "string") c.Name = ::Rosetta._(c.Name);
+                return c;
+            }));
+        return r;
+    }
+    local ficha = o.convertEntityToUIData;
+    o.convertEntityToUIData = function (_entity, _activeEntity) { return arbol(ficha.call(this, _entity, _activeEntity)); }
+    local contrata = o.convertEntityHireInformationToUIData;
+    o.convertEntityHireInformationToUIData = function (_entity) { return arbol(contrata.call(this, _entity)); }
 })
 
 // El pago de los contratos. El enganche del base (caso 2 de los hooks) pasa
@@ -214,6 +239,14 @@ local traducirTooltip = function (orig) {
 }
 ::mods_hookNewObject("ui/screens/tooltip/tooltip_events", function (o) {
     foreach (f in ["onQueryUIElementTooltipData", "onQueryFollowerTooltipData"]) o[f] = traducirTooltip(o[f]);
+    // En las habilidades, solo la rama de Legends para cambiar de objeto de la
+    // bolsa («Switch to ...»); las demás ya llegan traducidas.
+    local skill = o.onQuerySkillTooltipData;
+    o.onQuerySkillTooltipData = function (_entityId, _skillId) {
+        local r = skill.call(this, _entityId, _skillId);
+        return r != null && r.len() > 0 && "text" in r[0] && typeof r[0].text == "string"
+            && ::std.Str.startswith(r[0].text, "Switch to ") ? ::Rosetta.translateTooltip(r) : r;
+    }
 })
 
 // El campamento de Legends manda a su pantalla los títulos y nombres en
@@ -240,6 +273,15 @@ foreach (m in ["barber", "painter"])
 mod.hookTree("scripts/entity/world/camp/camp_building", function (q) {
     q.getName = @(__original) function () { return ::Rosetta._(__original()); }
     q.getTitle = @(__original) function () { return ::Rosetta._(__original()); }
+})
+// La tienda de curación lista las lesiones con getNameOnly, que no pasa por
+// Rosetta; se traducen aquí y no en el getter, como el templo (caso 36).
+mod.hook("scripts/entity/world/camp/buildings/healer_building", function (q) {
+    q.getRoster = @(__original) function () {
+        local ret = __original();
+        foreach (e in ret) foreach (i in e.Injuries) i.name = ::Rosetta._(i.name);
+        return ret;
+    }
 })
 
 // Jimmy's Tooltips, que viene en el zip de Legends, crea sus ajustes de MSU sin
@@ -271,6 +313,30 @@ L.Language.arrayToText = function (_arr, _finalSeparator = "and", _highlight = f
     }
     return arrayToText(arr, sep, _highlight);
 }
+
+// La ventaja Adaptativo sin activar enumera los grupos que puede dar
+// («A, B, or C»). El corpus solo tiene reglas de 2 y 3 grupos, y con la lista
+// de rasgos son hasta 13; se rehace la línea con arrayToText y los nombres de
+// grupo propios. Con un solo grupo siguen valiendo las reglas del corpus.
+local ADAPTATIVO = "Activating this Perk will randomly grant one of the following Perk Groups:\n[color=#0b0084]";
+mod.hookTree("scripts/skills/perks/perk_legend_adaptive", function (q) {
+    q.getUnactivatedPerkTooltipHints = @(__original) function (_actor = null) {
+        local ret = __original(_actor);
+        foreach (h in ret) {
+            if (!("text" in h) || typeof h.text != "string" || !::std.Str.startswith(h.text, ADAPTATIVO)
+                    || !::std.Str.endswith(h.text, "[/color]")) continue;
+            local nombres = [];
+            foreach (p in split(h.text.slice(ADAPTATIVO.len(), -8), ",")) {
+                p = strip(p);
+                if (::std.Str.startswith(p, "or ")) p = p.slice(3);
+                nombres.push(p in GRUPOS ? GRUPOS[p] : p);
+            }
+            h.text = ::Rosetta._(ADAPTATIVO.slice(0, -15)) + "[color=#0b0084]" + L.Language.arrayToText(nombres, "or") + "[/color]";
+            ::BattleBrothersEs.Hechos[h.text] <- true;
+        }
+        return ret;
+    }
+})
 
 // Las líneas de información del campamento de caza (getInfo) y los nombres de
 // entrenamiento de la pantalla de adiestramiento llevan HTML (<span>, <u>, <div>),
@@ -318,12 +384,51 @@ local WTS = "ui/screens/world/modules/world_town_screen/";
             if ("Training" in e) foreach (t in e.Training) t.name = trHTML(t.name);
         return ret;
     }
+    // El aviso de rasgo entrenado llega compuesto con format() y va directo a JS.
+    local popup = o.showTraitPopup;
+    o.showTraitPopup = function (_text) { return popup.call(this, ::Rosetta._(_text)); }
 })
 foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_taxidermist_dialog_module = "queryBlueprints"})
     ::mods_hookExactClass(WTS + m, function (o) {
         local f = o[fn];
         o[fn] = function () { return tituloES(f.call(this)); }
     })
+// La taberna: Legends pisa RightInfo en inglés después del original (caso 19).
+::mods_hookExactClass(WTS + "town_tavern_dialog_module", function (o) {
+    local f = o.queryData;
+    o.queryData = function () {
+        local ret = f.call(this);
+        if (ret != null && "RightInfo" in ret && typeof ret.RightInfo == "string") ret.RightInfo = ::Rosetta._(ret.RightInfo);
+        return ret;
+    }
+})
+// Más funciones que Legends sustituye entera o añade (mods_hookExactClass):
+// el menú de escenarios (tapa el caso 3b), el nombre de la formación de la
+// ficha («Formation 1»; el que escribe el jugador no tiene par y no cambia) y
+// el texto de progreso de la pantalla de carga al generar el mapa.
+::mods_hookExactClass("states/main_menu_state", function (o) {
+    local f = o.scenario_menu_module_onQueryData;
+    o.scenario_menu_module_onQueryData = function () {
+        local ret = f.call(this);
+        foreach (r in ret)
+            foreach (k in ["name", "description"])
+                if (k in r && typeof r[k] == "string") r[k] = ::Rosetta._(r[k]);
+        return ret;
+    }
+})
+::mods_hookExactClass("ui/screens/character/character_screen", function (o) {
+    local f = o.queryData;
+    o.queryData = function () {
+        local ret = f.call(this);
+        if (ret != null && "formationName" in ret && typeof ret.formationName == "string")
+            ret.formationName = ::Rosetta._(ret.formationName);
+        return ret;
+    }
+})
+::mods_hookExactClass("ui/screens/loading/loading_screen", function (o) {
+    local f = o.updateProgress;
+    o.updateProgress = function (_text) { return f.call(this, ::Rosetta._(_text)); }
+})
 
 // El tooltip de la plantilla pinta "<terreno> [color]50.00%[/color]" con los
 // nombres en inglés que getRosterDescription (asset_manager.nut) deja en
@@ -333,6 +438,17 @@ mod.hook("scripts/states/world/asset_manager", function (q) {
         local ret = __original();
         foreach (t in ret.TerrainModifiers) t[0] = ::Rosetta._(t[0]);
         return ret;
+    }
+})
+// Legends sustituye addBrotherEnding, así que la marca del caso 39 no llega y
+// el epílogo de jubilación entra entero en buildGameFinishText, sin casar con
+// nada. Se marca aquí, con el mismo carácter; sin Legends vale el del base.
+local MARCA_FIN = format("%c", 1);
+::mods_hookExactClass("states/world/asset_manager", function (o) {
+    local f = o.addBrotherEnding;
+    o.addBrotherEnding = function (_brothers, _excludedBackgrounds, _isPositive) {
+        local r = f.call(this, _brothers, _excludedBackgrounds, _isPositive);
+        return typeof r == "string" && r != "" ? MARCA_FIN + r + MARCA_FIN : r;
     }
 })
 
@@ -425,6 +541,21 @@ mod.hook("scripts/encounters/encounter", function (q) {
     // El título de la pantalla no pasa por buildText ni por Rosetta (getUITitle
     // lo devuelve tal cual: «Walking through the market...»).
     q.getUITitle = @(__original) function () { return ::Rosetta._(__original()); }
+    // Las filas de resultado («Barbering unlocked in camp»): Rosetta solo
+    // traduce las de event y contract. Se copian porque la lista es la de la
+    // pantalla y getUIList se llama más de una vez.
+    q.getUIList = @(__original) function () {
+        local ret = __original();
+        foreach (l in ret) {
+            if (typeof l.title == "string" && l.title != "") l.title = ::Rosetta._(l.title);
+            l.items = l.items.map(function (r) {
+                local c = clone r;
+                if ("text" in c && typeof c.text == "string") c.text = ::Rosetta._(c.text);
+                return c;
+            });
+        }
+        return ret;
+    }
     q.buildText = @(__original) function (_text, _full = true) {
         if (typeof _text != "string" || this.m.Type != "encounter.legend_tips_encounter"
                 || !(::std.Str.startswith(_text, CONSEJOS) || _text == consejos))
@@ -490,6 +621,10 @@ if ("ModJimmysTooltips" in getroottable() && "modTacticalTooltip" in ::ModJimmys
     ::ModJimmysTooltips.modTacticalTooltip = function (_tooltip, _targetedWithSkill, _entity) {
         local ret = original(_tooltip, _targetedWithSkill, _entity);
         foreach (fila in ret) {
+            // Los efectos de cada herida van en children, donde translateTooltip no entra.
+            if ("children" in fila && typeof fila.children == "array")
+                foreach (h in fila.children)
+                    if (typeof h == "table" && "text" in h && typeof h.text == "string") h.text = ::Rosetta._(h.text);
             if (!("text" in fila) || typeof fila.text != "string") continue;
             local t = fila.text;
             if (::std.Str.startswith(t, "[u][size=14]") && ::std.Str.endswith(t, "[/size][/u]")) {
