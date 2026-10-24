@@ -224,6 +224,22 @@ local pairs = [
         es = "Pierdes <item>"
     }
     {
+        // @composicion
+        // ::Legends.EventList.RenownGain = "You gain [color=%s]%s[/color] of Renown", con la cantidad ("a small amount"...)
+        // y el color ya puestos; va antes de la golosa "You gain <item:str>", que se la comería sin traducir
+        mode = "pattern"
+        en = "You gain [color=<c:str>]<amount:str>[/color] of Renown"
+        es = "Ganas [color=<c>]<amount:t>[/color] de renombre"
+    }
+    {
+        // @composicion
+        // ::Legends.EventList.RenownLose = "You lose [color=%s]%s[/color] of Renown", con la cantidad ("a small amount"...)
+        // y el color ya puestos; va antes de la golosa "You lose <item:str>", que se la comería sin traducir
+        mode = "pattern"
+        en = "You lose [color=<c:str>]<amount:str>[/color] of Renown"
+        es = "Pierdes [color=<c>]<amount:t>[/color] de renombre"
+    }
+    {
         // text = "You gain " + this.Const.Strings.getArticle(item.getName()) + item.getName()
         mode = "pattern"
         en = "You gain <item:str>"
@@ -53395,7 +53411,7 @@ local pairs = [
     {
         // text = _event.m.Wildman.getName() + " is now paid [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Wildman.getDailyCost() + "[/color] crowns a day"
         mode = "pattern"
-        en = "<actor:str> is now paid <n:int> crowns a day"
+        en = "<actor:str> is now paid <n:val_tag> crowns a day"
         es = "<actor> ahora cobra <n> coronas al día"
     }
     {
@@ -71386,7 +71402,7 @@ local pairs = [
         // ]) + "[/color][/b] required)"
         mode = "pattern"
         en = "Not enough Action Points to change items ([b]<items:val_tag>[/b] required)"
-        es = "No hay suficientes Puntos de acción para cambiar objetos ([b]<items>[/b] required)"
+        es = "No hay suficientes Puntos de acción para cambiar de objeto (se requieren [b]<items>[/b])"
     }
     {
         // text = "Equip item ([b][color=" + this.Const.UI.Color.PositiveValue + "]" + _activeEntity.getItems().getActionCost([
