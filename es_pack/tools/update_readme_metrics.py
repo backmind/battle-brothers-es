@@ -68,7 +68,7 @@ OBJETIVOS = [
     {
         "nombre": "Legends",
         "badge": "Legends",
-        "estado": "Beta",
+        "estado": "Disponible",
         "verificada": "Legends " + build_dist.LEGENDS_VERSION,
         "cobertura": build_dist.COBERTURA_LEGENDS,
         # Legends-public publica releases; sus etiquetas incluyen otras que no

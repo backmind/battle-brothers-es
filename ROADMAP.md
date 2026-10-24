@@ -2,15 +2,17 @@
 
 Hacia dónde va el pack. El detalle de cada tarea está en las [issues](https://github.com/backmind/battle-brothers-es/issues), agrupadas por [milestone](https://github.com/backmind/battle-brothers-es/milestones); este documento solo marca la dirección.
 
-## Ahora: el juego base
+## Hecho: el juego base y Legends
 
-La traducción del juego base y sus expansiones está completa desde la 1.0.0. La numeración salta de la 1.0.1 a la 4.0.0 para continuar la de la traducción anterior en Nexus, que llegó a la 3.0.5. Las versiones 4.0.x mantienen el base: erratas, textos que se cuelan en inglés o no caben en pantalla, y lo que traiga cada parche del juego. Lo pendiente está en el milestone [4.0.1](https://github.com/backmind/battle-brothers-es/milestone/1).
+La traducción del juego base y sus expansiones está completa desde la 1.0.0. La numeración salta de la 1.0.1 a la 4.0.0 para continuar la de la traducción anterior en Nexus, que llegó a la 3.0.5.
 
-## Siguiente: Legends
+[Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, está traducido desde la 5.0.0: unas 15.800 frases, dentro del mismo pack, que se cargan solo si Legends está instalado. Se probó en partida en varias rondas de pruebas y con una auditoría de su código fuente en busca de pantallas que el juego no enseña a menudo.
 
-[Legends](https://github.com/Battle-Brothers-Legends/Legends-public) es el mod más grande de Battle Brothers y el primero que se traduce. La traducción está hecha y revisada, pero falta probarla en partida. El seguimiento está en el milestone [Legends](https://github.com/backmind/battle-brothers-es/milestone/2).
+## Ahora: mantener los dos
 
-Antes de que entre en una versión estable habrá betas para probarla. Se publican como *pre-release* en la página de [releases](https://github.com/backmind/battle-brothers-es/releases), así que el aviso de actualizaciones de MSU no se las ofrece a quien tiene la versión estable; para probar una, hay que bajarla de esa página a mano. Legends irá dentro del pack, en la 5.0.0: su traducción se carga solo si Legends está instalado. Las betas se numeran 5.0.0-beta.1, 5.0.0-beta.2 y así sucesivamente.
+Las versiones 5.0.x mantienen el base y Legends: erratas, textos que se cuelan en inglés o no caben en pantalla, y lo que traiga cada parche del juego o cada versión de Legends. Lo pendiente está en las [issues](https://github.com/backmind/battle-brothers-es/issues).
+
+Las versiones de prueba, cuando las haya, se publican como *pre-release* en la página de [releases](https://github.com/backmind/battle-brothers-es/releases), así que el aviso de actualizaciones de MSU no se las ofrece a quien tiene la versión estable; para probar una, hay que bajarla de esa página a mano.
 
 ## Rosetta
 

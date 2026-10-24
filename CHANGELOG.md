@@ -2,10 +2,41 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
-## [5.0.0-beta.1] - sin publicar
+## [5.0.0] - sin publicar
 
-- **Traducción de Legends** (19.4.22), en beta.
-- **Un solo zip.** La interfaz (los menús y pantallas que el juego dibuja en JavaScript) va ahora dentro de `mod_battle_brothers_es_<versión>.zip`. Al actualizar, borra también el `mod_battle_brothers_es_ui_<versión>.zip` de la versión anterior: si se queda, pisa la interfaz nueva con la antigua.
+**Legends, traducido.** [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, se juega ahora en castellano: unas 15.800 frases y más de 380.000 palabras del original, con sus eventos, contratos, ventajas, trasfondos, el campamento, el séquito y sus pantallas propias. Viaja dentro del mismo pack y solo se carga si Legends está instalado; sin él, el pack se comporta como siempre. Está verificada en Legends 19.4.22 y cubre el 99 % de sus frases.
+
+**Un solo archivo.** El pack es ahora un único `mod_battle_brothers_es_<versión>.zip`, con el texto y las pantallas que el juego dibuja en JavaScript juntos: un archivo menos que descargar, copiar y actualizar. Si vienes de una versión anterior, borra también el `mod_battle_brothers_es_ui_<versión>.zip` que tengas: si se queda, pisa la interfaz nueva con la antigua.
+
+### General
+
+- **Las reglas concretas ya no las tapa una genérica.** Rosetta prueba las reglas de traducción en el orden en que se cargan, y una genérica como «You gain X» se adelantaba a otras más precisas: salían frases a medias como «Ganas 5 Crowns and 3 Experience» o «Regresa a any town of X». Ahora las genéricas van siempre detrás. Se revisaron una a una las frases que cambian con el nuevo orden: todas mejoran.
+- **Cifras en color en los tooltips.** Los efectos, costes y probabilidades se leen de un vistazo: lo que te favorece en verde y lo que te perjudica en rojo, sin tocar la redacción. Los orígenes, las ambiciones, las habilidades y las tiendas del campamento de Legends llevan además sus términos clave resaltados.
+- **Los textos que el pack ya ha traducido no vuelven a pasar por la traducción.** Algunos, como los consejos del campamento de Legends, colgaban el juego al abrirse.
+- **Los valores que llegan coloreados a un texto** («los [Lobos huargo] se fueron hacia el [oeste]») se traducen también.
+- **La ficha del pack en Ajustes de mods** se rehace: más clara, con lo que incluye, sus autores y los enlaces a Nexus y a GitHub.
+
+### Juego base
+
+- **Los botones dicen lo mismo que su tooltip**: «Salir», «¡Ataquen!», «Retirarse», «Nombre de la compañía», «Semilla de mapa», «Hombre de hierro», «Guerra santa»; y en la interfaz, «Taberna», «Sala de entrenamiento», «Cambiar nombre y título», «Elaborar», «Botín encontrado» y «Sí» con tilde.
+- **El tipo de arma del tooltip se traduce siempre**, también cuando MSU lo compone con varios tipos («Arma de asta/Mayal, Dos manos»).
+- **El registro de combate dice siempre igual el golpe en una pieza**: «X ha recibido 9 de daño en su Sobrevesta acolchada», y «…que se ha destrozado» cuando se rompe.
+- **Las etiquetas de los orígenes van en el dorado de los títulos**, que se distingue del texto.
+- **Textos que salían en inglés o a medias**: el renombre ganado o perdido en los eventos, el salario de un hermano con la cifra en color, el «required» al cambiar de objeto en combate, «Contratados por» en el tooltip de las compañías del mapa, el artículo inglés en «Ganas a Pico militar», la pérdida de provisiones y suministros, los objetivos de las ambiciones y los juramentos («Obtendrás renombre adicional…»).
+- **Erratas**: «Pierdes provisiones» (decía «Pierde»), «Herramientas y suministros», «se ha emborrachado».
+
+### Legends
+
+- **Toda la traducción de Legends**, revisada por lotes con un glosario propio de unos 1.400 términos y los mismos criterios que el base: «ventaja» para los perks, español neutro y género en los personajes y títulos femeninos («la Valiente»).
+- **Sus pantallas propias**: el campamento con sus tiendas, consejos y encuentros, el séquito, la pantalla de nueva campaña y sus ajustes, la sala de entrenamiento, el barbero, el taxidermista, la taberna, las partidas guardadas, el menú de escenarios, el filtro de armaduras del inventario, las formaciones, los modos de caza y la ficha táctica de Jimmy's Tooltips.
+- **Los colores de las ventajas, según su efecto para ti.** Legends pinta en rojo cualquier cifra que baja, aunque te favorezca («25 % menos de Fatiga», «Mente sobre cuerpo»). Ahora lo que te beneficia va en verde, también los debuffs que aplicas al enemigo, y en rojo los costes y penalizaciones propias.
+- **Los orígenes reservan el rojo para los malus**: los acentos que Legends marcaba en rojo pasan al dorado de las etiquetas.
+- **El diálogo de combate con la cifra exacta de enemigos** («2 Soldados auxiliares ancestrales», «Unas cuantas catapultas pielverde», «Hordas de…»), el tooltip del factor de acierto («Línea de fuego bloqueada»), los objetos con runas, los nombres de las armaduras con nombre y los libros de habilidad.
+- **Los enganches del pack no fallan si una versión de Legends cambia**: si una función desaparece, ese texto queda en inglés, pero la partida sigue sin errores.
+
+### Otros mods
+
+- **Swifter**: sus ajustes, sus atajos de teclado y el tooltip del botón de velocidad 8x, en castellano, si lo tienes instalado.
 
 ## [4.0.1] - 2026-10-21
 

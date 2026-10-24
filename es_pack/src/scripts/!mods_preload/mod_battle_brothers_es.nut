@@ -9,7 +9,7 @@ if (!("Rosetta" in getroottable())) return;
 local def = {
     ID = "mod_battle_brothers_es"
     Name = "Battle Brothers en Español"
-    Version = "5.0.0-beta.1"
+    Version = "5.0.0"
     // Contra qué build del juego se verificó y qué parte de sus textos cubre,
     // medida con es_pack/tools/measure_coverage.py. Los tests exigen que
     // coincidan con build_dist.py.
@@ -37,17 +37,34 @@ mod.queue(">mod_msu", function () {
     // un título como HTML tal cual, así que los párrafos y los enlaces van ahí
     // (openURL es la función del juego que la propia MSU usa en sus avisos).
     local repo = "https://github.com/backmind/battle-brothers-es";
+    local nexus = "https://www.nexusmods.com/battlebrothers/mods/640";
     local enlace = @(texto, url) format("<span style='color: lightblue; text-decoration: underline; cursor: pointer;' onclick='openURL(%c%s%c)'>%s</span>", 34, url, 34, texto);
     local parrafo = @(html) "<div class='es-parrafo text-font-normal font-color-description' style='font-weight: normal; white-space: normal; width: 100%;'>" + html + "</div>";
+    // Cada sección: su título en el dorado de los títulos del juego y el
+    // cuerpo debajo; las filas de cifras, con el dato en ese mismo dorado.
+    local seccion = @(titulo, cuerpo) parrafo("<div class='title-font-normal font-bold font-color-title' style='margin-bottom: 0.4rem;'>" + titulo + "</div>" + cuerpo);
+    local fila = @(que, dato) "<div style='margin: 0.2rem 0 0.2rem 1rem;'>" + que + " <span class='font-color-title'>" + dato + "</span></div>";
     local pagina = msu.ModSettings.addPage("Informacion", "Información");
-    pagina.addTitle("Version", def.Name + " " + def.Version);
-    pagina.addTitle("Descripcion", parrafo("Traducción completa al castellano del juego base y de todas sus expansiones. Lo que el pack no conoce se queda en inglés, así que un parche del juego no lo rompe."));
-    pagina.addTitle("Estado", parrafo("Verificada en Battle Brothers " + def.GameVersion + ", con todas sus expansiones. Cubre el " + def.Cobertura + " de las frases del juego."));
-    pagina.addTitle("EstadoLegends", parrafo("Incluye la traducción del mod Legends, verificada en Legends " + def.LegendsVersion + ", que cubre el " + def.CoberturaLegends + " de sus frases. Solo se carga si Legends está instalado."));
+    pagina.addTitle("Cabecera", parrafo("<div style='text-align: center;'>"
+        + "<div class='title-font-big font-bold font-color-title'>" + def.Name + "</div>"
+        + "<div class='text-font-medium'>Versión " + def.Version + "</div>"
+        + "<div style='margin-top: 0.4rem;'>La traducción al castellano de Battle Brothers, de todas sus expansiones y de Legends, en español neutro.</div></div>"));
     pagina.addDivider("Divisor1");
-    pagina.addTitle("Creditos", parrafo("Traducción original: MagnusLioncaster, Hjensikk, AMarauder y ElGranFoca.<br>Revisión completa, traducción de todo lo que faltaba, adaptación a Rosetta y mantenimiento: backmind.<br>Framework: Rosetta, de Suor."));
+    pagina.addTitle("Incluye", seccion("Qué incluye",
+        fila("Battle Brothers " + def.GameVersion + " y todas sus expansiones:", def.Cobertura + " de las frases")
+        + fila("Legends " + def.LegendsVersion + ":", def.CoberturaLegends + " de las frases (se carga solo si Legends está instalado)")
+        + fila("Swifter:", "sus ajustes y atajos, si está instalado")
+        + "<div style='margin-top: 0.4rem;'>No toca ningún archivo del juego: lo que el pack no conoce se queda en inglés, y un parche no lo rompe.</div>"));
     pagina.addDivider("Divisor2");
-    pagina.addTitle("Enlaces", parrafo(enlace("Repositorio en GitHub", repo) + " · " + enlace("Informar de un error o una errata", repo + "/issues/new/choose")));
+    pagina.addTitle("Autores", seccion("Autores",
+        fila("AMarauder, MagnusLioncaster y Hjensikk:", "la traducción original")
+        + fila("ElGranFoca:", "la adaptación a los parches y las 3.0.4 y 3.0.5")
+        + fila("backmind:", "la traducción sobre Rosetta desde la 4.0.0")
+        + fila("Framework:", "Rosetta, de Suor")));
+    pagina.addDivider("Divisor3");
+    pagina.addTitle("Enlaces", seccion("Enlaces", "<div style='margin-left: 1rem;'>"
+        + enlace("Página en Nexus", nexus) + " · " + enlace("Repositorio en GitHub", repo)
+        + " · " + enlace("Informar de un error o una errata", repo + "/issues/new/choose") + "</div>"));
 });
 
 ::include("mod_battle_brothers_es/base_es");

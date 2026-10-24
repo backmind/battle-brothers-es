@@ -17,7 +17,9 @@
 [![MSU](https://img.shields.io/github/v/release/MSUTeam/MSU?label=MSU&color=555)](https://github.com/MSUTeam/MSU)
 [![Licencia](https://img.shields.io/badge/licencia-por%20piezas-555)](#licencias)
 
-Traducción al español de Battle Brothers, de todas sus expansiones y, poco a poco, de sus mods: eventos, contratos, combate, interfaz y tooltips, en español neutro para todo el ámbito hispanohablante. No toca ningún archivo del juego, así que un parche no la rompe.
+Traducción al español de Battle Brothers, de todas sus expansiones y de [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande del juego: eventos, contratos, combate, interfaz y tooltips, en español neutro para todo el ámbito hispanohablante. No toca ningún archivo del juego, así que un parche no la rompe.
+
+**Novedad en la 5.0.0: Legends, traducido.** Unas 15.800 frases y más de 380.000 palabras del original, dentro del mismo pack. Se carga solo si tienes Legends instalado. Y el pack es ahora un solo archivo.
 
 ![Negociación de un contrato, en español](es_pack/media/contrato.png)
 
@@ -35,10 +37,10 @@ Este pack toma aquel texto, lo revisa entero, establece una línea editorial hom
 | Qué | Estado | Verificada en | Frases cubiertas |
 |---|---|---|---|
 | Battle Brothers y sus expansiones | Disponible | Battle Brothers 1.5.2.3 | 100 % |
-| Legends | Beta | Legends 19.4.22 | 99 % |
+| Legends | Disponible | Legends 19.4.22 | 99 % |
 <!-- OBJETIVOS:FIN -->
 
-Las traducciones de mods se irán sumando a esta tabla, cada una con su cobertura. La primera será la de [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), que está en preparación; cómo va y cuándo salen sus betas está en la [hoja de ruta](ROADMAP.md). La cobertura se mide contra el juego instalado con `measure_coverage.py`: cuenta las frases que el jugador puede leer y descarta las claves internas y las trazas de depuración. Los restos que el extractor toma por texto sin serlo (condiciones de código, trozos de frases que en partida llegan enteras, etcétera) están revisados uno a uno y listados en la propia herramienta.
+Las traducciones de mods se van sumando a esta tabla, cada una con su cobertura. La primera es la de [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), desde la 5.0.0: va dentro del mismo pack y solo se carga si Legends está instalado. El pack traduce además los ajustes de [Swifter](https://www.nexusmods.com/battlebrothers/mods/542). Lo que viene después está en la [hoja de ruta](ROADMAP.md). La cobertura se mide contra el juego instalado con `measure_coverage.py`: cuenta las frases que el jugador puede leer y descarta las claves internas y las trazas de depuración. Los restos que el extractor toma por texto sin serlo (condiciones de código, trozos de frases que en partida llegan enteras, etcétera) están revisados uno a uno y listados en la propia herramienta.
 
 Ninguna medida estática ve una pantalla cuyo texto no pase por Rosetta. Eso solo lo destapa jugar, y para eso están las [incidencias](https://github.com/backmind/battle-brothers-es/issues/new/choose).
 
@@ -67,22 +69,22 @@ Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, ent
 
 **¿Steam o GOG?** Los dos. La traducción no depende de la tienda, solo de la versión del juego.
 
-**¿Y con otros mods?** Rosetta traduce los textos por coincidencia exacta, así que lo que un mod reutilice del juego base sale en español y lo que añada de su cosecha se queda en inglés. Las traducciones de mods que vayan entrando en el pack aparecen en [Qué se traduce](#qué-se-traduce). La traducción de Legends está en preparación y tendrá betas antes de entrar en una versión estable ([hoja de ruta](ROADMAP.md)). Con otros mods grandes, como Reforged, no se ha probado a fondo; si encuentras algo raro, [cuéntalo](https://github.com/backmind/battle-brothers-es/issues/new/choose).
+**¿Y con otros mods?** Rosetta traduce los textos por coincidencia exacta, así que lo que un mod reutilice del juego base sale en español y lo que añada de su cosecha se queda en inglés. Las traducciones de mods que entran en el pack aparecen en [Qué se traduce](#qué-se-traduce); Legends está traducido desde la 5.0.0. Con otros mods grandes, como Reforged, no se ha probado a fondo; si encuentras algo raro, [cuéntalo](https://github.com/backmind/battle-brothers-es/issues/new/choose).
 
-**¿Por qué siete archivos?** Cinco son el andamiaje que comparten muchos mods del juego, y probablemente ya tengas alguno. Los dos últimos son el pack: uno con el texto y otro con las pantallas que el juego dibuja en JavaScript, que son las únicas que no pasan por Rosetta.
+**¿Por qué seis archivos?** Cinco son el andamiaje que comparten muchos mods del juego, y probablemente ya tengas alguno. El sexto es el pack, con el texto y las pantallas que el juego dibuja en JavaScript. Hasta la 4.0.1 estas iban en un segundo archivo; si vienes de ahí, bórralo al actualizar.
 
 **Ha salido una versión del juego y el pack dice otra. ¿Funciona?** Con total probabilidad: lo que la actualización cambie saldrá en inglés y el resto en español. Los badges de arriba comparan la versión verificada con la última publicada, y en cuanto se verifica la nueva se actualizan.
 
 ## El corpus en cifras
 
-Las cifras del juego base y sus expansiones salen del corpus de este repositorio, y la CI comprueba en cada cambio que siguen al día.
+Las cifras del juego base y sus expansiones salen del corpus de este repositorio, y la CI comprueba en cada cambio que siguen al día. La traducción de Legends suma otros 15.783 pares, con unas 384.000 palabras del original (408.000 en castellano), frente a las 558.000 del juego base: entre los dos, cerca de un millón de palabras.
 
 <!-- METRICAS:INICIO (autogenerado por es_pack/tools/update_readme_metrics.py; no editar a mano) -->
 | | |
 |---|---|
-| Pares distribuidos | 16.166 |
-| De ellos, patrones con variables | 1.316 |
-| De ellos, nacidos fuera de la extracción (composición, MSU, QA) | 967 |
+| Pares distribuidos | 16.171 |
+| De ellos, patrones con variables | 1.321 |
+| De ellos, nacidos fuera de la extracción (composición, MSU, QA) | 969 |
 | Pares por id (homógrafos) | 28 |
 | En cuarentena de patrones | 0 |
 | Sin traducir | 0 |
@@ -121,4 +123,4 @@ El repositorio reúne piezas de autores distintos, y cada una conserva la suya:
 - **Capa de interfaz** (`es_pack/src/ui/`): ficheros del juego, propiedad de Overhype Studios, con los textos traducidos. Se distribuyen como es costumbre en los mods del juego, sin reclamar licencia sobre ellos.
 - **Rosetta vendorizado** (`vendor/rosetta/`): de Suor, bajo su [licencia BSD](vendor/rosetta/LICENSE).
 
-> *English: a Spanish translation of Battle Brothers and all its DLCs, built on Suor's [Rosetta](https://github.com/Suor/battle-brothers-rosetta) framework. Install the seven zips listed above into the game's `data` folder.*
+> *English: a Spanish translation of Battle Brothers, all its DLCs and the Legends mod, built on Suor's [Rosetta](https://github.com/Suor/battle-brothers-rosetta) framework. Install the six zips listed above into the game's `data` folder.*
