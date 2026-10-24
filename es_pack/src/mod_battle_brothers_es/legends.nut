@@ -523,6 +523,10 @@ local resalta = function (_s, _color, _terminos = TERMINOS, _primera = false) {
 }
 local colorResalte = @() "getHighlightLightBackgroundValue" in ::Const.UI.Color
     ? ::Const.UI.Color.getHighlightLightBackgroundValue() : "#1e468f";
+// Para fondos oscuros (pantalla de eventos), el resalte oscuro de Legends,
+// también ajustable en sus ajustes de MSU.
+local colorResalteOscuro = @() "getHighlightDarkBackgroundValue" in ::Const.UI.Color
+    ? ::Const.UI.Color.getHighlightDarkBackgroundValue() : "#6f91c9";
 // Se engancha buildText de la clase base y no createScreens del encuentro: el
 // enganche de createScreens no llegaba a la partida (la prueba del 23/10 seguía
 // desbordando la pila con el texto inglés). buildText es lo que pasa el texto
@@ -554,7 +558,7 @@ mod.hook("scripts/encounters/encounter", function (q) {
                 || !(::std.Str.startswith(_text, CONSEJOS) || _text == consejos))
             return __original(_text, _full);
         if (consejos == null) {
-            local color = colorResalte();
+            local color = colorResalteOscuro();  // los consejos salen en la pantalla de eventos
             consejos = "[color=" + color + "]" + ::Rosetta._(CONSEJOS) + "[/color]";
             foreach (tip in ::Const.TipOfTheDay) consejos += "\n\n- " + resalta(::Rosetta._(tip), color);
             ::BattleBrothersEs.Hechos[consejos] <- true;  // por si otra vía lo pasa a translate()

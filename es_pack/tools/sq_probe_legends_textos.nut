@@ -284,6 +284,7 @@ print("=== textos montados con colores o format() ===\n");
     foreach (c in b) src += c.tochar();
     local ini = src.find("local desc"), fin = src.find("return desc;", ini);
     ::Const.UI.Color.getHighlightLightBackgroundValue <- @() "#1e468f";
+    ::Const.UI.Color.getHighlightDarkBackgroundValue <- @() "#6f91c9";
     ::Const.UI.Color.PositiveValue <- "#135213";
     ::Const.HuntingLoot <- {ExpertHunterBackgrounds = [0, 1], RequiredBackgrounds = ["Hunter", "Poacher"]};
     local r = ::Rosetta.translate(compilestring(src.slice(ini, fin + "return desc;".len()))());
@@ -334,7 +335,7 @@ foreach (caso in [
     comprueba("consejos: segundo clic igual", bt.call(enc, primero), primero);
     comprueba("consejos: el título va al original", bt.call(enc, "Tips"), "original: Tips");
     comprueba("consejos: otro encuentro va al original", bt.call({m = {Type = "x"}}, "Here are some tips for you:"), "original: Here are some tips for you:");
-    local az = "[color=#1e468f]";
+    local az = "[color=#6f91c9]";
     comprueba("consejos del campamento", primero,
         az + "Aquí tienes algunos consejos:[/color]\n\n- Si te cuesta matar árboles, intenta llevar hachas.\n\n- Los escudos sufren un daño leve cada vez que se usan para desviar un ataque; la "
         + az + "ventaja[/color] Experto en escudos reduce considerablemente ese daño.");
