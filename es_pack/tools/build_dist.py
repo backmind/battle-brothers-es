@@ -79,7 +79,8 @@ FECHA_FIJA = (1980, 1, 1, 0, 0, 0)
 # por encima de esto. Cada uno esta explicado en su chequeo de checks.py. Si
 # baja, se baja aqui en el mismo commit.
 # DUP_VECINO 19 desde la 4.0.1: la reconstruccion con y sin lugar dicen lo mismo a proposito.
-LINEA_BASE = {"DUP_VECINO": 19, "TILDES": 2, "TOKENS": 1, "VARIANTES": 16}
+# 22 desde el 24/10: "You gain a/an" y "You lose a/an" repiten el es de su vecina a proposito (quitan el articulo ingles).
+LINEA_BASE = {"DUP_VECINO": 22, "TILDES": 2, "TOKENS": 1, "VARIANTES": 16}
 
 
 def entrada_zip(arco):
