@@ -139,6 +139,39 @@
 		} catch (e) {}
 	}
 
+	// El aviso de DLC que faltan (setLMOTD) lo monta Squirrel concatenando trozos,
+	// así que llega como una sola cadena que Rosetta no reconoce: se traduce por
+	// trozos. Los apóstrofos sobrantes son los que escribe Legends.
+	var lmotd = {
+		'You are missing critical files!': '¡Te faltan archivos esenciales!',
+		'\nLegends extensively uses features and assets from all official DLC. We would not be able to offer this mod experience without all the awesome work from Overhype.':
+			'\nLegends usa extensamente funciones y recursos de todos los DLC oficiales. No podríamos ofrecer la experiencia de este mod sin todo el increíble trabajo de Overhype.',
+		'\nMissing \'Beasts and Exploration\' DLC': '\nFalta el DLC \'Beasts and Exploration\'',
+		'\nMissing \'Warriors of the North\' DLC\'': '\nFalta el DLC \'Warriors of the North\'',
+		'\nMissing \'Blazing Deserts\' DLC\'': '\nFalta el DLC \'Blazing Deserts\''
+	};
+	var traduceLMOTD = function (_texto)
+	{
+		if (typeof _texto !== 'string') return _texto;
+		Object.keys(lmotd).forEach(function (_en) { _texto = _texto.split(_en).join(lmotd[_en]); });
+		return _texto.replace(/\nMissing (\S+) file ([^\n]*)/g, '\nFalta el archivo $1 $2');
+	};
+	if (typeof MainMenuScreen !== 'undefined' && typeof MainMenuScreen.prototype.setLMOTD === 'function')
+	{
+		var setLMOTD = MainMenuScreen.prototype.setLMOTD;
+		MainMenuScreen.prototype.setLMOTD = function (_data) { return setLMOTD.call(this, traduceLMOTD(_data)); };
+		try
+		{
+			var pintadoL = $('.legends-motd');
+			if (pintadoL.text().indexOf('You are missing critical files!') === 0)
+			{
+				var crudo = pintadoL.html().replace(/<br\s*\/?>/g, '\n');
+				if (traduceLMOTD(crudo) !== crudo)
+					pintadoL.html(XBBCODE.process({ text: traduceLMOTD(crudo), removeMisalignedTags: false, addInLineBreaks: true }).html);
+			}
+		} catch (e) {}
+	}
+
 	// Pantalla de nueva campaña. Sus rótulos son HTML a pelo dentro de
 	// createDIV, y los botones de pie cambian de texto al navegar entre los
 	// tres paneles con changeButtonText: se retocan los rótulos al acabar de
@@ -394,13 +427,24 @@
 		envuelve(clase.prototype, 'show', function () { traduceVista(this); });
 	});
 
-	// Ventanas emergentes que se crean al pulsar un botón.
+	// Ventanas emergentes que se crean al pulsar un botón. Los cinco botones de la
+	// tienda de caza llevan como texto la clave del modo, que es también su ID para
+	// Squirrel y para el tooltip: solo se cambia lo que se pinta, nunca el ID.
+	var modosCaza = {
+		'Default': 'Por defecto',
+		'Cook': 'Cocina',
+		'Brew': 'Destilación',
+		'Hunt': 'Caza',
+		'Forage': 'Recolección'
+	};
 	if (typeof CampScreenCommanderDialogModule !== 'undefined')
 		['showPresetNamePopupDialog', 'showHunterPopupDialog'].forEach(function (_nombre)
 		{
 			envuelve(CampScreenCommanderDialogModule.prototype, _nombre, function ()
 			{
-				if (this.mPopupDialog) retoca(this.mPopupDialog, '*', interfaz);
+				if (!this.mPopupDialog) return;
+				retoca(this.mPopupDialog, '*', interfaz);
+				if (_nombre === 'showHunterPopupDialog') retoca(this.mPopupDialog, '.label', modosCaza);
 			});
 		});
 
@@ -409,6 +453,17 @@
 		{
 			envuelvePopup(CharacterScreenLeftPanelHeaderModule.prototype, _nombre);
 		});
+
+	// Formaciones: el título del módulo es HTML a pelo y el diálogo de renombrar
+	// no pasaba por envuelvePopup (su título ya está en fijos).
+	if (typeof CharacterScreenFormationsModule !== 'undefined')
+	{
+		envuelve(CharacterScreenFormationsModule.prototype, 'createDIV', function ()
+		{
+			retoca(this.mContainer, '.title-row', { 'Stables': 'Establos' });
+		});
+		envuelvePopup(CharacterScreenFormationsModule.prototype, 'createChangeFormationNameDialogContent');
+	}
 
 	[typeof LoadCampaignMenuModule !== 'undefined' ? LoadCampaignMenuModule : null,
 		typeof SaveCampaignMenuModule !== 'undefined' ? SaveCampaignMenuModule : null].forEach(function (_clase)
@@ -449,6 +504,7 @@
 		'Yes': 'Sí',
 		'Close': 'Cerrar',
 		'Unlock Perk': 'Desbloquear ventaja',
+		'Perks': 'Ventajas',
 		'Notice': 'Aviso',
 		'Stash Size Changed': 'Cambio de tamaño del inventario',
 		'Change Formation Name': 'Cambiar nombre de la formación'
@@ -577,4 +633,48 @@
 				'A single man has fallen since you took command': 'Un solo hombre ha caído desde que asumiste el mando'
 			}, texto));
 		});
+
+	// Filtro de armadura del inventario (Legends): los rótulos son HTML a pelo en
+	// un panel que cuelga de createDIV. Solo existe fuera del combate. Se retoca
+	// también al mostrar por si este fichero carga antes que el de Legends.
+	if (typeof CharacterScreenInventoryListModule !== 'undefined')
+	{
+		var filtroArmadura = function ()
+		{
+			if (this.mArmorFilterPanel) retoca(this.mArmorFilterPanel, '*', { 'Body': 'Cuerpo', 'Head': 'Cabeza', 'All': 'Todos' });
+		};
+		envuelve(CharacterScreenInventoryListModule.prototype, 'createDIV', filtroArmadura);
+		envuelve(CharacterScreenInventoryListModule.prototype, 'show', filtroArmadura);
+	}
+
+	// Aviso de error de mods (MSU/Legends): título y botón a pelo. «Quit Game»
+	// lo escribe el evento force-quit dentro de showRawText, cuando el error es fatal.
+	if (typeof MSUPopup !== 'undefined')
+	{
+		envuelve(MSUPopup.prototype, 'createDIV', function ()
+		{
+			retoca(this.mContainer, '*', { 'Mod Error': 'Error de mod', 'Ok': 'Aceptar' });
+		});
+		envuelve(MSUPopup.prototype, 'showRawText', function ()
+		{
+			retoca(this.mFooterContainer, '.label', { 'Quit Game': 'Salir del juego' });
+		});
+	}
+
+	// Partidas de otra versión o sin el DLC en cargar y guardar: el rótulo va como
+	// literal al día de la lista, tanto en los .js de Legends como en los del pack.
+	if (typeof $.fn.assignListCampaignDayName === 'function')
+	{
+		var diaPartida = $.fn.assignListCampaignDayName;
+		var incompatible = {
+			'- Incompatible Version or DLC Missing -': '- Versión incompatible o DLC ausente -',
+			'- Incompatible Version -': '- Versión incompatible -'
+		};
+		$.fn.assignListCampaignDayName = function (_valor)
+		{
+			var args = Array.prototype.slice.call(arguments);
+			args[0] = tr(incompatible, _valor);
+			return diaPartida.apply(this, args);
+		};
+	}
 })();
