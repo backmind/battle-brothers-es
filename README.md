@@ -72,6 +72,8 @@ Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, ent
 
 **¿Steam o GOG?** Los dos. La traducción no depende de la tienda, solo de la versión del juego.
 
+**¿Necesito las expansiones?** No. El pack las traduce todas, pero no las pide: si te falta una, sus textos simplemente no aparecen. Legends sí cuenta con todas, y avisa al arrancar si falta alguna; eso es requisito suyo, no del pack.
+
 **¿Y con otros mods?** Rosetta traduce los textos por coincidencia exacta, así que lo que un mod reutilice del juego base sale en español y lo que añada de su cosecha se queda en inglés. Las traducciones de mods que entran en el pack aparecen en [Qué se traduce](#qué-se-traduce); Legends está traducido desde la 5.0.0. Con otros mods grandes, como Reforged, no se ha probado a fondo; si encuentras algo raro, [cuéntalo](https://github.com/backmind/battle-brothers-es/issues/new/choose).
 
 **¿Por qué seis archivos?** Cinco son el andamiaje que comparten muchos mods del juego, y probablemente ya tengas alguno. El sexto es el pack, con el texto y las pantallas que el juego dibuja en JavaScript. Hasta la 4.0.1 estas iban en un segundo archivo; si vienes de ahí, bórralo al actualizar.
