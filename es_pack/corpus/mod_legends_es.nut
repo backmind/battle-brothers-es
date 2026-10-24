@@ -12319,6 +12319,4331 @@ local pairs = [
         en = "Myriad of"
         es = "Miríada de"
     }
+    // context: ::Const.Strings.EngageEnemyNumbersNames (palabra + " " + plural de tropa, world_entity y world_state)
+    {
+        // comodín para las tropas que no están en la tabla explícita de abajo
+        mode = "pattern"
+        en = "Several <troops:str>"
+        es = "Unos cuantos <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Pack of <troops:str>"
+        es = "Banda de <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Plethora of <troops:str>"
+        es = "Plétora de <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Hordes of <troops:str>"
+        es = "Hordas de <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Throng of <troops:str>"
+        es = "Tropel de <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Swarm of <troops:str>"
+        es = "Enjambre de <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Legion of <troops:str>"
+        es = "Legión de <troops:t>"
+    }
+    {
+        mode = "pattern"
+        en = "Myriad of <troops:str>"
+        es = "Miríada de <troops:t>"
+    }
+    // Las mismas ocho cantidades, enteras y una por una para cada tipo de tropa de la tabla del base (v. el bloque
+    // de "A few <tropa>" de base_es.nut): el :t no da el género de "Unos cuantos", pone mayúscula inicial dentro
+    // de la frase y no distingue el número en Militia, Indebted, Orc Young ni Barbarian Chosen.
+    {
+        // @composicion
+        en = "Several Wiedergangers"
+        es = "Unos cuantos wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Pack of Wiedergangers"
+        es = "Banda de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Plethora of Wiedergangers"
+        es = "Plétora de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Hordes of Wiedergangers"
+        es = "Hordas de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Throng of Wiedergangers"
+        es = "Tropel de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Swarm of Wiedergangers"
+        es = "Enjambre de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Legion of Wiedergangers"
+        es = "Legión de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Myriad of Wiedergangers"
+        es = "Miríada de wiedergangers"
+    }
+    {
+        // @composicion
+        en = "Several Rachegeists"
+        es = "Unos cuantos rachegeists"
+    }
+    {
+        // @composicion
+        en = "Pack of Rachegeists"
+        es = "Banda de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Plethora of Rachegeists"
+        es = "Plétora de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Hordes of Rachegeists"
+        es = "Hordas de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Throng of Rachegeists"
+        es = "Tropel de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Swarm of Rachegeists"
+        es = "Enjambre de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Legion of Rachegeists"
+        es = "Legión de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Myriad of Rachegeists"
+        es = "Miríada de rachegeists"
+    }
+    {
+        // @composicion
+        en = "Several Geists"
+        es = "Unos cuantos geists"
+    }
+    {
+        // @composicion
+        en = "Pack of Geists"
+        es = "Banda de geists"
+    }
+    {
+        // @composicion
+        en = "Plethora of Geists"
+        es = "Plétora de geists"
+    }
+    {
+        // @composicion
+        en = "Hordes of Geists"
+        es = "Hordas de geists"
+    }
+    {
+        // @composicion
+        en = "Throng of Geists"
+        es = "Tropel de geists"
+    }
+    {
+        // @composicion
+        en = "Swarm of Geists"
+        es = "Enjambre de geists"
+    }
+    {
+        // @composicion
+        en = "Legion of Geists"
+        es = "Legión de geists"
+    }
+    {
+        // @composicion
+        en = "Myriad of Geists"
+        es = "Miríada de geists"
+    }
+    {
+        // @composicion
+        en = "Several Nachzehrers"
+        es = "Unos cuantos nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Pack of Nachzehrers"
+        es = "Banda de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nachzehrers"
+        es = "Plétora de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nachzehrers"
+        es = "Hordas de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Throng of Nachzehrers"
+        es = "Tropel de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nachzehrers"
+        es = "Enjambre de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Legion of Nachzehrers"
+        es = "Legión de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nachzehrers"
+        es = "Miríada de nachzehrers"
+    }
+    {
+        // @composicion
+        en = "Several Zweihanders"
+        es = "Unos cuantos zweihanders"
+    }
+    {
+        // @composicion
+        en = "Pack of Zweihanders"
+        es = "Banda de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Plethora of Zweihanders"
+        es = "Plétora de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Hordes of Zweihanders"
+        es = "Hordas de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Throng of Zweihanders"
+        es = "Tropel de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Swarm of Zweihanders"
+        es = "Enjambre de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Legion of Zweihanders"
+        es = "Legión de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Myriad of Zweihanders"
+        es = "Miríada de zweihanders"
+    }
+    {
+        // @composicion
+        en = "Several Lindwurms"
+        es = "Unos cuantos lindwurms"
+    }
+    {
+        // @composicion
+        en = "Pack of Lindwurms"
+        es = "Banda de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Plethora of Lindwurms"
+        es = "Plétora de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Hordes of Lindwurms"
+        es = "Hordas de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Throng of Lindwurms"
+        es = "Tropel de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Swarm of Lindwurms"
+        es = "Enjambre de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Legion of Lindwurms"
+        es = "Legión de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Myriad of Lindwurms"
+        es = "Miríada de lindwurms"
+    }
+    {
+        // @composicion
+        en = "Several Webknechts"
+        es = "Unos cuantos webknechts"
+    }
+    {
+        // @composicion
+        en = "Pack of Webknechts"
+        es = "Banda de webknechts"
+    }
+    {
+        // @composicion
+        en = "Plethora of Webknechts"
+        es = "Plétora de webknechts"
+    }
+    {
+        // @composicion
+        en = "Hordes of Webknechts"
+        es = "Hordas de webknechts"
+    }
+    {
+        // @composicion
+        en = "Throng of Webknechts"
+        es = "Tropel de webknechts"
+    }
+    {
+        // @composicion
+        en = "Swarm of Webknechts"
+        es = "Enjambre de webknechts"
+    }
+    {
+        // @composicion
+        en = "Legion of Webknechts"
+        es = "Legión de webknechts"
+    }
+    {
+        // @composicion
+        en = "Myriad of Webknechts"
+        es = "Miríada de webknechts"
+    }
+    {
+        // @composicion
+        en = "Several Alps"
+        es = "Unos cuantos alps"
+    }
+    {
+        // @composicion
+        en = "Pack of Alps"
+        es = "Banda de alps"
+    }
+    {
+        // @composicion
+        en = "Plethora of Alps"
+        es = "Plétora de alps"
+    }
+    {
+        // @composicion
+        en = "Hordes of Alps"
+        es = "Hordas de alps"
+    }
+    {
+        // @composicion
+        en = "Throng of Alps"
+        es = "Tropel de alps"
+    }
+    {
+        // @composicion
+        en = "Swarm of Alps"
+        es = "Enjambre de alps"
+    }
+    {
+        // @composicion
+        en = "Legion of Alps"
+        es = "Legión de alps"
+    }
+    {
+        // @composicion
+        en = "Myriad of Alps"
+        es = "Miríada de alps"
+    }
+    {
+        // @composicion
+        en = "Several Hexen"
+        es = "Unas cuantas hexen"
+    }
+    {
+        // @composicion
+        en = "Pack of Hexen"
+        es = "Banda de hexen"
+    }
+    {
+        // @composicion
+        en = "Plethora of Hexen"
+        es = "Plétora de hexen"
+    }
+    {
+        // @composicion
+        en = "Hordes of Hexen"
+        es = "Hordas de hexen"
+    }
+    {
+        // @composicion
+        en = "Throng of Hexen"
+        es = "Tropel de hexen"
+    }
+    {
+        // @composicion
+        en = "Swarm of Hexen"
+        es = "Enjambre de hexen"
+    }
+    {
+        // @composicion
+        en = "Legion of Hexen"
+        es = "Legión de hexen"
+    }
+    {
+        // @composicion
+        en = "Myriad of Hexen"
+        es = "Miríada de hexen"
+    }
+    {
+        // @composicion
+        en = "Several Schrats"
+        es = "Unos cuantos schrats"
+    }
+    {
+        // @composicion
+        en = "Pack of Schrats"
+        es = "Banda de schrats"
+    }
+    {
+        // @composicion
+        en = "Plethora of Schrats"
+        es = "Plétora de schrats"
+    }
+    {
+        // @composicion
+        en = "Hordes of Schrats"
+        es = "Hordas de schrats"
+    }
+    {
+        // @composicion
+        en = "Throng of Schrats"
+        es = "Tropel de schrats"
+    }
+    {
+        // @composicion
+        en = "Swarm of Schrats"
+        es = "Enjambre de schrats"
+    }
+    {
+        // @composicion
+        en = "Legion of Schrats"
+        es = "Legión de schrats"
+    }
+    {
+        // @composicion
+        en = "Myriad of Schrats"
+        es = "Miríada de schrats"
+    }
+    {
+        // @composicion
+        en = "Several Kraken"
+        es = "Unos cuantos kraken"
+    }
+    {
+        // @composicion
+        en = "Pack of Kraken"
+        es = "Banda de kraken"
+    }
+    {
+        // @composicion
+        en = "Plethora of Kraken"
+        es = "Plétora de kraken"
+    }
+    {
+        // @composicion
+        en = "Hordes of Kraken"
+        es = "Hordas de kraken"
+    }
+    {
+        // @composicion
+        en = "Throng of Kraken"
+        es = "Tropel de kraken"
+    }
+    {
+        // @composicion
+        en = "Swarm of Kraken"
+        es = "Enjambre de kraken"
+    }
+    {
+        // @composicion
+        en = "Legion of Kraken"
+        es = "Legión de kraken"
+    }
+    {
+        // @composicion
+        en = "Myriad of Kraken"
+        es = "Miríada de kraken"
+    }
+    {
+        // @composicion
+        en = "Several Ifrits"
+        es = "Unos cuantos ifrits"
+    }
+    {
+        // @composicion
+        en = "Pack of Ifrits"
+        es = "Banda de ifrits"
+    }
+    {
+        // @composicion
+        en = "Plethora of Ifrits"
+        es = "Plétora de ifrits"
+    }
+    {
+        // @composicion
+        en = "Hordes of Ifrits"
+        es = "Hordas de ifrits"
+    }
+    {
+        // @composicion
+        en = "Throng of Ifrits"
+        es = "Tropel de ifrits"
+    }
+    {
+        // @composicion
+        en = "Swarm of Ifrits"
+        es = "Enjambre de ifrits"
+    }
+    {
+        // @composicion
+        en = "Legion of Ifrits"
+        es = "Legión de ifrits"
+    }
+    {
+        // @composicion
+        en = "Myriad of Ifrits"
+        es = "Miríada de ifrits"
+    }
+    {
+        // @composicion
+        en = "Several Necromancers"
+        es = "Unos cuantos nigromantes"
+    }
+    {
+        // @composicion
+        en = "Pack of Necromancers"
+        es = "Banda de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Necromancers"
+        es = "Plétora de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Necromancers"
+        es = "Hordas de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Throng of Necromancers"
+        es = "Tropel de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Necromancers"
+        es = "Enjambre de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Legion of Necromancers"
+        es = "Legión de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Necromancers"
+        es = "Miríada de nigromantes"
+    }
+    {
+        // @composicion
+        en = "Several Armored Wiedergangers"
+        es = "Unos cuantos wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Pack of Armored Wiedergangers"
+        es = "Banda de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Plethora of Armored Wiedergangers"
+        es = "Plétora de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Hordes of Armored Wiedergangers"
+        es = "Hordas de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Throng of Armored Wiedergangers"
+        es = "Tropel de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Swarm of Armored Wiedergangers"
+        es = "Enjambre de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Legion of Armored Wiedergangers"
+        es = "Legión de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Myriad of Armored Wiedergangers"
+        es = "Miríada de wiedergangers con armadura"
+    }
+    {
+        // @composicion
+        en = "Several Fallen Heroes"
+        es = "Unos cuantos héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Pack of Fallen Heroes"
+        es = "Banda de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Fallen Heroes"
+        es = "Plétora de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Fallen Heroes"
+        es = "Hordas de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Throng of Fallen Heroes"
+        es = "Tropel de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Fallen Heroes"
+        es = "Enjambre de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Legion of Fallen Heroes"
+        es = "Legión de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Fallen Heroes"
+        es = "Miríada de héroes caídos"
+    }
+    {
+        // @composicion
+        en = "Several Ancient Auxiliaries"
+        es = "Unos cuantos soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Pack of Ancient Auxiliaries"
+        es = "Banda de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Plethora of Ancient Auxiliaries"
+        es = "Plétora de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Hordes of Ancient Auxiliaries"
+        es = "Hordas de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Throng of Ancient Auxiliaries"
+        es = "Tropel de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Swarm of Ancient Auxiliaries"
+        es = "Enjambre de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Legion of Ancient Auxiliaries"
+        es = "Legión de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Myriad of Ancient Auxiliaries"
+        es = "Miríada de soldados auxiliares ancestrales"
+    }
+    {
+        // @composicion
+        en = "Several Ancient Legionaries"
+        es = "Unos cuantos legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Pack of Ancient Legionaries"
+        es = "Banda de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Plethora of Ancient Legionaries"
+        es = "Plétora de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Hordes of Ancient Legionaries"
+        es = "Hordas de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Throng of Ancient Legionaries"
+        es = "Tropel de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Swarm of Ancient Legionaries"
+        es = "Enjambre de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Legion of Ancient Legionaries"
+        es = "Legión de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Myriad of Ancient Legionaries"
+        es = "Miríada de legionarios ancestrales"
+    }
+    {
+        // @composicion
+        en = "Several Ancient Honor Guards"
+        es = "Unos cuantos guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Pack of Ancient Honor Guards"
+        es = "Banda de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Plethora of Ancient Honor Guards"
+        es = "Plétora de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Hordes of Ancient Honor Guards"
+        es = "Hordas de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Throng of Ancient Honor Guards"
+        es = "Tropel de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Swarm of Ancient Honor Guards"
+        es = "Enjambre de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Legion of Ancient Honor Guards"
+        es = "Legión de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Myriad of Ancient Honor Guards"
+        es = "Miríada de guardias de honor ancestrales"
+    }
+    {
+        // @composicion
+        en = "Several Ancient Priests"
+        es = "Unos cuantos sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Pack of Ancient Priests"
+        es = "Banda de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Plethora of Ancient Priests"
+        es = "Plétora de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Hordes of Ancient Priests"
+        es = "Hordas de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Throng of Ancient Priests"
+        es = "Tropel de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Swarm of Ancient Priests"
+        es = "Enjambre de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Legion of Ancient Priests"
+        es = "Legión de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Myriad of Ancient Priests"
+        es = "Miríada de sacerdotes ancestrales"
+    }
+    {
+        // @composicion
+        en = "Several Necrosavants"
+        es = "Unos cuantos necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Pack of Necrosavants"
+        es = "Banda de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Necrosavants"
+        es = "Plétora de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Necrosavants"
+        es = "Hordas de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Throng of Necrosavants"
+        es = "Tropel de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Necrosavants"
+        es = "Enjambre de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Legion of Necrosavants"
+        es = "Legión de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Necrosavants"
+        es = "Miríada de necrosavantes"
+    }
+    {
+        // @composicion
+        en = "Several Orc Young"
+        es = "Unos cuantos orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Pack of Orc Young"
+        es = "Banda de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Orc Young"
+        es = "Plétora de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Orc Young"
+        es = "Hordas de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Throng of Orc Young"
+        es = "Tropel de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Orc Young"
+        es = "Enjambre de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Legion of Orc Young"
+        es = "Legión de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Orc Young"
+        es = "Miríada de orcos jóvenes"
+    }
+    {
+        // @composicion
+        en = "Several Orc Berserkers"
+        es = "Unos cuantos berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Pack of Orc Berserkers"
+        es = "Banda de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Orc Berserkers"
+        es = "Plétora de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Orc Berserkers"
+        es = "Hordas de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Throng of Orc Berserkers"
+        es = "Tropel de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Orc Berserkers"
+        es = "Enjambre de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Legion of Orc Berserkers"
+        es = "Legión de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Orc Berserkers"
+        es = "Miríada de berserkers orcos"
+    }
+    {
+        // @composicion
+        en = "Several Orc Warriors"
+        es = "Unos cuantos guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Pack of Orc Warriors"
+        es = "Banda de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Orc Warriors"
+        es = "Plétora de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Orc Warriors"
+        es = "Hordas de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Throng of Orc Warriors"
+        es = "Tropel de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Orc Warriors"
+        es = "Enjambre de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Legion of Orc Warriors"
+        es = "Legión de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Orc Warriors"
+        es = "Miríada de guerreros orcos"
+    }
+    {
+        // @composicion
+        en = "Several Orc Warlords"
+        es = "Unos cuantos señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Pack of Orc Warlords"
+        es = "Banda de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Orc Warlords"
+        es = "Plétora de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Orc Warlords"
+        es = "Hordas de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Throng of Orc Warlords"
+        es = "Tropel de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Orc Warlords"
+        es = "Enjambre de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Legion of Orc Warlords"
+        es = "Legión de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Orc Warlords"
+        es = "Miríada de señores de la guerra orcos"
+    }
+    {
+        // @composicion
+        en = "Several Militia"
+        es = "Unos cuantos milicianos"
+    }
+    {
+        // @composicion
+        en = "Pack of Militia"
+        es = "Banda de milicianos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Militia"
+        es = "Plétora de milicianos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Militia"
+        es = "Hordas de milicianos"
+    }
+    {
+        // @composicion
+        en = "Throng of Militia"
+        es = "Tropel de milicianos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Militia"
+        es = "Enjambre de milicianos"
+    }
+    {
+        // @composicion
+        en = "Legion of Militia"
+        es = "Legión de milicianos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Militia"
+        es = "Miríada de milicianos"
+    }
+    {
+        // @composicion
+        en = "Several Militia Marksmen"
+        es = "Unos cuantos tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Pack of Militia Marksmen"
+        es = "Banda de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Militia Marksmen"
+        es = "Plétora de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Militia Marksmen"
+        es = "Hordas de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Throng of Militia Marksmen"
+        es = "Tropel de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Militia Marksmen"
+        es = "Enjambre de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Legion of Militia Marksmen"
+        es = "Legión de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Militia Marksmen"
+        es = "Miríada de tiradores milicianos"
+    }
+    {
+        // @composicion
+        en = "Several Militia Veterans"
+        es = "Unos cuantos milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Pack of Militia Veterans"
+        es = "Banda de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Militia Veterans"
+        es = "Plétora de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Militia Veterans"
+        es = "Hordas de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Throng of Militia Veterans"
+        es = "Tropel de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Militia Veterans"
+        es = "Enjambre de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Legion of Militia Veterans"
+        es = "Legión de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Militia Veterans"
+        es = "Miríada de milicianos veteranos"
+    }
+    {
+        // @composicion
+        en = "Several Militia Captains"
+        es = "Unos cuantos capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Pack of Militia Captains"
+        es = "Banda de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Militia Captains"
+        es = "Plétora de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Militia Captains"
+        es = "Hordas de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Throng of Militia Captains"
+        es = "Tropel de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Militia Captains"
+        es = "Enjambre de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Legion of Militia Captains"
+        es = "Legión de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Militia Captains"
+        es = "Miríada de capitanes milicianos"
+    }
+    {
+        // @composicion
+        en = "Several Bounty Hunters"
+        es = "Unos cuantos cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Pack of Bounty Hunters"
+        es = "Banda de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Bounty Hunters"
+        es = "Plétora de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Bounty Hunters"
+        es = "Hordas de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Throng of Bounty Hunters"
+        es = "Tropel de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Bounty Hunters"
+        es = "Enjambre de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Legion of Bounty Hunters"
+        es = "Legión de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Bounty Hunters"
+        es = "Miríada de cazarrecompensas"
+    }
+    {
+        // @composicion
+        en = "Several Peasants"
+        es = "Unos cuantos campesinos"
+    }
+    {
+        // @composicion
+        en = "Pack of Peasants"
+        es = "Banda de campesinos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Peasants"
+        es = "Plétora de campesinos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Peasants"
+        es = "Hordas de campesinos"
+    }
+    {
+        // @composicion
+        en = "Throng of Peasants"
+        es = "Tropel de campesinos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Peasants"
+        es = "Enjambre de campesinos"
+    }
+    {
+        // @composicion
+        en = "Legion of Peasants"
+        es = "Legión de campesinos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Peasants"
+        es = "Miríada de campesinos"
+    }
+    {
+        // @composicion
+        en = "Several Caravan Hands"
+        es = "Unos cuantos ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Pack of Caravan Hands"
+        es = "Banda de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Plethora of Caravan Hands"
+        es = "Plétora de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Hordes of Caravan Hands"
+        es = "Hordas de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Throng of Caravan Hands"
+        es = "Tropel de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Swarm of Caravan Hands"
+        es = "Enjambre de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Legion of Caravan Hands"
+        es = "Legión de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Myriad of Caravan Hands"
+        es = "Miríada de ayudantes de caravana"
+    }
+    {
+        // @composicion
+        en = "Several Caravan Guards"
+        es = "Unos cuantos guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Pack of Caravan Guards"
+        es = "Banda de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Plethora of Caravan Guards"
+        es = "Plétora de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Hordes of Caravan Guards"
+        es = "Hordas de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Throng of Caravan Guards"
+        es = "Tropel de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Swarm of Caravan Guards"
+        es = "Enjambre de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Legion of Caravan Guards"
+        es = "Legión de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Myriad of Caravan Guards"
+        es = "Miríada de guardias de caravana"
+    }
+    {
+        // @composicion
+        en = "Several Caravan Carts"
+        es = "Unos cuantos carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Pack of Caravan Carts"
+        es = "Banda de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Plethora of Caravan Carts"
+        es = "Plétora de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Hordes of Caravan Carts"
+        es = "Hordas de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Throng of Caravan Carts"
+        es = "Tropel de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Swarm of Caravan Carts"
+        es = "Enjambre de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Legion of Caravan Carts"
+        es = "Legión de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Myriad of Caravan Carts"
+        es = "Miríada de carros de caravana"
+    }
+    {
+        // @composicion
+        en = "Several Footmen"
+        es = "Unos cuantos soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Pack of Footmen"
+        es = "Banda de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Plethora of Footmen"
+        es = "Plétora de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Hordes of Footmen"
+        es = "Hordas de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Throng of Footmen"
+        es = "Tropel de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Swarm of Footmen"
+        es = "Enjambre de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Legion of Footmen"
+        es = "Legión de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Myriad of Footmen"
+        es = "Miríada de soldados a pie"
+    }
+    {
+        // @composicion
+        en = "Several Billmen"
+        es = "Unos cuantos soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Pack of Billmen"
+        es = "Banda de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Plethora of Billmen"
+        es = "Plétora de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Hordes of Billmen"
+        es = "Hordas de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Throng of Billmen"
+        es = "Tropel de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Swarm of Billmen"
+        es = "Enjambre de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Legion of Billmen"
+        es = "Legión de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Myriad of Billmen"
+        es = "Miríada de soldados de guja"
+    }
+    {
+        // @composicion
+        en = "Several Arbalesters"
+        es = "Unos cuantos arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Pack of Arbalesters"
+        es = "Banda de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Arbalesters"
+        es = "Plétora de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Arbalesters"
+        es = "Hordas de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Throng of Arbalesters"
+        es = "Tropel de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Arbalesters"
+        es = "Enjambre de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Legion of Arbalesters"
+        es = "Legión de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Arbalesters"
+        es = "Miríada de arbalesteros"
+    }
+    {
+        // @composicion
+        en = "Several Standard Bearers"
+        es = "Unos cuantos abanderados"
+    }
+    {
+        // @composicion
+        en = "Pack of Standard Bearers"
+        es = "Banda de abanderados"
+    }
+    {
+        // @composicion
+        en = "Plethora of Standard Bearers"
+        es = "Plétora de abanderados"
+    }
+    {
+        // @composicion
+        en = "Hordes of Standard Bearers"
+        es = "Hordas de abanderados"
+    }
+    {
+        // @composicion
+        en = "Throng of Standard Bearers"
+        es = "Tropel de abanderados"
+    }
+    {
+        // @composicion
+        en = "Swarm of Standard Bearers"
+        es = "Enjambre de abanderados"
+    }
+    {
+        // @composicion
+        en = "Legion of Standard Bearers"
+        es = "Legión de abanderados"
+    }
+    {
+        // @composicion
+        en = "Myriad of Standard Bearers"
+        es = "Miríada de abanderados"
+    }
+    {
+        // @composicion
+        en = "Several Sergeants"
+        es = "Unos cuantos sargentos"
+    }
+    {
+        // @composicion
+        en = "Pack of Sergeants"
+        es = "Banda de sargentos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Sergeants"
+        es = "Plétora de sargentos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Sergeants"
+        es = "Hordas de sargentos"
+    }
+    {
+        // @composicion
+        en = "Throng of Sergeants"
+        es = "Tropel de sargentos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Sergeants"
+        es = "Enjambre de sargentos"
+    }
+    {
+        // @composicion
+        en = "Legion of Sergeants"
+        es = "Legión de sargentos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Sergeants"
+        es = "Miríada de sargentos"
+    }
+    {
+        // @composicion
+        en = "Several Knights"
+        es = "Unos cuantos caballeros"
+    }
+    {
+        // @composicion
+        en = "Pack of Knights"
+        es = "Banda de caballeros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Knights"
+        es = "Plétora de caballeros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Knights"
+        es = "Hordas de caballeros"
+    }
+    {
+        // @composicion
+        en = "Throng of Knights"
+        es = "Tropel de caballeros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Knights"
+        es = "Enjambre de caballeros"
+    }
+    {
+        // @composicion
+        en = "Legion of Knights"
+        es = "Legión de caballeros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Knights"
+        es = "Miríada de caballeros"
+    }
+    {
+        // @composicion
+        en = "Several Donkeys"
+        es = "Unos cuantos burros"
+    }
+    {
+        // @composicion
+        en = "Pack of Donkeys"
+        es = "Banda de burros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Donkeys"
+        es = "Plétora de burros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Donkeys"
+        es = "Hordas de burros"
+    }
+    {
+        // @composicion
+        en = "Throng of Donkeys"
+        es = "Tropel de burros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Donkeys"
+        es = "Enjambre de burros"
+    }
+    {
+        // @composicion
+        en = "Legion of Donkeys"
+        es = "Legión de burros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Donkeys"
+        es = "Miríada de burros"
+    }
+    {
+        // @composicion
+        en = "Several Brigand Thugs"
+        es = "Unos cuantos matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Brigand Thugs"
+        es = "Banda de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Brigand Thugs"
+        es = "Plétora de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Brigand Thugs"
+        es = "Hordas de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Brigand Thugs"
+        es = "Tropel de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Brigand Thugs"
+        es = "Enjambre de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Brigand Thugs"
+        es = "Legión de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Brigand Thugs"
+        es = "Miríada de matones bandidos"
+    }
+    {
+        // @composicion
+        en = "Several Brigand Poachers"
+        es = "Unos cuantos cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Brigand Poachers"
+        es = "Banda de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Brigand Poachers"
+        es = "Plétora de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Brigand Poachers"
+        es = "Hordas de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Brigand Poachers"
+        es = "Tropel de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Brigand Poachers"
+        es = "Enjambre de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Brigand Poachers"
+        es = "Legión de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Brigand Poachers"
+        es = "Miríada de cazadores furtivos bandidos"
+    }
+    {
+        // @composicion
+        en = "Several Brigand Marksmen"
+        es = "Unos cuantos tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Brigand Marksmen"
+        es = "Banda de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Brigand Marksmen"
+        es = "Plétora de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Brigand Marksmen"
+        es = "Hordas de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Brigand Marksmen"
+        es = "Tropel de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Brigand Marksmen"
+        es = "Enjambre de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Brigand Marksmen"
+        es = "Legión de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Brigand Marksmen"
+        es = "Miríada de tiradores bandidos"
+    }
+    {
+        // @composicion
+        en = "Several Brigand Raiders"
+        es = "Unos cuantos asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Brigand Raiders"
+        es = "Banda de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Brigand Raiders"
+        es = "Plétora de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Brigand Raiders"
+        es = "Hordas de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Brigand Raiders"
+        es = "Tropel de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Brigand Raiders"
+        es = "Enjambre de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Brigand Raiders"
+        es = "Legión de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Brigand Raiders"
+        es = "Miríada de asaltantes bandidos"
+    }
+    {
+        // @composicion
+        en = "Several Brigand Leaders"
+        es = "Unos cuantos líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Brigand Leaders"
+        es = "Banda de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Brigand Leaders"
+        es = "Plétora de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Brigand Leaders"
+        es = "Hordas de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Brigand Leaders"
+        es = "Tropel de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Brigand Leaders"
+        es = "Enjambre de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Brigand Leaders"
+        es = "Legión de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Brigand Leaders"
+        es = "Miríada de líderes bandidos"
+    }
+    {
+        // @composicion
+        en = "Several Goblin Ambushers"
+        es = "Unos cuantos emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Pack of Goblin Ambushers"
+        es = "Banda de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Plethora of Goblin Ambushers"
+        es = "Plétora de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Hordes of Goblin Ambushers"
+        es = "Hordas de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Throng of Goblin Ambushers"
+        es = "Tropel de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Swarm of Goblin Ambushers"
+        es = "Enjambre de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Legion of Goblin Ambushers"
+        es = "Legión de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Myriad of Goblin Ambushers"
+        es = "Miríada de emboscadores goblins"
+    }
+    {
+        // @composicion
+        en = "Several Goblin Skirmishers"
+        es = "Unos cuantos escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Pack of Goblin Skirmishers"
+        es = "Banda de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Plethora of Goblin Skirmishers"
+        es = "Plétora de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Hordes of Goblin Skirmishers"
+        es = "Hordas de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Throng of Goblin Skirmishers"
+        es = "Tropel de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Swarm of Goblin Skirmishers"
+        es = "Enjambre de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Legion of Goblin Skirmishers"
+        es = "Legión de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Myriad of Goblin Skirmishers"
+        es = "Miríada de escaramuzadores goblins"
+    }
+    {
+        // @composicion
+        en = "Several Goblin Overseers"
+        es = "Unos cuantos capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Pack of Goblin Overseers"
+        es = "Banda de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Plethora of Goblin Overseers"
+        es = "Plétora de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Hordes of Goblin Overseers"
+        es = "Hordas de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Throng of Goblin Overseers"
+        es = "Tropel de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Swarm of Goblin Overseers"
+        es = "Enjambre de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Legion of Goblin Overseers"
+        es = "Legión de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Myriad of Goblin Overseers"
+        es = "Miríada de capataces goblins"
+    }
+    {
+        // @composicion
+        en = "Several Goblin Shamans"
+        es = "Unos cuantos chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Pack of Goblin Shamans"
+        es = "Banda de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Plethora of Goblin Shamans"
+        es = "Plétora de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Hordes of Goblin Shamans"
+        es = "Hordas de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Throng of Goblin Shamans"
+        es = "Tropel de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Swarm of Goblin Shamans"
+        es = "Enjambre de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Legion of Goblin Shamans"
+        es = "Legión de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Myriad of Goblin Shamans"
+        es = "Miríada de chamanes goblins"
+    }
+    {
+        // @composicion
+        en = "Several Goblin Wolfriders"
+        es = "Unos cuantos jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Pack of Goblin Wolfriders"
+        es = "Banda de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Plethora of Goblin Wolfriders"
+        es = "Plétora de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Hordes of Goblin Wolfriders"
+        es = "Hordas de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Throng of Goblin Wolfriders"
+        es = "Tropel de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Swarm of Goblin Wolfriders"
+        es = "Enjambre de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Legion of Goblin Wolfriders"
+        es = "Legión de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Myriad of Goblin Wolfriders"
+        es = "Miríada de jinetes lobo goblins"
+    }
+    {
+        // @composicion
+        en = "Several Wolves"
+        es = "Unos cuantos lobos"
+    }
+    {
+        // @composicion
+        en = "Pack of Wolves"
+        es = "Banda de lobos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Wolves"
+        es = "Plétora de lobos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Wolves"
+        es = "Hordas de lobos"
+    }
+    {
+        // @composicion
+        en = "Throng of Wolves"
+        es = "Tropel de lobos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Wolves"
+        es = "Enjambre de lobos"
+    }
+    {
+        // @composicion
+        en = "Legion of Wolves"
+        es = "Legión de lobos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Wolves"
+        es = "Miríada de lobos"
+    }
+    {
+        // @composicion
+        en = "Several Wardogs"
+        es = "Unos cuantos perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Pack of Wardogs"
+        es = "Banda de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Plethora of Wardogs"
+        es = "Plétora de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Hordes of Wardogs"
+        es = "Hordas de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Throng of Wardogs"
+        es = "Tropel de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Swarm of Wardogs"
+        es = "Enjambre de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Legion of Wardogs"
+        es = "Legión de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Myriad of Wardogs"
+        es = "Miríada de perros de guerra"
+    }
+    {
+        // @composicion
+        en = "Several Armored Wardogs"
+        es = "Unos cuantos perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Pack of Armored Wardogs"
+        es = "Banda de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Plethora of Armored Wardogs"
+        es = "Plétora de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Hordes of Armored Wardogs"
+        es = "Hordas de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Throng of Armored Wardogs"
+        es = "Tropel de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Swarm of Armored Wardogs"
+        es = "Enjambre de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Legion of Armored Wardogs"
+        es = "Legión de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Myriad of Armored Wardogs"
+        es = "Miríada de perros de guerra con armadura"
+    }
+    {
+        // @composicion
+        en = "Several Mercenaries"
+        es = "Unos cuantos mercenarios"
+    }
+    {
+        // @composicion
+        en = "Pack of Mercenaries"
+        es = "Banda de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Plethora of Mercenaries"
+        es = "Plétora de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Hordes of Mercenaries"
+        es = "Hordas de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Throng of Mercenaries"
+        es = "Tropel de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Swarm of Mercenaries"
+        es = "Enjambre de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Legion of Mercenaries"
+        es = "Legión de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Myriad of Mercenaries"
+        es = "Miríada de mercenarios"
+    }
+    {
+        // @composicion
+        en = "Several Swordmasters"
+        es = "Unos cuantos maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Pack of Swordmasters"
+        es = "Banda de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Plethora of Swordmasters"
+        es = "Plétora de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Hordes of Swordmasters"
+        es = "Hordas de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Throng of Swordmasters"
+        es = "Tropel de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Swarm of Swordmasters"
+        es = "Enjambre de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Legion of Swordmasters"
+        es = "Legión de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Myriad of Swordmasters"
+        es = "Miríada de maestros espadachines"
+    }
+    {
+        // @composicion
+        en = "Several Hedge Knights"
+        es = "Unos cuantos caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Pack of Hedge Knights"
+        es = "Banda de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Hedge Knights"
+        es = "Plétora de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Hedge Knights"
+        es = "Hordas de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Throng of Hedge Knights"
+        es = "Tropel de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Hedge Knights"
+        es = "Enjambre de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Legion of Hedge Knights"
+        es = "Legión de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Hedge Knights"
+        es = "Miríada de caballeros errantes"
+    }
+    {
+        // @composicion
+        en = "Several Master Archers"
+        es = "Unos cuantos maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Pack of Master Archers"
+        es = "Banda de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Master Archers"
+        es = "Plétora de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Master Archers"
+        es = "Hordas de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Throng of Master Archers"
+        es = "Tropel de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Master Archers"
+        es = "Enjambre de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Legion of Master Archers"
+        es = "Legión de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Master Archers"
+        es = "Miríada de maestros arqueros"
+    }
+    {
+        // @composicion
+        en = "Several Greenskin Catapults"
+        es = "Unas cuantas catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Pack of Greenskin Catapults"
+        es = "Banda de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Plethora of Greenskin Catapults"
+        es = "Plétora de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Hordes of Greenskin Catapults"
+        es = "Hordas de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Throng of Greenskin Catapults"
+        es = "Tropel de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Swarm of Greenskin Catapults"
+        es = "Enjambre de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Legion of Greenskin Catapults"
+        es = "Legión de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Myriad of Greenskin Catapults"
+        es = "Miríada de catapultas pielverde"
+    }
+    {
+        // @composicion
+        en = "Several Cultists"
+        es = "Unos cuantos cultistas"
+    }
+    {
+        // @composicion
+        en = "Pack of Cultists"
+        es = "Banda de cultistas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Cultists"
+        es = "Plétora de cultistas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Cultists"
+        es = "Hordas de cultistas"
+    }
+    {
+        // @composicion
+        en = "Throng of Cultists"
+        es = "Tropel de cultistas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Cultists"
+        es = "Enjambre de cultistas"
+    }
+    {
+        // @composicion
+        en = "Legion of Cultists"
+        es = "Legión de cultistas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Cultists"
+        es = "Miríada de cultistas"
+    }
+    {
+        // @composicion
+        en = "Several Direwolves"
+        es = "Unos cuantos lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Pack of Direwolves"
+        es = "Banda de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Plethora of Direwolves"
+        es = "Plétora de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Hordes of Direwolves"
+        es = "Hordas de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Throng of Direwolves"
+        es = "Tropel de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Swarm of Direwolves"
+        es = "Enjambre de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Legion of Direwolves"
+        es = "Legión de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Myriad of Direwolves"
+        es = "Miríada de lobos huargo"
+    }
+    {
+        // @composicion
+        en = "Several Unholds"
+        es = "Unos cuantos troles"
+    }
+    {
+        // @composicion
+        en = "Pack of Unholds"
+        es = "Banda de troles"
+    }
+    {
+        // @composicion
+        en = "Plethora of Unholds"
+        es = "Plétora de troles"
+    }
+    {
+        // @composicion
+        en = "Hordes of Unholds"
+        es = "Hordas de troles"
+    }
+    {
+        // @composicion
+        en = "Throng of Unholds"
+        es = "Tropel de troles"
+    }
+    {
+        // @composicion
+        en = "Swarm of Unholds"
+        es = "Enjambre de troles"
+    }
+    {
+        // @composicion
+        en = "Legion of Unholds"
+        es = "Legión de troles"
+    }
+    {
+        // @composicion
+        en = "Myriad of Unholds"
+        es = "Miríada de troles"
+    }
+    {
+        // @composicion
+        en = "Several Webknecht Eggs"
+        es = "Unos cuantos huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Pack of Webknecht Eggs"
+        es = "Banda de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Plethora of Webknecht Eggs"
+        es = "Plétora de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Hordes of Webknecht Eggs"
+        es = "Hordas de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Throng of Webknecht Eggs"
+        es = "Tropel de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Swarm of Webknecht Eggs"
+        es = "Enjambre de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Legion of Webknecht Eggs"
+        es = "Legión de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Myriad of Webknecht Eggs"
+        es = "Miríada de huevos de webknecht"
+    }
+    {
+        // @composicion
+        en = "Several Saplings"
+        es = "Unos cuantos árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Pack of Saplings"
+        es = "Banda de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Saplings"
+        es = "Plétora de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Saplings"
+        es = "Hordas de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Throng of Saplings"
+        es = "Tropel de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Saplings"
+        es = "Enjambre de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Legion of Saplings"
+        es = "Legión de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Saplings"
+        es = "Miríada de árboles jóvenes"
+    }
+    {
+        // @composicion
+        en = "Several Wildmen"
+        es = "Unos cuantos salvajes"
+    }
+    {
+        // @composicion
+        en = "Pack of Wildmen"
+        es = "Banda de salvajes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Wildmen"
+        es = "Plétora de salvajes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Wildmen"
+        es = "Hordas de salvajes"
+    }
+    {
+        // @composicion
+        en = "Throng of Wildmen"
+        es = "Tropel de salvajes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Wildmen"
+        es = "Enjambre de salvajes"
+    }
+    {
+        // @composicion
+        en = "Legion of Wildmen"
+        es = "Legión de salvajes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Wildmen"
+        es = "Miríada de salvajes"
+    }
+    {
+        // @composicion
+        en = "Several Irrlicht"
+        es = "Unos cuantos fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Pack of Irrlicht"
+        es = "Banda de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Irrlicht"
+        es = "Plétora de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Irrlicht"
+        es = "Hordas de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Throng of Irrlicht"
+        es = "Tropel de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Irrlicht"
+        es = "Enjambre de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Legion of Irrlicht"
+        es = "Legión de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Irrlicht"
+        es = "Miríada de fuegos fatuos"
+    }
+    {
+        // @composicion
+        en = "Several Fallen Betrayers"
+        es = "Unos cuantos traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Pack of Fallen Betrayers"
+        es = "Banda de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Fallen Betrayers"
+        es = "Plétora de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Fallen Betrayers"
+        es = "Hordas de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Throng of Fallen Betrayers"
+        es = "Tropel de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Fallen Betrayers"
+        es = "Enjambre de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Legion of Fallen Betrayers"
+        es = "Legión de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Fallen Betrayers"
+        es = "Miríada de traidores caídos"
+    }
+    {
+        // @composicion
+        en = "Several Nightmares"
+        es = "Unas cuantas pesadillas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nightmares"
+        es = "Banda de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nightmares"
+        es = "Plétora de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nightmares"
+        es = "Hordas de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nightmares"
+        es = "Tropel de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nightmares"
+        es = "Enjambre de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nightmares"
+        es = "Legión de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nightmares"
+        es = "Miríada de pesadillas"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Thralls"
+        es = "Unos cuantos thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Thralls"
+        es = "Banda de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Thralls"
+        es = "Plétora de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Thralls"
+        es = "Hordas de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Thralls"
+        es = "Tropel de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Thralls"
+        es = "Enjambre de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Thralls"
+        es = "Legión de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Thralls"
+        es = "Miríada de thralls bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Reavers"
+        es = "Unos cuantos asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Reavers"
+        es = "Banda de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Reavers"
+        es = "Plétora de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Reavers"
+        es = "Hordas de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Reavers"
+        es = "Tropel de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Reavers"
+        es = "Enjambre de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Reavers"
+        es = "Legión de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Reavers"
+        es = "Miríada de asaltantes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Chosen"
+        es = "Unos cuantos elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Chosen"
+        es = "Banda de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Chosen"
+        es = "Plétora de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Chosen"
+        es = "Hordas de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Chosen"
+        es = "Tropel de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Chosen"
+        es = "Enjambre de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Chosen"
+        es = "Legión de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Chosen"
+        es = "Miríada de elegidos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Drummers"
+        es = "Unos cuantos tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Drummers"
+        es = "Banda de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Drummers"
+        es = "Plétora de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Drummers"
+        es = "Hordas de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Drummers"
+        es = "Tropel de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Drummers"
+        es = "Enjambre de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Drummers"
+        es = "Legión de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Drummers"
+        es = "Miríada de tamborileros bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Beastmasters"
+        es = "Unos cuantos maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Beastmasters"
+        es = "Banda de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Beastmasters"
+        es = "Plétora de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Beastmasters"
+        es = "Hordas de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Beastmasters"
+        es = "Tropel de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Beastmasters"
+        es = "Enjambre de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Beastmasters"
+        es = "Legión de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Beastmasters"
+        es = "Miríada de maestros de bestias bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Armored Unholds"
+        es = "Unos cuantos troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Pack of Armored Unholds"
+        es = "Banda de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Plethora of Armored Unholds"
+        es = "Plétora de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Hordes of Armored Unholds"
+        es = "Hordas de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Throng of Armored Unholds"
+        es = "Tropel de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Swarm of Armored Unholds"
+        es = "Enjambre de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Legion of Armored Unholds"
+        es = "Legión de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Myriad of Armored Unholds"
+        es = "Miríada de troles acorazados"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Kings"
+        es = "Unos cuantos reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Kings"
+        es = "Banda de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Kings"
+        es = "Plétora de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Kings"
+        es = "Hordas de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Kings"
+        es = "Tropel de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Kings"
+        es = "Enjambre de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Kings"
+        es = "Legión de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Kings"
+        es = "Miríada de reyes bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Warhounds"
+        es = "Unos cuantos mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Pack of Warhounds"
+        es = "Banda de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Plethora of Warhounds"
+        es = "Plétora de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Hordes of Warhounds"
+        es = "Hordas de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Throng of Warhounds"
+        es = "Tropel de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Swarm of Warhounds"
+        es = "Enjambre de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Legion of Warhounds"
+        es = "Legión de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Myriad of Warhounds"
+        es = "Miríada de mastines de guerra"
+    }
+    {
+        // @composicion
+        en = "Several Beasts of Winter"
+        es = "Unas cuantas bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Pack of Beasts of Winter"
+        es = "Banda de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Plethora of Beasts of Winter"
+        es = "Plétora de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Hordes of Beasts of Winter"
+        es = "Hordas de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Throng of Beasts of Winter"
+        es = "Tropel de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Swarm of Beasts of Winter"
+        es = "Enjambre de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Legion of Beasts of Winter"
+        es = "Legión de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Myriad of Beasts of Winter"
+        es = "Miríada de bestias del invierno"
+    }
+    {
+        // @composicion
+        en = "Several Barbarian Madmen"
+        es = "Unos cuantos locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Pack of Barbarian Madmen"
+        es = "Banda de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Barbarian Madmen"
+        es = "Plétora de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Barbarian Madmen"
+        es = "Hordas de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Throng of Barbarian Madmen"
+        es = "Tropel de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Barbarian Madmen"
+        es = "Enjambre de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Legion of Barbarian Madmen"
+        es = "Legión de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Barbarian Madmen"
+        es = "Miríada de locos bárbaros"
+    }
+    {
+        // @composicion
+        en = "Several Serpents"
+        es = "Unas cuantas serpientes"
+    }
+    {
+        // @composicion
+        en = "Pack of Serpents"
+        es = "Banda de serpientes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Serpents"
+        es = "Plétora de serpientes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Serpents"
+        es = "Hordas de serpientes"
+    }
+    {
+        // @composicion
+        en = "Throng of Serpents"
+        es = "Tropel de serpientes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Serpents"
+        es = "Enjambre de serpientes"
+    }
+    {
+        // @composicion
+        en = "Legion of Serpents"
+        es = "Legión de serpientes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Serpents"
+        es = "Miríada de serpientes"
+    }
+    {
+        // @composicion
+        en = "Several Hyenas"
+        es = "Unas cuantas hienas"
+    }
+    {
+        // @composicion
+        en = "Pack of Hyenas"
+        es = "Banda de hienas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Hyenas"
+        es = "Plétora de hienas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Hyenas"
+        es = "Hordas de hienas"
+    }
+    {
+        // @composicion
+        en = "Throng of Hyenas"
+        es = "Tropel de hienas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Hyenas"
+        es = "Enjambre de hienas"
+    }
+    {
+        // @composicion
+        en = "Legion of Hyenas"
+        es = "Legión de hienas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Hyenas"
+        es = "Miríada de hienas"
+    }
+    {
+        // @composicion
+        en = "Several Conscripts"
+        es = "Unos cuantos reclutas"
+    }
+    {
+        // @composicion
+        en = "Pack of Conscripts"
+        es = "Banda de reclutas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Conscripts"
+        es = "Plétora de reclutas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Conscripts"
+        es = "Hordas de reclutas"
+    }
+    {
+        // @composicion
+        en = "Throng of Conscripts"
+        es = "Tropel de reclutas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Conscripts"
+        es = "Enjambre de reclutas"
+    }
+    {
+        // @composicion
+        en = "Legion of Conscripts"
+        es = "Legión de reclutas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Conscripts"
+        es = "Miríada de reclutas"
+    }
+    {
+        // @composicion
+        en = "Several Gunners"
+        es = "Unos cuantos cañoneros"
+    }
+    {
+        // @composicion
+        en = "Pack of Gunners"
+        es = "Banda de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Gunners"
+        es = "Plétora de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Gunners"
+        es = "Hordas de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Throng of Gunners"
+        es = "Tropel de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Gunners"
+        es = "Enjambre de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Legion of Gunners"
+        es = "Legión de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Gunners"
+        es = "Miríada de cañoneros"
+    }
+    {
+        // @composicion
+        en = "Several Officers"
+        es = "Unos cuantos oficiales"
+    }
+    {
+        // @composicion
+        en = "Pack of Officers"
+        es = "Banda de oficiales"
+    }
+    {
+        // @composicion
+        en = "Plethora of Officers"
+        es = "Plétora de oficiales"
+    }
+    {
+        // @composicion
+        en = "Hordes of Officers"
+        es = "Hordas de oficiales"
+    }
+    {
+        // @composicion
+        en = "Throng of Officers"
+        es = "Tropel de oficiales"
+    }
+    {
+        // @composicion
+        en = "Swarm of Officers"
+        es = "Enjambre de oficiales"
+    }
+    {
+        // @composicion
+        en = "Legion of Officers"
+        es = "Legión de oficiales"
+    }
+    {
+        // @composicion
+        en = "Myriad of Officers"
+        es = "Miríada de oficiales"
+    }
+    {
+        // @composicion
+        en = "Several Engineers"
+        es = "Unos cuantos ingenieros"
+    }
+    {
+        // @composicion
+        en = "Pack of Engineers"
+        es = "Banda de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Engineers"
+        es = "Plétora de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Engineers"
+        es = "Hordas de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Throng of Engineers"
+        es = "Tropel de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Engineers"
+        es = "Enjambre de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Legion of Engineers"
+        es = "Legión de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Engineers"
+        es = "Miríada de ingenieros"
+    }
+    {
+        // @composicion
+        en = "Several Assassins"
+        es = "Unos cuantos asesinos"
+    }
+    {
+        // @composicion
+        en = "Pack of Assassins"
+        es = "Banda de asesinos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Assassins"
+        es = "Plétora de asesinos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Assassins"
+        es = "Hordas de asesinos"
+    }
+    {
+        // @composicion
+        en = "Throng of Assassins"
+        es = "Tropel de asesinos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Assassins"
+        es = "Enjambre de asesinos"
+    }
+    {
+        // @composicion
+        en = "Legion of Assassins"
+        es = "Legión de asesinos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Assassins"
+        es = "Miríada de asesinos"
+    }
+    {
+        // @composicion
+        en = "Several Indebted"
+        es = "Unos cuantos endeudados"
+    }
+    {
+        // @composicion
+        en = "Pack of Indebted"
+        es = "Banda de endeudados"
+    }
+    {
+        // @composicion
+        en = "Plethora of Indebted"
+        es = "Plétora de endeudados"
+    }
+    {
+        // @composicion
+        en = "Hordes of Indebted"
+        es = "Hordas de endeudados"
+    }
+    {
+        // @composicion
+        en = "Throng of Indebted"
+        es = "Tropel de endeudados"
+    }
+    {
+        // @composicion
+        en = "Swarm of Indebted"
+        es = "Enjambre de endeudados"
+    }
+    {
+        // @composicion
+        en = "Legion of Indebted"
+        es = "Legión de endeudados"
+    }
+    {
+        // @composicion
+        en = "Myriad of Indebted"
+        es = "Miríada de endeudados"
+    }
+    {
+        // @composicion
+        en = "Several Gladiators"
+        es = "Unos cuantos gladiadores"
+    }
+    {
+        // @composicion
+        en = "Pack of Gladiators"
+        es = "Banda de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Plethora of Gladiators"
+        es = "Plétora de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Hordes of Gladiators"
+        es = "Hordas de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Throng of Gladiators"
+        es = "Tropel de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Swarm of Gladiators"
+        es = "Enjambre de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Legion of Gladiators"
+        es = "Legión de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Myriad of Gladiators"
+        es = "Miríada de gladiadores"
+    }
+    {
+        // @composicion
+        en = "Several Mortars"
+        es = "Unos cuantos morteros"
+    }
+    {
+        // @composicion
+        en = "Pack of Mortars"
+        es = "Banda de morteros"
+    }
+    {
+        // @composicion
+        en = "Plethora of Mortars"
+        es = "Plétora de morteros"
+    }
+    {
+        // @composicion
+        en = "Hordes of Mortars"
+        es = "Hordas de morteros"
+    }
+    {
+        // @composicion
+        en = "Throng of Mortars"
+        es = "Tropel de morteros"
+    }
+    {
+        // @composicion
+        en = "Swarm of Mortars"
+        es = "Enjambre de morteros"
+    }
+    {
+        // @composicion
+        en = "Legion of Mortars"
+        es = "Legión de morteros"
+    }
+    {
+        // @composicion
+        en = "Myriad of Mortars"
+        es = "Miríada de morteros"
+    }
+    {
+        // @composicion
+        en = "Several Nomad Cutthroats"
+        es = "Unos cuantos matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nomad Cutthroats"
+        es = "Banda de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nomad Cutthroats"
+        es = "Plétora de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nomad Cutthroats"
+        es = "Hordas de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nomad Cutthroats"
+        es = "Tropel de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nomad Cutthroats"
+        es = "Enjambre de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nomad Cutthroats"
+        es = "Legión de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nomad Cutthroats"
+        es = "Miríada de matones nómadas"
+    }
+    {
+        // @composicion
+        en = "Several Nomad Outlaws"
+        es = "Unos cuantos proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nomad Outlaws"
+        es = "Banda de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nomad Outlaws"
+        es = "Plétora de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nomad Outlaws"
+        es = "Hordas de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nomad Outlaws"
+        es = "Tropel de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nomad Outlaws"
+        es = "Enjambre de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nomad Outlaws"
+        es = "Legión de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nomad Outlaws"
+        es = "Miríada de proscritos nómadas"
+    }
+    {
+        // @composicion
+        en = "Several Nomad Slingers"
+        es = "Unos cuantos honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nomad Slingers"
+        es = "Banda de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nomad Slingers"
+        es = "Plétora de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nomad Slingers"
+        es = "Hordas de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nomad Slingers"
+        es = "Tropel de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nomad Slingers"
+        es = "Enjambre de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nomad Slingers"
+        es = "Legión de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nomad Slingers"
+        es = "Miríada de honderos nómadas"
+    }
+    {
+        // @composicion
+        en = "Several Nomad Archers"
+        es = "Unos cuantos arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nomad Archers"
+        es = "Banda de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nomad Archers"
+        es = "Plétora de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nomad Archers"
+        es = "Hordas de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nomad Archers"
+        es = "Tropel de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nomad Archers"
+        es = "Enjambre de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nomad Archers"
+        es = "Legión de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nomad Archers"
+        es = "Miríada de arqueros nómadas"
+    }
+    {
+        // @composicion
+        en = "Several Nomad Leaders"
+        es = "Unos cuantos líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nomad Leaders"
+        es = "Banda de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nomad Leaders"
+        es = "Plétora de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nomad Leaders"
+        es = "Hordas de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nomad Leaders"
+        es = "Tropel de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nomad Leaders"
+        es = "Enjambre de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nomad Leaders"
+        es = "Legión de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nomad Leaders"
+        es = "Miríada de líderes nómadas"
+    }
+    {
+        // @composicion
+        en = "Several Desert Stalkers"
+        es = "Unos cuantos acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Pack of Desert Stalkers"
+        es = "Banda de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Plethora of Desert Stalkers"
+        es = "Plétora de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Hordes of Desert Stalkers"
+        es = "Hordas de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Throng of Desert Stalkers"
+        es = "Tropel de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Swarm of Desert Stalkers"
+        es = "Enjambre de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Legion of Desert Stalkers"
+        es = "Legión de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Myriad of Desert Stalkers"
+        es = "Miríada de acosadores del desierto"
+    }
+    {
+        // @composicion
+        en = "Several Nomad Executioners"
+        es = "Unos cuantos verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Pack of Nomad Executioners"
+        es = "Banda de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Nomad Executioners"
+        es = "Plétora de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Nomad Executioners"
+        es = "Hordas de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Throng of Nomad Executioners"
+        es = "Tropel de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Nomad Executioners"
+        es = "Enjambre de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Legion of Nomad Executioners"
+        es = "Legión de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Nomad Executioners"
+        es = "Miríada de verdugos nómadas"
+    }
+    {
+        // @composicion
+        en = "Several Blade Dancers"
+        es = "Unos cuantos danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Pack of Blade Dancers"
+        es = "Banda de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Blade Dancers"
+        es = "Plétora de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Blade Dancers"
+        es = "Hordas de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Throng of Blade Dancers"
+        es = "Tropel de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Blade Dancers"
+        es = "Enjambre de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Legion of Blade Dancers"
+        es = "Legión de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Blade Dancers"
+        es = "Miríada de danzarines de cuchillas"
+    }
+    {
+        // @composicion
+        en = "Several Citizens"
+        es = "Unos cuantos ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Pack of Citizens"
+        es = "Banda de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Citizens"
+        es = "Plétora de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Citizens"
+        es = "Hordas de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Throng of Citizens"
+        es = "Tropel de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Citizens"
+        es = "Enjambre de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Legion of Citizens"
+        es = "Legión de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Citizens"
+        es = "Miríada de ciudadanos"
+    }
+    {
+        // @composicion
+        en = "Several Lorekeeper's Apparition"
+        es = "Unas cuantas apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Pack of Lorekeeper's Apparition"
+        es = "Banda de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Plethora of Lorekeeper's Apparition"
+        es = "Plétora de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Hordes of Lorekeeper's Apparition"
+        es = "Hordas de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Throng of Lorekeeper's Apparition"
+        es = "Tropel de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Swarm of Lorekeeper's Apparition"
+        es = "Enjambre de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Legion of Lorekeeper's Apparition"
+        es = "Legión de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Myriad of Lorekeeper's Apparition"
+        es = "Miríada de apariciones del Cronista"
+    }
+    {
+        // @composicion
+        en = "Several Phylacteries"
+        es = "Unas cuantas filacterias"
+    }
+    {
+        // @composicion
+        en = "Pack of Phylacteries"
+        es = "Banda de filacterias"
+    }
+    {
+        // @composicion
+        en = "Plethora of Phylacteries"
+        es = "Plétora de filacterias"
+    }
+    {
+        // @composicion
+        en = "Hordes of Phylacteries"
+        es = "Hordas de filacterias"
+    }
+    {
+        // @composicion
+        en = "Throng of Phylacteries"
+        es = "Tropel de filacterias"
+    }
+    {
+        // @composicion
+        en = "Swarm of Phylacteries"
+        es = "Enjambre de filacterias"
+    }
+    {
+        // @composicion
+        en = "Legion of Phylacteries"
+        es = "Legión de filacterias"
+    }
+    {
+        // @composicion
+        en = "Myriad of Phylacteries"
+        es = "Miríada de filacterias"
+    }
+    {
+        // @composicion
+        en = "Several Lost Treasure Hunters"
+        es = "Unos cuantos cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Lost Treasure Hunters"
+        es = "Banda de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Lost Treasure Hunters"
+        es = "Plétora de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Lost Treasure Hunters"
+        es = "Hordas de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Lost Treasure Hunters"
+        es = "Tropel de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Lost Treasure Hunters"
+        es = "Enjambre de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Lost Treasure Hunters"
+        es = "Legión de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Lost Treasure Hunters"
+        es = "Miríada de cazadores de tesoros perdidos"
+    }
+    {
+        // @composicion
+        en = "Several Screaming Skulls"
+        es = "Unas cuantas calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Pack of Screaming Skulls"
+        es = "Banda de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Plethora of Screaming Skulls"
+        es = "Plétora de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Hordes of Screaming Skulls"
+        es = "Hordas de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Throng of Screaming Skulls"
+        es = "Tropel de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Swarm of Screaming Skulls"
+        es = "Enjambre de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Legion of Screaming Skulls"
+        es = "Legión de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Myriad of Screaming Skulls"
+        es = "Miríada de calaveras gritantes"
+    }
+    {
+        // @composicion
+        en = "Several Oathbringers"
+        es = "Unos cuantos juramentadores"
+    }
+    {
+        // @composicion
+        en = "Pack of Oathbringers"
+        es = "Banda de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Plethora of Oathbringers"
+        es = "Plétora de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Hordes of Oathbringers"
+        es = "Hordas de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Throng of Oathbringers"
+        es = "Tropel de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Swarm of Oathbringers"
+        es = "Enjambre de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Legion of Oathbringers"
+        es = "Legión de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Myriad of Oathbringers"
+        es = "Miríada de juramentadores"
+    }
+    {
+        // @composicion
+        en = "Several Flesh Golems"
+        es = "Unos cuantos gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Pack of Flesh Golems"
+        es = "Banda de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Plethora of Flesh Golems"
+        es = "Plétora de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Hordes of Flesh Golems"
+        es = "Hordas de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Throng of Flesh Golems"
+        es = "Tropel de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Swarm of Flesh Golems"
+        es = "Enjambre de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Legion of Flesh Golems"
+        es = "Legión de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Myriad of Flesh Golems"
+        es = "Miríada de gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Several Greater Flesh Golems"
+        es = "Unos cuantos grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Pack of Greater Flesh Golems"
+        es = "Banda de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Plethora of Greater Flesh Golems"
+        es = "Plétora de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Hordes of Greater Flesh Golems"
+        es = "Hordas de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Throng of Greater Flesh Golems"
+        es = "Tropel de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Swarm of Greater Flesh Golems"
+        es = "Enjambre de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Legion of Greater Flesh Golems"
+        es = "Legión de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Myriad of Greater Flesh Golems"
+        es = "Miríada de grandes gólems de carne"
+    }
+    {
+        // @composicion
+        en = "Several Fault Finders"
+        es = "Unos cuantos buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Pack of Fault Finders"
+        es = "Banda de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Fault Finders"
+        es = "Plétora de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Fault Finders"
+        es = "Hordas de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Throng of Fault Finders"
+        es = "Tropel de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Fault Finders"
+        es = "Enjambre de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Legion of Fault Finders"
+        es = "Legión de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Fault Finders"
+        es = "Miríada de buscadores de defectos"
+    }
+    {
+        // @composicion
+        en = "Several Flesh Cradles"
+        es = "Unas cuantas matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Pack of Flesh Cradles"
+        es = "Banda de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Plethora of Flesh Cradles"
+        es = "Plétora de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Hordes of Flesh Cradles"
+        es = "Hordas de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Throng of Flesh Cradles"
+        es = "Tropel de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Swarm of Flesh Cradles"
+        es = "Enjambre de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Legion of Flesh Cradles"
+        es = "Legión de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Myriad of Flesh Cradles"
+        es = "Miríada de matrices de carne"
+    }
+    {
+        // @composicion
+        en = "Several Brigand Marauders"
+        es = "Unos cuantos merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Pack of Brigand Marauders"
+        es = "Banda de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Plethora of Brigand Marauders"
+        es = "Plétora de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Hordes of Brigand Marauders"
+        es = "Hordas de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Throng of Brigand Marauders"
+        es = "Tropel de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Swarm of Brigand Marauders"
+        es = "Enjambre de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Legion of Brigand Marauders"
+        es = "Legión de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Myriad of Brigand Marauders"
+        es = "Miríada de merodeadores bandidos"
+    }
+    {
+        // @composicion
+        en = "Several Men-at-Arms"
+        es = "Unos cuantos hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Pack of Men-at-Arms"
+        es = "Banda de hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Plethora of Men-at-Arms"
+        es = "Plétora de hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Hordes of Men-at-Arms"
+        es = "Hordas de hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Throng of Men-at-Arms"
+        es = "Tropel de hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Swarm of Men-at-Arms"
+        es = "Enjambre de hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Legion of Men-at-Arms"
+        es = "Legión de hombres de armas"
+    }
+    {
+        // @composicion
+        en = "Myriad of Men-at-Arms"
+        es = "Miríada de hombres de armas"
+    }
     // context: ::Const.Strings.MercenaryCompanyNames.extend()
     {
         en = "Iron Brigade"
@@ -13388,20 +17713,10 @@ local pairs = [
         en = "%s suffers %s"
         es = "%s sufre %s"
     }
-    // context: ::Legends.EventList.RenownGain
-    {
-        // RenownGain = "You gain [color=%s]%s[/color] of Renown",
-        mode = "pattern"
-        en = "You gain [color=%s]%s[/color] of Renown"
-        es = "Ganas [color=%s]%s[/color] de renombre"
-    }
-    // context: ::Legends.EventList.RenownLose
-    {
-        // RenownLose = "You lose [color=%s]%s[/color] of Renown",
-        mode = "pattern"
-        en = "You lose [color=%s]%s[/color] of Renown"
-        es = "Pierdes [color=%s]%s[/color] de renombre"
-    }
+    // en = "You gain [color=%s]%s[/color] of Renown"
+    // en base_es
+    // en = "You lose [color=%s]%s[/color] of Renown"
+    // en base_es
     // context: ::Legends.EventList.GoldGain
     {
         // GoldGain = "You gain [color=%s]%d[/color] Crowns",
@@ -13415,6 +17730,13 @@ local pairs = [
         mode = "pattern"
         en = "You lose [color=%s]%d[/color] Crowns"
         es = "Pierdes [color=%s]%d[/color] coronas"
+    }
+    // context: ::Legends.EventList.StatLose
+    {
+        // text = _event.m.Muladi.getName() + " loses [color=" + this.Const.UI.Color.NegativeEventValue + "]-6[/color] Hitpoints"
+        mode = "pattern"
+        en = "<actor:str> loses <v:val_tag> Hitpoints"
+        es = "<actor> pierde <v> Puntos de vida"
     }
     // context: ::Legends.EventList.Amount
     {
@@ -13543,8 +17865,10 @@ local pairs = [
     }
     // context: ::Legends.Obituary.Tooltip["world-screen.obituary.swapperks"]
     {
-        en = "Swap the trait/permanent injuries columns for perks.\nHotkey: "
-        es = "Cambia las columnas de rasgos/heridas permanentes por las de ventajas.\nAtajo: "
+        // text = "...\nHotkey: " + getColoredKeybindText(...): la tecla llega con su color, así que el texto entero no casaría como literal
+        mode = "pattern"
+        en = "Swap the trait/permanent injuries columns for perks.\nHotkey: <key:str>"
+        es = "Cambia las columnas de rasgos/heridas permanentes por las de ventajas.\nAtajo: <key>"
     }
     // context: ::Legends.Obituary.Tooltip["world-screen.obituary.swapstats"]
     {
@@ -13553,8 +17877,10 @@ local pairs = [
     }
     // context: ::Legends.Obituary.Tooltip["world-screen.obituary.swapstats"]
     {
-        en = "Swaps the position of first 4 stats (hp, fatigue, initiative, bravery) with the last 4 (attack / defense).\nHotkey: "
-        es = "Intercambia la posición de los 4 primeros atributos (vida, fatiga, iniciativa, resolución) con la de los 4 últimos (ataque / defensa).\nAtajo: "
+        // text = "...\nHotkey: " + getColoredKeybindText(...): la tecla llega con su color, así que el texto entero no casaría como literal
+        mode = "pattern"
+        en = "Swaps the position of first 4 stats (hp, fatigue, initiative, bravery) with the last 4 (attack / defense).\nHotkey: <key:str>"
+        es = "Intercambia la posición de los 4 primeros atributos (vida, fatiga, iniciativa, resolución) con la de los 4 últimos (ataque / defensa).\nAtajo: <key>"
     }
     // context: ::Legends.Obituary.Tooltip["world-screen.obituary.stackedstars"]
     {
@@ -13563,8 +17889,10 @@ local pairs = [
     }
     // context: ::Legends.Obituary.Tooltip["world-screen.obituary.stackedstars"]
     {
-        en = "Replace the 3 star talent icon (row of 3) with a triangle of stars.\nHotkey: "
-        es = "Sustituye el icono de 3 estrellas (en fila) por un triángulo de estrellas.\nAtajo: "
+        // text = "...\nHotkey: " + getColoredKeybindText(...): la tecla llega con su color, así que el texto entero no casaría como literal
+        mode = "pattern"
+        en = "Replace the 3 star talent icon (row of 3) with a triangle of stars.\nHotkey: <key:str>"
+        es = "Sustituye el icono de 3 estrellas (en fila) por un triángulo de estrellas.\nAtajo: <key>"
     }
     // context: ::Legends.Obituary.Tooltip["AddToObituary"]
     {
@@ -16750,6 +21078,19 @@ local pairs = [
     // FILE: mod_legends\helper\arena.nut
     // en = "<bro:str> is now <skill:str>"
     // en base_es
+    // context: ::Legends.Arena.updateTraits
+    {
+        // text = _bro.getName() + " is now " + this.Const.Strings.getArticle(skill.getName()) + skill.getName(); el nombre del rasgo llega ya traducido, sin :t
+        mode = "pattern"
+        en = "<name:str> is now a <skill:str>"
+        es = "<name> es ahora <skill>"
+    }
+    // context: ::Legends.Arena.updateTraits
+    {
+        mode = "pattern"
+        en = "<name:str> is now an <skill:str>"
+        es = "<name> es ahora <skill>"
+    }
     // FILE: mod_legends\helper\maps.nut
     // context: ::Legends.Maps.markVisited.::World.Flags.add()
     // en = "LegendsMap-<_target.Target>"  // clave de flag del mundo (World.Flags), no se muestra
@@ -42157,9 +46498,10 @@ local pairs = [
     // context: settlement.o.getTooltip.ret.push().text
     {
         // text = "Has current event: " + s.getName()
+        // el nombre de la situación llega en inglés (ningún getter de Rosetta la cubre): :t
         mode = "pattern"
         en = "Has current event: <event:str>"
-        es = "Evento actual: <event>"
+        es = "Evento actual: <event:t>"
     }
     // context: settlement.o.getTooltip.ret.push().text
     {
@@ -44218,9 +48560,23 @@ local pairs = [
     }
     // context: cultist_origin_sacrifice_event.o.create.s.start.candleChanges.push().text
     {
+        // el getName de la habilidad ya sale traducido y entonces el :t de arriba aborta: esta segunda regla
+        // la recoge sin :t (otro nombre de captura, para que no se tome por duplicada)
+        mode = "pattern"
+        en = "<bro:str> has received a <skill:str>"
+        es = "<bro> ha recibido <skill>"
+    }
+    // context: cultist_origin_sacrifice_event.o.create.s.start.candleChanges.push().text
+    {
         mode = "pattern"
         en = "<name:str> has received an <skill:str>"
         es = "<name> ha recibido <skill:t>"
+    }
+    // context: cultist_origin_sacrifice_event.o.create.s.start.candleChanges.push().text
+    {
+        mode = "pattern"
+        en = "<bro:str> has received an <skill:str>"
+        es = "<bro> ha recibido <skill>"
     }
     // en = "<bro:str> is now <skill:str>"
     // en base_es
@@ -48006,6 +52362,79 @@ local pairs = [
     {
         en = "Staff, Two-Handed"
         es = "Bastón, Dos manos"
+    }
+    // context: longaxe.o.create.m.Categories
+    {
+        en = "Axe/Polearm, Two-Handed"
+        es = "Hacha/Arma de asta, Dos manos"
+    }
+    // context: warscythe.o.create.m.Categories
+    {
+        en = "Cleaver/Polearm, Two-Handed"
+        es = "Cuchilla/Arma de asta, Dos manos"
+    }
+    // context: scimitar.o.create.m.Categories
+    {
+        en = "Cleaver/Sword, One-Handed"
+        es = "Cuchilla/Espada, Una mano"
+    }
+    // context: battle_whip.o.create.m.Categories
+    {
+        en = "Cleaver/Whip, One-Handed"
+        es = "Cuchilla/Látigo, Una mano"
+    }
+    // context: axehammer.o.create.m.Categories
+    {
+        en = "Hammer/Axe, One-Handed"
+        es = "Martillo/Hacha, Una mano"
+    }
+    // context: polehammer.o.create.m.Categories
+    {
+        en = "Hammer/Polearm, Two-Handed"
+        es = "Martillo/Arma de asta, Dos manos"
+    }
+    // context: polemace.o.create.m.Categories
+    {
+        en = "Mace/Polearm, Two-Handed"
+        es = "Maza/Arma de asta, Dos manos"
+    }
+    // context: staff_sling.o.create.m.Categories
+    {
+        en = "Sling/Staff, Two-Handed"
+        es = "Honda/Bastón, Dos manos"
+    }
+    // context: goedendag.o.create.m.Categories
+    {
+        en = "Spear/Mace, Two-Handed"
+        es = "Lanza/Maza, Dos manos"
+    }
+    // context: saif.o.create.m.Categories
+    {
+        en = "Sword/Cleaver, One-Handed"
+        es = "Espada/Cuchilla, Una mano"
+    }
+    // context: legend_named_goblin_notched_blade.o.create.m.Categories
+    {
+        en = "Sword/Dagger, One-Handed"
+        es = "Espada/Daga, Una mano"
+    }
+    // context: goblin_spear.o.create.m.Categories
+    {
+        en = "Sword/Polearm, Two-Handed"
+        es = "Espada/Arma de asta, Dos manos"
+    }
+    // categorías compuestas con el mismo tipo a ambos lados, vistas en el log de una partida; ningún .nut las escribe, las monta código externo al fuente
+    {
+        en = "Spear/Spear, One-Handed"
+        es = "Lanza, Una mano"
+    }
+    {
+        en = "Dagger/Dagger, One-Handed"
+        es = "Daga, Una mano"
+    }
+    {
+        en = "Sword/Sword, One-Handed"
+        es = "Espada, Una mano"
     }
     // context: goblin_staff.o.create.m.Description
     {
@@ -56109,6 +60538,13 @@ local pairs = [
         en = "[color=%positive%] (Iron Will)[/color]"
         es = "[color=%positive%] (Voluntad de Hierro)[/color]"
     }
+    // context: ::ModJimmysTooltips.modTacticalTooltip
+    {
+        // la fila llega con el nombre de la herida delante, ya traducido: sin :t
+        mode = "pattern"
+        en = "<injury:str>[color=%positive%] (Iron Will)[/color]"
+        es = "<injury>[color=%positive%] (Voluntad de Hierro)[/color]"
+    }
     // context: ::ModJimmysTooltips.modTacticalTooltip.pushSection()
     {
         en = "Status perks"
@@ -57530,7 +61966,7 @@ local pairs = [
         // text = this.Contract.m.Briber.getName() + " suffers " + injury1.getNameOnly() + " and " + injury2.getNameOnly()
         mode = "pattern"
         en = "<name:str> suffers <injury1:str> and <injury2:str>"
-        es = "<name> sufre <injury1> y <injury2>"
+        es = "<name> sufre <injury1:t> y <injury2:t>"
     }
     // context: legend_bandit_army_contract.createScreens.m.Screens.push().start.Contract.m.Briber.worsenMood()
     {
@@ -62401,7 +66837,7 @@ local pairs = [
         // Text = bro.getName() + " suffers " + injury.getNameOnly() + " while training."
         mode = "pattern"
         en = "<name:str> suffers <injury:str> while training."
-        es = "<name> sufre <injury> durante el entrenamiento."
+        es = "<name> sufre <injury:t> durante el entrenamiento."
     }
     // context: training_building.getDescriptors
     {
@@ -67288,13 +71724,8 @@ local pairs = [
     }
     // en = "You spend <v:str_tag> Crowns"
     // en base_es
-    // context: legend_traveling_bard_event.create.m.Screens.push().start.List.push().text
-    {
-        // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]a small amount[/color] of Renown"
-        mode = "pattern"
-        en = "You gain [color=<color:str>]a small amount[/color] of Renown"
-        es = "Ganas [color=<color>]un poco[/color] de renombre"
-    }
+    // en = "You gain [color=<color:str>]a small amount[/color] of Renown"
+    // en base_es
     // context: legend_traveling_bard_event.create.m.Screens.push().Text
     {
         en = "%townImage%Killing things seems easy when it comes to describing them. You start by giving a play-by-play of each part of a fight before you realise you may be here all day to describe what few battles you've had so far. You eventually settle for just describing the men and beasts you have fought and slain and the dangers of the open road away from the towns and cities.\n\n The bard struggles to string something out of it but you eventually come to an agreement and hand over the crowns."
@@ -67302,25 +71733,15 @@ local pairs = [
     }
     // en = "You spend <v:str_tag> Crowns"
     // en base_es
-    // context: legend_traveling_bard_event.create.m.Screens.push().start.List.push().text
-    {
-        // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]a decent amount[/color] of Renown"
-        mode = "pattern"
-        en = "You gain [color=<color:str>]a decent amount[/color] of Renown"
-        es = "Ganas [color=<color>]bastante[/color] renombre"
-    }
+    // en = "You gain [color=<color:str>]a decent amount[/color] of Renown"
+    // en base_es
     // context: legend_traveling_bard_event.create.m.Screens.push().Text
     {
         en = "%townImage%You sit down with the bard and describe your adventures at length, albeit with some embellishment on your part — it's doubtful the bard has ever set foot off the roads, much less know what a ghoul is nor how large it is.\n\n Or how many limbs it has.\n\n Or what it smells like.\n\n The bard seems happy with what you have described and you hand over the crowns. Hopefully stories like this should prick the ears of the nobles."
         es = "%townImage%Te sientas con el bardo y le describes tus aventuras con todo detalle, aunque adornándolas un poco por tu parte: dudas que el bardo haya salido alguna vez de los caminos, y mucho menos que sepa qué es un necrófago o lo grande que es.\n\n O cuántas extremidades tiene.\n\n O a qué huele.\n\n El bardo parece contento con lo que le has contado y le entregas las coronas. Con suerte, historias como esta harán que los nobles presten oído."
     }
-    // context: legend_traveling_bard_event.create.m.Screens.push().start.List.push().text
-    {
-        // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]a large amount[/color] of Renown"
-        mode = "pattern"
-        en = "You gain [color=<color:str>]a large amount[/color] of Renown"
-        es = "Ganas [color=<color>]mucho[/color] renombre"
-    }
+    // en = "You gain [color=<color:str>]a large amount[/color] of Renown"
+    // en base_es
     // context: legend_traveling_bard_event.create.m.Screens.push().Text
     {
         en = "[img]gfx/ui/events/event_92.png[/img]Barely before you finish announcing their name, %minstrel% jumps into the conversation as if you have introduced them on a stage. %minstrel% and and bard speak at great lengths about a variety of topics — from music to love to arts and even a short scriptwriting session of a new song the bard has been trying to complete for quite some time.\n Meanwhile you stand and wait for what seems like an eternity before %minstrel% finally gets to the point where they feel brave enough to ask for a 'minor' discount — however they seem to have misinterpreted your earlier announcement and instead ask for it to be completely free.\n\n %minstrel% then produces a pre-written song of all the company's deeds in detail without missing a beat. They smile as they present it from a concealed pocket and hand it over on an arm outstretched to the bard with no regret whatsoever.\n\n The bard stares them down for what feels like an eternity until both parties laugh and smile. They poitn at each other while still laughing and say nothing as the bard gently takes the script which unfolds to several times it's orginal size.%SPEECH_ON%I'll see what I can do.%SPEECH_OFF%"
@@ -67331,13 +71752,8 @@ local pairs = [
         en = "Don't embarrass me again."
         es = "No vuelvas a avergonzarme."
     }
-    // context: legend_traveling_bard_event.create.m.Screens.push().start.List.push().text
-    {
-        // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]a considerable amount[/color] of Renown"
-        mode = "pattern"
-        en = "You gain [color=<color:str>]a considerable amount[/color] of Renown"
-        es = "Ganas [color=<color>]una cantidad considerable[/color] de renombre"
-    }
+    // en = "You gain [color=<color:str>]a considerable amount[/color] of Renown"
+    // en base_es
     // FILE: scripts\events\events\legends\legend_vala_recruitment.nut
     // context: legend_vala_recruitment.create.m.Title
     {
@@ -80905,6 +85321,11 @@ local pairs = [
         es = "%name% no tiene fama de hablar mucho, aunque tendría todo el derecho a presumir. {Ha salvado la vida de muchos en la compañía. | Una vez te libró de la cruel cadena de un orco. | Un asesino habría matado al noble local en una taberna de no ser por este hombre. | Una ballesta disparada por error casi te saca un ojo, y lo habría hecho de no ser por el escudo de %name%, que estaba allí para detener el virote. | Una vez empujó a dos hombres por un precipicio usando solo su escudo y sus dos fuertes piernas. | Aprendió a luchar de su padre, que combatió en la vanguardia en la Batalla de los Muchos Nombres. | Sacrificando la reliquia de su familia, un viejo escudo de madera tachonado de hierro, salvó la vida del noble local. | Hombre de un heroísmo bastante constante, sacó a un capitán borracho de una taberna en llamas. | Frente a una horda de goblins, usó su escudo y su fuerza para abrir una brecha en sus líneas, despejando el camino para que el resto de su compañía los matara a todos.} Con rápidos giros y golpes de escudo, este hombre ha desviado toda clase de peligros mortales. Aunque es bastante callado, te ha parecido que el puesto de %name% en el muro de escudos es prácticamente indispensable."
     }
     // FILE: scripts\skills\backgrounds\legend_peddler_commander_background.nut
+    // context: legend_peddler_commander_background.create.m.Name
+    {
+        en = "Merchant"
+        es = "Mercader"
+    }
     // context: legend_peddler_commander_background.create.m.BackgroundDescription
     {
         en = "Merchants were held in high regard and powerful people, they could bankroll armies or buy entire estates if they had the reason to do so."
@@ -85960,6 +90381,11 @@ local pairs = [
         es = "Una cota de malla larga y pesada que ofrece buena protección, pero es muy fatigante de llevar."
     }
     // FILE: scripts\items\legend_armor\chain\legend_armor_hauberk_full_named.nut
+    // context: legend_armor_hauberk_full_named.create.m.NameList
+    {
+        en = "Chain Mail"
+        es = "Cota de malla"
+    }
     // context: legend_armor_hauberk_full_named.create.m.ArmorDescription
     {
         en = "Includes a mail hauberk made from the highest quality materials and boasting precious decorations and ornaments."
@@ -86539,6 +90965,16 @@ local pairs = [
         es = "Una túnica pesada y acolchada que ofrece una protección decente."
     }
     // FILE: scripts\items\legend_armor\cloth\legend_armor_gambeson_named.nut
+    // context: legend_armor_gambeson_named.create.m.NameList
+    {
+        en = "Heraldic Gambeson"
+        es = "Gambesón heráldico"
+    }
+    // context: legend_armor_gambeson_named.create.m.NameList
+    {
+        en = "Noble Gambeson"
+        es = "Gambesón de noble"
+    }
     // context: legend_armor_gambeson_named.create.m.Description
     {
         en = "A mastercrafted heavy padded tunic that offers excellent protection."
@@ -86774,6 +91210,11 @@ local pairs = [
         es = "Una fina túnica de lino de un material exquisito, bordada con motivos agradables. A la moda, pero ofrece poca protección."
     }
     // FILE: scripts\items\legend_armor\cloth\legend_armor_tunic_noble_named.nut
+    // context: legend_armor_tunic_noble_named.create.m.NameList
+    {
+        en = "Heraldic Tunic"
+        es = "Túnica heráldica"
+    }
     // context: legend_armor_tunic_noble_named.create.m.Description
     {
         en = "A fine, linen tunic of exquisite material, embroidered with pleasing patterns. Light and sturdy."
@@ -86858,6 +91299,36 @@ local pairs = [
         es = "Incluye una armadura de cuero adornada con símbolos ocultistas."
     }
     // FILE: scripts\items\legend_armor\plate\legend_armor_diviner_jacket.nut
+    // context: legend_armor_diviner_jacket.create.m.NameList
+    {
+        en = "Heretic's Wrap"
+        es = "Envoltura del hereje"
+    }
+    // context: legend_armor_diviner_jacket.create.m.NameList
+    {
+        en = "Beholder's vestments"
+        es = "Vestiduras del contemplador"
+    }
+    // context: legend_armor_diviner_jacket.create.m.NameList
+    {
+        en = "Jacket of the Augur"
+        es = "Chaqueta del Augur"
+    }
+    // context: legend_armor_diviner_jacket.create.m.NameList
+    {
+        en = "Empyrian Coat"
+        es = "Cota empírea"
+    }
+    // context: legend_armor_diviner_jacket.create.m.NameList
+    {
+        en = "Attestor's Skin"
+        es = "Piel del atestiguador"
+    }
+    // context: legend_armor_diviner_jacket.create.m.NameList
+    {
+        en = "Goreflesh Mantle"
+        es = "Manto de carne ensangrentada"
+    }
     // context: legend_armor_diviner_jacket.create.m.Name
     {
         en = "Diviner's Jacket"
@@ -86956,6 +91427,11 @@ local pairs = [
         es = "Incluye una brigantina de cuero endurecido y reforzada."
     }
     // FILE: scripts\items\legend_armor\plate\legend_armor_leather_brigandine_named.nut
+    // context: legend_armor_leather_brigandine_named.create.m.NameList
+    {
+        en = "Studded Vest"
+        es = "Chaleco tachonado"
+    }
     // context: legend_armor_leather_brigandine_named.create.m.Description
     {
         en = "A rare thick leather brigandine studded with steel rivets for added protection. A piece of true craftsmanship!"
@@ -86999,6 +91475,11 @@ local pairs = [
         es = "Incluye una chaqueta de cuero bien elaborada."
     }
     // FILE: scripts\items\legend_armor\plate\legend_armor_leather_jacket_named.nut
+    // context: legend_armor_leather_jacket_named.create.m.NameList
+    {
+        en = "Black Leather"
+        es = "Cuero negro"
+    }
     // context: legend_armor_leather_jacket_named.create.m.Description
     {
         en = "A well-crafted, hardened leather armor. Light to wear, yet exceptionally sturdy."
@@ -87396,6 +91877,16 @@ local pairs = [
         es = "Incluye un juego completo de armadura de sólido acero en placas, con grebas."
     }
     // FILE: scripts\items\legend_armor\plate\legend_armor_plate_full_greaves_named.nut
+    // context: legend_armor_plate_full_greaves_named.create.m.NameList
+    {
+        en = "Triumph"
+        es = "Triunfo"
+    }
+    // context: legend_armor_plate_full_greaves_named.create.m.NameList
+    {
+        en = "Joy"
+        es = "Alegría"
+    }
     // context: legend_armor_plate_full_greaves_named.create.m.Description
     {
         en = "A masterfully crafted harness of solid, plated steel."
@@ -87407,6 +91898,21 @@ local pairs = [
         es = "Incluye un juego de sólido acero en placas, pintado y forjado con maestría, con grebas a juego."
     }
     // FILE: scripts\items\legend_armor\plate\legend_armor_plate_full_greaves_painted.nut
+    // context: legend_armor_plate_full_greaves_painted.create.m.NameList
+    {
+        en = "Death"
+        es = "Muerte"
+    }
+    // context: legend_armor_plate_full_greaves_painted.create.m.NameList
+    {
+        en = "Dark Plated Armor"
+        es = "Armadura de placas oscura"
+    }
+    // context: legend_armor_plate_full_greaves_painted.create.m.NameList
+    {
+        en = "Life Stealer"
+        es = "Robavidas"
+    }
     // context: legend_armor_plate_full_greaves_painted.create.m.Description
     {
         en = "A masterfully crafted harness of solid, plated steel, finished with a layer of decorative paint."
