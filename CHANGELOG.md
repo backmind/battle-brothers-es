@@ -2,7 +2,7 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
-## [5.0.0] - sin publicar
+## [5.0.0] - 2026-10-24
 
 **Legends, traducido.** [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, se juega ahora en castellano: unas 15.800 frases y más de 380.000 palabras del original, con sus eventos, contratos, ventajas, trasfondos, el campamento, el séquito y sus pantallas propias. Viaja dentro del mismo pack y solo se carga si Legends está instalado; sin él, el pack se comporta como siempre. Está verificada en Legends 19.4.22 y cubre el 99 % de sus frases.
 
