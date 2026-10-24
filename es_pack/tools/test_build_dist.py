@@ -1218,6 +1218,18 @@ def test_el_modo_estricto_falla_solo_por_lo_que_debe():
     assert len(problemas_estrictos(True, None, 0)) == 1
 
 
+def test_el_modo_estricto_mide_cada_mod_contra_su_linea_base():
+    """Issue #11: los avisos de Legends tienen su propia linea base."""
+    from build_dist import LINEA_BASE_MODS, problemas_estrictos
+
+    leg = LINEA_BASE_MODS["mod_legends"]
+    assert problemas_estrictos(True, dict(leg), 0, leg) == []
+    subido = dict(leg, RECORTE=leg["RECORTE"] + 1)
+    assert len(problemas_estrictos(True, subido, 0, leg)) == 1
+    # Las cifras de Legends no caben en la linea base del juego base.
+    assert problemas_estrictos(True, dict(leg), 0) != []
+
+
 def test_la_vigilancia_de_msu_ve_piezas_que_faltan_y_textos_sin_par(tmp_path):
     from check_msu_drift import Fuente, PIEZAS, piezas_que_faltan, textos_sin_par
 

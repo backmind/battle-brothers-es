@@ -5,6 +5,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 ## [Sin publicar]
 
 - **Créditos**: el autor de Rosetta figura como hackflow, el nombre con el que se le conoce en la comunidad de Battle Brothers, y el mantenedor del pack como hda (backmind).
+- **Build**: `--estricto` también falla si suben los avisos de calidad del corpus de Legends, con su propia línea base ([#11](https://github.com/backmind/battle-brothers-es/issues/11)).
 
 ## [5.0.0] - 2026-10-24
 

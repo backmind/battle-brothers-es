@@ -81,6 +81,10 @@ FECHA_FIJA = (1980, 1, 1, 0, 0, 0)
 # DUP_VECINO 19 desde la 4.0.1: la reconstruccion con y sin lugar dicen lo mismo a proposito.
 # 22 desde el 24/10: "You gain a/an" y "You lose a/an" repiten el es de su vecina a proposito (quitan el articulo ingles).
 LINEA_BASE = {"DUP_VECINO": 22, "TILDES": 2, "TOKENS": 1, "VARIANTES": 16}
+# La de cada mod, por su id de corpus. Legends desde el 24/10 (issue #11).
+LINEA_BASE_MODS = {
+    "mod_legends": {"DUP_VECINO": 22, "RECORTE": 701, "TILDES": 13, "TOKENS": 516},
+}
 
 
 def entrada_zip(arco):
@@ -345,6 +349,7 @@ def main():
     # linea. La cuarentena es una sola, porque un patron roto de cualquiera
     # aborta la carga igual.
     wip = list(buckets["wip"])
+    avisos_mods = {}
     dist = list(buckets["dist"])
     mods_rel = []
     for c in corpus_del_pack()[1:]:
@@ -359,7 +364,7 @@ def main():
         mods_rel.append(rel)
         wip += mod_buckets["wip"]
         dist += mod_buckets["dist"]
-        avisar_calidad(mod_buckets["dist"], c["id"])
+        avisos_mods[c["id"]] = avisar_calidad(mod_buckets["dist"], c["id"])
 
     fem = titulos.tabla((get_field(b, "en"), get_field(b, "es")) for b in dist)
     (BUILD / titulos_rel).write_text(titulos.emite(fem), encoding="utf-8", newline="\n")
@@ -386,13 +391,16 @@ def main():
     avisos = avisar_calidad(blocks)
     if "--estricto" in sys.argv:
         problemas = problemas_estrictos(sintaxis_ok, avisos, len(wip))
+        for id_, avisos_mod in sorted(avisos_mods.items()):
+            problemas += [id_ + ": " + p for p in problemas_estrictos(
+                True, avisos_mod, 0, LINEA_BASE_MODS.get(id_, {}))]
         for linea in problemas:
             print("ESTRICTO: " + linea)
         if problemas:
             raise SystemExit(1)
 
 
-def problemas_estrictos(sintaxis_ok, avisos, wip):
+def problemas_estrictos(sintaxis_ok, avisos, wip, linea=LINEA_BASE):
     """Lo que hace fallar el build en la CI: sintaxis sin comprobar o rota,
     patrones en cuarentena, o un aviso de calidad por encima de su linea base."""
     problemas = []
@@ -404,8 +412,8 @@ def problemas_estrictos(sintaxis_ok, avisos, wip):
         problemas.append("los avisos de calidad no se han podido calcular")
     else:
         for k, n in sorted(avisos.items()):
-            if n > LINEA_BASE.get(k, 0):
-                problemas.append("%s %d, la linea base es %d" % (k, n, LINEA_BASE.get(k, 0)))
+            if n > linea.get(k, 0):
+                problemas.append("%s %d, la linea base es %d" % (k, n, linea.get(k, 0)))
     return problemas
 
 
@@ -432,8 +440,8 @@ def avisar_sintaxis():
 
 def avisar_calidad(blocks, corpus=""):
     """Avisos de calidad del corpus: informativos, nunca bloquean el build.
-    Si el modulo de chequeos falla, el build sigue adelante igual. La linea
-    base de --estricto solo vale para el base: los mods dan su cuenta aparte."""
+    Si el modulo de chequeos falla, el build sigue adelante igual. Cada mod
+    da su cuenta aparte y --estricto la mide contra LINEA_BASE_MODS."""
     try:
         from checks import revisar  # import diferido: checks importa este modulo
         datos = [(get_field(b, "en"), get_field(b, "es")) for b in blocks]
