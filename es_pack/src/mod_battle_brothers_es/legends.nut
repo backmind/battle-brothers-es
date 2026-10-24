@@ -5,6 +5,13 @@
 local mod = ::Hooks.getMod("mod_battle_brothers_es");
 local L = ::Const.LegendMod;
 
+// Envuelve _o[_nombre] con lo que devuelve _fabrica(original). Si una versión
+// de Legends quita o renombra la función, no se envuelve: ese texto sale en
+// inglés, pero la clase carga sin error.
+local envuelveSq = function (_o, _nombre, _fabrica) {
+    if (_nombre in _o && typeof _o[_nombre] == "function") _o[_nombre] = _fabrica(_o[_nombre]);
+}
+
 // Tokens castellanos de género (es_pack/legends/BRIEF.md). Por cada clave de
 // Pronouns, extendVarsWithPronouns rellena %clave% y %clave_<personaje>% con
 // la columna de PronounTable que toca al género (neutro, hombre, mujer; aquí el
@@ -164,18 +171,16 @@ mod.hookTree("scripts/entity/tactical/legends_player_horserider", function (q) {
 // el Name inglés de PerkDefObjects (el diálogo de desbloqueo lo pinta tal
 // cual). El árbol se copia: es el del personaje.
 ::mods_hookNewObjectOnce("ui/global/data_helper", function (o) {
-    local addStats = o.addStatsToUIData;
-    o.addStatsToUIData = function (_entity, _target) {
+    envuelveSq(o, "addStatsToUIData", @(addStats) function (_entity, _target) {
         addStats.call(this, _entity, _target);
         if ("moraleLabel" in _target) _target.moraleLabel = ::Rosetta._(_target.moraleLabel);
-    }
-    local partida = o.convertCampaignStorageToUIData;
-    o.convertCampaignStorageToUIData = function (_meta) {
+    })
+    envuelveSq(o, "convertCampaignStorageToUIData", @(partida) function (_meta) {
         local r = partida.call(this, _meta);
         foreach (k in ["dayName", "legendsVersion"])
             if (k in r && typeof r[k] == "string" && r[k] != "") r[k] = ::Rosetta._(r[k]);
         return r;
-    }
+    })
     local arbol = function (r) {
         if ("perkTree" in r && typeof r.perkTree == "array")
             r.perkTree = r.perkTree.map(@(fila) fila.map(function (p) {
@@ -185,10 +190,8 @@ mod.hookTree("scripts/entity/tactical/legends_player_horserider", function (q) {
             }));
         return r;
     }
-    local ficha = o.convertEntityToUIData;
-    o.convertEntityToUIData = function (_entity, _activeEntity) { return arbol(ficha.call(this, _entity, _activeEntity)); }
-    local contrata = o.convertEntityHireInformationToUIData;
-    o.convertEntityHireInformationToUIData = function (_entity) { return arbol(contrata.call(this, _entity)); }
+    envuelveSq(o, "convertEntityToUIData", @(ficha) function (_entity, _activeEntity) { return arbol(ficha.call(this, _entity, _activeEntity)); })
+    envuelveSq(o, "convertEntityHireInformationToUIData", @(contrata) function (_entity) { return arbol(contrata.call(this, _entity)); })
 })
 
 // El pago de los contratos. El enganche del base (caso 2 de los hooks) pasa
@@ -199,8 +202,7 @@ mod.hookTree("scripts/entity/tactical/legends_player_horserider", function (q) {
 // en el de "Pago" y hace lo que Legends no pudo.
 ::mods_hookBaseClass("contracts/contract", function (o) {
     while (!("ID" in o.m)) o = o[o.SuperName];
-    local getUIBulletpoints = o.getUIBulletpoints;
-    o.getUIBulletpoints = function (_objectives = true, _payment = true) {
+    envuelveSq(o, "getUIBulletpoints", @(getUIBulletpoints) function (_objectives = true, _payment = true) {
         local ret = getUIBulletpoints.call(this, _objectives, _payment);
         if (!_payment) return ret;
         local pago = null, extra = null, PAGO = ::Rosetta._("Payment");
@@ -223,7 +225,7 @@ mod.hookTree("scripts/entity/tactical/legends_player_horserider", function (q) {
         pago.items.extend(extra.items);
         ret.remove(ret.find(extra));
         return ret;
-    }
+    })
 })
 
 // Lo mismo con dos consultas de tooltip que Legends rehace en la instancia
@@ -238,15 +240,14 @@ local traducirTooltip = function (orig) {
     }
 }
 ::mods_hookNewObject("ui/screens/tooltip/tooltip_events", function (o) {
-    foreach (f in ["onQueryUIElementTooltipData", "onQueryFollowerTooltipData"]) o[f] = traducirTooltip(o[f]);
+    foreach (f in ["onQueryUIElementTooltipData", "onQueryFollowerTooltipData"]) envuelveSq(o, f, traducirTooltip);
     // En las habilidades, solo la rama de Legends para cambiar de objeto de la
     // bolsa («Switch to ...»); las demás ya llegan traducidas.
-    local skill = o.onQuerySkillTooltipData;
-    o.onQuerySkillTooltipData = function (_entityId, _skillId) {
+    envuelveSq(o, "onQuerySkillTooltipData", @(skill) function (_entityId, _skillId) {
         local r = skill.call(this, _entityId, _skillId);
         return r != null && r.len() > 0 && "text" in r[0] && typeof r[0].text == "string"
             && ::std.Str.startswith(r[0].text, "Switch to ") ? ::Rosetta.translateTooltip(r) : r;
-    }
+    })
 })
 
 // El campamento de Legends manda a su pantalla los títulos y nombres en
@@ -377,57 +378,50 @@ mod.hook("scripts/entity/world/camp/buildings/hunter_building", function (q) {
 // ponen su SubTitle en inglés tras el original.
 local WTS = "ui/screens/world/modules/world_town_screen/";
 ::mods_hookExactClass(WTS + "town_training_dialog_module", function (o) {
-    local f = o.queryRosterInformation;
-    o.queryRosterInformation = function () {
+    envuelveSq(o, "queryRosterInformation", @(f) function () {
         local ret = tituloES(f.call(this));
         foreach (e in ret.Roster)
             if ("Training" in e) foreach (t in e.Training) t.name = trHTML(t.name);
         return ret;
-    }
+    })
     // El aviso de rasgo entrenado llega compuesto con format() y va directo a JS.
-    local popup = o.showTraitPopup;
-    o.showTraitPopup = function (_text) { return popup.call(this, ::Rosetta._(_text)); }
+    envuelveSq(o, "showTraitPopup", @(popup) function (_text) { return popup.call(this, ::Rosetta._(_text)); })
 })
 foreach (m, fn in {town_barber_dialog_module = "queryRosterInformation", town_taxidermist_dialog_module = "queryBlueprints"})
     ::mods_hookExactClass(WTS + m, function (o) {
-        local f = o[fn];
-        o[fn] = function () { return tituloES(f.call(this)); }
+        envuelveSq(o, fn, @(f) function () { return tituloES(f.call(this)); })
     })
 // La taberna: Legends pisa RightInfo en inglés después del original (caso 19).
 ::mods_hookExactClass(WTS + "town_tavern_dialog_module", function (o) {
-    local f = o.queryData;
-    o.queryData = function () {
+    envuelveSq(o, "queryData", @(f) function () {
         local ret = f.call(this);
         if (ret != null && "RightInfo" in ret && typeof ret.RightInfo == "string") ret.RightInfo = ::Rosetta._(ret.RightInfo);
         return ret;
-    }
+    })
 })
 // Más funciones que Legends sustituye entera o añade (mods_hookExactClass):
 // el menú de escenarios (tapa el caso 3b), el nombre de la formación de la
 // ficha («Formation 1»; el que escribe el jugador no tiene par y no cambia) y
 // el texto de progreso de la pantalla de carga al generar el mapa.
 ::mods_hookExactClass("states/main_menu_state", function (o) {
-    local f = o.scenario_menu_module_onQueryData;
-    o.scenario_menu_module_onQueryData = function () {
+    envuelveSq(o, "scenario_menu_module_onQueryData", @(f) function () {
         local ret = f.call(this);
         foreach (r in ret)
             foreach (k in ["name", "description"])
                 if (k in r && typeof r[k] == "string") r[k] = ::Rosetta._(r[k]);
         return ret;
-    }
+    })
 })
 ::mods_hookExactClass("ui/screens/character/character_screen", function (o) {
-    local f = o.queryData;
-    o.queryData = function () {
+    envuelveSq(o, "queryData", @(f) function () {
         local ret = f.call(this);
         if (ret != null && "formationName" in ret && typeof ret.formationName == "string")
             ret.formationName = ::Rosetta._(ret.formationName);
         return ret;
-    }
+    })
 })
 ::mods_hookExactClass("ui/screens/loading/loading_screen", function (o) {
-    local f = o.updateProgress;
-    o.updateProgress = function (_text) { return f.call(this, ::Rosetta._(_text)); }
+    envuelveSq(o, "updateProgress", @(f) function (_text) { return f.call(this, ::Rosetta._(_text)); })
 })
 
 // El tooltip de la plantilla pinta "<terreno> [color]50.00%[/color]" con los
@@ -445,11 +439,10 @@ mod.hook("scripts/states/world/asset_manager", function (q) {
 // nada. Se marca aquí, con el mismo carácter; sin Legends vale el del base.
 local MARCA_FIN = format("%c", 1);
 ::mods_hookExactClass("states/world/asset_manager", function (o) {
-    local f = o.addBrotherEnding;
-    o.addBrotherEnding = function (_brothers, _excludedBackgrounds, _isPositive) {
+    envuelveSq(o, "addBrotherEnding", @(f) function (_brothers, _excludedBackgrounds, _isPositive) {
         local r = f.call(this, _brothers, _excludedBackgrounds, _isPositive);
         return typeof r == "string" && r != "" ? MARCA_FIN + r + MARCA_FIN : r;
-    }
+    })
 })
 
 // Los consejos del campamento (_legend_tips_encounter): Legends los pega todos
@@ -671,12 +664,11 @@ mod.hookTree("scripts/entity/world/camp/camp_building", function (q) {
 ::mods_hookBaseClass("retinue/follower", function (o) {
     while (!("ID" in o.m)) o = o[o.SuperName];
     if (!("getRequirementsForUI" in o)) return;
-    local getReq = o.getRequirementsForUI;
-    o.getRequirementsForUI = function () {
+    envuelveSq(o, "getRequirementsForUI", @(getReq) function () {
         local ret = getReq.call(this);
         foreach (r in ret) if ("Text" in r) r.Text = ::Rosetta._(r.Text);
         return ret;
-    }
+    })
 })
 
 // El oponente más poderoso del obituario se guarda con su nombre inglés
@@ -685,13 +677,12 @@ mod.hookTree("scripts/entity/world/camp/camp_building", function (q) {
 // getRosterTooltip del jugador y del caído con mods_hookExactClass.
 foreach (c in ["entity/tactical/player", "entity/tactical/player_corpse_stub"])
     ::mods_hookExactClass(c, function (o) {
-        local f = o.getRosterTooltip;
-        o.getRosterTooltip = function () {
+        envuelveSq(o, "getRosterTooltip", @(f) function () {
             local s = this.m.LifetimeStats;
             if ("MostPowerfulVanquished" in s && s.MostPowerfulVanquished != "")
                 s.MostPowerfulVanquished = ::Rosetta._(s.MostPowerfulVanquished);
             return f.call(this);
-        }
+        })
     })
 
 // modGetHitFactors (hooks/skills/skill.nut de Legends) reescribe filas de la
@@ -700,8 +691,7 @@ foreach (c in ["entity/tactical/player", "entity/tactical/player_corpse_stub"])
 ::mods_hookBaseClass("skills/skill", function (o) {
     while (!("ID" in o.m)) o = o[o.SuperName];
     if (!("modGetHitFactors" in o)) return;
-    local f = o.modGetHitFactors;
-    o.modGetHitFactors = function (_ret, _targetTile) {
+    envuelveSq(o, "modGetHitFactors", @(f) function (_ret, _targetTile) {
         local ret = f.call(this, _ret, _targetTile);
         foreach (fila in ret) {
             if (typeof fila != "table" || !("text" in fila) || typeof fila.text != "string") continue;
@@ -709,7 +699,7 @@ foreach (c in ["entity/tactical/player", "entity/tactical/player_corpse_stub"])
             fila.text = s.find("[color=") == 0 && i != null ? s.slice(0, i + 9) + ::Rosetta._(s.slice(i + 9)) : ::Rosetta._(s);
         }
         return ret;
-    }
+    })
 })
 
 // Los libros de habilidad se llaman "<libro> <grupo>" («Astrology and Tarot

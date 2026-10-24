@@ -408,6 +408,16 @@ comprueba("tropa con cifra exacta", ::Rosetta.translate("2 Ancient Auxiliaries")
 
 comprueba("objeto con runas", ::Rosetta.translate("Arming Sword[color=#bf2aac] (Runed)[/color]").find("(Runed)") == null, true);
 
+{
+    // Si una versión de Legends quita o renombra una función, su enganche no
+    // hace nada: la clase carga sin error.
+    local vacio = {m = {ID = "x"}};
+    local ok = true;
+    foreach (ruta in ["ui/screens/loading/loading_screen", "states/world/asset_manager", "entity/tactical/player"])
+        try { enganches[ruta](vacio); } catch (e) { ok = false; print("  " + ruta + ": " + e + "\n"); }
+    comprueba("enganche sin la función de Legends no falla", ok, true);
+}
+
 // Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
 // el enganche se registra después del suyo y traduce lo que devuelven.
 {
