@@ -99,7 +99,7 @@ Los tokens con verbo de Legends (`%they're%`, `%they are%`, `%they were%` y fami
 
 ## Patrones
 
-La guía de capturas y tipos es la de Suor: [AGENTS_TRANSLATING.md](https://github.com/Suor/battle-brothers-rosetta/blob/master/AGENTS_TRANSLATING.md). El runtime añade dos límites que la fusión comprueba: no puede haber dos capturas `str` pegadas en el `en`, y toda captura del `es` tiene que existir en el `en`. Si no ves cómo convertir una pista en un patrón válido, deja una duda.
+La guía de capturas y tipos es la de hackflow: [AGENTS_TRANSLATING.md](https://github.com/Suor/battle-brothers-rosetta/blob/master/AGENTS_TRANSLATING.md). El runtime añade dos límites que la fusión comprueba: no puede haber dos capturas `str` pegadas en el `en`, y toda captura del `es` tiene que existir en el `en`. Si no ves cómo convertir una pista en un patrón válido, deja una duda.
 
 ## Lo que todavía no cubre el corpus
 

@@ -69,9 +69,9 @@ Hay que pasarlo **después de cada actualización del juego**, porque el corpus 
 
 Si no le pasas ruta, la busca en `DATA_DIR` del `.env`.
 
-**`check_upstream_drift.py`** es el equivalente para el otro lado de la dependencia: upstream, el repositorio original de Rosetta, de Suor. Además de usar Rosetta, el pack duplica dos piezas suyas: `build_dist.py` decide qué par se distribuye reimplementando el contrato de `validateRule`, y lleva copiado a mano el conjunto de tipos de sub (los `tipo` admitidos en `<nombre:tipo>`) que el runtime acepta. Si upstream añade un tipo, el build manda a cuarentena pares válidos sin decir nada; si retira uno, distribuiríamos pares que el runtime rechaza al cargar, y eso aborta la traducción entera en la partida de quien lo instale.
+**`check_upstream_drift.py`** es el equivalente para el otro lado de la dependencia: upstream, el repositorio original de Rosetta, de hackflow. Además de usar Rosetta, el pack duplica dos piezas suyas: `build_dist.py` decide qué par se distribuye reimplementando el contrato de `validateRule`, y lleva copiado a mano el conjunto de tipos de sub (los `tipo` admitidos en `<nombre:tipo>`) que el runtime acepta. Si upstream añade un tipo, el build manda a cuarentena pares válidos sin decir nada; si retira uno, distribuiríamos pares que el runtime rechaza al cargar, y eso aborta la traducción entera en la partida de quien lo instale.
 
-Sin argumentos revisa la copia vendorizada de `vendor/rosetta/`. Para juzgar una versión nueva antes de adoptarla, se le pasa su runtime, o se trae el repo de Suor como remoto:
+Sin argumentos revisa la copia vendorizada de `vendor/rosetta/`. Para juzgar una versión nueva antes de adoptarla, se le pasa su runtime, o se trae el repo de Rosetta como remoto:
 
 ```bash
 PYTHONUTF8=1 uv run python es_pack/tools/check_upstream_drift.py <ruta>/scripts/!mods_preload/!rosetta.nut

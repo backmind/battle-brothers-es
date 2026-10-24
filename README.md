@@ -119,7 +119,7 @@ La traducción es de cinco autores, y se publica también en [su página de Nexu
 - **AMarauder, MagnusLioncaster y Hjensikk**: la traducción original, de la 0.1 a la 3.0.3, con los guiños de Magnus.
 - **ElGranFoca**: la adaptación a los parches del juego y la traducción nueva de la 3.0.4 y la 3.0.5.
 - **backmind**: la traducción sobre Rosetta desde la 4.0.0, con la revisión completa del texto, lo que faltaba por traducir, la línea editorial y el mantenimiento, y la traducción integral de Legends en la 5.0.0.
-- **Framework**: [Rosetta](https://github.com/Suor/battle-brothers-rosetta), de Suor.
+- **Framework**: [Rosetta](https://github.com/Suor/battle-brothers-rosetta), de hackflow (Suor en GitHub).
 
 ## Licencias
 
@@ -128,6 +128,6 @@ El repositorio reúne piezas de autores distintos, y cada una conserva la suya:
 - **Código propio** (herramientas, hooks del pack, CI): [MIT](LICENSE).
 - **Texto de la traducción** (`es_pack/corpus/`): de sus cinco autores, con el permiso expreso de los autores originales. No lleva licencia libre: no se puede reutilizar fuera de este proyecto sin permiso de sus autores, ni usar en mods de pago o con puntos de donación.
 - **Capa de interfaz** (`es_pack/src/ui/`): ficheros del juego, propiedad de Overhype Studios, con los textos traducidos. Se distribuyen como es costumbre en los mods del juego, sin reclamar licencia sobre ellos.
-- **Rosetta vendorizado** (`vendor/rosetta/`): de Suor, bajo su [licencia BSD](vendor/rosetta/LICENSE).
+- **Rosetta vendorizado** (`vendor/rosetta/`): de hackflow, bajo su [licencia BSD](vendor/rosetta/LICENSE).
 
-> *English: a Spanish translation of Battle Brothers, all its DLCs and the Legends mod, built on Suor's [Rosetta](https://github.com/Suor/battle-brothers-rosetta) framework. Install the six zips listed above into the game's `data` folder.*
+> *English: a Spanish translation of Battle Brothers, all its DLCs and the Legends mod, built on hackflow's [Rosetta](https://github.com/Suor/battle-brothers-rosetta) framework. Install the six zips listed above into the game's `data` folder.*
