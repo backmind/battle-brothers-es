@@ -103,9 +103,16 @@ if (!("BattleBrothersEs" in getroottable())) ::BattleBrothersEs <- {};
 // cada cola se traduce una sola vez. La memoria se vacía al salir, de modo que
 // no crece durante la partida. Las llamadas con id o con regla a saltar (las
 // de las reglas split) van directas, sin memoria.
+//
+// Los textos que el pack monta ya en castellano se apuntan en
+// ::BattleBrothersEs.Hechos y salen tal cual: sin par, las reglas golosas los
+// recorrían trozo a trozo.
+if (!("BattleBrothersEs" in getroottable())) ::BattleBrothersEs <- {};
+::BattleBrothersEs.Hechos <- {};
 (function (_def) {
-    local translate = _def.translate, memo = null;
+    local translate = _def.translate, memo = null, hechos = ::BattleBrothersEs.Hechos;
     _def.translate <- function (_str, _id = null, _skip_rule = null) {
+        if (typeof _str == "string" && _str in hechos) return _str;
         if (_id != null || _skip_rule != null || typeof _str != "string")
             return translate.call(this, _str, _id, _skip_rule);
         if (memo != null) {

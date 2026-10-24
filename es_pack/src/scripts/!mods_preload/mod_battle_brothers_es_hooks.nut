@@ -1097,6 +1097,52 @@ mod.queue(">mod_rosetta", function () {
         }
     })
 
+    // Caso 41: el tipo de arma del tooltip. Viene de m.Categories ("Polearm,
+    // Two-Handed"), y el corpus tenía cada combinación como par. MSU y Legends la
+    // recomponen con más tipos ("Axe/Polearm, Two-Handed") y a veces los repiten
+    // ("Staff/Staff/Polearm/Polearm, Two-Handed"), y esas sumas no casaban (QA
+    // 24/10). Se traduce cada tipo con esta tabla, sacada de los pares que ya
+    // había; las palabras sueltas del corpus no sirven, son nombres de objeto
+    // ("Polearm" = «Alabarda»). Los repetidos se quitan. Si algún tipo no está
+    // en la tabla, la fila se deja como estaba.
+    local TIPOS_ARMA = {
+        Axe = "Hacha", Bow = "Arco", Cleaver = "Cuchilla", Crossbow = "Ballesta", Dagger = "Daga",
+        Firearm = "Arma de fuego", Flail = "Mayal", Hammer = "Martillo", Mace = "Maza",
+        ["Musical Instrument"] = "Instrumento musical", Polearm = "Arma de asta", Sling = "Honda",
+        Spear = "Lanza", Staff = "Bastón", Sword = "Espada", ["Throwing Weapon"] = "Arma arrojadiza",
+        Whip = "Látigo"
+    };
+    local MANOS = {["One-Handed"] = "Una mano", ["Two-Handed"] = "Dos manos"};
+    local function traduceCategorias(_c) {
+        local i = _c.find(", ");
+        if (i == null) return null;
+        local manos = _c.slice(i + 2);
+        if (!(manos in MANOS)) return null;
+        local tipos = [], vistos = {};
+        foreach (t in split(_c.slice(0, i), "/")) {
+            if (!(t in TIPOS_ARMA)) return null;
+            if (t in vistos) continue;
+            vistos[t] <- true;
+            tipos.push(TIPOS_ARMA[t]);
+        }
+        local ret = tipos.reduce(@(a, b) a + "/" + b) + ", " + MANOS[manos];
+        if ("BattleBrothersEs" in getroottable() && "Hechos" in ::BattleBrothersEs) ::BattleBrothersEs.Hechos[ret] <- true;
+        return ret;
+    }
+    mod.hookTree("scripts/items/weapons/weapon", function (q) {
+        q.getTooltip = @(__original) function () {
+            local ret = __original();
+            local c = this.m.Categories;
+            if (typeof c == "string" && c != "")
+                foreach (fila in ret)
+                    if ("text" in fila && fila.text == c) {
+                        local es = traduceCategorias(c);
+                        if (es != null) fila.text = es;
+                    }
+            return ret;
+        }
+    })
+
     // Sonda del caso 3: envuelve los mismos puntos que upstream ya hookea
     // (rosetta/hooks.nut:158-161 y :122) para ver si la consulta llega hasta
     // ellos. No traduce nada; solo escribe en el log. Los hooks de frontera
