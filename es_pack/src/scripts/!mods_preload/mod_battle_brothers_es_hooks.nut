@@ -639,13 +639,24 @@ mod.queue(">mod_rosetta", function () {
         return _t;
     }
 
+    // Hay valores que llegan coloreados enteros ("[color=#6f91c9]Direwolves[/color]",
+    // con Const.UI.getColorized en los contratos de Legends) y así no casan con
+    // el par del nombre: si el valor entero no traduce, se traduce lo de dentro.
+    local function traduceValor(_v) {
+        local t = _(_v);
+        if (t != _v || _v.find("[color=") != 0 || _v.len() < 16 || _v.slice(-8) != "[/color]") return t;
+        local i = _v.find("]"), dentro = _v.slice(i + 1, -8);
+        local td = _(dentro);
+        return td != dentro ? _v.slice(0, i + 1) + td + "[/color]" : _v;
+    }
+
     local buildTextFromTemplate = ::buildTextFromTemplate;
     ::buildTextFromTemplate = function (_text, _vars) {
         local vars = [];
         foreach (v in _vars) {
             if (typeof v == "array" && v.len() == 2 && typeof v[1] == "string"
                     && v[1] != "" && !(v[0] in crudas))
-                vars.push([v[0], _(v[1])]);
+                vars.push([v[0], traduceValor(v[1])]);
             else
                 vars.push(v);
         }
