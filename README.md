@@ -118,7 +118,7 @@ La traducción es de cinco autores, y se publica también en [su página de Nexu
 
 - **AMarauder, MagnusLioncaster y Hjensikk**: la traducción original, de la 0.1 a la 3.0.3, con los guiños de Magnus.
 - **ElGranFoca**: la adaptación a los parches del juego y la traducción nueva de la 3.0.4 y la 3.0.5.
-- **backmind**: la traducción sobre Rosetta desde la 4.0.0, con la revisión completa del texto, lo que faltaba por traducir, la línea editorial y el mantenimiento, y la traducción integral de Legends en la 5.0.0.
+- **hda (backmind)**: la traducción sobre Rosetta desde la 4.0.0, con la revisión completa del texto, lo que faltaba por traducir, la línea editorial y el mantenimiento, y la traducción integral de Legends en la 5.0.0.
 - **Framework**: [Rosetta](https://github.com/Suor/battle-brothers-rosetta), de hackflow (Suor en GitHub).
 
 ## Licencias
