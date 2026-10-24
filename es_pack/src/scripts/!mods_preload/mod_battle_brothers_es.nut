@@ -56,7 +56,7 @@ mod.queue(">mod_msu", function () {
     pagina.addTitle("Autores", seccion("Autores",
         fila(dorado("AMarauder") + ", " + dorado("MagnusLioncaster") + " y " + dorado("Hjensikk") + ": la traducción original.")
         + fila(dorado("ElGranFoca") + ": la adaptación a los parches y la traducción nueva de la 3.0.4 y la 3.0.5.")
-        + fila(dorado("backmind") + ": la traducción sobre Rosetta y la traducción integral de Legends.")
+        + fila(dorado("backmind") + ": la traducción sobre Rosetta desde la 4.0.0 y la traducción integral de Legends.")
         + fila("Framework: " + dorado("Rosetta") + ", de Suor.")));
     pagina.addTitle("Enlaces", seccion("Enlaces", fila(enlace("Nexus", nexus) + " · " + enlace("GitHub", repo)
         + " · " + enlace("Informar de un error", repo + "/issues/new/choose"))));
