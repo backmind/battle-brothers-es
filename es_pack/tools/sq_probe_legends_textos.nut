@@ -84,6 +84,8 @@ dofile(fuente + "!!config/_tooltip_templates.nut", true);
 local original = ::Legends.tooltip;
 dofile(raiz + "/es_pack/src/mod_battle_brothers_es/legends.nut", true);
 comprueba("legends.nut envuelve ::Legends.tooltip", ::Legends.tooltip != original, true);
+// legends.nut pone su propio color a los nombres de ventaja (%perk%).
+local PERK = "#00594a";
 
 print("=== descripciones de ventajas (perk_strings.nut, las dos) ===\n");
 ::Const.Perks <- {PerkDefObjects = {}.setdelegate({_get = function ( _k ) {
@@ -99,7 +101,7 @@ foreach (k, crudo in ::Const.Strings.PerkDescription) {
     if (es == null) { sinPar.push(k); continue; }
     n++;
     // Lo que Legends habría mostrado con el par: el castellano recortado y con sus colores.
-    if (comprueba("ventaja " + k, ::Legends.tooltip(crudo, []), original(es, []), true)) bien++;
+    if (comprueba("ventaja " + k, ::Legends.tooltip(crudo, []), original(es, [["perk", PERK]]), true)) bien++;
 }
 print("  ventajas en castellano: " + bien + " / " + n + "\n");
 print("  sin par en el corpus: " + sinPar.len() + (sinPar.len() ? " (" + sinPar.reduce(@(a, b) a + ", " + b) + ")" : "") + "\n");
@@ -123,7 +125,9 @@ foreach (r in runas) {
         n++;
         local es = esDe(r[campo]);
         if (es == null) { comprueba("runa " + r.Name + "." + campo + " tiene par", "no", "sí"); continue; }
-        if (comprueba("runa " + r.Name + "." + campo, r[metodo](objeto), original(es, capturado), true)) bien++;
+        local v = [["perk", PERK]];
+        v.extend(capturado);
+        if (comprueba("runa " + r.Name + "." + campo, r[metodo](objeto), original(es, v), true)) bien++;
     }
 }
 print("  runas en castellano: " + bien + " / " + n + "\n");
@@ -420,6 +424,18 @@ comprueba("objeto con runas", ::Rosetta.translate("Arming Sword[color=#bf2aac] (
 }
 
 comprueba("factor de acierto con la descripción inglesa", ::Rosetta.translate("Line of fire blocked\n([color=%negative%]-25%[/color] Total hit chance)").find("Line of fire") == null, true);
+
+{
+    // Nombres de ventaja con el color legible y lugares legendarios línea a línea.
+    comprueba("color de ventaja legible", ::Legends.tooltip("Si tienes [color=%perk%]Implacable[/color]").find("#00594a") != null, true);
+    local o = {m = {Screens = [{ID = "A", Text = "", start = function (_e) {
+        this.Text = "[img]gfx/ui/events/event_16.png[/img] These locations are missing:\nSunken Library\nThe Oracle\n\nIf you're not concerned about them, you can continue playing.";
+    }}]}};
+    enganches["events/events/legends/legend_legendary_locations_check_event"](o);
+    local pantalla = o.m.Screens[0];
+    pantalla.start(null);
+    comprueba("lugares legendarios en castellano", pantalla.Text.find("missing") == null && pantalla.Text.find("Oracle") == null && pantalla.Text.find("concerned") == null, true);
+}
 
 // Funciones que Legends rehace en la instancia (mods_hookNewObject y Once):
 // el enganche se registra después del suyo y traduce lo que devuelven.

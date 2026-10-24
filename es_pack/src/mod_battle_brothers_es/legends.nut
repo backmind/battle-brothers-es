@@ -68,9 +68,17 @@ mod.hookTree("scripts/entity/tactical/actor", function (q) {
 // busca en inglés para rehacerla, y la traduce la regla del corpus cuando el
 // tooltip se muestra.
 local tooltip = ::Legends.tooltip, GRUPO = "[color=#0b0084]From the ";
+// El color de los nombres de ventaja (%perk%, #008060) se leía mal sobre el
+// pergamino del tooltip (prueba del 25/10): va uno más oscuro, que tampoco se
+// confunde con el verde de las cifras favorables. Legends fija su paleta en
+// una tabla local al cargar, así que se antepone aquí a sus variables.
+local PERK = "#00594a";
 ::Legends.tooltip = function (_text, ...) {
     local args = [this, _text];
     args.extend(vargv);
+    local vars = args.len() > 2 && typeof args[2] == "array" ? clone args[2] : [];
+    vars.insert(0, ["perk", PERK]);
+    if (args.len() > 2) args[2] = vars; else args.push(vars);
     if (typeof _text != "string") return tooltip.acall(args);
     local i = _text.find(GRUPO);
     if (i == null) {
@@ -717,4 +725,31 @@ mod.hookTree("scripts/items/misc/legend_skill_book", function (q) {
         if (libro == "" || typeof grupo != "string" || ret != libro + " " + grupo) return ret;
         return ::Rosetta._(libro) + " " + (grupo in GRUPOS ? GRUPOS[grupo] : ::Rosetta._(grupo));
     }
+})
+
+// La comprobación de lugares legendarios de Legends
+// (legend_legendary_locations_check_event) suma la cabecera, un lugar por
+// línea y el cierre, y ninguna regla casa con la suma: se traduce línea a
+// línea. Va a la instancia: la pantalla y su start se crean en create().
+local porLineas = function (_t) {
+    local ret = [], i = 0;
+    while (true) {
+        local j = _t.find("\n", i);
+        if (j == null) { ret.push(_t.slice(i)); return ret; }
+        ret.push(_t.slice(i, j));
+        i = j + 1;
+    }
+}
+::mods_hookNewObject("events/events/legends/legend_legendary_locations_check_event", function (o) {
+    foreach (s in o.m.Screens)
+        if (s.ID == "A" && "start" in s) {
+            local start = s.start;
+            s.start = function (_event) {
+                start.call(this, _event);
+                if (typeof this.Text != "string") return;
+                local t = ::std.Str.join("\n", porLineas(this.Text).map(@(l) l == "" ? l : ::Rosetta._(l)));
+                ::BattleBrothersEs.Hechos[t] <- true;
+                this.Text = t;
+            }
+        }
 })

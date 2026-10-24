@@ -71149,7 +71149,7 @@ local pairs = [
     // context: legend_legendary_locations_check_event.create.m.Title
     {
         en = "Your friendly legendary location check"
-        es = "Tu amigable comprobación de lugares legendarios"
+        es = "Comprobación de lugares legendarios"
     }
     // context: legend_legendary_locations_check_event.create.m.Screens.push().Options.Text
     {
@@ -71167,6 +71167,11 @@ local pairs = [
         es = "[img]gfx/ui/events/event_16.png[/img] Faltan estos lugares:"
     }
     // context: legend_legendary_locations_check_event.create.m.Screens.push().start.txt
+    // context: legend_legendary_locations_check_event (el enganche la traduce línea a línea)
+    {
+        en = "If you're not concerned about them, you can continue playing."
+        es = "Si no te preocupan, puedes seguir jugando."
+    }
     {
         // txt = txt + "\n\nIf you're not concerned about them, you can continue playing.";
         mode = "pattern"

@@ -40,31 +40,26 @@ mod.queue(">mod_msu", function () {
     local nexus = "https://www.nexusmods.com/battlebrothers/mods/640";
     local enlace = @(texto, url) format("<span style='color: lightblue; text-decoration: underline; cursor: pointer;' onclick='openURL(%c%s%c)'>%s</span>", 34, url, 34, texto);
     local parrafo = @(html) "<div class='es-parrafo text-font-normal font-color-description' style='font-weight: normal; white-space: normal; width: 100%;'>" + html + "</div>";
-    // Cada sección: su título en el dorado de los títulos del juego y el
-    // cuerpo debajo; las filas de cifras, con el dato en ese mismo dorado.
-    local seccion = @(titulo, cuerpo) parrafo("<div class='title-font-normal font-bold font-color-title' style='margin-bottom: 0.4rem;'>" + titulo + "</div>" + cuerpo);
-    local fila = @(que, dato) "<div style='margin: 0.2rem 0 0.2rem 1rem;'>" + que + " <span class='font-color-title'>" + dato + "</span></div>";
+    // Todo alineado a la izquierda y poco texto: el panel es estrecho. Los
+    // títulos de sección van subrayados en el dorado de los títulos del juego,
+    // y lo que se quiere resaltar, en ese mismo dorado sin negrita.
+    local dorado = @(s) "<span class='font-color-title'>" + s + "</span>";
+    local seccion = @(titulo, filas) parrafo("<div class='title-font-normal font-bold font-color-title' style='text-decoration: underline; margin-bottom: 0.3rem;'>" + titulo + "</div>" + filas);
+    local fila = @(html) "<div style='margin: 0.15rem 0;'>" + html + "</div>";
     local pagina = msu.ModSettings.addPage("Informacion", "Información");
-    pagina.addTitle("Cabecera", parrafo("<div style='text-align: center;'>"
-        + "<div class='title-font-big font-bold font-color-title'>" + def.Name + "</div>"
-        + "<div class='text-font-medium'>Versión " + def.Version + "</div>"
-        + "<div style='margin-top: 0.4rem;'>La traducción al castellano de Battle Brothers, de todas sus expansiones y de Legends, en español neutro.</div></div>"));
-    pagina.addDivider("Divisor1");
+    pagina.addTitle("Cabecera", parrafo("<div class='title-font-big font-bold font-color-title'>" + def.Name + " " + def.Version + "</div>"
+        + fila("La traducción al castellano de " + dorado("Battle Brothers") + ", " + dorado("sus expansiones") + " y " + dorado("Legends") + ".")));
     pagina.addTitle("Incluye", seccion("Qué incluye",
-        fila("Battle Brothers " + def.GameVersion + " y todas sus expansiones:", def.Cobertura + " de las frases")
-        + fila("Legends " + def.LegendsVersion + ":", def.CoberturaLegends + " de las frases (se carga solo si Legends está instalado)")
-        + fila("Swifter:", "sus ajustes y atajos, si está instalado")
-        + "<div style='margin-top: 0.4rem;'>No toca ningún archivo del juego: lo que el pack no conoce se queda en inglés, y un parche no lo rompe.</div>"));
-    pagina.addDivider("Divisor2");
+        fila("Battle Brothers " + dorado(def.GameVersion) + " y sus expansiones: " + def.Cobertura + " de las frases.")
+        + fila("Legends " + dorado(def.LegendsVersion) + ": " + def.CoberturaLegends + " de las frases, si está instalado.")
+        + fila("Mods: MSU, Jimmy's Tooltips y Swifter.")));
     pagina.addTitle("Autores", seccion("Autores",
-        fila("AMarauder, MagnusLioncaster y Hjensikk:", "la traducción original")
-        + fila("ElGranFoca:", "la adaptación a los parches y las 3.0.4 y 3.0.5")
-        + fila("backmind:", "la traducción sobre Rosetta desde la 4.0.0")
-        + fila("Framework:", "Rosetta, de Suor")));
-    pagina.addDivider("Divisor3");
-    pagina.addTitle("Enlaces", seccion("Enlaces", "<div style='margin-left: 1rem;'>"
-        + enlace("Página en Nexus", nexus) + " · " + enlace("Repositorio en GitHub", repo)
-        + " · " + enlace("Informar de un error o una errata", repo + "/issues/new/choose") + "</div>"));
+        fila(dorado("AMarauder") + ", " + dorado("MagnusLioncaster") + " y " + dorado("Hjensikk") + ": la traducción original.")
+        + fila(dorado("ElGranFoca") + ": la adaptación a los parches y la traducción nueva de la 3.0.4 y la 3.0.5.")
+        + fila(dorado("backmind") + ": la traducción sobre Rosetta y la traducción integral de Legends.")
+        + fila("Framework: " + dorado("Rosetta") + ", de Suor.")));
+    pagina.addTitle("Enlaces", seccion("Enlaces", fila(enlace("Nexus", nexus) + " · " + enlace("GitHub", repo)
+        + " · " + enlace("Informar de un error", repo + "/issues/new/choose"))));
 });
 
 ::include("mod_battle_brothers_es/base_es");
