@@ -72,7 +72,9 @@ Arranca el juego; no hay nada que configurar. Para comprobar que ha cargado, ent
 
 **¿Steam o GOG?** Los dos. La traducción no depende de la tienda, solo de la versión del juego.
 
-**¿Necesito las expansiones?** No. El pack las traduce todas, pero no las pide: si te falta una, sus textos simplemente no aparecen. Legends sí cuenta con todas, y avisa al arrancar si falta alguna; eso es requisito suyo, no del pack.
+**¿Necesito las expansiones?** No. El pack las traduce todas, pero no las pide: si te falta una, sus textos simplemente no aparecen.
+
+**¿Puedo jugar con Legends?** Sí, desde la 5.0.0, verificada en Legends 19.4.22. Instala Legends según sus instrucciones; su traducción va en el zip del pack y se activa sola. Legends, eso sí, cuenta con todas las expansiones del juego y avisa al arrancar si falta alguna: es requisito suyo, no del pack.
 
 **¿Y con otros mods?** Rosetta traduce los textos por coincidencia exacta, así que lo que un mod reutilice del juego base sale en español y lo que añada de su cosecha se queda en inglés. Las traducciones de mods que entran en el pack aparecen en [Qué se traduce](#qué-se-traduce); Legends está traducido desde la 5.0.0. Con otros mods grandes, como Reforged, no se ha probado a fondo; si encuentras algo raro, [cuéntalo](https://github.com/backmind/battle-brothers-es/issues/new/choose).
 
