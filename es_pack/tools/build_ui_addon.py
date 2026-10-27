@@ -23,7 +23,7 @@ juego pide dos de ellas con un `data/` de más en la ruta
 suelto en disco: dentro de un zip no hay forma de satisfacer esa URL. Eso pasa
 en el juego sin mods y no es cosa nuestra, y además las fuentes son byte a byte
 las que el juego ya trae empacadas, así que el pack no tiene por qué
-distribuirlas. El detalle está en `corpus/KNOWN_ISSUES.md`, punto 7.
+distribuirlas. El detalle está en `corpus/KNOWN_ISSUES.md`, «Ruido en el log».
 
 ## Esta capa es la única dependencia dura del pack
 

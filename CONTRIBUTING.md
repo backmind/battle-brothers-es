@@ -23,7 +23,7 @@ Y en esto el esfuerzo **no** rinde:
 
 Este repositorio contiene el pack de traducción. Lo que entra: el texto del juego base y sus expansiones y el de los mods que se vayan traduciendo, cada uno en su corpus; la capa de interfaz en JavaScript, que se empaqueta aparte; y las herramientas que construyen y comprueban todo ello.
 
-Lo que no entra: el framework Rosetta, que es de Suor, y lo que el motor dibuja sin pasar por script. De Rosetta solo hay aquí una copia mínima en `vendor/rosetta/` para que funcionen las herramientas. Esa copia no se edita, y los cambios al framework van como pull request a [Suor/battle-brothers-rosetta](https://github.com/Suor/battle-brothers-rosetta).
+Lo que no entra: el framework Rosetta, que es de hackflow, y lo que el motor dibuja sin pasar por script. De Rosetta solo hay aquí una copia mínima en `vendor/rosetta/` para que funcionen las herramientas. Esa copia no se edita, y los cambios al framework van como pull request a [Suor/battle-brothers-rosetta](https://github.com/Suor/battle-brothers-rosetta).
 
 ## Traducir un mod
 
@@ -126,13 +126,13 @@ Si puedes, di también en qué situación apareció (qué contrato, qué evento,
 
 Lo que ayuda de verdad en una incidencia, por orden: la captura, la pantalla o el evento donde salió, y el texto tal como se lee. Suma la versión del juego y la del pack si las tienes a mano. No hace falta que propongas la corrección ni que busques el archivo.
 
-Antes de abrir una, mira dos cosas para no gastar tu tiempo. Si el texto sale en inglés, puede que sea un caso ya conocido y con causa escrita: está en [es_pack/corpus/KNOWN_ISSUES.md](es_pack/corpus/KNOWN_ISSUES.md), que distingue lo que falta por traducir de lo que no se puede traducir. Y si lo que se ve raro son las tildes o los rótulos del mapa, casi seguro es del motor y no del texto.
+Antes de abrir una, mira si ya es un caso conocido, para no gastar tu tiempo. Si el texto sale en inglés o se ve raro, puede que tenga la causa escrita en [es_pack/corpus/KNOWN_ISSUES.md](es_pack/corpus/KNOWN_ISSUES.md), con su causa y qué hacer.
 
 ## Para quien quiera tocar las herramientas
 
 El inventario completo está en [es_pack/tools/README.md](es_pack/tools/README.md): qué hace cada una, cuándo se usa y con qué comando. Las tres que se usan a diario son `build_dist.py` para generar el pack, `checks.py` para los avisos de calidad (ya va dentro del build) y `check_ui_drift.py`, que hay que pasar después de cada actualización del juego.
 
-No se editan los archivos de `vendor/rosetta/`. Son una copia del framework de Suor, y cómo se actualiza está en su [ORIGEN.md](vendor/rosetta/ORIGEN.md); los cambios al framework van como pull request a [Suor/battle-brothers-rosetta](https://github.com/Suor/battle-brothers-rosetta).
+No se editan los archivos de `vendor/rosetta/`. Son una copia del framework de hackflow, y cómo se actualiza está en su [ORIGEN.md](vendor/rosetta/ORIGEN.md); los cambios al framework van como pull request a [Suor/battle-brothers-rosetta](https://github.com/Suor/battle-brothers-rosetta).
 
 ## Convivencia
 

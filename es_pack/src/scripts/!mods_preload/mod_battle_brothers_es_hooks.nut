@@ -36,7 +36,7 @@ local SONDA_CASO3 = false;
 local def = {
     ID = "mod_battle_brothers_es_hooks"
     Name = "Battle Brothers en Español (hooks)"
-    Version = "5.0.0"
+    Version = "5.1.0"
 }
 local mod = ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_rosetta >= 0.5.0");
@@ -681,6 +681,17 @@ mod.queue(">mod_rosetta", function () {
         }
     })
 
+    // Caso 43: el último botón del menú de combate. tactical_state elige el
+    // texto ("Quit", o "Quit & Retire" en hombre de hierro) y se lo pasa a
+    // tactical_menu_screen.show, que lo manda a JS sin pasar por Rosetta: en
+    // hombre de hierro salía "Quit & Retire" entre los botones en castellano.
+    // Los dos pares existen.
+    mod.hook("scripts/ui/screens/menu/tactical_menu_screen", function (q) {
+        q.show = @(__original) function (_isRetreatAllowed, _isQuitAllowed, _quitText) {
+            return __original(_isRetreatAllowed, _isQuitAllowed, typeof _quitText == "string" ? _(_quitText) : _quitText);
+        }
+    })
+
     // Caso 30: el tooltip del botón de ambición. ambition.getButtonTooltip
     // devuelve las filas ya compuestas y nadie las pregunta: en partida los
     // rótulos "Your Task" y "Your Reward" y los dos cuerpos salían en inglés,
@@ -843,6 +854,10 @@ mod.queue(">mod_rosetta", function () {
         }
         return out;
     }
+    // legends.nut la necesita para el rótulo que Legends escribe en setSize; la
+    // busca al llamarla, así que da igual qué cola corra antes.
+    if (!("BattleBrothersEs" in getroottable())) ::BattleBrothersEs <- {};
+    ::BattleBrothersEs.aLatin1 <- aLatin1;
     // Idempotente a efectos prácticos: tras convertir, la eñe es un solo byte
     // 0xF1 y ya no dispara el barrido, así que pasar dos veces no rompe nada.
     // getLabel es nativo del motor y no está documentado qué hace si el rótulo
@@ -879,6 +894,59 @@ mod.queue(">mod_rosetta", function () {
         q.onDeserialize = @(__original) function (_in) {
             __original(_in);
             arreglaRotulo(this);
+        }
+    })
+
+    // Caso 42: los nombres de región del mapa ("Northern Reaches"). No son del
+    // motor: buildLabels elige cada nombre en Squirrel de
+    // Const.Strings.TerrainRegionNames y se lo pasa a World.spawnRegionText,
+    // que es nativo. Con el mismo truco del caso 23, la tabla se cambia solo
+    // durante la llamada por su versión en castellano y en cp1252, como el
+    // rótulo del caso 34. El mismo nombre va también a World.State.m.Regions,
+    // de donde lo leen los contratos ("%worldmapregion%"), así que al volver
+    // se le devuelve el UTF-8.
+    //
+    // El motor guarda el rótulo con la partida y nadie vuelve a llamar a
+    // spawnRegionText al cargar: en las partidas empezadas antes, el mapa
+    // sigue en inglés. Sus Regions sí se traducen al cargar, para que los
+    // contratos digan lo mismo en todas las partidas.
+    mod.hook("scripts/mapgen/templates/world/worldmap_generator", function (q) {
+        q.buildLabels = @(__original) function (_rect) {
+            local orig = ::Const.Strings.TerrainRegionNames;
+            local utf8 = {};
+            ::Const.Strings.TerrainRegionNames = orig.map(@(lista) lista.map(function (n) {
+                local es = _(n);
+                local r = aLatin1(es);
+                utf8[r] <- es;
+                return r;
+            }));
+            local ret;
+            try {
+                ret = __original(_rect);
+            } catch (e) {
+                ::Const.Strings.TerrainRegionNames = orig;
+                throw e;
+            }
+            ::Const.Strings.TerrainRegionNames = orig;
+            // Con red por si otro mod reescribe buildLabels y deja otra forma.
+            if (typeof ::World.State.m.Regions == "array")
+                foreach (r in ::World.State.m.Regions)
+                    if (typeof r == "table" && "Name" in r && r.Name in utf8) r.Name = utf8[r.Name];
+            return ret;
+        }
+    })
+    // Solo se traduce lo que está en la tabla inglesa: una partida nueva ya
+    // guarda los nombres en castellano y pasarlos otra vez solo llenaría el
+    // log de NOT FOUND.
+    mod.hook("scripts/states/world_state", function (q) {
+        q.onDeserialize = @(__original) function (_in) {
+            __original(_in);
+            local en = {};
+            foreach (lista in ::Const.Strings.TerrainRegionNames)
+                foreach (n in lista) en[n] <- true;
+            if (typeof this.m.Regions == "array")
+                foreach (r in this.m.Regions)
+                    if (typeof r == "table" && "Name" in r && r.Name in en) r.Name = _(r.Name);
         }
     })
 

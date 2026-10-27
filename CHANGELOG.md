@@ -2,6 +2,46 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). El pack numera sus versiones con [versionado semántico](https://semver.org/lang/es/), independiente de la versión del juego.
 
+## [Sin publicar]
+
+## [5.1.0] - 2026-10-27
+
+**El mapa, en castellano.** Hasta ahora el mapa del mundo se quedaba a medias: las regiones salían en inglés y los pueblos con sus nombres alemanes. En esta versión las regiones tienen su rótulo en castellano, los pueblos se llaman como sonarían en un mapa antiguo de nuestra lengua y cada guiño de la traducción original está en la tierra que le corresponde. Para verlo entero, empieza una campaña nueva.
+
+### El mapa
+
+- **Las regiones, en castellano.** Los rótulos grandes del mapa («Dominios del Norte», «Bosque Lúgubre», «Valle Verde») salen traducidos en las campañas nuevas. En las partidas empezadas antes siguen en inglés, porque el juego los guarda con la partida, pero los contratos ya las nombran en castellano.
+- **Los pueblos, en castellano viejo.** Un jugador inglés entiende a medias los nombres alemanes y nórdicos del juego: en *Konigsfeste* reconoce *king*, y en *Wolfenburg*, un lobo. Ahora tú recibes lo mismo con nombres que suenan a lugar antiguo, que se entienden igual en España que en América y que muchas veces siguen vivos como apellidos: Fuerterrey, Torrelobos, Robledo, Herrera, Villafranca. Cada tierra tiene su vocabulario:
+  - el interior, de campos, robles, condes y peñas: Valdespino, Trigueros, Peñalobos;
+  - el norte, de jarls, túmulos y escarcha: Villajarl, Túmulo Sombrío, Fortaleza del Drakar;
+  - la costa, de puertos, gaviotas y arenales: Campomar, Puerto Real, Castillo de la Gaviota.
+
+  Son unos 960 nombres, Legends incluido. Se quedan como estaban los que no significan nada ni en inglés (Kravlund, Olbing), las ciudades del sur, con su sabor árabe, y los nombres propios que trae Legends. Los pueblos cambian de nombre también en las partidas ya empezadas.
+- **Ruinas, criptas, campamentos y regiones, repasados uno a uno contra el inglés**, para afinar el sentido de cada nombre y el sabor de su tierra: «Dominio del Cielo», «Bosque Primigenio», «Yermos Aullantes». Los nombres ingleses antiguos, que ni el jugador inglés entiende del todo, se traducen ahora por su sentido: *Northurst* es «Sotonorte», y *Wintermore*, «Páramo Invernal».
+
+### Los guiños
+
+- **Siguen todos los de la traducción original**, y ahora cada uno está en la tierra que casa con su cultura. Hay también alguno nuevo, para quien sepa buscarlo.
+
+### Interfaz
+
+- **El pack se presenta en el menú principal**, con su versión, bajo el aviso del juego o el de Legends.
+- **«Aceptar» en los ajustes de mods.** El botón que guarda y cierra, el que hay que pulsar para seguir (también al empezar una partida de Legends), decía «Guardar» al lado de «Aplicar», y se confundían. Ahora «Aplicar» guarda sin cerrar y «Aceptar» guarda y cierra, como en cualquier diálogo.
+- **«Salir y retirarse»** en el menú de combate de las partidas de hombre de hierro, que salía en inglés.
+
+### Legends
+
+- Sus regiones y lugares siguen la misma regla que los del juego base.
+- Los pueblos salen traducidos también en su rótulo del mapa, y los nombres con tilde o eñe ya no se ven con letras rotas al cargar una partida.
+- Los lugares junto a un pueblo dicen «(Ruinas)», «(En abandono)» o «En construcción», y no «(Ruins)».
+- El recuento de enemigos dice «9 Endeudados», y no «9 Endeudado».
+- La ficha del hermano al que convence el cultista ya no acaba con una frase en inglés.
+
+### Otros
+
+- **Créditos**: el autor de Rosetta figura como hackflow, el nombre con el que se le conoce en la comunidad, y el mantenedor del pack como hda (backmind).
+- **Para quien colabora**: la comprobación estricta del build vigila también la calidad del texto de Legends ([#11](https://github.com/backmind/battle-brothers-es/issues/11)).
+
 ## [5.0.0] - 2026-10-24
 
 **Legends, traducido.** [Legends](https://github.com/Battle-Brothers-Legends/Legends-public), el mod más grande de Battle Brothers, se juega ahora en castellano: unas 15.800 frases y más de 380.000 palabras del original, con sus eventos, contratos, ventajas, trasfondos, el campamento, el séquito y sus pantallas propias. Viaja dentro del mismo pack y solo se carga si Legends está instalado; sin él, el pack se comporta como siempre. Está verificada en Legends 19.4.22 y cubre el 99 % de sus frases.
@@ -87,6 +127,8 @@ Primera versión publicada. Verificada contra Battle Brothers 1.5.2.3 con todas 
 - **La pantalla de ajustes de MSU en español**, con una página propia del pack: versión, estado de verificación, créditos y enlaces.
 - **Seis pasadas de verificación en partida**, con el registro del juego revisado en cada una.
 
+[5.1.0]: https://github.com/backmind/battle-brothers-es/releases/tag/5.1.0
+[5.0.0]: https://github.com/backmind/battle-brothers-es/releases/tag/5.0.0
 [4.0.1]: https://github.com/backmind/battle-brothers-es/releases/tag/4.0.1
 [4.0.0]: https://github.com/backmind/battle-brothers-es/releases/tag/4.0.0
 [1.0.1]: https://github.com/backmind/battle-brothers-es/releases/tag/1.0.1

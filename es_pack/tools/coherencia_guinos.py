@@ -15,14 +15,34 @@ GUINOS = {
     "Sir Erkenbrand": "Ser Jaime", "Sir Silvan": "Ser Aegon", "Sir Burkhard": "Ser Dunk",
     "Oswald": "Reginhard", "Skarbrand": "Ragnarr", "Warshout": "Espadachín Negro",
     "Blankenfeste": "Pyke", "Kampfeste": "Desembarco del Caballero",
-    "Grunfeste": "Roca Caster", "Blankenstadt": "Puerto Blanco",
-    "Holnisland": "Aguasdulces", "Brammingborg": "Castillo Negro",
+    "Seefeste": "Roca Caster", "Blankenstadt": "Puerto Blanco",
+    "Holnisland": "Aguasdulces", "Vardeborg": "Castillo Negro",
     "Gunnborg": "Winterfell", "Hammarborg": "Último Hogar", "Groneborg": "Invernalia",
     "Haellborg": "Bastión de Cerwyn", "Halshovel": "Torreón de Crasterr",
     "Quadim": "Lanza del Sol", "Skjoldwold": "Hornwood", "Schwarzmark": "Flotsam",
-    "Muckenmark": "Vergen", "Torfmark": "Loc Muinne", "Wolkenstein": "Mahakam",
+    "Hohenfeste": "Vergen", "Waldfeste": "Loc Muinne", "Wolkenstein": "Mahakam",
     "Grunlandfeste": "Praven", "Hoberfeste": "Windsor", "Feldfeste": "Warwick",
-    "Finsterwall": "Fuerte Greenkeep", "Gelbburg": "Guarida de Ornlu",
+    "Finsterwall": "Fuerte Greenkeep", "Holzburg": "Guarida de Ornlu",
+    "Koppelstadt": "Dhirrim", "Schwanstadt": "Altojardín", "Eulenmark": "Nottinhem",
+    "Sattelfeste": "Nido de Águilas", "Kampaborg": "Fuerte Terror", "Schollburg": "Cuernomartillo",
+    "Seedock": "Kayce", "Weissenhaus": "Septo de Piedra", "Seestadt": "Antigua",
+    "Blankhoom": "Los Escudos", "Weidefeld": "Uxkhal", "Taubenmoos": "Seto de Piedra",
+    "Windburg": "Abismo de Helming", "Scharfenburg": "Puertas de la Luna",
+    "Donnersgard": "Torre Sombría", "Tanghaug": "Windholm", "Torvaholm": "Guardiagris",
+    "Kargburg": "Campoestrella", "Wikhavn": "Volmark", "Varehaug": "Dedo de Pedernal",
+    "Hageburg": "Picaestrella", "Wiesenwacht": "Grimston", "Herrmanswacht": "Darry",
+    "Rosenhof": "Amere", "Seeturm": "Reposo del Grajo", "Seedorf": "Yalen",
+    "Wolfhaiden": "Veluca", "Felswacht": "Los Dedos", "Oberwallheim": "Jelkala",
+    "Birkturm": "Velen", "Gulgash Ghul": "Uruk-Hai", "Highrise": "La Montaña Solitaria",
+    "Tomb of Tombe": "Salones del Rey Gris",
+    # Reinos Olvidados
+    "Wikstadt": "Aguas Profundas", "Kleifeste": "Nunca Invierno", "Otterfeste": "Puerta de Baldur",
+    "Seeburg": "Luskan", "Tondersted": "Bryn Shander", "Tonder": "Targos",
+    "Lydersholm": "Termalaine", "Wolfenfeste": "Mithril Hall", "Tannenfeste": "Luna Plateada",
+    "Tannburg": "Evereska", "Westerholz": "Valle de las Sombras", "Saxdorf": "Vado de la Daga",
+    "Kochendorf": "Beregost", "Goldhoft": "Nashkel", "Dahab": "Calimport", "Kabira": "Memnon",
+    "Seven Hills Castle": "Candlekeep", "Mossy Ruins": "Myth Drannor",
+    "Lost Palace": "Menzoberranzán", "Scragglands": "Valle del Viento Helado",
 }
 
 src = open(RUTA, encoding="utf-8").read()
@@ -41,4 +61,13 @@ for m in PAR_RE.finditer(src):
                 print(f"L{linea}: en menciona {nombre!r}, es no lleva {guino!r}")
                 print(f"   en: {en[:120]}")
                 print(f"   es: {es[:120]}")
+
+# Y cada guiño tiene que estar en su propio par: una recolocación a medias
+# dejaría el nombre en el sitio viejo y el nuevo sin él.
+PROPIO_RE = re.compile(r'\ben = "((?:[^"\\]|\\.)*)"\n(?:\s*//[^\n]*\n)*\s*es = "((?:[^"\\]|\\.)*)"')
+propios = {m.group(1): m.group(2) for m in PROPIO_RE.finditer(src)}
+for nombre, guino in GUINOS.items():
+    if nombre in propios and guino not in propios[nombre]:
+        incoherentes += 1
+        print(f"{nombre!r} no lleva su guiño {guino!r}: {propios[nombre]!r}")
 print(f"\nincoherencias: {incoherentes}")

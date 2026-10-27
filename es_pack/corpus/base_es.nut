@@ -11226,7 +11226,7 @@ local pairs = [
     }
     {
         en = "Eisenstein"
-        es = "Eisenstein"
+        es = "Peña de Hierro"
     }
     {
         en = "Grauwall"
@@ -11294,7 +11294,7 @@ local pairs = [
     }
     {
         en = "Horn"
-        es = "Horn"
+        es = "Aldea del Cuerno"
     }
     {
         en = "Niedergard"
@@ -11330,11 +11330,11 @@ local pairs = [
     }
     {
         en = "Dahab"
-        es = "Dahab"
+        es = "Calimport"
     }
     {
         en = "Kabira"
-        es = "Kabira"
+        es = "Memnon"
     }
     {
         en = "Ras Sanan"
@@ -11366,7 +11366,7 @@ local pairs = [
     }
     {
         en = "Hikma"
-        es = "Cez"
+        es = "Hikma"
     }
     {
         en = "City State of"
@@ -12002,15 +12002,15 @@ local pairs = [
     }
     {
         en = "Arching Tides Ocean"
-        es = "Océano de mareas arqueadas"
+        es = "Océano de Mareas Arqueadas"
     }
     {
         en = "Whispering Waves Sea"
-        es = "Mar de olas Susurrantes"
+        es = "Mar de Olas Susurrantes"
     }
     {
         en = "Soft Ripple Sea"
-        es = "Mar de mareas suaves"
+        es = "Mar de Rizos Suaves"
     }
     {
         en = "Green Sea"
@@ -12018,7 +12018,7 @@ local pairs = [
     }
     {
         en = "Sea of Turning Tides"
-        es = "Mar de mareas cambiantes"
+        es = "Mar de Mareas Cambiantes"
     }
     {
         en = "Wailing Ocean"
@@ -12026,11 +12026,11 @@ local pairs = [
     }
     {
         en = "Foamy Shallows"
-        es = "Bajos espumosos"
+        es = "Bajíos Espumosos"
     }
     {
         en = "Murky Tide Ocean"
-        es = "Océano de marea turbia"
+        es = "Océano de Marea Turbia"
     }
     {
         en = "Shimmering Expanse"
@@ -12038,7 +12038,7 @@ local pairs = [
     }
     {
         en = "Azure Expanse"
-        es = "Aguas Azures"
+        es = "Aguas Azules"
     }
     {
         en = "The Raging Gulf"
@@ -12046,7 +12046,7 @@ local pairs = [
     }
     {
         en = "The Shimmering Depths"
-        es = "Las profundidades relucientes"
+        es = "Las Profundidades Relucientes"
     }
     {
         en = "Vendland"
@@ -12054,11 +12054,11 @@ local pairs = [
     }
     {
         en = "Speedwell Fields"
-        es = "Campos Speedwell"
+        es = "Campos de Verónica"
     }
     {
         en = "Plainshire"
-        es = "Llanura de Plainshire"
+        es = "Comarca de la Llanura"
     }
     {
         en = "Vinland"
@@ -12074,11 +12074,11 @@ local pairs = [
     }
     {
         en = "Wide Watch"
-        es = "Guardiamplia"
+        es = "Guardia Amplia"
     }
     {
         en = "Glaucious Domain"
-        es = "Dominio Glaucious"
+        es = "Dominio Glauco"
     }
     {
         en = "Rich Meadows"
@@ -12090,11 +12090,11 @@ local pairs = [
     }
     {
         en = "Fast Clouds County"
-        es = "Condado Nubes Rápidas"
+        es = "Condado de las Nubes Rápidas"
     }
     {
         en = "Fairdale"
-        es = "Fairdale"
+        es = "Valle Hermoso"
     }
     {
         en = "Fleetfeet's Range"
@@ -12110,7 +12110,7 @@ local pairs = [
     }
     {
         en = "Ridland"
-        es = "Tierras Altas"
+        es = "Tierras de Lomas"
     }
     {
         en = "Greenfold"
@@ -12118,7 +12118,7 @@ local pairs = [
     }
     {
         en = "Hogfolk"
-        es = "Hogfolk"
+        es = "Pueblo del Cerdo"
     }
     {
         en = "Durum"
@@ -12138,23 +12138,23 @@ local pairs = [
     }
     {
         en = "Minceacre"
-        es = "Minceacre"
+        es = "Campos Picados"
     }
     {
         en = "Glendale"
-        es = "Glendale"
+        es = "Valle Angosto"
     }
     {
         en = "Brillfold"
-        es = "Brillfold"
+        es = "Aprisco Claro"
     }
     {
         en = "Kindon"
-        es = "Kindon"
+        es = "Colina del Clan"
     }
     {
         en = "Greenmere"
-        es = "Greenmere"
+        es = "Laguna Verde"
     }
     {
         en = "Mooseridge"
@@ -12166,19 +12166,19 @@ local pairs = [
     }
     {
         en = "Neumark"
-        es = "Neumark"
+        es = "Marca Nueva"
     }
     {
         en = "Fair Range"
-        es = "Campo Justo"
+        es = "Campo Hermoso"
     }
     {
         en = "Middlemark"
-        es = "Middlemark"
+        es = "Marca Media"
     }
     {
         en = "Grasslands"
-        es = "Tierras de Pastos"
+        es = "Praderas"
     }
     {
         en = "Moss Valley"
@@ -12202,7 +12202,7 @@ local pairs = [
     }
     {
         en = "Southwind Acres"
-        es = "Acres del Viento del Sur"
+        es = "Campos del Viento del Sur"
     }
     {
         en = "Meadowcove"
@@ -12254,19 +12254,19 @@ local pairs = [
     }
     {
         en = "Black Morass"
-        es = "Maraña Negra"
+        es = "Marjal Negro"
     }
     {
         en = "Sticky Wallow"
-        es = "Lugar Fangoso"
+        es = "Revolcadero Pegajoso"
     }
     {
         en = "Dreaded Mire"
-        es = "Lodazal Temido"
+        es = "Ciénaga Temida"
     }
     {
         en = "Murky Swamplands"
-        es = "Tierras pantanosas oscuras"
+        es = "Tierras Pantanosas Turbias"
     }
     {
         en = "Mortun"
@@ -12274,7 +12274,7 @@ local pairs = [
     }
     {
         en = "Blackfan"
-        es = "Abanico Negro"
+        es = "Fangal Negro"
     }
     {
         en = "Gallowsbog"
@@ -12298,7 +12298,7 @@ local pairs = [
     }
     {
         en = "Grimdowns"
-        es = "Llanuras Siniestras"
+        es = "Lomas Siniestras"
     }
     {
         en = "The Reeds"
@@ -12310,7 +12310,7 @@ local pairs = [
     }
     {
         en = "Spidergrove"
-        es = "Bosque de Arañas"
+        es = "Arboleda de Arañas"
     }
     {
         en = "Duke's Demise"
@@ -12318,15 +12318,15 @@ local pairs = [
     }
     {
         en = "Bottomless Pits"
-        es = "Fosos Sin Fondo"
+        es = "Fosos sin Fondo"
     }
     {
         en = "Poisonbreath Marshes"
-        es = "Marismas Aliento Venenoso"
+        es = "Marismas del Aliento Venenoso"
     }
     {
         en = "Froglickers Grove"
-        es = "Arboleda de Lamecias"
+        es = "Arboleda de los Lamedores de Ranas"
     }
     {
         en = "Deadbottom"
@@ -12334,7 +12334,7 @@ local pairs = [
     }
     {
         en = "The Wetlands"
-        es = "Tierras Humedas"
+        es = "Tierras Húmedas"
     }
     {
         en = "The Marshlands"
@@ -12350,19 +12350,19 @@ local pairs = [
     }
     {
         en = "Black Fumes Polder"
-        es = "Polder de Humos Negros"
+        es = "Pólder de Humos Negros"
     }
     {
         en = "Endless Polder"
-        es = "Pantano Interminable"
+        es = "Pólder Interminable"
     }
     {
         en = "Peat Basin"
-        es = "Cuenca Turbia"
+        es = "Cuenca de Turba"
     }
     {
         en = "Riverland Glades"
-        es = "Praderas de la Tierra de los Ríos"
+        es = "Claros de la Tierra de los Ríos"
     }
     {
         en = "Southland Bowels"
@@ -12378,15 +12378,15 @@ local pairs = [
     }
     {
         en = "The Narrow Quag"
-        es = "El Cienago Estrecho"
+        es = "El Cenagal Estrecho"
     }
     {
         en = "Glades of Decay"
-        es = "Praderas de la Decadencia"
+        es = "Claros de la Podredumbre"
     }
     {
         en = "Ashen Wetlands"
-        es = "Tierras Humedas Cenicientas"
+        es = "Tierras Húmedas Cenicientas"
     }
     {
         en = "Savage Bog"
@@ -12410,11 +12410,11 @@ local pairs = [
     }
     {
         en = "Knight's Axe Hills"
-        es = "Colinas Hacha del Caballero"
+        es = "Colinas del Hacha del Caballero"
     }
     {
         en = "Skullsbreath Mound"
-        es = "Montículo de Aliento de Calaveras"
+        es = "Montículo del Aliento de Calaveras"
     }
     {
         en = "Ancient Knolls"
@@ -12454,11 +12454,11 @@ local pairs = [
     }
     {
         en = "Scree Barrows"
-        es = "Túmulos de pedregal"
+        es = "Túmulos de Pedregal"
     }
     {
         en = "Bed Load Knolls"
-        es = "Lomas de Lechopiedra"
+        es = "Lomas de Aluvión"
     }
     {
         en = "Ghost Hills"
@@ -12466,7 +12466,7 @@ local pairs = [
     }
     {
         en = "Banshee Mounds"
-        es = "Túmulos de las Banshees"
+        es = "Montículos de las Banshees"
     }
     {
         en = "Shinglehumps"
@@ -12474,7 +12474,7 @@ local pairs = [
     }
     {
         en = "Earthwatch Hills"
-        es = "Colinas de Vigilancia de la Tierra"
+        es = "Colinas de la Guardia de la Tierra"
     }
     {
         en = "Giant's Pebbles"
@@ -12522,7 +12522,7 @@ local pairs = [
     }
     {
         en = "Willowshire Hillside"
-        es = "Ladera de Willowshire"
+        es = "Ladera de la Comarca del Sauce"
     }
     {
         en = "The Scarlet Hills"
@@ -12530,7 +12530,7 @@ local pairs = [
     }
     {
         en = "Giant's Slopes"
-        es = "Ladera de Gigantes"
+        es = "Laderas del Gigante"
     }
     {
         en = "The Gloomy Hills"
@@ -12554,11 +12554,11 @@ local pairs = [
     }
     {
         en = "Dusky Forest"
-        es = "Bosqueoscuro"
+        es = "Bosque Crepuscular"
     }
     {
         en = "Scoundrels' Forest"
-        es = "Arboleda de Canallas"
+        es = "Bosque de Canallas"
     }
     {
         en = "Boar Woods"
@@ -12578,7 +12578,7 @@ local pairs = [
     }
     {
         en = "Tickbrake"
-        es = "Frenador de Garrapatas"
+        es = "Matorral de Garrapatas"
     }
     {
         en = "Druid's Grove"
@@ -12598,7 +12598,7 @@ local pairs = [
     }
     {
         en = "Needlegrove"
-        es = "Bosque de Espinas Quebradizas"
+        es = "Arboleda de Agujas"
     }
     {
         en = "Rustling Thicket"
@@ -12614,7 +12614,7 @@ local pairs = [
     }
     {
         en = "Black Forest"
-        es = "El Bosque Negro"
+        es = "La Selva Negra"
     }
     {
         en = "Prowlers' Woods"
@@ -12638,7 +12638,7 @@ local pairs = [
     }
     {
         en = "Dark Thorn Wilds"
-        es = "Tierras salvajes de Espinaoscura"
+        es = "Tierras Salvajes de la Espina Oscura"
     }
     {
         en = "Hedgehog Thicket"
@@ -12650,7 +12650,7 @@ local pairs = [
     }
     {
         en = "Borderdale"
-        es = "Frontera del Valle"
+        es = "Valle de la Frontera"
     }
     {
         en = "Temple Grove"
@@ -12670,11 +12670,11 @@ local pairs = [
     }
     {
         en = "Macaw Woods"
-        es = "Bosque de Macaw"
+        es = "Bosque del Guacamayo"
     }
     {
         en = "Hexenwald"
-        es = "Bosque de Hexen"
+        es = "Hexenwald"
     }
     {
         en = "Ancient Forest"
@@ -12690,7 +12690,7 @@ local pairs = [
     }
     {
         en = "Oldgrowth"
-        es = "Bosqueviejo"
+        es = "Bosque Primigenio"
     }
     {
         en = "Rampants"
@@ -12698,7 +12698,7 @@ local pairs = [
     }
     {
         en = "Ironoak Grove"
-        es = "Roble de Hierro"
+        es = "Arboleda del Roble de Hierro"
     }
     {
         en = "Hunter's Bosk"
@@ -12730,11 +12730,11 @@ local pairs = [
     }
     {
         en = "Greenwood Forest"
-        es = "Bosque de Greenwood"
+        es = "Bosque Verde"
     }
     {
         en = "Mossy Woods"
-        es = "Bosquemusgoso"
+        es = "Bosque Musgoso"
     }
     {
         en = "Misty Woods"
@@ -12746,7 +12746,7 @@ local pairs = [
     }
     {
         en = "Timberland"
-        es = "Bosque de la Tala"
+        es = "Bosque Maderero"
     }
     {
         en = "Whispering Groves"
@@ -12754,11 +12754,11 @@ local pairs = [
     }
     {
         en = "Grand Hare Woods"
-        es = "Bosque Granliebre"
+        es = "Bosque de la Gran Liebre"
     }
     {
         en = "Chestnut Grove"
-        es = "Arboleda de Castanos"
+        es = "Arboleda de Castaños"
     }
     {
         en = "Snake's Covert"
@@ -12766,7 +12766,7 @@ local pairs = [
     }
     {
         en = "Blackwood Forest"
-        es = "Bosque del Maderero"
+        es = "Bosque de Madera Negra"
     }
     {
         en = "Stormy Woods"
@@ -12830,7 +12830,7 @@ local pairs = [
     }
     {
         en = "Smoldering Woods"
-        es = "Bosques Llameantes"
+        es = "Bosques Humeantes"
     }
     {
         en = "Ember Forest"
@@ -12846,15 +12846,15 @@ local pairs = [
     }
     {
         en = "Somerhurst"
-        es = "Arboleda de Somerhurst"
+        es = "Soto del Verano"
     }
     {
         en = "Fireander"
-        es = "Bosque de Fireander"
+        es = "Meandro de Fuego"
     }
     {
         en = "Bloodcut Growth"
-        es = "Espesura de Cortasangre"
+        es = "Espesura del Corte de Sangre"
     }
     {
         en = "Burnend"
@@ -12862,7 +12862,7 @@ local pairs = [
     }
     {
         en = "Rustdroop"
-        es = "Gota de Oxido"
+        es = "Gota de Óxido"
     }
     {
         en = "Blood Woods"
@@ -12870,7 +12870,7 @@ local pairs = [
     }
     {
         en = "Blazing Forest"
-        es = "Bosque Abrasador"
+        es = "Bosque Llameante"
     }
     {
         en = "Vermillion Woods"
@@ -12882,7 +12882,7 @@ local pairs = [
     }
     {
         en = "Auburn Woods"
-        es = "Bosque Auburn"
+        es = "Bosque Cobrizo"
     }
     {
         en = "Redwood"
@@ -12890,7 +12890,7 @@ local pairs = [
     }
     {
         en = "Badger's Covert"
-        es = "Refugio del Tejón"
+        es = "Escondite del Tejón"
     }
     {
         en = "Birch Timberland"
@@ -12910,7 +12910,7 @@ local pairs = [
     }
     {
         en = "Bogwood Grove"
-        es = "Bosque de Madera Pantanosa"
+        es = "Arboleda de Madera Pantanosa"
     }
     {
         en = "Yellowleaf's Range"
@@ -12926,11 +12926,11 @@ local pairs = [
     }
     {
         en = "Firerock Grove"
-        es = "Bosque Roca de Fuego"
+        es = "Arboleda de Roca de Fuego"
     }
     {
         en = "Spine of the World"
-        es = "Espina del Mundo"
+        es = "Espinazo del Mundo"
     }
     {
         en = "Sleeping Giants Back"
@@ -12946,7 +12946,7 @@ local pairs = [
     }
     {
         en = "Dreaded Rocks"
-        es = "Rocas Temibles"
+        es = "Rocas Temidas"
     }
     {
         en = "Rocky Ridge"
@@ -13002,7 +13002,7 @@ local pairs = [
     }
     {
         en = "Mount Bulkhead"
-        es = "Cordillera Carga de Granel"
+        es = "Monte Mamparo"
     }
     {
         en = "Cloddheads"
@@ -13026,7 +13026,7 @@ local pairs = [
     }
     {
         en = "Swellpike Heights"
-        es = "Alturas de Salto Grande"
+        es = "Alturas de Cerrogrande"
     }
     {
         en = "Bald Crown"
@@ -13038,11 +13038,11 @@ local pairs = [
     }
     {
         en = "Evermist Mountains"
-        es = "Montañas Brumosas"
+        es = "Montañas de la Bruma Eterna"
     }
     {
         en = "Slaughtermount"
-        es = "Montañas del Matarife"
+        es = "Monte de la Matanza"
     }
     {
         en = "The Rift"
@@ -13050,7 +13050,7 @@ local pairs = [
     }
     {
         en = "The Thundering Peaks"
-        es = "Las Cumbres Rugientes"
+        es = "Las Cumbres Atronadoras"
     }
     {
         en = "Decayed Heights"
@@ -13062,11 +13062,11 @@ local pairs = [
     }
     {
         en = "Deserted Rise"
-        es = "Ascenso Desierto"
+        es = "Altozano Desierto"
     }
     {
         en = "The Vast Rise"
-        es = "El Ascenso Vasto"
+        es = "El Altozano Vasto"
     }
     {
         en = "Moonlit Peaks"
@@ -13086,7 +13086,7 @@ local pairs = [
     }
     {
         en = "Grimestone Peaks"
-        es = "Montañas de Piedra Mugrienta"
+        es = "Picos de Piedra Mugrienta"
     }
     {
         en = "Brimstone Shoulders"
@@ -13098,7 +13098,7 @@ local pairs = [
     }
     {
         en = "White Waste"
-        es = "Desierto Blanco"
+        es = "Yermo Blanco"
     }
     {
         en = "Frozen Plains"
@@ -13118,7 +13118,7 @@ local pairs = [
     }
     {
         en = "Howling Wastes"
-        es = "Desiertos Aullantes"
+        es = "Yermos Aullantes"
     }
     {
         en = "Silver Flats"
@@ -13130,7 +13130,7 @@ local pairs = [
     }
     {
         en = "Frozen North"
-        es = "Nortehelado"
+        es = "Norte Helado"
     }
     {
         en = "World's Rim"
@@ -13142,7 +13142,7 @@ local pairs = [
     }
     {
         en = "Wintermore"
-        es = "Invierdor"
+        es = "Páramo Invernal"
     }
     {
         en = "Icemark"
@@ -13154,11 +13154,11 @@ local pairs = [
     }
     {
         en = "Iceblade Dale"
-        es = "Dalafilada de Hielo"
+        es = "Valle de la Cuchilla de Hielo"
     }
     {
         en = "Silversand Hold"
-        es = "Fuerte Arena Plateada"
+        es = "Fuerte de Arena Plateada"
     }
     {
         en = "Frostfold"
@@ -13210,7 +13210,7 @@ local pairs = [
     }
     {
         en = "The Powder Plains"
-        es = "Llanuras de Polvo"
+        es = "Llanuras de Nieve Polvo"
     }
     {
         en = "Snowbank"
@@ -13218,19 +13218,19 @@ local pairs = [
     }
     {
         en = "Northmark"
-        es = "Nortemarca"
+        es = "Marca del Norte"
     }
     {
         en = "Tablelands"
-        es = "Tierras de la Meseta"
+        es = "Altiplanicies"
     }
     {
         en = "Scragglands"
-        es = "Tierras Escabrosas"
+        es = "Valle del Viento Helado"
     }
     {
         en = "Norshire"
-        es = "Nortshire"
+        es = "Comarca del Norte"
     }
     {
         en = "Barescrub"
@@ -13242,11 +13242,11 @@ local pairs = [
     }
     {
         en = "Skyreach"
-        es = "Tundra del Rey"
+        es = "Dominio del Cielo"
     }
     {
         en = "Clan's Claim"
-        es = "Fiordos del Clan"
+        es = "Territorio del Clan"
     }
     {
         en = "Rugged Flats"
@@ -13258,11 +13258,11 @@ local pairs = [
     }
     {
         en = "Northern Reaches"
-        es = "Tierras del Norte"
+        es = "Dominios del Norte"
     }
     {
         en = "Ragwilds"
-        es = "Arboledas Raquiticas"
+        es = "Tierras Salvajes Raquíticas"
     }
     {
         en = "Barrens"
@@ -13274,23 +13274,23 @@ local pairs = [
     }
     {
         en = "Pagan Heathland"
-        es = "Tierras Paganas"
+        es = "Brezal Pagano"
     }
     {
         en = "Ruffmuir"
-        es = "Baldios de Ruffmuir"
+        es = "Páramo Áspero"
     }
     {
         en = "Angbride"
-        es = "Llanuras del Jarl"
+        es = "Angbride"
     }
     {
         en = "Baleford"
-        es = "Baleford"
+        es = "Vado Aciago"
     }
     {
         en = "Bleakwolds"
-        es = "Bleakwolds"
+        es = "Páramos Desolados"
     }
     {
         en = "Nordlands"
@@ -13302,23 +13302,23 @@ local pairs = [
     }
     {
         en = "Woldwich"
-        es = "Woldwich"
+        es = "Villapáramo"
     }
     {
         en = "Kinmere"
-        es = "Kinmere"
+        es = "Laguna Real"
     }
     {
         en = "Northurst"
-        es = "Northurst"
+        es = "Sotonorte"
     }
     {
         en = "Norenford"
-        es = "Fiordos del Norte"
+        es = "Vado del Norte"
     }
     {
         en = "Holmburn"
-        es = "Holmburn"
+        es = "Arroyo de la Isleta"
     }
     {
         en = "The Dreary Barrens"
@@ -13338,7 +13338,7 @@ local pairs = [
     }
     {
         en = "Red Lowlands"
-        es = "Bajos Rojos"
+        es = "Tierras Bajas Rojas"
     }
     {
         en = "Scorching Shire"
@@ -13358,7 +13358,7 @@ local pairs = [
     }
     {
         en = "The Scald"
-        es = "La Quemadura"
+        es = "La Escaldadura"
     }
     {
         en = "Bleached Bone Dale"
@@ -13374,7 +13374,7 @@ local pairs = [
     }
     {
         en = "The Dryweeds"
-        es = "Los Pastos Secos"
+        es = "Las Malezas Secas"
     }
     {
         en = "Thornvale"
@@ -13386,7 +13386,7 @@ local pairs = [
     }
     {
         en = "Dire Hold"
-        es = "Fortaleza Siniestra"
+        es = "Fuerte Siniestro"
     }
     {
         en = "Parcheim"
@@ -13394,7 +13394,7 @@ local pairs = [
     }
     {
         en = "Smallriver Hold"
-        es = "Fuerte Río Pequeño"
+        es = "Fuerte del Río Pequeño"
     }
     {
         en = "Razorshrub"
@@ -13406,7 +13406,7 @@ local pairs = [
     }
     {
         en = "Gritstone"
-        es = "Piedra de Granito"
+        es = "Piedra Arenisca"
     }
     {
         en = "Suderos"
@@ -13438,7 +13438,7 @@ local pairs = [
     }
     {
         en = "Sunreach"
-        es = "Alcanzador del Sol"
+        es = "Dominio del Sol"
     }
     {
         en = "Sandshear"
@@ -13494,7 +13494,7 @@ local pairs = [
     }
     {
         en = "The Burning Barrens"
-        es = "Los Baldios Ardientes"
+        es = "Los Baldíos Ardientes"
     }
     {
         en = "Southern Sands"
@@ -13518,11 +13518,11 @@ local pairs = [
     }
     {
         en = "Neverending Sands"
-        es = "Arenas Sin Fin"
+        es = "Arenas sin Fin"
     }
     {
         en = "Southern Reach"
-        es = "Dominios del Sur"
+        es = "Dominio del Sur"
     }
     {
         en = "Mumbling Sands"
@@ -13538,7 +13538,7 @@ local pairs = [
     }
     {
         en = "Moaning Sands"
-        es = "Arenas Jadeantes"
+        es = "Arenas Gimientes"
     }
     {
         en = "Sparkling Sands"
@@ -13546,11 +13546,11 @@ local pairs = [
     }
     {
         en = "Glistening Flats"
-        es = "Llanuras Centelleantes"
+        es = "Llanuras Resplandecientes"
     }
     {
         en = "Dry Wastes"
-        es = "Desiertoseco"
+        es = "Yermos Secos"
     }
     {
         en = "The Lost Oasis"
@@ -13558,7 +13558,7 @@ local pairs = [
     }
     {
         en = "Green Shallows"
-        es = "Valle Verde"
+        es = "Bajíos Verdes"
     }
     {
         en = "Emerald Basin"
@@ -13570,7 +13570,7 @@ local pairs = [
     }
     {
         en = "Fruitful Shallows"
-        es = "Bajios Fructiferos"
+        es = "Bajíos Fructíferos"
     }
     {
         en = "Springs of Life"
@@ -15128,15 +15128,15 @@ local pairs = [
     // FILE: scripts\config\world_location_names.nut
     {
         en = "Wiesendorf"
-        es = "Wiesendorf"
+        es = "Pradejón"
     }
     {
         en = "Elkshorn"
-        es = "Elkshorn"
+        es = "Cuerno del Alce"
     }
     {
         en = "Dunkelwald"
-        es = "Dunkelwald"
+        es = "Bosque Oscuro"
     }
     {
         en = "Altdorf"
@@ -15152,7 +15152,7 @@ local pairs = [
     }
     {
         en = "Kallesheim"
-        es = "Kallesheim"
+        es = "Casas de Kalle"
     }
     {
         en = "Windau"
@@ -15252,7 +15252,7 @@ local pairs = [
     }
     {
         en = "Hammererden"
-        es = "Hammererden"
+        es = "Tierras del Martillo"
     }
     {
         en = "Segeland"
@@ -15268,7 +15268,7 @@ local pairs = [
     }
     {
         en = "Weidenau"
-        es = "Weidenau"
+        es = "Saucedo"
     }
     {
         en = "Rietberg"
@@ -15284,7 +15284,7 @@ local pairs = [
     }
     {
         en = "Dornheim"
-        es = "Dornheim"
+        es = "Villaespinos"
     }
     {
         en = "Albstadt"
@@ -15308,7 +15308,7 @@ local pairs = [
     }
     {
         en = "Dornen"
-        es = "Dornen"
+        es = "El Espinar"
     }
     {
         en = "Karnstein"
@@ -15340,11 +15340,11 @@ local pairs = [
     }
     {
         en = "Woodcroft Tower"
-        es = "Torre Bosque de Madera"
+        es = "Torre de la Granja del Bosque"
     }
     {
         en = "Foothill Keep"
-        es = "Fuerte de la Colina"
+        es = "Torreón de las Estribaciones"
     }
     {
         en = "%randomname%'s Watch"
@@ -15360,7 +15360,7 @@ local pairs = [
     }
     {
         en = "Guardian's Keep"
-        es = "Fuerte del Guardián"
+        es = "Torreón del Guardián"
     }
     {
         en = "Heimwart Tower"
@@ -15368,7 +15368,7 @@ local pairs = [
     }
     {
         en = "Ancient Outlook"
-        es = "Atalaya Ancestral"
+        es = "Atalaya Antigua"
     }
     {
         en = "Orcbane Tower"
@@ -15376,7 +15376,7 @@ local pairs = [
     }
     {
         en = "Seven Hills Castle"
-        es = "Castillo de las Siete Colinas"
+        es = "Candlekeep"
     }
     {
         en = "Kronland Castle"
@@ -15400,7 +15400,7 @@ local pairs = [
     }
     {
         en = "Walmer Castle"
-        es = "Castillo Walmer Castle"
+        es = "Castillo Walmer"
     }
     {
         en = "Hornburg Castle"
@@ -15448,7 +15448,7 @@ local pairs = [
     }
     {
         en = "Dread Fort"
-        es = "Fuerte Terror"
+        es = "Fuerte del Pavor"
     }
     {
         en = "Hidden Knife Camp"
@@ -15480,7 +15480,7 @@ local pairs = [
     }
     {
         en = "Brigands' Lair"
-        es = "Guarida de bandidos"
+        es = "Guarida de bandoleros"
     }
     {
         en = "Marauders' Camp"
@@ -15488,7 +15488,7 @@ local pairs = [
     }
     {
         en = "Pillagers' Camp"
-        es = "Campamento de asaltantes"
+        es = "Campamento de rapiñadores"
     }
     {
         en = "Plunderers' Camp"
@@ -15524,7 +15524,7 @@ local pairs = [
     }
     {
         en = "Raiders' Encampment"
-        es = "Campamento de incursores"
+        es = "Campamento de asaltantes"
     }
     {
         en = "Daggercrest Cover"
@@ -15532,11 +15532,11 @@ local pairs = [
     }
     {
         en = "The Bronze Nest"
-        es = "Nido de los Cuchillos de Bronce"
+        es = "El Nido de Bronce"
     }
     {
         en = "Long Daggers' Cave"
-        es = "Cueva de los Dagas Largas"
+        es = "Cueva de las Dagas Largas"
     }
     {
         en = "Lost Souls Harbor"
@@ -15548,7 +15548,7 @@ local pairs = [
     }
     {
         en = "Bandits Lair"
-        es = "Escondite de bandidos"
+        es = "Guarida de bandidos"
     }
     {
         en = "Ashen Head Hideout"
@@ -15560,11 +15560,11 @@ local pairs = [
     }
     {
         en = "Wanted Mens' Retreat"
-        es = "Refugio de proscritos"
+        es = "Retiro de proscritos"
     }
     {
         en = "Coldhearts' Escape"
-        es = "Refugio de los Corazones Fríos"
+        es = "Escapatoria de los Corazones Fríos"
     }
     {
         en = "Duskfall Camp"
@@ -15572,11 +15572,11 @@ local pairs = [
     }
     {
         en = "Sackcloth Garrison"
-        es = "Guarnición harapienta"
+        es = "Guarnición de Arpillera"
     }
     {
         en = "Retreat of the Wicked"
-        es = "Refugio de malvivientes"
+        es = "Retiro de los Malvados"
     }
     {
         en = "Lawmen's Demise"
@@ -15600,7 +15600,7 @@ local pairs = [
     }
     {
         en = "Crimson Marauders' Camp"
-        es = "Campamento de los Merodeadores Carmesies"
+        es = "Campamento de los Merodeadores Carmesíes"
     }
     {
         en = "Outlaws' Hideaway"
@@ -15636,7 +15636,7 @@ local pairs = [
     }
     {
         en = "The Exiles' Hideaway"
-        es = "Refugio de los exiliados"
+        es = "Escondite de los exiliados"
     }
     {
         en = "Bastion of the Exiled"
@@ -15652,7 +15652,7 @@ local pairs = [
     }
     {
         en = "Blackjack's Camp"
-        es = "Campamento de los Blackjack"
+        es = "Campamento de Blackjack"
     }
     {
         en = "Naragash"
@@ -15984,11 +15984,11 @@ local pairs = [
     }
     {
         en = "Long Forgotten Tomb"
-        es = "Tumba olvidada desde hace tiempo"
+        es = "Tumba largamente olvidada"
     }
     {
         en = "Tomb of Lords"
-        es = "Tumba de los Lords"
+        es = "Tumba de los Señores"
     }
     {
         en = "Hill People Tomb"
@@ -16028,7 +16028,7 @@ local pairs = [
     }
     {
         en = "Tomb of Many Crows"
-        es = "Tumba de los Cuervos"
+        es = "Tumba de los Muchos Cuervos"
     }
     {
         en = "Tomb of %randomname% the \x7bGreat | Cruel | Tyrant\x7d"
@@ -16048,7 +16048,7 @@ local pairs = [
     }
     {
         en = "Dark Vault"
-        es = "Cripta oscura"
+        es = "Bóveda oscura"
     }
     {
         en = "Last Rest"
@@ -16068,7 +16068,7 @@ local pairs = [
     }
     {
         en = "Greybeard's Crypt"
-        es = "Cripta de Barbazul"
+        es = "Cripta de Barbagris"
     }
     {
         en = "Hellhole Crypt"
@@ -16076,7 +16076,7 @@ local pairs = [
     }
     {
         en = "Monument to Hopelessness"
-        es = "Monumento de Desesperación"
+        es = "Monumento a la Desesperanza"
     }
     {
         en = "Hollow Bones Crypt"
@@ -16168,7 +16168,7 @@ local pairs = [
     }
     {
         en = "Darkwood Tomb"
-        es = "Tumba de Darkwood"
+        es = "Tumba del Bosque Oscuro"
     }
     {
         en = "Desolate Mausoleum"
@@ -16176,11 +16176,11 @@ local pairs = [
     }
     {
         en = "Rattling Bones Crypt"
-        es = "Cripta de los Huesos Que Cascabelean"
+        es = "Cripta de los Huesos Traqueteantes"
     }
     {
         en = "Forsaken Vault"
-        es = "Boveda abandonada"
+        es = "Bóveda abandonada"
     }
     {
         en = "The Grim Tombs"
@@ -16204,7 +16204,7 @@ local pairs = [
     }
     {
         en = "Shuffling Bones Swale"
-        es = "Cauce de Huesos Arrastrados"
+        es = "Vaguada de Huesos Arrastrados"
     }
     {
         en = "Opened Massgrave"
@@ -16272,7 +16272,7 @@ local pairs = [
     }
     {
         en = "Overflowing Grave"
-        es = "Fosa llena"
+        es = "Fosa rebosante"
     }
     {
         en = "Improvised Burial Site"
@@ -16296,11 +16296,11 @@ local pairs = [
     }
     {
         en = "Bone Sprinkled Fields"
-        es = "los Campos Salpicados de Huesos"
+        es = "Campos Salpicados de Huesos"
     }
     {
         en = "White Bones Menagerie"
-        es = "Menagería de huesos blancos"
+        es = "Casa de fieras de huesos blancos"
     }
     {
         en = "Cursed Grave Mounds"
@@ -16308,7 +16308,7 @@ local pairs = [
     }
     {
         en = "Vulture's Feast"
-        es = "Fiesta del Buitre"
+        es = "Banquete del Buitre"
     }
     {
         en = "Withered Battlesite"
@@ -16368,7 +16368,7 @@ local pairs = [
     }
     {
         en = "House of the Immortals"
-        es = "Morada de los Inmortales"
+        es = "Casa de los Inmortales"
     }
     {
         en = "Hunger's Home"
@@ -16388,7 +16388,7 @@ local pairs = [
     }
     {
         en = "Castle of the Necrosavant"
-        es = "Castillo de Necrosavantes"
+        es = "Castillo del Necrosavante"
     }
     {
         en = "Nightmare Coven"
@@ -16404,11 +16404,11 @@ local pairs = [
     }
     {
         en = "Dark Shrouds Coven"
-        es = "Aquelarre de los Manto Oscuro"
+        es = "Aquelarre de los Mantos Oscuros"
     }
     {
         en = "Temple of the Undying"
-        es = "Templo de lo Inmortal"
+        es = "Templo de los Imperecederos"
     }
     {
         en = "Night Dwellers Temple"
@@ -16436,7 +16436,7 @@ local pairs = [
     }
     {
         en = "Ghoul's Crave"
-        es = "Festín del necrófago"
+        es = "Ansia del necrófago"
     }
     {
         en = "Forsaken Coven"
@@ -16456,7 +16456,7 @@ local pairs = [
     }
     {
         en = "Bloodguzzlers' Hideaway"
-        es = "Escondite de devoradores de sangre"
+        es = "Escondite de los Chupasangre"
     }
     {
         en = "Nocturnal Hunger's Crypt"
@@ -16480,7 +16480,7 @@ local pairs = [
     }
     {
         en = "Halls of the Undying"
-        es = "Salas de los Inmortales"
+        es = "Salones de los Imperecederos"
     }
     {
         en = "Circle of the Moonlight Army"
@@ -16500,7 +16500,7 @@ local pairs = [
     }
     {
         en = "Blood Spawn's Keep"
-        es = "Fortaleza de los Engendros de Sangre"
+        es = "Torreón de los Engendros de Sangre"
     }
     {
         en = "Burned Ruins"
@@ -16508,7 +16508,7 @@ local pairs = [
     }
     {
         en = "Overgrown Foundations"
-        es = "Cimientos abandonados"
+        es = "Cimientos cubiertos de vegetación"
     }
     {
         en = "Forgotten Ruins"
@@ -16520,7 +16520,7 @@ local pairs = [
     }
     {
         en = "Abandoned Walls"
-        es = "Muros abandonados"
+        es = "Murallas abandonadas"
     }
     {
         en = "Collapsed Dwellings"
@@ -16528,7 +16528,7 @@ local pairs = [
     }
     {
         en = "Shelter Between Ruins"
-        es = "Refugio en ruinas"
+        es = "Refugio entre ruinas"
     }
     {
         en = "Occupied Ruins"
@@ -16564,27 +16564,27 @@ local pairs = [
     }
     {
         en = "Ruins of Stormwatch Keep"
-        es = "Ruinas de la Fortaleza Stormwatch"
+        es = "Ruinas del Torreón de la Guardia de la Tormenta"
     }
     {
         en = "Ruins of Blackwatch Keep"
-        es = "Ruinas de la Fortaleza Blackwatch"
+        es = "Ruinas del Torreón de la Guardia Negra"
     }
     {
         en = "Ruins of Ironheart Keep"
-        es = "Ruinas de la Fortaleza Ironheart"
+        es = "Ruinas del Torreón Corazón de Hierro"
     }
     {
         en = "Ruins of Stalwart Keep"
-        es = "Ruinas de la Fortaleza Stalwart"
+        es = "Ruinas del Torreón Inquebrantable"
     }
     {
         en = "Stonefist Keep Ruins"
-        es = "Ruinas del Torreón Manopiedra"
+        es = "Ruinas del Torreón Mano de Piedra"
     }
     {
         en = "Guardian's Keep Ruins"
-        es = "Ruinas de la Fortaleza del Guardián"
+        es = "Ruinas del Torreón del Guardián"
     }
     {
         en = "Heimwart Castle Ruins"
@@ -16592,7 +16592,7 @@ local pairs = [
     }
     {
         en = "Ruins of Orcbane Keep"
-        es = "Ruinas de la Fortaleza Azote de Orcos"
+        es = "Ruinas del Torreón Azote de Orcos"
     }
     {
         en = "Tilted Stones"
@@ -16604,7 +16604,7 @@ local pairs = [
     }
     {
         en = "Worn-Down Fortress"
-        es = "Fortaleza derruida"
+        es = "Fortaleza desgastada"
     }
     {
         en = "Crumbled Fortifications"
@@ -16616,7 +16616,7 @@ local pairs = [
     }
     {
         en = "Mossy Ruins"
-        es = "Ruinas musgosas"
+        es = "Myth Drannor"
     }
     {
         en = "Crumbled Shelter"
@@ -16632,7 +16632,7 @@ local pairs = [
     }
     {
         en = "Overgrown Stronghold"
-        es = "Fuerte cubierto de musgo"
+        es = "Fortaleza cubierta de vegetación"
     }
     {
         en = "Bleached-Out Ruins"
@@ -16640,7 +16640,7 @@ local pairs = [
     }
     {
         en = "Long Lost Keep"
-        es = "Fortaleza perdida"
+        es = "Torreón perdido"
     }
     {
         en = "Deserted Towers"
@@ -16676,7 +16676,7 @@ local pairs = [
     }
     {
         en = "Fallen Keep"
-        es = "Fuerte caído"
+        es = "Torreón caído"
     }
     {
         en = "Shattered Stronghold"
@@ -16692,7 +16692,7 @@ local pairs = [
     }
     {
         en = "Burrowed Dwellings"
-        es = "Moradas excavadas"
+        es = "Viviendas excavadas"
     }
     {
         en = "Undone Fortress"
@@ -16700,7 +16700,7 @@ local pairs = [
     }
     {
         en = "Lost Palace"
-        es = "Palacio perdido"
+        es = "Menzoberranzán"
     }
     {
         en = "Swallowed Castle"
@@ -16708,11 +16708,11 @@ local pairs = [
     }
     {
         en = "Sunken Walls of the Markgraf"
-        es = "Murallas sumergidas del margrave"
+        es = "Murallas hundidas del margrave"
     }
     {
         en = "Vanished Keep"
-        es = "Fuerte desaparecido"
+        es = "Torreón desaparecido"
     }
     {
         en = "Cursed Citadel"
@@ -16724,7 +16724,7 @@ local pairs = [
     }
     {
         en = "Drowned Fortress"
-        es = "Fortaleza hundida"
+        es = "Fortaleza anegada"
     }
     {
         en = "Abandoned Castle Ruins"
@@ -16740,7 +16740,7 @@ local pairs = [
     }
     {
         en = "Sunken Stronghold"
-        es = "Bastión hundido"
+        es = "Fortaleza hundida"
     }
     {
         en = "Home of the Lost Throne"
@@ -16760,11 +16760,11 @@ local pairs = [
     }
     {
         en = "Fortress of the Sunken King"
-        es = "Fortaleza del Rey Sumergido"
+        es = "Fortaleza del Rey Hundido"
     }
     {
         en = "Burrowed Palace"
-        es = "Palacio enterrado"
+        es = "Palacio excavado"
     }
     {
         en = "Sunless Palace"
@@ -16772,7 +16772,7 @@ local pairs = [
     }
     {
         en = "City of Graves"
-        es = "Ciudadela de Tumbas"
+        es = "Ciudad de las Tumbas"
     }
     {
         en = "Dead City"
@@ -16792,19 +16792,19 @@ local pairs = [
     }
     {
         en = "Sunken City"
-        es = "Ciudad sumergida"
+        es = "Ciudad hundida"
     }
     {
         en = "Fortress Below"
-        es = "Fortaleza subterránea"
+        es = "Fortaleza de las Profundidades"
     }
     {
         en = "Sunless Keep"
-        es = "Castillo sin Sol"
+        es = "Torreón sin Sol"
     }
     {
         en = "Stronghold Under the Earth"
-        es = "Fortaleza bajo la Tierra"
+        es = "Fortaleza bajo la tierra"
     }
     {
         en = "Unreachable Citadel"
@@ -16812,7 +16812,7 @@ local pairs = [
     }
     {
         en = "Sunken Hold of the Dead"
-        es = "Fortaleza Sumergida de los Muertos"
+        es = "Fortaleza Hundida de los Muertos"
     }
     {
         en = "Doomed City"
@@ -16820,7 +16820,7 @@ local pairs = [
     }
     {
         en = "Buried Citadel"
-        es = "Castillo enterrado"
+        es = "Ciudadela enterrada"
     }
     {
         en = "Palace Under the Earth"
@@ -16852,11 +16852,11 @@ local pairs = [
     }
     {
         en = "Castle of the Mumbling Prince"
-        es = "Castillo del Príncipe Murmullo"
+        es = "Castillo del Príncipe Farfullante"
     }
     {
         en = "Burrowed Castle"
-        es = "Castillo socavado"
+        es = "Castillo excavado"
     }
     {
         en = "Stronghold of the Perished"
@@ -16880,7 +16880,7 @@ local pairs = [
     }
     {
         en = "Forgotten Homestead"
-        es = "Hogar olvidado"
+        es = "Finca olvidada"
     }
     {
         en = "Abandoned Shelter"
@@ -16888,7 +16888,7 @@ local pairs = [
     }
     {
         en = "Overgrown Homestead"
-        es = "Casa cubierta de vegetación"
+        es = "Finca cubierta de vegetación"
     }
     {
         en = "Ruined Farmhouse"
@@ -16904,7 +16904,7 @@ local pairs = [
     }
     {
         en = "Hermit's Cottage"
-        es = "Cabaña del ermitaño"
+        es = "Casa del ermitaño"
     }
     {
         en = "Backstabber's Hideout"
@@ -16932,7 +16932,7 @@ local pairs = [
     }
     {
         en = "Overgrown Woodcutter's Hut"
-        es = "Cabaña cubierta de vegetación"
+        es = "Cabaña de leñador cubierta de vegetación"
     }
     {
         en = "Deserted Shelter"
@@ -16948,7 +16948,7 @@ local pairs = [
     }
     {
         en = "Crumbled Homestead"
-        es = "Hogar derrumbado"
+        es = "Finca derrumbada"
     }
     {
         en = "Forgotten Hut"
@@ -16960,7 +16960,7 @@ local pairs = [
     }
     {
         en = "Mossy Shelter"
-        es = "Cabaña musgosa"
+        es = "Refugio musgoso"
     }
     {
         en = "Neglected Hut"
@@ -16968,7 +16968,7 @@ local pairs = [
     }
     {
         en = "Run-down Cottage"
-        es = "Casa en ruinas"
+        es = "Casa deteriorada"
     }
     {
         en = "Ruined Abode"
@@ -16976,15 +16976,15 @@ local pairs = [
     }
     {
         en = "Lost Cottage"
-        es = "Cabaña perdida"
+        es = "Casa perdida"
     }
     {
         en = "Occupied Hovel"
-        es = "Cabaña ocupada"
+        es = "Tugurio ocupado"
     }
     {
         en = "Collapsed Hovel"
-        es = "Cabaña colapsada"
+        es = "Tugurio colapsado"
     }
     {
         en = "Patched Abode"
@@ -17008,7 +17008,7 @@ local pairs = [
     }
     {
         en = "Brittle Hovel"
-        es = "Choza frágil"
+        es = "Tugurio frágil"
     }
     {
         en = "Rotten Lodge"
@@ -17024,7 +17024,7 @@ local pairs = [
     }
     {
         en = "Ramshackle Cottage"
-        es = "Refugio en mal estado"
+        es = "Casa destartalada"
     }
     {
         en = "Improvised Shelter"
@@ -17036,11 +17036,11 @@ local pairs = [
     }
     {
         en = "Hunter's Shack"
-        es = "Cabaña del Cazador"
+        es = "Choza del cazador"
     }
     {
         en = "Ramshackle Hiding-Place"
-        es = "Escondite improvisado oculto"
+        es = "Escondite destartalado"
     }
     {
         en = "Wobbly Shelter"
@@ -17068,7 +17068,7 @@ local pairs = [
     }
     {
         en = "Shattered Axes Camp"
-        es = "Campamento de los Hachas Destrozadas"
+        es = "Campamento de las Hachas Destrozadas"
     }
     {
         en = "Boar Skull Camp"
@@ -17088,7 +17088,7 @@ local pairs = [
     }
     {
         en = "Jagged Hatchet Den"
-        es = "Guarida de los Hachas Dentadas"
+        es = "Guarida de las Hachas Dentadas"
     }
     {
         en = "Skullcracker Camp"
@@ -17104,7 +17104,7 @@ local pairs = [
     }
     {
         en = "Bone Eaters Encampment"
-        es = "Cuchitril de Devoradores de Huesos"
+        es = "Campamento de los Devoradores de Huesos"
     }
     {
         en = "Man Eaters Den"
@@ -17116,7 +17116,7 @@ local pairs = [
     }
     {
         en = "Sawtooths Warcamp"
-        es = "Campamento de los Colmillos de Sierra"
+        es = "Campamento de guerra de los Colmillos de Sierra"
     }
     {
         en = "Plunderers Base"
@@ -17152,7 +17152,7 @@ local pairs = [
     }
     {
         en = "Warcamp of the Boar Tribe"
-        es = "Campamento de la Tribu del Jabalí"
+        es = "Campamento de guerra de la Tribu del Jabalí"
     }
     {
         en = "Black Hands Rallyfield"
@@ -17168,11 +17168,11 @@ local pairs = [
     }
     {
         en = "Gutripper's Camp"
-        es = "Campo de los Destripadores"
+        es = "Campamento de los Destripadores"
     }
     {
         en = "Thousand Teeth's Encampment"
-        es = "Campo de los Mil Dientes"
+        es = "Campamento de los Mil Dientes"
     }
     {
         en = "Slave Drivers' Camp"
@@ -17216,7 +17216,7 @@ local pairs = [
     }
     {
         en = "Pointy Sticks Camp"
-        es = "Campamento de los Bastones Puntiagudos"
+        es = "Campamento de los Palos Puntiagudos"
     }
     {
         en = "Ambushers' Hideout"
@@ -17224,7 +17224,7 @@ local pairs = [
     }
     {
         en = "Grinding Knife Camp"
-        es = "Campo de los Cuchillos de Moler"
+        es = "Campamento de los Cuchillos de Moler"
     }
     {
         en = "Camp of a Thousand Arrows"
@@ -17244,7 +17244,7 @@ local pairs = [
     }
     {
         en = "Lair of the snickering Evil"
-        es = "Guarida de los Taimados Malévolos"
+        es = "Guarida del Mal Burlón"
     }
     {
         en = "Sharpshooters' Camp"
@@ -17252,7 +17252,7 @@ local pairs = [
     }
     {
         en = "Flying Knives Camp"
-        es = "Campo de los Cuchillos Voladores"
+        es = "Campamento de los Cuchillos Voladores"
     }
     {
         en = "Snickering Death's Camp"
@@ -17284,7 +17284,7 @@ local pairs = [
     }
     {
         en = "Slave Driver's Base"
-        es = "Base de controladores de esclavos"
+        es = "Base de los Negreros"
     }
     {
         en = "Shaman's Warcamp"
@@ -17304,7 +17304,7 @@ local pairs = [
     }
     {
         en = "Retreat of the Puppet Master"
-        es = "Refugio del Titiritero"
+        es = "Retiro del Titiritero"
     }
     {
         en = "Hideout of the Necromancer"
@@ -17316,7 +17316,7 @@ local pairs = [
     }
     {
         en = "Lair of the Outcast"
-        es = "Guarida del Desterrado"
+        es = "Guarida del Marginado"
     }
     {
         en = "Den of the Undead"
@@ -17344,7 +17344,7 @@ local pairs = [
     }
     {
         en = "Sinner's Den"
-        es = "Cueva del Pecador"
+        es = "Guarida del Pecador"
     }
     {
         en = "Heathen's Secret Circle"
@@ -17352,7 +17352,7 @@ local pairs = [
     }
     {
         en = "Vile Man's Retreat"
-        es = "Retiro del Hombre Impío"
+        es = "Retiro del Hombre Vil"
     }
     {
         en = "Lair of Forbidden Rituals"
@@ -17364,7 +17364,7 @@ local pairs = [
     }
     {
         en = "Refuge of the Outcast"
-        es = "Refugio del Desterrado"
+        es = "Refugio del Marginado"
     }
     {
         en = "Lair of the Unspeakable"
@@ -17388,7 +17388,7 @@ local pairs = [
     }
     {
         en = "Secret Halls of the Occultist"
-        es = "Salas secretas del Ocultista"
+        es = "Salones secretos del Ocultista"
     }
     {
         en = "Forbidden Art's Sanctum"
@@ -17420,7 +17420,7 @@ local pairs = [
     }
     {
         en = "Church of the Dark Priest"
-        es = "Templo del Sacerdote Oscuro"
+        es = "Iglesia del Sacerdote Oscuro"
     }
     {
         en = "Temple of the Unspeakable"
@@ -17444,11 +17444,11 @@ local pairs = [
     }
     {
         en = "Secret Chambers of Insanity"
-        es = "Salas Secretas de la Locura"
+        es = "Cámaras Secretas de la Locura"
     }
     {
         en = "Retreat of the Harvester"
-        es = "Refugio del Segador"
+        es = "Retiro del Segador"
     }
     {
         en = "Animator's Hideout"
@@ -17460,7 +17460,7 @@ local pairs = [
     }
     {
         en = "Overgrown Tombstones"
-        es = "Tumbas cubiertas de vegetación"
+        es = "Lápidas cubiertas de vegetación"
     }
     {
         en = "Remote Graveyard"
@@ -17480,15 +17480,15 @@ local pairs = [
     }
     {
         en = "Old Graveyard"
-        es = "Cementerio olvidado"
+        es = "Cementerio viejo"
     }
     {
         en = "Ancient Cemetery"
-        es = "Tumbas hundidas"
+        es = "Cementerio antiguo"
     }
     {
         en = "Sunken Tombstones"
-        es = "Cementerio de los pobres"
+        es = "Lápidas hundidas"
     }
     {
         en = "Cemetery of the Poor"
@@ -17500,7 +17500,7 @@ local pairs = [
     }
     {
         en = "Rattling Bones Graveyard"
-        es = "Cementerio de los Antepasados"
+        es = "Cementerio de los Huesos Traqueteantes"
     }
     {
         en = "Abandoned Graveyard"
@@ -17508,7 +17508,7 @@ local pairs = [
     }
     {
         en = "Ancient Graveyard"
-        es = "Cementerio volteado"
+        es = "Camposanto antiguo"
     }
     {
         en = "Forbidden Graveyard"
@@ -17520,7 +17520,7 @@ local pairs = [
     }
     {
         en = "Abandoned Burial Site"
-        es = "Terreno de entierro abandonado"
+        es = "Sitio de entierro abandonado"
     }
     {
         en = "Crumbling Tombstones"
@@ -17536,7 +17536,7 @@ local pairs = [
     }
     {
         en = "Hope's Last Rest"
-        es = "Último Reposo de la Esperanza"
+        es = "Último Descanso de la Esperanza"
     }
     {
         en = "Ancestral Cemetery"
@@ -17556,15 +17556,15 @@ local pairs = [
     }
     {
         en = "Mossy Gravestones"
-        es = "Tumbas cubiertas de musgo"
+        es = "Lápidas cubiertas de musgo"
     }
     {
         en = "Last Rest of the Forgotten"
-        es = "Último Reposo de los Olvidados"
+        es = "Último Descanso de los Olvidados"
     }
     {
         en = "Abandoned Burial Mounds"
-        es = "Montículos de entierro abandonados"
+        es = "Túmulos abandonados"
     }
     {
         en = "Forefather's Graves"
@@ -17572,23 +17572,23 @@ local pairs = [
     }
     {
         en = "Ancestor's Last Rest"
-        es = "Último Reposo del Ancestro"
+        es = "Último Descanso del Ancestro"
     }
     {
         en = "Cemetery of Old"
-        es = "Cementerio antiguo"
+        es = "Cementerio de antaño"
     }
     {
         en = "Tilted Gravemarkers"
-        es = "Tumbas inclinadas"
+        es = "Lápidas inclinadas"
     }
     {
         en = "Screaming Stones Graveyard"
-        es = "Tumbas chillonas"
+        es = "Cementerio de las Piedras Gritonas"
     }
     {
         en = "Remote Gravestones"
-        es = "Cementerio remoto"
+        es = "Lápidas distantes"
     }
     {
         en = "Cemetery of the Elder"
@@ -17632,7 +17632,7 @@ local pairs = [
     }
     {
         en = "Jagged Fangs Hideout"
-        es = "Escondite de los Kolmillos Punteagudoz"
+        es = "Escondite de los Kolmilloz Puntiagudoz"
     }
     {
         en = "Cave of the Ilskah Ghul"
@@ -17708,7 +17708,7 @@ local pairs = [
     }
     {
         en = "Barbarian Tents"
-        es = "Toldos bárbaros"
+        es = "Tiendas bárbaras"
     }
     {
         en = "Free People's Hideout"
@@ -17716,11 +17716,11 @@ local pairs = [
     }
     {
         en = "Barbarian Fur Huts"
-        es = "Cabañas de pieles bárbaras"
+        es = "Cabañas bárbaras de pieles"
     }
     {
         en = "Makeshift Fur Huts"
-        es = "Cabañas de pieles provisionales"
+        es = "Cabañas provisionales de pieles"
     }
     {
         en = "Thrall's Shelter"
@@ -17736,7 +17736,7 @@ local pairs = [
     }
     {
         en = "Raider's Tents"
-        es = "Tiendas de saqueadores"
+        es = "Tiendas de asaltantes"
     }
     {
         en = "Tribal Jurts"
@@ -17752,7 +17752,7 @@ local pairs = [
     }
     {
         en = "Nordic Huts"
-        es = "Chozas nordicas"
+        es = "Cabañas nórdicas"
     }
     {
         en = "Outpost of the Tribes"
@@ -17764,7 +17764,7 @@ local pairs = [
     }
     {
         en = "Barbarian Outpost"
-        es = "Puesto bárbaro"
+        es = "Puesto avanzado bárbaro"
     }
     {
         en = "Barbarian Encampment"
@@ -17776,15 +17776,15 @@ local pairs = [
     }
     {
         en = "Reavers' Basecamp"
-        es = "Campamento base de Saqueadores"
+        es = "Campamento base de Incursores"
     }
     {
         en = "Pillagers' Jurts"
-        es = "Yurtas de saqueadores"
+        es = "Yurtas de rapiñadores"
     }
     {
         en = "Slavetaker's Rest"
-        es = "Descanso de tomadores de esclavos"
+        es = "Descanso del cazador de esclavos"
     }
     {
         en = "Northern Hideout"
@@ -17808,7 +17808,7 @@ local pairs = [
     }
     {
         en = "Clansmen's Retreat"
-        es = "Retirada de los clanes"
+        es = "Retiro de los hombres del clan"
     }
     {
         en = "Jurts of the Ancestors"
@@ -17816,7 +17816,7 @@ local pairs = [
     }
     {
         en = "Camp of the Slavetakers"
-        es = "Campamento de tomadores de esclavos"
+        es = "Campamento de los cazadores de esclavos"
     }
     {
         en = "Champion's Rallyfield"
@@ -17872,7 +17872,7 @@ local pairs = [
     }
     {
         en = "Fortified Barbarian Huts"
-        es = "Chozas Bárbaras Fortificadas"
+        es = "Cabañas bárbaras fortificadas"
     }
     {
         en = "Nomad Huts"
@@ -17912,7 +17912,7 @@ local pairs = [
     }
     {
         en = "Nomad Encampment"
-        es = "Asentamiento nómada"
+        es = "Campamento de nómadas"
     }
     {
         en = "Freemen Tents"
@@ -17924,7 +17924,7 @@ local pairs = [
     }
     {
         en = "Crimson Tents"
-        es = "Tiendas carmesies"
+        es = "Tiendas carmesíes"
     }
     {
         en = "Blazing Shelter"
@@ -17952,7 +17952,7 @@ local pairs = [
     }
     {
         en = "Makeshift Camp"
-        es = "Campamento improvisado"
+        es = "Campamento provisional"
     }
     {
         en = "Travelers Camp"
@@ -17960,7 +17960,7 @@ local pairs = [
     }
     {
         en = "Desert Shelter"
-        es = "Refugio desertico"
+        es = "Refugio desértico"
     }
     {
         en = "Shelter Inbetween Rocks"
@@ -17968,7 +17968,7 @@ local pairs = [
     }
     {
         en = "Desert Raiders Outpost"
-        es = "Puesto avanzado de bandidos del desierto"
+        es = "Puesto avanzado de asaltantes del desierto"
     }
     {
         en = "Free Roamers Camp"
@@ -17976,7 +17976,7 @@ local pairs = [
     }
     {
         en = "Nomad Retreat"
-        es = "Retirada Nómada"
+        es = "Retiro nómada"
     }
     {
         en = "Desert Scourge Camp"
@@ -17984,7 +17984,7 @@ local pairs = [
     }
     {
         en = "Raiders Retreat"
-        es = "Retirada de Asaltantes"
+        es = "Retiro de Asaltantes"
     }
     {
         en = "Red Sands Camp"
@@ -17992,11 +17992,11 @@ local pairs = [
     }
     {
         en = "Burning Sands Camp"
-        es = "Campamento de las Arenas ardientes"
+        es = "Campamento de las Arenas Ardientes"
     }
     {
         en = "White Sands Camp"
-        es = "Campamento de las Arenas blancas"
+        es = "Campamento de las Arenas Blancas"
     }
     {
         en = "Free-Souls Encampment"
@@ -18008,7 +18008,7 @@ local pairs = [
     }
     {
         en = "Shifting Sands Hideout"
-        es = "Escondite de las Arenas movedizas"
+        es = "Escondite de las Arenas Movedizas"
     }
     {
         en = "Desert Raiders Encampment"
@@ -18048,7 +18048,7 @@ local pairs = [
     }
     {
         en = "Dead Oasis Camp"
-        es = "Campamento Oasis Muerto"
+        es = "Campamento del Oasis Muerto"
     }
     {
         en = "City of Golden Sands"
@@ -18108,7 +18108,7 @@ local pairs = [
     }
     {
         en = "Debris of Ancient Times"
-        es = "Restos de la tiempos antiguos"
+        es = "Escombros de tiempos antiguos"
     }
     {
         en = "Devoured Settlement"
@@ -18116,11 +18116,11 @@ local pairs = [
     }
     {
         en = "Buried Walls"
-        es = "Murallas quemadas"
+        es = "Murallas enterradas"
     }
     {
         en = "Walls Under the Sands"
-        es = "Muros bajo las arenas"
+        es = "Murallas bajo las arenas"
     }
     {
         en = "Za-Zaruk"
@@ -19408,10 +19408,10 @@ local pairs = [
     // en = "worldmapregion"
     // en = "regiontype"
     {
-        // Hunted beasts around + this.World.State.getRegion(...).Name; la region llega en ingles y tiene par propio, de ahi el :t
+        // Hunted beasts around + this.World.State.getRegion(...).Name; la region llega ya en castellano (caso 42 de los hooks), de ahi que no lleve :t
         mode = "pattern"
         en = "Hunted beasts around <region:str>"
-        es = "Cazó bestias por <region:t>"
+        es = "Cazó bestias por <region>"
     }
     // FILE: scripts\contracts\contracts\break_greenskin_siege_contract.nut
     {
@@ -31768,15 +31768,15 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_coast_fort.nut
     {
         en = "Seefeste"
-        es = "Seefeste"
+        es = "Roca Caster"
     }
     {
         en = "Kleifeste"
-        es = "Kleifeste"
+        es = "Nunca Invierno"
     }
     {
         en = "Otterfeste"
-        es = "Torreón del Kraken"
+        es = "Puerta de Baldur"
     }
     {
         en = "Blankenfeste"
@@ -31792,63 +31792,63 @@ local pairs = [
     }
     {
         en = "Krakenfeste"
-        es = "Krakenfeste"
+        es = "Fuerte del Kraken"
     }
     {
         en = "Sandfeste"
-        es = "Diez Torres"
+        es = "Fuerte de Arena"
     }
     {
         en = "Aalfeste"
-        es = "Aalfeste"
+        es = "Fuerte de la Anguila"
     }
     {
         en = "Sturmfeste"
-        es = "Sturmfeste"
+        es = "Fuerte de la Tormenta"
     }
     {
         en = "Wesefeste"
-        es = "Wesefeste"
+        es = "Fuerte del Weser"
     }
     {
         en = "Dunenfeste"
-        es = "Dunenfeste"
+        es = "Fuerte de las Dunas"
     }
     {
         en = "Seemarkfeste"
-        es = "Seemarkfeste"
+        es = "Fuerte de Marcamar"
     }
     {
         en = "Seelandfeste"
-        es = "Seelandfeste"
+        es = "Fuerte de Selandia"
     }
     {
         en = "Regenfeste"
-        es = "Regenfeste"
+        es = "Fuerte de la Lluvia"
     }
     {
         en = "Segelfeste"
-        es = "Segelfeste"
+        es = "Fuerte de la Vela"
     }
     {
         en = "Kranichfeste"
-        es = "Kranichfeste"
+        es = "Fuerte de la Grulla"
     }
     {
         en = "Schwalbenfeste"
-        es = "Tres Torres"
+        es = "Fuerte de la Golondrina"
     }
     {
         en = "Dunstfeste"
-        es = "Dunstfeste"
+        es = "Fuerte de la Bruma"
     }
     {
         en = "Windfeste"
-        es = "Windfeste"
+        es = "Fuerte del Viento"
     }
     {
         en = "Reedfeste"
-        es = "Reedfeste"
+        es = "Fuerte del Cañaveral"
     }
     {
         en = "This massive citadel guards a warport and the surrounding trade routes"
@@ -31861,51 +31861,51 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_farm_fort.nut
     {
         en = "Haselfeste"
-        es = "Bastión Tormentoso"
+        es = "Fortaleza del Avellano"
     }
     {
         en = "Reiherfeste"
-        es = "Reiherfeste"
+        es = "Fortaleza de la Garza"
     }
     {
         en = "Wehrfeste"
-        es = "Wehrfeste"
+        es = "Fuerte Vigía"
     }
     {
         en = "Konigsfeste"
-        es = "Konigsfeste"
+        es = "Fuerterrey"
     }
     {
         en = "Grafenschanze"
-        es = "Grafenschanze"
+        es = "Baluarte del Conde"
     }
     {
         en = "Weissenfeste"
-        es = "Weissenfeste"
+        es = "Fortaleza Blanca"
     }
     {
         en = "Koppelfeste"
-        es = "Lanza del Halcón"
+        es = "Fortaleza del Redil"
     }
     {
         en = "Weidefeste"
-        es = "Castillo Trigodorado"
+        es = "Fortaleza del Pastizal"
     }
     {
         en = "Auenfeste"
-        es = "Auenfeste"
+        es = "Fuerte de la Vega"
     }
     {
         en = "Gardefeste"
-        es = "Gardefeste"
+        es = "Fortaleza de la Guardia"
     }
     {
         en = "Kroonsfeste"
-        es = "Bastión Piedraverde"
+        es = "Fortaleza de la Corona"
     }
     {
         en = "Grunfeste"
-        es = "Roca Caster"
+        es = "Fuerte Verde"
     }
     {
         en = "Hoberfeste"
@@ -31917,15 +31917,15 @@ local pairs = [
     }
     {
         en = "Freilandfeste"
-        es = "Freilandfeste"
+        es = "Fuerte de Tierralibre"
     }
     {
         en = "Lowenschanze"
-        es = "Lowenschanze"
+        es = "Baluarte del León"
     }
     {
         en = "Weidenfeste"
-        es = "Weidenfeste"
+        es = "Fortaleza del Sauce"
     }
     {
         en = "Feldfeste"
@@ -31933,19 +31933,19 @@ local pairs = [
     }
     {
         en = "Aulenfeste"
-        es = "Aulenfeste"
+        es = "Fortaleza de las Vegas"
     }
     {
         en = "Gerstenfeste"
-        es = "Gerstenfeste"
+        es = "Fortaleza de la Cebada"
     }
     {
         en = "Brunnenfeste"
-        es = "Brunnenfeste"
+        es = "Fortaleza de la Fuente"
     }
     {
         en = "Tauschanze"
-        es = "Tauschanze"
+        es = "Baluarte del Rocío"
     }
     {
         en = "A massive citadel towering over the open plains"
@@ -31958,55 +31958,55 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_farming_village.nut
     {
         en = "Weidemark"
-        es = "Weidemark"
+        es = "Marca del Pastizal"
     }
     {
         en = "Hemmelmark"
-        es = "Hemmelmark"
+        es = "Marca de Hemmel"
     }
     {
         en = "Kochenland"
-        es = "Kochenland"
+        es = "Tierra de Kochen"
     }
     {
         en = "Altenstadt"
-        es = "Altenstadt"
+        es = "Villa Vieja"
     }
     {
         en = "Schnellmark"
-        es = "Ladera"
+        es = "Marca Presta"
     }
     {
         en = "Freistadt"
-        es = "Valle"
+        es = "Villafranca"
     }
     {
         en = "Weissenstadt"
-        es = "Weissenstadt"
+        es = "Villablanca"
     }
     {
         en = "Muhlstadt"
-        es = "Muhlstadt"
+        es = "Villamolino"
     }
     {
         en = "Grunmark"
-        es = "Grunmark"
+        es = "Marca Verde"
     }
     {
         en = "Ivenstadt"
-        es = "Ivenstadt"
+        es = "Villa de Iven"
     }
     {
         en = "Grafenstadt"
-        es = "Ciudad Condal"
+        es = "Villaconde"
     }
     {
         en = "Konigsland"
-        es = "Sarleon"
+        es = "Tierra del Rey"
     }
     {
         en = "Dreigrafen"
-        es = "Dreigrafen"
+        es = "Tres Condes"
     }
     {
         en = "Koppelstadt"
@@ -32014,51 +32014,51 @@ local pairs = [
     }
     {
         en = "Varelmark"
-        es = "Osbrook"
+        es = "Marca de Varel"
     }
     {
         en = "Hageland"
-        es = "Mannshire"
+        es = "Setales"
     }
     {
         en = "Wiesenmark"
-        es = "Wiesenmark"
+        es = "Marca del Prado"
     }
     {
         en = "Heuland"
-        es = "Heuland"
+        es = "Henares"
     }
     {
         en = "Auenmark"
-        es = "Auenmark"
+        es = "Marca de la Vega"
     }
     {
         en = "Kornstadt"
-        es = "Kornstadt"
+        es = "Trigueros"
     }
     {
         en = "Konigsheim"
-        es = "Konigsheim"
+        es = "Villarrey"
     }
     {
         en = "Wedelmark"
-        es = "Wedelmark"
+        es = "Marca de Wedel"
     }
     {
         en = "Kammersmark"
-        es = "Kammersmark"
+        es = "Marca del Tesoro"
     }
     {
         en = "Adelsland"
-        es = "Adelsland"
+        es = "Tierra Hidalga"
     }
     {
         en = "Heldenland"
-        es = "Heldenland"
+        es = "Tierra de Héroes"
     }
     {
         en = "Dinkelsmark"
-        es = "Dinkelsmark"
+        es = "Marca de la Espelta"
     }
     {
         en = "Schwanstadt"
@@ -32066,7 +32066,7 @@ local pairs = [
     }
     {
         en = "Grunhain"
-        es = "Grunhain"
+        es = "Arboleda Verde"
     }
     {
         en = "A large city thriving on trade and agriculture"
@@ -32079,19 +32079,19 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_fishing_village.nut
     {
         en = "Seestadt"
-        es = "Seestadt"
+        es = "Antigua"
     }
     {
         en = "Wikstadt"
-        es = "Avendor"
+        es = "Aguas Profundas"
     }
     {
         en = "Konigshaven"
-        es = "Konigshaven"
+        es = "Puerto Real"
     }
     {
         en = "Grafenhaven"
-        es = "Grafenhaven"
+        es = "Puerto del Conde"
     }
     {
         en = "Holnisland"
@@ -32099,15 +32099,15 @@ local pairs = [
     }
     {
         en = "Nieweland"
-        es = "Buenabasto"
+        es = "Tierra Nueva"
     }
     {
         en = "Kampstadt"
-        es = "Valle Oscuro"
+        es = "Villa del Cercado"
     }
     {
         en = "Krakenland"
-        es = "Bryn"
+        es = "Tierra del Kraken"
     }
     {
         en = "Blankenstadt"
@@ -32115,39 +32115,39 @@ local pairs = [
     }
     {
         en = "Harkenstadt"
-        es = "Harkenstadt"
+        es = "Puebla Harken"
     }
     {
         en = "Tiefenstadt"
-        es = "Valonbray"
+        es = "Villa Honda"
     }
     {
         en = "Kobmanhaven"
-        es = "Puerto Gaviota"
+        es = "Puerto del Mercader"
     }
     {
         en = "Grotenhaven"
-        es = "Grotenhaven"
+        es = "Puerto Grande"
     }
     {
         en = "Konigswasser"
-        es = "Konigswasser"
+        es = "Aguarreal"
     }
     {
         en = "Konigsmunde"
-        es = "Konigsmunde"
+        es = "Boca del Rey"
     }
     {
         en = "Kronenkoog"
-        es = "Kronenkoog"
+        es = "Ribera de la Corona"
     }
     {
         en = "Steinkai"
-        es = "El Faro"
+        es = "Muelle de la Roca"
     }
     {
         en = "Deichstadt"
-        es = "Deichstadt"
+        es = "Villa del Dique"
     }
     {
         en = "A large coastal city and trading hub"
@@ -32161,111 +32161,111 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_forest_fort.nut
     {
         en = "Waldfeste"
-        es = "Waldfeste"
+        es = "Loc Muinne"
     }
     {
         en = "Tannenfeste"
-        es = "Tannenfeste"
+        es = "Luna Plateada"
     }
     {
         en = "Schlangenfeste"
-        es = "Bastión Piedragris"
+        es = "Fortaleza de la Serpiente"
     }
     {
         en = "Hainfeste"
-        es = "Hainfeste"
+        es = "Fortaleza de la Arboleda"
     }
     {
         en = "Dunkelfeste"
-        es = "Dunkelfeste"
+        es = "Fuerte Oscuro"
     }
     {
         en = "Finsterfeste"
-        es = "Finsterfeste"
+        es = "Fuerte Tenebroso"
     }
     {
         en = "Eichfeste"
-        es = "Eichfeste"
+        es = "Fortaleza del Roble"
     }
     {
         en = "Eibenfeste"
-        es = "Pinoastillado"
+        es = "Fortaleza del Tejo"
     }
     {
         en = "Waidfeste"
-        es = "Ramanegra"
+        es = "Fortaleza de la Caza"
     }
     {
         en = "Eulenfeste"
-        es = "Forestfort"
+        es = "Fortaleza del Búho"
     }
     {
         en = "Eberfeste"
-        es = "Eberfeste"
+        es = "Fortaleza del Jabalí"
     }
     {
         en = "Fahrnfeste"
-        es = "Robleferreo"
+        es = "Fortaleza del Helechal"
     }
     {
         en = "Moosfeste"
-        es = "Moosfeste"
+        es = "Fortaleza del Musgo"
     }
     {
         en = "Forstfeste"
-        es = "Forstfeste"
+        es = "Fortaleza de la Floresta"
     }
     {
         en = "Dusterfeste"
-        es = "Dusterfeste"
+        es = "Fuerte Lóbrego"
     }
     {
         en = "Dornfeste"
-        es = "Dornfeste"
+        es = "Fortaleza del Espino"
     }
     {
         en = "Falkenfeste"
-        es = "Bastión Roble real"
+        es = "Fortaleza del Halcón"
     }
     {
         en = "Salamanderfeste"
-        es = "Nido del Grifo"
+        es = "Fortaleza de la Salamandra"
     }
     {
         en = "Lerchenfeste"
-        es = "Lerchenfeste"
+        es = "Fortaleza de la Alondra"
     }
     {
         en = "Laubfeste"
-        es = "Laubfeste"
+        es = "Fortaleza del Follaje"
     }
     {
         en = "Erlenfeste"
-        es = "Erlenfeste"
+        es = "Fuerte del Aliso"
     }
     {
         en = "Nadelfeste"
-        es = "Nadelfeste"
+        es = "Fortaleza del Pinar"
     }
     {
         en = "Waldachfeste"
-        es = "Waldachfeste"
+        es = "Fortaleza de Valdearroyo"
     }
     {
         en = "Hornfeste"
-        es = "Hornfeste"
+        es = "Fuerte del Cuerno"
     }
     {
         en = "Klarbachfeste"
-        es = "Klarbachfeste"
+        es = "Fuerte de Aguaclara"
     }
     {
         en = "Eisbachfeste"
-        es = "Eisbachfeste"
+        es = "Fuerte de Aguahelada"
     }
     {
         en = "Fichtenwall"
-        es = "Fichtenwall"
+        es = "Muralla de los Abetos"
     }
     {
         en = "A citadel towering high over the surrounding woods"
@@ -32278,31 +32278,31 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_lumber_village.nut
     {
         en = "Holzmark"
-        es = "Holzmark"
+        es = "Marca del Monte"
     }
     {
         en = "Dustermark"
-        es = "Dustermark"
+        es = "Marca Lóbrega"
     }
     {
         en = "Tannstadt"
-        es = "Tannstadt"
+        es = "Villa del Abeto"
     }
     {
         en = "Waldland"
-        es = "Bosque Umbrío"
+        es = "Tierra Boscosa"
     }
     {
         en = "Finsterstadt"
-        es = "Finsterstadt"
+        es = "Villa Tenebrosa"
     }
     {
         en = "Dunkelmark"
-        es = "Dunkelmark"
+        es = "Marca Oscura"
     }
     {
         en = "Eichstadt"
-        es = "Villajabali"
+        es = "Robledo"
     }
     {
         en = "Eulenmark"
@@ -32310,59 +32310,59 @@ local pairs = [
     }
     {
         en = "Waidstadt"
-        es = "Waidstadt"
+        es = "Villa de la Caza"
     }
     {
         en = "Fahrnstadt"
-        es = "Laria"
+        es = "Helechal"
     }
     {
         en = "Hirschmark"
-        es = "Hirschmark"
+        es = "Marca del Ciervo"
     }
     {
         en = "Weilerstadt"
-        es = "Weilerstadt"
+        es = "Villa Weiler"
     }
     {
         en = "Forstland"
-        es = "Forstland"
+        es = "Tierra de Florestas"
     }
     {
         en = "Tiefenmark"
-        es = "Tiefenmark"
+        es = "Marca Honda"
     }
     {
         en = "Grunstadt"
-        es = "Grunstadt"
+        es = "Villaverde"
     }
     {
         en = "Thalstadt"
-        es = "Thalstadt"
+        es = "Villavalle"
     }
     {
         en = "Grunland"
-        es = "Grunland"
+        es = "Tierra Verde"
     }
     {
         en = "Waldmark"
-        es = "Waldmark"
+        es = "Marca del Bosque"
     }
     {
         en = "Finstermark"
-        es = "Finstermark"
+        es = "Marca Tenebrosa"
     }
     {
         en = "Konigswald"
-        es = "Konigswald"
+        es = "Bosque Real"
     }
     {
         en = "Grafenhain"
-        es = "Grafenhain"
+        es = "Arboleda del Conde"
     }
     {
         en = "Konigshain"
-        es = "Konigshain"
+        es = "Arboleda Real"
     }
     {
         en = "A prospering city with its main produce being valuable timber and venison"
@@ -32376,43 +32376,43 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_mountains_fort.nut
     {
         en = "Hohenfeste"
-        es = "Hohenfeste"
+        es = "Vergen"
     }
     {
         en = "Wolfenfeste"
-        es = "Wolfenfeste"
+        es = "Mithril Hall"
     }
     {
         en = "Wolfenstein"
-        es = "Wolfenstein"
+        es = "Peñalobos"
     }
     {
         en = "Felsfeste"
-        es = "Felsfeste"
+        es = "Fortaleza de la Peña"
     }
     {
         en = "Eisenfeste"
-        es = "Eisenfeste"
+        es = "Fortaleza de Hierro"
     }
     {
         en = "Grollfeste"
-        es = "Bastión Rencor"
+        es = "Fortaleza del Rencor"
     }
     {
         en = "Grubenfeste"
-        es = "Grubenfeste"
+        es = "Fortaleza de la Mina"
     }
     {
         en = "Donnerfeste"
-        es = "Manomartillo"
+        es = "Fortaleza del Trueno"
     }
     {
         en = "Erzfeste"
-        es = "Cuernavilla"
+        es = "Fortaleza de la Mena"
     }
     {
         en = "Gronenfeste"
-        es = "Colinahierro"
+        es = "Fortaleza del Verdor"
     }
     {
         en = "Sattelfeste"
@@ -32420,79 +32420,79 @@ local pairs = [
     }
     {
         en = "Kammfeste"
-        es = "Puerta del Caballero"
+        es = "Fortaleza de la Cresta"
     }
     {
         en = "Turmfeste"
-        es = "Turmfeste"
+        es = "Fuerte de la Torre"
     }
     {
         en = "Adlerfeste"
-        es = "Ciudadela Mano de Hierro"
+        es = "Fortaleza del Águila"
     }
     {
         en = "Brunwald"
-        es = "Brunwald"
+        es = "Fuerte de Montepardo"
     }
     {
         en = "Heldenfeste"
-        es = "Heldenfeste"
+        es = "Fortaleza de los Héroes"
     }
     {
         en = "Wurmfeste"
-        es = "Wurmfeste"
+        es = "Fuerte de la Sierpe"
     }
     {
         en = "Schwertfeste"
-        es = "Schwertfeste"
+        es = "Fuerte de la Espada"
     }
     {
         en = "Lanzenfeste"
-        es = "Lanzenfeste"
+        es = "Fuerte de la Lanza"
     }
     {
         en = "Falkenstein"
-        es = "Falkenstein"
+        es = "Peña del Halcón"
     }
     {
         en = "Flechtenstein"
-        es = "Flechtenstein"
+        es = "Peña del Liquen"
     }
     {
         en = "Himmelsfeste"
-        es = "Himmelsfeste"
+        es = "Fortaleza del Cielo"
     }
     {
         en = "Steinturm"
-        es = "Steinturm"
+        es = "Torre de la Peña"
     }
     {
         en = "Gipfelfeste"
-        es = "Gipfelfeste"
+        es = "Fortaleza de la Cumbre"
     }
     {
         en = "Zugfeste"
-        es = "Zugfeste"
+        es = "Fortaleza de Zug"
     }
     {
         en = "Granitfeste"
-        es = "Granitfeste"
+        es = "Fortaleza de Granito"
     }
     {
         en = "Zinnenfeste"
-        es = "Zinnenfeste"
+        es = "Fortaleza de las Almenas"
     }
     {
         en = "Wackersfeste"
-        es = "Wackersfeste"
+        es = "Fortaleza de Wacker"
     }
     {
         en = "Fernsichtfeste"
-        es = "Fernsichtfeste"
+        es = "Fortaleza de Miralejos"
     }
     {
         en = "Wildbergfeste"
-        es = "Wildbergfeste"
+        es = "Fortaleza de Montebravo"
     }
     {
         en = "A massive stone citadel built into the steep mountains"
@@ -32505,39 +32505,39 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_snow_fort.nut
     {
         en = "Tonderborg"
-        es = "Tonderborg"
+        es = "Fortaleza de Tonder"
     }
     {
         en = "Hornborg"
-        es = "Hornborg"
+        es = "Fortaleza del Cuerno"
     }
     {
         en = "Grimborg"
-        es = "Grimborg"
+        es = "Fortaleza Sombría"
     }
     {
         en = "Helleborg"
-        es = "Helleborg"
+        es = "Fortaleza de la Laja"
     }
     {
         en = "Kalkborg"
-        es = "Kalkborg"
+        es = "Fortaleza de la Cal"
     }
     {
         en = "Lydersborg"
-        es = "Lydersborg"
+        es = "Fortaleza de Lyder"
     }
     {
         en = "Homsborg"
-        es = "Homsborg"
+        es = "Fortaleza de Homs"
     }
     {
         en = "Sommersborg"
-        es = "Sommersborg"
+        es = "Fortaleza del Verano"
     }
     {
         en = "Brammingborg"
-        es = "Brammingborg"
+        es = "Fortaleza de Bramming"
     }
     {
         en = "Vardeborg"
@@ -32545,43 +32545,43 @@ local pairs = [
     }
     {
         en = "Norreborg"
-        es = "Norreborg"
+        es = "Fortaleza del Norte"
     }
     {
         en = "Birkeborg"
-        es = "Birkeborg"
+        es = "Fortaleza del Abedul"
     }
     {
         en = "Donnersborg"
-        es = "Donnersborg"
+        es = "Fortaleza del Rayo"
     }
     {
         en = "Tangborg"
-        es = "Ciudadela del Jarl"
+        es = "Fortaleza del Alga"
     }
     {
         en = "Helvikborg"
-        es = "Helvikborg"
+        es = "Fortaleza de Bahía Infernal"
     }
     {
         en = "Torvaborg"
-        es = "Fuerte Turbera"
+        es = "Fortaleza de Torva"
     }
     {
         en = "Skjoldborg"
-        es = "Skjoldborg"
+        es = "Fortaleza del Escudo"
     }
     {
         en = "Eidsvikborg"
-        es = "Eidsvikborg"
+        es = "Fortaleza de Bahía Jurada"
     }
     {
         en = "Halsborg"
-        es = "Fuerte del Collado"
+        es = "Fortaleza del Collado"
     }
     {
         en = "Gerborg"
-        es = "Fuerte de la Lanza"
+        es = "Fortaleza de la Lanza"
     }
     {
         en = "Gunnborg"
@@ -32589,7 +32589,7 @@ local pairs = [
     }
     {
         en = "Asenborg"
-        es = "Castillo Blanco"
+        es = "Fortaleza de los Dioses"
     }
     {
         en = "Hammarborg"
@@ -32598,7 +32598,7 @@ local pairs = [
     }
     {
         en = "Snekkborg"
-        es = "Fuerte del Drakkar"
+        es = "Fortaleza del Drakar"
     }
     {
         en = "Groneborg"
@@ -32607,27 +32607,27 @@ local pairs = [
     }
     {
         en = "Ramborg"
-        es = "Ramborg"
+        es = "Fortaleza del Carnero"
     }
     {
         en = "Vineborg"
-        es = "Vineborg"
+        es = "Fortaleza del Prado"
     }
     {
         en = "Hunneborg"
-        es = "Hunneborg"
+        es = "Fortaleza del Gigante"
     }
     {
         en = "Varborg"
-        es = "Varborg"
+        es = "Fortaleza de Var"
     }
     {
         en = "Kungsborg"
-        es = "Kungsborg"
+        es = "Fortaleza Real"
     }
     {
         en = "Jarlsborg"
-        es = "Jarlsborg"
+        es = "Fortaleza del Jarl"
     }
     {
         en = "This large citadel looks wide over the endless snow"
@@ -32640,31 +32640,31 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_snow_village.nut
     {
         en = "Tondersted"
-        es = "Tondersted"
+        es = "Bryn Shander"
     }
     {
         en = "Jarlsted"
-        es = "Jarlsted"
+        es = "Villajarl"
     }
     {
         en = "Lydersted"
-        es = "Lydersted"
+        es = "Villa Lyder"
     }
     {
         en = "Bolasted"
-        es = "Bolasted"
+        es = "Villa Bola"
     }
     {
         en = "Ravested"
-        es = "Ravested"
+        es = "Villacuervo"
     }
     {
         en = "Hellested"
-        es = "Refugio de Invierno"
+        es = "Villalaja"
     }
     {
         en = "Hornsted"
-        es = "Hornsted"
+        es = "Villacuerno"
     }
     {
         en = "Hejsted"
@@ -32672,35 +32672,35 @@ local pairs = [
     }
     {
         en = "Sommersted"
-        es = "Sommersted"
+        es = "Villaverano"
     }
     {
         en = "Brammingsted"
-        es = "Brammingsted"
+        es = "Villa Bramming"
     }
     {
         en = "Vardested"
-        es = "Vardested"
+        es = "Villa Varde"
     }
     {
         en = "Norrested"
-        es = "Norrested"
+        es = "Villanorte"
     }
     {
         en = "Grimsted"
-        es = "Salon de Ivarr"
+        es = "Villasombría"
     }
     {
         en = "Ognasted"
-        es = "Ognasted"
+        es = "Villa Ogna"
     }
     {
         en = "Eidsted"
-        es = "Eidsted"
+        es = "Villa del Juramento"
     }
     {
         en = "Gersted"
-        es = "Gersted"
+        es = "Villalanza"
     }
     {
         en = "Asested"
@@ -32708,27 +32708,27 @@ local pairs = [
     }
     {
         en = "Gunnsted"
-        es = "Gunnsted"
+        es = "Villa Gunn"
     }
     {
         en = "Hammarsted"
-        es = "Hammarsted"
+        es = "Villamartillo"
     }
     {
         en = "Arsasted"
-        es = "Salon de Hammar"
+        es = "Villa Arsa"
     }
     {
         en = "Rollarsted"
-        es = "Rollarsted"
+        es = "Villa Rollar"
     }
     {
         en = "Skagensted"
-        es = "Skagensted"
+        es = "Villacabo"
     }
     {
         en = "Harkensted"
-        es = "Harkensted"
+        es = "Villa Harken"
     }
     {
         en = "Agersted"
@@ -32736,11 +32736,11 @@ local pairs = [
     }
     {
         en = "Svarrested"
-        es = "Svarrested"
+        es = "Villa Svarre"
     }
     {
         en = "Ovarsted"
-        es = "Ovarsted"
+        es = "Villa Ovar"
     }
     {
         en = "A large city sheltering travelers and traders from snow and cold"
@@ -32753,123 +32753,123 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_steppe_fort.nut
     {
         en = "Wohlenfeste"
-        es = "Wohlenfeste"
+        es = "Fortaleza de Wohlen"
     }
     {
         en = "Krauchfeste"
-        es = "Krauchfeste"
+        es = "Fortaleza de Krauch"
     }
     {
         en = "Erlachfeste"
-        es = "Erlachfeste"
+        es = "Fortaleza del Alisal"
     }
     {
         en = "Treitenfeste"
-        es = "Treitenfeste"
+        es = "Fortaleza de Treiten"
     }
     {
         en = "Thunfeste"
-        es = "Thunfeste"
+        es = "Fortaleza de Thun"
     }
     {
         en = "Rothenfeste"
-        es = "Rothenfeste"
+        es = "Fortaleza Roja"
     }
     {
         en = "Sonnenfeste"
-        es = "Sonnenfeste"
+        es = "Fortaleza del Sol"
     }
     {
         en = "Siegfeste"
-        es = "Siegfeste"
+        es = "Fortaleza de la Victoria"
     }
     {
         en = "Sudfeste"
-        es = "Sudfeste"
+        es = "Fortaleza del Sur"
     }
     {
         en = "Suderfeste"
-        es = "Suderfeste"
+        es = "Fortaleza Meridional"
     }
     {
         en = "Strauchfeste"
-        es = "Strauchfeste"
+        es = "Fuerte del Matorral"
     }
     {
         en = "Maderfeste"
-        es = "Maderfeste"
+        es = "Fortaleza de Mader"
     }
     {
         en = "Kargfeste"
-        es = "Kargfeste"
+        es = "Fuerte Magro"
     }
     {
         en = "Dornenfeste"
-        es = "Dornenfeste"
+        es = "Fuerte de los Espinos"
     }
     {
         en = "Gelbfeste"
-        es = "Gelbfeste"
+        es = "Fuerte Amarillo"
     }
     {
         en = "Lichtfeste"
-        es = "Lichtfeste"
+        es = "Fuerte de la Luz"
     }
     {
         en = "Hellenfeste"
-        es = "Hellenfeste"
+        es = "Fuerte Claro"
     }
     {
         en = "Glanzfeste"
-        es = "Glanzfeste"
+        es = "Fuerte del Resplandor"
     }
     {
         en = "Strahlfeste"
-        es = "Strahlfeste"
+        es = "Fortaleza Radiante"
     }
     {
         en = "Knochenfeste"
-        es = "Knochenfeste"
+        es = "Fortaleza de los Huesos"
     }
     {
         en = "Durrfeste"
-        es = "Durrfeste"
+        es = "Fuerte Árido"
     }
     {
         en = "Sandsturmfeste"
-        es = "Sandsturmfeste"
+        es = "Fortaleza del Vendaval"
     }
     {
         en = "Gelbfelsfeste"
-        es = "Gelbfelsfeste"
+        es = "Fortaleza de Peñamarilla"
     }
     {
         en = "Rothsteinfeste"
-        es = "Rothsteinfeste"
+        es = "Fortaleza de Peñarroja"
     }
     {
         en = "Goldfeste"
-        es = "Goldfeste"
+        es = "Fortaleza de Oro"
     }
     {
         en = "Scharfzahnfeste"
-        es = "Scharfzahnfeste"
+        es = "Fortaleza del Colmillo"
     }
     {
         en = "Brandfeste"
-        es = "Brandfeste"
+        es = "Fuerte Quemado"
     }
     {
         en = "Staubfeste"
-        es = "Staubfeste"
+        es = "Fuerte del Polvo"
     }
     {
         en = "Odfeste"
-        es = "Odfeste"
+        es = "Fortaleza del Yermo"
     }
     {
         en = "Habichtfeste"
-        es = "Habichtfeste"
+        es = "Fortaleza del Azor"
     }
     {
         en = "A mighty citadel towering above the surrounding steppe"
@@ -32882,83 +32882,83 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_steppe_village.nut
     {
         en = "Wunderstadt"
-        es = "Nal Tar"
+        es = "Villamaravilla"
     }
     {
         en = "Wohlstadt"
-        es = "Wohlstadt"
+        es = "Villabuena"
     }
     {
         en = "Brunnstadt"
-        es = "Brunnstadt"
+        es = "Villafuente"
     }
     {
         en = "Erlstadt"
-        es = "Erlstadt"
+        es = "Villa del Aliso"
     }
     {
         en = "Himmelstadt"
-        es = "Himmelstadt"
+        es = "Villa del Cielo"
     }
     {
         en = "Sandstadt"
-        es = "Sandstadt"
+        es = "Villarena"
     }
     {
         en = "Rothstadt"
-        es = "Torbah"
+        es = "Villabermeja"
     }
     {
         en = "Gelbstadt"
-        es = "Gelbstadt"
+        es = "Villa Amarilla"
     }
     {
         en = "Krautmark"
-        es = "Krautmark"
+        es = "Marca Herbosa"
     }
     {
         en = "Suderstadt"
-        es = "Suderstadt"
+        es = "Villa Meridional"
     }
     {
         en = "Sonstadt"
-        es = "Sonstadt"
+        es = "Villasol"
     }
     {
         en = "Strohmark"
-        es = "Strohmark"
+        es = "Marca del Rastrojo"
     }
     {
         en = "Sandmark"
-        es = "Sandmark"
+        es = "Marca de Arena"
     }
     {
         en = "Sonnmark"
-        es = "Sonnmark"
+        es = "Marca del Sol"
     }
     {
         en = "Grafenschein"
-        es = "Resplandor del Conde"
+        es = "Luz del Conde"
     }
     {
         en = "Hellstadt"
-        es = "Hellstadt"
+        es = "Villa Clara"
     }
     {
         en = "Lichtmark"
-        es = "Lichtmark"
+        es = "Marca de la Luz"
     }
     {
         en = "Dornland"
-        es = "Dornland"
+        es = "Espinosa"
     }
     {
         en = "Rothenmark"
-        es = "Rothenmark"
+        es = "Marca Roja"
     }
     {
         en = "Brunnenland"
-        es = "Brunnenland"
+        es = "Fontanar"
     }
     {
         en = "A large city thriving on trade and fine arts"
@@ -32971,51 +32971,51 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_swamp_village.nut
     {
         en = "Stakenland"
-        es = "Stakenland"
+        es = "La Estacada"
     }
     {
         en = "Sehlenstadt"
-        es = "Sehlenstadt"
+        es = "Villa de las Almas"
     }
     {
         en = "Schwarzland"
-        es = "Schwarzland"
+        es = "Tierra Negra"
     }
     {
         en = "Ehelerstadt"
-        es = "Ehelerstadt"
+        es = "Villa Eheler"
     }
     {
         en = "Streekland"
-        es = "Friesland"
+        es = "Tierra de Streek"
     }
     {
         en = "Grafenwasser"
-        es = "Grafenwasser"
+        es = "Aguas del Conde"
     }
     {
         en = "Lauenstadt"
-        es = "Lauenstadt"
+        es = "Villa Lauen"
     }
     {
         en = "Ahlenstadt"
-        es = "Ahlenstadt"
+        es = "Villa Ahlen"
     }
     {
         en = "Austadt"
-        es = "Austadt"
+        es = "Villavega"
     }
     {
         en = "Muckenland"
-        es = "Muckenland"
+        es = "Los Mosquitos"
     }
     {
         en = "Brookstadt"
-        es = "Brookstadt"
+        es = "Villarroyo"
     }
     {
         en = "Pfuhlstadt"
-        es = "Pfuhlstadt"
+        es = "Villa de la Charca"
     }
     {
         en = "Schwarzmark"
@@ -33023,55 +33023,55 @@ local pairs = [
     }
     {
         en = "Muckenmark"
-        es = "Vergen"
+        es = "Marca de los Mosquitos"
     }
     {
         en = "Torfmark"
-        es = "Loc Muinne"
+        es = "Marca de la Turba"
     }
     {
         en = "Fuhrtmark"
-        es = "Fuhrtmark"
+        es = "Marca del Vado"
     }
     {
         en = "Schwartmark"
-        es = "Schwartmark"
+        es = "Marca Negra"
     }
     {
         en = "Schwanenwasser"
-        es = "Schwanenwasser"
+        es = "Aguas del Cisne"
     }
     {
         en = "Fletland"
-        es = "Fletland"
+        es = "Las Acequias"
     }
     {
         en = "Fennstedt"
-        es = "Fennstedt"
+        es = "Villa del Aguazal"
     }
     {
         en = "Auenhausen"
-        es = "Auenhausen"
+        es = "Casas de la Vega"
     }
     {
         en = "Moorland"
-        es = "Moorland"
+        es = "La Ciénaga"
     }
     {
         en = "Riedland"
-        es = "Riedland"
+        es = "El Juncal"
     }
     {
         en = "Drakenstadt"
-        es = "Drakenstadt"
+        es = "Villa del Dragón"
     }
     {
         en = "Schwarmstadt"
-        es = "Schwarmstadt"
+        es = "Colmenar"
     }
     {
         en = "Niedermark"
-        es = "Niedermark"
+        es = "Marca Baja"
     }
     {
         en = "A modest city spread out over dry spots in the swampy area"
@@ -33085,11 +33085,11 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_tundra_fort.nut
     {
         en = "Skagaborg"
-        es = "Skagaborg"
+        es = "Fortaleza del Cabo"
     }
     {
         en = "Selasborg"
-        es = "Piedra de las Runas"
+        es = "Fortaleza de las Focas"
     }
     {
         en = "Haellborg"
@@ -33101,19 +33101,19 @@ local pairs = [
     }
     {
         en = "Gufarsborg"
-        es = "Gufarsborg"
+        es = "Fortaleza de Gufar"
     }
     {
         en = "Husnarborg"
-        es = "Husnarborg"
+        es = "Fortaleza de Husnar"
     }
     {
         en = "Reistarborg"
-        es = "Reistarborg"
+        es = "Fortaleza de Reistar"
     }
     {
         en = "Geirborg"
-        es = "Geirborg"
+        es = "Fortaleza de Geir"
     }
     {
         en = "A large citadel towering high over the surrounding tundra"
@@ -33126,31 +33126,31 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\large_tundra_village.nut
     {
         en = "Einarsted"
-        es = "Einarsted"
+        es = "Villa Einar"
     }
     {
         en = "Skallested"
-        es = "Ravenstern"
+        es = "Villa del Cráneo"
     }
     {
         en = "Halfdansted"
-        es = "Halfdansted"
+        es = "Villa Halfdan"
     }
     {
         en = "Ratarsted"
-        es = "Ratarsted"
+        es = "Villa Ratar"
     }
     {
         en = "Lugnisted"
-        es = "Lugnisted"
+        es = "Villa Serena"
     }
     {
         en = "Leifsted"
-        es = "Leifsted"
+        es = "Villa Leif"
     }
     {
         en = "Lorrested"
-        es = "Lorrested"
+        es = "Villa Lorre"
     }
     {
         en = "A large city and trading hub surrounded by barren tundra"
@@ -33163,95 +33163,95 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_coast_fort.nut
     {
         en = "Seeburg"
-        es = "Seeburg"
+        es = "Luskan"
     }
     {
         en = "Kielburg"
-        es = "Guijarra"
+        es = "Castillo de Kiel"
     }
     {
         en = "Otternburg"
-        es = "Refugio de Malacosta"
+        es = "Castillo de la Nutria"
     }
     {
         en = "Blankenburg"
-        es = "Blankenburg"
+        es = "Castillo Albo"
     }
     {
         en = "Kampburg"
-        es = "Kampburg"
+        es = "Castillo del Cercado"
     }
     {
         en = "Stohlburg"
-        es = "Stohlburg"
+        es = "Castillo de Stohl"
     }
     {
         en = "Wikburg"
-        es = "Wikburg"
+        es = "Castillo de la Bahía"
     }
     {
         en = "Krakenburg"
-        es = "Krakenburg"
+        es = "Castillo del Kraken"
     }
     {
         en = "Krumburg"
-        es = "Torreón del Estuario"
+        es = "Castillo Torcido"
     }
     {
         en = "Sandeburg"
-        es = "Torreón Cangrejo"
+        es = "Castillo del Arenal"
     }
     {
         en = "Meerburg"
-        es = "Jardín Gris"
+        es = "Castillo del Mar"
     }
     {
         en = "Aalburg"
-        es = "Aalburg"
+        es = "Castillo de la Anguila"
     }
     {
         en = "Dunenburg"
-        es = "Dunenburg"
+        es = "Castillo de las Dunas"
     }
     {
         en = "Sturmburg"
-        es = "Sturmburg"
+        es = "Castillo de la Tormenta"
     }
     {
         en = "Weseburg"
-        es = "Weseburg"
+        es = "Castillo del Weser"
     }
     {
         en = "Gischtburg"
-        es = "Gischtburg"
+        es = "Castillo de la Espuma"
     }
     {
         en = "Mowenburg"
-        es = "Torreón de Aguasclaras"
+        es = "Castillo de la Gaviota"
     }
     {
         en = "Beltburg"
-        es = "Beltburg"
+        es = "Castillo del Belt"
     }
     {
         en = "Sundburg"
-        es = "Corona Negra"
+        es = "Castillo del Estrecho"
     }
     {
         en = "Salzburg"
-        es = "Salsburgo"
+        es = "Salzburgo"
     }
     {
         en = "Blauburg"
-        es = "Blauburg"
+        es = "Castillo Azul"
     }
     {
         en = "Sichelburg"
-        es = "Sichelburg"
+        es = "Castillo de la Hoz"
     }
     {
         en = "Heringsburg"
-        es = "Heringsburg"
+        es = "Castillo del Arenque"
     }
     {
         en = "Schollburg"
@@ -33268,111 +33268,111 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_farm_fort.nut
     {
         en = "Haselburg"
-        es = "Haselburg"
+        es = "Castillo de Avellaneda"
     }
     {
         en = "Hageburg"
-        es = "Refugio del Girasol"
+        es = "Picaestrella"
     }
     {
         en = "Marksburg"
-        es = "Marksburg"
+        es = "Castillo de la Marca"
     }
     {
         en = "Wehrburg"
-        es = "Wehrburg"
+        es = "Torrefuerte"
     }
     {
         en = "Hemmelsburg"
-        es = "Marcaceniza"
+        es = "Castillo de Hemmel"
     }
     {
         en = "Weissenburg"
-        es = "Pradal"
+        es = "Castillo Blanco"
     }
     {
         en = "Grafenburg"
-        es = "Torreón Verde"
+        es = "Castillo del Conde"
     }
     {
         en = "Tiefenburg"
-        es = "Torrehonda"
+        es = "Castillo Hondo"
     }
     {
         en = "Grunburg"
-        es = "Sotomiel"
+        es = "Castillo Verde"
     }
     {
         en = "Wallburg"
-        es = "Torrelabella"
+        es = "Castillo Amurallado"
     }
     {
         en = "Koppelburg"
-        es = "Maizal"
+        es = "Castillo del Redil"
     }
     {
         en = "Weideburg"
-        es = "La Sidra"
+        es = "Castillo del Pastizal"
     }
     {
         en = "Auenburg"
-        es = "Vegaverde"
+        es = "Castillo de la Vega"
     }
     {
         en = "Gardeburg"
-        es = "Gardenburg"
+        es = "Castillo de la Guardia"
     }
     {
         en = "Friedland"
-        es = "Friedland"
+        es = "Fuerte de la Paz"
     }
     {
         en = "Kroonsburg"
-        es = "Kroonsburg"
+        es = "Castillo de la Corona"
     }
     {
         en = "Grasburg"
-        es = "Grasburg"
+        es = "Castillo del Pasto"
     }
     {
         en = "Thalburg"
-        es = "Valdetorre"
+        es = "Castillo del Valle"
     }
     {
         en = "Weihersburg"
-        es = "Torreón de la Hierba"
+        es = "Castillo de la Laguna"
     }
     {
         en = "Sommerburg"
-        es = "Sotoblanco"
+        es = "Castillo del Verano"
     }
     {
         en = "Freudburg"
-        es = "Freudburg"
+        es = "Castillo del Gozo"
     }
     {
         en = "Feldburg"
-        es = "Feldburg"
+        es = "Castillo del Campo"
     }
     {
         en = "Langenburg"
-        es = "Langenburg"
+        es = "Torrelarga"
     }
     {
         en = "Heuburg"
-        es = "Heuburg"
+        es = "Castillo del Heno"
     }
     {
         en = "Muhlburg"
-        es = "Muhlburg"
+        es = "Castillo del Molino"
     }
     {
         en = "Weisenburg"
-        es = "Weisenburg"
+        es = "Castillo de los Prados"
     }
     {
         en = "Weinburg"
-        es = "Weinburg"
+        es = "Castillo de la Viña"
     }
     {
         en = "A stone keep surrounded by fertile lands"
@@ -33385,23 +33385,23 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_farming_village.nut
     {
         en = "Weidefeld"
-        es = "Weidefeld"
+        es = "Uxkhal"
     }
     {
         en = "Hemmeln"
-        es = "Kayce"
+        es = "Hemmeln"
     }
     {
         en = "Saxdorf"
-        es = "Saxdorf"
+        es = "Vado de la Daga"
     }
     {
         en = "Kochendorf"
-        es = "Kochendorf"
+        es = "Beregost"
     }
     {
         en = "Altenhof"
-        es = "Altenhof"
+        es = "Quintanavieja"
     }
     {
         en = "Schnellen"
@@ -33409,11 +33409,11 @@ local pairs = [
     }
     {
         en = "Neudorf"
-        es = "Neudorf"
+        es = "Aldeanueva"
     }
     {
         en = "Freidorf"
-        es = "Freidorf"
+        es = "Aldea Franca"
     }
     {
         en = "Weissenhaus"
@@ -33421,27 +33421,27 @@ local pairs = [
     }
     {
         en = "Muhlenheim"
-        es = "Muhlenheim"
+        es = "Los Molinos"
     }
     {
         en = "Grunfelde"
-        es = "Grunfelde"
+        es = "Campos Verdes"
     }
     {
         en = "Ivendorf"
-        es = "Ivendorf"
+        es = "Aldea de Iven"
     }
     {
         en = "Grafenheide"
-        es = "Grafenheide"
+        es = "Brezal del Conde"
     }
     {
         en = "Hermannshof"
-        es = "Hermannshof"
+        es = "Granja Hermann"
     }
     {
         en = "Koppeldorf"
-        es = "Villaparra"
+        es = "El Redil"
     }
     {
         en = "Meiding"
@@ -33453,23 +33453,23 @@ local pairs = [
     }
     {
         en = "Dreifelden"
-        es = "Dreifelden"
+        es = "Tres Campos"
     }
     {
         en = "Bockhorn"
-        es = "Bockhorn"
+        es = "Cuerno de Cabra"
     }
     {
         en = "Hufschlag"
-        es = "Hufschlag"
+        es = "Paso del Caballo"
     }
     {
         en = "Hage"
-        es = "Valdehierba"
+        es = "Los Setos"
     }
     {
         en = "Wagenheim"
-        es = "Wagenheim"
+        es = "Villacarros"
     }
     {
         en = "Harlingen"
@@ -33477,19 +33477,19 @@ local pairs = [
     }
     {
         en = "Wiese"
-        es = "Pradoverde"
+        es = "El Prado"
     }
     {
         en = "Markdorf"
-        es = "Markdorf"
+        es = "Aldea de la Marca"
     }
     {
         en = "Heuweiler"
-        es = "Heuweiler"
+        es = "El Henar"
     }
     {
         en = "Bitterfeld"
-        es = "Antigua"
+        es = "Campo de Ajenjo"
     }
     {
         en = "A prospering village surrounded by fertile land"
@@ -33502,59 +33502,59 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_fishing_village.nut
     {
         en = "Seedock"
-        es = "Seedock"
+        es = "Kayce"
     }
     {
         en = "Wikhavn"
-        es = "Wikhavn"
+        es = "Volmark"
     }
     {
         en = "Sandhoom"
-        es = "Sandhoom"
+        es = "Cabo de Arena"
     }
     {
         en = "Sandkai"
-        es = "Sandkai"
+        es = "Muelle de Arena"
     }
     {
         en = "Holnishovn"
-        es = "Holnishovn"
+        es = "Puerto de Holnis"
     }
     {
         en = "Holmwader"
-        es = "Holmwader"
+        es = "Marisma del Islote"
     }
     {
         en = "Niewekai"
-        es = "Niewekai"
+        es = "Muelle Nuevo"
     }
     {
         en = "Stohlhoven"
-        es = "Stohlhoven"
+        es = "Puerto de Stohl"
     }
     {
         en = "Strandekai"
-        es = "Strandekai"
+        es = "Muelle de la Playa"
     }
     {
         en = "Kampwader"
-        es = "Kampwader"
+        es = "Marisma del Cercado"
     }
     {
         en = "Birkhaven"
-        es = "Birkhaven"
+        es = "Puerto del Abedul"
     }
     {
         en = "Sundkajung"
-        es = "Sundkajung"
+        es = "Muelle del Estrecho"
     }
     {
         en = "Seehoben"
-        es = "Seehoben"
+        es = "Granjas del Mar"
     }
     {
         en = "Krakenwader"
-        es = "Krakenwader"
+        es = "Marisma del Kraken"
     }
     {
         en = "Blankhoom"
@@ -33562,67 +33562,67 @@ local pairs = [
     }
     {
         en = "Harkendock"
-        es = "Harkendock"
+        es = "Muelle de Harken"
     }
     {
         en = "Krumwader"
-        es = "Krumwader"
+        es = "Marisma Torcida"
     }
     {
         en = "Saltkai"
-        es = "Poza de la Doncella"
+        es = "Muelle de la Sal"
     }
     {
         en = "Salthaven"
-        es = "Salthaven"
+        es = "Puerto de la Sal"
     }
     {
         en = "Grotenhoom"
-        es = "Grotenhoom"
+        es = "Cabo Grande"
     }
     {
         en = "Lutendock"
-        es = "Lutendock"
+        es = "Muelle Pequeño"
     }
     {
         en = "Kaiwader"
-        es = "Kaiwader"
+        es = "Marisma del Muelle"
     }
     {
         en = "Singhoben"
-        es = "Singhoben"
+        es = "Granjas de Sing"
     }
     {
         en = "Weissenhaven"
-        es = "Weissenhaven"
+        es = "Puerto Albo"
     }
     {
         en = "Tiefenhaven"
-        es = "Tiefenhaven"
+        es = "Puerto Hondo"
     }
     {
         en = "Wasserkoog"
-        es = "Torre del Resplandor"
+        es = "Ribera Mansa"
     }
     {
         en = "Osterstrande"
-        es = "Osterstrande"
+        es = "Playas del Este"
     }
     {
         en = "Steinhaven"
-        es = "Steinhaven"
+        es = "Puerto de la Roca"
     }
     {
         en = "Duhnenhaven"
-        es = "Duhnenhaven"
+        es = "Puerto de las Dunas"
     }
     {
         en = "Neudeich"
-        es = "Neudeich"
+        es = "Dique Nuevo"
     }
     {
         en = "Sandehaven"
-        es = "Sandehaven"
+        es = "Puerto del Arenal"
     }
     {
         en = "A larger spread out village relying on fishing and a little trade"
@@ -33635,99 +33635,99 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_forest_fort.nut
     {
         en = "Holzburg"
-        es = "Los Susurros"
+        es = "Guarida de Ornlu"
     }
     {
         en = "Tannburg"
-        es = "Tannburg"
+        es = "Evereska"
     }
     {
         en = "Waldburg"
-        es = "Waldburg"
+        es = "Castillo del Bosque"
     }
     {
         en = "Hainburg"
-        es = "Hainburg"
+        es = "Castillo de la Arboleda"
     }
     {
         en = "Dunkelburg"
-        es = "Árbol de los Cuervos"
+        es = "Torreoscura"
     }
     {
         en = "Finsterburg"
-        es = "Finsterburg"
+        es = "Castillo Tenebroso"
     }
     {
         en = "Eichburg"
-        es = "Eichburg"
+        es = "Castillo de Robledo"
     }
     {
         en = "Waidburg"
-        es = "Waidburg"
+        es = "Castillo de la Caza"
     }
     {
         en = "Fahrnburg"
-        es = "Piedraverde"
+        es = "Castillo del Helechal"
     }
     {
         en = "Moosburg"
-        es = "Moosburg"
+        es = "Castillo del Musgo"
     }
     {
         en = "Forstburg"
-        es = "Forstburg"
+        es = "Castillo de la Floresta"
     }
     {
         en = "Eulenburg"
-        es = "Marleons"
+        es = "Castillo del Búho"
     }
     {
         en = "Fuchsburg"
-        es = "Fuchsburg"
+        es = "Castillo del Zorro"
     }
     {
         en = "Dusterburg"
-        es = "Guarida del Jabalí"
+        es = "Castillo Lóbrego"
     }
     {
         en = "Dornburg"
-        es = "Torreón del Guardabosques"
+        es = "Castillo del Espino"
     }
     {
         en = "Buchenburg"
-        es = "Buchenburg"
+        es = "Castillo de la Haya"
     }
     {
         en = "Breitenburg"
-        es = "Torreón Bellota"
+        es = "Torreancha"
     }
     {
         en = "Nesselburg"
-        es = "Nesselburg"
+        es = "Castillo de la Ortiga"
     }
     {
         en = "Wurzelburg"
-        es = "Wurzelburg"
+        es = "Castillo de la Raíz"
     }
     {
         en = "Bieberburg"
-        es = "Bieberburg"
+        es = "Castillo del Castor"
     }
     {
         en = "Katzenburg"
-        es = "Katzenburg"
+        es = "Castillo del Gato"
     }
     {
         en = "Wolfsburg"
-        es = "Wolfsburg"
+        es = "Wolfsburgo"
     }
     {
         en = "Natternburg"
-        es = "Nido de Cuervos"
+        es = "Castillo de la Víbora"
     }
     {
         en = "Findelsburg"
-        es = "Findelsburg"
+        es = "Castillo de Findel"
     }
     {
         en = "A mighty stone keep surrounded by woods."
@@ -33740,51 +33740,51 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_lumber_village.nut
     {
         en = "Westerholz"
-        es = "Westerholz"
+        es = "Valle de las Sombras"
     }
     {
         en = "Langholz"
-        es = "Langholz"
+        es = "Monte Largo"
     }
     {
         en = "Grossholz"
-        es = "Grossholz"
+        es = "Monte Grande"
     }
     {
         en = "Tanndorf"
-        es = "Tanndorf"
+        es = "Los Abetos"
     }
     {
         en = "Waldhain"
-        es = "Waldhain"
+        es = "El Boscaje"
     }
     {
         en = "Dunkeltal"
-        es = "Dunkeltal"
+        es = "Valle Oscuro"
     }
     {
         en = "Eichholz"
-        es = "Eichholz"
+        es = "El Robledal"
     }
     {
         en = "Eulenkrug"
-        es = "Uxkhal"
+        es = "Posada del Búho"
     }
     {
         en = "Nordholz"
-        es = "Nordholz"
+        es = "Monte del Norte"
     }
     {
         en = "Finsterwalde"
-        es = "Finsterwalde"
+        es = "Bosque Tenebroso"
     }
     {
         en = "Damwald"
-        es = "Damwald"
+        es = "Bosque del Gamo"
     }
     {
         en = "Tannheim"
-        es = "Tannheim"
+        es = "El Abetal"
     }
     {
         en = "Filzmoos"
@@ -33792,11 +33792,11 @@ local pairs = [
     }
     {
         en = "Hagermoos"
-        es = "Hagermoos"
+        es = "Tremedal"
     }
     {
         en = "Neufarn"
-        es = "Neufarn"
+        es = "Helechal Nuevo"
     }
     {
         en = "Taubenmoos"
@@ -33804,55 +33804,55 @@ local pairs = [
     }
     {
         en = "Waidhof"
-        es = "Waidhof"
+        es = "El Coto"
     }
     {
         en = "Waidtal"
-        es = "Waidtal"
+        es = "Valle de la Caza"
     }
     {
         en = "Eichendorf"
-        es = "Bosquenegro"
+        es = "Los Robles"
     }
     {
         en = "Holzschlag"
-        es = "Holzschlag"
+        es = "La Tala"
     }
     {
         en = "Hirschbach"
-        es = "Hirschbach"
+        es = "Arroyo del Ciervo"
     }
     {
         en = "Friedewald"
-        es = "Friedewald"
+        es = "Bosque de la Paz"
     }
     {
         en = "Talbach"
-        es = "Talbach"
+        es = "Arroyo del Valle"
     }
     {
         en = "Finsterweiler"
-        es = "Finsterweiler"
+        es = "Caserío Tenebroso"
     }
     {
         en = "Tannenweiler"
-        es = "Tannenweiler"
+        es = "Caserío de los Abetos"
     }
     {
         en = "Weilersheim"
-        es = "Weilersheim"
+        es = "Casas de Weiler"
     }
     {
         en = "Grunforst"
-        es = "Grunforst"
+        es = "Floresta Verde"
     }
     {
         en = "Tiefenforst"
-        es = "Tiefenforst"
+        es = "Bosque Hondo"
     }
     {
         en = "Schwarzforst"
-        es = "Villallorosa"
+        es = "Fronda Negra"
     }
     {
         en = "A developed village thriving on lumber and game"
@@ -33865,63 +33865,63 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_mining_village.nut
     {
         en = "Hochgrube"
-        es = "Hochgrube"
+        es = "Mina Alta"
     }
     {
         en = "Erzgrube"
-        es = "Erzgrube"
+        es = "Mina del Filón"
     }
     {
         en = "Schachtheim"
-        es = "Schachtheim"
+        es = "Villapozo"
     }
     {
         en = "Erzheim"
-        es = "Erzheim"
+        es = "Villamena"
     }
     {
         en = "Schmelzheim"
-        es = "Schmelzheim"
+        es = "Las Fundiciones"
     }
     {
         en = "Erzfels"
-        es = "Erzfels"
+        es = "Peña de la Mena"
     }
     {
         en = "Gemmenschacht"
-        es = "Cuerno Dorado"
+        es = "Pozo de las Gemas"
     }
     {
         en = "Salzbruch"
-        es = "Salzbruch"
-    }
-    {
-        en = "Salzfels"
-        es = "Salzfels"
-    }
-    {
-        en = "Erzbruch"
-        es = "Erzbruch"
-    }
-    {
-        en = "Hohenbruch"
-        es = "Hohenbruch"
-    }
-    {
-        en = "Eisenheim"
-        es = "Eisenheim"
-    }
-    {
-        en = "Grubenheim"
         es = "Salinas"
     }
     {
+        en = "Salzfels"
+        es = "Peña de Sal"
+    }
+    {
+        en = "Erzbruch"
+        es = "Cantera de Mena"
+    }
+    {
+        en = "Hohenbruch"
+        es = "Cantera Alta"
+    }
+    {
+        en = "Eisenheim"
+        es = "Villahierro"
+    }
+    {
+        en = "Grubenheim"
+        es = "Villaminas"
+    }
+    {
         en = "Eisenberg"
-        es = "Eisenberg"
+        es = "Herrera"
     }
     {
         en = "Erzberg"
-        es = "Erzberg"
+        es = "Otero de la Mena"
     }
     {
         en = "Havelberg"
@@ -33929,7 +33929,7 @@ local pairs = [
     }
     {
         en = "Goldbruch"
-        es = "Goldbruch"
+        es = "Cantera de Oro"
     }
     {
         en = "Wolkenstein"
@@ -33937,43 +33937,43 @@ local pairs = [
     }
     {
         en = "Goldstein"
-        es = "Goldstein"
+        es = "Peña de Oro"
     }
     {
         en = "Gemmenstein"
-        es = "Gemmenstein"
+        es = "Peña de las Gemas"
     }
     {
         en = "Grafenschacht"
-        es = "Grafenschacht"
+        es = "Pozo del Conde"
     }
     {
         en = "Kahlengrube"
-        es = "Kahlengrube"
+        es = "Mina Yerma"
     }
     {
         en = "Trogenschacht"
-        es = "Trogenschacht"
+        es = "Pozo de Trogen"
     }
     {
         en = "Adlerstollen"
-        es = "Adlerstollen"
+        es = "Socavón del Águila"
     }
     {
         en = "Reinbruch"
-        es = "Reinbruch"
+        es = "Cantera Pura"
     }
     {
         en = "Schneefels"
-        es = "Schneefels"
+        es = "Peña Nevada"
     }
     {
         en = "Weissenschacht"
-        es = "Weissenschacht"
+        es = "Pozoblanco"
     }
     {
         en = "Ellengrube"
-        es = "Ellengrube"
+        es = "Mina de Ellen"
     }
     {
         en = "A stretched out settlement nestled into the surrounding mountains"
@@ -33987,31 +33987,31 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_mountains_fort.nut
     {
         en = "Hohenburg"
-        es = "Hohenburg"
+        es = "Castillo de las Alturas"
     }
     {
         en = "Wolfenburg"
-        es = "Wolfenburg"
+        es = "Torrelobos"
     }
     {
         en = "Felsburg"
-        es = "Felsburg"
+        es = "Castillo de la Peña"
     }
     {
         en = "Eisenburg"
-        es = "Eisenburg"
+        es = "Castillo de Hierro"
     }
     {
         en = "Jadeburg"
-        es = "Jadeburg"
+        es = "Castillo de Jade"
     }
     {
         en = "Gronenburg"
-        es = "Gronenburg"
+        es = "Castillo del Verdor"
     }
     {
         en = "Sattelburg"
-        es = "Sattelburg"
+        es = "Castillo del Collado"
     }
     {
         en = "Windburg"
@@ -34019,11 +34019,11 @@ local pairs = [
     }
     {
         en = "Turmburg"
-        es = "Turmburg"
+        es = "Castillo de la Torre"
     }
     {
         en = "Adlerburg"
-        es = "Adlerburg"
+        es = "Castillo del Águila"
     }
     {
         en = "Scharfenburg"
@@ -34031,55 +34031,55 @@ local pairs = [
     }
     {
         en = "Heldenburg"
-        es = "Heldenburg"
+        es = "Castillo de los Héroes"
     }
     {
         en = "Wurmburg"
-        es = "Villacuerno"
+        es = "Castillo de la Sierpe"
     }
     {
         en = "Schwertburg"
-        es = "Fuerterrojo"
+        es = "Castillo de la Espada"
     }
     {
         en = "Lanzenburg"
-        es = "Lanzenburg"
+        es = "Castillo de la Lanza"
     }
     {
         en = "Himmelsburg"
-        es = "Nido del Halcón"
+        es = "Castillo del Cielo"
     }
     {
         en = "Granitschanze"
-        es = "Granitschanze"
+        es = "Baluarte de Granito"
     }
     {
         en = "Erzburg"
-        es = "Erzburg"
+        es = "Castillo de la Mena"
     }
     {
         en = "Wolkenburg"
-        es = "Sepulcro del Rey"
+        es = "Castillo de las Nubes"
     }
     {
         en = "Hochburg"
-        es = "Hochburg"
+        es = "Castillo Alto"
     }
     {
         en = "Windfall"
-        es = "Windfall"
+        es = "Buenaventura"
     }
     {
         en = "Gemmenburg"
-        es = "Valdecuerno"
+        es = "Castillo de las Gemas"
     }
     {
         en = "Hohenstein"
-        es = "Hohenstein"
+        es = "Peña Alta"
     }
     {
         en = "Oberburg"
-        es = "Oberburg"
+        es = "Castillo de Arriba"
     }
     {
         en = "A stone keep that is towering high over the surrounding mountains"
@@ -34092,51 +34092,51 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_snow_fort.nut
     {
         en = "Tonderhovel"
-        es = "Tonderhovel"
+        es = "Burgo de Tonder"
     }
     {
         en = "Horngard"
-        es = "Horngard"
+        es = "Cercado del Cuerno"
     }
     {
         en = "Grimhaug"
-        es = "Grimhaug"
+        es = "Túmulo Sombrío"
     }
     {
         en = "Hellehovel"
-        es = "Hellehovel"
+        es = "Burgo de la Laja"
     }
     {
         en = "Kalkhovel"
-        es = "Kalkhovel"
+        es = "Burgo de la Cal"
     }
     {
         en = "Lydersgard"
-        es = "Lydersgard"
+        es = "Cercado de Lyder"
     }
     {
         en = "Homsgard"
-        es = "Homsgard"
+        es = "Cercado de Homs"
     }
     {
         en = "Sommersholm"
-        es = "Sommersholm"
+        es = "Islote del Verano"
     }
     {
         en = "Brammingholm"
-        es = "Brammingholm"
+        es = "Islote de Bramming"
     }
     {
         en = "Vardegard"
-        es = "Vardegard"
+        es = "Cercado de Varde"
     }
     {
         en = "Norreholm"
-        es = "Guardanorte"
+        es = "Islote del Norte"
     }
     {
         en = "Birkehovel"
-        es = "Birkehovel"
+        es = "Burgo del Abedul"
     }
     {
         en = "Donnersgard"
@@ -34148,7 +34148,7 @@ local pairs = [
     }
     {
         en = "Helvikholm"
-        es = "Helvikholm"
+        es = "Islote de Bahía Infernal"
     }
     {
         en = "Torvaholm"
@@ -34156,11 +34156,11 @@ local pairs = [
     }
     {
         en = "Skjoldgard"
-        es = "Senderfall"
+        es = "Cercado del Escudo"
     }
     {
         en = "Eidsvikholm"
-        es = "Eidsvikholm"
+        es = "Islote de Bahía Jurada"
     }
     {
         en = "Halshovel"
@@ -34168,51 +34168,51 @@ local pairs = [
     }
     {
         en = "Gerholm"
-        es = "Gerholm"
+        es = "Islote de la Lanza"
     }
     {
         en = "Gunnholm"
-        es = "Gunnholm"
+        es = "Islote de Gunn"
     }
     {
         en = "Asengard"
-        es = "Asengard"
+        es = "Cercado de los Dioses"
     }
     {
         en = "Hammargard"
-        es = "Hammargard"
+        es = "Cercado del Martillo"
     }
     {
         en = "Vikeholm"
-        es = "Vikeholm"
+        es = "Islote de la Bahía"
     }
     {
         en = "Skandergard"
-        es = "Skandergard"
+        es = "Cercado de Skander"
     }
     {
         en = "Gunhall"
-        es = "Gunhall"
+        es = "Salón de Gun"
     }
     {
         en = "Asaholm"
-        es = "Asaholm"
+        es = "Islote de Asa"
     }
     {
         en = "Grimmarsholm"
-        es = "Grimmarsholm"
+        es = "Islote de Grimmar"
     }
     {
         en = "Hjalsgard"
-        es = "Hjalsgard"
+        es = "Cercado de Hjal"
     }
     {
         en = "Kungenshovel"
-        es = "Castillo Viejo"
+        es = "Burgo del Rey"
     }
     {
         en = "Wallhovel"
-        es = "Wallhovel"
+        es = "Burgo Amurallado"
     }
     {
         en = "This stone keep shelters a garrison from the snow"
@@ -34225,11 +34225,11 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_snow_village.nut
     {
         en = "Tonder"
-        es = "Tonder"
+        es = "Targos"
     }
     {
         en = "Lydersholm"
-        es = "Lydersholm"
+        es = "Termalaine"
     }
     {
         en = "Kravlund"
@@ -34237,11 +34237,11 @@ local pairs = [
     }
     {
         en = "Bola"
-        es = "Guardiabosque del Lago"
+        es = "Bola"
     }
     {
         en = "Ravestad"
-        es = "Ravestad"
+        es = "Puebla del Cuervo"
     }
     {
         en = "Alsliv"
@@ -34249,19 +34249,19 @@ local pairs = [
     }
     {
         en = "Hellevad"
-        es = "Villanieve"
+        es = "Vado de la Laja"
     }
     {
         en = "Heimstad"
-        es = "Heimstad"
+        es = "Puebla Vieja"
     }
     {
         en = "Hornheim"
-        es = "Hornheim"
+        es = "Aldeacuerno"
     }
     {
         en = "Jerstal"
-        es = "Puertahelada"
+        es = "Jerstal"
     }
     {
         en = "Hejsager"
@@ -34269,11 +34269,11 @@ local pairs = [
     }
     {
         en = "Kalk"
-        es = "Kalk"
+        es = "La Calera"
     }
     {
         en = "Sommerstad"
-        es = "Sommerstad"
+        es = "Puebla del Verano"
     }
     {
         en = "Bramming"
@@ -34285,7 +34285,7 @@ local pairs = [
     }
     {
         en = "Norre"
-        es = "Norre"
+        es = "Aldea del Norte"
     }
     {
         en = "Vistadt"
@@ -34297,7 +34297,7 @@ local pairs = [
     }
     {
         en = "Grimstad"
-        es = "Escalera del Gigante"
+        es = "Puebla Torva"
     }
     {
         en = "Birkeland"
@@ -34305,15 +34305,15 @@ local pairs = [
     }
     {
         en = "Donnerstad"
-        es = "Donnerstad"
+        es = "Puebla del Trueno"
     }
     {
         en = "Tangvall"
-        es = "Tangvall"
+        es = "Prado del Alga"
     }
     {
         en = "Helvik"
-        es = "Helvik"
+        es = "Bahía Infernal"
     }
     {
         en = "Ogna"
@@ -34321,7 +34321,7 @@ local pairs = [
     }
     {
         en = "Norheim"
-        es = "Norheim"
+        es = "Aldeanorte"
     }
     {
         en = "Undheim"
@@ -34329,35 +34329,35 @@ local pairs = [
     }
     {
         en = "Torvastad"
-        es = "Torvastad"
+        es = "Puebla de Torva"
     }
     {
         en = "Skjold"
-        es = "Puertapiedra"
+        es = "Aldea del Escudo"
     }
     {
         en = "Eidsvik"
-        es = "Eidsvik"
+        es = "Bahía Jurada"
     }
     {
         en = "Halheim"
-        es = "Halheim"
+        es = "Casas de Hal"
     }
     {
         en = "Gerheim"
-        es = "Gerheim"
+        es = "Aldealanza"
     }
     {
         en = "Asenstad"
-        es = "Asenstad"
+        es = "Puebla de los Dioses"
     }
     {
         en = "Gunnheim"
-        es = "Gunnheim"
+        es = "Casas de Gunn"
     }
     {
         en = "Hammar"
-        es = "Hammar"
+        es = "Aldea del Martillo"
     }
     {
         en = "A medium sized village covered in snow throughout most of the year"
@@ -34370,47 +34370,47 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_steppe_fort.nut
     {
         en = "Wohlenburg"
-        es = "Castillo del Atardecer"
+        es = "Castillo de Wohlen"
     }
     {
         en = "Krauchburg"
-        es = "Krauchburg"
+        es = "Castillo de Krauch"
     }
     {
         en = "Erlachburg"
-        es = "Yelmo de Piedra"
+        es = "Castillo del Alisal"
     }
     {
         en = "Treitenburg"
-        es = "Treitenburg"
+        es = "Castillo de Treiten"
     }
     {
         en = "Thunburg"
-        es = "Los Pergaminos"
+        es = "Castillo de Thun"
     }
     {
         en = "Rothburg"
-        es = "Rothburg"
+        es = "Castillo Rojo"
     }
     {
         en = "Sonnenburg"
-        es = "Sonnenburg"
+        es = "Castillo del Sol"
     }
     {
         en = "Siegburg"
-        es = "Siegburg"
+        es = "Castillo de la Victoria"
     }
     {
         en = "Sudburg"
-        es = "Sudburg"
+        es = "Castillo del Sur"
     }
     {
         en = "Strauchburg"
-        es = "Rocagris"
+        es = "Castillo del Matorral"
     }
     {
         en = "Maderburg"
-        es = "Vientoseco"
+        es = "Castillo de Mader"
     }
     {
         en = "Kargburg"
@@ -34418,55 +34418,55 @@ local pairs = [
     }
     {
         en = "Gelbburg"
-        es = "Guarida de Ornlu"
+        es = "Castillo Amarillo"
     }
     {
         en = "Suderburg"
-        es = "Suderburg"
+        es = "Castillo Meridional"
     }
     {
         en = "Lichtburg"
-        es = "Fuerte Lobogris"
+        es = "Castillo de la Luz"
     }
     {
         en = "Hellenburg"
-        es = "Hellenburg"
+        es = "Castillo Claro"
     }
     {
         en = "Glanzburg"
-        es = "Torreón Cosecha"
+        es = "Castillo del Resplandor"
     }
     {
         en = "Strahlenburg"
-        es = "Strahlenburg"
+        es = "Castillo Radiante"
     }
     {
         en = "Trockenburg"
-        es = "Refugio Negro"
+        es = "Castillo Seco"
     }
     {
         en = "Schattenburg"
-        es = "Nocturnia"
+        es = "Castillo de la Sombra"
     }
     {
         en = "Schimmerburg"
-        es = "Schimmerburg"
+        es = "Castillo del Destello"
     }
     {
         en = "Splitterburg"
-        es = "Splitterburg"
+        es = "Castillo de las Astillas"
     }
     {
         en = "Staubburg"
-        es = "Staubburg"
+        es = "Castillo del Polvo"
     }
     {
         en = "Lehmburg"
-        es = "Ermita Alta"
+        es = "Castillo de Arcilla"
     }
     {
         en = "Wustenburg"
-        es = "Colina Fantasma"
+        es = "Castillo del Desierto"
     }
     {
         en = "A stone keep projecting power over the flat steppe"
@@ -34483,15 +34483,15 @@ local pairs = [
     }
     {
         en = "Krauchthal"
-        es = "Krauchthal"
+        es = "Valle de Krauch"
     }
     {
         en = "Brunnenthal"
-        es = "Puerta del Infierno"
+        es = "Valdefuente"
     }
     {
         en = "Erlach"
-        es = "Erlach"
+        es = "El Alisal"
     }
     {
         en = "Treiten"
@@ -34503,11 +34503,11 @@ local pairs = [
     }
     {
         en = "Himmelsdorf"
-        es = "Himmelsdorf"
+        es = "Aldea del Cielo"
     }
     {
         en = "Thurn"
-        es = "Thurn"
+        es = "Villatorre"
     }
     {
         en = "Subingen"
@@ -34515,47 +34515,47 @@ local pairs = [
     }
     {
         en = "Thunstetten"
-        es = "Los Tablones"
+        es = "Thunstetten"
     }
     {
         en = "Rothenbach"
-        es = "Rothenbach"
+        es = "Arroyo Bermejo"
     }
     {
         en = "Sandheim"
-        es = "Sandheim"
+        es = "Los Arenales"
     }
     {
         en = "Sonstedt"
-        es = "Singal"
+        es = "Puebla del Sol"
     }
     {
         en = "Siegau"
-        es = "Siegau"
+        es = "Vega de la Victoria"
     }
     {
         en = "Strohdorf"
-        es = "Limonar"
+        es = "Los Rastrojos"
     }
     {
         en = "Sonnheim"
-        es = "Sonnheim"
+        es = "La Solana"
     }
     {
         en = "Sandfels"
-        es = "Sandfels"
+        es = "Peña de Arena"
     }
     {
         en = "Sonnfels"
-        es = "Sonnfels"
+        es = "Peña del Sol"
     }
     {
         en = "Strauchdorf"
-        es = "Montenegro"
+        es = "El Matorral"
     }
     {
         en = "Kargau"
-        es = "Kargau"
+        es = "Vega Magra"
     }
     {
         en = "Attendorn"
@@ -34563,15 +34563,15 @@ local pairs = [
     }
     {
         en = "Sudheim"
-        es = "Sudheim"
+        es = "Villasur"
     }
     {
         en = "Krauchdorf"
-        es = "Palosanto"
+        es = "Aldea de Krauch"
     }
     {
         en = "Dornthal"
-        es = "Dornthal"
+        es = "Valdespino"
     }
     {
         en = "An established and thriving settlement in the steppe"
@@ -34584,123 +34584,123 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_swamp_fort.nut
     {
         en = "Schwarzburg"
-        es = "Forjavieja"
+        es = "Torrenegra"
     }
     {
         en = "Pfuhlburg"
-        es = "Pfuhlburg"
+        es = "Castillo de la Charca"
     }
     {
         en = "Moorburg"
-        es = "Moorburg"
+        es = "Castillo de la Ciénaga"
     }
     {
         en = "Furthburg"
-        es = "Furthburg"
+        es = "Castillo del Vado"
     }
     {
         en = "Stakenburg"
-        es = "Stakenburg"
+        es = "Castillo de las Estacas"
     }
     {
         en = "Kolkburg"
-        es = "Kolkburg"
+        es = "Castillo de la Poza"
     }
     {
         en = "Torfburg"
-        es = "Torfburg"
+        es = "Castillo de la Turba"
     }
     {
         en = "Krautburg"
-        es = "Krautburg"
+        es = "Castillo de la Hierba"
     }
     {
         en = "Birkenburg"
-        es = "Birkenburg"
+        es = "Castillo del Abedul"
     }
     {
         en = "Brunnburg"
-        es = "Brunnburg"
+        es = "Castillo de la Fuente"
     }
     {
         en = "Kaltenburg"
-        es = "Kaltenburg"
+        es = "Castillo Frío"
     }
     {
         en = "Suhlburg"
-        es = "Suhlburg"
+        es = "Castillo del Fangal"
     }
     {
         en = "Brookburg"
-        es = "Brookburg"
+        es = "Castillo del Arroyo"
     }
     {
         en = "Muckenburg"
-        es = "Muckenburg"
+        es = "Castillo de los Mosquitos"
     }
     {
         en = "Egelburg"
-        es = "Piedraputrida"
+        es = "Castillo de la Sanguijuela"
     }
     {
         en = "Nebelburg"
-        es = "Nebelburg"
+        es = "Castillo de la Niebla"
     }
     {
         en = "Bruchburg"
-        es = "Bruchburg"
+        es = "Castillo del Lodazal"
     }
     {
         en = "Morastburg"
-        es = "Morastburg"
+        es = "Castillo del Cenagal"
     }
     {
         en = "Froschburg"
-        es = "Froschburg"
+        es = "Castillo de las Ranas"
     }
     {
         en = "Schlammburg"
-        es = "Fuertepodrido"
+        es = "Castillo del Lodo"
     }
     {
         en = "Brackenburg"
-        es = "Brackenburg"
+        es = "Castillo del Sabueso"
     }
     {
         en = "Molchburg"
-        es = "Molchburg"
+        es = "Castillo del Tritón"
     }
     {
         en = "Teichburg"
-        es = "Teichburg"
+        es = "Castillo del Estanque"
     }
     {
         en = "Fennburg"
-        es = "Fennburg"
+        es = "Castillo del Aguazal"
     }
     {
         en = "Riedburg"
-        es = "Riedburg"
+        es = "Castillo del Junco"
     }
     {
         en = "Schlickburg"
-        es = "Varamar"
+        es = "Castillo del Cieno"
     }
     {
         en = "Senkburg"
-        es = "Senkburg"
+        es = "Castillo Hundido"
     }
     {
         en = "Rohrburg"
-        es = "Rohrburg"
+        es = "Castillo de la Caña"
     }
     {
         en = "Marschburg"
-        es = "Marschburg"
+        es = "Castillo de la Marisma"
     }
     {
         en = "Schilfburg"
-        es = "Schilfburg"
+        es = "Castillo del Carrizo"
     }
     {
         en = "A stone keep controlling routes through the swamps"
@@ -34713,7 +34713,7 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_swamp_village.nut
     {
         en = "Stakendorf"
-        es = "Stakendorf"
+        es = "Puebla de las Estacas"
     }
     {
         en = "Schwartbuck"
@@ -34721,51 +34721,51 @@ local pairs = [
     }
     {
         en = "Monkamp"
-        es = "Monkamp"
+        es = "Campo del Monje"
     }
     {
         en = "Sehlendorf"
-        es = "Sehlendorf"
+        es = "Aldea de las Almas"
     }
     {
         en = "Schwarzpfuhl"
-        es = "Schwarzpfuhl"
+        es = "Charca Negra"
     }
     {
         en = "Ehlerstorf"
-        es = "Ehlerstorf"
+        es = "Aldea de Ehler"
     }
     {
         en = "Torfbruck"
-        es = "Torfbruck"
+        es = "Puente de la Turba"
     }
     {
         en = "Mohrdorf"
-        es = "Mohrdorf"
+        es = "Lodosa"
     }
     {
         en = "Streekmoor"
-        es = "Streekmoor"
+        es = "Ciénaga de Streek"
     }
     {
         en = "Kolkdorf"
-        es = "Kolkdorf"
+        es = "La Poza"
     }
     {
         en = "Schwarzwasser"
-        es = "Schwarzwasser"
+        es = "Remanso Negro"
     }
     {
         en = "Lauenbruck"
-        es = "Lauenbruck"
+        es = "Puente de Lauen"
     }
     {
         en = "Farnheim"
-        es = "Farnheim"
+        es = "Los Helechos"
     }
     {
         en = "Birkhain"
-        es = "Birkhain"
+        es = "El Abedular"
     }
     {
         en = "Ahlen"
@@ -34773,55 +34773,55 @@ local pairs = [
     }
     {
         en = "Suderbusch"
-        es = "Suderbusch"
+        es = "Zarzal del Sur"
     }
     {
         en = "Altenfurth"
-        es = "Altenfurth"
+        es = "Vado Viejo"
     }
     {
         en = "Breitenbrunn"
-        es = "Breitenbrunn"
+        es = "Fuentelancha"
     }
     {
         en = "Grunbach"
-        es = "Grunbach"
+        es = "Arroyo Verde"
     }
     {
         en = "Grunwasser"
-        es = "Volmark"
+        es = "Charca Verde"
     }
     {
         en = "Schmalfurth"
-        es = "Schmalfurth"
+        es = "Vado Estrecho"
     }
     {
         en = "Grossfurth"
-        es = "Grossfurth"
+        es = "Vado Grande"
     }
     {
         en = "Grunkraut"
-        es = "Grunkraut"
+        es = "Herbazal"
     }
     {
         en = "Schattenfluth"
-        es = "Schattenfluth"
+        es = "Aguasombra"
     }
     {
         en = "Weissenbach"
-        es = "Weissenbach"
+        es = "Arroyo Blanco"
     }
     {
         en = "Kaltenbach"
-        es = "Kaltenbach"
+        es = "Arroyo Frío"
     }
     {
         en = "Tarsdorf"
-        es = "Tarsdorf"
+        es = "Aldea de Tars"
     }
     {
         en = "Tiefenbach"
-        es = "Tiefenbach"
+        es = "Arroyo Hondo"
     }
     {
         en = "Julbach"
@@ -34829,19 +34829,19 @@ local pairs = [
     }
     {
         en = "Auengrund"
-        es = "Auengrund"
+        es = "Hoya de la Vega"
     }
     {
         en = "Schwarzbrook"
-        es = "Schwarzbrook"
+        es = "Arroyo Negro"
     }
     {
         en = "Brookdorf"
-        es = "Brookdorf"
+        es = "El Arroyo"
     }
     {
         en = "Brookheim"
-        es = "Brookheim"
+        es = "Aldearroyo"
     }
     {
         en = "A larger settlement surrounded by foul swamps"
@@ -34854,7 +34854,7 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\medium_tundra_fort.nut
     {
         en = "Skallegard"
-        es = "Comezon de Aguasfrias"
+        es = "Cercado del Cráneo"
     }
     {
         en = "Varehaug"
@@ -34862,11 +34862,11 @@ local pairs = [
     }
     {
         en = "Gufirsgard"
-        es = "Gufirsgard"
+        es = "Cercado de Gufir"
     }
     {
         en = "Hafnarsholm"
-        es = "Hogar"
+        es = "Islote del Puerto"
     }
     {
         en = "Ragnhaug"
@@ -34874,19 +34874,19 @@ local pairs = [
     }
     {
         en = "Torgeirsholm"
-        es = "Castillo Princesa"
+        es = "Islote de Torgeir"
     }
     {
         en = "Heersgard"
-        es = "Heersgard"
+        es = "Cercado de la Hueste"
     }
     {
         en = "Holmhaug"
-        es = "Holmhaug"
+        es = "Túmulo del Islote"
     }
     {
         en = "Lundirsholm"
-        es = "Picaestrella"
+        es = "Islote de la Arboleda"
     }
     {
         en = "A stone keep securing the surrounding tundra"
@@ -36010,131 +36010,131 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_coast_fort.nut
     {
         en = "Seeturm"
-        es = "Atalaya de la Viuda"
+        es = "Reposo del Grajo"
     }
     {
         en = "Sandwacht"
-        es = "Sandwacht"
+        es = "Atalaya de Arena"
     }
     {
         en = "Seewall"
-        es = "Seewall"
+        es = "Muro del Mar"
     }
     {
         en = "Kielwall"
-        es = "Kielwall"
+        es = "Muro de Kiel"
     }
     {
         en = "Strandwall"
-        es = "Strandwall"
+        es = "Muro de la Playa"
     }
     {
         en = "Otternwacht"
-        es = "Otternwacht"
+        es = "Atalaya de la Nutria"
     }
     {
         en = "Kampwacht"
-        es = "Kampwacht"
+        es = "Atalaya del Cercado"
     }
     {
         en = "Stohlwall"
-        es = "Stohlwall"
+        es = "Muro de Stohl"
     }
     {
         en = "Seeschanz"
-        es = "Fuerte Naufragio"
+        es = "Baluarte del Mar"
     }
     {
         en = "Wikwall"
-        es = "Wikwall"
+        es = "Muro de la Bahía"
     }
     {
         en = "Sandturm"
-        es = "Sandturm"
+        es = "Torre de Arena"
     }
     {
         en = "Krakenwacht"
-        es = "Krakenwacht"
+        es = "Atalaya del Kraken"
     }
     {
         en = "Strandwehr"
-        es = "Strandwehr"
+        es = "Muralla de la Playa"
     }
     {
         en = "Seewehr"
-        es = "Puerto Noble"
+        es = "Muralla del Mar"
     }
     {
         en = "Blankwehr"
-        es = "Blankwehr"
+        es = "Muralla Blanca"
     }
     {
         en = "Krumwehr"
-        es = "Krumwehr"
+        es = "Muralla Torcida"
     }
     {
         en = "Wallsande"
-        es = "Torreón Salado"
+        es = "Muro del Arenal"
     }
     {
         en = "Salzwacht"
-        es = "Roble Viejo"
+        es = "Atalaya de la Sal"
     }
     {
         en = "Sturmwall"
-        es = "Piedra Quebrada"
+        es = "Muro de la Tormenta"
     }
     {
         en = "Seewacht"
-        es = "Seewacht"
+        es = "Atalaya del Mar"
     }
     {
         en = "Fernwall"
-        es = "Fernwall"
+        es = "Muro del Confín"
     }
     {
         en = "Wesselburg"
-        es = "Wesselburg"
+        es = "Castillo de Wessel"
     }
     {
         en = "Dagewall"
-        es = "Dagewall"
+        es = "Muro de Dage"
     }
     {
         en = "Windwacht"
-        es = "Windwacht"
+        es = "Atalaya del Viento"
     }
     {
         en = "Weissenwacht"
-        es = "Zarpa Rota"
+        es = "Atalaya Blanca"
     }
     {
         en = "Fishburg"
-        es = "Fishburg"
+        es = "Castillo del Pez"
     }
     {
         en = "Stindwall"
-        es = "Stindwall"
+        es = "Muro de Stind"
     }
     {
         en = "Tidenwall"
-        es = "Tidenwall"
+        es = "Muro de la Marea"
     }
     {
         en = "Ebbenwacht"
-        es = "Ebbenwacht"
+        es = "Atalaya de la Bajamar"
     }
     {
         en = "Prielburg"
-        es = "Prielburg"
+        es = "Castillo del Canal"
     }
     {
         en = "Sundwall"
-        es = "Sundwall"
+        es = "Muro del Estrecho"
     }
     {
         en = "Sielburg"
-        es = "Costa Salada"
+        es = "Castillo de la Esclusa"
     }
     {
         en = "A wooden motte with a bailey towering high over the nearby coastline"
@@ -36147,15 +36147,15 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_farm_fort.nut
     {
         en = "Gardendorf"
-        es = "Gardendorf"
+        es = "Puesto de la Guardia"
     }
     {
         en = "Walldorf"
-        es = "Walldorf"
+        es = "Muro de la Aldea"
     }
     {
         en = "Hageturm"
-        es = "Hageturm"
+        es = "Torre del Seto"
     }
     {
         en = "Wiesenwacht"
@@ -36163,27 +36163,27 @@ local pairs = [
     }
     {
         en = "Markwall"
-        es = "Markwall"
+        es = "Muro de la Marca"
     }
     {
         en = "Hornwall"
-        es = "Hornwall"
+        es = "Muralla del Cuerno"
     }
     {
         en = "Hemmelswacht"
-        es = "Hemmelswacht"
+        es = "Atalaya de Hemmel"
     }
     {
         en = "Grafenturm"
-        es = "Grafenturm"
+        es = "Torrejón del Conde"
     }
     {
         en = "Grafenwacht"
-        es = "Grafenwacht"
+        es = "Atalaya del Conde"
     }
     {
         en = "Wagenwall"
-        es = "Wagenwall"
+        es = "Muro de Carros"
     }
     {
         en = "Herrmanswacht"
@@ -36191,59 +36191,59 @@ local pairs = [
     }
     {
         en = "Wallheim"
-        es = "Wallheim"
+        es = "Villamuro"
     }
     {
         en = "Schanzdorf"
-        es = "Schanzdorf"
+        es = "Baluarte de la Aldea"
     }
     {
         en = "Koppelwacht"
-        es = "Koppelwacht"
+        es = "Atalaya del Redil"
     }
     {
         en = "Hammerturm"
-        es = "Hammerturm"
+        es = "Torre del Martillo"
     }
     {
         en = "Speerheim"
-        es = "Speerheim"
+        es = "Torrepica"
     }
     {
         en = "Grunwacht"
-        es = "Grunwacht"
+        es = "Atalaya Verde"
     }
     {
         en = "Schonwall"
-        es = "Sietecauces"
+        es = "Muro Hermoso"
     }
     {
         en = "Auwall"
-        es = "Auwall"
+        es = "Muralla de la Vega"
     }
     {
         en = "Graswacht"
-        es = "Graswacht"
+        es = "Atalaya del Pasto"
     }
     {
         en = "Hainwall"
-        es = "Hainwall"
+        es = "Muralla de la Arboleda"
     }
     {
         en = "Krugwall"
-        es = "Krugwall"
+        es = "Muralla de la Posada"
     }
     {
         en = "Furstenwall"
-        es = "Furstenwall"
+        es = "Muralla del Príncipe"
     }
     {
         en = "Thalwacht"
-        es = "Campoverde"
+        es = "Atalaya del Valle"
     }
     {
         en = "Weiherwacht"
-        es = "Weiherwacht"
+        es = "Atalaya de la Laguna"
     }
     {
         en = "A wooden motte with a bailey overlooking the surrounding fields"
@@ -36256,35 +36256,35 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_farming_village.nut
     {
         en = "Neuenried"
-        es = "Neuenried"
+        es = "Juncal Nuevo"
     }
     {
         en = "Auenbach"
-        es = "Auenbach"
+        es = "Vega del Arroyo"
     }
     {
         en = "Adelshofen"
-        es = "Adelshofen"
+        es = "Quintanilla de Hidalgos"
     }
     {
         en = "Allersdorf"
-        es = "Allersdorf"
+        es = "Aldea de Aller"
     }
     {
         en = "Brunnendorf"
-        es = "Brunnendorf"
+        es = "La Fuente"
     }
     {
         en = "Ochsenhausen"
-        es = "Ochsenhausen"
+        es = "Villabuey"
     }
     {
         en = "Weingarten"
-        es = "Weingarten"
+        es = "El Viñedo"
     }
     {
         en = "Konigsfeld"
-        es = "Puenteamargo"
+        es = "Campo Real"
     }
     {
         en = "Rosenhof"
@@ -36292,7 +36292,7 @@ local pairs = [
     }
     {
         en = "Weidenbach"
-        es = "Sotodeoro"
+        es = "Sauceda"
     }
     {
         en = "A small farming village living mostly off of the surrounding fertile lands"
@@ -36305,7 +36305,7 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_fishing_village.nut
     {
         en = "Seedorf"
-        es = "Seedorf"
+        es = "Yalen"
     }
     {
         en = "Kielseng"
@@ -36313,15 +36313,15 @@ local pairs = [
     }
     {
         en = "Meierwik"
-        es = "Meierwik"
+        es = "Bahía de Meier"
     }
     {
         en = "Sanddorf"
-        es = "Sanddorf"
+        es = "Arenillas"
     }
     {
         en = "Sandwik"
-        es = "Sandwik"
+        es = "Bahía de Arena"
     }
     {
         en = "Holnis"
@@ -36329,15 +36329,15 @@ local pairs = [
     }
     {
         en = "Holmwik"
-        es = "Holmwik"
+        es = "Bahía del Islote"
     }
     {
         en = "Niewik"
-        es = "Niewik"
+        es = "Bahía Nueva"
     }
     {
         en = "Hattlund"
-        es = "Hattlund"
+        es = "Arboleda de Hatt"
     }
     {
         en = "Stohl"
@@ -36345,47 +36345,47 @@ local pairs = [
     }
     {
         en = "Strande"
-        es = "Strande"
+        es = "La Playa"
     }
     {
         en = "Sandkamp"
-        es = "Sandkamp"
+        es = "Cercado de Arena"
     }
     {
         en = "Sandberg"
-        es = "Sandberg"
+        es = "Cerro de Arena"
     }
     {
         en = "Birkenstrand"
-        es = "Birkenstrand"
+        es = "Playa de los Abedules"
     }
     {
         en = "Sundheim"
-        es = "Sundheim"
+        es = "Aldea del Estrecho"
     }
     {
         en = "Seekamp"
-        es = "Seekamp"
+        es = "Cercado del Mar"
     }
     {
         en = "Krakendorf"
-        es = "Krakendorf"
+        es = "Aldea del Kraken"
     }
     {
         en = "Blankwasser"
-        es = "Blankwasser"
+        es = "Aguablanca"
     }
     {
         en = "Harkensee"
-        es = "Harkensee"
+        es = "Lago de Harken"
     }
     {
         en = "Otterndorf"
-        es = "Otterndorf"
+        es = "Las Nutrias"
     }
     {
         en = "Seefeld"
-        es = "Seefeld"
+        es = "Campomar"
     }
     {
         en = "Horum"
@@ -36393,7 +36393,7 @@ local pairs = [
     }
     {
         en = "Krumhorn"
-        es = "Krumhorn"
+        es = "Cabo Torcido"
     }
     {
         en = "Gothmund"
@@ -36401,39 +36401,39 @@ local pairs = [
     }
     {
         en = "Angeln"
-        es = "Puerto Ryam"
+        es = "Angeln"
     }
     {
         en = "Sandholm"
-        es = "Sandholm"
+        es = "Islote de Arena"
     }
     {
         en = "Jadensee"
-        es = "Jadensee"
+        es = "Lago del Jade"
     }
     {
         en = "Egernsande"
-        es = "Egernsande"
+        es = "Arenal de Egern"
     }
     {
         en = "Nebelheim"
-        es = "Nebelheim"
+        es = "Villaniebla"
     }
     {
         en = "Sudersande"
-        es = "Sudersande"
+        es = "Arenal del Sur"
     }
     {
         en = "Grossenkoog"
-        es = "Grossenkoog"
+        es = "Ribera Grande"
     }
     {
         en = "Aalbek"
-        es = "Aalbek"
+        es = "Arroyo de las Anguilas"
     }
     {
         en = "Seedeich"
-        es = "Estrella de Mar"
+        es = "Dique del Mar"
     }
     {
         en = "A small fishing village made up of a few humble huts"
@@ -36446,51 +36446,51 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_forest_fort.nut
     {
         en = "Holzwacht"
-        es = "Holzwacht"
+        es = "Atalaya del Monte"
     }
     {
         en = "Tannwall"
-        es = "Tannwall"
+        es = "Muro de Abetos"
     }
     {
         en = "Waldwacht"
-        es = "Waldwacht"
+        es = "Atalaya del Bosque"
     }
     {
         en = "Hainturm"
-        es = "Hainturm"
+        es = "Torre de la Arboleda"
     }
     {
         en = "Dunkelwacht"
-        es = "Dunkelwacht"
+        es = "Atalaya Oscura"
     }
     {
         en = "Eichwacht"
-        es = "Eichwacht"
+        es = "Atalaya del Roble"
     }
     {
         en = "Waidschanze"
-        es = "Waidschanze"
+        es = "Baluarte de la Caza"
     }
     {
         en = "Fahrnwacht"
-        es = "Fahrnwacht"
+        es = "Atalaya del Helechal"
     }
     {
         en = "Mooswehr"
-        es = "Aguasmil"
+        es = "Muralla del Musgo"
     }
     {
         en = "Forstwehr"
-        es = "Forstwehr"
+        es = "Muro de la Floresta"
     }
     {
         en = "Eulenwacht"
-        es = "Eulenwacht"
+        es = "Atalaya del Búho"
     }
     {
         en = "Fuchsturm"
-        es = "Fuerte Astilla"
+        es = "Torrejón del Zorro"
     }
     {
         en = "Finsterwall"
@@ -36498,71 +36498,71 @@ local pairs = [
     }
     {
         en = "Dusterschanze"
-        es = "Nuevo Barril"
+        es = "Baluarte Lóbrego"
     }
     {
         en = "Finsterwehr"
-        es = "Finsterwehr"
+        es = "Muro Tenebroso"
     }
     {
         en = "Dornwall"
-        es = "Dornwall"
+        es = "Muralla del Espino"
     }
     {
         en = "Farnwacht"
-        es = "Farnwacht"
+        es = "Atalaya del Helecho"
     }
     {
         en = "Grunwall"
-        es = "Grunwall"
+        es = "Muralla Verde"
     }
     {
         en = "Eulenturm"
-        es = "Torreón Robleviejo"
+        es = "Torre del Búho"
     }
     {
         en = "Wildwacht"
-        es = "Wildwacht"
+        es = "Atalaya Salvaje"
     }
     {
         en = "Steinforst"
-        es = "Steinforst"
+        es = "Bosque de Peñas"
     }
     {
         en = "Haselwacht"
-        es = "Haselwacht"
+        es = "Atalaya del Avellano"
     }
     {
         en = "Nebelwacht"
-        es = "Nebelwacht"
+        es = "Atalaya de la Niebla"
     }
     {
         en = "Hirschturm"
-        es = "Hirschturm"
+        es = "Torrejón del Ciervo"
     }
     {
         en = "Schwarzwacht"
-        es = "Bosquealto"
+        es = "Atalaya Negra"
     }
     {
         en = "Steinweiler"
-        es = "Steinweiler"
+        es = "Caserío de Peña"
     }
     {
         en = "Erlenwall"
-        es = "Erlenwall"
+        es = "Muralla del Aliso"
     }
     {
         en = "Eibenwacht"
-        es = "Reposo del Grajo"
+        es = "Atalaya del Tejo"
     }
     {
         en = "Haselwehr"
-        es = "Haselwehr"
+        es = "Muro del Avellano"
     }
     {
         en = "Waldenwehr"
-        es = "Arco Ancho"
+        es = "Muralla del Bosque"
     }
     {
         en = "A military strongpoint surrounded by woods"
@@ -36575,27 +36575,27 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_lumber_village.nut
     {
         en = "Eschbach"
-        es = "Eschbach"
+        es = "Fresneda"
     }
     {
         en = "Grunenbach"
-        es = "Grunenbach"
+        es = "Arroyo del Verdor"
     }
     {
         en = "Nesselwald"
-        es = "Nesselwald"
+        es = "Ortigosa"
     }
     {
         en = "Kleinholz"
-        es = "Hebillanegra"
+        es = "Montecillo"
     }
     {
         en = "Jungholz"
-        es = "Jungholz"
+        es = "Monte Nuevo"
     }
     {
         en = "Eisenholz"
-        es = "Eisenholz"
+        es = "Leña de Hierro"
     }
     {
         en = "Ehrwalden"
@@ -36603,7 +36603,7 @@ local pairs = [
     }
     {
         en = "Ettelwald"
-        es = "Ettelwald"
+        es = "Bosque de Ettel"
     }
     {
         en = "A village living off of lumber and everything the forest offers"
@@ -36616,19 +36616,19 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_mining_village.nut
     {
         en = "Goldhoft"
-        es = "Goldhoft"
+        es = "Nashkel"
     }
     {
         en = "Ellenberg"
-        es = "Ellenberg"
+        es = "Monte de Ellen"
     }
     {
         en = "Kahlenberg"
-        es = "Kahlenberg"
+        es = "Monte Pelado"
     }
     {
         en = "Bokenberg"
-        es = "Bokenberg"
+        es = "Otero de las Hayas"
     }
     {
         en = "Gronenberg"
@@ -36636,31 +36636,31 @@ local pairs = [
     }
     {
         en = "Fuchsberg"
-        es = "Fuchsberg"
+        es = "Monte del Zorro"
     }
     {
         en = "Reinberg"
-        es = "Reinberg"
+        es = "Monte Puro"
     }
     {
         en = "Kaltenhof"
-        es = "Yalen"
+        es = "Villafría"
     }
     {
         en = "Jaderberg"
-        es = "Jaderberg"
+        es = "Monte de Jade"
     }
     {
         en = "Steinhausen"
-        es = "Steinhausen"
+        es = "Casas de Piedra"
     }
     {
         en = "Eichenberg"
-        es = "Eichenberg"
+        es = "Otero de Robles"
     }
     {
         en = "Thal"
-        es = "Thal"
+        es = "El Valle"
     }
     {
         en = "Wolfhaiden"
@@ -36672,7 +36672,7 @@ local pairs = [
     }
     {
         en = "Sattel"
-        es = "Sattel"
+        es = "El Collado"
     }
     {
         en = "Koppingen"
@@ -36680,27 +36680,27 @@ local pairs = [
     }
     {
         en = "Schweikhof"
-        es = "Schweikhof"
+        es = "Granja de Schweik"
     }
     {
         en = "Hochdorf"
-        es = "Hochdorf"
+        es = "Aldea Alta"
     }
     {
         en = "Bergau"
-        es = "Bergau"
+        es = "Vega del Monte"
     }
     {
         en = "Nasenfels"
-        es = "Nasenfels"
+        es = "Peña de la Nariz"
     }
     {
         en = "Adlerstein"
-        es = "Adlerstein"
+        es = "Peña del Águila"
     }
     {
         en = "Felsheim"
-        es = "Felsheim"
+        es = "Villapeña"
     }
     {
         en = "Mitterfels"
@@ -36708,19 +36708,19 @@ local pairs = [
     }
     {
         en = "Hohenau"
-        es = "Hohenau"
+        es = "Vega Alta"
     }
     {
         en = "Pfeilstein"
-        es = "Pfeilstein"
+        es = "Peña de la Flecha"
     }
     {
         en = "Schneeberg"
-        es = "El Risco"
+        es = "Monte Nevado"
     }
     {
         en = "Weissenfels"
-        es = "Cuevahonda"
+        es = "Peña Blanca"
     }
     {
         en = "Senftenberg"
@@ -36728,15 +36728,15 @@ local pairs = [
     }
     {
         en = "Eisengrab"
-        es = "Eisengrab"
+        es = "Tumba de Hierro"
     }
     {
         en = "Weitblick"
-        es = "Weitblick"
+        es = "El Mirador"
     }
     {
         en = "Erdfall"
-        es = "Erdfall"
+        es = "La Sima"
     }
     {
         en = "Helfenstein"
@@ -36753,51 +36753,51 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_mountains_fort.nut
     {
         en = "Wallstein"
-        es = "Wallstein"
+        es = "Peña Amurallada"
     }
     {
         en = "Hohenwacht"
-        es = "Hohenwacht"
+        es = "Atalaya Alta"
     }
     {
         en = "Steinberg"
-        es = "Steinberg"
+        es = "Peñamonte"
     }
     {
         en = "Wolfswall"
-        es = "Wolfswall"
+        es = "Muro del Lobo"
     }
     {
         en = "Felswall"
-        es = "Felswall"
+        es = "Muralla de la Peña"
     }
     {
         en = "Steinwacht"
-        es = "Steinwacht"
+        es = "Atalaya de la Peña"
     }
     {
         en = "Eisenwall"
-        es = "Eisenwall"
+        es = "Muralla de Hierro"
     }
     {
         en = "Jaderwall"
-        es = "Jaderwall"
+        es = "Muralla de Jade"
     }
     {
         en = "Hohenschanze"
-        es = "Hohenschanze"
+        es = "Baluarte Alto"
     }
     {
         en = "Gronenwall"
-        es = "Muralla Verde"
+        es = "Muralla del Verdor"
     }
     {
         en = "Schanzberg"
-        es = "Fuerte del Matatrols"
+        es = "Monte del Baluarte"
     }
     {
         en = "Turmwacht"
-        es = "Turmwacht"
+        es = "Torre del Vigía"
     }
     {
         en = "Felswacht"
@@ -36805,15 +36805,15 @@ local pairs = [
     }
     {
         en = "Hohenturm"
-        es = "Hohenturm"
+        es = "Torre Alta"
     }
     {
         en = "Adlerwacht"
-        es = "Adlerwacht"
+        es = "Atalaya del Águila"
     }
     {
         en = "Scharfenstein"
-        es = "Refugio de Plata"
+        es = "Peña Afilada"
     }
     {
         en = "Oberwallheim"
@@ -36821,23 +36821,23 @@ local pairs = [
     }
     {
         en = "Hochwall"
-        es = "Hochwall"
+        es = "Muralla Alta"
     }
     {
         en = "Bergwall"
-        es = "Bergwall"
+        es = "Muralla del Monte"
     }
     {
         en = "Finkenwacht"
-        es = "Finkenwacht"
+        es = "Atalaya del Pinzón"
     }
     {
         en = "Greifenwall"
-        es = "Greifenwall"
+        es = "Muralla del Grifo"
     }
     {
         en = "Himmelswacht"
-        es = "Colina Cuerno"
+        es = "Atalaya del Cielo"
     }
     {
         en = "A small fortification built in the mountains"
@@ -36850,7 +36850,7 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_snow_fort.nut
     {
         en = "Tonderwold"
-        es = "Tonderwold"
+        es = "Monte de Tonder"
     }
     {
         en = "Hornwold"
@@ -36858,55 +36858,55 @@ local pairs = [
     }
     {
         en = "Grimtorn"
-        es = "Grimtorn"
+        es = "Torre Torva"
     }
     {
         en = "Helleweir"
-        es = "Helleweir"
+        es = "Presa de la Laja"
     }
     {
         en = "Kalkweir"
-        es = "Kalkweir"
+        es = "Presa de la Cal"
     }
     {
         en = "Lyderswold"
-        es = "Lyderswold"
+        es = "Monte de Lyder"
     }
     {
         en = "Hornspira"
-        es = "Fuerte Gris"
+        es = "Aguja del Cuerno"
     }
     {
         en = "Sommerspira"
-        es = "Sommerspira"
+        es = "Aguja del Verano"
     }
     {
         en = "Brammingwold"
-        es = "Brammingwold"
+        es = "Monte de Bramming"
     }
     {
         en = "Norrewold"
-        es = "Norrewold"
+        es = "Monte Boreal"
     }
     {
         en = "Birketorn"
-        es = "Birketorn"
+        es = "Torre del Abedul"
     }
     {
         en = "Donnerswold"
-        es = "Donnerswold"
+        es = "Monte del Trueno"
     }
     {
         en = "Tangweir"
-        es = "Tangweir"
+        es = "Presa del Alga"
     }
     {
         en = "Helviktorn"
-        es = "Helviktorn"
+        es = "Torre de Bahía Infernal"
     }
     {
         en = "Torvastorn"
-        es = "Fuerte Sombrío"
+        es = "Torre de Torva"
     }
     {
         en = "Skjoldwold"
@@ -36914,79 +36914,79 @@ local pairs = [
     }
     {
         en = "Eidsviktorn"
-        es = "Eidsviktorn"
+        es = "Torre de Bahía Jurada"
     }
     {
         en = "Halspira"
-        es = "Piedrarrota"
+        es = "Aguja del Collado"
     }
     {
         en = "Gerwold"
-        es = "Gerwold"
+        es = "Monte de la Lanza"
     }
     {
         en = "Gunnspira"
-        es = "Gunnspira"
+        es = "Aguja de Gunn"
     }
     {
         en = "Asentorn"
-        es = "Colina Escarcha"
+        es = "Torre de los Dioses"
     }
     {
         en = "Hammarwold"
-        es = "Hammarwold"
+        es = "Monte del Martillo"
     }
     {
         en = "Holmgard"
-        es = "Holmgard"
+        es = "Cercado del Islote"
     }
     {
         en = "Vallgard"
-        es = "Vallgard"
+        es = "Empalizada"
     }
     {
         en = "Falkenholm"
-        es = "Falkenholm"
+        es = "Islote del Halcón"
     }
     {
         en = "Glommenwold"
-        es = "Glommenwold"
+        es = "Monte de Glommen"
     }
     {
         en = "Gunnweir"
-        es = "Gunnweir"
+        es = "Presa de Gunn"
     }
     {
         en = "Asatorn"
-        es = "Último Refugio"
+        es = "Torre de Asa"
     }
     {
         en = "Kungswold"
-        es = "Kungswold"
+        es = "Monterreal"
     }
     {
         en = "Hagenswold"
-        es = "Hagenswold"
+        es = "Monte de Hagen"
     }
     {
         en = "Lindweir"
-        es = "Fortaleza de Azabache"
+        es = "Presa del Tilo"
     }
     {
         en = "Hindaswolt"
-        es = "Hindaswolt"
+        es = "Monte de la Cierva"
     }
     {
         en = "Lokewold"
-        es = "Lokewold"
+        es = "Monte de Loki"
     }
     {
         en = "Ringwold"
-        es = "Ringwold"
+        es = "Monte del Anillo"
     }
     {
         en = "Hakonswold"
-        es = "Hakonswold"
+        es = "Monte de Hakon"
     }
     {
         en = "This motte with bailey looks wide over the endless snow"
@@ -36999,11 +36999,11 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_snow_village.nut
     {
         en = "Bullarsby"
-        es = "Bullarsby"
+        es = "Villa Bullar"
     }
     {
         en = "Lonneberg"
-        es = "Lonneberg"
+        es = "Cerro del Arce"
     }
     {
         en = "Some huts huddled together"
@@ -37016,95 +37016,95 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_steppe_fort.nut
     {
         en = "Wohlenwacht"
-        es = "Wohlenwacht"
+        es = "Atalaya de Wohlen"
     }
     {
         en = "Krauchwall"
-        es = "Krauchwall"
+        es = "Muralla de Krauch"
     }
     {
         en = "Erlachwall"
-        es = "Erlachwall"
+        es = "Muralla del Alisal"
     }
     {
         en = "Treitenwacht"
-        es = "Treitenwacht"
+        es = "Atalaya de Treiten"
     }
     {
         en = "Thurnwall"
-        es = "Dominio del Cielo"
+        es = "Muro de la Torre"
     }
     {
         en = "Rothenwall"
-        es = "Rothenwall"
+        es = "Muro Rojo"
     }
     {
         en = "Sonnwehr"
-        es = "Sonnwehr"
+        es = "Muralla del Sol"
     }
     {
         en = "Siegwacht"
-        es = "Nido de Buitres"
+        es = "Atalaya de la Victoria"
     }
     {
         en = "Schanzthal"
-        es = "Schanzthal"
+        es = "Baluarte del Valle"
     }
     {
         en = "Sudschanze"
-        es = "Sudschanze"
+        es = "Baluarte del Sur"
     }
     {
         en = "Strauchwacht"
-        es = "Refugio Quebrado"
+        es = "Atalaya del Matorral"
     }
     {
         en = "Kargwall"
-        es = "Kargwall"
+        es = "Muralla Magra"
     }
     {
         en = "Dornturm"
-        es = "Brazo Roto"
+        es = "Torre del Espino"
     }
     {
         en = "Gelbwall"
-        es = "Gelbwall"
+        es = "Muralla Amarilla"
     }
     {
         en = "Suderwacht"
-        es = "Suderwacht"
+        es = "Atalaya Meridional"
     }
     {
         en = "Dorngard"
-        es = "Dorngard"
+        es = "Cercado de Espinos"
     }
     {
         en = "Dornwacht"
-        es = "Dornwacht"
+        es = "Atalaya del Espino"
     }
     {
         en = "Goldwall"
-        es = "Goldwall"
+        es = "Muralla de Oro"
     }
     {
         en = "Wurmwacht"
-        es = "Wurmwacht"
+        es = "Atalaya de la Sierpe"
     }
     {
         en = "Brunnwall"
-        es = "Brunnwall"
+        es = "Muralla de la Fuente"
     }
     {
         en = "Unterwall"
-        es = "Unterwall"
+        es = "Muro Bajo"
     }
     {
         en = "Brackenwacht"
-        es = "Brackenwacht"
+        es = "Atalaya del Sabueso"
     }
     {
         en = "Steppwall"
-        es = "Steppwall"
+        es = "Muro de la Estepa"
     }
     {
         en = "A small wooden keep in the dry steppe"
@@ -37126,47 +37126,47 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_swamp_fort.nut
     {
         en = "Mooswall"
-        es = "Mooswall"
+        es = "Muro del Musgo"
     }
     {
         en = "Pfuhlwall"
-        es = "Pfuhlwall"
+        es = "Muro de la Charca"
     }
     {
         en = "Moorwacht"
-        es = "Moorwacht"
+        es = "Atalaya de la Ciénaga"
     }
     {
         en = "Furthwacht"
-        es = "Furthwacht"
+        es = "Atalaya del Vado"
     }
     {
         en = "Stakenwall"
-        es = "Stakenwall"
+        es = "Muro de Estacas"
     }
     {
         en = "Kolkwacht"
-        es = "Kolkwacht"
+        es = "Atalaya de la Poza"
     }
     {
         en = "Auenturm"
-        es = "Auenturm"
+        es = "Torre de la Vega"
     }
     {
         en = "Torfwall"
-        es = "Torfwall"
+        es = "Muro de Turba"
     }
     {
         en = "Pfuhlwacht"
-        es = "Pfuhlwacht"
+        es = "Atalaya de la Charca"
     }
     {
         en = "Krautwacht"
-        es = "Krautwacht"
+        es = "Atalaya de la Hierba"
     }
     {
         en = "Birkwall"
-        es = "Birkwall"
+        es = "Muralla del Abedul"
     }
     {
         en = "Birkturm"
@@ -37174,75 +37174,75 @@ local pairs = [
     }
     {
         en = "Kaltenwacht"
-        es = "Kaltenwacht"
+        es = "Atalaya Fría"
     }
     {
         en = "Grunenturm"
-        es = "Grunenturm"
+        es = "Torre del Verdor"
     }
     {
         en = "Suhlwacht"
-        es = "Suhlwacht"
+        es = "Atalaya del Fangal"
     }
     {
         en = "Schwarzgard"
-        es = "Atalaya de Aguasgrises"
+        es = "Cercado Negro"
     }
     {
         en = "Moorgard"
-        es = "Moorgard"
+        es = "Cercado de la Ciénaga"
     }
     {
         en = "Wehrturm"
-        es = "Wehrturm"
+        es = "Torre Vigía"
     }
     {
         en = "Furthwehr"
-        es = "Furthwehr"
+        es = "Muro del Vado"
     }
     {
         en = "Schanzmoor"
-        es = "Pantano de la Bruja"
+        es = "Baluarte de la Ciénaga"
     }
     {
         en = "Wallpfuhl"
-        es = "Wallpfuhl"
+        es = "Charca del Muro"
     }
     {
         en = "Wallfurt"
-        es = "Castroferro"
+        es = "Muralla del Vado"
     }
     {
         en = "Auenwacht"
-        es = "Auenwacht"
+        es = "Atalaya de la Vega"
     }
     {
         en = "Brookwall"
-        es = "Brookwall"
+        es = "Muralla del Arroyo"
     }
     {
         en = "Fennwacht"
-        es = "Fennwacht"
+        es = "Atalaya del Aguazal"
     }
     {
         en = "Fackelwacht"
-        es = "Torreón Picodecuervo"
+        es = "Atalaya de la Antorcha"
     }
     {
         en = "Bruchwacht"
-        es = "Bruchwacht"
+        es = "Atalaya del Lodazal"
     }
     {
         en = "Riedwehr"
-        es = "Riedwehr"
+        es = "Muralla del Junco"
     }
     {
         en = "Rohrwall"
-        es = "Rohrwall"
+        es = "Muro de la Caña"
     }
     {
         en = "Dusterwall"
-        es = "Dusterwall"
+        es = "Muralla Lóbrega"
     }
     {
         en = "A motte with bailey built on a spot of dry ground"
@@ -37264,31 +37264,31 @@ local pairs = [
     // FILE: scripts\entity\world\settlements\small_tundra_fort.nut
     {
         en = "Holmwold"
-        es = "Holmwold"
+        es = "Monte del Islote"
     }
     {
         en = "Eidarswold"
-        es = "Bosquespeso"
+        es = "Monte de Eidar"
     }
     {
         en = "Skallewold"
-        es = "Fosafria"
+        es = "Monte del Cráneo"
     }
     {
         en = "Knorrespira"
-        es = "Knorrespira"
+        es = "Aguja Nudosa"
     }
     {
         en = "Linderstorn"
-        es = "Linderstorn"
+        es = "Torre de los Tilos"
     }
     {
         en = "Neidspira"
-        es = "Bosque de la Serpierte"
+        es = "Aguja del Escarnio"
     }
     {
         en = "Bredaswold"
-        es = "Bredaswold"
+        es = "Monte de Breda"
     }
     {
         en = "A wooden motte towering above the tundra"
@@ -73588,7 +73588,7 @@ local pairs = [
     {
         // @composicion
         en = "Save all changes"
-        es = "Guardar todos los cambios"
+        es = "Aceptar"
     }
     {
         // @composicion

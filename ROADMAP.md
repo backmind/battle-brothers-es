@@ -10,7 +10,7 @@ La traducción del juego base y sus expansiones está completa desde la 1.0.0. L
 
 ## Ahora: mantener los dos
 
-Las versiones 5.0.x mantienen el base y Legends: erratas, textos que se cuelan en inglés o no caben en pantalla, y lo que traiga cada parche del juego o cada versión de Legends. Lo pendiente está en las [issues](https://github.com/backmind/battle-brothers-es/issues).
+Las versiones 5.x mantienen el base y Legends: erratas, textos que se cuelan en inglés o no caben en pantalla, y lo que traiga cada parche del juego o cada versión de Legends. Lo pendiente está en las [issues](https://github.com/backmind/battle-brothers-es/issues).
 
 Las versiones de prueba, cuando las haya, se publican como *pre-release* en la página de [releases](https://github.com/backmind/battle-brothers-es/releases), así que el aviso de actualizaciones de MSU no se las ofrece a quien tiene la versión estable; para probar una, hay que bajarla de esa página a mano.
 

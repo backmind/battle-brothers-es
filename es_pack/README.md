@@ -9,9 +9,9 @@ Cada traducción tiene su corpus en `corpus/`, en formato Rosetta y agrupado por
 Al corpus del juego base lo acompañan varios registros, que guardan el trabajo hecho y las decisiones tomadas para que nadie rehaga lo uno ni deshaga lo otro por accidente:
 
 - `corpus/VACIOS.md`: la adjudicación completa de los vacíos, con la política de nombres propios, la taxonomía de claves internas y las claves que romperían el juego si alguien las rellena.
-- `corpus/CENSO_CIEGO.tsv`: los veredictos del censo a ciegas de las tablas de nombres, que blindan los guiños, las licencias de traducción y las decisiones editoriales.
-- `corpus/GUINOS.md`: el catálogo de guiños y homenajes del equipo original, confirmados por decisión expresa.
-- `corpus/KNOWN_ISSUES.md`: hallazgos de la verificación en partida, con su causa y su estado.
+- `corpus/CENSO_CIEGO.tsv`: los veredictos del censo a ciegas de las tablas de nombres, que blindan los guiños, las licencias de traducción y las decisiones editoriales. En los nombres de lugar mandan la política de `corpus/VACIOS.md` y el catálogo de `corpus/GUINOS.md`, posteriores al censo.
+- `corpus/GUINOS.md`: el catálogo de guiños deliberados (nombres de otras obras y detalles de sabor), que no se corrigen.
+- `corpus/KNOWN_ISSUES.md`: lo que hoy puede verse raro en partida, con su causa y qué hacer.
 - `corpus/PATTERNS_TODO.md`: el procedimiento para vaciar la cuarentena de patrones, si un parche la vuelve a llenar.
 - `corpus/ids_es.nut`: los pares por id que resuelven homógrafos de `m.Name` (una misma palabra inglesa que pide traducciones distintas según el objeto que la lleva), con Rosetta 0.5.0 o superior. Antes de añadir uno, pasar `tools/ids_census.py`.
 - `corpus/FUENTE-305.md`: por qué no se adoptó en bloque la revisión 3.0.5 de la traducción original, con las cifras.

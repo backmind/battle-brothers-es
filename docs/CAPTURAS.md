@@ -18,7 +18,7 @@ Pantallas del juego con Battle Brothers en Español, primero del juego base y de
 
 ## El mapa del mundo
 
-![El mapa del mundo](../es_pack/media/mapa.png)
+![El mapa del mundo, con rótulos de región y pueblos en castellano](../es_pack/media/legends_mapa.png)
 
 ## Un pueblo
 

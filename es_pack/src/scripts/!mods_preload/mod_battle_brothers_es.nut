@@ -9,7 +9,7 @@ if (!("Rosetta" in getroottable())) return;
 local def = {
     ID = "mod_battle_brothers_es"
     Name = "Battle Brothers en Español"
-    Version = "5.0.0"
+    Version = "5.1.0"
     // Contra qué build del juego se verificó y qué parte de sus textos cubre,
     // medida con es_pack/tools/measure_coverage.py. Los tests exigen que
     // coincidan con build_dist.py.
@@ -29,6 +29,7 @@ mod.require("mod_rosetta >= 0.5.0");
 mod.queue(">mod_msu", function () {
     if (!::Hooks.hasMod("mod_msu")) return;
     ::Hooks.registerLateJS("ui/mods/mod_battle_brothers_es/msu_es.js");
+    ::Hooks.registerLateJS("ui/mods/mod_battle_brothers_es/portada_es.js");
     local msu = ::MSU.Class.Mod(def.ID, def.Version, def.Name);
     local dominio = ::MSU.System.Registry.ModSourceDomain;
     msu.Registry.addModSource(dominio.GitHub, "https://github.com/backmind/battle-brothers-es");
@@ -56,8 +57,8 @@ mod.queue(">mod_msu", function () {
     pagina.addTitle("Autores", seccion("Autores",
         fila(dorado("AMarauder") + ", " + dorado("MagnusLioncaster") + " y " + dorado("Hjensikk") + ": la traducción original.")
         + fila(dorado("ElGranFoca") + ": la adaptación a los parches y la traducción nueva de la 3.0.4 y la 3.0.5.")
-        + fila(dorado("backmind") + ": la traducción sobre Rosetta desde la 4.0.0 y la traducción integral de Legends.")
-        + fila("Framework: " + dorado("Rosetta") + ", de Suor.")));
+        + fila(dorado("hda (backmind)") + ": la traducción sobre Rosetta desde la 4.0.0 y la traducción integral de Legends.")
+        + fila("Framework: " + dorado("Rosetta") + ", de hackflow.")));
     pagina.addTitle("Enlaces", seccion("Enlaces", fila(enlace("Nexus", nexus) + " · " + enlace("GitHub", repo)
         + " · " + enlace("Informar de un error", repo + "/issues/new/choose"))));
 });
