@@ -57,7 +57,7 @@ GAME_VERSION = "1.5.2.3"
 # La versión del pack, semver propio. Desde la 4.0.0 continúa la numeración de la
 # traducción anterior en Nexus (3.x); las 1.0.x fueron las dos primeras del repo. La comparten los dos zips
 # y los dos preloads; test_build_dist impide que se separen.
-PACK_VERSION = "5.0.0"
+PACK_VERSION = "5.1.0"
 # Parte de las frases del juego que cubre el corpus, medida contra GAME_VERSION
 # con measure_coverage.py (necesita el juego instalado, así que no la mide la
 # CI). Se actualiza a mano al verificar contra una build nueva.
