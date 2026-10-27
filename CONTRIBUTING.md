@@ -126,7 +126,7 @@ Si puedes, di también en qué situación apareció (qué contrato, qué evento,
 
 Lo que ayuda de verdad en una incidencia, por orden: la captura, la pantalla o el evento donde salió, y el texto tal como se lee. Suma la versión del juego y la del pack si las tienes a mano. No hace falta que propongas la corrección ni que busques el archivo.
 
-Antes de abrir una, mira dos cosas para no gastar tu tiempo. Si el texto sale en inglés, puede que sea un caso ya conocido y con causa escrita: está en [es_pack/corpus/KNOWN_ISSUES.md](es_pack/corpus/KNOWN_ISSUES.md), que distingue lo que falta por traducir de lo que no se puede traducir. Y si lo que se ve raro son las tildes o los rótulos del mapa, casi seguro es del motor y no del texto.
+Antes de abrir una, mira si ya es un caso conocido, para no gastar tu tiempo. Si el texto sale en inglés o se ve raro, puede que tenga la causa escrita en [es_pack/corpus/KNOWN_ISSUES.md](es_pack/corpus/KNOWN_ISSUES.md), con su causa y qué hacer.
 
 ## Para quien quiera tocar las herramientas
 

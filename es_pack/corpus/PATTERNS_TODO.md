@@ -31,7 +31,7 @@ Si alguna de estas condiciones falla, el par cae en `wip`, la cuarentena. Ahí n
 1. Elegir un lote de 30 a 50 pares de la misma clase en `patterns_wip.nut`.
 2. Convertirlos editando `es_pack/corpus/base_es.nut`, siguiendo la [guía de traducción de Rosetta](https://github.com/Suor/battle-brothers-rosetta/blob/master/AGENTS_TRANSLATING.md). Las conversiones habituales:
    - `[color=<this.Const...>]50%[/color]` pasa a `en = "... <x:val_tag> ..."` y en `es` simplemente `<x>`.
-   - `<this.Const.Strings.getArticle(...) + item.getName()>` pasa a `<item:str_tag>` o `<item:str>` según el caso; en `es`, `<item>`, o `<item:t>` si ese contenido tiene su propio par literal y llega en inglés. Si llega ya traducido por otro hook, el `:t` mata la regla entera (ver KNOWN_ISSUES.md, punto 1).
+   - `<this.Const.Strings.getArticle(...) + item.getName()>` pasa a `<item:str_tag>` o `<item:str>` según el caso; en `es`, `<item>`, o `<item:t>` si ese contenido tiene su propio par literal y llega en inglés. Si llega ya traducido por otro hook, el `:t` mata la regla entera: Rosetta no encuentra par para el castellano y descarta la regla.
    - Los pares que solo llevan `%marcadores%` y ningún `<...>` real suelen poder pasar a literales: basta quitarles `mode = "pattern"`.
    - Los pares con `<ret>`, restos de una concatenación parcial, casi nunca se salvan como patrón, porque el texto completo suele estar ya en otro par.
 3. Reconstruir. `dist` sube y `wip` baja exactamente en el tamaño del lote, y esa cuenta es la validación del lote.

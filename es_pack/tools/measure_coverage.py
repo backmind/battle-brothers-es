@@ -50,7 +50,7 @@ con ausencia real, este modulo cruza los huecos contra los cubos "drop" y
 "wip" que `build_dist.classify()` ya calcula sobre el corpus completo, y
 anota los que ya tienen un par sin embarcar como deuda de traduccion, no de
 cobertura. El caso 3 (par traducido a si mismo) ya esta medido y agotado
-(23/08/2026, ver KNOWN_ISSUES.md) y no se repite aqui. El caso 4 (par
+(23/08/2026) y no se repite aqui. El caso 4 (par
 correcto que el juego nunca consulta porque falta un hook) es INVISIBLE a
 este metodo por construccion: el literal esta cubierto, y lo esta; ver el
 aviso de limite en el informe.
