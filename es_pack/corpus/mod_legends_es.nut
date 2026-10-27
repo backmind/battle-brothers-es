@@ -37927,7 +37927,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Grey waters"
-        es = "Aguas grises"
+        es = "Aguas Grises"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38197,7 +38197,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Meathcote"
-        es = "Meathcote"
+        es = "Chozas del Prado"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38307,12 +38307,12 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Somerford"
-        es = "Somerford"
+        es = "Vado de Verano"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Broadchalke"
-        es = "Broadchalke"
+        es = "Caliza Ancha"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38332,7 +38332,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Snarebush Range"
-        es = "Campo del Matorral Trampa"
+        es = "Campo del Matorral Enredador"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38435,7 +38435,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Graywater"
-        es = "Aguas Grises"
+        es = "Aguaparda"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38465,7 +38465,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Cruel Mire"
-        es = "El Cenagal Cruel"
+        es = "La Ciénaga Cruel"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38525,12 +38525,12 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Stink Mire"
-        es = "Cenagal Hediondo"
+        es = "Ciénaga Hedionda"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Clawing mud"
-        es = "Lodo que araña"
+        es = "Lodo que Araña"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38625,7 +38625,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Lost Boot Mire"
-        es = "Cenagal de la Bota Perdida"
+        es = "Ciénaga de la Bota Perdida"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38723,7 +38723,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Whispering Rise"
-        es = "Ascenso Susurrante"
+        es = "Altozano Susurrante"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -38763,7 +38763,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Rise"
-        es = "El Ascenso"
+        es = "El Altozano"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39274,7 +39274,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Goldmist Rise"
-        es = "Ascenso de la Niebla Dorada"
+        es = "Altozano de la Niebla Dorada"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39304,7 +39304,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Whitebear Rise"
-        es = "Ascenso del Oso Blanco"
+        es = "Altozano del Oso Blanco"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39329,7 +39329,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "The Totos"
-        es = "Los Totos"
+        es = "Los Riscos Pardos"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39452,7 +39452,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Chittering Wastes"
-        es = "Desiertos Chirriantes"
+        es = "Yermos Chirriantes"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39621,7 +39621,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Snarehold"
-        es = "Bastión de la Trampa"
+        es = "Fuerte de la Trampa"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39681,7 +39681,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Radknott"
-        es = "Radknott"
+        es = "Loma Roja"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39796,12 +39796,12 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Glassreach"
-        es = "Confín de Vidrio"
+        es = "Dominio de Vidrio"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Hackenborne"
-        es = "Hackenborne"
+        es = "Arroyo del Hacha"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39816,7 +39816,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Craterhold"
-        es = "Bastión del Cráter"
+        es = "Fuerte del Cráter"
     }
     // context: ::Const.Strings.TerrainRegionNames
     {
@@ -39909,7 +39909,7 @@ local pairs = [
     // context: ::Const.Strings.TerrainRegionNames
     {
         en = "Emerald Bassin"
-        es = "Cuenca Esmeralda"
+        es = "Hoya Esmeralda"
     }
     // en = "Pearl of the South"
     // en base_es
@@ -40921,7 +40921,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Heideck"
-        es = "Heideck"
+        es = "Rincón del Brezo"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -40971,7 +40971,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Ockholm"
-        es = "Ockholm"
+        es = "Islote de Ock"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -40991,12 +40991,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Ziesholz"
-        es = "Ziesholz"
+        es = "Monte de Zies"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Brunfahre"
-        es = "Brunfahre"
+        es = "Barca Parda"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41006,7 +41006,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Hermsdorf"
-        es = "Hermsdorf"
+        es = "Villa Hermann"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41031,17 +41031,17 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Burgenhof"
-        es = "Burgenhof"
+        es = "Granja del Castillo"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Fichetal"
-        es = "Fichetal"
+        es = "Valdeabeto"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Eisental"
-        es = "Eisental"
+        es = "Valdehierro"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41056,22 +41056,22 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Grunackeren"
-        es = "Grunackeren"
+        es = "Labrantíos Verdes"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Wendorf"
-        es = "Wendorf"
+        es = "Aldea de los Vendos"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Felde"
-        es = "Felde"
+        es = "El Campillo"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Limshof"
-        es = "Limshof"
+        es = "Granja de Lims"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41086,12 +41086,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Schonfeld"
-        es = "Schonfeld"
+        es = "Campobello"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Birkewiese"
-        es = "Birkewiese"
+        es = "Prado del Abedul"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41106,7 +41106,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Grenzburg"
-        es = "Grenzburg"
+        es = "Burgo de la Marca"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41126,17 +41126,17 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Roezfels"
-        es = "Roezfels"
+        es = "Peña de Roez"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Gipfel"
-        es = "Gipfel"
+        es = "La Cumbre"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Birnbaum"
-        es = "Birnbaum"
+        es = "El Peral"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41146,7 +41146,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Hutten"
-        es = "Hutten"
+        es = "Las Chozas"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41156,12 +41156,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Eicheschatten"
-        es = "Eicheschatten"
+        es = "Sombra del Roble"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Grunhugel"
-        es = "Grunhugel"
+        es = "Cerro Verde"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41176,7 +41176,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Hochsleben"
-        es = "Hochsleben"
+        es = "Villalta"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41186,7 +41186,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Auerswald"
-        es = "Auerswald"
+        es = "Bosque del Uro"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41196,7 +41196,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Dunkelberg"
-        es = "Dunkelberg"
+        es = "Monte Oscuro"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41211,24 +41211,24 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Glukshalt"
-        es = "Glukshalt"
+        es = "La Fortuna"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Glumund"
-        es = "Glumund"
+        es = "Boca Sombría"
     }
     // en = "Grunburg"
     // en base_es
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Holthusen"
-        es = "Holthusen"
+        es = "Casas del Bosque"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Weissbruck"
-        es = "Weissbruck"
+        es = "Puente Blanco"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41243,7 +41243,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Zhanstadt"
-        es = "Zhanstadt"
+        es = "Villa Zhan"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41258,7 +41258,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Stromdorf"
-        es = "Stromdorf"
+        es = "Aldea del Río"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41268,7 +41268,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Schadelheim"
-        es = "Schadelheim"
+        es = "Villa Calavera"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41278,7 +41278,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Rottfurt"
-        es = "Rottfurt"
+        es = "Vado Bermejo"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41288,12 +41288,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Maselhof"
-        es = "Maselhof"
+        es = "Granja de Masel"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Roherhausen"
-        es = "Roherhausen"
+        es = "Casas Toscas"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41303,7 +41303,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Halgerbach"
-        es = "Halgerbach"
+        es = "Arroyo de Halger"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41323,7 +41323,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Hinkend"
-        es = "Hinkend"
+        es = "Villacoja"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41333,7 +41333,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Hausern"
-        es = "Hausern"
+        es = "Casares"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41368,12 +41368,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Salmfahre"
-        es = "Salmfahre"
+        es = "Barca del Salmón"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Rohrhof"
-        es = "Rohrhof"
+        es = "El Cañaveral"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41383,7 +41383,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Althausen"
-        es = "Althausen"
+        es = "Casasviejas"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41418,17 +41418,17 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Ballenhof"
-        es = "Ballenhof"
+        es = "Granja de las Pacas"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Waldbach"
-        es = "Waldbach"
+        es = "Arroyo del Bosque"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Steingart"
-        es = "Steingart"
+        es = "Peñacerrada"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41438,12 +41438,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Eppiswald"
-        es = "Eppiswald"
+        es = "Bosque de Eppi"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Eigenhof"
-        es = "Eigenhof"
+        es = "La Heredad"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41458,7 +41458,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Sonnefurt"
-        es = "Sonnefurt"
+        es = "Vado del Sol"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41468,7 +41468,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Weilerburg"
-        es = "Weilerburg"
+        es = "Burgo de Weiler"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41488,7 +41488,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Mendlehof"
-        es = "Mendlehof"
+        es = "Granja de Mendle"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41503,17 +41503,17 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Krudenwald"
-        es = "Krudenwald"
+        es = "Bosque de Kruden"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Selmigerholz"
-        es = "Selmigerholz"
+        es = "Arboleda de Selmig"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Holzbeck"
-        es = "Holzbeck"
+        es = "Arroyo de la Leña"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41523,7 +41523,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Wahnsinningen"
-        es = "Wahnsinningen"
+        es = "Villalocos"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41533,12 +41533,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Ahresdorf"
-        es = "Ahresdorf"
+        es = "Villa Ahres"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Bergsburg"
-        es = "Bergsburg"
+        es = "Burgo del Cerro"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41553,17 +41553,17 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Bergendorf"
-        es = "Bergendorf"
+        es = "Villamonte"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Heedendorf"
-        es = "Heedendorf"
+        es = "El Brezal"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Flaschfurt"
-        es = "Flaschfurt"
+        es = "Vado del Frasco"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41583,7 +41583,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Langweise"
-        es = "Langweise"
+        es = "Prado Largo"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
@@ -41613,12 +41613,12 @@ local pairs = [
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Dunstigfurt"
-        es = "Dunstigfurt"
+        es = "Vado Brumoso"
     }
     // context: ::Const.World.LocationNames.VillageWestern.extend()
     {
         en = "Eichewaldchen"
-        es = "Eichewaldchen"
+        es = "El Robledillo"
     }
     // en = "Altdorf"
     // en base_es
@@ -41677,7 +41677,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.CityWestern.extend()
     {
         en = "Beagleburg"
-        es = "Beagleburg"
+        es = "Burgo del Sabueso"
     }
     // context: ::Const.World.LocationNames.GuardTower.extend()
     {
@@ -41729,7 +41729,7 @@ local pairs = [
     // context: ::Const.World.LocationNames.Castle.extend()
     {
         en = "Heldenhame Keep"
-        es = "Fortaleza de Heldenhame"
+        es = "Torreón de Heldenhame"
     }
     // context: ::Const.World.LocationNames.OrcCamp.extend()
     {
@@ -46811,6 +46811,13 @@ local pairs = [
         mode = "pattern"
         en = "<n:int> <troops:str>"
         es = "<n> <troops:t>"
+    }
+    {
+        // "Indebted" es igual en singular y en plural, y su par del base es el
+        // singular: la regla de arriba daba "9 Endeudado".
+        mode = "pattern"
+        en = "<n:int> Indebted"
+        es = "<n> Endeudados"
     }
     // FILE: mod_legends\hooks\events\event.nut
     // en = "OOC"
