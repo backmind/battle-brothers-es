@@ -270,6 +270,78 @@ local tituloES = function (_t) {
 mod.hook("scripts/states/world/camp_manager", function (q) {
     q.getUIInformation = @(__original) function () { return tituloES(__original()); }
 })
+
+// El rótulo del asentamiento en el mapa. El setSize de Legends lo escribe con
+// this.m.Name a pelo, sin pasar por getName(), que es lo que traduce Rosetta:
+// en campaña nueva el pueblo salía en inglés en el mapa y en castellano en su
+// tooltip. Se reescribe con getName() y en cp1252, como el caso 34 de los hooks.
+mod.hook("scripts/entity/world/settlement", function (q) {
+    q.setSize = @(__original) function (_v) {
+        __original(_v);
+        try {
+            if (this.hasLabel("name"))
+                this.getLabel("name").Text = ::BattleBrothersEs.aLatin1(this.getName());
+        } catch (e) {}
+    }
+})
+// El nombre de los lugares anexos a un pueblo (alto horno, molino...). Legends
+// redefine attached_location.getName para pegarle " (Ruins)" o " (Abandoned)"
+// al nombre, o para devolver "New X Construction", y como es la subclase, el
+// getName que engancha Rosetta en world_entity no ve el resultado: salía
+// "Alto horno (Ruins)". La coletilla se traduce aparte (tiene par propio) y la
+// obra nueva va por su patrón; el nombre suelto ya llega traducido.
+mod.hook("scripts/entity/world/attached_location", function (q) {
+    q.getName = @(__original) function () {
+        local s = __original();
+        if (typeof s != "string") return s;
+        foreach (coletilla in [" (Ruins)", " (Abandoned)"])
+            if (s.len() > coletilla.len() && s.slice(-coletilla.len()) == coletilla)
+                return s.slice(0, -coletilla.len()) + ::Rosetta._(coletilla);
+        if (s.find("New ") == 0 && s.len() > 17 && s.slice(-13) == " Construction")
+            return ::Rosetta._(s);
+        return s;
+    }
+})
+// La frase que dos eventos del cultista (cultist_vs_uneducated y su versión del
+// origen) pegan a la descripción del trasfondo: RawDescription ya está en
+// castellano y le suman " X helped Y see the darkness.", con lo que la ficha
+// acababa en inglés. El corpus tiene esa frase como patrón con su espacio
+// delante; se corta por el último punto antes de " helped " y se traduce sola.
+mod.hook("scripts/skills/backgrounds/character_background", function (q) {
+    q.buildDescription = @(__original) function (_isFinal = false) {
+        try {
+            local r = this.m.RawDescription, fin = " see the darkness.";
+            if (typeof r == "string" && r.len() > fin.len() && r.slice(-fin.len()) == fin) {
+                local h = null, p = r.find(" helped ");
+                while (p != null) { h = p; p = r.find(" helped ", p + 1); }
+                if (h != null) {
+                    local s = null, d = r.find(". ");
+                    while (d != null && d < h) { s = d; d = r.find(". ", d + 1); }
+                    if (s != null) {
+                        local cola = r.slice(s + 1), tr = ::Rosetta._(cola);
+                        if (tr != cola) this.m.RawDescription = r.slice(0, s + 1) + tr;
+                    }
+                }
+            }
+        } catch (e) {}
+        return __original(_isFinal);
+    }
+})
+// Y al cargar. Legends sustituye entero world_entity.onDeserialize, y como la
+// cola de los hooks del pack corre antes que la suya, se lleva por delante la
+// conversión a cp1252 del caso 34: al cargar una partida, los rótulos con
+// tilde o eñe salían rotos. Aquí se engancha después de Legends.
+mod.hook("scripts/entity/world/world_entity", function (q) {
+    q.onDeserialize = @(__original) function (_in) {
+        __original(_in);
+        try {
+            if (this.hasLabel("name")) {
+                local l = this.getLabel("name");
+                l.Text = ::BattleBrothersEs.aLatin1(l.Text);
+            }
+        } catch (e) {}
+    }
+})
 local CAMP = "scripts/ui/screens/world/modules/camp_screen/camp_";
 foreach (m in ["commander", "crafting", "enchanter", "healer", "repair", "workshop"])
     mod.hook(CAMP + m + "_dialog_module", function (q) {

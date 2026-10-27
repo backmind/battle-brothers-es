@@ -35,7 +35,9 @@
 			this.mContainer.find('.main-cancel-button').changeButtonText('Cancelar');
 			this.mContainer.find('.main-reset-button').changeButtonText('Restablecer');
 			this.mContainer.find('.main-apply-button').changeButtonText('Aplicar');
-			this.mContainer.find('.main-save-button').changeButtonText('Guardar');
+			// "Save" guarda y cierra (MSU lo llama OK): con "Aplicar" al lado,
+			// la convención de los diálogos en castellano es "Aceptar".
+			this.mContainer.find('.main-save-button').changeButtonText('Aceptar');
 		});
 
 		envuelve(pantalla, 'hide', function ()

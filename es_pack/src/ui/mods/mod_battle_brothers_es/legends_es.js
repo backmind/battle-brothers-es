@@ -135,6 +135,8 @@
 			{
 				if (pintado.text().indexOf('Welcome to Legends.') !== 0) return;
 				pintado.html(XBBCODE.process({ text: motd[_en], removeMisalignedTags: false, addInLineBreaks: true }).html);
+				// El repintado borra la línea del pack (portada_es.js): se repone.
+				if (typeof window.BattleBrothersEsPortada === 'function') window.BattleBrothersEsPortada();
 			});
 		} catch (e) {}
 	}

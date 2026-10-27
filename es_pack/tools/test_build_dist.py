@@ -558,7 +558,7 @@ def test_ui_addon_lleva_solo_ui_y_ningun_directorio(tmp_path):
     """El criterio que se verifico en partida: el zip del addon contiene solo
     ui/. Las fuentes van en carpeta suelta gfx/ porque el renderizador las carga
     por ruta de disco; metidas en el zip, el error de entrada/salida persiste
-    (KNOWN_ISSUES punto 7). Sin entradas de directorio: el contenido del zip es
+    (KNOWN_ISSUES, «Ruido en el log»). Sin entradas de directorio: el contenido del zip es
     exactamente la lista de ficheros."""
     import zipfile
 
@@ -757,6 +757,10 @@ def test_los_dos_zips_y_los_dos_preloads_declaran_la_misma_version():
     for p in preloads:
         m = _re.search(r'Version = "([^"]+)"', p.read_text(encoding="utf-8"))
         assert m and m.group(1) == PACK_VERSION, (p.name, m and m.group(1))
+    # Y la línea del menú principal, que la escribe en JS
+    portada = (SRC / "ui" / "mods" / "mod_battle_brothers_es" / "portada_es.js").read_text(encoding="utf-8")
+    m = _re.search(r"var VERSION = '([^']+)'", portada)
+    assert m and m.group(1) == PACK_VERSION, ("portada_es.js", m and m.group(1))
 
 
 def test_la_ficha_de_msu_declara_la_build_y_la_cobertura_de_build_dist():
